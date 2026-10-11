@@ -1,18 +1,31 @@
 ---
-title: Accessibilité des fonctionnalités et des interfaces  [!DNL Adobe Experience Manager Assets]
-description: Découvrez comment les fonctionnalités d’accessibilité d’ [!DNL Adobe Experience Manager]  6.5 [!DNL Assets]  aident les utilisateurs en situation de handicap.
+title: Accessibilité des fonctionnalités et des interfaces de [!DNL Adobe Experience Manager Assets]
+description: Découvrez comment les fonctionnalités d’accessibilité d’[!DNL Adobe Experience Manager] 6.5 [!DNL Assets] aider les utilisateurs en situation de handicap.
 contentOwner: AG
 feature: Asset Management
 role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 57%
-
+source-wordcount: '1934'
+ht-degree: 56%
 ---
-
 <!--
 Possible topics to cover in this article are below.
 
@@ -111,7 +124,7 @@ Les utilisateurs peuvent utiliser le clavier pour accéder au champ de connexion
 
 Une fois connectés, les utilisateurs de la gestion des ressources numériques peuvent naviguer dans l’interface utilisateur [!DNL Assets] à l’aide du clavier. Le clavier permet d’accéder aux éléments de l’interface utilisateur, tels que le rail de gauche, les menus, le profil utilisateur, la barre de recherche, les fichiers et les dossiers, ainsi que les paramètres d’administration et de configuration. L’ordre de navigation via le clavier est de gauche à droite et de haut en bas. Lorsque les utilisateurs naviguent à l’aide du clavier, l’interface utilisateur met en surbrillance l’option active avec un contraste des couleurs amélioré et les lecteurs d’écran la lisent. Le cas échéant, les lecteurs d’écran annoncent le statut (par exemple, développé, réduit ou mixte) des options de menu sélectionné. En outre, le lecteur d’écran annonce l’objectif de l’option utilisable, au lieu de, par exemple, l’aspect ou l’emplacement de l’interface.
 
-Si un utilisateur développe l’option d’aide ou de profil utilisateur à partir du menu, le lecteur d’écran annonce l’option ou le statut approprié. Si un utilisateur développe l’option de profil utilisateur, les options disponibles peuvent être sélectionnées à l’aide du clavier. Par exemple, un utilisateur peut emprunter l’identité d’un autre utilisateur. Si un utilisateur recherche une chaîne à partir de l’option [!UICONTROL Aide], un narrateur annonce « Recherche de l’aide » pour indiquer qu’une recherche est en cours.
+Si un utilisateur développe l’option d’aide ou de profil utilisateur à partir du menu, le lecteur d’écran annonce l’option ou le statut approprié. Si un utilisateur développe l’option de profil utilisateur, les options disponibles peuvent être sélectionnées à l’aide du clavier. Par exemple, un administrateur ou une administratrice peut emprunter l’identité d’un autre utilisateur ou d’un autre utilisatrice. Si un utilisateur recherche une chaîne à partir de l’option [!UICONTROL Aide], un narrateur annonce « Recherche de l’aide » pour indiquer qu’une recherche est en cours.
 
 <!--
 TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
@@ -171,7 +184,7 @@ De nombreuses tâches de gestion des ressources, telles que les opérations CRUD
 Pour les opérations de métadonnées généralement effectuées par des rôles, tels que les spécialistes marketing et les administrateurs, les fonctionnalités suivantes améliorent l’accessibilité :
 
 * L’option [!UICONTROL Enregistrer et fermer] de la page Ressource [!UICONTROL Propriétés] est désormais accessible à l’aide du clavier.
-* Les lecteurs d’écran annoncent les options permettant de supprimer les balises sélectionnées dans l’onglet [!UICONTROL &#x200B; De base &#x200B;] de la ressource [!UICONTROL Propriétés].
+* Les lecteurs d’écran annoncent les options permettant de supprimer les balises sélectionnées dans l’onglet [!UICONTROL  De base ] de la ressource [!UICONTROL Propriétés].
 * Les utilisateurs peuvent utiliser la boîte de dialogue pop-up du sélecteur de date à l’aide du clavier. L’élément d’interface utilisateur du sélecteur de date permet de définir les heures d’activation et les heures de désactivation, puis de sélectionner une date.
 * La fonctionnalité glisser à l’aide du clavier fonctionne correctement dans l’[!UICONTROL Éditeur de schéma de métadonnées] en mode de navigation du lecteur d’écran.
 * Un utilisateur peut utiliser le clavier pour déplacer la sélection vers le champ **Ajouter un utilisateur ou un groupe**.
@@ -206,13 +219,13 @@ Lors du partage de ressources, les fonctionnalités suivantes améliorent l’ac
 
 * Dans la boîte de dialogue Partage de liens, lorsque vous naviguez en mode de navigation, les lecteurs d’écran :
 
-   * N’indique pas les informations du tableau lorsque la boîte de dialogue est chargée.
-   * Accédez à toutes les suggestions répertoriées.
-   * Indique les suggestions affichées pour les champs Ajouter l’adresse électronique et Rechercher.
+  * N’indique pas les informations du tableau lorsque la boîte de dialogue est chargée.
+  * Accédez à toutes les suggestions répertoriées.
+  * Indique les suggestions affichées pour les champs Ajouter l’adresse électronique et Rechercher.
 
 ## Documentation accessible {#accessible-docs}
 
-[!DNL Experience Manager] fournit une documentation accessible pour les personnes en situation de handicap. Les éléments suivants permettent de rendre l’offre de contenu accessible, tandis qu’Adobe continue d’améliorer le modèle et le contenu :
+[!DNL Experience Manager] fournit une documentation accessible pour les personnes en situation de handicap. Les éléments suivants permettent pour l’instant de rendre l’offre de contenu accessible, tandis qu’Adobe continue d’améliorer le modèle et le contenu :
 
 * Les lecteurs d’écran peuvent lire le texte.
 * Le texte secondaire des images et illustrations est disponible.
@@ -227,5 +240,5 @@ Pour fournir des commentaires, poser des questions et demander des amélioration
 >
 >* [Fonctionnalités d’accessibilité d’ [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [Notes de mise à jour des améliorations apportées à chaque version de service pack](/help/release-notes/release-notes.md).
->* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] &#x200B;](/help/managing/web-accessibility.md)
+>* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md)
 >* [Rapports de conformité (ACR) et liste VPAT (Modèle volontaire d’accessibilité des produits) pour les solutions d’Adobe](https://www.adobe.com/accessibility/compliance.html).

@@ -9,13 +9,22 @@ exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '834'
 ht-degree: 100%
-
 ---
-
 # Tableaux de bord{#dashboards}
 
 Lorsque vous utilisez AEM, vous pouvez gérer de nombreux contenus de différents types (par exemple, des pages ou des ressources). Les tableaux de bord AEM offrent un moyen simple et personnalisable de définir des pages qui affichent des données consolidées.
@@ -165,7 +174,7 @@ Un groupe de composants par défaut, `Dashboard`, contient les composants de gé
 
 Un modèle définit le contenu par défaut d’un nouveau tableau de bord. Vous pouvez utiliser plusieurs modèles pour créer différents types de tableaux de bord.
 
-Ces modèles sont créés de la même manière que les autres modèles de page, si ce n’est qu’ils sont stockés sous `/libs/cq/dashboards/templates/`. Consultez [Création d’un modèle Contentpage](/help/sites-developing/website.md#creating-the-contentpage-template).
+Ces modèles de tableau de bord sont créés de la même manière que les autres modèles de page, si ce n’est qu’ils sont stockés sous `/libs/cq/dashboards/templates/`. Consultez [Création d’un modèle Contentpage](/help/sites-developing/website.md#creating-the-contentpage-template).
 
 >[!NOTE]
 >

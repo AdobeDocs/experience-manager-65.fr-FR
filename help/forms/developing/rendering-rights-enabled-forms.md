@@ -1,21 +1,34 @@
 ---
 title: Restituer des formulaires dont les droits sont activés
-
 description: Utilisez le service Forms pour restituer des formulaires dotés de droits d’utilisation. Vous pouvez restituer des formulaires dont les droits sont activés à l’aide de l’API Java et de l’API de service web.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 100%
@@ -24,11 +37,11 @@ ht-degree: 100%
 
 Le service Forms peut restituer des formulaires dotés de droits d’utilisation. Les droits d’utilisation appartiennent à la fonctionnalité disponible par défaut dans Acrobat mais non dans Adobe Reader, telle que la capacité à ajouter des commentaires à un formulaire ou à remplir des champs de formulaire et enregistrer ce dernier. Les formulaires dotés de droits d’utilisation sont appelés des formulaires dont les droits sont activés. Un utilisateur qui ouvre un formulaire dont les droits sont activés dans Adobe Reader peut effectuer les opérations autorisées pour ce formulaire.
 
-Pour appliquer des droits d’utilisation à un formulaire, le service Extensions Acrobat Reader DC doit faire partie de votre installation d’AEM Forms. En outre, vous devez disposer d’informations d’identification valides qui vous permettent d’appliquer des droits d’utilisation aux documents PDF. Car vous devez configurer correctement le service Extensions Acrobat Reader DC avant de pouvoir restituer un formulaire dont les droits sont activés. (Consultez la section [À propos du service Extensions Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service)).
+Pour appliquer des droits d’utilisation à un formulaire, le service Extensions Acrobat Reader DC doit faire partie de votre installation d’AEM Forms. En outre, vous devez disposer d’informations d’identification valides qui vous permettent d’appliquer des droits d’utilisation aux documents PDF. C’est-à-dire que vous devez configurer correctement le service Extensions Acrobat Reader DC avant de pouvoir restituer un formulaire dont les droits sont activés. (Consultez la section [À propos du service Extensions Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service)).
 
 >[!NOTE]
 >
->Pour restituer un formulaire doté de droits d’utilisation, vous devez utiliser un fichier XDP comme entrée, et non un fichier PDF. Dans le cas contraire, le formulaire sera toujours rendu, mais il ne s’agira pas d’un formulaire dont les droits sont activés.
+>Pour restituer un formulaire doté de droits d’utilisation, vous devez utiliser un fichier XDP comme entrée, et non un fichier PDF. Si vous utilisez un fichier PDF comme entrée, le formulaire est tout de même rendu ; toutefois, il ne s’agira pas d’un formulaire dont les droits sont activés.
 
 >[!NOTE]
 >
@@ -46,7 +59,7 @@ Pour restituer un formulaire dont les droits sont activés, procédez comme suit
 1. Créez un objet API client Forms.
 1. Définir les options d’exécution des droits d’utilisation
 1. Restituer un formulaire dont les droits sont activés
-1. Écrire le formulaire dont les droits sont activés dans le navigateur web du client
+1. Écrire le formulaire dont les droits sont activés dans le navigateur web du client.
 
 **Inclure les fichiers de projet**
 
@@ -105,7 +118,7 @@ Pour restituer un formulaire dont les droits sont activés à l’aide de l’AP
 
    * Créez un objet `ReaderExtensionSpec` en utilisant son constructeur.
    * Spécifiez l’alias des informations d’identification en appelant la méthode `setReCredentialAlias` de l’objet `ReaderExtensionSpec` et indiquez une valeur de chaîne qui représente la valeur d’alias.
-   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Par exemple. pour définir le droit d’utilisation qui permet à l’utilisateur ou l’utilisatrice de remplir des champs de formulaire et d’enregistrer ce dernier, appelez la méthode `setReFillIn` de l’objet `ReaderExtensionSpec` et transmettez `true`.
+   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification auxquelles vous faites référence vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Par exemple. pour définir le droit d’utilisation qui permet à l’utilisateur ou l’utilisatrice de remplir des champs de formulaire et d’enregistrer ce dernier, appelez la méthode `setReFillIn` de l’objet `ReaderExtensionSpec` et transmettez `true`.
 
    >[!NOTE]
    >
@@ -143,7 +156,7 @@ Pour restituer un formulaire dont les droits sont activés à l’aide de l’AP
 
 ## Générer des formulaires définis avec des droits à l’aide de l’API de service web {#render-rights-enabled-forms-using-the-web-service-api}
 
-Pour générer un formulaire défini avec des droits à l’aide de l’API Forms (service web), procédez comme suit :
+Pour générer un formulaire dont les droits sont activés à l’aide de l’API Forms (service web), procédez comme suit :
 
 1. Inclure les fichiers du projet
 
@@ -158,7 +171,7 @@ Pour générer un formulaire défini avec des droits à l’aide de l’API Form
 
    * Créez un objet `ReaderExtensionSpec` en utilisant son constructeur.
    * Spécifiez l’alias des informations d’identification en appelant la méthode `setReCredentialAlias` de l’objet `ReaderExtensionSpec` et indiquez une valeur de chaîne qui représente la valeur d’alias.
-   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Pour définir le droit d’utilisation permettant à l’utilisateur ou l’utilisatrice de remplir des champs de formulaire et d’enregistrer ce dernier, appelez la méthode `setReFillIn` de l’objet `ReaderExtensionSpec` et transmettez `true`.
+   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification auxquelles vous faites référence vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Pour définir le droit d’utilisation permettant à l’utilisateur ou l’utilisatrice de remplir des champs de formulaire et d’enregistrer ce dernier, appelez la méthode `setReFillIn` de l’objet `ReaderExtensionSpec` et transmettez `true`.
 
 1. Générer un formulaire défini avec des droits
 

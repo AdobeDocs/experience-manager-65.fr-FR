@@ -8,13 +8,26 @@ feature: Transaction Reports
 exl-id: e92f1b59-79ef-40fa-af9a-7380cd701a75
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2350'
 ht-degree: 97%
-
 ---
-
 # API facturables pour les rapports de transaction pour AEM Forms sur OSGi {#transaction-reports-billable-apis}
 
 | Version | Lien de l’article |
@@ -332,7 +345,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
 L’utilisation de l’API d’appel est comptabilisée comme une transaction lorsque vous effectuez une ou plusieurs des opérations suivantes :
 1. Conversion de formats non PDF en formats PDF. Par exemple, la conversion du format XDP au format PDF, qui prend en charge les formes de communication interactives et non interactives, et la conversion de Word au format PDF.
 1. Conversion du format PDF au format PDF/A.
-1. Conversion du format PDF aux formats non PDF. Les exemples incluent la transformation du format PDF au format Image ou la conversion du format PDF au format Texte.
+1. Conversion du format PDF aux formats non PDF. Les exemples incluent la transformation du format PDF au format image ou la conversion du format PDF au format texte.
 
 >[!NOTE]
 >
@@ -374,7 +387,7 @@ Tous les événements d’envoi des formulaires adaptatifs, de formulaires HTML5
   </tr>
   <tr>
    <td>Envoi d’un formulaire adaptatif</td>
-   <td>Envoie un formulaire adaptatif à une action d’envoi configurée. </td>
+   <td>Envoie un formulaire adaptatif à l’aide de l’action d’envoi configurée. </td>
    <td>Formulaires envoyés</td>
    <td>
     <ul>
@@ -420,7 +433,7 @@ Tous les événements d’envoi des formulaires adaptatifs, de formulaires HTML5
    <td>Formulaires envoyés</td>
    <td>
     <ul>
-     <li>L’utilisation du formulaire adaptatif dans un formulaire adaptatif (jeu de formulaires adaptatifs) comptabilise une seule transaction. Vous pouvez avoir un nombre illimité de formulaires adaptatifs dans un formulaire adaptatif.</li>
+     <li>L’utilisation du formulaire adaptatif dans un formulaire adaptatif (jeu de formulaires adaptatifs) comptabilise une seule transaction. Vous pouvez avoir n’importe quel nombre de formulaires adaptatifs dans un formulaire adaptatif.</li>
      <li>Chaque formulaire d’un jeu de formulaires HTML5 est comptabilisé comme une transaction distincte. </li>
     </ul> </td>
   </tr>

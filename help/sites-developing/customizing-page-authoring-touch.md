@@ -9,7 +9,18 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 90%
@@ -52,7 +63,7 @@ Il est possible de les utiliser de différentes manières pour étendre la fonct
 
 >[!CAUTION]
 >
->**&#x200B;**&#x200B;** Ne modifiez rien dans le chemin d’accès `/libs`.
+>****** Ne modifiez rien dans le chemin d’accès `/libs`.
 >
 >Cela est dû au fait que le contenu de `/libs` sera écrasé lors de la prochaine mise à niveau de votre instance (et éventuellement lors de l’application d’un correctif ou d’un pack de fonctionnalités).
 >
@@ -255,4 +266,4 @@ Pour bénéficier d’un comportement personnalisé lors d’une telle activatio
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
 1. Mettez à jour le [modèle de workflow](/help/sites-developing/workflows-models.md) et les configurations/scripts associés suivant les besoins.
-1. Retirez, à toutes les personnes appropriées, le droit dont elles bénéficient sur l’action [`replicate` &#x200B;](/help/sites-administering/security.md#actions) pour l’ensemble des pages pertinentes ; pour faire en sorte que ce workflow se déclenche comme une action par défaut lorsque l’une des personnes tente de publier (ou de répliquer) une page.
+1. Retirez, à toutes les personnes appropriées, le droit dont elles bénéficient sur l’action [`replicate` ](/help/sites-administering/security.md#actions) pour l’ensemble des pages pertinentes ; pour faire en sorte que ce workflow se déclenche comme une action par défaut lorsque l’une des personnes tente de publier (ou de répliquer) une page.

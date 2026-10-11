@@ -9,13 +9,20 @@ role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 3%
-
+source-wordcount: '969'
+ht-degree: 2%
 ---
-
 
 # Consoles de gestion des membres et des groupes {#members-groups-management-consoles}
 
@@ -118,19 +125,19 @@ Si l’identifiant correspond par défaut à l’adresse e-mail, il ne change *p
 Sous Paramètres du compte , il est possible pour un administrateur de communauté de :
 
 * **[!UICONTROL Statut]**
-   * Interdit
-Un membre ne peut pas se connecter, ce qui l’empêche d’afficher des pages ou de participer à des activités qui nécessitent une connexion. Ils peuvent toujours visiter anonymement un site communautaire ouvert.
+  * Interdit
+    Un membre ne peut pas se connecter, ce qui l’empêche d’afficher des pages ou de participer à des activités qui nécessitent une connexion. Ils peuvent toujours visiter anonymement un site communautaire ouvert.
 
-   * Non interdit
-Un membre a un accès complet au site communautaire.
+  * Non interdit
+    Un membre a un accès complet au site communautaire.
 
   La valeur par défaut est `Not Banned`.
 
 * **[!UICONTROL Limites de contribution]**
 
   Si cette case est cochée, la capacité du membre à publier du contenu est limitée.
-La valeur par défaut dépend de la configuration des limites de contribution.
-Voir [Limites de contribution des membres](limits.md).
+  La valeur par défaut dépend de la configuration des limites de contribution.
+  Voir [Limites de contribution des membres](limits.md).
 
 * **[!UICONTROL Modifier le mot de passe]**
 
@@ -154,13 +161,13 @@ Le panneau `BADGES` permet d’attribuer manuellement des badges et de les révo
 
 Voir aussi [Notation et badges](implementing-scoring.md).
 
-![Fenêtre Modifier les paramètres d’abonnement &#x200B;](assets/create-member2.png)
+![Fenêtre Modifier les paramètres d’abonnement ](assets/create-member2.png)
 
 * **[!UICONTROL Ajouter des badges]**
-   * Commencez la saisie pour sélectionner parmi [badges disponibles](badges.md). Une fois le badge sélectionné, choisissez chaque site, ou tous les sites, sur lesquels le badge doit être affiché avec l&#39;avatar du membre.
-   * Plusieurs badges et sites peuvent être choisis.
+  * Commencez la saisie pour sélectionner parmi [badges disponibles](badges.md). Une fois le badge sélectionné, choisissez chaque site, ou tous les sites, sur lesquels le badge doit être affiché avec l&#39;avatar du membre.
+  * Plusieurs badges et sites peuvent être choisis.
 * **[!UICONTROL Supprimer les badges]**
-   * Sélectionnez l’icône de corbeille en regard d’un badge pour le supprimer.
+  * Sélectionnez l’icône de corbeille en regard d’un badge pour le supprimer.
 
 ## Console Groupes {#groups-console}
 

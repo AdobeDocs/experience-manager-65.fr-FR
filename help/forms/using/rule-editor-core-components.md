@@ -1,16 +1,29 @@
 ---
-title: Comment utiliser l’éditeur de règles pour ajouter des règles aux champs de formulaire afin d’ajouter un comportement dynamique et créer une logique complexe dans un formulaire adaptatif basé sur des composants principaux ?
+title: Comment utiliser l’éditeur de règles pour ajouter des règles aux champs de formulaire afin d’ajouter un comportement dynamique et créer une logique complexe dans un formulaire adaptatif basé sur les composants principaux ?
 description: L’éditeur de règles de formulaire adaptatif permet d’ajouter un comportement dynamique et de créer une logique complexe dans des formulaires, sans code ni script.
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '5748'
 ht-degree: 98%
 ---
-# Ajout de règles à un formulaire adaptatif basé sur des composants principaux {#adaptive-forms-rule-editor}
+# Ajouter des règles à un formulaire adaptatif basé sur des composants principaux {#adaptive-forms-rule-editor}
 
 Cet article contient les dernières fonctionnalités de l’éditeur de règles des composants principaux de formulaires adaptatifs, à savoir :
 * Prise en charge de l’implémentation de conditions imbriquées avec la fonctionnalité When-then-else
@@ -25,8 +38,8 @@ L’éditeur de règles fournit une interface utilisateur intuitive et simplifi�
 * Activer ou désactiver un objet
 * Définir une valeur pour un objet
 * Valider la valeur d’un objet
-* Exécuter les fonctions de calcul de la valeur d’un objet
-* appeler un service de modèle de données de formulaire (FDM) et exécuter une opération ;
+* Exécuter des fonctions pour calculer la valeur d’un objet
+* appeler un service de modèle de données de formulaire (FDM) et exécuter une opération
 * définir la propriété d’un objet ;
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
@@ -39,7 +52,7 @@ Une règle est une combinaison d’actions et de conditions. Dans l’éditeur d
 
 L’éditeur de règles fournit un ensemble de types de règles prédéfinis, tels que Lorsque, Afficher, Masquer, Activer, Désactiver, Définir la valeur de et Valider pour vous aider à créer des règles. Chaque type de règle vous permet de définir des conditions et des actions dans une règle. Le document décrit de façon plus détaillée chaque type de règle.
 
-Une règle suit généralement l’un des concepts suivants :
+Une règle suit généralement l’une des structures suivantes :
 
 **Condition-action** Dans ce concept, une règle définit d’abord une condition suivie d’une action à déclencher. La construction est comparable à l’instruction `if-then statement` des langages de programmation.
 
@@ -201,7 +214,7 @@ Si plusieurs champs autorisés de la fonctionnalité de condition Lorsque rencon
 
 **[!UICONTROL Désactiver]** Désactive l’objet spécifié.
 
-**[!UICONTROL Appel du service]** Appelle un service configuré dans un modèle de données de formulaire (FDM). Lorsque vous sélectionnez l’opération Appel du service, un champ s’affiche. Lorsque vous touchez le champ, il affiche tous les services configurés dans tous les modèles de données de formulaire de votre instance [!DNL Experience Manager]. Lorsque vous sélectionnez un service de modèle de données de formulaire, des champs supplémentaires s’affichent dans lesquels vous pouvez mapper des objets de formulaire à des paramètres d’entrée et de sortie pour le service spécifié. Reportez-vous à l’exemple de règle pour appeler des services de modèle de données de formulaire.
+**[!UICONTROL Appel du service]** Appelle un service configuré dans un modèle de données de formulaire (FDM). Lorsque vous sélectionnez l’opération Appel du service, un champ s’affiche. Lorsque vous touchez le champ, il affiche tous les services configurés dans tous les modèles de données de formulaire de votre instance [!DNL Experience Manager]. Lorsque vous sélectionnez un service de modèle de données de formulaire, des champs supplémentaires s’affichent dans lesquels vous pouvez mapper des objets de formulaire à des paramètres d’entrée et de sortie pour le service spécifié. Reportez-vous à l’exemple de règle pour appeler des services de modèle de données de formulaire (FDM).
 
 Outre le service de modèle de données de formulaire, vous pouvez spécifier une URL WSDL directe pour appeler un service Web. Cependant, un service de modèle de données de formulaire possède de nombreux avantages et constitue l’approche recommandée pour appeler un service.
 
@@ -230,7 +243,7 @@ Par exemple, cela vous permet de définir des règles pour afficher une zone de 
 
 ![Définir la propriété](assets/set_property_rule_new.png)
 
-Pour définir une règle basée sur une fonction personnalisée, sélectionnez **[!UICONTROL Sortie de fonction]** dans la liste déroulante, puis faites glisser et déposez une fonction personnalisée à partir de l’onglet **[!UICONTROL Fonctions]**. Si l’action de condition est remplie, la zone de saisie de texte est visible.
+Pour définir une règle basée sur une fonction personnalisée, sélectionnez **[!UICONTROL Sortie de fonction]** dans la liste déroulante, puis faites glisser et déposez une fonction personnalisée à partir de l’onglet **[!UICONTROL Fonctions]**. Si la condition de l’action est remplie, la zone de saisie de texte devient visible.
 
 Pour définir une règle basée sur un objet de formulaire, sélectionnez **[!UICONTROL Objet de formulaire]** dans la liste déroulante, puis faites glisser et déposez un objet de formulaire à partir de l’onglet **[!UICONTROL Objets de formulaire]**. Si l’action de condition est remplie, la zone de saisie de texte est visible dans le formulaire adaptatif.
 
@@ -401,9 +414,9 @@ Pour lancer l’interface utilisateur de l’éditeur de règles :
 
    ![create-rules](assets/create-rules.png)
 
-   Toutes les règles existantes pour les objets de formulaire sélectionnés sont répertoriées dans cet écran. Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](rule-editor.md#p-manage-rules-p).
+   Toutes les règles existantes pour les objets de formulaire sélectionnés sont répertoriées dans cette vue. Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](rule-editor.md#p-manage-rules-p).
 
-1. Sélectionnez **[!UICONTROL Créer]** pour créer une règle. L’éditeur visuel de l’interface utilisateur de l’éditeur de règles s’affiche par défaut la première fois que vous lancez l’éditeur de règles.
+1. Sélectionnez **[!UICONTROL Créer]** pour créer une règle. L’éditeur visuel de l’interface d&#39;utilisation de l’éditeur de règles s’affiche par défaut la première fois que vous ouvrez l’éditeur de règles.
 
    ![Interface utilisateur de l’éditeur de règles](assets/rule-editor-ui.png)
 
@@ -477,7 +490,7 @@ Examinons comment créer une règle dans l’éditeur visuel en utilisant l’ex
 La section Conditions de prêt dans l’exemple de formulaire de demande de prêt requiert des demandeurs et demandeuses de spécifier leur état civil, leur salaire et, si ils ou elles sont marié(e)s, le salaire de leur conjoint(e). D’après les entrées de l’utilisateur ou utilisatrice, la règle permet de calculer le montant d’éligibilité du prêt et l’affiche dans le champ Éligibilité de prêt. Appliquez les règles suivantes pour mettre en œuvre le scénario :
 
 * Le champ Salaire de l’époux ou de l’épouse s’affiche uniquement lorsque la valeur État civil est Marié ou Mariée.
-* Le montant d’éligibilité de prêt représente 50 % du salaire total.
+* Le montant du prêt admissible représente 50 % du salaire total.
 
 Pour créer des règles :
 
@@ -505,7 +518,7 @@ Pour créer des règles :
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
-   Vous avez défini la condition comme `When Marital Status is equal to Married`. Définissez ensuite l’action à effectuer si cette condition est True.
+   Vous avez défini la condition comme `When Marital Status is equal to Married`. Définissez ensuite l’action à effectuer si cette condition est vraie.
 
 1. Dans l’instruction Alors, sélectionnez **[!UICONTROL Afficher]** dans le menu déroulant **[!UICONTROL Sélectionner une action]**.
 
@@ -536,7 +549,7 @@ Pour créer des règles :
 
    >[!NOTE]
    >
-   > Vous pouvez également créer une règle Afficher dans le champ Salaire du conjoint ou de la conjointe, au lieu de deux règles Lorsque dans le champ État civil pour mettre en œuvre le même comportement.
+   > Vous pouvez également créer une règle Afficher dans le champ Salaire du conjoint ou de la conjointe, au lieu d’une règle Lorsque dans le champ État civil, pour mettre en œuvre le même comportement.
 
    ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
@@ -548,7 +561,7 @@ Pour créer des règles :
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
-1. Choisissez **[!UICONTROL Sélectionner l’option]** et sélectionnez **[!UICONTROL Expression mathématique]**. Un champ permettant de saisir l’expression mathématique s’ouvre.
+1. Choisissez **[!UICONTROL Sélectionner l’option]** et sélectionnez **[!UICONTROL Expression mathématique]**. Un champ permettant de saisir une expression mathématique s’ouvre.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
@@ -574,7 +587,7 @@ Pour créer des règles :
    >
    >Vous pouvez créer des expressions complexes à l’aide de composants, fonctions, expressions mathématiques et valeurs de propriété dans le champ Sélectionner une option.
 
-   Créez ensuite une condition qui, lorsqu’elle renvoie True, permet que l’expression s’exécute.
+   Créez ensuite une condition qui, lorsqu’elle renvoie True, exécute l’expression.
 
 1. Sélectionnez **[!UICONTROL Ajouter une condition]** pour ajouter une instruction Lorsque.
 
@@ -616,7 +629,7 @@ Vous pouvez créer une règle combinée pour contrôler la visibilité du champ 
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -718,7 +731,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=fr#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -851,7 +864,7 @@ Pour copier-coller des règles, procédez comme suit :
 
    >[!NOTE]
    >
-   >Vous pouvez coller une règle dans un autre objet de formulaire uniquement si cet objet de formulaire prend en charge les événement de la règle copiée. Par exemple, un bouton prend en charge l’événement Cliquer. Vous pouvez coller une règle avec un événement Cliquer sur un bouton mais pas dans une case à cocher.
+   >Vous pouvez coller une règle dans un autre objet de formulaire uniquement si cet objet de formulaire prend en charge les évènements de la règle copiée. Par exemple, un bouton prend en charge l’évènement de clic. Vous pouvez coller une règle avec un événement Cliquer sur un bouton mais pas dans une case à cocher.
 
 1. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer la règle.
 
@@ -885,7 +898,7 @@ Lorsque la date remplie est antérieure à la date actuelle, le formulaire affic
 
 L’éditeur de règles vous permet de créer des conditions qui comparent deux nombres.
 
-Voici un exemple de condition, qui contient un objet de texte statique si le demandeur habite à l’adresse actuelle depuis moins de 36 mois.
+Voici un exemple de condition qui affiche un objet de texte statique si le demandeur ou la demandeuse habite à l’adresse actuelle depuis moins de 36 mois.
 
 ![Condition de comparaison des nombres](assets/numbercomparisoncondition.png)
 
@@ -905,9 +918,9 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### Appeler service de modèle de données de formulaire {#invoke}
 
-Imaginons un service web `GetInterestRates` prenant le montant du prêt, la durée et la cote de solvabilité du demandeur ou de la demandeuse comme valeurs d’entrée et renvoyant un plan de prêt incluant le montant des mensualités et le taux d’intérêt. Vous créez un modèle de données de formulaire à l’aide du service web comme source de données. Vous ajoutez des objets de modèle de données et un service `get` au modèle de formulaire. Le service s’affiche sur l’onglet Services du modèle de données de formulaire. Ensuite, créez un formulaire adaptatif incluant des champs des objets de modèle de données pour capturer les données saisies pour le montant et la durée du prêt et la cote de solvabilité. Ajoutez un bouton qui demande au service Web d’extraire les détails du plan. La sortie est renseignée dans les champs appropriés.
+Imaginons un service web `GetInterestRates` prenant le montant du prêt, la durée et la cote de solvabilité du demandeur ou de la demandeuse comme valeurs d’entrée et renvoyant un plan de prêt incluant le montant des mensualités et le taux d’intérêt. Vous créez un modèle de données de formulaire (FDM) à l’aide du service web comme source de données. Vous ajoutez des objets de modèle de données et un service `get` au modèle de formulaire. Le service s’affiche sur l’onglet Services du modèle de données de formulaire (FDM). Ensuite, créez un formulaire adaptatif incluant des champs des objets de modèle de données pour capturer les données saisies pour le montant et la durée du prêt et la cote de solvabilité. Ajoutez un bouton qui demande au service Web d’extraire les détails du plan. La sortie est renseignée dans les champs appropriés.
 
-La règle ci-dessous indique comment configurer l’action Appel du service pour accomplir l’exemple de scénario.
+La règle ci-dessous indique comment configurer l’action Appel du service pour réaliser ce scénario d’exemple.
 
 ![Exemple-invoke-services](assets/example-invoke-services.png)
 
@@ -951,7 +964,7 @@ Dans un formulaire de bon de commande, le tableau ci-dessous permet aux utilisat
 
 **A.** Ligne 1 **B.** Quantité **C.** Quantité totale
 
-Maintenant, vous souhaitez ajouter des quantités spécifiées dans la colonne Quantité de produit pour tous les produits et afficher la somme dans la cellule Quantité totale. Vous pouvez obtenir ce résultat en saisissant une règle Définir la valeur de dans la cellule Quantité totale, comme indiqué ci-dessous.
+Maintenant, vous souhaitez additionner les quantités indiquées dans la colonne Quantité de produit pour tous les produits et afficher la somme dans la cellule Quantité totale. Vous pouvez obtenir ce résultat en saisissant une règle Définir la valeur de dans la cellule Quantité totale, comme indiqué ci-dessous.
 
 ![Example-function-output](assets/example-function-output.png)
 

@@ -10,7 +10,18 @@ feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2454'
 ht-degree: 95%
@@ -155,7 +166,7 @@ Bien qu’Adobe ait documenté le processus de mise à niveau d’une instance A
 
 ![runbook-diagram](assets/runbook-diagram.png)
 
-Adobe vous présente les procédures de restauration et de mise à niveau dans la section [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md), ainsi que les instructions à suivre pour appliquer la mise à niveau lorsque vous effectuez une [mise à niveau sur place](/help/sites-deploying/in-place-upgrade.md). Ces instructions doivent être examinées et prises en compte avec l’architecture de votre système, les personnalisations et la tolérance aux temps d’arrêt afin de déterminer les procédures de basculement et de restauration appropriées que vous exécuterez lors de la mise à niveau. Toute modification de l’architecture ou des tailles de serveur doit être incluse lors de la rédaction de votre runbook personnalisé. Il est important de noter qu’il s&#39;agit d’une première version préliminaire. Pendant que votre équipe termine le contrôle qualité et les cycles de développement, et déploie la mise à niveau sur l’environnement d’évaluation, il est problable que vous ayez besoin de prendre des mesures supplémentaires. Idéalement, ce document doit contenir suffisamment d’informations pour permettre à un ou à une membre de votre personnel d’exploitation d’effectuer entièrement la mise à niveau à partir des informations qui y figurent.
+Adobe vous présente les procédures de restauration et de mise à niveau dans la section [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md), ainsi que les instructions à suivre pour appliquer la mise à niveau lorsque vous effectuez une [mise à niveau sur place](/help/sites-deploying/in-place-upgrade.md). Ces instructions doivent être examinées et prises en compte avec l’architecture de votre système, les personnalisations et la tolérance aux temps d’arrêt afin de déterminer les procédures de basculement et de restauration appropriées que vous exécuterez lors de la mise à niveau. Toute modification de l’architecture ou du dimensionnement des serveurs doit être incluse lors de la rédaction de votre runbook personnalisé. Il est important de noter qu’il s&#39;agit d’une première version préliminaire. Pendant que votre équipe termine le contrôle qualité et les cycles de développement, et déploie la mise à niveau sur l’environnement d’évaluation, il est problable que vous ayez besoin de prendre des mesures supplémentaires. Idéalement, ce document doit contenir suffisamment d’informations pour permettre à un ou à une membre de votre personnel d’exploitation d’effectuer entièrement la mise à niveau à partir des informations qui y figurent.
 
 ### Élaboration d’un plan de projet {#developing-a-project-plan}
 

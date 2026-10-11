@@ -5,14 +5,27 @@ topic-tags: forms-manager
 feature: Transaction Reports
 exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+solution: Experience Manager, Experience Manager Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 100%
-
 ---
-
 # API facturables des rapports de transaction pour AEM Forms sur JEE {#transaction-reports-billable-apis}
 
 AEM Forms sur JEE fournit plusieurs API pour envoyer, traiter et générer des documents. Certaines API sont comptabilisées comme des transactions et d’autres sont gratuites. Ce document fournit une liste de toutes les API comptabilisées comme des transactions. Voici quelques scénarios courants dans lesquels une API facturable est utilisée :
@@ -60,12 +73,12 @@ Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste 
   </tr>
   <tr>
    <td><a>ExportPDF</a></td>
-   <td>Exporte des fichiers Adobe PDF en types de fichiers pris en charge. </td>
+   <td>Exporte des PDF vers des types de fichiers pris en charge. </td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF2</a></td>
-   <td><p>Exporte des fichiers Adobe PDF en types de fichiers pris en charge.</p> </td>
+   <td><p>Exporte des PDF vers des types de fichiers pris en charge.</p> </td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
@@ -145,7 +158,7 @@ Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste 
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
    <td>Invokes the specified render method to generate a document of record using provided parameters.</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -181,7 +194,7 @@ Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste 
   </tr>
   <tr>
    <td><a>generatePrintedOutput</a></td>
-   <td>Convertit les documents XDP et PDF aux formats PostScript (PS), PCL (Printer Command Language) et ZPL. </td>
+   <td>Convertit des documents XDP et PDF aux formats PostScript (PS), PCL (Printer Command Language) et ZPL. </td>
    <td>Documents rendus</td>
   </tr>
   <tr>
@@ -209,13 +222,13 @@ Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste 
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
    <td>Renders PDF Form from XDP templates. The XDP templates are created in Forms Designer.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
    <td>Extracts data from a PDF Form or XDP templates</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -307,13 +320,13 @@ Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste 
 </table>
 
 L’utilisation de l’API d’appel est comptabilisée comme une transaction lorsque vous effectuez une ou plusieurs des opérations suivantes :
-1. Conversion de formats non PDF en formats PDF. Par exemple, la conversion du format XDP au format PDF.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
+1. Conversion de formats non-PDF en formats PDF. Par exemple, la conversion du format XDP au format PDF.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. Conversion du format PDF au format PDF/A.
-1. Conversion du format PDF aux formats non PDF. Les exemples incluent la transformation du format PDF au format Image ou la conversion du format PDF au format Texte.
+1. Conversion du format PDF aux formats non PDF. Les exemples incluent la transformation du format PDF au format image ou la conversion du format PDF au format texte.
 
 >[!NOTE]
 >
->* L’API Invoke du service Assembler peut appeler en interne une API facturable d’un autre service selon l’entrée. Ainsi, l’`invoke API` peut être comptabilisée comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend de l’entrée et des API internes appelées.
+>* L’API invoke du service Assembler peut appeler en interne une API facturable d’un autre service selon l’entrée. Ainsi, l’`invoke API` peut être comptabilisée comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend de l’entrée et des API internes appelées.
 >* Un seul document PDF produit à l’aide du service Assembler, comme `invoke` et `invokeDDX`, peut être comptabilisé comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend du code <!--DDX--> fourni.
 
 <!--
@@ -481,7 +494,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
    <td>Generates the PDF version of an interactive communication.</td>
    <td>Documents Rendered</td>
    <td>
@@ -546,4 +559,4 @@ Actions like submitting a PDF Form, using Agent UI to preview an interactive com
 ## Articles connexes
 
 * [Activation et affichage du rapport de transaction pour AEM Forms sur JEE](/help/forms/using/transaction-report-overview-jee.md)
-* [Enregistrement d’une transaction pour les API de composant personnalisées pour AEM Forms sur OSGi](/help/forms/using/record-transaction-custom-component-jee.md)
+* [Enregistrement d’une transaction pour les API de composant personnalisées pour AEM Forms sur JEE](/help/forms/using/record-transaction-custom-component-jee.md)

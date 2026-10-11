@@ -10,13 +10,29 @@ feature: Context Hub,Developing,Personalization
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: db974db1-cf49-4452-872e-5a56c5f1d391
+    internal-label: Context Hub
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2996'
-ht-degree: 97%
-
+source-wordcount: '3030'
+ht-degree: 96%
 ---
-
 # Présentation détaillée de ClientContext{#client-context-in-detail}
 
 >[!NOTE]
@@ -190,15 +206,15 @@ AEM fournit les composants de magasin de contexte genericstore et genericstorepr
 
 * Paires propriété-valeur : extension du composant `GenericStoreProperties`. Ce composant effectue automatiquement le rendu des magasins de paires propriété-valeur. Plusieurs points d’interaction sont fournis :
 
-   * `prolog.jsp` et `epilog.jsp` : interaction de composant qui vous permet d’ajouter une logique côté serveur avant ou après le rendu du composant.
+  * `prolog.jsp` et `epilog.jsp` : interaction de composant qui vous permet d’ajouter une logique côté serveur avant ou après le rendu du composant.
 
 * Données complexes : extension du composant `GenericStore`. Votre magasin de sessions a besoin d’une méthode de « moteur de rendu » qui est appelée chaque fois que le rendu du composant doit être effectué. La fonction de rendu est appelée avec deux paramètres :
 
-   * `@param {String} store`
-Magasin dont le rendu doit être effectué.
+  * `@param {String} store`
+    Magasin dont le rendu doit être effectué.
 
-   * `@param {String} divId`
-Identifiant du div dans lequel le rendu du magasin doit être effectué.
+  * `@param {String} divId`
+    Identifiant du div dans lequel le rendu du magasin doit être effectué.
 
 >[!NOTE]
 >
@@ -492,7 +508,7 @@ Créez une application CQ et ajoutez le composant geoloc.
 
 1. Ouvrez CRXDE Lite dans votre navigateur web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Cliquez avec le bouton droit de la souris sur le dossier `/apps`, puis cliquez sur Créer > Créer un dossier. Indiquez le nom `myapp`, puis cliquez sur OK.
-1. De même, sous `myapp`, créez un dossier nommé `contextstores`. &grave;&grave;
+1. De même, sous `myapp`, créez un dossier nommé `contextstores`. ``
 1. Cliquez avec le bouton droit de la souris sur le dossier `/apps/myapp/contextstores`, puis sélectionnez Créer > Créer un composant. Spécifiez les valeurs de propriété suivantes, puis cliquez sur Suivant :
 
    * Libellé : geoloc
@@ -607,7 +623,7 @@ Ajoutez le composant de lieu de stockage à ClientContext afin qu’il soit init
 
 Ouvrez la page d’accueil de Geometrixx Outdoors en mode d’édition, puis ouvrez ClientContext pour afficher les données du composant de lieu de stockage.
 
-1. Ouvrez la page anglaise du site Geometrixx Outdoors. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html))
+1. Ouvrez la page anglaise du site Geometrixx Outdoors. ([](https://localhost:4502/content/geometrixx-outdoors/en.html))
 1. Pour ouvrir le contexte client, appuyez sur Ctrl+Alt+C (Windows) ou Ctrl+Option+C (Mac).
 
 ## Création d’un ClientContext personnalisé {#creating-a-customized-client-context}
@@ -618,11 +634,11 @@ Pour créer un second ClientContext, dupliquez la branche :
 
 * Le sous-dossier :
   `/content`
-Contient le contenu du contexte client personnalisé.
+  Contient le contenu du contexte client personnalisé.
 
 * Le dossier :
   `/contextstores`
-vous permet de définir des configurations différentes pour les magasins de contexte.
+  vous permet de définir des configurations différentes pour les magasins de contexte.
 
 Pour utiliser votre contexte client personnalisé, modifiez la propriété .
 `path`

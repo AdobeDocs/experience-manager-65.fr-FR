@@ -1,16 +1,31 @@
 ---
 title: Workflows basés sur l’utilisation de Forms sur OSGi | Gestion des données utilisateur
-
 description: Workflows basés sur l’utilisation de Forms sur OSGi | Gestion des données utilisateur
-
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 role: Admin,User
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 97%
@@ -19,7 +34,7 @@ ht-degree: 97%
 
 Les workflows d’AEM basés sur Forms vous permettent d’automatiser des processus d’entreprise réels basés sur Forms. Les workflows se composent d’une série d’étapes qui s’exécutent dans un ordre spécifié dans le modèle de workflow associé. Chaque étape exécute une action spécifique, comme affecter une tâche à un utilisateur ou une utilisatrice ou envoyer un e-mail. Les workflows peuvent interagir avec des ressources du référentiel, les comptes d’utilisateurs et d’utilisatrices et les services. Par conséquent, les workflows peuvent coordonner des activités complexes qui impliquent tous les aspects d’Experience Manager.
 
-Les méthodes suivantes permettent de délencher ou de lancer un workflow basé sur Forms :
+Les méthodes suivantes permettent de déclencher ou de lancer un workflow basé sur Forms :
 
 * Envoi d’une demande depuis la boîte de réception AEM
 * Envoi d’une demande depuis l’application AEM [!DNL Forms]
@@ -37,7 +52,7 @@ Les emplacements de référentiel par défaut où se trouvent la payload, les br
 
 >[!NOTE]
 >
->Vous pouvez configurer différents emplacements pour stocker la payload, les brouillons et les données historiques lors de la création d’un workflow ou d’une application. Examinez le workflow ou l’application pour identifier les emplacements où les données ont été stockées.
+>Vous pouvez configurer différents emplacements pour stocker la payload, les brouillons et l’historique lors de la création d’un workflow ou d’une application. Examinez le workflow pour identifier les emplacements où les données ont été stockées.
 
 <table>
  <tbody>
@@ -71,12 +86,12 @@ Les emplacements de référentiel par défaut où se trouvent la payload, les br
 
 ## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
-Vous pouvez accéder aux données utilisateur et les supprimer d’une instance de workflow dans le référentiel. Pour cela, vous devez connaître l’ID de l’instance de workflow associé à l’utilisateur ou l’utilisatrice. Vous pouvez rechercher l’ID d’instance d’une instance de workflow à l’aide du nom de l’utilisateur ou de l’utilisatrice qui a initié l’instance de workflow ou qui est la personne désignée actuelle de l’instance de workflow.
+Vous pouvez accéder aux données utilisateur et les supprimer d’une instance de workflow dans le référentiel. Pour cela, vous devez connaître l’ID de l’instance de workflow associée à l’utilisateur ou l’utilisatrice. Vous pouvez rechercher l’ID d’instance d’une instance de workflow à l’aide du nom de l’utilisateur ou de l’utilisatrice qui a initié l’instance de workflow ou à qui l’instance de workflow est actuellement attribuée.
 
 Toutefois, dans les scénarios suivants d’identification des workflows associés à un initiateur ou une initiatrice, l’identification peut échouer ou les résultats peuvent être ambigus :
 
 * **Workflow déclenché par un dossier de contrôle** : il est impossible d’identifier une instance de workflow à l’aide de son initiateur ou initiatrice si le workflow est déclenché par un dossier de contrôle. Dans ce cas, les informations utilisateur sont codées dans les données stockées.
-* **Workflow initié à partir de l’instance de publication AEM** : toutes les instances de workflow sont créées à l’aide d’un utilisateur de service lorsque les formulaires adaptatifs, les communications interactives ou les lettres sont envoyés depuis l’instance de publication AEM. Dans ce cas, le nom d’utilisateur de la personne connectée n’est pas capturé dans les données de l’instance de workflow.
+* **Workflow initié à partir de l’instance de publication AEM** : toutes les instances de workflow sont créées à l’aide d’un utilisateur de service lorsque les formulaires adaptatifs, les communications interactives ou les lettres sont envoyés depuis l’instance de publication AEM. Dans ces cas, le nom d’utilisateur ou d’utilisatrice de la personne connectée n’est pas capturé dans les données de l’instance de workflow.
 
 ### Accès aux données utilisateur {#access}
 
@@ -135,7 +150,7 @@ Vous devez être administrateur ou administratrice AEM pour supprimer les donné
    * Chemins d’accès aux payloads des instances de workflow
    * Chemins d’accès aux brouillons et à l’historique des instances de workflow
 
-1. Effectuez cette étape pour des instances de workflow à l’état **EN COURS**,**SUSPENDU** ou **&#x200B;**&#x200B;OBSOLÈTE :
+1. Effectuez cette étape pour des instances de workflow à l’état **EN COURS**,**SUSPENDU** ou **** OBSOLÈTE :
 
    1. Accédez à `https://'[server]:[port]'/aem/start.html` et connectez-vous avec les informations d’identification de l’administrateur.
    1. Accédez à **[!UICONTROL Outils > Workflow > Instances]**.
@@ -150,7 +165,7 @@ Vous devez être administrateur ou administratrice AEM pour supprimer les donné
 
    >[!NOTE]
    >
-   >La suppression de l’instancier de workflow supprime l’instance de workflow pour tous les participantes et participants au workflow.
+   >La suppression du nœud d’instance de workflow supprime l’instance de workflow pour tous les participantes et participants au workflow.
 
 1. Répétez les étapes 2 à 6 pour toutes les instances de workflow identifiées pour un utilisateur ou une utilisatrice.
 1. Identifiez et supprimez les données de brouillon et d’envoi hors ligne dans la boîte d’envoi de l’application AEM [!DNL Forms] des participants au workflow afin d’éviter tout envoi au serveur.

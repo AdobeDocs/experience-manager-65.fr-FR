@@ -10,13 +10,22 @@ feature: Administering
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '626'
 ht-degree: 100%
-
 ---
-
 # Prise en charge RDBMS dans AEM 6.4{#rdbms-support-in-aem}
 
 ## Présentation {#overview}
@@ -39,11 +48,11 @@ Pour plus d’informations sur le niveau de prise en charge de la base de donné
 
 Le référentiel est créé lors de la configuration du service OSGi `DocumentNodeStoreService`. Il a été étendu pour prendre en charge la persistance de la base de données relationnelle en plus de MongoDB.
 
-Pour qu’il puisse fonctionner, une source de données doit être configurée avec AEM. Cela s’effectue via le fichier `org.apache.sling.datasource.DataSourceFactory.config`. Les pilotes JDBC pour les bases de données respectives doivent être fournis séparément en tant que lots OSGi dans la configuration locale.
+Pour qu’il puisse fonctionner, une source de données doit être configurée avec AEM. Cela s’effectue via le fichier `org.apache.sling.datasource.DataSourceFactory.config`. Les pilotes JDBC pour les bases de données respectives doivent être fournis séparément en tant que bundles OSGi dans la configuration locale.
 
-Pour obtenir des instructions sur la création des lots OSGi pour les pilotes JDBC, consultez cette [documentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) sur le site web d’Apache Sling.
+Pour obtenir des instructions sur la création des bundles OSGi pour les pilotes JDBC, consultez cette [documentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) sur le site web d’Apache Sling.
 
-Une fois les lots en place, suivez les étapes ci-dessous pour configurer AEM avec la persistance RDB :
+Une fois les bundles en place, suivez les étapes ci-dessous pour configurer AEM avec la persistance RDB :
 
 1. Assurez-vous que la base de données daemon est lancée et que votre base de données est active et prête à être utilisée avec AEM.
 1. Copiez le jar AEM 6.3 dans le répertoire de l’installation.
@@ -60,11 +69,11 @@ Une fois les lots en place, suivez les étapes ci-dessous pour configurer AEM av
    >
    >Pour plus d’informations sur la configuration de chaque base de données prise en charge, consultez les [Options de configuration de la source de données](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
 
-1. Ensuite, préparez les lots OSGi JDBC à utiliser avec AEM :
+1. Ensuite, préparez les bundles OSGi JDBC à utiliser avec AEM :
 
    1. Dans le fichier `crx-quickstart/install`, créez un dossier nommé `9`.
 
-   1. Placez le jar JDBC dans le nouveau dossier. 
+   1. Placez le jar JDBC dans le nouveau dossier.
 
 1. Enfin, lancez AEM avec les modes d’exécution `crx3` et `crx3rdb` :
 
@@ -84,11 +93,11 @@ Les options de configuration suivantes sont disponibles :
 
 * `driverClassName:` Le nom de classe du pilote JDBC. Cela varie en fonction de la base de données que vous souhaitez utiliser et du pilote nécessaire pour s’y connecter. Vous trouverez ci-dessous les noms de classe pour toutes les bases de données prises en charge par AEM :
 
-   * `org.postgresql.Driver` pour PostgreSQL
-   * `com.ibm.db2.jcc.DB2Driver` pour DB2
-   * `oracle.jdbc.OracleDriver` pour Oracle
-   *  `com.mysql.jdbc.Driver` pour MySQL et MariaDB (stade expérimental)
-   * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` pour Microsoft SQL Server (stade expérimental)
+  * `org.postgresql.Driver` pour PostgreSQL
+  * `com.ibm.db2.jcc.DB2Driver` pour DB2
+  * `oracle.jdbc.OracleDriver` pour Oracle
+  * `com.mysql.jdbc.Driver` pour MySQL et MariaDB (stade expérimental)
+  * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` pour Microsoft SQL Server (stade expérimental)
 
 * `username:` Le nom d’utilisateur avec lequel la base de données est exécutée.
 
@@ -101,7 +110,7 @@ Un format de chaîne d’URL différent est utilisé dans la configuration de la
 * `jdbc:postgresql:databasename` pour PostgreSQL
 * `jdbc:db2://localhost:port/databasename` pour DB2
 * `jdbc:oracle:thin:localhost:port:SID` pour Oracle
-*  `jdbc:mysql://localhost:3306/databasename` pour MySQL et MariaDB (stade expérimental)
+* `jdbc:mysql://localhost:3306/databasename` pour MySQL et MariaDB (stade expérimental)
 * `jdbc:sqlserver://localhost:1453;databaseName=name` pour Microsoft SQL Server (stade expérimental)
 
 ## Limites connues {#known-limitations}

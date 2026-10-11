@@ -1,6 +1,6 @@
 ---
 title: Utilisation du référentiel AEM Forms
-description: Gérez le référentiel AEM Forms pour créer des dossiers, écrire, répertorier, lire, mettre à jour et rechercher des ressources à l’aide de l’API Java et de l’API Web Service. En outre, découvrez comment créer des relations de ressources, verrouiller et supprimer des ressources.
+description: Gérer le référentiel AEM Forms pour créer des dossiers, écrire, répertorier, lire, mettre à jour et rechercher des ressources à l’aide de l’API Java et de l’API Web Service. En outre, découvrez comment créer des relations de ressources, verrouiller et supprimer des ressources.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,26 +9,40 @@ role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '9089'
 ht-degree: 100%
-
 ---
-
 # Utilisation du référentiel AEM Forms {#working-with-aem-forms-repository}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
 **À propos du service Repository**
 
-Le service Repository fournit du stockage de ressources et des services de gestion à AEM Forms. Lorsque des développeurs créent une application *AEM Forms*, ils peuvent déployer les ressources dans le référentiel plutôt que dans le système de fichiers. Les actifs peuvent être constitués de formulaires XML, de formulaires PDF (y compris de formulaires Acrobat), de fragments de formulaire, d’images, de profils, de politiques, de fichiers SWF, DDX et WSDL, de schémas XML et de données de test.
+Le service Repository fournit du stockage de ressources et des services de gestion à AEM Forms. Lorsque des développeurs créent une application *AEM Forms*, ils peuvent déployer les ressources dans le référentiel plutôt que dans le système de fichiers. Les ressources peuvent être constituées de tout type de ressources, notamment de formulaires XML, de PDF Forms (y compris des formulaires Acrobat), de fragments de formulaire, d’images, de profils, de politiques, de fichiers SWF, de fichiers DDX, de schémas XML, de fichiers WSDL et de données de test.
 
 Prenons l’exemple de l’application Forms suivante nommée *Applications/FormsApplication* :
 
 ![www_www_formrepository](assets/ww_ww_formrepository.png)
 
-Notez qu’un fichier nommé Loan.xdp se trouve dans le dossier Forms. Pour accéder à cette conception de formulaire, vous devez spécifier le chemin d’accès complet (y compris la version) : `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+Notez qu’un fichier nommé Loan.xdp se trouve dans le dossier FormsFolder. Pour accéder à cette conception de formulaire, vous devez spécifier le chemin d’accès complet (y compris la version) : `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
 
 >[!NOTE]
 >
@@ -46,7 +60,7 @@ Les valeurs suivantes présentent quelques exemples de valeurs URI :
 
 >[!NOTE]
 >
->Vous pouvez parcourir le référentiel AEM Forms à l’aide d’un navigateur web. Pour consulter le référentiel, saisissez l’URL suivante dans un navigateur web `https://[server name]:[server port]/repository`. Vous pouvez vérifier les résultats de démarrage rapide associés à la section Utilisation du référentiel AEM Forms à l’aide d’un navigateur web. Par exemple, si vous ajoutez du contenu au référentiel AEM Forms, vous pouvez afficher le contenu dans un navigateur web. (Voir [Démarrage rapide (mode SOAP) : écrire une ressource en utilisant l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
+>Vous pouvez parcourir le référentiel AEM Forms à l’aide d’un navigateur web. Pour consulter le référentiel, saisissez l’URL suivante dans un navigateur web `https://[server name]:[server port]/repository`. Vous pouvez vérifier les résultats du démarrage rapide associés à la section Utilisation du référentiel AEM Forms à l’aide d’un navigateur web. Par exemple, si vous ajoutez du contenu au référentiel AEM Forms, vous pouvez afficher le contenu dans un navigateur web. (Voir [Démarrage rapide (mode SOAP) : écrire une ressource en utilisant l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
 L’API Repository fournit un certain nombre d’opérations que vous pouvez utiliser pour stocker et récupérer des informations du référentiel. Par exemple, vous pouvez obtenir une liste des ressources ou récupérer des ressources spécifiques stockées dans le référentiel lorsqu’une ressource est nécessaire dans le cadre du traitement d’une application.
 
@@ -82,7 +96,7 @@ L’API Repository fournit un certain nombre d’opérations que vous pouvez uti
 
 Les dossiers (collections de ressources) sont utilisés pour stocker des objets (fichiers ou ressources) dans des regroupements organisés. Les dossiers peuvent contenir des ressources et d’autres dossiers, également appelés sous-dossiers. Les ressources ne peuvent être stockées que dans un seul dossier à la fois.
 
-Les fichiers héritent des listes de contrôle d’accès (ACL) des dossiers et les sous-dossiers héritent des ACL de leurs dossiers parents. Par conséquent, les dossiers parents doivent exister avant de pouvoir créer des dossiers enfants. L’IDE permet d’interagir uniquement dossier par dossier, et non fichier par fichier. Vous ne pouvez pas modifier les dossiers et il n’est pas nécessaire de le faire : un dossier ne contient pas de données lui-même. Il s’agit plutôt uniquement d’un conteneur pour les ressources qui contiennent des données. La liste de contrôle d’accès par défaut est une autorisation de niveau système, ce qui signifie que les utilisateurs doivent disposer d’autorisations de niveau système (lecture, écriture, traversée, gestion des listes de contrôle d’accès) jusqu’à ce qu’une personne leur donne des autorisations pour un dossier particulier. Les listes de contrôle d’accès ne fonctionnent que dans l’IDE.
+Les fichiers héritent des listes de contrôle d’accès (ACL) des dossiers et les sous-dossiers héritent des ACL de leurs dossiers parents. Par conséquent, les dossiers parents doivent exister avant de pouvoir créer des dossiers enfants. L’IDE permet d’interagir uniquement dossier par dossier, et non fichier par fichier. Vous ne pouvez pas modifier les dossiers et il n’est pas nécessaire de le faire : un dossier ne contient pas de données lui-même. Il s’agit uniquement d’un conteneur pour les ressources qui contiennent des données. La liste de contrôle d’accès par défaut est une autorisation de niveau système, ce qui signifie que les utilisateurs doivent disposer d’autorisations de niveau système (lecture, écriture, traversée, gestion des listes de contrôle d’accès) jusqu’à ce qu’une personne leur donne des autorisations pour un dossier particulier. Les listes de contrôle d’accès ne fonctionnent que dans l’IDE.
 
 >[!NOTE]
 >
@@ -107,11 +121,11 @@ Avant de pouvoir créer par programmation une collection de ressources, vous dev
 
 **Créer le dossier**
 
-Appelez la méthode du service Repository pour créer la collection de ressources et renseigner les informations d’identification dans la collection de ressources, y compris son UUID, son nom de dossier et sa description.
+Appelez la méthode du service Référentiel pour créer la collection de ressources et renseigner les informations d’identification dans la collection de ressources, y compris son UUID, son nom de dossier et sa description.
 
 **Écrire le dossier dans le référentiel**
 
-Appelez la méthode du service Repository pour écrire la collection de ressources, en spécifiant l’URI du dossier cible.
+Appelez la méthode du service Référentiel pour écrire la collection de ressources, en spécifiant l’URI du dossier cible.
 
 **Voir également**
 
@@ -123,7 +137,7 @@ Appelez la méthode du service Repository pour écrire la collection de ressourc
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrages rapides de l’API Repository Service](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Démarrages rapides de l’API du service Référentiel](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Créer des dossiers à l’aide de l’API Java {#create-folders-using-the-java-api}
 
@@ -171,11 +185,11 @@ Créez un dossier à l’aide de l’API Repository Service (Java) :
 
 ### Créer des dossiers à l’aide de l’API Web Service {#create-folders-using-the-web-service-api}
 
-Créez un dossier à l’aide de l’API Repository Service (Web Service) :
+Créez un dossier à l’aide de l’API du service Référentiel (service web) :
 
 1. Inclure les fichiers du projet
 
-   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL du référentiel à l’aide de base64.
+   * Créez un assemblage client Microsoft .NET qui consomme le WSDL du référentiel à l’aide de base64.
    * Référencez l’assemblage client Microsoft .NET.
 
 1. Création du client de service
@@ -209,7 +223,7 @@ Créez un dossier à l’aide de l’API Repository Service (Web Service) :
 
 Vous pouvez créer des ressources à un emplacement donné dans le référentiel. La taille de fichier naturelle est soumise aux restrictions de la base de données et au délai d’expiration de la session. Pour la configuration par défaut, les fichiers sont limités à 25 Mo. Pour augmenter ou réduire la taille maximale du fichier, vous devez modifier la configuration de la base de données.
 
-L’écriture de ressources équivaut à stocker des données dans le référentiel. Une fois que vous avez écrit une ressource dans le référentiel, elle devient accessible à tous les clients de l’écosystème de référentiel. Lorsque vous écrivez des ressources, telles que des schémas XML, des fichiers XDP et des fichiers XSD, dans le référentiel, le contenu est analysé en fonction du type MIME. Si le type MIME est pris en charge, l’analyseur détermine s’il existe une relation implicite avec d’autres contenus. Par exemple, si une feuille de style en cascade (CSS) comporte une URL relative qui fait référence à une page CSS commune, il est prévu que vous envoyiez également la page CSS commune dans le référentiel. La relation entre les deux ressources est stockée en tant que relation en attente pendant une période non ajustable de 30 jours. Lorsque vous envoyez la page CSS commune au référentiel au cours de la période de 30 jours, la relation est formée.
+L’écriture de ressources équivaut à stocker des données dans le référentiel. Une fois que vous avez écrit une ressource dans le référentiel, elle devient accessible à tous les clients de l’écosystème du référentiel. Lorsque vous écrivez des ressources, telles que des schémas XML, des fichiers XDP et des fichiers XSD, dans le référentiel, le contenu est analysé en fonction du type MIME. Si le type MIME est pris en charge, l’analyseur détermine s’il existe une relation implicite avec d’autres contenus. Par exemple, si une feuille de style en cascade (CSS) comporte une URL relative qui fait référence à un fichier CSS commun, il est prévu que vous envoyiez également ce fichier CSS commun dans le référentiel. La relation entre les deux ressources est stockée en tant que relation en attente pendant une période non ajustable de 30 jours. Lorsque vous envoyez le fichier CSS commun au référentiel au cours de la période de 30 jours, la relation est formée.
 
 Lorsque vous créez une ressource, la liste de contrôle d’accès (ACL) est héritée du dossier parent. Le dossier racine dispose d’autorisations au niveau du système jusqu’à la création d’une ressource ou d’un dossier initial, auquel cas les autorisations ACL par défaut sont accordées à la ressource ou au dossier.
 
@@ -262,11 +276,11 @@ Appelez la méthode du service Repository pour écrire la ressource, en spécifi
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrages rapides de l’API Repository Service](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Démarrages rapides de l’API du service Référentiel](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Écrire des ressources à l’aide de l’API Java {#write-resources-using-the-java-api}
 
-Écrivez une ressource à l’aide de l’API Repository Service (Java) :
+Écrivez une ressource à l’aide de l’API du service de référentiel (Java) :
 
 1. Inclure les fichiers du projet
 
@@ -315,13 +329,13 @@ Appelez la méthode du service Repository pour écrire la ressource, en spécifi
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Écrire des ressources à l’aide de l’API Web Service {#write-resources-using-the-web-service-api}
+### Écrire des ressources à l’aide de l’API de service web {#write-resources-using-the-web-service-api}
 
-Écrivez une ressource à l’aide de l’API Repository Service (Web Service) :
+Écrivez une ressource à l’aide de l’API du service de référentiel (service web) :
 
 1. Inclure les fichiers du projet
 
-   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL du référentiel à l’aide de base64.
+   * Créez un assemblage client Microsoft .NET qui consomme le WSDL du référentiel à l’aide de base64.
    * Référencez l’assemblage client Microsoft .NET.
 
 1. Création du client de service
@@ -366,7 +380,7 @@ Vous pouvez découvrir des ressources en les répertoriant. Une requête est ex�
 
 Une fois vos ressources organisées, vous pouvez inspecter la structure que vous avez créée en visualisant une branche particulière de la structure, comme vous le feriez dans un système d’exploitation.
 
-La liste des ressources fonctionne par relation : les ressources sont membres de dossiers. L’appartenance est représentée par une relation de type « membre de ». Lorsque vous répertoriez les ressources dʼun dossier donné, vous recherchez les ressources qui sont associées à un dossier donné par la relation « membre de ». Les relations sont directionnelles : un membre d’une relation possède une source qui est un membre de la cible. La source est la ressource ; la cible est le dossier parent.
+La liste des ressources fonctionne par relation : les ressources sont membres de dossiers. L’appartenance est représentée par une relation de type « membre de ». Lorsque vous répertoriez les ressources dʼun dossier donné, vous recherchez les ressources qui sont associées à un dossier donné par la relation « membre de ». Les relations sont directionnelles : un membre d’une relation possède une source qui est un membre de la cible. La source est la ressource ; la cible est le dossier parent.
 
 >[!NOTE]
 >
@@ -399,9 +413,9 @@ Appelez la méthode du service Repository pour récupérer la liste des ressourc
 
 **Voir également**
 
-[Liste des ressources à l’aide de l’API Java](aem-forms-repository.md#list-resources-using-the-java-api)
+[Répertorier les ressources à l’aide de l’API Java](aem-forms-repository.md#list-resources-using-the-java-api)
 
-[Liste des ressources à l’aide de l’API de service Web](aem-forms-repository.md#list-resources-using-the-web-service-api)
+[Répertorier les ressources à l’aide de l’API de service Web](aem-forms-repository.md#list-resources-using-the-web-service-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -409,7 +423,7 @@ Appelez la méthode du service Repository pour récupérer la liste des ressourc
 
 [Démarrages rapides de l’API Repository Service](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### Liste des ressources à l’aide de l’API Java {#list-resources-using-the-java-api}
+### Répertorier les ressources à l’aide de l’API Java {#list-resources-using-the-java-api}
 
 Répertoriez les ressources à l’aide de l’API du service Repository (Java) :
 
@@ -425,7 +439,7 @@ Répertoriez les ressources à l’aide de l’API du service Repository (Java)�
 
    Spécifiez l’URI de la collection de ressources à interroger. Dans ce cas, son URI est `"/testFolder"`. L’URI est stocké en tant qu’objet `java.lang.String`.
 
-1. Récupération de la liste des ressources
+1. Récupérer la liste des ressources
 
    Appelez la méthode `listMembers` de l’objet `ResourceRepositoryClient` et transmettez l’URI du dossier.
 
@@ -435,13 +449,13 @@ Répertoriez les ressources à l’aide de l’API du service Repository (Java)�
 
 [Inscription des ressources](aem-forms-repository.md#listing-resources).
 
-[Démarrage rapide (mode SOAP) : inscription de ressources à l’aide de l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
+[Démarrage rapide (mode SOAP) : répertorier des ressources à l’aide de l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Liste des ressources à l’aide de l’API de service Web {#list-resources-using-the-web-service-api}
+### Répertorier les ressources à l’aide de l’API de service web {#list-resources-using-the-web-service-api}
 
 Inscription de ressources à l’aide de l’API du service Repository (service Web) :
 
@@ -458,7 +472,7 @@ Inscription de ressources à l’aide de l’API du service Repository (service 
 
    Spécifiez une chaîne contenant l’URI du dossier à interroger. Dans ce cas, son URI est `"/testFolder"`. Lorsque vous utilisez un langage conforme au framework Microsoft .NET (C#, par exemple), stockez l’URI dans un objet `System.String`.
 
-1. Récupération de la liste des ressources
+1. Récupérer la liste des ressources
 
    Appelez la méthode `listMembers` de l’objet `RepositoryServiceService` et transmettez l’URI du dossier en tant que premier paramètre. Transmettez `null` pour les deux autres paramètres.
 
@@ -468,11 +482,11 @@ Inscription de ressources à l’aide de l’API du service Repository (service 
 
 [Inscription des ressources](aem-forms-repository.md#listing-resources).
 
-[Appeler AEM Forms en utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Appeler AEM Forms en utilisant l’encodage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 ## Lecture des ressources {#reading-resources}
 
-Vous pouvez récupérer des ressources à partir d’un emplacement donné dans le référentiel afin de lire leur contenu et leurs métadonnées. Le workflow est dirigé par un formulaire d’initialisation. Le processus a toutes les permissions nécessaires pour lire le formulaire. Le système récupère le formulaire de données et lit le contenu du référentiel. Le référentiel donne accès au contenu et aux métadonnées (la possibilité de savoir que la ressource existe).
+Vous pouvez récupérer des ressources à partir d’un emplacement donné dans le référentiel afin de lire leur contenu et leurs métadonnées. Le workflow est précédé d’un formulaire d’initialisation. Le processus a toutes les permissions nécessaires pour lire le formulaire. Le système récupère le formulaire de données et lit le contenu du référentiel. Le référentiel donne accès au contenu et aux métadonnées (la possibilité de savoir que la ressource existe).
 
 Le référentiel dispose des quatre types d’autorisations suivants :
 
@@ -558,7 +572,7 @@ Lire une ressource à l’aide de l’API du service Repository (Java) :
 
 ### Lire les ressources à l’aide de l’API de service web {#reading-resources-using-the-web-service-api}
 
-Lire une ressource à l’aide de l’API du service Repository (service web) :
+Lire une ressource à l’aide de l’API du service Référentiel (service web) :
 
 1. Inclure les fichiers du projet
 
@@ -581,15 +595,15 @@ Lire une ressource à l’aide de l’API du service Repository (service web) :
 
 [Lecture des ressources](aem-forms-repository.md#reading-resources)
 
-[Appeler AEM Forms en utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Appeler AEM Forms en utilisant l’encodage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 ## Mise à jour des ressources {#updating-resources}
 
 Vous pouvez récupérer et mettre à jour le contenu des ressources dans le référentiel. Lorsque vous mettez à jour des ressources, le contrôle d’accès à ces ressources reste inchangé entre les versions. Lorsque vous effectuez une mise à jour, vous avez la possibilité d’incrémenter la version majeure. Si vous ne choisissez pas d’incrémenter la version majeure, la version mineure est automatiquement mise à jour.
 
-Lorsque vous mettez à jour une ressource, la nouvelle version est créée en fonction des attributs de ressource spécifiés. Lorsque vous mettez à jour une ressource, vous spécifiez deux paramètres importants : l’URI cible et une instance de ressource contenant toutes les métadonnées mises à jour. Il est important de noter que même si vous ne modifiez pas un attribut donné (par exemple, le nom), cet attribut reste obligatoire dans lʼinstance que vous transmettez. Les relations créées lors de l’analyse du contenu sont ajoutées à la version spécifique et ne sont pas transférées, sauf indication contraire.
+Lorsque vous mettez à jour une ressource, la nouvelle version est créée en fonction des attributs de ressource spécifiés. Lorsque vous mettez à jour une ressource, vous spécifiez deux paramètres importants : l’URI cible et une instance de ressource contenant toutes les métadonnées mises à jour. Il est important de noter que même si vous ne modifiez pas un attribut donné (par exemple, le nom), cet attribut reste obligatoire dans l’instance que vous transmettez. Les relations créées lors de l’analyse du contenu sont ajoutées à la version spécifique et ne sont pas transférées, sauf indication contraire.
 
-Par exemple, si vous mettez à jour un fichier XDP qui contient des références à d’autres ressources, ces références supplémentaires seront également enregistrées. Supposons que la version 1.0 de form.xdp possède deux références externes : un logo et une feuille de style. Vous mettez à jour le fichier form.xdp, de sorte quʼil possède maintenant trois références : un logo, une feuille de style et un fichier de schéma. Lors de la mise à jour, le référentiel ajoute la troisième relation (au fichier de schéma) à sa table de relations en attente. Une fois que le fichier de schéma est présent dans le référentiel, la relation est automatiquement formée. Cependant, si la version 2.0 de form.xdp n’utilise plus le logo, la version 2.0 de form.xdp nʼaura pas de relation avec le logo.
+Par exemple, si vous mettez à jour un fichier XDP qui contient des références à d’autres ressources, ces références supplémentaires seront également enregistrées. Supposons que la version 1.0 de form.xdp possède deux références externes : un logo et une feuille de style. Vous mettez à jour le fichier form.xdp, de sorte qu’il possède maintenant trois références : un logo, une feuille de style et un fichier de schéma. Lors de la mise à jour, le référentiel ajoute la troisième relation (au fichier de schéma) à sa table de relations en attente. Une fois que le fichier de schéma est présent dans le référentiel, la relation est automatiquement formée. Cependant, si la version 2.0 de form.xdp n’utilise plus le logo, la version 2.0 de form.xdp nʼaura pas de relation avec le logo.
 
 Toutes les opérations de mise à jour sont de nature atomique et transactionnelle. Par exemple, si deux utilisateurs lisent la même ressource et décident tous deux de mettre à jour la version 1.0 vers la version 2.0, lʼun dʼeux réussira et lʼautre échouera, lʼintégrité du référentiel sera maintenue et les deux utilisateurs recevront un message confirmant le succès ou lʼéchec. Si la transaction n’est pas validée, elle sera restaurée en cas de défaillance de la base de données et expirera ou sera restaurée en fonction du serveur d’applications.
 
@@ -650,7 +664,7 @@ Pour mettre à jour une ressource à l’aide de l’API du service Repository (
 
 1. Récupérer la ressource à mettre à jour
 
-   Spécifier lʼURI de la ressource pour récupérer et lire la ressource. Dans cet exemple, l’URI de la ressource est `"/testFolder/testResource"`.
+   Spécifiez l’URI de la ressource à récupérer, puis lisez cette ressource. Dans cet exemple, l’URI de la ressource est `"/testFolder/testResource"`.
 
 1. Mettre à jour la ressource
 
@@ -710,13 +724,13 @@ Pour mettre à jour une ressource en utilisant l’API Repository (service web)
 
 Vous pouvez construire des requêtes utilisées pour rechercher des ressources dans le référentiel, y compris l’historique, les ressources associées et les propriétés.
 
-Vous pouvez récupérer les ressources associées pour déterminer les dépendances entre un formulaire et ses fragments. Par exemple, si vous disposez d’un formulaire, vous pouvez déterminer les fragments ou les ressources externes qu’il utilise. Si vous disposez d’une image, vous pouvez également découvrir les formulaires qui l’utilisent. Vous pouvez également rechercher des ressources associées à l’aide du filtrage basé sur les propriétés. Par exemple, vous pouvez rechercher tous les formulaires qui utilisent une image avec un nom spécifié, ou trouver toute image utilisée par un formulaire avec un nom spécifié. Vous pouvez également effectuer une recherche à l’aide des propriétés des ressources. Par exemple, vous pouvez effectuer une requête pour trouver tous les formulaires ou ressources dont le nom commence par une chaîne de caractères donnée qui peut inclure les caractères génériques « % » et « _ ». Gardez à lʼesprit que les recherches basées sur les propriétés ne sont pas basées sur les relations : ces recherches partent du principe que vous avez des connaissances spécifiques sur une ressource donnée.
+Vous pouvez récupérer les ressources associées pour déterminer les dépendances entre un formulaire et ses fragments. Par exemple, si vous disposez d’un formulaire, vous pouvez déterminer les fragments ou les ressources externes qu’il utilise. Si vous disposez d’une image, vous pouvez également découvrir les formulaires AEM Forms qui l’utilisent. Vous pouvez également rechercher des ressources associées à l’aide du filtrage basé sur les propriétés. Par exemple, vous pouvez rechercher tous les formulaires AEM Forms qui utilisent une image avec un nom spécifié, ou trouver toute image utilisée par un formulaire AEM Forms avec un nom spécifié. Vous pouvez également effectuer une recherche à l’aide des propriétés des ressources. Par exemple, vous pouvez effectuer une requête pour trouver tous les formulaires AEM Forms ou ressources dont le nom commence par une chaîne de caractères donnée qui peut inclure les caractères génériques « % » et « _ ». Gardez à lʼesprit que les recherches basées sur les propriétés ne sont pas basées sur les relations : ces recherches partent du principe que vous avez des connaissances spécifiques sur une ressource donnée.
 
 **Instructions de requête**
 
 Une *requête* contient une ou plusieurs instructions associées à des conditions de façon logique. Une *instruction* est constituée d’un opérande gauche, d’un opérateur et d’un opérande droit. De plus, vous pouvez spécifier l’ordre de tri à utiliser pour les résultats de la recherche. Lʼ&#x200B;*ordre de tri* contient des informations équivalentes à une clause SQL `ORDER BY` et est composé dʼéléments qui contiennent les attributs sur lesquels la recherche a été basée, ainsi quʼune valeur indiquant si lʼordre ascendant ou descendant doit être utilisé.
 
-Vous pouvez rechercher des ressources par programmation à l’aide de l’API Java du service Repository. Actuellement, il n’est pas possible d’utiliser l’API de service web pour rechercher des ressources.
+Vous pouvez rechercher des ressources par programmation à l’aide de l’API Java du service de référentiel. Actuellement, il n’est pas possible d’utiliser l’API de service web pour rechercher des ressources.
 
 **Comportement de tri**
 
@@ -739,7 +753,7 @@ Pour rechercher des ressources, procédez comme suit :
 1. Créez la requête utilisée dans la recherche.
 1. Créez lʼordre de tri des résultats de la recherche.
 1. Recherchez les ressources.
-1. Récupérez les ressources dans les résultats de la recherche.
+1. Récupérez les ressources dans les résultats de recherche.
 
 **Inclure les fichiers de projet**
 
@@ -838,7 +852,7 @@ Recherchez une ressource à l’aide de l’API Repository Service (Java) :
 
    La méthode renvoie une liste `java.util.List` d’objets `Resource` dans lʼordre de tri spécifié.
 
-1. Récupérer les ressources à partir des résultats de recherche
+1. Récupérez les ressources à partir des résultats de recherche
 
    Pour récupérer les ressources contenues dans les résultats de recherche, il faut itérer au sein de `List` et convertir chaque objet en `Resource` afin d’extraire ses informations. Dans cet exemple, le nom de chaque ressource est affiché.
 
@@ -860,9 +874,9 @@ Vous pouvez spécifier des relations entre les ressources dans le référentiel.
 * **Appartenance (système de fichiers)** : relation dans laquelle une ressource est située dans un dossier donné.
 * **Personnalisé** : relation que vous spécifiez entre les ressources. Par exemple, si une ressource est devenue obsolète et qu’une autre ressource a été introduite dans le référentiel, vous pouvez spécifier votre propre relation de remplacement.
 
-Vous pouvez créer vos propres relations personnalisées. Par exemple, si vous stockez un fichier HTML dans le référentiel et qu’il utilise une image, vous pouvez spécifier une relation personnalisée pour relier le fichier HTML avec l’image (puisque normalement seuls les fichiers XML sont associés aux images à l’aide d’une relation de dépendance définie par le référentiel). Un autre exemple de relation personnalisée est celui où vous souhaitez créer une vue différente du référentiel avec une structure de graphique cyclique au lieu d’une structure dʼarborescence. Vous pourriez définir un graphique circulaire ainsi quʼune visionneuse pour parcourir ces relations. Enfin, vous pouvez indiquer qu’une ressource remplace une autre ressource, même si les deux ressources sont complètement différentes. Dans ce cas, vous pouvez définir un type de relation en dehors de la plage réservée et créer une relation entre ces deux ressources. Votre application serait le seul client capable de détecter et de traiter la relation, et elle pourrait être utilisée pour effectuer des recherches sur cette relation.
+Vous pouvez créer vos propres relations personnalisées. Par exemple, si vous stockez un fichier HTML dans le référentiel et qu’il utilise une image, vous pouvez spécifier une relation personnalisée pour relier le fichier HTML avec l’image (puisque normalement seuls les fichiers XML sont associés aux images à l’aide d’une relation de dépendance définie par le référentiel). Un autre exemple de relation personnalisée est celui où vous souhaitez créer une vue différente du référentiel avec une structure de graphique cyclique au lieu d’une structure dʼarborescence. Vous pourriez définir un graphe circulaire ainsi qu’un observateur pour parcourir ces relations. Enfin, vous pouvez indiquer qu’une ressource remplace une autre ressource, même si les deux ressources sont complètement différentes. Dans ce cas, vous pouvez définir un type de relation en dehors de la plage réservée et créer une relation entre ces deux ressources. Votre application serait le seul client capable de détecter et de traiter la relation, et elle pourrait être utilisée pour effectuer des recherches sur cette relation.
 
-Vous pouvez spécifier par programmation les relations entre les ressources à lʼaide de l’API Java ou de service web du service Repository.
+Vous pouvez spécifier par programmation les relations entre les ressources à lʼaide de l’API Java ou de service web du service Référentiel.
 
 >[!NOTE]
 >
@@ -903,11 +917,11 @@ Appelez la méthode de service Repository pour créer et spécifier le type de r
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrages rapides de l’API Repository Service](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Démarrages rapides de l’API du service Référentiel](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Créer des ressources de relation à l’aide de l’API Java {#create-relationship-resources-using-the-java-api}
 
-Créez des ressources de relation à l’aide de l’API Java Repository Service et effectuez les tâches suivantes :
+Créez des ressources de relation à l’aide de l’API Java du service de référentiel ; effectuez les tâches suivantes :
 
 1. Inclure les fichiers du projet
 
@@ -948,7 +962,7 @@ Créez des ressources de relation à l’aide de l’API Java Repository Service
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Créer des ressources de relation à l’aide de l’API Web Service {#create-relationship-resources-using-the-web-service-api}
+### Créer des ressources de relation à l’aide de l’API de service web {#create-relationship-resources-using-the-web-service-api}
 
 Créez des ressources de relation à l’aide de l’API Repository (Web Service) :
 
@@ -961,9 +975,9 @@ Créez des ressources de relation à l’aide de l’API Repository (Web Service
 
    À l’aide de l’assemblage client Microsoft .NET, créez un objet `RepositoryServiceService` en appelant son constructeur par défaut. Définissez sa propriété `Credentials` en utilisant un objet `System.Net.NetworkCredential` contenant le nom dʼutilisateur et le mot de passe.
 
-1. Spécification des URI des ressources à relier
+1. Spécifiez les URI des ressources à relier
 
-   Spécifiez les URI des ressources à relier. Dans ce cas, étant donné que les ressources sont nommées `testResource1` et `testResource2` et se trouvent dans le dossier nommé `testFolder`, leurs URI sont `"/testFolder/testResource1"` et `"/testFolder/testResource2"`. Lors de l’utilisation d’un langage conforme à Microsoft .NET Framework (C#, par exemple), les URI sont stockés sous la forme d’un objet `System.String`. Dans cet exemple, les ressources sont d’abord écrites dans le référentiel et leurs URI sont récupérés. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
+   Spécifiez les URI des ressources à relier. Dans ce cas, étant donné que les ressources sont nommées `testResource1` et `testResource2` et se trouvent dans le dossier nommé `testFolder`, leurs URI sont `"/testFolder/testResource1"` et `"/testFolder/testResource2"`. Lors de l’utilisation d’un langage conforme à Microsoft .NET Framework (C#, par exemple), les URI sont stockés sous la forme d’un objet `System.String`. Dans cet exemple, les ressources sont d’abord écrites dans le référentiel et leurs URI sont récupérées. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
 
 1. Création de la relation
 
@@ -1032,15 +1046,15 @@ Créez une chaîne contenant l’URI de la ressource à verrouiller. La syntaxe 
 
 **Verrouiller la ressource**
 
-Appelez la méthode du service Repository pour verrouiller la ressource, en spécifiant l’URI, le type et la profondeur de verrouillage.
+Appelez la méthode du service de référentiel pour verrouiller la ressource, en spécifiant l’URI, le type et la profondeur de verrouillage.
 
 **Récupérer les verrous pour la ressource**
 
-Appelez la méthode du service Repository pour récupérer les verrous de la ressource, en spécifiant l’URI.
+Appelez la méthode du service de référentiel pour récupérer les verrous de la ressource, en spécifiant l’URI.
 
 **Déverrouiller la ressource**
 
-Appelez la méthode de service Repository pour déverrouiller la ressource, en spécifiant l’URI.
+Appelez la méthode du service de référentiel pour déverrouiller la ressource, en spécifiant l’URI.
 
 **Voir également**
 
@@ -1052,7 +1066,7 @@ Appelez la méthode de service Repository pour déverrouiller la ressource, en s
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrages rapides de l’API Repository Service](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Démarrages rapides de l’API du service Référentiel](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Verrouiller les ressources à l’aide de l’API Java {#lock-resources-using-the-java-api}
 
@@ -1084,7 +1098,7 @@ Verrouiller les ressources à l’aide de l’API du service Repository (Java) 
 
 1. Récupérer les verrouillages de la ressource
 
-   Appelez la méthode `getLocks` de l’objet `ResourceRepositoryClient` et transmettez l’URI de la ressource comme paramètre. La méthode renvoie une liste d’objets verrouillés par laquelle vous pouvez effectuer une itération. Dans cet exemple, le propriétaire, le niveau et la portée du verrouillage sont imprimés pour chaque objet en appelant les méthodes `getOwnerUserId`, `getDepth` et `getType` de chaque objet verrouillé, respectivement.
+   Appelez la méthode `getLocks` de l’objet `ResourceRepositoryClient` et transmettez l’URI de la ressource comme paramètre. La méthode renvoie une liste d’objets Lock que vous pouvez parcourir. Dans cet exemple, le propriétaire, le niveau et la portée du verrouillage sont imprimés pour chaque objet en appelant les méthodes `getOwnerUserId`, `getDepth` et `getType` de chaque objet verrouillé, respectivement.
 
 1. Déverrouiller la ressource
 
@@ -1145,11 +1159,11 @@ Pour verrouiller les ressources à l’aide de l’API du service Repository (se
 
 Vous pouvez supprimer des ressources par programmation d’un emplacement donné dans le référentiel à l’aide de l’API Java du service de référentiel (SOAP).
 
-Lorsque vous supprimez une ressource, la suppression est en principe permanente, bien que, dans certains cas, les référentiels ECM puissent stocker les versions de la ressource en fonction de leurs mécanismes d’historique. Par conséquent, lors de la suppression d’une ressource, il est important de s’assurer que vous n’aurez plus besoin de cette dernière. La suppression d’une ressource est généralement motivée par la nécessité d’augmenter l’espace disponible dans la base de données. Vous pouvez supprimer une version d’une ressource, mais en le faisant, vous devez spécifier l’identificateur de la ressource, et non son identificateur logique (LID) ou son chemin d’accès. Si vous supprimez un dossier, tous éléments y contenus, notamment les sous-dossiers et les ressources, seront automatiquement supprimés.
+Lorsque vous supprimez une ressource, la suppression est en principe permanente, bien que, dans certains cas, les référentiels ECM puissent stocker les versions de la ressource en fonction de leurs mécanismes d’historique. Par conséquent, lors de la suppression d’une ressource, il est important de s’assurer que vous n’aurez plus besoin de cette dernière. La suppression d’une ressource est généralement motivée par la nécessité d’augmenter l’espace disponible dans la base de données. Vous pouvez supprimer une version d’une ressource, mais dans ce cas, vous devez spécifier l’identifiant de la ressource, et non son identifiant logique (LID) ou son chemin d’accès. Si vous supprimez un dossier, tous les éléments qu’il contient, notamment les sous-dossiers et les ressources, sont automatiquement supprimés.
 
-Les ressources connexes ne sont pas supprimées. Par exemple, si un formulaire utilise le fichier logo.gif et que vous supprimez logo.gif, une relation est stockée dans le tableau de relation en attente. Alternativement, en ce qui concerne l’obsolescence de la version, définissez l’état de l’objet de la dernière version sur obsolète.
+Les ressources connexes ne sont pas supprimées. Par exemple, si un formulaire utilise le fichier logo.gif et que vous supprimez logo.gif, une relation est stockée dans le tableau de relation en attente. En alternative, pour rendre une version obsolète, définissez le statut de l’objet de la dernière version sur « obsolète ».
 
-Une opération de suppression n’est pas compatible avec les transactions dans les systèmes ECM. Par exemple, si vous tentez de supprimer 100 ressources et que l’opération échoue sur la 50e ressource, les 49 premières instances seront supprimées, mais ce ne sera pas le cas pour le reste. Dans le cas contraire, le comportement par défaut est la restauration (non-engagement).
+Une opération de suppression n’est pas sûre du point de vue transactionnel dans les systèmes ECM. Par exemple, si vous tentez de supprimer 100 ressources et que l’opération échoue sur la 50e ressource, les 49 premières instances seront supprimées, mais ce ne sera pas le cas pour le reste. Dans le cas contraire, le comportement par défaut est le retour arrière (absence de validation).
 
 >[!NOTE]
 >
@@ -1164,7 +1178,7 @@ Une opération de suppression n’est pas compatible avec les transactions dans 
 Pour supprimer une ressource, procédez de la manière suivante :
 
 1. Incluez les fichiers de projet.
-1. Créez un client de service Repository.
+1. Créez un client du service de référentiel.
 1. Indiquez l’URI de la ressource à supprimer.
 1. Supprimez la ressource.
 
@@ -1208,7 +1222,7 @@ Supprimez une ressource à l’aide de l’API de référentiel (Java) :
 
    Créez un objet `ResourceRepositoryClient` en utilisant son constructeur et en transmettant un objet `ServiceClientFactory` contenant des propriétés de connexion.
 
-1. Spécification de l’URI de la ressource à supprimer
+1. Spécifiez l’URI de la ressource à supprimer
 
    Spécifiez l’URI de la ressource à récupérer. Dans ce cas, puisque la ressource désignée par testResourceToBeDeleted se trouve dans le dossier nommé testFolder, son URI est `/testFolder/testResourceToBeDeleted`. L’URI est stocké en tant qu’objet `java.lang.String`. Dans cet exemple, la ressource est d’abord écrite dans le référentiel, puis son URI est récupéré. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
 
@@ -1220,15 +1234,15 @@ Supprimez une ressource à l’aide de l’API de référentiel (Java) :
 
 [Suppression des ressources](aem-forms-repository.md#deleting-resources)
 
-[Démarrage rapide (mode SOAP) : rechercher des ressources à l’aide de l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[Démarrage rapide (mode SOAP) : Recherche de ressources à l’aide de l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Suppression des ressources à l’aide de l’API de service web {#delete-resources-using-the-web-service-api}
+### Suppression de ressources à l’aide de l’API de service web {#delete-resources-using-the-web-service-api}
 
-Pour supprimer une ressource en utilisant l’API Repository (service web), procédez comme suit :
+Suppression d’une ressource à l’aide de l’API de référentiel (service web) :
 
 1. Inclure les fichiers du projet
 
@@ -1239,9 +1253,9 @@ Pour supprimer une ressource en utilisant l’API Repository (service web), proc
 
    À l’aide de l’assemblage client Microsoft .NET, créez un objet `RepositoryServiceService` en appelant son constructeur par défaut. Définissez sa propriété `Credentials` en utilisant un objet `System.Net.NetworkCredential` contenant le nom dʼutilisateur et le mot de passe.
 
-1. Spécification de l’URI de la ressource à supprimer
+1. Spécifiez l’URI de la ressource à supprimer
 
-   Spécifiez l’URI de la ressource à récupérer. Dans ce cas, comme la ressource nommée `testResourceToBeDeleted` se trouve dans le dossier `testFolder`, son URI est `"/testFolder/testResourceToBeDeleted"`. Dans cet exemple, la ressource est d’abord écrite dans le référentiel, puis son URI est récupéré. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
+   Spécifiez l’URI de la ressource à récupérer. Dans ce cas, comme la ressource nommée `testResourceToBeDeleted` se trouve dans le dossier `testFolder`, son URI est `"/testFolder/testResourceToBeDeleted"`. Dans cet exemple, la ressource est d’abord écrite dans le référentiel, puis son URI est récupérée. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
 
 1. Suppression de la ressource
 

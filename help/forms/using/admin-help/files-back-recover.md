@@ -9,13 +9,27 @@ exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2131'
 ht-degree: 98%
-
 ---
-
 # Fichiers à sauvegarder et à récupérer {#files-to-back-up-and-recover}
 
 >[!NOTE]
@@ -26,8 +40,8 @@ Les fichiers de données et de l’application à sauvegarder sont décrits plus
 
 Veuillez tenir compte des points suivants concernant la sauvegarde et la récupération :
 
-* La base de données doit être sauvegardée avant le stockage global de documents et le référentiel AEM.
-* Si vous avez besoin de faire descendre les nœuds dans un environnement organisé en grappes pour la sauvegarde, assurez-vous que les nœuds secondaires sont fermés avant le nœud principal. Dans le cas contraire, une incohérence peut survenir dans la grappe ou le serveur. En outre, le nœud principal doit être rendu actif avant tout nœud secondaire.
+* La base de données doit être sauvegardée avant le référentiel GDS et AEM.
+* Si vous avez besoin de faire descendre les nœuds dans un environnement organisé en grappes pour la sauvegarde, assurez-vous que les nœuds secondaires sont fermés avant le nœud principal. Dans le cas contraire, une incohérence peut survenir dans le cluster ou le serveur. En outre, le nœud principal doit être rendu actif avant tout nœud secondaire.
 * Pour l’opération de restauration d’un cluster, le serveur d’applications doit être arrêté pour chaque nœud du cluster.
 
 ## Répertoire de stockage global de documents {#global-document-storage-directory}
@@ -36,11 +50,11 @@ Le répertoire de stockage global de documents est utilisé pour stocker les fic
 
 Les documents d’entrée pour un appel de tâche asynchrone sont également stockés dans le répertoire de stockage global de documents et doivent être disponibles pour traiter les demandes. Il est donc important que vous preniez en compte la fiabilité du système de fichiers hébergeant le répertoire de stockage global de documents et que vous utilisiez une technologie RAID (Redundant Array of Independent Disks) ou toute autre technologie appropriée pour répondre à vos besoins en termes de niveau de qualité et de service.
 
-L’emplacement du répertoire de stockage global de documents est déterminé pendant le processus d’installation d’AEM Forms ou ultérieurement à l’aide de la console d’administration. En plus de conserver un emplacement de haute disponibilité pour le stockage global de documents, vous pouvez également activer le stockage de base de données pour les documents. Voir [Options de sauvegarde dans le cas de l’utilisation de la base de données pour le stockage de documents](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
+L’emplacement du répertoire de stockage global de documents est déterminé pendant le processus d’installation d’AEM Forms ou ultérieurement à l’aide de la console d’administration. En plus de conserver un emplacement de haute disponibilité pour GDS, vous pouvez également activer le stockage de base de données pour les documents. Voir [Options de sauvegarde dans le cas de l’utilisation de la base de données pour le stockage de documents](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
 
 ### Emplacement du répertoire de stockage global de documents {#gds-location}
 
-Si vous ne définissez pas le paramètre d’emplacement lors de l’installation, l’emplacement est défini par défaut sur le répertoire sous l’installation du serveur d’applications. Sauvegardez le répertoire suivant de votre serveur d’applications :
+Si vous laissez le paramètre d’emplacement vide lors de l’installation, l’emplacement correspond par défaut à un répertoire situé sous l’installation du serveur d’applications. Sauvegardez le répertoire suivant de votre serveur d’applications :
 
 * (JBoss) `[appserver root]/server/'server'/svcnative/DocumentStorage`
 * (WebLo gic) `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage`
@@ -53,17 +67,17 @@ Si vous avez installé le répertoire de stockage global de documents à un empl
 
 Dans un environnement organisé en cluster, le répertoire de stockage global de documents correspond généralement à un répertoire partagé sur le réseau et est accessible en lecture/écriture pour chaque nœud du cluster.
 
-L’emplacement du répertoire de stockage global de documents peut être modifié lors d’une récupération si l’emplacement d’origine n’est plus disponible. (Voir [Modification de l’emplacement du répertoire de stockage global de documents pendant la récupération](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)).
+L’emplacement du GDS peut être modifié lors d’une récupération si l’emplacement d’origine n’est plus disponible. (Voir [Modification de l’emplacement du répertoire de stockage global de documents pendant la récupération](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)).
 
 ### Options de sauvegarde dans le cas de l’utilisation de la base de données pour le stockage de documents {#backup-options-when-database-is-used-for-document-storage}
 
-Vous pouvez activer le stockage de documents d’AEM Forms dans la base de données d’AEM forms à l’aide de la console d’administration. Même si cette option conserve tous les documents persistants dans la base de données, AEM Forms a tout de même besoin du répertoire de stockage global de documents basé sur le système de fichiers, car il est utilisé pour stocker des fichiers et ressources permanents et temporaires associés aux sessions et aux appels d’AEM Foms.
+Vous pouvez activer le stockage de documents d’AEM Forms dans la base de données d’AEM Forms à l’aide de la console d’administration. Même si cette option conserve tous les documents persistants dans la base de données, AEM Forms a tout de même besoin du répertoire de stockage global de documents basé sur le système de fichiers, car il est utilisé pour stocker des fichiers et ressources permanents et temporaires associés aux sessions et aux appels d’AEM Foms.
 
-Lorsque vous sélectionnez l’option « Activer le stockage de documents dans la base de données » dans les paramètres de Core System dans Administration Console ou à l’aide du gestionnaire de configuration, AEM Forms n’autorise pas les modes de sauvegarde d’instantané et de sauvegarde de restauration. Par conséquent, vous n’avez pas besoin de gérer les modes de sauvegarde à l’aide d’AEM Forms. Si vous utilisez cette option, sauvegardez le répertoire de stockage global de documents une seule fois après avoir activé cette option. Lors de la récupération d’AEM Forms à partir d’une sauvegarde, il n’est pas nécessaire de renommer le répertoire de sauvegarde du stockage global de documents ni de restaurer ce dernier.
+Lorsque vous sélectionnez l’option « Activer le stockage de documents dans la base de données » dans les paramètres de Core System dans Administration Console ou à l’aide du gestionnaire de configuration, AEM Forms n’autorise pas les modes de sauvegarde d’instantané et de sauvegarde de restauration. Par conséquent, vous n’avez pas besoin de gérer les modes de sauvegarde à l’aide d’AEM Forms. Si vous utilisez cette option, sauvegardez le GDS une seule fois après avoir activé cette option. Lors de la récupération d’AEM Forms à partir d’une sauvegarde, il n’est pas nécessaire de renommer le répertoire de sauvegarde du stockage global de documents ni de restaurer ce dernier.
 
 ## Référentiel AEM {#aem-repository}
 
-Le référentiel AEM (crx-repository) est créé si crx-repository est configuré lors de l’installation d’AEM Forms. L’emplacement du répertoire crx-repository est déterminé pendant le processus d’installation d’AEM Forms. La sauvegarde et la restauration du référentiel AEM sont requises, ainsi que la base de données et le répertoire de stockage global de documents, pour que les données d’AEM Forms dans les formulaires soient cohérentes. Le référentiel AEM contient des données pour la solution Correspondence Management, Forms Manager et AEM Forms Workspace.
+Le référentiel AEM (crx-repository) est créé si crx-repository est configuré lors de l’installation d’AEM Forms. L’emplacement du répertoire crx-repository est déterminé pendant le processus d’installation d’AEM Forms. La sauvegarde et la restauration du référentiel AEM sont requises, ainsi que la base de données et le GDS, pour assurer la cohérence des données d’AEM Forms dans AEM Forms. Le référentiel AEM contient des données pour la solution Correspondence Management, Forms Manager et AEM Forms Workspace.
 
 ### Solution Correspondence Management {#correspondence-management-solution}
 
@@ -87,19 +101,19 @@ Il permet la gestion des tâches sur les clients sans Flash Player ni Adobe Re
 
 ## Base de données AEM Forms {#aem-forms-database}
 
-La base de données d’AEM Forms stocke du contenu tel que des artefacts de formulaire, des configurations de service, un état de traitement et des références de base de données dans les fichiers du répertoire de stockage global de documents et du répertoire racine de stockage de contenu (pour Content Services). Les sauvegardes de la base de données peuvent être effectuées en temps réel sans interruption de service, et la récupération peut être effectuée à un moment précis ou lors d’un changement particulier. Cette section décrit comment configurer votre base de données pour qu’elle puisse être sauvegardée en temps réel.
+La base de données d’AEM Forms stocke du contenu tel que des artefacts de formulaire, des configurations de service, un état de traitement et des références de base de données à des fichiers dans le GDS et le répertoire racine de stockage de contenu (pour Content Services). Les sauvegardes de la base de données peuvent être effectuées en temps réel sans interruption de service, et la récupération peut être effectuée à un moment précis ou lors d’un changement particulier. Cette section décrit comment configurer votre base de données pour qu’elle puisse être sauvegardée en temps réel.
 
 Sur un système AEM Forms correctement configuré, l’administrateur ou l’administratrice système et l’administrateur ou l’administratrice de base de données peuvent facilement collaborer pour remettre le système dans un état connu et cohérent.
 
-Pour sauvegarder la base de données en temps réel, vous devez utiliser le mode instantané ou configurer votre base de données pour qu’elle s’exécute dans le mode de journalisation spécifié. Cela permet de sauvegarder vos fichiers de base de données tant que la base de données est ouverte et disponible pour utilisation. En outre, la base de données conserve ses journaux de restauration et de transaction lorsqu’elle s’exécute dans ces modes.
+Pour sauvegarder la base de données en temps réel, vous devez utiliser le mode instantané ou configurer votre base de données pour qu’elle s’exécute dans le mode de journalisation spécifié. Cela permet de sauvegarder vos fichiers de base de données tant que la base de données est ouverte et disponible. En outre, la base de données conserve ses journaux de restauration et de transaction lorsqu’elle s’exécute dans ces modes.
 
 >[!NOTE]
 >
->Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[&#x200B; Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (Obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus centrés sur l’humain. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
-Configurez votre base de données DB2 pour qu’elle s’exécute en mode de consignation en archives.
+Configurez votre base de données DB2 pour qu’elle s’exécute en mode journal d’archivage.
 
 >[!NOTE]
 >
@@ -118,7 +132,7 @@ Utilisez des sauvegardes instantanées ou configurez votre base de données Orac
 
 [Oracle Backup and Recovery :](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) explique en détail les concepts de sauvegarde et de récupération, les techniques les plus couramment employées pour utiliser Recovery Manager (RMAN) à des fins de sauvegarde, de récupération et de création de rapports, de même que la planification d’une politique de sauvegarde et de récupération.
 
-[Oracle Database Backup and Recovery User’s Guide :](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) fournit des informations détaillées sur l’architecture RMAN, les concepts et les mécanismes de sauvegarde et de récupération, des techniques de récupération avancées telles que les fonctions de récupération instantanée et de flashback de base de données, de même que le réglage des performances de sauvegarde et de récupération. Il couvre également la sauvegarde et la récupération gérées par l’utilisateur ou l’utilisatrice, à l’aide des installations du système d’exploitation hôte au lieu de RMAN. Ce volume est essentiel pour la sauvegarde et la récupération de déploiements de base de données plus sophistiqués et pour les scénarios de récupération avancés.
+[Oracle Database Backup and Recovery User’s Guide :](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) fournit des informations détaillées sur l’architecture RMAN, les concepts et les mécanismes de sauvegarde et de récupération, des techniques de récupération avancées telles que les fonctions de récupération instantanée et de flashback de base de données, de même que le réglage des performances de sauvegarde et de récupération. Il couvre également la sauvegarde et la récupération gérées par l’utilisateur ou l’utilisatrice, à l’aide des fonctionnalités du système d’exploitation hôte au lieu de RMAN. Ce volume est essentiel pour la sauvegarde et la récupération de déploiements de base de données plus sophistiqués et pour les scénarios de récupération avancés.
 
 [Oracle Database Backup and Recovery Reference :](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) présente des informations complètes sur la syntaxe et la sémantique de toutes les commandes RMAN et décrit les vues de base de données disponibles pour créer des rapports sur les activités de sauvegarde et de récupération.
 
@@ -139,7 +153,7 @@ Utilisez MySQLAdmin ou modifiez les fichiers INI dans Windows pour configurer v
 
 >[!NOTE]
 >
->Le mode de journalisation binaire par défaut pour MySQL est Instruction ; il est incompatible avec les tables utilisées par Content Services (obsolète). L’utilisation de la journalisation binaire dans ce mode par défaut entraîne l’échec de Content Services (obsolète). Si votre système inclut Content Services (obsolète), utilisez le mode de journalisation « Mixte ». Pour activer la journalisation « Mixte », ajoutez l’argument suivant au fichier my.ini : `binlog_format=mixed log-bin=logname`
+>Le mode de journalisation binaire par défaut pour MySQL est Instruction ; il est incompatible avec les tables utilisées par Content Services (obsolète). L’utilisation de la journalisation binaire dans ce mode par défaut entraîne l’échec de Content Services (obsolète). Si votre système inclut Content Services (obsolète), utilisez le mode de journalisation « Mixte ». Pour activer la journalisation « Mixte », ajoutez l’argument suivant au fichier my.ini : `binlog_format=mixed log-bin=logname`
 
 Vous pouvez utiliser l’utilitaire mysqldump pour obtenir la sauvegarde complète de la base de données. Les sauvegardes complètes sont requises, mais elles ne sont pas toujours pratiques. Elles génèrent des fichiers de sauvegarde volumineux et leur exécution prend du temps. Pour exécuter une sauvegarde incrémentielle, veillez à démarrer le serveur avec l’option `log-bin`, comme décrit dans la section précédente. A chaque fois que le serveur MySQL redémarre, il cesse d’écrire dans le journal binaire courant, en crée un nouveau, qui devient dès lors le nouveau journal binaire courant. Vous pouvez forcer un basculement manuel avec la commande `FLUSH LOGS SQL`. Après la première sauvegarde intégrale, les sauvegardes incrémentielles suivantes sont effectuées en utilisant l’utilitaire mysqladmin avec la commande `flush-logs`, qui crée le fichier journal suivant.
 
@@ -196,10 +210,10 @@ L’emplacement par défaut du répertoire racine d’index est `[aem-forms root
 
 ## Polices personnalisées {#customer-installed-fonts}
 
-Si vous avez installé des polices supplémentaires dans votre environnement AEM Forms, vous devez les sauvegarder séparément. Sauvegardez tous les répertoires de polices Adobe et de polices personnalisées tel qu’indiqué dans Administration Console sous Paramètres > Core System > Configurations. Assurez-vous de sauvegarder l’intégralité du répertoire de polices.
+Si vous avez installé des polices supplémentaires dans votre environnement AEM Forms, vous devez les sauvegarder séparément. Sauvegardez tous les répertoires de polices Adobe et de polices personnalisées tels qu’indiqués dans la console d’administration sous Paramètres > Core System > Configurations. Assurez-vous de sauvegarder l’intégralité du répertoire de polices.
 
 >[!NOTE]
 >
 >Par défaut, les polices Adobe installées avec AEM Forms se trouvent dans le répertoire `[aem-forms root]/fonts`.
 
-Si vous réinitialisez le système d’exploitation sur l’ordinateur hôte et que vous souhaitez utiliser des polices du précédent système d’exploitation, le contenu du répertoire des polices système doit également être sauvegardé. (Pour plus d’instructions, reportez-vous à la documentation de votre système d’exploitation).
+Si vous réinitialisez le système d’exploitation sur l’ordinateur hôte et que vous souhaitez utiliser des polices du précédent système d’exploitation, le contenu du répertoire des polices système doit également être sauvegardé. (Pour des instructions spécifiques, reportez-vous à la documentation de votre système d’exploitation).

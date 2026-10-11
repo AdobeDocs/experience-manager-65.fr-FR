@@ -1,6 +1,6 @@
 ---
 title: Hébergement de deux instances d’espace de travail AEM Forms sur un serveur
-description: Comment les administrateurs et administratrices LC peuvent-ils personnaliser HTML WS pour héberger deux instances sur un seul serveur accessible via différentes URL ?
+description: Comment les équipes d’administration LC peuvent-elles personnaliser HTML WS pour héberger deux instances sur un seul serveur accessible via différentes URL ?
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -8,13 +8,31 @@ exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 100%
-
 ---
-
 # Hébergement de deux instances d’espace de travail AEM Forms sur un serveur {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
 L’installation et les paramètres par défaut d’AEM Forms permettent la mise à disposition d’un seul espace de travail AEM Forms sur le serveur. Cela dit, vous pouvez être amené à héberger deux instances différentes d’espace de travail AEM Forms sur un serveur AEM Forms unique. Les deux instances sont accessibles via différentes URL.
@@ -25,7 +43,7 @@ Pour configurer l’espace de travail AEM Forms, procédez comme suit.
 
 1. Installez le package de développement de l’espace de travail AEM Forms sur votre serveur. Voir [Package de développement](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) pour obtenir des instructions de création.
 1. Connectez-vous à CRXDE Lite en tant qu’administrateur ou administratrice en accédant à `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Copiez et collez le nœud ws dans /content. Renommez le nœud ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**. Dans les propriétés de ce nœud, attribuez à `sling:resourceType` la valeur ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**. 
+1. Copiez et collez le nœud ws dans /content. Renommez le nœud ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**. Dans les propriétés de ce nœud, attribuez à `sling:resourceType` la valeur ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
 1. Copiez le dossier ws dans /libs et collez-le dans /apps. Renommez le dossier ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 1. Dans `GET.jsp`, sur `/apps/ws2`, effectuez les modifications de code suivantes. Remplacez le code :

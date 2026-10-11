@@ -9,13 +9,22 @@ exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: d2623c78e8c779b20303865d4bb40effd1e5fe59
-workflow-type: ht
-source-wordcount: '2125'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+workflow-type: tm+mt
+source-wordcount: '2209'
+ht-degree: 97%
 ---
-
 # Configuration manuelle de l’intégration à Adobe Target {#manually-configuring-the-integration-with-adobe-target}
 
 Vous pouvez soit modifier les configurations de l’assistant d’accord préalable que vous avez effectuées lors de l’utilisation de l’assistant, soit intégrer manuellement Adobe Target sans utiliser l’assistant.
@@ -26,8 +35,8 @@ L’[assistant de souscription](/help/sites-administering/opt-in.md) qui [intèg
 
 Vous pouvez également configurer Adobe Target pour utiliser Adobe Target en tant que source de création de rapports lors du ciblage de contenu en configurant la configuration d’Analytics Cloud A4T.
 
-Pour trouver la configuration et le framework de cloud, accédez à **Services cloud** via **Outils** > **Déploiement** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
-Sous Adobe Target, cliquez ou appuyez sur **Afficher les configurations**.
+Pour trouver la configuration et le framework de cloud, accédez à **Services cloud** via **Outils** > **Déploiement** > **Cloud**. ([](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+Sous Adobe Target, cliquez sur **Afficher les configurations**.
 
 ### Propriétés de configuration de Target configurée {#provisioned-target-configuration-properties}
 
@@ -43,7 +52,7 @@ Les valeurs de propriété suivantes sont utilisées dans la configuration cloud
 * **Utiliser la gestion dynamique des balises pour diffuser la bibliothèque cliente :** non sélectionné. Sélectionnez cette option si vous [utilisez la gestion dynamique des balises](/help/sites-administering/dtm.md) ou un autre système de gestion des balises pour héberger le fichier mbox.js ou AT.js. Adobe vous recommande d’utiliser la gestion dynamique des balises plutôt qu’AEM pour livrer la bibliothèque.
 
 * **Fichier mbox.js personnalisé :** aucun fichier n’est spécifié, pour que le fichier mbox.js par défaut soit utilisé. Spécifiez un fichier mbox.js personnalisé que vous souhaitez utiliser, selon vos besoins. Il s’affiche uniquement si vous avez sélectionné mbox.js.
-* **AT.js personnalisé :** aucun fichier n’est spécifié, pour que le fichier AT.js par défaut soit utilisé. Spécifiez un fichier AT.js personnalisé que vous souhaitez utiliser, selon vos besoins.  S’affiche uniquement si vous avez sélectionné AT.js.
+* **AT.js personnalisé :** aucun fichier n’est spécifié, pour que le fichier AT.js par défaut soit utilisé. Spécifiez un fichier AT.js personnalisé que vous souhaitez utiliser, selon vos besoins. S’affiche uniquement si vous avez sélectionné AT.js.
 
 >[!NOTE]
 >
@@ -56,11 +65,11 @@ Les valeurs de propriété suivantes sont utilisées dans la configuration cloud
 >* Meilleures options d’implémentation pour les applications d’une seule page
 >* AT.js contient les composants qui étaient inclus dans target.js. Il n’y a donc plus d’appel à target.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=fr -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Propriétés de cadre Target configurées {#provisioned-target-framework-properties}
 
-La structure de Target mise en service créée par l’assistant de souscription est configurée pour envoyer des données contextuelles à partir du magasin de données de profil. Les éléments de données du magasin relatifs à l’âge et au sexe sont envoyés à Target par défaut. Votre solution nécessite probablement l’envoi de paramètres supplémentaires.
+La structure de Target mise en service créée par l’assistant de souscription est configurée pour envoyer des données contextuelles à partir du magasin de données de profil. Les éléments de données du magasin relatifs à l’âge et au genre sont envoyés à Target par défaut. Votre solution nécessite probablement l’envoi de paramètres supplémentaires.
 
 ![Cadre cible configuré](assets/chlimage_1-158.png)
 
@@ -114,16 +123,16 @@ Intégration manuelle avec Adobe Target au lieu d’utiliser l’assistant d’
 >
 >* Amélioration des temps de chargement des pages pour les implémentations web
 >* Amélioration de la sécurité
->* Meilleures options d’implémentation pour les applications d’une seule page
+>* Meilleures options de mise en œuvre pour les applications d’une seule page
 >* AT.js contient les composants qui étaient inclus dans target.js. Il n’y a donc plus d’appel à target.js.
 >
 >Vous pouvez sélectionner AT.js ou mbox.js dans le menu déroulant **Bibliothèque cliente**.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=fr -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Création d’une configuration du cloud Target {#creating-a-target-cloud-configuration}
 
-Pour permettre à AEM d’interagir avec Adobe Target, créez une configuration de cloud Target. Pour créer la configuration, vous fournissez le code client Adobe Target et les informations d’identification de l’utilisateur.
+Pour permettre à AEM d’interagir avec Adobe Target, créez une configuration cloud Target. Pour créer la configuration, vous fournissez le code client Adobe Target et les informations d’identification de l’utilisateur.
 
 Vous créez la configuration de cloud Target une seule fois, car vous pouvez l’associer à plusieurs campagnes AEM. Si vous disposez de plusieurs codes client Adobe Target, créez une configuration pour chaque code client.
 
@@ -131,7 +140,7 @@ Vous pouvez configurer la configuration de cloud pour synchroniser les segments 
 
 Pour créer une configuration cloud Target dans AEM, procédez come suit :
 
-1. Accédez aux **Services cloud** via le **logo AEM** > **Outils** >**Services cloud** > **Services cloud hérités**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Accédez aux **Services cloud** via le **logo AEM** > **Outils** >**Services cloud** > **Services cloud hérités**. ([](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    La page d’aperçu **Services cloud** s’ouvre.
 
@@ -177,9 +186,9 @@ Pour créer une configuration cloud Target dans AEM, procédez come suit :
    >
    >Par défaut, lorsque vous souscrivez à l’assistant de configuration Adobe Target, le ciblage précis est activé.
    >
-   >Le ciblage précis implique que cette configuration du service cloud attend le chargement du contexte avant de charger le contenu. Par conséquent, en termes de performances, un ciblage précis peut créer un délai de quelques millisecondes avant le chargement du contenu.
+   >Le ciblage précis implique que cette configuration du service cloud attend le chargement du contexte avant de charger le contenu. Par conséquent, en termes de performances, un ciblage précis peut entraîner un délai de quelques millisecondes avant le chargement du contenu.
    >
-   >Le ciblage précis est toujours activé sur l’instance de création. Toutefois, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (**http://localhost:4502/etc/cloudservices.html**). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
+   >Le ciblage précis est toujours activé sur l’instance de création. Cependant, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (****). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
    >
    >Si vous avez ***déjà*** créé les composants ciblés et si vous modifiez ce paramètre, vos modifications n’affectent pas ces composants. Modifiez directement ces composants.
 
@@ -224,7 +233,7 @@ La structure est créée. Pour répliquer le framework sur l’instance de publi
 
 ### Association d’activités à la configuration cloud Target  {#associating-activities-with-the-target-cloud-configuration}
 
-Associez vos [activités AEM](/help/sites-authoring/activitylib.md) à la configuration de cloud Target afin de refléter les activités dans [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=fr&=lang=fr).
+Associez vos [activités AEM](/help/sites-authoring/activitylib.md) à la configuration de cloud Target afin de refléter les activités dans [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?=lang=fr).
 
 >[!NOTE]
 >
@@ -239,7 +248,7 @@ Associez vos [activités AEM](/help/sites-authoring/activitylib.md) à la config
 
 ### Association du cadre Target à votre site {#associating-the-target-framework-with-your-site}
 
-Après avoir créé une structure Target dans AEM, associez vos pages web à la structure. Les composants ciblés sur les pages envoient les données définies par la structure vers Adobe Target pour le suivi. (voir [Ciblage de contenu](/help/sites-authoring/content-targeting-touch.md)). 
+Après avoir créé une structure Target dans AEM, associez vos pages web à la structure. Les composants ciblés sur les pages envoient les données définies par la structure vers Adobe Target pour le suivi. (voir [Ciblage de contenu](/help/sites-authoring/content-targeting-touch.md)).
 
 Lorsque vous associez une page au framework, les pages enfants héritent de l’association.
 

@@ -1,19 +1,26 @@
 ---
 title: Optimiser les performances
-
 description: Découvrez comment configurer certains aspects d’AEM pour optimiser les performances.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '6650'
 ht-degree: 99%
@@ -235,7 +242,7 @@ Configurez ces services pour limiter le nombre maximal de workflows en cours d�
 
 #### Configuration dans le référentiel {#configuration-in-the-repo}
 
-Si vous configurez les services [à l’aide d’un nœud sling:OsgiConfig &#x200B;](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), vous devez trouver le PID des services existants, par exemple : org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Vous pouvez détecter le PID à l’aide de la console web.
+Si vous configurez les services [à l’aide d’un nœud sling:OsgiConfig ](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), vous devez trouver le PID des services existants, par exemple : org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Vous pouvez détecter le PID à l’aide de la console web.
 
 Configurez la propriété nommée `queue.maxparallel`.
 
@@ -432,7 +439,7 @@ Lors de la conception de ces tests, il faut se rappeler que tous les scénarios 
 
 | Scénario d’erreur | Type d’erreur | Nombre d’utilisateurs | T/s (attendu) | T/s (testé) | Description |
 |---|---|---|---|---|---|
-| Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 1 |  | Seul les &ast;&ast;&ast; sont recherchées. |
+| Surcharge des composants de recherche | Recherche sur un caractère générique (astérisque) | 10 | 1 |  | Seul les &amp;ast;&amp;ast;&amp;ast; sont recherchées. |
 |   | Mot de fin | 20 | 2 |  | Recherche d’un mot de fin. |
 |   | Chaîne vide | 10 | 1 |  | Recherche d’une chaîne vide. |
 |   | Caractères spéciaux | 10 | 1 |  | Recherche de caractères spéciaux. |
@@ -551,7 +558,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 Si vous autorisez les utilisateurs et utilisatrices à modifier la taille de la police (ou toute autre personnalisation de la disposition), assurez-vous que les différentes personnalisations sont reflétées dans l’URL.
 
-Par exemple, les cookies ne sont pas mis en cache. Par conséquent, si vous stockez la taille de police dans un cookie (ou un mécanisme similaire), celle-ci ne sera pas conservée pour la page mise en cache. Par conséquent, le Dispatcher renvoie aléatoirement des documents de n’importe quelle taille de police.
+Par exemple, les cookies ne sont pas mis en cache. Par conséquent, si vous stockez la taille de police dans un cookie (ou un mécanisme similaire), celle-ci ne sera pas conservée pour la page mise en cache. Par conséquent, Dispatcher renvoie aléatoirement des documents de n’importe quelle taille de police.
 
 L’inclusion de la taille de police dans l’URL en tant que sélecteur évite ce problème :
 

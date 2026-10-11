@@ -9,13 +9,24 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 5bd621b14e3bcd21431c1df5629fe4669b14052c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 39%
-
+source-wordcount: '1296'
+ht-degree: 40%
 ---
-
 
 # Outils de développement AEM pour Eclipse {#aem-developer-tools-for-eclipse}
 
@@ -28,7 +39,7 @@ Les _outils de développement Experience Manager pour Eclipse_ sont un plug-in E
 Il offre plusieurs fonctionnalités qui facilitent le développement d’AEM :
 
 * Intégration transparente avec les instances AEM via Eclipse Server Connector
-* Synchronisation pour les bundles de contenu et d’OSGi
+* Synchronisation pour les bundles de contenu et OSGi
 * Prise en charge du débogage avec fonctionnalité de remplacement de code à chaud
 * Démarrage simple de projets AEM par l’intermédiaire d’un assistant de création de projet spécifique
 * Modification facile des propriétés JCR
@@ -38,7 +49,7 @@ Il offre plusieurs fonctionnalités qui facilitent le développement d’AEM :
 Avant d’utiliser AEM Developer Tools, vous devez :
 
 * Téléchargez et installez [Eclipse IDE pour Enterprise Java et Web Developers.](https://www.eclipse.org/downloads/packages/)
-   * La version 1.4.0 des outils de développement AEM pour Eclipse est compatible avec Eclipse 2022-12 (4.26) ou une version ultérieure et nécessite l’exécution de Java 17 ou une version ultérieure.
+  * La version 1.4.0 des outils de développement AEM pour Eclipse est compatible avec Eclipse 2022-12 (4.26) ou une version ultérieure et nécessite l’exécution de Java 17 ou une version ultérieure.
 * Configurez votre installation Eclipse pour vous assurer de disposer d’au moins 1 Go de mémoire de tas en modifiant votre fichier de configuration `eclipse.ini` comme décrit dans la [FAQ Eclipse.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
@@ -126,7 +137,7 @@ Pour créer l’exemple de projet, procédez comme suit :
 
    >[!TIP]
    >
-   >Pour plus d’informations sur le débogage de votre projet s’exécutant sur un SDK AEM local, consultez le document [&#x200B; Débogage à distance du SDK AEM &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging).
+   >Pour plus d’informations sur le débogage de votre projet s’exécutant sur un SDK AEM local, consultez le document [ Débogage à distance du SDK AEM ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging).
 
 1. Cliquez sur **Finish** (Terminer).
 
@@ -237,12 +248,12 @@ Eclipse télécharge les dépendances requises. Cela peut prendre un moment.
 
 Le site web officiel Apache Sling IDE tooling for Eclipse fournit des informations supplémentaires utiles :
 
-* Le guide d’utilisation [**Apache Sling IDE tooling for Eclipse** &#x200B;](https://sling.apache.org/documentation/development/ide-tooling.html) vous guide parmi les concepts généraux, l’intégration des serveurs et les fonctionnalités de déploiement pris en charge par les outils de développement AEM.
-* [Résolution des problèmes liés à l’outil IDE Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
+* Le guide d’utilisation [**Apache Sling IDE tooling for Eclipse** ](https://sling.apache.org/documentation/development/ide-tooling.html) vous guide parmi les concepts généraux, l’intégration des serveurs et les fonctionnalités de déploiement pris en charge par les outils de développement AEM.
+* [Dépannage de l’outil IDE Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
 * [Liste des problèmes connus](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
 La documentation officielle [Eclipse](https://www.eclipse.org/) suivante peut vous aider à configurer votre environnement :
 
 * [Prise en main d’Eclipse](https://eclipseide.org/getting-started/)
-* [Système d’aide d’Eclipse Luna](https://help.eclipse.org/latest/index.jsp)
-* [Intégration Maven (m2eclipse)](https://www.eclipse.org/m2e/)
+* [Système d&#39;aide Eclipse Luna](https://help.eclipse.org/latest/index.jsp)
+* [Intégration de Maven (m2eclipse)](https://www.eclipse.org/m2e/)

@@ -9,7 +9,16 @@ role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2827'
 ht-degree: 2%
@@ -18,7 +27,7 @@ ht-degree: 2%
 
 La connexion sociale est la possibilité de présenter à un visiteur du site l’option de se connecter avec son compte Facebook ou Twitter. Par conséquent, y compris les données Facebook ou Twitter autorisées dans leur profil de membre AEM.
 
-![socialloginweretail &#x200B;](assets/socialloginweretail.png)
+![socialloginweretail ](assets/socialloginweretail.png)
 
 ## Présentation de la connexion au réseau social {#social-login-overview}
 
@@ -54,7 +63,7 @@ Il existe deux concepts de base :
 
 1. **Champs** (paramètres) indique les données réelles demandées à l’aide des paramètres d’URL.
 
-   * Ces champs sont spécifiés dans le [fournisseur OAuth Facebook &#x200B;](#aem-communities-facebook-oauth-provider) et le [fournisseur OAuth Twitter AEM Communities](#aem-communities-twitter-oauth-provider).
+   * Ces champs sont spécifiés dans le [fournisseur OAuth Facebook ](#aem-communities-facebook-oauth-provider) et le [fournisseur OAuth Twitter AEM Communities](#aem-communities-twitter-oauth-provider).
    * Les champs par défaut sont suffisants dans la plupart des cas d’utilisation, mais ils peuvent être modifiés.
 
 ## Identifiant Facebook {#facebook-login}
@@ -74,7 +83,7 @@ Pour obtenir des informations sur la version de l’API Facebook Graph, consulte
 
 Une application Facebook correctement configurée est requise pour activer la connexion au réseau social Facebook.
 
-Pour créer une application Facebook, suivez les instructions de Facebook à l’adresse [&#128279;](https://developers.facebook.com/apps/). Les modifications apportées à leurs instructions ne sont pas reflétées dans les informations suivantes.
+Pour créer une application Facebook, suivez les instructions de Facebook à l’adresse [](https://developers.facebook.com/apps/). Les modifications apportées à leurs instructions ne sont pas reflétées dans les informations suivantes.
 
 En général, à partir de l’API Facebook v2.7 :
 
@@ -94,7 +103,7 @@ Une fois l’application créée, recherchez les paramètres **[!UICONTROL ID d�
 
 ### Création d’un Cloud Service Facebook Connect {#create-a-facebook-connect-cloud-service}
 
-L’instance [Application et fournisseur OAuth Granite &#x200B;](#adobe-granite-oauth-application-and-provider), instanciée lors de la création d’une configuration de service cloud, identifie l’application Facebook et le ou les groupes membres auxquels les nouveaux utilisateurs sont ajoutés.
+L’instance [Application et fournisseur OAuth Granite ](#adobe-granite-oauth-application-and-provider), instanciée lors de la création d’une configuration de service cloud, identifie l’application Facebook et le ou les groupes membres auxquels les nouveaux utilisateurs sont ajoutés.
 
 1. Sur l’instance d’auteur AEM, connectez-vous avec les droits d’administrateur.
 1. Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Configuration de la connexion au réseau social Facebook]**.
@@ -114,12 +123,12 @@ L’instance [Application et fournisseur OAuth Granite &#x200B;](#adobe-granite-
    ![fbsocialloginconfigpng](assets/fbsocialloginconfigpng.png)
 
    * **[!UICONTROL Titre]** (*Obligatoire*) Saisissez un titre d’affichage qui identifie l’application Facebook. Utilisez le même nom saisi que le *Nom d’affichage* pour l’application Facebook.
-   * **[!UICONTROL ID de l’application/Clé API]** (*obligatoire*) Saisissez l’***ID de l’application*** pour l’application Facebook. Cela identifie l’instance [Application et fournisseur OAuth Granite &#x200B;](https://helpx.adobe.com/fr/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) créée à partir de la boîte de dialogue.
+   * **[!UICONTROL ID de l’application/Clé API]** (*obligatoire*) Saisissez l’***ID de l’application*** pour l’application Facebook. Cela identifie l’instance [Application et fournisseur OAuth Granite ](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) créée à partir de la boîte de dialogue.
    * **[!UICONTROL Secret de l’application]** (*Obligatoire*) Saisissez le ***Secret de l’application*** pour l’application Facebook.
    * **[!UICONTROL Créer des utilisateurs]** Si cette case est cochée, la connexion avec un compte Facebook créera une entrée utilisateur AEM et l’ajoutera en tant que membre au(x) groupe(s) d’utilisateurs sélectionné(s).  La valeur par défaut est cochée (vivement recommandé).
    * **[!UICONTROL Masquer les ID utilisateur]** : laissez désélectionné.
    * **[!UICONTROL Étendue de l’e-mail]** : l’ID d’e-mail de l’utilisateur doit être récupéré sur Facebook.
-   * **[!UICONTROL Ajouter aux groupes d’utilisateurs]** sélectionnez Ajouter un groupe d’utilisateurs pour choisir un ou plusieurs [groupes membres](https://helpx.adobe.com/fr/experience-manager/6-3/communities/using/users.html) pour le site de la communauté auquel les utilisateurs seront ajoutés.
+   * **[!UICONTROL Ajouter aux groupes d’utilisateurs]** sélectionnez Ajouter un groupe d’utilisateurs pour choisir un ou plusieurs [groupes membres](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) pour le site de la communauté auquel les utilisateurs seront ajoutés.
 
    >[!NOTE]
    >
@@ -128,7 +137,7 @@ L’instance [Application et fournisseur OAuth Granite &#x200B;](#adobe-granite-
    * Sélectionnez **[!UICONTROL ENREGISTRER]**.
    * **[!UICONTROL Publier]**.
 
-Le résultat est une instance [Application et fournisseur OAuth Adobe Granite](https://helpx.adobe.com/fr/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) qui ne nécessite pas d’autres modifications, sauf si vous ajoutez une portée supplémentaire (autorisations). L’étendue par défaut est celle des autorisations standard pour la connexion Facebook. Si une portée supplémentaire est souhaitée, il est nécessaire de modifier directement la configuration OSGI. Si les modifications sont effectuées directement via le système ou la console, évitez de modifier les configurations de vos services cloud à partir de l’interface utilisateur tactile afin d’éviter tout remplacement.
+Le résultat est une instance [Application et fournisseur OAuth Adobe Granite](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) qui ne nécessite pas d’autres modifications, sauf si vous ajoutez une portée supplémentaire (autorisations). L’étendue par défaut est celle des autorisations standard pour la connexion Facebook. Si une portée supplémentaire est souhaitée, il est nécessaire de modifier directement la configuration OSGI. Si les modifications sont effectuées directement via le système ou la console, évitez de modifier les configurations de vos services cloud à partir de l’interface utilisateur tactile afin d’éviter tout remplacement.
 
 ### Fournisseur OAuth Facebook AEM Communities {#aem-communities-facebook-oauth-provider}
 
@@ -209,7 +218,7 @@ Les étapes suivantes sont les mêmes pour Facebook et Twitter :
 
 Une application Twitter configurée est nécessaire pour activer la connexion au réseau social Twitter.
 
-Suivez les dernières instructions pour créer une application Twitter sur [&#128279;](https://apps.twitter.com/).
+Suivez les dernières instructions pour créer une application Twitter sur [](https://apps.twitter.com/).
 
 En général :
 
@@ -243,7 +252,7 @@ La seule requête REST effectuée pour la connexion au réseau social consiste �
 
 ### Création d’un Cloud Service Twitter Connect {#create-a-twitter-connect-cloud-service}
 
-L’instance [Application et fournisseur OAuth Granite &#x200B;](#adobe-granite-oauth-application-and-provider), instanciée lors de la création d’une configuration de service cloud, identifie l’application Twitter et le ou les groupes membres auxquels les nouveaux utilisateurs sont ajoutés.
+L’instance [Application et fournisseur OAuth Granite ](#adobe-granite-oauth-application-and-provider), instanciée lors de la création d’une configuration de service cloud, identifie l’application Twitter et le ou les groupes membres auxquels les nouveaux utilisateurs sont ajoutés.
 
 1. Sur l’instance d’auteur, connectez-vous avec les droits d’administrateur.
 1. Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Configuration de la connexion au réseau social Twitter]**.
@@ -268,7 +277,7 @@ L’instance [Application et fournisseur OAuth Granite &#x200B;](#adobe-granite-
 
    * **[!UICONTROL Consumer Key]**
 
-     (*Obligatoire*) Saisissez la clé **Consommateur (API)** pour l’application Twitter. Cela identifie l’instance [Application et fournisseur OAuth Granite &#x200B;](https://helpx.adobe.com/fr/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) créée à partir de la boîte de dialogue.
+     (*Obligatoire*) Saisissez la clé **Consommateur (API)** pour l’application Twitter. Cela identifie l’instance [Application et fournisseur OAuth Granite ](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) créée à partir de la boîte de dialogue.
 
    * **[!UICONTROL Secret du client]**
 
@@ -284,7 +293,7 @@ L’instance [Application et fournisseur OAuth Granite &#x200B;](#adobe-granite-
 
    * **[!UICONTROL Ajouter aux groupes d’utilisateurs]**
 
-     Sélectionnez Ajouter un groupe d’utilisateurs pour choisir un ou plusieurs [groupes membres](https://helpx.adobe.com/fr/experience-manager/6-3/communities/using/users.html) pour le site communautaire auquel les utilisateurs seront ajoutés.
+     Sélectionnez Ajouter un groupe d’utilisateurs pour choisir un ou plusieurs [groupes membres](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) pour le site communautaire auquel les utilisateurs seront ajoutés.
 
    >[!NOTE]
    >
@@ -293,7 +302,7 @@ L’instance [Application et fournisseur OAuth Granite &#x200B;](#adobe-granite-
 
 1. Sélectionnez **[!UICONTROL ENREGISTRER]** et **[!UICONTROL Publier]**.
 
-Le résultat est une instance [Application et fournisseur OAuth Granite &#x200B;](https://helpx.adobe.com/fr/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) qui ne nécessite aucune modification supplémentaire. La portée par défaut est celle des autorisations standard pour la connexion à Twitter.
+Le résultat est une instance [Application et fournisseur OAuth Granite ](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) qui ne nécessite aucune modification supplémentaire. La portée par défaut est celle des autorisations standard pour la connexion à Twitter.
 
 ### Fournisseur OAuth Twitter AEM Communities {#aem-communities-twitter-oauth-provider}
 
@@ -344,7 +353,7 @@ Les étapes suivantes sont les mêmes pour Facebook et Twitter :
 
 ### Console Sites AEM Communities {#aem-communities-sites-console}
 
-Une fois qu’un service cloud est configuré, il peut être activé pour le paramètre de connexion au réseau social approprié pour un site communautaire à l’aide du sous-panneau [Gestion des utilisateurs](https://helpx.adobe.com/fr/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) Paramètres lors de la [création](https://helpx.adobe.com/fr/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) ou [gestion](https://helpx.adobe.com/fr/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) du site communautaire.
+Une fois qu’un service cloud est configuré, il peut être activé pour le paramètre de connexion au réseau social approprié pour un site communautaire à l’aide du sous-panneau [Gestion des utilisateurs](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) Paramètres lors de la [création](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) ou [gestion](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties) du site communautaire.
 
 1. Choisissez le contexte de configuration de votre site où vous avez enregistré vos configurations de connexion au réseau social.
 
@@ -358,7 +367,7 @@ Une fois qu’un service cloud est configuré, il peut être activé pour le par
 
 ## Tester la connexion au réseau social {#test-social-login}
 
-* Assurez-vous que le [Gestionnaire d’authentification OAuth Granite &#x200B;](#adobe-granite-oauth-authentication-handler) a été activé sur toutes les instances de publication.
+* Assurez-vous que le [Gestionnaire d’authentification OAuth Granite ](#adobe-granite-oauth-authentication-handler) a été activé sur toutes les instances de publication.
 * Vérifiez que les services cloud ont été publiés.
 * Vérifiez que le site de la communauté a été publié.
 * Lancez le site publié dans un navigateur.
@@ -385,7 +394,7 @@ Par exemple, http://localhost:4503/system/console/configMgr
 * Sélectionnez pour ouvrir la configuration à modifier.
 * Sélectionnez **[!UICONTROL Enregistrer]**.
 
-![&#x200B; graniteoauth &#x200B;](assets/graniteoauth.png)
+![ graniteoauth ](assets/graniteoauth.png)
 
 >[!CAUTION]
 >
@@ -449,7 +458,7 @@ Pour chaque configuration de gestionnaire d’authentification OAuth, il existe 
 * Gestionnaire de synchronisation par défaut d’Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler) : aucune modification n’est requise, mais vous pouvez examiner les mappages de champs utilisateur et la manière dont les champs Facebook sont mappés à un nœud de profil utilisateur CQ. Notez également que « Nom du gestionnaire de synchronisation » correspond à l’ID de configuration de la configuration du fournisseur OAuth.
 * Module de connexion externe Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory) : aucune modification n’est requise, mais vous remarquerez peut-être que « Nom du fournisseur d’identité » et « Nom du gestionnaire de synchronisation » sont identiques et pointent vers les configurations OAuth et du gestionnaire de synchronisation correspondantes respectivement.
 
-Pour plus d’informations, voir [&#x200B; Authentification avec le module de connexion externe Apache Oak &#x200B;](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
+Pour plus d’informations, voir [ Authentification avec le module de connexion externe Apache Oak ](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
 
 ## Performances de parcours utilisateur OAuth {#oauth-user-traversal-performance}
 
@@ -490,7 +499,7 @@ Sur une instance d’auteur, connecté avec des droits d’administrateur :
 
   ![graniteoauth-crxde](assets/graniteoauth-crxde.png)
 
-Pour plus d’informations et d’outils, voir [Requêtes et indexation &#x200B;](../../help/sites-deploying/queries-and-indexing.md).
+Pour plus d’informations et d’outils, voir [Requêtes et indexation ](../../help/sites-deploying/queries-and-indexing.md).
 
 ## Configuration du Dispatcher {#dispatcher-configuration}
 

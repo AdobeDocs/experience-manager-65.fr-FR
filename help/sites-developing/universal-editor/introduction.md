@@ -4,13 +4,19 @@ description: Découvrez la flexibilité de l’éditeur universel et comment il 
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1361'
 ht-degree: 96%
-
 ---
-
 
 # Éditeur universel {#universal-editor}
 
@@ -40,15 +46,15 @@ L’éditeur universel est un service qui fonctionne en tandem avec AEM pour cr�
 L’éditeur universel est pris en charge par :
 
 * AEM 6.5
-   * L’hébergement sur site et AMS* sont pris en charge.
+  * L’hébergement sur site et AMS* sont pris en charge.
 * [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
-   * L’hébergement sur site et AMS* sont pris en charge.
+  * L’hébergement sur site et AMS* sont pris en charge.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
 Ce document aborde la prise en charge de l’éditeur universel par AEM 6.5. Pour utiliser l’éditeur universel avec AEM 6.5, vous devez disposer des éléments suivants :
 
 * AEM 6.5 avec le pack de services 23 ou version ultérieure
-   * Les packs de service 21 et 22 sont également pris en charge avec [un pack de fonctionnalités](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip).
+  * Les packs de service 21 et 22 sont également pris en charge avec [un pack de fonctionnalités](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip).
 * Dispatcher configuré de manière appropriée
 
 >[!NOTE]
@@ -129,11 +135,11 @@ Les variables suivantes sont disponibles pour définir vos mappages dans l’`Un
 Exemples de mappages :
 
 * Ouvrez toutes les pages présentes dans `/content/foo` dans l’instance de création AEM :
-   * `/content/foo:${author}${path}.html?login-token=${token}`
-   * Cela entraîne l’ouverture de `https://localhost:4502/content/foo/x.html?login-token=<token>`.
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * Cela entraîne l’ouverture de `https://localhost:4502/content/foo/x.html?login-token=<token>`.
 * Ouvrez toutes les pages présentes dans `/content/bar` sur un serveur NextJS distant, en fournissant toutes les variables comme informations.
-   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * Cela entraîne l’ouverture de `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`.
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * Cela entraîne l’ouverture de `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`.
 
 ### Configurer le service d’éditeur universel {#set-up-ue}
 

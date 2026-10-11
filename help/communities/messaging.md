@@ -10,13 +10,20 @@ role: Admin
 exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 0%
-
 ---
-
 # Configurer la messagerie {#configure-messaging}
 
 ## Vue d’ensemble {#overview}
@@ -31,7 +38,7 @@ Pour plus d’informations pour les développeurs, voir [Messaging Essentials](/
 
 ## Service des opérations de messagerie {#messaging-operations-service}
 
-La configuration [Service des opérations de messagerie &#x200B;](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifie le point d&#39;entrée qui gère les requêtes liées à la messagerie, les dossiers que le service doit utiliser pour stocker les messages et, si les messages peuvent inclure des pièces jointes, les types de fichiers autorisés.
+La configuration [Service des opérations de messagerie ](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifie le point d&#39;entrée qui gère les requêtes liées à la messagerie, les dossiers que le service doit utiliser pour stocker les messages et, si les messages peuvent inclure des pièces jointes, les types de fichiers autorisés.
 
 Pour les sites de la communauté créés à l’aide de l’`Communities Sites console` , une instance du service existe, avec la boîte de réception définie sur `/mail/inbox`.
 
@@ -152,6 +159,6 @@ Pour permettre aux utilisateurs enregistrés d’envoyer des messages directs en
 
 Une façon de résoudre les problèmes est d’activer [débogage des messages dans le journal.](/help/sites-administering/troubleshooting.md)
 
-Voir aussi [&#x200B; Enregistreurs et rédacteurs pour les services individuels](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
+Voir aussi [ Enregistreurs et rédacteurs pour les services individuels](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
 
 Le package à surveiller est `com.adobe.cq.social.messaging`.

@@ -1,20 +1,27 @@
 ---
 title: Utiliser et optimiser les widgets (IU classique)
-
 description: L’interface web d’Adobe Experience Manager utilise AJAX et d’autres technologies modernes intégrées dans les navigateurs pour activer l’édition tel écran tel écrit (WYSIWYG) et permettre aux auteurs et autrices de mettre en forme le contenu directement sur la page web.
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '5049'
 ht-degree: 92%
@@ -120,8 +127,8 @@ Parfois, une bibliothèque cliente ne doit être disponible qu’en mode créati
 Pour suivre les tutoriels sur cette page, installez le package **Utilisation des widgets ExtJS** dans une instance locale d’AEM, puis créez un une page d’exemple dans laquelle les composants seront inclus. Pour ce faire, procédez comme suit :
 
 1. Dans votre instance d’AEM, téléchargez le package nommé **Utilisation des widgets ExtJS (v01)** dans le partage de packages, puis installez le package. Il crée le projet `extjstraining` sous `/apps` dans le référentiel.
-1. Incluez la bibliothèque cliente contenant les scripts (js) et la feuille de style (css) dans la balise head du jsp de la page Geometrixx. Vous allez inclure les exemples de composants dans une nouvelle page de la branche **&#x200B;**&#x200B;:
-dans **&#x200B;**&#x200B;ouvrez le fichier `/apps/geometrixx/components/page/headlibs.jsp` et ajoutez la catégorie `cq.extjstraining` à la balise `<ui:includeClientLib>` existante comme suit :
+1. Incluez la bibliothèque cliente contenant les scripts (js) et la feuille de style (css) dans la balise head du jsp de la page Geometrixx. Vous allez inclure les exemples de composants dans une nouvelle page de la branche **** :
+dans **** ouvrez le fichier `/apps/geometrixx/components/page/headlibs.jsp` et ajoutez la catégorie `cq.extjstraining` à la balise `<ui:includeClientLib>` existante comme suit :
    `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 1. Créez une page dans la branche **Geometrixx** sous `/content/geometrixx/en/products` et nommez-la **Utilisation des widgets ExtJS**.
 1. Passez en mode Création et ajoutez tous les composants du groupe appelé **Utilisation des widgets ExtJS** à la conception de Geometrixx.

@@ -1,6 +1,6 @@
 ---
 title: Gestion des utilisateurs
-description: Utilisez l’API User Management pour créer des applications clientes capables de gérer les rôles, les autorisations et les entités (qui peuvent être des utilisateurs et utilisatrices, ou des groupes), ainsi que d’authentifier les utilisateurs et utilisatrices.
+description: Utilisez l’API User Management pour créer des applications clientes capables de gérer les rôles, les autorisations et les entités (qui peuvent être des utilisateurs, des utilisatrices ou des groupes), ainsi que d’authentifier les utilisateurs et utilisatrices.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,26 +9,38 @@ role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '6236'
 ht-degree: 99%
-
 ---
-
 # Gestion des utilisateurs {#managing-users}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
 **À propos de User Management**
 
-Vous pouvez utiliser l’API User Management pour créer des applications clientes qui peuvent gérer des rôles, des autorisations et des entités (qui peuvent être des utilisateurs et utilisatrices, ou des groupes), et aussi authentifier des utilisateurs et utilisatrices. L’API User Management se compose des API AEM Forms suivantes :
+Vous pouvez utiliser l’API User Management pour créer des applications clientes qui peuvent gérer des rôles, des autorisations et des entités (qui peuvent être des utilisateurs, des utilisatrices ou des groupes), et aussi authentifier des utilisateurs et des utilisatrices. L’API User Management se compose des API AEM Forms suivantes :
 
 * API du service Directory Manager
-* API du service Authentication Manager
+* API du service Authentification Manager
 * API du service Authorization Manager
 
-User Management vous permet d’affecter, de supprimer et de déterminer des rôles et des autorisations. Il vous permet également d’affecter, de supprimer et d’interroger des domaines, des utilisateurs, des utilisatrices et des groupes. Enfin, vous pouvez utiliser User Management pour authentifier les utilisateurs.
+User Management vous permet d’affecter, de supprimer et de déterminer des rôles et des autorisations. Il vous permet également d’attribuer, de supprimer et d’effectuer des requêtes sur des domaines, des utilisateurs, des utilisatrices et des groupes. Enfin, vous pouvez utiliser User Management pour authentifier les utilisateurs.
 
 Dans [Ajouter des utilisateurs](users.md#adding-users) vous comprendrez comment ajouter des utilisateurs par programmation. Cette section utilise l’API du service Directory Manager.
 
@@ -42,7 +54,7 @@ Dans [Authentifier des utilisateurs](users.md#authenticating-users) vous trouver
 
 **Comprendre le processus d’authentification**
 
-User Management fournit une fonctionnalité d’authentification intégrée et vous permet également de la connecter à votre propre fournisseur d’authentification. Lorsque User Management reçoit une demande d’authentification (par exemple, un utilisateur tente de se connecter), il transmet les informations utilisateur au fournisseur d’authentification pour l’authentification. User Management reçoit les résultats du fournisseur d’authentification après l’authentification de l’utilisateur.
+User Management fournit une fonctionnalité d’authentification intégrée et vous permet également de la connecter à votre propre fournisseur d’authentification. Lorsque User Management reçoit une demande d’authentification (par exemple, un utilisateur tente de se connecter), il transmet les informations utilisateur au fournisseur d’authentification pour l’authentification. User Management reçoit les résultats du fournisseur d’authentification après que celui-ci a authentifié l’utilisateur ou l’utilisatrice.
 
 Le diagramme suivant montre l’interaction entre un utilisateur final qui tente de se connecter, User Management et le fournisseur d’authentification.
 
@@ -89,13 +101,13 @@ Le tableau suivant décrit chaque étape du processus d’authentification.
 
 **Comprendre la gestion des annuaires**
 
-User Management est fourni avec un fournisseur de service d’annuaire (le DirectoryManagerService) qui prend en charge les connexions aux annuaires LDAP. Si votre entreprise utilise un référentiel non LDAP pour stocker des enregistrements d’utilisateurs, vous pouvez créer votre propre fournisseur de services d’annuaire qui fonctionne avec votre référentiel.
+User Management est fourni avec un fournisseur de service d’annuaire (le DirectoryManagerService) qui prend en charge les connexions aux annuaires LDAP. Si votre entreprise utilise un référentiel non LDAP pour stocker des enregistrements d’utilisateurs et d’utilisatrices, vous pouvez créer votre propre prestataire de services de répertoire qui fonctionne avec votre référentiel.
 
 Les fournisseurs de services d’annuaire récupèrent les enregistrements d’une banque d’utilisateurs à la demande de User Management. User Management met régulièrement en cache les enregistrements d’utilisateurs et de groupes dans la base de données afin d’améliorer les performances.
 
 Le fournisseur de services d’annuaire peut être utilisé pour synchroniser la base de données User Management avec la banque d’utilisateurs. Cette étape permet de s’assurer que toutes les informations de l’annuaire des utilisateurs et tous les enregistrements d’utilisateur et de groupe sont à jour.
 
-En outre, grâce au service DirectoryManager, vous pouvez créer et gérer des domaines. Les domaines définissent différentes bases utilisateurs. Les limites d’un domaine sont généralement définies en fonction de la structure de lʼorganisation ou de la configuration du magasin d’utilisateurs. Les domaines User Management fournissent des paramètres de configuration que les fournisseurs d’authentification et de services d’annuaire utilisent.
+En outre, grâce au service DirectoryManager, vous pouvez créer et gérer des domaines. Les domaines définissent différentes bases utilisateurs. Les limites d’un domaine sont généralement définies en fonction de la structure de lʼorganisation ou de la configuration du stockage d’utilisateurs et d’utilisatrices. Les domaines User Management fournissent des paramètres de configuration que les fournisseurs d’authentification et de services d’annuaire utilisent.
 
 Dans la configuration XML que User Management exporte, le nœud racine dont la valeur d’attribut est `Domains` contient un élément XML pour chaque domaine défini pour User Management. Chacun de ces éléments contient d’autres éléments qui définissent les aspects du domaine associés à des fournisseurs de services spécifiques.
 
@@ -107,7 +119,7 @@ Une valeur `objectSID` est modifiée si un objet est déplacé d’un domaine Ac
 
 ## Ajout d’utilisateurs {#adding-users}
 
-Vous pouvez utiliser l’API Directory Manager Service (Java et service web) pour ajouter des utilisateurs par programmation à AEM Forms. Une fois un utilisateur ajouté, il devient disponible pour une opération de service nécessitant un utilisateur. Par exemple, vous pouvez affecter une tâche au nouvel utilisateur.
+Vous pouvez utiliser l’API Directory Manager Service (Java et service web) pour ajouter des utilisateurs par programmation à AEM Forms. Une fois un utilisateur ajouté, il devient disponible pour une opération de service nécessitant un utilisateur. Par exemple, vous pouvez attribuer une tâche au nouvel utilisateur ou à la nouvelle utilisatrice.
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -229,10 +241,10 @@ Ajoutez des utilisateurs à l’aide de l’API du service Directory Manager (se
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Spécifiez les informations relatives à l’utilisateur.
 
@@ -269,7 +281,7 @@ Ajoutez des utilisateurs à l’aide de l’API du service Directory Manager (se
 
 ## Supprimer des utilisateurs {#deleting-users}
 
-Vous pouvez utiliser l’API Directory Manager Service (Java et service web) pour supprimer par programmation des utilisateurs d’AEM Forms. Une fois un utilisateur supprimé, il nʼest plus disponible lors dʼune opération de service nécessitant un utilisateur. Par exemple, vous ne pouvez pas affecter une tâche à un utilisateur supprimé.
+Vous pouvez utiliser l’API Directory Manager Service (Java et service web) pour supprimer par programmation des utilisateurs d’AEM Forms. Une fois un utilisateur supprimé, il nʼest plus disponible lors dʼune opération de service nécessitant un utilisateur. Par exemple, vous ne pouvez pas attribuer une tâche à un utilisateur ou une utilisatrice supprimé.
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -334,7 +346,7 @@ Pour supprimer des utilisateurs à l’aide de l’API Directory Manager Servi
 
 [Résumé des étapes](users.md#summary-of-steps)
 
-[Didacticiel de mise en route (mode EJB) : supprimer des utilisateurs à l’aide de l’API Java](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
+[Démarrage rapide (mode EJB) : supprimer des utilisateurs et utilisatrices à l’aide de l’API Java](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
 [Démarrage rapide (mode SOAP) : supprimer des utilisateurs à l’aide de l’API Java](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
@@ -344,7 +356,7 @@ Pour supprimer des utilisateurs à l’aide de l’API Directory Manager Servi
 
 ### Supprimer des utilisateurs à l’aide de l’API de service web {#delete-users-using-the-web-service-api}
 
-Supprimez des utilisateurs à l’aide de l’API Directory Manager Service (service web) :
+Supprimer des utilisateurs et utilisatrices à l’aide de l’API Directory Manager Service (service web) :
 
 1. Incluez les fichiers de projet.
 
@@ -358,10 +370,10 @@ Supprimez des utilisateurs à l’aide de l’API Directory Manager Service (s
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Spécifiez lʼutilisateur à supprimer.
 
@@ -369,7 +381,7 @@ Supprimez des utilisateurs à l’aide de l’API Directory Manager Service (s
    * Définissez la valeur de l’identifiant de lʼutilisateur en attribuant une valeur de chaîne au champ `userId` de lʼobjet `PrincipalSearchFilter`.
    * Appelez la méthode `findPrincipals` de l’objet `DirectoryManagerServiceClient` et transmettez l’objet `PrincipalSearchFilter`. Cette méthode renvoie un objet de collection `MyArrayOfUser`, où chaque élément est un objet `User`. Effectuez une itération au sein de la collection `MyArrayOfUser` pour localiser l’utilisateur. Lʼobjet `User` récupéré de l’objet de collection `MyArrayOfUser` est utilisé pour supprimer l’utilisateur.
 
-1. Supprimez l’utilisateur d’AEM Forms.
+1. Supprimer l’utilisateur ou l’utilisatrice d’AEM Forms.
 
    Supprimez l’utilisateur ou l’utilisatrice en transmettant la valeur du champ `oid` de lʼobjet `User` à la méthode `deleteLocalUser` de lʼobjet `DirectoryManagerServiceClient`.
 
@@ -383,7 +395,7 @@ Supprimez des utilisateurs à l’aide de l’API Directory Manager Service (s
 
 ## Création de groupes {#creating-groups}
 
-Grâce à l’API Directory Manager Service (Java et service web), vous pouvez créer des groupes AEM Forms par programmation. Une fois un groupe créé, il est disponible lors dʼune opération de service nécessitant un groupe. Par exemple, vous pouvez affecter un utilisateur au nouveau groupe. (Consultez la section [Gérer les utilisateurs et les groupes](users.md#managing-users-and-groups)).
+Grâce à l’API Directory Manager Service (Java et service web), vous pouvez créer des groupes AEM Forms par programmation. Une fois un groupe créé, vous pouvez utiliser ce groupe pour effectuer une opération de service nécessitant un groupe. Par exemple, vous pouvez attribuer un utilisateur ou une utilisatrice au nouveau groupe. (Consultez la section [Gérer les utilisateurs et les groupes](users.md#managing-users-and-groups)).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -414,7 +426,7 @@ Avant d’effectuer une opération de service Directory Manager par programmatio
 
 **Déterminer si le groupe existe déjà**
 
-Lorsque vous créez un groupe, assurez-vous qu’il n’existe pas déjà dans le même domaine. En d’autres termes, deux groupes dans le même domaine ne peuvent pas porter le même nom. Pour ce faire, effectuez une recherche et filtrez ses résultats en fonction de deux valeurs. Définissez le type de principal sur `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP` pour vous assurer que seuls les groupes sont renvoyés. Veillez également à spécifier le nom du domaine.
+Lorsque vous créez un groupe, assurez-vous qu’il n’existe pas déjà dans le même domaine. En d’autres termes, deux groupes dans le même domaine ne peuvent pas porter le même nom. Pour effectuer cette tâche, effectuez une recherche et filtrez ses résultats en fonction de deux valeurs. Définissez le type de principal sur `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP` pour vous assurer que seuls les groupes sont renvoyés. Veillez également à spécifier le nom du domaine.
 
 **Créer le groupe**
 
@@ -426,7 +438,7 @@ Maintenant que vous êtes sûr que le groupe n’existe pas dans le domaine, cr�
 
 **Exécuter une action avec le groupe**
 
-Vous pouvez créer un groupe, puis effectuer une action à l’aide de ce groupe. Vous pouvez par exemple ajouter un utilisateur à ce groupe. Pour ajouter un utilisateur à un groupe, récupérez la valeur d’identifiant unique de l’utilisateur et du groupe. Transmettez ces valeurs à la méthode `addPrincipalToLocalGroup`.
+Après avoir créé un groupe, vous pouvez effectuer une action à l’aide de ce groupe. Vous pouvez par exemple ajouter un utilisateur à ce groupe. Pour ajouter un utilisateur à un groupe, récupérez la valeur d’identifiant unique de l’utilisateur et du groupe. Transmettez ces valeurs à la méthode `addPrincipalToLocalGroup`.
 
 **Voir également**
 
@@ -486,7 +498,7 @@ Créez un groupe à l’aide de l’API Directory Manager Service (Java) :
 
 ## Gestion des utilisateurs et des groupes {#managing-users-and-groups}
 
-Cette rubrique décrit comment utiliser (Java) pour affecter, supprimer et interroger par programmation des domaines, des utilisateurs, des utilisatrices et des groupes.
+Cette rubrique décrit comment utiliser (Java) pour attribuer, supprimer et interroger par programmation des domaines, des utilisateurs, des utilisatrices et des groupes.
 
 >[!NOTE]
 >
@@ -497,7 +509,7 @@ Cette rubrique décrit comment utiliser (Java) pour affecter, supprimer et inter
 
 >[!NOTE]
 >
->Créer plusieurs utilisateurs et groupes locaux lorsqu’une synchronisation de répertoire LDAP est en cours n’est pas pris en charge. Toute tentative est susceptible d’entraîner des erreurs.
+>La création de plusieurs utilisateurs, utilisatrices et groupes locaux lorsqu’une synchronisation de répertoire LDAP est en cours n’est pas prise en charge. Toute tentative est susceptible d’entraîner des erreurs.
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -517,13 +529,13 @@ Avant d’effectuer une opération de service Directory Manager par programmatio
 
 **Appeler les opérations d’utilisateur ou de groupe appropriées**
 
-Une fois le client de service créé, vous pouvez appeler les opérations de gestion des utilisateurs ou des groupes. Le client de service vous permet d’affecter, de supprimer et d’interroger des domaines, des utilisateurs, des utilisatrices et des groupes. Notez qu’il est possible d’ajouter un principal de répertoire ou un principal local à un groupe local, mais qu’il n’est pas possible d’ajouter un principal local à un groupe de répertoires.
+Une fois le client de service créé, vous pouvez appeler les opérations de gestion des utilisateurs ou des groupes. Le client de service vous permet d’attribuer, de supprimer et d’interroger des domaines, des utilisateurs, des utilisatrices et des groupes. Notez qu’il est possible d’ajouter un principal de répertoire ou un principal local à un groupe local, mais qu’il n’est pas possible d’ajouter un principal local à un groupe de répertoire.
 
 **Voir également**
 
 [Gestion des utilisateurs et des groupes à l’aide de l’API Java](users.md#managing-users-and-groups-using-the-java-api)
 
-[Gérer les utilisateurs et les groupes à l’aide de l’API de service web](users.md#managing-users-and-groups-using-the-web-service-api)
+[Gérer les utilisateurs, les utilisatrices et les groupes à l’aide de l’API web service](users.md#managing-users-and-groups-using-the-web-service-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -541,7 +553,7 @@ Pour gérer par programmation les utilisateurs, les groupes et les domaines à l
 
 1. Créez un client DirectoryManagerService.
 
-   Créez un objet `DirectoryManagerServiceClient` en utilisant son constructeur et en transmettant un objet `ServiceClientFactory` contenant des propriétés de connexion. Pour plus d’informations, voir [Configuration des propriétés de connexion &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
+   Créez un objet `DirectoryManagerServiceClient` en utilisant son constructeur et en transmettant un objet `ServiceClientFactory` contenant des propriétés de connexion. Pour plus d’informations, voir [Configuration des propriétés de connexion ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Appelez les opérations d’utilisateur, d’utilisatrice ou de groupe appropriées.
 
@@ -563,13 +575,13 @@ Pour gérer par programmation les utilisateurs, les groupes et les domaines à l
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Gérer les utilisateurs et les groupes à l’aide de l’API de service web {#managing-users-and-groups-using-the-web-service-api}
+### Gérer les utilisateurs, les utilisatrices et les groupes à l’aide de l’API web service {#managing-users-and-groups-using-the-web-service-api}
 
 Pour gérer les utilisateurs, groupes et domaines par programme à l’aide de l’API Directory Manager Service (service web), procédez aux tâches suivantes :
 
 1. Incluez les fichiers de projet.
 
-   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL du gestionnaire de répertoires. (Consultez la section [Appeler AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL de Directory Manager. (Consultez la section [Appeler AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
    * Référencez l’assemblage client Microsoft .NET. (Consultez la section [Créer un assemblage client .NET utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
 
 1. Créez un client DirectoryManagerService.
@@ -600,13 +612,13 @@ Pour gérer les utilisateurs, groupes et domaines par programme à l’aide de l
 
 ## Rôles utilisateur et autorisations {#managing-roles-and-permissions}
 
-Cette rubrique décrit comment utiliser l’API du service Authorization Manager (Java) pour attribuer, supprimer et déterminer par programmation des rôles et des autorisations.
+Cette rubrique décrit comment utiliser l’API du service Authorization Manager (Java) pour attribuer, supprimer et déterminer des rôles et des autorisations.
 
-Dans AEM Forms, un *rôle* est un groupe d’autorisations d’accès à une ou plusieurs ressources au niveau du système. Ces autorisations sont créées via User Management et sont appliquées par les composants de service. Par exemple, un administrateur ou une administratrice peut affecter le rôle « Auteur de l’ensemble de politiques » à un groupe d’utilisateurs ou d’utilisatrices. Rights Management autoriserait alors les utilisateurs et utilisatrices de ce groupe ayant ce rôle à créer des ensembles de politiques via la console d’administration.
+Dans AEM Forms, un *rôle* est un groupe d’autorisations d’accès à une ou plusieurs ressources au niveau du système. Ces autorisations sont créées via User Management et sont appliquées par les composants de service. Par exemple, un administrateur ou une administratrice peut attribuer le rôle « Auteur de l’ensemble de politiques » à un groupe d’utilisateurs ou d’utilisatrices. Rights Management autoriserait alors les utilisateurs et utilisatrices de ce groupe ayant ce rôle à créer des ensembles de politiques via la console d’administration.
 
 Il existe deux types de rôles : *rôles par défaut* et *rôles personnalisés*. Les rôles par défaut (*rôles système)* sont déjà domiciliés dans AEM Forms. Il est supposé que les rôles par défaut ne peuvent pas être supprimés ni modifiés par l’administrateur et sont donc immuables. Les rôles personnalisés créés par l’administrateur, qui peut ensuite les modifier ou les supprimer, sont donc modifiables.
 
-Les rôles facilitent la gestion des autorisations. Lorsqu’un rôle est attribué à un principal, un ensemble d’autorisations est automatiquement attribué à cette entité, et toutes les décisions spécifiques liées à l’accès pour le principal sont basées sur cet ensemble global d’autorisations attribuées.
+Les rôles facilitent la gestion des autorisations. Lorsqu’un rôle est attribué à un principal, un ensemble d’autorisations est automatiquement attribué à ce principal, et toutes les décisions spécifiques liées à l’accès pour le principal sont basées sur cet ensemble global d’autorisations attribuées.
 
 ### Résumé des étapes {#summary_of_steps-4}
 
@@ -626,7 +638,7 @@ Avant d’effectuer par programmation une opération User Management Authorizati
 
 **Appeler les opérations de rôle ou d’autorisation appropriées**
 
-Une fois que vous avez créé le client de service, vous pouvez appeler les opérations de rôle ou d’autorisation. Le client de service vous permet d’affecter, de supprimer et de déterminer des rôles et des autorisations.
+Une fois que vous avez créé le client de service, vous pouvez appeler les opérations de rôle ou d’autorisation. Le client de service vous permet d’attribuer, de supprimer et de déterminer des rôles et des autorisations.
 
 **Voir également**
 
@@ -694,10 +706,10 @@ Gérez les rôles et les autorisations à l’aide de l’API Authorization Mana
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Appelez les opérations de rôle ou d’autorisation appropriées.
 
@@ -719,7 +731,7 @@ Gérez les rôles et les autorisations à l’aide de l’API Authorization Mana
 
 ## Authentification des utilisateurs {#authenticating-users}
 
-Cette rubrique décrit comment utiliser l’API du service Authentication Manager (Java) pour permettre à vos applications clientes d’authentifier les utilisateurs par programmation.
+Cette rubrique décrit comment utiliser l’API du service Authentication Manager (Java) pour activer l’authentification programmatique des utilisateurs et utilisatrices dans vos applications clientes.
 
 L’authentification des utilisateurs peut être nécessaire pour interagir avec une base de données d’entreprise ou d’autres référentiels d’entreprise qui stockent des données sécurisées.
 
@@ -731,7 +743,7 @@ Le diagramme suivant montre le flux logique de l’application.
 
 ![au_au_umauth_process](assets/au_au_umauth_process.png)
 
-Le tableau suivant décrit les étapes de ce diagramme
+Le tableau suivant décrit les étapes de ce diagramme.
 
 <table>
  <thead>
@@ -747,7 +759,7 @@ Le tableau suivant décrit les étapes de ce diagramme
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>Les informations d’identification de l’utilisateur sont authentifiées avec le service Authentication Manager. Si les informations d’identification de l’utilisateur sont valides, le workflow passe à l’étape 3. Dans le cas contraire, un message est envoyé à l’utilisateur pour l’informer qu’il n’est pas un utilisateur autorisé.</p></td>
+   <td><p>Les informations d’identification de l’utilisateur ou de l’utilisatrice sont authentifiées avec le service Authentication Manager. Si les informations d’identification de l’utilisateur sont valides, le workflow passe à l’étape 3. Dans le cas contraire, un message est envoyé à l’utilisateur pour l’informer qu’il n’est pas un utilisateur autorisé.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -755,7 +767,7 @@ Le tableau suivant décrit les étapes de ce diagramme
   </tr>
   <tr>
    <td><p>4</p></td>
-   <td><p>Les informations utilisateur sont fusionnées avec une conception de formulaire et le formulaire est généré pour l’utilisateur. </p></td>
+   <td><p>Les informations sur l’utilisateur et l’utilisatrice sont fusionnées avec une conception de formulaire et le formulaire est généré pour l’utilisateur ou l’utilisatrice. </p></td>
   </tr>
  </tbody>
 </table>
@@ -822,7 +834,7 @@ Authentifiez un utilisateur à l’aide de l’API du service Authentication Man
 
    Appelez ensuite la méthode `initPrincipal` de l’objet `Context` et transmettez `AuthResult`.
 
-### Authentification d’un utilisateur à l’aide de l’API de service web {#authenticate-a-user-using-the-web-service-api}
+### Authentifiez un utilisateur ou une utilisatrice à l’aide de l’API de service web {#authenticate-a-user-using-the-web-service-api}
 
 Authentifiez un utilisateur à l’aide de l’API Authentication Manager Service (service web) :
 
@@ -851,13 +863,13 @@ Authentifiez un utilisateur à l’aide de l’API Authentication Manager Servic
 
 ## Synchronisation par programmation des utilisateurs {#programmatically-synchronizing-users}
 
-Vous pouvez synchroniser les utilisateurs par programmation à l’aide de l’API User Management. Lorsque vous synchronisez des utilisateurs et des utilisatrices, vous mettez à jour AEM Forms avec les données utilisateur qui se trouvent dans votre référentiel d’utilisateurs et d’utilisatrices. Supposons, par exemple, que vous ajoutiez de nouveaux utilisateurs à votre référentiel d’utilisateurs. Une fois que vous avez effectué une opération de synchronisation, les nouveaux utilisateurs deviennent des utilisateurs AEM Forms. En outre, les utilisateurs qui ne se trouvent plus dans votre référentiel d’utilisateurs sont supprimés d’AEM Forms.
+Vous pouvez synchroniser les utilisateurs par programmation à l’aide de l’API User Management. Lorsque vous synchronisez des utilisateurs ou des utilisatrices, vous mettez à jour AEM Forms avec les données utilisateur qui se trouvent dans votre référentiel d’utilisateurs et d’utilisatrices. Supposons, par exemple, que vous ajoutiez de nouveaux utilisateurs à votre référentiel d’utilisateurs. Une fois que vous avez effectué une opération de synchronisation, les nouveaux utilisateurs et utilisatrices deviennent des utilisateurs et utilisatrices AEM Forms. En outre, les utilisateurs qui ne se trouvent plus dans votre référentiel d’utilisateurs sont supprimés d’AEM Forms.
 
 Le diagramme suivant montre la synchronisation d’AEM Forms avec un référentiel d’utilisateurs.
 
 ![ps_ps_umauth_sync](assets/ps_ps_umauth_sync.png)
 
-Le tableau suivant décrit les étapes de ce diagramme
+Le tableau suivant décrit les étapes de ce diagramme.
 
 <table>
  <thead>
@@ -869,7 +881,7 @@ Le tableau suivant décrit les étapes de ce diagramme
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>Une application cliente demande à AEM Forms d’effectuer une opération de synchronisation.</p></td>
+   <td><p>Une application client demande à AEM Forms d’effectuer une opération de synchronisation.</p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
@@ -888,13 +900,13 @@ Le tableau suivant décrit les étapes de ce diagramme
 
 ### Résumé des étapes {#summary_of_steps-6}
 
-Pour synchroniser les utilisateurs par programme, procédez comme suit :
+Pour synchroniser les utilisateurs et utilisatrices par programmation, procédez comme suit :
 
 1. Incluez les fichiers de projet.
 1. Créez un client UserManagerUtilServiceClient.
 1. Indiquez le domaine d’entreprise.
 1. Appelez l’opération d’authentification.
-1. Déterminer si l’opération de synchronisation est terminée
+1. Déterminez si l’opération de synchronisation est terminée
 
 **Inclure des fichiers de projet**
 
@@ -906,7 +918,7 @@ Avant de pouvoir synchroniser les utilisateurs par programme, vous devez créer 
 
 **Indiquer le domaine d’entreprise**
 
-Avant d’effectuer une opération de synchronisation à l’aide de l’API User Management, indiquez le domaine d’entreprise auquel appartiennent les utilisateurs. Vous pouvez indiquer un ou plusieurs domaines d’entreprise. Avant d’effectuer une opération de synchronisation par programme, vous devez configurer un domaine d’entreprise à l’aide d’Administration Console. (Consultez la section [Aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).)
+Avant d’effectuer une opération de synchronisation à l’aide de l’API User Management, indiquez le domaine d’entreprise auquel appartiennent les utilisateurs. Vous pouvez indiquer un ou plusieurs domaines d’entreprise. Avant d’effectuer une opération de synchronisation par programme, vous devez configurer un domaine d’entreprise à l’aide de la console d’administration. (Consultez la section [Aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).)
 
 **Appeler l’opération de synchronisation**
 

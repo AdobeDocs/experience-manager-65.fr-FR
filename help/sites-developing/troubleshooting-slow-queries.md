@@ -5,12 +5,22 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2302'
 ht-degree: 93%
@@ -47,7 +57,7 @@ Dans AEM 6.3, par défaut, lorsqu’une traversée de 100 000 est atteinte, la
 
 #### Pendant le développement {#during-development}
 
-Expliquez **toutes** les requêtes et assurez-vous que leurs plans de requête ne contiennent pas l’explication **/&ast; traverse**. Exemple de traversée du plan de requête :
+Expliquez **toutes** les requêtes et assurez-vous que leurs plans de requête ne contiennent pas l’explication **/&amp;ast; traverse**. Exemple de traversée du plan de requête :
 
 * **PLAN :** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
@@ -143,7 +153,7 @@ La définition de seuils bas permet d’éviter les requêtes gourmandes en ress
 
 #### Après le déploiement {#post-deployment-2}
 
-* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de nœuds importante ou une consommation élevée de mémoire de tas : &grave;&grave;
+* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de nœuds importante ou une consommation élevée de mémoire de tas : ``
 
   * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
   * Optimisez la requête afin de réduire le nombre de nœuds parcourus.

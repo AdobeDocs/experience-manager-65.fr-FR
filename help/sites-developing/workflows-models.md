@@ -10,13 +10,22 @@ exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2503'
 ht-degree: 99%
-
 ---
-
 # Création de modèles de workflow{#creating-workflow-models}
 
 >[!CAUTION]
@@ -31,12 +40,14 @@ Lorsqu’un utilisateur ou une utilisatrice démarre un workflow, une instance e
 
 Lorsque vous créez un modèle de workflow pour la première fois, il contient :
 
-* Les étapes **Début de flux** et **Fin de flux**.Ces étapes représentent le début et la fin du workflow. Elles sont obligatoires et ne peuvent pas être modifiées ni supprimées.
-* Un exemple d’étape **Participant**, dont le nom est **Étape 1**.Cette étape est configurée pour affecter un élément de travail à l’initiateur de workflow. Vous pouvez modifier ou supprimer cette étape et y ajouter d’autres étapes suivant les besoins.
+* Les étapes **Début de flux** et **Fin de flux**.
+Ces étapes représentent le début et la fin du workflow. Elles sont obligatoires et ne peuvent pas être modifiées ni supprimées.
+* Un exemple d’étape **Participant**, dont le nom est **Étape 1**.
+Cette étape est configurée pour affecter un élément de travail à l’initiateur de workflow. Vous pouvez modifier ou supprimer cette étape et y ajouter d’autres étapes suivant les besoins.
 
 Pour créer un workflow avec l’éditeur, procédez comme suit :
 
-1. Ouvrez la console **Modèles de workflow** via **Outils**, **Workflow**, **Modèles** ou, par exemple : [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow).
+1. Ouvrez la console **Modèles de workflow** via **Outils**, **Workflow**, **Modèles** ou, par exemple : [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. Sélectionnez **Créer**, puis **Créer un modèle**.
 1. La boîte de dialogue **Ajouter un modèle de workflow** s’ouvre. Saisissez le **Titre** et le **Nom** (facultatif) avant de sélectionner **Terminé**.
 1. Le nouveau modèle est répertorié dans la console **Modèles de workflow**.
@@ -83,9 +94,9 @@ Lorsque vous ouvrez un [Modèle par défaut et/ou hérité](/help/sites-developi
 * le navigateur d’étapes n’est pas disponible (côté gauche) ;
 * une action **Modifier** est disponible dans la barre d’outils (côté droit).
 * Au départ, le modèle et ses propriétés sont présentés en mode lecture seule comme suit :
-   * Les workflows par défaut sont situés dans `/libs`.
-   * Les workflows hérités se trouvent dans `/etc`
-Sélectionner **Modifier** aura pour effet :
+  * Les workflows par défaut sont situés dans `/libs`.
+  * Les workflows hérités se trouvent dans `/etc`
+    Sélectionner **Modifier** aura pour effet :
 * une copie du workflow est réalisée dans `/conf` ;
 * le navigateur d’étapes devient accessible ;
 * vous pourrez effectuer des modifications.
@@ -188,7 +199,8 @@ Si un modèle de workflow présent dans l’interface utilisateur classique est 
 
 1. Accédez à **[!UICONTROL Outils > Général > Balisage]**. Sélectionnez **[!UICONTROL Workflow]**.
 
-1. Sélectionnez **[!UICONTROL Créer > Créer une balise]**. Définissez le **[!UICONTROL titre]** comme `DAM` et le **[!UICONTROL nom]** comme `dam`. Sélectionnez **[!UICONTROL Envoyer]**.   ![Créer une balise dans le modèle de workflow](assets/workflow_create_tag.png)
+1. Sélectionnez **[!UICONTROL Créer > Créer une balise]**. Définissez le **[!UICONTROL titre]** comme `DAM` et le **[!UICONTROL nom]** comme `dam`. Sélectionnez **[!UICONTROL Envoyer]**.
+   ![Créer une balise dans le modèle de workflow](assets/workflow_create_tag.png)
 
 1. Accédez à **[!UICONTROL Outils > Workflows > Modèles]**. Sélectionnez **[!UICONTROL Demande d’activation]**, puis **[!UICONTROL Modifier]**.
 
@@ -411,7 +423,8 @@ Pour définir une règle OU, procédez comme suit :
 
    * Définissez-la comme **Itinéraire par défaut** en configurant la **Valeur** sur `true`.
 
-   * Dans **Règle**, définissez le chemin d’accès au script. Par exemple :     `/apps/myapp/workflow/scripts/myscript1.ecma`
+   * Dans **Règle**, définissez le chemin d’accès au script. Par exemple :
+     `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
    >
@@ -419,7 +432,8 @@ Pour définir une règle OU, procédez comme suit :
 
 1. Modifiez les propriétés de la **Branche 2** de la **division OU**.
 
-   * En tant que **Règle**, définissez le chemin d’accès à l’autre script. Par exemple :     `/apps/myapp/workflow/scripts/myscript2.ecma`
+   * En tant que **Règle**, définissez le chemin d’accès à l’autre script. Par exemple :
+     `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Définissez les propriétés des différentes étapes de chaque branche. Assurez-vous que la valeur **Utilisateur/Groupe** est définie.
 1. Cliquez sur **Synchronisation** (barre d’outils de l’éditeur) pour conserver vos modifications dans le modèle d’exécution.

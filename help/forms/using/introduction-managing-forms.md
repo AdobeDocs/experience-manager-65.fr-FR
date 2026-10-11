@@ -9,13 +9,27 @@ exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: c6dd35fbedba6ace60975a7c31e987edd69a8c69
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 98%
-
 ---
-
 # Présentation de la gestion des formulaires {#introduction-to-managing-forms}
 
 AEM [!DNL Forms] fournit une interface utilisateur simplifiée et puissante pour créer et gérer des formulaires, des documents, des thèmes, des lettres, des fragments de document, des dictionnaires de données et des ressources associées. Il permet de gérer le cycle de vie complet des formulaires, des documents et des ressources connexes, depuis le bureau du développeur jusqu’à l’offre
@@ -56,8 +70,8 @@ Le bouton Créer est le point de départ du processus de création ou de chargem
 
 * **Dossier :** l’interface utilisateur d’AEM [!DNL Forms] utilise des dossiers pour classer les ressources. Elle prend en charge deux types de dossiers :
 
-   * **Dossier Général :** ces fichiers sont utilisés pour les ressources créées dans l’interface utilisateur AEM [!DNL Forms] Ces dossiers n’ont pas de structure de dossiers stricte. Vous pouvez renommer, créer des sous-dossiers et stocker des formulaires adaptatifs, des communications interactives, des fragments de formulaire adaptatif, des modèles de formulaires (XDP), des formulaires PDF, des documents et les ressources associées dans ces dossiers.
-   * **Dossiers de processus de formulaires** : ces dossiers sont créés lorsque des processus Workbench (archives LiveCycle) sont migrés et synchronisés avec l’interface utilisateur d’AEM [!DNL Forms] Il est interdit de renommer, de créer un sous-dossier, de créer une communication interactive ou un fragment de formulaire adaptatif. Il est interdit de supprimer un dossier de version ou de créer et charger un formulaire adaptatif, un fragment de formulaire adaptatif ou une communication interactive parallèlement au dossier de version.
+  * **Dossier Général :** ces fichiers sont utilisés pour les ressources créées dans l’interface utilisateur AEM [!DNL Forms] Ces dossiers n’ont pas de structure de dossiers stricte. Vous pouvez renommer, créer des sous-dossiers et stocker des formulaires adaptatifs, des communications interactives, des fragments de formulaire adaptatif, des modèles de formulaires (XDP), des formulaires PDF, des documents et les ressources associées dans ces dossiers.
+  * **Dossiers de processus de formulaires** : ces dossiers sont créés lorsque des processus Workbench (archives LiveCycle) sont migrés et synchronisés avec l’interface utilisateur d’AEM [!DNL Forms] Il est interdit de renommer, de créer un sous-dossier, de créer une communication interactive ou un fragment de formulaire adaptatif. Il est interdit de supprimer un dossier de version ou de créer et charger un formulaire adaptatif, un fragment de formulaire adaptatif ou une communication interactive parallèlement au dossier de version.
 
   ![dossiers](assets/folders.png)
 
@@ -70,7 +84,7 @@ Le panneau Formulaires et documents propose également des options pour effectue
 
 ### Thèmes  {#themes}
 
-Un thème contient des détails de style pour les composants et les panneaux. Les thèmes ont une identité indépendante. Ainsi, vous pouvez réutiliser un thème sur plusieurs formulaires adaptatifs. Vous pouvez spécifier des styles pour un composant ou modifier les propriétés CSS pour différents composants utilisés dans vos formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Vous pouvez enregistrer les personnalisations dans un thème et les déplacer sur les composants de votre formulaire sous la forme d&#39;un paramètre prédéfini. Lorsque vous appliquez un thème à votre formulaire, le style spécifié se reflète sur des composants correspondants de votre formulaire. Avec AEM 6.2 [!DNL Forms], vous pouvez créer des thèmes et les appliquer à vos formulaires.
+Un thème contient des détails de style pour les composants et les panneaux. Les thèmes ont une identité indépendante. Ainsi, vous pouvez réutiliser un thème sur plusieurs formulaires adaptatifs. Vous pouvez spécifier des styles pour un composant ou modifier les propriétés CSS pour différents composants utilisés dans vos formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence et la taille. Vous pouvez enregistrer les personnalisations dans un thème et les appliquer aux composants de votre formulaire sous la forme d’un paramètre prédéfini. Lorsque vous appliquez un thème à votre formulaire, le style spécifié s’applique aux composants correspondants de votre formulaire. Avec AEM 6.2 [!DNL Forms], vous pouvez créer des thèmes et les appliquer à vos formulaires.
 
 Pour plus d’informations sur la création et l’utilisation des thèmes, voir [Thèmes dans AEM Forms](../../forms/using/themes.md).
 
@@ -106,8 +120,8 @@ Le panneau d’outils AEM contient des outils pour divers composants. Pour accé
 
 * **Icône de rail de gauche :** vous pouvez cliquer sur l’icône de rail gauche ![railleftpng](assets/railleftpng.png) afin d’afficher les fonctionnalités de chronologie et de références d’AEM [!DNL Forms].
 
-   * **Montage :** vous pouvez ajouter et afficher un commentaire sur un actif qui est disponible à des fins d’examen dans le montage. Pour des instructions détaillées, voir [Création et gestion de révisions des actifs d’un formulaire](../../forms/using/create-reviews-forms.md).
-   * **Références :**  un actif AEM [!DNL Forms] peut être utilisé dans plusieurs actifs AEM [!DNL Forms] Par exemple, un fragment de document peut être utilisé dans plusieurs lettres. Les références sont une liste des actifs (d’autres formulaires ou ressources) dans lesquels l’actif sélectionné est utilisé et également la liste des autres actifs que l’actif sélectionné utilise.
+  * **Montage :** vous pouvez ajouter et afficher un commentaire sur un actif qui est disponible à des fins d’examen dans le montage. Pour des instructions détaillées, voir [Création et gestion de révisions des actifs d’un formulaire](../../forms/using/create-reviews-forms.md).
+  * **Références :**  un actif AEM [!DNL Forms] peut être utilisé dans plusieurs actifs AEM [!DNL Forms] Par exemple, un fragment de document peut être utilisé dans plusieurs lettres. Les références sont une liste des actifs (d’autres formulaires ou ressources) dans lesquels l’actif sélectionné est utilisé et également la liste des autres actifs que l’actif sélectionné utilise.
 
 * **Chemin de navigation :** un chemin de navigation représente le titre de la console active ou du dossier actif. Vous pouvez cliquer sur l’option Chemin de navigation pour naviguer entre les niveaux de dossiers supérieurs dans la hiérarchie.
 * **Sélecteur d’affichage :** vous pouvez cliquer sur l’icône du sélecteur d’affichage ![affichageliste](assets/viewlist.png) ou ![affichagecarte](assets/viewcard.png) pour passer rapidement d’un affichage sous forme de liste et à un affichage sous forme de carte. Pour plus d’informations sur les composants communs de l’interface utilisateur, consultez la section [Création](/help/sites-authoring/author.md).

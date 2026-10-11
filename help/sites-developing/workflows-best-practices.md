@@ -1,28 +1,37 @@
 ---
 title: Bonnes pratiques en matière de workflow
-description: Découvrez les bonnnes pratiques d’utilisation des workflows dans Adobe Experience Manager.
+description: Découvrez les bonnes pratiques d’utilisation des workflows dans Adobe Experience Manager.
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b3af1a140abc1c202fa58704440c5660f1d43123
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 84%
-
 ---
-
 # Bonnes pratiques en matière de workflow{#workflow-best-practices}
 
 Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM).
 
 Ils représentent souvent une grande partie du traitement effectué dans un environnement AEM. Ainsi, lorsque les étapes de workflow personnalisées ne sont pas écrites conformément aux bonnes pratiques ou que les workflows prêts à l’emploi ne sont pas configurés pour s’exécuter aussi efficacement que possible, cela peut nuire au système.
 
-Il est donc vivement conseillé de planifier soigneusement vos implémentations de workflow.
+Il est donc vivement conseillé de planifier soigneusement vos implémentations de workflows.
 
 ## Configuration {#configuration}
 
-Lors de la configuration de processus de workflows (personnalisés et/ou prêts à l’emploi), il convient de garder quelques éléments à l’esprit.
+Lors de la configuration de processus de workflow (personnalisés et/ou prêts à l’emploi), il convient de garder quelques éléments à l’esprit.
 
 ### Workflows transitoires {#transient-workflows}
 
@@ -35,7 +44,7 @@ Les avantages sont notamment :
 * Réduction du temps de traitement des workflows pouvant aller jusqu’à 10 %.
 * Une réduction considérable de la croissance du référentiel.
 * Plus besoin de purger les workflows CRUD.
-* Une réduction en outre du nombre de fichiers TAR à compacter.
+* En outre, cela réduit le nombre de fichiers TAR à compacter.
 
 >[!CAUTION]
 >
@@ -101,10 +110,10 @@ Les modèles de workflow sont stockés dans le référentiel selon leur type :
   >
   >Ne pas :
   >
-  >* placer vos modèles de workflow personnalisés dans ce dossier ;
+  >* placer vos modèles de workflow personnalisés dans ce dossier
   >* modifier des éléments dans `/libs`,
   >
-  >Car les modifications peuvent être remplacées lors de la mise à niveau ou lors de l’installation de correctifs, de groupes de correctifs cumulatifs ou de service packs.
+  >Car les modifications peuvent être écrasées lors de la mise à niveau ou de l’installation de correctifs, de packs de correctifs cumulatifs ou de pack de services.
 
 * Les conceptions de workflow personnalisées sont conservées sous :
 
@@ -112,11 +121,11 @@ Les modèles de workflow sont stockés dans le référentiel selon leur type :
   /conf/global/settings/workflow/models/...
   ```
 
-* Les conceptions de workflow d’exécution (standard et personnalisées) sont conservées à l’emplacement suivant :
+* Les conceptions de workflow d’exécution (standard et personnalisées) sont conservées sous le chemin d’accès suivant :
 
   `/var/workflow/models/`
 
-* Les conceptions de workflow héritées (au moment de la création et de l’exécution) sont conservées à l’emplacement suivant :
+* Les conceptions de workflows hérités (au moment de la création et de l’exécution) sont conservées sous le chemin d’accès suivant :
 
   `/etc/workflow/models/`
 
@@ -126,9 +135,9 @@ Les modèles de workflow sont stockés dans le référentiel selon leur type :
 
 #### Emplacements - Lanceurs de workflows {#locations-workflow-launchers}
 
-Les définitions de lanceur de workflows sont également stockées dans le référentiel selon leur type :
+Les définitions des lanceurs de workflows sont également stockées dans le référentiel selon leur type :
 
-* Les lanceurs de workflows prêts à l’emploi sont conservés à l’emplacement suivant :
+* Les lanceurs de workflows prêts à l’emploi sont conservés sous le chemin d’accès suivant :
 
   `/libs/settings/workflow/launcher/`
 
@@ -139,7 +148,7 @@ Les définitions de lanceur de workflows sont également stockées dans le réf�
   >* placer vos lanceurs de workflows personnalisés dans ce dossier ;
   >* modifier des éléments dans `/libs`,
   >
-  >Car les modifications peuvent être remplacées lors de la mise à niveau ou lors de l’installation de correctifs, de groupes de correctifs cumulatifs ou de service packs.
+  >Car les modifications peuvent être écrasées lors de la mise à niveau ou de l’installation de correctifs, de packs de correctifs cumulatifs ou de pack de services.
 
 * Les lanceurs de workflows personnalisés sont conservés sous :
 
@@ -147,7 +156,7 @@ Les définitions de lanceur de workflows sont également stockées dans le réf�
   /conf/global/settings/workflow/launcher/...
   ```
 
-* Les lanceurs de workflows hérités sont conservés à l’emplacement suivant :
+* Les lanceurs de workflows hérités sont conservés sous le chemin d’accès suivant :
 
   `/etc/workflow/launcher/`
 
@@ -167,10 +176,10 @@ Les scripts de workflow sont également stockés dans le référentiel selon leu
   >
   >Ne pas :
   >
-  >* placer vos scripts de workflow personnalisés dans ce dossier ;
+  >* placer vos scripts de workflows personnalisés dans ce dossier
   >* modifier des éléments dans `/libs`,
   >
-  >Car les modifications peuvent être remplacées lors de la mise à niveau ou lors de l’installation de correctifs, de groupes de correctifs cumulatifs ou de service packs.
+  >Car les modifications peuvent être écrasées lors de la mise à niveau ou de l’installation de correctifs, de packs de correctifs cumulatifs ou de pack de services.
 
 * Les scripts de workflow personnalisés sont conservés sous :
 
@@ -194,7 +203,7 @@ Les notifications de workflow sont également stockées dans le référentiel se
   >
   >Ne pas :
   >
-  >* placer vos définitions de notification de workflow personnalisées dans ce dossier ;
+  >* placer vos définitions de notification de workflow personnalisées dans ce dossier
   >* modifier des éléments dans `/libs`,
   >
   >Car les modifications peuvent être remplacées lors de la mise à niveau ou lors de l’installation de correctifs, de groupes de correctifs cumulatifs ou de service packs.
@@ -220,7 +229,7 @@ Les notifications de workflow sont également stockées dans le référentiel se
 
 Comme dans tout développement personnalisé, il est toujours recommandé d’utiliser la session d’un utilisateur ou d’une utilisatrice lorsque cela est possible :
 
-* pour un meilleur respect des consignes de sécurité ;
+* pour un meilleur respect des consignes de sécurité
 * pour permettre au système de gérer l’ouverture et la fermeture de la session.
 
 Lors de la mise en œuvre d’un processus de workflow :
@@ -243,10 +252,10 @@ Enregistrer une session :
 * Dans un processus de workflow, si le `WorkflowSession` est utilisé pour modifier le référentiel, n’enregistrez pas explicitement la session ; le workflow s’en chargera une fois l’opération terminée.
 * `Session.Save` ne doit pas être appelé depuis l’intérieur d’une étape de workflow :
 
-   * Il est recommandé d’adapter la session JCR du workflow ; une `save` n’est donc pas nécessaire, car le moteur de workflow enregistre automatiquement la session une fois l’exécution du workflow terminée.
-   * Il n’est pas recommandé qu’une étape de processus crée sa propre session JCR.
+  * Il est recommandé d’adapter la session JCR du workflow ; une `save` n’est donc pas nécessaire, car le moteur de workflow enregistre automatiquement la session une fois l’exécution du workflow terminée.
+  * Il n’est pas recommandé qu’une étape de processus crée sa propre session JCR.
 
-* En éliminant les enregistrements inutiles, vous pouvez réduire le traitement et ainsi rendre les workflows plus efficaces.
+* En éliminant les enregistrements inutiles, vous pouvez réduire la surcharge et ainsi rendre les workflows plus efficaces.
 
 >[!CAUTION]
 >
@@ -256,12 +265,12 @@ Enregistrer une session :
 
 Il existe un écouteur responsable de tous les [lanceurs de workflows](/help/sites-administering/workflows-starting.md#workflows-launchers) enregistrés :
 
-* Il écoutera les changements sur tous les chemins spécifiés dans les propriétés glob des autres lanceurs.
-* Lorsqu’un événement est distribué, le moteur de workflow évalue ensuite chaque lanceur pour déterminer s’il doit s’exécuter.
+* Il écoutera les changements sur tous les chemins spécifiés dans les propriétés d’extension métacaractère des autres lanceurs.
+* Lorsqu’un évènement est distribué, le moteur de workflow évalue ensuite chaque lanceur pour déterminer s’il doit s’exécuter.
 
 Créer trop de lanceurs ralentira le processus d’évaluation.
 
-La création d&#39;un chemin glob à la racine du référentiel sur un seul lanceur obligerait le moteur de workflow à écouter et à évaluer les événements de création/modification sur chaque nœud du référentiel. Pour cette raison, il est recommandé de créer uniquement les lanceurs nécessaires et de faire en sorte que le chemin glob soit aussi spécifique que possible.
+La création d&#39;un chemin d’extension métacaractère à la racine du référentiel sur un seul lanceur obligerait le moteur de workflow à écouter et à évaluer les événements de création/modification sur chaque nœud du référentiel. Pour cette raison, il est recommandé de créer uniquement les lanceurs nécessaires et de faire en sorte que le chemin glob soit aussi spécifique que possible.
 
 En raison de l’impact de ces lanceurs sur le comportement du workflow, il peut également être utile de désactiver tous les lanceurs prêts à l’emploi qui ne sont pas utilisés.
 
@@ -269,7 +278,7 @@ En raison de l’impact de ces lanceurs sur le comportement du workflow, il peut
 
 La [configuration de lanceur](/help/sites-administering/workflows-starting.md#workflows-launchers) personnalisée a été améliorée afin de prendre en charge les éléments suivants :
 
-* Avoir plusieurs conditions « AND » mises ensemble.
+* Avoir plusieurs conditions combinées avec « AND ».
 * Avoir des conditions OR dans une seule condition.
 * Désactiver/activer les lanceurs selon qu’un indicateur de fonctionnalité est activé ou désactivé.
 * Prise en charge d’expressions régulières (regex) dans des conditions de lanceur.
@@ -305,9 +314,9 @@ Tenez compte de ce point si vous envisagez d’utiliser cette étape dans le cad
 Lors de la mise à niveau de votre instance :
 
 * assurez-vous que tous les modèles de workflow personnalisés ont été sauvegardés avant la mise à niveau d’une instance.
-* vérifiez qu’aucun de vos workflows personnalisés n’est stocké dans l’[&#x200B; emplacement](#locations) :
+* vérifiez qu’aucun de vos workflows personnalisés n’est stocké dans l’[ emplacement](#locations) :
 
-   * `/libs/settings/workflow/models/projects`
+  * `/libs/settings/workflow/models/projects`
 
 >[!NOTE]
 >
@@ -328,7 +337,7 @@ La console de gestion des tâches Sling affichera :
 
 ### Outil de création de rapports de workflows {#workflow-report-tool}
 
-L’outil de création de rapports de workflows est supprimé dans la version 6.3 pour éviter une dégradation des performances.
+L’outil de reporting de workflow est supprimé dans la version 6.3 pour éviter une dégradation des performances.
 
 ### MBean des opérations de maintenance des workflows {#workflow-maintenance-operations-mbean}
 

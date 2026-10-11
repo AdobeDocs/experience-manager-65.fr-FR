@@ -9,13 +9,17 @@ exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 1%
-
 ---
-
 # Suivi des performances des applications avec Adobe Mobile Analytics{#track-app-performance-with-adobe-mobile-analytics}
 
 {{ue-over-mobile}}
@@ -30,7 +34,7 @@ Comment pouvez-vous affiner vos applications mobiles pour offrir la meilleure ex
 
 Avec Adobe Mobile Services, vous pouvez obtenir des informations insight sur la manière dont vos utilisateurs utilisent vos applications mobiles en effectuant le suivi de l&#39;utilisation, des blocages d&#39;applications, des détails d&#39;appareils et de nombreuses autres mesures critiques pour vos applications mobiles.
 
-Adobe Experience Manager Mobile offre un aperçu des détails de votre analyse mobile directement depuis le tableau de bord de l’application AEM Mobile. La **Mosaïque Mesures mobiles** du tableau de bord fournit Real-Time Analytics pour votre application mobile, ce qui permet aux développeurs, aux auteurs et aux administrateurs d’avoir un aperçu rapide de l’intégrité de votre application mobile. Sous cet écran, l’analytics est alimenté par le SDK [Adobe Mobile Analytics](https://business.adobe.com/fr/products/analytics/mobile-marketing.html). Le SDK Adobe Mobile Analytics peut être connecté à vos applications en mode natif ou par le biais d’un plug-in PhoneGap Bridge pour les webviews. Les mesures sont collectées et mises en cache sur l’appareil jusqu’à la connexion de celui-ci. Les données sont ensuite transmises au cloud Adobe Mobile Services pour analyse et création de rapports.
+Adobe Experience Manager Mobile offre un aperçu des détails de votre analyse mobile directement depuis le tableau de bord de l’application AEM Mobile. La **Mosaïque Mesures mobiles** du tableau de bord fournit Real-Time Analytics pour votre application mobile, ce qui permet aux développeurs, aux auteurs et aux administrateurs d’avoir un aperçu rapide de l’intégrité de votre application mobile. Sous cet écran, l’analytics est alimenté par le SDK [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html). Le SDK Adobe Mobile Analytics peut être connecté à vos applications en mode natif ou par le biais d’un plug-in PhoneGap Bridge pour les webviews. Les mesures sont collectées et mises en cache sur l’appareil jusqu’à la connexion de celui-ci. Les données sont ensuite transmises au cloud Adobe Mobile Services pour analyse et création de rapports.
 
 Adobe Mobile Analytics SDK fournit les éléments suivants :
 
@@ -41,9 +45,9 @@ Adobe Mobile Analytics SDK fournit les éléments suivants :
 1. **Analyse de géolocalisation** - Trouvez où les utilisateurs de votre application lancent et interagissent avec vos expériences mobiles par localisation GPS ou points ciblés.
 1. **Analyse du cheminement** - Découvrez comment les utilisateurs naviguent dans votre application pour déterminer quels écrans et éléments d’interface interagissent avec les utilisateurs et lesquels provoquent le décrochage de ces derniers.
 
-Cette section décrit comment les [développeurs &#x200B;](#developers) peuvent ensuite apprendre à instrumenter les applications AEM Mobile avec le suivi Analytics.
+Cette section décrit comment les [développeurs ](#developers) peuvent ensuite apprendre à instrumenter les applications AEM Mobile avec le suivi Analytics.
 
-Enfin, [les administrateurs &#x200B;](#administrators) apprennent à :
+Enfin, [les administrateurs ](#administrators) apprennent à :
 
 * créer un service cloud pour Adobe Mobile Services
 * créer une configuration de service mobile et associer une suite de rapports

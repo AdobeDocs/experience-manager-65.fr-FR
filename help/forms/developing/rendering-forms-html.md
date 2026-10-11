@@ -10,22 +10,38 @@ role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4149'
 ht-degree: 96%
-
 ---
-
 # Effectuer le rendu de formulaires en HTML {#rendering-forms-as-html}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
 Le service Forms effectue le rendu des formulaires en format HTML en réponse à une requête HTTP d’un navigateur web. L’un des avantages du rendu d’un formulaire en format HTML réside dans le fait que l’ordinateur sur lequel se trouve le navigateur web client n’a pas besoin d’avoir Adobe Reader, Acrobat ou Flash Player (pour les guides de formulaire (obsolète)).
 
-Pour générer un formulaire en format HTML, la conception de formulaire doit être enregistrée en tant que fichier XDP. Une conception de formulaire enregistrée en tant que fichier PDF ne peut pas être générée en tant que HTML. Lors du développement d’une conception de formulaire dans Designer qui sera rendue en format HTML, tenez compte des critères suivants :
+Pour générer un formulaire en format HTML, la conception de formulaire doit être enregistrée en tant que fichier XDP. Une conception de formulaire enregistrée en tant que fichier PDF ne peut pas être générée au format HTML. Lors du développement d’une conception de formulaire dans Designer qui sera rendue en format HTML, tenez compte des critères suivants :
 
-* N’utilisez pas les propriétés de bordure d’un objet pour tracer des lignes, des zones ou des grilles dans un formulaire. Certains navigateurs n’alignent pas les bordures exactement comme elles sont présentées dans un aperçu de Les objets risquent de se chevaucher ou de déplacer d’autres objets de manière imprévue.
+* N’utilisez pas les propriétés de bordure d’un objet pour tracer des lignes, des zones ou des grilles dans un formulaire. Certains navigateurs peuvent ne pas aligner les bordures exactement comme elles apparaissent dans un aperçu. Les objets risquent de se chevaucher ou de déplacer d’autres objets de manière imprévue.
 * Vous pouvez utiliser des lignes, des rectangles et des cercles pour définir l’arrière-plan.
 * Créez des objets de texte un peu plus grands que nécessaire pour accueillir le texte. Certains navigateurs web n’affichent pas le texte de manière lisible.
 
@@ -53,7 +69,7 @@ Lorsqu’une conception de formulaire est générée sous forme de formulaire HT
 
 Lorsque les conceptions de formulaire sont générées sous forme de formulaires HTML, les panneaux ne sont pas limités à une taille de page particulière. Si vous disposez de sous-formulaires dynamiques, ils doivent être imbriqués dans le sous-formulaire de panneau. Les sous-formulaires dynamiques peuvent s’étendre sur un nombre infini de pages HTML.
 
-Lorsqu’un formulaire est rendu au format HTML, les formats de page (requis pour paginer les formulaires rendus en PDF) n’ont aucune signification. Étant donné qu’un formulaire avec disposition fluide peut atteindre un nombre infini de pages HTML, il est important d’éviter les pieds de page sur le gabarit. Un pied de page situé sous la zone de contenu d’un gabarit peut remplacer le contenu HTML qui s’étend au-delà d’une limite de page.
+Lorsqu’un formulaire est rendu sous forme de formulaire HTML, les formats de page (requis pour paginer les formulaires rendus en PDF) n’ont aucune signification. Étant donné qu’un formulaire avec disposition fluide peut atteindre un nombre infini de pages HTML, il est important d’éviter les pieds de page sur le gabarit. Un pied de page situé sous la zone de contenu d’un gabarit de page peut remplacer le contenu HTML qui s’étend au-delà d’une limite de page.
 
 Vous devez explicitement passer d’un panneau à l’autre à l’aide des méthodes `xfa.host.pageUp` et `xfa.host.pageDown`. Vous pouvez modifier les pages en envoyant un formulaire au service Forms et en demandant au service Forms de le rendre à nouveau sur l’appareil client, généralement un navigateur web.
 
@@ -85,7 +101,7 @@ Le service Forms peut exécuter des scripts pendant la génération du formulair
 
 Vous pouvez concevoir des formulaires qui se déplacent entre les pages (panneaux) en appelant les méthodes `xfa.host.pageUp` et `xfa.host.pageDown`. Ce script est placé dans l’événement `Click` du bouton et l’attribut `runAt` est défini sur `Both`. Le motif de votre choix de `Both` permet à Adobe Reader ou Acrobat (pour les formulaires rendus au format PDF) de modifier les pages sans passer par le serveur et les formulaires HTML peuvent modifier les pages en envoyant et en reprenant les données au serveur. En d’autres termes, un formulaire est envoyé au service Forms et un formulaire est rendu en format HTML avec la nouvelle page affichée.
 
-Il est recommandé de ne pas donner les mêmes noms aux variables de script et aux champs de formulaire, par exemple élément. Certains navigateurs web, tels qu’Internet Explorer, peuvent ne pas initialiser une variable portant le même nom qu’un champ de formulaire, ce qui entraîne une erreur de script. Une bonne pratique consiste à donner des noms différents aux champs de formulaire et aux variables de script.
+Il est recommandé de ne pas donner les mêmes noms aux variables de script et aux champs de formulaire, par exemple item. Certains navigateurs web, tels qu’Internet Explorer, peuvent ne pas initialiser une variable portant le même nom qu’un champ de formulaire, ce qui entraîne une erreur de script. Une bonne pratique consiste à donner des noms différents aux champs de formulaire et aux variables de script.
 
 Lors du rendu de formulaires HTML qui contiennent à la fois des fonctionnalités de navigation de page et des scripts de formulaire (supposons, par exemple, qu’un script récupère les données de champ d’une base de données chaque fois que le formulaire est rendu), assurez-vous que le script de formulaire se trouve dans l’événement form:calculate et non dans le formulaire:readyevent.
 
@@ -121,21 +137,21 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 Lors de la création de conceptions de formulaire pour le rendu HTML, vous devez limiter votre script au sous-ensemble XFA pour les scripts en langage JavaScript.
 
-Les scripts qui s’exécutent sur le client ou à la fois sur le client et le serveur doivent être écrits dans le sous-ensemble XFA. Les scripts qui s’exécutent sur le serveur peuvent utiliser le modèle de script XFA complet ainsi que FormCalc. Pour plus d’informations sur l’utilisation de JavaScript, voir [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
+Les scripts qui s’exécutent côté client ou à la fois côté client et sur le serveur doivent être écrits dans le sous-ensemble XFA. Les scripts qui s’exécutent sur le serveur peuvent utiliser le modèle de script XFA complet ainsi que FormCalc. Pour plus d’informations sur l’utilisation de JavaScript, voir [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
 Lors de l’exécution de scripts côté client, seul le panneau actuellement affiché peut utiliser le script. Par exemple, vous ne pouvez pas utiliser de script pour les champs situés dans le panneau A lorsque le panneau B est affiché. Lors de l’exécution de scripts sur le serveur, tous les panneaux sont accessibles.
 
-Faites attention lorsque vous utilisez des expressions de modèle d’objet de script (SOM) dans des scripts exécutés côté client. Seul un sous-ensemble simplifié d’expressions SOM est pris en charge par les scripts qui s’exécutent sur le client.
+Faites attention lorsque vous utilisez des expressions de modèle d’objet de script (SOM) dans des scripts exécutés côté client. Seul un sous-ensemble simplifié d’expressions SOM est pris en charge par les scripts qui s’exécutent côté client.
 
 ## Durée d’événement {#event-timing}
 
-Le sous-ensemble XFA définit les événements XFA mappés aux événements HTML. Il existe une légère différence de comportement dans la durée des événements de calcul et de validation. Dans un navigateur web, un événement de calcul complet est exécuté lorsque vous quittez un champ. Les événements de calcul ne s’exécutent pas automatiquement lorsque vous modifiez une valeur de champ. Vous pouvez forcer un événement de calcul en appelant la méthode `xfa.form.execCalculate`.
+Le sous-ensemble XFA définit les événements XFA mappés aux événements HTML. Il existe une légère différence de comportement quant au moment où les événements de calcul et de validation se produisent. Dans un navigateur web, un événement de calcul complet est exécuté lorsque vous quittez un champ. Les événements de calcul ne s’exécutent pas automatiquement lorsque vous modifiez une valeur de champ. Vous pouvez forcer un événement de calcul en appelant la méthode `xfa.form.execCalculate`.
 
 Dans un navigateur web, les événements de validation ne s’exécutent que lors de la sortie d’un champ ou de l’envoi d’un formulaire. Vous pouvez forcer un événement de validation à l’aide de la méthode `xfa.form.execValidate`.
 
-Les formulaires affichés dans un navigateur web (par opposition à Adobe Reader ou Acrobat) sont conformes au test Null XFA (erreurs ou avertissements) pour les champs obligatoires.
+Les formulaires affichés dans un navigateur web (par opposition à Adobe Reader ou Acrobat) sont conformes au test de valeur nulle XFA (erreurs ou avertissements) pour les champs obligatoires.
 
-* Si le test Null génère une erreur et que vous quittez un champ sans spécifier de valeur, une zone de message s’affiche et vous êtes repositionné dans le champ après avoir cliqué sur OK.
+* Si le test Null génère une erreur et que vous quittez un champ sans spécifier de valeur, une boîte de message s’affiche et vous êtes repositionné dans le champ après avoir cliqué sur OK.
 * Si un test Null génère un avertissement et que vous quittez un champ sans spécifier de valeur, vous êtes invité à cliquer sur OK ou Annuler, ce qui vous donne la possibilité de continuer sans spécifier de valeur ou de revenir au champ pour saisir une valeur.
 
 Pour plus d’informations sur le test Null, consultez la section [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
@@ -150,7 +166,7 @@ Si aucun script côté client n’est associé à un bouton, les données sont e
 
 Un navigateur web qui ne prend en charge que le HTML 4.0 ne peut pas prendre en charge le modèle de script du sous-ensemble XFA côté client. Lors de la création d’une conception de formulaire devant fonctionner en HTML 4.0 et MSDHTML ou CSS2HTML, un script marqué comme devant s’exécuter sur un client s’exécute sur le serveur. Supposons, par exemple, qu’un utilisateur clique sur un bouton situé sur un formulaire affiché dans un navigateur web HTML 4.0. Dans ce cas, les données de formulaire sont envoyées au serveur sur lequel le script côté client est exécuté.
 
-Il est recommandé de placer votre logique de formulaire dans les événements de calcul, qui s’exécutent sur le serveur en HTML 4.0 et sur le client pour HTML MSDHTML ou CSS2HTML.
+Il est recommandé de placer votre logique de formulaire dans les événements de calcul, qui s’exécutent sur le serveur en HTML 4.0 et sur le client pour MSDHTML ou CSS2HTML.
 
 ## Conserver les modifications de présentation {#maintaining-presentation-changes}
 
@@ -167,9 +183,9 @@ Le script suivant conserve la fonction `fillColor` d’un champ en fonction de l
 
 >[!NOTE]
 >
->Les objets statiques ne s’affichent pas dans un formulaire HTML généré lorsqu’ils sont imbriqués dans la cellule d’un tableau. Par exemple, un cercle et un rectangle imbriqués dans une cellule de tableau ne s’affichent pas dans un formulaire HTML de rendu. Toutefois, ces mêmes objets statiques s’affichent correctement lorsqu’ils sont situés en dehors du tableau.
+>Les objets statiques ne s’affichent pas dans un formulaire HTML généré lorsqu’ils sont imbriqués dans la cellule d’un tableau. Par exemple, un cercle et un rectangle imbriqués dans une cellule de tableau ne s’affichent pas dans un formulaire HTML généré. Toutefois, ces mêmes objets statiques s’affichent correctement lorsqu’ils sont situés en dehors du tableau.
 
-## Signature numérique de formulaires HTML {#digitally-signing-html-forms}
+## Signer numériquement des formulaires HTML {#digitally-signing-html-forms}
 
 Vous ne pouvez pas signer un formulaire HTML contenant un champ de signature numérique si le formulaire est généré comme l’une des transformations HTML suivantes :
 
@@ -208,11 +224,11 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Créer un objet API client Forms**
 
-Avant de pouvoir importer des données par programmation dans une API formClient PDF, vous devez créer un client de service Form Data Integration. Lors de la création d’un client de service, vous définissez les paramètres de connexion requis pour appeler un service.
+Avant de pouvoir importer des données par programmation dans un formulaire PDF à l’aide de l’API formClient, vous devez créer un client de service Form Data Integration. Lors de la création d’un client de service, vous définissez les paramètres de connexion requis pour appeler un service.
 
 **Définir les options d’exécution HTML**
 
-Vous définissez les options d’exécution HTML lors de la génération d’un formulaire HTML. Par exemple, vous pouvez ajouter une barre d’outils à un formulaire HTML pour permettre aux utilisateurs de sélectionner les pièces jointes situées sur l’ordinateur client ou de récupérer les pièces jointes générées avec le formulaire HTML. Par défaut, une barre d’outils HTML est désactivée. Pour ajouter une barre d’outils à un formulaire HTML, vous devez définir par programmation les options d’exécution. Par défaut, une barre d’outils HTML se compose des boutons suivants :
+Vous définissez les options d’exécution HTML lors de la génération d’un formulaire HTML. Par exemple, vous pouvez ajouter une barre d’outils à un formulaire HTML pour permettre aux utilisateurs et utilisatrices de sélectionner les pièces jointes situées sur l’ordinateur client ou de récupérer les pièces jointes affichées avec le formulaire HTML. Par défaut, une barre d’outils HTML est désactivée. Pour ajouter une barre d’outils à un formulaire HTML, vous devez définir par programmation les options d’exécution. Par défaut, une barre d’outils HTML se compose des boutons suivants :
 
 * `Home` : fournit un lien vers la racine web de l’application.
 * `Upload` : fournit une interface utilisateur pour sélectionner les fichiers à joindre au formulaire actif.
@@ -220,7 +236,7 @@ Vous définissez les options d’exécution HTML lors de la génération d’un 
 
 Lorsqu’une barre d’outils HTML s’affiche sur un formulaire HTML, l’utilisateur ou l’utilisatrice peut sélectionner un maximum de dix fichiers à envoyer avec les données de formulaire. Une fois les fichiers envoyés, le service Forms peut les récupérer.
 
-Lors du rendu d’un formulaire en tant que HTML, vous pouvez spécifier une valeur agent-utilisateur. Une valeur agent-utilisateur fournit des informations sur le navigateur et le système. Il s’agit d’une valeur facultative que vous pouvez transmettre à une valeur de chaîne vide. Le rendu d’un formulaire HTML à l’aide du démarrage rapide de l’API Java indique comment obtenir une valeur d’agent utilisateur et s’en servir pour générer un formulaire au format HTML.
+Lors du rendu d’un formulaire au format HTML, vous pouvez spécifier une valeur d’agent utilisateur. Une valeur d’agent utilisateur fournit des informations sur le navigateur et le système. Il s’agit d’une valeur facultative que vous pouvez transmettre à une valeur de chaîne vide. Le guide de démarrage rapide « Rendu d’un formulaire HTML à l’aide de l’API Java » indique comment obtenir une valeur d’agent utilisateur et l’utiliser pour générer un formulaire au format HTML.
 
 Les URL HTTP où les données du formulaire sont envoyées peuvent être spécifiées en définissant l’URL cible à l’aide de l’API client du service Forms ou peuvent être spécifiées dans le bouton Envoyer contenu dans la conception de formulaire XDP. Si l’URL cible est spécifiée dans la conception de formulaire, ne définissez pas de valeur à l’aide de l’API client du service Forms.
 
@@ -234,13 +250,13 @@ Les URL HTTP où les données du formulaire sont envoyées peuvent être spécif
 
 **Rendre un formulaire HTML**
 
-Pour effectuer le rendu d’un formulaire HTML, spécifiez une conception de formulaire qui a été créée dans Designer et enregistrée en tant que fichier XDP. Sélectionnez un type de transformation HTML. Par exemple, vous pouvez spécifier le type de transformation HTML qui effectue le rendu d’un HTML dynamique pour Internet Explorer 5.0 ou version ultérieure.
+Pour effectuer le rendu d’un formulaire HTML, spécifiez une conception de formulaire qui a été créée dans Designer et enregistrée en tant que fichier XDP. Sélectionnez un type de transformation HTML. Par exemple, vous pouvez spécifier le type de transformation HTML qui effectue le rendu du HTML dynamique pour Internet Explorer 5.0 ou version ultérieure.
 
 Le rendu d’un formulaire HTML nécessite également des valeurs, telles que des valeurs URI requises pour effectuer le rendu d’autres types de formulaire.
 
 **Écrire le flux de données de formulaire dans le navigateur web client**
 
-Lorsque le service Forms génère un formulaire HTML, il renvoie un flux de données de formulaire que vous devez écrire dans le navigateur web client. Lorsqu’il est écrit dans le navigateur web client, le formulaire HTML est visible par l’utilisateur.
+Lorsque le service Forms génère un formulaire HTML, il renvoie un flux de données de formulaire que vous devez écrire dans le navigateur web du client. Lorsqu’il est écrit dans le navigateur web client, le formulaire HTML est visible par l’utilisateur.
 
 **Voir également**
 
@@ -262,13 +278,13 @@ Lorsque le service Forms génère un formulaire HTML, il renvoie un flux de donn
 
 ## Rendre un formulaire au format HTML à l’aide de l’API Java {#render-a-form-as-html-using-the-java-api}
 
-Renvoyez un formulaire HTML à l’aide de l’API Forms (Java) :
+Effectuez le rendu d’un formulaire HTML à l’aide de l’API Forms (Java) :
 
 1. Inclure les fichiers du projet
 
    Incluez les fichiers clients JAR, tels qu’adobe-forms-client.jar, dans votre chemin de classe de projet Java.
 
-1. Créer un objet API Forms client
+1. Créer un objet API client Forms
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
@@ -325,7 +341,7 @@ Générez un formulaire HTML à l’aide de l’API Forms (Web Service) :
 1. Inclure les fichiers du projet
 
    * Créez des classes proxy Java qui utilisent le service WSDL de Forms.
-   * Incluez les classes proxy Java dans le chemin d’accès de classe.
+   * Incluez les classes proxy Java dans votre classpath.
 
 1. Créer un objet API Forms client
 

@@ -9,7 +9,20 @@ exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 99%
@@ -23,7 +36,7 @@ Cette section décrit la procédure permettant de configurer SSL sur IBM WebSphe
 Pour activer SSL, WebSphere doit accéder à un compte utilisateur dans le registre utilisateur du système d’exploitation local, qui soit autorisé à administrer le système :
 
 * (Windows) Créez un utilisateur Windows faisant partie du groupe Administrateurs et ayant le droit d’agir dans le cadre du système d’exploitation. (Voir [Création d’un utilisateur Windows pour WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
-* (Linux, UNIX) L’utilisateur ou l’utilisatrice peut être un utilisateur racine ou un autre utilisateur disposant de droits racine. Lorsque vous activez SSL sur WebSphere, utilisez l’identification du serveur et le mot de passe de cet utilisateur ou de cette utilisatrice.
+* (Linux, UNIX) L’utilisateur ou l’utilisatrice peut être un utilisateur racine ou un autre utilisateur disposant de droits racine. Lorsque vous activez SSL sur WebSphere, utilisez l’identifiant du serveur et le mot de passe de cet utilisateur ou de cette utilisatrice.
 
 ### Création d’un utilisateur Linux ou UNIX pour WebSphere {#create-a-linux-or-unix-user-for-websphere}
 
@@ -47,7 +60,7 @@ Pour activer SSL, WebSphere doit accéder à un compte utilisateur dans le regis
 
 ### Création d’un utilisateur Windows pour WebSphere {#create-a-windows-user-for-websphere}
 
-1. Connectez-vous à la console d’administration à l’aide d’un compte d’administration.
+1. Connectez-vous à Windows à l’aide d’un compte d’utilisateur administrateur.
 1. Sélectionnez **Démarrer > Panneau de configuration > Outils d’administration > Gestion de l’ordinateur > Utilisateurs et groupes locaux**.
 1. Cliquez avec le bouton droit sur Utilisateurs et sélectionnez **Nouvel utilisateur**.
 1. Saisissez un nom d’utilisateur et un mot de passe dans les zones appropriées, puis saisissez les autres informations requises dans les zones restantes.
@@ -69,7 +82,7 @@ Pour activer SSL, WebSphere doit accéder à un compte utilisateur dans le regis
 1. Dans Sécurité administrative, sélectionnez **Rôles des utilisateurs d’administration**.
 1. Cliquez sur Ajouter et procédez comme suit :
 
-   1. Saisissez **&ast;** dans la zone de recherche, puis cliquez sur Rechercher.
+   1. Saisissez **&amp;ast;** dans la zone de recherche, puis cliquez sur Rechercher.
    1. Sous les rôles, cliquez sur **Administrateur**.
    1. Ajoutez l’utilisateur que vous venez de créer à Mappé au rôle et mappez-le à l’administrateur.
 
@@ -86,7 +99,7 @@ Pour activer SSL, WebSphere doit accéder à un compte utilisateur dans le regis
 1. Cliquez sur **Finish** (Terminer).
 1. Redémarrez le profil WebSphere.
 
-   WebSphere commence à utiliser le KeyStore et le TrustStore par défaut.
+   WebSphere commence à utiliser le keystore et le truststore par défaut.
 
 ## Activation de SSL (TrustStore et clé personnalisée) {#enable-ssl-custom-key-and-truststore}
 
@@ -96,7 +109,7 @@ Il est possible de créer des TrustStores et des KeyStores à l’aide de l’ut
 1. Cliquez sur **KeyStores et certificats** sous Éléments connexes.
 1. Dans le menu déroulant **Utilisations des KeyStores**, assurez-vous que l’option **KeyStores SSL** est sélectionnée. Cliquez sur **Nouveau**.
 1. Saisissez un nom et une description logiques.
-1. Spécifiez le chemin d’accès à l’emplacement où vous souhaitez créer votre KeyStore. Si vous avez déjà créé un KeyStore via ikeyman, indiquez le chemin d’accès au KeyStore.
+1. Spécifiez le chemin d’accès à l’emplacement où vous souhaitez créer votre keystore. Si vous avez déjà créé un KeyStore via ikeyman, indiquez le chemin d’accès au fichier KeyStore.
 1. Indiquez et confirmez le mot de passe.
 1. Choisissez le type de KeyStore et cliquez sur **Appliquer**.
 1. Enregistrez la configuration principale.
@@ -104,7 +117,7 @@ Il est possible de créer des TrustStores et des KeyStores à l’aide de l’ut
 1. Si vous avez déjà ajouté un KeyStore à l’aide d’ikeyman, votre certificat s’affiche. Dans le cas contraire, vous devez ajouter un nouveau certificat auto-signé en procédant comme suit :
 
    1. Sélectionnez **Créer > Certificat auto-signé**.
-   1. Spécifiez les valeurs appropriées dans le formulaire de certificat. Veillez à conserver Alias et nom commun comme nom de domaine complet de l’ordinateur.
+   1. Spécifiez les valeurs appropriées dans le formulaire de certificat. Veillez à ce que Alias et le nom commun correspondent au nom de domaine complet de l’ordinateur.
    1. Cliquez sur **Appliquer**.
 
 1. Répétez les étapes 2 à 10 pour créer un TrustStore.
@@ -151,7 +164,7 @@ La conversion HTML à PDF du site dont le certificat est ajouté fonctionnera d�
 
 >[!NOTE]
 >
->Pour qu’une application se connecte à des sites SSL depuis WebSphere, un certificat de signataire est requis. Il est utilisé par Java Secure Socket Extensions (JSSE) pour valider les certificats envoyés par le côté distant de la connexion lors d’une liaison SSL.
+>Pour qu’une application se connecte à des sites SSL depuis WebSphere, un certificat de signataire est requis. Il est utilisé par Java Secure Socket Extensions (JSSE) pour valider les certificats envoyés par le côté distant de la connexion lors d’une négociation SSL.
 
 ## Configurer des ports dynamiques {#configuring-dynamic-ports}
 

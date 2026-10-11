@@ -11,13 +11,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 84%
-
 ---
-
 
 # Composants d’Adobe Campaign{#adobe-campaign-components}
 
@@ -25,7 +42,7 @@ Lors de l’intégration à Adobe Campaign, des composants sont disponibles pour
 
 >[!CAUTION]
 >
->Les composants d’e-mail AEM ont été abandonnés. En raison de la nature de l’e-mail, qui fusionne contenu et style, les composants d’e-mail fournis prêts à l’emploi par AEM ne sont que rarement réutilisés, car il est nécessaire d’implémenter des styles personnalisés dans les composants requis pour les projets.
+>Les composants d’e-mail AEM sont obsolètes. En raison de la nature de l’e-mail, qui fusionne contenu et style, les composants d’e-mail fournis prêts à l’emploi par AEM ne sont que rarement réutilisés, car il est nécessaire de mettre en œuvre des styles personnalisés dans les composants requis pour les projets.
 >
 >Les composants d’e-mail peuvent être implémentés au niveau du projet. Les composants d’e-mail AEM obsolètes illustrent la manière dont cela peut être réalisé. Toutefois, n’utilisez pas ces composants obsolètes sur les projets.
 
@@ -173,7 +190,7 @@ L’exemple ci-dessous présente le composant Lien (Campaign) affiché.
 
 ### Modèle d’image Dynamic Media Classic (Scene7) (Campaign) {#scene-image-template-campaign}
 
-Les modèles d’image Dynamic Media Classic (Scene7) sont des images superposées, où le contenu et les propriétés peuvent être paramétrés pour plus de variabilité. Le composant **[!UICONTROL Modèle d’image]** permet d’utiliser des modèles Scene7 dans des newsletters et de modifier les valeurs des paramètres de modèle. De plus, vous pouvez utiliser des variables de métadonnées Adobe Campaign dans les paramètres de sorte que chaque utilisateur visualise l’image de façon personnalisée.
+Les modèles d’image Dynamic Media Classic (Scene7) sont des fichiers image en couches, où le contenu et les propriétés peuvent être paramétrés pour plus de variabilité. Le composant **[!UICONTROL Modèle d’image]** permet d’utiliser des modèles Scene7 dans des newsletters et de modifier les valeurs des paramètres de modèle. De plus, vous pouvez utiliser des variables de métadonnées Adobe Campaign dans les paramètres de sorte que chaque utilisateur visualise l’image de façon personnalisée.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -195,7 +212,7 @@ Cliquez sur l’icône de dossier pour accéder au paragraphe à référencer. L
 
 Le composant Texte et image (Campaign) permet d’ajouter un bloc de texte et une image.
 
-Lorsque vous cliquez pour configurer le composant, sélectionnez Texte ou Image.
+Lorsque vous cliquez pour configurer le composant, vous sélectionnez Texte ou Image.
 
 ![chlimage_1-51](assets/chlimage_1-51.png)
 
@@ -220,20 +237,20 @@ Faites glisser une image à partir de l’outil de recherche de contenu ou cliqu
 * **Propriétés de l’image** (**Propriétés d’image avancées**)
 Permet de spécifier les éléments suivants :
 
-   * **Titre**
-Titre du bloc de texte ; il s’affiche lorsque l’utilisateur pointe dessus avec la souris.
+  * **Titre**
+    Titre du bloc de texte ; il s’affiche lorsque l’utilisateur pointe dessus avec la souris.
 
-   * **Texte de remplacement**
-Texte secondaire à afficher si l’image ne peut pas être affichée.
+  * **Texte de remplacement**
+    Texte secondaire à afficher si l’image ne peut pas être affichée.
 
-   * **Lier à**
-Créez un lien vers les ressources ou d’autres pages de votre site web.
+  * **Lier à**
+    Créez un lien vers les ressources ou d’autres pages de votre site web.
 
-   * **Description**
-Description de l’image.
+  * **Description**
+    Description de l’image.
 
-   * **Taille**
-Définit la hauteur et la largeur de l’image.
+  * **Taille**
+    Définit la hauteur et la largeur de l’image.
 
 >[!NOTE]
 >
@@ -254,7 +271,7 @@ Une série d’icônes permet de mettre en forme le texte (attributs de police, 
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
-Dans l’éditeur statique, vous pouvez ajouter du texte, modifier la justification, ajouter et supprimer des liens, ajouter des champs contextuels ou des blocs de personnalisation, puis passer en mode plein écran. Une fois l’ajout de texte/la personnalisation terminé, cochez la case pour enregistrer vos modifications (ou x pour annuler). Pour plus d’informations, reportez-vous à la section [Modification statique.](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui)
+Dans l’éditeur sur place, vous pouvez ajouter du texte, modifier la justification, ajouter et supprimer des liens, ajouter des champs contextuels ou des blocs de personnalisation, puis passer en mode plein écran. Une fois l’ajout de texte/la personnalisation terminé, sélectionnez la coche pour enregistrer vos modifications (ou x pour annuler). Pour plus d’informations, reportez-vous à la section [Modification statique.](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui)
 
 >[!NOTE]
 >
@@ -278,7 +295,7 @@ Chaque champ de composant peut être associé à un champ de base de données Ad
 Lorsque vous ouvrez un formulaire configuré pour être intégré à Adobe Campaign, les composants ci-dessous de la section **Adobe Campaign** s’affichent :
 
 * Case à cocher (Campaign)
-* Champ de date (Campaign) et champ de date/HTML 5 (Campaign)
+* Champ de date (Campaign) et champ de date/HTML5 (Campaign)
 * Clé primaire chiffrée (Campaign)
 * Affichage d’erreur (campagne)
 * Clé de réconciliation masquée (Campaign)
@@ -316,13 +333,13 @@ Le tableau suivant décrit les composants disponibles pour afficher et modifier 
   </tr>
   <tr>
    <td><p>Champ numérique (Campaign)</p> </td>
-   <td><p>numérique (octet, court, long, double)</p> </td>
-   <td><p>Age</p> </td>
+   <td><p>numérique (byte, short, long, double)</p> </td>
+   <td><p>Âge</p> </td>
   </tr>
   <tr>
-   <td><p>Champ d'option (Campaign)</p> </td>
+   <td><p>Champ d’option (Campaign)</p> </td>
    <td><p>octet avec valeurs associées</p> </td>
-   <td><p>Sexe</p> </td>
+   <td><p>Genre</p> </td>
   </tr>
   <tr>
    <td><p>Champ de texte (Campaign)</p> </td>
@@ -382,7 +399,7 @@ Saisissez les classes CSS à utiliser pour ce composant.
 
 ### Case à cocher (Campaign) {#checkbox-campaign}
 
-Le composant Case à cocher (Campaign) permet à l’utilisateur ou à l’utilisatrice de modifier les champs de profil Adobe Campaign qui sont de type données booléennes. Par exemple, vous pouvez avoir un composant Case à cocher (Campaign) qui permet au destinataire ou à la destinataire d’indiquer qu’il ou elle ne souhaite être contacté(e) via aucun canal.
+Le composant Case à cocher (Campaign) permet à l’utilisateur ou à l’utilisatrice de modifier les champs de profil Adobe Campaign qui sont de type de données booléen. Par exemple, vous pouvez avoir un composant Case à cocher (Campaign) qui permet au destinataire ou à la destinataire d’indiquer qu’il ou elle ne souhaite être contacté(e) via aucun canal.
 
 Vous pouvez [configurer des paramètres communs à la plupart des composants d’Adobe Campaign](#settings-common-to-most-components) dans le composant Case à cocher (Campaign).
 
@@ -402,7 +419,7 @@ Vous pouvez sélectionner - **Aucune** ou **Date -** pour ajouter une contrainte
 * **Message de contrainte** De plus, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent quel format suivre pour leur réponse.
 * **Style – Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les icônes « **+** » et « **-** » ou saisissez un nombre.
 
-L’exemple ci-dessous présente le composant Champ de date (Campaign), dont la largeur ajustée, affiché.
+L’exemple ci-dessous présente le composant Champ de date (Campaign) affiché avec la largeur ajustée.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -423,7 +440,7 @@ L’exemple ci-dessous présente le composant Clé primaire chiffrée (Campaign)
 
 ### Affichage d’erreur (campagne) {#error-display-campaign}
 
-Ce composant vous permet d’afficher les erreurs du serveur principal. La gestion des erreurs du formulaire doit être définie sur Transférer pour que le composant fonctionne correctement.
+Ce composant vous permet d’afficher les erreurs du back-end. La gestion des erreurs du formulaire doit être définie sur Transférer pour que le composant fonctionne correctement.
 
 L’exemple suivant présente le composant Affichage d’erreur (Campaign) affiché.
 
@@ -488,12 +505,12 @@ L’exemple ci-dessous montre l’affichage du composant Liste de contrôle des 
 
 ### Champ de texte (Campaign) {#text-field-campaign}
 
-Le composant Champ de texte (Campaign) qui vous permet de saisir des données de type chaîne, telles qu’un prénom, un nom, une adresse, une adresse e-mail, etc.
+Il s’agit du composant Champ de texte (Campaign), qui vous permet de saisir des données de type chaîne, telles qu’un prénom, un nom, une adresse, une adresse e-mail, etc.
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 
 * Liste déroulante **Contraintes - Contrainte**
-Vous pouvez sélectionner - **Aucune** **E-mail** ou **Nom** (pas de trémas) - pour ajouter une contrainte d’adresse électronique, de nom ou aucune contrainte. Si vous sélectionnez l’option E-mail, la réponse saisie par les utilisateurs dans le champ doit correspondre à une adresse électronique. Si vous sélectionnez Nom, il doit s’agit d’un nom (les trémas ne sont pas autorisés).
+Vous pouvez sélectionner - **Aucune** **E-mail** ou **Nom** (pas de trémas) - pour ajouter une contrainte d’adresse électronique, de nom ou aucune contrainte. Si vous sélectionnez l’option E-mail, la réponse saisie par les utilisateurs dans le champ doit correspondre à une adresse électronique. Si vous sélectionnez Nom, il doit s’agir d’un nom (les trémas ne sont pas autorisés).
 
 * **Message de contrainte** De plus, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent quel format suivre pour leur réponse.
 * **Style – Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les icônes « **+** » et « **-** » ou saisissez un nombre.

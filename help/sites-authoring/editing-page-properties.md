@@ -6,13 +6,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: 174d9e7466002e209422fefdc32a363a98dc99f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2559'
 ht-degree: 97%
-
 ---
-
 
 # Modification des propriétés de page{#editing-page-properties}
 
@@ -72,7 +85,7 @@ L’heure d’activation/désactivation d’une page est un moyen pratique de ma
 
 Laissez ces champs (**Heure d’activation** et **Heure de désactivation**) vides pour les pages que vous souhaitez publier et qui sont disponibles immédiatement dans l’environnement de publication jusqu’à ce qu’elles soient désactivées (scénario normal).
 
-Lorsque les heures d’activation/de désactivation sont configurées, vous verrez des icônes et des informations supplémentaires relatives aux heures d’activation dans les vues [&#x200B; Liste et Carte de la console Sites](/help/sites-authoring/basic-handling.md#views) ainsi que dans la vue [&#x200B; Chronologie du panneau latéral de la console](/help/sites-authoring/basic-handling.md#timeline)
+Lorsque les heures d’activation/de désactivation sont configurées, vous verrez des icônes et des informations supplémentaires relatives aux heures d’activation dans les vues [ Liste et Carte de la console Sites](/help/sites-authoring/basic-handling.md#views) ainsi que dans la vue [ Chronologie du panneau latéral de la console](/help/sites-authoring/basic-handling.md#timeline)
 
 >[!NOTE]
 >Si l’**heure d’activation** ou l’**heure de désactivation** est dans le passé et que la réplication automatique est configurée, l’action appropriée est déclenchée immédiatement.

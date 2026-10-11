@@ -9,13 +9,25 @@ feature: Security
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 98%
-
+source-wordcount: '1413'
+ht-degree: 97%
 ---
-
 # Réplication à l’aide du SSL mutuel{#replicating-using-mutual-ssl}
 
 Configurez AEM de sorte qu’un agent de réplication sur l’instance de création utilise le protocole SSL mutuel (MSSL) pour se connecter à l’instance de publication. À l’aide de MSSL, l’agent de réplication et le service HTTP sur l’instance de publication utilisent des certificats pour s’authentifier mutuellement.
@@ -145,7 +157,7 @@ Pour effectuer la procédure suivante, vous devez être connecté(e) en tant qu�
 
 ### Installer la clé privée de création {#install-the-author-private-key}
 
-1. Ouvrez la page de gestion des utilisateurs et utilisatrices pour l’instance de création. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
+1. Ouvrez la page de gestion des utilisateurs et utilisatrices pour l’instance de création. ([](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Pour ouvrir les propriétés de votre compte d’utilisateur ou d’utilisatrice, cliquez sur votre nom d’utilisateur ou d’utilisatrice.
 1. Si le lien Créer un KeyStore apparaît dans la zone Paramètres du compte, cliquez sur le lien. Configurez un mot de passe, puis cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le KeyStore.
@@ -164,7 +176,7 @@ Pour effectuer la procédure suivante, vous devez être connecté(e) en tant qu�
 
 ### Installation du certificat de publication {#install-the-publish-certificate}
 
-1. Ouvrez la page de gestion des utilisateurs et utilisatrices pour l’instance de création. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
+1. Ouvrez la page de gestion des utilisateurs et utilisatrices pour l’instance de création. ([](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Pour ouvrir les propriétés de votre compte d’utilisateur ou d’utilisatrice, cliquez sur votre nom d’utilisateur ou d’utilisatrice.
 1. Si le lien Créer TrustStore apparaît dans la zone Paramètres du compte, cliquez sur le lien, créez un mot de passe pour TrustStore et cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le TrustStore.
@@ -188,7 +200,7 @@ Pour effectuer la procédure suivante, vous devez être connecté(e) en tant qu�
 
 ### Installer la clé privée de publication {#install-the-publish-private-key}
 
-1. Ouvrez la page Gestion des utilisateurs pour l’instance de création. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
+1. Ouvrez la page Gestion des utilisateurs pour l’instance de création. ([](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Pour ouvrir les propriétés de votre compte d’utilisateur ou d’utilisatrice, cliquez sur votre nom d’utilisateur ou d’utilisatrice.
 1. Si le lien Créer un KeyStore apparaît dans la zone Paramètres du compte, cliquez sur le lien. Configurez un mot de passe, puis cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le KeyStore.
@@ -199,7 +211,7 @@ Pour effectuer la procédure suivante, vous devez être connecté(e) en tant qu�
 
 ### Installer le certificat de création {#install-the-author-certificate}
 
-1. Ouvrez la page Gestion des utilisateurs pour l’instance de création. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
+1. Ouvrez la page Gestion des utilisateurs pour l’instance de création. ([](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Si le lien Créer un TrustStore apparaît dans la zone TrustStore global, cliquez sur le lien, créez un mot de passe pour TrustStore, puis cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le TrustStore.
 1. Cliquez sur Ajouter le certificat à partir du fichier CER.

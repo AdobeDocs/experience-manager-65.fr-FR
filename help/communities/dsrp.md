@@ -9,13 +9,20 @@ role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '633'
 ht-degree: 1%
-
 ---
-
 # DSRP - Fournisseur de ressources de stockage de base de données relationnelle {#dsrp-relational-database-storage-resource-provider}
 
 ## À propos de DSRP {#about-dsrp}
@@ -60,57 +67,57 @@ En mode de création, pour accéder à la console de configuration du stockage
 * Se connecter avec des droits d’administrateur
 * À partir du **menu principal**
 
-   * Sélectionnez **[!UICONTROL Outils]** (dans le volet de gauche)
-   * Sélectionnez **[!UICONTROL Communities]**
-   * Sélectionnez **[!UICONTROL Configuration de stockage]**
+  * Sélectionnez **[!UICONTROL Outils]** (dans le volet de gauche)
+  * Sélectionnez **[!UICONTROL Communities]**
+  * Sélectionnez **[!UICONTROL Configuration de stockage]**
 
-      * Par exemple, l’emplacement obtenu est : [:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
+    * Par exemple, l’emplacement obtenu est : [](http://localhost:4502/communities/admin/defaultsrp)
 
-     >[!NOTE]
-     >
-     >La configuration de stockage par défaut est désormais stockée dans le chemin de configuration (`/conf/global/settings/community/srpc/defaultconfiguration`) au lieu du chemin de `etc` (`/etc/socialconfig/srpc/defaultconfiguration`). Il est conseillé de suivre les [étapes de migration](#zerodt-migration-steps) pour que defaultsrp fonctionne comme prévu.
+    >[!NOTE]
+    >
+    >La configuration de stockage par défaut est désormais stockée dans le chemin de configuration (`/conf/global/settings/community/srpc/defaultconfiguration`) au lieu du chemin de `etc` (`/etc/socialconfig/srpc/defaultconfiguration`). Il est conseillé de suivre les [étapes de migration](#zerodt-migration-steps) pour que defaultsrp fonctionne comme prévu.
 
   ![dsrp-config](assets/dsrp-config.png)
 
 * Sélectionnez **[!UICONTROL Fournisseur de ressources de stockage de base de données (DSRP)]**
 * **Configuration de la base de données**
 
-   * **[!UICONTROL Nom de la source de données JDBC]**
+  * **[!UICONTROL Nom de la source de données JDBC]**
 
-     Le nom donné à la connexion MySQL doit être identique à celui saisi dans [configuration OSGi JDBC](dsrp-mysql.md#configurejdbcconnections)
+    Le nom donné à la connexion MySQL doit être identique à celui saisi dans [configuration OSGi JDBC](dsrp-mysql.md#configurejdbcconnections)
 
-     *default* : communities
+    *default* : communities
 
-   * **[!UICONTROL Nom de la base]**
+  * **[!UICONTROL Nom de la base]**
 
-     Nom donné au schéma dans le script [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script)
+    Nom donné au schéma dans le script [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script)
 
-     *default* : communities
+    *default* : communities
 
 * **SolrConfiguration**
 
-   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
+  * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
 
-     Ne renseignez pas cette valeur si vous exécutez Solr à l’aide du ZooKeeper interne. Sinon, lors de l’exécution en mode [SolrCloud](solr.md#solrcloud-mode) avec un ZooKeeper externe, définissez cette valeur sur l’URI du ZooKeeper, par exemple *my.server.com:80*
+    Ne renseignez pas cette valeur si vous exécutez Solr à l’aide du ZooKeeper interne. Sinon, lors de l’exécution en mode [SolrCloud](solr.md#solrcloud-mode) avec un ZooKeeper externe, définissez cette valeur sur l’URI du ZooKeeper, par exemple *my.server.com:80*
 
-     *default* : *&lt;blank>*
+    *default* : *&lt;blank>*
 
-   * **[!UICONTROL URL Solr]**
+  * **[!UICONTROL URL Solr]**
 
-     *default* : https://127.0.0.1:8983/solr/
+    *default*: https://127.0.0.1:8983/solr/
 
-   * **[!UICONTROL Collection Solr]**
+  * **[!UICONTROL Collection Solr]**
 
-     *default* : collection1
+    *default* : collection1
 
 * Sélectionnez **[!UICONTROL Envoyer]**.
 
 ### Pas d’étapes de migration sans temps d’arrêt pour defaultsrp {#zerodt-migration-steps}
 
-Pour vous assurer que la page defaultsrp [:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) fonctionne comme prévu, procédez comme suit :
+Pour vous assurer que la page defaultsrp [](http://localhost:4502/communities/admin/defaultsrp) fonctionne comme prévu, procédez comme suit :
 
 1. Renommez le chemin d’accès à `/etc/socialconfig` en `/etc/socialconfig_old`, de sorte que la configuration système retourne à jsrp (par défaut).
-1. Accédez à la page defaultsrp [:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), où jsrp est configuré. Cliquez sur le bouton **[!UICONTROL Envoyer]** pour créer un nœud de configuration par défaut au `/conf/global/settings/community/srpc`.
+1. Accédez à la page defaultsrp [](http://localhost:4502/communities/admin/defaultsrp), où jsrp est configuré. Cliquez sur le bouton **[!UICONTROL Envoyer]** pour créer un nœud de configuration par défaut au `/conf/global/settings/community/srpc`.
 1. Supprimez le `/conf/global/settings/community/srpc/defaultconfiguration` de configuration par défaut créé.
 1. Copiez l’ancienne `/etc/socialconfig_old/srpc/defaultconfiguration` de configuration à la place du nœud supprimé (`/conf/global/settings/community/srpc/defaultconfiguration`) à l’étape précédente.
 1. Supprimez l’ancien nœud de `etc` `/etc/socialconfig_old`.
@@ -123,14 +130,14 @@ Pour rendre la configuration identique disponible dans l’environnement de publ
 
 * En mode de création :
 
-   * Accédez au menu principal **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]**
-   * Double-cliquez sur **[!UICONTROL Activer l’arborescence]**
-   * **Chemin de début** :
+  * Accédez au menu principal **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]**
+  * Double-cliquez sur **[!UICONTROL Activer l’arborescence]**
+  * **Chemin de début** :
 
-      * Accéder à `/etc/socialconfig/srpc/`
+    * Accéder à `/etc/socialconfig/srpc/`
 
-   * Assurez-vous que `Only Modified` n’est pas sélectionné.
-   * Sélectionnez **[!UICONTROL Activer]**.
+  * Assurez-vous que `Only Modified` n’est pas sélectionné.
+  * Sélectionnez **[!UICONTROL Activer]**.
 
 ## Gestion des données utilisateur {#managing-user-data}
 

@@ -7,13 +7,25 @@ feature: Renditions
 exl-id: 1e4ddd73-a31c-4ddd-94eb-1dac6a4835b3
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 99%
-
 ---
-
 # Génération de rendus pour placement uniquement pour Adobe InDesign {#fpo-renditions}
 
 | Version | Lien de l’article |
@@ -23,11 +35,11 @@ ht-degree: 99%
 
 Lorsque vous transférez des ressources volumineuses d’Experience Manager vers des documents Adobe InDesign, un professionnel de la création doit attendre un temps conséquent avant de [placer une ressource](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html). Pendant ce temps, l’utilisateur ne peut pas utiliser InDesign. Cela interrompt le flux créatif et a un impact négatif sur l’expérience utilisateur. Adobe permet de placer temporairement dans des documents InDesign des rendus de petite taille pour commencer. Lorsque la sortie finale est requise, par exemple pour les workflows d’impression et de publication, les ressources d’origine en pleine résolution remplacent le rendu temporaire en arrière-plan. Cette mise à jour asynchrone en arrière-plan accélère le processus de conception pour améliorer la productivité et n’entrave pas le processus créatif.
 
-Adobe Experience Manager (AEM) fournit des rendus utilisés uniquement pour placement (FPO). Ces rendus FPO ont une taille de fichier réduite, mais présentent les mêmes proportions. Si un rendu FPO n’est pas disponible pour une ressource, Adobe InDesign utilise la ressource d’origine à la place. Ce mécanisme de secours garantit que le workflow créatif se poursuit sans interruption.
+Adobe Experience Manager (AEM) fournit des rendus utilisés uniquement à des fins de placement (FPO). Ces rendus FPO ont une taille de fichier réduite, mais présentent les mêmes proportions. Si un rendu FPO n’est pas disponible pour une ressource, Adobe InDesign utilise la ressource d’origine à la place. Ce mécanisme de secours garantit que le workflow créatif se poursuit sans interruption.
 
 ## Méthodes de génération de rendus FPO {#approach-to-generate-fpo-renditions}
 
-Experience Manager permet de nombreuses méthodes de traitement des images qui peuvent être utilisées pour générer les rendus FPO. Les deux méthodes les plus courantes consistent à utiliser des workflows Experience Manager intégrés ou d’utiliser ImageMagick. À l’aide de ces deux méthodes, vous pouvez configurer la génération de rendu des ressources nouvellement chargées et des ressources qui existent dans Experience Manager.
+Experience Manager permet de nombreuses méthodes de traitement des images qui peuvent être utilisées pour générer les rendus FPO. Les deux méthodes les plus courantes consistent à utiliser des workflows Experience Manager intégrés ou à utiliser ImageMagick. À l’aide de ces deux méthodes, vous pouvez configurer la génération de rendu des ressources nouvellement chargées et des ressources qui existent dans Experience Manager.
 
 Vous pouvez utiliser ImageMagick pour traiter les images, notamment pour générer des rendus FPO. Ces rendus sont sous-échantillonnés, c’est-à-dire que les dimensions en pixels du rendu sont réduites proportionnellement si l’image d’origine a une valeur de ppp supérieure à 72. Consultez [Installation et configuration d’ImageMagick pour une utilisation avec Experience Manager Assets](best-practices-for-imagemagick.md).
 
@@ -96,7 +108,7 @@ Pour plus d’informations sur les fonctionnalités de ligne de commande d’Ima
 
 ## Générer des rendus des ressources existantes à l’aide du workflow Experience Manager {#generate-renditions-of-existing-assets-using-aem-workflow}
 
-Pour utiliser le workflow d’Experience Manager afin de générer le rendu FPO des ressources existantes, créez un modèle de workflow dédié qui utilise l’option de rendu FPO intégré.
+Pour utiliser le workflow d’Experience Manager afin de générer le rendu FPO des ressources existantes, créez un modèle de workflow dédié qui utilise l’option de rendu FPO intégrée.
 
 1. Cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 
@@ -136,6 +148,6 @@ Cliquez sur **[!UICONTROL Rendu FPO]** pour charger son aperçu. Vous pouvez év
 ## Conseils et restrictions {#tips-limitations}
 
 * Pour utiliser la configuration basée sur ImageMagick, installez ImageMagick sur le même ordinateur qu’Experience Manager.
-* Pour générer des rendus FPO de nombreuses ressources ou de l’ensemble du référentiel, planifiez et exécutez les workflows pendant la durée du faible trafic. La génération de rendus FPO pour un grand nombre de ressources est une activité gourmande en ressources et les serveurs d’Experience Manager doivent disposer d’une puissance de traitement et d’une mémoire suffisantes.
+* Pour générer des rendus FPO de nombreuses ressources ou de l’ensemble du référentiel, planifiez et exécutez les workflows pendant les périodes de faible trafic. La génération de rendus FPO pour un grand nombre de ressources est une activité gourmande en ressources et les serveurs d’Experience Manager doivent disposer d’une puissance de traitement et d’une mémoire suffisantes.
 * Pour en savoir plus sur les performances et l’évolutivité, consultez [Réglage précis d’ImageMagick](performance-tuning-guidelines.md).
 * Pour la gestion générique en lignes de commande des ressources, consultez [Gestionnaire de ligne de commande pour traiter les ressources](media-handlers.md).

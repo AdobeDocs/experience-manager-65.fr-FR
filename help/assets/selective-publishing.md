@@ -10,13 +10,27 @@ role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3028'
 ht-degree: 96%
-
 ---
-
 # Configuration de la publication sélective au niveau des dossiers dans Dynamic Media {#selective-publish-configure-folder}
 
 Vous pouvez choisir de publier ou de dépublier des ressources dans Adobe Experience Manager ou Dynamic Media au niveau du dossier. Pour ce faire, vous devez utiliser **[!UICONTROL Gérer la publication]** ou **[!UICONTROL Publication rapide]** au lieu de vous fier uniquement à la **[!UICONTROL configuration de Dynamic Media]** dont les paramètres sont globaux pour tous les dossiers de votre instance Dynamic Media.
@@ -188,7 +202,7 @@ Vous pouvez utiliser la fonction **[!UICONTROL Publication rapide]** dans les ca
    | Option Publication rapide | Effets |
    | --- | --- |
    | Publier dans Experience Manager | Publie immédiatement les ressources sélectionnées dans Experience Manager. |
-   | Publier sur Brand Portal | Publie immédiatement les ressources sélectionnées dans **&#x200B;**.<br>Cette option n’est disponible que si votre instance Experience Manager Assets dispose déjà de **[!UICONTROL Brand Portal]** configurée. |
+   | Publier sur Brand Portal | Publie immédiatement les ressources sélectionnées dans ****.<br>Cette option n’est disponible que si votre instance Experience Manager Assets dispose déjà de **[!UICONTROL Brand Portal]** configurée. |
    | Publier vers Dynamic Media | Publie immédiatement les ressources sélectionnées dans Dynamic Media.<br>Une ressource doit être synchronisée dans Dynamic Media. Si nécessaire, assurez-vous que le **[!UICONTROL mode de synchronisation]** dans les propriétés d’un dossier est déjà défini sur **[!UICONTROL Synchroniser avec Dynamic Media tout le contenu de cette sous-arborescence de dossier]**. |
 
 1. Sélectionnez **[!UICONTROL OK]**, puis **[!UICONTROL Fermer]**.
@@ -210,7 +224,8 @@ Consultez également [Recherche de ressources dans Experience Manager](/help/ass
    ![Vue Liste et Filtres dans les résultats de recherche](/help/assets/assets-dm/select-publish-search-result.png)
 
 1. Dans le panneau de gauche, développez **[!UICONTROL Statut]**, puis développez le prédicat de recherche **[!UICONTROL Dynamic Media]**.
-1. Utilisez les cases à cocher **[!UICONTROL Publiée]** et **[!UICONTROL Dépubliée]** pour affiner davantage les résultats de recherche en fonction de l’état de publication des ressources Dynamic Media.Vous pouvez éventuellement utiliser ces cases à cocher avec le prédicat de recherche **[!UICONTROL Publier]** pour affiner les résultats de recherche des ressources Experience Manager dont le statut est **[!UICONTROL Publiée]** et **[!UICONTROL Dépubliée]**.
+1. Utilisez les cases à cocher **[!UICONTROL Publiée]** et **[!UICONTROL Dépubliée]** pour affiner davantage les résultats de recherche en fonction de l’état de publication des ressources Dynamic Media.
+Vous pouvez éventuellement utiliser ces cases à cocher avec le prédicat de recherche **[!UICONTROL Publier]** pour affiner les résultats de recherche des ressources Experience Manager dont le statut est **[!UICONTROL Publiée]** et **[!UICONTROL Dépubliée]**.
 1. Utilisez l’une des méthodes suivantes :
    * Sélectionnez une ou plusieurs ressources que vous souhaitez publier ou dépublier.
    * Dans le coin supérieur droit de la page **[!UICONTROL Résultats de la recherche]**, sélectionnez **[!UICONTROL Tout sélectionner]**.
@@ -263,7 +278,8 @@ Vous pouvez utiliser **[!UICONTROL Chronologie]** dans la vue **[!UICONTROL Cart
 1. Dans Experience Manager, dans le coin supérieur gauche de la page, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale. Sur le côté gauche de la page, sélectionnez l’icône de Navigation (juste au-dessus de l’icône Outils), puis sélectionnez **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 1. Dans la vue **[!UICONTROL Carte]**, **[!UICONTROL Colonnes]** ou **[!UICONTROL Liste]** (la capture d’écran ci-dessous présente la vue **[!UICONTROL Liste]**), ouvrez un dossier contenant les ressources que vous avez publiées ou dépubliées.
 1. Sélectionnez une ressource pour qu’elle s’affiche avec une coche. Voir la capture d’écran ci-dessous, par exemple.
-1. Dans le menu déroulant situé dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Chronologie]**. La section **[!UICONTROL État]** du panneau de gauche affiche l’état de publication de la ressource sélectionnée.Lorsque vous utilisez la vue **[!UICONTROL Liste]**, une colonne supplémentaire pour l’état de publication de **[!UICONTROL Dynamic Media]** s’affiche.
+1. Dans le menu déroulant situé dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Chronologie]**. La section **[!UICONTROL État]** du panneau de gauche affiche l’état de publication de la ressource sélectionnée.
+Lorsque vous utilisez la vue **[!UICONTROL Liste]**, une colonne supplémentaire pour l’état de publication de **[!UICONTROL Dynamic Media]** s’affiche.
    * Un dossier configuré pour la synchronisation avec Dynamic Media affiche la colonne **[!UICONTROL Dynamic Media]** par défaut.
    * Un dossier *non* configuré pour la synchronisation avec Dynamic Media n’affiche pas la colonne Dynamic Media.
      ![Vue Liste et Chronologie](/help/assets/assets-dm/selective-publish-status-timeline.png)

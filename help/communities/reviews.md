@@ -9,7 +9,16 @@ exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 0%
@@ -176,7 +185,7 @@ Sous l’onglet **[!UICONTROL Résumé de la révision]**
 
 * `Review Path`
 
-  Saisissez ou accédez à l’instance placée du composant `reviews` afin de pouvoir résumer, par exemple, si vous ajoutez à la page web du site [Geometrixx Engage &#x200B;](getting-started.md) le chemin d’accès serait :
+  Saisissez ou accédez à l’instance placée du composant `reviews` afin de pouvoir résumer, par exemple, si vous ajoutez à la page web du site [Geometrixx Engage ](getting-started.md) le chemin d’accès serait :
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -210,7 +219,7 @@ Sous l’onglet **[!UICONTROL Types de ressources]**, spécifiez le type de ress
 
 * **[!UICONTROL Commenter le type de ressource système]**
 
-  Accédez au type de ressource d’un composant `comments`système de commentaires) étendu dans /apps. Laissez ce champ vide, sauf si le modèle de page [inclut dynamiquement](scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (nœud comments). En savoir plus en consultant la section sur l’assistant [&#128279;](handlebars-helpers.md#include).`{{include}}`
+  Accédez au type de ressource d’un composant `comments`système de commentaires) étendu dans /apps. Laissez ce champ vide, sauf si le modèle de page [inclut dynamiquement](scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (nœud comments). En savoir plus en consultant la section sur l’assistant ](handlebars-helpers.md#include).[`{{include}}`
 
 ## Expérience du visiteur du site {#site-visitor-experience}
 
@@ -239,4 +248,4 @@ Pour plus d’informations, consultez la page [Review Essentials](reviews-basics
 
 Pour la modération des commentaires publiés, voir [Modération du contenu créé par l’utilisateur](moderate-ugc.md).
 
-Pour la traduction des commentaires publiés, voir [&#x200B; Traduction de contenu créé par l’utilisateur &#x200B;](translate-ugc.md).
+Pour la traduction des commentaires publiés, voir [ Traduction de contenu créé par l’utilisateur ](translate-ugc.md).

@@ -10,13 +10,22 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '690'
 ht-degree: 96%
-
 ---
-
 # Personnaliser les consoles {#customizing-the-consoles}
 
 >[!CAUTION]
@@ -29,7 +38,7 @@ AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les cons
 Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir de nouvelles fonctionnalités, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, elle peut contenir le code requis pour votre composant personnalisé.
 
 * Recouvrements
-Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir les fonctionnalités standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement:1 une copie 1 de l’original n’est pas nécessaire, car la fusion de ressources Sling permet l’héritage.
+Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir les fonctionnalités standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling permet l’héritage.
 
 Ils peuvent être utilisés de différentes manières pour étendre vos consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
 
@@ -60,7 +69,7 @@ Par exemple, les emplacements suivants dans la structure `/libs` risquent d’ê
 
 * Consoles (toutes les consoles basées sur les pages de l’IU Granite), par exemple :
 
-   * `/libs/wcm/core/content`
+  * `/libs/wcm/core/content`
 
 >[!NOTE]
 >
@@ -153,7 +162,7 @@ Pour personnaliser les colonnes dans la vue Liste :
    * Si vous souhaitez connecter des données supplémentaires, vous devez écrire un [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec une
      `pageInfoProviderType`.
 
-   Par exemple, consultez la classe/le lot joint (à partir de GitHub) ci-dessous.
+   Par exemple, consultez la classe/le bundle joint (à partir de GitHub) ci-dessous.
 
 1. Vous pouvez maintenant sélectionner la colonne dans le configurateur de colonnes de la vue Liste.
 

@@ -10,18 +10,32 @@ role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 96%
-
 ---
-
 # Calcul de données de formulaire {#calculating-form-data}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
-Le service Forms peut calculer les valeurs qu’un utilisateur saisit dans un formulaire et afficher les résultats. Pour calculer les données d’un formulaire, deux tâches sont nécessaires. Commencez par créer un script de conception de formulaire qui calcule les données du formulaire. Une conception de formulaire prend en charge trois types de scripts. Un type de script s’exécute sur le client, un autre sur le serveur et le troisième à la fois sur le serveur et sur le client. Le type de script décrit ici s’exécute sur le serveur. Les calculs côté serveur sont pris en charge pour les transformations HTML, PDF et Form Guide (obsolète).
+Le service Forms peut calculer les valeurs qu’un utilisateur saisit dans un formulaire et afficher les résultats. Pour calculer les données d’un formulaire, deux tâches sont nécessaires. Tout d’abord, vous créez un script de conception de formulaire qui calcule les données du formulaire. Une conception de formulaire prend en charge trois types de scripts. Un type de script s’exécute sur le client, un autre sur le serveur et le troisième à la fois sur le serveur et sur le client. Le type de script décrit ici s’exécute sur le serveur. Les calculs côté serveur sont pris en charge pour les transformations HTML, PDF et Guide de formulaire (déconseillé).
 
 Dans le cadre du processus de conception de formulaire, vous pouvez utiliser des calculs et des scripts pour offrir une expérience client plus riche. Il est possible d’ajouter des calculs et des scripts à la plupart des champs et objets de formulaire. Créez un script de conception de formulaire pour effectuer des opérations de calcul sur les données qu’une personne saisit dans un formulaire interactif.
 
@@ -30,7 +44,7 @@ L’utilisateur saisit des valeurs dans le formulaire et clique ensuite sur le b
 * La personne accède à une page HTML nommée StartLoan.html, qui fait office de page de démarrage de l’application web. Cette page appelle une servlet Java nommée `GetLoanForm`.
 * La servlet `GetLoanForm` renvoie un formulaire de prêt. Ce formulaire contient un script, des champs interactifs, un bouton de calcul et un bouton d’envoi.
 * La personne saisit des valeurs dans les champs du formulaire et clique ensuite sur le bouton Calculer. Le formulaire est envoyé à la servlet Java `CalculateData` où le script est exécuté. Le formulaire est renvoyé à l’utilisateur avec les résultats du calcul affichés dans le formulaire.
-* Lʼutilisateur ou l’utilisatrice continue à saisir et calculer des valeurs jusquʼà lʼobtention du résultat désiré. Une fois satisfait, il clique sur le bouton Envoyer pour traiter le formulaire. Le formulaire est envoyé à une autre servlet Java nommée `ProcessForm`, qui est chargée de la récupération des données envoyées. (Consultez la section [Gestion des formulaires envoyés](/help/forms/developing/rendering-forms.md#handling-submitted-forms)).
+* Lʼutilisateur ou l’utilisatrice continue à saisir et calculer des valeurs jusqu’à ce qu’un résultat satisfaisant s’affiche. Une fois satisfait, il clique sur le bouton Envoyer pour traiter le formulaire. Le formulaire est envoyé à une autre servlet Java nommée `ProcessForm`, qui est chargée de la récupération des données envoyées. (Consultez la section [Gestion des formulaires envoyés](/help/forms/developing/rendering-forms.md#handling-submitted-forms)).
 
 
 Le diagramme suivant montre le flux logique de l’application.
@@ -61,7 +75,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
   </tr>
   <tr>
    <td><p>4</p></td>
-   <td><p>Le formulaire est rendu au navigateur web avec les résultats du calcul affichés dans le formulaire. </p></td>
+   <td><p>Le formulaire est de nouveau affiché dans le navigateur web, avec les résultats du calcul affichés dans le formulaire. </p></td>
   </tr>
   <tr>
    <td><p>5</p></td>
@@ -70,7 +84,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  </tbody>
 </table>
 
-En général, un formulaire envoyé en tant que contenu PDF contient des scripts qui sont exécutés sur le client. Toutefois, les calculs côté serveur peuvent également être exécutés. Il n’est pas possible d’utiliser un bouton Envoyer pour calculer les scripts. Dans ce cas, les calculs ne sont pas exécutés car le service Forms considère que l’interaction est terminée.
+En général, un formulaire envoyé en tant que contenu PDF contient des scripts qui sont exécutés côté client. Toutefois, les calculs côté serveur peuvent également être exécutés. Il n’est pas possible d’utiliser un bouton Envoyer pour calculer les scripts. Dans ce cas, les calculs ne sont pas exécutés car le service Forms considère que l’interaction est terminée.
 
 Pour illustrer l’utilisation d’un script de conception de formulaire, cette section examine un formulaire interactif simple contenant un script configuré pour s’exécuter sur le serveur. Le diagramme suivant illustre une conception de formulaire contenant un script qui ajoute les valeurs saisies par un utilisateur dans les deux premiers champs et affiche le résultat dans le troisième champ.
 
@@ -101,7 +115,7 @@ Pour calculer les données d’un formulaire, effectuez les tâches suivantes :
 1. Incluez les fichiers de projet.
 1. Créez un objet API client Forms.
 1. Récupérez un formulaire contenant un script de calcul.
-1. Réécrivez le flux de données de formulaire dans le navigateur web client.
+1. Renvoyez le flux de données de formulaire au navigateur web client.
 
 **Inclure les fichiers de projet**
 
@@ -127,11 +141,11 @@ Après avoir vérifié que l’état de traitement associé à un formulaire env
 [Calcul des données de formulaire à l’aide de l’API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
 [Calcul des données de formulaire à l’aide de l’API de service web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [Définition des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-Démarrages rapides de l’API du service Forms [&#128279;](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+Démarrages rapides de l’API du service Forms [](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 [Rendu de PDF forms interactive](/help/forms/developing/rendering-interactive-pdf-forms.md)
 [Création d’applications web qui effectuent le rendu de Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-## Calcul des données de formulaire à l’aide de l’API Java {#calculate-form-data-using-the-java-api}
+## Calculer les données de formulaire à l’aide de l’API Java {#calculate-form-data-using-the-java-api}
 
 Calculer les données de formulaire à l’aide de l’API Forms (Java) :
 
@@ -149,10 +163,10 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
    * Pour récupérer des données de formulaire contenant un script de calcul, créez un objet `com.adobe.idp.Document` à l’aide de son constructeur et en appelant la méthode `getInputStream` de l’objet `javax.servlet.http.HttpServletResponse` à partir du constructeur.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * Objet `com.adobe.idp.Document` contenant les données de formulaire.
-      * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Indiquez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML et PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
-      * Une valeur de chaîne qui spécifie la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.
+     * Objet `com.adobe.idp.Document` contenant les données de formulaire.
+     * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Indiquez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML et PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+     * Une valeur de chaîne qui spécifie la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.
 
      La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
@@ -179,7 +193,7 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
 1. Inclure les fichiers du projet
 
    * Créez des classes proxy Java qui utilisent le service WSDL de Forms.
-   * Incluez les classes proxy Java dans le chemin d’accès de classe.
+   * Incluez les classes proxy Java dans votre classpath.
 
 1. Créer un objet API Forms client
 
@@ -196,17 +210,17 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur des paramètres régionaux en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui la spécifie.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * Objet `BLOB` contenant les données de formulaire.
-      * Valeur de chaîne spécifiant les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Par exemple, vous pouvez spécifier la valeur de chaîne suivante : `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`.
-      * Valeur de chaîne spécifiant la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Un objet `RenderOptionsSpec` qui stocke les options d’exécution. Pour plus d’informations, .
-      * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
-      * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode.
-      * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
-      * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
-      * Un objet `javax.xml.rpc.holders.ShortHolder` vide qui est renseigné par la méthode.
-      * Un objet `MyArrayOf_xsd_anyTypeHolder` vide qui est renseigné par la méthode. Ce paramètre est utilisé pour stocker les pièces jointes envoyées avec le formulaire.
-      * Un objet `FormsResultHolder` vide qui est renseigné par la méthode avec le formulaire envoyé.
+     * Objet `BLOB` contenant les données de formulaire.
+     * Valeur de chaîne spécifiant les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Par exemple, vous pouvez spécifier la valeur de chaîne suivante : `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`.
+     * Valeur de chaîne spécifiant la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Un objet `RenderOptionsSpec` qui stocke les options d’exécution. Pour plus d’informations, .
+     * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
+     * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode.
+     * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
+     * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
+     * Un objet `javax.xml.rpc.holders.ShortHolder` vide qui est renseigné par la méthode.
+     * Un objet `MyArrayOf_xsd_anyTypeHolder` vide qui est renseigné par la méthode. Ce paramètre est utilisé pour stocker les pièces jointes envoyées avec le formulaire.
+     * Un objet `FormsResultHolder` vide qui est renseigné par la méthode avec le formulaire envoyé.
 
      La méthode `processFormSubmission` renseigne le paramètre `FormsResultHolder` avec les résultats de l’envoi du formulaire. La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 

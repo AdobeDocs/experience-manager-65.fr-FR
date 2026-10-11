@@ -15,9 +15,16 @@ product_v2:
 feature_v2:
   - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
     internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
@@ -34,7 +41,7 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a6f7741fe575a194732abee7dfc9c531d1c58cc2
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 79%
@@ -62,7 +69,7 @@ Il est directement incorporé à AEM et accessible à partir de l’interface d�
 
 La vidéo de 3 minutes et 25 secondes qui suit fait une présentation détaillée de l’assistant IA d’AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475360/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Accéder à l’assistant IA dans AEM{#get-access}
 
@@ -77,7 +84,7 @@ Pour accéder à l’assistant IA dans AEM, les clientes et clients doivent dis
 
 **Pour accéder à l’assistant IA dans AEM :**
 
-1. Les clientes et clients doivent disposer d’un accord supplémentaire pour accéder à la plupart des fonctionnalités d’IA et d’agent dans Adobe Experience Manager. Pour plus d’informations, contactez votre représentant ou représentante Adobe. Pour connaître le fonctionnement de l’activation de l’IA générative, voir [IA générative dans les applications CX Enterprise](https://experienceleague.adobe.com/fr/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
+1. Les clientes et clients doivent disposer d’un accord supplémentaire pour accéder à la plupart des fonctionnalités d’IA et d’agent dans Adobe Experience Manager. Pour plus d’informations, contactez votre représentant ou représentante Adobe. Pour connaître le fonctionnement de l’activation de l’IA générative, voir [IA générative dans les applications CX Enterprise](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
 
 1. Une fois que votre entreprise dispose de cet accord, tous les utilisateurs peuvent utiliser l’assistant AI pour la connaissance des produits par défaut. Aucune autorisation supplémentaire par utilisateur ou par groupe n’est requise.
 
@@ -92,7 +99,7 @@ Le périmètre actuel de l’assistant AI dans AEM se concentre sur les question
 
 ## Confidentialité, sécurité et gouvernance{#privacy-security-governance}
 
-L’assistant IA d’AEM est spécialement conçu pour la confidentialité, la sécurité et la gouvernance.
+L’assistant IA d’AEM est conçu en mettant fortement l’accent sur la confidentialité, la sécurité et la gouvernance.
 
 Cet article décrit les fonctionnalités centrées sur la confiance que vous pouvez attendre de l’assistant IA d’AEM :
 
@@ -113,7 +120,7 @@ La connaissance des produits englobe les concepts et les sujets issus de la docu
 | Apprentissage par points | <ul><li>Qu’est-ce que l’éditeur universel ?</li><li>Comment créer un programme dans Cloud Manager ?</li></ul> |
 | Découverte ouverte | <ul><li>Comment utiliser l’éditeur universel ?</li><li>Existe-t-il un moyen de copier du contenu d’un environnement à un autre ?</li></ul> |
 | Résolution des problèmes | <ul><li>Pourquoi ne puis-je pas accéder à l’éditeur universel ?</li><li>Pourquoi mon pipeline échoue-t-il ?</li></ul> |
-| **Création de ticket d’assistance** | **Disponible uniquement pour les administrateurs et administratrices &#x200B;**<br>**Exemples** |
+| **Création de ticket d’assistance** | **Disponible uniquement pour les administrateurs et administratrices **<br>**Exemples** |
 | Création automatisée de tickets d’assistance capturant l’historique et le contexte de la conversation de l’assistant IA | <ul><li>Créez un ticket d’assistance pour moi.</li></ul> |
 | Récupération du statut du ticket d’assistance | <ul><li>Montre-moi tous les tickets d’assistance que j’ai ouverts.</li><li>Montre-moi le statut du ticket « E----------- ».</li></ul> |
 
@@ -124,7 +131,7 @@ La connaissance des produits englobe les concepts et les sujets issus de la docu
 
 Pour recevoir les réponses les plus précises de la part de l’assistant IA dans AEM, il est important de formuler vos questions avec clarté et contexte. Suivez les conseils suivants pour vous assurer que vos requêtes sont claires et bien structurées :
 
-* Exposez clairement votre tâche ou votre question de façon concise.
+* Énoncez clairement votre tâche ou votre question de façon concise.
 * Pour une meilleure compréhension, évitez les formulations ambiguës ou les syntaxes trop complexes.
 * Fournissez un contexte pertinent sur votre tâche ou votre question, car cette approche aide l’assistant IA d’AEM à fournir des réponses plus précises et plus pertinentes.
 Par exemple, dans votre invite, attribuez un nom à la solution AEM dans laquelle vous travaillez.
@@ -133,7 +140,7 @@ Par exemple, dans votre invite, attribuez un nom à la solution AEM dans laquell
 
 | Aire | Exemples |
 | --- | --- |
-| Informations opérationnelles | <ul><li>Combien y a-t-il d’environnements de développement dans mon instance locataire ?</li><li>Qui a lancé le dernier pipeline de production ?</li></ul> |
+| Informations opérationnelles | <ul><li>Combien y a-t-il d’environnements de développement dans mon locataire ?</li><li>Qui a lancé le dernier pipeline de production ?</li></ul> |
 | Résolution des problèmes | <ul><li>Pourquoi mon pipeline de production échoue-t-il ?</li></ul> |
 | Tâche et automatisation | <ul><li>Configure un pipeline de qualité du code à partir d’une branche de développement.</li></ul> |
 
@@ -194,7 +201,7 @@ Partagez vos commentaires sur votre expérience avec l’assistant IA d’AEM �
 
 ## Questions fréquentes sur l’assistant IA d’AEM {#ai-faq}
 
-Voici les réponses à certaines questions courantes sur l’assistant IA:
+Voici les réponses à certaines questions courantes sur l’assistant IA :
 
 * **Les informations de l’assistant AI dans AEM sont-elles en temps réel ?**\
   Non. L’assistant IA puise son contenu dans la documentation d’Adobe Experience League. Les mises à jour apportées au contenu prennent un certain temps à se refléter dans ses réponses.

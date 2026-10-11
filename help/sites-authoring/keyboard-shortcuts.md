@@ -9,13 +9,26 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 512fb704c7edafc84f6c5856d076e7de503d5c22
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 97%
-
 ---
-
 # Raccourcis clavier pour les consoles{#keyboard-shortcuts-for-consoles}
 
 Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à l’utilisation de consoles et d’autres à la [modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
@@ -72,7 +85,7 @@ En outre, les raccourcis clavier sont les mêmes pour tous les paramètres régi
 >
 >Les raccourcis d’AEM ne remplacent pas le comportement par défaut du navigateur.
 >
->Dans le cas où des conflits doivent se produire entre les raccourcis d’AEM et ceux du navigateur, les raccourcis d’AEM ne fonctionneront pas, laissant la place aux fonctionnalités du navigateur.
+>Dans le cas où des conflits se produiraient entre les raccourcis d’AEM et ceux du navigateur, les raccourcis d’AEM ne fonctionneront pas et laisseront la priorité aux fonctionnalités du navigateur.
 
 >[!CAUTION]
 >

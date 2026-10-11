@@ -9,13 +9,17 @@ exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2649'
 ht-degree: 0%
-
 ---
-
 # Modèles de page pour les applications mobiles {#page-templates-for-mobile-apps}
 
 {{ue-over-mobile}}
@@ -192,7 +196,7 @@ Notez le GUID « 24BA22ED-7D06-4330-B7EB-F6FC73251CA3 » dans le chemin .
 
 En tant que développeur PhoneGap, le contenu qui vous intéresse se trouve sous le répertoire www. Pour accéder aux ressources de l’application, utilisez des chemins d’accès relatifs.
 
-Pour aggraver le problème, votre application PhoneGap utilise le modèle d’application monopage (SPA) afin que l’URI de base (à l’exclusion du hachage) ne change jamais. Par conséquent, chaque ressource, modèle ou script que vous référencez **doit être relatif à votre page de niveau supérieur. &#x200B;** La page de niveau supérieur initialise le routage et les contrôleurs Angular grâce à `<name>.angular-app-module.js` et `<name>.angular-app-controllers.js`. Cette page doit être la page la plus proche de la racine du référentiel qui n’étend pas :redirect sling.
+Pour aggraver le problème, votre application PhoneGap utilise le modèle d’application monopage (SPA) afin que l’URI de base (à l’exclusion du hachage) ne change jamais. Par conséquent, chaque ressource, modèle ou script que vous référencez **doit être relatif à votre page de niveau supérieur. **La page de niveau supérieur initialise le routage et les contrôleurs Angular grâce à `<name>.angular-app-module.js` et `<name>.angular-app-controllers.js`. Cette page doit être la page la plus proche de la racine du référentiel qui n’étend pas :redirect sling.
 
 Plusieurs méthodes d’assistance sont disponibles pour gérer les chemins relatifs :
 
@@ -240,7 +244,7 @@ Dans les composants pilotés par des données JSON (tels que &#39;ng-text&#39; :
 
 ### controller.js.jsp {#controller-js-jsp-1}
 
-Comme décrit dans [Modèles de page &#x200B;](/help/mobile/apps-architecture.md), chaque composant peut générer un fragment JavaScript pour utiliser le contenu JSON exposé par la promesse `data`. Conformément aux conventions Angular, un contrôleur ne doit être utilisé que pour affecter des variables à la portée.
+Comme décrit dans [Modèles de page ](/help/mobile/apps-architecture.md), chaque composant peut générer un fragment JavaScript pour utiliser le contenu JSON exposé par la promesse `data`. Conformément aux conventions Angular, un contrôleur ne doit être utilisé que pour affecter des variables à la portée.
 
 ### angular.json.jsp {#angular-json-jsp}
 

@@ -9,13 +9,17 @@ exl-id: a6e59334-09e2-4bb8-b445-1868035da556
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2976'
 ht-degree: 1%
-
 ---
-
 # Mobile avec synchronisation de contenu{#mobile-with-content-sync}
 
 {{ue-over-mobile}}
@@ -214,7 +218,7 @@ La liste ci-dessous présente un exemple de configuration de la synchronisation 
 
 **etc.designs.default et etc.designs.mobile** - Les deux premières entrées de la configuration sont évidentes. Comme vous allez inclure plusieurs pages mobiles, vous avez besoin des fichiers de conception associés sous /etc/designs. Et puisqu’aucun traitement supplémentaire n’est requis, la copie est suffisante.
 
-**events.plist** - Cette entrée est un peu spéciale. Comme mentionné en introduction, l’application doit fournir une vue cartographique avec des marqueurs des lieux des événements. Les renseignements nécessaires sur l&#39;emplacement seront fournis dans un fichier distinct au format PLIST. Pour que cela fonctionne, le composant Liste d’événements utilisé sur la page d’index comporte un script appelé plist.jsp. Ce script est exécuté lorsque la ressource du composant est demandée avec l’extension `.plist`. Comme d’habitude, le chemin d’accès aux composants est indiqué dans la propriété path et le type est défini sur content , car vous souhaitez utiliser le traitement des requêtes [&#x200B; Sling &#x200B;](/help/sites-developing/the-basics.md#sling-request-processing).
+**events.plist** - Cette entrée est un peu spéciale. Comme mentionné en introduction, l’application doit fournir une vue cartographique avec des marqueurs des lieux des événements. Les renseignements nécessaires sur l&#39;emplacement seront fournis dans un fichier distinct au format PLIST. Pour que cela fonctionne, le composant Liste d’événements utilisé sur la page d’index comporte un script appelé plist.jsp. Ce script est exécuté lorsque la ressource du composant est demandée avec l’extension `.plist`. Comme d’habitude, le chemin d’accès aux composants est indiqué dans la propriété path et le type est défini sur content , car vous souhaitez utiliser le traitement des requêtes [ Sling ](/help/sites-developing/the-basics.md#sling-request-processing).
 
 **events.touch.html** - Viennent ensuite les pages proprement dites qui s’affichent dans l’application. La propriété de chemin est définie sur la page racine des événements. Toutes les pages d’événement situées sous cette page seront également incluses, car la propriété deep est définie par défaut sur true. Vous utilisez les pages comme type de configuration. Ainsi, toutes les images ou autres fichiers pouvant être référencés à partir d’un composant d’image ou de téléchargement sur une page sont inclus. En outre, la définition du sélecteur tactile nous donne une version mobile des pages. La configuration du pack de fonctionnalités contient d’autres entrées de ce type, mais elles sont laissées de côté pour des raisons de simplicité.
 

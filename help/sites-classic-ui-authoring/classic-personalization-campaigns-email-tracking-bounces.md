@@ -9,13 +9,24 @@ exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 100%
-
+source-wordcount: '714'
+ht-degree: 90%
 ---
-
 # Suivi des e-mails rejetés{#tracking-bounced-emails}
 
 >[!NOTE]
@@ -64,7 +75,7 @@ Pour configurer l’importateur de flux pour le suivi des messages rejetés, pro
 
    Permet de définir des indicateurs à rechercher.
 
-   `imap.flag.SEEN` :« false » pour les nouveaux messages ou les messages non consultés ; « true » pour les messages déjà lus.
+   `imap.flag.SEEN`:Set false pour les nouveaux messages ou les messages non consultés, true pour les messages déjà lus
 
    Voir [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) pour obtenir la liste complète des indicateurs.
 

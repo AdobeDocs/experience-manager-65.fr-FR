@@ -11,13 +11,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 100%
-
 ---
-
 
 # Composant de page SPA{#spa-page-component}
 
@@ -35,14 +49,14 @@ La résolution et la gestion du modèle de page sont déléguées à un module [
 
 Pour autoriser la création de la page, une bibliothèque client nommée `cq.authoring.pagemodel.messaging` doit être ajoutée pour fournir un canal de communication entre la SPA et l’éditeur de page. Si le composant de page SPA hérite du composant wcm/core de page, les options suivantes sont fournies pour rendre la catégorie de bibliothèque cliente `cq.authoring.pagemodel.messaging` disponible :
 
-* Si le modèle est modifiable, ajoutez la catégorie de bibliothèque client à la politique de page.
+* Si le modèle est modifiable, ajoutez la catégorie de bibliothèque cliente à la politique de page.
 * Ajoutez la catégorie de bibliothèque client à l’aide du fichier `customfooterlibs.html` du composant de page.
 
 N’oubliez pas de limiter l’inclusion de la catégorie `cq.authoring.pagemodel.messaging` au contexte de l’éditeur de page.
 
 ## Type de données de communication {#communication-data-type}
 
-Le type de données de communication est défini sur un élément HTML dans le composant de page AEM à l’aide de l’attribut `data-cq-datatype`. Lorsque le type de données de communication est défini sur JSON, les requêtes GET atteignent les points d’entrée du modèle Sling d’un composant. À la suite d’une mise à jour dans l’éditeur de page, la représentation JSON du composant mis à jour est envoyée à la bibliothèque modèle de page. Celle-ci informe ensuite l’application sur une seule page des mises à jour.
+Le type de données de communication est défini sur un élément HTML dans le composant de page AEM à l’aide de l’attribut `data-cq-datatype`. Lorsque le type de données de communication est défini sur JSON, les requêtes GET atteignent les points d’entrée du modèle Sling d’un composant. À la suite d’une mise à jour dans l’éditeur de page, la représentation JSON du composant mis à jour est envoyée à la bibliothèque modèle de page. Celle-ci informe ensuite la SPA des mises à jour.
 
 **Composant de page SPA –`body.html`**
 
@@ -100,7 +114,7 @@ La synchronisation des recouvrements est assurée par le même observateur de mu
 
 ## Configuration de la structure exportée JSON du modèle Sling {#sling-model-json-exported-structure-configuration}
 
-Lorsque les fonctionnalités de routage sont activées, on part du principe que l’exportation JSON de l’application sur une seule page contient les différentes routes de l’application grâce à l’exportation JSON du composant de navigation AEM. La sortie JSON du composant de navigation AEM peut être configurée dans la politique de contenu de page racine de l’application sur une seule page au moyen des deux propriétés suivantes :
+Lorsque les fonctionnalités de routage sont activées, on part du principe que l’export JSON de la SPA contient les différentes routes de l’application grâce à l’export JSON du composant de navigation AEM. La sortie JSON du composant de navigation AEM peut être configurée dans la politique de contenu de page racine de l’application sur une seule page au moyen des deux propriétés suivantes :
 
 * `structureDepth` : nombre correspondant à la profondeur de l’arborescence exportée
 * `structurePatterns` : regex ou tableau de regex correspondant à la page à exporter

@@ -9,13 +9,29 @@ role: Developer
 exl-id: e4b204ee-7261-42b8-8db8-a92aa9fd0a28
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2549'
+source-wordcount: '2577'
 ht-degree: 100%
-
 ---
-
 # Utiliser PDF Utilities {#working-with-pdf-utilities}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -99,7 +115,7 @@ Pour convertir des documents PDF en documents XDP à l’aide de l’API PDF Uti
 
 ### Convertir des documents PDF en documents XDP à l’aide de l’API de service web {#convert-pdf-documents-into-xdp-documents-using-the-web-service-api}
 
-Pour convertir des documents PDF en documents XDP à l’aide de l’API PDF Utilities (service web), procédez comme suit :
+Convertir des documents PDF en documents XDP à l’aide de l’API PDF Utilities (service web) :
 
 1. Inclure les fichiers du projet
 
@@ -231,7 +247,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Créer un client PDFUtilityService**
 
-Avant d’effectuer par programmation une opération PDF Utilities, vous devez créer un client PDFUtilityService. Si vous utilisez l’API Java, créez un objet `PDFUtilityServiceClient`. Si vous utilisez l’API de service web, créez un objet `PDFUtilityServiceService`.
+Avant d’effectuer par programmation une opération PDF Utilities, vous devez créer un client PDFUtilityService. Si vous utilisez l’API Java, créez un objet `PDFUtilityServiceClient`. Avec l’API de service web, cela se fait à l’aide d’un objet `PDFUtilityServiceService`.
 
 **Appeler l’opération de récupération des propriétés**
 
@@ -278,7 +294,7 @@ Récupérez les propriétés des documents PDF en utilisant l’API PDF Utilitie
 
 ### Récupérer les propriétés d’un document PDF à l’aide de l’API de service web {#retrieve-pdf-document-properties-using-the-web-service-api}
 
-Récupérez les propriétés des documents PDF à l’aide de l’API du service web PDF Utilities :
+Récupérer les propriétés des documents PDF à l’aide de l’API du service web PDF Utilities :
 
 1. Inclure les fichiers du projet
 
@@ -287,7 +303,7 @@ Récupérez les propriétés des documents PDF à l’aide de l’API du service
 
 1. Créer un client PDFUtilityService
 
-   Créez un objet `PDFUtilityServiceService` en utilisant le constructeur de votre classe proxy.
+   Créez un objet `PDFUtilityServiceService` en utilisant votre constructeur de classe proxy.
 
 1. Appeler l’opération de récupération des propriétés
 
@@ -308,7 +324,7 @@ Récupérez les propriétés des documents PDF à l’aide de l’API du service
 
 ## Définir les modes d’enregistrement des documents PDF {#setting-pdf-document-save-modes}
 
-Vous pouvez utiliser les API Java et du service web du service PDF Utilities pour définir par programmation un mode d’enregistrement pour un document PDF. Lorsque vous utilisez le service PDF Utilities pour définir un mode d’enregistrement, celui-ci ne fait que définir le mode d’enregistrement et n’enregistre pas réellement le document PDF. Le document PDF est enregistré lorsqu’il est transmis à une autre opération de service. Par exemple, vous pouvez utiliser le service PDF Utilities pour définir un mode d’enregistrement spécifique et le transmettre au service chiffrement, où le document PDF est réellement enregistré et chiffré.
+Vous pouvez utiliser les API Java et du service web du service PDF Utilities pour définir par programmation un mode d’enregistrement pour un document PDF. Lorsque vous utilisez le service PDF Utilities pour définir un mode d’enregistrement, celui-ci ne fait que définir le mode d’enregistrement et n’enregistre pas réellement le document PDF. Le document PDF est enregistré lorsqu’il est transmis à une autre opération de service. Par exemple, vous pouvez utiliser le service PDF Utilities pour définir un mode d’enregistrement spécifique et le transmettre au service de chiffrement, où le document PDF est réellement enregistré et chiffré.
 
 >[!NOTE]
 >
@@ -346,7 +362,7 @@ Après avoir créé le client de service, vous pouvez appeler l’opération de 
 
 **Transmettre le document PDF à une autre opération AEM Forms**
 
-Une fois que le service PDF Utilities a défini le mode d’enregistrement spécifié, transmettez le document PDF à une autre opération AEM Forms. Une fois renvoyé à partir de cette opération, le document PDF est enregistré dans le mode spécifié. Par exemple, si vous utilisez le service PDF Utilities pour définir le mode `FAST_WEB_VIEW`, puis transmettez le document PDF à l’opération `encryptUsingPassword` du service Encryption, le document PDF renvoyé est chiffré avec un mot de passe et est enregistré dans le mode `FAST_WEB_VIEW`.
+Une fois que le service PDF Utilities a défini le mode d’enregistrement spécifié, transmettez le document PDF à une autre opération AEM Forms. Une fois renvoyé par cette opération, le document PDF est enregistré dans le mode spécifié. Par exemple, si vous utilisez le service PDF Utilities pour définir le mode `FAST_WEB_VIEW`, puis transmettez le document PDF à l’opération `encryptUsingPassword` du service Encryption, le document PDF renvoyé est chiffré avec un mot de passe et est enregistré dans le mode `FAST_WEB_VIEW`.
 
 >[!NOTE]
 >
@@ -393,7 +409,7 @@ Pour définir les options d’enregistrement du document PDF à l’aide de l’
 
 1. Transmettre le document PDF à une autre opération AEM Forms
 
-   * Transmettez l’objet `com.adobe.idp.Document` vers une autre opération AEM Forms.
+   * Transmettez l’objet `com.adobe.idp.Document` renvoyé à une autre opération AEM Forms.
 
 **Voir également**
 
@@ -431,7 +447,7 @@ Pour définir les options d’enregistrement du document PDF à l’aide de l’
 
    La méthode renvoie un objet `BLOB` formaté à l’aide du style d’enregistrement spécifié. Vous pouvez ensuite enregistrer cet objet en tant que document PDF.
 
-1. Transmettre le document PDF à une autre opération Forms
+1. Transmettre le document PDF à une autre opération AEM Forms
 
    * Transmettez l’objet `BLOB` renvoyé à une autre opération AEM Forms.
 

@@ -1,20 +1,33 @@
 ---
 title: Utiliser des informations d’identification
-
-description: Importez des informations d’identification dans AEM Forms à l’aide des API Trust Manager et Java. Découvrez également comment supprimer des informations d’identification à l’aide de l’API Trust Manager et de l’API Java.
-
-
+description: Importer des informations d’identification dans AEM Forms à l’aide des API Trust Manager et Java. Découvrez également comment supprimer des informations d’identification à l’aide de l’API Trust Manager et de l’API Java.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 100%
@@ -25,7 +38,7 @@ ht-degree: 100%
 
 **À propos du service d’identification**
 
-Les informations d’identification contiennent les informations de clé privée dont vous avez besoin pour signer ou identifier des documents. Un certificat correspond aux informations de clé publique que vous configurez pour l’approbation. AEM Forms utilise des certificats et des informations d’identification à plusieurs fins :
+Une information d’identification contient les informations de clé privée dont vous avez besoin pour signer ou identifier des documents. Un certificat correspond aux informations de clé publique que vous configurez comme approuvées. AEM Forms utilise des certificats et des informations d’identification à plusieurs fins :
 
 * Les extensions d’Acrobat Reader DC utilisent des informations d’identification pour activer les droits Adobe Reader des documents PDF (Consultez la section [Appliquer des droits d’utilisation aux documents PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)).
 * Le service Signature accède aux certificats et aux informations d’identification lors d’opérations telles que la signature numérique de documents PDF. (Consultez la section [Signer numériquement des documents PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
@@ -41,7 +54,7 @@ Vous pouvez interagir par programmation avec le service d’identification à l�
 
 ## Importer des informations d’identification à l’aide de l’API Trust Manager {#importing-credentials-by-using-the-trust-manager-api}
 
-Vous pouvez importer des informations d’identification par programmation dans AEM Forms à l’aide de l’API Trust Manager. Par exemple, vous pouvez importer des informations d’identification nécessaires pour signer un document PDF. (Consultez la section [Signer numériquement des documents PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
+Vous pouvez importer des informations d’identification par programmation dans AEM Forms à l’aide de l’API Trust Manager. Par exemple, vous pouvez importer des informations d’identification utilisées pour signer un document PDF. (Consultez la section [Signer numériquement des documents PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
 
 Lors de l’importation d’informations d’identification, vous spécifiez un alias pour ces informations. Il est utilisé pour effectuer une opération dans AEM Forms nécessitant des informations d’identification. Une fois les informations d’identification importées, elles peuvent être affichées dans la console d’administration, comme illustré ci-dessous. Notez que l’alias des informations d’identification est *Sécurisé*.
 
@@ -94,7 +107,7 @@ Après avoir référencé les informations d’identification, importez-les dans
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Didacticiels de mise en route de l’API Credential Service](/help/forms/developing/credential-service-java-api-quick.md#credential-service-java-api-quick-start-soap)
+[Guides de démarrage rapide de l’API Credential Service](/help/forms/developing/credential-service-java-api-quick.md#credential-service-java-api-quick-start-soap)
 
 [Supprimer des informations d’identification à l’aide de l’API Trust Manager](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
@@ -118,7 +131,7 @@ Importez des informations d’identification dans AEM Forms à l’aide de l’
 
 1. Réaliser lʼopération dʼimportation
 
-   * Créez un tableau de chaîne qui contient un élément. Attribuer la valeur `truststore.usage.type.sign` à l’élément.
+   * Créez un tableau de chaînes qui contient un élément. Attribuer la valeur `truststore.usage.type.sign` à l’élément.
    * Appelez la méthode `importCredential` de lʼobjet `CredentialServiceClient` et transmettez les valeurs suivantes :
 
      * Une valeur de chaîne qui spécifie la valeur de lʼalias pour les informations dʼidentification.
@@ -138,15 +151,15 @@ Importez des informations d’identification dans AEM Forms à l’aide de l’
 
 ## Supprimer des informations d’identification à l’aide de l’API Trust Manager {#deleting-credentials-by-using-the-trust-manager-api}
 
-Vous pouvez supprimer des informations d’identification par programmation à l’aide de l’API Trust Manager. Lors de la suppression d’informations d’identification, vous devez spécifier un alias qui correspond à ces informations. Une fois supprimées, les informations d’identification ne peuvent pas être utilisées pour réaliser une opération.
+Vous pouvez supprimer une information d’identification par programmation à l’aide de l’API Trust Manager. Lors de la suppression d’une information d’identification, vous devez spécifier un alias qui correspond à cette information. Une fois supprimée, une information d’identification ne peut pas être utilisée pour réaliser une opération.
 
 >[!NOTE]
 >
->Vous ne pouvez pas supprimer d’informations d’identification dans AEM Forms à l’aide de services web.
+>Vous ne pouvez pas supprimer une information d’identification dans AEM Forms à l’aide de services web.
 
 ### Résumé des étapes {#summary_of_steps-1}
 
-Pour supprimer des informations d’identification, procédez comme suit :
+Pour supprimer une information d’identification, procédez comme suit :
 
 1. Incluez les fichiers de projet.
 1. Créez un client de service d’identification.
@@ -166,11 +179,11 @@ Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure de
 
 **Créer un client de service d’identification**
 
-Avant de pouvoir supprimer des informations d’identification par programmation, créez un client de service d’intégration de données. Lors de la création d’un client de service, vous définissez les paramètres de connexion requis pour appeler un service. Pour plus d’informations, voir [Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+Avant de pouvoir supprimer une information d’identification par programmation, créez un client de service d’intégration de données. Lors de la création d’un client de service, vous définissez les paramètres de connexion requis pour appeler un service. Pour plus d’informations, voir [Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Exécuter l’opération de suppression**
 
-Pour supprimer des informations d’identification, indiquez l’alias correspondant à ces informations d’identification. Si vous indiquez un alias qui n’existe pas, une exception est générée.
+Pour supprimer une information d’identification, indiquez l’alias correspondant à cette information d’identification. Si vous indiquez un alias qui n’existe pas, une exception est générée.
 
 **Voir également**
 

@@ -10,13 +10,22 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2696'
 ht-degree: 93%
-
 ---
-
 # Exécuter AEM avec TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## Présentation {#introduction}
@@ -52,7 +61,7 @@ L’instance de secours demande périodiquement l’identifiant du segment de la
 
 >[!NOTE]
 >
->Les instances de secours ne reçoivent aucun type de requêtes, car elles s’exécutent en mode de synchronisation uniquement. La seule section disponible sur une instance de secours est la console web, afin de faciliter la configuration des lots et des services.
+>Les instances de secours ne reçoivent aucun type de requêtes, car elles s’exécutent en mode de synchronisation uniquement. La seule section disponible sur une instance de secours est la console web, afin de faciliter la configuration des bundles et des services.
 
 Un déploiement classique du processus TarMK Cold Standby :
 
@@ -218,7 +227,7 @@ Le service peut également être configuré à l’aide de la console Web, en pr
 >
 >Vous pouvez vérifier le rôle d’une instance à tout moment en vérifiant la présence des modes d’exécution **principaux** ou **secondaires** dans la console Web des paramètres Sling.
 >
->Pour ce faire, accédez à *:4502/system/console/status-slingsettings* et vérifiez la ligne **« Modes d’exécution »**.
+>Pour ce faire, accédez à ** puis vérifiez la ligne **« Modes d’exécution »**.
 
 ## Première synchronisation {#first-time-synchronization}
 
@@ -286,7 +295,7 @@ Les paramètres OSGi ci-dessous sont disponibles pour le service Cold Standby.
 * **Intervalle de synchronisation (`interval`) :** ce paramètre détermine l’intervalle entre la requête de synchronisation et s’applique uniquement à l’instance de secours.
 
 * **Plages IP autorisées (`primary.allowed-client-ip-ranges`) :** plages IP sur lesquelles l’instance principale autorise la connexion.
-* **Sécuriser (`secure`) &#x200B;** : active le chiffrement SSL. Pour pouvoir utiliser ce paramètre, il doit être activé sur toutes les instances.
+* **Sécuriser (`secure`) ** : active le chiffrement SSL. Pour pouvoir utiliser ce paramètre, il doit être activé sur toutes les instances.
 * **Délai d’expiration de lecture Standby (`standby.readtimeout`) :** délai d’expiration pour les demandes provenant de l’instance de secours, en millisecondes. La valeur par défaut utilisée est de 60 000 (une minute).
 
 * **Nettoyage automatique de secours (`standby.autoclean`) :** appelez cette méthode de nettoyage si la taille du magasin augmente lors d’un cycle de synchronisation..
@@ -336,7 +345,7 @@ Pour ce faire, procédez comme suit :
 
 ## Surveillance {#monitoring}
 
-La fonctionnalité expose des informations à l’aide de JMX ou de MBeans. Vous pouvez ainsi inspecter l’état actuel de l’instance de secours et de l’instance principale à l’aide de la [&#x200B; console JMX &#x200B;](/help/sites-administering/jmx-console.md). Ces informations se trouvent dans un MBean de `type org.apache.jackrabbit.oak:type="Standby"` nommé `Status`.
+La fonctionnalité expose des informations à l’aide de JMX ou de MBeans. Vous pouvez ainsi inspecter l’état actuel de l’instance de secours et de l’instance principale à l’aide de la [ console JMX ](/help/sites-administering/jmx-console.md). Ces informations se trouvent dans un MBean de `type org.apache.jackrabbit.oak:type="Standby"` nommé `Status`.
 
 **Secondaire**
 

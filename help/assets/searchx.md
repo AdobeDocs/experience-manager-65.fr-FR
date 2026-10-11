@@ -1,18 +1,27 @@
 ---
 title: Extension des fonctionnalités de recherche
-description: Étendez les fonctionnalités de recherche d’ [!DNL Adobe Experience Manager Assets] au-delà des valeurs par défaut.
+description: Étendez les fonctionnalités de recherche d’[!DNL Adobe Experience Manager Assets] au-delà des valeurs par défaut.
 contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 100%
-
+source-wordcount: '830'
+ht-degree: 91%
 ---
-
 # Extension de la recherche de ressources {#extending-assets-search}
 
 Vous pouvez étendre les fonctionnalités de recherche d’[!DNL Adobe Experience Manager Assets]. Par défaut, [!DNL Experience Manager Assets] propose des recherches de ressources en s’appuyant sur les chaînes.
@@ -140,7 +149,7 @@ Pour créer un prédicat de propriété :
    </script>
    ```
 
-1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, dans CRXDE, ajoutez un nœud **cq:editConfig** de type principal **cq:EditConfig**. Pour pouvoir supprimer des paragraphes, ajoutez une propriété **cq:actions** à plusieurs valeurs avec une seule valeur de **DELETE**.
+1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, dans CRXDE, ajoutez un nœud **cq:editConfig** de type principal **cq:EditConfig**. Pour supprimer des paragraphes, ajoutez une propriété à plusieurs valeurs **cq:actions** avec une seule valeur : **DELETE**.
 1. Accédez à votre navigateur puis, sur votre exemple de page (par exemple, **press.html**), basculez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicats (par exemple, **Gauche**).
 
 1. En mode d’**édition**, le nouveau composant est désormais disponible dans le sidekick (accessible dans le groupe **Recherche**). Insérez le composant dans la colonne **Prédicats** et saisissez un mot de recherche, par exemple **Diamant**, puis cliquez sur la loupe pour lancer la recherche.
@@ -244,7 +253,7 @@ Pour créer un prédicat de groupe :
        });
    ```
 
-1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, dans CRXDE, ajoutez un nœud **cq:editConfig** de type principal **cq:EditConfig**. Pour pouvoir supprimer des paragraphes, ajoutez une propriété **cq:actions** à plusieurs valeurs avec une seule valeur de **DELETE**.
+1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, dans CRXDE, ajoutez un nœud **cq:editConfig** de type principal **cq:EditConfig**. Pour supprimer des paragraphes, ajoutez une propriété à plusieurs valeurs **cq:actions** avec une seule valeur : **DELETE**.
 1. Accédez à votre navigateur puis, sur votre exemple de page (par exemple, **press.html**), basculez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicats (par exemple, **Gauche**).
 1. En mode d’**édition**, le nouveau composant est désormais disponible dans le sidekick (accessible dans le groupe **Recherche**). Insérez le composant dans la colonne **Prédicats**.
 

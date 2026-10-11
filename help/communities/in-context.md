@@ -9,7 +9,16 @@ role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 0%
@@ -22,7 +31,7 @@ Lors de l’utilisation d’une [console de modération](moderation.md), les inf
 
 ## Actions de modération {#moderation-actions}
 
-Consultez la présentation de la modération pour obtenir une description des [&#x200B; actions de modération &#x200B;](moderate-ugc.md#moderation-actions).
+Consultez la présentation de la modération pour obtenir une description des [ actions de modération ](moderate-ugc.md#moderation-actions).
 
 ## Interface utilisateur de modération {#moderation-ui}
 
@@ -120,7 +129,7 @@ Remarque :
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Sélectionnez l’élément du menu Administration afin de pouvoir accéder à la [&#x200B; console de modération &#x200B;](moderation.md) à partir de l’environnement de publication.
+Sélectionnez l’élément du menu Administration afin de pouvoir accéder à la [ console de modération ](moderation.md) à partir de l’environnement de publication.
 
 Notez que, pour un administrateur, tout le contenu modérable est visible, et pas seulement le contenu du site de la communauté Geometrixx Engage.
 
@@ -143,7 +152,7 @@ Remarque :
 
 ![communauté-forum-modérateur](assets/community-forum-moderator.png)
 
-Sélectionnez l’élément du menu Administration afin de pouvoir accéder à la [&#x200B; console de modération &#x200B;](moderation.md) à partir de l’environnement de publication.
+Sélectionnez l’élément du menu Administration afin de pouvoir accéder à la [ console de modération ](moderation.md) à partir de l’environnement de publication.
 
 Notez que, pour un modérateur de la communauté, seul le contenu modérable du site de la communauté Geometrixx Engage est visible.
 

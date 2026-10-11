@@ -1,6 +1,6 @@
 ---
-title: Évaluer la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
-description: Découvrez comment utiliser le détecteur de modèles pour évaluer la complexité de votre mise à niveau.
+title: Évaluer la complexité de la mise à niveau à l’aide de Pattern Detector
+description: Découvrez comment utiliser Pattern Detector pour évaluer la complexité de votre mise à niveau.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
@@ -10,12 +10,23 @@ feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 95%
 ---
-# Évaluer la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
+# Évaluer la complexité de la mise à niveau à l’aide de Pattern Detector
 
 ## Vue d’ensemble {#overview}
 
@@ -34,7 +45,7 @@ L’outil de détection des motifs est publié séparément sous forme de [packa
 
 >[!NOTE]
 >
->L’outil de détection des motifs peut être exécuté sur n’importe quel environnement, y compris sur les instances locales de développement. Cependant, pour :
+>Pattern Detector peut être exécuté sur n’importe quel environnement, y compris sur les instances locales de développement. Cependant, pour :
 >
 >* augmenter le taux de détection ;
 >* éviter les ralentissements sur les instances critiques de l’entreprise
@@ -51,7 +62,7 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via une interface JSON standard ou une interface réactive en mode texte**
-* **Via une interface réactive en lignes JSON** qui génère un document JSON distinct dans chaque ligne.
+* **Via une interface réactive en lignes JSON, **qui génère un document JSON distinct sur chaque ligne.
 
 Les deux méthodes sont présentées ci-dessous :
 
@@ -112,7 +123,7 @@ Avec la sortie :
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_fr"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
@@ -213,7 +224,7 @@ Avec la sortie :
 Actuellement, l’outil de détection des modèles permet de vérifier :
 
 * la discordance des exports et des imports des bundles OSGi ;
-* les usages exessifs des types de ressources Sling et super-types (avec superpositions de contenu de chemin de recherche) ;
+* les usages excessifs des types de ressources Sling et super-types (avec superpositions de contenu de chemin de recherche) ;
 * les définitions des index Oak (compatibilité) ;
 * les packages VLT (surutilisation) ;
 * compatibilité des nœuds rep:User (dans le contexte de la configuration OAuth) ;

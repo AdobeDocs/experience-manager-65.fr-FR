@@ -9,13 +9,27 @@ exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 95%
-
 ---
-
 # Configuration des paramètres du fournisseur de services SAML{#configure-saml-service-provider-settings}
 
 >[!NOTE]
@@ -27,7 +41,7 @@ Le langage SAML (Security Assertion Markup Language) est l’une des options qu
 Pour obtenir une explication sur SAML, voir [Présentation technique du langage SAML (Security Assertion Markup Language) V2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs et utilisatrices > Configuration > Paramètres du fournisseur de services SAML.
-1. Dans la zone ID d’entité du fournisseur de services, saisissez un ID unique à utiliser comme identifiant pour l’implémentation du fournisseur de services AEM Forms. Vous pouvez également définir cet ID unique lors de la configuration du fournisseur d’identité (par exemple, `um.lc.com`). Vous pouvez également utiliser l’URL d’accès à AEM forms (par exemple, `https://AEMformsserver`).
+1. Dans la zone ID d’entité du fournisseur de services, saisissez un ID unique à utiliser comme identifiant pour la mise en œuvre du fournisseur de services AEM Forms. Vous pouvez également définir cet ID unique lors de la configuration du fournisseur d’identité (par exemple, `um.lc.com`). Vous pouvez également utiliser l’URL d’accès à AEM forms (par exemple, `https://AEMformsserver`).
 1. Dans le champ URL de base du fournisseur de services, saisissez l’URL de base du serveur Forms (par exemple, `https://AEMformsserver:8080`).
 1. (Facultatif) Pour permettre à AEM Forms d’envoyer des demandes d’authentification signées à l’IDP, effectuez les tâches suivantes :
 
@@ -48,7 +62,7 @@ Pour obtenir une explication sur SAML, voir [Présentation technique du langage
 
    Lorsque cette option n’est pas sélectionnée, les utilisateurs et utilisatrices sont directement redirigés vers la page de connexion du fournisseur d’identité SAML tiers, sur laquelle les personnes appartenant à un domaine d’entreprise peuvent s’authentifier.
 
-1. (Facultatif) Sélectionnez Activer la liaison d’artefact pour activer la prise en charge de la liaison d’artefact. Par défaut, c’est la liaison POST qui est utilisée avec SAML. Mais si vous avez configuré la liaison d’artefact, sélectionnez cette option. Lorsque cette option est sélectionnée, l’assertion de la personne n’est pas transmise par le biais de la requête du navigateur. Au lieu de cela, un pointeur vers l’assertion est transmis et l’assertion est récupérée à l’aide d’un appel de service web principal.
+1. (Facultatif) Sélectionnez Activer la liaison d’artefact pour activer la prise en charge de la liaison d’artefact. Par défaut, c’est la liaison POST qui est utilisée avec SAML. Mais si vous avez configuré la liaison d’artefact, sélectionnez cette option. Lorsque cette option est sélectionnée, l’assertion de l’utilisateur ou de l’utilisatrice n’est pas transmise par le biais de la requête du navigateur. Au lieu de cela, un pointeur vers l’assertion est transmis et l’assertion est récupérée à l’aide d’un appel de service web principal.
 1. (Facultatif) Sélectionnez Activer la liaison de redirection pour prendre en charge les liaisons SAML qui utilisent les redirections.
 1. (Facultatif) Dans Propriétés personnalisées, spécifiez des propriétés supplémentaires. Les propriétés supplémentaires sont des paires nom=valeur séparées par de nouvelles lignes.
 

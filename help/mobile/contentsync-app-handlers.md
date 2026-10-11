@@ -1,19 +1,21 @@
 ---
 title: Gestionnaires d’application prêts à l’emploi
-
 description: Consultez cette page pour en savoir plus sur les gestionnaires prêts à l’emploi pour Adobe PhoneGap Enterprise avec AEM.
-
-
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 0%
@@ -65,8 +67,8 @@ Ce gestionnaire doit être ajouté à toute configuration de synchronisation de 
 
 * ***type - String - mobilecontentlisting***
 * ***path*** - Chaîne - laissez vide ; doit être présent pour être considéré comme un gestionnaire valide, mais le chemin est déduit pour être le cache ContentSync actuel. Cette valeur est ignorée.
-* ***targetRootDirectory* -**&#x200B;chaîne : préfixe à ajouter aux chemins d’accès en tant que racine cible pour la mise à jour du contenu de ce gestionnaire.
-* ***order - Long* -**&#x200B;Ordre pour que ContentSync exécute ce gestionnaire. Ce nombre doit être supérieur à tous les autres gestionnaires, par exemple 100. Il doit être exécuté après les gestionnaires de contenu traditionnels.
+* ***targetRootDirectory* -**chaîne : préfixe à ajouter aux chemins d’accès en tant que racine cible pour la mise à jour du contenu de ce gestionnaire.
+* ***order - Long* -**Ordre pour que ContentSync exécute ce gestionnaire. Ce nombre doit être supérieur à tous les autres gestionnaires, par exemple 100. Il doit être exécuté après les gestionnaires de contenu traditionnels.
 
 ```xml
 {
@@ -91,9 +93,9 @@ Ce gestionnaire doit être ajouté à toute configuration de synchronisation de 
 Le gestionnaire doit être utilisé sur la configuration de la synchronisation du contenu de l’environnement d’application AEM (nœud avec page-type=app-instance).
 
 * ***type - String - mobilecontentpackageslisting***
-* ***path &#x200B;**-**String*** - Chemin d’accès à un shell d’application (nœud avec pge-type=app-instance).
+* ***path **-**String*** - Chemin d’accès à un shell d’application (nœud avec pge-type=app-instance).
 * ***targetRootDirectory - Chaîne*** - préfixe à ajouter aux chemins en tant que racine cible pour la mise à jour du contenu de ce gestionnaire.
-* ***order - Long* -**&#x200B;Ordre d’exécution de ce gestionnaire par ContentSync. Ce nombre doit être supérieur à tous les autres gestionnaires, par exemple 100. Il doit être exécuté après les gestionnaires de contenu traditionnels.
+* ***order - Long* -**Ordre d’exécution de ce gestionnaire par ContentSync. Ce nombre doit être supérieur à tous les autres gestionnaires, par exemple 100. Il doit être exécuté après les gestionnaires de contenu traditionnels.
 
 >[!NOTE]
 >
@@ -125,8 +127,8 @@ Le gestionnaire doit être utilisé sur la configuration de la synchronisation d
 
 Ce gestionnaire doit être utilisé sur une configuration ContentSync de Shell d’application AEM (nœud avec pge-type=[app-instance]).
 
-* ***type - Chaîne* - &#x200B;** widgetconfig
-* ***path &#x200B;**-**String*** - Chemin d’accès à un nœud enfant du shell de l’application (nœud avec pge-type=[app-instance]).
+* ***type - Chaîne* - **widgetconfig
+* ***path **-**String*** - Chemin d’accès à un nœud enfant du shell de l’application (nœud avec pge-type=[app-instance]).
 * ***targetRootDirectory - Chaîne*** - préfixe à ajouter aux chemins en tant que racine cible pour la mise à jour du contenu de ce gestionnaire.
 * ***targetIconDirectory - Chaîne*** - Répertoire dans lequel placer les icônes de l’application
 
@@ -167,7 +169,7 @@ Les propriétés AEM sont celles dont le nom comporte un espacement « cq », «
 
 * ***type - Chaîne*** - app-assets
 
-* ***path &#x200B;**-**String*** - Chemin d’accès à un emplacement sous une instance d’application où les ressources d’application sont stockées
+* ***path **-**String*** - Chemin d’accès à un emplacement sous une instance d’application où les ressources d’application sont stockées
 
 **mobileappoffers** Un nouveau gestionnaire de synchronisation de contenu a été introduit pour le cas d’utilisation de Personalization afin de générer le contenu ciblé. Le gestionnaire « mobileappoffers » sait comment effectuer le rendu des offres cibles associées qui ont été créées par l’auteur du contenu. Le gestionnaire mobileappoffers étend le gestionnaire de mise à jour des pages abstraites. De ce fait, de nombreuses propriétés sont similaires. Les détails du gestionnaire mobileappOffers possèdent les propriétés suivantes.
 
@@ -180,7 +182,7 @@ Le gestionnaire mobileapppers étend le gestionnaire mobileapppages et ajoute le
 
 **mobileappconfig** Le gestionnaire de synchronisation de contenu mobileappconfig permet d’injecter des données JSON dans le fichier MobileAppsConfig.json. Pour enregistrer une classe de fournisseur, les développeurs ajouteront leur classe MobileAppsInfoProvider à la liste des fournisseurs. Le gestionnaire effectue une itération sur la liste des MobileAppsInfoProviders et permet au fournisseur d’injecter des données dans le fichier json obtenu. La liste des propriétés prises en charge par ce gestionnaire est la suivante :
 
-* ***path &#x200B;**-**String*** - Chemin d’accès à un nœud d’instance d’application avec pge-type=app-instance ou un RT qui étend /libs/mobileapps/core/components/instance
+* ***path **-**String*** - Chemin d’accès à un nœud d’instance d’application avec pge-type=app-instance ou un RT qui étend /libs/mobileapps/core/components/instance
 * ***providers - Chaîne*** `[]` - liste des MobileAppsInfoProviders entièrement qualifiés
 * ***targetRootDirectory - Chaîne*** - Répertoire dans lequel écrire le fichier MobileAppsConfig.json.
 * **fileName - String** - nom facultatif du fichier dans lequel écrire le fichier JSON, par défaut MobileAppsConfig.json

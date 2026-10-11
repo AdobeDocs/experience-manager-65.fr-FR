@@ -6,7 +6,17 @@ exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4567'
 ht-degree: 98%
@@ -38,7 +48,7 @@ Cela signifie que :
 
 >[!CAUTION]
 >
->le [framework d’intégration du e-commerce](https://business.adobe.com/fr/products/experience-manager/sites/ecommerce-integrations.html?lang=fr) est un module complémentaire d’AEM.
+>le [framework d’intégration du e-commerce](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html?lang=fr) est un module complémentaire d’AEM.
 >
 >Le représentant commercial ou la représente commerciale peuvent vous donner plus de détails, en fonction du moteur approprié.
 
@@ -148,7 +158,7 @@ Cependant, généralement, un projet doit développer son propre fournisseur de 
 >
 >Les importateurs de Geometrixx utilisent des fichiers CSV. Une description du schéma est acceptée (avec les propriétés personnalisées autorisées) dans les commentaires au-dessus de leur mise en œuvre.
 
-[ProductServicesManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) conserve (par le biais d’[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) une liste des mises en œuvre des interfaces [ProductImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) et [CatalogBlueprintImporter. &#x200B;](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) Celles-ci sont répertoriées dans le champ de liste déroulante **Importateur/Fournisseur de commerce** de l’assistant d’importation (à l’aide de la propriété `commerceProvider` comme nom).
+[ProductServicesManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) conserve (par le biais d’[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) une liste des mises en œuvre des interfaces [ProductImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) et [CatalogBlueprintImporter. ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) Celles-ci sont répertoriées dans le champ de liste déroulante **Importateur/Fournisseur de commerce** de l’assistant d’importation (à l’aide de la propriété `commerceProvider` comme nom).
 
 Lorsqu’un importateur/fournisseur de commerce spécifique est répertorié dans la liste déroulante, toutes les données complémentaires dont il a besoin doivent être définies (en fonction du type de l’importateur) dans :
 
@@ -536,7 +546,7 @@ Les promotions, ainsi que les bons, vous permettent de réaliser des scénarios 
 
 Les promotions ne sont pas gérées par les responsables des informations sur les produits, mais par les responsables marketing :
 
-* Une promotion est un composant basé sur une page, créé/modifié avec la console Sites web. &grave;&grave;
+* Une promotion est un composant basé sur une page, créé/modifié avec la console Sites web. ``
 * Les promotions fournissent :
 
   * Une priorité

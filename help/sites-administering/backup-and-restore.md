@@ -9,13 +9,22 @@ exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2225'
-ht-degree: 99%
-
+source-wordcount: '2326'
+ht-degree: 100%
 ---
-
 # Sauvegarde et restauration{#backup-and-restore}
 
 Il existe deux façons de sauvegarder et de restaurer le contenu du référentiel dans AEM :
@@ -106,8 +115,8 @@ Si le chemin d’**accès cible** est un répertoire, l’image du référentiel
 
 **Délai** Indique un délai (en millisecondes) afin que les performances du référentiel ne soient pas affectées. Par défaut, la sauvegarde du référentiel s’exécute à la vitesse maximale. Vous pouvez ralentir la création d’une sauvegarde en ligne afin de ne pas ralentir d’autres tâches.
 
-Lorsque vous utilisez un délai très important, assurez-vous que la sauvegarde en ligne ne prend pas plus de 24 heures. Si c’est le cas, ignorez cette sauvegarde, car elle peut ne pas contenir tous les fichiers binaires.
-Un délai de 1 milliseconde entraîne généralement une utilisation de 10 % de CPU, et un délai de 10 millisecondes entraîne généralement une utilisation de moins de 3 % de CPU. Le délai total en secondes peut être estimé comme suit : taille du référentiel en Mo, multiplié par le délai en millisecondes, divisé par 2 (si l’option ZIP est utilisée) ou divisé par 4 (en cas de sauvegarde dans un répertoire). Cela signifie qu’une sauvegarde dans un répertoire d’un référentiel de 200 Mo avec un délai d’1 ms augmente le temps de sauvegarde d’environ 50 secondes.
+Lorsque vous utilisez un délai très important, assurez-vous que la sauvegarde en ligne ne met pas plus de 24 heures. En pareil cas, annulez cette sauvegarde, car elle ne contient peut-être pas tous les fichiers binaires.
+Un délai de 1 ms se traduit généralement par l’utilisation de 10 % du processeur. Un délai de 10 ms se traduit généralement par l’utilisation de moins de 3 % du processeur. Le délai total en secondes peut être évalué comme suit : taille du référentiel en Mo, multiplié par le délai en millisecondes, divisé par 2 (si l’option ZIP est utilisée) ou divisé par 4 (en cas de sauvegarde dans un répertoire). Cela signifie qu’une sauvegarde dans un répertoire d’un référentiel de 200 Mo avec un délai de 1 ms augmente le temps de sauvegarde d’environ 50 secondes.
 
 >[!NOTE]
 >

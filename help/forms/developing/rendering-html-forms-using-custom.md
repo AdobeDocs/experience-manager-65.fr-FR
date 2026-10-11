@@ -10,18 +10,34 @@ role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 100%
-
 ---
-
 # Rendu de formulaires HTML à l’aide de fichiers CSS personnalisés {#rendering-html-forms-using-custom-css-files}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
-Le service Forms génère les formulaires HTML en réponse à la demande HTTP d’un navigateur web. Lors du rendu d’un formulaire HTML, le service Forms peut référencer un fichier CSS personnalisé. Vous pouvez créer un fichier CSS personnalisé pour répondre aux besoins de votre entreprise et référencer ce fichier CSS lors de l’utilisation du service Forms pour le rendu des formulaires HTML.
+Le service Forms génère les formulaires HTML en réponse à la demande HTTP d’un navigateur web. Lors du rendu d’un formulaire HTML, le service Forms peut référencer un fichier CSS personnalisé. Vous pouvez créer un fichier CSS personnalisé pour répondre à vos besoins métier et référencer ce fichier CSS lors de l’utilisation du service Forms pour le rendu des formulaires HTML.
 
 Le service Forms analyse silencieusement le fichier CSS personnalisé. En d’autres termes, le service Forms ne signale pas les erreurs qui peuvent se produire si le fichier CSS personnalisé ne respecte pas les normes CSS. Dans ce cas, le service Forms ignore le style et continue avec les styles restants du fichier CSS.
 
@@ -143,7 +159,7 @@ Rendez un formulaire HTML utilisant un fichier CSS personnalisé à l’aide de 
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Restituer un formulaire HTML utilisant un fichier CSS à l’aide de l’API de service web {#render-an-html-form-that-uses-a-css-file-using-the-web-service-api}
+## Rendre un formulaire HTML utilisant un fichier CSS à l’aide de l’API de service web {#render-an-html-form-that-uses-a-css-file-using-the-web-service-api}
 
 Restituez un formulaire HTML utilisant un fichier CSS personnalisé à l’aide de l’API Forms (service web) :
 

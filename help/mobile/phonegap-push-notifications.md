@@ -9,7 +9,13 @@ exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3252'
 ht-degree: 1%
@@ -73,7 +79,7 @@ Accédez à la page Google [ici](https://developer.android.com/google/gcm/index.
 
 Les étapes suivantes présentent une autre méthode de création des clés API GCM :
 
-1. Connectez-vous à Google et accédez à la page du développeur de Google [&#128279;](https://developers.google.com/mobile/add?platform=android&cntapi=gcm).
+1. Connectez-vous à Google et accédez à la page du développeur de Google [](https://developers.google.com/mobile/add?platform=android&cntapi=gcm).
 1. Choisissez votre application dans la liste (ou créez-en une).
 1. Sous Nom du package ™, saisissez votre ID d’application, c’est-à-dire `com.adobe.cq.mobile.weretail.outdoorsapp`. (Si cela ne fonctionne pas, réessayez avec « test.test ».)
 1. Cliquez sur **Continuer pour choisir et configurer les services**

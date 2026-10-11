@@ -10,16 +10,34 @@ role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 97%
-
+source-wordcount: '1398'
+ht-degree: 99%
 ---
-
 # Profils de traitement des métadonnées, des images et des vidéos{#profiles-for-processing-metadata-images-and-videos}
 
-Un profil est une recette indiquant les options à appliquer aux ressources qui sont chargées dans un dossier. Par exemple, vous pouvez spécifier le profil de métadonnées et le profil de codage vidéo à appliquer aux ressources vidéo que vous chargez, ou le profil d’image à appliquer aux ressources image afin de les recadrer correctement.
+Un profil est une recette indiquant les options à appliquer aux ressources qui sont chargées dans un dossier. Par exemple, vous pouvez spécifier le profil de métadonnées et le profil de codage vidéo à appliquer aux ressources vidéo que vous chargez. Ou le profil d’image à appliquer aux ressources image afin de les recadrer correctement.
 
 Ces règles peuvent inclure l’ajout de métadonnées, le recadrage intelligent d’images ou la création de profils d’encodage vidéo. Adobe Experience Manager vous permet de créer trois types de profils, qui sont abordés en détail sous les liens suivants :
 
@@ -27,12 +45,12 @@ Ces règles peuvent inclure l’ajout de métadonnées, le recadrage intelligent
 * [Profils d’image](/help/assets/image-profiles.md)
 * [Profils vidéo](/help/assets/video-profiles.md)
 
-Vous devez disposer des droits d’administration pour créer, modifier et supprimer des métadonnées, des images ou des profils vidéo.
+Vous devez disposer des droits d’administration pour créer, modifier et supprimer des profils de métadonnées, d’image ou de vidéo.
 
 Une fois votre profil de métadonnées, d’image ou de vidéo créé, vous pouvez l’affecter à un ou plusieurs dossiers que vous utilisez comme destination pour les ressources venant d’être chargées.
 
-Un concept important concernant l’utilisation des profils dans Experience Manager Assets est qu’ils sont affectés à des dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Par conséquent, la manière dont vous nommez les fichiers et les dossiers, organisez les sous-dossiers et gérez les fichiers au sein de ces dossiers a un impact significatif sur la manière dont ces ressources sont traitées par un profil.
-Grâce à des stratégies d’attribution de noms aux fichiers et dossiers cohérentes et appropriées et à de bonnes pratiques en matière de métadonnées, vous tirez pleinement parti de votre collection de ressources numériques et vous vous assurez que les bons fichiers sont traités par le profil approprié.
+Un élément à connaître lorsque l’on utilise les profils dans Experience Manager Assets est qu’ils sont attribués aux dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par un profil.
+Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous tirez pleinement parti de votre collection de ressources numériques et vous vous assurez que les bons fichiers sont traités par le profil adéquat.
 
 >[!NOTE]
 >
@@ -93,11 +111,11 @@ Consultez la section [Réglage de la taille du lot du workflow de retraitement](
 
 ### Réglage de la taille du lot du workflow de retraitement {#adjusting-load}
 
-(Facultatif) La taille de lot par défaut dans le workflow de retraitement est de 50 ressources par tâche. Cette taille optimale est déterminée par la taille moyenne des ressources et les types MIME des ressources sur lesquelles le retraitement est exécuté. Une valeur plus élevée signifie qu’une seule tâche de retraitement comprendra de nombreux fichiers. La bannière de traitement reste donc plus longtemps sur Experience Manager Assets. Cependant, si la taille de fichier moyenne est inférieure ou égale 1 Mo, Adobe recommande de définir cette valeur sur plusieurs centaines, mais de ne jamais dépasser 1 000 Mo. Si la taille moyenne des fichiers est de l’ordre de quelques centaines de mégaoctets, Adobe recommande de réduire la taille du lot jusqu’à 10.
+(Facultatif) La taille de lot par défaut dans le workflow de retraitement est de 50 ressources par tâche. Cette taille optimale est déterminée par la taille moyenne des ressources et les types MIME des ressources sur lesquelles le retraitement est exécuté. Une valeur plus élevée signifie qu’une seule tâche de retraitement comprendra de nombreux fichiers. La bannière de traitement reste donc plus longtemps sur Experience Manager Assets. Cependant, si la taille de fichier moyenne est inférieure ou égale à 1 Mo, Adobe recommande de définir cette valeur sur plusieurs centaines, mais de ne jamais dépasser 1 000. Si la taille moyenne des fichiers est de l’ordre de quelques centaines de mégaoctets, Adobe recommande de réduire la taille du lot à 10.
 
 **Pour régler, si nécessaire, la taille de lot du workflow de retraitement, procédez comme suit :**
 
-1. Dans Experience Manager, sélectionnez **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis sélectionnez l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow**&#x200B;[!UICONTROL > &#x200B;]&#x200B;**Modèles]**.
+1. Dans Experience Manager, sélectionnez **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis sélectionnez l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow**[!UICONTROL  > ]**Modèles]**.
 1. Sur la page Modèles de workflow, en mode Carte ou Liste, sélectionnez **[!UICONTROL Retraitement Dynamic Media]**.
 
    ![Page Modèles de workflow avec le workflow Retraitement Dynamic Media sélectionné en mode Carte](/help/assets/assets-dm/reprocess-assets7.png)

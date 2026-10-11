@@ -9,13 +9,27 @@ exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 94%
-
 ---
-
 # Import et export des paramètres globaux {#importing-and-exporting-global-settings}
 
 >[!NOTE]
@@ -35,12 +49,12 @@ Lorsque vous avez exporté le fichier de paramètres globaux, vous pouvez modifi
 
 >[!NOTE]
 >
->Si vous modifiez les propriétés relatives à un événement dans le fichier des paramètres globaux, vous devez redémarrer le serveur.
+>Si vous modifiez les propriétés relatives à un évènement dans le fichier des paramètres globaux, vous devez redémarrer le serveur.
 
 ## Import d’une définition de modèle de recherche {#import-a-search-template-definition}
 
 1. Dans la console d’administration, cliquez sur Services > Workspace > Administration globale.
-1. Dans le champ Importer une définition de modèle de recherche, cliquez sur le bouton Choisir fichier, puis sélectionnez le modèle de recherche. Seules les définitions de modèles de recherche initialement exportées à partir d’une instance de Workspace peuvent être importées.
+1. Dans la zone Importer une définition de modèle de recherche, cliquez sur le bouton Choisir fichier, puis sélectionnez le modèle de recherche. Seules les définitions de modèles de recherche initialement exportées à partir d’une instance de Workspace peuvent être importées.
 1. Cliquez sur Importer.
 
 ## Export d’une définition de modèle de recherche {#export-a-search-template-definition}
@@ -81,16 +95,16 @@ Les paramètres *specialRoutes* spécifient les propriétés des itinéraires sp
 **client_specialRoutes_routes_approve_style :** nom du style dans le thème de Workspace, qui identifie les icônes des boutons d’approbation. Le style doit inclure des valeurs pour une icône activée et une icône désactivée. Pour définir un style pour un bouton personnalisé, vous devez utiliser le modèle suivant :
 ` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Le fichier CSS de Workspace est incorporé au fichier workspace-theme.swf, qui se trouve dans le fichier adobe-workspace-client.ear > adobe-workspace-client.war. Pour modifier l’aspect de Workspace, vous devez recompiler le fichier workspace-theme.swf.
 
-**client_specialRoutes_routes_deny_names :** diverses chaînes qu’un utilisateur ou une utilisatrice de Workbench peut utiliser pour être interprétées comme « refuser ». Les chaînes respectent la casse. Par exemple, la valeur par défaut est deny. Si l’utilisateur ou l’utilisatrice de Workbench emploie le terme Deny (Refuser) dans un processus, ce terme ne sera pas reconnu. Le terme Deny doit être ajouté à ce paramètre pour que le bouton d’itinéraire soit personnalisé et que le style lui soit appliqué.
+**client_specialRoutes_routes_deny_names :** diverses chaînes qu’un utilisateur ou une utilisatrice de Workbench peut utiliser pour être interprétées comme « refuser ». Les chaînes respectent la casse. Par exemple, la valeur par défaut est deny. Si l’utilisateur ou l’utilisatrice de Workbench emploie le terme Deny (Refuser) dans un processus, ce terme ne sera pas reconnu. Le terme Deny doit être ajouté à ce paramètre pour que le bouton de routage soit personnalisé et que le style lui soit appliqué.
 
 **client_specialRoutes_routes_deny_style :** nom du style dans le fichier de thème de Workspace, qui identifie les icônes des boutons de refus. Le style doit inclure des valeurs pour une icône activée et une icône désactivée. Pour définir un style pour un bouton personnalisé, vous devez utiliser le modèle suivant :
-`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names :** diverses chaînes qu’un utilisateur de Workbench peut utiliser pour être interprétées comme « approuver ». Les chaînes respectent la casse. Par exemple, la valeur par défaut est approve (approuver). Si l’utilisateur ou l’utilisatrice de Workbench emploie le terme Approve (Approuver) dans un processus, ce terme ne sera pas reconnu. Le terme Approve doit être ajouté à ce paramètre pour que le bouton d’itinéraire soit personnalisé et que le style lui soit appliqué.
+`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names :** diverses chaînes qu’un utilisateur de Workbench peut utiliser pour être interprétées comme « approuver ». Les chaînes respectent la casse. Par exemple, la valeur par défaut est approve (approuver). Si l’utilisateur ou l’utilisatrice de Workbench emploie le terme Approve (Approuver) dans un processus, ce terme ne sera pas reconnu. Le terme Approve doit être ajouté à ce paramètre pour que le bouton de routage soit personnalisé et que le style lui soit appliqué.
 
-**client_specialRoutes_names :** les clés utilisées pour localiser la valeur de chaîne personnalisée dans les fichiers ressource. Chaque entrée de ce paramètre doit inclure les valeurs de noms et de style.
+**client_specialRoutes_names :** les clés utilisées pour localiser la valeur de chaîne personnalisée dans les fichiers ressource. Chaque entrée de ce paramètre doit inclure les valeurs des noms et du style.
 
 ### Paramètres JGroup {#jgroup-settings}
 
-Ces paramètres s’affichent uniquement si vous avez effectué une mise à niveau depuis Adobe LiveCycle ES2.5 ou une version antérieure.
+Ces paramètres s’affichent uniquement si vous avez effectué une mise à niveau depuis Adobe LiveCycle ES 2.5 ou une version antérieure.
 
 **server_remoteevents_ClientTimeoutMilliseconds :** durée maximale pendant laquelle JGroup attend les messages d’événements. Ce paramètre doit rester inchangé.
 
@@ -98,7 +112,7 @@ Ces paramètres s’affichent uniquement si vous avez effectué une mise à nive
 
 **server_remoteevents_JChannelConnectionProperties :** propriétés de connexion de JGroup, utilisées à des fins de communication entre le serveur (sur lequel est traité un événement de service par le service RemoteEvent) et toutes les instances de Workspace.
 
-Il est possible que vous deviez modifier les valeurs UDP de l’adresse IP à diffusion multiple (mcast_addr), du port IP à diffusion multiple (mcast_port) et de TTL pour les paquets à diffusion multiple (ip_ttl). Par défaut, les valeurs de l’adresse et du port IP à diffusion multiple sont générées de manière aléatoire et, en règle générale, il est inutile de modifier ces valeurs. Toutefois, si votre société utilise des politiques de réseau relatives à des plages de diffusion multiple pour les adresses IP à diffusion multiple, il peut s’avérer nécessaire de modifier ces valeurs.
+Il est possible que vous deviez modifier les valeurs UDP de l’adresse IP à diffusion multiple (mcast_addr), du port IP à diffusion multiple (mcast_port) et du TTL des paquets à diffusion multiple (ip_ttl). Par défaut, les valeurs de l’adresse et du port IP à diffusion multiple sont générées de manière aléatoire et, en règle générale, il est inutile de modifier ces valeurs. Toutefois, si votre société utilise des politiques de réseau relatives à des plages de diffusion multiple pour les adresses IP à diffusion multiple, il peut s’avérer nécessaire de modifier ces valeurs.
 
 >[!NOTE]
 >
@@ -116,7 +130,7 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 ### Paramètres formView {#formview-settings}
 
-**client_formView_openFormInFullScreen :** pour afficher tous les formulaires de Workspace en mode plein écran, définissez cette option sur true. Par défaut, cette option est définie sur false, et les formulaires ne s’affichent pas en mode plein écran. Veuillez noter que le service Utilisateur ou utilisatrice comporte une option permettant d’ouvrir en mode plein écran le document associé à une tâche. Cela vous permet de contrôler l’affichage sur une base de processus individuel.
+**client_formView_openFormInFullScreen :** pour afficher tous les formulaires de Workspace en mode plein écran, définissez cette option sur true. Par défaut, cette option est définie sur false, et les formulaires ne s’affichent pas en mode plein écran. Veuillez noter que le service Utilisateur ou utilisatrice comporte une option permettant d’ouvrir en mode plein écran le document associé à une tâche. Cela vous permet de contrôler l’affichage pour chaque processus.
 
 **client_routes_formViewOnly :** lorsqu’ils sont définis sur True, les itinéraires ne sont pas affichés dans la vue Carte ou Liste de Workspace. La valeur par défaut est False, ce qui signifie que les itinéraires sont affichés dans la vue Carte et dans la vue Liste.
 

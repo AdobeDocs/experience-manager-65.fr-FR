@@ -10,13 +10,25 @@ feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2681'
 ht-degree: 97%
-
 ---
-
 # Configuration de la synchronisation des Live Copies{#configuring-live-copy-synchronization}
 
 Effectuez les tâches suivantes pour contrôler le mode et le moment de synchronisation des Live Copy avec leur contenu source.
@@ -229,7 +241,8 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr>
   <tr>
    <td>productCreateUpdate</td>
-   <td>Crée ou met à jour les ressources produit dans un catalogue. Cette action est destinée à être utilisée dans l’une des situations suivantes :<ul>
+   <td>Crée ou met à jour les ressources produit dans un catalogue. Cette action est destinée à être utilisée dans l’une des situations suivantes :
+    <ul>
      <li>Générer ou déployer un catalogue (ou une section de catalogue)</li>
      <li>Un utilisateur ou une utilisatrice restaure l’héritage de synchronisation pour un composant de produit.</li>
     </ul> </td>

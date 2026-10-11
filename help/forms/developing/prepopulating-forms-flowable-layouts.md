@@ -9,13 +9,29 @@ role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 97%
-
 ---
-
 # Préremplir des formulaires avec des dispositions fluides {#prepopulating-forms-with-flowable-layouts1}
 
 ## Préremplir des formulaires avec des dispositions fluides {#prepopulating-forms-with-flowable-layouts2}
@@ -30,14 +46,14 @@ Le préremplissage d’un formulaire présente les avantages suivants :
 
 Les deux types de source de données suivants peuvent être utilisés pour insérer automatiquement des données dans un formulaire :
 
-* Une source de données XDP, qui obéit au code XML conforme à la syntaxe XFA (ou des données XFDF pour préremplir un formulaire créé à l’aide d’Acrobat).
+* Une source de données XDP, c’est-à-dire du XML conforme à la syntaxe XFA (ou des données XFDF pour préremplir un formulaire créé à l’aide d’Acrobat).
 * Une source de données XML arbitraire qui contient des paires nom/valeur correspondant aux noms des champs du formulaire (les exemples de cette section utilisent une source de données XML arbitraire).
 
-Un élément XML doit exister pour chaque champ de formulaire que vous souhaitez préremplir. Le nom de l’élément XML doit correspondre au nom du champ. Un élément XML est ignoré s’il ne correspond pas à un champ de formulaire ou si le nom de l’élément XML ne correspond pas au nom du champ. Il n’est pas nécessaire de correspondre à l’ordre dans lequel les éléments XML sont affichés, tant que tous les éléments XML sont spécifiés.
+Un élément XML doit exister pour chaque champ de formulaire que vous souhaitez préremplir. Le nom de l’élément XML doit correspondre au nom du champ. Un élément XML est ignoré s’il ne correspond pas à un champ de formulaire ou si le nom de l’élément XML ne correspond pas au nom du champ. Il n’est pas nécessaire de respecter l’ordre dans lequel les éléments XML sont affichés, tant que tous les éléments XML sont spécifiés.
 
 Lorsque vous préremplissez un formulaire qui contient déjà des données, vous devez spécifier les données déjà affichées dans la source de données XML. Supposons qu’un formulaire contenant 10 champs comporte des données dans quatre champs. Supposons ensuite que vous souhaitiez préremplir les six champs restants. Dans ce cas, vous devez spécifier 10 éléments XML dans la source de données XML utilisée pour préremplir le formulaire. Si vous ne spécifiez que six éléments, les quatre champs de départ resteront vides.
 
-Vous pouvez, par exemple, préremplir un formulaire tel qu’un exemple de formulaire de confirmation. (voir « Formulaire de confirmation » dans [Générer des formulaires PDF interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)).
+Vous pouvez, par exemple, préremplir un formulaire tel que le formulaire de confirmation d’exemple. (voir « Formulaire de confirmation » dans [Générer des formulaires PDF interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)).
 
 Pour préremplir l’exemple de formulaire de confirmation, vous devez créer une source de données XML qui contient trois éléments XML correspondant aux trois champs du formulaire. Ce formulaire contient les trois champs suivants : `FirstName`, `LastName`, et `Amount`. La première étape consiste à créer une source de données XML contenant des éléments XML correspondant aux champs inclus dans la conception du formulaire. L’étape suivante consiste à attribuer des valeurs de données aux éléments XML, comme illustré dans le code XML suivant.
 
@@ -57,7 +73,7 @@ Une fois que vous avez prérempli le formulaire de confirmation avec cette sourc
 
 Les formulaires avec dispositions fluides servent à présenter une quantité indéterminée de données aux utilisateurs et utilisatrices. Étant donné que la disposition du formulaire s’ajuste automatiquement à la quantité de données fusionnées, il n’est pas nécessaire de prédéfinir une disposition ou un nombre fixe de pages pour le formulaire, comme c’est le cas pour un formulaire avec une disposition fixe.
 
-Un formulaire est généralement rempli avec des données obtenues lors de l’exécution. Par conséquent, vous pouvez préremplir un formulaire en créant une source de données XML en mémoire et en plaçant les données directement dans la source de données XML en mémoire.
+Un formulaire est généralement rempli de données obtenues lors de l’exécution. Par conséquent, vous pouvez préremplir un formulaire en créant une source de données XML en mémoire et en plaçant les données directement dans la source de données XML en mémoire.
 
 Prenons l’exemple d’une application web, telle qu’une boutique en ligne. Une fois qu’un acheteur en ligne a terminé son achat, tous les articles achetés sont placés dans une source de données XML en mémoire qui est utilisée pour préremplir un formulaire. Le diagramme suivant illustre ce processus, qui est expliqué dans le tableau suivant le diagramme.
 
@@ -102,7 +118,7 @@ Le diagramme suivant illustre un exemple de formulaire de bon de commande. Les i
 
 ### Considérations relatives à la conception d’un formulaire {#form-design-considerations}
 
-Les formulaires avec des dispositions fluides sont basés sur des conceptions de formulaire créées dans Designer. Une conception de formulaire spécifie un ensemble de règles de disposition, de présentation et de capture de données, y compris le calcul de valeurs en fonction des entrées de l’utilisateur. Les règles sont appliquées lorsque des données sont entrées dans un formulaire. Les champs ajoutés à un formulaire sont des sous-formulaires qui se trouvent dans la conception de formulaire. Par exemple, dans le formulaire de bon de commande illustré dans le diagramme précédent, chaque ligne est un sous-formulaire. Pour plus d’informations sur la création d’une conception de formulaire contenant des sous-formulaires, voir [Création d’un formulaire de bon de commande avec une disposition fluide](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_fr).
+Les formulaires avec des dispositions fluides sont basés sur des conceptions de formulaire créées dans Designer. Une conception de formulaire spécifie un ensemble de règles de disposition, de présentation et de capture de données, y compris le calcul de valeurs en fonction des entrées de l’utilisateur. Les règles sont appliquées lorsque des données sont entrées dans un formulaire. Les champs ajoutés à un formulaire sont des sous-formulaires qui se trouvent dans la conception du formulaire. Par exemple, dans le formulaire de bon de commande illustré dans le diagramme précédent, chaque ligne est un sous-formulaire. Pour plus d’informations sur la création d’une conception de formulaire contenant des sous-formulaires, voir [Création d’un formulaire de bon de commande avec une disposition fluide](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_fr).
 
 ### Comprendre les sous-groupes de données {#understanding-data-subgroups}
 

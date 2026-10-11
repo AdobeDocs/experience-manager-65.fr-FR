@@ -10,13 +10,22 @@ exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 100%
-
 ---
-
 # Récupération de l’espace mémoire de l’entrepôt de données {#data-store-garbage-collection}
 
 Lorsqu’une ressource WCM conventionnelle est supprimée, la référence à l’enregistrement d’entrepôt de données sous-jacent peut être supprimée de la hiérarchie de nœud, mais l’enregistrement d’entrepôt de données lui-même est conservé. Cet enregistrement de magasin de données non référencé est alors considéré comme faisant partie des « données à nettoyer » qu’il n’est pas utile de conserver. Dans les cas où il existe plusieurs ressources de mémoire, il est préférable de les supprimer afin de préserver de l’espace et d’optimiser les performances de sauvegarde et de maintenance du système de fichiers.
@@ -30,7 +39,7 @@ AEM utilise le référentiel comme stockage pour plusieurs activités internes e
 * Payloads des workflows
 * Ressources créées temporairement lors du rendu de la gestion des ressources numériques
 
-Lorsque l’un de ces objets temporaires est assez volumineux pour devoir être stocké dans l’entrepôt de données et lorsque cet objet n’est plus utilisé, l’enregistrement d’entrepôt de données lui-même demeure en tant que « données à nettoyer ». Dans une application de création/publication WCM standard, le processus d’activation de publication constitue généralement la plus grande source de données à nettoyer de ce type. Lorsque des données sont répliquées en publication, elles sont d’abord regroupées dans des collections ayant un format de données efficace nommé « Durbo » et stockées dans le référentiel, sous `/var/replication/data`. Les lots de données dépassent souvent en taille le seuil de taille critique du magasin de données et finissent donc par être stockés comme des enregistrements de magasins de données. Lorsque la réplication est terminée, le nœud dans `/var/replication/data` est supprimé, mais l’enregistrement du magasin de données demeure en tant que « données à nettoyer ».
+Lorsque l’un de ces objets temporaires est assez volumineux pour devoir être stocké dans l’entrepôt de données et lorsque cet objet n’est plus utilisé, l’enregistrement d’entrepôt de données lui-même demeure en tant que « données à nettoyer ». Dans une application de création/publication WCM standard, le processus d’activation de publication constitue généralement la plus grande source de données à nettoyer de ce type. Lorsque des données sont répliquées en publication, elles sont d’abord regroupées dans des collections ayant un format de données efficace nommé « Durbo » et stockées dans le référentiel, sous `/var/replication/data`. Les bundles de données dépassent souvent en taille le seuil de taille critique du magasin de données et finissent donc par être stockés comme des enregistrements de magasins de données. Lorsque la réplication est terminée, le nœud dans `/var/replication/data` est supprimé, mais l’enregistrement du magasin de données demeure en tant que « données à nettoyer ».
 
 Les packages constituent une autre source de données à nettoyer récupérables. Les données de package, comme tout le reste, sont stockées dans le référentiel et, donc, pour les packages dont la taille dépasse 4 Ko, dans l’entrepôt de données. Au cours d’un projet de développement ou au fil du temps, lors de la maintenance d’un système, les packages peuvent être créés et recréés de nombreuses fois, chaque version entraînant un nouvel enregistrement de magasin de données, rendant orphelin l’enregistrement de la version précédente.
 

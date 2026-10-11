@@ -1,6 +1,6 @@
 ---
 title: Conflits de déploiement dans MSM
-description: Découvrez comment gérer les conflits de déploiement de Multi Site Manager.
+description: Découvrez comment gérer les conflits de déploiement de Multi-Site Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
@@ -9,13 +9,25 @@ feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '913'
 ht-degree: 100%
-
 ---
-
 # Conflits de déploiement dans MSM{#msm-rollout-conflicts}
 
 Des conflits peuvent apparaître si de nouvelles pages portant le même nom de page sont créées dans la branche de plan directeur et dans une branche de Live Copy dépendante.
@@ -48,7 +60,7 @@ Dans les sections suivantes, nous utilisons l’exemple d’une nouvelle page `b
 
   Page créée manuellement dans la branche Live Copy, avec une page enfant, `lc-level-1`.
 
-   * Activé lors de la publication sous la forme `/b`, avec la page enfant.
+  * Activé lors de la publication sous la forme `/b`, avec la page enfant.
 
 **Avant le déploiement**
 
@@ -67,7 +79,7 @@ Dans les sections suivantes, nous utilisons l’exemple d’une nouvelle page `b
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code> /lc-level-1</code><br /> <br /> (Création manuelle dans la branche Live Copy)<br /> </td>
-   <td><code> /lc-level-1</code><br /> <br /> (Contient le contenu de la page <br /> créée manuellement dans la branche Live Copy)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (Contient le contenu de la page<br /> child-level-1 qui a été créée manuellement dans la branche Live Copy)</td>
   </tr>
  </tbody>
 </table>
@@ -94,10 +106,10 @@ AEM fournit :
 
 * Le [gestionnaire de conflits par défaut](#default-conflict-handler) :
 
-   * `ResourceNameRolloutConflictHandler`
+  * `ResourceNameRolloutConflictHandler`
 
 * La possibilité de mettre en œuvre un [gestionnaire personnalisé](#customized-handlers).
-* Le mécanisme de classement des services qui permet de définir la priorité de chaque gestionnaire individuel. Le service qui possède la valeur la plus élevée est utilisé.
+* Le mécanisme de classement des services qui permet de définir la priorité de chaque gestionnaire individuel. Le service qui possède l l plus élevé est utilisé.
 
 ### Gestionnaire de conflits par défaut {#default-conflict-handler}
 
@@ -114,13 +126,13 @@ Ce gestionnaire de conflits donne la priorité au plan directeur. La page de la 
 
   Est déplacée (dans la Live Copy) vers `/b_msm_moved`. Cela fait office de sauvegarde et permet de s’assurer qu’aucun contenu n’est perdu.
 
-   * `lc-level-1` n’est pas déplacé.
+  * `lc-level-1` n’est pas déplacé.
 
 * Plan directeur : `/b`
 
   Est déployé dans la page Live Copy `/b`.
 
-   * `bp-level-1` est déployé dans la Live Copy.
+  * `bp-level-1` est déployé dans la Live Copy.
 
 **Après le déploiement**
 
@@ -160,11 +172,11 @@ Les gestionnaires de conflit personnalisés offrent les possibilités suivantes�
 * Vous pouvez les développer/configuer selon vos besoins. Vous pouvez, par exemple, développer un gestionnaire pour que la page de la Live Copy soit prioritaire.
 * Vous pouvez les concevoir de manière à les configurer à l’aide de la [configuration OSGi](/help/sites-deploying/configuring-osgi.md), en particulier le :
 
-   * **Classement de service** :
+  * **Classement de service** :
 
-     Définit l’ordre associé aux autres gestionnaires de conflit (`service.ranking`).
+    Définit l’ordre associé aux autres gestionnaires de conflit (`service.ranking`).
 
-     La valeur par défaut est 0.
+    La valeur par défaut est 0.
 
 ### Comportement lorsque la gestion des conflits est désactivée {#behavior-when-conflict-handling-deactivated}
 

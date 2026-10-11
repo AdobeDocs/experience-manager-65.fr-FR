@@ -9,13 +9,27 @@ exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 100%
-
 ---
-
 # Amélioration des performances du serveur d’applications{#enhancing-application-server-performance}
 
 Ce contenu décrit les paramètres facultatifs que vous pouvez configurer pour améliorer les performances de votre serveur d’applications AEM Forms.
@@ -28,9 +42,9 @@ L’accès à la source de données peut être important, selon le nombre de mod
 
 Il est important de configurer correctement les paramètres du pool de connexions afin de ne jamais manquer de connexions, ce qui peut entraîner une détérioration des performances de l’application.
 
-Pour configurer correctement les paramètres du pool de connexions, il est important que l’administrateur ou l’administratrice du serveur d’applications surveille le pool de connexions aux heures de pointe de la journée. La surveillance permet de s’assurer qu’un nombre suffisant de connexions sont disponibles en permanence pour les applications et les utilisateurs et utilisatrices. La plupart des serveurs d’applications incluent des outils de surveillance.
+Pour configurer correctement les paramètres du pool de connexions, il est important que l’administrateur ou l’administratrice du serveur d’applications surveille le pool de connexions aux heures de pointe de la journée. La surveillance permet de s’assurer qu’un nombre suffisant de connexions est disponible en permanence pour les applications et les utilisateurs et utilisatrices. La plupart des serveurs d’applications incluent des outils de surveillance.
 
-Vous pouvez surveiller différentes statistiques pour chaque instance de source de données JDBC dans votre domaine à l’aide de de la console d’administration du serveur WebLogic. Consultez votre documentation WebLogic pour plus de détails.
+Vous pouvez surveiller différentes statistiques pour chaque instance de source de données JDBC dans votre domaine à l’aide de la console d’administration du serveur WebLogic. Consultez votre documentation WebLogic pour plus de détails.
 
 Lorsque l’administrateur ou l’administratrice du serveur d’applications détermine les paramètres corrects du pool de connexions, il ou elle doit communiquer ces informations à l’administrateur ou à l’administratrice de base de données. L’administrateur ou l’administratrice de base de données a besoin de ces informations, car le nombre de connexions à la base de données est égal au nombre de connexions dans le pool de connexions pour la source de données. Suivez ensuite les étapes ci-dessous pour configurer les paramètres du pool de connexions pour votre serveur d’applications et le type de source de données.
 
@@ -70,7 +84,7 @@ Lorsque l’administrateur ou l’administratrice du serveur d’applications d�
 
 ### Configurer les paramètres du pool de connexions pour WebSphere pour Oracle {#configure-connection-pool-settings-for-websphere-for-oracle}
 
-1. Dans l’arborescence de navigation, cliquez sur Resources > JDBC > Fournisseurs JDBC. Dans le volet de droite, cliquez sur la source de données Oracle JDBC Driver que vous avez créée.
+1. Dans l’arborescence de navigation, cliquez sur Ressources > JDBC > Fournisseurs JDBC. Dans le volet de droite, cliquez sur la source de données Oracle JDBC Driver que vous avez créée.
 1. Sous Propriétés supplémentaires, cliquez sur Sources de données, puis sélectionnez IDP_DS.
 1. Dans l’écran suivant, sous Propriétés supplémentaires, cliquez sur Propriétés du pool de connexions, puis saisissez une valeur dans les zones Connexions maximales et Connexions minimales.
 1. Cliquez sur OK ou Appliquer, puis cliquez sur Enregistrer directement dans la configuration principale.
@@ -93,11 +107,11 @@ La taille maximale de la ligne d’entrée et les répertoires de stockage (rép
 
 ### Taille du document et taille maximale de la ligne d’entrée {#document-size-and-maximum-inline-size}
 
-Lorsqu’un document envoyé pour traitement par AEM Forms est inférieur ou égal à la taille maximale de la ligne d’entrée du document par défaut, le document est stocké en ligne dans le serveur et il est sérialisé en tant qu’objet Adobe Document. Le stockage de documents en ligne peut améliorer considérablement les performances. Cependant, si vous utilisez Forms Workflow, le contenu peut également être stocké dans la base de données à des fins de suivi. Par conséquent, l’augmentation de la taille maximale de la ligne d’entrée peut affecter la taille de la base de données.
+Lorsqu’un document envoyé pour traitement par AEM Forms est inférieur ou égal à la taille maximale de la ligne d’entrée du document par défaut, le document est stocké en ligne dans le serveur et il est sérialisé en tant qu’objet Adobe Document. Le stockage de documents en ligne peut améliorer considérablement les performances. Cependant, si vous utilisez Forms Workflow, le contenu peut également être stocké dans la base de données à des fins de suivi. Par conséquent, l’augmentation de la taille maximale en ligne peut affecter la taille de la base de données.
 
-Un document dont la taille est supérieure à la taille maximale de la ligne d’entrée est stocké sur le système de fichiers local. L’objet Adobe Document transféré vers et depuis le serveur n’est qu’un pointeur vers ce fichier.
+Un document dont la taille est supérieure à la taille maximale en ligne est stocké sur le système de fichiers local. L’objet Adobe Document transféré vers et depuis le serveur n’est qu’un pointeur vers ce fichier.
 
-Lorsque le contenu du document est intégré (c’est-à-dire inférieur à la taille maximale de la ligne d’entrée), il est stocké dans la base de données dans le cadre de la payload de sérialisation du document. Par conséquent, l’augmentation de la taille maximale de la ligne d’entrée peut affecter la taille de la base de données.
+Lorsque le contenu du document est en ligne (c’est-à-dire inférieur à la taille maximale en ligne), il est stocké dans la base de données dans le cadre de la payload de sérialisation du document. Par conséquent, l’augmentation de la taille maximale en ligne peut affecter la taille de la base de données.
 
 **Modification de la taille maximale de la ligne d’entrée**
 
@@ -106,11 +120,11 @@ Lorsque le contenu du document est intégré (c’est-à-dire inférieur à la t
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 1. Dans la console d’administration, cliquez sur Paramètres > Paramètres du système principal > Configurations.
-1. Saisissez une valeur dans la zone Taille maximale par défaut de la ligne d’entrée du document, puis cliquez sur OK.
+1. Saisissez une valeur dans la zone Taille maximale en ligne par défaut du document, puis cliquez sur OK.
 
    >[!NOTE]
    >
-   >La valeur de la propriété de la taille maximale de la ligne d’entrée du document doit être identique pour l’environnement AEM Forms sur JEE et pour le bundle AEM Forms sur OSGi, inclus dans l’environnement AEM Forms sur JEE. Cette procédure a mis à jour la valeur pour l’environnement AEM Forms on JEE uniquement et non pour le lot AEM Forms sur OSGi, y compris l’environnement AEM Forms on JEE.
+   >La valeur de la propriété Taille maximale par défaut de la ligne d’entrée du document doit être identique pour l’environnement AEM Forms sur JEE et pour le bundle AEM Forms sur OSGi inclus dans l’environnement AEM Forms sur JEE. Cette procédure n’a mis à jour la valeur que pour l’environnement AEM Forms sur JEE, et non pour le bundle OSGi d’AEM Forms inclus dans l’environnement AEM Forms sur JEE.
 
 1. Redémarrez le serveur d’applications avec la propriété système suivante :
 
@@ -118,7 +132,7 @@ Lorsque le contenu du document est intégré (c’est-à-dire inférieur à la t
 
    >[!NOTE]
    >
-   >La propriété système mentionnée ci-dessus remplace la valeur de la propriété Taille maximale de la ligne d’entrée du document définie pour l’environnement AEM Forms on JEE et pour le lot AEM Forms sur OSGi, y compris l’environnement AEM Forms on JEE.
+   >La propriété système mentionnée ci-dessus remplace la valeur de la propriété Taille maximale par défaut de la ligne d’entrée du document définie pour l’environnement AEM Forms sur JEE et pour le bundle AEM Forms sur OSGi inclus dans l’environnement AEM Forms on JEE.
 
 >[!NOTE]
 >
@@ -130,7 +144,7 @@ Une augmentation de la taille maximale de la ligne d’entrée nécessite plus d
 
 Un système lourdement chargé qui traite de nombreux documents peut rapidement saturer la mémoire du tas JVM. Pour éviter de saturer la mémoire (OutOfMemoryError), vous devez augmenter la taille maximale du tas JVM d’un volume correspondant à la taille des documents de la ligne d’entrée multipliée par le nombre de documents généralement exécutés à un moment donné.
 
-Augmentation de la taille maximale du tas JVM = (taille des documents de la ligne d’entrée) x (nombre moyen de documents traités).
+Augmentation de la taille maximale du tas JVM = (taille des documents stockés en ligne) x (nombre moyen de documents traités).
 
 **Calcul de la taille maximale du tas JVM**
 
@@ -146,9 +160,9 @@ La taille maximale du tas JVM doit être augmentée de 50 Mo pour un total de 5
 
 **Fragmentation du tas**
 
-Si vous réglez la taille des documents de ligne d’entrée sur de grandes valeurs, vous augmentez le risque d’apparition d’erreurs OutOfMemoryError sur les systèmes sujets à la fragmentation du tas. Pour stocker un document de ligne d’entrée, il faut que la mémoire du tas JVM dispose d’un espace contigu suffisant. Certains systèmes d’exploitation, JVM et algorithmes de récupération de l’espace mémoire sont sujets à la fragmentation du tas. La fragmentation réduit la quantité d’espace de tas contigu et peut générer un message de mémoire saturée (OutOfMemoryError) même si l’espace disponible total est suffisant.
+Si vous réglez la taille des documents stockés en ligne sur de grandes valeurs, vous augmentez le risque d’apparition d’erreurs OutOfMemoryError sur les systèmes sujets à la fragmentation du tas. Pour stocker un document en ligne, il faut que la mémoire du tas JVM dispose d’un espace contigu suffisant. Certains systèmes d’exploitation, JVM et algorithmes de récupération de l’espace mémoire sont sujets à la fragmentation du tas. La fragmentation réduit la quantité d’espace de tas contigu et peut générer un message de mémoire saturée (OutOfMemoryError) même si l’espace disponible total est suffisant.
 
-Par exemple, les opérations précédentes sur le serveur d’applications ont laissé le tas JVM dans un état fragmenté, et le récupérateur d’espace ne peut pas suffisamment compresser le tas pour récupérer de grands blocs d’espace libre. Une erreur OutOfMemoryError peut se produire même si vous augmentez la taille maximale du tas JVM en fonction de la ligne d’entrée.
+Par exemple, les opérations précédentes sur le serveur d’applications ont laissé le tas JVM dans un état fragmenté, et le récupérateur d’espace ne peut pas suffisamment compresser le tas pour récupérer de grands blocs d’espace libre. Une erreur OutOfMemoryError peut se produire même si la taille maximale du tas JVM a été ajustée pour tenir compte d’une augmentation de la taille maximale en ligne.
 
 Pour éviter une fragmentation du tas, la taille du document de ligne d’entrée ne doit pas dépasser la taille totale du tas de plus de 0,1 %. Par exemple, une taille maximale de tas JVM de 512 Mo peut prendre en charge une taille maximale de ligne d’entrée de 512 Mo x 0,001 = 0,512 Mo, soit 512 Ko.
 

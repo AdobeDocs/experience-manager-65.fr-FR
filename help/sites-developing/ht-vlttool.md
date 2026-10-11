@@ -9,13 +9,24 @@ exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2687'
-ht-degree: 100%
-
+source-wordcount: '2724'
+ht-degree: 98%
 ---
-
 # Utilisation de l’outil VLT {#how-to-use-the-vlt-tool}
 
 L’outil Jackrabbit FileVault (VLT) est un outil développé par [The Apache Foundation](https://www.apache.org/) qui mappe le contenu d’une instance Jackrabbit/AEM à un système de fichiers. L’outil VLT dispose de fonctions similaires à celles d’un client du système de contrôle de code source (tel qu’un client Subversion [SVN]), offrant des opérations normales d’archivage, d’extraction et de gestion, ainsi que des options de configuration pour une représentation flexible du contenu du projet.
@@ -86,7 +97,7 @@ global-ignores = .vlt
 
 ### Configurer le caractère de fin de ligne {#configuring-the-end-of-line-character}
 
-VLT gère automatiquement la fin de ligne (EOL) selon les règles suivantes : 
+VLT gère automatiquement la fin de ligne (EOL) selon les règles suivantes :
 
 * Les lignes des fichiers extraits sous Windows se terminent par `CRLF`.
 * Les lignes des fichiers extraits sur Linux/Unix se terminent par `LF`.
@@ -111,7 +122,7 @@ Pour garantir la comptabilité entre la configuration de VLT et de SVN, vous dev
 
 ### Extraction du référentiel {#checking-out-the-repository}
 
-Extrayez le référentiel à l’aide du système de gestion des versions du code source. Dans svn, par exemple, saisissez ce qui suit (en remplaçant l’URI et le chemin par votre référentiel) : 
+Extrayez le référentiel à l’aide du système de gestion des versions du code source. Dans svn, par exemple, saisissez ce qui suit (en remplaçant l’URI et le chemin par votre référentiel) :
 
 ```shell
 svn co https://svn.server.com/repos/myproject
@@ -234,7 +245,7 @@ Si vous avez configuré un filtre d’espace de travail et que vous voulez l’u
 $ vlt co --filter filter.xml http://localhost:4502/crx/-/jcr:root geo
 ```
 
-Un exemple de filtre : 
+Un exemple de filtre :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -269,7 +280,7 @@ Pour importer et exporter du contenu sans utiliser le contrôle `.vlt` :
    $ vlt -v import http://localhost:4502/crx . /
    ```
 
-1. modifiez la copie distante et mettez à jour le serveur de fichiers : 
+1. modifiez la copie distante et mettez à jour le serveur de fichiers :
 
    ```shell
    $ cd /projects/geometrixx
@@ -282,7 +293,7 @@ Pour importer et exporter du contenu sans utiliser le contrôle `.vlt` :
 
 ## Utilisation de VLT {#using-vlt}
 
-Pour exécuter des commandes dans VLT, saisissez ce qui suit sur la ligne de commande : 
+Pour exécuter des commandes dans VLT, saisissez ce qui suit sur la ligne de commande :
 
 ```shell
 vlt [options] <command> [arg1 [arg2 [arg3] ..]]  
@@ -411,19 +422,19 @@ checkout --force|-v|-q|-f <file> <uri> <jcrPath> <localPath>
 
 #### Exemples {#examples-2}
 
-Utilisation de JCR Remoting : 
+Utilisation de JCR Remoting :
 
 ```shell
 vlt --credentials admin:admin co http://localhost:8080/crx/server/crx.default/jcr_root/
 ```
 
-Avec l’espace de travail par défaut : 
+Avec l’espace de travail par défaut :
 
 ```shell
 vlt --credentials admin:admin co http://localhost:8080/crx/server/-/jcr_root/
 ```
 
-Si l’URI est incomplet, il est développé : 
+Si l’URI est incomplet, il est développé :
 
 ```shell
 vlt --credentials admin:admin co http://localhost:8080/crx
@@ -774,8 +785,8 @@ Les codes d’état utilisés par VLT sont les suivants :
 * &#39;I&#39; ignoré
 * &#39;M&#39; modifié
 * &#39;R&#39; remplacé
-* &#39;?’ élément non soumis à la gestion des versions
-* &#39;!’ élément manquant (supprimé par une commande non-svn) ou incomplet
+* L&#39;élément &#39;?&#39; n&#39;est pas sous contrôle de version
+* L&#39;élément &#39;!&#39; est manquant (supprimé par une commande non-svn) ou incomplet
 * &#39;~&#39; élément versionné bloqué par un objet d’un genre différent
 
 ## Configuration de la synchronisation FileVault {#setting-up-filevault-sync}
@@ -788,9 +799,9 @@ Le service de synchronisation Vault sert à synchroniser le contenu du référen
 
 ### Installation du service à l’aide de VLT {#installing-the-service-using-vlt}
 
-La commande `vlt sync install` peut être utilisée pour installer automatiquement le lot de services de synchronisation Vault et sa configuration.
+La commande `vlt sync install` peut être utilisée pour installer automatiquement le bundle de services de synchronisation Vault et sa configuration.
 
-Le lot est installé sous `/libs/crx/vault/install` et le nœud de configuration est créé sous `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`. Au départ, le service est activé, mais aucune racine de synchronisation n’est configurée.
+Le bundle est installé sous `/libs/crx/vault/install` et le nœud de configuration est créé sous `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`. Au départ, le service est activé, mais aucune racine de synchronisation n’est configurée.
 
 L’exemple suivant installe le service de synchronisation sur l’instance CRX accessible par l’URI donné.
 
@@ -800,7 +811,7 @@ $ vlt --credentials admin:admin sync --uri http://localhost:4502/crx install
 
 ### Affichage de l’état du service {#displaying-the-service-status}
 
-La commande `status` permet d’afficher des informations relatives au service de synchronisation actif. ``
+La commande `status` peut être utilisée pour afficher des informations sur le service de synchronisation en cours d’exécution. ``
 
 ```shell
 $ vlt sync status --uri http://localhost:4502/crx
@@ -840,7 +851,7 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
 
 >[!NOTE]
 >
->Vous devez annuler l’enregistrement d’un dossier de synchronisation avant de supprimer le dossier lui-même. 
+>Vous devez annuler l’enregistrement d’un dossier de synchronisation avant de supprimer le dossier lui-même.
 
 ### Configuration de la synchronisation {#configuring-synchronization}
 
@@ -861,7 +872,7 @@ Une fois le service en cours d’exécution, il peut être configuré avec les p
 
 #### Configuration du dossier de synchronisation {#sync-folder-configuration}
 
-Chaque dossier de synchronisation stocke la configuration et le statut dans trois fichiers : 
+Chaque dossier de synchronisation stocke la configuration et le statut dans trois fichiers :
 
 * `.vlt-sync-config.properties` : fichier de configuration
 
@@ -883,7 +894,7 @@ Le fichier `.vlt-sync-config.properties` permet de configurer les propriétés s
 
 Pour configurer un environnement de développement selon un dossier de synchronisation, procédez comme suit :
 
-1. Extrayez le référentiel avec la ligne de commande vlt : 
+1. Extrayez le référentiel avec la ligne de commande vlt :
 
    ```shell
    $ vlt --credentials admin:admin co --force http://localhost:4502/crx dev
@@ -891,7 +902,7 @@ Pour configurer un environnement de développement selon un dossier de synchroni
 
    >[!NOTE]
    >
-   >Vous pouvez utiliser des filtres pour extraire uniquement les chemins concernés. Consultez la section [Extraction filtrée](#performing-a-filtered-checkout) pour plus d’informations. 
+   >Vous pouvez utiliser des filtres pour extraire uniquement les chemins concernés. Consultez la section [Extraction filtrée](#performing-a-filtered-checkout) pour plus d’informations.
 
 1. Accédez au dossier racine de votre copie de travail :
 
@@ -943,7 +954,7 @@ Pour configurer un environnement de développement selon un dossier de synchroni
    ***
    ```
 
-Votre dossier local est désormais synchronisé avec le référentiel. La synchronisation est bidirectionnelle, de sorte que toute modification du référentiel est appliquée au dossier de synchronisation local, et vice versa. 
+Votre dossier local est désormais synchronisé avec le référentiel. La synchronisation est bidirectionnelle, de sorte que toute modification du référentiel est appliquée au dossier de synchronisation local, et vice versa.
 
 >[!NOTE]
 >

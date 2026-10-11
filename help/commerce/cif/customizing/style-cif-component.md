@@ -11,13 +11,21 @@ thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2693'
 ht-degree: 93%
-
 ---
-
 # Donner un style aux composants principaux AEM CIF {#style-aem-cif-core-components}
 
 Le [projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) est une base de code de référence pour l’utilisation des [composants principaux CIF](https://github.com/adobe/aem-core-cif-components). Dans ce tutoriel, vous allez examiner le projet de référence Venia et découvrir comment le code CSS et JavaScript utilisé par les composants principaux AEM CIF est organisé. Vous allez également créer un style à l’aide du code CSS pour mettre le style par défaut du composant **Teaser de produit** à jour.
@@ -225,7 +233,7 @@ Vérifiez ensuite l’inclusion des bibliothèques clientes sur la page.
 
 1. Sélectionnez le menu **Informations sur la page**, puis cliquez sur **Afficher comme publié(e)** :
 
-   ![Afficher comme publié(e) &#x200B;](../assets/style-cif-component/view-as-published.png)
+   ![Afficher comme publié(e) ](../assets/style-cif-component/view-as-published.png)
 
    La page s’ouvre sans aucun code JavaScript pour l’environnement de création AEM chargé, lequel apparaîtrait sur le site publié. Notez que le paramètre de requête `?wcmmode=disabled` est annexé à l’URL. Lors du développement du code CSS et JavaScript, il est recommandé d’utiliser ce paramètre pour simplifier la page sans intervention sur l’environnement de création AEM.
 
@@ -326,13 +334,13 @@ Le serveur webpack-dev-server crée des proxys des images et d’une partie du c
    $ npm start
    ```
 
-   Cela démarre le webpack-dev-server sur [:8080/](http://localhost:8080/).
+   Cela démarre le webpack-dev-server sur [](http://localhost:8080/)
 
    >[!CAUTION]
    >
    >Si vous obtenez une erreur liée à Sass, arrêtez le serveur, exécutez la commande `npm rebuild node-sass` et répétez les étapes ci-dessus. Cela peut se produire si vous disposez d’une version de `npm` et de `node` différentes de celles spécifiées dans le projet `aem-cif-guides-venia/pom.xml`.
 
-1. Accédez à [:8080/](http://localhost:8080/) dans un nouvel onglet avec le même navigateur qu’une instance AEM connectée. Vous devriez voir la page d’accueil Venia via le serveur webpack-dev-server :
+1. Accédez à [](http://localhost:8080/) dans un nouvel onglet avec le même navigateur qu’une instance AEM connectée. Vous devriez voir la page d’accueil Venia via le serveur webpack-dev-server :
 
    ![Serveur de développement webpack sur le port 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
@@ -451,7 +459,7 @@ Revenez à l’IDE et au projet généré.
 
 Une fois que le code du projet a été déployé dans AEM, les modifications apportées au teaser de produit devraient être visibles.
 
-1. Revenez à votre navigateur et actualisez la page d’accueil : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html). Vous devriez constater que les styles de teaser de produit mis à jour ont été appliqués.
+1. Revenez à votre navigateur et actualisez la page d’accueil : [](http://localhost:4502/editor.html/content/venia/us/en.html). Vous devriez constater que les styles de teaser de produit mis à jour ont été appliqués.
 
    ![Style de teaser de produit mis à jour](../assets/style-cif-component/product-teaser-new-style.png)
 

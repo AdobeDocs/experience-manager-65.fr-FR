@@ -5,13 +5,28 @@ exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '528'
 ht-degree: 100%
-
 ---
-
 # Personnalisation et ciblage de contenu {#personalization}
 
 ## Personnalisation et ciblage de contenu {#personalization-and-content-targeting}
@@ -46,7 +61,7 @@ Vous définissez des expériences pour une activité. Vous pouvez utiliser la [c
 
 Une offre est un contenu qui s’affiche à un emplacement sur une page pour une expérience. Utilisez différentes offres pour différentes expériences afin d’optimiser l’efficacité du contenu pour vos audiences.
 
-Par exemple, la page pour les femmes de l’exemple We.Retail peut utiliser des offres en tant qu’image de teaser apparaissant en haut de la page. L’offre utilisée en tant que teaser de l’expérience destinée aux femmes de plus de 30 ans n’est pas la même que celle utilisée pour les femmes de moins de 30 ans.
+Par exemple, la page pour les femmes de l’exemple de site web We.Retail peut utiliser des offres en tant qu’image de teaser apparaissant en haut de la page. L’offre utilisée en tant que teaser de l’expérience destinée aux femmes de plus de 30 ans n’est pas la même que celle utilisée pour les femmes de moins de 30 ans.
 
 Utilisez la [console Offres](/help/sites-authoring/offerlib.md) pour créer des offres que vous pouvez utiliser dans plusieurs expériences. Créez des offres à usage unique ou ajoutez des offres à partir d’une bibliothèque d’offres lors de la [création de contenu ciblé](/help/sites-authoring/content-targeting-touch.md).
 

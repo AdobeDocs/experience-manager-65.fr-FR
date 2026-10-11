@@ -1,18 +1,32 @@
 ---
-title: Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE
+title: Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé d’AEM Forms sur JEE
 description: Découvrez comment compresser et décompresser des fichiers à l’aide d’un DSC personnalisé d’AEM Forms sur JEE.
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 100%
-
 ---
-
-# Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE {#compressing-decompressing-files}
+# Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé d’AEM Forms sur JEE {#compressing-decompressing-files}
 
 ## Connaissances préalables {#prerequisites}
 
@@ -26,7 +40,7 @@ Expérience avec AEM Forms sur JEE Process Management, programmation Java™ 
 
 Intermédiaire
 
-AEM Forms on JEE permet aux développeurs et développeuses de créer des ASC (Acrobat Services Container) personnalisés pour créer des fonctionnalités enrichies prêtes à l’emploi. Ces composants que vous créez sont enfichables dans l’environnement d’exécution AEM Forms sur JEE afin de remplir la fonction qui leur a été donnée. Cet article explique comment créer un service ZIP personnalisé, qui peut être utilisé pour compresser une liste de fichiers dans un fichier .zip et décompresser un fichier .zip vers une liste de documents.
+AEM Forms on JEE permet aux développeurs et développeuses de créer des ASC (Acrobat Services Container) personnalisés pour créer des fonctionnalités enrichies prêtes à l’emploi. Ces composants que vous créez sont enfichables dans l’environnement d’exécution AEM Forms sur JEE afin de remplir la fonction qui leur a été donnée. Cet article explique comment créer un service ZIP personnalisé, qui peut être utilisé pour compresser une liste de fichiers dans un fichier .zip et décompresser un fichier .zip en une liste de documents.
 
 ## Créer un composant ASC personnalisé {#create-custom-dsc-component}
 

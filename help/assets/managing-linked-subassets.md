@@ -6,7 +6,20 @@ role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1473'
 ht-degree: 99%
@@ -25,7 +38,7 @@ Les références sont résolues sur la base du chemin d’accès, du document et
 
 Vous pouvez référencer des ressources numériques existantes dans un fichier [!DNL Adobe Illustrator].
 
-1. À l’aide de l’application de bureau [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr), récupérez les ressources numériques sur le système de fichiers local. Accédez à l’emplacement du système de fichier que vous souhaitez référencer.
+1. À l’aide de l’application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr), récupérez les ressources numériques sur le système de fichiers local. Accédez à l’emplacement du système de fichier que vous souhaitez référencer.
 1. Faites glisser la ressource du dossier local jusqu’au fichier [!DNL Illustrator].
 
 1. Enregistrez le fichier [!DNL Illustrator] sur le lecteur monté ou [chargez-le](/help/assets/manage-assets.md#uploading-assets) dans le référentiel [!DNL Experience Manager].
@@ -63,7 +76,7 @@ Cette procédure est similaire à l’[ajout de ressources en tant que référen
 ### Création de références dans les ressources en exportant un fichier ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Pour créer un workflow, suivez la procédure décrite dans [Création de modèles de workflows](/help/sites-developing/workflows-models.md).
-1. Utilisez la fonctionnalité [Package](https://helpx.adobe.com/fr/indesign/how-to/indesign-package-files-for-handoff.html) d’[!DNL Adobe InDesign] pour exporter le document. [!DNL Adobe InDesign] peut exporter un document et les ressources liées sous la forme d’un package. Dans ce cas, le dossier exporté contient un dossier `Links` dans lequel se trouvent des sous-ressources dans le fichier [!DNL InDesign]. Le dossier `Links` est présent dans le même dossier que le fichier INDD.
+1. Utilisez la fonctionnalité [Package](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) d’[!DNL Adobe InDesign] pour exporter le document. [!DNL Adobe InDesign] peut exporter un document et les ressources liées sous la forme d’un package. Dans ce cas, le dossier exporté contient un dossier `Links` dans lequel se trouvent des sous-ressources dans le fichier [!DNL InDesign]. Le dossier `Links` est présent dans le même dossier que le fichier INDD.
 1. Créez un fichier ZIP et chargez-le dans le référentiel [!DNL Experience Manager].
 1. Lancez le workflow `Unarchiver`.
 1. Une fois le workflow terminé, les références du dossier Liens sont automatiquement référencées en tant que sous-ressources. Pour afficher la liste des ressources auxquelles il est fait référence, accédez à la page des détails de la référence de la ressource [!DNL InDesign] et fermez le [rail](/help/sites-authoring/basic-handling.md#rail-selector).

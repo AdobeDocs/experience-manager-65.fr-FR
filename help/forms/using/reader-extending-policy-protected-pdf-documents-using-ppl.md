@@ -9,13 +9,28 @@ feature: Document Security,Reader Extensions
 exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '828'
 ht-degree: 100%
-
 ---
-
 # Documents PDF protégés par une politique Reader Extension à l’aide de la bibliothèque de protection portable {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
 Vous devez vous familiariser avec les concepts de sécurité documentaire, d’extensions Reader et de langage de programmation Java afin d’étendre Reader aux documents PDF protégés par une politique de Document Security.
@@ -40,7 +55,7 @@ Vous pouvez exécuter les tâches suivantes à l’aide du service Extensions Re
 
 * Appliquer les droits d’utilisation à un document PDF protégé par une politique.
 * Supprimer les droits d’utilisation d’un document PDF protégé par une politique.
-* Rechercher les droits d’utilisation appliqués à un document PDF protégé par une politique.
+* Récupérer les droits d’utilisation appliqués à un document PDF protégé par une politique.
 
 ### Appliquer les droits d’utilisation à un document PDF protégé par une politique de sécurité documentaire. {#apply-usage-rights-to-a-document-security-policy-protected-pdf-document}
 
@@ -68,12 +83,12 @@ Vous pouvez utiliser l’API Java `applyUsageRights` pour appliquer des droits d
   </tr>
   <tr>
    <td><p>usageRights</p> </td>
-   <td><p>Spécifie un objet de type <a href="https://help.adobe.com/fr_FR/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. L’objet usageRights représente les droits individuels pouvant être appliqués à un document PDF protégé par une politique.</p> </td>
+   <td><p>Spécifie un objet de type <a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. L’objet usageRights représente les droits individuels pouvant être appliqués à un document PDF protégé par une politique.</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Rechercher les droits d’utilisation appliqués à un document PDF protégé par une politique.   {#retrieve-usage-rights-applied-to-a-policy-protected-pdf-document-nbsp}
+### Récupérer les droits d’utilisation appliqués à un document PDF protégé par une politique.   {#retrieve-usage-rights-applied-to-a-policy-protected-pdf-document-nbsp}
 
 Vous pouvez utiliser l’API Java `getDocumentUsageRights` pour récupérer les droits d’utilisation de l’extension Reader appliqués à un document PDF protégé par une politique. En récupérant des informations sur les droits d’utilisation, vous pourrez en savoir davantage sur les fonctionnalités Reader Extension activées pour le document PDF protégé par une politique.
 
@@ -87,7 +102,7 @@ Vous pouvez utiliser l’API Java `getDocumentUsageRights` pour récupérer les 
   </tr>
   <tr>
    <td><p>inDoc</p> </td>
-   <td><p>Spécifiez InputStream correspondant au document PDF duquel des droits d’utilisation doivent être supprimés. Vous pouvez utiliser LiveCycle Rights Management ou des documents protégés par AEM Forms Document Security.</p> </td>
+   <td><p>Spécifiez InputStream correspondant au document PDF duquel des droits d’utilisation doivent être récupérés. Vous pouvez utiliser LiveCycle Rights Management ou des documents protégés par AEM Forms Document Security.</p> </td>
   </tr>
  </tbody>
 </table>

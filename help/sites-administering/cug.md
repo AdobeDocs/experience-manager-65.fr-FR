@@ -10,13 +10,25 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 96%
-
+source-wordcount: '780'
+ht-degree: 100%
 ---
-
 # Créer un groupe d’utilisateurs fermé{#creating-a-closed-user-group}
 
 Les groupes d’utilisateurs fermés permettent de restreindre l’accès à des pages spécifiques qui se trouvent sur un site Internet publié. Ces pages requièrent que les membres affectés se connectent et fournissent des informations d’identification de sécurité.
@@ -81,7 +93,7 @@ Pour appliquer le groupe d’utilisateurs fermé à une ou plusieurs pages, proc
    1. Cochez la case **Activer**.
 
    1. Ajoutez le chemin d’accès à votre **Page de connexion**.
-Cette option est facultative. Si rien n’est indiqué dans ce champ, la page de connexion standard est utilisée.
+      Cette option est facultative. Si rien n’est indiqué, la page de connexion standard sera utilisée.
 
    ![Groupe d’utilisateurs fermé ajouté](assets/cug-authentication-requirement.png)
 
@@ -134,7 +146,8 @@ Configurez la [gestion des sessions dans le fichier dispatcher.any](https://expe
 
 >[!NOTE]
 >
->Lorsque la gestion des sessions est activée pour une ferme de serveurs de Dispatcher, toutes les pages gérées par la ferme de serveurs ne sont pas mises en cache. Pour mettre en cache les pages qui ne sont pas des groupes d’utilisateurs fermés, créez une seconde ferme de serveurs dans dispatcher.any>qui gère les pages non CUG.
+>Lorsque la gestion des sessions est activée pour une ferme de serveurs de Dispatcher, toutes les pages gérées par la ferme de serveurs ne sont pas mises en cache. Pour mettre en cache les pages qui ne sont pas des groupes d’utilisateurs fermés, créez une seconde ferme de serveurs dans dispatcher.any.
+>qui gère les pages non CUG.
 
 1. Configurez [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#enabling-secure-sessions-sessionmanagement) en définissant `/directory`, par exemple :
 

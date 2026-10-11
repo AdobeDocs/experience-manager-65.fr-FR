@@ -9,13 +9,27 @@ exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 97%
-
 ---
-
 # Afficher les statistiques relatives à Work Manager {#view-statistics-related-to-work-manager}
 
 L’onglet Work Manager affiche des statistiques relatives aux éléments de Work Manager. Ces tâches se trouvent dans différents états, en fonction de l’endroit où elles se trouvent dans leur processus. (Voir [Statut (pour les catégories Par défaut, Workflow ou Événements uniquement)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Vous pouvez filtrer les informations pour n’afficher qu’un sous-ensemble des éléments à l’aide des différentes options disponibles (par exemple, Statut ou Catégorie). Vous pouvez trier les tâches ou travaux qui en résultent (par ordre croissant ou décroissant) en cliquant sur l’un des en-têtes de colonne. Vous pouvez également gérer les tâches à l’aide des outils d’opération affichés au-dessus de la liste des tâches.
@@ -29,7 +43,7 @@ L’onglet Work Manager affiche des statistiques relatives aux éléments de Wo
 
 **Par défaut :** toutes les tâches auxquelles le client n’a pas affecté de catégorie lors de leur envoi. Ces tâches étant gérées par Work Manager, les états lui appartiennent.
 
-**Gestionnaire de tâches :** toutes les tâches appartenant au gestionnaire de tâches. Job Manager gère ses propres tâches et dispose de ses propres statuts de tâches. Reportez-vous aux statuts spécifiques des tâches décrits ci-dessous.
+**Gestionnaire de tâches :** toutes les tâches appartenant au gestionnaire de tâches. Job Manager gère ses propres traitements et dispose de ses propres statuts de traitement. Reportez-vous aux statuts spécifiques des traitements décrits ci-dessous.
 
 **Workflow :** toutes les tâches appartenant à l’exécution de workflow. Workflow ne gère pas ses propres tâches, mais s’appuie sur Work Manager ; les états appartiennent donc à ce dernier.
 
@@ -47,11 +61,11 @@ L’onglet Work Manager affiche des statistiques relatives aux éléments de Wo
 
 **Terminé :** affiche toutes les tâches exécutées avec succès. Les tâches persistantes restent dans cet état et les tâches non persistantes sont supprimées une fois les rappels vers les gestionnaires de rappel terminés. Vous pouvez supprimer ces éléments à l’aide de l’opération Supprimer les éléments. (voir Gestion des tâches).
 
-**Échec :** affiche toutes les tâches n’ayant pas été exécutées avec succès en raison d’une erreur. Ces tâches peuvent être relancées à plusieurs reprises en utilisant l’opération Essayer de relancer les éléments (voir Gestion des tâches). Un lien Échec dans la colonne Statut vous permet d’accéder à des informations détaillées relatives à l’échec.
+**Échec :** affiche toutes les tâches n’ayant pas été exécutées avec succès en raison d’une erreur. Ces tâches peuvent être relancées à plusieurs reprises à l’aide de l’opération Relancer les éléments. (voir Gestion des tâches). Un lien Échec dans la colonne Statut vous permet d’accéder à des informations détaillées relatives à l’échec.
 
 **Inconnu :** affiche toutes les tâches dont l’état est inconnu.
 
-### Etat (pour la catégorie Job Manager uniquement) {#status-for-job-manager-category-only}
+### Statut (pour la catégorie Job Manager uniquement) {#status-for-job-manager-category-only}
 
 **Terminé :** affiche toutes les tâches exécutées avec succès. Les tâches persistantes restent dans cet état et les tâches non persistantes sont supprimées une fois les rappels vers les gestionnaires de rappel terminés.
 
@@ -77,7 +91,7 @@ L’onglet Work Manager affiche des statistiques relatives aux éléments de Wo
 
 ### Nom du serveur {#server-name}
 
-Pour les serveurs organisés en grappes uniquement, sélectionnez le nom du nœud pour afficher les tâches ayant été créées sur ce serveur uniquement. Si Tout afficher est sélectionné, toutes les tâches de tous les nœuds d’un cluster sont affichées.
+Pour les serveurs organisés en clusters uniquement, sélectionnez le nom du nœud pour afficher les tâches ou les traitements ayant été créés sur ce serveur uniquement. Si Tout afficher est sélectionné, toutes les tâches de tous les nœuds d’un cluster sont affichées.
 
 ### Heure de création {#create-time}
 
@@ -87,17 +101,17 @@ Choisissez une option de ce filtre pour afficher uniquement les tâches ayant é
 
 Définit la date et l’heure utilisées par le filtre Heure de création en tant que date de fin. Conservez l’option Utiliser la date et l’heure actuelles sélectionnée pour filtrer à partir de la date et de l’heure actuelles, ou désélectionnez-la et entrez les valeurs appropriées. Cliquez sur les icônes de calendrier ou celles d’horloge pour sélectionner les valeurs en utilisant ces outils.
 
-Par exemple, sélectionner Heure de création = 1 jour et Avant = Utiliser la date et l’heure actuelles renvoie toutes les tâches ayant été créées au cours des dernières 24 heures.
+Par exemple, sélectionner Heure de création = 1 jour et Avant = Utiliser la date et l’heure actuelles renvoie tous les éléments de travail ayant été créés au cours des dernières 24 heures.
 
 >[!NOTE]
 >
->sur les déploiements de bases de données Oracle, les filtres de période (à savoir les paramètres Heures de création et Avant) ne sont pas précis. Utilisez un autre filtre pour récupérer les tâches.
+>Sur les déploiements de bases de données Oracle, les filtres de période (à savoir les paramètres Heure de création et Avant) ne sont pas précis. Utilisez un autre filtre pour récupérer les tâches.
 
 ## À propos de l’interface à onglets de Work Manager {#about-the-work-manager-tab-interface}
 
-Lorsque vous exécutez une requête Work Manager ou effectuez une opération sur une tâche, un message s’affiche au-dessus de la liste. Ce message fournit des commentaires sur l’action que vous avez lancée et, parfois, un lien Plus d’infos qui fournit des informations détaillées. Par exemple, si l’opération que vous avez lancée échoue, le message l’indique et fournit un lien vous permettant d’obtenir des informations détaillées sur l’erreur.
+Lorsque vous exécutez une requête Work Manager ou effectuez une opération sur un élément de travail ou un traitement, un message s’affiche au-dessus de la liste. Ce message fournit des commentaires sur l’action que vous avez lancée et, parfois, un lien Plus d’infos qui fournit des informations détaillées. Par exemple, si l’opération que vous avez lancée a échoué, le message l’indique et fournit un lien vous permettant d’obtenir des informations détaillées sur l’erreur.
 
-Lorsque vous cliquez sur Plus d’infos, la boîte de dialogue Détails de l’opération affiche une liste des tâches ayant été sélectionnées au cours de l’opération. Vous pouvez cliquer sur chaque élément de la liste pour afficher les Détails de l’erreur en bas de la boîte de dialogue.
+Lorsque vous cliquez sur Plus d’infos, la boîte de dialogue Détails de l’opération affiche une liste des éléments de travail ou des traitements sélectionnés au cours de l’opération. Vous pouvez cliquer sur chaque élément de la liste pour afficher les Détails de l’erreur en bas de la boîte de dialogue.
 
 ### Gestion des tâches {#manage-the-work-items-or-jobs}
 
@@ -121,8 +135,8 @@ Lorsque vous cliquez sur Plus d’infos, la boîte de dialogue Détails de l’o
 
 Une transition d’état typique pour une tâche se présente comme suit : Nouveau > Programmé > En cours > Terminé ou Échec.
 
-Le statut En pause interrompt ce flux normal. L’application cliente ou l’administrateur ou l’administratrice système peut initier cette interruption (par exemple, à des fins de maintenance ou de mise à niveau). Vous pouvez annuler cette action en utilisant l’opération Relancer pour que la tâche retourne à un état Programmé.
+Le statut En pause interrompt ce flux normal. L’application cliente ou l’administrateur ou l’administratrice système peut initier cette interruption (par exemple, à des fins de maintenance ou de mise à niveau). Vous pouvez annuler cette action en utilisant l’opération Reprendre pour que la tâche retourne à un état Programmé.
 
 Une tâche à l’état Programmé est mise en file d’attente pour être exécutée, l’exécution n’ayant pas encore commencé. Ces éléments peuvent être mis en pause ou supprimés, ou passeront à l’état En cours lorsque Work Manager les récupérera de la file d’attente. Les tâches en cours ne peuvent pas être modifiées. Elles se terminent ou échouent.
 
-L’état Échec se produit à la suite d’une condition d’erreur qui survient au cours de l’exécution de la tâche. Si vous pensez que les erreurs sont circonstanciées (qu’elles dépendent du contexte au moment de l’exécution), vous pouvez relancer l’exécution et ainsi remettre la tâche en file d’attente. Seul un nombre limité de relances est autorisé.
+L’état Échec se produit à la suite d’une condition d’erreur qui survient au cours de l’exécution de la tâche. Si vous pensez que les erreurs sont circonstanciées (qu’elles dépendent du contexte au moment de l’exécution), vous pouvez relancer l’exécution et ainsi remettre la tâche en file d’attente. Seul un nombre limité de nouvelles tentatives est autorisé.

@@ -1,19 +1,33 @@
 ---
 title: Attribution des droits d’utilisation
-
-description: Utilisez l’API client Java Extensions Acrobat Reader DC et l’API de service web pour appliquer et supprimer des droits d’utilisation des documents PDF.
-
-
+description: Utilisez l’API client Java Extensions Acrobat Reader DC et l’API de service web pour appliquer et supprimer des droits d’utilisation sur des documents PDF.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,Reader Extensions
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3973'
 ht-degree: 98%
@@ -24,7 +38,7 @@ ht-degree: 98%
 
 ## À propos du service Extensions Acrobat Reader DC {#about-the-acrobat-reader-dc-extensions-service}
 
-Le service Extensions Acrobat Reader DC permet à votre entreprise de partager facilement des documents PDF interactifs en étendant les fonctionnalités d’Adobe Reader. Le service Extensions Acrobat Reader DC prend entièrement en charge tout document PDF, y compris PDF 1.7. Il fonctionne avec Adobe Reader 7.0 et versions ultérieures. Le service dote un document PDF de droits d’utilisation qui activent des fonctions généralement non indisponibles à l’ouverture d’un document PDF dans Adobe Reader. Les utilisateurs tiers n’ont pas besoin de disposer d’un logiciel supplémentaire ni de modules externes pour utiliser les documents dotés de droits d’utilisation.
+Le service Extensions Acrobat Reader DC permet à votre entreprise de partager facilement des documents PDF interactifs en étendant les fonctionnalités d’Adobe Reader. Le service Extensions Acrobat Reader DC prend entièrement en charge tout document PDF, y compris PDF 1.7. Il fonctionne avec Adobe Reader 7.0 et versions ultérieures. Le service dote un document PDF de droits d’utilisation qui activent des fonctions généralement non disponibles à l’ouverture d’un document PDF dans Adobe Reader. Les utilisateurs tiers n’ont pas besoin de disposer d’un logiciel supplémentaire ni de modules externes pour utiliser les documents dotés de droits d’utilisation.
 
 Vous pouvez accomplir ces tâches à l’aide du service Extensions Acrobat Reader DC :
 
@@ -57,7 +71,7 @@ Pour appliquer des droits d’utilisation à un document PDF, procédez comme su
 1. Récupérez un document PDF.
 1. Spécifiez les droits d’utilisation à appliquer.
 1. Appliquez les droits d’utilisation au document PDF.
-1. Enregistrez le document PDF défini avec des droits d’utilisation.
+1. Enregistrez le document PDF activé pour les droits d’utilisation.
 
 **Inclure les fichiers de projet**
 
@@ -69,7 +83,7 @@ Pour effectuer par programmation une opération de service Extensions Acrobat Re
 
 **Récupérer un document PDF**
 
-Récupérez un document PDF pour appliquer des droits d’utilisation. Les documents PDF définis avec des droits d’utilisation contiennent un dictionnaire de droits d’utilisation. Lorsqu’Adobe Reader ouvre un document contenant un tel dictionnaire, il active uniquement les droits d’utilisation spécifiés dans le dictionnaire pour ce document. Si le document ne contient pas de dictionnaire des droits d’utilisation, le service Extensions Acrobat Reader DC en crée un. S’il contient déjà un dictionnaire, le service Extensions Acrobat Reader DC remplace les droits d’utilisation existants par ceux que vous spécifiez. Le dictionnaire spécifie les droits d’utilisation activés. Lorsqu’un utilisateur ouvre le document dans Adobe Reader, seuls les droits d’utilisation spécifiés dans le dictionnaire sont autorisés.
+Récupérez un document PDF pour appliquer des droits d’utilisation. Les documents PDF auxquels des droits d’utilisation ont été appliqués contiennent un dictionnaire de droits d’utilisation. Lorsqu’Adobe Reader ouvre un document contenant un tel dictionnaire, il active uniquement les droits d’utilisation spécifiés dans le dictionnaire pour ce document. Si le document ne contient pas de dictionnaire des droits d’utilisation, le service Extensions Acrobat Reader DC en crée un. S’il contient déjà un dictionnaire, le service Extensions Acrobat Reader DC remplace les droits d’utilisation existants par ceux que vous spécifiez. Le dictionnaire spécifie les droits d’utilisation activés. Lorsqu’un utilisateur ouvre le document dans Adobe Reader, seuls les droits d’utilisation spécifiés dans le dictionnaire sont autorisés.
 
 **Spécifier des droits d’utilisation à appliquer**
 
@@ -91,7 +105,7 @@ Une fois que le service d’extensions Acrobat Reader DC a appliqué des droits 
 
 [Appliquer des droits d’utilisation à l’aide de l’API Java](assigning-usage-rights.md#apply-usage-rights-using-the-java-api)
 
-[Appliquer les droits d’utilisation à l’aide de l’API Web Service](assigning-usage-rights.md#apply-usage-rights-using-the-web-service-api)
+[Appliquer les droits d’utilisation à l’aide de l’API de service web](assigning-usage-rights.md#apply-usage-rights-using-the-web-service-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -105,7 +119,7 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-reader-extensions-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet Client des extensions Acrobat Reader DC.
 
@@ -133,7 +147,7 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
 
      * Objet `com.adobe.idp.Document` contenant le document PDF auquel les droits d’utilisation sont appliqués.
      * Valeur de chaîne spécifiant l’alias des informations d’identification qui vous permettent d’appliquer les droits d’utilisation.
-     * Valeur string qui spécifie la valeur du mot de passe correspondant. (Actuellement, ce paramètre est ignoré. Vous pouvez transmettre `null`.)
+     * Valeur de chaîne qui spécifie la valeur du mot de passe correspondant. (Actuellement, ce paramètre est ignoré. Vous pouvez transmettre `null`.)
 
    * Objet `ReaderExtensionsOptionSpec` contenant les options d’exécution.
 
@@ -201,7 +215,7 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
 
      * Objet `BLOB` contenant le document PDF auquel les droits d’utilisation sont appliqués.
      * Valeur de chaîne spécifiant l’alias des informations d’identification qui vous permettent d’appliquer les droits d’utilisation.
-     * Valeur string qui spécifie la valeur du mot de passe correspondant. (Actuellement, ce paramètre est ignoré. Vous pouvez transmettre `null`.)
+     * Valeur de chaîne qui spécifie la valeur du mot de passe correspondant. (Actuellement, ce paramètre est ignoré. Vous pouvez transmettre `null`.)
 
    * Objet `ReaderExtensionsOptionSpec` contenant les options d’exécution.
 
@@ -224,7 +238,7 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
 
 ## Suppression des droits d’utilisation des documents PDF {#removing-usage-rights-from-pdf-documents}
 
-Vous pouvez supprimer des droits d’utilisation d’un document défini avec des droits d’utilisation. La suppression des droits d’utilisation d’un document PDF dont les droits sont activés est également nécessaire pour exécuter d’autres opérations AEM Forms sur le document. Vous devez par exemple signer numériquement (ou certifier) un document PDF avant de définir ses droits d’utilisation. Par conséquent, pour effectuer des opérations sur un document défini avec des droits d’utilisation, vous devez supprimer les droits du document PDF, effectuer les autres opérations, comme la signature numérique d’un document, puis réappliquer des droits d’utilisation à ce document.
+Vous pouvez supprimer des droits d’utilisation d’un document défini avec des droits d’utilisation. La suppression des droits d’utilisation d’un document PDF dont les droits sont activés est également nécessaire pour exécuter d’autres opérations AEM Forms sur le document. Vous devez par exemple signer numériquement (ou certifier) un document PDF avant de définir ses droits d’utilisation. Par conséquent, pour effectuer des opérations sur un document défini avec des droits d’utilisation, vous devez supprimer les droits d’utilisation du document PDF, effectuer les autres opérations, comme signer numériquement le document, puis réappliquer des droits d’utilisation à ce document.
 
 >[!NOTE]
 >
@@ -262,7 +276,7 @@ Vous pouvez enregistrer le document PDF ne contenant plus de droits d’utilisat
 
 **Voir également**
 
-[Supprimer des droits d’utilisation à l’aide de l’API Java](assigning-usage-rights.md#remove-usage-rights-using-the-java-api)
+[Supprimer les droits d’utilisation à l’aide de l’API Java](assigning-usage-rights.md#remove-usage-rights-using-the-java-api)
 
 [Supprimer les droits d’utilisation à l’aide de l’API Web Service](assigning-usage-rights.md#remove-usage-rights-using-the-web-service-api)
 
@@ -280,7 +294,7 @@ Supprimez les droits d’utilisation d’un document PDF dont les droits sont ac
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-reader-extensions-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet Client des extensions Acrobat Reader DC.
 
@@ -388,11 +402,11 @@ Avant d’effectuer par programmation une opération de service d’extensions A
 
 **Récupérer un document PDF défini avec des droits d’utilisation**
 
-Pour récupérer des informations sur les informations d’identification, vous devez récupérer un document PDF dont les droits sont activés. Vous pouvez également récupérer des informations sur une information d’identification en spécifiant son alias. Toutefois, si vous souhaitez récupérer des informations sur des informations d’identification qui ont été utilisées pour appliquer des droits d’utilisation à un document PDF spécifique dont les droits sont activés, vous devez récupérer le document.
+Pour récupérer des informations sur les informations d’identification, vous devez récupérer un document PDF dont les droits sont activés. Vous pouvez également récupérer des informations sur une information d’identification en spécifiant son alias. Toutefois, si vous souhaitez récupérer des informations sur une information d’identification qui a été utilisée pour appliquer des droits d’utilisation à un document PDF spécifique dont les droits sont activés, vous devez récupérer le document.
 
 **Récupérer des informations sur les informations d’identification**
 
-Après avoir récupéré un document PDF dont les droits sont activés, vous pouvez obtenir des informations sur les informations d’identification qui ont été utilisées pour lui appliquer des droits d’utilisation. Vous pouvez obtenir les informations d’identification suivantes :
+Après avoir récupéré un document PDF dont les droits sont activés, vous pouvez obtenir des informations sur les informations d’identification qui ont été utilisées pour lui appliquer des droits d’utilisation. Vous pouvez obtenir les informations suivantes sur les informations d’identification :
 
 * Message affiché dans Adobe Reader à l’ouverture du document PDF dont les droits sont activés.
 * Date à laquelle les informations d’identification ne sont plus valides.
@@ -402,7 +416,7 @@ Après avoir récupéré un document PDF dont les droits sont activés, vous pou
 
 **Voir également**
 
-[Supprimer des droits d’utilisation à l’aide de l’API Java](assigning-usage-rights.md#remove-usage-rights-using-the-java-api)
+[Supprimer les droits d’utilisation à l’aide de l’API Java](assigning-usage-rights.md#remove-usage-rights-using-the-java-api)
 
 [Supprimer les droits d’utilisation à l’aide de l’API Web Service](assigning-usage-rights.md#remove-usage-rights-using-the-web-service-api)
 
@@ -410,7 +424,7 @@ Après avoir récupéré un document PDF dont les droits sont activés, vous pou
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrages rapides de l’API du service Extensions Acrobat Reader DC](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-service-java-api-quick-start-soap)
+[Prise en main rapide de l’API du service Extensions Acrobat Reader DC](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-service-java-api-quick-start-soap)
 
 ### Récupérer des informations d’identification à l’aide de l’API Java {#retrieve-credential-information-using-the-java-api}
 
@@ -418,7 +432,7 @@ Récupérez les informations d’identification à l’aide de l’API Extension
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-reader-extensions-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet Client des extensions Acrobat Reader DC.
 

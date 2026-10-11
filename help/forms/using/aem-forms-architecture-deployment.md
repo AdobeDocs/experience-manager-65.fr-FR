@@ -9,13 +9,27 @@ role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2564'
 ht-degree: 100%
-
 ---
-
 # Topologies d’architecture et de déploiement pour AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
 | Version | Lien de l’article |
@@ -25,13 +39,13 @@ ht-degree: 100%
 
 ## Architecture {#architecture}
 
-AEM Forms est une application déployée dans AEM sous forme de package AEM. Le package est appelé comme suit : package de modules complémentaires AEM Forms. Le package de modules complémentaires AEM Forms contiennent des services (fournisseurs d’API), qui sont déployés dans le conteneur AEM OSGi, et les servlets ou JSP (octroi de fonctionnalités front-end et API REST) gérés par le framework Sling AEM. Le diagramme suivant illustre cette configuration:
+AEM Forms est une application déployée dans AEM sous forme de package AEM. Le package est appelé comme suit : package de modules complémentaires AEM Forms. Le package de modules complémentaires AEM Forms contiennent des services (fournisseurs d’API), qui sont déployés dans le conteneur AEM OSGi, et les servlets ou JSP (octroi de fonctionnalités front-end et API REST) gérés par le framework Sling AEM. Le diagramme suivant illustre cette configuration :
 
 ![Architecture](assets/architecture.png)
 
 L’architecture d’AEM Forms comprend les composants suivants :
 
-* **Services AEM principaux :** services de base fournis par AEM à une application déployée. Ces services comprennent un référentiel de contenu compatible JCR, un conteneur de service OSGi, un moteur de workflow, un trust store, un magasin de clés, etc. Ces services sont accessibles par l’application AEM Forms mais ne sont pas fournis par les packages AEM Forms. Ces services font partie intégrante de la pile AEM globale et divers composants AEM Forms utilisent ces services.
+* **Services AEM principaux :** services de base fournis par AEM à une application déployée. Ces services comprennent un référentiel de contenu compatible JCR, un conteneur de service OSGi, un moteur de workflow, un trust store, un magasin de clés, etc. Ces services sont disponibles pour l’application AEM Forms mais ne sont pas fournis par les packages AEM Forms. Ces services font partie intégrante de la pile AEM globale et divers composants AEM Forms utilisent ces services.
 * **Services Forms :** fournissez des fonctionnalités liées aux formulaires, telles que la création, l’assemblage, la distribution et l’archivage de documents PDF, l’ajout de signatures numériques pour limiter l’accès aux documents et le décodage de formulaires à codes-barres. Ces services sont disponibles publiquement à des fins d’utilisation par le code personnalisé co-déployé dans AEM.
 * **Couche Web :** JSP ou servlets, reposant sur les services communs et de formulaires, qui fournissent les fonctionnalités suivantes :
 
@@ -57,7 +71,7 @@ AEM Forms sur OSGi et AEM Forms sur JEE disposent de fonctionnalités de workf
 
 ## Terminologies {#terminologies}
 
-L’image suivante affiche diverses configurations de serveur AEM Forms et leurs composants utilisés dans un déploiement AEM Forms classique :
+L’image suivante affiche diverses configurations de serveur AEM Form et leurs composants utilisés dans un déploiement AEM Forms classique :
 
 ![aem_forms_-_recommendationstopology](assets/aem_forms_-_recommendedtopology.png)
 
@@ -69,8 +83,8 @@ L’image suivante affiche diverses configurations de serveur AEM Forms et leurs
 **Publier :** une instance de publication est un serveur AEM Forms fonctionnant en mode d’exécution de publication standard. Les instances de publication sont destinées aux utilisateurs finaux des applications de formulaires (par exemple, les utilisateurs accédant à un site Web public et envoyant des formulaires). L’élément Publier active les fonctionnalités suivantes :
 
 * Rendu et envoi de formulaires pour les utilisatrices et utilisateurs finaux.
-* Transmission des données de formulaire brutes envoyées aux instances de traitement pour un traitement supplémentaire et stockage dans le système d’enregistrements final. L’implémentation par défaut fournie dans AEM Forms effectue cette opération à l’aide des fonctionnalités de réplication inverse d’AEM. Un autre type d’implémentation est également disponible pour transférer directement les données du formulaire aux serveurs de traitement au lieu de les enregistrer localement d’abord (cette dernière étape constituant un prérequis pour l’activation de la réplication inverse). Les clients rencontrant des problèmes de stockage des données potentiellement sensibles sur les instances de publication peuvent utiliser cette [alternative d’implémentation](/help/forms/using/configuring-draft-submission-storage.md), car les instances de traitement se trouvent généralement dans une zone plus sécurisée.
-* Rendu et envoi de lettres et de communications interactives : une lettre et une communication interactive sont rendues sur les instances de publication et les données correspondantes sont envoyées aux instances de traitement pour le stockage et le post-traitement. Les données peuvent être sauvegardées localement sur une instance de publication et traitées par réplication inverse vers une instance de traitement (l’option par défaut) ultérieurement, ou directement transférées vers l’instance de traitement sans enregistrement sur l’instance de publication. Cette dernière implémentation est utile pour les clients soucieux de leur sécurité.
+* Transmission des données de formulaire brutes envoyées aux instances de traitement pour un traitement supplémentaire et leur stockage dans le système d’enregistrement final. La mise en œuvre par défaut fournie dans AEM Forms effectue cette opération à l’aide des fonctionnalités de réplication inverse d’AEM. Une autre mise en œuvre est également disponible pour transférer directement les données du formulaire aux serveurs de traitement au lieu de les enregistrer localement d’abord (cette dernière étape constituant un prérequis pour l’activation de la réplication inverse). Les clients rencontrant des problèmes de stockage des données potentiellement sensibles sur les instances de publication peuvent utiliser cette [alternative d’implémentation](/help/forms/using/configuring-draft-submission-storage.md), car les instances de traitement se trouvent généralement dans une zone plus sécurisée.
+* Rendu et envoi de lettres et de communications interactives : une lettre et une communication interactive sont rendues sur les instances de publication et les données correspondantes sont envoyées aux instances de traitement pour le stockage et le post-traitement. Les données peuvent être sauvegardées localement sur une instance de publication et traitées par réplication inverse vers une instance de traitement (l’option par défaut) ultérieurement, ou directement transférées vers l’instance de traitement sans enregistrement sur l’instance de publication. Cette dernière mise en œuvre est utile pour les clients et clientes soucieux de leur sécurité.
 
 **Traitement :** une instance d’AEM Forms s’exécutant en mode Auteur sans utilisateurs affectés au groupe de gestionnaires de formulaires. Vous pouvez déployer AEM Forms sur JEE ou AEM Forms sur OSGi en tant qu’instance de traitement. Les utilisateurs n’y sont pas affectés afin de garantir que les activités de création et de gestion de formulaire ne sont pas exécutées sur l’instance de traitement et se produisent uniquement sur l’instance de création. Une instance de traitement permet les fonctionnalités suivantes :
 
@@ -81,7 +95,7 @@ L’image suivante affiche diverses configurations de serveur AEM Forms et leurs
   >
   >Adobe recommande d’utiliser un magasin de données tiers pour enregistrer les données traitées finales au lieu d’utiliser le référentiel AEM.
 
-* **Stockage et post-traitement des données de correspondance provenant d’une instance de publication :** les workflows AEM exécutent le post-traitement facultatif des définitions de lettre correspondantes. Ces processus peuvent enregistrer les données finales traitées dans des magasins de données externes appropriés.
+* **Stockage et post-traitement des données de correspondance provenant d’une instance de publication :** les workflows AEM exécutent le post-traitement facultatif des définitions de lettre correspondantes. Ces workflows peuvent enregistrer les données finales traitées dans des magasins de données externes appropriés.
 
 * **Hébergement de HTML Workspace** : une instance de traitement héberge le front-end de HTML Workspace. HTML Workspace fournit l’interface utilisateur pour l’affectation de tâche/groupe associée pour les processus de révision et d’approbation.
 
@@ -143,7 +157,7 @@ Les clientes et clients AEM Forms qui envisagent d’utiliser des dossiers de c
 
 ### Topologie d’utilisation des fonctionnalités des services de document pour le traitement hors ligne basé sur l’API {#topology-for-using-document-services-capabilities-for-offline-api-based-processing}
 
-Les clientes et clients AEM Forms prévoyant d’utiliser uniquement la fonctionnalité de services de document peuvent avoir une topologie similaire à celle affichée ci-dessous. Cette topologie recommande d’utiliser un cluster de serveurs AEM Forms on OSGi. Cette topologie est recommandée lorsque la plupart des utilisateurs et utilisatrices accèdent par programmation aux fonctionnalités du serveur AEM Forms (à l’aide d’API) et que l’intervention via l’interface utilisateur est minimale. La topologie est très utile dans plusieurs cas de logiciels clients. Par exemple, plusieurs clients utilisant le service PDF Generator pour créer des documents PDF à la demande.
+Les clientes et clients AEM Forms prévoyant d’utiliser uniquement la fonctionnalité de services de document peuvent avoir une topologie similaire à celle affichée ci-dessous. Cette topologie recommande d’utiliser un cluster de serveurs AEM Forms on OSGi. Cette topologie est recommandée lorsque la plupart des utilisateurs et utilisatrices accèdent par programmation aux fonctionnalités du serveur AEM Forms (à l’aide d’API) et que l’intervention via l’interface utilisateur est minimale. La topologie est très utile dans les scénarios impliquant plusieurs clients logiciels. Par exemple, plusieurs clients utilisant le service PDF Generator pour créer des documents PDF à la demande.
 
 Bien qu’AEM Forms vous permette de configurer et d’exécuter toutes les fonctionnalités à partir d’un seul serveur, vous devez planifier la capacité, équilibrer la charge et configurer des serveurs dédiés pour des fonctionnalités spécifiques dans un environnement de production. Par exemple, pour un environnement utilisant le service PDF Generator pour convertir des milliers de pages par jour et plusieurs formulaires adaptatifs pour capturer des données, configurez des serveurs AEM Forms distincts pour le service PDF Generator et les fonctionnalités de formulaires adaptatifs. Cela permet de fournir des performances optimales et de dimensionner les serveurs indépendamment les uns des autres.
 

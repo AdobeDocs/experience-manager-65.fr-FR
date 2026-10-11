@@ -10,13 +10,20 @@ exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 1%
-
 ---
-
 # Fonctionnalité de blog {#blog-feature}
 
 ## Présentation {#introduction}
@@ -250,11 +257,11 @@ Sous l’onglet **Paramètres de la barre latérale du journal**, spécifiez le 
 
   Format utilisé pour l’affichage des archives des entrées de blog. Le format utilise des espaces réservés conformes à la convention Java™.
 
-   * aaaa : année complète, comme « 2015 »
-   * yy : année courte, comme &#39;15&#39;
-   * MMMM : mois complet, comme juin
-   * MMM : mois court, comme juin
-   * MM : numéro du mois, comme 06
+  * aaaa : année complète, comme « 2015 »
+  * yy : année courte, comme &#39;15&#39;
+  * MMMM : mois complet, comme juin
+  * MMM : mois court, comme juin
+  * MM : numéro du mois, comme 06
 
   La valeur par défaut est « aaaa MMMM » qui s’affiche, par exemple, « Juin 2015 »
 
@@ -262,15 +269,15 @@ Sous l’onglet **Paramètres de la barre latérale du journal**, spécifiez le 
 
   Titre et type des entrées de blog à afficher dans la barre latérale. Vous avez le choix entre
 
-   * Auteurs
-   * Catégories
-   * Archives
+  * Auteurs
+  * Catégories
+  * Archives
 
 * **Chemin d’accès du composant Blog**
 
   *(Facultatif)* Emplacement de la ressource de blog à partir de laquelle les articles de blog doivent être répertoriés. Si rien n’est indiqué, il utilise le composant resourceType `social/journal/components/hbs/journal` qui apparaît sur la même page.
 
-   * Par exemple, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`.
+  * Par exemple, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`.
 
 * **Limite de suggestions**
 
@@ -333,4 +340,4 @@ Pour la modération des entrées de blog et des commentaires, voir [Modération 
 
 Pour baliser les entrées de blog et les commentaires, reportez-vous à la section [Balisage du contenu créé par l’utilisateur](/help/communities/tag-ugc.md).
 
-Pour la traduction des entrées de blog et des commentaires, voir [&#x200B; Traduction de contenu créé par l’utilisateur &#x200B;](/help/communities/translate-ugc.md).
+Pour la traduction des entrées de blog et des commentaires, voir [ Traduction de contenu créé par l’utilisateur ](/help/communities/translate-ugc.md).

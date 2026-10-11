@@ -9,13 +9,22 @@ exl-id: a3606d72-1bd8-4886-9285-6457dae66486
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 100%
-
+source-wordcount: '304'
+ht-degree: 40%
 ---
-
 # Création de pages{#authoring-pages}
 
 La section suivante fournit un aperçu de la création avec AEM :
@@ -30,23 +39,23 @@ La section suivante fournit un aperçu de la création avec AEM :
 
 Pour vous aider lors de la création de pages, l’environnement de création propose des fonctionnalités telles que :
 
-* **Glisser-déplacer**
-Il est possible de déplacer des composants (texte, image, etc.) et des ressources numériques (images, par exemple) sur la page en les faisant simplement glisser jusqu’à l’emplacement voulu.
+* **Glisser-déposer**
+Les composants (texte, image, etc.) et les ressources numériques (images, par exemple) peuvent être placés sur la page en les faisant simplement glisser jusqu’à l’emplacement souhaité.
 
 * **Modification**
-Une fois un élément positionné sur la page, vous pouvez ouvrir une boîte de dialogue spécifique pour entrer du contenu et/ou configurer des caractéristiques de ce composant (taille de l’image, par exemple).
+Une fois le composant positionné sur la page, vous pouvez ouvrir une boîte de dialogue spécifique pour entrer du contenu et/ou configurer des caractéristiques de ce composant (taille de l’image, par exemple).
 
-* **Édition statique**
-Vous pouvez modifier les composants Texte et Image directement sur la page web sans ouvrir de boîte de dialogue ni procéder à un enregistrement explicite.
+* **Modification statique**
+Vous pouvez modifier les composants Texte et Image directement sur la page web sans avoir à ouvrir de boîte de dialogue ni procéder à un enregistrement explicite.
 
 * **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
-Fenêtre d’inspection flottante qui s’ouvre sur la page à modifier. Depuis cette fenêtre, vous pouvez faire glisser des composants sur la page et procéder à des opérations spécifiques à la page.
+Fenêtre d’inspection flottante qui s’affiche sur la page à modifier. Depuis cette fenêtre, vous pouvez faire glisser des composants sur la page et procéder à des opérations spécifiques à la page.
 
 * **[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
-Sur le côté gauche de chaque page à créer, l’outil de recherche de contenu fournit un accès rapide à diverses ressources, y compris des ressources numériques (autres images, éléments Flash et documents, par exemple), d’autres pages et des paragraphes. Ces éléments peuvent être déplacés sur la page, par exemple pour positionner les ressources ou créer des liens vers d’autres pages.
+Sur le côté gauche de chaque page à créer, l’outil de recherche de contenu permet d’accéder rapidement à diverses ressources, y compris des ressources numériques (autres images, éléments Flash et documents, par exemple), d’autres pages et des paragraphes. Ces éléments peuvent être déplacés sur la page, par exemple pour positionner les ressources ou créer des liens vers d’autres pages.
 
 * **Menu contextuel**
-Cliquez avec le bouton droit sur la plupart des éléments à l’écran (par exemple, des paragraphes sur la page) pour afficher un menu contextuel avec les options appropriées.
+Cliquez avec le bouton droit sur la plupart des éléments à l’écran (par exemple, des paragraphes sur la page) pour afficher un menu contextuel avec les options d’action appropriées.
 
-* **Recherche en cours de frappe**
-Dans certains cas (par exemple, lors de la sélection d’un chemin d’accès dans les boîtes de dialogue de modification), la recherche de contenu dans l’interface d’AEM présente des correspondances dynamiques en cours de saisie de la requête.
+* **Rechercher en cours de frappe**
+Dans certains cas (par exemple, lors de la sélection d’un chemin d’accès dans les boîtes de dialogue de modification), la recherche de contenu dans l’interface d’AEM présente des correspondances dynamiques lorsque vous saisissez la requête.

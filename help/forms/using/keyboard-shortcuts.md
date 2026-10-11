@@ -8,7 +8,25 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1208'
 ht-degree: 94%
@@ -27,22 +45,22 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 | Fermer l’explorateur de propriétés pour le composant de formulaire adaptatif sélectionné | Ctrl + Alt + W | Commande + Alt + W |
 | Enregistrer les modifications dans l’explorateur de propriétés pour le composant de formulaire adaptatif sélectionné | Ctrl + S | Commande + S |
 | Modifier la règle pour le composant de formulaire adaptatif sélectionné | Ctrl + Alt + Entrée | Commande + Alt + Retour |
-| Permet de basculer entre le mode Aperçu et le mode actuellement sélectionné (par exemple : Édition et Génération de modèles automatique) | Ctrl + Maj + M | Ctrl+Maj+M&ast; |
-| Annuler la dernière modification | Ctrl + Z | Ctrl+Z&ast; |
-| Rétablir la dernière modification | Ctrl + Y | Ctrl+Y&ast; |
+| Permet de basculer entre le mode Aperçu et le mode actuellement sélectionné (par exemple : Édition et Génération de modèles automatique) | Ctrl + Maj + M | Ctrl+Maj+M&amp;ast; |
+| Annuler la dernière modification | Ctrl + Z | Ctrl+Z&amp;ast; |
+| Rétablir la dernière modification | Ctrl + Y | Ctrl+Y&amp;ast; |
 | Sélectionner plusieurs composants | Maj + Clic | Maj + Clic |
-| Copier le composant sélectionné | Ctrl+C | Ctrl+C&ast; |
-| Couper les composants sélectionnés. Le composant coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement. | Ctrl+X | Ctrl+X&ast; |
+| Copier le composant sélectionné | Ctrl+C | Ctrl+C&amp;ast; |
+| Couper les composants sélectionnés. Le composant coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement. | Ctrl+X | Ctrl+X&amp;ast; |
 | Coller les composants | Ctrl + V | Ctrl + V |
-| Supprimer les composants sélectionnés | Ctrl + Suppr | Ctrl+Suppr&ast; |
-| Supprimer les composants sélectionnés | Ctrl+Retour arrière | Ctrl+Retour arrière&ast; |
-| Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+B | Ctrl+B&ast; |
-| Mettre le texte en italique lors de l’utilisation du composant Éditeur de texte enrichi en mode Aperçu | Ctrl+I | Ctrl+I&ast; |
-| Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+U | Ctrl+U&ast; |
+| Supprimer les composants sélectionnés | Ctrl + Suppr | Ctrl+Suppr&amp;ast; |
+| Supprimer les composants sélectionnés | Ctrl+Retour arrière | Ctrl+Retour arrière&amp;ast; |
+| Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+B | Ctrl+B&amp;ast; |
+| Mettre le texte en italique lors de l’utilisation du composant Éditeur de texte enrichi en mode Aperçu | Ctrl+I | Ctrl+I&amp;ast; |
+| Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+U | Ctrl+U&amp;ast; |
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un &#39;&ast;&#39; fonctionnent à la fois avec les touches Ctrl et Commande dans macOS.
+>Les raccourcis marqués d’un &#39;&amp;ast;&#39; fonctionnent à la fois avec les touches Ctrl et Commande dans macOS.
 
 >[!NOTE]
 >
@@ -58,13 +76,13 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 |---|---|---|
 | Ouvrir l’explorateur de propriétés pour le composant sélectionné dans un thème | Alt + Entrée | Alt + Retour |
 | Fermer l’explorateur de propriétés pour le composant sélectionné dans un thème | Ctrl + Alt + W | Commande + Alt + W |
-| Annuler la dernière modification | Ctrl + Z | Ctrl+Z&ast; |
-| Rétablir la dernière modification | Ctrl + Y | Ctrl+Y&ast; |
-| Enregistrer les modifications dans l’explorateur de propriétés pour le composant sélectionné dans un thème | Ctrl + S | Ctrl+S&ast; |
+| Annuler la dernière modification | Ctrl + Z | Ctrl+Z&amp;ast; |
+| Rétablir la dernière modification | Ctrl + Y | Ctrl+Y&amp;ast; |
+| Enregistrer les modifications dans l’explorateur de propriétés pour le composant sélectionné dans un thème | Ctrl + S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
->Les raccourcis marqués d’un &#39;&ast;&#39; fonctionnent à la fois avec les touches Ctrl et Commande dans macOS.
+>Les raccourcis marqués d’un &#39;&amp;ast;&#39; fonctionnent à la fois avec les touches Ctrl et Commande dans macOS.
 
 ## Explorateur de contenu  {#contentbrowser}
 

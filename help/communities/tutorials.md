@@ -9,18 +9,25 @@ exl-id: 061d3b1b-7ceb-4e57-8183-2062a76173f1
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 2%
-
+source-wordcount: '296'
+ht-degree: 7%
 ---
-
 # Tutoriels {#tutorials}
 
-Voici des exemples pour vous aider à apprendre et à travailler avec Adobe Experience Manager (AEM) 6.1 Communities [Social Component framework (SCF)](scf.md).
+Voici des exemples pour faciliter l’apprentissage et l’utilisation des communautés Adobe Experience Manager (AEM) 6.1 [Social Component Framework (SCF)](scf.md).
 
-## Personnalisation côté client {#client-side-customization}
+## Personnalisation Côté Client {#client-side-customization}
 
 Voir également :
 
@@ -28,19 +35,19 @@ Voir également :
 
 * [Guide des composants de communauté](components-guide.md)
 
-* [Composant des commentaires de superposition](overlay-comments.md)
+* [Composant Commentaires de recouvrement](overlay-comments.md)
 
-* [Extension du composant Commentaires](extend-comments.md)
+* [Composant Étendre les commentaires](extend-comments.md)
 
-## Personnalisation côté serveur {#server-side-customization}
+## Personnalisation Côté Serveur {#server-side-customization}
 
-Voir aussi [Personnalisation SCF côté serveur](server-customize.md).
+Voir aussi [Personnalisation côté serveur de SCF](server-customize.md).
 
-Un exemple de code est disponible dans le référentiel [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) :
+L’exemple de code est disponible dans le référentiel [GitHub Adobe Experience Cloud](https://github.com/Adobe-Marketing-Cloud) :
 
 * [Personnaliser l’exemple de composant SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
-* [Recouvrement de l’exemple de composant SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
+* [Exemple de composant SCF de recouvrement](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
 * [Étendre l’exemple de composant SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
 
@@ -48,28 +55,28 @@ Un exemple de code est disponible dans le référentiel [Adobe Experience Cloud 
 
 * [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
-  ToDo MVC explique comment développer entièrement un composant SCF+SRP.
+  ToDo MVC montre comment développer un composant SCF+SRP à partir de zéro.
 
 * [Prise en main d’AEM Communities](getting-started.md)
 
-* [Comment configurer MongoDB pour la démonstration](demo-mongo.md)
+* [Configuration de MongoDB pour la démonstration](demo-mongo.md)
 
-* [Création d’un environnement de test SCF](an-scf-sandbox.md)
+* [Création d’un sandbox SCF](an-scf-sandbox.md)
 
-* [Création d’un exemple de page](create-sample-page.md)
+* [Créer un exemple de page](create-sample-page.md)
 
 ## Utilisateurs de démonstration {#demo-users}
 
-Le module d’exemples de Geometrixx comprend des utilisateurs de démonstration. Il existe souvent une différence d’expérience entre être un visiteur (non connecté) ou un membre (connecté). Et tant que les packages d’exemples de Geometrixx restent installés, vous pouvez utiliser ces utilisateurs pour simuler un état connecté lors de l’exploration avec le [guide des composants de la communauté](components-guide.md).
+Le package d’exemples Geometrixx comprend des utilisateurs et utilisatrices de démonstration. Il existe souvent une différence d’expérience entre être un visiteur (non connecté) ou un membre (connecté). Et, tant que les exemples de packages Geometrixx restent installés, vous pouvez utiliser ces utilisateurs pour simuler un état connecté lors de l’exploration avec le guide [Composants de communauté](components-guide.md).
 
-Pour obtenir la liste complète des utilisateurs de démonstration, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Sécurité > Utilisateurs]** à l’aide du rail. Ou utilisez la [console de sécurité](http://localhost:4502/useradmin) de l’interface utilisateur classique pour gérer les utilisateurs et les groupes.
+Pour obtenir la liste complète des utilisateurs de la démonstration, accédez à l’aide du rail à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Sécurité > Utilisateurs]**. Vous pouvez également utiliser l’interface utilisateur classique [console de sécurité](http://localhost:4502/useradmin) pour gérer les utilisateurs et les groupes.
 
-Si un [&#x200B; site communautaire a été créé &#x200B;](getting-started.md), il est possible d&#39;affecter des utilisateurs de démonstration à ses [&#x200B; groupes d&#39;utilisateurs communautaires &#x200B;](users.md).
+Si un [site communautaire a été créé](getting-started.md), il est possible d’affecter des utilisateurs de démonstration à ses [groupes d’utilisateurs de la communauté](users.md).
 
-***user id* / *password*** :
+***identifiant utilisateur* / *mot de passe*** :
 
-* aaron.mcdonald@mailinator.com / password
-* emily.andrews@mailinator.com / password
-* weston.mccall@dodgit.com / password
-* andrew.schaeffer@trashymail.com / password
-* rebekah.larsen@trashymail.com / password
+* aaron.mcdonald@mailinator.com / mot de passe
+* emily.andrews@mailinator.com / mot de passe
+* weston.mccall@dodgit.com / mot de passe
+* andrew.schaeffer@trashymail.com / mot de passe
+* rebekah.larsen@trashymail.com / mot de passe

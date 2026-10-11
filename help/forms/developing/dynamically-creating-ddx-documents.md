@@ -1,6 +1,6 @@
 ---
 title: Créer de façon dynamique des documents DDX
-description: Créez un document DDX de façon dynamique à l’aide de l’API Java et de l’API Web Service. La création dynamique d’un document DDX vous permet d’utiliser dans le document DDX des valeurs obtenues lors de l’exécution.
+description: Créer un document DDX de façon dynamique à l’aide de l’API Java et de l’API Web Service. La création dynamique d’un document DDX vous permet d’utiliser dans le document DDX des valeurs obtenues lors de l’exécution.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
@@ -10,13 +10,29 @@ role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2111'
-ht-degree: 99%
-
+source-wordcount: '2183'
+ht-degree: 100%
 ---
-
 # Créer de façon dynamique des documents DDX {#dynamically-creating-ddx-documents}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -55,7 +71,7 @@ Pour désassembler un document PDF à l’aide d’un document DDX créé de fa�
 1. Créez le document DDX.
 1. Convertissez le document DDX.
 1. Définissez les options d’exécution.
-1. Désassemblez le document PDF.
+1. Désasemblez le document PDF.
 1. Enregistrez les documents PDF désassemblés.
 
 **Inclure les fichiers de projet**
@@ -67,7 +83,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utility.jar (obligatoire si AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss)
 
 **Créer un client PDF Assembler**
@@ -84,7 +100,7 @@ Un document DDX créé à l’aide de classes `org.w3c.dom` doit être converti 
 
 **Référencer un document PDF à désassembler**
 
-Pour désassembler un document PDF, référencez un fichier PDF représentant le document PDF à désassembler. Lorsqu’il est transmis au service Assembler, un document PDF distinct est renvoyé pour chaque signet de niveau 1 dans le document.
+Pour désassembler un document PDF, indiquez un fichier PDF représentant le document PDF à désassembler. Lorsqu’il est transmis au service Assembler, un document PDF distinct est renvoyé pour chaque signet de niveau 1 dans le document.
 
 **Définir des options de temps d’exécution**
 
@@ -102,7 +118,7 @@ Tous les documents PDF désassemblés sont renvoyés dans un objet de collection
 
 [Créer de façon dynamique un document DDX à l’aide de l’API Java](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-java-api)
 
-[Création dynamique d’un document DDX à l’aide de l’API de service web](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-web-service-api)
+[Créer dynamiquement un document DDX à l’aide de l’API de service web](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-web-service-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -128,7 +144,7 @@ Créez un document DDX de façon dynamique et désassemblez un document PDF à l
    * Créez un objet `DocumentBuilderFactory` Java en appelant la méthode `newInstance` de la classe `DocumentBuilderFactory`.
    * Créez un objet `DocumentBuilder` Java en appelant la méthode `newDocumentBuilder` de l’objet `DocumentBuilderFactory`.
    * Appelez la méthode `newDocument` de l’objet `DocumentBuilder` pour instancier un objet `org.w3c.dom.Document`.
-   * Créez l’élément racine du document DDX en appelant la méthode `createElement` de l’objet `org.w3c.dom.Document`. Cette méthode crée un objet `Element` qui représente l’élément racine. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `createElement`. Convertissez la valeur de retour en `Element`. Ensuite, définissez une valeur pour l’élément enfant en appelant sa méthode `setAttribute`. Enfin, ajoutez l’élément à l’élément d’en-tête en appelant sa méthode `appendChild` et transmettez l’objet d’élément enfant en tant qu’argument. Les lignes de code suivantes illustrent cette logique d’application :
+   * Créez l’élément racine du document DDX en appelant la méthode `createElement` de l’objet `org.w3c.dom.Document`. Cette méthode crée un objet `Element` qui représente l’élément racine. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `createElement`. Convertissez la valeur de retour en `Element`. Ensuite, définissez une valeur pour l’élément enfant en appelant sa méthode `setAttribute`. Enfin, ajoutez l’élément à l’élément d’en-tête en appelant sa méthode `appendChild` et transmettez l’objet d’élément enfant en tant qu’argument. Les lignes de code suivantes illustrent cette logique dʼapplication :
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * Créez l’élément `PDFsFromBookmarks` en appelant la méthode `createElement` de l’objet `Document`. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `createElement`. Convertissez la valeur de retour en `Element`. Définissez une valeur pour l’élément `PDFsFromBookmarks` en appelant sa méthode `setAttribute`. Ajoutez l’élément `PDFsFromBookmarks` à l’élément `DDX` en appelant la méthode `appendChild` de l’élément DDX. Transmettez l’objet d’élément `PDFsFromBookmarks` en tant qu’argument. Les lignes de code suivantes illustrent cette logique dʼapplication :
@@ -158,15 +174,15 @@ Créez un document DDX de façon dynamique et désassemblez un document PDF à l
    * Créez un objet `com.adobe.idp.Document`. Transmettez l’objet `java.io.FileInputStream` contenant le document PDF à désassembler.
    * Ajoutez une entrée à l’objet `java.util.Map` en appelant sa méthode `put` et en transmettant les arguments suivants :
 
-      * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX. (Dans le document DDX créé dynamiquement, la valeur est `AssemblerResultPDF.pdf`.)
-      * Un objet `com.adobe.idp.Document` qui contient le document PDF à désassembler.
+     * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX. (Dans le document DDX créé dynamiquement, la valeur est `AssemblerResultPDF.pdf`.)
+     * Un objet `com.adobe.idp.Document` qui contient le document PDF à désassembler.
 
 1. Définissez les options d’exécution.
 
    * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
    * Définissez les options d’exécution pour répondre à vos exigences professionnelles en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, appelez la méthode `setFailOnError` de l’objet `AssemblerOptionSpec` et transmettez `false`.
 
-1. Désassemblez le document PDF.
+1. Désasemblez le document PDF.
 
    Appelez la méthode `invokeDDX` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
@@ -204,7 +220,7 @@ Créez de manière dynamique un document DDX et désassemblez un document PDF à
    >
    >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
-1. Créez un client Assembler PDF.
+1. Créez un client PDF Assembler.
 
    * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
    * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
@@ -212,10 +228,10 @@ Créez de manière dynamique un document DDX et désassemblez un document PDF à
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Créez le document DDX.
 
@@ -242,7 +258,7 @@ Créez de manière dynamique un document DDX et désassemblez un document PDF à
 
    * Créez un objet `BLOB`. Affectez le tableau d’octets au champ `MTOM` de l’objet `BLOB`.
 
-1. Référencez un document de PDF à désassembler.
+1. Référencez un document PDF à désassembler.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document PDF d’entrée. Cet objet `BLOB` est transmis à `invokeOneDocument` comme argument.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document PDF d’entrée et le mode d’ouverture du fichier.

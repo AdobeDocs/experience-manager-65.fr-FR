@@ -9,13 +9,17 @@ exl-id: fbeceb70-b199-478b-907b-253ed212ff99
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 2%
-
+source-wordcount: '649'
+ht-degree: 3%
 ---
-
 # Développement d’applications avec l’interface de ligne de commande PhoneGap{#developing-apps-with-phonegap-cli}
 
 {{ue-over-mobile}}
@@ -24,7 +28,7 @@ En tant que développeur ou développeuse, vous pouvez à tout moment exécuter 
 
 Pour exécuter les exemples ci-dessous, vous avez besoin d’un système qui exécute macOS X avec Xcode ou d’un système Mac/Win/Linux sur lequel Android™ SDK est installé.
 
-## Bootstrap de votre environnement de développement {#bootstrap-your-development-environment}
+## Bootstrap votre environnement de développement {#bootstrap-your-development-environment}
 
 Configurer l’interface de ligne de commande PhoneGap (`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface`)
 
@@ -33,16 +37,16 @@ Pour iOS : pour développer sur iPhone et iPad, vous avez besoin de l’IDE Xcod
 * Téléchargez-le gratuitement [ici](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Fdownload%2F&rv=1).
 * Guide de la plateforme PhoneGap iOS (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
-Pour Android™ : pour développer sur iPhone et iPad, vous avez besoin de l’IDE Android™ Studio de Google.
+Pour ™ : pour développer sur iPhone et iPad, vous avez besoin de l’IDE Android™ Studio de Google.
 
 * Téléchargez-le gratuitement [ici](https://developer.android.com/studio).
-* Guide de la plateforme PhoneGap Android™ (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
+* Guide de la plateforme PhoneGap ™ (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
 ## Télécharger le Source {#download-the-source}
 
-Une fois votre environnement de développement amorcé, téléchargez la source à partir de la mosaïque de build de l’application AEM :
+Une fois que vous avez correctement amorcé votre environnement de développement, téléchargez la source à partir de la mosaïque de build de l’application AEM :
 
-* Cliquez sur le chevron de liste déroulante de la mosaïque PhoneGap Build.
+* Cliquez sur le chevron déroulant PhoneGap Build tildown.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -86,7 +90,7 @@ phonegap run ios
 >
 >1. Création d’un dossier (test mkdir)
 >1. Accédez à ce nouveau dossier (test cd).
->1. Exécutez `phonegap create helloWorld`.
+>1. Exécuter `phonegap create helloWorld`
 >1. Accéder à helloWorld (cd helloWorld)
 >1. Exécutez `phonegap run android` (ou remplacez Android™ par iOS comme ci-dessus).
 >1. L’émulateur s’ouvre et exécute l’application PhoneGap que vous venez de créer, en indiquant « Device Ready » (Prêt pour l’appareil) si le Bridge JavaScript natif est opérationnel.
@@ -103,8 +107,8 @@ Pour activer les outils de développement :
 
 * Ouvrir les préférences de Safari
 
-   * Cliquez sur Safari dans la barre de menus
-   * Cliquer sur les préférences
+  * Cliquez sur Safari dans la barre de menus
+  * Cliquer sur les préférences
 
 * Cliquez sur Avancé dans la fenêtre Préférence
 

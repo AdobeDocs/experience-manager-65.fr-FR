@@ -10,13 +10,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 100%
-
 ---
-
 
 # Routage du modèle de SPA{#spa-model-routing}
 
@@ -26,7 +40,7 @@ Concernant les applications sur une seule page (SPA) dans AEM, c’est l’appli
 
 ## Routage du projet {#project-routing}
 
-L’application est responsable du routage et est ensuite implémentée par les développeurs front-end du projet. Ce document décrit le routage spécifique au modèle renvoyé par le serveur AEM. La structure des données du modèle de page expose l’URL de la ressource sous-jacente. Le projet front-end peut utiliser n’importe quelle bibliothèque ou personnalisée fournissant des fonctionnalités de routage. Si un itinéraire attend un fragment de modèle, il est possible d’effectuer un appel à la fonction `PageModelManager.getData()`. Lorsqu’un itinéraire de modèle a été modifié, il est nécessaire de déclencher un événement pour avertir les bibliothèques d’écoute, notamment l’éditeur de page.
+L’application est responsable du routage et est ensuite implémentée par les développeurs front-end du projet. Ce document décrit le routage spécifique au modèle renvoyé par le serveur AEM. La structure des données du modèle de page expose l’URL de la ressource sous-jacente. Le projet front-end peut utiliser n’importe quelle bibliothèque personnalisée ou tierce fournissant des fonctionnalités de routage. Si un itinéraire attend un fragment de modèle, il est possible d’effectuer un appel à la fonction `PageModelManager.getData()`. Lorsqu’un itinéraire de modèle a été modifié, il est nécessaire de déclencher un événement pour avertir les bibliothèques d’écoute, notamment l’éditeur de page.
 
 ## Architecture {#architecture}
 
@@ -46,11 +60,11 @@ Lorsque l’option `ModelRouter` est activée, les fonctions de l’API d’hist
 
 >[!CAUTION]
 >
->La version actuelle de `ModelRouter` ne prend en charge que l’utilisation d’URL pointant vers le chemin de ressource réel des points d’entrée de Sling Model. Elle ne prend pas en charge l’utilisation d’URL de redirection ni d’alias.
+>La version actuelle de `ModelRouter` ne prend en charge que l’utilisation d’URL pointant vers le chemin de ressource réel des points d’entrée de Sling Model. Elle ne prend pas en charge l’utilisation d’URL personnalisées ni d’alias.
 
 ## Contrat de routage {#routing-contract}
 
-L’implémentation actuelle repose sur l’hypothèse que le projet de SPA utilise l’API d’historique HTML5 pour le routage vers les différentes pages de l’application.
+La mise en œuvre actuelle repose sur l’hypothèse que le projet de SPA utilise l’API d’historique HTML5 pour le routage vers les différentes pages de l’application.
 
 ### Configuration {#configuration}
 

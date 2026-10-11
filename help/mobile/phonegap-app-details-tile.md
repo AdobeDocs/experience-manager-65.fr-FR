@@ -9,13 +9,17 @@ exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 2%
-
 ---
-
 # Gérer la mosaïque d’application{#manage-app-tile}
 
 {{ue-over-mobile}}
@@ -61,7 +65,7 @@ Chaque boutique d’applications fournisseur, par exemple Apple App Store ou Goo
 
 >[!NOTE]
 >
->Une fois que vous connaissez la mosaïque **`Manage App`**, reportez-vous à la section [&#x200B; Modification des métadonnées d’application &#x200B;](/help/mobile/phonegap-editmetadata.md) pour afficher et modifier les métadonnées.
+>Une fois que vous connaissez la mosaïque **`Manage App`**, reportez-vous à la section [ Modification des métadonnées d’application ](/help/mobile/phonegap-editmetadata.md) pour afficher et modifier les métadonnées.
 
 #### Métadonnées courantes {#common-metadata}
 

@@ -1,19 +1,28 @@
 ---
 title: er les événements
-
 description: Lorsque la fonctionnalité de contrôle est activée, Document Security vous permet de  certains types d’événements. Vous pouvez aisément effectuer des recherches dans la liste des événements et trier celle-ci à l’aide de Document Security.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 feature: Document Security
 exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 94%
@@ -30,7 +39,7 @@ Lorsque la fonctionnalité de contrôle est activée, Document Security vous pe
 
 >[!NOTE]
 >
->Les événements qui surviennent sur une copie d’un document protégé par une politique sont également consignés comme des événements concernant le document d’origine protégé.réduisant l’incidence sur les performances de votre environnement AEM forms.
+>Les événements qui surviennent sur une copie d’un document protégé par une politique sont également consignés comme des événements concernant le document d’origine protégé.
 
 (voir [Options de contrôle des événements](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options)).
 
@@ -46,13 +55,13 @@ Si une politique autorise l’accès d’utilisateurs ou d’utilisatrices anony
 
 La configuration requise pour contrôler les événements est la suivante :
 
-* Le système, l’administrateur ou l’administratrice doit activer la fonctionnalité de contrôle sur le serveur.
+* Le système, l’administrateur ou l’administratrice doit activer la fonctionnalité d’audit sur le serveur.
 
   (voir [Configuration des options de contrôle et de confidentialité des événements](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings)).
 
 * Le contrôle doit être activé sur la politique que vous utilisez pour protéger le document. (voir [Création et modification de politiques](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies)).
 
-## Recherche d’un événement {#search-for-an-event}
+## Recherche d’un évènement {#search-for-an-event}
 
 Vous pouvez naviguer dans la liste des événements et afficher des descriptions plus détaillées d’événements. Ces descriptions détaillées incluent des informations comme l’ID de l’événement, sa description, son adresse IP, l’entreprise, l’utilisateur ou l’utilisatrice concernée, la date et l’heure de survenue, les activités refusées, ainsi que les événements hors connexion (lorsque des utilisatrices ou des utilisateurs tentent d’utiliser un document sans être connectés à Document Security).
 
@@ -72,7 +81,7 @@ Je suis coordinateur de jeux de politiques** : les coordinateurs de jeux de poli
 
 **Événements de politique pour lesquels je coordonne des ensembles de politiques :** les coordinateurs et coordinatrices d’ensembles de politiques qui disposent de l’autorisation d’affichage des événements peuvent rechercher les événements liés aux politiques issues de leurs ensembles de politiques.
 
-**Administrateurs :** ils peuvent afficher les événements contrôlés concernant tous les utilisateurs et documents protégés par une politique. Les administrateurs et administratrices peuvent également assurer le suivi d’autres types. De plus, les administrateurs et administratrices peuvent subdiviser les recherches d’événements par type d’utilisateur ou d’utilisatrice :
+**Administrateurs :** ils peuvent afficher les événements contrôlés concernant tous les utilisateurs et documents protégés par une politique. Les administrateurs et administratrices peuvent également assurer le suivi d’autres types. De plus, les administrateurs et administratrices peuvent subdiviser les recherches d’évènements par type d’utilisateur ou d’utilisatrice :
 
 **Utilisateurs connus :** utilisateurs se trouvant dans les répertoires sources ou enregistrés en tant qu’utilisateurs externes.
 
@@ -100,11 +109,11 @@ Je suis coordinateur de jeux de politiques** : les coordinateurs de jeux de poli
 1. Dans la liste Afficher, sélectionnez le nombre de résultats de recherche à afficher par page.
 1. Cliquez sur Rechercher.
 
-   Tous les événements d’échec apparaissent en surbrillance dans la liste avec une icône de refus.
+   Tous les événements ayant échoué apparaissent en surbrillance dans la liste avec une icône de refus.
 
 1. Pour afficher les détails d’un événement, cliquez sur la description de l’événement dans la liste.
 
-## Tri de la liste des événements {#sort-the-event-list}
+## Trier la liste des événements {#sort-the-event-list}
 
 Pour faciliter la recherche d’événements, triez la liste par en-tête de colonne. Le triangle situé à côté de l’en-tête de colonne indique la colonne triée. Lorsque le triangle est dirigé vers le haut, l’ordre de tri est croissant et lorsqu’il est dirigé vers le bas, l’ordre de tri est décroissant.
 

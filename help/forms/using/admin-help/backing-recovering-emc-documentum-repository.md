@@ -9,7 +9,23 @@ exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 98%
@@ -39,7 +55,7 @@ Vous avez besoin des modules EMC NetWorker suivants :
 
 * Module NetWorker
 * Assistant de configuration NetWorker
-* Assistant de configuration de dispositif NetWorker
+* Assistant de configuration d’appareil NetWorker
 * Module NetWorker pour le type de base de données utilisé par votre serveur de contenu
 * Module NetWorker pour Documentum
 
@@ -53,7 +69,7 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    Au cours des processus d’installation, il vous est demandé de saisir le nom du serveur de l’ordinateur Content Server en tant que *Nom du serveur NetWorker*. Lors de l’installation du module EMC NetWorker pour votre base de données, sélectionnez une installation « complète ».
 
-1. En utilisant l’exemple de contenu ci-dessous, créez un fichier de configuration nommé *nsrnmd_win.cfg* et enregistrez-le à un emplacement accessible sur le serveur de contenu. Ce fichier sera appelé par les instructions de sauvegarde et de restauration.
+1. En utilisant l’exemple de contenu ci-dessous, créez un fichier de configuration nommé *nsrnmd_win.cfg* et enregistrez-le à un emplacement accessible sur le serveur de contenu. Ce fichier sera appelé par les commandes de sauvegarde et de restauration.
 
    Le texte suivant contient des caractères de mise en forme pour les sauts de ligne. Si vous copiez ce texte en dehors de ce document, copiez-en une partie après l’autre, puis supprimez les caractères de mise en forme dans le nouvel emplacement.
 
@@ -195,15 +211,15 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    * Sauvegarde complète de la base de données (nsrnmddbf.bat) :
 
-     `NetWorker_database_module_root` `-s`*&lt;Nom_Serveur_Networker>* `-U`&#x200B;`[username]` `-P`*[mot de passe ]*`-l full`*&lt;nom_base_de_données>*
+     `NetWorker_database_module_root` `-s`*&lt;Nom_Serveur_Networker>* `-U``[username]` `-P`*[mot de passe ]*`-l full`*&lt;nom_base_de_données>*
 
    * Sauvegarde incrémentielle de la base de données (nsrnmddbi.bat) :
 
-     `[NetWorker_database_module_root]` `-s`*&lt;Nom_Serveur_Networker>* `-U`&#x200B;`[username]` `-P`&#x200B;`[password]` `-l 1 -R`*&lt;nom_base_de_données>*
+     `[NetWorker_database_module_root]` `-s`*&lt;Nom_Serveur_Networker>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;nom_base_de_données>*
 
    * Sauvegarde du journal de la base de données (nsrnmddbl.bat) :
 
-     `[NetWorker_database_module_root]` `-s`&#x200B;`<NetWorker_Server_Name>` `-U`&#x200B;`[username]` `-P`&#x200B;`[password]` `-l incr -R`*&lt;nom_base_de_données>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;nom_base_de_données>*
 
      Où :
 
@@ -226,10 +242,10 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    **Type de média :** `File`
 
-1. Cliquez avec le bouton droit de la souris sur le nouveau périphérique, puis sélectionnez Operations.
-1. Cliquez sur Label, saisissez un nom, puis cliquez sur Mount.
+1. Cliquez avec le bouton droit de la souris sur le nouvel appareil, puis sélectionnez Operations.
+1. Cliquez sur Label, saisissez un nom, cliquez sur OK, puis cliquez sur Mount.
 
-Un périphérique est ajouté sur lequel les fichiers sauvegardés seront enregistrés. Vous pouvez ajouter plusieurs périphériques de formats différents.
+Un appareil est ajouté sur lequel les fichiers sauvegardés seront enregistrés. Vous pouvez ajouter plusieurs périphériques de formats différents.
 
 ## Sauvegarde d’EMC Documentum Content Server {#back-up-the-emc-documentum-content-server}
 

@@ -9,7 +9,13 @@ exl-id: f37f239f-065b-44f8-acb1-93485b713b49
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 0%
@@ -32,7 +38,7 @@ Par convention AEM, la première page de votre application doit être une redire
 
 Le modèle et le code de composant de votre application doivent se trouver dans /apps/&lt;nom de marque>/&lt;nom de l’application>. Conformément à la convention, vous devez placer votre modèle et le code du composant dans /apps/&lt;nom de marque>/&lt;nom de l’application>. Ce modèle doit être familier aux développeurs qui ont déjà travaillé avec Site dans AEM. Elle est généralement suivie car /apps/ est verrouillé sur l’accès anonyme par défaut sur les instances de publication. Ainsi, votre code JSP brut est caché à des attaquant(e)s potentiel(le)s.
 
-Les modèles spécifiques à une application peuvent être configurés pour n’être présentés qu’en utilisant le nœud de propriété `allowedPaths` sur le modèle lui-même et en définissant sa valeur sur « /content/mobileapps(/.&ast;)? », ou même une valeur plus spécifique si le modèle ne doit être utilisable que pour une seule application. Les propriétés `allowedParents` et `allowedChildren` peuvent également être utilisées pour un contrôle précis des modèles disponibles pour un auteur en fonction de l’emplacement de création de la page.
+Les modèles spécifiques à une application peuvent être configurés pour n’être présentés qu’en utilisant le nœud de propriété `allowedPaths` sur le modèle lui-même et en définissant sa valeur sur « /content/mobileapps(/.&amp;ast;)? », ou même une valeur plus spécifique si le modèle ne doit être utilisable que pour une seule application. Les propriétés `allowedParents` et `allowedChildren` peuvent également être utilisées pour un contrôle précis des modèles disponibles pour un auteur en fonction de l’emplacement de création de la page.
 
 Lors de la création entièrement nouvelle d’un composant de page d’application, il est recommandé de définir sa propriété `sling:resourceSuperType` sur « mobileapps/components/angular/ng-page ». Cela configure votre page pour la création et le rendu en tant qu’application monopage et vous permet de superposer tous les fichiers .jsp que votre composant doit modifier. Comme ng-page n’inclut aucun framework d’interface utilisateur, un développeur finit généralement par recouvrir (au moins) « template.jsp » (recouvert à partir de /libs/mobileapps/components/angular/ng-page/template.jsp).
 

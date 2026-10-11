@@ -6,7 +6,18 @@ role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 6ab943894398733d178f561430d3f391e8722195
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3255'
 ht-degree: 99%
@@ -31,7 +42,7 @@ Assurez-vous d’installer le pack de services et le package appropriés, si né
 
 | Fonctionnalité d’Assets | Version d’Experience Manager et configuration requises pour la prise en charge |
 |--- |--- |
-| Asset Link fonctionne par défaut. | Experience Manager 6.5 et 6.5.2 ou version ultérieure. </br> Experience Manager 6.4.4 et 6.4.6, ou une version ultérieure. </br> Adobe recommande d’installer la dernière version du pack de services (SP) [Experience Manager &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) avant d’utiliser AAL. |
+| Asset Link fonctionne par défaut. | Experience Manager 6.5 et 6.5.2 ou version ultérieure. </br> Experience Manager 6.4.4 et 6.4.6, ou une version ultérieure. </br> Adobe recommande d’installer la dernière version du pack de services (SP) [Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) avant d’utiliser AAL. |
 | Asset Link fonctionne après l’installation d’un package. | Pour Experience Manager 6.4.0 à 6.4.3, installez le package [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). |
 | Intégration d’Adobe Stock | Experience Manager 6.4.2 ou version ultérieure |
 | Recherche visuelle ou par analogie | Experience Manager 6.5.0 ou version ultérieure |

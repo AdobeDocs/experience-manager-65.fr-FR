@@ -10,7 +10,18 @@ exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2718'
 ht-degree: 93%
@@ -180,7 +191,7 @@ La nouvelle configuration de déploiement est alors disponible pour vous lors de
 ### Créer la configuration de déploiement {#create-the-rollout-configuration}
 
 1. Ouvrez CRXDE Lite, par exemple :
-   [&#128279;](http://localhost:4502/crx/de)
+   [](http://localhost:4502/crx/de)
 
 1. Accédez à :
    `/apps/msm/<your-project>/rolloutconfigs`
@@ -246,7 +257,7 @@ Suivez les procédures de cette section pour développer une `LiveActionFactory`
 
 1. [Créez le projet Maven](#create-the-maven-project) et importez-le dans Eclipse.
 1. [Ajoutez des dépendances](#add-dependencies-to-the-pom-file) au fichier POM.
-1. [Implémentez l’interface `LiveActionFactory` &#x200B;](#implement-liveactionfactory) et déployez le bundle OSGi.
+1. [Implémentez l’interface `LiveActionFactory` ](#implement-liveactionfactory) et déployez le bundle OSGi.
 1. [Créez la configuration de déploiement](#create-the-example-rollout-configuration).
 1. [Créez la Live Copy](#create-the-live-copy).
 
@@ -532,7 +543,7 @@ La classe `LiveActionFactory` suivante implémente une `LiveAction` qui enregist
 
    Le fichier AEM `error.log` doit indiquer que le bundle est démarré.
 
-   Par exemple, [&#128279;](https://localhost:4502/system/console/status-slinglogs).
+   Par exemple, [](https://localhost:4502/system/console/status-slinglogs).
 
    ```xml
    13.08.2013 14:34:55.450 *INFO* [OsgiInstallerImpl] com.adobe.example.msm.MyLiveActionFactory-bundle BundleEvent RESOLVED

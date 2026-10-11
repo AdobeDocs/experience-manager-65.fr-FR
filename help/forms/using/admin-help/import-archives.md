@@ -1,6 +1,6 @@
 ---
 title: Importer et gérer des archives
-description: Découvrez comment importer et gérer des archives. L’option Archives permet d’importer et de gérer les fichiers LCA créés dans Workbench. Vous pouvez importer, configurer, utiliser et supprimer une archive.
+description: Découvrez comment importer et gérer des archives. L’option Archives permet d’importer et de gérer les fichiers LCA créés dans l’atelier. Vous pouvez importer, configurer, utiliser et supprimer une archive.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
@@ -9,20 +9,34 @@ exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1450'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1457'
 ht-degree: 100%
-
 ---
-
 # Importer et gérer des archives {#import-and-manage-archives}
 
 >[!NOTE]
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Archives.
+Importez et gérez les fichiers LCA créés avec l’atelier via l’onglet Archives.
 
 ## Import d’une archive {#import-an-archive}
 
@@ -43,10 +57,10 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 1. Si vous cliquez sur Configurer, vous pouvez apporter les modifications voulues dans la page de configuration des points d’entrée qui s’affiche :
 
    * Pour renommer un point d’entrée ou modifier sa description, cliquez dessus.
-   * Pour ajouter un point d’entrée TaskManager, cliquez sur Ajouter un point d’entrée TaskManager. Pour plus d’informations sur les paramètres de TaskManager, voir [Configuration des points d’entrée TaskManager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Pour ajouter un point d’entrée TaskManager, cliquez sur Ajouter TaskManager. Pour plus d’informations sur les paramètres de TaskManager, voir [Configuration des points d’entrée TaskManager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
    * Pour ajouter un point d’entrée WatchedFolder, cliquez sur Ajouter un point d’entrée WatchedFolder. Pour plus d’informations sur les paramètres de Watched Folder , voir [Paramètres des points d’entrée de Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * Pour ajouter un point d’entrée d’e-mail, cliquez sur Ajouter un point d’entrée d’e-mail. Pour plus d’informations sur les paramètres d’e-mail, voir [Paramètres des points d’entrée d’e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
-   * Pour ajouter un point d’entrée EJB, cliquez sur Ajouter un point d’entrée EJB et indiquez un nom et une description pour le point d’entrée.
+   * Pour ajouter un point d’entrée EJB, cliquez sur Ajouter EJB et indiquez un nom et une description pour le point d’entrée.
    * Pour ajouter un point d’entrée SOAP, cliquez sur Ajouter un point d’entrée SOAP et indiquez un nom et une description pour le point d’entrée.
    * Pour ajouter un point d’entrée Remoting, cliquez sur Ajouter un point d’entrée Remoting. Pour plus de précisions sur les paramètres de points d’entrée Remoting, voir [Paramètres des points d’entrée Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Pour ajouter un point d’entrée REST, cliquez sur Ajouter un point d’entrée REST et indiquez un nom et une description pour le point d’entrée. Notez l’URL d’appel REST affichée sur la page Ajouter un point d’entrée REST.
@@ -58,7 +72,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
    * **Demander aux personnes appelantes de s’authentifier :** ce paramètre indique si le service peut être appelé avec ou sans informations d’identification.
 
-     Si le message *Les appelants sont actuellement tenus de s’authentifier* s’affiche, l’appelant du service doit être authentifié et le principal de cet appelant doit être autorisé à appeler le service ; si ce n’est pas le cas, la tentative d’appel est refusée. Pour supprimer l’obligation d’authentification, cliquez sur Autoriser des personnes appelantes non authentifiées.
+     Si le message *Les appelants sont actuellement tenus de s’authentifier* s’affiche, l’appelant du service doit être authentifié et le principal de cet appelant doit être autorisé à appeler le service ; si ce n’est pas le cas, la tentative d’appel est refusée. Pour supprimer l’obligation d’authentification, cliquez sur Autoriser les appelants non authentifiés.
 
      Si le message *Les personnes appelantes ne sont pas tenues de s’authentifier* s’affiche, la personne appelante du service n’a pas besoin d’être authentifiée. L’appel du service réussit toujours puisqu’aucune vérification des autorisations n’est effectuée. Pour exiger une authentification, cliquez sur Demander aux personnes appelantes de s’authentifier.
 
@@ -72,7 +86,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
      **Utilisateur nommé :** vous permet d’exécuter le service en tant qu’utilisateur spécifique. Il s’agit du paramètre par défaut pour les processus de courte durée. Lors de la sélection de cette option, cliquez sur Sélectionner un utilisateur pour afficher la page Sélectionner une entité de sécurité, qui vous permet de rechercher et de sélectionner une personne.
 
-   * Pour ajouter un principal au profil de sécurité, cliquez sur Ajouter un principal et sélectionnez l’utilisateur ou l’utilisatrice, ou le groupe à ajouter comme principal. Cliquez sur Suivant , puis sélectionnez les autorisations à attribuer à ce principal :
+   * Pour ajouter un principal au profil de sécurité, cliquez sur Ajouter un principal et sélectionnez l’utilisateur ou l’utilisatrice, ou le groupe à ajouter comme principal. Cliquez sur Suivant, puis sélectionnez les autorisations à attribuer à ce principal :
 
      **INVOKE_PERM :** invocation de toutes les opérations sur le service.
 
@@ -110,10 +124,10 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 1. La page Configurer les points d’entrée s’affiche, dans laquelle vous pouvez apporter les modifications nécessaires :
 
    * Pour renommer un point d’entrée ou modifier sa description, cliquez dessus.
-   * Pour ajouter un point d’entrée TaskManager, cliquez sur Ajouter un point d’entrée TaskManager. Pour plus d’informations sur les paramètres de TaskManager, voir [Configuration des points d’entrée TaskManager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Pour ajouter un point d’entrée TaskManager, cliquez sur Ajouter TaskManager. Pour plus d’informations sur les paramètres de TaskManager, voir [Configuration des points d’entrée TaskManager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
    * Pour ajouter un point d’entrée WatchedFolder, cliquez sur Ajouter un point d’entrée WatchedFolder. Pour plus d’informations sur les paramètres de Watched Folder , voir [Paramètres des points d’entrée de Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * Pour ajouter un point d’entrée d’e-mail, cliquez sur Ajouter un point d’entrée d’e-mail. Pour plus d’informations sur les paramètres d’e-mail, voir [Paramètres des points d’entrée d’e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
-   * Pour ajouter un point d’entrée EJB, cliquez sur Ajouter un point d’entrée EJB et indiquez un nom et une description pour le point d’entrée.
+   * Pour ajouter un point d’entrée EJB, cliquez sur Ajouter EJB et indiquez un nom et une description pour le point d’entrée.
    * Pour ajouter un point d’entrée SOAP, cliquez sur Ajouter un point d’entrée SOAP et indiquez un nom et une description pour le point d’entrée.
    * Pour ajouter un point d’entrée Remoting, cliquez sur Ajouter un point d’entrée Remoting. Pour plus de précisions sur les paramètres de points d’entrée Remoting, voir [Paramètres des points d’entrée Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Pour ajouter un point d’entrée REST, cliquez sur Ajouter un point d’entrée REST et indiquez un nom et une description pour le point d’entrée. Notez l’URL d’appel REST affichée sur la page Ajouter un point d’entrée REST.
@@ -139,7 +153,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
      **Utilisateur nommé :** vous permet d’exécuter le service en tant qu’utilisateur spécifique. Il s’agit du paramètre par défaut pour les processus de courte durée. Lors de la sélection de cette option, cliquez sur Sélectionner un utilisateur pour afficher la page Sélectionner une entité de sécurité, qui vous permet de rechercher et de sélectionner une personne.
 
-   * Pour ajouter un principal au profil de sécurité, cliquez sur Ajouter un principal et sélectionnez l’utilisateur ou l’utilisatrice, ou le groupe à ajouter comme principal. Cliquez sur Suivant , puis sélectionnez les autorisations à attribuer à ce principal :
+   * Pour ajouter un principal au profil de sécurité, cliquez sur Ajouter un principal et sélectionnez l’utilisateur ou l’utilisatrice, ou le groupe à ajouter comme principal. Cliquez sur Suivant, puis sélectionnez les autorisations à attribuer à ce principal :
 
      **INVOKE_PERM :** invocation de toutes les opérations sur le service.
 
@@ -165,7 +179,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
 >[!NOTE]
 >
->Pour supprimer une archive contenant des ressources stockées dans un référentiel tiers (EMC Documentum Content Server, IBM FileNet Content Manager ou IBM Content Manager), vous devez également supprimer les fichiers de ressources du référentiel à l’aide de Workbench.
+>Pour supprimer une archive contenant des ressources stockées dans un référentiel tiers (EMC Documentum Content Server, IBM FileNet Content Manager ou IBM Content Manager), vous devez également supprimer les fichiers de ressources du référentiel à l’aide de l’atelier.
 
 1. Dans la console d’administration, cliquez sur Services > Applications et services > Gestion des archives.
 1. Sur la page Gestion des archives, cochez la case correspondant à l’archive à supprimer, puis cliquez sur Supprimer.

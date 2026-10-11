@@ -10,13 +10,26 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: ed9b9f3835af2dc40ed4c5d3f9e3209dfc6bed90
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3030'
 ht-degree: 95%
-
 ---
-
 # Modification du contenu de la page{#editing-page-content}
 
 Une fois la page créée (une nouvelle page ou dans le cadre d’un lancement ou d’une Live Copy), vous pouvez modifier le contenu pour effectuer toute mise à jour dont vous avez besoin.
@@ -269,9 +282,9 @@ Les actions disponibles sont affichées comme il convient ; ces actions ne peuv
 
   Le composant est collé du presse-papiers dans la page. L’original est conservé ou non, selon la fonction que vous avez utilisée (Couper ou Coller).
 
-   * Vous pouvez coller les composants sur la même page ou sur une autre.
-   * L’élément collé est collé au-dessus de l’élément pour lequel vous avez sélectionné l’action de collage.
-   * L’action de collage ne s’affiche que si du contenu se trouve dans le presse-papiers.
+  * Vous pouvez coller les composants sur la même page ou sur une autre.
+  * L’élément collé est collé au-dessus de l’élément pour lequel vous avez sélectionné l’action de collage.
+  * L’action de collage ne s’affiche que si du contenu se trouve dans le presse-papiers.
 
   ![Coller](assets/screen_shot_2018-03-22at113553.png)
 
@@ -514,15 +527,15 @@ Une page peut être verrouillée à partir de :
 
 * La console **Sites**
 
-   1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-   1. Sélectionnez l’icône de verrou.
+  1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+  1. Sélectionnez l’icône de verrou.
 
   ![Icône de cadenas](assets/screen_shot_2018-03-22at134928.png)
 
 * **Éditeur de page**
 
-   1. Pour ouvrir le menu, sélectionnez l’icône **Informations sur la page**.
-   1. Sélectionnez l’option **Verrouiller la page**.
+  1. Pour ouvrir le menu, sélectionnez l’icône **Informations sur la page**.
+  1. Sélectionnez l’option **Verrouiller la page**.
 
 Une fois verrouillé, les informations d’affichage de la console sont mises à jour et, lors de la modification, un symbole de verrouillage s’affiche dans la barre d’outils.
 

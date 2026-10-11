@@ -1,24 +1,40 @@
 ---
-title: Comment connecter et envoyer des données de formulaire adaptatif à Microsoft&reg; Power Automate ?
-description: Guide détaillé pour la connexion et l’envoi de données de formulaire adaptatif à Microsoft&reg; Power Automate.
+title: Comment connecter et envoyer des données de formulaire adaptatif à Microsoft&reg ; Power Automate ?
+description: Un guide détaillé pour connecter et envoyer des données de formulaire adaptatif à Microsoft&reg ; Power Automate.
 keywords: Formulaires adaptatifs Microsoft Power Automate, envoi de données et de formulaires adaptatifs à Microsoft Power Automate
 feature: Adaptive Forms,Foundation Components
 exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 73a5a49cdbdae320c2f33a0516c74e1c7c72c644
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 92%
-
+source-wordcount: '1375'
+ht-degree: 86%
 ---
-
 # Connecter et envoyer des données de formulaire adaptatif à Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | Cet article |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/forms-microsoft-power-automate-integration) |
 
 Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Power Automate lors de l’envoi. Le formulaire adaptatif configuré envoie les données capturées, les pièces jointes et le document d’enregistrement au flux Cloud Power Automate pour traitement. Il vous permet de créer une expérience de capture de données personnalisée tout en tirant parti de la puissance de Microsoft® Power Automate pour élaborer des logiques commerciales autour des données capturées et automatiser les workflows client. Voici quelques exemples de ce que vous pouvez faire après l’intégration d’un formulaire adaptatif à Microsoft® Power Automate :
 
@@ -43,10 +59,10 @@ Les éléments suivants sont requis pour connecter un formulaire adaptatif à Mi
 
 Effectuez les actions suivantes pour connecter votre instance de création AEM Forms à Microsoft® Power Automate :
 
-1. [Créer une Microsoft](#ms-power-automate-application)
-1. [Créer Microsoft](#microsoft-power-automate-dataverse-cloud-configuration)
-1. [Créer Microsoft](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [Publier Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Création d’une application ® Azure Active Directory](#ms-power-automate-application)
+1. [Créez une configuration cloud de Dataverse de Microsoft® Power Automate.](#microsoft-power-automate-dataverse-cloud-configuration)
+1. [Créer la configuration cloud du service de flux de Microsoft® Power Automate](#create-microsoft-power-automate-flow-cloud-configuration)
+1. [Publication des configurations cloud du Dataverse de ® Power Automate et du service de flux de Microsoft® Power Automate](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### Créer une application Microsoft® Azure Active Directory {#ms-power-automate-application}
 
@@ -206,4 +222,4 @@ Après la [connexion de votre instance de création AEM Forms à Microsoft® Po
 
 * [Créer un formulaire adaptatif](create-an-adaptive-form-core-components.md)
 * [Configurer une action d’envoi](configuring-submit-actions.md)
-* [Connecteur Adobe Experience Manager pour Microsoft® Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
+* [Connecteur Adobe Experience Manager pour Microsoft® Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)

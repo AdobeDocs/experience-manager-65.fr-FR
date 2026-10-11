@@ -10,13 +10,33 @@ exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 100%
-
 ---
-
 # Introduction à la personnalisation de l’espace de travail AEM Forms{#introduction-to-customizing-aem-form-workspace}
 
 L’espace de travail AEM Forms offre des fonctionnalités permettant de modifier la sémantique de la présentation et la fonctionnalité de son interface. Les types de personnalisations pour modifier le style, la mise en page, le formatage, la marque et les principales fonctionnalités sont décrits ci-dessous.
@@ -189,47 +209,47 @@ Il est principalement destiné aux personnalisations, car il permet de générer
 
 * client-pkg :
 
-   * src : contient les artefacts nécessaires pour créer des nœuds CRX.
-   * pom.xml : script pour créer des packages de déploiement pour divers profils WS-Deploy Package.
+  * src : contient les artefacts nécessaires pour créer des nœuds CRX.
+  * pom.xml : script pour créer des packages de déploiement pour divers profils WS-Deploy Package.
 
 * client-html :
 
-   * assembly - contient le fichier zip.xml utilisé par le script pour créer le SDK de l’espace de travail AEM Forms.
-   * src/main/webapp :
+  * assembly - contient le fichier zip.xml utilisé par le script pour créer le SDK de l’espace de travail AEM Forms.
+  * src/main/webapp :
 
-      * css : contient des feuilles de style pour l’espace de travail AEM Forms.
-      * images : contient les images utilisées dans l’espace de travail AEM Forms.
-      * js:
+    * css : contient des feuilles de style pour l’espace de travail AEM Forms.
+    * images : contient les images utilisées dans l’espace de travail AEM Forms.
+    * js:
 
-         * libs : contient toutes les bibliothèques tierces utilisées dans l’espace de travail AEM Forms.
-         * licences : contient des licences pour les fichiers HTML et JS, ainsi que du code pour préfixer ces licences en fonction des fichiers sources respectifs.
-         * minifier - utilisé pour la combinaison, la minification et la laidification du code JavaScript personnalisé.
-         * resourcejs_optimizer - utilisé pour la combinaison, la minification de code source javascript et l’utilisation de Uglifier.
-         * resource_generator - utilisé pour générer register.js et modelcontrollerpath.js.
-         * runtime:
+      * libs : contient toutes les bibliothèques tierces utilisées dans l’espace de travail AEM Forms.
+      * licences : contient des licences pour les fichiers HTML et JS, ainsi que du code pour préfixer ces licences en fonction des fichiers sources respectifs.
+      * minifier - utilisé pour la combinaison, la minification et la laidification du code JavaScript personnalisé.
+      * resourcejs_optimizer - utilisé pour la combinaison, la minification de code source javascript et l’utilisation de Uglifier.
+      * resource_generator - utilisé pour générer register.js et modelcontrollerpath.js.
+      * runtime:
 
-            * initializer : contient le fichier initializer.js, qui sert à initialiser les vues Backbone et les modèles utilisés dans l’espace de travail AEM Forms.
-            * models : contient les modèles Backbone de tous les composants de l’espace de travail AEM Forms.
-            * routes - contient les fichiers JavaScript et HTML qui chargent les composants Démarrer le processus, Tâches, Suivi et Préférences dans l’espace de travail AEM Forms.
-            * services : contient le fichier service.js utilisé dans l’espace de travail AEM Forms. Tous les appels au serveur sont effectués via le fichier service.js.
-            * templates : contient tous les modèles, c’est-à-dire les fichiers HTML de toutes les vues dans l’espace de travail AEM Forms.
-            * util : contient tous les fichiers d’utilitaire (JavaScript) utilisés dans l’espace de travail AEM Forms.
-            * views : contient les vues Backbone de tous les composants de l’espace de travail AEM Forms.
+        * initializer : contient le fichier initializer.js, qui sert à initialiser les vues Backbone et les modèles utilisés dans l’espace de travail AEM Forms.
+        * models : contient les modèles Backbone de tous les composants de l’espace de travail AEM Forms.
+        * routes - contient les fichiers JavaScript et HTML qui chargent les composants Démarrer le processus, Tâches, Suivi et Préférences dans l’espace de travail AEM Forms.
+        * services : contient le fichier service.js utilisé dans l’espace de travail AEM Forms. Tous les appels au serveur sont effectués via le fichier service.js.
+        * templates : contient tous les modèles, c’est-à-dire les fichiers HTML de toutes les vues dans l’espace de travail AEM Forms.
+        * util : contient tous les fichiers d’utilitaire (JavaScript) utilisés dans l’espace de travail AEM Forms.
+        * views : contient les vues Backbone de tous les composants de l’espace de travail AEM Forms.
 
-         * main.js
-         * router.js
+      * main.js
+      * router.js
 
-      * libs/ws: pdf.html et pluginPing.pdf sont utilisés pour le chargement des formulaires PDF dans l’espace de travail AEM Forms et WSNextAdapter.swf est utilisé pour charger des formulaires SWF et des guides dans l’espace de travail AEM Forms.
-      * paramètres régionaux :
+    * libs/ws: pdf.html et pluginPing.pdf sont utilisés pour le chargement des formulaires PDF dans l’espace de travail AEM Forms et WSNextAdapter.swf est utilisé pour charger des formulaires SWF et des guides dans l’espace de travail AEM Forms.
+    * paramètres régionaux :
 
-         * de-DE : contient le fichier translation.json pour l’allemand.
-         * en-US : contient le fichier translation.json pour l’anglais.
-         * fr-FR : contient le fichier translation.json pour le français.
-         * ja-JP : contient le fichier translation.json pour le japonais.
-         * html.jsp : contient le code permettant de connaître les paramètres régionaux actuels du navigateur.
+      * de-DE : contient le fichier translation.json pour l’allemand.
+      * en-US : contient le fichier translation.json pour l’anglais.
+      * fr-FR : contient le fichier translation.json pour le français.
+      * ja-JP : contient le fichier translation.json pour le japonais.
+      * html.jsp : contient le code permettant de connaître les paramètres régionaux actuels du navigateur.
 
-      * html.jsp
-      * GET.jsp
+    * html.jsp
+    * GET.jsp
 
 ### Package CRX {#crx-package}
 
@@ -256,30 +276,30 @@ Ce package peut être créé à l’aide des trois profils décrits ci-dessous.
 * images : contient toutes les images.
 * js:
 
-   * libs:
+  * libs:
 
-      * require : contient le fichier require.js.
-      * jqueryui : contient le fichier jquery.ui.datepicker.ja.js.
+    * require : contient le fichier require.js.
+    * jqueryui : contient le fichier jquery.ui.datepicker.ja.js.
 
-   * runtime:
+  * runtime:
 
-      * templates : contient tous les modèles, c’est-à-dire les fichiers HTML de tous les composants de l’espace de travail AEM Forms.
+    * templates : contient tous les modèles, c’est-à-dire les fichiers HTML de tous les composants de l’espace de travail AEM Forms.
 
-   * main.js (combiné, minimisé et unifié).
-   * registry.js
+  * main.js (combiné, minimisé et unifié).
+  * registry.js
 
 * libs:
 
-   * ws  contient les fichiers pluginPing.pdf, pdf.html et WSNextAdapter.swf.
+  * ws  contient les fichiers pluginPing.pdf, pdf.html et WSNextAdapter.swf.
 
 * Paramètres régionaux : contient le fichier .content.xml.
 * paramètres régionaux :
 
-   * de-DE : contient le fichier translation.json pour l’allemand.
-   * en-US : contient le fichier translation.json pour l’anglais.
-   * fr-FR : contient le fichier translation.json pour le français.
-   * ja-JP : contient le fichier translation.json pour le japonais.
-   * html.jsp : contient le code permettant de connaître les paramètres régionaux actuels du navigateur.
+  * de-DE : contient le fichier translation.json pour l’allemand.
+  * en-US : contient le fichier translation.json pour l’anglais.
+  * fr-FR : contient le fichier translation.json pour le français.
+  * ja-JP : contient le fichier translation.json pour le japonais.
+  * html.jsp : contient le code permettant de connaître les paramètres régionaux actuels du navigateur.
 
 * Index : contient le fichier .content.xml.
 * profile : contient le fichier offline.jsp.
@@ -301,30 +321,30 @@ Ce package peut être créé à l’aide des trois profils décrits ci-dessous.
 * images : contient toutes les images.
 * js:
 
-   * libs:
+  * libs:
 
-      * require : contient le fichier require.js.
-      * jqueryui : contient le fichier jquery.ui.datepicker.ja.js.
+    * require : contient le fichier require.js.
+    * jqueryui : contient le fichier jquery.ui.datepicker.ja.js.
 
-   * runtime:
+  * runtime:
 
-      * templates : contient tous les modèles, c’est-à-dire les fichiers HTML de tous les composants de l’espace de travail AEM Forms.
+    * templates : contient tous les modèles, c’est-à-dire les fichiers HTML de tous les composants de l’espace de travail AEM Forms.
 
-   * main.js (combiné).
-   * registry.js
+  * main.js (combiné).
+  * registry.js
 
 * libs:
 
-   * ws  contient les fichiers pluginPing.pdf, pdf.html et WSNextAdapter.swf.
+  * ws  contient les fichiers pluginPing.pdf, pdf.html et WSNextAdapter.swf.
 
 * Paramètres régionaux : contient le fichier .content.xml.
 * paramètres régionaux :
 
-   * de-DE : contient le fichier translation.json pour l’allemand.
-   * en-US : contient le fichier translation.json pour l’anglais.
-   * fr-FR : contient le fichier translation.json pour le français.
-   * ja-JP : contient le fichier translation.json pour le japonais.
-   * html.jsp : contient le code permettant de connaître les paramètres régionaux actuels du navigateur.
+  * de-DE : contient le fichier translation.json pour l’allemand.
+  * en-US : contient le fichier translation.json pour l’anglais.
+  * fr-FR : contient le fichier translation.json pour le français.
+  * ja-JP : contient le fichier translation.json pour le japonais.
+  * html.jsp : contient le code permettant de connaître les paramètres régionaux actuels du navigateur.
 
 * Index : contient le fichier .content.xml.
 * profile : contient le fichier offline.jsp.
@@ -345,35 +365,35 @@ mvn clean -P Dev install on client-pkg
 * images : contient toutes les images.
 * js:
 
-   * libs : contient toutes les bibliothèques utilisées dans l’espace de travail AEM Forms.
-   * require : contient le fichier require.js.
-   * jqueryui : contient le fichier jquery.ui.datepicker.ja.js
-   * runtime:
+  * libs : contient toutes les bibliothèques utilisées dans l’espace de travail AEM Forms.
+  * require : contient le fichier require.js.
+  * jqueryui : contient le fichier jquery.ui.datepicker.ja.js
+  * runtime:
 
-      * initializer : contient les fichiers initializer.js et modelcontrollerpath.js.
-      * models : contient les modèles de tous les composants de l’espace de travail AEM Forms.
-      * routes - contient les fichiers JavaScript et HTML qui chargent les composants Démarrer le processus, Tâches, Suivi et Préférences dans l’espace de travail AEM Forms.
-      * services : contient le fichier service.js utilisé dans l’espace de travail AEM Forms.
-      * templates : contient tous les modèles, c’est-à-dire les fichiers HTML de tous les composants de l’espace de travail AEM Forms.
-      * util : contient tous les fichiers d’utilitaire (JavaScript) utilisés dans l’espace de travail AEM Forms.
-      * views : contient des vues de tous les composants de l’espace de travail AEM Forms.
+    * initializer : contient les fichiers initializer.js et modelcontrollerpath.js.
+    * models : contient les modèles de tous les composants de l’espace de travail AEM Forms.
+    * routes - contient les fichiers JavaScript et HTML qui chargent les composants Démarrer le processus, Tâches, Suivi et Préférences dans l’espace de travail AEM Forms.
+    * services : contient le fichier service.js utilisé dans l’espace de travail AEM Forms.
+    * templates : contient tous les modèles, c’est-à-dire les fichiers HTML de tous les composants de l’espace de travail AEM Forms.
+    * util : contient tous les fichiers d’utilitaire (JavaScript) utilisés dans l’espace de travail AEM Forms.
+    * views : contient des vues de tous les composants de l’espace de travail AEM Forms.
 
-   * main.js
-   * registry.js
-   * router.js
+  * main.js
+  * registry.js
+  * router.js
 
 * libs:
 
-   * ws  contient les fichiers pluginPing.pdf, pdf.html et WSNextAdapter.swf.
+  * ws  contient les fichiers pluginPing.pdf, pdf.html et WSNextAdapter.swf.
 
 * Paramètres régionaux : contient le fichier .content.xml.
 * paramètres régionaux :
 
-   * de-DE : contient le fichier translation.json pour l’allemand.
-   * en-US : contient le fichier translation.json pour l’anglais.
-   * fr-FR : contient le fichier translation.json pour le français.
-   * ja-JP : contient le fichier translation.json pour le japonais.
-   * html.jsp : contient le code permettant de connaître les paramètres régionaux actuels du navigateur.
+  * de-DE : contient le fichier translation.json pour l’allemand.
+  * en-US : contient le fichier translation.json pour l’anglais.
+  * fr-FR : contient le fichier translation.json pour le français.
+  * ja-JP : contient le fichier translation.json pour le japonais.
+  * html.jsp : contient le code permettant de connaître les paramètres régionaux actuels du navigateur.
 
 * Index : contient le fichier .content.xml.
 * profile : contient le fichier offline.jsp.

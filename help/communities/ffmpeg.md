@@ -1,5 +1,5 @@
 ---
-title: FFmpeg pour les communautés
+title: FFmpeg pour Communities
 description: Installation et configuration de FFmpeg pour Communities
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -9,55 +9,62 @@ role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '274'
 ht-degree: 1%
-
 ---
-
-# FFmpeg pour les communautés {#ffmpeg-for-communities}
+# FFmpeg pour Communities {#ffmpeg-for-communities}
 
 ## Vue d’ensemble {#overview}
 
-FFmpeg est une solution pour la conversion et la diffusion en continu d’audio et de vidéo. Lorsqu’elle est installée, elle est utilisée pour le transcodage correct des [ressources vidéo](../../help/sites-authoring/default-components-foundation.md#video).
+FFmpeg est une solution de conversion et de diffusion audio et vidéo en continu qui, une fois installée, est utilisée pour le transcodage correct des ressources [vidéo](../../help/sites-authoring/default-components-foundation.md#video).
 
-## Installation de FFmpeg {#installing-ffmpeg}
+## Installation De FFmpeg {#installing-ffmpeg}
 
-FFmpeg doit être installé sur le ou les serveurs hébergeant les instances AEM *author*.
+FFmpeg doit être installé sur le ou les serveurs hébergeant la ou les instances AEM *author*.
 
-1. Accédez à [https://www.ffmpeg.org](https://www.ffmpeg.org/).
-1. Téléchargez la dernière version de FFmpeg pour votre environnement spécifique (Mac, Windows ou Linux).
+1. Accédez à [](https://www.ffmpeg.org/).
+1. Téléchargez la dernière version de FFmpeg pour votre environnement spécifique (Macintosh, Windows ou Linux).
 
-   * Il est important de maintenir FFmpeg à jour en raison de vulnérabilités de sécurité dans les anciennes versions.
+   * Il est important de garder FFmpeg à jour en raison des vulnérabilités de sécurité dans les versions plus anciennes.
 
 1. Installez FFmpeg en suivant les instructions pour le système d’exploitation.
 
-1. Assurez-vous que le fichier exécutable FFmpeg est défini dans le chemin d’accès de votre système.
+1. Assurez-vous que le fichier exécutable FFmpeg est défini dans le chemin d’accès système.
 
-   Vous devriez être en mesure d’exécuter FFmpeg à partir de n’importe quel répertoire de votre système.
+   Vous devriez être en mesure d&#39;exécuter FFmpeg à partir de n&#39;importe quel répertoire de votre système.
 
    * Par exemple, `ffmpeg -version`.
 
-## Configuration du service de transcodage FFmpeg {#configure-ffmpeg-transcoding-service}
+## Configuration Du Service De Transcodage FFmpeg {#configure-ffmpeg-transcoding-service}
 
-Par défaut, lorsque FFmpeg est installé, plusieurs rendus sont configurés (transcodages) conformément à la définition de workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques].
+Par défaut, lorsque FFmpeg est installé, plusieurs rendus sont configurés (transcodages) conformément à la définition de workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques].
 
-Comme les transcodages consomment beaucoup d’unité centrale, il est recommandé de modifier la liste des rendus cibles. Dans la plupart des cas, le transcodage n’est pas nécessaire.
+Comme les transcodages utilisent beaucoup CPU, il est recommandé de modifier la liste des rendus cibles. Dans la plupart des cas, le transcodage n’est pas nécessaire.
 
-Pour modifier le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] et, dans cet exemple, désactiver le transcodage :
+Pour modifier le workflow [!UICONTROL  Ressource de mise à jour de gestion des ressources numériques ] et, dans cet exemple, pour désactiver le transcodage :
 
-* Connectez-vous à l’instance d’auteur avec les droits d’administrateur.
+* Connectez-vous à l’instance d’auteur avec les privilèges d’administration.
 * Dans la navigation globale, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
-* Localisez **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques]**.
+* Recherchez **[!UICONTROL Ressource de mise à jour de la gestion des ressources numériques]**.
 * Double-cliquez pour ouvrir le workflow à modifier dans l’interface utilisateur classique.
 
-  Emplacement obtenu : [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
+  Emplacement résultant : [](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
 * Double-cliquez sur l’étape **[!UICONTROL Transcodage FFmpeg]** pour accéder à la boîte de dialogue Propriétés de l’étape.
 * Sous l’onglet **[!UICONTROL Processus]** :
 
-   * **[!UICONTROL Arugments]** : effacez toutes les entrées pour désactiver le transcodage Valeurs par défaut : `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
+  * **[!UICONTROL Arguments]** : effacer toutes les entrées pour désactiver le transcodage Valeurs par défaut : `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
   ![configure-ffmpeg](assets/configure-ffmpeg.png)
 

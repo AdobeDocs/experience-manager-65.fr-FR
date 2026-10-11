@@ -10,22 +10,31 @@ exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 100%
-
+source-wordcount: '514'
+ht-degree: 80%
 ---
-
 # Configurer des composants en mode de conception{#configuring-components-in-design-mode}
 
 Lorsque l’instance d’AEM est installée telle quelle, plusieurs composants sont immédiatement disponibles dans le sidekick.
 
-D’autres composants sont également disponibles. Vous pouvez utiliser le mode de conception pour [activer/désactiver ces composants](#enabledisablecomponentsusingdesignmode). Une fois ces composants activés et situés sur votre page, utilisez le mode de conception pour [configurer différents aspects de la conception](#configuringcomponentsusingdesignmode) en modifiant les paramètres d’attribut.
+En outre, divers autres composants sont également disponibles. Vous pouvez utiliser le mode de conception pour [activer/désactiver ces composants](#enabledisablecomponentsusingdesignmode). Une fois activé et situé sur votre page, vous pouvez utiliser le mode de conception pour [configurer différents aspects de la conception du composant](#configuringcomponentsusingdesignmode) en modifiant les paramètres d’attribut.
 
 >[!NOTE]
 >
->Faites preuve de prudence lors de la modification de ces composants. Les paramètres de conception font souvent partie intégrante de la conception de l’ensemble du site web. Ils ne doivent donc être modifiés que par une personne disposant de l’expérience et des privilèges appropriés, souvent un administrateur ou une administratrice, ou encore un développeur ou une développeuse. Pour plus d’informations, consultez [Développement de composants](/help/sites-developing/components.md).
+>La modification de ces composants doit être effectuée avec soin. Les paramètres de conception font souvent partie intégrante de la conception de l’ensemble du site web. Ils ne doivent donc être modifiés que par une personne disposant des privilèges (et de l’expérience) appropriés, souvent un administrateur ou une administratrice ou un développeur ou une développeuse. Pour plus d’informations, consultez [Développement de composants](/help/sites-developing/components.md).
 
 Pour ce faire, vous devrez en réalité ajouter ou supprimer les composants autorisés dans le système de paragraphes de la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Le système de paragraphes permet aux auteurs ou autrices d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphe. Chaque type de paragraphe est représenté en tant que composant.
 

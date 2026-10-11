@@ -9,13 +9,17 @@ exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '424'
 ht-degree: 1%
-
 ---
-
 # Démarrage d’AEM PhoneGap {#starting-aem-phonegap}
 
 {{ue-over-mobile}}
@@ -30,7 +34,7 @@ Les développeurs peuvent utiliser cet exemple comme point de départ pour teste
 
 * Utilisez le [Kit de démarrage AEM PhoneGap](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) pour créer des applications adaptées au catalogue AEM Mobile.
 * Une [application de référence](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) avec source complète a été créée, qui illustre de nombreuses nouvelles fonctionnalités d’AEM Mobile, que vous migriez une application existante vers AEM Mobile ou que vous démarriez à partir de zéro.
-* Tous les exemples se trouvent sur github : [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps) et incluent le bootstrapping de votre projet avec Maven.
+* Tous les exemples se trouvent sur github : [](https://github.com/Adobe-Marketing-Cloud-Apps) et incluent le bootstrapping de votre projet avec Maven.
 * La plupart des conférences utilisent le tutoriel [Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink), que vous pouvez également trouver dans GitHub et qui se concentre sur l’utilisation de l’extensibilité native d’Apache Cordova.
 
 >[!NOTE]
@@ -39,7 +43,7 @@ Les développeurs peuvent utiliser cet exemple comme point de départ pour teste
 
 ## Modèles et composants {#templates-and-components}
 
-AEM *modèles* et *composants* permettent aux propriétaires de secteurs d’activité de créer des expériences personnalisées. Les *modèles* et les *composants* sont disponibles prêts à l’emploi ou peuvent être personnalisés et développés par vous, le développeur, soit en étendant les composants existants, soit en créant un nouveau champ (avancé). Les *modèles* et *composants* permettent au créateur ou à la créatrice AEM de glisser-déposer pour créer des expériences attrayantes et pertinentes.
+AEM *modèles* et *composants* permettent aux propriétaires de secteurs d’activité de créer des expériences personnalisées. Les *modèles* et les *composants* sont disponibles prêts à l’emploi ou peuvent être personnalisés et développés par vous, le développeur, soit en étendant les composants existants, soit en créant un nouveau champ (avancé). Les *modèles* et *composants* permettent au créateur ou à la créatrice d’AEM de faire glisser et de déposer des éléments afin de créer des expériences attrayantes et pertinentes.
 
 1. [Création de composants](/help/sites-developing/components.md)
 1. [Création de modèles](/help/sites-developing/templates.md)

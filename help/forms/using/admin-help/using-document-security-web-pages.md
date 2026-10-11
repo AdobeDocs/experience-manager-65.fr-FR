@@ -1,19 +1,28 @@
 ---
 title: Utilisation des pages Web de la sécurité des documents
-
 description: Découvrez comment vous connecter et parcourir et utiliser les pages web de Document Security.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 100%
@@ -24,13 +33,13 @@ ht-degree: 100%
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-Les utilisateurs et utilisatrices et les équipes d’administration utilisent les pages web de Document Security pour créer et gérer des politiques, gérer des documents protégés par une politique et  les événements associés aux documents protégés par une politique. Les équipes d’administration utilisent également les pages web pour créer des jeux de politiques et désigner des coordinateurs et coordinatrices de jeux de politiques, configurer les paramètres par défaut de Document Security, gérer l’enregistrement et les comptes des utilisateurs et utilisatrices invités, ainsi que surveiller et gérer les événements liés au serveur, à la politique, à l’utilisateur ou l’utilisatrice et aux documents.
+Les utilisateurs et utilisatrices et les équipes d’administration utilisent les pages web de Document Security pour créer et gérer des politiques, gérer des documents protégés par une politique et surveiller les événements associés aux documents protégés par une politique. Les équipes d’administration utilisent également les pages web pour créer des ensembles de politiques et désigner des coordinateurs et coordinatrices d’ensembles de politiques, configurer les paramètres par défaut de Document Security, gérer l’enregistrement et les comptes des utilisateurs et utilisatrices invités, ainsi que surveiller et gérer les événements liés au serveur, à la politique, à l’utilisateur ou l’utilisatrice et aux documents.
 
 >[!NOTE]
 >
 >Vous pouvez également vous connecter à Document Security par le biais d’Acrobat et d’autres applications clientes à l’aide de votre compte de connexion d’utilisateur ou d’utilisatrice. (Voir [Configurer l’accès à Document Security à partir d’applications clientes](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
 
-Pour ouvrir les pages web, vous avez besoin d’un navigateur, de l’URL et des informations de connexion à Document Security. L’URL des utilisateurs et utilisatrices diffère de celle de l’équipe d’administration.
+Pour ouvrir les pages web, vous avez besoin d’un navigateur, de l’URL et des informations de connexion à Document Security. L’URL des utilisateurs et utilisatrices diffère de celle des administrateurs et administratrices.
 
 Document Security faisant référence aux répertoires existants de votre organisation pour obtenir des informations sur l’utilisateur ou l’utilisatrice, les informations de connexion à Document Security peuvent être les mêmes que celles que vous utilisez pour vous connecter au réseau et à d’autres applications. Pour obtenir des informations sur votre compte, contactez votre équipe d’administration système ou votre administrateur ou administratrice.
 
@@ -38,13 +47,13 @@ Pour vous connecter en tant qu’administrateur ou administratrice, vous devez d
 
 ## Se connecter aux pages web {#log-in-to-the-web-pages}
 
-Pour vous connecter aux pages web à l’aide d’un navigateur, vous avez besoin de l’URL et d’un compte Document Security. L’URL des utilisateurs et utilisatrices diffère de celle de l’équipe d’administration. Les administrateurs et administratrices peuvent également se connecter aux pages utilisateur pour créer des politiques.
+Pour vous connecter aux pages web à l’aide d’un navigateur, vous avez besoin de l’URL de Document Security et d’un compte. L’URL des utilisateurs et utilisatrices diffère de celle des administrateurs et administratrices. Les administrateurs et administratrices peuvent également se connecter aux pages utilisateur pour créer des politiques.
 
-Si vous avez accès à plusieurs installations de Document Security, vous avez besoin de l’URL de l’instance de Document Security à laquelle vous souhaitez accéder. Contactez votre administrateur ou administratrice si vous ne disposez pas de ces informations. L’URL par défaut pour les pages utilisateur est `https://[host]:[port]/edc`. Le numéro de port peut ne pas être requis dans certains cas. Pour plus d’informations, contactez votre administrateur ou administratrice.
+Si vous avez accès à plusieurs installations de la sécurité des documents, vous avez besoin de l’URL de l’instance de sécurité des documents à laquelle vous souhaitez accéder. Contactez votre administrateur ou administratrice si vous ne disposez pas de ces informations. L’URL par défaut pour les pages utilisateur est `https://[host]:[port]/edc`. Le numéro de port peut ne pas être requis dans certains cas. Pour plus d’informations, contactez votre administrateur ou administratrice.
 
 L’URL par défaut pour les administrateurs est `https://[host]:[port]/adminui`.
 
-Pour les équipes d’administration, un compte de super-administrateur ou super-administratrice par défaut est créé lors de l’installation. Vous pouvez utiliser ce compte pour vous connecter lors de la première installation de Document Security.
+Pour les administrateurs et administratrices, un compte de super-administrateur ou super-administratrice par défaut est créé lors de l’installation. Vous pouvez utiliser ce compte pour vous connecter lors de la première installation de Document Security.
 
 >[!NOTE]
 >
@@ -67,7 +76,7 @@ Pour les équipes d’administration, un compte de super-administrateur ou super
 
 Lorsque vous vous connectez aux pages web d’utilisateur ou d’utilisatrice, vous voyez des liens vers les pages utilisateur Politiques, Documents et Événements.
 
-Lorsque vous vous connectez à la console d’administration et accédez à la page principale de Document Security, vous pouvez également voir un ou deux liens supplémentaires, l’un pour la page Configuration et l’autre pour la page Utilisateurs et utilisatrices invités et locaux. La page Utilisateurs et utilisatrices invités et locaux s’affiche uniquement si l’enregistrement de l’utilisateur ou l’utilisatrice invité est activé.
+Lorsque vous vous connectez à la console d’administration et accédez à la page principale de Document Security, vous pouvez également voir un ou deux liens supplémentaires, l’un pour la page Configuration et l’autre pour la page Utilisateurs et utilisatrices invités et locaux. La page Utilisateurs et utilisatrices invités et locaux s’affiche uniquement si l’inscription des utilisateurs et utilisatrices invités est activée.
 
 Utilisez ces liens pour accéder aux différentes pages dans lesquelles vous créez et gérez des politiques et des documents protégés par une politique.
 
@@ -87,11 +96,11 @@ Utilisez ces liens pour accéder aux différentes pages dans lesquelles vous cr�
 >
 >Lorsque vous utilisez des pages web, évitez de cliquer sur les boutons du navigateur, tels que le bouton Précédent, le bouton Actualiser, ainsi que les flèches permettant d’afficher la page précédente ou suivante, car cette action peut entraîner des problèmes de capture de données et d’affichage de données indésirables.
 
-## Configurer l’accès à Document Security à partir d’applications clientes {#setting-up-access-to-document-security-from-client-applications}
+## Configurer l’accès à la sécurité des documents à partir d’applications clientes {#setting-up-access-to-document-security-from-client-applications}
 
 Les applications clientes doivent être configurées pour se connecter à Document Security afin de protéger les documents, d’ouvrir des documents protégés par une politique et de se connecter aux pages web de Document Security. Voir l’*Aide d’Acrobat* ou l’*Aide de RightsManagementExtension* qui convient pour plus d’informations sur la configuration de la connexion dans l’application cliente.
 
-Document Security est accessible via SSL (Secure Sockets Layer). Installez le certificat du site Web dans votre banque de certificats afin que vous puissiez accéder à Document Security par le biais des applications clientes.
+Document Security est accessible via SSL (Secure Sockets Layer). Installez le certificat du site Web dans votre banque de certificats afin que vous puissiez accéder à la sécurité des documents par le biais des applications clientes.
 
 <!-- Fix broken link See Configuring SSL for information on SSL.-->
 
@@ -99,14 +108,14 @@ Ces instructions sont spécifiques à Internet Explorer, mais vous pouvez insta
 
 **Installation du certificat du serveur à l’aide d’Internet Explorer.**
 
-1. Ouvrez votre navigateur web et saisissez l’URL de base de Document Security dans la zone Adresse. Par exemple, saisissez `https://[host]:[port]`. Une boîte de dialogue Alertes de sécurité s’affiche.
+1. Ouvrez votre navigateur web et saisissez l’URL de base de la sécurité des documents dans la zone Adresse. Par exemple, saisissez `https://[host]:[port]`. Une boîte de dialogue Alerte de sécurité s’affiche.
 1. Cliquez sur Afficher le certificat, puis sur Installer le certificat et sélectionnez les paramètres par défaut de l’installation. Le certificat doit être installé dans les autorités de certification racine approuvées.
 1. Fermez la session du navigateur.
-1. Ouvrez une autre fenêtre de navigateur et saisissez la même URL dans la zone Adresse. Une boîte de dialogue Alertes de sécurité ne doit pas s’afficher. Ce test confirme que le certificat est correctement installé.
+1. Ouvrez une autre fenêtre du navigateur et saisissez la même URL dans la zone Adresse. Une boîte de dialogue Alerte de sécurité ne doit pas s’afficher. Ce test confirme que le certificat est correctement installé.
 
 ## Se déconnecter des pages web {#log-out-of-the-web-pages}
 
 Déconnectez-vous une fois que vous avez fini d’utiliser les pages web afin de pouvoir utiliser votre navigateur web en toute sécurité à d’autres fins. Selon la configuration de Document Security, vous devrez peut-être fermer votre navigateur pour vous déconnecter complètement.
 
 1. Dans le coin supérieur droit de la page, cliquez sur Déconnexion.
-1. Si un message s’affiche sur la page Déconnexion, fermez la fenêtre du navigateur pour fermer complètement la session. Sinon, vous pouvez continuer à utiliser le navigateur à d’autres fins.
+1. Si un message s’affiche sur la page Déconnexion, fermez la fenêtre du navigateur pour vous déconnecter complètement. Sinon, vous pouvez continuer à utiliser le navigateur à d’autres fins.

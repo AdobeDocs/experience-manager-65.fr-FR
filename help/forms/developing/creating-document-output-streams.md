@@ -8,9 +8,26 @@ topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '19156'
 ht-degree: 98%
@@ -241,7 +258,7 @@ Créez un document PDF à l’aide de l’API Output (Java) :
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas définir l’option de PDF linéarisé à l’aide de la méthode `setLinearizedPDF` de l’objet `RenderOptionsSpec` si le document PDF d’entrée est certifié ou signé numériquement. (Voir [Signature numérique de documents PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Vous ne pouvez pas définir l’option de PDF linéarisé à l’aide de la méthode `setLinearizedPDF` de l’objet `RenderOptionsSpec` si le document PDF d’entrée est certifié ou signé numériquement. (Voir [Signature numérique de documents PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Générez un document PDF.
 
@@ -258,7 +275,7 @@ Créez un document PDF à l’aide de l’API Output (Java) :
 
    >[!NOTE]
    >
-   >Lorsque vous générez un document PDF en appelant la méthode `generatePDFOutput`, vous ne pouvez pas fusionner des données avec un formulaire PDF XFA signé ou certifié. (Voir [Signature numérique et certification de documents &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Lorsque vous générez un document PDF en appelant la méthode `generatePDFOutput`, vous ne pouvez pas fusionner des données avec un formulaire PDF XFA signé ou certifié. (Voir [Signature numérique et certification de documents ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -266,7 +283,7 @@ Créez un document PDF à l’aide de l’API Output (Java) :
 
    >[!NOTE]
    >
-   >Vous pouvez également créer un document PDF en appelant la méthode `generatePDFOutput2` de l’objet `OutputClient`. (Voir [Transmission de documents situés dans Content Services (obsolète) vers le service Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >Vous pouvez également créer un document PDF en appelant la méthode `generatePDFOutput2` de l’objet `OutputClient`. (Voir [Transmission de documents situés dans Content Services (obsolète) vers le service Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Récupérer les résultats de l’opération.
 
@@ -337,7 +354,7 @@ Créez un document PDF à l’aide de l’API Output (service web) :
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas définir l’option PDF linéarisé à l’aide du membre `linearizedPDF` de l’objet `RenderOptionsSpec` si le document PDF d’entrée est certifié ou signé numériquement. (Voir [Signature numérique de documents PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Vous ne pouvez pas définir l’option PDF linéarisé à l’aide du membre `linearizedPDF` de l’objet `RenderOptionsSpec` si le document PDF d’entrée est certifié ou signé numériquement. (Voir [Signature numérique de documents PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Générez un document PDF.
 
@@ -355,11 +372,11 @@ Créez un document PDF à l’aide de l’API Output (service web) :
 
    >[!NOTE]
    >
-   >Lors de la génération d’un document PDF en appelant la méthode `generatePDFOutput`, vous ne pouvez pas fusionner des données avec un formulaire PDF XFA signé ou certifié. (Voir [Signature numérique et certification de documents &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Lors de la génération d’un document PDF en appelant la méthode `generatePDFOutput`, vous ne pouvez pas fusionner des données avec un formulaire PDF XFA signé ou certifié. (Voir [Signature numérique et certification de documents ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
-   >Vous pouvez également créer un document PDF en appelant la méthode `generatePDFOutput2` de l’objet `OutputClient`. (Voir [Transmission de documents situés dans Content Services (obsolète) vers le service Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >Vous pouvez également créer un document PDF en appelant la méthode `generatePDFOutput2` de l’objet `OutputClient`. (Voir [Transmission de documents situés dans Content Services (obsolète) vers le service Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Récupérer les résultats de l’opération.
 
@@ -659,7 +676,7 @@ Avant d’effectuer par programmation une opération d’API Output Service, cr�
 
 **Récupérer la conception de formulaire à partir de Content Services (obsolète)**
 
-Récupérez le fichier XDP à partir de Content Services (obsolète) à l’aide de l’API Java ou de service web. Le fichier XDP est renvoyé dans une instance `com.adobe.idp.Document` (ou une instance `BLOB` si vous utilisez des services Web). Vous pouvez ensuite transmettre l’instance `com.adobe.idp.Document` au service Output.
+Récupérez le fichier XDP à partir de Content Services (obsolète) à l’aide de l’API Java ou de l’API de service web. Le fichier XDP est renvoyé dans une instance `com.adobe.idp.Document` (ou une instance `BLOB` si vous utilisez des services Web). Vous pouvez ensuite transmettre l’instance `com.adobe.idp.Document` au service Output.
 
 **Rendu du formulaire PDF non interactif**
 

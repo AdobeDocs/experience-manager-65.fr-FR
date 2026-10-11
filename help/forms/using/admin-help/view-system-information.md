@@ -9,13 +9,27 @@ exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '546'
 ht-degree: 100%
-
 ---
-
 # Afficher les informations du système {#view-system-information}
 
 L’onglet Système affiche des graphiques de surveillance des ressources et des informations sur le serveur qui exécute AEM Forms. Pour accéder à ces informations, dans la console d’administration, cliquez sur Health Monitor en haut à droite de la page. Si vous exécutez AEM Forms dans un environnement organisé en clusters, les informations affichées concernent le nœud sélectionné dans la liste des serveurs.
@@ -26,9 +40,9 @@ Le volet de droite de l’onglet Système affiche des représentations graphique
 
 * Dénombrement des tâches et des travaux
 * Utilisation du tas et du tas validé
-* Utilisation de non-tas et de non-tas validés
+* Utilisation de la mémoire non-tas et de la mémoire non-tas validée
 
-Déplacez le curseur pour obtenir les valeurs d’un moment particulier.
+Déplacez le curseur le long de la chronologie pour obtenir les valeurs d’un moment particulier.
 
 >[!NOTE]
 >

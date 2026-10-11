@@ -10,7 +10,20 @@ exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 97%
@@ -228,7 +241,7 @@ Cet exemple utilise l’exemple de site web Geometrixx Outdoors pour accéder à
 
 Ajoutez le composant Magasin JSONP à ClientContext et utilisez-le pour récupérer et stocker les informations de géolocalisation du client web.
 
-1. Ouvrez la page d’accueil en anglais du site Geometrixx Outdoors sur l’instance de création AEM. ([&#128279;](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Ouvrez la page d’accueil en anglais du site Geometrixx Outdoors sur l’instance de création AEM. ([](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Pour ouvrir le contexte client, appuyez sur Ctrl+Alt+C (Windows) ou Ctrl+Option+C (Mac).
 1. Cliquez sur l’icône de modification en haut de ClientContext pour ouvrir ClientContext Designer.
 

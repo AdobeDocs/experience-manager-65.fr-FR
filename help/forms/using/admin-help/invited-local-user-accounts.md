@@ -1,19 +1,28 @@
 ---
 title: Gérer les comptes d’utilisateurs et d’utilisatrices invités et locaux
-
 description: Grâce à Document Security, vous pouvez rechercher, afficher, modifier, verrouiller, déverrouiller et supprimer des comptes d’utilisateurs invités et locaux.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 100%
@@ -31,7 +40,7 @@ Utilisez la page Utilisateurs invités et locaux pour gérer les utilisateurs et
 
 La page Utilisateurs et utilisatrices invités et locaux contient deux onglets que vous pouvez utiliser pour rechercher, afficher, modifier, verrouiller, déverrouiller et supprimer des comptes d’utilisateurs et utilisatrices invités et locaux.
 
-Vous pouvez également envoyer manuellement des e-mails d’inscription aux utilisateurs et utilisatrices invités. Cela peut notamment être utile si la période d’inscription autorisée par l’e-mail se termine et que l’utilisateur ou l’utilisatrice ne peut pas utiliser l’URL pour s’inscrire. Dans ce cas, vous pouvez renvoyer un e-mail d’inscription à l’utilisateur ou l’utilisatrice invité. Lorsque l’utilisateur ou l’utilisatrice invité s’inscrit et active le compte, il ou elle devient un utilisateur local ou une utilisatrice locale.
+Vous pouvez également envoyer manuellement des e-mails d’inscription aux utilisateurs et utilisatrices invités. Cela peut notamment être utile si la période d’inscription autorisée par l’e-mail se termine et que l’utilisateur ou l’utilisatrice ne peut pas utiliser l’URL pour s’inscrire. Dans ce cas, vous pouvez renvoyer un e-mail d’inscription à l’utilisateur invité ou l’utilisatrice invitée. Lorsque l’utilisateur invité ou l’utilisatrice invitée s’inscrit et active le compte, il ou elle devient un utilisateur local ou une utilisatrice locale.
 
 >[!NOTE]
 >
@@ -39,7 +48,7 @@ Vous pouvez également envoyer manuellement des e-mails d’inscription aux util
 
 ## Ajouter un utilisateur ou une utilisatrice invité {#add-an-invited-user}
 
-Vous pouvez ajouter un ou plusieurs comptes d’utilisateurs ou utilisatrices invités à la fois à Document Security. Pour ajouter un compte d’utilisateur ou d’utilisatrice invité, vous avez besoin de l’adresse e-mail de l’utilisateur ou l’utilisatrice. Lorsque vous ajoutez un utilisateur ou une utilisatrice, Document Security envoie un e-mail d’inscription l’invitant à s’inscrire.
+Vous pouvez ajouter un ou plusieurs comptes d’utilisateurs ou utilisatrices invités à la fois à Document Security. Pour ajouter un compte d’utilisateur invité ou d’utilisatrice invitée, vous avez besoin de l’adresse e-mail de l’utilisateur ou l’utilisatrice. Lorsque vous ajoutez un utilisateur ou une utilisatrice, Document Security envoie un e-mail d’inscription l’invitant à s’inscrire.
 
 1. Dans la console d’administration, cliquez sur Services > Document Security > Utilisateurs invités et locaux, puis cliquez sur Inviter un nouvel utilisateur.
 1. Saisissez les adresses e-mail des utilisateurs et utilisatrices que vous souhaitez inviter. Saisissez plusieurs adresses sur une ligne, séparées par une virgule.
@@ -62,7 +71,7 @@ Vous pouvez afficher des informations sur les utilisateurs et utilisatrices loca
 Lorsque vous ajoutez un utilisateur invité ou une utilisatrice invitée, Document Security lui envoie automatiquement une demande d’inscription par e-mail. Vous pouvez également générer manuellement un e-mail d’inscription à envoyer à un utilisateur invité ou une utilisatrice invitée qui n’est pas encore inscrit(e). Cela est notamment utile pour envoyer une nouvelle invitation si l’e-mail d’inscription d’un utilisateur invité ou d’une utilisatrice invitée a expiré.
 
 1. Dans la console d’administration, cliquez sur Services > Document Security > Utilisateurs invités et locaux.
-1. Dans la liste des utilisateurs et utilisatrices, cochez la case des utilisateur et utilisatrices auxquels envoyer un e-mail d’inscription, puis cliquez sur Renvoyer l’e-mail d’invitation.
+1. Dans la liste des utilisateurs et utilisatrices, cochez la case des utilisateurs et utilisatrices auxquels envoyer un e-mail d’inscription, puis cliquez sur Renvoyer l’e-mail d’invitation.
 1. Vérifiez la liste des utilisateurs et utilisatrices sélectionnés et cliquez sur OK.
 
 ## Réinitialiser le mot de passe d’un utilisateur local ou d’une utilisatrice locale {#reset-a-local-user-password}
@@ -73,7 +82,7 @@ Lorsque vous avez activé le processus d’inscription des utilisateurs et utili
 
 1. Dans la console d’administration, cliquez sur Services > Document Security > Utilisateurs invités et locaux, puis cliquez sur l’onglet Utilisateurs locaux.
 1. Dans la liste des utilisateurs et utilisatrices, sélectionnez la personne appropriée.
-1. Sur la page Gérer les utilisateurs locaux, cliquez sur Réinitialiser le mot de passe, puis cliquez sur OK. Un e-mail de réinitialisation du mot de passe contenant le nouveau mot de passe est envoyé à l’utilisateur ou l’utilisatrice.
+1. Sur la page Gérer l’utilisateur local ou l&#39;utilisatrice local, cliquez sur Réinitialiser le mot de passe, puis cliquez sur OK. Un e-mail de réinitialisation du mot de passe contenant le nouveau mot de passe est envoyé à l’utilisateur ou l’utilisatrice.
 
 ## Activer ou désactiver un compte d’utilisateur {#enable-or-disable-a-user-account}
 
@@ -101,7 +110,7 @@ Si vous supprimez un compte d’utilisateur, son rétablissement à l’aide de 
 
 >[!NOTE]
 >
->Les personnes invitées qui ont été supprimées via l’interface d’User Management d’AEM Forms ne peuvent pas être réinvitées tant qu’elles n’ont pas été à nouveau supprimées à l’aide de la procédure suivante.
+>Les personnes invitées qui ont été supprimées via l’interface de gestion des utilisateurs d’AEM Forms ne peuvent pas être réinvitées tant qu’elles n’ont pas été à nouveau supprimées à l’aide de la procédure suivante.
 
 1. Dans la console d’administration, cliquez sur Services > Document Security > Utilisateurs invités et locaux, puis cliquez sur l&#39;onglet Utilisateurs invités.
 1. Cochez la case située en regard d’une ou de plusieurs personnes, cliquez sur Supprimer, puis sur OK.
@@ -136,4 +145,4 @@ Vous pouvez trouver des personnes plus facilement en triant la liste des utilisa
 
   1. Dans la console d’administration, cliquez sur Services > Document Security > Utilisateurs invités et locaux.
   1. Pour trier les personnes invitées, cliquez sur l’onglet Utilisateurs invités et cliquez sur l’en-tête de colonne approprié.
-  1. Pour trier les personnes locales, cliquez sur l’onglet Utilisateurs locaux et cliquez sur l’en-tête de colonne approprié.
+  1. Pour trier les utilisateurs locaux ou les utilisatrices locales, cliquez sur l’onglet Utilisateurs locaux u utilisatrices locales et cliquez sur l’en-tête de colonne approprié.

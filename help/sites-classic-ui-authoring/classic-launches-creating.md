@@ -10,13 +10,22 @@ exl-id: 8ab21067-c19a-4faa-8bf0-cd9f21f6df70
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 100%
-
+source-wordcount: '374'
+ht-degree: 97%
 ---
-
 # Création de lancements{#creating-launches}
 
 Créez un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future. Lors de la création d’un lancement, vous devez spécifier un titre et la page source :
@@ -31,7 +40,7 @@ Vous pouvez éventuellement indiquer la **date de lancement** (et l’heure) pou
 
 Pour créer un lancement, procédez comme suit.
 
-1. Ouvrez la page d’administration de site web ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
+1. Ouvrez la page d’administration de site web ([](http://localhost:4502/siteadmin)).
 1. Cliquez sur **Nouveau...**, puis sur **Nouveau lancement...**.
 1. Dans la boîte de dialogue **Créer un lancement** renseignez les valeurs des propriétés suivantes :
 
@@ -50,7 +59,7 @@ Pour créer un lancement, procédez comme suit.
 Vous pouvez également supprimer un lancement.
 
 1. Sélectionnez le lancement souhaité dans la [console des lancements](/help/sites-classic-ui-authoring/classic-launches.md).
-1. Cliquez sur **Supprimer**. Une confirmation est demandée : 
+1. Cliquez sur **Supprimer**. Une confirmation est demandée :
 
    ![chlimage_1-100](assets/chlimage_1-100a.png)
 

@@ -9,7 +9,13 @@ exl-id: d370d772-ef4d-4f38-826c-e90d07735822
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 1%
@@ -24,7 +30,7 @@ ht-degree: 1%
 
 Plusieurs étapes doivent être franchies avant que les auteurs de contenu puissent commencer à générer du contenu ciblé pour les applications mobiles : il faut obtenir l’ensemble approprié d’autorisations pour les utilisateurs et les groupes, créer des services cloud, configurer l’application pour l’activité et enfin générer le contenu.
 
-À l’avenir, nous partons du principe que l’[application de référence hybride &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) a été déployée avec succès et accessible au moyen du tableau de bord AEM Mobile.
+À l’avenir, nous partons du principe que l’[application de référence hybride ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) a été déployée avec succès et accessible au moyen du tableau de bord AEM Mobile.
 
 ## Autorisations {#permissions}
 
@@ -60,7 +66,7 @@ Il est également nécessaire de lier un compte Adobe Mobile Services (AMS) à l
 
 ### Code client {#client-code}
 
-Pour vous connecter aux services AMS, rendez-vous sur [&#128279;](https://mobilemarketing.adobe.com/), sélectionnez l&#39;application mobile, puis cliquez sur les paramètres. Recherchez le champ Options de SDK Target et placez le code client dans le champ, puis cliquez sur Enregistrer.
+Pour vous connecter aux services AMS, rendez-vous sur [](https://mobilemarketing.adobe.com/), sélectionnez l&#39;application mobile, puis cliquez sur les paramètres. Recherchez le champ Options de SDK Target et placez le code client dans le champ, puis cliquez sur Enregistrer.
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 

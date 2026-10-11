@@ -7,13 +7,31 @@ exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4813'
+source-wordcount: '4819'
 ht-degree: 97%
-
 ---
-
 # Installer et configurer le site de référence We.Gov et We.Finance {#set-up-and-configure-we-gov-reference-site}
 
 ## Détails du package de démonstration {#demo-package-details}
@@ -47,21 +65,21 @@ Le [package de démonstration AEM Forms We.Gov](https://experience.adobe.com/#/d
 
 * **we-gov-forms.pkg.all-&lt;version>.zip** : *package de démonstration complet*.
 
-   * **we-gov-forms.ui.apps-&lt;version>.zip** : *contient tous les composants, bibliothèques clientes, exemples d’utilisateurs, modèles de workflow, etc.*
+  * **we-gov-forms.ui.apps-&lt;version>.zip** : *contient tous les composants, bibliothèques clientes, exemples d’utilisateurs, modèles de workflow, etc.*
 
-      * **we-gov-forms.core-&lt;version>.jar** : *contient tous les services OSGi, l’implémentation par étapes de workflows personnalisés, etc.*
+    * **we-gov-forms.core-&lt;version>.jar** : *contient tous les services OSGi, l’implémentation par étapes de workflows personnalisés, etc.*
 
-      * **we-gov-forms.derby&lt;version>.jar** : *contient tous les services OSGi, le schéma de base de données, etc.*
+    * **we-gov-forms.derby&lt;version>.jar** : *contient tous les services OSGi, le schéma de base de données, etc.*
 
-      * **core.wcm.components.all-2.0.4.zip** : *collection d’exemples de composants WCM.*
+    * **core.wcm.components.all-2.0.4.zip** : *collection d’exemples de composants WCM.*
 
-      * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** : *package de disposition Grille AEM Sites pour le contrôle des colonnes des pages Sites.*
+    * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** : *package de disposition Grille AEM Sites pour le contrôle des colonnes des pages Sites.*
 
-   * **we-gov-forms.ui.content-&lt;version>.zip** : *contient l’ensemble du contenu, des pages, des images, des formulaires, des ressources de communication interactive, etc.*
+  * **we-gov-forms.ui.content-&lt;version>.zip** : *contient l’ensemble du contenu, des pages, des images, des formulaires, des ressources de communication interactive, etc.*
 
-   * **we-gov-forms.ui.analytics-&lt;version>.zip** : *contient toutes les données d’analyse de formulaires We.Gov à stocker dans le référentiel.*
+  * **we-gov-forms.ui.analytics-&lt;version>.zip** : *contient toutes les données d’analyse de formulaires We.Gov à stocker dans le référentiel.*
 
-   * **we-gov-forms.config.public-&lt;version>.zip** : *contient tous les nœuds de configuration par défaut, y compris les configurations cloud d’espace réservé, pour éviter les problèmes de modèle de données de formulaire et de liaison de service.*
+  * **we-gov-forms.config.public-&lt;version>.zip** : *contient tous les nœuds de configuration par défaut, y compris les configurations cloud d’espace réservé, pour éviter les problèmes de modèle de données de formulaire et de liaison de service.*
 
 Les ressources incluses dans ce package sont les suivantes :
 
@@ -82,7 +100,7 @@ Cette section contient des informations sur l’installation du package de démo
 
 ### À partir de la distribution logicielle {#from-software-distribution}
 
-1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à Software Distribution.
 1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** situé dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
@@ -232,7 +250,7 @@ Cette section contient des détails et des instructions sur la configuration clo
 
 1. Accédez à :
 
-   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. Assurez-vous d’accéder au serveur à l’aide de la même URL de redirection que celle configurée dans l’enregistrement de l’application MS® Dynamics.
 
@@ -738,7 +756,7 @@ Le formulaire adaptatif d’inscription est envoyé à un workflow OSGI pour tra
 
 En raison de certaines limitations, ce workflow contient plusieurs scripts et étapes de processus OSGI personnalisées. Ces étapes de workflow ont été créées sous la forme d’étapes génériques et n’ont pas été créées avec des boîtes de dialogue de configuration. Actuellement, la configuration des étapes du workflow repose sur des arguments de processus.
 
-Tout le code Java™ de l’étape du workflow est contenu dans le lot **we-gov-forms.core-&lt;version>.jar**.
+Tout le code Java™ de l’étape du workflow est contenu dans le bundle **we-gov-forms.core-&lt;version>.jar**.
 
 ## Considérations relatives aux démonstrations et problèmes connus {#demo-considerations-and-known-issues}
 

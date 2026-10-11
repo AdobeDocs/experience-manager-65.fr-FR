@@ -1,17 +1,24 @@
 ---
-title: Guide des communautés Adobe Experience Manager 6.5
-description: Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctions sociales. Consultez ce guide qui explique comment déployer, administrer, développer et créer des communautés.
+title: Guide de Adobe Experience Manager 6.5 Communities
+description: Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales. Parcourez ce guide qui explique comment déployer, administrer, développer et créer des communautés.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
 solution: Experience Manager
 feature: Communities
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '67'
-ht-degree: 0%
-
+ht-degree: 41%
 ---
+# Guide de Communities pour Adobe Experience Manager (AEM) 6.5
 
-# Guide des communautés Adobe Experience Manager (AEM) 6.5
-
-Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctions sociales. Consultez ce guide qui explique comment déployer, administrer, développer et créer des communautés.
+Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales. Parcourez ce guide qui explique comment déployer, administrer, développer et créer des communautés.

@@ -10,7 +10,16 @@ exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 7%
@@ -79,7 +88,7 @@ Pour obtenir des instructions détaillées, consultez [Créer un fichier journal
 
 Pour configurer rapidement un fichier slinglog :
 
-1. Accédez à la prise en charge des journaux de la console web de **&#x200B;**&#x200B;par exemple
+1. Accédez à la prise en charge des journaux de la console web de **** par exemple
 
    * https://localhost:4502/system/console/slinglog
 
@@ -120,7 +129,7 @@ Pour afficher les entrées de journal :
 
 Il est possible d’afficher le contenu créé par l’utilisateur associé à la notation et à la création de badges lorsque le SRP choisi est JSRP ou MSRP, mais pas ASRP. (Si vous ne connaissez pas ces termes, consultez [Community Content Storage](/help/communities/working-with-srp.md) et [Storage Resource Provider Overview](/help/communities/srp.md).)
 
-Les descriptions d’accès aux données de notation et de badge utilisent JSRP, car le contenu créé par l’utilisateur est facilement accessible à l’aide de [&#128279;](/help/sites-developing/developing-with-crxde-lite.md).
+Les descriptions d’accès aux données de notation et de badge utilisent JSRP, car le contenu créé par l’utilisateur est facilement accessible à l’aide de [](/help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP sur l’environnement de création** : l’expérimentation dans l’environnement de création aboutit à un contenu créé par l’utilisateur uniquement visible depuis l’environnement de création.
 

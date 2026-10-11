@@ -9,13 +9,29 @@ role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,Barcoded Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: c61c0849-e97f-542f-a358-7b62d542cc8b
+    internal-label: Barcoded Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1934'
 ht-degree: 100%
-
 ---
-
 # Utiliser des formulaires à code-barres {#working-with-barcoded-forms}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -30,7 +46,7 @@ Pour plus d’informations sur le service Barcoded Forms, Consultez la section [
 
 ## Décoder les données Barcoded Forms {#decoding-barcoded-form-data}
 
-Vous pouvez utiliser l’API du service Barcoded Forms pour décoder les données d’un formulaire PDF ou d’une image contenant un code à barres. Le décodage des données de formulaire consiste à extraire les données qui se trouvent dans le code à barres. Avant que les données puissent être décodées d’un formulaire PDF (ou d’une image), un utilisateur doit remplir le formulaire avec des données.
+Vous pouvez utiliser l’API du service Barcoded Forms pour décoder les données d’un formulaire PDF ou d’une image contenant un code à barres. Le décodage des données de formulaire consiste à extraire les données qui se trouvent dans le code à barres. Avant que les données puissent être décodées à partir d’un formulaire PDF (ou d’une image), un utilisateur ou une utilisatrice doit remplir le formulaire avec des données.
 
 >[!NOTE]
 >
@@ -58,7 +74,7 @@ Vous devez ajouter les fichiers JAR suivants au chemin d’accès aux classes de
 * adobe-barcodedforms-client.jar
 * adobe-utilities.jar (Requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (Requis si AEM Forms est déployé sur JBoss)
-* xercesImpl.jar (situé dans &lt;répertoire dʼinstallation>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* xercesImpl.jar (situé dans &lt;install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
 
 Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. Pour plus d’informations sur l’emplacement de tous les fichiers JAR AEM Forms, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -122,7 +138,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 1. Obtenir un formulaire PDF contenant des données à code à barres
 
    * Créez un objet `java.io.FileInputStream` qui représente le formulaire PDF contenant des données à code à barres en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Décoder les données du formulaire PDF
 
@@ -137,7 +153,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
    * Un objet `java.lang.Boolean` spécifiant s’il faut décoder un code à barres 39.
    * Un objet `java.lang.Boolean` spécifiant s’il faut décoder un code à barres EAN-13.
    * Un objet `java.lang.Boolean` spécifiant s’il faut décoder un code à barres EAN-8.
-   * Une valeur d’énumération `com.adobe.livecycle.barcodedforms.CharSet` spécifiant la valeur de codage du jeu de caractères utilisé dans le code à barres.
+   * Valeur d’énumération `com.adobe.livecycle.barcodedforms.CharSet` spécifiant la valeur de codage du jeu de caractères utilisé dans le code à barres.
 
    La méthode `decode` renvoie un objet `org.w3c.dom.Document` contenant des données de formulaire décodées.
 
@@ -186,9 +202,9 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 1. Obtenir un formulaire PDF contenant des données à code à barres
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF contenant un code à barres.
-   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document PDF et son mode d’ouverture.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `binaryData` le contenu du tableau d’octets.
 
 1. Décoder les données du formulaire PDF

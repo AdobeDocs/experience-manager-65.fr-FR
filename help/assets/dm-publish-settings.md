@@ -14,24 +14,37 @@ autotag-review: '2026-05-18T18:46:26.981Z'
 TQID: 'https://experienceleague.adobe.com/DfSAGGSoBR-9TOXKA89X3U4VReVbP-Ej70vUK1Zfczk'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Security
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 3751
+source-wordcount: '3751'
 ht-degree: 87%
-
 ---
-
 # Configurer la configuration de la publication Dynamic Media pour Image Server
 
 Les options de configuration de la publication Dynamic Media ne sont disponibles que si :
@@ -48,7 +61,7 @@ Consultez également [Facultatif - Installation et configuration de Dynamic Med
 
 >[!NOTE]
 >
->Mise à niveau de Dynamic Media Classic vers Dynamic Media sur Adobe Experience Manager ? La page [Paramètres généraux](/help/assets/dm-general-settings.md) et la page Configuration de la publication dans Dynamic Media sont pré-renseignées avec les valeurs issues de votre compte Dynamic Media Classic. Les exceptions sont toutes les valeurs figurant dans la zone **[!UICONTROL Options de chargement par défaut]** de la page Paramètres généraux. Ces valeurs se trouvent déjà dans Experience Manager. Ainsi, toute modification apportée aux **[!UICONTROL Options de chargement par défaut]**, dans l’un des cinq onglets, par le biais de l’interface utilisateur Experience Manager, est répercutée dans Dynamic Media et non dans Dynamic Media Classic. Tous les autres paramètres et valeurs de la page [Paramètres généraux](/help/assets/dm-general-settings.md) et de la page Configuration de la publication sont conservés entre Dynamic Media Classic et Dynamic Media sur Experience Manager.
+>Prêt à passer de Dynamic Media Classic vers Dynamic Media sur Adobe Experience Manager ? La page [Paramètres généraux](/help/assets/dm-general-settings.md) et la page Configuration de la publication dans Dynamic Media sont pré-renseignées avec les valeurs issues de votre compte Dynamic Media Classic. Les exceptions sont toutes les valeurs figurant dans la zone **[!UICONTROL Options de chargement par défaut]** de la page Paramètres généraux. Ces valeurs se trouvent déjà dans Experience Manager. Ainsi, toute modification apportée aux **[!UICONTROL Options de chargement par défaut]**, dans l’un des cinq onglets, par le biais de l’interface utilisateur Experience Manager, est répercutée dans Dynamic Media et non dans Dynamic Media Classic. Tous les autres paramètres et valeurs de la page [Paramètres généraux](/help/assets/dm-general-settings.md) et de la page Configuration de la publication sont conservés entre Dynamic Media Classic et Dynamic Media sur Experience Manager.
 
 **Pour configurer le serveur d’images de la configuration de la publication Dynamic Media :**
 
@@ -70,7 +83,7 @@ Consultez également [Facultatif - Installation et configuration de Dynamic Med
    * Onglet [Attributs de gestion des couleurs](#color-management-attributes-tab)
 
    ![Page de configuration de la publication Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
-   *Page de configuration de la publication Dynamic Media, avec l’onglet **[!UICONTROL Attributs de requête]**&#x200B;sélectionné.*<br><br>
+   *Page de configuration de la publication Dynamic Media, avec l’onglet **[!UICONTROL Attributs de requête]**sélectionné.*<br><br>
 
 1. Lorsque vous avez terminé, près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -174,7 +187,7 @@ Si vous le souhaitez, vous pouvez créer un environnement d’évaluation plutô
 
 >[!NOTE]
 >
->Secure Testing n’a pas d’impact sur l’accès à Adobe Dynamic Media Classic. La sécurité d’Adobe Dynamic Media Classic reste cohérente et requiert les identifiants habituels pour accéder au produit et aux services web associés.
+>Secure Testing n’a pas d’impact sur l’accès à Adobe Dynamic Media Classic. La sécurité d’Adobe Dynamic Media Classic reste cohérente et requiert les informations d’identification habituels pour accéder à Adobe Dynamic Media Classic et aux services web associés.
 
 ### Fonctionnement de Secure Testing {#how-test-assets-works}
 
@@ -182,11 +195,11 @@ La plupart des entreprises utilisent Internet derrière un pare-feu. L’accès 
 
 À partir du réseau de votre entreprise, vous pouvez déterminer votre adresse IP publique à l’aide de sites web tels que [https://www.whatismyip.com/fr](https://www.whatismyip.com/fr/). Vous pouvez également obtenir ces informations auprès de la structure informatique de votre entreprise.
 
-Grâce à Secure Testing, Adobe Dynamic Media établit un serveur d’images dédié pour les environnements d’évaluation ou les applications internes. Toute requête sur ce serveur vérifie l’adresse IP d’origine. Si la requête entrante ne figure pas dans la liste approuvée des adresses IP, une réponse d’échec est renvoyée. L’administration d’entreprise d’Adobe Dynamic Media configure la liste approuvée des adresses IP pour l’environnement Secure Testing de l’entreprise.
+Grâce à Secure Testing, Adobe Dynamic Media établit un serveur d’images dédié pour les environnements d’évaluation ou les applications internes. Toute requête sur ce serveur vérifie l’adresse IP d’origine. Si la requête entrante ne provient pas d’une adresse IP figurant dans la liste approuvée, une réponse d’échec est renvoyée. L’administration d’entreprise d’Adobe Dynamic Media configure la liste approuvée des adresses IP pour l’environnement Secure Testing de l’entreprise.
 
 L’emplacement de la requête d’origine devant être confirmé, le trafic du service Secure Testing n’est pas acheminé à travers un réseau de distribution de contenu tel que le trafic du serveur d’images Dynamic Media public. Les requêtes effectuées auprès du service Secure Testing présentent une latence légèrement plus élevée par rapport aux serveurs d’images Dynamic Media publics.
 
-Les ressources dépubliées sont immédiatement disponibles à partir des services Secure Testing, sans avoir à les publier. Ainsi, vous pouvez exécuter un aperçu avant la publication des ressources sur leur serveur d’images public.
+Les ressources non publiées sont immédiatement disponibles à partir des services Secure Testing, sans avoir à les publier. Ainsi, vous pouvez exécuter un aperçu avant la publication des ressources sur leur serveur d’images public.
 
 >[!NOTE]
 >
@@ -197,9 +210,9 @@ Les services Secure Testing prennent actuellement en charge les types de ressour
 * Images.
 * Vignettes (requêtes de serveur de rendu).
 * Les clientes et clients doivent demander explicitement la prise en charge du serveur de rendu disponible.
-* Visionneuses, notamment ensembles d’images, catalogue électronique, visionneuses de rendus et de supports.
+* Ensembles, notamment ensembles d’images, catalogues électroniques, ensembles de rendus et ensembles de médias.
 * Visionneuses de médias riches Adobe Dynamic Media standard.
-* Pages JSP OnDemand Adobe Dynamic Media.
+* Pages JSP Adobe Dynamic Media OnDemand.
 * Contenu statique, notamment fichiers PDF et vidéos diffusées progressivement.
 * Diffusion vidéo en flux continu HTTP.
 * Diffusion vidéo progressive.
@@ -271,10 +284,10 @@ Exécutez les tests suivants :
 
    Depuis le réseau d’entreprise identifié par la plage d’adresses IP définie précédemment, la version intermédiaire du site Web affiche toutes les images, qu’elles soient marquées pour la publication ou non. Ainsi, vous pouvez tester sans rendre accidentellement les images disponibles avant l’approbation de l’aperçu ou le lancement du produit.
 
-   Vérifiez que la version publique de votre site affiche les ressources publiées comme vous l’avez déjà fait avec Adobe Dynamic Media.
+   Vérifiez que la version publique de votre site affiche les ressources publiées comme auparavant avec Adobe Dynamic Media.
 
 1. Depuis l’extérieur de votre réseau d’entreprise, vérifiez que les ressources non publiées (c’est-à-dire non marquées pour la publication) sont protégées contre l’accès par des tiers.
 
-   Accédez à votre réseau depuis l’extérieur (depuis votre ordinateur personnel, par exemple, ou via une connexion 4G/5G), puis vérifiez que la version publique du site affiche toutes les ressources publiées, mais aucun contenu dépublié.
+   Accédez à votre réseau depuis l’extérieur (depuis votre ordinateur personnel, par exemple, ou via une connexion 4G/5G), puis vérifiez que la version publique du site affiche toutes les ressources publiées, mais aucun contenu non publié.
 
    Vérifiez que la version intermédiaire n’affiche aucune ressource, car vous accédez au service Secure Testing depuis une adresse IP non approuvée.

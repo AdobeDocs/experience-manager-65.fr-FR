@@ -11,13 +11,31 @@ exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 100%
-
+source-wordcount: '774'
+ht-degree: 93%
 ---
-
 # Conversion de lancements{#promoting-launches}
 
 Vous devez convertir des pages de lancement afin de renvoyer le contenu dans la source (production) avant de le publier. Lorsqu’une page de lancement est convertie, la page correspondante des pages sources est remplacée par la page convertie. Voici les options disponibles lors de la conversion d’une page de lancement :
@@ -55,29 +73,29 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
 
    * la console **Sites** :
 
-      1. Ouvrez le [rail de références](/help/sites-authoring/author-environment-tools.md#showingpagereferences) et sélectionnez la page source souhaitée à l’aide du [mode de sélection](/help/sites-authoring/basic-handling.md) (ou sélectionnez et ouvrez le rail de références, l’ordre n’a pas d’importance). Toutes les références s’affichent.
+     1. Ouvrez le [rail de références](/help/sites-authoring/author-environment-tools.md#showingpagereferences) et sélectionnez la page source souhaitée à l’aide du [mode de sélection](/help/sites-authoring/basic-handling.md) (ou sélectionnez et ouvrez le rail de références, l’ordre n’a pas d’importance). Toutes les références s’affichent.
 
-      1. Sélectionnez **Lancements** (par exemple Lancements (1)) pour afficher une liste de lancements particuliers.
-      1. Sélectionnez le lancement pour afficher les actions disponibles.
-      1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.
+     1. Sélectionnez **Lancements** (par exemple Lancements (1)) pour afficher une liste de lancements particuliers.
+     1. Sélectionnez le lancement pour afficher les actions disponibles.
+     1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.
 
    * la console **Lancements** :
 
-      1. Sélectionnez votre lancement (appuyez/cliquez sur la miniature).
-      1. Sélectionnez **Convertir**.
+     1. Sélectionnez votre lancement (appuyez/cliquez sur la miniature).
+     1. Sélectionnez **Convertir**.
 
 1. Dans la première étape, vous pouvez spécifier :
 
    * **Cible**
 
-      * **Supprimer le lancement après la promotion**
+     * **Supprimer le lancement après la promotion**
 
    * **Portée**
 
-      * **Convertir le lancement complet**
-      * **Promouvoir les pages modifiées**
-      * **Promouvoir la page active**
-      * **Convertir la page active et les sous-pages**
+     * **Convertir le lancement complet**
+     * **Promouvoir les pages modifiées**
+     * **Promouvoir la page active**
+     * **Convertir la page active et les sous-pages**
 
    Par exemple, lorsque vous sélectionnez l’option visant à convertir uniquement les pages modifiées :
 
@@ -117,19 +135,19 @@ Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages so
 
    * **Cible**
 
-      * **Convertir la cible**
-Vous pouvez convertir un lancement vers n’importe quelle source.
+     * **Cible de la promotion**
+       Vous pouvez effectuer une conversion vers n’importe quelle source.
 
-      * **Supprimer le lancement après la conversion**
-Après la conversion, le lancement sélectionné et les lancements imbriqués seront automatiquement supprimés.
+     * **Supprimer le lancement après la promotion**
+       Après la promotion, le lancement sélectionné et les lancements imbriqués seront supprimés.
 
    * **Portée**
-Ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Dans ce dernier cas, vous pouvez choisir d’inclure ou d’exclure les sous-pages. La configuration par défaut consiste à promouvoir uniquement les modifications de la page active :
+     Ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Dans ce dernier cas, vous pouvez choisir d’inclure ou d’exclure les sous-pages. La configuration par défaut consiste à promouvoir uniquement les modifications de la page active :
 
-      * **Convertir le lancement complet**
-      * **Promouvoir les pages modifiées**
-      * **Promouvoir la page active**
-      * **Convertir la page active et les sous-pages**
+     * **Convertir le lancement complet**
+     * **Promouvoir les pages modifiées**
+     * **Promouvoir la page active**
+     * **Convertir la page active et les sous-pages**
 
    ![Paramètres de promotion d’un lancement](assets/chlimage_1-105.png)
 

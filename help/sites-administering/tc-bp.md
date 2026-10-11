@@ -5,7 +5,21 @@ feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 100%
@@ -34,9 +48,9 @@ La création ou le développement d’une présence mondiale sur le web peut êt
 * Il existe deux méthodes pour créer des gabarits de langue : à l’aide de copies de langue et à l’aide de MSM/Live Copies.
 
   * L’approche impliquant des copies linguistiques est celle utilisée par le framework d’intégration de traduction prêt à l’emploi d’AEM. C’est par conséquent la façon la plus facile de démarrer. Ce framework fournit une interface utilisateur qui permet, dès le départ, de propager et de traduire facilement les modifications du contenu du gabarit de langue principal (par exemple, l’anglais) sur les gabarits de langue. Cependant, à mesure que le projet se développe, l’automatisation des workflows devient de plus en plus nécessaire pour gérer la traduction du nombre croissant de pages et/ou de langues.
-  * L’utilisation de MSM/Live Copies peut être une alternative pour les cas d’utilisation avancés, où les sites sont plus grands et plus complexes. Une gouvernance solide et l’automatisation des workflows sont nécessaires dès le départ pour gérer les relations d’héritage complexes entre le gabarit de langue anglaise et les autres gabarits de langue, et pour réduire les risques de remplacement des traductions existantes. Cette gestion est possible grâce à des connecteurs de traduction. Consultez [MSM et sites multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites) pour plus d’informations.
+  * L’utilisation de MSM/Live Copy peut être une alternative pour les cas d’usage avancés, où les sites sont plus grands et plus complexes. Une gouvernance solide et l’automatisation des workflows sont nécessaires dès le départ pour gérer les relations d’héritage complexes entre le gabarit de langue anglaise et les autres gabarits de langue, et pour réduire les risques de remplacement des traductions existantes. Cette gestion est possible grâce à des connecteurs de traduction. Consultez [MSM et sites multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites) pour plus d’informations.
 
-* Si votre langue principale possède des variations globales, vous pouvez utiliser MSM pour créer une Live Copy à partir du gabarit global à utiliser pour la traduction. Par exemple, si la création globale est effectuée dans un gabarit anglais américain, créez un gabarit anglais international en tant que Live Copy et créez une base de traduction dans d’autres langues.
+* Si votre langue principale possède des variations globales, vous pouvez utiliser MSM pour créer une Live Copy à partir du gabarit global à utiliser pour la traduction. Par exemple, si la création globale est effectuée dans un gabarit anglais américain, créez un gabarit anglais international en tant que Live Copy et comme base pour la traduction vers d’autres langues.
 * Utilisez MSM pour créer des sites de pays à partir des gabarits de langue traduits et déployer le contenu sur les sites partageant la même langue. Par exemple, le gabarit de langue française peut être déployé sur les sites de France, de Belgique et de Suisse.
 * Planifiez, prototypez et testez d’abord, avant de commencer la mise en œuvre.
 
@@ -53,4 +67,4 @@ La création ou le développement d’une présence mondiale sur le web peut êt
   * La **traduction humaine** est idéale pour le contenu où les attentes en matière de message et de qualité sont élevées, ainsi que pour le contenu destiné à rester longtemps sur le site, tel que celui des pages marketing.
   * La **traduction automatique** peut être un bon choix pour les grands volumes de traduction lorsque les délais de publication sont critiques, que les attentes en matière de qualité sont moindres ou que les coûts de traduction humaine sont prohibitifs. La base de connaissances de prise en charge et le contenu généré par les utilisateurs et utilisatrices sont généralement traduits par une machine.
 
-* Faites appel à l’expertise des fournisseurs de services de localisation, des conseillers et conseillères Adobe et des intégrateurs et intégratrices de système pour planifier, prototyper et tester votre structure de site multilingue.
+* Faites appel à l’expertise des fournisseurs de services de localisation, d’Adobe Consulting et des intégrateurs et intégratrices de système pour planifier, prototyper et tester votre structure de site multilingue.

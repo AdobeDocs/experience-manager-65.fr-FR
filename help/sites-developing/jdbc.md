@@ -9,33 +9,42 @@ exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 99%
-
 ---
-
 # Connexion à des bases de données SQL{#connecting-to-sql-databases}
 
 Accédez à une base de données SQL externe, de sorte que vos applications CQ puissent interagir avec les données :
 
-1. [Créer ou obtenir un lot OSGi qui exporte le package de pilotes JDBC](#bundling-the-jdbc-database-driver).
+1. [Créer ou obtenir un bundle OSGi qui exporte le package de pilotes JDBC](#bundling-the-jdbc-database-driver).
 1. [Configurer un fournisseur de pool de sources de données JDBC](#configuring-the-jdbc-connection-pool-service).
 1. [Obtenir un objet de source de données et créer la connexion dans votre code](#connecting-to-the-database).
 
 ## Regrouper le pilote de base de données JDBC {#bundling-the-jdbc-database-driver}
 
-Certains fournisseurs de base de données proposent des pilotes JDBC dans un bundle OSGi ; [MySQL](https://dev.mysql.com/downloads/connector/j/), par exemple. Si le pilote JDBC correspondant à votre base de données n’est pas disponible sous la forme d’un lot OSGi, procurez-vous le fichier JAR du pilote et enveloppez-le dans un lot OSGi. Le lot doit exporter les packages nécessaires pour interagir avec le serveur de base de données. Il doit également importer les packages auxquels il fait référence.
+Certains fournisseurs de base de données proposent des pilotes JDBC dans un bundle OSGi ; [MySQL](https://dev.mysql.com/downloads/connector/j/), par exemple. Si le pilote JDBC correspondant à votre base de données n’est pas disponible sous la forme d’un bundle OSGi, procurez-vous le fichier JAR du pilote et enveloppez-le dans un bundle OSGi. Le bundle doit exporter les packages nécessaires pour interagir avec le serveur de base de données. Le bundle doit également importer les packages auxquels il fait référence.
 
-L’exemple suivant utilise la méthode [Plug-in Bundle pour Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) pour encapsuler le pilote HSQLDB dans un lot OSGi. Le POM demande au plug-in d’incorporer le fichier hsqldb.jar identifié comme une dépendance. Tous les packages org.hsqldb sont exportés.
+L’exemple suivant utilise la méthode [Plug-in Bundle pour Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) pour encapsuler le pilote HSQLDB dans un bundle OSGi. Le POM demande au plug-in d’incorporer le fichier hsqldb.jar identifié comme une dépendance. Tous les packages org.hsqldb sont exportés.
 
-Le plug-in détermine automatiquement les packages à importer et les répertorie dans le fichier MANIFEST.MF du lot. Si l’un des packages n’est pas disponible sur le serveur CQ, le lot ne démarre pas lors de l’installation. Deux solutions sont possibles :
+Le plug-in détermine automatiquement les packages à importer et les répertorie dans le fichier MANIFEST.MF du bundle. Si l’un des packages n’est pas disponible sur le serveur CQ, le bundle ne démarre pas lors de l’installation. Deux solutions sont possibles :
 
 * Indiquez dans le POM que les packages sont facultatifs. Utilisez cette solution lorsque la connexion JDBC ne nécessite pas réellement les membres du package. Utilisez l’élément Import-Package pour indiquer les packages facultatifs comme dans l’exemple suivant :
 
   `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
-* Encapsulez les fichiers JAR contenant les packages dans un lot OSGi qui exporte les packages et déployez le lot. Utilisez cette solution lorsque les membres du package sont requis pendant l’exécution du code.
+* Encapsulez les fichiers JAR contenant les packages dans un bundle OSGi qui exporte les packages et déployez le bundle. Utilisez cette solution lorsque les membres du package sont requis pendant l’exécution du code.
 
 La connaissance du code source vous permet de décider quelle solution utiliser. Vous pouvez également essayer l’une des deux solutions et effectuer des tests pour valider la solution.
 
@@ -85,9 +94,9 @@ La connaissance du code source vous permet de décider quelle solution utiliser.
 
 Les liens suivants ouvrent les pages de téléchargement de certains produits de base de données populaires :
 
-* [Microsoft® SQL Server](https://www.microsoft.com/fr-fr/sql-server/sql-server-downloads)
+* [® SQL Server](https://www.microsoft.com/fr-fr/sql-server/sql-server-downloads)
 * [Oracle](https://www.oracle.com/fr/database/technologies/appdev/c-downloads.html)
-* [IBM® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
+* [® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 
 ### Configurer le service pool de connexions JDBC {#configuring-the-jdbc-connection-pool-service}
 
@@ -168,7 +177,7 @@ L’exemple de code JSP suivant récupère une instance de la source de données
 
 >[!NOTE]
 >
->Si la méthode getDataSource renvoie une exception car la source de données est introuvable, assurez-vous que la configuration du service pool de connexions est correcte. Vérifiez les noms de propriété, les valeurs et les types de données.
+>Si la méthode getDataSource renvoie une exception car la source de données est introuvable, assurez-vous que la configuration du service de pool de connexions est correcte. Vérifiez les noms de propriété, les valeurs et les types de données.
 >
 
 <!--

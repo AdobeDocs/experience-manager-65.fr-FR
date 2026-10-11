@@ -9,13 +9,22 @@ exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 100%
-
+source-wordcount: '500'
+ht-degree: 99%
 ---
-
 # Intégration à BrightEdge Content Optimizer{#integrating-with-brightedge-content-optimizer}
 
 Créez une configuration de cloud BrightEdge afin qu’AEM puisse se connecter à l’aide des informations d’identification de votre compte BrightEdge. Vous pouvez créer plusieurs configurations si vous utilisez plusieurs comptes.
@@ -50,7 +59,7 @@ Modifiez le nom d’utilisateur et le mot de passe d’une configuration BrightE
 
 Associez des pages à une configuration BrightEdge pour envoyer des données de page au service BrightEdge pour analyse. Lorsque vous associez une page à une configuration, les pages enfants héritent de l’association. En règle générale, vous associez la page d’accueil de votre site afin que les données de toutes les pages soient envoyées à BrightEdge.
 
-1. Ouvrez la console Sites web classique. ([http://localhost:4502/siteadmin#/content](http://localhost:4502/siteadmin#/content))
+1. Ouvrez la console Sites web classique. ([](http://localhost:4502/siteadmin#/content))
 1. Dans l’arborescence des sites web, sélectionnez le dossier ou la page qui contient la page à associer à la configuration BrightEdge.
 1. Dans la liste des pages, cliquez avec le bouton droit sur la page à configurer, puis cliquez sur Propriétés.
 1. Dans l’onglet Services cloud, cliquez sur le bouton Ajouter un service. Dans la boîte de dialogue Services cloud, sélectionnez BrightEdge Content Optimizer, puis cliquez sur OK.

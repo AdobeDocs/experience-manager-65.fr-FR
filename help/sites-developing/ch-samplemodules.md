@@ -9,13 +9,24 @@ exl-id: df28180f-7af4-437d-8e91-bfd305f73113
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1190'
 ht-degree: 100%
-
 ---
-
 # Exemples de types de module d’IU ContextHub {#sample-contexthub-ui-module-types}
 
 ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions. Les informations suivantes sont fournies :
@@ -55,16 +66,16 @@ Configurez le module d’IU contexthub.base à l’aide d’un objet JavaScript 
 * **storeMapping :** mappage de clé/magasin. Utilisez la clé dans les modèles Handlebar pour accéder aux données de magasin ContextHub associées.
 * **list :** tableau d’éléments à afficher en tant que liste dans une fenêtre contextuelle lorsque l’on clique sur le module d’IU. Si vous ajoutez cet élément, n’incluez pas popoverTemplate. La valeur est un tableau d’objets avec les clés suivantes :
 
-   * title : le texte à afficher pour cet élément ;
-   * image : (facultatif) URL d’une image qui doit être affichée à gauche ;
-   * icon : (facultatif) une classe d’icône CUI qui doit s’afficher à gauche ; ignorée si une image est spécifiée ;
-   * selected : (facultatif) valeur booléenne qui spécifie si cet élément doit être affiché comme sélectionné (true=selected). Par défaut, les éléments sélectionnés sont visibles en gras. Utilisez une propriété `listType` pour configurer d’autres aspects (voir ci-dessous).
+  * title : le texte à afficher pour cet élément ;
+  * image : (facultatif) URL d’une image qui doit être affichée à gauche ;
+  * icon : (facultatif) une classe d’icône CUI qui doit s’afficher à gauche ; ignorée si une image est spécifiée ;
+  * selected : (facultatif) valeur booléenne qui spécifie si cet élément doit être affiché comme sélectionné (true=selected). Par défaut, les éléments sélectionnés sont visibles en gras. Utilisez une propriété `listType` pour configurer d’autres aspects (voir ci-dessous).
 
 * **listType :** style à utiliser pour les éléments de liste déroulante. Utilisez l’une des valeurs suivantes :
 
-   * checkmark
-   * checkbox
-   * radio
+  * checkmark
+  * checkbox
+  * radio
 
 * **popoverTemplate :** modèle Handlebars qui spécifie le contenu à afficher dans une fenêtre contextuelle lorsque l’on clique sur le module d’IU. Si vous ajoutez cet élément, n’incluez pas l’élément `list`.
 
@@ -224,7 +235,7 @@ Les instances du module d’IU contexthub.tagcloud ne requièrent pas de valeur 
 
 ## Type de module d’IU granite.profile {#granite-profile-ui-module-type}
 
-Le module d’IU ContextHub granite.profile affiche le nom d’affichage de l’utilisateur actuel. La fenêtre contextuelle révèle l’identifiant de connexion de l’utilisateur et permet de modifier la valeur du nom affiché. Le module obtient des informations à partir d’un magasin ContextHub nommé profile et basé sur le magasin candidat [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate).
+Le module d’IU ContextHub granite.profile affiche le nom d’affichage de l’utilisateur actuel. La fenêtre contextuelle révèle l’identifiant de connexion de l’utilisateur et permet de modifier la valeur du nom d’affichage. Le module obtient des informations à partir d’un magasin ContextHub nommé profile et basé sur le magasin candidat [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate).
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 

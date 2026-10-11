@@ -11,13 +11,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1653'
 ht-degree: 98%
-
 ---
-
 
 # Présentation de l’éditeur de SPA{#spa-editor-overview}
 
@@ -42,7 +56,7 @@ Pour plus d’informations sur les applications monopages (SPA) dans AEM, consul
 
 ## Conception {#design}
 
-Le composant de page d’une application sur une seule page ne fournit pas les composants HTML de ses composants enfants via le fichier HTL ou JSP. Cette opération est déléguée à la structure SPA. La représentation du modèle ou des composants enfants est récupérée en tant que structure de données JSON à partir du JCR. Les composants de SPA sont ensuite ajoutés à la page en fonction de cette structure. Ce comportement différencie la composition initiale du corps du composant de page de ses équivalents non SPA.
+Le composant de page d’une application sur une seule page ne fournit pas les éléments HTML de ses composants enfants via le fichier HTL ou JSP. Cette opération est déléguée à la structure SPA. La représentation du modèle ou des composants enfants est récupérée en tant que structure de données JSON à partir du JCR. Les composants de SPA sont ensuite ajoutés à la page en fonction de cette structure. Ce comportement différencie la composition initiale du corps du composant de page de ses équivalents non SPA.
 
 ### Gestion du modèle de page {#page-model-management}
 
@@ -85,13 +99,13 @@ En gardant à l’esprit les éléments clés de l’éditeur de SPA, le workflo
 ![untitled1](assets/untitled1.gif)
 
 1. L’éditeur de SPA est chargé.
-1. La SPA est chargée dans un cadre distinct.
+1. La SPA est chargée dans un frame distinct.
 1. La SPA demande du contenu JSON et effectue le rendu des composants côté client.
 1. L’éditeur de SPA détecte les composants rendus et génère des incrustations.
 1. L’auteur ou l’autrice clique sur l’incrustation et affiche la barre d’outils de modification du composant.
-1. L’éditeur de SPA conserve les modifications avec une requête POST envoyée au serveur.
-1. L’éditeur de SPA demande le JSON mis à jour, qui est envoyé à la SPA avec un événement DOM.
-1. La SPA restitue à nouveau le composant concerné en mettant à jour son DOM.
+1. L’éditeur de SPA enregistre les modifications avec une requête POST envoyée au serveur.
+1. L’éditeur de SPA demande le JSON mis à jour, qui est envoyé à la SPA avec un évènement DOM.
+1. La SPA effectue un nouveau rendu du composant concerné en mettant à jour son DOM.
 
 >[!NOTE]
 >
@@ -99,7 +113,7 @@ En gardant à l’esprit les éléments clés de l’éditeur de SPA, le workflo
 >
 >* La SPA est toujours responsable de son affichage.
 >* L’éditeur de SPA est isolé de la SPA elle-même.
->* En cours de production (publication), l’éditeur de SPA n’est jamais chargé.
+>* En production (publication), l’éditeur de SPA n’est jamais chargé.
 >
 
 ### Workflow d’édition de pages client-serveur {#client-server-page-editing-workflow}
@@ -126,7 +140,7 @@ Cette section donne un aperçu plus détaillé de l’interaction client-serveur
 1. Les ressources qui composent la page font l’objet d’une demande auprès du référentiel.
 1. Les ressources qui composent la page sont fournies à l’exportateur de modèle Sling par le référentiel.
 1. Le modèle de page mis à jour est renvoyé à l’éditeur.
-1. L’éditeur de page met à jour la référence de modèle de page de l’application sur une seule page.
+1. L’éditeur de page met à jour la référence du modèle de page de la SPA.
 1. La SPA met à jour ses composants en fonction de la nouvelle référence de modèle de page.
 1. Les configurations de composant des éditeurs de page sont mises à jour.
 
@@ -147,7 +161,7 @@ Il s’agit d’un aperçu plus détaillé axé sur l’expérience de création
 
    **2b** Une fois informé, l’orchestrateur de composants met à jour la structure de contenu de la page.
 1. L’orchestrateur de composants interroge le mappage entre le type de ressource AEM et un composant SPA.
-1. L’orchestrateur de composants instancie, de manière dynamique, le composant SPA sur la base du mappage entre le modèle de page et le composant.
+1. L’orchestrateur de composants instancie dynamiquement le composant SPA en fonction du modèle de page et du mappage de composant.
 1. L’éditeur de page met à jour le modèle de page.
 1. **6a** Le modèle de page fournit des données de création mises à jour à l’éditeur de page.
 
@@ -179,7 +193,7 @@ Il est possible de définir et personnaliser d’autres sélecteurs dans le cadr
 
 ### Exigences relatives à l’éditeur de texte {#text-editor-requirements}
 
-Si vous souhaitez utiliser l’éditeur statique d’un composant de texte créé dans une SPA, une configuration supplémentaire est nécessaire.
+Si vous souhaitez utiliser l’éditeur en place d’un composant de texte créé dans une SPA, une configuration supplémentaire est nécessaire.
 
 1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas du contenu d’exemple Journal WKND, il s’agit d’un élément `<div>` et le sélecteur qui a été utilisé est `data-rte-editelement`.
 1. Définissez la configuration `editElementQuery` sur la `cq:InplaceEditingConfig` du composant de texte AEM correspondant qui pointe vers ce sélecteur, par exemple `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.

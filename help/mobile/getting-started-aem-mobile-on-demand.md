@@ -9,13 +9,17 @@ exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 1%
-
 ---
-
 # AEM Mobile On-Demand{#aem-mobile-on-demand}
 
 {{ue-over-mobile}}
@@ -90,7 +94,7 @@ Pour commencer à connaître les rôles et responsabilités des développeurs, v
 
 ## Instance de création AEM {#aem-author}
 
-Un ***auteur* (ou *spécialiste du marketing*)**&#x200B;utilise les modèles et composants personnalisés développés ou prêts à l’emploi pour ajouter et modifier des pages, faire glisser et déposer des composants et ajouter des médias de tous types à partir de la gestion des ressources numériques, y compris des images, des vidéos et des fragments de texte (fragments de contenu). L’éditeur de contenu intégré d’AEM est ensuite utilisé par les *auteurs AEM* pour créer des expériences riches et pertinentes dans l’application, y compris l’intégration au reste d’Adobe Experience Cloud.
+Un ***auteur* (ou *spécialiste du marketing*)**utilise les modèles et composants personnalisés développés ou prêts à l’emploi pour ajouter et modifier des pages, faire glisser et déposer des composants et ajouter des médias de tous types à partir de la gestion des ressources numériques, y compris des images, des vidéos et des fragments de texte (fragments de contenu). L’éditeur de contenu intégré d’AEM est ensuite utilisé par les *auteurs AEM* pour créer des expériences riches et pertinentes dans l’application, y compris l’intégration au reste d’Adobe Experience Cloud.
 
 Un auteur AEM doit comprendre les rubriques suivantes lors de la création d’une application à l’aide d’AEM Mobile On-demand Services :
 

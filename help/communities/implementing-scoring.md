@@ -11,13 +11,20 @@ role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2911'
+source-wordcount: '2919'
 ht-degree: 3%
-
 ---
-
 # Notation et badges de Communities {#communities-scoring-and-badges}
 
 ## Vue d’ensemble {#overview}
@@ -58,7 +65,7 @@ La console Communautés [Badges](/help/communities/badges.md) permet d’ajouter
 
 Les badges basés sur les rôles sont attribués par un administrateur aux membres de la communauté en fonction de leur rôle dans la communauté.
 
-Les badges attribués sont stockés dans le [SRP](/help/communities/srp.md) sélectionné et ne sont pas directement accessibles. Jusqu’à ce qu’une interface utilisateur graphique soit disponible, le seul moyen d’attribuer des badges basés sur les rôles est de le faire avec du code ou cURL. Pour obtenir des instructions sur cURL, consultez la section intitulée [&#x200B; Attribuer et révoquer des badges &#x200B;](#assign-and-revoke-badges).
+Les badges attribués sont stockés dans le [SRP](/help/communities/srp.md) sélectionné et ne sont pas directement accessibles. Jusqu’à ce qu’une interface utilisateur graphique soit disponible, le seul moyen d’attribuer des badges basés sur les rôles est de le faire avec du code ou cURL. Pour obtenir des instructions sur cURL, consultez la section intitulée [ Attribuer et révoquer des badges ](#assign-and-revoke-badges).
 
 Cette version comprend trois badges basés sur les rôles :
 
@@ -136,7 +143,7 @@ Si le nœud est de type `cq:Page` (recommandé), ajoutez les propriétés à son
 
 >[!NOTE]
 >
->Si une règle de notation semble n’avoir aucun effet sur l’attribution de badges, assurez-vous que la règle de notation n’a pas été bloquée par la propriété scoringRules de la règle de notation. Reportez-vous à la section intitulée [&#x200B; Règles de badge &#x200B;](#badging-rules).
+>Si une règle de notation semble n’avoir aucun effet sur l’attribution de badges, assurez-vous que la règle de notation n’a pas été bloquée par la propriété scoringRules de la règle de notation. Reportez-vous à la section intitulée [ Règles de badge ](#badging-rules).
 
 ### Activer les badges pour le composant {#enable-badges-for-component}
 
@@ -164,8 +171,8 @@ Les règles de score sont héritées, mais ne s’additionnent pas. Par exemple�
 * Une action sur un composant page2 appelle à la fois règle1 et règle2.
 * Si les deux règles contiennent des sous-règles applicables pour la même `topic/verb` :
 
-   * Seule la sous-règle de règle 2 affecte le score.
-   * Les scores des deux sous-règles ne sont pas ajoutés.
+  * Seule la sous-règle de règle 2 affecte le score.
+  * Les scores des deux sous-règles ne sont pas ajoutés.
 
 Lorsqu’il existe plusieurs règles de notation, les notes sont conservées séparément pour chaque règle.
 
@@ -181,7 +188,8 @@ Les scores sont stockés dans SRP.
 >
 >Exemple de ce qu *il ne faut pas* :
 >
->/libs/settings/community/scoring/rules/site1/forums-scoring>/libs/settings/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 ### Sous-Règles De Notation {#scoring-sub-rules}
 
@@ -274,18 +282,18 @@ Cette version comprend deux règles de notation pour la [fonction Forum](/help/c
 1. /libs/settings/community/scoring/rules/comments-scoring
 
    * subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/member-comment-create
-/libs/settings/community/scoring/rules/sub-rules/member-receive-vote
-/libs/settings/community/scoring/rules/sub-rules/member-give-vote
-/libs/settings/community/scoring/rules/sub-rules/member-is-mediated
+     /libs/settings/community/scoring/rules/sub-rules/member-comment-create
+     /libs/settings/community/scoring/rules/sub-rules/member-receive-vote
+     /libs/settings/community/scoring/rules/sub-rules/member-give-vote
+     /libs/settings/community/scoring/rules/sub-rules/member-is-mediated
 
 1. /libs/settings/community/scoring/rules/forums-scoring
 
    * subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/member-forum-create
-/libs/settings/community/scoring/rules/sub-rules/member-receive-vote
-/libs/settings/community/scoring/rules/sub-rules/member-give-vote
-/libs/settings/community/scoring/rules/sub-rules/member-is-mediated
+     /libs/settings/community/scoring/rules/sub-rules/member-forum-create
+     /libs/settings/community/scoring/rules/sub-rules/member-receive-vote
+     /libs/settings/community/scoring/rules/sub-rules/member-give-vote
+     /libs/settings/community/scoring/rules/sub-rules/member-is-mediated
 
 **Remarques:**
 
@@ -296,7 +304,7 @@ Cette version comprend deux règles de notation pour la [fonction Forum](/help/c
 * `sub-rules` peuvent être partagées entre différentes règles de notation.
 * `rules` doit se trouver dans un emplacement de référentiel avec des autorisations en lecture pour tout le monde.
 
-   * Les noms des règles doivent être uniques, quel que soit l’emplacement.
+  * Les noms des règles doivent être uniques, quel que soit l’emplacement.
 
 ### Activer les règles de score personnalisées {#activating-custom-scoring-rules}
 
@@ -315,15 +323,15 @@ Les règles relatives aux badges se composent d’une propriété `thresholds` o
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   * Un badge bronze est attribué pour gagner un point.
+  * Un badge bronze est attribué pour gagner un point.
 
 * `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
-   * Un badge argent est attribué lorsque 60 points ont été accumulés.
+  * Un badge argent est attribué lorsque 60 points ont été accumulés.
 
 * `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
-   * Un badge or est attribué lorsque 80 points ont été accumulés.
+  * Un badge or est attribué lorsque 80 points ont été accumulés.
 
 Les règles de badge sont associées à des règles de score, qui déterminent la façon dont les points s’accumulent. Consultez la section intitulée [Appliquer des règles au contenu](#apply-rules-to-content).
 
@@ -378,7 +386,7 @@ Cette version comprend deux règles de badge qui correspondent aux [règles de n
 * `rules` nœuds sont de type cq:Page.
 * `rules` doit se trouver dans un emplacement de référentiel avec des autorisations en lecture pour tout le monde.
 
-   * Les noms des règles doivent être uniques, quel que soit l’emplacement.
+  * Les noms des règles doivent être uniques, quel que soit l’emplacement.
 
 ### Activation des règles de badge personnalisées {#activating-custom-badging-rules}
 
@@ -413,7 +421,7 @@ par exemple, https://&lt;server>:&lt;port>/home/users/community/riley/profile.so
 >Le *member-profile-url* :
 >
 >* Peut faire référence à une instance de création si le [service de tunnel](/help/communities/users.md#tunnel-service) est activé.
->* Peut être un nom obscur et aléatoire (voir [&#x200B; Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) concernant l’ID autorisable.
+>* Peut être un nom obscur et aléatoire (voir [ Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) concernant l’ID autorisable.
 
 ### Exemples : {#examples}
 
@@ -581,29 +589,29 @@ Il est possible d’essayer rapidement de marquer et de badger à l’aide du si
 * Accédez à CRXDE Lite en mode de création.
 * Accédez à la page de base :
 
-   * /content/sites/engage/en/jcr:content
+  * /content/sites/engage/en/jcr:content
 
 * Ajoutez la propriété badgingRules :
 
-   * **Nom** : `badgingRules`
-   * **Type** : `String`
-   * Sélectionner **Multi**
-   * Sélectionnez **Ajouter**
-   * Enter `/libs/settings/community/badging/rules/forums-badging`
-   * Sélectionner **+**
-   * Enter `/libs/settings/community/badging/rules/comments-badging`
-   * Sélectionnez **OK**.
+  * **Nom** : `badgingRules`
+  * **Type** : `String`
+  * Sélectionner **Multi**
+  * Sélectionnez **Ajouter**
+  * Enter `/libs/settings/community/badging/rules/forums-badging`
+  * Sélectionner **+**
+  * Enter `/libs/settings/community/badging/rules/comments-badging`
+  * Sélectionnez **OK**.
 
 * Ajoutez la propriété scoringRules :
 
-   * **Nom** : `scoringRules`
-   * **Type** : `String`
-   * Sélectionner **Multi**
-   * Sélectionnez **Ajouter**
-   * Enter `/libs/settings/community/scoring/rules/forums-scoring`
-   * Sélectionner **+**
-   * Enter `/libs/settings/community/scoring/rules/comments-scoring`
-   * Sélectionnez **OK**.
+  * **Nom** : `scoringRules`
+  * **Type** : `String`
+  * Sélectionner **Multi**
+  * Sélectionnez **Ajouter**
+  * Enter `/libs/settings/community/scoring/rules/forums-scoring`
+  * Sélectionner **+**
+  * Enter `/libs/settings/community/scoring/rules/comments-scoring`
+  * Sélectionnez **OK**.
 
 * Sélectionnez **Enregistrer tout**.
 
@@ -614,13 +622,13 @@ Ensuite, assurez-vous que les composants forum et commentaires permettent l’af
 * Toujours à l’aide de CRXDE Lite.
 * Accédez au composant de forum
 
-   * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+  * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
 * Ajoutez la propriété booléenne allowBadges , si nécessaire, et assurez-vous qu’elle est définie sur true.
 
-   * **Nom** : `allowBadges`
-   * **Type** : `Boolean`
-   * **Valeur** : `true`
+  * **Nom** : `allowBadges`
+  * **Type** : `Boolean`
+  * **Valeur** : `true`
 
 ![test-forum-component](assets/test-forum-component.png)
 
@@ -633,7 +641,7 @@ Enfin,
 * Publier une nouvelle rubrique de forum.
 * La page doit être actualisée pour que le badge s’affiche.
 
-   * Déconnectez-vous et connectez-vous en tant que membre différent de la communauté (par exemple : aaron.mcdonald@mailinator.com/password).
+  * Déconnectez-vous et connectez-vous en tant que membre différent de la communauté (par exemple : aaron.mcdonald@mailinator.com/password).
 
 * Sélectionnez le forum.
 

@@ -10,13 +10,22 @@ exl-id: d60e9601-d15b-4378-a33e-e90961f63195
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '770'
 ht-degree: 100%
-
 ---
-
 # Annotations lors de la modification d’une page{#annotations-when-editing-a-page}
 
 L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette tâche, de nombreux composants directement liés au contenu (par opposition à la disposition, par exemple) vous permettent d’ajouter une annotation.
@@ -86,13 +95,13 @@ Les esquisses constituent une fonction des annotations qui vous permet de créer
 * Le curseur prend la forme d’une croix lorsque vous êtes en mode esquisse. Vous pouvez tracer plusieurs lignes distinctes.
 * La ligne d’esquisse reflète la couleur de l’annotation et peut être :
 
-   * à main levée :
+  * à main levée :
 
-     le mode par défaut ; terminez en relâchant le bouton de la souris ;
+    le mode par défaut ; terminez en relâchant le bouton de la souris ;
 
-   * droite :
+  * droite :
 
-     maintenez la touche `ALT` enfoncée et cliquez sur les points de début et de fin ; terminez par un double-clic.
+    maintenez la touche `ALT` enfoncée et cliquez sur les points de début et de fin ; terminez par un double-clic.
 
 * Après avoir quitté le mode esquisse, vous pouvez cliquer sur une ligne d’esquisse pour sélectionner l’esquisse.
 * Déplacez une esquisse en la sélectionnant, puis en la faisant glisser à l’emplacement souhaité.

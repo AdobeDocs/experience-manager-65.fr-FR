@@ -1,18 +1,37 @@
 ---
-title: Comment créer un formulaire adaptatif ?
-description: Découvrez comment créer un formulaire adaptatif à l’aide de  [!DNL Experience Manager Forms]. Les formulaires adaptatifs sont des formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations. Découvrez comment créer un formulaire adaptatif basé sur un modèle de données de formulaire, un modèle de formulaire XFA et un schéma XML ou JSON.
+title: Comment créer un formulaire adaptatif ?
+description: Découvrez comment créer un formulaire adaptatif à l’aide de [!DNL Experience Manager Forms]. Les formulaires adaptatifs sont des formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations. Découvrez comment créer un formulaire adaptatif basé sur un modèle de données de formulaire, un modèle de formulaire XFA et un schéma XML ou JSON.
 role: User, Developer
 level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2048'
 ht-degree: 99%
-
 ---
-
 # Création d’un formulaire adaptatif {#creating-an-adaptive-form}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -54,9 +73,9 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
    Vous pouvez configurer ces informations via l’onglet **[!UICONTROL Modèle de formulaire]** figurant sur la page **[!UICONTROL Ajouter des propriétés]**. Par défaut, le modèle de formulaire sélectionné est **[!UICONTROL Aucun]**.
 
-1. Sélectionnez **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
+1. Sélectionnez **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue permettant d’ouvrir le formulaire pour le modifier s’affiche.
 
-   Une fois que vous avez fini de spécifier toutes les propriétés, cliquez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
+   Une fois que vous avez fini de spécifier toutes les propriétés, cliquez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue permettant d’ouvrir le formulaire pour le modifier s’affiche.
 
    Une fois que vous avez fini de spécifier toutes les propriétés, cliquez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
 
@@ -88,7 +107,7 @@ Pour utiliser un modèle de données de formulaire pour créer un formulaire ada
 
 >[!NOTE]
 >
->Vous pouvez également remplacer le modèle de données de formulaire par un formulaire adaptatif. Pour obtenir des instructions détaillées, consultez la page [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](#edit-form-model).
+>Vous pouvez également modifier le modèle de données de formulaire d’un formulaire adaptatif. Pour obtenir des instructions détaillées, consultez la page [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](#edit-form-model).
 
 ## Créer un formulaire adaptatif basé sur un modèle de formulaire XFA {#create-an-adaptive-form-based-on-an-xfa-form-template}
 
@@ -145,13 +164,13 @@ Procédez comme suit pour utiliser un schéma XML ou JSON comme modèle de formu
 
 >[!NOTE]
 >
->Vous pouvez également remplacer le schéma par un formulaire adaptatif. Pour obtenir des instructions détaillées, consultez la page [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](#edit-form-model).
+>Vous pouvez également modifier le schéma d’un formulaire adaptatif. Pour obtenir des instructions détaillées, consultez la page [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](#edit-form-model).
 
 ## Modèles de formulaires adaptatifs {#adaptive-form-templates}
 
 Un modèle fournit une structure de base et définit l’apparence, c’est-à-dire la disposition et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. <!-- Out of the box, AEM Forms provides some adaptive form templates. To get the complete template package including advanced templates, you need to install the AEM Forms add-on package. For more information, see [Installing AEM Forms add-on package](installing-configuring-aem-forms-osgi.md).-->
 
-En outre, vous pouvez utiliser l’éditeur de modèle pour créer vos propres modèles. Pour plus d’informations sur l’utilisation de modèles, consultez [Modèles de formulaires adaptatifs](template-editor.md).
+En outre, vous pouvez utiliser l’éditeur de modèles pour créer vos propres modèles. Pour plus d’informations sur l’utilisation de modèles, consultez [Modèles de formulaires adaptatifs](template-editor.md).
 
 >[!NOTE]
 >
@@ -159,7 +178,7 @@ En outre, vous pouvez utiliser l’éditeur de modèle pour créer vos propres m
 
 ## Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model}
 
-Les formulaires adaptatifs sont créés sans modèle de formulaire (en utilisant l’option Aucun pour le modèle de formulaire) ou en utilisant un modèle de formulaire tel qu’un schéma XML ou JSON ou un modèle de données de formulaire. Vous pouvez changer le modèle de formulaire en formulaire adaptatif en remplaçant Aucun par un autre modèle de formulaire. Pour un formulaire adaptatif basé sur un modèle de formulaire, vous pouvez choisir un autre modèle de formulaire, un schéma XML, un schéma JSON ou un modèle de données de formulaire pour le même modèle de formulaire. Cependant, vous ne pouvez pas passer d’un modèle de formulaire à un autre.
+Les formulaires adaptatifs sont créés sans modèle de formulaire (en utilisant l’option Aucun pour le modèle de formulaire) ou en utilisant un modèle de formulaire tel qu’un schéma XML ou JSON ou un modèle de données de formulaire. Vous pouvez remplacer le modèle de formulaire d’un formulaire adaptatif de Aucun à un autre modèle de formulaire. Pour un formulaire adaptatif basé sur un modèle de formulaire, vous pouvez choisir un autre modèle de formulaire, un schéma XML, un schéma JSON ou un modèle de données de formulaire pour le même modèle de formulaire. Cependant, vous ne pouvez pas passer d’un modèle de formulaire à un autre.
 
 1. Sélectionnez le formulaire adaptatif, puis l’icône **Propriétés**.
 1. Ouvrez l’onglet **[!UICONTROL Modèle de formulaire]** et effectuez l’une des actions suivantes.
@@ -171,11 +190,11 @@ Les formulaires adaptatifs sont créés sans modèle de formulaire (en utilisant
 
 ## Enregistrer automatiquement un formulaire adaptatif {#auto-save-an-adaptive-form}
 
-Par défaut, le contenu d’un formulaire adaptatif est enregistré sur une action utilisateur, comme appuyer sur le bouton Enregistrer. Vous pouvez configurer un formulaire adaptatif pour démarrer automatiquement l’enregistrement du contenu en fonction d’un événement ou d’un intervalle de temps. L’option d’enregistrement automatique est utile pour :
+Par défaut, le contenu d’un formulaire adaptatif est enregistré lorsqu’un utilisateur ou une utilisatricec effectue une action, par exemple en appuyant sur le bouton Enregistrer. Vous pouvez configurer un formulaire adaptatif pour démarrer automatiquement l’enregistrement du contenu en fonction d’un événement ou d’un intervalle de temps. L’option d’enregistrement automatique est utile pour :
 
 * Enregistrement automatique du contenu pour les utilisateurs et utilisatrices anonymes et connectés
 * Enregistrement du contenu d’un formulaire sans intervention ou avec une intervention minimale de l’utilisateur ou de l’utilisatrice
-* Commencer à enregistrer le contenu d’un formulaire en fonction d’un événement utilisateur
+* Commencer à enregistrer le contenu d’un formulaire en fonction d’un évènement utilisateur
 * Enregistrer le contenu d’un formulaire à plusieurs reprises après un intervalle de temps spécifié
 
 ### Activer l’enregistrement automatique d’un formulaire adaptatif {#enable-auto-save-for-an-adaptive-form}

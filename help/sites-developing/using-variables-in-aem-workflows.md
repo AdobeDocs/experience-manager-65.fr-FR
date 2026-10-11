@@ -9,7 +9,18 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2080'
 ht-degree: 90%
@@ -249,7 +260,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Modification d’une variable {#edit-a-variable}
 
 1. Dans la page de modification du workflow, sélectionnez l’icône Variables disponible dans le sidekick du modèle de workflow. La section Variables du volet gauche affiche toutes les variables existantes.
-1. Sélectionnez l’icône ![&#x200B; Modifier indiquée par un symbole de crayon &#x200B;](assets/edit.png). Icône (Modifier) en regard du nom de variable à modifier.
+1. Sélectionnez l’icône ![ Modifier indiquée par un symbole de crayon ](assets/edit.png). Icône (Modifier) en regard du nom de variable à modifier.
 1. Modifiez les informations de la variable et sélectionnez ![Icône Enregistrer signalée par une coche.](assets/Done_Icon.png) pour enregistrer les modifications. Vous ne pouvez pas modifier les champs **[!UICONTROL Nom]** et **[!UICONTROL Type]** d’une variable.
 
 ## Supprimer une variable {#delete-a-variable}

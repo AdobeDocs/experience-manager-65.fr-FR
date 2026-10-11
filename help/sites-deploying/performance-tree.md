@@ -9,13 +9,22 @@ exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 100%
-
 ---
-
 # Arborescence de la performance{#performance-tree}
 
 ## Portée {#scope}
@@ -107,7 +116,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer quelle en
   <tr>
    <td><strong>Étapes 10 et 29</strong></td>
    <td>Examiner la couche réseau</td>
-   <td><p>Examinez la couche réseau pour détecter les problèmes de saturation et de latence.</p> <p>Pour le niveau de création, il est recommandé que la latence ne dépasse pas 100 millisecondes.</p> <p>Pour plus d’informations sur les conseils d’optimisation des performances, reportez-vous <a href="https://helpx.adobe.com/fr/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">à cette page</a>.</p> </td>
+   <td><p>Examinez la couche réseau pour détecter les problèmes de saturation et de latence.</p> <p>Pour le niveau de création, il est recommandé que la latence ne dépasse pas 100 millisecondes.</p> <p>Pour plus d’informations sur les conseils d’optimisation des performances, reportez-vous <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">à cette page</a>.</p> </td>
   </tr>
   <tr>
    <td><strong>Étape 11</strong></td>
@@ -184,7 +193,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer quelle en
    <td>Réglage du référentiel</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/fr/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">Conseils de réglage de la performance</a></li>
+     <li><a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">Conseils de réglage de la performance</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Configuration des performances</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">Réglage de la performance du référentiel</a></li>
     </ul> </td>
@@ -212,7 +221,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer quelle en
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Service de synchronisation d’Assets</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Instances multiples de gestion des ressources numériques</a></li>
-     <li>Article présentant des conseils sur l’optimisation des performances disponible <a href="https://helpx.adobe.com/fr/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">ici</a>.<br /> </li>
+     <li>Article présentant des conseils sur l’optimisation des performances disponible <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">ici</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>

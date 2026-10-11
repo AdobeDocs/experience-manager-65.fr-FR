@@ -10,13 +10,22 @@ exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 91%
-
+source-wordcount: '816'
+ht-degree: 93%
 ---
-
 # Personnaliser la console Sites web (IU classique){#customizing-the-websites-console-classic-ui}
 
 ## Ajouter une colonne personnalisée à la console Sites web (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
@@ -25,7 +34,7 @@ La console d’administration Sites web peut être étendue pour afficher des co
 
 Ce tutoriel détaillé explique comment afficher une nouvelle colonne dans la console Administration de sites Web en implémentant l’interface `ListInfoProvider`. Il se compose des étapes suivantes :
 
-1. [Création du service OSGI](#creating-the-osgi-service) et déploiement du lot qui le contient sur le serveur AEM.
+1. [Création du service OSGI](#creating-the-osgi-service) et déploiement du bundle qui le contient sur le serveur AEM.
 1. (facultatif) [Test du nouveau service](#testing-the-new-service) en effectuant un appel JSON pour demander l’objet JSON utilisé pour créer la console.
 1. [Affichage de la nouvelle colonne](#displaying-the-new-column) en étendant la structure des nœuds de la console dans le référentiel.
 
@@ -58,9 +67,9 @@ L’exemple d’implémentation est le suivant :
 
 Pour créer le service OSGi :
 
-1. Dans CRXDE Lite, [créez un lot](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
+1. Dans CRXDE Lite, [créez un bundle](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
 1. Ajoutez l’exemple de code ci-dessous.
-1. Créez le lot.
+1. Créez le bundle.
 
 Le nouveau service est opérationnel.
 
@@ -115,12 +124,12 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 Lorsque vous ouvrez la console d’administration Sites web et parcourez votre site, le navigateur émet un appel Ajax pour obtenir l’objet JSON utilisé pour créer la console. Par exemple, lorsque vous accédez au dossier `/content/geometrixx`, la requête suivante est envoyée au serveur AEM pour créer la console :
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
-Pour vous assurer que le nouveau service s’exécute après le déploiement du lot où il réside, procédez comme suit :
+Pour vous assurer que le nouveau service s’exécute après le déploiement du bundle où il réside, procédez comme suit :
 
 1. Pointez votre navigateur vers l’URL suivante :
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. La réponse doit afficher les nouvelles propriétés comme suit :
 
@@ -139,7 +148,7 @@ La dernière étape consiste à adapter la structure de nœuds de la console Adm
    * Supprimez **pageText**.
 
    * Définissez **pathRegex** sur . `/content/geometrixx(/.*)?`
-Cela rend la configuration de grille active pour tous les sites web Geometrixx.
+     Cela rend la configuration de grille active pour tous les sites web Geometrixx.
 
    * Définissez **storeProxySuffix** sur `.pages.json`.
 
@@ -147,9 +156,9 @@ Cela rend la configuration de grille active pour tous les sites web Geometrixx.
 
    * Pour activer la fonctionnalité MSM, ajoutez les paramètres MSM suivants à la propriété **storeReaderFields** à plusieurs chaînes :
 
-      * **msm:isSource**
-      * **msm:isInBlueprint**
-      * **msm:isLiveCopy**
+     * **msm:isSource**
+     * **msm:isInBlueprint**
+     * **msm:isLiveCopy**
 
 1. Ajoutez un nœud `starred` (de type **nt:unstructured**) sous `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` avec les propriétés suivantes :
 
@@ -162,10 +171,10 @@ Cela rend la configuration de grille active pour tous les sites web Geometrixx.
 1. (Facultatif) Déposez les colonnes que vous ne souhaitez pas afficher à l’emplacement suivant : `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`.
 
 1. `/siteadmin` est un chemin vanity qui, par défaut, pointe vers `/libs/wcm/core/content/siteadmin`.
-Pour le rediriger vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété `sling:vanityOrder` pour que sa valeur soit supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300. Toute valeur supérieure est donc acceptable.
+Pour rediriger l’ensemble vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété `sling:vanityOrder` pour que sa valeur soit supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
 
 1. Accédez à la console Administration de sites Web et rendez-vous sur le site de Geometrixx à l’adresse :
-   [:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx)
+   [](https://localhost:4502/siteadmin#/content/geometrixx).
 
 1. La nouvelle colonne nommée **Starred** affiche des informations personnalisées comme suit :
 

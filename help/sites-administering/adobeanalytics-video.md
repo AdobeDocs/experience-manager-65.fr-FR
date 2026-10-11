@@ -10,7 +10,18 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1817'
 ht-degree: 99%
@@ -39,7 +50,7 @@ Appliquez la procédure ci-dessous pour configurer un framework pour le suivi de
 
    * Les exemples dans les sections qui suivent utilisent le nom **my-sc-configuration** pour la configuration et **videofw** pour le framework.
 
-1. Dans la page du framework, sélectionnez un RSID et définissez l’utilisation sur Tout. ([&#128279;](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
+1. Dans la page du framework, sélectionnez un RSID et définissez l’utilisation sur Tout. ([](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
 1. Dans la catégorie Général du sidekick, faites glisser le composant vidéo dans le framework.
 1. Sélectionnez une méthode de suivi :
 
@@ -225,7 +236,7 @@ Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent se pré
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Le **premier appel**&#x200B;à Adobe Analytics contient les valeurs suivantes :*
+*Le **premier appel**à Adobe Analytics contient les valeurs suivantes :*
 
 * *prop1 et eVar1 pour eventdata.a.media.name,*
 * *props2-4, avec eVar2 et eVar3 contenant contentType (vidéo) et segment (1:O:1-4)*
@@ -233,7 +244,7 @@ Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent se pré
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-***Troisième appel**&#x200B;vers Adobe Analytics :*
+***Troisième appel**vers Adobe Analytics :*
 
 * *prop1 et eVar1 contiennent a.media.name ;*
 * *event1 car un segment a été visionné ;*
@@ -320,7 +331,7 @@ Cette méthode est similaire à la méthode Milestones, à la différence que le
 
    ![lmilestones1](assets/lmilestones1.png)
 
-   *La variable **pev3**&#x200B;envoyée dans l’appel contient les informations suivantes :*
+   *La variable **pev3**envoyée dans l’appel contient les informations suivantes :*
 
    * *Nom* : nom du fichier vidéo (*film.avi*)
 

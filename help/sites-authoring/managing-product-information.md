@@ -9,13 +9,26 @@ exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2888'
+source-wordcount: '2905'
 ht-degree: 100%
-
 ---
-
 
 # Projet créatif et intégration à PIM {#creative-project-and-pim-integration}
 
@@ -94,7 +107,7 @@ Les deux workflows incluent des étapes pour lier les produits à leurs ressourc
 
 ## Suivi de la progression du projet {#tracking-project-progress}
 
-Vous pouvez suivre la progression d’un projet en consultant les tâches actives/terminées dans un projet.
+Vous pouvez suivre la progression d’un projet en  les tâches actives/terminées dans un projet.
 
 Utilisez les éléments suivants pour surveiller la progression d’un projet :
 
@@ -148,7 +161,7 @@ Suivez la même procédure pour configurer les tâches dans le **workflow Séanc
 Cette section décrit comment intégrer la gestion des informations produit (PIM) à votre projet de création.
 
 1. Accédez à un projet Séance photo de produit, et cliquez sur l’icône **Ajouter une tâche** sur la carte **Workflows**.
-1. Sélectionnez le workflow **Séance photo de produit (intégration de Commerce)** pour démarrer le workflow **Séance photo de produit (intégration de Commerce)**. Si les informations produit ne sont pas disponibles sous `/etc/commerce`, sélectionnez le workflow **Séance photo de produit** et lancez le workflow **Séance photo de produit**.
+1. Sélectionnez la carte de workflow **Séance photo de produit (intégration de Commerce)** pour démarrer le workflow **Séance photo de produit (intégration de Commerce)**. Si les informations produit ne sont pas disponibles sous `/etc/commerce`, sélectionnez le workflow **Séance photo de produit** et lancez le workflow **Séance photo de produit**.
 
    ![Assistant Workflow](assets/chlimage_1-140a.png)
 
@@ -199,7 +212,7 @@ La tâche **Créer une liste de plans** permet au propriétaire du projet de sé
 
    ![Modifier la liste de plans](assets/chlimage_1-149a.png)
 
-   Une fois que le fichier est à jour, cliquez sur **Enregistrer** dans la barre d’outils pour enregistrer le fichier.
+   Une fois le fichier mis à jour, cliquez sur **Enregistrer** dans la barre d’outils pour l’enregistrer.
 
 1. Après avoir ajouté les produits,cliquez sur l’icône **Terminer** sur la page de détails de la tâche **Créer une liste de plans** pour marquer la tâche comme terminée. Vous pouvez ajouter un commentaire facultatif.
 

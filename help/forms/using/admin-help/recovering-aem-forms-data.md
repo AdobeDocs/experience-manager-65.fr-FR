@@ -9,13 +9,27 @@ exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 100%
-
+source-wordcount: '1174'
+ht-degree: 97%
 ---
-
 # Récupération des données AEM Forms {#recovering-the-aem-forms-data}
 
 Cette section décrit les étapes nécessaires à la récupération des données AEM Forms. Voir également [Remarques spécifiques à la sauvegarde et la récupération](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
@@ -54,11 +68,11 @@ Si un nœud unique d’un cluster multinœud a échoué et si les nœuds restant
 1. Au besoin, recréez le système physique à partir d’une image système. Par exemple, cette étape peut ne pas être nécessaire si la raison de la récupération est un serveur de bases de données déficient.
 1. Appliquez les correctifs ou les mises à jour à AEM Forms qui ont été appliqués depuis que l’image a été créée. Cette information a été mentionnée dans la procédure de sauvegarde. AEM Forms doit se voir appliquer le même niveau de correctif auquel il se trouvait lors de la sauvegarde du système.
 1. (WebSphere® Application Server) Si vous récupérez une nouvelle instance de WebSphere® Application Server, exécutez la commande restoreConfig.bat/sh.
-1. Récupérez la base de données AEM forms en procédant tout d’abord à une opération de restauration de la base de données à l’aide des fichiers de sauvegarde, puis en appliquant les journaux de rétablissement des transactions à la base de données récupérée. (Voir [Base de données AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Pour plus d’informations, voir l’un des articles suivants de la base de connaissances :
+1. Récupérez la base de données AEM forms en procédant tout d’abord à une opération de restauration de la base de données à l’aide des fichiers de sauvegarde, puis en appliquant les journaux de rétablissement des transactions à la base de données récupérée. (Voir [Base de données AEM forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Pour plus d’informations, consultez l’un des articles suivants de la base de connaissances :
 
-   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [DB2® - Sauvegarde et récupération des formulaires AEM](/help/forms/using/admin-help/files-back-recover.md#db2)
    * [Sauvegarde et récupération d’Oracle pour AEM Forms](/help/forms/using/admin-help/files-back-recover.md#oracle)
-   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [® - Sauvegarde et récupération SQL Server pour AEM forms](/help/forms/using/admin-help/files-back-recover.md#sql-server)
    * [MySQL - Sauvegarde et récupération pour AEM Forms](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Récupérez le répertoire de stockage global de documents en commençant par supprimer le contenu de ce répertoire sur l’installation existante d’AEM Forms, puis copiez le contenu de ce même répertoire depuis le stockage global de documents sauvegardé. Si vous avez changé l’emplacement du répertoire de stockage global de documents, voir [Modification de l’emplacement du stockage global de documents durant la récupération](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
@@ -127,7 +141,7 @@ Si votre répertoire de stockage global de documents est restauré à un emplace
 
 ## Récupération du répertoire de stockage global de documents dans un environnement en cluster {#recovering-the-gds-to-a-clustered-environment}
 
-Pour modifier l’emplacement du répertoire de stockage global de documents dans un environnement en cluster, arrêtez l’ensemble du cluster et exécutez le script LCSetGDS sur un seul nœud du cluster. (Voir [Modification de l’emplacement du répertoire de stockage global de documents pendant la récupération](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Démarrez uniquement ce nœud. Une fois que ce nœud a complètement démarré, vous pouvez démarrer d’autres nœuds du cluster en toute sécurité. Ils pointeront correctement vers le nouveau répertoire de stockage global de documents.
+Pour modifier l’emplacement du répertoire de stockage global de documents dans un environnement en cluster, arrêtez l’ensemble du cluster et exécutez le script LCSetGDS sur un seul nœud du cluster. (Voir [Modification de l’emplacement du répertoire de stockage global de documents pendant la récupération](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)). Démarrez uniquement ce nœud. Une fois que ce nœud a complètement démarré, vous pouvez démarrer d’autres nœuds du cluster en toute sécurité. Ils pointeront correctement vers le nouveau répertoire de stockage global de documents.
 
 >[!NOTE]
 >

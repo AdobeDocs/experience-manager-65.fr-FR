@@ -8,14 +8,20 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
-release-date: 2025-08-05T00:00:00Z
-source-git-commit: 3f64cfa688ef1f0090b7ce0d821324593cbea693
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
-
+release-date: 2025-08-05T00:00:00.000Z
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 94%
 ---
-
 # Atténuation de l’exécution de code à distance (CVE-2025-49533), de la configuration du mode de développement Struts (CVE-2025-54253), des XXE (CVE-2025-54254) et des vulnérabilités pour AEM Forms sur JEE {#mitigating-xxe-configuration-rce-vulnerabilities-aem-forms}
 
 ## Référence rapide
@@ -46,7 +52,7 @@ ht-degree: 100%
 
 ### Éléments non affectés
 
-- Workbench Experience Manager Forms (toutes les versions)
+- Experience Manager Forms Workbench (toutes les versions)
 - Experience Manager Forms sur OSGi (toutes les versions)
 - Experience Manager Forms as a Cloud Service
 
@@ -81,7 +87,7 @@ Cette précaution vous permet d’effectuer une restauration à l’état d’or
 
 **Étape 1 : téléchargez et extrayez le package du correctif**
 
-- Téléchargez le [correctif pour 6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md) à partir du portail de distribution de logiciels Adobe.
+- Téléchargez le [correctif pour 6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md) à partir du portail de distribution de logiciels Adobe
 - Extrayez-le localement
 
 **Étape 2 : accédez au dossier de version approprié**
@@ -257,7 +263,7 @@ Si vous utilisez Document Security (anciennement Rights Management), définissez
 
 ## Références
 
-- [CWE-611 : restriction incorrecte de la référence d’entité externe XML](https://cwe.mitre.org/data/definitions/611.html)
-- [CWE-16 : configuration](https://cwe.mitre.org/data/definitions/16.html)
-- [Aide-mémoire OWASP sur la prévention des XXE](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [Bonnes pratiques de sécurité pour Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr)
+- [CWE-611 : restriction incorrecte de la référence d&#39;entité externe XML](https://cwe.mitre.org/data/definitions/611.html)
+- [CWE-16 : configuration](https://cwe.mitre.org/data/definitions/16.html)
+- [Aide-mémoire sur la prévention d’OWASP XXE](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
+- [Bonnes pratiques de sécurité d’Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr)

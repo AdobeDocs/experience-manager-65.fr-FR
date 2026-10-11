@@ -1,5 +1,5 @@
 ---
-title: Gestion des collections de ressources numériques
+title: Gérer les collections de ressources numériques
 description: Découvrez les tâches de gestion des collections de ressources, telles que la création, l’affichage, la suppression, la modification et le téléchargement de collections.
 contentOwner: AG
 mini-toc-levels: 1
@@ -8,13 +8,27 @@ feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c73531c3-4c05-471e-beff-cefb35857910
+    internal-label: Collections
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2201'
 ht-degree: 98%
-
 ---
-
 # Gérer les collections {#managing-collections}
 
 | Version | Lien de l’article |
@@ -30,7 +44,7 @@ Vous pouvez partager plusieurs collections avec un utilisateur ou une utilisatri
 
 Les collections sont composées des types suivants, en fonction de la manière dont elles collectent les ressources :
 
-* Collection contenant une liste de référence statique de ressources, dossiers et autres collections
+* Collection contenant une liste de référence statique de ressources, dossiers et autres collections.
 
 * Collection dynamique qui rassemble de manière dynamique des ressources selon des critères de recherche
 
@@ -40,7 +54,7 @@ Pour ouvrir les **[!UICONTROL Collections]**, dans l’interface d’[!DNL Exper
 
 ## Création d’une collection {#creating-a-collection}
 
-Vous pouvez créer une collection contenant des [références statiques](#creating-a-collection-with-static-references) ou reposant sur un [filtre de critères de recherche](#creating-a-smart-collection). Vous pouvez également créer une collection à partir d’une Lightbox.
+Vous pouvez créer une collection contenant des [références statiques](#creating-a-collection-with-static-references) ou reposant sur un [filtre de critères de recherche](#creating-a-smart-collection). Vous pouvez également créer une collection à partir d’une lightbox.
 
 ### Création d’une collection avec des références statiques {#creating-a-collection-with-static-references}
 
@@ -84,7 +98,7 @@ Vous pouvez faire glisser des ressources de l’interface utilisateur d’[!DNL 
 
 Une collection dynamique utilise des critères de recherche pour rassembler les ressources de manière dynamique. Vous pouvez créer une collection dynamique en utilisant uniquement des fichiers et non pas des dossiers ou des fichiers et des dossiers.
 
-Pour créer une collection dynamique, procédez comme suit :
+Pour créer une collecte dynamique, procédez comme suit :
 
 1. Accédez à l’interface utilisateur d’[!DNL Assets], puis cliquez sur rechercher.
 
@@ -117,7 +131,7 @@ Pour créer une collection dynamique, procédez comme suit :
 Vous pouvez ajouter des ressources à une collection qui comporte une liste de ressources ou de dossiers référencés. Les collections dynamiques utilisent une requête de recherche pour renseigner les ressources. Par conséquent, les références statiques aux ressources et aux dossiers ne s’y appliquent pas.
 
 1. Dans l’interface utilisateur [!DNL A]ssets, sélectionnez la ressource, puis cliquez sur **[!UICONTROL À la collection]** ![ajouter à la collection](assets/do-not-localize/add-to-collection.png) dans la barre d’outils.
-Vous pouvez également faire glisser la ressource vers la zone **[!UICONTROL Déposer dans la collection]** de l’interface. Ajoutez les ressources lorsque le libellé de la zone devient **[!UICONTROL Déposer pour ajouter]**.
+Vous pouvez également faire glisser la ressource sur la zone **[!UICONTROL Déposer dans la collection]** dans l’interface. Ajoutez les ressources lorsque le libellé de la zone devient **[!UICONTROL Déposer pour ajouter]**.
 
 1. Sur la page **[!UICONTROL Ajouter à la collection]**, sélectionnez la collection à laquelle vous souhaitez ajouter la ressource.
 
@@ -137,7 +151,7 @@ Les collections dynamiques sont créées en enregistrant une recherche afin que 
 1. Dans la liste **[!UICONTROL Fichiers et dossiers]**, sélectionnez **[!UICONTROL Fichiers]**.
 1. Modifiez un ou plusieurs filtres selon vos besoins. Cliquez sur **[!UICONTROL Modifier la collection dynamique]**.
 
-   Vous pouvez également modifier le nom de la collection dynamique.
+   Vous pouvez également modifier le nom de la collecte dynamique.
 
    ![edit_smart_collectiondialog](assets/edit_smart_collectiondialog.png)
 
@@ -153,7 +167,7 @@ Les métadonnées de collection incluent les données sur la collection, notamme
 1. Sur la page **[!UICONTROL Métadonnées de collection]**, affichez les métadonnées de collection à partir des onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]**.
 1. Modifiez les métadonnées selon vos besoins. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]** dans la barre d’outils.
 
-## Modification en bloc des métadonnées de plusieurs collections {#editing-collection-metadata-in-bulk}
+## Modifier en bloc les métadonnées de plusieurs collections {#editing-collection-metadata-in-bulk}
 
 Vous pouvez modifier les métadonnées de plusieurs collections simultanément. Cette fonctionnalité vous permet de répliquer rapidement des métadonnées communes dans plusieurs collections.
 
@@ -190,7 +204,7 @@ Si vous recherchez des collections à partir du niveau supérieur, seules les co
 
 Dans la console Collections, cliquez sur une collection pour l’ouvrir.
 
-Dans une collection, la recherche [!DNL Experience Manager] se limite aux ressources (ainsi qu’aux balises et métadonnées) de la collection en cours d’affichage. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
+Dans une collection, la recherche [!DNL Experience Manager] se limite aux ressources (ainsi qu’aux balises et métadonnées) de la collection en cours d’affichage. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, les dossiers et les autres collections correspondants qui sont des membres directs de la collection sont renvoyés.
 
 ## Modification des paramètres d’une collection {#editing-collection-settings}
 
@@ -203,7 +217,7 @@ Vous pouvez modifier les paramètres d’une collection, tels que le titre et la
 
 ## Suppression d’une collection {#deleting-a-collection}
 
-1. Dans la console Collections, sélectionnez une ou plusieurs collections, puis cliquez sur supprimer dans la barre d’outils.
+1. Dans la console Collections, sélectionnez une ou plusieurs collections, puis cliquez sur Supprimer dans la barre d’outils.
 
 1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Supprimer]** pour confirmer la suppression.
 
@@ -268,7 +282,7 @@ Pour supprimer des recherches enregistrées, procédez comme suit :
 
 Vous pouvez exécuter un workflow pour les ressources d’une collection. Si la collection contient des collections imbriquées, le workflow s’exécute également sur les ressources de ces dernières. Toutefois, si la collection et les collections imbriquées contiennent des ressources en double, le workflow ne s’exécute qu’une seule fois pour ces ressources.
 
-1. Ouvrez **[!UICONTROL Ressources]** > **[!UICONTROL Collections]**. Pour exécuter un workflow sur une collection spécifique, sélectionnez-le.
+1. Ouvrez **[!UICONTROL Ressources]** > **[!UICONTROL Collections]**. Pour exécuter un workflow sur une collection spécifique, sélectionnez-la.
 1. Ouvrez le rail **[!UICONTROL Chronologie]**. Cliquez sur ![chevron vers le haut](assets/do-not-localize/chevron-up-icon.png) et cliquez sur **[!UICONTROL Démarrer le workflow]**.
 1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste. Par exemple, sélectionnez le modèle **[!UICONTROL Ressources de mise à jour de DAM]**.
 1. Saisissez un titre pour le workflow puis cliquez sur **[!UICONTROL Démarrer]**.

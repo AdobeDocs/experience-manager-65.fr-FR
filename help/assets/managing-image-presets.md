@@ -12,13 +12,27 @@ feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: a16e03b7-8456-4383-8860-31ab5ab00e9e
+    internal-label: Image presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3900'
-ht-degree: 86%
-
+source-wordcount: '3995'
+ht-degree: 87%
 ---
-
 # Gestion des paramètres d’image prédéfinis Dynamic Media{#managing-image-presets}
 
 Les paramètres d’image prédéfinis permettent à Adobe Experience Manager Assets d’afficher des images selon des tailles et des formats différents, ou avec d’autres propriétés d’image générées dynamiquement. Chaque paramètre d’image prédéfini représente un ensemble prédéfini de commandes de dimensionnement et de mise en forme pour l’affichage des images. Lorsque vous créez un paramètre d’image prédéfini, vous choisissez une taille pour la diffusion de l’image. Vous pouvez également choisir des commandes de mise en forme afin d’optimiser l’apparence de l’image lors de sa diffusion.
@@ -247,11 +261,11 @@ La création d’un paramètre d’image prédéfini Dynamic Media vous permet 
 >
 >Si vous utilisez Internet Explorer 9, la création d’un paramètre prédéfini n’apparaît pas immédiatement dans la liste après l’enregistrement. Pour contourner ce problème, désactivez le cache d’IE9.
 
-Si vous avez l’intention de prendre en charge l’assimilation de fichiers AI, PDF et EPS afin de pouvoir générer des rendus dynamiques de ces formats de fichiers, consultez les informations suivantes avant de créer des paramètres d’image prédéfinis.
-Voir [Formats de fichiers Adobe Illustrator (AI), Postscript (EPS) et PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
+Si vous avez l’intention de prendre en charge l’ingestion de fichiers AI, PDF et EPS de manière à pouvoir générer des rendus dynamiques de ces formats de fichiers, consultez les informations suivantes avant de créer des paramètres d’image prédéfinis.
+Voir [Formats de fichiers Adobe Illustrator (AI), PostScript (EPS) et PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
-Si vous avez l’intention de prendre en charge l’assimilation de fichiers INDD de manière à pouvoir générer le rendu dynamique de ce format de fichier, vous pouvez consulter les informations suivantes avant de créer des paramètres d’image prédéfinis.
-Voir le format de fichier [InDesign (INDD)](#indesign-indd-file-format).
+Si vous avez l’intention de prendre en charge l’ingestion de fichiers INDD de manière à pouvoir générer le rendu dynamique de ce format de fichier, vous pouvez consulter les informations suivantes avant de créer des paramètres d’image prédéfinis.
+Voir [Format de fichier InDesign (INDD)](#indesign-indd-file-format).
 
 >[!NOTE]
 >
@@ -326,7 +340,10 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
      <li><strong>Activer le sous-échantillonnage de la chrominance JPG</strong> - L’œil étant moins sensible aux informations de couleur haute fréquence que la luminance haute fréquence, les images JPEG divisent les informations d’image en composants de luminance et de couleur. Lorsqu’une image JPEG est compressée, la composante de luminance est laissée à la résolution maximale, tandis que les composantes de couleur sont sous-échantillonnées en calculant la moyenne de groupes de pixels. Le sous-échantillonnage réduit le volume de données de moitié ou d’un tiers, sans avoir d’incidence sur la qualité perçue. Le sous-échantillonnage ne s’applique pas aux images en niveaux de gris. Cette technique réduit le taux de compression utile pour les images à fort contraste (par exemple, les images avec texte superposé).</li>
     </ul>
     <div>
-      La sélection de l’option <strong>GIF</strong> ou <strong>GIF avec couche alpha</strong> offre les options <strong>Quantification de couleurs GIF</strong> supplémentaires suivantes :
+      Choix
+     <strong></strong> ou
+     <strong>GIF avec version alpha</strong> fournit ces fonctionnalités supplémentaires
+     <strong>Quantification de couleurs </strong> options :
     </div>
     <ul>
      <li><strong>Type </strong> : sélectionnez <strong>Adaptatif</strong> (valeur par défaut), <strong>Web</strong> ou <strong>Macintosh</strong>. Si vous sélectionnez <strong>GIF avec couche alpha</strong>, l’option Macintosh n’est pas disponible.</li>
@@ -335,7 +352,10 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
      <li><strong>Liste de couleurs</strong> : entrez une liste séparée par des virgules. Par exemple, pour blanc, gris et noir, saisissez <code>000000,888888,ffffff</code>.</li>
     </ul>
     <div>
-      Lorsque vous sélectionnez les options <strong>PDF</strong>, <strong>TIFF</strong> ou <strong>TIFF avec couche alpha</strong>, les autres options suivantes sont proposées :
+      Choix
+     <strong></strong>,
+     <strong></strong> ou
+     <strong>TIFF avec couche alpha</strong> propose cette option supplémentaire :
     </div>
     <ul>
      <li><strong>Compression</strong> : sélectionnez un algorithme de compression. Les options d’algorithme pour le format PDF sont <strong>Aucun</strong>, <strong>Zip</strong> et <strong>Jpeg</strong>. Les options pour le format TIFF sont <strong>Aucun</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> et <strong>Zip</strong>. Les options pour le format TIFF avec couche alpha sont <strong>Aucun</strong>, <strong>LZW</strong> et <strong>Zip</strong>.</li>
@@ -366,7 +386,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
   </tr>
   <tr>
    <td><strong>Intention de rendu</strong></td>
-   <td>Vous pouvez remplacer l’intention de rendu par défaut. Les modes de rendu déterminent le sort des couleurs qui ne peuvent pas être reproduites dans le profil colorimétrique cible (hors de la gamme). L’intention de rendu est ignorée si elle n’est pas compatible avec le profil ICC.
+   <td>Vous pouvez remplacer l’intention de rendu par défaut. Les intentions de rendu déterminent ce qui arrive aux couleurs qui ne peuvent pas être reproduites dans le profil colorimétrique cible (hors gamme). L’intention de rendu est ignorée si elle n’est pas compatible avec le profil ICC.
     <ul>
      <li>Sélectionnez <strong>Perception</strong> pour compresser la gamme totale d’un espace colorimétrique dans un autre lorsqu’une ou plusieurs couleurs de l’image d’origine se situent en dehors de la gamme de l’espace colorimétrique de destination.</li>
      <li>Sélectionnez <strong>Colorimétrie relative</strong> lorsqu’une couleur de l’espace colorimétrique actuel se situe hors de la gamme des couleurs dans l’espace cible. Vous pouvez également la mapper à la couleur la plus proche possible dans la gamme de l’espace colorimétrique cible sans affecter d’autres couleurs. </li>
@@ -397,12 +417,13 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
      <li><strong>Appliquer à</strong> : détermine si l’accentuation s’applique à chaque couleur ou à la luminosité.</li>
     </ul>
     <div>
-      L’accentuation est décrite dans <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=fr">Accentuation des images</a>.
+      L’accentuation est décrite dans la section
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">Accentuation des images</a>.
     </div> </td>
   </tr>
   <tr>
    <td><strong>Mode Rééchantillonnage</strong></td>
-   <td>Sélectionnez une option <strong>Mode Rééchantillonnage</strong>. Ces options accentuent l’image lorsque sa résolution est réduite :
+   <td>Sélectionnez une option <strong>Mode de rééchantillonnage</strong>. Ces options accentuent l’image lorsqu’elle est sous-échantillonnée :
     <ul>
      <li><strong>Bi-linéaire</strong> - La méthode de rééchantillonnage la plus rapide. Certains artefacts de crénelage sont visibles.</li>
      <li><strong>Bicubique</strong> : accroît l’utilisation du processeur, mais produit des images plus nettes avec des artefacts de crénelage plus discrets.</li>

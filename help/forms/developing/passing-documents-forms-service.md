@@ -1,21 +1,34 @@
 ---
 title: Transmission de documents au service Forms
-
-description: Transmettez au service Forms un objet com.adobe.idp.Document contenant la conception du formulaire. Le service Forms effectue le rendu de la conception de formulaire située dans l’objet com.adobe.idp.Document.
-
-
+description: Transmettez au service Forms un objet com.adobe.idp.Document contenant la conception du formulaire. Le service Forms effectue le rendu de la conception du formulaire dans l’objet com.adobe.idp.Document.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 100%
@@ -36,10 +49,10 @@ Vous pouvez récupérer Loan.xdp par programmation à partir de Content Services
 
 ## Résumé des étapes {#summary-of-steps}
 
-Pour transmettre un document obtenu à partir de Content Services (obsolète) au service Forms, effectuez les tâches suivantes :
+Pour transmettre un document obtenu à partir de Content Services (obsolète) (obsolète) au service Forms, effectuez les tâches suivantes :
 
 1. Incluez les fichiers de projet.
-1. Créez un objet Forms et un objet API Client de Document Management.
+1. Créez un objet API client Forms et un objet API client Document Management.
 1. Récupérez la conception de formulaire auprès de Content Services (obsolète).
 1. Effectuez le rendu du formulaire PDF interactif.
 1. Exécutez une action avec le flux de données de formulaire.
@@ -54,7 +67,7 @@ Avant d’effectuer par programmation une opération d’API de service Forms, c
 
 **Récupérer la conception de formulaire à partir de Content Services (obsolète)**
 
-Récupérez le fichier XDP à partir de Content Services (obsolète) à l’aide de l’API Java ou de service web. Le fichier XDP est renvoyé dans une instance `com.adobe.idp.Document` (ou une instance `BLOB` si vous utilisez des services Web). Vous pouvez ensuite transmettre l’instance `com.adobe.idp.Document` au service Forms.
+Récupérez le fichier XDP à partir de Content Services (obsolète) à l’aide de l’API Java ou de l’API de service web. Le fichier XDP est renvoyé dans une instance `com.adobe.idp.Document` (ou une instance `BLOB` si vous utilisez des services Web). Vous pouvez ensuite transmettre l’instance `com.adobe.idp.Document` au service Forms.
 
 **Effectuer le rendu d’un formulaire PDF interactif**
 
@@ -112,7 +125,7 @@ Transmettez un document obtenu à partir de Content Services (obsolète) à l’
 
    La méthode `renderPDFForm` renvoie un objet `FormsResult` qui contient un flux de données de formulaire qui doit être écrit dans le navigateur Web du client.
 
-1. Effectuer une action avec le flux de données du formulaire
+1. Effectuer une action avec le flux de données de formulaire
 
    * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
    * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
@@ -191,7 +204,7 @@ Transmettez un document obtenu à partir de Content Services (obsolète) en util
 
    La méthode `renderPDFForm2` renvoie un objet `FormsResult` qui contient le formulaire PDF interactif.
 
-1. Effectuer une action avec le flux de données du formulaire
+1. Effectuer une action avec le flux de données de formulaire
 
    * Créez un objet `BLOB` qui contient des données de formulaire en obtenant la valeur du champ `outputContent` de l’objet `FormsResult`.
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur string qui représente l’emplacement du fichier du document PDF interactif et le mode d’ouverture du fichier.

@@ -9,7 +9,23 @@ exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 98%
@@ -18,9 +34,9 @@ ht-degree: 98%
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
 
-Cette section décrit les étapes nécessaires à la réalisation d’une sauvegarde complète, à chaud ou en ligne, de la base de données AEM Forms, de même que du répertoire de stockage global de documents et des répertoires racine de stockage de contenu.
+Cette section décrit les étapes nécessaires à la réalisation d’une sauvegarde à chaud, ou en ligne, de la base de données AEM Forms, du GDS et des répertoires racine de stockage de contenu.
 
-Une fois AEM Forms installé et déployé dans les zones de production, l’administrateur ou l’administratrice de la base de données doit procéder à une première sauvegarde complète (ou à froid) de la base de données. Pour cela, la base de données doit être fermée. Par la suite, il ou elle devra effectuer régulièrement des sauvegardes incrémentielles (ou à chaud) de la base de données.
+Une fois AEM Forms installé et déployé dans les zones de production, l’administrateur ou l’administratrice de la base de données doit procéder à une première sauvegarde complète (ou à froid) de la base de données. Pour cela, la base de données doit être fermée. Par la suite, il ou elle devra effectuer régulièrement des sauvegardes différentielles ou incrémentielles (ou à chaud) de la base de données.
 
 Pour une sauvegarde et une restauration réussies, une sauvegarde de l’image système doit toujours être disponible. Ainsi, si une perte de données se produit, vous pouvez récupérer la totalité de votre environnement dans un état cohérent.
 
@@ -28,7 +44,7 @@ Le fait d’effectuer la sauvegarde de la base de données en même temps que le
 
 La procédure de sauvegarde décrite dans cette section nécessite d’être en mode de sauvegarde sécurisé avant de sauvegarder la base de données AEM Forms, le référentiel AEM, le répertoire de stockage global de documents et les répertoires racine de stockage de contenu. Une fois la sauvegarde terminée, vous devez quitter le mode de sauvegarde sécurisé. Le mode de sauvegarde sécurisé est utilisé pour marquer les documents de longue durée et persistants qui résident dans le répertoire de stockage global de documents. Ce mode garantit que le mécanisme de nettoyage de fichiers automatique (le collecteur de fichiers) ne supprime pas les fichiers ayant expiré jusqu’à l’activation du mode de sauvegarde sécurisé. La sauvegarde d’un répertoire de stockage global de documents doit rester synchronisée avec la sauvegarde d’une base de données.
 
-La fréquence de sauvegarde de l’emplacement du répertoire de stockage global de documents dépend du mode d’utilisation d’AEM Forms et des fenêtres de sauvegarde disponibles. La fenêtre de sauvegarde peut être affectée par les processus de longue durée, qui peuvent parfois s’exécuter pendant plusieurs jours. Si vous modifiez, ajoutez et supprimez en permanence des fichiers dans le répertoire de stockage global de documents, sauvegardez plus souvent cet emplacement.
+La fréquence de sauvegarde de l’emplacement du répertoire de stockage global de documents dépend du mode d’utilisation d’AEM Forms et des fenêtres de sauvegarde disponibles. La fenêtre de sauvegarde peut être affectée par les processus de longue durée, car ils peuvent s’exécuter pendant plusieurs jours. Si vous modifiez, ajoutez et supprimez en permanence des fichiers dans le répertoire de stockage global de documents, sauvegardez plus souvent cet emplacement.
 
 Si la base de données s’exécute dans un mode de consignation tel que décrit précédemment, les journaux de la base de données doivent également être sauvegardés régulièrement, afin d’en permettre l’utilisation pour restaurer la base de données en cas d’échec du support.
 
@@ -38,14 +54,14 @@ Si la base de données s’exécute dans un mode de consignation tel que décrit
 
 ## Sauvegarde de la base de données, du répertoire de stockage global de documents, du référentiel AEM et des répertoires racine de stockage de contenu. {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
-Vous pouvez mettre AEM Forms en mode de sauvegarde sécurisé (instantané) ou en mode de sauvegarde restauration (couverture continue). Avant de définir AEM Forms sur l’un de ces modes de sauvegarde, assurez-vous que les conditions suivantes sont remplies :
+Vous pouvez mettre AEM Forms en mode de sauvegarde sécurisé (instantané) ou en mode de sauvegarde progressive (couverture continue). Avant de mettre AEM Forms dans l’un de ces modes de sauvegarde, assurez-vous que les conditions suivantes sont remplies :
 
 * Vérifiez la version du système et notez les correctifs et mises à jour appliqués depuis la dernière sauvegarde d’image système complète.
 * Si vous utilisez des sauvegardes en mode instantané ou de type restauration, vérifiez que votre base de données est configurée avec des paramètres de consignation corrects pour autoriser les sauvegardes à chaud de la base de données. (Voir [Base de données AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
 
 Outre ces vérifications, observez les recommandations ci-dessous relatives au processus de sauvegarde/restauration.
 
-* Sauvegardez le répertoire de stockage global de documents en utilisant un système d’exploitation disponible ou un utilitaire de sauvegarde tiers. (Voir [Emplacement du répertoire de stockage global de documents](/help/forms/using/admin-help/files-back-recover.md#gds-location)).
+* Sauvegardez le répertoire GDS en utilisant un système d’exploitation disponible ou un utilitaire de sauvegarde tiers. (Voir [Emplacement du répertoire de stockage global de documents](/help/forms/using/admin-help/files-back-recover.md#gds-location)).
 * (Facultatif) Sauvegardez le répertoire racine de stockage de contenu en utilisant un système d’exploitation disponible ou un utilitaire de sauvegarde tiers. (Voir [Emplacement racine de stockage de contenu (environnement autonome)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) ou [Emplacement racine de stockage de contenu (environnement en cluster)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment)).
 * Sauvegardez les instances de création et de publication (sauvegarde de crx-repository).
 
@@ -55,12 +71,12 @@ Outre ces vérifications, observez les recommandations ci-dessous relatives au p
 
   * Assurez-vous que la sauvegarde des instances de création et de publication est synchronisée pour démarrer simultanément. Bien que vous puissiez continuer à utiliser les instances de création et de publication lorsque la sauvegarde est en cours, il est recommandé de ne pas publier de ressource pendant la sauvegarde afin d’éviter des modifications non enregistrées. Patientez jusqu’à ce que la sauvegarde des instances de création et de publication soit terminée avant de publier de nouvelles ressources.
   * La sauvegarde complète du nœud Création inclut la sauvegarde des données de Forms Manager et de l’espace de travail AEM Forms.
-  * Les développeurs et développeuses de Workbench peuvent continuer à travailler sur leurs processus localement. Il n’est pas nécessaire de déployer de nouveaux processus au cours de la phase de sauvegarde.
+  * Les développeurs et développeuses de Workbench peuvent continuer à travailler sur leurs processus localement. Ils ne doivent déployer aucun nouveau processus au cours de la phase de sauvegarde.
   * La décision concernant la durée de chaque session de sauvegarde (en mode de sauvegarde restauration) doit être basée sur la durée totale nécessaire pour sauvegarder toutes les données dans AEM Forms (base de données, stockage global de données, référentiel AEM et toutes les autres données personnalisées supplémentaires).
 
 Sauvegardez la base de données AEM Forms, y compris tous les journaux de transactions. Voir [Base de données AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 
-Pour plus d’informations, voir l’article de votre base de données dans la base de connaissances :
+Pour plus d’informations, voir l’article approprié de la base de connaissances pour votre base de données :
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
 * [Sauvegarde et récupération d’Oracle pour AEM Forms](https://www.adobe.com/go/kb403624)
 * [MySQL Backup and Recovery for AEM Forms](https://www.adobe.com/go/kb403625)
@@ -71,15 +87,15 @@ Ces articles vous aident à utiliser les fonctions de sauvegarde et de récupér
 
 >[!NOTE]
 >
->La sauvegarde de la base de données doit être terminée avant que vous commenciez à sauvegarder le répertoire de stockage global de documents. Si ce n’est pas le cas, vos données sont désynchronisées.
+>La sauvegarde de la base de données doit être terminée avant que vous commenciez à sauvegarder le GDS. Si ce n’est pas le cas, vos données sont désynchronisées.
 
 ### Passage en modes de sauvegarde {#entering-the-backup-modes}
 
-Vous pouvez utiliser la console d’administration, la commande LCBackupMode ou l’API accompagnant l’installation AEM Forms pour passer à un mode de sauvegarde et le quitter. L’option de la console d’administration n’est pas disponible pour le mode de sauvegarde restauration (couverture en continu) ; utilisez l’option de ligne de commande ou l’API.<!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM Forms API Reference on Help and Tutorials page. -->
+Vous pouvez utiliser la console d’administration, la commande LCBackupMode ou l’API disponible avec l’installation d’AEM Forms pour passer à un mode de sauvegarde et le quitter. L’option de la console d’administration n’est pas disponible pour le mode de sauvegarde restauration (couverture en continu) ; utilisez l’option de ligne de commande ou l’API.<!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM Forms API Reference on Help and Tutorials page. -->
 
 >[!NOTE]
 >
->Si vous avez configuré SSL sur le serveur Forms, vous ne pouvez pas passer le serveur Forms en mode de sauvegarde à l’aide du script LCBackupMode.CMD.
+>Si vous avez configuré SSL sur le Serveur Formulaires, vous ne pouvez pas passer le Serveur Formulaires en mode de sauvegarde à l’aide du script LCBackupMode.CMD.
 
 **Utilisation de la console d’administration pour passer en mode de sauvegarde sécurisé**
 
@@ -101,7 +117,7 @@ Vous pouvez utiliser les scripts `LCBackupMode` de l’interface de ligne de com
    * (Windows) `LCBackupMode.cmd enter [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `] [-label=`*labelname* `] [-timeout=`*seconds* `]`
    * (Linux®, UNIX®) `LCBackupMode.sh enter [-host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `] [-label=`*labelname* `]`
 
-   Dans les commandes précédentes, les emplacements réservés peuvent être définis comme suit :
+   Dans les commandes précédentes, les emplacements réservés sont définis comme suit :
 
    `Host` est le nom d’hôte sur lequel AEM Forms est exécuté.
 
@@ -127,15 +143,15 @@ Vous pouvez utiliser la console d’administration ou l’option de ligne de com
 
 **Quitter le mode de sauvegarde sécurisé (mode instantané)**
 
-Pour faire passer AEM Forms en mode de sauvegarde sécurisé (mode instantané) à l’aide de la console d’administration, suivez la procédure suivante.
+Pour faire sortir AEM Forms du mode de sauvegarde sécurisé (mode instantané) à l’aide de la console d’administration, suivez la procédure suivante.
 
-1. Connectez-vous à Administration Console.
+1. Connectez-vous à la console d’administration.
 1. Cliquez sur Paramètres > Paramètres de Core System > Utilitaires de sauvegarde.
 1. Désélectionnez Fonctionner en mode de sauvegarde sécurisé et cliquez sur OK.
 
 **Quitter tous les modes de sauvegarde**
 
-Vous pouvez utiliser l’interface de ligne de commande pour faire sortir AEM Forms du mode de sauvegarde sécurisé (mode instantané) ou pour mettre un terme à la session du mode de sauvegarde en cours (mode de sauvegarde de restauration). Vous ne pouvez pas utiliser la console d’administration pour quitter le mode de sauvegarde restauration. Lorsque le mode de sauvegarde de restauration est activé, les commandes Utilitaires de sauvegarde de la console d’administration sont désactivées. Utilisez l’appel API ou la commande LCBackupMode.
+Vous pouvez utiliser l’interface de ligne de commande pour faire sortir AEM Forms du mode de sauvegarde sécurisé (mode instantané) ou pour mettre un terme à la session du mode de sauvegarde en cours (mode de sauvegarde de restauration). Vous ne pouvez pas utiliser la console d’administration pour quitter le mode de sauvegarde progressive. Lorsque le mode de sauvegarde progressive est activé, les commandes Utilitaires de sauvegarde de la console d’administration sont désactivées. Utilisez l’appel API ou la commande LCBackupMode.
 
 1. Accédez au dossier `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
 1. Modifiez le script `LCBackupMode.cmd` ou `LCBackupMode.sh` de façon à indiquer les valeurs par défaut correspondant à votre système d’exploitation.
@@ -167,6 +183,6 @@ Vous pouvez utiliser l’interface de ligne de commande pour faire sortir AEM F
 
    >[!NOTE]
    >
-   >Si le stockage de documents dans la base de données est activé, le mode de sauvegarde instantané et le mode de sauvegarde de restauration ne sont pas applicables.
+   >Si le stockage de documents dans la base de données est activé, le mode de sauvegarde instantané et les modes de sauvegarde continue ne sont pas applicables.
 
    Pour plus d’informations sur l’interface de ligne de commande pour le mode de sauvegarde, voir le fichier Lisez-moi (Readme) dans le répertoire BackupRestoreCommandline.

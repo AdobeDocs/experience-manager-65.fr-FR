@@ -9,7 +9,23 @@ exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 93%
@@ -18,11 +34,11 @@ ht-degree: 93%
 
 Si votre implémentation AEM Forms stocke les données personnalisées supplémentaires dans une base de données différente, vous devez mettre en place une stratégie de sauvegarde pour ces données et veiller à ce qu’elles soient synchronisées avec les données AEM Forms. En outre, l’application doit être conçue de manière à pouvoir faire face à un scénario où les bases de données supplémentaires se désynchronisent. Il est vivement recommandé d’effectuer toute opération de base de données dans le contexte d’une transaction afin de maintenir un état cohérent.
 
-Une fois que vous avez compris le fonctionnement d’AEM Forms, déterminez les fichiers à sauvegarder, la fréquence de sauvegarde et la fenêtre de sauvegarde à mettre à disposition.
+Une fois que vous avez identifié comment AEM Forms est utilisé, déterminez les fichiers à sauvegarder, la fréquence de sauvegarde et la fenêtre de sauvegarde à mettre à disposition.
 
 >[!NOTE]
 >
->Comme pour tous les autres aspects relatifs à l’implémentation AEM Forms, vous devez développer et tester une stratégie de sauvegarde et de récupération dans un environnement de développement ou d’évaluation avant de passer à la phase de production. Il s’agit de veiller à ce que l’intégralité de la solution fonctionne comme prévu, sans perte de données.
+>Comme pour tous les autres aspects relatifs à la mise en œuvre d’AEM Forms, vous devez développer et tester une stratégie de sauvegarde et de récupération dans un environnement de développement ou d’évaluation avant de passer à la phase de production. Il s’agit de veiller à ce que l’intégralité de la solution fonctionne comme prévu, sans perte de données.
 
 Adobe Experience Manager (AEM) fait partie intégrante d’AEM Forms. Par conséquent, vous devez sauvegarder AEM également en synchronisation avec la sauvegarde AEM Forms, car la solution et les services de Correspondence Management, tels que Forms Manager, reposent sur des données stockées dans AEM, une partie d’AEM Forms.Pour éviter toute perte de données, les données spécifiques d’AEM forms doivent être sauvegardées de manière à garantir la corrélation entre le répertoire de stockage global de documents et AEM (référentiel) et les références de la base de données.Les répertoires de la base de données, du répertoire de stockage global de documents, d’AEM et de la racine de stockage de contenu doivent être restaurés sur un ordinateur avec le même nom DNS que le nom d’origine.
 
@@ -36,7 +52,7 @@ La stratégie de sauvegarde d’AEM Forms implique deux types de sauvegardes :
 
 >[!NOTE]
 >
->Si Content Services (obsolète) est installé, sauvegardez également le répertoire racine de stockage de contenu. Consultez la section [Répertoire racine de stockage de contenu (Content Services uniquement)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
+>Si Content Services (Obsolète) est installé, sauvegardez également le répertoire racine de stockage de contenu. Consultez la section [Répertoire racine de stockage de contenu (Content Services uniquement)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
 
 La base de données sert à stocker les artefacts de formulaire, les configurations de service, l’état de traitement et les références de base de données dans les fichiers du GDS. Si vous avez activé le stockage de documents dans la base de données, les données et les documents persistants dans le GDS sont également stockés dans la base de données. La sauvegarde et la récupération de la base de données peuvent être réalisées à l’aide des méthodes suivantes :
 
@@ -50,9 +66,9 @@ La base de données sert à stocker les artefacts de formulaire, les configurati
 
 >[!NOTE]
 >
->si vous quittez le mode de sauvegarde restauration, une nouvelle session du mode de sauvegarde commence immédiatement. Pour désactiver entièrement le mode de sauvegarde restauration, utilisez l’option `leaveContinuousCoverage` dans le script, ce qui remplace la session de sauvegarde restauration existante. En mode de sauvegarde instantanée, vous pouvez quitter le mode de sauvegarde comme vous le faites habituellement.
+>Si vous quittez le mode de sauvegarde en continu, une nouvelle session du mode de sauvegarde commence immédiatement. Pour désactiver entièrement le mode de sauvegarde restauration, utilisez l’option `leaveContinuousCoverage` dans le script, ce qui remplace la session de sauvegarde restauration existante. En mode de sauvegarde instantanée, vous pouvez quitter le mode de sauvegarde comme vous le faites habituellement.
 
-Pour éviter les pertes de données, les données spécifiques d’AEM forms doivent être sauvegardées de façon que les documents du répertoire de stockage global de documents et du répertoire racine de stockage de contenu soient en corrélation avec les références de la base de données.
+Pour éviter les pertes de données, les données spécifiques d’AEM forms doivent être sauvegardées de façon que les documents du répertoire GDS et du répertoire racine de stockage de contenu soient en corrélation avec les références de la base de données.
 
 >[!NOTE]
 >
@@ -66,15 +82,15 @@ Suivez les instructions ci-dessous si vous devez récupérer AEM Forms dans un e
 * Modification des lettres de lecteur ou du chemin d’accès au répertoire
 * Modification de l’hôte de base de données, du port ou du nom
 
-En règle générale, de tels scénarios de récupération sont provoqués par une défaillance matérielle du serveur hébergeant le serveur d’applications, le serveur de base de données ou le serveur Forms. En plus des configurations spécifiques d&#39;AEM Forms décrites dans cette section, vous devez également effectuer les modifications nécessaires au niveau des autres composants du déploiement d&#39;AEM Forms, tels que les services d’équilibrage de charge et les pare-feu, en cas de modification du nom d’hôte ou de l’adresse IP d’un serveur AEM Forms.
+En règle générale, de tels scénarios de récupération sont provoqués par une défaillance matérielle du serveur hébergeant le serveur d’applications, le serveur de base de données ou le Serveur Formulaires. En plus des configurations spécifiques d&#39;AEM Forms décrites dans cette section, vous devez également effectuer les modifications nécessaires au niveau des autres composants du déploiement d&#39;AEM Forms, tels que les services d’équilibrage de charge et les pare-feu, en cas de modification du nom d’hôte ou de l’adresse IP d’un serveur AEM Forms.
 
 ### Ce qui ne peut pas être modifié {#what-cannot-be-changed}
 
-Il est possible de modifier le serveur de base de données et de nombreux autres paramètres ; toutefois, la modification du type de serveur d’applications ou de base de données est impossible lors de la récupération d&#39;AEM Forms à partir d’une sauvegarde. Par exemple, lorsque vous récupérez une sauvegarde AEM Forms, vous ne pouvez pas modifier le serveur d’applications et le faire passer de JBoss à WebLogic, ni faire passer une base de données d’Oracle à DB2. De plus, la version d’AEM Forms récupérée doit utiliser les mêmes chemins d’accès au système de fichiers, par exemple le répertoire des polices.
+Il est possible de modifier le serveur de base de données et de nombreux autres paramètres ; toutefois, la modification du type de serveur d’applications ou de base de données est impossible lors de la récupération d’AEM Forms à partir d’une sauvegarde. Par exemple, lorsque vous récupérez une sauvegarde AEM Forms, vous ne pouvez pas modifier le serveur d’applications et le faire passer de JBoss à WebLogic, ni faire passer une base de données d’Oracle à DB2. De plus, la version d’AEM Forms récupérée doit utiliser les mêmes chemins d’accès au système de fichiers, par exemple le répertoire des polices.
 
 ### Redémarrage post-récupération {#restarting-after-a-recovery}
 
-Avant de redémarrer le serveur Forms après une récupération, procédez comme suit :
+Avant de redémarrer le Serveur Formulaires après une récupération, procédez comme suit :
 
 1. Démarrez le système en mode de maintenance.
 1. Effectuez les opérations suivantes pour vous assurer que Form Manager est synchronisé avec AEM Forms en mode de maintenance :

@@ -9,13 +9,22 @@ exl-id: 1e0821f5-627f-4262-ba76-62303890e112
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2212'
 ht-degree: 97%
-
 ---
-
 # Intégration à Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
 Intégrez la [gestion dynamique des balises Adobe](https://business.adobe.com/fr/products/experience-platform/launch.html) à AEM afin de pouvoir utiliser vos propriétés web de gestion dynamique des balises pour effectuer le suivi des sites AEM. La gestion dynamique des balises permet aux spécialistes du marketing de gérer les balises pour collecter des données et distribuer des données sur les systèmes de marketing numérique. Par exemple, utilisez la gestion dynamique des balises afin de collecter les données d’utilisation de votre site Web AEM et de distribuer les données à analyser dans Adobe Analytics ou Adobe Target.
@@ -28,8 +37,8 @@ Une fois que vous avez configuré l’intégration, les modifications apportées
 >
 >Si vous utilisez la gestion dynamique des balises avec une configuration de proxy personnalisée, vous devez configurer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’AEM utilisent les API 3.x et d’autres les API 4.x :
 >
->* 3.x est configuré avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x est configuré avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 3.x est configuré avec [](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 4.x est configuré avec [](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
 ## Options de déploiement {#deployment-options}
@@ -123,7 +132,7 @@ Certaines propriétés utilisent des valeurs obtenues à partir de la section T�
 
 >[!NOTE]
 >
->Lorsque vous hébergez le lot de gestion dynamique des balises sur AEM, le téléchargement de bibliothèque doit être activé dans Gestion dynamique des balises avant la création de la configuration. En outre, Akamai doit être activé, car Akamai fournit les bibliothèques pour le téléchargement.
+>Lorsque vous hébergez le bundle de gestion dynamique des balises sur AEM, le téléchargement de bibliothèque doit être activé dans Gestion dynamique des balises avant la création de la configuration. En outre, Akamai doit être activé, car Akamai fournit les bibliothèques pour le téléchargement.
 
 Lorsque les bibliothèques de gestion dynamique des balises sont hébergées sur AEM, AEM configure automatiquement certaines propriétés de la propriété web en fonction de votre configuration. Consultez les descriptions du tableau suivant.
 
@@ -138,12 +147,12 @@ Lorsque les bibliothèques de gestion dynamique des balises sont hébergées sur
    <td>Sélectionnez cette option lorsque vous hébergez le fichier de bibliothèque de gestion dynamique des balises sur AEM. Sélectionnez cette option pour afficher les autres propriétés figurant dans ce tableau.</td>
   </tr>
   <tr>
-   <td>URL du lot de gestion dynamique des balises</td>
+   <td>URL du bundle de gestion dynamique des balises</td>
    <td>URL à utiliser pour télécharger la bibliothèque de gestion dynamique des balises. Procurez-vous cette valeur à partir de la section des URL de téléchargement de la page de téléchargement des bibliothèques de la gestion dynamique des balises. Pour des raisons de sécurité, cette valeur doit être configurée manuellement.</td>
   </tr>
   <tr>
    <td>Processus de téléchargement</td>
-   <td><p>Modèle de workflow à utiliser pour télécharger et installer la bibliothèque de gestion dynamique des balises. Le modèle par défaut est Téléchargement du lot de gestion dynamique des balises par défaut. Utilisez ce modèle, sauf si vous avez créé un modèle personnalisé.</p> <p>Notez que le workflow de téléchargement par défaut active automatiquement les bibliothèques lorsqu’elles sont téléchargées.</p> </td>
+   <td><p>Modèle de workflow à utiliser pour télécharger et installer la bibliothèque de gestion dynamique des balises. Le modèle par défaut est Téléchargement du bundle de gestion dynamique des balises par défaut. Utilisez ce modèle, sauf si vous avez créé un modèle personnalisé.</p> <p>Notez que le workflow de téléchargement par défaut active automatiquement les bibliothèques lorsqu’elles sont téléchargées.</p> </td>
   </tr>
   <tr>
    <td>Conseil du domaine</td>
@@ -229,7 +238,7 @@ Téléchargez manuellement les bibliothèques de gestion dynamique des balises p
 
 1. Sur le rail, cliquez sur Outils > Opérations > Cloud > Services cloud.
 1. Dans la zone Gestion dynamique des balises, cliquez sur Afficher les configurations, puis cliquez sur votre configuration.
-1. Dans la zone Paramètres d’évaluation ou Paramètres de production, cliquez sur le bouton Déclencher le processus de téléchargement pour télécharger et déployer le lot de bibliothèques.
+1. Dans la zone Paramètres d’évaluation ou Paramètres de production, cliquez sur le bouton Déclencher le processus de téléchargement pour télécharger et déployer le bundle de bibliothèques.
 
    ![chlimage_1-356](assets/chlimage_1-356.png)
 

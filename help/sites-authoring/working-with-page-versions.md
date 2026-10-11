@@ -5,22 +5,35 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1568'
 ht-degree: 100%
-
 ---
-
 # Utilisation des versions de page{#working-with-page-versions}
 
 Le contrôle de version permet de créer un « instantané » d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
 
 * Créez une version d’une page.
 * Restaurer une version précédente d’une page. Par exemple :
-   * pour annuler une modification que vous avez apportée à la page.
+  * pour annuler une modification que vous avez apportée à la page.
 * Comparer la version actuelle d’une page à une version précédente :
-   * pour mettre en évidence des différences dans le texte et les images.
+  * pour mettre en évidence des différences dans le texte et les images.
 
 >[!NOTE]
 >
@@ -77,13 +90,13 @@ Une fois que vous avez créé une version de votre page, différentes méthodes 
 
 * les options **Restaurer** de la [barre d’outils d’actions](/help/sites-authoring/basic-handling.md#actions-toolbar) en haut de la page
 
-   * **Restaurer la version**
+  * **Restaurer la version**
 
-     Rétablissez des versions de pages spécifiées dans le dossier actuellement sélectionné ; cela peut également inclure la restauration de pages qui ont été supprimées précédemment.
+    Rétablissez des versions de pages spécifiées dans le dossier actuellement sélectionné ; cela peut également inclure la restauration de pages qui ont été supprimées précédemment.
 
-   * **Restaurer l’arborescence**
+  * **Restaurer l’arborescence**
 
-     Rétablissez une version d’une arborescence complète à une date et une heure spécifiées ; cela peut inclure des pages qui ont été supprimées précédemment.
+    Rétablissez une version d’une arborescence complète à une date et une heure spécifiées ; cela peut inclure des pages qui ont été supprimées précédemment.
 
 >[!NOTE]
 >
@@ -208,7 +221,7 @@ La fonction de distorsion du temps Timewarp permet de simuler l’état *publié
 La création de contenu est un processus continu et collaboratif. Le but de Timewarp est de permettre aux auteurs et aux autrices de suivre le site web publié au fil du temps, pour les aider à comprendre les changements du contenu. Cette fonctionnalité utilise les versions de page pour déterminer l’état de l’environnement de publication :
 
 * Le système recherche la version de page qui était active à l’heure sélectionnée.
-   * Cette version de page a été créée/activée *avant* le moment sélectionné dans Timewarp.
+  * Cette version de page a été créée/activée *avant* le moment sélectionné dans Timewarp.
 * Si vous accédez à une page qui a été supprimée, celle-ci sera également affichée, à condition toutefois que ses anciennes versions soient toujours disponibles dans le référentiel.
 * Si aucune version publiée n’a été trouvée, Timewarp revient à l’état actuel de la page dans l’environnement de création (et ce, afin d’éviter une erreur/page 404 qui rendrait impossible la navigation).
 

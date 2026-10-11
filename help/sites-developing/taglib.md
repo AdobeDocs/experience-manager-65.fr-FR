@@ -9,13 +9,24 @@ exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Tagging
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2466'
 ht-degree: 98%
-
 ---
-
 # Bibliothèques de balises{#tag-libraries}
 
 Les bibliothèques de balises Granite, CQ et Sling vous donnent accès à des fonctions spécifiques à utiliser dans le script JSP de vos modèles et composants.
@@ -176,7 +187,7 @@ Elle présente les attributs suivants :
 
 Si l’attribut `source` n’est pas défini :
 
-* Si l’attribut `language` est défini, l’attribut `source` est défini, par défaut, sur &grave;&grave; `static`.
+* Si l’attribut `language` est défini, l’attribut `source` est défini, par défaut, sur `` `static`.
 
 * Si l’attribut `language` n’est pas défini, l’attribut `source` est défini, par défaut, sur `auto`.
 

@@ -7,13 +7,29 @@ feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 100%
-
 ---
-
 # Tutoriel : créer votre premier formulaire adaptatif {#tutorial-create-your-first-adaptive-form}
 
 | Version | Lien de l’article |
@@ -28,7 +44,7 @@ ht-degree: 100%
 
 Êtes-vous à la recherche d’une **expérience de création de formulaires** adaptée aux appareils mobiles qui simplifie l’inscription, renforce l’engagement et réduit la durée d’exécution ? Les **formulaires adaptatifs** vous conviendront parfaitement. Les formulaires adaptatifs offrent une expérience de création de formulaires mobile, automatisée et compatible avec Analytics. Vous pouvez facilement créer des formulaires réactifs et interactifs, utiliser des processus automatisés pour réduire les tâches administratives et répétitives et utiliser l’analyse de données pour améliorer et personnaliser l’expérience des clients avec vos formulaires.
 
-Ce tutoriel fournit un cadre de bout en bout pour la création d’un formulaire adaptatif. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide vous aide à découvrir et à ajouter de nouvelles fonctionnalités au formulaire adaptatif créé dans ce tutoriel. Vous obtenez un formulaire adaptatif opérationnel à la fin de chaque guide. Le guide de création d’un formulaire adaptatif est disponible. Les guides suivants seront bientôt disponibles. À la fin de ce tutoriel, vous devriez pouvoir effectuer les opérations suivantes :
+Ce tutoriel fournit un cadre de bout en bout pour la création d’un formulaire adaptatif. Le tutoriel est organisé autour d’un cas d’usage et de plusieurs guides. Chaque guide vous aide à découvrir et à ajouter de nouvelles fonctionnalités au formulaire adaptatif créé dans ce tutoriel. Vous obtenez un formulaire adaptatif opérationnel à la fin de chaque guide. Le guide de création d’un formulaire adaptatif est disponible. Les guides suivants seront bientôt disponibles. À la fin de ce tutoriel, vous devriez pouvoir effectuer les opérations suivantes :
 
 * créer un formulaire adaptatif et un modèle de données de formulaire ;
 * appliquer un style à votre formulaire adaptatif ;
@@ -41,7 +57,7 @@ Commençons par aborder un cas d’utilisation :
 
 Un site web propose une gamme de produits pour une clientèle diverse. La clientèle parcourt le portail, sélectionne et commande les produits. Chaque personne crée un compte et fournit des adresses d’expédition et de facturation. Une cliente existante, Sara Rose, cherche à ajouter son adresse d’expédition sur le site web. Le site web fournit un formulaire en ligne pour ajouter et mettre à jour les adresses d’expédition.
 
-Le site Web fonctionne sous Adobe Experience Manager (AEM) et utilise AEM [!DNL Forms] pour la capture et le traitement des données. Le formulaire d’ajout et de mise à jour d’adresse est un formulaire adaptatif. Le site web stocke les détails du client ou de la cliente dans une base de données. Il utilise le formulaire d’ajout et de mise à jour d’adresse pour récupérer et afficher les adresses disponibles. Il utilise également le formulaire adaptatif pour accepter les adresses mises à jour et les nouvelles adresses.
+Le site Web fonctionne sous Adobe Experience Manager (AEM) et utilise AEM [!DNL Forms] pour la capture et le traitement des données. Le formulaire d’ajout et de mise à jour d’adresse est un formulaire adaptatif. Le site web stocke les détails du client ou de la cliente dans une base de données. Ils utilisent le formulaire d’ajout et de mise à jour d’adresse pour récupérer et afficher les adresses disponibles. Ils utilisent également le formulaire adaptatif pour accepter les adresses mises à jour et les nouvelles adresses.
 
 ### Prérequis {#prerequisite}
 
@@ -62,7 +78,7 @@ Les formulaires adaptatifs sont de nouvelle génération, attrayants, réactifs,
 Objectifs :
 
 * Créer un formulaire adaptatif permettant à un client ou une cliente d’ajouter une adresse d’expédition.
-* Mettre en forme les champs d’un formulaire adaptatif pour afficher et accepter les informations d’une personne cliente.
+* Mettre en forme les champs d’un formulaire adaptatif pour afficher et accepter les informations d’un client ou d’une cliente.
 * Créer une action d’envoi pour envoyer un e-mail contenant du contenu de formulaire.
 * Prévisualiser et envoyer un formulaire adaptatif.
 
@@ -78,7 +94,7 @@ Objectifs :
 
 * Configurer l’instance de base de données du site web (base de données [!DNL MySQL]) en tant que source de données.
 * Créer le modèle de données de formulaire à l’aide de la base de données [!DNL MySQL] en tant que source de données.
-* Ajouter des objets de modèle de données afin de former le modèle de données.
+* Ajouter des objets de modèle de données afin de créer le modèle de données.
 * Configurer les services de lecture et d’écriture pour le modèle de données de formulaire.
 * Tester le modèle de données de formulaire et les services configurés avec des données de test.
 
@@ -88,7 +104,7 @@ Objectifs :
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Les formulaires adaptatifs fournissent un éditeur pour l’écriture de règles sur des objets de formulaire adaptatifs. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des entrées de l’utilisateur et des actions de l’utilisateur sur le formulaire. Cela permet d’assurer la précision et accélère le remplissage des formulaires.
+Les formulaires adaptatifs fournissent un éditeur pour l’écriture de règles sur des objets de formulaire adaptatif. Ces règles déterminent les actions à déclencher sur des objets de formulaire en fonction des conditions prédéfinies, des entrées de l’utilisateur et des actions de l’utilisateur sur le formulaire. Cela permet d’assurer la précision et accélère le remplissage des formulaires.
 
 Objectifs :
 

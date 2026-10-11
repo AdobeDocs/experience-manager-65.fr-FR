@@ -1,6 +1,6 @@
 ---
-title: Clientlibs des composants Communities
-description: Découvrez comment ajouter des bibliothèques côté client (clientlibs) à une page afin que vous puissiez rassembler les détails d’utilisation et utiliser les outils de débogage pour les composants Communities.
+title: Bibliothèques clientes pour les composants de Communities
+description: Découvrez comment ajouter des bibliothèques côté client (clientlibs) à une page afin de rassembler des détails d’utilisation et d’utiliser des outils de débogage pour les composants de Communities.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -10,85 +10,92 @@ exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 1%
-
+source-wordcount: '406'
+ht-degree: 2%
 ---
-
-# Clientlibs des composants Communities {#clientlibs-for-communities-components}
+# Bibliothèques clientes pour les composants de Communities {#clientlibs-for-communities-components}
 
 ## Présentation {#introduction}
 
-Cette section de la documentation décrit comment ajouter des bibliothèques côté client (clientlibs) à une page pour les composants Communities.
+Cette section de la documentation décrit comment ajouter des bibliothèques côté client (clientlibs) à une page pour les composants de Communities.
 
-Pour plus d’informations, voir :
+Pour obtenir des informations de base, voir :
 
 * [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md) qui fournit des détails d’utilisation et des outils de débogage
-* [Clientlibs for SCF](/help/communities/client-customize.md#clientlibs) qui fournit des informations utiles lors de la personnalisation des composants SCF
+* [Clientlibs pour SCF](/help/communities/client-customize.md#clientlibs) qui fournit des informations utiles pour la personnalisation des composants SCF
 
 
-## Pourquoi les bibliothèques côté client sont nécessaires {#why-clientlibs-are-required}
+## Pourquoi les bibliothèques clientes sont-elles requises ? {#why-clientlibs-are-required}
 
-Les bibliothèques côté client sont nécessaires au bon fonctionnement (JavaScript) et à la mise en forme (CSS) d’un composant.
+Les bibliothèques clientes sont requises pour le bon fonctionnement (JavaScript) et le style (CSS) d’un composant.
 
-Lorsqu’il existe une [fonction de communauté](/help/communities/functions.md) pour une fonction, tous les composants et configurations nécessaires, y compris les bibliothèques clientes requises, sont présents dans le site de la communauté. Les auteurs ne doivent ajouter des clientlibs supplémentaires que si d’autres composants doivent être disponibles.
+Lorsqu’il existe une [fonction de communauté](/help/communities/functions.md) pour une fonctionnalité, tous les composants et configurations nécessaires, y compris les bibliothèques clientes requises, sont présents dans le site de la communauté. D’autres bibliothèques clientes doivent être ajoutées uniquement si des composants supplémentaires doivent être disponibles pour les auteurs.
 
-Lorsque les clientlibs requises sont manquantes, [l’ajout d’un composant Communities à une page](/help/communities/author-communities.md) peut entraîner des erreurs JavaScript et un aspect inattendu.
+Lorsque les bibliothèques clientes requises sont manquantes, [ l’ajout d’un composant Communities à une page](/help/communities/author-communities.md) peut entraîner des erreurs JavaScript et une apparence inattendue.
 
-### Exemple : révisions placées sans clientlibs {#example-placed-reviews-without-clientlibs}
+### Exemple : révisions effectuées sans Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![placés-review](assets/placed-reviews.png)
+![places-review](assets/placed-reviews.png)
 
-### Exemple : révisions placées avec Clientlibs {#example-placed-reviews-with-clientlibs}
+### Exemple : commentaires placés avec Clientlibs {#example-placed-reviews-with-clientlibs}
 
 ![review-clientlibs](assets/reviews-clientlibs.png)
 
 ## Identification des bibliothèques clientes requises {#identifying-required-clientlibs}
 
-Les informations de fonction essentielles pour les développeurs identifient les clientlibs requises.
+Les informations essentielles sur les fonctionnalités destinées aux développeurs identifient les bibliothèques clientes requises.
 
-En outre, à partir d’une instance AEM, l’accès au [Guide des composants de la communauté](/help/communities/components-guide.md) permet d’accéder à la liste des catégories clientlib requises pour un composant.
+En outre, à partir d’une instance AEM, en accédant au [guide des composants de la communauté](/help/communities/components-guide.md) vous pouvez accéder à une liste des catégories de bibliothèques clientes requises pour un composant.
 
-Par exemple, en haut de la [page de révisions](https://localhost:4502/content/community-components/en/reviews.html), les clientlibs requises répertoriées sont
+Par exemple, en haut de la page [Examens](https://localhost:4502/content/community-components/en/reviews.html) les bibliothèques clientes requises répertoriées sont les suivantes :
 
 * cq.ckeditor
-* cq.social.hbs.reviews
+* cq.social.hbs.views
 
-![clientlibs-review](assets/clientlibs-reviews.png)
+![clientlibs-views](assets/clientlibs-reviews.png)
 
-## Ajout de bibliothèques clientes requises {#adding-required-clientlibs}
+## Ajout des bibliothèques clientes requises {#adding-required-clientlibs}
 
-Si vous souhaitez ajouter un composant Communities à une page, il est nécessaire d’ajouter les clientlibs requises pour le composant s’il n’est pas déjà présent.
+Lorsque vous souhaitez ajouter un composant Communities à une page, il est nécessaire d’ajouter les bibliothèques clientes requises pour le composant, si elles ne sont pas déjà présentes.
 
 Utilisez [CRXDE|Lite](#using-crxde-lite) pour modifier une liste de bibliothèques clientes existante pour une page de site communautaire.
 
-Pour ajouter une bibliothèque cliente pour un site communautaire à l’aide de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
+Pour ajouter une bibliothèque cliente pour un site communautaire à l’aide de [](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * Accédez à [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
-* Recherchez le noeud `clientlibslist` de la page sur laquelle vous souhaitez ajouter le composant :
+* Recherchez le nœud `clientlibslist` de la page sur laquelle vous souhaitez ajouter le composant :
 
-   * `/content/sites/sample/en/page/jcr:content/clientlibslist`
+  * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* Avec le noeud `clientlibslist` sélectionné :
+* Avec `clientlibslist` nœud sélectionné :
 
-   * Localisez la propriété String[] `scg:requiredClientLibs`.
-   * Sélectionnez son `Value` pour accéder à la boîte de dialogue Tableau de chaînes .
+  * Recherchez le `scg:requiredClientLibs` de propriété String[] .
+  * Sélectionnez son `Value` pour accéder à la boîte de dialogue Tableau de chaînes.
 
-      * Faites défiler l’écran vers le bas si nécessaire.
-      * Sélectionnez + pour entrer une nouvelle bibliothèque cliente.
+    * Faites défiler l’écran vers le bas si nécessaire.
+    * Sélectionnez + pour saisir une nouvelle bibliothèque cliente.
 
-         * Répétez l’opération pour ajouter d’autres bibliothèques clientes.
+      * Répétez l’opération pour ajouter d’autres bibliothèques clientes.
 
-         * Sélectionnez **OK**.
+      * Sélectionnez **OK**.
 
-   * Sélectionnez **Enregistrer tout**.
+  * Sélectionnez **Enregistrer tout**.
 
 >[!NOTE]
 >
->Si le site n’est pas un site communautaire, l’existence ou l’emplacement des bibliothèques clientes utilisées pour le site doivent être découverts.
+>Si le site n’est pas un site communautaire, l’existence ou l’emplacement des bibliothèques clientes utilisées pour le site doit être découvert.
 
-En reprenant l’exemple [Prise en main d’AEM Communities](/help/communities/getting-started.md), où `site-name` est *engage*, voici comment la clientliblist s’affiche en cas d’ajout du composant de révisions :
+En reprenant l’exemple [Prise en main d’AEM Communities](/help/communities/getting-started.md), où `site-name` est *engage*, voici à quoi la liste de bibliothèques clientes s’afficherait si vous ajoutiez le composant révisions :
 
 ![review-component](assets/review-component.png)

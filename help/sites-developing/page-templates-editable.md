@@ -1,20 +1,27 @@
 ---
 title: Modèles de pages – Modifiables
-
 description: Des modèles modifiables ont été introduits afin de permettre aux personnes qui ne développent pas de créer et de modifier des modèles, de fournir des modèles qui conservent une connexion dynamique à toutes les pages créées à partir de ces modèles et de rendre le composant de page plus générique.
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3283'
 ht-degree: 97%
@@ -624,10 +631,10 @@ Le schéma ci-dessus montre la corrélation entre les modèles, le contenu et le
 Page créée qui référence le modèle. Le contenu contrôle l’ensemble du processus. En fonction des définitions, il accède au modèle et aux composants appropriés.
 
 * Configuration - `/conf/<my-folder>/settings/wcm/templates/<my-template>`
-Le [&#x200B; modèle et les politiques de contenu associées](#template-definitions) définissent la configuration de la page.
+Le [ modèle et les politiques de contenu associées](#template-definitions) définissent la configuration de la page.
 
 * Modèle : lots OSGi
-Les [&#x200B; lots OSGI &#x200B;](/help/sites-deploying/osgi-configuration-settings.md) implémentent cette fonctionnalité.
+Les [ lots OSGI ](/help/sites-deploying/osgi-configuration-settings.md) implémentent cette fonctionnalité.
 
 * Vue - `/apps/<my-site>/components`
 Dans les environnements de création et de publication, le contenu est rendu par des [composants](/help/sites-developing/components.md).

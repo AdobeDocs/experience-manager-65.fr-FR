@@ -9,13 +9,29 @@ role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 91%
-
 ---
-
 # Démarrage rapide (SOAP) de l’API Java™ Endpoint Registry {#endpoint-registry-java-api-quickstart-soap}
 
 Le démarrage rapide (SOAP) de l’API Java™ est disponible pour le registre des points d’entrée.
@@ -26,7 +42,7 @@ Le démarrage rapide (SOAP) de l’API Java™ est disponible pour le registre d
 
 [Démarrage rapide : ajouter un point d’entrée Watched Folder à l’aide de l’API Java™.](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[Démarrage rapide : ajouter un point d’entrée E-mail à l’aide de l’API Java™.](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
+[Démarrage rapide : ajouter un point d’entrée e-mail à l’aide de l’API Java™.](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
 
 [Démarrage rapide : ajouter un point d’entrée Remoting à l’aide de l’API Java™.](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
@@ -741,7 +757,7 @@ L’exemple de code Java™ suivant ajoute un point d’entrée TaskManager à u
 
 ## Démarrage rapide : modifier un point d’entrée à l’aide de l’API Java™. {#quickstart-modifying-an-endpoint-using-the-java-api}
 
-Le code Java™ suivant récupère des informations sur un point d’entrée Watched Folder. Le point d’entrée est pour le processus *MyApplication/EncryptDocument*. Le dossier de contrôle est remplacé par `C:\NewWatchedFolder`. (Voir [Modifier des points d’entrée](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
+Le code Java™ suivant modifie un point d’entrée Watched Folder. Le point d’entrée est pour le processus *MyApplication/EncryptDocument*. Le dossier de contrôle est remplacé par `C:\NewWatchedFolder`. (Voir [Modifier des points d’entrée](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
 ```java
  /*

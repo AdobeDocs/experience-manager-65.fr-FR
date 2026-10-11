@@ -5,13 +5,26 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 99%
-
 ---
-
 # Publication de pages {#publishing-pages}
 
 Une fois le contenu créé et révisé dans l’environnement de création, [vous devez le rendre disponible sur votre site web public](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (votre environnement de publication).
@@ -24,11 +37,14 @@ Vous pouvez publier/dépublier une page tout de suite ou à une date/heure post�
 >
 >Certains termes liés à la publication peuvent être déroutants :
 >
->* **Publier/DépublierTermes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
+>* **Publier/Dépublier**
+>  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
 >
->* **Activer/DésactiverCes termes sont synonymes de publication/dépublication.
+>* **Activer/Désactiver**
+>  Ces termes sont synonymes de publication/dépublication.
 >
->* **Répliquer/RéplicationTermes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
+>* **Répliquer/Réplication**
+>  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
 
 ## Privilèges insuffisants {#insufficient-privileges}
 
@@ -58,9 +74,9 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
    * La page sera publiée directement, s’il n’y a aucune référence à publier.
    * Si la page comporte des références à publier, celles-ci seront répertoriées dans l’assistant **Publier**, où vous pourrez accomplir ce qui suit :
 
-      * Spécifiez les ressources ou les balises à publier conjointement avec la page, puis utilisez **Publier** pour terminer l’opération.
+     * Spécifiez les ressources ou les balises à publier conjointement avec la page, puis utilisez **Publier** pour terminer l’opération.
 
-      * Sélectionnez **Annuler** pour abandonner l’opération.
+     * Sélectionnez **Annuler** pour abandonner l’opération.
 
    ![chlimage_1](assets/chlimage_1.png)
 

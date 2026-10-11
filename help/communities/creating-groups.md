@@ -10,7 +10,16 @@ exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 1%
@@ -21,13 +30,13 @@ La fonctionnalité de groupes de communautés permet à une sous-communauté d�
 
 Cette fonctionnalité est présente lorsque la fonction [groupes](/help/communities/functions.md#groups-function) est présente dans la structure [site de la communauté](/help/communities/sites-console.md).
 
-Un [&#x200B; modèle de groupe communautaire &#x200B;](/help/communities/tools-groups.md) permet de concevoir la page du groupe communautaire lorsqu’un groupe communautaire est créé de manière dynamique.
+Un [ modèle de groupe communautaire ](/help/communities/tools-groups.md) permet de concevoir la page du groupe communautaire lorsqu’un groupe communautaire est créé de manière dynamique.
 
 Un ou plusieurs modèles de groupe sont sélectionnés pour la fonction groupes lorsque celle-ci est ajoutée à la structure d&#39;un site communautaire ou à un modèle de site communautaire. Cette liste de modèles de groupe est présentée au membre ou à l’auteur qui crée dynamiquement un groupe à partir du site de la communauté.
 
 ## Création d’un groupe {#creating-a-new-group}
 
-La possibilité de créer un groupe de communautés repose sur l’existence d’un site de communauté qui inclut la fonction de groupes , tel que celui créé à partir du [&#x200B; Modèle de site de référence &#x200B;](/help/communities/sites.md).
+La possibilité de créer un groupe de communautés repose sur l’existence d’un site de communauté qui inclut la fonction de groupes , tel que celui créé à partir du [ Modèle de site de référence ](/help/communities/sites.md).
 
 Les exemples qui suivent utilisent le site de la communauté créé à partir du `Reference Site Template`, comme décrit dans le tutoriel [Prise en main d’AEM Communities](/help/communities/getting-started.md).
 

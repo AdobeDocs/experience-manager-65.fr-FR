@@ -1,21 +1,34 @@
 ---
 title: Créer des applications web qui génèrent des formulaires
-
 description: Créez une application web qui utilise des servlets Java pour appeler le service Forms et générer des formulaires. Le servlet Java sert de lien entre le service Forms qui renvoie un formulaire et un navigateur web client.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Workbench,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 98%
@@ -26,13 +39,13 @@ ht-degree: 98%
 
 ## Créer des applications web qui génèrent des formulaires {#creating-web-applications-that-renders-forms}
 
-Vous pouvez créer une application web qui utilise des servlets Java pour appeler le service Forms et générer des formulaires. L’utilisation d’un servlet Java™ est avantageuse dans la mesure où elle permet d’écrire la valeur renvoyée par le processus dans un navigateur web client. En d’autres termes, un servlet Java peut être utilisé comme lien entre le service Forms qui renvoie un formulaire et un navigateur web client.
+Vous pouvez créer une application web qui utilise des servlets Java pour appeler le service Forms et générer des formulaires. L’utilisation d’un servlet Java™ est avantageuse dans la mesure où elle permet d’écrire la valeur renvoyée par le processus vers un navigateur web client. En d’autres termes, un servlet Java peut être utilisé comme lien entre le service Forms qui renvoie un formulaire et un navigateur web client.
 
 >[!NOTE]
 >
 >Cette section décrit comment créer une application web utilisant un servlet Java qui appelle le service Forms et effectue le rendu des formulaires basés sur des fragments. (Reportez-vous à la section [Rendu de formulaires reposant sur des fragments](/help/forms/developing/rendering-forms-based-fragments.md).)
 
-À l’aide d’un servlet Java, vous pouvez écrire un formulaire dans un navigateur web client afin qu’un client puisse afficher et saisir des données dans le formulaire. Après avoir rempli le formulaire avec des données, l’utilisateur web clique sur un bouton d’envoi situé sur le formulaire pour renvoyer les informations au servlet Java, où les données peuvent être récupérées et traitées. Par exemple, les données peuvent être envoyées à un autre processus.
+À l’aide d’un servlet Java, vous pouvez écrire un formulaire vers un navigateur web client afin qu’un client puisse afficher et saisir des données dans le formulaire. Après avoir rempli le formulaire avec des données, l’utilisateur web clique sur un bouton d’envoi situé sur le formulaire pour renvoyer les informations au servlet Java, où les données peuvent être récupérées et traitées. Par exemple, les données peuvent être envoyées à un autre processus.
 
 Cette section explique comment créer une application web qui permet à l’utilisateur de sélectionner soit des données de formulaire américaines, soit des données de formulaire canadiennes, comme illustré ci-dessous.
 
@@ -124,9 +137,9 @@ Pour plus d’informations sur l’emplacement de ces fichiers JAR, consultez la
 >
 >Pour plus d’informations sur la création de la page HTML qui appelle la servlet Java `RenderFormFragment`, consultez la section [Création de la page web](/help/forms/developing/rendering-forms.md#creating-the-web-page).
 
-### Création d’une logique d’application Java pour la servlet {#creating-java-application-logic-for-the-servlet}
+### Créer une logique d’application Java pour la servlet {#creating-java-application-logic-for-the-servlet}
 
-Créez une logique d’application Java qui appelle le service Forms à partir de la servlet Java. Le code suivant affiche la syntaxe de la servlet Java `RenderFormFragment` :
+Vous créez une logique d’application Java qui appelle le service Forms à partir de la servlet Java. Le code suivant affiche la syntaxe de la servlet Java `RenderFormFragment` :
 
 ```java
      public class RenderFormFragment extends HttpServlet implements Servlet {
@@ -151,7 +164,7 @@ Pour restituer un formulaire reposant sur les fragments à l’aide de l’API d
 1. Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 1. Créez un objet `URLSpec` stockant des valeurs URI en utilisant son constructeur.
 1. Appelez la méthode `setApplicationWebRoot` de l’objet `URLSpec` et transmettez une valeur de chaîne qui représente la racine web de l’application.
-1. Appelez la méthode `setContentRootURI` de l’objet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur de la racine du contenu URI. Vérifiez que la conception et les fragments du formulaire apparaissent dans l’URI racine du contenu. Dans le cas contraire, le service Forms renvoie une exception. Pour référencer le référentiel AEM Forms, spécifiez `repository://`.
+1. Appelez la méthode `setContentRootURI` de l’objet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur de la racine du contenu URI. Vérifiez que la conception du formulaire et les fragments se trouvent dans l’URI racine du contenu. Dans le cas contraire, le service Forms renvoie une exception. Pour référencer le référentiel AEM Forms, spécifiez `repository://`.
 1. Appeler la méthode `setTargetURL` de l’objet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur de l’URL cible à l’endroit où les données de formulaire sont publiées. Si vous définissez l’URL cible dans la conception de formulaire, vous pouvez transmettre une chaîne vide. Vous pouvez également spécifier l’URL où est envoyé un formulaire pour effectuer des calculs.
 1. Appelez la méthode `renderPDFForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
@@ -376,7 +389,7 @@ Le code HTML suivant se trouve dans le fichier index.html qui a été créé lor
 
 ### Conditionner l’application web {#packaging-the-web-application}
 
-Pour déployer le servlet Java qui appelle le service Forms, conditionnez votre application web dans un fichier WAR. Assurez-vous que les fichiers JAR externes dont dépend la logique commerciale du composant, tels que adobe-livecycle-client.jar et adobe-forms-client.jar, sont également inclus dans le fichier WAR.
+Pour déployer le servlet Java qui appelle le service Forms, conditionnez votre application web dans un fichier WAR. Assurez-vous que les fichiers JAR externes dont dépend la logique métier du composant, tels que adobe-livecycle-client.jar et adobe-forms-client.jar, sont également inclus dans le fichier WAR.
 
 **Pour conditionner une application web dans un fichier WAR :**
 
@@ -398,4 +411,4 @@ Une fois l’application web déployée, vous pouvez la tester à l’aide d’u
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 
-  Sélectionnez un bouton radio et cliquez sur le bouton Envoyer. Un formulaire basé sur des fragments apparaît dans le navigateur web. En cas de problème, consultez le fichier journal du serveur d’applications J2EE.
+  Sélectionnez une case d’option et cliquez sur le bouton Envoyer. Un formulaire basé sur des fragments apparaîtra dans le navigateur web. En cas de problème, consultez le fichier journal du serveur d’applications J2EE.

@@ -10,20 +10,36 @@ role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2915'
+source-wordcount: '2927'
 ht-degree: 99%
-
 ---
-
 # Gérer des formulaires envoyés {#handling-submitted-forms}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
 Les applications web permettant à l’utilisateur de remplir des formulaires interactifs nécessitent que les données soient renvoyées au serveur. Le service Forms vous permet de récupérer les données que l’utilisateur a saisies dans un formulaire interactif. Une fois les données récupérées, vous pouvez les traiter pour répondre aux besoins de votre entreprise. Par exemple, vous pouvez stocker les données dans une base de données, les envoyer à une autre application ou à un autre service, les fusionner dans une conception de formulaire, les afficher dans un navigateur web, etc.
 
-Les données de formulaire sont envoyées au service Forms au format XML ou PDF, une option définie dans Designer. Un formulaire envoyé au format XML vous permet d’extraire des valeurs de données de champ individuelles. En d’autres termes, vous pouvez extraire la valeur de chaque champ de formulaire que l’utilisateur a saisi dans le formulaire. Un formulaire envoyé en tant que données PDF est une donnée binaire et non une donnée XML. Vous pouvez enregistrer le formulaire en tant que fichier PDF ou l’envoyer à un autre service. Si vous souhaitez extraire les données d’un formulaire envoyé au format XML, puis utiliser les données du formulaire pour créer un document PDF, appelez une autre opération AEM Forms. (Voir [Créer des documents PDF avec des données XML envoyées](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
+Les données de formulaire sont envoyées au service Forms au format XML ou PDF, une option définie dans Designer. Un formulaire envoyé au format XML vous permet d’extraire les valeurs de données de chaque champ. En d’autres termes, vous pouvez extraire la valeur de chaque champ de formulaire que l’utilisateur a saisi dans le formulaire. Un formulaire envoyé en tant que données PDF est une donnée binaire et non une donnée XML. Vous pouvez enregistrer le formulaire en tant que fichier PDF ou l’envoyer à un autre service. Si vous souhaitez extraire les données d’un formulaire envoyé au format XML, puis utiliser les données du formulaire pour créer un document PDF, appelez une autre opération AEM Forms. (Voir [Créer des documents PDF avec des données XML envoyées](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
 
 Le diagramme suivant montre les données envoyées à une servlet Java nommée `HandleData` à partir d’un formulaire interactif affiché dans un navigateur web.
 
@@ -69,7 +85,7 @@ Les champs du formulaire de prêt. Ces valeurs peuvent être récupérées
 
 >[!NOTE]
 >
->La conception de formulaire doit être configurée correctement dans Designer pour que les données soient envoyées sous forme de données XML. Pour configurer correctement la conception de formulaire de sorte qu’elle envoie des données XML, assurez-vous que le bouton Envoyer situé sur la conception de formulaire est défini pour envoyer des données XML. Pour plus d’informations sur la définition du bouton Envoyer pour envoyer des données XML, voir [AEM Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
+>La conception de formulaire doit être configurée correctement dans le concepteur pour que les données soient envoyées sous forme de données XML. Pour configurer correctement la conception de formulaire de sorte qu’elle envoie des données XML, assurez-vous que le bouton Envoyer situé sur la conception de formulaire est défini pour envoyer des données XML. Pour plus d’informations sur la définition du bouton Envoyer pour envoyer des données XML, voir [AEM Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
 ## Gérer des données PDF envoyées {#handling-submitted-pdf-data}
 
@@ -106,7 +122,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  </tbody>
 </table>
 
-## Gérer les données UTF-16 de l’URL envoyées {#handling-submitted-url-utf-16-data}
+## Gérer les données URL UTF-16 envoyées {#handling-submitted-url-utf-16-data}
 
 Si les données de formulaire sont envoyées sous la forme de données UTF-16 d’URL, l’ordinateur client nécessite Adobe Reader, Acrobat 8.1 ou une version ultérieure. En outre, si la conception de formulaire contient un bouton d’envoi contenant des données codées URL (HTTP Post) et que l’option de codage des données est UTF-16, la conception de formulaire doit être modifiée dans un éditeur de texte tel que le Bloc-notes. Vous pouvez définir l’option de codage sur `UTF-16LE` ou `UTF-16BE` pour le bouton d’envoi. Designer ne fournit pas cette fonctionnalité.
 
@@ -152,9 +168,9 @@ Vous spécifiez le type de contenu du formulaire envoyé lorsque vous appelez la
 >
 >Vous remarquerez qu’il existe trois démarrages rapides correspondants associés à la section Gestion des formulaires envoyés. Le guide de gestion des formulaires PDF envoyés en tant que PDF à l’aide du démarrage rapide de l’API Java explique comment gérer les données de PDF envoyées. Le type de contenu spécifié dans ce démarrage rapide est `application/pdf`.. Le guide de gestion des formulaires PDF envoyés au format XML à l’aide du démarrage rapide de l’API Java explique comment gérer les données XML envoyées à partir d’un formulaire PDF. Le type de contenu spécifié dans ce démarrage rapide est `text/xml`. De même, le guide de gestion des formulaires HTML envoyés au format XML à l’aide du démarrage rapide de l’API Java montre comment gérer les données XML envoyées à partir d’un formulaire HTML. Le type de contenu spécifié dans ce démarrage rapide est application/x-www-form-urlencoded.
 
-Vous récupérez les données de formulaire qui ont été publiées sur le service Forms et déterminez leur statut de traitement. En d’autres termes, lorsque les données sont envoyées au service Forms, cela ne signifie pas nécessairement que le service Forms a terminé le traitement des données et qu’elles sont prêtes à être traitées. Par exemple, les données peuvent être envoyées au service Forms afin qu’un calcul puisse être effectué. Une fois le calcul terminé, le formulaire est rendu à l’utilisateur avec les résultats du calcul affichés. Avant de traiter les données envoyées, il est recommandé de déterminer si le service Forms a terminé le traitement des données.
+Vous récupérez les données de formulaire qui ont été publiées sur le service Forms et déterminez leur statut de traitement. En d’autres termes, lorsque les données sont envoyées au service AEM Forms, cela ne signifie pas nécessairement que le service AEM Forms a terminé le traitement des données et qu’elles sont prêtes à être traitées. Par exemple, les données peuvent être envoyées au service AEM Forms afin qu’un calcul puisse être effectué. Une fois le calcul terminé, le formulaire est rendu à l’utilisateur avec les résultats du calcul affichés. Avant de traiter les données envoyées, il est recommandé de déterminer si le service AEM Forms a terminé le traitement des données.
 
-Le service Forms renvoie les valeurs suivantes pour indiquer s’il a terminé le traitement des données :
+Le service AEM Forms renvoie les valeurs suivantes pour indiquer s’il a terminé le traitement des données :
 
 * **0 (Envoyer) :** les données envoyées sont prêtes à être traitées.
 * **1 (Calculer) :** le service Forms a effectué une opération de calcul sur les données et les résultats doivent être générés et remis à l’utilisateur.
@@ -168,7 +184,7 @@ Le service Forms renvoie les valeurs suivantes pour indiquer s’il a terminé l
 
 **Déterminer si l’envoi du formulaire contient des pièces jointes**
 
-Les formulaires envoyés au service Forms peuvent contenir des pièces jointes. Par exemple, à l’aide du volet de pièces jointes intégré d’Acrobat, un utilisateur peut sélectionner des pièces jointes à envoyer avec le formulaire. Un utilisateur peut également sélectionner des pièces jointes à l’aide d’une barre d’outils HTML générée avec un fichier HTML.
+Les formulaires envoyés au service AEM Forms peuvent contenir des pièces jointes. Par exemple, à l’aide du volet de pièces jointes intégré d’Acrobat, un utilisateur peut sélectionner des pièces jointes à envoyer avec le formulaire. Un utilisateur peut également sélectionner des pièces jointes à l’aide d’une barre d’outils HTML générée avec un fichier HTML.
 
 Après avoir déterminé si un formulaire contient des pièces jointes, vous pouvez traiter les données. Par exemple, vous pouvez enregistrer la pièce jointe dans le système de fichiers local.
 
@@ -178,7 +194,7 @@ Après avoir déterminé si un formulaire contient des pièces jointes, vous pou
 
 **Traiter les données envoyées**
 
-Selon le type de contenu des données envoyées, vous pouvez extraire des valeurs de champ de formulaire individuel des données XML envoyées ou enregistrer les données PDF envoyées sous forme de fichier PDF (ou les envoyer à un autre service). Pour extraire des champs de formulaire individuels, convertissez les données XML envoyées en une source de données XML, puis récupérez les valeurs de source de données XML à l’aide de classes `org.w3c.dom`.
+Selon le type de contenu des données envoyées, vous pouvez extraire les valeurs de champs de formulaire individuels des données XML envoyées ou enregistrer les données PDF envoyées sous forme de fichier PDF (ou les envoyer à un autre service). Pour extraire des champs de formulaire individuels, convertissez les données XML envoyées en une source de données XML, puis récupérez les valeurs de source de données XML à l’aide de classes `org.w3c.dom`.
 
 **Voir également**
 
@@ -198,7 +214,7 @@ Gérez un formulaire envoyé à l’aide de l’API Forms (Java) :
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers clients JAR, tels qu’adobe-forms-client.jar, dans votre projet Java Classpath.
+   Incluez les fichiers JAR clients, comme adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créer un objet API Forms client
 
@@ -216,10 +232,10 @@ Gérez un formulaire envoyé à l’aide de l’API Forms (Java) :
 
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * Objet `com.adobe.idp.Document` contenant les données de formulaire.
-      * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Spécifiez le type de contenu à gérer. Pour gérer les données XML, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=text/xml`. Pour gérer les données PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/pdf`.
-      * Valeur de chaîne spécifiant la valeur d’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Cette valeur de paramètre est facultative.
-      * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.
+     * Objet `com.adobe.idp.Document` contenant les données de formulaire.
+     * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Spécifiez le type de contenu à gérer. Pour gérer les données XML, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=text/xml`. Pour gérer les données PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/pdf`.
+     * Valeur de chaîne spécifiant la valeur d’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Cette valeur de paramètre est facultative.
+     * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.
 
      La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
@@ -232,24 +248,24 @@ Gérez un formulaire envoyé à l’aide de l’API Forms (Java) :
 
    >[!NOTE]
    >
-   >Cette étape ne s’applique que si le formulaire est envoyé en tant que PDF.
+   >Cette étape ne s’applique que si le formulaire est envoyé au format PDF.
 
 1. Traiter les données envoyées
 
    * Si le type de contenu des données est `application/vnd.adobe.xdp+xml` ou `text/xml`, créez une logique d’application pour récupérer les valeurs des données XML.
 
-      * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-      * Créez un objet `java.io.InputStream` en appelant le constructeur `java.io.DataInputStream` et en transmettant l’objet `com.adobe.idp.Document`.
-      * Créez un objet `org.w3c.dom.DocumentBuilderFactory` en appelant la méthode `newInstance` de l’objet statique `org.w3c.dom.DocumentBuilderFactory`.
-      * Créez un objet `org.w3c.dom.DocumentBuilder` en appelant la méthode `newDocumentBuilder` de l’objet `org.w3c.dom.DocumentBuilderFactory`.
-      * Créez un objet `org.w3c.dom.Document` en appelant la méthode `parse` de l’objet `org.w3c.dom.DocumentBuilder` et en transmettant l’objet `java.io.InputStream`.
-      * Récupérez la valeur de chaque nœud dans le document XML. Une façon d’accomplir cette tâche est de créer une méthode personnalisée qui accepte deux paramètres : l’objet `org.w3c.dom.Document` et le nom du nœud dont vous souhaitez récupérer la valeur. Cette méthode renvoie une valeur de chaîne représentant la valeur du nœud. Dans l’exemple de code qui suit ce processus, cette méthode personnalisée est appelée `getNodeText`. Le corps de cette méthode est affiché.
+     * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+     * Créez un objet `java.io.InputStream` en appelant le constructeur `java.io.DataInputStream` et en transmettant l’objet `com.adobe.idp.Document`.
+     * Créez un objet `org.w3c.dom.DocumentBuilderFactory` en appelant la méthode `newInstance` de l’objet statique `org.w3c.dom.DocumentBuilderFactory`.
+     * Créez un objet `org.w3c.dom.DocumentBuilder` en appelant la méthode `newDocumentBuilder` de l’objet `org.w3c.dom.DocumentBuilderFactory`.
+     * Créez un objet `org.w3c.dom.Document` en appelant la méthode `parse` de l’objet `org.w3c.dom.DocumentBuilder` et en transmettant l’objet `java.io.InputStream`.
+     * Récupérez la valeur de chaque nœud dans le document XML. Une façon d’accomplir cette tâche est de créer une méthode personnalisée qui accepte deux paramètres : l’objet `org.w3c.dom.Document` et le nom du nœud dont vous souhaitez récupérer la valeur. Cette méthode renvoie une valeur de chaîne représentant la valeur du nœud. Dans l’exemple de code qui suit ce processus, cette méthode personnalisée est appelée `getNodeText`. Le corps de cette méthode est affiché.
 
    * Si le type de contenu des données est `application/pdf`, créez une logique d’application pour enregistrer les données PDF envoyées sous forme de fichier PDF.
 
-      * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-      * Créez un objet `java.io.File` en utilisant son constructeur public. Veillez à spécifier PDF comme extension de nom du fichier.
-      * Renseignez le fichier PDF en appelant la méthode `copyToFile` de l’objet `com.adobe.idp.Document` et en transmettant l’objet `java.io.File`.
+     * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+     * Créez un objet `java.io.File` en utilisant son constructeur public. Veillez à spécifier PDF comme extension de nom du fichier.
+     * Renseignez le fichier PDF en appelant la méthode `copyToFile` de l’objet `com.adobe.idp.Document` et en transmettant l’objet `java.io.File`.
 
 **Voir également**
 
@@ -270,7 +286,7 @@ Gérez un formulaire envoyé en utilisant l’API des formulaires (service Web)�
 1. Inclure les fichiers du projet
 
    * Créez des classes proxy Java qui utilisent le service WSDL de Forms.
-   * Incluez les classes proxy Java dans le chemin d’accès de classe.
+   * Incluez les classes proxy Java dans votre classpath.
 
 1. Créer un objet API Forms client
 
@@ -287,17 +303,17 @@ Gérez un formulaire envoyé en utilisant l’API des formulaires (service Web)�
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur des paramètres régionaux en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui spécifie la valeur des paramètres régionaux.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
-      * Objet `BLOB` contenant les données de formulaire.
-      * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Spécifiez le type de contenu à gérer. Pour gérer les données XML, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=text/xml`. Pour gérer les données PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/pdf`.
-      * Une valeur de chaîne qui spécifie la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.
-      * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
-      * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode.
-      * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
-      * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
-      * Un objet `javax.xml.rpc.holders.ShortHolder` vide qui est renseigné par la méthode.
-      * Un objet `MyArrayOf_xsd_anyTypeHolder` vide qui est renseigné par la méthode. Ce paramètre est utilisé pour stocker les pièces jointes envoyées avec le formulaire.
-      * Un objet `FormsResultHolder` vide qui est renseigné par la méthode avec le formulaire envoyé.
+     * Objet `BLOB` contenant les données de formulaire.
+     * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Spécifiez le type de contenu à gérer. Pour gérer les données XML, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=text/xml`. Pour gérer les données PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/pdf`.
+     * Une valeur de chaîne qui spécifie la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.
+     * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
+     * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode.
+     * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
+     * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
+     * Un objet `javax.xml.rpc.holders.ShortHolder` vide qui est renseigné par la méthode.
+     * Un objet `MyArrayOf_xsd_anyTypeHolder` vide qui est renseigné par la méthode. Ce paramètre est utilisé pour stocker les pièces jointes envoyées avec le formulaire.
+     * Un objet `FormsResultHolder` vide qui est renseigné par la méthode avec le formulaire envoyé.
 
      La méthode `processFormSubmission` renseigne le paramètre `FormsResultHolder` avec les résultats de l’envoi du formulaire.
 
@@ -311,21 +327,21 @@ Gérez un formulaire envoyé en utilisant l’API des formulaires (service Web)�
 
    * Si le type de contenu des données est `application/vnd.adobe.xdp+xml` ou `text/xml`, créez une logique d’application pour récupérer les valeurs des données XML.
 
-      * Créez un objet `BLOB` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-      * Créez un tableau d’octets en appelant la méthode `getBinaryData` de l’objet `BLOB`.
-      * Créez un objet `java.io.InputStream` en appelant le constructeur `java.io.ByteArrayInputStream` et en transmettant le tableau d’octets.
-      * Créez un objet `org.w3c.dom.DocumentBuilderFactory` en appelant la méthode `newInstance` de l’objet statique `org.w3c.dom.DocumentBuilderFactory`.
-      * Créez un objet `org.w3c.dom.DocumentBuilder` en appelant la méthode `newDocumentBuilder` de l’objet `org.w3c.dom.DocumentBuilderFactory`.
-      * Créez un objet `org.w3c.dom.Document` en appelant la méthode `parse` de l’objet `org.w3c.dom.DocumentBuilder` et en transmettant l’objet `java.io.InputStream`.
-      * Récupérez la valeur de chaque nœud dans le document XML. Une façon d’accomplir cette tâche est de créer une méthode personnalisée qui accepte deux paramètres : l’objet `org.w3c.dom.Document` et le nom du nœud dont vous souhaitez récupérer la valeur. Cette méthode renvoie une valeur de chaîne représentant la valeur du nœud. Dans l’exemple de code qui suit ce processus, cette méthode personnalisée est appelée `getNodeText`. Le corps de cette méthode est affiché.
+     * Créez un objet `BLOB` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+     * Créez un tableau d’octets en appelant la méthode `getBinaryData` de l’objet `BLOB`.
+     * Créez un objet `java.io.InputStream` en appelant le constructeur `java.io.ByteArrayInputStream` et en transmettant le tableau d’octets.
+     * Créez un objet `org.w3c.dom.DocumentBuilderFactory` en appelant la méthode `newInstance` de l’objet statique `org.w3c.dom.DocumentBuilderFactory`.
+     * Créez un objet `org.w3c.dom.DocumentBuilder` en appelant la méthode `newDocumentBuilder` de l’objet `org.w3c.dom.DocumentBuilderFactory`.
+     * Créez un objet `org.w3c.dom.Document` en appelant la méthode `parse` de l’objet `org.w3c.dom.DocumentBuilder` et en transmettant l’objet `java.io.InputStream`.
+     * Récupérez la valeur de chaque nœud dans le document XML. Une façon d’accomplir cette tâche est de créer une méthode personnalisée qui accepte deux paramètres : l’objet `org.w3c.dom.Document` et le nom du nœud dont vous souhaitez récupérer la valeur. Cette méthode renvoie une valeur de chaîne représentant la valeur du nœud. Dans l’exemple de code qui suit ce processus, cette méthode personnalisée est appelée `getNodeText`. Le corps de cette méthode est affiché.
 
    * Si le type de contenu des données est `application/pdf`, créez une logique d’application pour enregistrer les données PDF envoyées sous forme de fichier PDF.
 
-      * Créez un objet `BLOB` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-      * Créez un tableau d’octets en appelant la méthode `getBinaryData` de l’objet `BLOB`.
-      * Créez un objet `java.io.File` en utilisant son constructeur public. Veillez à spécifier PDF comme extension de nom du fichier.
-      * Créez un objet `java.io.FileOutputStream` en utilisant son constructeur et en transmettant l’objet `java.io.File`.
-      * Renseignez le fichier PDF en appelant la méthode `write` de l’objet `java.io.FileOutputStream` et en transmettant le tableau d’octets.
+     * Créez un objet `BLOB` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+     * Créez un tableau d’octets en appelant la méthode `getBinaryData` de l’objet `BLOB`.
+     * Créez un objet `java.io.File` en utilisant son constructeur public. Veillez à spécifier PDF comme extension de fichier.
+     * Créez un objet `java.io.FileOutputStream` en utilisant son constructeur et en transmettant l’objet `java.io.File`.
+     * Renseignez le fichier PDF en appelant la méthode `write` de l’objet `java.io.FileOutputStream` et en transmettant le tableau d’octets.
 
 **Voir également**
 

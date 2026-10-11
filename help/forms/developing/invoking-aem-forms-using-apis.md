@@ -1,6 +1,6 @@
 ---
 title: Comment appeler AEM Forms à l’aide d’API ?
-description: Découvrez comment appeler les services AEM Forms en utilisant une API Java™, les services web, Remoting et REST.
+description: Découvrez comment appeler les services AEM Forms à l’aide d’une API Java&trade;, de services web, de Remoting et de REST.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,24 +9,36 @@ role: Developer
 exl-id: 0e92d1ad-12bd-4bfd-81cc-9be8e376c5ca
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 100%
-
+source-wordcount: '298'
+ht-degree: 94%
 ---
-
 # Appel d’AEM Forms à l’aide d’API {#invoking-aem-forms-using-apis}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
 Adobe Experience Manager Forms est un logiciel d’entreprise basé sur J2EE qui se compose de services fonctionnant dans une infrastructure partagée. Les opérations de service consomment ou produisent généralement des documents. En utilisant AEM Forms, vous pouvez combiner Forms Workflow avec les formulaires électroniques, la sécurité des documents et la génération de documents dans un ensemble intégré et cohérent de services. Ces services sont accessibles depuis l’intérieur et l’extérieur du pare-feu.
 
-Les applications clientes peuvent appeler des services AEM Forms par programmation en utilisant une API Java™, des services web, Remoting et REST. À l’aide de la console d’administration, vous pouvez configurer un service pour exposer un point d’entrée qui permet aux services AEM Forms d’être appelés par programmation. Par défaut, la plupart des services sont préconfigurés pour exposer des points d’entrée de service Remoting, Java™ et web.
+Les applications clientes peuvent appeler des services AEM Forms par programmation en utilisant une API Java™, des services web, Remoting et REST. À l’aide de la console d’administration, vous pouvez configurer un service pour exposer un point d’entrée qui permet aux services AEM Forms d’être appelés par programmation. Par défaut, la plupart des services sont préconfigurés pour exposer des points d’entrée Remoting, Java™ et de service web.
 
 Les exigences de votre entreprise déterminent la méthode d’appel à utiliser. Par exemple, à l’aide de l’API Java™, vous pouvez intégrer la fonctionnalité AEM Forms à vos applications d’entreprise Java™, telles que Java™ Entity et Message Beans. De même, vous pouvez intégrer la fonctionnalité AEM Forms dans des projets .NET (ou d’autres projets développés avec des environnements de développement qui prennent en charge les normes de services web) à l’aide de services web.
 
-Les services nécessitent un conteneur de services pour s’exécuter, de la même manière que Enterprise JavaBeans™ (EJB) nécessite un conteneur J2EE. AEM Forms ne comprend qu’une seule implémentation d’un conteneur de services. Le conteneur de service est chargé de la gestion de la durée de vie d’un service, y compris son déploiement et l’assurance que toutes les demandes sont envoyées au service approprié. Il gère également les documents qu’un service consomme ou produit.
+Les services nécessitent un conteneur de services pour s’exécuter, de la même manière que les Enterprise JavaBeans™ (EJBs) nécessitent un conteneur J2EE. AEM Forms ne comprend qu’une seule mise en œuvre d’un conteneur de services. Le conteneur de service est chargé de la gestion de la durée de vie d’un service, y compris son déploiement et l’assurance que toutes les demandes sont envoyées au service approprié. Il gère également les documents qu’un service consomme ou produit.
 
 >[!NOTE]
 >

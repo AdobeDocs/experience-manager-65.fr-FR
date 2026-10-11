@@ -9,13 +9,29 @@ role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 98%
-
 ---
-
 # Convertir des fichiers Postscript en documents PDF {#converting-postscript-to-pdf-documents}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -34,11 +50,11 @@ Cette rubrique décrit l’utilisation de l’API du service Distiller (Java et 
 
 >[!NOTE]
 >
->Pour plus d’informations à propos du service Forms, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations à propos du service Distiller, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
->Pour convertir des fichiers PostScript en documents PDF, Acrobat 9 ou le package redistribuable Microsoft Visual C++ 2005 doit être installé sur le serveur hébergeant AEM Forms.
+>Pour convertir des fichiers PostScript en documents PDF, l’un des éléments suivants doit être installé sur le serveur hébergeant AEM Forms : Acrobat 9 ou le package redistribuable Microsoft Visual C++ 2005.
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -48,7 +64,7 @@ Pour convertir l’un des types pris en charge en document PDF, procédez comme 
 1. Créez un client de service Distiller.
 1. Récupérez le fichier à convertir.
 1. Appelez l’opération de création de PDF.
-1. Enregistrez le formulaire PDF.
+1. Enregistrez le document PDF.
 
 **Inclure les fichiers de projet**
 
@@ -80,7 +96,7 @@ Vous pouvez enregistrer le document PDF en tant que fichier PDF.
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Didacticiels de mise en route de l’API Output Service](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
+[Démarrages rapides de l’API Output Service](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
 ### Convertir un fichier PostScript en fichier PDF à l’aide de l’API Java {#convert-a-postscript-file-to-pdf-using-the-java-api}
 
@@ -113,7 +129,7 @@ Pour convertir un fichier PostScript en document PDF à l’aide de l’API du s
 
    La méthode `createPDF` renvoie un objet `CreatePDFResult` contenant le nouveau document PDF et un fichier journal pouvant être généré. Le fichier journal contient généralement des messages d’erreur ou d’avertissement générés par la requête de conversion.
 
-1. Enregistrez le formulaire PDF.
+1. Enregistrez le document PDF.
 
    Pour obtenir le document PDF nouvellement créé, procédez comme suit :
 
@@ -122,7 +138,7 @@ Pour convertir un fichier PostScript en document PDF à l’aide de l’API du s
 
    De même, pour obtenir le document journal, procédez comme suit.
 
-   * Appelez la méthode `getLogDocument` de l’objet `CreatePDFResult`. Celle-ci renvoie un objet `com.adobe.idp.Document`.
+   * Appelez la méthode `getLogDocument` de l’objet `CreatePDFResult`. Cette fonction renvoie un objet `com.adobe.idp.Document`.
    * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document de journal.
 
 **Voir également**
@@ -155,10 +171,10 @@ Pour convertir un fichier PostScript en document PDF à l’aide de l’API Dist
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `DistillerServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `DistillerServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `DistillerServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `DistillerServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Récupérez le fichier à convertir.
 
@@ -181,7 +197,7 @@ Pour convertir un fichier PostScript en document PDF à l’aide de l’API Dist
    * Un paramètre de sortie `BLOB` utilisé pour stocker le document PDF.
    * Un paramètre de sortie `BLOB` utilisé pour stocker le journal.
 
-1. Enregistrez le formulaire PDF.
+1. Enregistrez le document PDF.
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne représentant l’emplacement du fichier du document PDF signé et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `CreatePDF2` (paramètre de sortie). Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.

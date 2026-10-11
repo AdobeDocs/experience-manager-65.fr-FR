@@ -9,7 +9,23 @@ exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 100%
@@ -34,9 +50,9 @@ L’interface REST de CRX QueryBuilder offre la fonctionnalité QueryBuilder de
 1. Accédez à l’URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Créez une requête basée sur la structure du nœud de stockage et les propriétés de nœud de Process Reporting.
 
-   Vous pouvez définir des paramètres facultatifs pour spécifier le décalage, la limite, les hits et les propriétés. Vous pouvez coder en dur les arguments pour les rapports statiques et récupérer les paramètres de l’interface utilisateur pour les rapports dynamiques.
+   Vous pouvez définir des paramètres facultatifs pour spécifier le décalage, la limite, les résultats et les propriétés. Vous pouvez coder en dur les arguments pour les rapports statiques et récupérer les paramètres de l’interface utilisateur pour les rapports dynamiques.
 
-   Pour récupérer tous les noms de processus, la requête doit être :
+   Pour récupérer tous les noms de processus, la requête est :
 
    `https://'[server]:[port]'/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
 
@@ -62,9 +78,9 @@ Avant de créer un service à l’aide de l’API Query Builder, vous devez [cr
     predicateGroup.setAllRequired(true);
    ```
 
-1. Ajoutez des attributs au groupe d’attributs (predicateGroup) créé. Voici des éléments d’attribut utiles : [JcrBoolPropertyPredicateEvaluator dans 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr), [JcrPropertyPredicateEvaluator dans 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr), [RangePropertyPredicateEvaluator dans 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr), [DateRangePredicateEvaluator dans 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr), et [TypePredicateEvaluator dans 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
+1. Ajoutez des prédicats au predicateGroup nouvellement créé. Voici des éléments d’attribut utiles : [JcrBoolPropertyPredicateEvaluator dans 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr), [JcrPropertyPredicateEvaluator dans 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr), [RangePropertyPredicateEvaluator dans 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr), [DateRangePredicateEvaluator dans 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr), et [TypePredicateEvaluator dans 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
-   Pour les rapports statiques, codez en dur les attributs. En revanche, pour les rapports dynamiques, récupérez les attributs de la requête.
+   Pour les rapports statiques, codez en dur les prédicats. En revanche, pour les rapports dynamiques, récupérez les prédicats de la requête.
 
    L’exemple de code pour obtenir toutes les instances d’un processus est :
 
@@ -431,7 +447,7 @@ Les conditions préalables à la création d’une interface utilisateur distinc
 
    Exemple de nœud avec des fichiers JSP et CSS
 
-1. Ajoutez du code JavaScript pour lancer un appel Ajax à l’API REST QueryBuilder ou à votre service. Ajoutez également les arguments appropriés.
+1. Ajoutez du code JavaScript pour lancer un appel Ajax à l’API REST de QueryBuilder ou à votre service. Ajoutez également les arguments appropriés.
 
 1. Ajoutez un gestionnaire de succès approprié à l’appel Ajax pour analyser et afficher le résultat. Vous pouvez analyser le résultat dans plusieurs formats (json/csv/défini par l’utilisateur) et l’afficher sous forme tabulaire ou sous d’autres formes.
 
@@ -644,7 +660,7 @@ Les conditions préalables à la création d’une interface utilisateur distinc
 
    Propriétés du nœud
 
-1. L’interface utilisateur du rapport est intégrée à l’interface utilisateur Process Reporting. Après l’intégration de l’interface utilisateur, l’interface utilisateur mise à jour ressemble aux images ci-dessous :
+1. L’interface d’utilisation du rapport est intégrée à l’interface d’utilisation de création de rapports sur les processus. Après l’intégration de l’interface utilisateur, l’interface utilisateur mise à jour ressemble aux images ci-dessous :
 
    ![Interface utilisateur de nouveaux rapports personnalisés ajoutés](assets/sampleui_screenshot_new.png)
 

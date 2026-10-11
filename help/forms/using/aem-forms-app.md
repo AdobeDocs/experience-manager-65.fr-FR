@@ -9,30 +9,46 @@ exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 95%
-
 ---
-
 # Présentation de l’application AEM Forms {#aem-forms-app}
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 ## Présentation {#overview}
 
 L’application AEM Forms permet de synchroniser des formulaires adaptatifs, des formulaires mobiles et des ensembles de formulaires sur des périphériques mobiles, en fonction de votre serveur. Vous pouvez définir des processus en tant que [Processus spécifiques à Forms on OSGi](/help/forms/using/aem-forms-workflow.md) ou Processus Forms on JEE. Par exemple, vous dirigez un établissement bancaire et utilisez AEM Forms pour gérer les demandes et les communications de vos clientes et clients. Vos clientes et clients remplissent un formulaire et l’envoient pour vérification. Si vous activez le formulaire pour les périphériques mobiles, vos clientes et clients peuvent remplir le formulaire dans l’application AEM Forms. Vous pouvez également gérer le workflow de vérification en activant le formulaire de vérification pour les périphériques mobiles. Votre agent ou agente de terrain peut apporter un appareil mobile au client ou à la cliente, vérifier les détails et envoyer le formulaire. L’application AEM Forms se synchronise avec le serveur AEM Forms et récupère les formulaires activés pour les périphériques mobiles. Si l’application est hors ligne, elle enregistre les données localement.
 
-Le code source de l’application AEM Forms est accessible via la Distribution de logiciels. Le package du code source dans Distribution de logiciels est disponible sous : `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+Le code source de l’application AEM Forms est accessible aux clientes et clients via Software Distribution. Le package du code source dans Distribution de logiciels est disponible sous : `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 L’application AEM Forms est prise en charge sur les appareils iOS, Android, Windows. Vous pouvez installer l’application AEM Forms pour Android à partir de Google Play, pour iOS à partir d’App Store et pour Windows à partir de Windows Store.
 
     [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
+    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
     [![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
@@ -74,31 +90,31 @@ Se reporter à [Application AEM Forms (précédemment Mobile Workspace)](/help/f
 
 ### Application AEM Forms avec serveurs AEM Forms {#aem-forms-app-with-aem-forms-servers}
 
-Vous pouvez synchroniser votre application avec le serveur AEM Forms et travailler sur des formulaires sur votre périphérique mobile.
+Vous pouvez synchroniser votre application avec le serveur AEM Forms et travailler sur des formulaires sur votre appareil mobile.
 
-Avec le serveur AEM Forms Workflow, un formulaire peut être associé à un point de départ dans un processus Workbench et une demande de boîte de réception AEM. Une demande de boîte de réception AEM peut être associée à un formulaire adaptatif. Un point de départ peut être associé à un formulaire adaptatif, à un formulaire HTML5 ou à un ensemble de formulaires. Un point de départ peut être envoyé en tant que tâche ou la tâche peut être enregistrée en tant que brouillon. Pour plus d’informations sur les différences entre une demande depuis la boîte de réception AEM et un point de départ voir [Actions et fonctionnalités des processus AEM basés sur l’utilisation de Forms on OSGi et des processus AEM Forms JEE](capabilities-osgi-jee-workflows.md).
+Avec le serveur AEM Forms Workflow, un formulaire peut être associé à un point de départ dans un processus Workbench et une demande de boîte de réception AEM. Une demande de boîte de réception AEM peut être associée à un formulaire adaptatif. Un point de départ peut être associé à un formulaire adaptatif, à un formulaire HTML5 ou à un ensemble de formulaires. Un point de départ peut être soumis sous forme de tâche ou la tâche peut être enregistrée en tant que brouillon. Pour plus d’informations sur les différences entre une demande depuis la boîte de réception AEM et un point de départ voir [Actions et fonctionnalités des processus AEM basés sur l’utilisation de Forms on OSGi et des processus AEM Forms JEE](capabilities-osgi-jee-workflows.md).
 
 Avec un serveur AEM Forms sans AEM Forms Workflow, un formulaire dont la synchronisation est activée dans l’application est généré dans l’application AEM Forms. Les formulaires sont disponibles dans l’onglet formulaires de l’application et peuvent être envoyés ou enregistrés en tant que brouillon. Les formulaires adaptatifs et les formulaires mobiles sont pris en charge dans l’application.
 
 1. **Enregistrement d’une tâche ou d’un formulaire en tant que brouillon**
 
-   L’option Enregistrer en tant que brouillon enregistre une capture d’écran d’une tâche ou d’un formulaire en plus des données remplies et des fichiers joints dans le formulaire associé. Les brouillons sont enregistrés sur le périphérique mobile et synchronisés avec le serveur AEM Forms pour être récupérés ultérieurement.
+   L’option Enregistrer en tant que brouillon enregistre une capture d’écran d’une tâche ou d’un formulaire en plus des données remplies et des fichiers joints dans le formulaire associé. Les brouillons sont enregistrés sur l’appareil mobile et synchronisés avec le serveur AEM Forms pour être récupérés ultérieurement.
 
    Reportez-vous à [Enregistrer une tâche ou un formulaire en tant que brouillon](/help/forms/using/save-as-draft.md).
 
 1. **Enregistrer le formulaire comme modèle**
 
-   Parfois, lorsque les utilisateurs et utilisatrices remplissent un formulaire, les entrées de quelques champs restent les mêmes. Pour ces types d’instances, vous pouvez remplir les champs nécessitant des valeurs identiques dans chaque instance et enregistrer le formulaire ou le brouillon comme modèle. Ainsi, chaque fois que vous créerez une instance du modèle, les champs spécifiés seront déjà remplis avec les valeurs spécifiées dans le modèle. Cela vous permet de gagner du temps et de fournir moins d’efforts pour remplir le formulaire.
+   Parfois, lorsque les utilisateurs et utilisatrices remplissent un formulaire, les entrées de quelques champs restent les mêmes. Pour ces types d’instances, vous pouvez remplir les champs nécessitant des valeurs identiques dans chaque instance et enregistrer le formulaire ou le brouillon comme modèle. Ainsi, chaque fois que vous créerez une instance du modèle, les champs spécifiés seront déjà remplis avec les valeurs spécifiées dans le modèle. Cela vous permet de gagner du temps et de réduire les efforts nécessaires pour remplir le formulaire.
 
    Reportez-vous à [Enregistrer des formulaires comme modèles](/help/forms/using/save-forms-and-start-points-as-templates.md).
 
 ### Utiliser des tâches et des formulaires {#working-with-tasks-and-forms}
 
-Vous pouvez synchroniser votre application avec le serveur AEM Forms Workflow et travailler sur des tâches et des formulaires sur votre périphérique mobile.
+Vous pouvez synchroniser votre application avec le serveur AEM Forms Workflow et travailler sur des tâches et des formulaires sur votre appareil mobile.
 
-Une tâche sur l’appareil mobile contient un formulaire adaptatif, un formulaire HTML5, ou un ensemble de formulaires et peut également contenir des pièces jointes et [l’URL du résumé](/help/forms/using/getting-task-variables-summary-url.md). Par défaut, les tâches qui vous sont assignées sont placées dans le dossier **[!UICONTROL Tâches]**. Lorsque vous travaillez sur une tâche, vous pouvez modifier la tâche et enregistrer un brouillon sur le serveur AEM Forms.
+Une tâche sur l’appareil mobile contient un formulaire adaptatif, un formulaire HTML5, ou un ensemble de formulaires et peut également contenir des pièces jointes et [l’URL du résumé](/help/forms/using/getting-task-variables-summary-url.md). Par défaut, les tâches qui vous sont assignées sont placées dans le dossier **[!UICONTROL Tâches]**. Lorsque vous travaillez sur une tâche, vous pouvez modifier la tâche et enregistrer une copie brouillon de la tâche sur le serveur AEM Forms.
 
-Un formulaire sur un périphérique mobile peut être un formulaire adaptatif ou un formulaire mobile. Les formulaires dont la synchronisation est activée dans l’application de formulaires sont disponibles dans le dossier « Forms ». Vous pouvez synchroniser les formulaires activés dans le serveur AEM Forms sans AEM Forms Workflow (AEM Forms sur OSGi).
+Un formulaire sur un appareil mobile peut être un formulaire adaptatif ou un formulaire mobile. Les formulaires dont la synchronisation est activée dans l’application de formulaires sont disponibles dans le dossier « Forms ». Vous pouvez synchroniser les formulaires activés dans le serveur AEM Forms sans AEM Forms Workflow (AEM Forms sur OSGi).
 
 Voir :
 
@@ -107,13 +123,13 @@ Voir :
 
 ### Travail hors ligne {#working-offline}
 
-Vous pouvez travailler sur votre appareil mobile en mode hors ligne. Vous pouvez vous connecter à l’application même s’il n’y a aucune connectivité réseau et travailler sur tous les formulaires qui ont été synchronisées avec l’appareil lors de votre dernière connexion. Pour plus d’informations sur les modalités de synchronisation de vos formulaires, consultez la section [Synchronisation de l’application](/help/forms/using/sync-app.md). Si vous choisissez de synchroniser les pièces jointes associées à un formulaire, vous pouvez également ouvrir les pièces jointes en mode hors connexion. Vous pouvez modifier le formulaire, ajouter des annotations et envoyer ou enregistrer un formulaire en mode hors connexion. Le formulaire sera synchronisé avec le serveur AEM Forms lors de votre prochaine connexion.
+Vous pouvez travailler sur votre appareil mobile en mode hors ligne. Vous pouvez vous connecter à l’application même s’il n’y a aucune connectivité réseau et travailler sur tous les formulaires qui ont été synchronisés avec l’appareil lorsque vous étiez en ligne pour la dernière fois. Pour plus d’informations sur les modalités de synchronisation de vos formulaires, consultez la section [Synchronisation de l’application](/help/forms/using/sync-app.md). Si vous choisissez de synchroniser les pièces jointes associées à un formulaire, vous pouvez également ouvrir les pièces jointes en mode hors ligne. Vous pouvez modifier le formulaire, ajouter des annotations et envoyer ou enregistrer un formulaire en mode hors ligne. Le formulaire sera synchronisé avec le serveur AEM Forms lors de votre prochaine connexion.
 
 Pour plus d’informations, reportez-vous à [Utilisation en mode hors ligne](/help/forms/using/work-offline-mode.md).
 
 ### Ajout d’annotations {#adding-annotations}
 
-Vous pouvez ajouter les pièces jointes suivantes à un formulaire sur votre périphérique mobile :
+Vous pouvez ajouter les pièces jointes suivantes à un formulaire sur votre appareil mobile :
 
 * **Notes :** vous pouvez employer la fonction Notes pour ajouter une annotation à main levée ou une note textuelle dans votre formulaire. Pour plus d’informations, consultez la section [Ajout d’une note](/help/forms/using/add-attachments.md#adding-a-note).
 
@@ -143,7 +159,7 @@ Vous pouvez créer des formulaires pour les appareils mobiles dans AEM Forms. Le
 
 ### Jeu de formulaires {#formset}
 
-Avec les ensembles de formulaires, plusieurs formulaires associés à un service ou à un processus peuvent être regroupés pour automatiser un processus d’entreprise et présentés aux utilisateurs finaux et utilisatrices finales. Dans ce cas, les utilisateurs et utilisatrices peuvent remplir l’ensemble en une seule fois et il n’est pas nécessaire de générer, d’envoyer et d’effectuer un suivi des formulaires ou des processus individuels.
+Avec les ensembles de formulaires, plusieurs formulaires associés à un service ou à un processus peuvent être regroupés pour automatiser un processus d’entreprise et présentés aux utilisateurs finaux et utilisatrices finales. Dans ce cas, les utilisateurs et utilisatrices peuvent remplir l’ensemble en une seule fois et il n’est pas nécessaire de classer, d’envoyer et d’effectuer un suivi des formulaires ou des processus individuels.
 
 >[!NOTE]
 >
@@ -186,7 +202,7 @@ Le code source de l’application AEM Forms peut être extrait à partir de `ad
 
 Pour obtenir le code source de l’application AEM Forms, procédez comme suit :
 
-1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à Software Distribution.
 1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** situé dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.

@@ -1,17 +1,31 @@
 ---
-title: Notes générales de mise à jour d’ [!DNL Adobe Experience Manager]  6.5
+title: Notes générales de mise à jour d’[!DNL Adobe Experience Manager] 6.5
 description: Notes relatives à[!DNL Adobe Experience Manager] 6.5, décrivant les informations de version, les nouveautés, la procédure d’installation et les listes détaillées des modifications.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4981'
 ht-degree: 96%
-
 ---
-
 # Notes générales de mise à jour d’[!DNL Adobe Experience Manager] 6.5{#general-release-notes-for-adobe-experience-manager}
 
 ## Informations sur la version {#release-information}
@@ -87,7 +101,7 @@ Diverses améliorations ont été apportées à l’UI pour qu’elle soit plus 
 #### Référentiel {#repository}
 
 * La base d’Adobe Experience Manager 6.5 repose sur les versions mises à jour de la structure OSGi (Apache Sling et Apache Felix) et du référentiel de contenu Java™ : Apache Jackrabbit Oak 1.10.2.
-* Pour obtenir un aperçu des problèmes résolus, voir [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1 &#x200B;](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) et [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
+* Pour obtenir un aperçu des problèmes résolus, voir [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1 ](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) et [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
 
 >[!CAUTION]
 >
@@ -246,12 +260,12 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, con
 
 * L’intégration d’Adobe Target utilise désormais l’API Target Standard. Les versions antérieures d’AEM utilisent l’API HTTP Target Classic, désormais obsolète.
 * La version 6.3 d’`mbox.js` Adobe Target est incluse. Adobe recommande vivement de passer l’implémentation à `at.js` v1.x.
-* La version 1.5.0 de `at.js` est désormais incluse. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://business.adobe.com/fr/products/experience-platform/launch.html) pour mettre en place de `at.js` 1.x sur le site.
+* La version 1.5.0 de `at.js` est désormais incluse. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) pour mettre en place de `at.js` 1.x sur le site.
 
 #### AEM et Adobe Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 est inclus. Adobe recommande de passer à la mise en œuvre d’`AppMeasurement.js`.
-* `AppMeasurement.js` v1.8.0 est inclus. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://business.adobe.com/fr/products/experience-platform/launch.html) pour mettre en place AppMeasurement.js sur le site.
+* `AppMeasurement.js` v1.8.0 est inclus. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) pour mettre en place AppMeasurement.js sur le site.
 
 #### AEM et Commerce {#aem-commerce}
 
@@ -435,7 +449,7 @@ Consultez le [Résumé des nouvelles fonctionnalités et améliorations apporté
 
 Adobe applique un modèle de développement axé sur les clients et clientes afin qu’ils puissent contribuer à toutes les étapes du processus de développement, au cours des phases de spécification, de développement et de tests. Merci à tous les utilisateurs, utilisatrices et partenaires qui contribuent à ce processus.
 
-Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et utilisatrices, et du développement des demandes d’amélioration. Le [portail d’assistance d’Experience Manager](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&lang=fr#support) est intégré au système de suivi des défauts et des améliorations d’Adobe. Les questions des utilisateurs sont identifiées et résolues par l’assistance clientèle dans la mesure du possible. Lorsqu’elles sont transmises au service de R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. Les problèmes entrant dans le cadre de l’assistance payante et de la garantie, ainsi que les demandes d’amélioration des utilisateurs détenant un compte payant sont prioritaires.
+Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et utilisatrices, et du développement des demandes d’amélioration. Le [portail d’assistance d’Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=fr#support) est intégré au système de suivi des défauts et des améliorations d’Adobe. Les questions des utilisateurs sont identifiées et résolues par l’assistance clientèle dans la mesure du possible. Lorsqu’elles sont transmises au service de R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. Les problèmes entrant dans le cadre de l’assistance payante et de la garantie, ainsi que les demandes d’amélioration des utilisateurs détenant un compte payant sont prioritaires.
 
 Ce processus de hiérarchisation a généré plus de 750 modifications axées sur les clients et clientes, et corrigées dans AEM 6.5.
 

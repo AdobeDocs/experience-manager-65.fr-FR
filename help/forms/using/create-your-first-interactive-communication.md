@@ -8,13 +8,29 @@ feature: Interactive Communication
 exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 98%
-
 ---
-
 # Didacticiel : créer votre première communication interactive {#tutorial-create-your-first-interactive-communication}
 
 Découvrez comment créer votre première communication interactive.
@@ -23,27 +39,27 @@ Découvrez comment créer votre première communication interactive.
 
 Les communications interactives centralisent et gèrent la création, l’assemblage et la livraison de correspondances sécurisées, personnalisées et interactives telles que la correspondance commerciale, les documents, les déclarations, les courriers marketing, les factures et les kits de bienvenue. Les communications interactives peuvent être fournies par deux canaux : impression et web. Le canal d’impression est utilisé pour créer des documents PDF et des communications papier, tandis que le canal web est utilisé pour fournir des expériences en ligne.
 
-Ce didacticiel fournit un cadre de bout en bout pour la création d’une communication interactive. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide vous aide à créer des fonctionnalités utilisées comme blocs de création pour créer une communication interactive.
+Ce tutoriel fournit un cadre de bout en bout pour la création d’une communication interactive. Le tutoriel consiste en un cas d’utilisation et plusieurs guides. Chaque guide vous aide à créer des fonctionnalités utilisées comme blocs de création pour créer une communication interactive.
 
 L’image suivante illustre les blocs de création nécessaires à la création d’une communication interactive.
 
 ![workflow](assets/workflow.gif)
 
-À la fin de ce didacticiel, vous serez capable de :
+À la fin de ce tutoriel, vous serez capable de :
 
 * Créer des blocs de création (modèle de données de formulaire, fragments de document et modèles)
 * Créer une communication interactive
-* Test et publication d’une communication interactive
+* Tester et publier une communication interactive
 
 ## Cas d’utilisation {#use-case}
 
 Commençons par aborder un cas d’utilisation :
 
-Un opérateur de télécommunications envoie des factures mensuelles aux clientes et au clients par e-mail. La facture est une communication interactive. L’e-mail comprend :
+Un opérateur de télécommunications envoie des factures mensuelles aux clientes et aux clients par e-mail. La facture est une communication interactive. L’e-mail comprend :
 
-* Un fichier PDF protégé par mot de passe, appelé Canal d’impression dans ce tutoriel. Il comprend les informations sur le client ou la cliente, sur la facture, le récapitulatif des frais, les modes de paiement possibles de la facture et les informations d’utilisation.
+* Un fichier PDF protégé par mot de passe, appelé canal d’impression dans ce tutoriel. Il comprend les informations sur le client ou la cliente, sur la facture, le récapitulatif des frais, les modes de paiement possibles de la facture et les informations d’utilisation.
 * Un lien vers la version web de la facture, appelée canal web dans ce tutoriel. La version web de la facture, en plus des informations détaillées dans la version PDF, fournit une représentation graphique des informations d’utilisation et des offres personnalisées basées sur Adobe Target. La version web contient également un formulaire de paiement en ligne. Cela permet d’effectuer des paiements en ligne sans quitter l’IC.
-* Un lien vers des services à valeur ajoutée, tels que le stockage en ligne, les abonnements de musique et les abonnements de vidéos à la demande.
+* Un lien vers des services à valeur ajoutée, tels que le stockage en ligne, les abonnements musicaux et les abonnements de vidéos à la demande.
 
 ## Prérequis {#prerequisites}
 
@@ -82,7 +98,7 @@ Un modèle de données de formulaire vous permet de connecter une communication 
 * Créer le modèle de données de formulaire à l’aide de la base de données MySQL en tant que source de données
 * Ajouter des objets de modèle de données pour former un modèle de données de formulaire
 * Configurer les services de lecture et d’écriture pour le modèle de données de formulaire
-* Créer des associations entre les objets de modèle de données
+* Créer des associations entre les objets du modèle de données
 * Afficher des données d’exemple générées automatiquement
 * Modifier les données d’exemple
 * Tester le modèle de données de formulaire et les services configurés avec des données de test
@@ -127,7 +143,7 @@ Les modèles pour le canal web sont créés dans AEM. Les auteurs et les adminis
 
 Une fois que vous avez créé tous les blocs de création, tels que le modèle de données de formulaire, les fragments de document et les modèles pour la version web, vous pouvez commencer à créer une communication interactive.
 
-Les communications interactives peuvent être fournies par deux canaux : impression et web. Vous pouvez également créer une communication interactive avec le canal d’impression comme gabarit. L’impression en tant qu’option principale pour le canal web garantit que le contenu, l’héritage et la liaison des données du canal web sont dérivés du canal d’impression.
+Les communications interactives peuvent être fournies par deux canaux : impression et web. Vous pouvez également créer une communication interactive avec le canal d’impression comme canal principal. L’option Canal d’impression comme canal principal pour le canal web garantit que le contenu, l’héritage et la liaison des données du canal web sont dérivés du canal d’impression.
 
 **Objectifs:**
 
@@ -135,12 +151,12 @@ Les communications interactives peuvent être fournies par deux canaux : impres
 * Créer une communication interactive pour le canal web
 * Créer des communications interactives d’impression et web avec l’impression en tant qu’option principale
 * Créer un tableau dynamique dans la version web de la communication interactive
-* Créer un graphique de la version web de la communication interactive
+* Créer un graphique dans la version web de la communication interactive
 * Créer des hyperliens dans la version web de la communication interactive
 
   [![voir-le-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
-## Étape 6 : publier votre communication interactive. {#step-publish-your-interactive-communication}
+## Étape 6 : publier votre communication interactive {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

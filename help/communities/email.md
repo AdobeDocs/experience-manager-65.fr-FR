@@ -10,13 +10,20 @@ role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '849'
 ht-degree: 4%
-
 ---
-
 # Configuration des e-mails {#configuring-email}
 
 AEM Communities utilise l’e-mail pour :
@@ -36,7 +43,7 @@ Le service de messagerie par défaut est requis pour les notifications et les ab
 
 * Connectez-vous à l’éditeur principal avec les droits d’administrateur et accédez à la [console web](../../help/sites-deploying/configuring-osgi.md) :
 
-   * Par exemple, [:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * Par exemple, [](http://localhost:4503/system/console/configMgr)
 
 * Recherchez le `Day CQ Mail Service` .
 * Sélectionnez l’icône Modifier .
@@ -91,7 +98,7 @@ Pour accéder aux instances de configuration d’e-mail de Communities :
 
 * Connectez-vous à l’éditeur principal avec les droits d’administrateur et accédez à la [console web](../../help/sites-deploying/configuring-osgi.md)
 
-   * Par exemple, [:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * Par exemple, [](http://localhost:4503/system/console/configMgr)
 
 * Localisez `AEM Communities Email Reply Configuration`.
 
@@ -170,7 +177,7 @@ Pour que l’e-mail soit importé dans le référentiel, il est nécessaire de c
 
 * Connectez-vous à l’éditeur principal avec les droits d’administrateur et accédez à la console d’importation d’interrogations :
 
-  Par exemple, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
+  Par exemple, [](http://localhost:4503/etc/importers/polling.html)
 
 * Sélectionnez **[!UICONTROL Ajouter]**
 
@@ -184,10 +191,10 @@ Pour que l’e-mail soit importé dans le référentiel, il est nécessaire de c
 
   *(Obligatoire)* Serveur de courrier sortant. Par exemple, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
-* **[!UICONTROL Importer dans le chemin d’accès]**&ast;
+* **[!UICONTROL Importer dans le chemin d’accès]**&amp;ast;
 
   *(Obligatoire)* Définir sur `/content/usergenerated/mailFolder/postEmails`
-en accédant au dossier `postEmails` et en sélectionnant **OK**.
+  en accédant au dossier `postEmails` et en sélectionnant **OK**.
 
 * **[!UICONTROL Intervalle de mise à jour en secondes]**
 
@@ -207,13 +214,13 @@ en accédant au dossier `postEmails` et en sélectionnant **OK**.
 
 Une fois la nouvelle configuration d’interrogation enregistrée, il est nécessaire de modifier davantage les propriétés de l’importateur d’e-mails d’abonnement pour remplacer le protocole `POP3` par `emailreply`.
 
-Utilisation de [&#128279;](../../help/sites-developing/developing-with-crxde-lite.md) :
+Utilisation de [](../../help/sites-developing/developing-with-crxde-lite.md) :
 
 * Connectez-vous à l’éditeur principal avec le privilège administrateur et accédez à [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/attributes/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Sélectionnez la configuration que vous venez de créer et modifiez les propriétés suivantes :
 
-   * **feedType** : remplacez `pop3s` par **`emailreply`**
-   * **source** : remplacez le `pop3s://` de protocole de la source par **`emailreply://`**
+  * **feedType** : remplacez `pop3s` par **`emailreply`**
+  * **source** : remplacez le `pop3s://` de protocole de la source par **`emailreply://`**
 
 ![polling-protocol](assets/polling-protocol.png)
 

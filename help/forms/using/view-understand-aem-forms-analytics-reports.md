@@ -9,13 +9,29 @@ exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 100%
-
+source-wordcount: '1082'
+ht-degree: 97%
 ---
-
 # Consulter et comprendre les rapports d’analyse d’AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
 Adobe Experience Manager Forms s’intègre à Adobe Analytics, ce qui permet la capture et le suivi des mesures de performances des formulaires et des documents que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser.
@@ -63,7 +79,7 @@ AEM Forms affiche des rapports d’analyse pour le formulaire et chaque panneau 
 
 ![Rapport de synthèse d’un formulaire adaptatif](assets/analyticsdashboard_callout.png)
 
-**A.** Conversions **B.** Synthèse de niveau formulaire **C.** Synthèse de niveau panneau **D.** Navigateurs des visiteurs - filtre **E.** Système d’exploitation des visiteurs - filtre **F.** Langue des visiteurs - filtre
+**A.** Conversions **B.** Résumé au niveau du formulaire **C.** Résumé au niveau du panneau **D.** Navigateurs des visiteurs - filtre **E.** Système d’exploitation des visiteurs - filtre **F.** Langue des visiteurs - filtre
 
 Par défaut, le rapport d’analyse des sept derniers jours s’affiche. Vous pouvez afficher des récapitulatifs pour les 15 derniers jours, le dernier mois et ainsi de suite, ou bien indiquer une période.
 
@@ -92,7 +108,7 @@ La section de synthèse de niveau formulaire donne des informations sur les perf
 * **Brouillons** : nombre de fois que le formulaire a été enregistré en tant que brouillon.
 * **Envois** : nombre de fois que le formulaire a été envoyé.
 * **Abandonner** : nombre de fois que les utilisateurs ou utilisatrices ont commencé à remplir le formulaire, puis l’ont quitté sans l’avoir terminé
-* **Visiteurs uniques :** nombre de fois que le formulaire est généré par des visiteurs uniques. Pour plus d’informations sur les visiteurs uniques, voir [Visiteurs uniques, visites et comportement des clients](https://helpx.adobe.com/fr/analytics/kb/unique-visitors-visitor-behavior.html). 
+* **Visiteurs uniques :** nombre de fois que le formulaire est généré par des visiteurs uniques. Pour plus d’informations sur les visiteurs uniques, voir [Visiteurs uniques, visites et comportement des clients](https://helpx.adobe.com/fr/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![Rapport d’analyse de synthèse de niveau formulaire développé](assets/analytics-report.png)
 
@@ -115,10 +131,10 @@ Le rapport détaillé affiche les valeurs de tous les champs du panneau.
 Le rapport Panneau comporte trois onglets :
 
 * **Rapport de temps** (par défaut) : affiche le temps, en nombre de secondes, passé à remplir chacun des champs du panneau.
-* **Rapport d’erreurs** : nombre d’erreurs générées par les utilisateurs qui remplissent les champs
+* **Rapport d’erreurs** : nombre d’erreurs générées par les utilisateurs et utilisatrices qui remplissent les champs
 * **Rapport sur l’aide** : nombre de fois que l’aide d’un champ en particulier a été affiché
 
-Vous pouvez naviguer entre les panneaux, si plusieurs panneaux sont disponibles. 
+Vous pouvez naviguer entre les panneaux, si plusieurs panneaux sont disponibles.
 
 ### Filtres : navigateur, système d’exploitation et langue {#filters-browser-os-and-language}
 

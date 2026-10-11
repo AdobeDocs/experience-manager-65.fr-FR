@@ -9,24 +9,38 @@ exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 98%
-
 ---
-
 # Personnaliser l’identité graphique {#branding-customization}
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 Vous pouvez personnaliser l’icône et le nom de l’application, les images de lancement et la page de connexion pour donner à l’application AEM Forms une apparence différente et spécifique de l’entreprise. Vous avez, par exemple, la possibilité de remplacer les images par des logos de votre société. L’application AEM Forms prend en charge les personnalisations suivantes :
 
 * Personnalisation de l’icône de l’application et des images de lancement
 * Personnalisation du nom de l’application
-* Personnalisation des images sur la page de connexion
+* Personnaliser les images sur la page de connexion
 * Personnalisation du logo dans le menu de l’application
 
 ## Personnalisation de l’icône et des images de lancement {#customizing-icon-and-launch-images}
@@ -82,7 +96,7 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\res\icons\windows`
 
-1. Remplacez l’image de lancement dans le chemin d’accès :
+1. Remplacez l’image du lanceur dans le chemin d’accès :
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\res\screens\windows`
 
@@ -164,7 +178,7 @@ Vérifiez que vous disposez des images suivantes :
 1. Pour changer l’arrière-plan, remplacez le fichier par défaut `Landing_bg.jpeg` par le fichier personnalisé `Landing_bg.jpeg`.
 1. Générez et exécutez l’application AEM Forms sur un appareil ou un simulateur iOS.
 
-### Personnalisation des images sur les pages de connexion à l’aide d’Eclipse {#to-customize-images-on-the-login-pages-using-eclipse}
+### Personnaliser les images sur les pages de connexion à l’aide d’Eclipse {#to-customize-images-on-the-login-pages-using-eclipse}
 
 1. Ouvrez le projet Android dans Eclipse.
 
@@ -173,7 +187,7 @@ Vérifiez que vous disposez des images suivantes :
 1. Pour changer l’arrière-plan, remplacez le fichier par défaut `Landing_bg.jpeg` par le fichier personnalisé `Landing_bg.jpeg`.
 1. Générez et exécutez l’application AEM Forms sur un appareil Android.
 
-### Personnalisation des images sur les pages de connexion à l’aide de Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio}
+### Personnaliser les images sur les pages de connexion à l’aide de Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio}
 
 1. Ouvrez le projet `MWSWindows.sln` dans Visual Studio.
 
@@ -213,7 +227,7 @@ Vérifiez que vous disposez de l’image suivante :
 1. Pour changer le logo, remplacez le fichier par défaut `aem_icon.png` par le fichier personnalisé `aem_icon.png`.
 1. Générez et exécutez l’application AEM Forms sur un appareil ou un simulateur iOS.
 
-### Personnalisation des images sur les pages de connexion à l’aide d’Eclipse {#to-customize-images-on-the-login-pages-using-eclipse-1}
+### Personnaliser les images sur les pages de connexion à l’aide d’Eclipse {#to-customize-images-on-the-login-pages-using-eclipse-1}
 
 1. Ouvrez le projet Android dans Eclipse.
 
@@ -221,7 +235,7 @@ Vérifiez que vous disposez de l’image suivante :
 1. Pour changer le logo, remplacez le fichier par défaut `aem_icon.png` par le fichier personnalisé `aem_icon.png`.
 1. Générez et exécutez l’application AEM Forms sur un appareil Android.
 
-### Personnalisation des images sur les pages de connexion à l’aide de Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio-1}
+### Personnaliser les images sur les pages de connexion à l’aide de Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio-1}
 
 1. Ouvrez le projet `MWSWindows.sln` dans Visual Studio.
 

@@ -10,13 +10,31 @@ docset: aem65
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: a16aea24-4e85-528d-9377-cd80bb039c1d
+    internal-label: Acrobat Sign
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '4051'
+source-wordcount: '4083'
 ht-degree: 96%
-
 ---
-
 # Utiliser [!DNL Adobe Sign] dans un formulaire adaptatif{#using-adobe-sign-in-an-adaptive-form}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -61,7 +79,7 @@ Procédez comme suit pour configurer [!DNL Adobe Sign] pour un formulaire adapta
 1. [Modifier les propriétés du formulaire adaptatif pour Adobe Sign](../../forms/using/working-with-adobe-sign.md#enableadobesign)
 1. [Ajouter des champs Adobe Sign à un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md#addadobesignfieldstoanadaptiveform)
 1. [Activer Adobe Sign pour un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md#enableadobsignforanadaptiveform)
-1. [Sélectionner un service cloud Adobe Sign pour un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md#selectadobesigncloudserviceforanadaptiveform)
+1. [Sélectionner Adobe Sign Cloud Service pour un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md#selectadobesigncloudserviceforanadaptiveform)
 
 1. [Ajouter des signataires Adobe Sign à un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform)
 1. [Sélectionner Envoyer l’action pour un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md#selectsubmitactionforanadaptiveform)
@@ -92,7 +110,7 @@ Pour créer un formulaire adaptatif pouvant être signé, procédez comme suit 
 
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, sélectionnez l’une des options suivantes :
 
-   * Sélectionnez lʼoption **[!UICONTROL Associer un modèle de formulaire en tant que modèle de document d’enregistrement]**, puis choisissez un modèle de document d’enregistrement. Si vous utilisez un formulaire adaptatif basé sur un modèle de formulaire, les documents envoyés pour signature n’affichent que les champs basés sur le modèle de formulaire associé. Ils n’affichent pas tous les champs du formulaire adaptatif.
+   * Sélectionnez lʼoption **[!UICONTROL Associer un modèle de formulaire en tant que modèle de document d’enregistrement]**, puis choisissez un modèle de document d’enregistrement. Si vous utilisez un formulaire adaptatif basé sur un modèle de formulaire, les documents envoyés pour signature n’affichent que les champs basés sur le modèle de formulaire associé. Il n’affiche pas tous les champs du formulaire adaptatif.
 
    * Sélectionnez lʼoption **[!UICONTROL Générer un document d’enregistrement]**. Si vous utilisez un formulaire adaptatif avec lʼoption Document d’enregistrement activée, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
 
@@ -107,9 +125,9 @@ Pour utiliser [!DNL Adobe Sign] dans un formulaire adaptatif existant, procédez
 1. Dans l’onglet **[!UICONTROL De base]**, sélectionnez le [conteneur de configurations](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de la configuration d’[!DNL Adobe Sign] avec AEM [!DNL Forms].
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, sélectionnez l’une des options suivantes :
 
-   * Sélectionnez lʼoption **[!UICONTROL Associer un modèle de formulaire en tant que modèle de document d’enregistrement]**, puis choisissez un modèle de document d’enregistrement. Si vous utilisez un formulaire adaptatif basé sur un modèle de formulaire, les documents envoyés pour signature n’affichent que les champs basés sur le modèle de formulaire associé. Ils n’affichent pas tous les champs du formulaire adaptatif.
+   * Sélectionnez lʼoption **[!UICONTROL Associer un modèle de formulaire en tant que modèle de document d’enregistrement]**, puis choisissez un modèle de document d’enregistrement. Si vous utilisez un formulaire adaptatif basé sur un modèle de formulaire, les documents envoyés pour signature n’affichent que les champs basés sur le modèle de formulaire associé. Il n’affiche pas tous les champs du formulaire adaptatif.
 
-   * Sélectionnez lʼoption **[!UICONTROL Générer un document d’enregistrement]**. Si vous utilisez un formulaire adaptatif avec lʼoption Document d’enregistrement activée, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
+   * Sélectionnez lʼoption **[!UICONTROL Générer un document d’enregistrement]**. Si vous utilisez un formulaire adaptatif avec lʼoption Document de référence activée, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
 
 1. Sélectionnez **[!UICONTROL Enregistrer et fermer]**. Le formulaire adaptatif est activé pour [!DNL Adobe Sign].
 
@@ -155,12 +173,12 @@ Effectuez les étapes suivantes pour ajouter des champs à un formulaire adaptat
 
 Par défaut, [!DNL Adobe Sign] n’est pas activé pour un formulaire adaptatif. Effectuez les étapes suivantes pour l’activer :
 
-1. Dans le navigateur de contenu, sélectionnez **[!UICONTROL Conteneur de formulaire]**, puis sélectionnez l’icône **[!UICONTROL Configurer]** ![configurer](assets/configure.png). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs.
+1. Dans le navigateur de contenu, sélectionnez **[!UICONTROL Conteneur de formulaire]**, puis sélectionnez l’icône **[!UICONTROL Configurer]** ![configurer](assets/configure.png). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaire adaptatif.
 1. Dans l’explorateur de propriétés, développez l’accordéon **[!UICONTROL Signature électronique]** et sélectionnez l’option **[!UICONTROL Activer Adobe Sign]**. Elle active [!DNL Adobe Sign] pour un formulaire adaptatif.
 
 ### Sélection d’[!DNL Adobe Sign] Cloud Service et d’un ordre de signature {#selectadobesigncloudserviceforanadaptiveform}
 
-Vous pouvez configurer plusieurs services [!DNL Adobe Sign] pour une instance d’AEM [!DNL Forms]. Il est recommandé de disposer d’un ensemble distinct de services pour chaque fonction (ressources humaines, service financier, etc.). Cela facilite le suivi et la création de rapports sur les documents signés. Par exemple, une banque a plusieurs services. Vous pouvez avoir une configuration séparée pour chaque service pour un meilleur suivi des documents.
+Vous pouvez configurer plusieurs services [!DNL Adobe Sign] pour une instance d’AEM [!DNL Forms]. Il est recommandé de disposer d’un ensemble distinct de services pour chaque fonction (ressources humaines, service financier, etc.). Cela facilite le suivi et la création de rapports des documents signés. Par exemple, une banque a plusieurs services. Vous pouvez avoir une configuration séparée pour chaque service pour un meilleur suivi des documents.
 
 Un document peut également avoir plusieurs signataires. Par exemple, une demande de carte de crédit peut avoir plusieurs demandeurs. Une banque exige la signature de tous les demandeurs avant de commencer le traitement de la demande. Pour les scénarios multisignataires, vous pouvez choisir de signer le document dans un ordre séquentiel ou simultané.
 
@@ -168,7 +186,7 @@ Effectuez les étapes suivantes pour sélectionner un service cloud et un ordre 
 
 ![cloud-service](assets/cloud-service.png)
 
-1. Dans le navigateur de contenu, sélectionnez **[!UICONTROL Conteneur de formulaire]**, puis sélectionnez l’icône **[!UICONTROL Configurer]** ![configurer](assets/configure.png). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs.
+1. Dans le navigateur de contenu, sélectionnez **[!UICONTROL Conteneur de formulaire]**, puis sélectionnez l’icône **[!UICONTROL Configurer]** ![configurer](assets/configure.png). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaire adaptatif.
 1. Dans l’explorateur de propriétés, développez l’accordéon **[!UICONTROL Signature électronique]** et sélectionnez l’option **[!UICONTROL Activer Adobe Sign]**. Elle active [!DNL Adobe Sign] pour un formulaire adaptatif.
 1. Sélectionnez un service cloud déjà configuré dans la liste des services cloud [!DNL Adobe Sign].
 
@@ -187,9 +205,9 @@ Effectuez les étapes suivantes pour sélectionner un service cloud et un ordre 
 
 ### Ajouter des signataires à un formulaire adaptatif {#addsignerstoanadaptiveform}
 
-Vous ne pouvez avoir qu’un seul signataire ou plusieurs signataires pour un formulaire adaptatif. Lorsque vous ajoutez un signataire, vous pouvez également configurer les détails d’authentification pour le signataire. Vous pouvez également sélectionner si la personne qui remplit le formulaire et le signataire sont la même personne. Effectuez les étapes suivantes pour ajouter et fournir divers détails sur un ou une signataire :
+Vous pouvez avoir un seul signataire ou plusieurs signataires pour un formulaire adaptatif. Lorsque vous ajoutez un signataire, vous pouvez également configurer les détails d’authentification pour le signataire. Vous pouvez également sélectionner si la personne qui remplit le formulaire et le signataire sont la même personne. Effectuez les étapes suivantes pour ajouter et fournir divers détails sur un ou une signataire :
 
-1. Dans le navigateur de contenu, sélectionnez **[!UICONTROL Conteneur de formulaire]**, puis sélectionnez l’icône **[!UICONTROL Configurer]** ![configurer](assets/configure.png). Il ouvre l’explorateur de propriétés avec les propriétés du conteneur de formulaires adaptatifs.
+1. Dans le navigateur de contenu, sélectionnez **[!UICONTROL Conteneur de formulaire]**, puis sélectionnez l’icône **[!UICONTROL Configurer]** ![configurer](assets/configure.png). Il ouvre l’explorateur de propriétés avec les propriétés du conteneur de formulaire adaptatif.
 1. Dans l’explorateur de propriétés, développez l’accordéon **[!UICONTROL Signature électronique]** et sélectionnez l’option **[!UICONTROL Activer Adobe Sign]**. Elle active [!DNL Adobe Sign] pour un formulaire adaptatif.
 1. Sélectionnez **[!UICONTROL Ajouter une personne signataire]** sous **[!UICONTROL Configuration de la personne signataire]**. Cela ajoute un signataire au formulaire adaptatif. Vous pouvez ajouter plusieurs signataires [!DNL Adobe Sign] à un formulaire adaptatif.
    ![phone-details](assets/phone-details.png)
@@ -231,7 +249,7 @@ Remove when forms portal goes live
 >Data of the adaptive form is stored temporarily on Forms Portal. Use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
-Votre expérience de signature de formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature. Sur le formulaire publié, les champs Bloc [!DNL Adobe Sign] sont affichés lorsqu’un signataire reçoit le formulaire à signer dans un e-mail. Cette expérience est également connue comme expérience de signature hors du formulaire. Vous pouvez également configurer une expérience de signature dans le formulaire pour le premier ou la première signataire. Pour obtenir des instructions détaillées, consultez [Créer une expérience de signature dans le formulaire](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
+Votre expérience de signature de formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature. Sur le formulaire publié, les champs Bloc [!DNL Adobe Sign] sont affichés lorsqu’un signataire reçoit le formulaire à signer dans un e-mail. Cette expérience est également connue sous le nom d’expérience de signature hors du formulaire. Vous pouvez également configurer une expérience de signature dans le formulaire pour le premier ou la première signataire. Pour obtenir des instructions détaillées, consultez [Créer une expérience de signature dans le formulaire](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
 
 ## Configurer des signatures cloud pour un formulaire adaptatif {#configure-cloud-signatures-for-an-adaptive-form}
 
@@ -261,18 +279,18 @@ Une fois la [modification des propriétés de formulaire adaptatif pour Adobe S
 
    * Signatures cloud : signez avec un [ID numérique](https://helpx.adobe.com/fr/sign/kb/digital-certificate-providers.html) hébergé par un ou une prestataire de confiance. L’option de signature cloud n’est pas disponible pour Adobe Acrobat Sign Solutions for Government.
 
-   * Adobe Acrobat ou Reader : téléchargez et ouvrez le document avec Adobe Acrobat ou Reader pour le signer à l’aide d’une carte à puce, un jeton USB ou un ID numérique basé sur des fichiers.
+   * Adobe Acrobat ou Reader : téléchargez et ouvrez le document avec Adobe Acrobat ou Reader pour le signer à l’aide d’une carte intelligente, un jeton USB ou un ID numérique basé sur des fichiers.
 
    Une fois le champ de signature cloud ajouté au formulaire adaptatif, effectuez les étapes suivantes pour terminer le processus de configuration :
 
    * [Activer Adobe Sign pour un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md#enableadobsignforanadaptiveform)
-   * [Sélectionner un service cloud Adobe Sign pour un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md#selectadobesigncloudserviceforanadaptiveform)
+   * [Sélectionner Adobe Sign Cloud Service pour un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md#selectadobesigncloudserviceforanadaptiveform)
    * [Ajouter des signataires Adobe Sign à un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform)
    * [Sélectionner Envoyer l’action pour un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md#selectsubmitactionforanadaptiveform)
 
 ## Créer une expérience de signature dans le formulaire {#create-in-form-signing-experience}
 
-Un utilisateur ou une utilisatrice peut également signer un formulaire adaptatif lors du remplissage du formulaire. Cette expérience est également connue comme expérience de signature dans le formulaire. L’expérience de signature dans le formulaire est disponible uniquement pour le premier ou la première signataire dans un environnement à plusieurs signataires. Effectuez les étapes suivantes pour créer une expérience de signature dans le formulaire pour un formulaire adaptatif :
+Un utilisateur ou une utilisatrice peut également signer un formulaire adaptatif tout en le remplissant. Cette expérience est également connue sous le nom d’expérience de signature dans le formulaire. L’expérience de signature dans le formulaire est disponible uniquement pour le premier ou la première signataire dans un environnement à plusieurs signataires. Effectuez les étapes suivantes pour créer une expérience de signature dans le formulaire pour un formulaire adaptatif :
 
 1. [Ajoutez et configurez le composant Étape de signature](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
 1. [Ajoutez le composant Étape de résumé](../../forms/using/working-with-adobe-sign.md#configure-the-thank-you-page-or-summary-step-component).
@@ -314,7 +332,7 @@ Effectuez les étapes suivantes pour configurer le composant Étape de signature
    >* L’étape de signature d’un formulaire adaptatif se trouve toujours dans le dernier ou avant-dernier panneau de celui-ci. Il ne peut se trouver dans l’avant-dernier panneau que lorsque le dernier panneau contient l’étape de résumé.
    >* Le panneau contenant le composant d’étape de signature ou de résumé ne peut pas contenir d’autre composant.
    >* Les formulaires adaptatifs contenant l’étape de signature ne peuvent pas comporter de bouton d’envoi.
-   >* L’envoi des formulaires adaptatifs contenant l’étape de signature est géré via un service en arrière-plan ou l’étape de résumé. Si un signataire configuré remplit également le formulaire, l’avantage de gérer l’envoi du formulaire adaptatif à l’aide de l’étape de résumé est que cela évalue immédiatement que le signataire a signé le formulaire et appelle l’action d’envoi. Un service en arrière-plan prend plus de temps pour évaluer si tous les signataires configurés ont signé le formulaire. Cela retarde donc l’envoi du formulaire adaptatif.
+   >* L’envoi des formulaires adaptatifs contenant l’étape de signature est géré via un service en arrière-plan ou l’étape de résumé. Si un ou une signataire configuré e remplit également le formulaire, l’avantage de gérer l’envoi du formulaire adaptatif à l’aide de l’étape de résumé est que cela détermine immédiatement que le ou la signataire a signé le formulaire et appelle l’action d’envoi. Un service en arrière-plan prend plus de temps pour évaluer si tous les signataires configurés ont signé le formulaire. Cela retarde donc l’envoi du formulaire adaptatif.
    >* Concevez le formulaire de manière à ce que l’utilisateur ne puisse pas revenir en arrière à partir d’un panneau contenant l’étape de signature ou de résumé.
 
 
@@ -336,11 +354,11 @@ Maintenant, l’expérience de signature dans le formulaire est prête. Vous pou
 **Réponse :** Oui, vous pouvez utiliser des balises de texte dans un composant de texte pour ajouter des [!DNL Adobe Sign] champs à un formulaire adaptatif doté de l’option [Document d’enregistrement](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (option de document d’enregistrement généré automatiquement uniquement). Pour en savoir plus sur la procédure et les règles de création d’une balise de texte, voir la [documentation d’Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html). Notez également que les formulaires adaptatifs offrent une prise en charge limitée des balises de texte. Vous pouvez utiliser les balises de texte pour créer uniquement les champs pris en charge par le [bloc Adobe Sign](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
 
 **Question :** AEM [!DNL Forms] fournit des composants de [!UICONTROL bloc Adobe Sign] et d’étape de signature. Peut-on les utiliser simultanément dans un formulaire adaptatif ?
-**Réponse** : Vous pouvez utiliser simultanément les deux composants dans un formulaire. Voici quelques recommandations relatives à l’utilisation des composants suivants :
+**Réponse** : Vous pouvez utiliser simultanément les deux composants dans un formulaire. Voici quelques recommandations relatives à l’utilisation de ces composants :
 
-**Bloc Adobe Sign :** vous pouvez utiliser le [!UICONTROL bloc Adobe Sign] pour ajouter des champs [!UICONTROL Adobe Sign] n’importe où sur le formulaire adaptatif. Il permet également d’attribuer des champs spécifiques aux signataires. Lorsqu’un formulaire adaptatif est prévisualisé ou publié, le bloc [!UICONTROL Adobe Sign] n’est pas visible par défaut. Ces blocs sont disponibles uniquement dans le document de signature. Dans le document de signature, seuls les champs affectés à un ou une signataire sont activés. [!UICONTROL Le bloc Adobe Sign peut être utilisé avec les premiers et futurs signataires.]
+**Bloc Adobe Sign :** vous pouvez utiliser le [!UICONTROL bloc Adobe Sign] pour ajouter des champs [!UICONTROL Adobe Sign] n’importe où sur le formulaire adaptatif. Il permet également d’attribuer des champs spécifiques aux signataires. Lorsqu’un formulaire adaptatif est prévisualisé ou publié, le bloc [!UICONTROL Adobe Sign] n’est pas visible par défaut. Ces blocs sont activés uniquement dans le document de signature. Dans le document de signature, seuls les champs affectés à un ou une signataire sont activés. [!UICONTROL Le bloc Adobe Sign peut être utilisé avec les premiers et futurs signataires.]
 
-**Composant d’étape de signature :** vous pouvez utiliser le composant d’étape de signature pour créer une expérience de signature dans le formulaire. Il permet uniquement au premier ou à la première signataire de signer pendant que le formulaire est rempli. Lorsque la section contenant le composant Étape de signature est générée, elle affiche une version PDF à signer du formulaire. Il s’agit généralement de la dernière ou de l’avant-dernière section suivie du composant de résumé d’un formulaire.
+**Composant d’étape de signature :** vous pouvez utiliser le composant d’étape de signature pour créer une expérience de signature dans le formulaire. Il permet uniquement au premier ou à la première signataire de signer pendant que le formulaire est rempli. Lorsque la section contenant le composant Étape de signature est générée, elle affiche une version PDF à signer du formulaire. Il s’agit généralement de la dernière ou de l’avant-dernière section, suivie du composant de résumé du formulaire.
 
 ## Résolution des problèmes {#troubleshoot}
 

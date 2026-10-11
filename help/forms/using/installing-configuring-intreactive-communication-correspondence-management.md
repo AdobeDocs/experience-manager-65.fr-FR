@@ -7,13 +7,31 @@ role: Admin, User, Developer
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1478'
 ht-degree: 97%
-
 ---
-
 # Installation et configuration des communications interactives{#install-and-configure-interactive-communications}
 
 ## Présentation {#introduction}
@@ -43,15 +61,15 @@ Avant de commencer à installer et à configurer les fonctionnalités de communi
 * Le chemin d’installation de l’instance AEM ne contient pas d’espaces.
 * Une instance AEM est en cours d’exécution. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. Vous avez besoin d’au moins une instance d’AEM (création ou traitement) pour exécuter les fonctionnalités de communication interactive et de gestion des correspondances d’AEM Forms :
 
-   * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
-   * **Traitement :** une instance de [création AEM renforcée](/help/forms/using/hardening-securing-aem-forms-environment.md). Vous pouvez configurer une instance de création et renforcer sa sécurité après avoir effectué l’installation.
+  * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site web. Une fois que le contenu est prêt à être mis en ligne, il est répliqué sur l’instance de publication.
+  * **Traitement :** une instance de [création AEM renforcée](/help/forms/using/hardening-securing-aem-forms-environment.md). Vous pouvez configurer une instance de création et renforcer sa sécurité après avoir effectué l’installation.
 
-   * **Publication** : une instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
+  * **Publication** : une instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
 
 * Les exigences de mémoire sont respectées. Le package complémentaire AEM Forms nécessite :
 
-   * 15 Go d’espace temporaire pour les installations Microsoft® Windows.
-   * 6 Go d’espace temporaire pour les installations Unix.
+  * 15 Go d’espace temporaire pour les installations Microsoft® Windows.
+  * 6 Go d’espace temporaire pour les installations Unix.
 
 * Configuration requise supplémentaire pour les systèmes UNIX : si vous utilisez un système d’exploitation UNIX, installez les packages suivants à partir du support d’installation du système d’exploitation correspondant.
 
@@ -88,7 +106,7 @@ Avant de commencer à installer et à configurer les fonctionnalités de communi
 
 Le module complémentaire AEM Forms est une application déployée sur AEM. Le package contient la communication interactive AEM Forms, la gestion des correspondances et d’autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
 
-1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à Software Distribution.
 1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** situé dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
@@ -135,7 +153,7 @@ Pour déléguer le démarrage des bibliothèques, procédez comme suit sur toute
 
 Pour autoriser le package, procédez comme suit sur toutes les instances dʼauteur et de publication :
 
-1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. L’URL par défaut est https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Ouvrez AEM Configuration Manager dans une fenêtre du navigateur. L’URL par défaut est https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Recherchez et ouvrez la **configuration du pare-feu de désérialisation**.
 1. Ajoutez le package **sun.util.calendar** au champ **Placer sur la liste autorisée**. Cliquez sur Enregistrer.
 1. Répétez les étapes 1 à 3 sur toutes les instances de création et de publication.
@@ -157,7 +175,7 @@ Le package de compatibilité AEMFD vous permet d’utiliser les ressources suiva
 
 Le Dispatcher est l’outil de mise en cache et d’équilibrage de charge d’Adobe Experience Manager, qui peut être utilisé conjointement avec un serveur web d’entreprise. Si vous utilisez [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr), effectuez les configurations suivantes pour AEM Forms :
 
-1. Configurez l’accès à AEM Forms:
+1. Configurez l’accès à AEM Forms :
 
    Ouvrez le fichier dispatcher.any en mode d’édition. Accédez à la section des filtres et ajoutez le filtre suivant à la section des filtres :
 

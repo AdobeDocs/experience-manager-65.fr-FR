@@ -10,14 +10,30 @@ feature: Panoramic Images,Asset Management
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: d61a43e0-1563-4df1-9eb3-9ab3d5eab8b2
+    internal-label: Panoramic images
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 100%
-
+source-wordcount: '597'
+ht-degree: 97%
 ---
-
-# Images panoramiques {#panoramic-images}
+# Images panoramiques{#panoramic-images}
 
 Cette section décrit comment utiliser la visionneuse d’images panoramiques pour le rendu d’images panoramiques sphériques, afin de profiter d’une expérience de visionnage immersive à 360 degrés d’une pièce, d’une propriété, d’un lieu ou d’un paysage.
 
@@ -51,7 +67,7 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement au sein 
 1. Sur la même page de publication Image Server, recherchez l’en-tête **[!UICONTROL Attributs de requête]**.
 1. Sous l’en-tête Attributs de requête, recherchez **[!UICONTROL Limite de taille de l’image de réponse]**. Ensuite, dans les champs Largeur et Hauteur associés, augmentez la taille maximale autorisée pour les images panoramiques.
 
-   Dynamic Media Classic est limité à 25 000 000 pixels. La taille maximale autorisée pour les images avec un rapport d’aspect de 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
+   Dynamic Media Classic est limité à 25 000 000 pixels. La taille maximale autorisée pour les images avec un rapport d’aspect de 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
 
    >[!NOTE]
    >

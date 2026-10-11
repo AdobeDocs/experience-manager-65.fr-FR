@@ -8,13 +8,17 @@ exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '295'
 ht-degree: 2%
-
 ---
-
 # Content Services{#content-services}
 
 {{ue-over-mobile}}
@@ -25,13 +29,13 @@ ht-degree: 2%
 >
 >Elle peut faire l’objet de modifications avec la version 6.3 Service Pack 1.
 
-AEM Mobile Content Services est une fonctionnalité allégée permettant de demander du contenu géré par AEM. Cela permet à tous les développeurs d’applications de récupérer du contenu de manière extrêmement performante, sans avoir à posséder de connaissances approfondies du référentiel de contenu AEM (JCR) et du framework web (Sling). Il permet de découpler les applications qui le demandent du référentiel de contenu.
+AEM Mobile Content Services est une fonctionnalité allégée permettant de demander du contenu géré par AEM. Tous les développeurs d’applications peuvent ainsi récupérer du contenu de manière extrêmement performante, sans avoir à posséder de connaissances approfondies du référentiel de contenu AEM (JCR) et du framework web (Sling). Il permet de découpler les applications qui le demandent du référentiel de contenu.
 
-Content Services présente plusieurs nouvelles constructions AEM qui permettent à un développeur d’accéder à du contenu géré par AEM sans connaître la structure de référentiel de ce contenu.
+Content Services introduit plusieurs nouveaux éléments AEM qui permettent à un développeur d’accéder au contenu géré par AEM sans connaître la structure de référentiel de ce contenu.
 
 Ces éléments sont nécessaires pour conserver la flexibilité et permettre une expansion future en fournissant une couche d’abstraction entre le contenu géré par AEM et les applications mobiles qui consomment le contenu. Cela permet à AEM Content Services de fonctionner en tant que couche d’abstraction entre les exigences en matière de contenu de l’application native et le référentiel de contenu AEM.
 
-Content Services peut diffuser le contenu sous la forme de ressources, d’HTMLS empaquetés (HTML/CSS/JS) ou de contenu indépendant du canal.
+Content Services peut diffuser le contenu sous forme de ressources, d’HTML empaqueté (HTML/CSS/JS) ou de contenu indépendant du canal.
 
 >[!CAUTION]
 >
@@ -39,7 +43,7 @@ Content Services peut diffuser le contenu sous la forme de ressources, d’HTMLS
 >
 >Avant de commencer à utiliser Content Services, assurez-vous d’activer l’indicateur Content Services . Pour activer la création et la gestion de modèles dans votre application, activez les modèles de données dans l’explorateur de configurations.
 >
->Pour plus d’informations [&#128279;](/help/mobile/developing-content-services.md)**consultez la documentation** Administration de Content Services et l’[Explorateur de configurations](/help/sites-administering/configurations.md).
+>Pour plus d’informations ](/help/mobile/developing-content-services.md)**consultez la documentation**[ Administration de Content Services et l’[Explorateur de configurations](/help/sites-administering/configurations.md).
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

@@ -9,28 +9,44 @@ exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
-
 ---
-
 # Présentation du site de référence de renouvellement de l’assurance automobile We.Finance{#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
 ## Exemple d’utilisation du site de référence We.Finance  {#we-finance-reference-site-scenario}
 
 Le site We.Finance est un site de services financiers conçu pour vous aider à découvrir les fonctionnalités de communications interactives d’AEM Forms.
 
-Lisez la présentation détaillée du cas d’utilisation de l’assurance automobile We.Finance qui explique comment AEM Forms et son intégration à Microsoft® Dynamics permettent de personnaliser l’expérience client dans une société de services financiers. La présentation interactive est conçu pour faciliter l’implémentation de transactions numériques complexes et la communication avec les clients dans une société financière.
+Lisez la présentation détaillée du cas d’utilisation de l’assurance automobile We.Finance qui explique comment AEM Forms et son intégration à Microsoft® Dynamics permettent de personnaliser l’expérience client dans une société de services financiers. La présentation interactive est conçue pour faciliter la mise en œuvre de transactions numériques complexes et la communication avec les clientes et les clients dans une société financière.
 
 **La présentation commence par le cas d’utilisation :**
 
-Sarah Rose est déjà cliente chez We.Finance et a acheté une police d’assurance automobile. C’est à ce moment de l’année que Sarah renouvelle sa police d’assurance. Gloria Rios est son assureuse. We.Finance envoie un rappel à Sarah au sujet du renouvellement de sa police. Sarah suit les instructions fournies dans l’e-mail et termine la procédure.
+Sarah Rose est déjà cliente chez We.Finance et a acheté une police d’assurance automobile. C’est à ce moment de l’année que Sarah renouvelle sa police d’assurance. Gloria Rios est son assureuse. We.Finance envoie un rappel à Sarah au sujet du renouvellement de sa police. Sarah suit les instructions fournies dans l’e-mail et termine la procédure avec succès.
 
 ## Présentation de la demande d’assurance automobile {#auto-insurance-application-walkthrough}
 
-Le scénario de l’application à une assurance automobile chez We.Finance est une narration visuelle pour l’utilisateur et met deux personnes en scène :
+Le scénario de l’application d’assurance automobile We.Finance est une narration visuelle pour l’utilisateur ou l’utilisatrice et repose sur deux personas :
 
 * Sarah Rose, cliente de We.Finance
 * Gloria Rios, assureuse chez We.Finance
@@ -65,7 +81,7 @@ Le bouton Renouveler maintenant dans l’e-mail est lié à la demande de renouv
 
 #### Démonstration {#see-it-yourself-1}
 
-Vous devriez recevoir un e-mail avec un fichier PDF joint. Le fichier PDF est une version imprimée de votre lettre d’assurance automobile. Cliquez sur **Renouveler maintenant** pour accéder à la version web de la police. Vérifiez vos informations personnelles et les détails de la police, puis cliquez sur **Renouveler maintenant** pour être redirigé vers une autre communication interactive.
+Vous devriez avoir reçu un e-mail avec un fichier PDF joint. Le fichier PDF est une version imprimée de votre lettre d’assurance automobile. Cliquez sur **Renouveler maintenant** pour accéder à la version web de la police. Vérifiez vos informations personnelles et les détails de la police, puis cliquez sur **Renouveler maintenant** pour être redirigé vers une autre communication interactive.
 
 Le bouton **Renouveler maintenant** figurant dans l’e-mail redirige Sarah vers la version web de la police. Vous pouvez consulter l’URL suivante :
 

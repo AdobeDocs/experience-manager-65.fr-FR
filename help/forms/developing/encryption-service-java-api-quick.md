@@ -9,24 +9,40 @@ role: Developer
 exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 93%
-
 ---
-
-# Démarrage rapide (SOAP) de l’API Java™ du service Encryption {#encryption-service-java-api-quickstart-soap}
+# Démarrage rapide (SOAP) de l’API Java™ du service de chiffrement {#encryption-service-java-api-quickstart-soap}
 
 [Démarrage rapide (mode SOAP) : chiffrer un document PDF à l’aide de l’API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : supprimer le chiffrement par mot de passe à l’aide de l’API™ Java](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[Démarrage rapide (mode SOAP) : supprimer le chiffrement par mot de passe à l’aide de l’API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : chiffrer un document PDF avec un certificat à l’aide de l’API Java™.](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[Démarrage rapide (mode SOAP) : chiffrer un document PDF avec un certificat à l’aide de l’API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
 [Démarrage rapide (mode SOAP) : supprimer un chiffrement par certificat à l’aide de l’API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : déverrouiller un document PDF chiffré à l’aide de l’API Java™.](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : déverrouiller un document PDF chiffré à l’aide de l’API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
 
 [Démarrage rapide (mode SOAP) : déterminer le type de chiffrement à l’aide de l’API Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
@@ -34,7 +50,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 
 >[!NOTE]
 >
->Les démarrages rapides dans Programmation avec AEM Forms se fondent sur le serveur Forms déployé sur le serveur d’applications JBoss® et le système d’exploitation Microsoft® Windows. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX®, remplacez les chemins spécifiques à Windows par ceux pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les démarrages rapides dans Programmation avec AEM Forms se fondent sur le Serveur Formulaires déployé sur le serveur d’applications JBoss® et le système d’exploitation Microsoft® Windows. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX®, remplacez les chemins spécifiques à Windows par ceux pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Démarrage rapide (mode SOAP) : chiffrer un document PDF à l’aide de l’API Java™ {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
@@ -156,7 +172,7 @@ L’exemple de code Java™ suivant chiffre un document PDF nommé *Loan.pdf* av
  }
 ```
 
-## Démarrage rapide (mode SOAP) : supprimer le chiffrement par mot de passe à l’aide de l’API™ Java {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
+## Démarrage rapide (mode SOAP) : supprimer le chiffrement par mot de passe à l’aide de l’API Java™ {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
 L’exemple de code Java™ suivant supprime le chiffrement par mot de passe d’un document PDF nommé *EncryptLoan.pdf*. La valeur du mot de passe principal utilisé pour supprimer le chiffrement par mot de passe est *PermissionPassword*. Le document PDF non sécurisé est enregistré en tant que fichier PDF et nommé *noEncryptionLoan.pdf*. (Voir [Supprimer le chiffrement par mot de passe](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
 

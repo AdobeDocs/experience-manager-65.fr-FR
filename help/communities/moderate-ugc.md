@@ -10,13 +10,20 @@ role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
 solution: Experience Manager
 feature: Communities
-source-git-commit: 9c0089e1305ffba72d88842a07bf36b6f923834c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1538'
-ht-degree: 2%
-
+source-wordcount: '1547'
+ht-degree: 3%
 ---
-
 # Modération du contenu de la communauté {#moderating-community-content}
 
 ## Vue d’ensemble {#overview}
@@ -38,7 +45,7 @@ La modération du contenu créé par l’utilisateur est utile pour reconnaître
 
 * [Console de modération en bloc](moderation.md)
 
-  La console Modération est accessible aux administrateurs et administratrices et [modérateurs de communauté](/help/communities/users.md) dans l’environnement public et aux administrateurs et administratrices dans l’environnement de création. Cela est possible lorsque le contenu de la communauté est stocké dans un [&#x200B; magasin commun &#x200B;](/help/communities/working-with-srp.md).
+  La console Modération est accessible aux administrateurs et administratrices et [modérateurs de communauté](/help/communities/users.md) dans l’environnement public et aux administrateurs et administratrices dans l’environnement de création. Cela est possible lorsque le contenu de la communauté est stocké dans un [ magasin commun ](/help/communities/working-with-srp.md).
 
 * [Modération en contexte](in-context.md)
 
@@ -249,11 +256,11 @@ Pour remplacer ou ajouter des règles, créez un ensemble de règles dans le ré
 
 Une fois analysé, le sentiment est stocké avec le contenu créé par l’utilisateur.
 
-À partir de la [&#x200B; console de modération en bloc &#x200B;](/help/communities/moderation.md), il est possible de filtrer et d’afficher le contenu créé par l’utilisateur en fonction du caractère négatif, neutre ou positif du sentiment.
+À partir de la [ console de modération en bloc ](/help/communities/moderation.md), il est possible de filtrer et d’afficher le contenu créé par l’utilisateur en fonction du caractère négatif, neutre ou positif du sentiment.
 
 #### Mots-clés {#watchwords}
 
-AEM Communities fournit un *analyseur de mots-clés* comme étape du processus d’évaluation de [sentiment &#x200B;](#sentiment). La contribution à la valeur de sentiment fournie par les mots-clés est due à une comparaison des mots-clés négatifs et positifs utilisés dans le contenu publié, et des mots interdits.
+AEM Communities fournit un *analyseur de mots-clés* comme étape du processus d’évaluation de [sentiment ](#sentiment). La contribution à la valeur de sentiment fournie par les mots-clés est due à une comparaison des mots-clés négatifs et positifs utilisés dans le contenu publié, et des mots interdits.
 
 #### Configuration du Sentiment et des mots-clés {#configure-sentiment-and-watchwords}
 

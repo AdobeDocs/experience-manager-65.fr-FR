@@ -1,18 +1,29 @@
 ---
 title: Remarques et exigences relatives au réseau
-description: Décrit les considérations concernant le réseau lors de la conception d’un déploiement d’ [!DNL Adobe Experience Manager Assets] .
+description: Décrit les considérations relatives au réseau lors de la conception d’un déploiement [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 100%
-
+source-wordcount: '1018'
+ht-degree: 99%
 ---
-
 # Remarques relatives au réseau [!DNL Assets] {#assets-network-considerations}
 
 Comprendre votre réseau est aussi important que de comprendre [!DNL Adobe Experience Manager Assets]. Le réseau peut affecter le chargement, le téléchargement et l’expérience client. La représentation schématique de la topologie de votre réseau permet d’identifier les points d’étranglement et les zones sous-optimisées du réseau que vous devez corriger pour améliorer les performances du réseau et l’expérience client.
@@ -42,7 +53,7 @@ Le coin inférieur gauche du diagramme représente deux appareils connectés au
 
 L’ordinateur affiché à droite dispose d’un accès limité au réseau d’entreprise via un VPN avec une vitesse de 1 Mbit/s. L’expérience client pour la connexion à 1 Mbit/s est très différente de l’expérience client sur la connexion à 1 Gbit/s. En fonction de la taille des ressources avec lesquelles les utilisateurs et utilisatrices interagissent, leur liaison montante VPN peut être inadéquate pour la tâche.
 
-## La topologie du réseau d’entreprise  {#topology-of-the-corporate-network}
+## La topologie du réseau d’entreprise {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
@@ -82,7 +93,7 @@ En révisant le réseau de l’appareil client vers le déploiement [!DNL Experi
 
 En tenant compte des performances du réseau, il peut être important de prendre en considération les workflows et la publication qui auront lieu dans le système. De plus, le stockage S3 ou tout autre stockage relié au réseau que vous utilisez et les requêtes d’E/S consomment de la bande passante réseau. Par conséquent, même dans un réseau entièrement optimisé, la performance peut être limitée par les E/S du disque.
 
-Pour simplifier les processus d’assimilation des ressources (notamment lors du chargement d’un grand nombre de ressources), vous devez explorer leurs workflows et en savoir plus sur leur configuration.
+Pour simplifier les processus d’ingestion des ressources (notamment lors du chargement d’un grand nombre de ressources), vous devez explorer leurs workflows et en savoir plus sur leur configuration.
 
 Lors de l’évaluation de la topologie du workflow interne, vous devez analyser les éléments suivants :
 

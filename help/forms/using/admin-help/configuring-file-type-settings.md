@@ -8,13 +8,24 @@ feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '6200'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '6281'
+ht-degree: 97%
 ---
-
 # Configuration des paramètres de type de fichier {#configuring-file-type-settings}
 
 >[!NOTE]
@@ -23,7 +34,7 @@ ht-degree: 100%
 
 Dans PDF Generator, vous pouvez définir les paramètres de l’application pour les types de fichiers pris en charge. Sous Windows, vous pouvez définir les paramètres de l’application pour chaque type de fichier pris en charge. Sous UNIX et Linux, vous pouvez définir les paramètres de l’application pour les formats HTML en PDF et OpenOffice.
 
-Dans la page Paramètres de type de fichier, vous pouvez effectuer les tâches suivantes :
+Sur la page Paramètres de type de fichier, vous pouvez effectuer les tâches suivantes :
 
 * [Création ou modification d’un paramètre de type de fichier](#create-or-edit-file-type-settings)
 * Spécifiez les paramètres de type de fichier à utiliser par défaut (voir [Importation et exportation de fichiers de configuration PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md))
@@ -44,49 +55,49 @@ Vous pouvez créer ou modifier un paramètre de type de fichier pour définir la
 1. Dans la zone Extensions de nom de fichier, saisissez les extensions de nom de fichier séparées par des virgules pour les types de fichier pris en charge par cette application. N’insérez pas de point avant les extensions ou d’espace entre celles-ci. La valeur par défaut est de `bmp,gif,jpeg,jpg,tif,tiff,png`.
 1. (Facultatif) Pour utiliser la reconnaissance de code optique de texte dans des graphiques ou des images, sélectionnez Utiliser la reconnaissance optique des caractères et définissez les options suivantes :
 
-**Langue principale de reconnaissance optique des caractères :** définit la langue à utiliser par le moteur de reconnaissance optique des caractères pour identifier les caractères. La valeur par défaut est Anglais (États-Unis).
+**Langue principale de reconnaissance optique des caractères :** définit la langue à utiliser par le moteur de reconnaissance optique des caractères pour identifier les caractères. La valeur par défaut est anglais (États-Unis).
 
-**Style de sortie PDF :** sélectionnez Image indexable pour afficher une image bitmap des pages au premier plan et le texte numérisé sur une couche invisible sous-jacente. L’apparence de la page ne change pas, toutefois il est possible de sélectionner et de lire le texte. Sélectionnez Texte formaté et images pour reconstruire la page d’origine à l’aide du texte, des polices, des images et des autres éléments graphiques reconnus. La valeur par défaut est Image indexable (exacte).
+**Style de sortie PDF :** sélectionnez Image indexable pour afficher une image bitmap des pages au premier plan et le texte numérisé sur une couche invisible sous-jacente. L’apparence de la page ne change pas, toutefois il est possible de sélectionner et de lire le texte. Sélectionnez Texte formaté et images pour reconstruire la page d’origine à l’aide du texte, des polices, des images et des autres éléments graphiques reconnus. La valeur par défaut est Searchable Image (exacte).
 
-**Sous-échantillonner les images :** permet de réduire le nombre de pixels dans les images monochromes, en niveaux de gris et en couleur. Le sous-échantillonnage des images numérisées s’effectue après la reconnaissance optique des caractères. La valeur par défaut est la moins élevée (600 dpi). Cette option n’est pas disponible si vous sélectionnez Image indexable (exacte) pour l’option Style de sortie PDF.
+**Sous-échantillonner les images :** permet de réduire le nombre de pixels dans les images monochromes, en niveaux de gris et en couleur. Le sous-échantillonnage des images numérisées s’effectue après la reconnaissance optique des caractères. La valeur par défaut est la moins élevée (600 dpi). Cette option n’est pas disponible si vous sélectionnez Image indexable (exacte) pour l’option Style de sortie PDF Output.
 
-1. Fournissez les informations requises dans ces zones :
+1. Fournissez les informations requises dans ces sections :
 
-[Importation et exportation des fichiers de configuration de PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+   [Importation et exportation des fichiers de configuration de PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-[Paramètres d’exportation Adobe PDF (Windows uniquement)](#adobe-pdf-export-settings-windows-only)
+   [Paramètres d’exportation Adobe PDF (Windows uniquement)](#adobe-pdf-export-settings-windows-only)
 
-[Paramètres de conversion du HTML en PDF](#html-to-pdf-settings)
+   [Paramètres de conversion du HTML en PDF](#html-to-pdf-settings)
 
-[Paramètres de conversion des vidéos Flash en PDF](#flash-videos-to-pdf-settings)
+   [Paramètres de conversion des vidéos Flash en PDF](#flash-videos-to-pdf-settings)
 
-[Paramètres de conversion du format XPS en PDF](#xps-to-pdf-settings)
+   [Paramètres de conversion du format XPS en PDF](#xps-to-pdf-settings)
 
-[Paramètres d’optimisation de PDF](/help/forms/using/admin-help/configuring-file-type-settings.md)
+   [Paramètres d’optimisation de PDF](/help/forms/using/admin-help/configuring-file-type-settings.md)
 
-[Paramètres de Microsoft Excel (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
+   [Paramètres de Microsoft Excel (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
 
-[Paramètres de Microsoft PowerPoint (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
+   [Paramètres de Microsoft PowerPoint (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
 
-[Paramètres de Microsoft Project (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
+   [Paramètres de Microsoft Project (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
 
-[Paramètres de Microsoft Word (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
+   [Paramètres de Microsoft Word (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-[Paramètres de Microsoft Visio (Windows uniquement)](#visio)
+   [Paramètres de Microsoft Visio (Windows uniquement)](#visio)
 
-[Paramètres de Microsoft Publisher (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
+   [Paramètres de Microsoft Publisher (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
-[Paramètres d’AutoCAD (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
+   [Paramètres d’AutoCAD (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
 
-[Paramètres d’OpenOffice](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
+   [Paramètres d’OpenOffice](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
 
-[Paramètres d’autres applications (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
+   [Paramètres d’autres applications (Windows uniquement)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
    Pour accéder à une autre section, cliquez sur son lien dans la page Web ou utilisez les boutons **[!UICONTROL Suivant]** ou **[!UICONTROL Précédent]**.
 
 1. Après avoir renseigné toutes les sections, cliquez sur **[!UICONTROL Enregistrer]** ou **[!UICONTROL Enregistrer sous]** puis saisissez le nom du paramètre.
 
-Il est possible de personnaliser la prise en charge de divers types de fichier (voir « [Ajout de formats de fichier natifs pris en charge](https://help.adobe.com/fr_FR/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html) » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_lc_programming_11_fr)).
+Il est possible de personnaliser la prise en charge de divers types de fichier. (voir « [Ajout de formats de fichier natifs pris en charge](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html) » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_lc_programming_11_fr)).
 
 ## Modifier les paramètres par défaut {#change-the-default-settings}
 
@@ -140,9 +151,9 @@ Les options suivantes permettent de déterminer comment les fichiers image sont 
 
 **Sous-échantillonner les images :** permet de réduire le nombre de pixels dans les images monochromes, en niveaux de gris et en couleur, une fois la reconnaissance optique de caractères terminée. Choisissez le niveau de sous-échantillonnage à appliquer. Les valeurs les plus élevées diminuent le sous-échantillonnage et génèrent des PDF de meilleure résolution.
 
-## Paramètres d’exportation Adobe PDF (Windows uniquement) {#adobe-pdf-export-settings-windows-only}
+## Paramètres d’export Adobe PDF (Windows uniquement) {#adobe-pdf-export-settings-windows-only}
 
-Le paramètre Exporter le type de fichier dans la section des paramètres d’export Adobe PDF permet de convertir un fichier PDF dans un autre format. La valeur par défaut est HTML 4.01 avec feuilles de style 1.0 en cascade (CSS) (*.htm, *.html).
+Le paramètre Exporter le type de fichier dans la section des paramètres d’export Adobe PDF permet de convertir un fichier PDF dans un autre format. La valeur par défaut est HTML 4.01 avec feuilles de style en cascade (CSS) 1.0 (*.htm, *.html).
 
 Pour plus d’informations sur l’accès à ce paramètre, voir [Créer ou modifier des paramètres de type de fichier](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
@@ -158,7 +169,7 @@ Les options suivantes permettent de déterminer comment les fichiers HTML sont c
 
 ### Paramètres d’indexation {#spidering-settings}
 
-*L’indexation* recherche dans les pages web des liens renvoyant à d’autres pages web. Si un lien renvoyant à une autre page Web est trouvé, la page de destination est extraite et incluse dans le document PDF généré. Activez ces options pour définir le nombre de niveaux à extraire et à convertir en PDF :
+*L’indexation* recherche dans les pages web des liens renvoyant à d’autres pages web. Si un lien renvoyant à une autre page web est trouvé, la page de destination est extraite et incluse dans le document PDF généré. Activez ces options pour définir le nombre de niveaux à extraire et à convertir en PDF :
 
 **Télécharger uniquement x niveaux :** permet d’indexer et de convertir des pages jusqu’à la profondeur de niveau défini depuis l’URL de la page de base. Une valeur égale à 1 permet de convertir uniquement l’URL indiquée.
 
@@ -210,7 +221,7 @@ Ces options permettent de définir le format et le mode d’affichage de la fen�
 
 ### Options de l’interface utilisateur {#user-interface-options}
 
-Ces options permettent de définir l’apparence de la fenêtre :
+Activez ces options pour définir l’apparence de la fenêtre :
 
 **Masquer la barre de menus :** permet de masquer la barre de menus dans le document PDF.
 
@@ -220,13 +231,13 @@ Ces options permettent de définir l’apparence de la fenêtre :
 
 ## Paramètres de conversion des vidéos Flash en PDF {#flash-videos-to-pdf-settings}
 
-PDF Generator permet de soumettre une vidéo pour Adobe Flash (au format SWF ou FLV) et de créer un fichier PDF incorporant une vidéo pour Adobe Flash. Cette conversion ne nécessite pas l’installation d’Adobe Flash Player sur le serveur Forms Server. Pour plus d’informations sur l’accès à cette option, voir [Créer ou modifier les paramètres de type de fichier](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator permet de soumettre une vidéo pour Adobe Flash (au format SWF ou FLV) et de créer un fichier PDF incorporant une vidéo pour Adobe Flash. Cette conversion ne nécessite pas l’installation d’Adobe Flash Player sur le Serveur Formulaires. Pour plus d’informations sur l’accès à cette option, voir [Créer ou modifier les paramètres de type de fichier](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Extensions de nom de fichier :** liste des extensions de fichier, séparées par des virgules, pouvant être converties.
 
 ## Paramètres de conversion du format XPS en PDF {#xps-to-pdf-settings}
 
-Le format XPL (XML Paper Specification) est utilisé pour l’impression sous Windows. Il s’agit d’un format Microsoft pouvant être créé à partir de n’importe quelle application Microsoft Office. AEM Forms permet de convertir des fichiers XPS en PDF.
+Le format XPS (XML Paper Specification) est utilisé pour l’impression sous Windows. Il s’agit d’un format Microsoft pouvant être créé à partir de n’importe quelle application Microsoft Office. AEM Forms permet de convertir des fichiers XPS en PDF.
 
 **Extensions de nom de fichier :** liste séparée par des virgules de toutes les extensions de nom des fichiers XPS pouvant être convertis. Il n’existe actuellement un seul format : .xps.
 
@@ -259,9 +270,9 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Créer ou modi
 
    >[!NOTE]
    >
-   >*Pour désincorporer des polices dont les jeux partiels sont incorporés dans le document, ajoutez un signe + avant le nom de la police. Par exemple : « +Helvetica ».*
+   >*Pour désincorporer des polices dont les sous-ensembles sont incorporés dans le document, ajoutez un signe + avant le nom de la police. Par exemple : « +Helvetica ».*
 
-1. Pour incorporer uniquement les jeux partiels utilisés des polices incorporées, sélectionnez **Créer des jeux partiels de toutes les polices incorporées**.
+1. Pour incorporer uniquement les sous-ensembles utilisés des polices incorporées, sélectionnez **Créer des sous-ensembles de toutes les polices incorporées**.
 
    >[!NOTE]
    >
@@ -269,7 +280,7 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Créer ou modi
 
    >[!NOTE]
    >
-   >*La création de jeux partiels de police permet d’incorporer uniquement une portion d’une police. Un jeu partiel de police ne contient que les caractères utilisés dans le document concerné.*
+   >*La création de jeux partiels de police permet d’incorporer uniquement une portion d’une police. Un sous-ensemble de polices ne contient que les caractères utilisés dans le document concerné.*
 
 ### Transparence {#transparency}
 
@@ -287,7 +298,7 @@ Sélectionnez **Transparence** pour configurer les paramètres de transparence l
 >
 >Le niveau de pixellisation atteint dépend de la complexité de la page et des types d’objets se chevauchant.
 
-**Dessins au trait et texte** : résolution de pixellisation de tous les objets : images, illustrations vectorielles, texte et dégradés. Cette valeur peut être comprise entre 1 et 9 600 pixels par pouce (ppp).
+**Dessins au trait et texte** : résolution de pixellisation de tous les objets : images, illustrations vectorielles, texte et dégradés. Les valeurs prises en charge vont de 1 pixel par pouce (ppp) à 9 600 ppp.
 
 >[!NOTE]
 >
@@ -303,7 +314,7 @@ Sélectionnez **Transparence** pour configurer les paramètres de transparence l
 
 **Vectoriser tous les contours** : convertit tous les contours en tracés simples remplis dans les pages contenant de la transparence. Cette option préserve la largeur des contours lors de l’aplatissement. Notez que l’activation de cette option a pour effet de donner aux contours fins un aspect légèrement plus épais et peut dégrader les performances de l’aplatissement.
 
-**Ecrêter les zones complexes** : garantit que les limites entre l’illustration vectorielle et l’illustration pixellisée s’inscrivent sur les tracés d’objet. Cette option réduit les artefacts de raccordement qui subviennent lorsqu’un objet est partiellement pixellisé (une partie de l’objet restant vectorielle).
+**Ecrêter les zones complexes** : garantit que les limites entre l’illustration vectorielle et l’illustration pixellisée s’inscrivent sur les tracés d’objet. Cette option réduit les artefacts de raccordement.
 
 <!--
 NOTE to WRITER: Unfinished sentence above.
@@ -311,13 +322,13 @@ NOTE to WRITER: Unfinished sentence above.
 
 >[!NOTE]
 >
->Certains pilotes d’imprimante traitent les dessins pixellisés et vectorisés différemment, ce qui entraîne parfois un raccordement de couleurs. Vous pouvez arriver à réduire les problèmes de raccordement en désactivant certains paramètres de gestion des couleurs spécifiques au pilote d’impression. Ces paramètres varient selon les imprimantes, consultez la documentation de votre imprimante pour obtenir plus de détails.
+>Certains pilotes d’imprimante traitent les dessins pixellisés et vectorisés différemment, ce qui entraîne parfois un raccordement de couleurs. Vous pouvez arriver à réduire les problèmes de raccordement en désactivant certains paramètres de gestion des couleurs spécifiques au pilote d’impression. Ces paramètres varient selon les imprimantes ; consultez la documentation de votre imprimante pour obtenir plus de détails.
 
 Conserver la surimpression : fusionne la couleur des illustrations transparentes et la couleur d’arrière-plan afin de créer un effet de surimpression.
 
 Le tableau suivant répertorie les types d’imprimantes courants ainsi que leur résolution mesurée en dpi, leur lignage de trame par défaut mesuré en lpi, et une résolution de rééchantillonnage des images mesurée en ppp. Par exemple, si vous imprimez sur une imprimante laser 600 dpi, vous devez saisir 170 pour la résolution de rééchantillonnage des images.
 
-**Images** Sélectionnez Images pour définir les options de compression et de rééchantillonnage des images en couleurs, niveaux de gris et monochrome. Vous pouvez souhaiter tester ces options pour trouver le bon équilibre entre la taille du fichier et la qualité d’image. Le paramètre de résolution relatif à la couleur et aux niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. La résolution des images monochromes doit être identique à celle du périphérique de sortie ; toutefois, enregistrer une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer significativement la qualité d’image. Les images susceptibles d’être agrandies, telles que les cartes, peuvent nécessiter des résolutions supérieures.
+**Images** Sélectionnez Images pour définir les options de compression et de rééchantillonnage des images en couleurs, niveaux de gris et monochrome. Vous pouvez tester ces options pour trouver le bon équilibre entre la taille du fichier et la qualité d’image.Le paramètre de résolution des images en niveaux de gris et en couleur doit être 1,5 à 2 fois supérieur à la trame de lignes à laquelle le fichier sera imprimé. La résolution des images monochromes doit être identique à celle de l’appareil de sortie ; toutefois, enregistrer une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer significativement la qualité d’image. Les images susceptibles d’être agrandies, telles que les cartes, peuvent nécessiter des résolutions supérieures.
 
 >[!NOTE]
 >
@@ -378,12 +389,12 @@ Sélectionnez **Ignorer les données utilisateur** pour supprimer d’éventuell
 * **Ignorer le contenu du calque masqué et aplatir les calques visibles** : réduit la taille du fichier. Le document optimisé ressemble au PDF d’origine, mais ne contient pas d’informations sur les calques.
 * **Ignorer les métadonnées et les informations sur le document** : supprime le contenu du dictionnaire d’informations du document ainsi que tous les flux de métadonnées (Utilisez la commande Enregistrer sous pour restaurer les flux de métadonnées dans une copie du PDF.)
 * **Ignorer les pièces jointes** : supprime tous les fichiers en pièce jointe, y compris ceux ajoutés au PDF en tant que commentaires. (PDF Optimizer n’optimise pas les fichiers joints.)
-* **Ignorer les données privées des autres applications** : supprime du document PDF les informations utiles uniquement à l’application ayant créé le document. Ce paramètre n’a aucune incidence sur les fonctionnalités du PDF, mais il réduit la taille du fichier.
+* **Ignorer les données privées des autres applications** : supprime du document PDF les informations utiles uniquement à l’application ayant créé le document. Ce paramètre n’a aucune incidence sur la fonctionnalité du PDF, mais il réduit la taille du fichier.
 
 ### Nettoyage {#clean-up}
 
 Sélectionnez **Nettoyage** pour supprimer du document les éléments inutiles.
-Ces éléments contiennent des points qui sont obsolètes ou inutiles pour l’utilisation prévue du document. La suppression de certains éléments peut affecter gravement les fonctionnalités du PDF. Par défaut, seuls les éléments qui n’affectent pas les fonctionnalités sont sélectionnés. Si vous n’êtes pas certain(e) des conséquences de la suppression d’autres options, utilisez les sélections par défaut.
+Ces éléments incluent des éléments qui sont obsolètes ou inutiles pour l’utilisation prévue du document. La suppression de certains éléments peut affecter gravement la fonctionnalité du PDF. Par défaut, seuls les éléments qui n’affectent pas la fonctionnalité sont sélectionnés. Si vous n’êtes pas certain(e) des conséquences de la suppression d’autres options, utilisez les sélections par défaut.
 
 **Compression**
 
@@ -416,13 +427,13 @@ Ces options déterminent le mode de conversion des fichiers Microsoft Excel. Po
 
 **Extensions de nom de fichier** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `xls,xlsx`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
-**Créer un fichier compatible avec le format PDF/A-1a** : rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RVB Adobe PDF.
+**Créer un fichier compatible avec PDF/A-1a** : rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RGB Adobe PDF.
 
 **Ajouter des signets à Adobe PDF** : permet de convertir des noms de feuille de calcul Excel en signets. Cette option est sélectionnée par défaut.
 
 **Ajuster la feuille de calcul à une page** : permet de réduire la taille du texte afin qu’il s’affiche sur une seule page de feuille de calcul.
 
-**Convertir le classeur entier :** permet de convertir toutes les feuilles de calcul du fichier Excel. Si cette option n’est pas sélectionnée seule la page en cours est convertie.
+**Convertir le classeur entier :** permet de convertir toutes les feuilles de calcul du fichier Excel. Si cette option n’est pas sélectionnée, seule la page en cours est convertie.
 
 **Exécuter automatiquement les macros :** exécute les macros du document Excel (par exemple une macro qui insère l’heure actuelle) avant de le convertir.
 
@@ -444,7 +455,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft PowerPoint
 
 **[!UICONTROL Essayer OpenOffice comme convertisseur de secours]** : lorsque cette option est sélectionnée et qu’une conversion utilisant Microsoft PowerPoint échoue ou atteint le délai d’expiration spécifié, PDF Generator tente d’effectuer la conversion en utilisant OpenOffice. Si la conversion à l’aide d’OpenOffice échoue ou atteint le délai d’expiration spécifié, une exception est consignée dans le fichier journal.
 
-**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est ppt,pptx. N’insérez pas de point devant les extensions ou d’espace entre celles-ci.
+**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est ppt,pptx. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
 **[!UICONTROL Convertir les informations sur le document]** : permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, l’objet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut.
 
@@ -470,17 +481,17 @@ Ces options permettent de déterminer comment les fichiers Microsoft PowerPoint
 
 **[!UICONTROL Convertir les diapositives masquées en pages PDF]** : permet de convertir les diapositives masquées.
 
-**[!UICONTROL Créer un fichier compatible avec le format PDF/A-1a]** : rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RVB Adobe PDF. Un certain nombre de fonctions de PowerPoint ne sont pas converties lorsque vous créez un fichier PDF. Si une transition PowerPoint ne possède pas d’équivalent dans Acrobat, elle est remplacée par une transition similaire. Si plusieurs effets d’animation se trouvent sur la même diapositive, un seul effet est utilisé. Les transitions de page et les puces volantes sont converties.
+**[!UICONTROL Créer un fichier compatible avec PDF/A-1a]** : rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RGB Adobe PDF. Quelques fonctions de PowerPoint ne sont pas converties lorsque vous créez un fichier PDF. Si une transition PowerPoint ne possède pas d’équivalent dans Acrobat, elle est remplacée par une transition similaire. Si plusieurs effets d’animation se trouvent sur la même diapositive, un seul effet est utilisé. Les transitions de page et les animations de puces sont converties.
 
 ## Paramètres de Microsoft Project (Windows uniquement) {#microsoft-project-settings-windows-only}
 
 Ces options déterminent le mode de conversion des fichiers Microsoft Project. Pour obtenir davantage d’instructions pour accéder à ces options, voir [Créer ou modifier les paramètres de type de fichier](#create-or-edit-file-type-settings).
 
-1. **[!UICONTROL Extensions de nom de fichier :]** permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `mpp`. N’insérez pas de point devant les extensions ou d’espace entre celles-ci.
+1. **[!UICONTROL Extensions de nom de fichier :]** permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `mpp`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
 1. **[!UICONTROL Convertir les informations sur le document]** : permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, l’objet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut.
-1. **[!UICONTROL Joindre le fichier source au fichier Adobe PDF]** : permet d’ajouter le fichier source au fichier PDF sous forme de pièce jointe. 
-1. **[!UICONTROL Créer un fichier compatible avec le format PDF/A-1a]** : rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RVB Adobe PDF.
+1. **[!UICONTROL Joindre le fichier source au fichier Adobe PDF]** : permet d’ajouter le fichier source au fichier PDF sous forme de pièce jointe.
+1. **[!UICONTROL Créer un fichier compatible avec PDF/A-1a]** : rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RGB Adobe PDF.
 1. **[!UICONTROL Exécuter automatiquement les macros :]** exécute les macros dans le document Microsoft Project (par exemple, une macro qui insère l’heure actuelle) avant de le convertir.
 
 ## Paramètres de Microsoft Word (Windows uniquement) {#microsoft-word-settings-windows-only}
@@ -489,19 +500,19 @@ Ces options déterminent le mode de conversion des fichiers Microsoft Word. Pou
 
 **[!UICONTROL Essayer OpenOffice comme convertisseur de secours]** : lorsque cette option est sélectionnée et qu’une conversion utilisant Microsoft Word échoue ou atteint le délai d’expiration spécifié, PDF Generator tente d’effectuer la conversion en utilisant OpenOffice. Si la conversion à l’aide d’OpenOffice échoue ou atteint le délai d’expiration spécifié, une exception est consignée dans le fichier journal.
 
-**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `doc,docx,rtf,txt`. N’insérez pas de point devant les extensions ou d’espace entre celles-ci.
+**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `doc,docx,rtf,txt`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
 **[!UICONTROL Convertir les informations sur le document]** : permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, l’objet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut.
 
 **[!UICONTROL Ajouter des signets à Adobe PDF]** : permet de convertir des titres en signets. Cette option est sélectionnée par défaut.
 
-**[!UICONTROL Joindre le fichier source au fichier Adobe PDF]** : permet d’ajouter le fichier source au fichier PDF sous forme de pièce jointe. 
+**[!UICONTROL Joindre le fichier source au fichier Adobe PDF]** : permet d’ajouter le fichier source au fichier PDF sous forme de pièce jointe.
 
 **[!UICONTROL Convertir les références croisées et la table des matières en liens]** : permet de convertir les références croisées et les entrées de la table des matières en liens. Cette option est sélectionnée par défaut.
 
 **[!UICONTROL Activer l’accessibilité et la redistribution avec un fichier Adobe PDF balisé]** : permet d’incorporer les balises dans le fichier PDF. Cette option est sélectionnée par défaut.
 
-**[!UICONTROL Créer un fichier compatible avec le format PDF/A-1a]** : cette option permet de rendre obligatoire l’utilisation du paramètre PDF/A-1b:2005 RVB Adobe PDF.
+**[!UICONTROL Créer un fichier compatible avec PDF/A-1a]** : cette option permet de rendre obligatoire l’utilisation du paramètre PDF/A-1b:2005 RGB Adobe PDF.
 
 **[!UICONTROL Exécuter automatiquement les macros]** : exécute les macros du document Word (par exemple une macro qui insère l’heure actuelle) avant de le convertir.
 
@@ -523,7 +534,7 @@ Ces options déterminent le mode de conversion des fichiers Microsoft Word. Pou
 
 **styleName1=level1[,styleName2=level2...]**
 
-Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal (=), ces caractères doivent être précédés par un caractère d’échappement (« \ »). Par exemple, spécifiez un style nommé « Titre, 1 » comme suit : Titre\, 1.
+Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal (=), ces caractères doivent être précédés par un caractère d’échappement (« \_ »). Par exemple, spécifiez un style nommé « Titre, 1 » comme suit : Titre\, 1.
 
 **Codage Acrobat PDFMaker :** spécifie le type de codage des fichiers d’entrée de texte brut dans Acrobat PDFMaker. Par exemple, si vous utilisez un fichier codé au format UTF-8, sélectionnez UTF-8 pour obtenir de meilleurs résultats.
 
@@ -535,7 +546,7 @@ Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal 
 
 **Ajouter des signets à Adobe PDF** : permet de convertir des titres en signets. Cette option est sélectionnée par défaut.
 
-**Joindre le fichier source au fichier Adobe PDF** : permet d’ajouter le fichier source au fichier PDF sous forme de pièce jointe. 
+**Joindre le fichier source au fichier Adobe PDF** : permet d’ajouter le fichier source au fichier PDF sous forme de pièce jointe.
 
 **Toujours aplatir les calques dans Adobe PDF** : permet d’aplatir tous les calques Visio.
 
@@ -543,7 +554,7 @@ Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal 
 
 **Ouvrir le panneau Calques lors de l’affichage dans Adobe Acrobat** : si les calques Visio ne sont pas aplatis, permet d’ouvrir une fenêtre dans laquelle vous pouvez préciser les calques qui sont conservés dans le fichier PDF lorsqu’ils sont ouverts dans Acrobat. Cette option est sélectionnée par défaut.
 
-**Créer un fichier conforme à la norme PDF/A-1b** : rend obligatoire l’utilisation du paramètre Adobe PDF PDF/A-1b:2005 (RVB).
+**Créer un fichier compatible avec PDF/A-1b** : rend obligatoire l’utilisation du paramètre Adobe PDF PDF/A-1b:2005 (RGB).
 
 **Convertir les commentaires en commentaires Adobe PDF** : permet de convertir les notes Visio en commentaires PDF.
 
@@ -551,17 +562,17 @@ Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal 
 
 Ces options permettent de déterminer comment les fichiers Microsoft Publisher sont convertis. Pour plus d’informations sur l’accès à ces options, voir [Créer ou modifier les paramètres de type de fichier](#create-or-edit-file-type-settings).
 
-**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `pub`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
+**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `pub`. N’insérez pas de point devant les extensions ou d’espace entre celles-ci.
 
 ## Paramètres d’AutoCAD (Windows uniquement) {#autocad-settings-windows-only}
 
 Ces options permettent de déterminer comment les fichiers AutoCAD sont convertis. Pour plus d’informations sur l’accès à ces options, voir [Créer ou modifier les paramètres de type de fichier](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `dwg`. N’insérez pas de point devant les extensions ou d’espace entre celles-ci.
+**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est de `dwg`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
 
 **[!UICONTROL Convertir les informations sur le document]** : permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, l’objet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut.
 
-**[!UICONTROL Ajouter des signets à Adobe PDF]** : permet de convertir des titres en signets. 
+**[!UICONTROL Ajouter des signets à Adobe PDF]** : permet de convertir des titres en signets.
 
 **[!UICONTROL Toujours aplatir les calques dans Adobe PDF]** : permet d’aplatir tous les calques AutoCAD.
 
@@ -573,7 +584,7 @@ Ces options permettent de déterminer comment les fichiers AutoCAD sont converti
 
 **[!UICONTROL Ajouter des liens à Adobe PDF]** : permet de conserver tous les liens.
 
-**[!UICONTROL Joindre le fichier source au fichier Adobe PDF]** : permet d’ajouter le fichier source au fichier PDF sous forme de pièce jointe. 
+**[!UICONTROL Joindre le fichier source au fichier Adobe PDF]** : permet d’ajouter le fichier source au fichier PDF sous forme de pièce jointe.
 
 **[!UICONTROL Créer un fichier conforme à la norme PDF/A-1b]** : rend obligatoire l’utilisation du paramètre Adobe PDF PDF/A-1b.
 
@@ -583,7 +594,7 @@ Ces options permettent de déterminer comment les fichiers AutoCAD sont converti
 
 **[!UICONTROL Convertir la mise en page actuelle]** : ne comprend que la mise en page actuelle du PDF.
 
-**[!UICONTROL Liste des mises en page AutoCAD à convertir]** : un dessin AutoCAD peut avoir plusieurs mises en page. Lorsque cette zone est vide, toutes les mises en page du dessin AutoCAD sont incluses dans le document PDF généré. Pour convertir un sous-ensemble spécifique des mises en pages, fournissez une liste séparée par des virgules indiquant leur nom.
+**[!UICONTROL Liste des mises en page AutoCAD à convertir]** : un dessin AutoCAD peut avoir plusieurs mises en page. Lorsque cette zone est vide, toutes les mises en page du dessin AutoCAD sont incluses dans le document PDF généré. Pour convertir un sous-ensemble spécifique des mises en pages, fournissez une liste séparée par des virgules indiquant les noms de mises en page.
 
 ## Paramètres d’OpenOffice {#openoffice-settings}
 
@@ -591,20 +602,20 @@ Ces options permettent de déterminer comment les fichiers OpenOffice sont conve
 
 **Essayer PDFMaker comme convertisseur de secours** : lorsque cette option est sélectionnée et qu’une conversion utilisant OpenOffice échoue ou atteint le délai d’expiration spécifié, PDF Generator tente d’effectuer la conversion en utilisant PDFMaker. Si la méthode de conversion avec PDFMaker échoue ou atteint le délai d’expiration spécifié, une exception est consignée dans le fichier journal.
 
-**Extensions de nom de fichier** : permet de définir les extensions de nom de fichier acceptées par cette application en les séparant par des virgules. La valeur par défaut est de `odt,odp,ods,odg,odf,sxw,sxi,sxd`. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
+**Extensions de nom de fichier** : permet de définir les extensions de nom de fichier acceptées par cette application en les séparant par des virgules. La valeur par défaut est de `odt,odp,ods,odg,odf,sxw,sxi,sxd`. N’insérez pas de point devant les extensions ou d’espace entre celles-ci.
 
-**Plage** : permet de convertir toutes les pages ou de définir certaines pages ou une plage de pages. Si aucune plage n’est définie, toutes les pages sont converties. Pour exporter une plage de pages, utilisez le format 3-6. Pour exporter une page à la fois, utilisez le format 7;9;11. Vous pouvez exporter plusieurs plages de pages et des pages isolées à l’aide d’un format de type 3-6;8;10;12.
+**Plage** : permet de convertir toutes les pages ou de définir certaines pages ou une plage de pages. Si aucune plage n’est définie, toutes les pages sont converties. Pour exporter une plage de pages, utilisez le format 3-6. Pour exporter une page à la fois, utilisez le format 7 ;9 ;11. Vous pouvez exporter plusieurs plages de pages et des pages isolées à l’aide d’un format de type 3-6 ;8 ;10 ;12.
 
 **Orientation de page** : pour les fichiers en texte brut seulement, sélectionnez le format portrait ou paysage pour le document PDF converti.
 
-**Images** : permet de configurer le mode de conversion des images. Les images EPS contenant des aperçus intégrés sont exportées uniquement en tant qu’aperçus. Les images EPS ne contenant pas d’aperçus intégrés sont exportées uniquement en tant qu’espaces réservés. La compression sans perte des images permet de conserver tous les pixels. La compression JPEG des images et un niveau de qualité élevé permettent de conserver pratiquement tous les pixels. Avec un niveau de qualité faible, certains pixels sont perdus et des artefacts apparaissent, mais les fichiers ont une taille plus petite.
+**Images** : permet de configurer le mode de conversion des images. Les images EPS contenant des aperçus intégrés sont exportées uniquement en tant qu’aperçus. Les images EPS ne contenant pas d’aperçus intégrés sont exportées uniquement en tant qu’espaces réservés vides. La compression sans perte des images permet de conserver tous les pixels. La compression JPEG des images et un niveau de qualité élevé permettent de conserver pratiquement tous les pixels. Avec un niveau de qualité faible, certains pixels sont perdus et des artefacts apparaissent, mais la taille des fichiers est réduite.
 
 **Général** : ces options permettent de convertir un PDF balisé ou d’exporter des notes de document Writer et FormCalc, des effets de transition entre diapositives Impress ou des pages vides vers le PDF. Lors de l’export des balises, la taille du fichier peut augmenter considérablement. Parmi les balises exportées figurent les tables des matières, les liens hypertexte et les commandes.
 
-Vous pouvez également définir la manière dont les formulaires sont envoyés. Les options sont XML, FDF, PDF ou HTML. Ce paramètre permet de remplacer la propriété de l’URL de commande que vous avez définie dans le document. Seul un paramètre commun peut être sélectionné pour le document PDF :
+Vous pouvez également définir la manière dont les formulaires sont envoyés. Les options sont XML, FDF, PDF ou HTML. Ce paramètre permet de remplacer la propriété d’URL du contrôle que vous avez définie dans le document. Seul un paramètre commun peut être sélectionné pour le document PDF :
 
 * PDF (envoie le document entier)
-* FDF (envoie le contenu de la commande)
+* FDF (envoie le contenu du contrôle)
 * HTML
 * XML
 
@@ -620,7 +631,7 @@ Vous pouvez également définir la manière dont les formulaires sont envoyés. 
 
 ## Paramètres d’autres applications (Windows uniquement) {#other-applications-settings-windows-only}
 
-Vous ne pouvez pas modifier les paramètres d’autres applications dans la console d’administration. Ils indiquent les extensions correspondant aux types de fichiers pris en charge. Pour obtenir des instructions sur l’accès à ces paramètres, consultez [Créer ou modifier des paramètres de type de fichier](https://help.adobe.com/fr_FR/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
+Vous ne pouvez pas modifier les paramètres d’autres applications dans la console d’administration ; elles affichent les extensions de nom de fichier pour les types de fichiers pris en charge. Pour obtenir des instructions sur l’accès à ces paramètres, consultez [Créer ou modifier des paramètres de type de fichier](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect : `wpd`
 * Adobe PageMaker: `pmd, pm6, p65, pm`

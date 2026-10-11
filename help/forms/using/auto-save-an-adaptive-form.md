@@ -7,7 +7,25 @@ feature: Adaptive Forms,Foundation Components
 exl-id: ff9bf466-228d-40e6-9389-15c1f2ed1d2e
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 100%
@@ -20,7 +38,7 @@ Vous pouvez configurer un formulaire adaptatif pour démarrer automatiquement l�
 
 * Enregistrement automatique du contenu pour les utilisateurs et utilisatrices anonymes et connectés
 * Enregistrement du contenu d’un formulaire sans intervention ou avec une intervention minimale de l’utilisateur ou de l’utilisatrice
-* Commencer à enregistrer le contenu d’un formulaire en fonction d’un événement utilisateur
+* Commencer à enregistrer le contenu d’un formulaire en fonction d’un évènement utilisateur
 * Enregistrer le contenu d’un formulaire à plusieurs reprises après un intervalle de temps spécifié
 
 ## Activer l’enregistrement automatique d’un formulaire adaptatif {#enable-autosave-for-an-adaptive-form}
@@ -42,7 +60,7 @@ Pour un formulaire adaptatif, l’option d’enregistrement automatique n’est 
 
    Vous pouvez également créer et ajouter vos propres stratégies personnalisées à la liste. Pour plus d’informations, reportez-vous à la section [Mise en œuvre d’une stratégie personnalisée pour enregistrer automatiquement les formulaires](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
 
-1. (Enregistrement automatique basé sur un moment uniquement) Exécutez les étapes suivantes pour configurer les options de l’enregistrement automatique basé sur un moment.
+1. (Enregistrement automatique basé sur le temps uniquement) Exécutez les étapes suivantes pour configurer les options de l’enregistrement automatique basé sur le temps.
 
    1. Dans le champ **[!UICONTROL Enregistrement automatique sur cet intervalle]**, indiquez l’intervalle en secondes. Le formulaire est enregistré à plusieurs reprises après écoulement du nombre de secondes spécifié dans la zone d’intervalle.
 

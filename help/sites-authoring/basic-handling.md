@@ -10,13 +10,26 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 174d9e7466002e209422fefdc32a363a98dc99f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3122'
 ht-degree: 90%
-
 ---
-
 # Gestion de base{#basic-handling}
 
 >[!NOTE]
@@ -155,7 +168,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   Vous pouvez également utiliser la [touche de raccourci](/help/sites-authoring/keyboard-shortcuts.md) `/` (barre oblique) pour appeler la recherche à partir de n’importe quelle console.
 
-* [Solutions](https://business.adobe.com/fr/)
+* [Solutions](https://business.adobe.com/)
 
   ![Solutions](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -563,7 +576,7 @@ La colonne Chronologie permet d’effectuer les opérations suivantes :
 
     * et Afficher tout
 
-* [Ajouter/afficher des commentaires sur l’élément sélectionné. &#x200B;](#timelineaddingandviewingcomments) La zone **Commentaire** s’affiche dans la partie inférieure de la liste des événements. Saisissez un commentaire suivi d’un retour à la ligne pour enregistrer le commentaire. Vous pouvez l’afficher en sélectionnant **Commentaires** ou **Tout afficher**.
+* [Ajouter/afficher des commentaires sur l’élément sélectionné. ](#timelineaddingandviewingcomments) La zone **Commentaire** s’affiche dans la partie inférieure de la liste des événements. Saisissez un commentaire suivi d’un retour à la ligne pour enregistrer le commentaire. Vous pouvez l’afficher en sélectionnant **Commentaires** ou **Tout afficher**.
 
 * Certaines consoles disposent de fonctionnalités supplémentaires. Par exemple, dans la console Sites, vous pouvez effectuer les opérations suivantes :
 

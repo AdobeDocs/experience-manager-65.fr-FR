@@ -1,18 +1,27 @@
 ---
-title: Configuration de  [!DNL Workfront for Experience Manager enhanced connector]
-description: Configuration de  [!DNL Workfront for Experience Manager enhanced connector]
+title: Configuration de [!DNL Workfront for Experience Manager enhanced connector]
+description: Configuration de [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Workfront Integrations and Apps
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 99%
-
 ---
-
 # Configuration de [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | Version | Lien de l’article |
@@ -28,7 +37,7 @@ Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experienc
 >
 >* Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d’utiliser ce connecteur.
 >
->* Adobe prend en charge les versions 1.7.4 et supérieures du connecteur. Les versions personnalisées et préliminaires précédentes ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, accédez au groupe `digital.hoodoo` disponible dans le volet de gauche du [gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr).
+>* Adobe prend en charge les versions 1.7.4 et supérieures du connecteur amélioré. Les versions personnalisées et préliminaires précédentes ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, accédez au groupe `digital.hoodoo` disponible dans le volet de gauche du [gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr).
 >
 >* Consultez la section [Examen de certification des partenaires pour Workfront pour le connecteur amélioré Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Pour plus d’informations sur l’examen, consultez le [Guide d’examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
@@ -40,7 +49,7 @@ Les abonnements aux événements sont utilisés pour informer AEM des événemen
 * Synchronisation des modifications des valeurs des formulaires personnalisés du document Workfront avec les métadonnées des ressources AEM.
 * Publication automatique des ressources dans Brand Portal à la fin du projet.
 
-Pour utiliser ces fonctionnalités, activez les abonnements aux événements.
+Pour utiliser ces fonctionnalités, activez les abonnements aux évènements.
 
 * Modifiez la configuration Cloud Services des [!UICONTROL outils Workfront] que vous avez créée à l’étape 5 et sélectionnez l’onglet [!UICONTROL Abonnements aux événements].
 * Sélectionnez l’[!UICONTROL intégration personnalisée Workfront] que vous avez créée dans la section 6.
@@ -62,12 +71,12 @@ Pour vous abonner aux événements, procédez comme suit :
 1. Chemin d’accès parent du dossier lié : sélectionnez un dossier dans la gestion des ressources numériques (DAM) où vous souhaitez créer les dossiers liés. Si ce paramètre n’est pas renseigné, il est défini par défaut sur /content/dam. Assurez-vous que le schéma de métadonnées des outils Workfront et le schéma de métadonnées du dossier Dossier lié Workfront ont été appliqués au dossier sélectionné.
 1. Structure de dossiers liés : entrez des valeurs séparées par des virgules. Chaque valeur doit être `DE:<some-project-custom-form-field>`, Portfolio, Programme, Année, Nom ou une « valeur de chaîne littérale » (cette dernière avec des guillemets). Elle est actuellement définie sur Portfolio,Program,Year,DE:Project Type,Name.
 1. Configurez les autorisations : ajoutez des autorisations `jcr:all permissions` à `/conf/workfront-tools/settings/cloudconfigs` pour le groupe `wf-workfront-users`.
-1. Créez le titre du dossier lié dans Workfront à l’aide de la case à cocher Noms de structure de dossiers doit être cochée si le titre du dossier dans Workfront doit inclure tous les dossiers de la structure. Sinon, il s’agit du titre du dernier dossier.
+1. La case à cocher Créer le titre du dossier lié dans Workfront à l’aide des noms de structure de dossiers doit être cochée si le titre du dossier dans Workfront doit inclure tous les dossiers de la structure. Sinon, il s’agit du titre du dernier dossier.
 1. Le multichamp Sous-dossiers permet de spécifier une liste de dossiers à créer en tant que dossier enfant du dossier lié.
 1. Statut du projet : sélectionnez le statut du projet pour créer le dossier lié.
 1. Créer un dossier lié dans les projets avec un portfolio : liste des portfolios auxquels le projet doit appartenir pour créer le dossier lié. Laissez cette liste vide pour créer le dossier lié pour l’ensemble du portefeuille de projets.
 1. Créer un dossier lié dans les projets avec un champ de formulaire personnalisé : champ de formulaire personnalisé et valeur correspondante que le projet doit avoir pour créer le dossier lié. Cette configuration est ignorée si elle n’est pas renseignée. Sélectionnez `CUSTOM FORMS: Create DAM Linked Folder` pour le champ et saisissez `Yes` pour la valeur.
-1. Cliquez sur Activer la création automatique de dossiers liés. Si vous revenez à l’onglet Abonnements aux événements, un événement de création est désormais disponible.
+1. Cliquez sur Activer la création automatique de dossiers liés. Si vous revenez à l’onglet Abonnements aux évènements, un évènement de création est désormais disponible.
 
 ![configuration des dossiers liés](/help/assets/assets/wf-linked-folder-config.png)
 
@@ -86,13 +95,13 @@ Pour configurer les mappages, procédez comme suit :
 1. Dans le champ [!UICONTROL Mappé depuis le champ Workfront], sélectionnez le nom du champ Workfront que vous souhaitez mapper à la propriété du dossier AEM sélectionné. Les options disponibles sont les suivantes :
 
    * Champs de formulaire personnalisé du projet
-   * Champs de présentation du projet (ID, nom, description, numéro de référence, date d’achèvement prévue, propriétaire du projet, parrain du projet, Portfolio ou programme)
+   * Champs de présentation du projet (ID, nom, description, numéro de référence, date d’achèvement prévue, propriétaire du projet, sponsor du projet, portfolio ou programme)
 
 ![configuration du mappage des métadonnées](/help/assets/assets/wf-metadata-mapping-config2.png)
 
 ### Configuration du mappage des métadonnées des ressources {#asset-metadata-mapping}
 
-Le mappage des métadonnées entre les documents Adobe Workfront et les ressources est défini dans les schémas de métadonnées AEM. Les schémas de métadonnées doivent être créés et configurés comme vous le faites habituellement dans AEM. Les outils Workfront ajoutent des options de configuration à l’onglet Configuration des paramètres de chaque champ de formulaire de schéma de métadonnées. Ces options vous permettent de spécifier le champ Workfront auquel chaque propriété AEM doit être mappée.
+Le mappage des métadonnées entre les documents Adobe Workfront et les ressources est défini dans les schémas de métadonnées AEM. Les schémas de métadonnées doivent être créés et configurés comme vous le faites habituellement dans AEM. Les outils Workfront ajoutent des options de configuration à l’onglet Paramètres de chaque champ de formulaire de schéma de métadonnées. Ces options vous permettent de spécifier le champ Workfront auquel chaque propriété AEM doit être mappée.
 
 Pour configurer les mappages, procédez comme suit :
 
@@ -113,7 +122,7 @@ Pour configurer les mappages, procédez comme suit :
 
 ## Propriété de mappage {#map-property}
 
-Cette étape du workflow permet à l’utilisateur de mapper une propriété à une formulaire personnalisé [!DNL Workfront] sur un projet, une tâche, un problème ou un document. L’artefact [!DNL Workfront] concerné par cette étape est recherché à l’aide d’un chemin d’accès relatif à partir de la payload. Les propriétés à mapper sont contrôlées à partir de la configuration de la boîte de dialogue des étapes.
+Cette étape du workflow permet à l’utilisateur de mapper une propriété à une formulaire personnalisé [!DNL Workfront] sur un projet, une tâche, un problème ou un document. L’artefact [!DNL Workfront] concerné par cette étape est recherché à l’aide d’un chemin d’accès relatif à partir de la payload. Les propriétés à mapper sont définies dans la configuration de la boîte de dialogue des étapes.
 
 **Type** : ce champ vous permet de sélectionner le type d’objet Workfront auquel les propriétés doivent être mappées.
 
@@ -123,23 +132,23 @@ Cette étape du workflow permet à l’utilisateur de mapper une propriété à 
 
 * Le `workfront-field` peut être
 
-   * Un champ de formulaire personnalisé identifié par le préfixe `DE:`.
-   * Un champ modifiable identifié par son nom. Les noms des champs se trouvent dans l’[[!DNL Workfront] explorateur d’API](https://experience.workfront.com/s/api-explorer).
+  * Un champ de formulaire personnalisé identifié par le préfixe `DE:`.
+  * Un champ modifiable identifié par son nom. Les noms des champs se trouvent dans l’[[!DNL Workfront] explorateur d’API](https://experience.workfront.com/s/api-explorer).
 
 * Le `aem-mapped-property` peut être :
 
-   * Une valeur littérale. Ils doivent être entourés de guillemets.
-   * Une propriété AEM. Cette référence doit être relative à la payload du workflow.
-   * Une valeur nommée. Ils doivent être entourés de crochets.
-   * Une concaténation des 3 éléments ci-dessus. Spécifiez-la à l’aide de `{+}`.
-   * Modification des 3 éléments ci-dessus en entourant la valeur avec `{replace(<value>,"old-char","new-char")}`.
+  * Une valeur littérale. Ils doivent être entourés de guillemets.
+  * Une propriété AEM. Cette référence doit être relative à la payload du workflow.
+  * Une valeur nommée. Ils doivent être entourés de crochets.
+  * Une concaténation des 3 éléments ci-dessus. Spécifiez-la à l’aide de `{+}`.
+  * Modification des 3 éléments ci-dessus en entourant la valeur avec `{replace(<value>,"old-char","new-char")}`.
 
 * Voici quelques exemples :
 
-   * `status="INP"`
-   * `DE:Asset Type=jcr:content/metadata/assetType`
-   * `DE:Path={path}`
-   * `URL="https://my-aem-author/assets.html"{+}{path}`
+  * `status="INP"`
+  * `DE:Asset Type=jcr:content/metadata/assetType`
+  * `DE:Path={path}`
+  * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Configurer la propriété de mappage](/help/assets/assets/wf-map-property-config.png)
 
@@ -175,7 +184,7 @@ Pour conserver l’historique des versions des ressources dans AEM, configurez l
 
 1. Sélectionnez l’option **[!UICONTROL Stocker les ressources portant le même nom que les versions de la ressource existante]**. Lorsque cette option est cochée, elle permet de stocker les ressources chargées avec le même nom et au même emplacement que la version de la ressource existante. Si cette option n’est pas cochée, une nouvelle ressource est créée avec un nom différent (par exemple, `asset-name.pdf` et `asset-name-1.pdf`).
 
-1. Sélectionnez l’option **[!UICONTROL Mise à jour des métadonnées de ressource lors de la création d’une version]**. Lorsque cette option est cochée, les métadonnées de la ressource sont mises à jour chaque fois qu’une nouvelle version de la ressource est créée. Si cette option n’est pas cochée, la ressource conserve les métadonnées qu’elle possédait avant de créer la nouvelle version.
+1. Sélectionnez l’option **[!UICONTROL Mise à jour des métadonnées de ressource lors de la création d’une version]**. Lorsque cette option est cochée, les métadonnées de la ressource sont mises à jour chaque fois qu’une nouvelle version de la ressource est créée. Si cette option n’est pas cochée, la ressource conserve les métadonnées qu’elle possédait avant la création de la nouvelle version.
 
 ![configurer le contrôle de version des ressources](/help/assets/assets/wf-config-versioning.png)
 

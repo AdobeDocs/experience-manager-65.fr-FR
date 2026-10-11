@@ -7,22 +7,36 @@ hide: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 91%
-
 ---
-
 # Programme d’installation du correctif JEE AEM Forms {#aem-forms-jee-patch-installer}
 
 >[!NOTE]
 >
->[Contactez l’assistance technique](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support) pour plus d’informations ou pour obtenir le correctif.
+>[Contactez l’assistance technique](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support) pour plus d’informations ou pour obtenir le correctif.
 
 ## À propos du programme d’installation du correctif {#about-the-patch-installer}
 
-Le programme d’installation du correctif JEE AEM 6.5 Forms comprend tous les problèmes résolus pour tous les composants JEE d’AEM 6.5 Forms disponibles jusqu’à la publication de ce correctif. Consultez les dernières [Notes de mise à jour du pack de services](release-notes.md) pour obtenir une liste complète des problèmes résolus.
+Le programme d’installation du correctif AEM 6.5 Forms JEE comprend tous les problèmes résolus pour tous les composants d’AEM 6.5 Forms JEE jusqu’à la publication de ce correctif. Consultez les dernières [Notes de mise à jour du pack de services](release-notes.md) pour obtenir une liste complète des problèmes résolus.
 
 ## Prérequis pour installer le correctif {#prerequisites-to-installing-the-patch}
 
@@ -36,15 +50,15 @@ Le programme d’installation du correctif JEE AEM 6.5 Forms comprend tous les 
 1. Dans le répertoire, dont le nom dépend du système d’exploitation que vous utilisez :
 
    * **Windows**
-Accédez au répertoire approprié sur le support ou dossier d’installation de votre disque dur dans lequel le programme d’installation a été copié, puis double-cliquez sur le fichier aemforms65_cfp_install.exe.
+     Accédez au répertoire approprié sur le support ou dossier d’installation de votre disque dur dans lequel le programme d’installation a été copié, puis double-cliquez sur le fichier aemforms65_cfp_install.exe.
 
-      * (Windows 32 bits) `Windows\Disk1\InstData\VM`
-      * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
+     * (Windows 32 bits) `Windows\Disk1\InstData\VM`
+     * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Accédez au répertoire approprié, puis à partir d’une invite de commande, saisissez `./aem65_cfp_install.bin`.
+     Accédez au répertoire approprié, puis à partir d’une invite de commande, saisissez `./aem65_cfp_install.bin`.
 
-      * (Linux®) `Linux/Disk1/InstData/NoVM`
+     * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Vous lancez ainsi un assistant d’installation qui vous guide tout au long de l’installation.
 
@@ -88,7 +102,7 @@ Si l’authentification SAML est configurée et que vous rencontrez des problèm
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Modules touchés {#impacted-modules}
 
@@ -96,4 +110,4 @@ Si l’authentification SAML est configurée et que vous rencontrez des problèm
 * Document Security
 * Foundation JEE
 
-[Contacter le support technique](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support)
+[Contacter le support technique](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support)

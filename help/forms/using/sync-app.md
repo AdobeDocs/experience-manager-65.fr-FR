@@ -10,18 +10,32 @@ exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 92%
-
 ---
-
 # Synchronisation de l’application{#synchronizing-the-app}
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 ## Synchronisation de l’application {#synchronizing-the-app-1}
 
@@ -50,4 +64,4 @@ Sélectionnez le bouton Synchroniser ![sync-app](assets/sync-app.png) dans le co
 * La logique principale de l’envoi de données d’application hors ligne au serveur AEM Forms est incluse dans runtime/offline/util/offline.js.
 * Dans le fichier .js, l’appel à processOfflineSubmittedSavedTasks(...) envoie au serveur les tâches enregistrées/envoyées. Il gère également les erreurs ou les conflits dans le processus de synchronisation. En cas d’échec de l’envoi de la tâche, la tâche est marquée comme en échec dans l’application. En outre, la tâche reste dans votre boîte d’envoi.
 * Les fonctions syncSubmittedTask() et syncSavedTask() effectuent des opérations sur des tâches particulières.
-* L’appel de la fonction processOfflineSubmittedSavedTasks() est lancé par le composant de liste de tâches lorsqu’un utilisateur ou une utilisatrice choisit de synchroniser l’état hors ligne sur le serveur ou une synchronisation automatique par le thread d’arrière-plan.
+* L’appel de la fonction processOfflineSubmittedSavedTasks() est lancé par le composant de liste de tâches lorsqu’un utilisateur ou une utilisatrice choisit de synchroniser l’état hors ligne sur le serveur, ou lors d’une synchronisation automatique par le thread d’arrière-plan.

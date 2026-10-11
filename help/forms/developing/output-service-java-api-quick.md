@@ -9,13 +9,29 @@ role: Developer
 exl-id: dc99dd4d-fce9-4ec5-9b51-661d37a21559
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 100%
-
 ---
-
 # Didacticiel de mise en route de lʼAPI Java du service Output (SOAP) {#output-service-java-api-quick-start-soap}
 
 Le didacticiel de mise en route de lʼAPI Java (SOAP) est disponible pour le service Output.
@@ -26,7 +42,7 @@ Le didacticiel de mise en route de lʼAPI Java (SOAP) est disponible pour le ser
 
 [Démarrage rapide (mode SOAP) : créer un document PDF/A à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : transmission de documents vers le service Output à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[Démarrage rapide (mode SOAP) : transmettre des documents au service Output à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
 [Démarrage rapide (mode SOAP) : transmission de documents situés dans le référentiel AEM Forms au service Output à l’aide de l’API Java.](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
@@ -46,7 +62,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 
 >[!NOTE]
 >
->Les tutoriels de démarrage rapide dans la programmation avec AEM Forms sont basés sur le système d’exploitation Forms Server. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les tutoriels de démarrage rapide dans la programmation avec AEM Forms sont basés sur le système d’exploitation Serveur Formulaires. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Didacticiel de mise en route (mode SOAP) : créer un document PDF à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
 
@@ -669,7 +685,7 @@ L’exemple de code Java suivant crée un document PDF/A nommé *LoanArchive.pdf
  
 ```
 
-## Démarrage rapide (mode SOAP) : transmission de documents vers le service Output à l’aide de l’API Java {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
+## Démarrage rapide (mode SOAP) : transmettre des documents au service Output à l’aide de l’API Java {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
 
 Le démarrage rapide Java suivant récupère le fichier *Loan.xdp* de Content Services. Ce fichier XDP se trouve dans le `space /Company Home/Form Designs`. Le fichier XDP est renvoyé dans une instance `com.adobe.idp.Document`. L’instance `com.adobe.idp.Document` est transmise au service Output. Le formulaire non interactif est enregistré sous la forme d’un fichier PDF nommé *Loan.pdf* sur l’ordinateur client. Étant donné que l’option URI du fichier est définie, le fichier PDF *Loan.pdf* est également enregistré sur le serveur d’applications J2EE hébergeant AEM Forms. (Voir [Transmission de documents situés dans Content Services ES2 au service Output](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)).
 

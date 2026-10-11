@@ -9,25 +9,32 @@ role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '213'
 ht-degree: 4%
-
 ---
-
 # Configuration du stockage {#storage-configuration}
 
-La configuration du stockage est le moyen d’identifier le stockage choisi pour le contenu de la communauté, également appelé contenu généré par l’utilisateur (UGC).
+La configuration de stockage permet d’identifier le stockage choisi pour le contenu de la communauté. Elle est également appelée contenu créé par l’utilisateur.
 
-Ce paramètre informe le code AEM Communities sur l’implémentation du fournisseur de ressources de stockage (SRP) utilisée lors de l’accès au contenu généré par l’utilisateur. Elle doit refléter la topologie définie lors du déploiement de Adobe Experience Manager (AEM).
+Ce paramètre informe le code AEM Communities quant à l’implémentation du fournisseur de ressources de stockage (SRP) utilisée lors de l’accès au contenu créé par l’utilisateur. Elle doit refléter la topologie établie lors du déploiement de Adobe Experience Manager (AEM).
 
-Pour une discussion sur les options de stockage et les topologies de déploiement, consultez :
+Pour plus d’informations sur les options de stockage et les topologies de déploiement, consultez :
 
-* [Community Content Store](working-with-srp.md)
+* [Stockage de contenu de la communauté](working-with-srp.md)
 * [Topologies recommandées](topologies.md)
 
-## Console de configuration de stockage {#storage-configuration-console}
+## Console de configuration du stockage {#storage-configuration-console}
 
 ![jsrp-configuration](assets/jsrp-configuration.png)
 
@@ -38,11 +45,11 @@ Dans l’environnement de création, pour accéder à la console de configuratio
 Pour sélectionner une option de stockage autre que le JCR par défaut :
 
 * Sélectionner une option
-* Configurez les
+* Configurer correctement
 
-   * Voir les détails de la [sélection de MSRP](msrp.md#select-msrp)
-   * Voir les détails de la [sélection de DSRP](dsrp.md#select-dsrp)
-   * Voir les détails de la [sélection de l’ASRP](asrp.md#select-asrp)
+  * Voir les détails pour [sélectionner MSRP](msrp.md#select-msrp)
+  * Voir les détails pour [sélectionner DSRP](dsrp.md#select-dsrp)
+  * Voir les détails pour [sélectionner ASRP](asrp.md#select-asrp)
 
 * Sélectionnez **[!UICONTROL Envoyer]**.
 
@@ -50,10 +57,10 @@ Pour sélectionner une option de stockage autre que le JCR par défaut :
 
 Si aucune sélection n’est effectuée, la valeur par défaut est le référentiel AEM, JCR.
 
-JCR n’est *pas* un magasin commun partagé par les environnements Auteur et Publish. Le contenu de la communauté n’est visible que dans l’environnement de création ou de Publish dans lequel il a été créé.
+JCR n’est *pas* un magasin commun partagé par les environnements de création et de publication. Le contenu de la communauté est visible uniquement à partir de l’environnement de création ou de publication dans lequel il a été créé.
 
-Pour plus d’informations, consultez la [boutique JCR](jsrp.md) .
+Consultez [Magasin JCR](jsrp.md) pour plus d’informations.
 
 >[!NOTE]
 >
->L’absence du noeud `srpc` sous `/etc/socialconfig` indique le [magasin JCR](jsrp.md) par défaut.
+>L’absence du nœud `srpc` sous `/etc/socialconfig` indique le [magasin JCR](jsrp.md) par défaut.

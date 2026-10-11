@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '604'
 ht-degree: 100%
-
 ---
-
 # Utiliser les API pour accéder aux instances de lettre {#apis-to-access-letter-instances}
 
 ## Vue d’ensemble {#overview}
@@ -36,7 +49,7 @@ Correspondence Management expose les API pour récupérer des instances de lett
 >[!NOTE]
 >
 >LetterInstanceService est un service OSGi et son instance peut être récupérée à l’aide de @Reference dans une classe Java™
->ou sling.getService (LetterInstanceService. ) dans JSP.
+>ou sling.getService(LetterInstanceService. Class) dans une page JSP.
 
 ### Utilisation de getAllLetterInstances {#using-nbsp-getallletterinstances}
 
@@ -140,7 +153,7 @@ L’instance de lettre peut être de type Envoyée ou Brouillon. L’ouverture d
 * Dans le cas d’une instance de lettre envoyée, un PDF représentant l’instance de lettre s’ouvre. L’instance de lettre envoyée conservée sur le serveur contient également les données XML et XDP traitées qui peuvent être utilisées à des fins d’exécution et de personnalisation selon les cas d’utilisation, comme la création d’un PDF/A.
 * Dans le cas d’un brouillon d’instance de lettre, l’interface utilisateur de création de correspondance réapparaît exactement comme elle se présentait au moment où le brouillon a été créé.
 
-### Ouverture d’un brouillon d’instance de lettre  {#opening-draft-letter-instance-nbsp}
+### Ouverture d’un brouillon d’instance de lettre  {#opening-draft-letter-instance-nbsp}
 
 L’interface utilisateur CCR prend en charge le paramètre cmLetterInstanceId, qui peut être utilisé pour une lettre rechargée.
 

@@ -1,19 +1,35 @@
 ---
 title: Rapports sur l’utilisation et le partage des ressources
-description: Des rapports sur vos ressources dans  [!DNL Adobe Experience Manager Assets]  vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
+description: Des rapports sur vos ressources dans [!DNL Adobe Experience Manager Assets] qui vous aident à comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 555cb326a4a554d98904cf1a2b27b609ba67c806
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c29e3a96-cd2b-4e21-b382-a8279aa04553
+    internal-label: Asset reports
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 91%
-
+source-wordcount: '1174'
+ht-degree: 90%
 ---
-
 # Rapports de ressources {#asset-reports}
 
 | Version | Lien de l’article |
@@ -21,7 +37,7 @@ ht-degree: 91%
 | AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs et utilisatrices interagissent avec les ressources et les ressources téléchargées et partagées.
+Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs et utilisatrices interagissent avec les ressources et les ressources qui sont téléchargées et partagées.
 
 Utilisez les informations figurant dans les rapports de manière à obtenir des mesures de succès essentielles pour évaluer l’adoption d’[!DNL Assets] au sein de votre entreprise et par les clients.
 
@@ -162,7 +178,7 @@ Pour supprimer les rapports dont vous n’avez plus besoin, configurez le servic
 1. Spécifiez la fréquence (intervalle) pour le service de purge dans le champ `scheduler.expression.name`. Vous pouvez également configurer l’âge et le seuil de quantité des rapports.
 1. Enregistrez les modifications.
 
-## Informations, conseils et limites de dépannage {#best-practices-and-limitations}
+## Informations de dépannage, conseils et limites {#best-practices-and-limitations}
 
 * Si certains rapports ou nombres ne sont pas disponibles, ou pas comme prévu, assurez-vous que le service [!UICONTROL Enregistreur d’événement de gestion des ressources numériques Day CQ] est activé.
 

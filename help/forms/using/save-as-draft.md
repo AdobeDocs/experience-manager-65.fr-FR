@@ -8,18 +8,32 @@ exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '518'
 ht-degree: 97%
-
 ---
-
 # Enregistrer une tâche ou un formulaire en tant que brouillon {#saving-a-task-or-form-as-a-draft}
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 L’option Enregistrer en tant que brouillon enregistre un instantané d’une tâche ou d’un formulaire avec les données renseignées dans le formulaire associé. Vous pouvez également créer un brouillon à partir d’un modèle. Les brouillons sont enregistrés sur l’appareil mobile et synchronisés avec le serveur Adobe Experience Manager Forms pour une récupération ultérieure.
 
@@ -28,7 +42,7 @@ Vous pouvez [mettre à jour le formulaire](/help/forms/using/working-with-form.m
 Pour activer la fonctionnalité Enregistrer en tant que brouillon pour les formulaires enregistrés sur le portail de formulaires, voir [Enregistrer un formulaire HTML5 en tant que brouillon](/help/forms/using/saving-html5-form-draft.md).
 Pour configurer l’envoi des formulaires adaptatifs, voir [Composant Drafts &amp; Submission](/help/forms/using/draft-submission-component.md). (Non valide pour les formulaires synchronisés avec le serveur AEM Forms JEE.)
 
-Pour créer un brouillon, ouvrez le formulaire et sélectionnez **Enregistrer en tant que brouillon**![save-as-draft](assets/save-as-draft.png). Indiquez le nom du brouillon et sélectionnez **Enregistrer**. Le brouillon est enregistré dans le dossier Brouillons et synchronisé avec le serveur. Il est enregistré dans le dossier de boîte d’envoi si l’application est hors ligne.
+Pour créer un brouillon, ouvrez le formulaire et sélectionnez **Enregistrer en tant que brouillon**![save-as-draft](assets/save-as-draft.png). Indiquez le nom du brouillon et sélectionnez **Enregistrer**. Le brouillon est enregistré dans le dossier Brouillons et synchronisé avec le serveur. Il est enregistré dans le dossier Outbox si l’application est hors ligne.
 
 Si vous mettez à jour le formulaire correspondant par la suite, les modifications sont répercutées immédiatement. Lors de la synchronisation de l’application AEM Forms avec le serveur AEM Forms, le brouillon est chargé sur le serveur AEM Forms. En outre, le brouillon est déplacé de la boîte d’envoi vers le dossier Tâches ou Brouillons. Une icône de modification s’affiche en regard de celui-ci.
 
@@ -40,7 +54,7 @@ Le dossier des brouillons répertorie tous les brouillons. Vous pouvez utiliser 
 
 L’option de suppression des brouillons créés à partir d’une tâche n’est pas disponible. Lors de la suppression d’un brouillon créé à partir d’une tâche, la tâche est abandonnée.
 
-Vous pouvez ignorer les brouillons en mode hors ligne et en ligne. Au rejet des brouillons en mode hors ligne, les brouillons sont supprimés du serveur uniquement lorsque la connexion au serveur est rétablie.
+Vous pouvez supprimer les brouillons en mode hors ligne et en ligne. Au rejet des brouillons en mode hors ligne, les brouillons sont supprimés du serveur uniquement lorsque la connexion au serveur est rétablie.
 
 Pour supprimer un brouillon, procédez comme suit :
 

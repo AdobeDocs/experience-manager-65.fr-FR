@@ -8,13 +8,27 @@ exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 100%
-
+source-wordcount: '432'
+ht-degree: 95%
 ---
-
 # Obtention des variables de tâche dans l’URL de résumé {#getting-task-variables-in-summary-url}
 
 La page Résumé affiche des informations liées aux tâches. Cet article explique comment réutiliser les informations relatives aux tâches dans la page de résumé.
@@ -68,7 +82,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
       Les clés de cette carte doivent être les mêmes que celles définies dans votre moteur de rendu HTML à l&#39;étape précédente.
 
-      Ajoutez également une clé **sling:resourceType** avec une valeur **Employees/PtoApplication** dans la carte.
+      Ajoutez également une clé **sling:resourceType** avec la valeur **Employees/PtoApplication** dans le mappage.
 
    1. Utilisez le sous-processus **storeContent** du service **ContentRepositoryConnector** dans le processus **create PTO summary**. Ce sous-processus crée un nœud CRX.
 
@@ -76,7 +90,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
       * **Chemin d’accès au dossier** : le chemin du dossier dans lequel le nouveau nœud CRX est créé. Définissez le chemin comme **/content**.
       * **Nom de nœud** : affectez la variable d’entrée nodeName à ce champ. Il s’agit d’une chaîne de nom de nœud unique.
-      * **Type de nœud :** définissez le type comme **nt:unstructured**. La sortie de ce processus est nodePath. Le nodePath est le chemin CRX du nœud que vous venez de créer. Le ndoePath serait la sortie finale du processus de résumé **create PTO**.
+      * **Type de nœud** : définissez le type comme **nt:unstructured**. La sortie de ce processus est nodePath. Le nodePath est le chemin CRX du nœud que vous venez de créer. Le ndoePath serait la sortie finale du processus de résumé **create PTO**.
 
    1. Transmettez les données du formulaire soumis (**employeeName**, **employeeID**, **ptoReason** et **totalDays**) comme entrée dans le nouveau processus **create PTO summary**. Prenez la sortie comme **ptoSummaryNodePath**.
 

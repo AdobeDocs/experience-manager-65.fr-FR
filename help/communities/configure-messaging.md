@@ -10,13 +10,20 @@ exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 1%
-
 ---
-
 # Fonctionnalité de messagerie {#messaging-feature}
 
 Outre les interactions visibles publiquement qui se produisent dans les forums et les commentaires, la fonction de messagerie d’AEM Communities permet aux membres de la communauté d’interagir les uns avec les autres de manière plus privée.
@@ -63,7 +70,8 @@ Pour modifier la configuration de la liste des messages pour les pages **Boîte 
 1. En mode `Preview`, sélectionnez le lien **Messages** pour ouvrir la page principale de la messagerie. Sélectionnez ensuite **Boîte de réception**, **Éléments envoyés** ou **Corbeille** pour configurer le composant de cette liste de messages.
 
 1. En mode `Edit`, sélectionnez le composant sur la page.
-1. Pour accéder à la boîte de dialogue de configuration, annulez l’héritage en sélectionnant l’icône `link` .Une fois l’héritage annulé, il est possible de sélectionner l’icône de configuration pour ouvrir la boîte de dialogue de configuration.
+1. Pour accéder à la boîte de dialogue de configuration, annulez l’héritage en sélectionnant l’icône `link` .
+Une fois l’héritage annulé, il est possible de sélectionner l’icône de configuration pour ouvrir la boîte de dialogue de configuration.
 
 1. Une fois la configuration terminée, il est nécessaire de restaurer l’héritage en sélectionnant l’icône `broken link` .
 
@@ -136,7 +144,8 @@ Pour modifier la configuration de la page de message de composition, ouvrez le s
 * En mode `Preview`, sélectionnez le lien **Messages** pour ouvrir la page principale de la messagerie. Sélectionnez ensuite le bouton Nouveau message pour ouvrir la page `Compose Message`.
 
 * En mode `Edit`, sélectionnez le composant principal sur la page contenant le corps du message.
-* Pour accéder à la boîte de dialogue de configuration, annulez l’héritage en sélectionnant l’icône `link` .Une fois l’héritage annulé, il est possible de sélectionner l’icône de configuration pour ouvrir la boîte de dialogue de configuration.
+* Pour accéder à la boîte de dialogue de configuration, annulez l’héritage en sélectionnant l’icône `link` .
+Une fois l’héritage annulé, il est possible de sélectionner l’icône de configuration pour ouvrir la boîte de dialogue de configuration.
 
 * Une fois la configuration terminée, il est nécessaire de restaurer l’héritage en sélectionnant l’icône `broken link` .
 

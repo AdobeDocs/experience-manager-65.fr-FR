@@ -10,13 +10,20 @@ exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 1%
-
 ---
-
 # Fonctionnalité de calendrier {#calendar-feature}
 
 ## Présentation {#introduction}
@@ -92,7 +99,7 @@ Sous l’onglet **Paramètres**, indiquez si les balises doivent être appliqué
 
 * **Taille max. du fichier image joint**
 
-  Pertinent uniquement si Autoriser le chargement de fichiers est coché. Nombre maximal d’octets qu’un fichier image chargé peut avoir. La valeur par défaut est **&#x200B; **(2 Mo).
+  Pertinent uniquement si Autoriser le chargement de fichiers est coché. Nombre maximal d’octets qu’un fichier image chargé peut avoir. La valeur par défaut est ** **(2 Mo).
 
 * **Types d’images de couverture autorisés**
 
@@ -164,7 +171,7 @@ Sous l’onglet **Champ de balise**, les balises qui peuvent être appliquées, 
 
 * **Limite de suggestions**
 
-  Saisissez le nombre de balises à afficher en tant que suggestion au membre qui publie sur le forum. La valeur par défaut est **-**&#x200B;1 (aucune limite).
+  Saisissez le nombre de balises à afficher en tant que suggestion au membre qui publie sur le forum. La valeur par défaut est **-**1 (aucune limite).
 
 >[!NOTE]
 >
@@ -222,4 +229,4 @@ Pour la modération des événements et des commentaires du calendrier, voir [Mo
 
 Pour baliser des commentaires et des événements de calendrier, consultez [Balisage de contenu créé par l’utilisateur](/help/communities/tag-ugc.md).
 
-Pour la traduction des événements de calendrier et des commentaires, voir [&#x200B; Traduction de contenu créé par l’utilisateur &#x200B;](/help/communities/translate-ugc.md).
+Pour la traduction des événements de calendrier et des commentaires, voir [ Traduction de contenu créé par l’utilisateur ](/help/communities/translate-ugc.md).

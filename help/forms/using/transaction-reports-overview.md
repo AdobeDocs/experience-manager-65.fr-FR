@@ -8,13 +8,26 @@ feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 100%
-
 ---
-
 # Rapports de transaction pour AEM Forms sur OSGi {#transaction-reports-overview}
 
 <!--
@@ -43,7 +56,7 @@ Les actions telles que l’envoi d’un formulaire de PDF, l’utilisation de l�
 
 Les rapports de transaction sont disponibles uniquement sur AEM Forms dans l’environnement OSGi. Il prend en charge les topologies de création-publication, de création-traitement-publication et de traitement uniquement. Pour plus d’informations sur les topologies, voir [Architecture et topologies de déploiement pour AEM Forms](../../forms/using/transaction-reports-overview.md).
 
-Le nombre de transactions est répliqué par inverse des instances de publication vers les instances de création ou de traitement. Une topologie de création-publication indicative est affichée ci-dessous :
+Le nombre de transactions est répliqué en sens inverse des instances de publication vers les instances de création ou de traitement. Une topologie de création-publication indicative est affichée ci-dessous :
 
 ![simple-author-publish-topology](assets/simple-author-publish-topology.png)
 

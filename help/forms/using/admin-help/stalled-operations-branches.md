@@ -9,20 +9,34 @@ exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 100%
-
 ---
-
 # Travailler avec des opérations et des branches bloquées {#working-with-stalled-operations-and-branches}
 
 >[!NOTE]
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-La page Opérations bloquées et la page Branches bloquées affichent les processus qui sont bloqués. Un processus peut bloquer lorsqu’une erreur se produit pendant ou après l’exécution d’une opération ou en raison d’une opération de blocage délibérée dans le processus :
+La page Opérations bloquées et la page Branches bloquées affichent les processus qui sont bloqués. Un processus peut se bloquer lorsqu’une erreur se produit pendant ou après l’exécution d’une opération ou en raison d’une opération de blocage délibérée dans le processus :
 
 * Les opérations peuvent se bloquer en raison d’une erreur imprévue. Cependant, une opération de blocage de branche dans un processus empêche délibérément un processus de s’exécuter davantage et requiert l’intervention de l’administrateur ou de l’administratrice.
 * Les branches peuvent bloquer entre les opérations lors de l’évaluation d’une règle.
@@ -46,7 +60,7 @@ Pour chaque élément bloqué, la liste affiche les informations suivantes :
 Vous pouvez effectuer les tâches suivantes sur la page Opérations bloquées ou Branches bloquées :
 
 * Sélectionnez une erreur pour en afficher les détails. Lorsque vous sélectionnez une erreur, la page Détails de l’erreur s’affiche.
-* Arrêtez ou essayez de relancer des opérations bloquées ou essayez de relancer des branches bloquées.
+* Arrêter ou relancer des opérations bloquées, ou relancer des branches bloquées.
 
 ## Arrêt ou nouvelle tentative d’opérations ou de branches bloquées {#terminating-or-retrying-stalled-operations-or-branches}
 
@@ -78,7 +92,7 @@ Depuis la page Détails d’erreur, vous pouvez également arrêter ou essayer d
 
 ## Le processus n’est pas bloqué lorsque l’utilisateur ou l’utilisatrice de réaffectation n’existe pas. {#process-does-not-stall-when-escalation-user-does-not-exist}
 
-Les erreurs se produisent lorsque l’opération Attribuer une tâche du service User d’AEM forms est configurée pour transmettre la tâche à un autre utilisateur ou utilisatrice après une période déterminée, et lorsque la personne destinataire de la transmission est supprimé après l’exécution de l’opération Attribuer une tâche, mais avant que la transmission n’ait lieu.
+Les erreurs se produisent lorsque l’opération Attribuer une tâche du service User d’AEM Forms est configurée pour réaffecter la tâche à un autre utilisateur ou utilisatrice après une période déterminée, et lorsque la personne destinataire de la réaffectation est supprimée après l’exécution de l’opération Attribuer une tâche, mais avant que la réaffectation n’ait lieu.
 
 Lorsque cette situation se produit, l’état du processus et de la tâche ne change pas au moment configuré de la réaffectation, et celle-ci ne se produit pas, mais le processus ne se bloque pas. Le message suivant s’affiche dans le journal du serveur :
 

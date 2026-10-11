@@ -1,19 +1,35 @@
 ---
 title: Digital Rights Management des ressources
-description: Découvrez comment gérer les informations d’expiration et de statut de ressources sous licence dans  [!DNL Experience Manager].
+description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans [!DNL Experience Manager].
 contentOwner: AG
 role: User, Admin
 feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: bbc7b67e-ac49-47fe-8657-97e42c72f200
+    internal-label: Digital rights management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 100%
-
+ht-degree: 99%
 ---
-
 # Digital Rights Management des ressources {#digital-rights-management-in-assets}
 
 | Version | Lien de l’article |
@@ -43,7 +59,7 @@ Vous pouvez consulter le statut d’expiration d’une ressource dans la [!UICON
 
 Vous pouvez également afficher le statut d’expiration des ressources dans le rail **[!UICONTROL Références]**. Il gère les états d’expiration des ressources et les relations entre les ressources composites et les sous-ressources, les collections et les projets référencés.
 
-1. Accédez à la ressource pour laquelle vous souhaitez voir les pages web de référencement et les ressources composites.
+1. Accédez à la ressource pour laquelle vous souhaitez voir les pages web qui la référencent et les ressources composites.
 1. Sélectionnez la ressource et ouvrez les **[!UICONTROL Références]** dans le rail de gauche. Pour les ressources arrivées à expiration, le rail [!UICONTROL Références] affiche le statut d’expiration **[!UICONTROL La ressource est arrivée à expiration]** en haut.
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
@@ -69,7 +85,7 @@ Quand vous choisissez l’option **[!UICONTROL Expiré]**, la console [!DNL Asse
 
 Si vous modifiez la date d’expiration d’une ressource publiée à une date antérieure au cycle du planificateur en cours, la planification détecte toujours cette ressource en tant que ressource expirée lors de sa prochaine exécution et elle reflète donc son statut.
 
-En outre, si un problème ou une erreur empêche le planificateur de détecter les ressources parvenues à expiration dans le cycle en cours, le planificateur réexamine ces ressources lors du cycle suivant et identifie leur état d’expiration.
+En outre, si un problème ou une erreur empêche le planificateur de détecter les ressources parvenues à expiration dans le cycle en cours, le planificateur réexamine ces ressources lors du cycle suivant et les détecte comme expirées.
 
 Pour que la console [!DNL Assets] affiche les ressources composites référencées avec les sous-ressources expirées, configurez un workflow de **[!UICONTROL notification d’expiration d’Adobe CQ DAM]** dans Configuration Manager.[!DNL Experience Manager]
 
@@ -89,7 +105,7 @@ Pour que la console [!DNL Assets] affiche les ressources composites référencé
 
 ## États d’un élément {#asset-states}
 
-La console [!DNL Assets] peut afficher différents états des ressources. En fonction de l’état actuel d’une ressource donnée, le mode Carte affiche un libellé décrivant son état (par exemple, expiré, modifié, approuvé, rejeté, etc.).
+La console [!DNL Assets] peut afficher différents états des ressources. En fonction de l’état actuel d’une ressource donnée, le mode Carte affiche un libellé décrivant son état (par exemple, expiré, publié, approuvé, rejeté, etc.).
 
 1. Dans l’interface utilisateur [!DNL Assets], sélectionnez une ressource.
 1. Cliquez sur **[!UICONTROL Publier]** dans la barre d’outils. Si vous ne voyez pas l’option **Publier** dans la barre d’outils, cliquez sur **[!UICONTROL Plus]** dans la barre d’outils et recherchez l’option **[!UICONTROL Publier]** ![option Publier](assets/do-not-localize/publish-globe.png).
@@ -131,7 +147,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Vous pouvez également rechercher des éléments en fonction de plusieurs statuts, sous diverses facettes de recherche. Par exemple, vous pouvez rechercher des ressources publiées qui ont été approuvées dans une tâche de révision et qui n’ont pas encore expiré en sélectionnant les options appropriées dans les facettes de recherche.
+1. Vous pouvez également rechercher des ressources en fonction de plusieurs statuts, sous diverses facettes de recherche. Par exemple, vous pouvez rechercher des ressources publiées qui ont été approuvées dans une tâche de révision et qui n’ont pas encore expiré en sélectionnant les options appropriées dans les facettes de recherche.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 

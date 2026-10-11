@@ -10,13 +10,25 @@ feature: Brand Portal
 role: User
 exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: e00c7c12-7035-41fe-ad76-1ec82c8c3f01
+    internal-label: Brand Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '568'
 ht-degree: 100%
-
 ---
-
 # Publication de dossiers sur Brand Portal{#publish-folders-to-brand-portal}
 
 En tant qu’administrateur d’Adobe Experience Manager (AEM) Assets, vous pouvez publier des ressources et des dossiers sur l’instance AEM Assets Brand Portal (ou planifier le workflow de publication à une date/heure ultérieure) pour votre organisation. Cependant, vous devez d’abord intégrer AEM Assets à Brand Portal. Pour plus de détails, consultez [Configuration d’AEM Assets avec Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
@@ -63,11 +75,11 @@ Si vous apportez des modifications ultérieures à la ressource ou au dossier d�
 
 ## Dépublication de dossiers sur Brand Portal {#unpublish-folders-from-brand-portal}
 
-Vous pouvez supprimer n’importe quel dossier de ressources publié sur Brand Portal en la dépubliant à partir de l’instance d’auteur AEM. Une fois que vous avez dépublié le dossier d’origine, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
+Vous pouvez supprimer n’importe quel dossier de ressources publié sur Brand Portal en le dépubliant à partir de l’instance de création AEM. Une fois que vous avez dépublié le dossier d’origine, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
 
 Vous avez la possibilité d’annuler rapidement la publication de dossiers à partir de Brand Portal ou de la planifier pour une date et une heure ultérieures. Pour dépublier des dossiers de ressources de Brand Portal :
 
-1. Depuis l’interface d’AEM Assets de l’instance d’auteur AEM, sélectionnez le dossier que vous souhaitez dépublier.
+1. Depuis l’interface d’AEM Assets de l’instance de création AEM, sélectionnez le dossier que vous souhaitez dépublier.
 
    ![publish2bp-1](assets/publish2bp.png)
 

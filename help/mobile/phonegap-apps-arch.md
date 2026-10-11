@@ -8,13 +8,17 @@ exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2693'
 ht-degree: 0%
-
 ---
-
 # L’anatomie d’une application{#the-anatomy-of-an-app}
 
 {{ue-over-mobile}}
@@ -191,7 +195,7 @@ Notez le GUID « 24BA22ED-7D06-4330-B7EB-F6FC73251CA3 » dans le chemin .
 
 En tant que développeur PhoneGap, le contenu qui vous intéresse se trouve sous le répertoire www. Pour accéder aux ressources de l’application, utilisez des chemins d’accès relatifs.
 
-Pour aggraver le problème, votre application PhoneGap utilise le modèle d’application monopage (SPA) afin que l’URI de base (à l’exclusion du hachage) ne change jamais. Par conséquent, chaque ressource, modèle ou script que vous référencez **doit être relatif à votre page de niveau supérieur. &#x200B;** La page de niveau supérieur initialise le routage et les contrôleurs Angular grâce à `*<name>*.angular-app-module.js` et `*<name>*.angular-app-controllers.js`. Cette page doit être la page la plus proche de la racine du référentiel qui n’étend pas :redirect sling.
+Pour aggraver le problème, votre application PhoneGap utilise le modèle d’application monopage (SPA) afin que l’URI de base (à l’exclusion du hachage) ne change jamais. Par conséquent, chaque ressource, modèle ou script que vous référencez **doit être relatif à votre page de niveau supérieur. **La page de niveau supérieur initialise le routage et les contrôleurs Angular grâce à `*<name>*.angular-app-module.js` et `*<name>*.angular-app-controllers.js`. Cette page doit être la page la plus proche de la racine du référentiel qui n’étend pas :redirect sling.
 
 Plusieurs méthodes d’assistance sont disponibles pour gérer les chemins relatifs :
 
@@ -416,4 +420,4 @@ Cependant, si cette payload est une mise à jour partielle, `package-update.json
 
 ### Les étapes suivantes {#the-next-steps}
 
-Une fois que vous avez découvert l’anatomie d’une application, reportez-vous à la section [&#x200B; Applications d’une seule page &#x200B;](/help/mobile/phonegap-single-page-applications.md).
+Une fois que vous avez découvert l’anatomie d’une application, reportez-vous à la section [ Applications d’une seule page ](/help/mobile/phonegap-single-page-applications.md).

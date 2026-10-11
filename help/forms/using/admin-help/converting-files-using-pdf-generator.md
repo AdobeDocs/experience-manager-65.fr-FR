@@ -9,13 +9,24 @@ feature: PDF Generator
 exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 100%
-
 ---
-
 # Conversion de fichiers à l’aide de PDF Generator{#converting-files-using-pdf-generator}
 
 >[!NOTE]
@@ -109,7 +120,7 @@ Si le fichier ZIP contient plusieurs fichiers HTML au niveau le plus bas de sa h
 
 Vous pouvez exporter des fichiers PDF vers différents formats de fichier, comme décrit dans le chapitre Service Generate PDF de [Référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
-1. Dans la console d’administration, cliquez sur Services > PDF Generator > Exporter le PDF.
+1. Dans la console d’administration, cliquez sur Services > PDF Generator > Export PDF.
 1. Cliquez sur Parcourir pour localiser le fichier PDF à exporter.
 1. Dans la liste Exporter le fichier PDF, sélectionnez le format vers lequel exporter le fichier PDF.
 1. Dans la zone Définir un délai d’expiration, saisissez le délai d’attente avant que l’application n’expire. La valeur par défaut est de 270 secondes.

@@ -6,7 +6,21 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1584'
 ht-degree: 99%
@@ -52,7 +66,7 @@ Ce script de commande permet d’effectuer les opérations suivantes :
 
    >[!CAUTION]
    >
-   >Si [!DNL InDesign Server] n’est pas installé ou configuré, vous pouvez tout de même charger un fichier INDD dans [!DNL Experience Manager]. Cependant, les versions générées se limitent aux formats PNG et JPEG. Il n’est pas possible de générer de rendus HTML, `.idml` ou de pages.
+   >Si [!DNL InDesign Server] n’est pas installé ou configuré, vous pouvez tout de même charger un fichier INDD dans [!DNL Experience Manager]. Cependant, les rendus générés se limitent aux formats PNG et JPEG. Il n’est pas possible de générer de rendus HTML, `.idml` ou de pages.
 
 1. Après l’extraction et la génération du rendu :
 
@@ -101,7 +115,7 @@ Après la configuration, le chargement de fichiers [!DNL InDesign] dans [!DNL Ex
 
 #### Extraction de médias {#media-extraction}
 
-Cette étape commande l’extraction de médias à partir du fichier INDD.
+Cette étape contrôle l’extraction de médias à partir du fichier INDD.
 
 Pour personnaliser, modifiez l’onglet **[!UICONTROL Arguments]** de l’étape **[!UICONTROL Extraction de médias]**.
 
@@ -204,13 +218,13 @@ Pour configurer le nombre de traitements IDS parallèles :
 
    >[!NOTE]
    >
-   >Lors de l’utilisation d’un pool d’agents IDS, il est possible d’activer une liste de blocage.
+   >Lors de l’utilisation d’un pool d’agents IDS, il est possible d’activer une liste de blocage des agents IDS.
    >
    >Pour ce faire, cochez la case **[!UICONTROL enable.retry.name]** sous la configuration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, ce qui déclenche de nouvelles tentatives pour les tâches IDS.
    >
    >En outre, sous la configuration `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, définissez une valeur positive pour le paramètre `max.errors.to.blacklist`, qui détermine le nombre de tentatives pour une tâche avant qu’un IDS ne soit exclu de la liste des gestionnaires de tâches.
    >
-   >Par défaut, le traitement IDS est revalidé après une durée en minutes configurable (`retry.interval.to.whitelist.name`). Si le programme de traitement est en ligne, il est retiré de la liste bloquée.
+   >Par défaut, le traitement IDS est revalidé après une durée en minutes configurable (`retry.interval.to.whitelist.name`). Si l’agent est trouvé en ligne, il est retiré de la liste bloquée.
 
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.

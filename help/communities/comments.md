@@ -10,7 +10,16 @@ exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 2%
@@ -176,7 +185,7 @@ Sous l’onglet **Types de ressources**, spécifiez le type de ressource personn
 
 * **Commenter le type de ressource système**
 
-  Accédez au type de ressource d’un composant `comments`système de commentaires) étendu dans /apps. Laissez ce champ vide, sauf si le modèle de page [inclut dynamiquement](/help/communities/scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (nœud comments). En savoir plus en consultant la section sur l’assistant [&#128279;](/help/communities/handlebars-helpers.md#include).`{{include}}`
+  Accédez au type de ressource d’un composant `comments`système de commentaires) étendu dans /apps. Laissez ce champ vide, sauf si le modèle de page [inclut dynamiquement](/help/communities/scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (nœud comments). En savoir plus en consultant la section sur l’assistant ](/help/communities/handlebars-helpers.md#include).[`{{include}}`
 
 ### Expérience du visiteur du site {#site-visitor-experience}
 
@@ -203,4 +212,4 @@ Vous trouverez plus d’informations à ce sujet sur la page [Comments Essential
 
 Pour la modération des commentaires publiés, voir [Modération du contenu créé par l’utilisateur](/help/communities/moderate-ugc.md).
 
-Pour la traduction des commentaires publiés, voir [&#x200B; Traduction de contenu créé par l’utilisateur &#x200B;](/help/communities/translate-ugc.md).
+Pour la traduction des commentaires publiés, voir [ Traduction de contenu créé par l’utilisateur ](/help/communities/translate-ugc.md).

@@ -1,5 +1,5 @@
 ---
-title: Ajout d’un suivi Adobe Analytics aux composants
+title: Ajouter un suivi Adobe Analytics aux composants
 description: Découvrez comment ajouter le suivi Adobe Analytics aux composants dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,13 +9,22 @@ exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1279'
 ht-degree: 97%
-
 ---
-
 # Ajout d’un suivi Adobe Analytics aux composants{#adding-adobe-analytics-tracking-to-components}
 
 ## Inclusion du module Adobe Analytics dans un composant de page {#including-the-adobe-analytics-module-in-a-page-component}
@@ -111,7 +120,7 @@ $CQ(function(){
 </div>
 ```
 
-Ce code est inclus pour tous les exemples de sites AEM tels que les Geometrixx Outdoors.
+Ce code est inclus dans tous les exemples de sites AEM tels que Geometrixx Outdoors.
 
 ### Événement sitecatalystAfterCollect {#the-sitecatalystaftercollect-event}
 
@@ -121,7 +130,7 @@ Le script `cloudservices` déclenche l’événement `sitecatalystAfterCollect`�
 $CQ(document).trigger("sitecatalystAfterCollect");
 ```
 
-Cet événement est déclenché pour indiquer que le tracking des pages est terminé. Si vous effectuez d’autres opérations de tracking sur cette page, vous devez considérer cet événement au lieu de l’événement document chargé ou document prêt. L’utilisation de l’événement `sitecatalystAfterCollect` permet d’éviter les collisions ou tout autre comportement imprévisible.
+Cet événement est déclenché pour indiquer que le suivi des pages est terminé. Si vous effectuez d’autres opérations de tracking sur cette page, vous devez considérer cet événement au lieu de l’événement document chargé ou document prêt. L’utilisation de l’événement `sitecatalystAfterCollect` permet d’éviter les collisions ou tout autre comportement imprévisible.
 
 >[!NOTE]
 >
@@ -129,9 +138,9 @@ Cet événement est déclenché pour indiquer que le tracking des pages est term
 
 ## Mise en œuvre du suivi Adobe Analytics pour les composants personnalisés {#implementing-adobe-analytics-tracking-for-custom-components}
 
-Activez vos composants AEM pour interagir avec le framework Adobe Analytics. Ensuite, configurez votre framework de sorte que Adobe Analytics suive les données de composant.
+Activez vos composants AEM pour interagir avec le framework Adobe Analytics. Ensuite, configurez votre framework de sorte que Adobe Analytics suive les données des composants.
 
-Les composants qui interagissent avec le framework Adobe Analytics apparaissent dans le sidekick latéral lorsque vous modifiez un framework. Faites glisser le composant vers le framework pour faire apparaître les propriétés du composant. Vous pouvez ensuite les mapper avec des propriétés Adobe Analytics. (Voir [Configuration d’un framework pour le suivi de base](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
+Les composants qui interagissent avec le framework Adobe Analytics apparaissent dans Sidekick lorsque vous modifiez un framework. Après avoir fait glisser le composant vers le framework, les propriétés du composant apparaissent et vous pouvez ensuite les mapper avec des propriétés Adobe Analytics. (Voir [Configuration d’un framework pour le suivi de base](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
 
 Les composants peuvent interagir avec le framework Adobe Analytics lorsqu’ils sont dotés d’un nœud enfant appelé `analytics`. Le nœud `analytics` possède les propriétés suivantes :
 
@@ -142,14 +151,14 @@ Les composants peuvent interagir avec le framework Adobe Analytics lorsqu’ils
 
 Le code dans le composant JSP ajoute le code JavaScript à la page pour déclencher le tracking et définir les données qui font l’objet d’un suivi. Le nom de l’événement et les noms des données utilisés dans le code JavaScript doivent être identiques aux valeurs correspondantes des propriétés de nœud `analytics`.
 
-* Utilisez l’attribut data-tracking pour suivre les données d’événement lors du chargement d’une page. (Voir [Tracking des événements personnalisés lors du chargement d’une page](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
-* Utilisez la fonction CQ_Analytics.record pour suivre les données d’événement lorsque les utilisateurs interagissent avec les fonctions de page. (Voir [Tracking des événements personnalisés après le chargement d’une page](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
+* Utilisez l’attribut data-tracking pour suivre les données d’évènement lors du chargement d’une page. (Voir [Tracking des événements personnalisés lors du chargement d’une page](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
+* Utilisez la fonction CQ_Analytics.record pour suivre les données d’évènement lorsque les utilisateurs et utilisatrices interagissent avec les fonctions de page. (Voir [Tracking des événements personnalisés après le chargement d’une page](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
 
-Lorsque vous utilisez ces méthodes de suivi des données, le module d’intégration de Adobe Analytics effectue automatiquement les appels auprès de Adobe Analytics pour enregistrer les événements et les données.
+Lorsque vous utilisez ces méthodes de suivi des données, le module d’intégration d’Adobe Analytics effectue automatiquement les appels à Adobe Analytics pour enregistrer les événements et les données.
 
 ### Exemple : suivi des clics de topnav {#example-tracking-topnav-clicks}
 
-Étendez le composant topnav de base afin que Adobe Analytics suive les clics sur les liens de navigation en haut de la page. Lorsqu’un lien de navigation fait l’objet d’un clic, Adobe Analytics enregistre le lien sur lequel l’utilisateur a cliqué, ainsi que la page sur laquelle il a cliqué.
+Étendez le composant topnav de base afin qu’Adobe Analytics suive les clics sur les liens de navigation en haut de la page. Lorsqu’un lien de navigation fait l’objet d’un clic, Adobe Analytics enregistre le lien sur lequel l’utilisateur a cliqué, ainsi que la page sur laquelle il a cliqué.
 
 Pour ces procédures, il est nécessaire d’avoir déjà effectué les tâches suivantes :
 
@@ -296,7 +305,7 @@ Le contenu du fichier `topnav.jsp` devrait se présenter comme suit :
 
 Ajoutez au sidekick des composants permettant le suivi en utilisant Adobe Analytics afin de pouvoir les inclure dans votre framework.
 
-1. Ouvrez votre framework Adobe Analytics à partir de votre configuration Adobe Analytics. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
+1. Ouvrez votre framework Adobe Analytics à partir de votre configuration Adobe Analytics. ([](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
 1. Sur Sidekick, cliquez sur le bouton Conception.
 
    ![Bouton Conception avec un carré en angle droit.](assets/chlimage_1a.png)
@@ -323,7 +332,7 @@ Les composants peuvent générer des données pour la variable s.products qui so
 * Enregistrez une valeur nommée `product` avec une structure spécifique.
 * Affichez les membres de données de la valeur `product` de façon à ce qu’ils puissent être mappés aux variables Adobe Analytics dans le framework Adobe Analytics.
 
-La variable s.products de Adobe Analytics utilise la syntaxe suivante :
+La variable s.products d’Adobe Analytics utilise la syntaxe suivante :
 
 ```
 s.products="category;product;quantity;price;eventY={value}|eventZ={value};evarA={value}|evarB={value}"

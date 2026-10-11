@@ -9,20 +9,36 @@ exl-id: a054b60a-5e89-4c98-87bc-35669988d160
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '788'
 ht-degree: 100%
-
 ---
-
 # Conseils de dépannage pour l’espace de travail AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 Cet article explique comment déboguer l’espace de travail AEM Forms en activant la journalisation et en utilisant le débogueur dans un navigateur. Il décrit également certains problèmes courants que vous pouvez rencontrer lors de l’utilisation de l’espace de travail AEM Forms et leurs solutions.
 
 ## Impossible d’installer le package de l’espace de travail AEM Forms {#unable-to-install-aem-forms-workspace-package}
 
-Une fois que vous avez installé le correctif, ouvrez l’espace de travail AEM Forms. Si vous rencontrez l’erreur « Aucune ressource trouvée », ouvrez le gestionnaire de packages CRX, puis réinstallez le package `adobe-lc-workspace-pkg-<version>.zip`.
+Une fois que vous avez installé le correctif, ouvrez l’espace de travail AEM Forms. Si vous rencontrez l’erreur « Aucune ressource trouvée », ouvrez le gestionnaire de modules CRX, puis réinstallez le package `adobe-lc-workspace-pkg-<version>.zip`.
 
 Lors de l’installation du package, si vous rencontrez une erreur `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, procédez comme suit :
 
@@ -31,13 +47,13 @@ Lors de l’installation du package, si vous rencontrez une erreur `javax.jcr.no
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Accédez au gestionnaire de packages. L’URL par défaut est `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
+1. Accédez au gestionnaire de modules. L’URL par défaut est `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Recherchez et installez le package `adobe-lc-workspace-pkg-[version].zip`.
 1. Redémarrez le serveur d’applications.
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Journalisation de l’espace de travail AEM Forms {#aem-forms-workspace-nbsp-logging}
 

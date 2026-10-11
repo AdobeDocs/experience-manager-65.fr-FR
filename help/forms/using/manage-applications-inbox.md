@@ -9,7 +9,25 @@ exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 100%
@@ -40,7 +58,7 @@ Lorsqu’une workflow de Forms se déclenche et que vous êtes une personne dés
 
 ### Demande ou délégation de tâches {#claim-or-delegate-tasks}
 
-Les tâches affectées à un groupe apparaissent dans la boîte de réception de toutes les personnes membres du groupe. Toute personne membre du groupe peut demander la tâche ou la déléguer à une autre personne membre du groupe. Pour ce faire :
+Les tâches affectées à un groupe apparaissent dans la boîte de réception de toutes les personnes membres du groupe. Toute personne membre du groupe peut s’attribuer cette tâche ou la déléguer à une autre personne membre du groupe. Pour ce faire :
 
 1. Sélectionnez la miniature de la tâche. Les options d’ouverture ou de délégation de la tâche s’affichent en haut.
 
@@ -69,7 +87,7 @@ Lorsque vous ouvrez une tâche, vous pouvez afficher les détails de celle-ci et
 
 ![détails de la tâche](assets/task-details.png)
 
-La vue détaillée de tâche comprend les sections suivantes :
+La vue détaillée de la tâche comprend les sections suivantes :
 
 * Détails de la tâche
 * Formulaire
@@ -82,11 +100,11 @@ La section Détails de la tâche affiche des informations sur la tâche. Les inf
 
 #### Formulaire {#form}
 
-L’onglet Formulaire dans la zone de contenu principale affiche le formulaire envoyé et les pièces jointes du champ, le cas échéant.
+L’onglet Formulaire dans la zone de contenu principale affiche le formulaire envoyé et les pièces jointes au niveau du champ, le cas échéant.
 
 #### Détails du processus {#workflow-details}
 
-L’onglet Détails du workflow en haut affiche la progression de la tâche via différentes étapes du worflow. Il affiche les étapes terminées, en cours et en attente pour la tâche. Les étapes d’un processus sont définies à [l’étape Affecter une tâche](/help/sites-developing/workflows-step-ref.md) du processus associé.
+L’onglet Détails du workflow en haut affiche la progression de la tâche via différentes étapes du workflow. Il affiche les étapes terminées, en cours et en attente pour la tâche. Les étapes d’un processus sont définies à [l’étape Affecter une tâche](/help/sites-developing/workflows-step-ref.md) du processus associé.
 
 En outre, l’onglet affiche l’historique de la tâche pour chaque étape terminée dans le workflow. Vous pouvez sélectionner **[!UICONTROL Afficher les détails]** d’une étape terminée afin d’en connaître les détails. Cette action permet d’afficher les détails de la tâche : les commentaires, les pièces jointes de formulaire et de tâches, le statut, les dates de début et de fin, etc.
 

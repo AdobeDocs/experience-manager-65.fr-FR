@@ -11,13 +11,27 @@ feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8e79b3c-92b5-4c4d-a46c-5f16d63a14dc
+    internal-label: Viewer presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4530'
-ht-degree: 94%
-
+source-wordcount: '4651'
+ht-degree: 96%
 ---
-
 # Gestion des paramètres prédéfinis de visionneuse{#managing-viewer-presets}
 
 Un paramètre prédéfini de visionneuse est un ensemble de paramètres qui déterminent la manière dont les utilisateurs voient les ressources multimédias enrichies sur leurs écrans d’ordinateur et appareils mobiles. Si vous êtes administrateur, vous pouvez créer des paramètres prédéfinis de visionneuse. Les paramètres sont disponibles pour un tableau d’options de configuration de la visionneuse. Vous pouvez, par exemple, modifier la taille d’affichage de la visionneuse ou le comportement du zoom.
@@ -60,7 +74,7 @@ Consultez la section [Bibliothèque d’images réactive](https://experienceleag
 >[!NOTE]
 >
 >Publiez toutes les visionneuses prêtes à l’emploi avant de les utiliser pour la première fois.
->Voir [Publication de paramètres prédéfinis de visionneuse].(#publishing-viewer-presets)
+>Voir [Publication de paramètres de visionneuse prédéfinis].(#publishing-viewer-presets)
 
 ### Compatibilité du système de paramètres prédéfinis de visionneuse {#viewer-preset-system-compatibility}
 
@@ -71,7 +85,7 @@ Tous les paramètres prédéfinis de visionneuse prêts à l’emploi fournis av
 * Apple iPad
 * Smartphone Android™
 * Tablette Android™
-* Pour la vidéo, la capacité de lecture MP4 supplémentaire est fournie pour [BlackBerry® &#x200B;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) et [Windows Phone](https://learn.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs).
+* Pour la vidéo, la capacité de lecture MP4 supplémentaire est fournie pour [BlackBerry® ](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) et [Windows Phone](https://learn.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Types de médias riches pour les paramètres prédéfinis de visionneuse {#rich-media-types-for-viewer-presets}
 
@@ -162,10 +176,10 @@ Voir « Notes de mise à jour sur les visionneuses » dans la table des matiè
 
 >[!NOTE]
 >
->Tous les paramètres prédéfinis de visionneuse prêts à l’emploi de Dynamic Media sont déjà activés, mais vous devez les publier.
->Voir [&#x200B; Publication de paramètres prédéfinis de visionneuse](#publishing-viewer-presets).
+>Tous les paramètres prédéfinis de visionneuse prêts à l’emploi de Dynamic Media sont déjà activés mais vous devez les publier.
+>Voir [Publication de paramètres de visionneuse prédéfinis](#publishing-viewer-presets).
 >
->Tout nouveau paramètre prédéfini de visionneuse que vous créez et ajoutez doit être activé *et* publié.
+>Tous les nouveaux paramètres prédéfinis de visionneuse que vous créez et ajoutez doivent être activés *et* publiés.
 >Voir [Activation ou désactivation des paramètres prédéfinis de visionneuse](#activating-or-deactivating-viewer-presets) et [Publication de paramètres prédéfinis de visionneuse](#publishing-viewer-presets).
 
 <table>
@@ -458,15 +472,15 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
    >Pour une illustration de bouton, sélectionnez l’image x2 puis chargez l’illustration haute résolution. Lorsque vous travaillez avec des images interactives et des bannières favorisant les achats, vous pouvez également choisir parmi divers boutons de zone réactive prêts à l’emploi.
 
 1. (Facultatif) Près de la partie supérieure de la page Modification des paramètres de visionneuse prédéfinis, sélectionnez **[!UICONTROL Ordinateur de bureau]**, **[!UICONTROL Tablette]** ou **[!UICONTROL Téléphone]** pour définir de manière unique les styles visuels pour différents types d’appareils et d’écrans.
-1. Sur la page Éditeur de paramètres prédéfinis de la visionneuse, sélectionnez l’onglet **[!UICONTROL Comportement]**. Vous pouvez également sélectionner n’importe quel élément visuel de la visionneuse afin de le configurer.
-Par exemple, pour le type *VideoPlayer*, sous **[!UICONTROL Modificateurs]** > **[!UICONTROL Lecture]**, vous pouvez effectuer une sélection parmi trois options de diffusion en continu à débit adaptatif :
+1. Sur la page Éditeur de paramètres prédéfinis de la visionneuse, sélectionnez l’onglet **[!UICONTROL Comportement]**. Vous pouvez également sélectionner n’importe quel élément visuel de la visionneuse afin de le sélectionner pour le configurer.
+Par exemple, pour le type *VideoPlayer*, sous **[!UICONTROL Modificateurs]** > **[!UICONTROL Lecture]**, vous pouvez effectuer une sélection parmi trois options de diffusion en continu à débit adaptatif :
 
    * **[!UICONTROL dash]** - Diffusion de vidéos en tant que dash uniquement. Toutefois, sur les périphériques Safari/iOS, vous devez sélectionner le type **[!UICONTROL hls]** à la place.
    * **[!UICONTROL hls]** - Diffusion de vidéos en tant que hsl uniquement.
    * **[!UICONTROL auto]** - Bonne pratique. La création des flux DASH et HLS est optimisée pour le stockage. Par conséquent, Adobe vous recommande de toujours sélectionner **[!UICONTROL auto]** comme type de lecture. Les vidéos sont diffusées en continu en tant que DASH, HLS ou progressives, comme dans l’ordre de lecture suivant :
-      * Si le navigateur prend en charge DASH, la diffusion en continu DASH est utilisée en premier lieu.
-      * Si le navigateur ne prend pas en charge DASH, la diffusion HLS en continu est utilisée, ensuite.
-      * Si le navigateur ne prend en charge ni DASH ni HLS, la lecture progressive est utilisée en dernier lieu.
+     * Si le navigateur prend en charge DASH, la diffusion en continu DASH est utilisée en premier lieu.
+     * Si le navigateur ne prend pas en charge DASH, la diffusion HLS en continu est utilisée, ensuite.
+     * Si le navigateur ne prend en charge ni DASH ni HLS, la lecture progressive est utilisée en dernier lieu.
 
 1. Dans le menu déroulant **[!UICONTROL Type sélectionné]**, sélectionnez un composant dont vous souhaitez modifier le comportement.
 
@@ -536,13 +550,13 @@ Le sous-segment vidéo 3 ne s’étend pas au-delà des miniatures qui lui sont
 La logique de la visionneuse derrière le nombre de miniatures affichées dans le panneau en fonction du nombre de positions disponibles est la suivante :
 
 * Nombre de sous-segments = arrondi au sous-segment supérieur (nombre de miniatures/nombre d’emplacements visibles dans le panneau des miniatures, en fonction de la taille de la fenêtre du navigateur).
-En reprenant l’exemple du tableau ci-dessus, 9 miniatures/4 emplacements = 2,25 ; la logique de la visionneuse arrondit à trois sous-segments.
+En reprenant l’exemple du tableau ci-dessus, 9 miniatures/4 emplacements = 2,25 ; la logique de la visionneuse arrondit donc à trois sous-segments.
 
 * Nombre de miniatures = arrondi à la miniature supérieure (nombre de miniatures/nombre de sous-segments vidéo).
-En reprenant l’exemple du tableau ci-dessus, 9 miniatures/3 sous-segments vidéo = 3 miniatures.
+En reprenant l’exemple du tableau ci-dessus, 9 miniatures/3 sous-segments vidéo = 3 miniatures.
 
 * Durée du sous-segment = durée totale de la vidéo / nombre de sous-segments vidéo.
-En reprenant l’exemple du tableau ci-dessus, 30 secondes/3 sous-segments vidéo = affichage de 10 secondes de chaque sous-segment vidéo.
+En reprenant l’exemple du tableau ci-dessus, 30 secondes/3 sous-segments vidéo = 10 secondes d’affichage pour chaque sous-segment vidéo.
 
 #### Remarques spéciales sur la création d’un paramètre prédéfini de visionneuse de bannière de carrousel {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 

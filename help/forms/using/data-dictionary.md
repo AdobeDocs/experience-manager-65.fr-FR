@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 97%
-
 ---
-
 # Dictionnaire de données{#data-dictionary}
 
 ## Présentation {#introduction}
@@ -27,14 +40,14 @@ Le dictionnaire de données est composé d&#39;éléments de trois types : simp
 
 Correspondence Management utilise des données principales, client ou destinataire stockées conformément à la structure du dictionnaire de données pour créer des correspondances destinées à différents utilisateurs et utilisatrices. Par exemple, un document peut être créé avec des noms conviviaux, tels que « Cher {First Name} », « Monsieur {Last Name} ».
 
-En règle générale, les utilisateurs et utilisatrices professionnelles n’ont pas besoin de connaître les représentations de métadonnées telles que le schéma XSD (schéma XML) et les classes Java. Cependant, ils ont le plus souvent besoin de l’accès à ces structures de données et à leurs attributs dans le but de créer des solutions.
+En règle générale, les utilisateurs et utilisatrices professionnelles n’ont pas besoin de connaître les représentations de métadonnées telles que le schéma XSD (schéma XML) et les classes Java. Cependant, ils ont le plus souvent besoin d’accéder à ces structures de données et à leurs attributs pour créer des solutions.
 
 ### Workflow du dictionnaire de données {#data-dictionary-workflow}
 
 1. Un auteur ou une autrice [crée le dictionnaire de données](#createdatadictionary) en chargeant un schéma ou à partir de rien.
 1. L’auteur crée la lettre et les communications interactives en fonction du dictionnaire de données et associe les éléments de dictionnaire de données dans la lettre et les communications interactives là où cela est nécessaire.
 1. Il peut télécharger le fichier XML de données d’exemple, qui repose sur le schéma d’un dictionnaire de données. L’auteur peut modifier le fichier XML de données d’exemple, qui peut être associé en tant que données de test au dictionnaire de données. Le même nœud est utilisé pendant l’aperçu de la lettre.
-1. Durant [l’aperçu d’une lettre](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), un auteur choisit de prévisualiser la lettre avec des données (Aperçu personnalisé). La lettre s’ouvre préremplie avec les données que l’auteur a fournies. Elle s’ouvre dans l’interface de création de correspondance. L’agent qui prévisualise cette lettre peut modifier le contenu, les données, les pièces jointes de la lettre et envoyer la lettre finale. Pour plus d’informations sur la création de lettres, voir[&#x200B; Création de correspondance](../../forms/using/create-letter.md).
+1. Durant [l’aperçu d’une lettre](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), un auteur choisit de prévisualiser la lettre avec des données (Aperçu personnalisé). La lettre s’ouvre préremplie avec les données que l’auteur a fournies. Elle s’ouvre dans l’interface de création de correspondance. L’agent qui prévisualise cette lettre peut modifier le contenu, les données, les pièces jointes de la lettre et envoyer la lettre finale. Pour plus d’informations sur la création de lettres, voir[ Création de correspondance](../../forms/using/create-letter.md).
 
 ## Prérequis {#prerequisite}
 
@@ -199,7 +212,7 @@ Au cours de la modification ou de l’affichage d’un dictionnaire de données,
 1. Une fois les entrées de données réalisées, vous pouvez utiliser ce fichier XML lorsque vous prévisualisez une lettre avec des données de test.
 
    Vous pouvez ajouter ces données de test avec DD (sélectionnez DD , puis Télécharger les données de test et téléchargez ce fichier xml)
-Par la suite, lorsque vous prévisualiserez la lettre normalement (et non de manière personnalisée), ces données XML seront utilisées dans la lettre. Vous pouvez également sélectionner Personnalisé, puis charger ce fichier XML.
+   Par la suite, lorsque vous prévisualiserez la lettre normalement (et non de manière personnalisée), ces données XML seront utilisées dans la lettre. Vous pouvez également sélectionner Personnalisé, puis charger ce fichier XML.
 
 ## Exemples {#samples}
 
@@ -590,7 +603,7 @@ Lors du mappage d’un DDE de collection à un élément de schéma XML :
 
 * La liaison pour tous les DDE enfants d’éléments de collection doit être relative à l’élément de collection parent.
 
-Le schéma XML ci-dessous déclare un élément portant le nom Tokens et doté d’un attribut maxOccurs de type « unbounded » (illimité). Par conséquent, Tokens est un élément Collection.
+Le schéma XML ci-dessous déclare un élément portant le nom Tokens et doté d’un attribut maxOccurs de type « unbounded » (illimité). Par conséquent, Tokens est un élément de collection.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -648,7 +661,7 @@ Le fichier Token.xsd associé à cet exemple serait :
 | **Élément du dictionnaire de données** | **Liaison XML par défaut** |
 |---|---|
 | Root | empty(null) |
-| Tokens | /Root/Tokens |
+| Jetons | /Root/Tokens |
 | Composite | empty(null) |
 | TokenID | TokenID |
 | TokenText | empty(null) |

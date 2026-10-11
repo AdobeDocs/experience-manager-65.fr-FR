@@ -9,13 +9,27 @@ exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 100%
-
 ---
-
 # Définir les emplacements de fichiers pour Output {#specify-file-locations-for-output}
 
 >[!NOTE]
@@ -24,17 +38,17 @@ ht-degree: 100%
 
 Vous pouvez spécifier les emplacements dans lesquels Output recherche certains types de fichiers requis.
 
-1. Dans Administration Console, cliquez sur Services > Output.
+1. Dans la console d’administration, cliquez sur Services > sortie.
 1. Sous Emplacements, spécifiez les options appropriées.
 1. Cliquez sur Enregistrer.
 
 ## Paramètres des emplacements {#locations-settings}
 
-**URI racine du contenu :** URI ou emplacement absolu du répertoire de récupération des formulaires. Cette valeur est combinée avec le paramètre sForm, indiqué via l’API, pour construire l’URL absolue vers le formulaire à récupérer. Cette valeur peut référencer un répertoire ou un emplacement web accessible via HTTP.
+**URI racine du contenu :** URI ou emplacement absolu du répertoire de récupération des formulaires. Cette valeur est combinée avec le paramètre sForm, indiqué via l’API, pour construire le chemin d’accès absolu vers le formulaire à récupérer. Cette valeur peut référencer un répertoire ou un emplacement web accessible via HTTP.
 
 La valeur par défaut est une chaîne vide.
 
-**Fichier de configuration XCI :** emplacement relatif ou absolu du fichier de configuration XCI utilisé par le service Output pour les opérations de rendu. Si la valeur est relative, il est supposé que le fichier XCI réside dans le fichier EAR déployable d’AEM forms.
+**Fichier de configuration XCI :** emplacement relatif ou absolu du fichier de configuration XCI utilisé par le service Output pour les opérations de rendu. Si la valeur est relative, il est supposé que le fichier XCI réside dans le fichier EAR déployable d’AEM Forms.
 
 La valeur par défaut est `com/adobe/formServer/PA/pa_output.xci`.
 
@@ -42,7 +56,7 @@ La valeur par défaut est `com/adobe/formServer/PA/pa_output.xci`.
 
 **Emplacement par défaut :** il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
 
-* **JBoss :**`[JBoss Home]\server\[install type]\svcdata\Output\Cache` 
+* **JBoss :**`[JBoss Home]\server\[install type]\svcdata\Output\Cache`
 * **WebLogic :**`[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[Forms Server name]\Output\Cache`
 * **WebSphere :**`[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
 

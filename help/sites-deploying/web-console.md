@@ -9,7 +9,18 @@ feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 97%
@@ -129,7 +140,7 @@ En utilisant cet onglet vous pouvez réaliser les opérations suivantes :
 
   Cela permet de vérifier les références de tous les packages et de les actualiser au besoin.
 
-  Par exemple, après une mise à jour, l’ancienne et la nouvelle version peuvent toujours être exécutées en raison de références antérieures. Cette option permettra de vérifier et de déplacer toutes les références vers la nouvelle version, afin d’arrêter l’ancienne version.
+  Par exemple, après une mise à jour, l’ancienne et la nouvelle version peuvent toujours être exécutées en raison de références antérieures. Cette option vérifie et déplace toutes les références vers la nouvelle version, ce qui permet à l’ancienne version de s’arrêter.
 
 * **Démarrer**
 
@@ -167,7 +178,7 @@ Une liste de composants s’affiche. Plusieurs icônes sont disponibles pour vou
 
 ![screen_shot_2012-02-15at52144pm](assets/screen_shot_2012-02-15at52144pm.png)
 
-Cliquez sur le nom d’un composant spécifique pour afficher des informations supplémentaires sur son statut. Vous pouvez également activer, désactiver ou recharger le composant.
+Cliquez sur le nom d’un composant spécifique pour afficher des informations supplémentaires sur son statut. Vous pouvez également activer, désactiver ou charger à nouveau le composant.
 
 ![chlimage_1-22](assets/chlimage_1-22a.png)
 
@@ -175,4 +186,4 @@ Cliquez sur le nom d’un composant spécifique pour afficher des informations s
 >
 >L’activation ou la désactivation d’un composant ne s’applique que jusqu’au redémarrage d’AEM/CRX.
 >
->L’état de démarrage est défini dans le descripteur de composant, qui est généré pendant le développement et stocké dans le bundle au moment de sa création.
+>L’état de départ est défini dans le descripteur de composant, qui est généré pendant le développement et stocké dans le bundle au moment de la création du bundle.

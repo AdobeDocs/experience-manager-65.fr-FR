@@ -9,13 +9,25 @@ exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1220'
 ht-degree: 92%
-
 ---
-
 # Dépanner les problèmes d’installation avec AEM{#troubleshooting}
 
 Cette section comprend des informations détaillées sur les journaux disponibles pour vous aider à résoudre les problèmes, ainsi que des informations sur certains des problèmes que vous pouvez rencontrer avec AEM.
@@ -72,7 +84,7 @@ Pour résoudre le problème, procédez comme suit :
 
 L’empreinte mémoire de CRX est faible. Si l’application s’exécutant dans CRX a besoin de plus de mémoire ou lance des opérations gourmandes en mémoire (par exemple, des transactions volumineuses), l’instance JVM où CRX s’exécute doit être démarrée avec les paramètres de mémoire appropriés.
 
-Utilisez les options de commande Java™ pour définir les paramètres de mémoire de la JVM (par exemple, java -Xmx512m -jar crx&ast;.jar pour définir la taille du tas sur 512 Mo).
+Utilisez les options de commande Java™ pour définir les paramètres de mémoire de la JVM (par exemple, java -Xmx512m -jar crx&amp;ast;.jar pour définir la taille du tas sur 512 Mo).
 
 Définissez le paramètre d’allocation de mémoire lors du démarrage de la gestion de contenu web d’AEM à partir de la ligne de commande. Les scripts start/stop de la gestion de contenu web d’AEM ou les scripts personnalisés pour gérer la gestion de contenu web d’AEM peuvent également être modifiés pour définir les paramètres de mémoire requis.
 
@@ -80,7 +92,7 @@ Si vous avez déjà défini les segments de mémoire sur 512 Mo, vous souhaiter
 
 Pour créer automatiquement un vidage de segments de mémoire lorsque la mémoire est insuffisante, utilisez la commande suivante :
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 Cette méthode génère un fichier d’image mémoire des segments de mémoire (**java_...hprof**) chaque fois que le processus manque de mémoire. Le processus peut continuer à s’exécuter une fois l’image mémoire des segments de mémoire générée.
 

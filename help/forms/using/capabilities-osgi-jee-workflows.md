@@ -6,18 +6,34 @@ exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 100%
-
 ---
-
 # Actions et fonctionnalités des processus AEM sur OSGi et des processus AEM Forms JEE {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
 ## Boîte de réception AEM et espace de travail HTML {#aem-inbox-and-html-workspace}
 
-Vous pouvez utiliser la boîte de réception AEM pour exécuter et surveiller les workflows AEM Forms sur OSGi. En revanche, l’espace de travail HTML vous permet d’exécuter et de surveiller les workflows AEM Forms JEE. Le tableau suivant vous aide à comprendre les différentes actions importantes disponibles dans la boîte de réception AEM pour les workflows AEM sur OSGi et dans l’espace de travail HTML pour les processus AEM Forms JEE.
+Vous pouvez utiliser la boîte de réception AEM pour exécuter et surveiller les workflows AEM centrés sur les formulaires sur OSGi. En revanche, l’espace de travail HTML vous permet d’exécuter et de surveiller les workflows AEM Forms JEE. Le tableau suivant vous aide à comprendre les différentes actions importantes disponibles dans la boîte de réception AEM pour les workflows AEM sur OSGi et dans l’espace de travail HTML pour les processus AEM Forms JEE.
 
 <table>
  <tbody>
@@ -62,7 +78,7 @@ Vous pouvez utiliser la boîte de réception AEM pour exécuter et surveiller le
    <td>Pris en charge</td>
   </tr>
   <tr>
-   <td>Pièces jointes de champ pour les formulaires adaptatifs</td>
+   <td>Pièces jointes au niveau du champ pour les formulaires adaptatifs</td>
    <td>Pris en charge</td>
    <td>Pas de prise en charge</td>
   </tr>
@@ -101,7 +117,7 @@ Vous pouvez utiliser la boîte de réception AEM pour exécuter et surveiller le
 
 ## Workflows AEM axés sur les formulaires sur OSGi et workflows AEM Forms JEE {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-Les workflows AEM de formulaire sur OSGi et les workflows AEM Forms JEE (gestion des processus AEM Forms on JEE) ont un ensemble de fonctionnalités différent. Le tableau suivant vous aide à comprendre les fonctionnalités importantes disponibles dans les workflows AEM centrés sur les formulaires sur OSGi et les workflows AEM Forms on JEE :
+Les workflows AEM axés sur les formulaires sur OSGi et les workflows AEM Forms JEE (gestion des processus AEM Forms sur JEE) ont un ensemble de fonctionnalités différent. Le tableau suivant vous aide à comprendre les fonctionnalités importantes disponibles dans les workflows AEM centrés sur les formulaires sur OSGi et les workflows AEM Forms on JEE :
 
 <table>
  <tbody>
@@ -388,12 +404,12 @@ Les workflows AEM de formulaire sur OSGi et les workflows AEM Forms JEE (gestio
  </tbody>
 </table>
 
-1. Vous pouvez utiliser les workflows AEM de formulaire sur OSGi pour signer un formulaire adaptatif rempli. Les processus AEM de formulaire sur OSGi prennent en charge la signature hors du formulaire. L’expérience de [signature dans le formulaire](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) n’est pas prise en charge.
+1. Vous pouvez utiliser les workflows AEM de formulaire sur OSGi pour signer un formulaire adaptatif rempli. Les workflows AEM de formulaire sur OSGi prennent en charge la signature hors du formulaire. L’expérience de [signature dans le formulaire](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) n’est pas prise en charge.
 
-1. Vous devez avoir accès à la boîte de réception AEM pour exécuter et surveiller les workflows AEM Forms sur OSGi et à l’espace de travail HTML pour exécuter et surveiller les workflows AEM Forms JEE.
-1. Les services documentaires AEM Forms natifs sont disponibles pour les processus AEM de formulaire sur OSGi et les processus AEM Forms on JEE. AEM Workflow utilise des services documentaires natifs pour les processus AEM de formulaire sur OSGi et les workflows AEM Forms JEE (gestion des processus).
+1. Vous devez avoir accès à la Boîte de réception AEM pour exécuter et surveiller les workflows AEM Forms sur OSGi et à l’espace de travail HTML pour exécuter et surveiller les workflows AEM Forms JEE.
+1. Les services documentaires AEM Forms natifs sont disponibles pour les processus AEM de formulaire sur OSGi et les processus AEM Forms on JEE. AEM Workflow utilise des services documentaires natifs pour les workflows AEM centrés sur les formulaires sur OSGi et les workflows AEM Forms JEE (gestion des processus).
 1. Les workflows AEM Forms JEE peuvent uniquement rendre un formulaire adaptatif. Ils ne prennent pas en charge le rendu d’un formulaire adaptatif comme document PDF.
-1. Les workflows AEM Forms JEE n’ont pas d’étape distincte pour Adobe Sign. Vous avez besoin d’un formulaire adaptatif Adobe Sign pour les workflows AEM Forms JEE. Pour plus d’informations, voir la [documentation d’Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
+1. Les workflows AEM Forms JEE n’ont pas d’étape distincte pour Adobe Sign. Vous avez besoin d’un formulaire adaptatif activé pour Adobe Sign pour les workflows AEM Forms JEE. Pour plus d’informations, voir la [documentation d’Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
 1. Vous pouvez utiliser l’étape [Appeler le service de modèle de données de formulaire](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) pour appeler un service web et publier ou récupérer des données à partir d’une application tierce.
 1. Vous pouvez utiliser l’étape [Envoyer un e-mail](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) pour envoyer des e-mails.
 

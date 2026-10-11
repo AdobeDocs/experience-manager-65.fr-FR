@@ -1,18 +1,29 @@
 ---
-title: 'Bonnes pratiques de surveillance du déploiement d’ [!DNL Assets] '
-description: Bonnes pratiques de surveillance de l’environnement et de la performance de votre déploiement d’ [!DNL Adobe Experience Manager]  après son déploiement.
+title: Bonnes pratiques de surveillance de déploiement d’[!DNL Assets]
+description: Bonnes pratiques de surveillance de l’environnement et de la performance de votre déploiement [!DNL Adobe Experience Manager] après son déploiement.
 contentOwner: AG
 role: Admin, Developer
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 99%
-
+source-wordcount: '1704'
+ht-degree: 98%
 ---
-
 # Bonnes pratiques de surveillance de déploiement d’[!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
 
 La surveillance dans [!DNL Experience Manager Assets] implique l’observation et le suivi des technologies et processus suivants :
@@ -40,7 +51,7 @@ Vous devez effectuer une surveillance en direct pendant la phase de test des per
 
 * Java Flight Recorder (JFR) : JFR est un outil Oracle pouvant être utilisé gratuitement dans les environnements hors production. Pour des informations détaillées, reportez-vous à la section relative à [l’utilisation de Java Flight Recorder pour diagnostiquer les problèmes d’exécution de CQ](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
 * Fichier `error.log` [!DNL Experience Manager] : vous pouvez consulter le fichier `error.log` [!DNL Experience Manager] pour obtenir plus de détails sur les erreurs enregistrées par le système. Utilisez la commande `tail -F quickstart/logs/error.log` pour identifier les erreurs à étudier.
-* [Console d’administration des workflow](/help/sites-administering/workflows.md) : utilisez la console d’administration des workflow pour suivre les workflow en retard ou bloqués.
+* [Console d’administration des workflow](/help/sites-administering/workflows.md) : utilisez la console d’administration des workflow pour s les workflow en retard ou bloqués.
 
 Ces outils vous permettent d’obtenir une vue globale des performances de votre déploiement [!DNL Experience Manager].
 
@@ -77,7 +88,7 @@ Vous avez besoin d’outils externes, tels que NewRelic(TM) et AppDynamics(TM), 
 
 #### Surveillance des applications internes {#internal-application-monitoring}
 
-La surveillance des applications internes consiste à surveiller les composants d’application qui constituent la pile [!DNL Experience Manager], notamment JVM et le référentiel de contenu. Elle inclut également la surveillance via le code d’application personnalisé intégré à la plateforme. En général, elle se fait via les MBeans JMX qui peuvent être contrôlés directement par de nombreuses et solutions de contrôle populaires telles que SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) et bien d’autres encore. Pour les systèmes qui ne prennent pas en charge une connexion directe à JMX, vous pouvez écrire des scripts shell pour extraire les données JMX et les exposer à ces systèmes dans un format qu’ils comprennent nativement.
+La surveillance des applications internes consiste à surveiller les composants d’application qui constituent la pile [!DNL Experience Manager], notamment JVM et le référentiel de contenu. Elle inclut également la surveillance via le code d’application personnalisé intégré à la plateforme. En général, elle se fait via les MBeans JMX qui peuvent être  directement par de nombreuses et solutions de contrôle populaires telles que SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) et bien d’autres encore. Pour les systèmes qui ne prennent pas en charge une connexion directe à JMX, vous pouvez écrire des scripts shell pour extraire les données JMX et les exposer à ces systèmes dans un format qu’ils comprennent nativement.
 
 Par défaut, l’accès à distance aux JMX MBeans n’est pas activé. Pour plus d’informations sur la surveillance via JMX, reportez-vous à la section [Surveillance et gestion à l’aide de la technologie JMX](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
 

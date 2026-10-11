@@ -9,18 +9,32 @@ exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 100%
-
 ---
-
 # Requêtes ad hoc dans Process Reporting{#ad-hoc-queries-in-process-reporting}
 
 ## Requêtes ad hoc dans Process Reporting {#ad-hoc-queries-in-process-reporting-1}
 
-Grâce aux requêtes ad hoc dans Process Reporting, vous pouvez créer des requêtes personnalisées que vous pouvez utiliser pour rechercher les détails des processus et des tâches des instances de processus AEM Forms définies dans votre environnement AEM Forms.
+Grâce aux requêtes ad hoc dans la création de rapports sur les processus, vous pouvez créer des requêtes personnalisées que vous pouvez utiliser pour rechercher les détails des processus et des tâches des instances de processus AEM Forms définies dans votre environnement AEM Forms.
 
 En outre, les requêtes ad hoc peuvent être définies à l’aide de filtres de propriétés de processus et de tâches. Ces filtres peuvent ensuite être enregistrés et utilisés pour exécuter les rapports ultérieurement.
 
@@ -36,9 +50,9 @@ En outre, les requêtes ad hoc peuvent être définies à l’aide de filtres de
 
 Les étapes que vous suivez pour créer des filtres et exécuter des requêtes pour les détails de processus sont les mêmes que pour les tâches.
 
-Par conséquent, les interfaces utilisateur de la recherche de processus et de la recherche de tâches ne diffèrent qu’au niveau des champs que vous pouvez rechercher et des champs renvoyés dans les résultats de recherche. Cela est simplement dû au fait que, alors que de nombreux champs sont identiques, certains sont spécifiques aux processus et d’autres sont spécifiques aux tâches.
+Par conséquent, les interfaces d&#39;utilisation de la recherche de processus et de la recherche de tâches ne diffèrent qu’au niveau des champs selon lesquels vous pouvez effectuer une recherche et des champs renvoyés dans les résultats de recherche. Cela est simplement dû au fait que, alors que de nombreux champs sont identiques, certains sont spécifiques aux processus et d’autres sont spécifiques aux tâches.
 
-Cet article détaille les descriptions des sections de recherche de processus/tâches et de détails de processus/tâches. Toutes les différences spécifiques sont indiquées de manière spécifique aux emplacements appropriés.
+Cet article détaille les descriptions des sections de recherche de processus/tâches et de détails de processus/tâches. Aux endroits appropriés, toutes les différences spécifiques seront signalées.
 
 ## Recherche de processus/tâches {#process-task-search}
 
@@ -176,7 +190,7 @@ Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spé
 
 1. Exécutez une recherche de processus/tâche. Pour plus d’informations, consultez la section [Pour exécuter une requête de processus](#to-execute-a-search-query).
 
-   Notez que les ID de processus affichés dans les résultats de la recherche sont liés.
+   Notez que les ID de processus affichés dans les résultats de la recherche sont des liens hypertexte.
 
    ![process_id_list](assets/process_id_list.png)
 

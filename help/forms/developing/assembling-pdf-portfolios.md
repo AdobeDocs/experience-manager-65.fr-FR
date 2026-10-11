@@ -10,13 +10,27 @@ role: Developer
 exl-id: d2bd7c3e-4f75-4234-a7aa-ee8524430493
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1842'
 ht-degree: 100%
-
 ---
-
 # Assemblage de portfolios PDF {#assembling-pdf-portfolios}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -27,7 +41,7 @@ La capture d’écran suivante représente un portfolio avec la disposition *Sur
 
 ![ap_ap_portfolio](assets/ap_ap_portfolio.png)
 
-La création d’un portfolio PDF constitue une alternative zéro carbone à la transmission d’une collection de documents. Avec AEM Forms, vous pouvez créer des portfolios en appelant le service Assembler avec un document DDX structuré. Le document DDX suivant est un exemple de document DDX qui permet de créer un portfolio PDF.
+La création d’un portfolio PDF constitue une alternative sans papier à la transmission d’une collection de documents. Avec AEM Forms, vous pouvez créer des portfolios en appelant le service Assembler avec un document DDX structuré. Le document DDX suivant est un exemple de document DDX qui permet de créer un portfolio PDF.
 
 ```xml
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -82,7 +96,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utility.jar (obligatoire si AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss)
 
 **Créer un client PDF Assembler**
@@ -117,7 +131,7 @@ Pour assembler un portfolio PDF, vous devez appeler lʼopération `invokeDDX`. L
 
 **Enregistrement du portfolio assemblé**
 
-Un portfolio PDF est renvoyé dans un objet de collection. Effectuez une itération au sein de l’objet de collection et enregistrez le portfolio PDF au format PDF.
+Un portfolio PDF est renvoyé dans un objet de collection. Parcourez l’objet de collection et enregistrez le portfolio PDF au format PDF.
 
 **Voir également**
 
@@ -156,8 +170,8 @@ Assemblez un portfolio PDF à l’aide de l’API du service Assembler (Java) :
    * Créez un objet `com.adobe.idp.Document` et transmettez lʼobjet `java.io.FileInputStream` contenant le fichier NAV (répétez cette tâche pour chaque fichier nécessaire à la création dʼun portfolio).
    * Ajoutez une entrée à l’objet `java.util.Map` en appelant sa méthode `put` et en transmettant les arguments suivants :
 
-      * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément source spécifié dans le document DDX. (répétez cette tâche pour chaque fichier nécessaire à la création dʼun portfolio).
-      * Un objet `com.adobe.idp.Document` qui contient le document PDF. (répétez cette tâche pour chaque fichier nécessaire à la création dʼun portfolio).
+     * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément source spécifié dans le document DDX. (répétez cette tâche pour chaque fichier nécessaire à la création dʼun portfolio).
+     * Un objet `com.adobe.idp.Document` qui contient le document PDF. (répétez cette tâche pour chaque fichier nécessaire à la création dʼun portfolio).
 
 1. Définissez les options d’exécution.
 
@@ -190,7 +204,7 @@ Assemblez un portfolio PDF à l’aide de l’API du service Assembler (Java) :
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Assemblage d’un portfolio PDF à l’aide de l’API de service web {#assemble-a-pdf-portfolio-using-the-web-service-api}
+## Assembler un portfolio PDF à l’aide de l’API de service web {#assemble-a-pdf-portfolio-using-the-web-service-api}
 
 Assemblez un portfolio PDF à l’aide de l’API du service Assembler (service web) :
 
@@ -202,7 +216,7 @@ Assemblez un portfolio PDF à l’aide de l’API du service Assembler (service 
    >
    >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
-1. Créez un client Assembler PDF.
+1. Créez un client PDF Assembler.
 
    * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
    * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
@@ -210,12 +224,12 @@ Assemblez un portfolio PDF à l’aide de l’API du service Assembler (service 
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Référencez un document DX existant.
+1. Référencez un document DDX existant.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document DDX.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document DDX et son mode d’ouverture.
@@ -234,7 +248,7 @@ Assemblez un portfolio PDF à l’aide de l’API du service Assembler (service 
    * Pour chaque fichier d’entrée, créez un objet `MyMapOf_xsd_string_To_xsd_anyType_Item`.
    * Attribuez une valeur de chaîne qui représente le nom de la clé au champ `key` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. Cette valeur doit correspondre à la valeur de l’élément spécifié dans le document DDX. (Répétez cette tâche pour chaque fichier d’entrée).
    * Affectez lʼobjet `BLOB` qui stocke le fichier dʼentrée au champ `value` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. (Répétez cette tâche pour chaque document PDF d’entrée).
-   * Ajoutez lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item` à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. Appelez la méthode `Add` de l’objet `MyMapOf_xsd_string_To_xsd_anyType` et transmettez-la à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. (Répétez cette tâche pour chaque document PDF d’entrée).
+   * Ajoutez lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item` à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. Appelez la méthode `Add` de l’objet `MyMapOf_xsd_string_To_xsd_anyType` et transmettez-la à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. (Effectuez cette tâche pour chaque document PDF d’entrée.)
 
 1. Définissez les options d’exécution.
 

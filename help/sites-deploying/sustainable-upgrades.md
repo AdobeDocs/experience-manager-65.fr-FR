@@ -1,6 +1,6 @@
 ---
 title: Mises à niveau possibles
-description: En savoir plus sur les mises à niveau possibles dans Adobe Experience Manager 6.4.
+description: En savoir plus sur les mises à niveau durables dans Adobe Experience Manager 6.4.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,13 +10,22 @@ feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 100%
-
+source-wordcount: '856'
+ht-degree: 92%
 ---
-
 # Mises à niveau possibles{#sustainable-upgrades}
 
 ## Framework de personnalisation {#customization-framework}
@@ -29,13 +38,13 @@ Il existe deux composants du framework de personnalisation : la **surface de l�
 
 #### Surface de l’API {#api-surface}
 
-Dans les versions précédentes d’Adobe Experience Manager (AEM), de nombreuses API étaient exposées via le Jar Uber. Certaines de ces API n’étaient pas destinées à être utilisées par les clientes et clients, mais étaient exposées pour prendre en charge la fonctionnalité AEM dans les lots. À l’avenir, les API Java™ seront accompagnées de la mention publique ou privée pour indiquer aux clientes et clients les API qui peuvent être utilisées en toute sécurité dans le contexte des mises à niveau. Voici d’autres observations :
+Dans les versions précédentes d’Adobe Experience Manager (AEM), de nombreuses API étaient exposées via l’Uber Jar. Certaines de ces API n’étaient pas destinées à être utilisées par les clientes et clients, mais étaient exposées pour prendre en charge la fonctionnalité AEM dans les bundles. À l’avenir, les API Java™ seront accompagnées de la mention publique ou privée pour indiquer aux clientes et clients les API qui peuvent être utilisées en toute sécurité dans le contexte des mises à niveau. Voici d’autres observations :
 
-* Les API Java™ accompagnées de la mention `Public` peuvent être utilisées et référencées par des lots d’implémentation personnalisés.
+* Les API Java™ accompagnées de la mention `Public` peuvent être utilisées et référencées par des bundles d’implémentation personnalisés.
 
 * Les API publiques sont rétrocompatibles avec l’installation d’un package de compatibilité.
 * Le package de compatibilité contient un JAR Uber de compatibilité pour garantir la rétrocompatibilité.
-* Les API Java™ accompagnées de la mention `Private` sont destinées aux seuls lots internes AEM. Elles ne peuvent pas être utilisées par des lots personnalisés.
+* Les API Java™ accompagnées de la mention `Private` sont destinées aux seuls bundles internes AEM. Elles ne peuvent pas être utilisées par des bundles personnalisés.
 
 >[!NOTE]
 >
@@ -45,17 +54,17 @@ Dans les versions précédentes d’Adobe Experience Manager (AEM), de nombreu
 
 #### Classifications de contenu {#content-classifications}
 
-AEM utilise depuis longtemps le principe des recouvrements et de Sling Resource Merger pour permettre aux clientes et clients d’étendre et de personnaliser la fonctionnalité AEM. Les fonctionnalités prédéfinies qui alimentent les consoles et l&#39;interface utilisateur AEM sont stockées dans **/libs**. Les clientes et clients ne doivent jamais rien modifier en dessous de **/libs** mais pourraient ajouter du contenu supplémentaire en dessous de **/apps** pour recouvrir et étendre les fonctionnalités définies dans **/libs** (Voir Développement avec des recouvrements pour plus d’informations). Cela provoquait encore de nombreux problèmes lors de la mise à niveau d&#39;AEM car le contenu dans **/libs** pouvait changer, entraînant une interruption inattendue de la fonctionnalité de recouvrement. Les utilisateurs et utilisatrices peuvent également étendre les composants AEM par le biais de l’héritage via `sling:resourceSuperType` ou simplement faire référence à un composant dans **/libs** directement par sling:resourceType. Des problèmes de mise à niveau similaires peuvent se produire avec des cas d’utilisation de référence et de remplacement.
+AEM utilise depuis longtemps le principe des recouvrements et de Sling Resource Merger pour permettre aux clientes et clients d’étendre et de personnaliser la fonctionnalité AEM. Les fonctionnalités prédéfinies qui alimentent les consoles et l&#39;interface utilisateur AEM sont stockées dans **/libs**. Les clientes et clients ne doivent jamais rien modifier en dessous de **/libs** mais pourraient ajouter du contenu supplémentaire en dessous de **/apps** pour recouvrir et étendre les fonctionnalités définies dans **/libs** (Voir Développement avec des recouvrements pour plus d’informations). Cela provoquait encore de nombreux problèmes lors de la mise à niveau d&#39;AEM car le contenu dans **/libs** pouvait changer, entraînant une interruption inattendue de la fonctionnalité de recouvrement. Les clients peuvent également étendre les composants AEM par le biais de l’héritage par le biais de `sling:resourceSuperType`, ou simplement référencer un composant dans **/libs** directement par le biais de sling:resourceType. Des problèmes de mise à niveau similaires peuvent se produire avec des cas d’utilisation de référence et de remplacement.
 
 Pour permettre aux clientes et clients de comprendre plus facilement et de manière plus sécurisée les domaines de **/libs** qui peuvent être utilisés et recouverts en toute sécurité, le contenu dans **/libs** a été classé avec les mixins suivants :
 
-* **Public (granite:PublicArea)** : définit un nœud comme étant public afin qu’il puisse être recouvert, hérité (`sling:resourceSuperType`) ou utilisé directement (`sling:resourceType`). Les nœuds situés sous /libs marqués comme étant publics peuvent être mis à niveau en toute sécurité avec l’ajout d’un package de compatibilité. En règle générale, les utilisateurs et utilisatrices doivent uniquement utiliser les nœuds publics.
+* **Public (granite:PublicArea)** définit un nœud comme étant public afin qu’il puisse être recouvert, hérité ( `sling:resourceSuperType`) ou utilisé directement ( `sling:resourceType`). Les nœuds situés sous /libs marqués comme étant publics peuvent être mis à niveau en toute sécurité avec l’ajout d’un package de compatibilité. En règle générale, les utilisateurs et utilisatrices doivent uniquement utiliser les nœuds publics.
 
-* **Résumé (granite:AbstractArea)** : définit un nœud en tant que résumé. Les nœuds peuvent être recouverts ou hérités (`sling:resourceSupertype`), mais ils ne doivent pas être utilisés directement (`sling:resourceType`).
+* **Abstrait (granite:AbstractArea)** - Définit un nœud comme abstrait. Les nœuds peuvent être recouverts ou hérités (`sling:resourceSupertype`), mais ils ne doivent pas être utilisés directement (`sling:resourceType`).
 
-* **Final (granite:FinalArea)** : définit un nœud comme étant final. Les nœuds classés en tant que finaux ne doivent idéalement pas être recouverts ni hérités. Les nœuds finaux peuvent être utilisés directement via `sling:resourceType`. Par défaut, les nœuds secondaires placés sous le nœud final sont considérés comme internes.
+* **Final (granite:FinalArea)** - Définit un nœud comme final. Les nœuds classés en tant que finaux ne doivent idéalement pas être recouverts ni hérités. Les nœuds finaux peuvent être utilisés directement via `sling:resourceType`. Par défaut, les nœuds secondaires placés sous le nœud final sont considérés comme internes.
 
-* ***Interne (granite:InternalArea)*** *- * Définit un nœud comme interne. Les nœuds classés dans la catégorie Interne ne peuvent pas être superposés, hérités, ni utilisés directement. Ces nœuds sont destinés uniquement à la fonctionnalité interne d’AEM
+* ***Interne (granite:InternalArea)*** *- *Définit un nœud comme interne. Les nœuds classés dans la catégorie Interne ne peuvent pas être superposés, hérités, ni utilisés directement. Ces nœuds sont destinés uniquement à la fonctionnalité interne d’AEM
 
 * **Aucune annotation** : les nœuds héritent d’une classification basée sur la hiérarchie de l’arborescence. La racine / est par défaut Public. **Les nœuds dont le parent est classé comme interne ou final doivent également être traités comme internes.**
 
@@ -89,7 +98,7 @@ Les mixins appliqués dans CRXDE Lite affichent en grisé les nœuds de contenu
 
 AEM 6.5 est fourni avec un contrôle d’intégrité permettant d’informer les clientes et clients si du contenu référencé ou recouvert serait utilisé d’une manière non conforme à la classification du contenu.
 
-La **Vérification de l’accès au contenu Sling/Granite** est un nouveau contrôle d’intégrité qui surveille le référentiel afin de détecter si du code client accède, de manière non autorisée, à des nœuds protégés dans AEM.
+La **Vérification de l’accès au contenu Sling/Granite** est un nouveau contrôle d’intégrité qui surveille le référentiel afin de détecter si du code client accède de manière incorrecte à des nœuds protégés dans AEM.
 
 Cela analyse le dossier **/apps** et prend généralement plusieurs secondes.
 

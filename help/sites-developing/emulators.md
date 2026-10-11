@@ -10,13 +10,22 @@ exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
-workflow-type: ht
-source-wordcount: '609'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 95%
 ---
-
 # Émulateurs{#emulators}
 
 {{ue-over-mobile}}
@@ -119,14 +128,14 @@ Lorsque le composant de page s’appuie sur le composant de page mobile (`/libs/
 
 * Le script init de l’émulateur mobile de base définit, via un code JavaScript :
 
-   * la configuration de tous les émulateurs qui sont définis pour la page (emulatorConfigs) ;
-   * le gestionnaire d’émulateur qui intègre la fonctionnalité de l’émulateur dans la page via :
+  * la configuration de tous les émulateurs qui sont définis pour la page (emulatorConfigs) ;
+  * le gestionnaire d’émulateur qui intègre la fonctionnalité de l’émulateur dans la page via :
 
-     `emulatorMgr.launch(config)` ;
+    `emulatorMgr.launch(config)` ;
 
-     Le gestionnaire d’émulateur est défini par :
+    Le gestionnaire d’émulateur est défini par :
 
-     `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
+    `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
 #### la création d’un émulateur mobile personnalisé. {#creating-a-custom-mobile-emulator}
 
@@ -140,7 +149,7 @@ Pour créer un émulateur mobile personnalisé :
 
    À titre d’exemple, vous pouvez vous reporter au nœud `/libs/wcm/mobile/components/emulators/iPhone/css`.
 
-1. Si nécessaire, définissez une bibliothèque cliente JS, par exemple, pour définir un plug-in externe spécifique : nom = js, type de nœud = cq:ClientLibrary
+1. Si nécessaire, définissez une bibliothèque cliente JS, par exemple pour définir un module externe spécifique : nom = js, type de nœud = cq:ClientLibrary
 
    À titre d’exemple, vous pouvez vous reporter au nœud `/libs/wcm/mobile/components/emulators/base/js`.
 

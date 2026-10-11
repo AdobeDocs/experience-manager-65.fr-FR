@@ -9,13 +9,29 @@ feature: Document Services
 exl-id: 84c8125d-0f16-432a-9567-63b868667537
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 97%
-
 ---
-
 # Utiliser le Service Assembler{#using-assembler-service}
 
 Le service Assembler vous permet de combiner, d’organiser et d’étendre vos documents aux formats PDF et XDP. Grâce à lui, vous pouvez également obtenir des informations sur les documents PDF. Chacun des travaux envoyés au service Assembler inclut un document DDX (Document Description XML), ainsi qu’un ensemble de documents source et de ressources externes (chaînes et graphiques). Pour plus d’informations sur le service Assembler, voir [Vue d’ensemble du service Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
@@ -83,7 +99,7 @@ Si un ou plusieurs des documents d’entrée sont chiffrés, vous devez fournir 
 
 ### Assembler des documents à l’aide de la numérotation Bates {#assemble-documents-using-bates-numbering}
 
-Lors de l’assemblage d’un document, vous pouvez utiliser la numérotation Bates pour affecter un identifiant de page unique à chaque page. Avec la numérotation Bates, à chaque page du document (ou de l’ensemble de documents) correspond un numéro qui identifie la page de manière unique. Par exemple, des documents d’entreprise contenant une nomenclature et liés à la production d’un assemblage peuvent contenir un identifiant. Un numéro Bates contient une valeur numérique incrémentée séquentiellement et optionnellement un préfixe et un suffixe. L’ensemble préfixe + valeur numérique + suffixe est appelé modèle bates.
+Lors de l’assemblage d’un document, vous pouvez utiliser la numérotation Bates pour affecter un identifiant de page unique à chaque page. Avec la numérotation Bates, à chaque page du document (ou de l’ensemble de documents) correspond un numéro qui identifie la page de manière unique. Par exemple, des documents de fabrication contenant une nomenclature et liés à la production d’un assemblage peuvent contenir un identifiant. Un numéro Bates contient une valeur numérique incrémentée séquentiellement et optionnellement un préfixe et un suffixe. L’ensemble préfixe + valeur numérique + suffixe est appelé modèle bates.
 
 L’illustration suivante présente un document PDF contenant un identifiant unique situé dans l’en-tête du document.
 
@@ -321,9 +337,9 @@ Vous pouvez utiliser le service Assembler pour obtenir les informations suivante
 
 * Informations sur le texte.
 
-   * Nombre de mots sur chaque page du document.
-   * Emplacement de chaque mot sur chaque page du document.
-   * Nombre de phrases dans chaque paragraphe, sur chaque page du document.
+  * Nombre de mots sur chaque page du document.
+  * Emplacement de chaque mot sur chaque page du document.
+  * Nombre de phrases dans chaque paragraphe, sur chaque page du document.
 
 * Nombre de signets (incluant le numéro de la page, le titre, la destination et l’apparence). Vous pouvez exporter ces\
   données à partir d’un document PDF et les importer dans un document PDF.

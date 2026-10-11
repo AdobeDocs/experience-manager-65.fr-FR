@@ -10,13 +10,20 @@ exl-id: d6243dff-a067-455c-a326-5f451f225efd
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1332'
 ht-degree: 1%
-
 ---
-
 # Présentation d’AEM Communities {#aem-communities-overview}
 
 Les communautés Adobe Experience Manager (AEM) vous permettent de créer rapidement un site communautaire on-premise qui a amélioré les performances, amélioré la gestion du site et encourage la conversion des visiteurs du site en membres précieux de la communauté.
@@ -42,38 +49,38 @@ Les fonctionnalités de Communities peuvent être démontrées à l’aide de la
 
 Un site communautaire est un site AEM créé à l’aide d’un simple assistant qui génère un site web avec de nombreuses fonctionnalités courantes pré-connectées dans le site.
 
-L&#39;assistant [&#x200B; création de site &#x200B;](/help/communities/sites-console.md) :
+L&#39;assistant [ création de site ](/help/communities/sites-console.md) :
 
 * Assemble les fonctionnalités du site, en fonction du [modèle de site de la communauté](/help/communities/sites.md) sélectionné, qui est :
 
-   * construit à partir de [fonctions de la communauté](#community-functions)
-   * fonctionnalité facultative [groupes de la communauté](#communitygroups)
+  * construit à partir de [fonctions de la communauté](#community-functions)
+  * fonctionnalité facultative [groupes de la communauté](#communitygroups)
 
 * Utilise les paramètres pour configurer :
 
-   * modération
-   * connexion
-   * traduction
+  * modération
+  * connexion
+  * traduction
 
 * Fournit des fonctionnalités essentielles :
 
-   * Responsive design : utilise [thèmes Twitter Bootstrap](https://getbootstrap.com)
+  * Responsive design : utilise [thèmes Twitter Bootstrap](https://getbootstrap.com)
 
-   * Connexion : auto-inscription, [connexion au réseau social](/help/communities/social-login.md), profils utilisateur
+  * Connexion : auto-inscription, [connexion au réseau social](/help/communities/social-login.md), profils utilisateur
 
-      * Notifications:
-les membres voient les événements qui les concernent et le contenu généré par l&#39;utilisateur où ils se trouvent [&#128279;](/help/communities/overview.md#mentionssupport).
+    * Notifications:
+      les membres voient les événements qui les concernent et le contenu généré par l&#39;utilisateur où ils se trouvent [](/help/communities/overview.md#mentionssupport).
 
-      * Messages : les membres peuvent envoyer ou recevoir des messages sur le site de la communauté.
-      * Recherche : possibilité de rechercher dans le site de la communauté.
-      * Changement de langue : possibilité de sélectionner une langue pour un [site multilingue](/help/sites-administering/translation.md).
+    * Messages : les membres peuvent envoyer ou recevoir des messages sur le site de la communauté.
+    * Recherche : possibilité de rechercher dans le site de la communauté.
+    * Changement de langue : possibilité de sélectionner une langue pour un [site multilingue](/help/sites-administering/translation.md).
 
-      * Administration : accès pour les membres autorisés à modérer et gérer les utilisateurs au sein du site de la communauté.
+    * Administration : accès pour les membres autorisés à modérer et gérer les utilisateurs au sein du site de la communauté.
 
 * Élimine de nombreuses étapes de création au niveau de la page :
 
-   * Image de marque : chargement facultatif d’une image de bannière à afficher sur toutes les pages du site de la communauté
-   * Menu de navigation : des liens de navigation sont fournis pour les fonctionnalités incluses dans le modèle de site de la communauté.
+  * Image de marque : chargement facultatif d’une image de bannière à afficher sur toutes les pages du site de la communauté
+  * Menu de navigation : des liens de navigation sont fournis pour les fonctionnalités incluses dans le modèle de site de la communauté.
 
 Pour découvrir la facilité de création rapide d’un site communautaire, consultez [Prise en main d’AEM Communities](/help/communities/getting-started.md).
 
@@ -95,47 +102,47 @@ Dans l’environnement de création, la console de navigation globale permet d�
 
 * La console [Sites](/help/communities/sites-console.md)
 
-   * Création de site
-   * Modification du site
-   * Gestion de site
-   * Console [Groupes de la communauté](/help/communities/groups.md)
+  * Création de site
+  * Modification du site
+  * Gestion de site
+  * Console [Groupes de la communauté](/help/communities/groups.md)
 
 * Console [Modération](/help/communities/moderation.md)
 
-   * Interface utilisateur commune de modération en bloc pour les environnements de création et de publication.
-   * Nouveaux critères de filtrage.
+  * Interface utilisateur commune de modération en bloc pour les environnements de création et de publication.
+  * Nouveaux critères de filtrage.
 
 * Consoles de gestion [Membres et groupes](/help/communities/members.md)
 
-   * Permet de créer et de gérer des utilisateurs (membres) côté publication à partir de l’environnement de création.
-   * Permet d&#39;interdire les membres.
-   * Permet de créer et de gérer des groupes d’utilisateurs côté publication (groupes membres) à partir de l’environnement de création.
+  * Permet de créer et de gérer des utilisateurs (membres) côté publication à partir de l’environnement de création.
+  * Permet d&#39;interdire les membres.
+  * Permet de créer et de gérer des groupes d’utilisateurs côté publication (groupes membres) à partir de l’environnement de création.
 
 * Console [Rapports](/help/communities/reports.md)
 
-   * Permet de générer des rapports sur les affectations, les publications et les vues.
+  * Permet de générer des rapports sur les affectations, les publications et les vues.
 
 La console Outils globaux permet d’accéder aux outils de communautés suivants :
 
-* Console [&#x200B; Modèles de site &#x200B;](/help/communities/tools.md#sitetemplatesconsole)
+* Console [ Modèles de site ](/help/communities/tools.md#sitetemplatesconsole)
 
-   * Créer et gérer des modèles de site de la communauté.
+  * Créer et gérer des modèles de site de la communauté.
 
 * Console [Modèles de groupe](/help/communities/tools.md#grouptemplatesconsole)
 
-   * Créez et gérez des modèles de groupes communautaires.
+  * Créez et gérez des modèles de groupes communautaires.
 
 * Console [Fonctions de la communauté](/help/communities/tools.md#communityfunctionsconsole)
 
-   * Créer et gérer des fonctions de communauté.
+  * Créer et gérer des fonctions de communauté.
 
 * Console [Configuration de stockage](/help/communities/tools.md#storageconfiguratonconsole)
 
-   * Sélectionnez et configurez le [magasin commun](/help/communities/working-with-srp.md) pour le site.
+  * Sélectionnez et configurez le [magasin commun](/help/communities/working-with-srp.md) pour le site.
 
 * [Guide du composant](/help/communities/components-guide.md)
 
-   * Un exemple de site, [Composants de communauté](https://localhost:4502/editor.html/content/community-components/en.html) fournit un exemple de tous les composants de communauté avec leur configuration par défaut et la possibilité de les tester.
+  * Un exemple de site, [Composants de communauté](https://localhost:4502/editor.html/content/community-components/en.html) fournit un exemple de tous les composants de communauté avec leur configuration par défaut et la possibilité de les tester.
 
 ## Modèles de site de communauté {#community-site-templates}
 
@@ -199,7 +206,7 @@ Pour découvrir la facilité de création rapide d’une communauté d’engagem
 
 ## Machine de démonstration AEM {#aem-demo-machine}
 
-La [machine de démonstration &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) gère et exécute des démonstrations pour AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) et [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms), qui nécessitent souvent plus de configuration que le simple lancement d’une instance QuickStart. La machine de démonstration d’AEM configure d’autres [infrastructures](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) telles que MongoDB, Solr, MySQL, FFmpeg et des serveurs de messagerie.
+La [machine de démonstration ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) gère et exécute des démonstrations pour AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) et [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms), qui nécessitent souvent plus de configuration que le simple lancement d’une instance QuickStart. La machine de démonstration d’AEM configure d’autres [infrastructures](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) telles que MongoDB, Solr, MySQL, FFmpeg et des serveurs de messagerie.
 
 La machine de démonstration AEM comprend :
 
@@ -214,7 +221,7 @@ La machine de démonstration AEM nécessite une licence AEM valide.
 
 >[!NOTE]
 >
->Regardez une [vidéo d’introduction](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) à la machine de démonstration AEM (13:26).
+>Regardez une [vidéo d’introduction](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) à la machine de démonstration d’AEM (13:26).
 
 ## Documentation AEM Communities {#aem-communities-documentation}
 

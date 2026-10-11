@@ -6,18 +6,27 @@ feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 100%
-
+source-wordcount: '1265'
+ht-degree: 89%
 ---
-
 # Effectuer une mise à niveau statique{#performing-an-in-place-upgrade}
 
 >[!NOTE]
 >
->Cette page décrit la procédure de mise à niveau pour AEM 6.5. Si une installation est déployée sur un serveur d’applications, reportez-vous à la section [Procédure de mise à niveau pour les installations de serveur d’applications](/help/sites-deploying/app-server-upgrade.md).
+>Cette page décrit la procédure de mise à niveau vers AEM 6.5. Si vous disposez d’une installation déployée sur un serveur d’applications, voir [Procédure de mise à niveau pour les installations de serveur d’applications](/help/sites-deploying/app-server-upgrade.md).
 
 ## Étapes préalables à la mise à niveau {#pre-upgrade-steps}
 
@@ -45,7 +54,7 @@ Avant d’exécuter votre mise à niveau, plusieurs étapes doivent être réali
 
 ## Migration du référentiel de contenu {#content-repository-migration}
 
-Cette migration n’est pas requise si vous effectuez une mise à niveau à partir d’AEM 6.3. Pour les versions antérieures à la version 6.3, Adobe fournit un outil qui peut être utilisé pour migrer le référentiel vers la nouvelle version de Oak Segment Tar présent dans AEM 6.3. Il est fourni avec le module de démarrage rapide et est obligatoire pour toutes les mises à niveau qui utiliseront TarMK. Les mises à niveau pour les environnements qui utilisent MongoMK ne nécessitent pas de migration du référentiel. Pour plus d’informations sur les avantages du nouveau format Segment Tar, voir la section [Questions fréquentes sur la migration vers Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
+Cette migration n’est pas requise si vous effectuez une mise à niveau à partir d’AEM 6.3. Pour les versions antérieures à la version 6.3, Adobe fournit un outil qui peut être utilisé pour migrer le référentiel vers la nouvelle version d’Oak Segment Tar présente dans AEM 6.3. Il est fourni dans le cadre du package de démarrage rapide et est obligatoire pour toutes les mises à niveau qui utiliseront TarMK. Les mises à niveau pour les environnements qui utilisent MongoMK ne nécessitent pas de migration du référentiel. Pour plus d’informations sur les avantages du nouveau format Segment Tar, voir la section [Questions fréquentes sur la migration vers Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
 La migration réelle est effectuée à l’aide du fichier JAR de démarrage rapide d’AEM, exécuté avec une nouvelle option `-x crx2oak`, qui exécute l’outil crx2oak afin de simplifier la mise à niveau et de la rendre plus robuste.
 
@@ -107,7 +116,7 @@ Où `<<YOUR_PROFILE>>` et `<<ADDITIONAL_FLAGS>>` sont remplacés par le profil e
 
 **Où :**
 
-* `mongo-host` correspond à l’IP du serveur MongoDB (par exemple, 127.0.0.1) ;
+* `mongo-host` est l’adresse IP du serveur MongoDB (par exemple, 127.0.0.1).
 
 * `mongo-port` correspond au port du serveur MongoDB (par exemple, 27017) ;
 
@@ -129,7 +138,7 @@ Lorsque `FileDataStore` est la nouvelle valeur par défaut pour des installation
 
 ## Résolution des problèmes de migration {#troubleshooting-migration-issues}
 
-Ignorez cette section si vous effectuez une mise à niveau à partir de la version 6.3. Bien que les profils crx2oak fournis répondent aux besoins de la plupart des clientes et clients, des paramètres supplémentaires sont parfois nécessaires. Si vous rencontrez une erreur lors de la migration, il est possible que certains aspects de votre environnement nécessitent des options de configuration supplémentaires. Si tel est le cas, l’erreur suivante se produira probablement :
+Ignorez cette section si vous effectuez une mise à niveau à partir de la version 6.3. Bien que les profils crx2oak fournis doivent répondre aux besoins de la plupart des clients, il arrive que des paramètres supplémentaires soient nécessaires. Si vous rencontrez une erreur lors de la migration, il est possible que certains aspects de votre environnement nécessitent des options de configuration supplémentaires. Si tel est le cas, l’erreur suivante se produira probablement :
 
 **Les points de contrôle ne sont pas copiés, car aucun magasin de données externe n’a été spécifié. Cela entraînera la réindexation complète du référentiel au premier démarrage. Utilisez --skip-checkpoints pour forcer la migration ou consultez https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration pour en savoir plus.**
 
@@ -163,13 +172,13 @@ Où `/path/to/datastore` représente le chemin d’accès à votre magasin de do
 
 ### Détermination de la commande de démarrage de mise à niveau appropriée {#determining-the-correct-upgrade-start-command}
 
-Pour exécuter la mise à niveau, il est important de démarrer AEM à l’aide du fichier jar pour faire apparaître l’instance. Pour passer à la version 6.5, consultez également d’autres options de migration et de restructuration de contenu dans la [Migration de contenu différée](/help/sites-deploying/lazy-content-migration.md) que vous pouvez sélectionner avec la commande de mise à niveau.
+Pour exécuter la mise à niveau, il est important de démarrer AEM à l’aide du fichier jar pour démarrer l’instance. Pour passer à la version 6.5, consultez également d’autres options de migration et de restructuration de contenu dans la [Migration de contenu différée](/help/sites-deploying/lazy-content-migration.md) que vous pouvez sélectionner avec la commande de mise à niveau.
 
 >[!IMPORTANT]
 >
 >Si vous exécutez Oracle Java 11 (ou en général les versions de Java ultérieures à la version 8), des modifications supplémentaires doivent être ajoutées à votre ligne de commande lors du démarrage d’AEM. Pour plus d’informations, consultez la section [Considérations sur Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas la mise à niveau. La plupart des clientes et clients démarre AEM à l’aide du script de démarrage et ont personnalisé ce script de démarrage pour inclure des commutateurs pour les configurations d’environnement telles que les paramètres de mémoire, les certificats de sécurité, etc. Pour cette raison, Adobe recommande de suivre cette procédure pour déterminer la commande de mise à niveau appropriée :
+Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas la mise à niveau. La plupart des clientes et clients démarrent AEM à l’aide du script de démarrage et ont personnalisé ce script de démarrage pour inclure des commutateurs pour les configurations d’environnement telles que les paramètres de mémoire, les certificats de sécurité, etc. Pour cette raison, Adobe recommande de suivre cette procédure pour déterminer la commande de mise à niveau appropriée :
 
 1. Sur une instance d’AEM en cours d’exécution, exécutez les opérations ci-dessous dans une ligne de commande :
 
@@ -177,7 +186,7 @@ Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas l
    ps -ef | grep java
    ```
 
-1. Recherchez le processus AEM. Le code se présente comme suit :
+1. Recherchez le processus AEM. Cela ressemblera à ceci :
 
    ```shell
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
@@ -193,7 +202,7 @@ Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas l
 
 ## Déployer le base de code mise à niveau {#deploy-upgraded-codebase}
 
-Une fois la mise à niveau statique terminée, la base de code mise à niveau doit être déployée. La procédure de mise à jour de la base de code pour qu’elle fonctionne dans la version cible d’AEM est disponible dans la page [Mise à niveau du code et personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md).
+Une fois le processus de mise à niveau sur place terminé, la base de code mise à jour doit être déployée. La procédure de mise à jour de la base de code pour qu’elle fonctionne dans la version cible d’AEM est disponible dans la page [Mise à niveau du code et personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md).
 
 ## Effectuer les vérifications et le dépannage après la mise à niveau {#perform-post-upgrade-check-troubleshooting}
 

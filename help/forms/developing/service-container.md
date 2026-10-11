@@ -9,13 +9,25 @@ role: Developer
 exl-id: 6abf2401-5a87-4f72-9028-74580df5b9de
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '933'
 ht-degree: 100%
-
 ---
-
 # Conteneur de services {#service-container}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -72,15 +84,15 @@ Le conteneur de services offre les fonctionnalités suivantes :
 
   Une réponse d’appel peut être récupérée de la même manière qu’une demande d’appel est envoyée. En d’autres termes, si la demande d’appel est envoyée à l’aide de l’API Java, une réponse d’appel peut être récupérée à l’aide de l’API Java. Supposons, par exemple, qu’une opération modifie un document PDF. Vous pouvez récupérer le document PDF modifié en obtenant la valeur renvoyée de la méthode Java qui a appelé le service.
 
-  Lorsqu’un processus de longue durée est appelé, une réponse d’appel contient une valeur d’identifiant associée à la demande d’appel. Cette valeur d’identifiant vous permet de vérifier ultérieurement l’état du processus. Prenons l’exemple du service de longue durée MortgageLoan. À l’aide de la valeur d’identifiant, vous pouvez vérifier si le processus s’est correctement terminé. (Voir [Appel de processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
+  Lorsqu’un processus de longue durée est appelé, une réponse d’invocation contient une valeur d’identifiant associée à la demande d’invocation. Cette valeur d’identifiant vous permet de vérifier ultérieurement l’état du processus. Prenons l’exemple du service de longue durée MortgageLoan. À l’aide de la valeur d’identifiant, vous pouvez vérifier si le processus s’est correctement terminé. (Voir [Appel de processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
   Le diagramme suivant montre une application cliente (qui utilise l’API Java) appelant un service.
 
   Lorsqu’une application cliente appelle un service, trois événements se produisent :
 
-   1. Une application cliente envoie une demande d’appel à un service.
-   1. Le service effectue l’opération spécifiée dans la demande d’appel.
-   1. Le conteneur de services renvoie une réponse d’appel à l’application cliente.
+  1. Une application cliente envoie une demande d’invocation à un service.
+  1. Le service effectue l’opération spécifiée dans la demande d’appel.
+  1. Le conteneur de services renvoie une réponse d’appel à l’application cliente.
 
 **Voir également**
 
@@ -90,7 +102,7 @@ Le conteneur de services offre les fonctionnalités suivantes :
 
 [Appel d’AEM Forms en utilisant l’API Java](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
-[Appel d’AEM Forms utilisant des services Web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
+[Appel d’AEM Forms à l’aide de services Web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
 
 [Appel de processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 

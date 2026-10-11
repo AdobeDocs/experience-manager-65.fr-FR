@@ -6,18 +6,27 @@ feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 94%
-
 ---
-
 # Liste des fonctionnalités d’AEM Fluid Experiences{#aem-fluid-experiences-feature-list}
 
 Adobe Experience Manager Fluid Experiences s’inspire des puissants ensembles de fonctionnalités d’AEM Sites, d’AEM Dynamic Media et d’AEM Assets pour fournir une solution robuste de diffusion de contenu découplée.
 
-AEM Fluid Experiences se différencie d’AEM classique en ce qu’il ne traite que les cas d’utilisation de diffusion découplée. La performance de création et de diffusion de contenu et l’efficacité de la prise en charge par AEM des cas d’utilisation hybrides sont assurées par les solutions [complètes AEM Sites, Assets et Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=fr)
+AEM Fluid Experiences se différencie d’AEM classique en ce qu’il ne traite que le cas d’usage de diffusion découplée. La performance de création et de diffusion de contenu et l’efficacité de la prise en charge par AEM des cas d’utilisation hybrides sont assurées par les solutions [complètes AEM Sites, Assets et Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=fr)
 
 Les tableaux suivants définissent les fonctionnalités d’AEM Fluid Experiences et renvoient vers la documentation d’assistance appropriée.
 
@@ -79,12 +88,12 @@ Les tableaux suivants définissent les fonctionnalités d’AEM Fluid Experien
 |  |
 |---|
 | [Reporting relatif aux ressources](/help/assets/asset-reports.md) |
-| Informations améliorées optimisées par Adobe Analytics |
-| Informations améliorées optimisées par Adobe Target |
+| Insights améliorés optimisés par Adobe Analytics |
+| Insights améliorés optimisés par Adobe Target |
 
 ## En savoir plus {#learn-more}
 
 * [Fluid Experiences pour les cas d’utilisation découplée](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=fr)
-* [AEM Content Service : quoi, pourquoi et comment ?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=fr)
+* [AEM Content Service : quoi, pourquoi et comment ?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
 * [FAQ sur l’accès tiers](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=fr)
-* [Utilisation des API Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=fr#sling-models)
+* [Utilisation des API Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

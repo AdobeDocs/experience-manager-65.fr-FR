@@ -9,13 +9,27 @@ role: User,Admin
 mini-toc-levels: 4
 exl-id: 2ca7b8b2-573c-40e9-b8c3-f38736e819ef
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 100%
-
 ---
-
 <!--
 hide: true
 -->
@@ -24,11 +38,11 @@ hide: true
 
 Les URL Dynamic Media et le code intégré de la visionneuse contiennent le nom du compte de votre société. Ce nom de compte a été créé au moment de la mise en service de Dynamic Media. Il peut y avoir des scénarios où votre entreprise a fait l’objet d’une acquisition ou d’un changement de marque ou où vous souhaitez simplement utiliser un nom plus marquant. Dans ce cas de figure, il n’est pas facile de mettre à jour manuellement le nom de votre compte de société dans toutes les URL et dans le code intégré de la visionneuse prêt à l’emploi. En outre, il est possible que vous impactiez votre référentiel Dynamic Media existant ou que vous impactiez le contenu dynamique. Pour résoudre ce problème, vous pouvez configurer un compte d’alias de société Dynamic Media.
 
-Un compte d’alias de société Dynamic Media permet de s’assurer que toutes les URL Dynamic Media prêtes à l’emploi et le code intégré de la visionneuse dans l’interface utilisateur reflètent toutes les mises à jour apportées à votre contexte d’entreprise, notamment le changement de marque. Un compte d’alias a également un impact positif sur votre optimisation du moteur de recherche (SEO), car les URL Dynamic Media et le code intégré de la visionneuse reflètent le nouveau nom du compte de la société.
+Un compte d’alias de société Dynamic Media permet de s’assurer que toutes les URL Dynamic Media prêtes à l’emploi et le code intégré de la visionneuse dans l’interface utilisateur reflètent toutes les mises à jour apportées à votre contexte d’entreprise, notamment le changement de marque. Un compte d’alias a également un impact positif sur votre SEO, car les URL Dynamic Media et le code intégré de la visionneuse reflètent le nouveau nom du compte de la société.
 
 Lorsque vous configurez un compte d’alias de société Dynamic Media, tenez compte des points suivants :
 
-* Toute URL Dynamic Media ou tout code intégré de visionneuse existant sur vos propriétés numériques *dynamiques* doivent être mises à jour manuellement pour prendre en compte le nouveau nom d’alias. Cependant, toutes les URL ou code intégré de visionneuse avec le nom de votre société Dynamic Media d’origine continuent à fonctionner pour les ressources existantes ou nouvelles.
+* Toute URL Dynamic Media ou tout code intégré de visionneuse existant sur vos propriétés numériques *dynamiques* doivent être mises à jour manuellement pour prendre en compte le nouveau nom d’alias. Cependant, toutes les URL ou tous les codes intégrés de visionneuse avec le nom de votre société Dynamic Media d’origine continuent à fonctionner pour les ressources existantes ou nouvelles.
 * La fonctionnalité de compte d’alias de société Dynamic Media est limitée au mode de création Experience Manager Assets et à la diffusion. Le nom d’alias de société ne fonctionne pas avec Experience Manager Sites. Les composants WCM (Web Content Management) ne sont pas mis à jour pour cette modification. Ces composants continuent de fonctionner avec le nom de la société Dynamic Media d’origine pour récupérer les ressources Dynamic Media.
 * Vous ne pouvez configurer qu’un seul compte d’alias de société sur la page **[!UICONTROL Modifier la configuration de Dynamic Media]**. Cependant, vous pouvez créer autant de comptes d’alias de société par le biais d’un cas d’assistance et refléter manuellement le nom d’alias nécessaire dans les URL Dynamic Media ou le code intégré de la visionneuse.
 * La fonctionnalité clé en main [Invalidation du cache](/help/assets/invalidate-cdn-cache-dynamic-media.md) de Dynamic Media invalide les URL avec les comptes de société et d’alias de société configurés dans la page de configuration de Dynamic Media dans les services Cloud.
@@ -38,7 +52,7 @@ Voir également [Créer une configuration Dynamic Media dans les services Cloud
 
 ## Configurer un compte d’alias de société Dynamic Media {#configure-dm-alias-account}
 
-Vous commencez à configurer un compte d’alias de société Dynamic Media en soumettant d’abord un cas d’assistance. Cette étape est requise.
+Vous commencez à configurer un compte d’alias de société Dynamic Media en soumettant d’abord un dossier de support. Cette étape est requise.
 
 1. [Utilisez Admin Console pour créer un dossier d’assistance](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 1. Indiquez les informations suivantes dans votre dossier de support :

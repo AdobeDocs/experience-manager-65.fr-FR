@@ -9,9 +9,26 @@ topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 100%
@@ -20,7 +37,7 @@ ht-degree: 100%
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
-En règle générale, une conception de formulaire créée dans Designer est transmise par référence au service Forms. Les conceptions de formulaire peuvent être volumineuses et, par conséquent, il est plus efficace de les transmettre par référence pour éviter d’avoir à rassembler les octets de conception de formulaire par valeur. Le service Forms peut également mettre en cache la conception de formulaire de sorte qu’il n’ait pas à lire la conception de formulaire en permanence lorsqu’elle est mise en cache.
+En règle générale, une conception de formulaire créée dans Designer est transmise par référence au service Forms. Les conceptions de formulaire peuvent être volumineuses et, par conséquent, il est plus efficace de les transmettre par référence pour éviter d’avoir à sérialiser les octets de la conception de formulaire par valeur. Le service Forms peut également mettre en cache la conception de formulaire de sorte qu’il n’ait pas à lire la conception de formulaire en permanence lorsqu’elle est mise en cache.
 
 Si une conception de formulaire contient un attribut UUID, elle est mise en cache. La valeur UUID est unique pour toutes les conceptions de formulaire et sert à identifier un formulaire de manière unique. Lors du rendu d’un formulaire par valeur, le formulaire ne doit être mis en cache que s’il est utilisé à plusieurs reprises. Cependant, si le formulaire n’est pas utilisé à plusieurs reprises et doit être unique, vous pouvez éviter de le mettre en cache à l’aide des options de mise en cache définies à l’aide de l’API AEM Forms.
 
@@ -34,7 +51,7 @@ Les restrictions suivantes s’appliquent lorsqu’une conception de formulaire 
 
 * Aucun contenu lié relatif ne peut être inclus dans la conception de formulaire. Toutes les images et tous les fragments doivent être incorporés dans la conception de formulaire ou être référencés de manière absolue.
 * Les calculs côté serveur ne peuvent pas être effectués après le rendu du formulaire. Si le formulaire est renvoyé au service Forms, les données sont extraites et renvoyées sans aucun calcul côté serveur.
-* Comme le code HTML ne peut utiliser que des images liées au moment de l’exécution, il n’est pas possible de générer du code HTML avec des images incorporées. En effet, le service Forms prend en charge les images incorporées avec le code HTML en récupérant les images d’une conception de formulaire référencée. Étant donné qu’une conception de formulaire transmise par valeur ne dispose pas d’un emplacement référencé, les images incorporées ne peuvent pas être extraites lorsque la page HTML est affichée. Par conséquent, les références d’image doivent être des chemins absolus à générer en langage HTML.
+* Comme le code HTML ne peut utiliser que des images liées au moment de l’exécution, il n’est pas possible de générer du code HTML avec des images incorporées. En effet, le service Forms prend en charge les images incorporées avec le code HTML en récupérant les images d’une conception de formulaire référencée. Étant donné qu’une conception de formulaire transmise par valeur ne dispose pas d’un emplacement référencé, les images incorporées ne peuvent pas être extraites lorsque la page HTML est affichée. Par conséquent, les références d’image doivent être des chemins absolus pour être rendues en HTML.
 
 >[!NOTE]
 >
@@ -80,7 +97,7 @@ Pour effectuer le rendu d’un formulaire par valeur, transmettez une instance `
 
 **Écrire le flux de données de formulaire dans le navigateur web du client**
 
-Lorsque le service Forms effectue le rendu d’un formulaire par valeur, il renvoie un flux de données de formulaire que vous devez écrire dans le navigateur web client. Lorsqu’il est écrit dans le navigateur web client, le formulaire est visible par l’utilisateur.
+Lorsque le service Forms effectue le rendu d’un formulaire par valeur, il renvoie un flux de données de formulaire que vous devez écrire dans le navigateur web du client. Lorsqu’il est écrit dans le navigateur web client, le formulaire est visible par l’utilisateur.
 
 **Voir également**
 
@@ -143,7 +160,7 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (Java) :
 
 [Rendre des formulaires par valeur](/help/forms/developing/rendering-forms.md)
 
-[Démarrage rapide (mode SOAP) : Rendu par valeur à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[Démarrage rapide (mode SOAP) : Rendu d’un formulaire par valeur à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

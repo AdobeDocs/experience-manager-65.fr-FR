@@ -8,18 +8,32 @@ exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 94%
-
 ---
-
 # Résolution des problèmes liés à l’application AEM Forms {#troubleshoot-aem-forms-app}
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 Cet article décrit les messages d’erreur qui peuvent s’afficher lors de la création de l’application AEM Forms ainsi que les étapes à suivre pour les résoudre.
 
@@ -44,7 +58,7 @@ L’application AEM Forms pour iOS configurée pour se synchroniser avec AEM F
 
 1. Cliquez sur **Enregistrer**.
 
-## Les brouillons de formulaires HTML5 envoyés par les utilisateurs et utilisatrices de l’espace de travail ne sont pas visibles sur le portail. {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
+## Les brouillons de formulaires HTML5 envoyés par les utilisateurs et utilisatrices de l’espace de travail ne sont pas visibles sur le portail {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
 Pour les formulaires HTML5 activés dans l’application AEM Forms, avec le profil de rendu HTML **Enregistrer sous version préliminaire**, les versions préliminaires enregistrées ne sont pas visibles pour les utilisateurs de l’espace de travail. Pour afficher les versions préliminaires enregistrées des formulaires HTML5 envoyés par les utilisateurs de l’espace de travail sur le portail, procédez comme suit :
 
@@ -81,7 +95,7 @@ Exécutez les étapes suivantes afin de résoudre ce problème :
 
 Dans l’application AEM Forms sous Windows, un formulaire ne se synchronise pas avec le serveur connecté si le chemin d’accès du formulaire ou de l’une de ses ressources comporte au moins 256 caractères.
 
-Modifiez le chemin d’accès du formulaire et à ses ressources pour réduire le nombre de caractères à moins de 256.
+Modifiez le chemin d’accès du formulaire et de ses ressources pour réduire le nombre de caractères à moins de 256.
 
 ## Version de Gradle non prise en charge. {#unsupported-version-of-gradle}
 
@@ -93,7 +107,7 @@ Le message d’erreur s’affiche lorsque vous créez l’application AEM Forms
 
 ![gradle_unsupported_version](assets/gradle_unsupported_version.png)
 
-## Problèmes de compatibilité des modules externes Gradle et Android Gradle {#gradle-and-android-gradle-plug-in-compatibility-issues}
+## Problèmes de compatibilité entre Gradle et le plug-in Android Gradle {#gradle-and-android-gradle-plug-in-compatibility-issues}
 
 **Message d’erreur :** les versions du plug-in Gradle Android et Gradle ne sont pas compatibles.
 

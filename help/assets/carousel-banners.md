@@ -10,13 +10,27 @@ feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: e82a35fa-5829-4d45-8047-ede0efd4c4ad
+    internal-label: Carousel banners
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4665'
-ht-degree: 97%
-
+source-wordcount: '4791'
+ht-degree: 98%
 ---
-
 # Bannières de carrousel{#carousel-banners}
 
 Les bannières de carrousel permettent aux responsables marketing d’améliorer le taux de conversion en créant facilement du contenu promotionnel interactif et rotatif, et en le diffusant sur n’importe quel écran.
@@ -88,7 +102,7 @@ Pour vous familiariser rapidement avec les bannières de carrousel :
 
    * [Ajoutez une bannière de carrousel à la page de votre site web](#adding-a-carousel-banner-to-your-website-page). Vous pouvez ajouter l’URL de la bannière de carrousel ou le code intégré que vous avez copié sur la page du site web.
 
-      * [Intégrez la bannière de carrousel à un aperçu rapide existant](#integrating-the-carousel-banner-with-an-existing-quickview). Si vous utilisez un système de gestion de contenu web externe, vous devez intégrer la nouvelle bannière de carrousel à la mise en œuvre de l’aperçu rapide existant sur votre site web.
+     * [Intégrez la bannière de carrousel à un aperçu rapide existant](#integrating-the-carousel-banner-with-an-existing-quickview). Si vous utilisez un système de gestion de contenu web externe, vous devez intégrer la nouvelle bannière de carrousel à la mise en œuvre de l’aperçu rapide existant sur votre site web.
 
    * [Ajout d’une bannière de carrousel à votre site web dans Experience Manager](/help/assets/adding-dynamic-media-assets-to-pages.md) Si vous êtes un client Experience Manager Sites, vous pouvez ajouter l’ensemble de carrousel directement sur la page dans Experience Manager à l’aide du composant Interactive Media.
 
@@ -128,7 +142,7 @@ Normalement, il n’est pas nécessaire d’utiliser des outils de débogage sp�
 
 Lorsque la surveillance de réseau est activée dans le navigateur, déclenchez l’aperçu rapide sur la page.
 
-Vous trouvez maintenant l’URL Ajax d’aperçu rapide dans le journal réseau. Copiez l’URL enregistrée pour l’analyse ultérieure. Généralement, lorsque vous déclenchez l’aperçu rapide, plusieurs requêtes sont envoyées au serveur. En règle générale, l’URL Ajax d’aperçu rapide est l’une des premières dans la liste. Elle possède une partie de chaîne de requête complexe ou un chemin d’accès, et son type de réponse MIME est `text/html`, `text/xml` ou `text/javascript`.
+Trouvez maintenant l’URL Ajax d’aperçu rapide dans le journal réseau et copiez l’URL enregistrée pour l’analyse ultérieure. Généralement, lorsque vous déclenchez l’aperçu rapide, plusieurs requêtes sont envoyées au serveur. En règle générale, l’URL Ajax d’aperçu rapide est l’une des premières dans la liste. Elle possède une partie de chaîne de requête complexe ou un chemin d’accès, et son type de réponse MIME est `text/html`, `text/xml` ou `text/javascript`.
 
 Au cours de ce processus, il est important de parcourir différentes zones de votre site web, avec différentes catégories et types de produits. C’est pourquoi les URL d’aperçu rapide peuvent avoir des parties communes pour une catégorie de site web donnée, mais ne changent que si vous visitez une autre zone du site web.
 
@@ -144,10 +158,10 @@ Consultez les exemples d’URL d’aperçu rapide ci-dessous et les variables de
    <td>SKU unique, trouvé dans la chaîne de requête.</td>
    <td><p>Les URL d’aperçu rapide enregistrées incluent ce qui suit :</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>La seule partie variable de l’URL est la valeur du paramètre de chaîne de requête <code>productId=</code>, et il s’agit clairement d’une valeur de SKU. Par conséquent, il suffit d’indiquer dans les champs de SKU des zones réactives ou cliquables des valeurs telles que <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -163,9 +177,9 @@ Consultez les exemples d’URL d’aperçu rapide ci-dessous et les variables de
    <td>SKU et ID de catégorie dans la chaîne de requête.</td>
    <td><p>Les URL d’aperçu rapide enregistrées incluent ce qui suit :</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le paramètre <code>prodId</code> et l’ID de catégorie est stocké dans le paramètre <code>category=</code>.</p> <p>En tant que telles, les définitions zone réactive/zone cliquable sont des paires. Autrement dit, une valeur de SKU et une variable supplémentaire appelée « <code>categoryId</code> ». Les paires obtenues sont les suivantes :</p>
     <ul>
      <li><p>Le SKU est <strong><code>305466</code></strong> et <code>categoryId</code> est <code>1100004</code>.</p> </li>
@@ -286,23 +300,23 @@ Consultez également la section [Ajout de zones cliquables](/help/assets/image-m
 
    * Sélectionnez **[!UICONTROL Aperçu rapide]**.
 
-      * Si vous êtes un client ou une cliente Experience Manager Sites et eCommerce, sélectionnez l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Sélectionnez le produit à utiliser, puis la coche dans le coin supérieur droit de la page pour revenir à l’éditeur de bannière de carrousel.
-      * Si vous n’êtes pas client Experience Manager Sites ou eCommerce
+     * Si vous êtes un client ou une cliente Experience Manager Sites et eCommerce, sélectionnez l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Sélectionnez le produit à utiliser, puis la coche dans le coin supérieur droit de la page pour revenir à l’éditeur de bannière de carrousel.
+     * Si vous n’êtes pas client Experience Manager Sites ou eCommerce
 
-         * Consultez [Identification des variables de zone réactive](#identifying-hotspot-and-image-map-variables) si vous souhaitez définir ces variables.
-         * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte Valeur de SKU, entrez la SKU, qui est un identifiant unique pour chaque produit ou service que vous proposez. La valeur de la SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer la zone réactive sur laquelle l’utilisateur appuie et l’aperçu rapide d’une SKU spécifique.
-         * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide que vous devez utiliser pour identifier un produit, sélectionnez **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, category=Mens est une variable ajoutée.
+       * Consultez [Identification des variables de zone réactive](#identifying-hotspot-and-image-map-variables) si vous souhaitez définir ces variables.
+       * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte Valeur de SKU, entrez la SKU, qui est un identifiant unique pour chaque produit ou service que vous proposez. La valeur de la SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer la zone réactive sur laquelle l’utilisateur appuie et l’aperçu rapide d’une SKU spécifique.
+       * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide que vous devez utiliser pour identifier un produit, sélectionnez **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, category=Mens est une variable ajoutée.
 
-         * Pour plus d’informations, voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
+       * Pour plus d’informations, voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
 
    * Sélectionnez **[!UICONTROL Lien hypertexte]**.
 
-      * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Sélecteur de site (dossier) pour accéder à une URL.
-        >[!NOTE]
-        >
-        >La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+     * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Sélecteur de site (dossier) pour accéder à une URL.
+       >[!NOTE]
+       >
+       >La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
 
-      * Si vous êtes un client ou une cliente autonome, dans le champ de texte HREF, spécifiez le chemin URL complet vers une page web liée.
+     * Si vous êtes un client ou une cliente autonome, dans le champ de texte HREF, spécifiez le chemin URL complet vers une page web liée.
 
    Veillez à spécifier si vous souhaitez ouvrir le lien dans un nouvel onglet du navigateur (paramètre par défaut recommandé) ou dans le même onglet.
 
@@ -310,16 +324,16 @@ Consultez également la section [Ajout de zones cliquables](/help/assets/image-m
 
    * Sélectionnez **[!UICONTROL Fragment d’expérience]**.
 
-      * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Rechercher (loupe) afin d’afficher la page Fragment d’expérience. Sélectionnez le fragment d’expérience à utiliser, puis sélectionnez **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page pour revenir à la page de gestion des zones réactives.
-Voir [&#x200B; Fragments d’expérience &#x200B;](/help/sites-authoring/experience-fragments.md).
+     * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Rechercher (loupe) afin d’ouvrir la page Fragment d’expérience. Sélectionnez le fragment d’expérience à utiliser, puis **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page, afin que vous puissiez revenir à la page de gestion des zones réactives.
+       Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
-      * Indiquez la largeur et la hauteur du fragment d’expérience tel qu’il apparaît dans la bannière.
+     * Indiquez la largeur et la hauteur du fragment d’expérience tel qu’il apparaît dans la bannière.
 
-        >[!NOTE]
-        >
-        >Les outils de partage sur les médias sociaux ne sont pas pris en charge dans la bannière de carrousel lorsque vous incorporez la visionneuse dans un fragment d’expérience.
-        >
-        >Pour contourner ce problème, créez des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+       >[!NOTE]
+       >
+       >Les outils de partage sur les médias sociaux ne sont pas pris en charge dans la bannière de carrousel lorsque vous incorporez la visionneuse dans un fragment d’expérience.
+       >
+       >Pour contourner ce problème, créez des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -377,10 +391,10 @@ Vous pouvez effectuer diverses tâches de modification sur les ensembles de carr
 
 Vous pouvez utiliser l’aperçu pour savoir à quoi ressemblera votre bannière de carrousel pour les clientes et clients, tester les zones réactives et cliquables des bannières de carrousel pour vous assurer qu’elles se comportent comme prévu.
 
-Lorsque vous êtes satisfait(e) de la bannière de carrousel, vous pouvez la publier.
-Voir [&#x200B; Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
+Lorsque vous êtes satisfait de la bannière de carrousel, vous pouvez la publier.
+Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
 Voir [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
-Voir [Ajout de Dynamic Media Assets aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Vous pouvez afficher un aperçu des bannières de carrousel dans l’éditeur de carrousel (méthode recommandée) ou dans la liste **[!UICONTROL Visionneuses]**.
 
@@ -424,11 +438,11 @@ Une fois que vous avez chargé les images de la bannière pour créer un carrous
 
 Cependant, si vous êtes un client Experience Manager Assets autonome, vous pouvez ajouter manuellement la bannière de carrousel à la page de destination de votre site web, comme indiqué dans cette section.
 
-1. Copiez le code intégré de l’ensemble de carrousel publié.
-Voir [Intégration de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
+1. Copiez le code intégré de l’ensemble de carrousel.
+Consultez [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
 
-1. Ajoutez le code incorporé que vous avez copié à partir de Experience Manager Assets dans votre page web.
-Le code incorporé copié est réactif et doit donc s’adapter automatiquement à la zone d’incorporation de la page.
+1. Ajoutez le code intégré que vous avez copié à partir d’Experience Manager Assets sur votre page web.
+Le code intégré copié est réactif et soit donc s’adapter automatiquement à la zone d’incorporation de la page.
 
 ## Intégration de la bannière de carrousel à un aperçu rapide existant {#integrating-the-carousel-banner-with-an-existing-quickview}
 
@@ -466,7 +480,7 @@ La création de l’URL d’aperçu rapide suit la procédure inverse de l’ide
 
 Consultez [Identification des variables de zone réactive et de zone cliquable](#identifying-hotspot-and-image-map-variables).
 
-La dernière étape pour déclencher l’URL d’aperçu rapide et activer le panneau d’aperçu rapide nécessite probablement l’assistance d’une personne spécialisée en systèmes front-end issue de votre équipe informatique. Celui-ci sait comment déclencher précisément l’implémentation de l’aperçu rapide à l’aide de l’étape appropriée, avec une URL d’aperçu rapide prête à l’emploi.
+La dernière étape pour déclencher l’URL d’aperçu rapide et activer le panneau d’aperçu rapide nécessite probablement l’assistance d’une personne spécialisée en systèmes front-end issue de votre équipe informatique. Celui-ci sait comment déclencher précisément la mise en œuvre de l’aperçu rapide à l’aide de l’étape appropriée, avec une URL d’aperçu rapide prête à l’emploi.
 
 ## Création de pop-ups personnalisés à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 

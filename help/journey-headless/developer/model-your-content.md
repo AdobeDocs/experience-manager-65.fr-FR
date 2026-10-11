@@ -5,13 +5,39 @@ exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1840'
 ht-degree: 98%
-
 ---
-
 # Comment modéliser votre contenu {#model-your-content}
 
 Dans cette partie du [Parcours de développement AEM Headless](overview.md), vous pouvez apprendre à modéliser votre structure de contenu. Ensuite, réalisez cette structure pour Adobe Experience Manager (AEM) à l’aide des modèles de fragments de contenu et des fragments de contenu, afin de la réutiliser sur plusieurs canaux.
@@ -22,8 +48,8 @@ Pour commencer, la section [En savoir plus sur le développement CMS découplé]
 
 Dans le document précédent du parcours découplé AEM, [Premiers pas vers votre première expérience d’utilisation d’AEM Headless](path-to-first-experience.md), vous avez découvert les étapes nécessaires à la mise en œuvre de votre premier projet. Après l’avoir lu, vous devriez :
 
-* comprendre les points importants de sa planification pour concevoir votre contenu ;
-* comprendre les étapes à suivre pour implémenter le découplage en fonction de vos exigences de niveau d’intégration ;
+* comprendre les points importants à prendre en compte lors de la planification pour concevoir votre contenu ;
+* comprendre les étapes à suivre pour mettre en œuvre le découplage en fonction de vos exigences de niveau d’intégration ;
 * configurer les outils et les configurations AEM nécessaires ;
 * connaître les bonnes pratiques vous permettant de fluidifier votre parcours découplé, d’optimiser la génération du contenu et de garantir une diffusion rapide du contenu.
 
@@ -33,14 +59,14 @@ Cet article s’appuie sur ces principes de base pour que vous compreniez commen
 
 * **Audience** : débutant
 * **Objectif** : découvrez comment modéliser votre structure de contenu, puis réaliser cette structure à l’aide des modèles de fragment de contenu et des fragments de contenu :
-   * Présenter les concepts et la terminologie liés à la modélisation de contenu et de données
-   * Apprendre pourquoi la modélisation de contenu est nécessaire pour la diffusion de contenu découplé
-   * Découvrir comment réaliser cette structure à l’aide des modèles de fragments de contenu AEM (et créer du contenu avec des fragments de contenu).
-   * Découvrir comment modéliser votre contenu ; principes avec des exemples de base.
+  * Présenter les concepts et la terminologie liés à la modélisation de contenu et de données
+  * Apprendre pourquoi la modélisation de contenu est nécessaire pour la diffusion de contenu découplé
+  * Découvrir comment réaliser cette structure à l’aide des modèles de fragments de contenu AEM (et créer du contenu avec des fragments de contenu).
+  * Découvrir comment modéliser votre contenu ; principes avec des exemples de base.
 
 >[!NOTE]
 >
->La modélisation des données est un sujet très large, car il est utilisé lors du développement de bases de données relationnelles. Beaucoup de livres et de sources d’informations sont disponibles en ligne.
+>La modélisation des données est un sujet très large, car elle est utilisée lors du développement de bases de données relationnelles. Beaucoup de livres et de sources d’informations sont disponibles en ligne.
 >
 >Les aspects qui présentent un intérêt lors de la modélisation des données à utiliser avec AEM Headless sont uniquement pris en compte.
 
@@ -73,14 +99,14 @@ Il y a beaucoup d’écoles, mais elles ont toutes différentes choses en commun
 
 Même pour ce simple exemple, la liste peut sembler infinie. Cependant, si vous souhaitez simplement que votre application effectue une tâche simple, vous devez limiter les informations aux éléments essentiels à cette tâche.
 
-Par exemple, la publicité relative à des événements spéciaux pour toutes les écoles de la région :
+Par exemple, faire la promotion d’événements spéciaux pour toutes les écoles de la région :
 
 * Le nom de l’école
 * L’emplacement de l’école
 * Le directeur
 * Le type d’événement
 * La date de l’événement
-* Le professeur organisant l’événement
+* Le professeur organisant l’évènement
 
 ### Concepts {#concepts}
 
@@ -96,7 +122,7 @@ Le processus d’analyse et de définition de ces informations, ainsi que les re
 
 Souvent, vous pouvez commencer par élaborer un **schéma conceptuel** qui décrit les entités et leurs relations. Il s’agit généralement d’un niveau supérieur (conceptuel).
 
-Une fois ce schéma établi de manière stable, vous pouvez traduire les modèles en **Schéma logique** qui décrit les entités, ainsi que les attributs et les relations. À ce niveau, examinez de près les définitions pour éliminer la duplication et optimiser votre conception.
+Une fois ce schéma établi de manière stable, vous pouvez traduire les modèles en **Schéma logique** qui décrit les entités, ainsi que les attributs et les relations. À ce niveau, examinez de près les définitions pour éliminer les doublons et optimiser votre conception.
 
 >[!NOTE]
 >
@@ -106,12 +132,12 @@ Par exemple, avez-vous besoin d’entités distinctes pour `Head Teacher` et `Te
 
 ### Assurer l’intégrité des données {#data-integrity}
 
-L’intégrité des données est nécessaire pour garantir la précision et la cohérence de votre contenu tout au long de son cycle de vie. Cela implique de s’assurer que les auteurs de contenu peuvent facilement comprendre où le stocker, les éléments suivants sont donc essentiels :
+L’intégrité des données est nécessaire pour garantir la précision et la cohérence de votre contenu tout au long de son cycle de vie. Cela implique de s’assurer que les auteurs de contenu peuvent facilement comprendre quoi stocker et où ; les éléments suivants sont donc essentiels :
 
 * Une structure claire
 * Une structure aussi concise que possible (sans sacrifier la précision)
 * La validation de champs individuels
-* Le cas échéant, limitez le contenu des champs spécifiques au plus important
+* Le cas échéant, limitez le contenu des champs spécifiques à ce qui est pertinent
 
 ### Suppression de la redondance de données {#data-redundancy}
 
@@ -127,9 +153,9 @@ Tout est une question d’équilibre, mais la création d’une structure trop c
 
 * Un impact considérable sur les performances lorsque la requête doit accéder à plusieurs fragments de contenu imbriqués (référencés) pour récupérer le contenu nécessaire.
 
-## Modélisation de contenu pour le découplage AEM {#content-modeling-for-aem-headless}
+## Modélisation de contenu pour AEM découplé {#content-modeling-for-aem-headless}
 
-La modélisation des données est un ensemble de techniques établies, souvent utilisées lors de bases de données de relations développées. Que signifie la modélisation de contenu pour le découplage AEM ?
+La modélisation des données est un ensemble de techniques établies, souvent utilisées lors du développement de bases de données relationnelles. Que signifie donc la modélisation de contenu pour AEM découplé ?
 
 ### Pourquoi ? {#why}
 
@@ -139,7 +165,7 @@ Votre application connaît donc à l’avance la forme de réponse et, donc, com
 
 ### Comment ? {#how}
 
-AEM utilise des fragments de contenu pour fournir les structures nécessaires pour une diffusion en mode découplé de votre contenu vers vos applications.
+AEM utilise des fragments de contenu pour fournir les structures nécessaires à la diffusion découplée de votre contenu vers vos applications.
 
 La structure de votre modèle de contenu possède les caractéristiques suivantes :
 
@@ -198,18 +224,18 @@ Deux types de données fournissent des références au contenu en dehors d’un
 
 * **Référence de contenu**
 Il s’agit d’une référence simple à tout autre contenu de n’importe quel type.
-Par exemple, vous pouvez référencer une image à un emplacement spécifié.
+Par exemple, vous pouvez référencer une image située à un emplacement spécifié.
 
 * **Référence de fragment**
 Cette section fournit des références à d’autres fragments de contenu.
-Ce type de référence est utilisé pour créer du contenu imbriqué, présentant les relations nécessaires au modèle de votre contenu.
+Ce type de référence est utilisé pour créer du contenu imbriqué, en introduisant les relations nécessaires pour modéliser votre contenu.
 Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
-   * Modifier directement le fragment référencé.
-   * Créer un fragment de contenu, en fonction du modèle approprié.
+  * Modifier directement le fragment référencé.
+  * Créer un fragment de contenu, en fonction du modèle approprié.
 
 ### Création de modèles de fragment de contenu {#creating-content-fragment-models}
 
-Au début, vous devez activer les modèles de fragment de contenu pour votre site. Cette activation s’effectue dans l’explorateur de configurations, dans Outils > Général > Explorateur de configurations. Vous pouvez choisir de configurer l’entrée globale ou de créer une configuration. Par exemple :
+Pour commencer, vous devez activer les modèles de fragment de contenu pour votre site. Cette activation s’effectue dans l’explorateur de configurations, dans Outils > Général > Explorateur de configurations. Vous pouvez choisir de configurer l’entrée globale ou de créer une configuration. Par exemple :
 
 ![Définir la configuration](assets/cfm-configuration.png)
 
@@ -219,7 +245,7 @@ Au début, vous devez activer les modèles de fragment de contenu pour votre sit
 
 Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Ces actions peuvent être réalisées dans Outils > Ressources > Modèles de fragment de contenu. Par exemple :
 
-![Modèle de fragment de contenu &#x200B;](assets/cfm-model.png)
+![Modèle de fragment de contenu ](assets/cfm-model.png)
 
 >[!NOTE]
 >
@@ -269,15 +295,15 @@ Pour obtenir une structure de base en tant qu’exemple, voir la section Exemple
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous avez appris à modéliser votre structure et à créer du contenu en fonction de cela, l’étape suivante consiste à [découvrir comment utiliser les requêtes GraphQL pour accéder à votre contenu de fragments de contenu et le récupérer](access-your-content.md). Vous pourrez ainsi bénéficier d’une présentation du langage GraphQL, puis accéder à un certain nombre d’exemples de requêtes pour voir comment tout cela fonctionne en pratique.
+Maintenant que vous avez appris à modéliser votre structure et à créer du contenu en fonction de cela, l’étape suivante consiste à [découvrir comment utiliser les requêtes GraphQL pour accéder à votre contenu de fragments de contenu et le récupérer](access-your-content.md). Cela présente et aborde GraphQL, puis examine quelques exemples de requêtes pour voir comment les choses fonctionnent en pratique.
 
 ## Ressources supplémentaires {#additional-resources}
 
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md) : page de présentation des fragments de contenu.
-   * [Fragments de contenu dans l’explorateur de configurations](/help/assets/content-fragments/content-fragments-configuration-browser.md) : activez la fonctionnalité Fragment de contenu dans l’explorateur de configurations.
-   * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : création et modification de modèles de fragment de contenu.
-   * [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md) : création de fragments de contenu ; cette page vous dirige vers d’autres sections détaillées.
+  * [Fragments de contenu dans l’explorateur de configurations](/help/assets/content-fragments/content-fragments-configuration-browser.md) : activez la fonctionnalité Fragment de contenu dans l’explorateur de configurations.
+  * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : création et modification de modèles de fragment de contenu.
+  * [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md) : création de fragments de contenu ; cette page vous dirige vers d’autres sections détaillées.
 * [Schéma AEM GraphQL](access-your-content.md) : méthode de GraphQL pour réaliser les modèles.
 * [Exemple de structure de fragment de contenu ;](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Prise en main d’AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) : courte série de tutoriels vidéo qui donne un aperçu de l’utilisation des fonctionnalités découplées d’AEM, notamment la modélisation de contenu et GraphQL.
-   * [Concepts de base de la modélisation GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=fr) : découvrez comment définir et utiliser des fragments de contenu dans Adobe Experience Manager (AEM) pour les utiliser avec GraphQL.
+  * [Concepts de base de la modélisation GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=fr) : découvrez comment définir et utiliser des fragments de contenu dans Adobe Experience Manager (AEM) pour les utiliser avec GraphQL.

@@ -8,13 +8,31 @@ exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '407'
 ht-degree: 100%
-
 ---
-
 # Fragments de formulaires adaptatifs de référence{#reference-adaptive-form-fragments}
 
 [Un fragment de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) est un groupe de champs ou un panneau contenant un groupe de champs que vous pouvez utiliser lors de la création d’un formulaire. Il vous permet de créer un formulaire facilement et rapidement. Vous pouvez glisser-déposer un fragment de formulaire adaptatif dans un formulaire à l’aide du navigateur de ressources de la barre latérale, et vous pouvez le modifier dans l’éditeur de formulaire.
@@ -79,7 +97,7 @@ Comprend des champs permettant de capturer les informations de l’emploi actuel
 
 ## Informations sur les personnes à charge {#dependents-information}
 
-Comprend des champs permettant d’indiquer des informations sur une ou plusieurs personnes à charge, telles que leur nom, la relation et leur âge sous forme de tableau.
+Comprend des champs permettant d’indiquer des informations sur une ou plusieurs personnes à charge, telles que leur nom, leur lien de parenté et leur âge sous forme de tableau.
 
 ![Fragment d’information sur les personnes à charge](assets/dependents-info.png)
 
@@ -91,7 +109,7 @@ Comprend des champs permettant d’indiquer des informations sur une ou plusieur
 
 ## Historique d’emploi {#employment-history}
 
-Comprend des champs permettant de capturer l’historique des emplois. Il permet d’ajouter plusieurs entreprises.
+Comprend des champs permettant de saisir les antécédents professionnels. Il permet d’ajouter plusieurs entreprises.
 
 ![Fragment d’historique d’emploi](assets/emp-history.png)
 
@@ -137,7 +155,7 @@ Indique les conditions générales que les utilisateurs doivent accepter avant d
 ](assets/tnc-1.png)
 -->
 
-## Conditions générales avec saisie tactile {#terms-conditions-with-scribble}
+## Conditions générales avec Griffonnage {#terms-conditions-with-scribble}
 
 Indique les conditions générales que les utilisateurs doivent accepter et signer avant d’envoyer un formulaire.
 

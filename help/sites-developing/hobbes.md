@@ -1,18 +1,27 @@
 ---
 title: Tester votre IU
 description: AEM fournit un framework pour l’automatisation des tests pour votre IU AEM
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components, testing
-
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 96%
@@ -106,7 +115,7 @@ La procédure suivante vous guide tout au long de la création et de l’exécut
 
 Pour plus d’informations sur la création de vos propres suites de tests, reportez-vous à la documentation de l’API [Hobbes.js](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html).
 
-1. Ouvrez CRXDE Lite. ([&#128279;](https://localhost:4502/crx/de))
+1. Ouvrez CRXDE Lite. ([](https://localhost:4502/crx/de))
 1. Cliquez avec le bouton droit de la souris sur le dossier `/etc/clientlibs`, puis cliquez sur **Créer > Créer un dossier**. Entrez `myTests` comme nom et cliquez sur **OK**.
 1. Cliquez avec le bouton droit sur le dossier `/etc/clientlibs/myTests` et cliquez sur **Créer > Créer un nœud**. Entrez les valeurs de propriété suivantes, puis cliquez sur **OK** :
 

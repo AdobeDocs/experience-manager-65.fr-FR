@@ -10,13 +10,22 @@ feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 96%
-
 ---
-
 # Vérifications et dépannage après une mise à niveau{#post-upgrade-checks-and-troubleshooting}
 
 ## Vérifications après mise à niveau {#post-upgrade-checks}
@@ -25,7 +34,7 @@ Après la [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md), 
 
 * [Vérification des journaux pour la réussite de la mise à niveau](#main-pars-header-290365562)
 
-* [Vérification des lots OSGi](#main-pars-header-1637350649)
+* [Vérification des bundles OSGi](#main-pars-header-1637350649)
 
 * [Vérifier la version d’Oak](#main-pars-header-1293049773)
 
@@ -63,7 +72,7 @@ Voici un exemple de rapport n’affichant aucune erreur lors de la mise à nivea
 
 ![1487887443006](assets/1487887443006.png)
 
-Voici un exemple de rapport affichant un lot n’ayant pas été installé lors de la mise à niveau :
+Voici un exemple de rapport affichant un bundle n’ayant pas été installé lors de la mise à niveau :
 
 ![1487887532730](assets/1487887532730.png)
 
@@ -71,13 +80,13 @@ Voici un exemple de rapport affichant un lot n’ayant pas été installé lors 
 
 Le fichier error.log doit être soigneusement examiné pendant et après le démarrage d’AEM à l’aide du fichier jar de la version cible. Les avertissements et erreurs doivent être examinés. En général, il est préférable de rechercher les problèmes au début du journal. Les erreurs qui se produisent plus tard dans le journal peuvent en fait être des effets secondaires d’une cause racine repérée plus tôt dans le fichier. En cas d’erreurs et d’avertissements répétés, reportez-vous à la section ci-dessous pour [Analyser les problèmes liés à la mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
 
-### Vérification des lots OSGi {#verify-osgi-bundles}
+### Vérification des bundles OSGi {#verify-osgi-bundles}
 
-Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots n’ont pas démarré. Si des lots sont installés, consultez le fichier `error.log` pour identifier le problème racine.
+Accédez à la console OSGi `/system/console/bundles` et vérifiez si des bundles n’ont pas démarré. Si des bundles sont installés, consultez le fichier `error.log` pour identifier le problème racine.
 
 ### Vérifier la version d’Oak {#verify-oak-version}
 
-Après la mise à niveau, vous devez constater qu’Oak a été mis à jour vers la version **1.10.2**. Pour vérifier la version d’Oak, accédez à la console OSGi et examinez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
+Après la mise à niveau, vous devez constater qu’Oak a été mis à jour vers la version **1.10.2**. Pour vérifier la version d’Oak, accédez à la console OSGi et examinez la version associée aux bundles Oak : Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Inspection du dossier PreUpgradeBackup {#inspect-preupgradebackup-folder}
 
@@ -141,21 +150,21 @@ Si la migration est toujours en échec, vous pouvez déterminer la cause premiè
 
 Avant de commencer les étapes de préparation, veillez à exécuter d’abord l’instance **source** en l’exécutant avec la commande Java™ -jar aem-quickstart.jar. Cela est nécessaire pour s’assurer que le fichier quickstart.properties est généré correctement. S’il est manquant, la mise à niveau ne fonctionnera pas. Vous pouvez également vérifier si le fichier est présent en regardant sous `crx-quickstart/conf` dans le dossier d’installation de l’instance source. En outre, lorsque vous démarrez AEM pour lancer la mise à niveau, celui-ci doit être exécuté avec la commande Java™ -jar aem-quickstart.jar. Le démarrage à partir d’un script de démarrage ne démarre pas AEM en mode de mise à niveau.
 
-### Échec de la mise à jour des packages et des lots  {#packages-and-bundles-fail-to-update-}
+### Échec de la mise à jour des packages et des bundles  {#packages-and-bundles-fail-to-update-}
 
-Si l’installation des packages échoue pendant la mise à niveau, les lots qu’ils contiennent ne seront pas mis à jour non plus. Cette catégorie de problèmes est due à une mauvaise configuration du magasin de données. Ils apparaissent également sous la forme de messages **ERROR** (erreur) et **WARN** (avertissement) dans error.log. Étant donné que dans la plupart de ces cas, la connexion par défaut peut ne pas fonctionner, vous pouvez utiliser CRXDE directement pour inspecter et trouver les problèmes de configuration.
+Si l’installation des packages échoue pendant la mise à niveau, les bundles qu’ils contiennent ne seront pas mis à jour non plus. Cette catégorie de problèmes est due à une mauvaise configuration du magasin de données. Ils apparaissent également sous la forme de messages **ERROR** (erreur) et **WARN** (avertissement) dans error.log. Étant donné que dans la plupart de ces cas, la connexion par défaut peut ne pas fonctionner, vous pouvez utiliser CRXDE directement pour inspecter et trouver les problèmes de configuration.
 
-### Certains lots AEM ne passent pas à l’état actif. {#some-aem-bundles-are-not-switching-to-the-active-state}
+### Certains bundles AEM ne passent pas à l’état actif. {#some-aem-bundles-are-not-switching-to-the-active-state}
 
-Si des lots ne démarrent pas, recherchez des dépendances insatisfaites.
+Si des bundles ne démarrent pas, recherchez des dépendances insatisfaites.
 
-Si ce problème est présent mais qu’il est dû à un échec de l’installation du package qui a entraîné la non-mise à niveau des lots, ils seront considérés comme incompatibles pour la nouvelle version. Pour plus d’informations sur la manière de résoudre ce problème, voir **Échec de la mise à jour des packages et des lots** ci-dessus.
+Si ce problème survient à la suite d’un échec d’installation de package ayant empêché la mise à niveau des bundles, ces derniers seront considérés comme incompatibles avec la nouvelle version. Pour plus d’informations sur la manière de résoudre ce problème, voir **Échec de la mise à jour des packages et des bundles** ci-dessus.
 
-Il est également recommandé de comparer la liste des lots d’une nouvelle instance AEM 6.5 avec celle de l’instance mise à niveau afin de détecter les lots qui n’ont pas été mis à niveau. Cela permettra de réduire le champ des recherches dans le fichier `error.log`.
+Il est également recommandé de comparer la liste des bundles d’une nouvelle instance AEM 6.5 avec celle de l’instance mise à niveau afin de détecter les bundles qui n’ont pas été mis à niveau. Cela permettra de réduire le champ des recherches dans le fichier `error.log`.
 
-### Les lots personnalisés ne passent pas à l’état actif {#custom-bundles-not-switching-to-the-active-state}
+### Les bundles personnalisés ne passent pas à l’état actif {#custom-bundles-not-switching-to-the-active-state}
 
-Si vos lots personnalisés ne passent pas à l’état actif, il est très probable qu’une partie du code omette d’importer l’API de modification. Cela entraîne le plus souvent des dépendances non satisfaites.
+Si vos bundles personnalisés ne passent pas à l’état actif, il est très probable qu’une partie du code omette d’importer l’API de modification. Cela entraîne le plus souvent des dépendances non satisfaites.
 
 Les API supprimées doivent être marquées comme obsolètes dans l’une des versions précédentes. Vous trouverez des instructions sur la migration directe de votre code dans cet avis d’obsolescence. Adobe vise à employer un contrôle de version sémantique lorsque cela est possible afin que les versions puissent indiquer les modifications qui entraînent des incompatibilités.
 
@@ -171,7 +180,7 @@ Enfin, vérifier la présence d’erreurs de configuration que JavaScript peut n
 
 ### Des composants personnalisés, modèles ou extensions de l’interface utilisateur ne fonctionnent pas correctement {#malfunctioning-custom-components-templates-or-ui-extensions}
 
-En règle générale, l’origine de ces problèmes est la même que celle des lots qui ne démarrent pas ou des packages qui ne s’installent pas, la seule différence étant que les problèmes commencent à se produire lors de la première utilisation des composants.
+En règle générale, l’origine de ces problèmes est la même que celle des bundles qui ne démarrent pas ou des packages qui ne s’installent pas, la seule différence étant que les problèmes commencent à se produire lors de la première utilisation des composants.
 
 Pour résoudre du code personnalisé erroné, vous devez d’abord effectuer des tests de détection de fumée pour identifier la cause du problème. Une fois que vous l’avez trouvée, consultez les recommandations de cette section de la [rubrique] pour obtenir des moyens de corriger le problème.
 
@@ -181,7 +190,7 @@ Les `/apps` et `/libs` sont correctement gérés par la mise à niveau mais les 
 
 ### Analyse des journaux error.log et upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
-Dans la plupart des cas, les journaux doivent être consultés afin d’y chercher des erreurs pour détecter la cause d’un problème. Toutefois, pour les mises à niveau, il est également nécessaire de surveiller les problèmes de dépendance, car les anciens lots peuvent ne pas être mis à niveau correctement.
+Dans la plupart des cas, les journaux doivent être consultés afin d’y chercher des erreurs pour détecter la cause d’un problème. Toutefois, pour les mises à niveau, il est également nécessaire de surveiller les problèmes de dépendance, car les anciens bundles peuvent ne pas être mis à niveau correctement.
 
 Pour ce faire, la meilleure méthode consiste à élaguer le fichier error.log en supprimant tous les messages qui ne sont pas liés au problème auquel vous êtes confronté. Vous pouvez le faire à l’aide d’un outil comme grep, en utilisant la méthode suivante :
 

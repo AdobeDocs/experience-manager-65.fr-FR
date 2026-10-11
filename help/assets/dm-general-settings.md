@@ -1,6 +1,6 @@
 ---
 title: Configurer les paramètres généraux de Dynamic Media
-description: Découvrez comment gérer les paramètres généraux dans Dynamic Media. Vous pouvez définir ici le nom de votre serveur de publication et le nom du serveur d’origine, puis définir une option de remplacement d’image. Il existe également des options de chargement par défaut pour le masquage des images, ainsi que des options de chargement pour le traitement des fichiers PostScript, Adobe Photoshop, PDF et Adobe Illustrator.
+description: Découvrez comment gérer les paramètres généraux dans Dynamic Media. Vous pouvez définir ici le nom de votre serveur de publication et le nom du serveur d’origine, puis définir une option de remplacement d’image. Il existe également des options de chargement par défaut pour le masquage flou des images, ainsi que des options de chargement pour le traitement des fichiers PostScript, Adobe Photoshop, PDF et Adobe Illustrator.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -14,21 +14,34 @@ autotag-review: '2026-05-18T18:45:43.326Z'
 TQID: 'https://experienceleague.adobe.com/MXCLWQOBsCl3DPKVPn-WjnPeu-NGnQtUn6EYueH7OfE'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Experienced
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 2537
+source-wordcount: '2537'
 ht-degree: 85%
-
 ---
-
 # Configurer les paramètres généraux de Dynamic Media
 
 La configuration des **[!UICONTROL paramètres généraux de Dynamic Media]** est disponible uniquement si :
@@ -47,7 +60,7 @@ Consultez également [Facultatif - Installation et configuration de Dynamic Med
 
 >[!NOTE]
 >
->Mise à niveau de Dynamic Media Classic vers Dynamic Media sur Adobe Experience Manager ? Les pages Paramètres généraux et [Configuration de la publication](/help/assets/dm-publish-settings.md) dans Dynamic Media sont préremplies avec les valeurs de votre compte Dynamic Media Classic. Les exceptions sont toutes les valeurs figurant dans la zone **[!UICONTROL Options de chargement par défaut]** de la page Paramètres généraux. Ces valeurs se trouvent déjà dans Experience Manager. Ainsi, toute modification apportée aux **[!UICONTROL Options de chargement par défaut]**, dans l’un des cinq onglets, par le biais de l’interface utilisateur Experience Manager, est répercutée dans Dynamic Media et non dans Dynamic Media Classic. Tous les autres paramètres et valeurs de la page Paramètres généraux et de la page [Configuration de la publication](/help/assets/dm-publish-settings.md) sont conservés entre Dynamic Media Classic et Dynamic Media dans Experience Manager.
+>Prêt à passer de Dynamic Media Classic vers Dynamic Media sur Adobe Experience Manager ? Les pages Paramètres généraux et [Configuration de la publication](/help/assets/dm-publish-settings.md) dans Dynamic Media sont préremplies avec les valeurs de votre compte Dynamic Media Classic. Les exceptions sont toutes les valeurs figurant dans la zone **[!UICONTROL Options de chargement par défaut]** de la page Paramètres généraux. Ces valeurs se trouvent déjà dans Experience Manager. Ainsi, toute modification apportée aux **[!UICONTROL Options de chargement par défaut]**, dans l’un des cinq onglets, par le biais de l’interface utilisateur Experience Manager, est répercutée dans Dynamic Media et non dans Dynamic Media Classic. Tous les autres paramètres et valeurs de la page Paramètres généraux et de la page [Configuration de la publication](/help/assets/dm-publish-settings.md) sont conservés entre Dynamic Media Classic et Dynamic Media dans Experience Manager.
 
 **Pour configurer les paramètres généraux de Dynamic Media :**
 
@@ -64,7 +77,7 @@ Consultez également [Facultatif - Installation et configuration de Dynamic Med
    * Onglet [Illustrator](#illustrator-tab)
 
    ![Page Paramètres généraux de Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Page des paramètres généraux de Dynamic Media, avec l’onglet **[!UICONTROL Modification d’images]**&#x200B;sélectionné.*<br><br>
+   *Page des paramètres généraux de Dynamic Media, avec l’onglet **[!UICONTROL Modification d’images]**sélectionné.*<br><br>
 
 1. Lorsque vous avez terminé, près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -112,7 +125,7 @@ L’effet d’accentuation utilise les mêmes options que le filtre d’accentua
 | --- | --- |
 | **[!UICONTROL Quantité]** | Obligatoire.<br>Contrôle l’intensité du contraste appliqué aux pixels de contour.<br>Considérez cela comme l’intensité de l’effet. La principale différence entre les valeurs de quantité de l’accentuation dans Adobe Dynamic Media et les valeurs de quantité dans Adobe Photoshop est que Photoshop a une plage de valeurs comprise entre 1 % et 500 %. En revanche, dans Adobe Dynamic Media, la plage de valeurs est comprise entre `0.0` et `5.0`. Une valeur de 5,0 dans Adobe Dynamic Media équivaut environ à 500 % dans Photoshop ; une valeur de 0,9 équivaut à 90 %, et ainsi de suite. |
 | **[!UICONTROL Rayon]** | Required.<br>Contrôle le rayon de l’effet.<br>La plage de valeurs est comprise entre `0` et `250`. L’effet est exécuté sur tous les pixels d’une image et s’étend de tous les pixels dans toutes les directions. Le rayon est mesuré en pixels. Par exemple, pour obtenir un effet d’accentuation similaire pour une image de 2 000 x 2 000 pixels et une image de 500 x 500 pixels, définissez un rayon de deux pixels sur l’image de 2 000 x 2 000 pixels. Définissez ensuite une valeur de rayon d’un pixel sur l’image de 500 x 500 pixels. Utilisez une valeur plus élevée pour une image avec plus de pixels. |
-| **[!UICONTROL Seuil]** | Required.<br>Threshold est une plage de contraste qui est ignorée lorsque le filtre d’accentuation est appliqué. Cet effet est important pour qu’aucun « bruit » ne soit introduit dans une image lorsque ce filtre est utilisé. La plage de valeurs est comprise entre `0` et `255`, ce qui correspond au nombre d’étapes de luminosité d’une image en niveaux de gris. `0` = noir, `128` = 50 % gris et `255` = blanc. <br>Une valeur seuil de `12` ignore les légères variations de luminosité de la peau pour éviter d’ajouter du bruit, mais ajoute un contraste sur les bords dans les zones contrastées, comme la zone où les cils rencontrent la peau.<br>Si vous disposez d’une photo du visage d’une personne, l’accentuation affecte les parties contrastées de l’image. Par exemple, où les cils et la peau se rencontrent pour créer une zone de contraste évidente, et la peau lisse elle-même. Même la peau la plus lisse présente des changements subtils dans les valeurs de luminosité. Si vous n’utilisez pas de valeur de seuil, le filtre accentue ces changements subtils en pixels de peau. En retour, un effet bruyant et indésirable est créé lorsque le contraste sur les cils est augmenté, ce qui améliore la netteté.<br>Pour éviter ce problème, utilisez une valeur de seuil qui indique au filtre d’ignorer les pixels qui ne modifient pas considérablement le contraste, comme la peau lisse.<br>Dans l’image de fermeture éclair présentée plus haut, remarquez la texture en regard des fermetures. Le bruit d’une image est exposé, car les valeurs de seuil étaient trop faibles pour supprimer le bruit. |
+| **[!UICONTROL Seuil]** | Required.<br>Threshold est une plage de contraste qui est ignorée lorsque le filtre d’accentuation est appliqué. Cet effet est important pour qu’aucun « bruit » ne soit introduit dans une image lorsque ce filtre est utilisé. La plage de valeurs est comprise entre `0` et `255`, ce qui correspond au nombre d’étapes de luminosité d’une image en niveaux de gris. `0` = noir, `128` = 50 % gris et `255` = blanc. <br>Une valeur seuil de `12` ignore les légères variations de luminosité de la peau pour éviter d’ajouter du bruit, mais ajoute un contraste sur les bords dans les zones contrastées, comme la zone où les cils rencontrent la peau.<br>Si vous disposez d’une photo du visage d’une personne, l’accentuation affecte les parties contrastées de l’image. Par exemple, où les cils et la peau se rencontrent pour créer une zone de contraste évidente, et la peau lisse elle-même. Même la peau la plus lisse présente des changements subtils dans les valeurs de luminosité. Si vous n’utilisez pas de valeur de seuil, le filtre accentue ces changements subtils dans les pixels de la peau. En retour, un effet bruyant et indésirable est créé lorsque le contraste sur les cils est augmenté, ce qui améliore la netteté.<br>Pour éviter ce problème, utilisez une valeur de seuil qui indique au filtre d’ignorer les pixels qui ne modifient pas considérablement le contraste, comme la peau lisse.<br>Dans l’image de fermeture éclair présentée plus haut, remarquez la texture en regard des fermetures. Le bruit d’une image est exposé, car les valeurs de seuil étaient trop faibles pour supprimer le bruit. |
 | **[!UICONTROL Monochrome]** | Sélectionnez cette option pour appliquer l’accentuation à la luminosité de l’image (intensité).<br>Désélectionnez-la pour appliquer l’accentuation à chaque composante de couleur séparément. |
 
 Voir aussi [Accentuer les images dans Adobe Dynamic Media et sur le serveur d’images](/help/assets/assets/sharpening_images.pdf).
@@ -128,7 +141,7 @@ Lorsque vous chargez des fichiers image PostScript (EPS), vous pouvez les format
 | Option PostScript | Description |
 | --- | --- |
 | **[!UICONTROL Traitement]** | Sélectionnez Pixelliser pour convertir les graphiques vectoriels du fichier au format bitmap. |
-| **[!UICONTROL Conserver l’arrière-plan transparent dans le rendu des images]** | Permet de conserver la transparence en arrière-plan du fichier. |
+| **[!UICONTROL Conserver l’arrière-plan transparent dans le rendu des images]** | Permet de conserver la transparence de l’arrière-plan du fichier. |
 | **[!UICONTROL Résolution (pixel/pouce)]** | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier. |
 | **[!UICONTROL Espace colorimétrique]** | · **[!UICONTROL Détection automatique]** - Conserve l’espace colorimétrique du fichier.<br>· **[!UICONTROL Forcer comme RGB]** - Convertit dans l’espace colorimétrique RGB.<br>· **[!UICONTROL Forcer comme CMJN]** - Convertit dans l’espace colorimétrique CMJN.<br>· **[!UICONTROL Forcer comme Niveaux de gris]** - Convertit dans l’espace colorimétrique Niveaux de gris. |
 
@@ -142,8 +155,8 @@ Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, cons
 | **[!UICONTROL Créer un modèle]** | Crée un modèle à partir des calques du fichier PSD. |
 | **[!UICONTROL Extraire le texte]** | Extrait le texte pour permettre aux utilisateurs de rechercher une chaîne de caractères dans une visionneuse. |
 | **[!UICONTROL Étendre les calques à la taille de l’arrière-plan]** | Étend la taille des calques d’image pixellisés à celle du calque en arrière-plan. |
-| **[!UICONTROL Affectation d’un nom au calque]** | Étend la taille des calques d’image pixellisés à celle du calque d’arrière-plan.<br>· **[!UICONTROL Nom du calque]** - Nomme les images en fonction de leur nom de calque dans le fichier PSD. Par exemple, un calque nommé Étiquette de prix dans le fichier PSD d’origine devient une image nommée Étiquette de prix. Cependant, si les calques du fichier PSD portent les noms de calques Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier PSD. <br>• **[!UICONTROL Photoshop et numéro de calque]** : nomme les images d’après leur numéro de calque dans le fichier PSD, leur nom de calque d’origine étant ignoré. Le nom des images est composé du nom de fichier Photoshop et d’un numéro de calque. Par exemple, le deuxième calque d’un fichier appelé `Spring Ad.psd` est nommé `Spring Ad_2` même s’il portait un nom personnalisé dans Photoshop.<br>· **[!UICONTROL Photoshop et nom du calque]** - Nomme les images en fonction du fichier PSD suivi du nom du calque ou du numéro de calque. Le numéro de calque est utilisé si le nom du calque dans le fichier PSD est un nom de calque Photoshop par défaut. Par exemple, un calque nommé `Price Tag` dans un fichier PSD portant le nom `SpringAd` est nommé `Spring Ad_Price Tag`. Un calque portant le nom par défaut Calque 2 est nommé `Spring Ad_2`. |
-| **[!UICONTROL Ancre]** | Indiquez le mode d’ancrage des images dans les modèles générés à partir de la composition superposée produite à partir du fichier PSD. Par défaut, l’ancrage est central. Un ancrage central permet aux images de remplacement de remplir au mieux le même espace, quel que soit le format de l’image de remplacement. Les images avec un aspect différent qui remplacent cette image, lors du référencement du modèle et de l’utilisation de la substitution des paramètres, occupent effectivement le même espace. Définissez un autre paramètre si votre application nécessite que les images de remplacement remplissent l’espace alloué dans le modèle. |
+| **[!UICONTROL Affectation d’un nom au calque]** | Étend la taille des calques d’image pixellisés à celle du calque d’arrière-plan.<br>· **[!UICONTROL Nom du calque]** - Nomme les images en fonction de leur nom de calque dans le fichier PSD. Par exemple, un calque nommé Étiquette de prix dans le fichier PSD d’origine devient une image nommée Étiquette de prix. Cependant, si les calques du fichier PSD portent les noms de calques Photoshop par défaut (Background, Layer 1, Layer 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier PSD. <br>• **[!UICONTROL Photoshop et numéro de calque]** : nomme les images d’après leur numéro de calque dans le fichier PSD, leur nom de calque d’origine étant ignoré. Le nom des images est composé du nom de fichier Photoshop et d’un numéro de calque. Par exemple, le deuxième calque d’un fichier appelé `Spring Ad.psd` est nommé `Spring Ad_2` même s’il portait un nom personnalisé dans Photoshop.<br>· **[!UICONTROL Photoshop et nom du calque]** - Nomme les images en fonction du fichier PSD suivi du nom du calque ou du numéro de calque. Le numéro de calque est utilisé si le nom du calque dans le fichier PSD est un nom de calque Photoshop par défaut. Par exemple, un calque nommé `Price Tag` dans un fichier PSD portant le nom `SpringAd` est nommé `Spring Ad_Price Tag`. Un calque portant le nom par défaut Calque 2 est nommé `Spring Ad_2`. |
+| **[!UICONTROL Ancre]** | Indiquez le mode d’ancrage des images dans les modèles générés à partir de la composition superposée produite à partir du fichier PSD. Par défaut, l’ancrage est central. Une ancre de lien centrale permet aux images de remplacement de remplir au mieux le même espace, quel que soit le format de l’image de remplacement. Les images avec un aspect différent qui remplacent cette image, lors du référencement du modèle et de l’utilisation de la substitution des paramètres, occupent effectivement le même espace. Définissez un autre paramètre si votre application nécessite que les images de remplacement remplissent l’espace alloué dans le modèle. |
 
 ### Onglet PDF {#pdf-tab}
 
@@ -168,6 +181,6 @@ Lorsque vous chargez des fichiers image Illustrator (AI), vous pouvez les format
 | Option Illustrator | Description |
 | --- | --- |
 | **[!UICONTROL Traitement]** | Sélectionnez Pixelliser pour convertir les graphiques vectoriels du fichier au format bitmap. |
-| **[!UICONTROL Conserver l’arrière-plan transparent dans le rendu des images]** | Permet de conserver la transparence en arrière-plan du fichier. |
+| **[!UICONTROL Conserver l’arrière-plan transparent dans le rendu des images]** | Permet de conserver la transparence de l’arrière-plan du fichier. |
 | **[!UICONTROL Résolution (pixel/pouce)]** | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier. |
 | **[!UICONTROL Espace colorimétrique]** | · **[!UICONTROL Détection automatique]** - Conserve l’espace colorimétrique du fichier.<br>· **[!UICONTROL Forcer comme RGB]** - Convertit dans l’espace colorimétrique RGB.<br>· **[!UICONTROL Forcer comme CMJN]** - Convertit dans l’espace colorimétrique CMJN.<br>· **[!UICONTROL Forcer comme Niveaux de gris]** - Convertit dans l’espace colorimétrique Niveaux de gris. |

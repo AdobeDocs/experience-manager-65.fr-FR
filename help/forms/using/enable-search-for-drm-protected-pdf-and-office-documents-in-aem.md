@@ -9,13 +9,26 @@ feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 100%
-
+source-wordcount: '687'
+ht-degree: 97%
 ---
-
 # Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire et des documents Microsoft Office{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 
 Adobe Experience Manager fournit une interface utilisateur pour rechercher et localiser diverses ressources stockées dans AEM. La recherche native est capable de rechercher et de localiser des ressources AEM et d’effectuer une recherche de texte dans divers formats de document couramment utilisés tels que les fichiers en texte brut, les documents Microsoft Office et les documents PDF. Vous pouvez également étendre la recherche native de sorte à ce qu’elle effectue une recherche de texte intégral dans des documents PDF protégés DRM et des documents Microsoft Office.
@@ -25,8 +38,8 @@ Effectuez les étapes suivantes pour permettre à AEM d’effectuer des recherc
 ## Avant de commencer {#before-you-start}
 
 * Installez et configurez AEM Forms Document Security.
-* Ajoutez le package sun.util.calendar à la liste blanche de la **Configuration du pare-feu de désérialisation.** La configuration est répertoriée à l’adresse `https://'[server]:[port]'/system/console/configMgr`.
-* Vérifiez que tous les bundles AEM sont en cours d’utilisation. Les lots sont répertoriés à l’adresse `https://'[server]:[port]'/system/console/bundles`. Si tous les lots ne sont pas actifs, patientez, puis vérifiez leur statut après quelques minutes.
+* Ajoutez le package sun.util.calendar à la place sur la liste autorisée de données **Configuration du pare-feu de désérialisation.**. La configuration est répertoriée à l’adresse `https://'[server]:[port]'/system/console/configMgr`.
+* Vérifiez que tous les bundles AEM sont en cours d’utilisation. Les bundles sont répertoriés à l’adresse `https://'[server]:[port]'/system/console/bundles`. Si tous les bundles ne sont pas actifs, patientez, puis vérifiez leur statut après quelques minutes.
 
 ## Établir une connexion sécurisée dans le workflow AEM Forms (AEM Forms on JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
 
@@ -65,7 +78,7 @@ Une connexion sécurisée permet un flux d’informations harmonieux entre AEM 
 
    >[!NOTE]
    >
-   > Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+   > Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Indexer un exemple de document PDF ou Microsoft Office protégé par une politique {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 

@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1741'
 ht-degree: 98%
-
 ---
-
 # Gestion des fragments de contenu {#managing-content-fragments}
 
 Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM à la base de votre contenu découplé.
@@ -37,7 +49,7 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 
 >[!NOTE]
 >
->Tenez compte des [&#x200B; Bonnes pratiques &#x200B;](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
+>Tenez compte des [ Bonnes pratiques ](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
 
 >[!NOTE]
 >
@@ -59,7 +71,7 @@ La méthode de création d’un fragment de contenu est la suivante :
 
    * [Modèle](/help/assets/content-fragments/content-fragments-models.md) : utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle **Adventure**.
 
-      * Tous les modèles disponibles s’affichent.
+     * Tous les modèles disponibles s’affichent.
 
    Après la sélection, cliquez ou appuyez sur **Suivant** pour continuer.
 
@@ -69,23 +81,23 @@ La méthode de création d’un fragment de contenu est la suivante :
 
    * **De base**
 
-      * **Titre**
+     * **Titre**
 
-        Titre du fragment.
+       Titre du fragment.
 
-        Obligatoire.
+       Obligatoire.
 
-      * **Description**
+     * **Description**
 
-      * **Balises**
+     * **Balises**
 
    * **Avancé**
 
-      * **Nom**
+     * **Nom**
 
-        Nom utilisé pour former l’URL.
+       Nom utilisé pour former l’URL.
 
-        Obligatoire, il sera dérivé automatiquement du titre, mais il peut être modifié.
+       Obligatoire, il sera dérivé automatiquement du titre, mais il peut être modifié.
 
 1. Sélectionnez **Créer** pour terminer l’action, puis **ouvrez** le fragment en mode d’édition ou revenez à la console en sélectionnant **Terminé**.
 
@@ -105,17 +117,17 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 * **Télécharger**
 
-   * Enregistrez le fragment sous forme d’un fichier ZIP. Vous pouvez indiquer si vous souhaitez inclure des éléments, des variations ou des métadonnées.
+  * Enregistrez le fragment sous forme d’un fichier ZIP. Vous pouvez indiquer si vous souhaitez inclure des éléments, des variations ou des métadonnées.
 
 * **Créer**
 * **Passage en caisse**
 * **Propriétés**
 
-   * Permet d’afficher et/ou de modifier les métadonnées du fragment.
+  * Permet d’afficher et/ou de modifier les métadonnées du fragment.
 
 * **Modifier**
 
-   * Permet [d’ouvrir le fragment afin d’en modifier le contenu](/help/assets/content-fragments/content-fragments-variations.md) ainsi que ses variations, contenu, métadonnées et éléments associés.
+  * Permet [d’ouvrir le fragment afin d’en modifier le contenu](/help/assets/content-fragments/content-fragments-variations.md) ainsi que ses variations, contenu, métadonnées et éléments associés.
 
 * **Gérer les balises**
 * **À la collection**
@@ -191,17 +203,17 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
 
 * Sous le nom du fragment, vous pouvez voir le nom du [Modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) utilisé pour créer le fragment actif :
 
-   * Le nom est également un lien servant à ouvrir l’éditeur de modèles.
+  * Le nom est également un lien servant à ouvrir l’éditeur de modèles.
 
 * Consultez le statut du fragment, par exemple, les informations relatives à la date et à l’heure de création, de modification ou de publication.
 
 * **Enregistrer** permet d’accéder à l’option **Enregistrer et fermer**.
 
 * Les trois points (**...**) La liste déroulante permet d’accéder à des actions supplémentaires :
-   * **Mettre à jour les références de page**
-      * Cette option met à jour toutes les références de la page.
-   * **[Publication rapide](#publishing-and-referencing-a-fragment)**
-   * **[Gérer la publication](#publishing-and-referencing-a-fragment)**
+  * **Mettre à jour les références de page**
+    * Cette option met à jour toutes les références de la page.
+  * **[Publication rapide](#publishing-and-referencing-a-fragment)**
+  * **[Gérer la publication](#publishing-and-referencing-a-fragment)**
 
 <!--
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
@@ -227,8 +239,8 @@ L’éditeur possède différentes options :
 
 * **Enregistrer** et **Enregistrer et fermer**
 
-   * **Enregistrer** enregistrera les dernières modifications et vous resterez dans l’éditeur.
-   * **Enregistrer et fermer** enregistrer les dernières modifications et vous permet de quitter l’éditeur.
+  * **Enregistrer** enregistrera les dernières modifications et vous resterez dans l’éditeur.
+  * **Enregistrer et fermer** enregistrer les dernières modifications et vous permet de quitter l’éditeur.
 
   >[!CAUTION]
   >
@@ -290,17 +302,17 @@ Outre les options standard, la [Chronologie](/help/assets/manage-assets.md#timel
 * Affichage d’informations sur les versions, les commentaires et les annotations
 * Actions pour les versions
 
-   * **[Revenir à cette version](#reverting-to-a-version)** (sélectionner un fragment existant, puis une version spécifique)
+  * **[Revenir à cette version](#reverting-to-a-version)** (sélectionner un fragment existant, puis une version spécifique)
 
-   * **[Comparer à actuel](#comparing-fragment-versions)** (sélectionner un fragment existant, puis une version spécifique)
+  * **[Comparer à actuel](#comparing-fragment-versions)** (sélectionner un fragment existant, puis une version spécifique)
 
-   * Ajouter une **étiquette** et/ou un **commentaire** (sélectionner un fragment existant, puis une version spécifique)
+  * Ajouter une **étiquette** et/ou un **commentaire** (sélectionner un fragment existant, puis une version spécifique)
 
-   * **Enregistrer comme version** (sélectionner un fragment existant, puis la flèche vers le haut située en bas du journal)
+  * **Enregistrer comme version** (sélectionner un fragment existant, puis la flèche vers le haut située en bas du journal)
 
 * Actions pour les annotations
 
-   * **Supprimer**
+  * **Supprimer**
 
 >[!NOTE]
 >
@@ -334,9 +346,9 @@ Ces dernières sont affichées dans des versions côte à côte dans lesquelles�
 
 * les différences sont mises en surbrillance ;
 
-   * le texte supprimé est en rouge ;
-   * le texte inséré est en vert ;
-   * le texte remplacé est en bleu.
+  * le texte supprimé est en rouge ;
+  * le texte inséré est en vert ;
+  * le texte remplacé est en bleu.
 
 * L’icône Plein écran vous permet d’ouvrir l’une des versions seule puis de basculer à nouveau sur la vue parallèle.
 * Vous pouvez **rétablir** la version spécifique

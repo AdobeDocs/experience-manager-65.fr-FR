@@ -10,13 +10,29 @@ role: Developer
 exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 100%
-
 ---
-
 # Créer des documents PDF avec des données XML envoyées {#creating-pdf-documents-with-submittedxml-data}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -46,7 +62,7 @@ Une fois que l’utilisateur a envoyé le formulaire à partir du navigateur web
 
 ### Résumé des étapes {#summary-of-steps}
 
-Pour créer un document PDF non interactif à l’aide de données XML envoyées et le stocker dans le document PDF dans Content Services (obsolète), procédez comme suit :
+Pour créer un document PDF non interactif à l’aide de données XML envoyées et le stocker dans Content Services (obsolète), procédez comme suit :
 
 1. Incluez les fichiers de projet.
 1. Créez des objets Forms, Output et Document Management.
@@ -64,7 +80,7 @@ Avant d’effectuer par programmation une opération d’API de service Forms, c
 
 **Récupérer des données de formulaire à l’aide du service Forms**
 
-Récupérez les données de formulaire qui ont été envoyées au service Forms. Vous pouvez traiter les données envoyées pour répondre aux besoins de votre entreprise. Par exemple, vous pouvez stocker des données de formulaire dans une base de données d’entreprise. Toutefois, pour créer un document PDF non interactif, les données de formulaire sont transmises au service Output.
+Récupérez les données de formulaire qui ont été envoyées au service Forms. Vous pouvez traiter les données envoyées pour répondre aux besoins métier. Par exemple, vous pouvez stocker des données de formulaire dans une base de données d’entreprise. Toutefois, pour créer un document PDF non interactif, les données de formulaire sont transmises au service Output.
 
 **Créez un document PDF non interactif à l’aide du service Output.**
 
@@ -84,7 +100,7 @@ Utilisez l’API du service Document Management pour stocker un document PDF dan
 
 ### Créer un document PDF avec des données XML envoyées à l’aide de l’API Java {#create-a-pdf-document-with-submitted-xml-data-using-the-java-api}
 
-Créez un document PDF avec les données XML envoyées à l’aide de l’API (Java) Forms, Output et Document Management :
+Créer un document PDF avec les données XML envoyées à l’aide des API Forms, Output et Document Management (Java) :
 
 1. Inclure les fichiers du projet
 
@@ -101,10 +117,10 @@ Créez un document PDF avec les données XML envoyées à l’aide de l’API (J
 
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * Objet `com.adobe.idp.Document` contenant les données de formulaire.
-      * Valeur de chaîne qui spécifie les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Indiquez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer des données XML, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=text/xml`.
-      * Valeur de chaîne qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, comme `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.
+     * Objet `com.adobe.idp.Document` contenant les données de formulaire.
+     * Valeur de chaîne qui spécifie les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Indiquez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer des données XML, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=text/xml`.
+     * Valeur de chaîne qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, comme `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.
 
      La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
@@ -121,7 +137,7 @@ Créez un document PDF avec les données XML envoyées à l’aide de l’API (J
    Créez un document PDF en appelant la méthode `generatePDFOutput` de l’objet `OutputClient` et en transmettant les valeurs suivantes :
 
    * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
-   * Valeur string spécifiant le nom de la nouvelle conception de formulaire. Assurez-vous que la conception de formulaire est compatible avec les données de formulaire récupérées du service Forms.
+   * Valeur de chaîne spécifiant le nom de la conception de formulaire. Assurez-vous que la conception de formulaire est compatible avec les données de formulaire récupérées du service Forms.
    * Une valeur de chaîne qui spécifie la racine de contenu où se trouve la conception de formulaire.
    * Objet `PDFOutputOptionsSpec` contenant les options d’exécution du PDF.
    * Objet `RenderOptionsSpec` qui contient les options d’exécution de rendu.
@@ -139,7 +155,7 @@ Créez un document PDF avec les données XML envoyées à l’aide de l’API (J
    * Valeur de chaîne qui représente le type de nœud. Pour ajouter un nouveau contenu, tel qu’un fichier PDF, spécifiez `{https://www.alfresco.org/model/content/1.0}content`. Cette valeur est un paramètre obligatoire.
    * Objet `com.adobe.idp.Document` qui représente le contenu. Cette valeur est un paramètre obligatoire.
    * Valeur de chaîne qui spécifie la valeur de codage (par exemple, `UTF-8`). Cette valeur est un paramètre obligatoire.
-   * Valeur d’énumération `UpdateVersionType` qui spécifie le mode de gestion des informations de version (par exemple, `UpdateVersionType.INCREMENT_MAJOR_VERSION` pour incrémenter la version du contenu). Cette valeur est un paramètre obligatoire.
+   * Valeur d’énumération `UpdateVersionType` qui spécifie le mode de gestion des informations de version (par exemple, `UpdateVersionType.INCREMENT_MAJOR_VERSION` pour incrémenter la version du contenu). ) Cette valeur est un paramètre obligatoire.
    * Instance `java.util.List` qui spécifie les aspects liés au contenu. Cette valeur est un paramètre facultatif et vous pouvez spécifier `null`.
    * Objet `java.util.Map` qui stocke les attributs de contenu.
 

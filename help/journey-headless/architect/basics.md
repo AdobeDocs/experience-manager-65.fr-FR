@@ -5,14 +5,30 @@ exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '904'
 ht-degree: 95%
-
 ---
-
-# En savoir plus sur les bases de la modélisation de contenu pour le découplage avec AEM {#content-modeling-headless-basics}
+# Découvrez les bases de la modélisation de contenu pour le découplage avec AEM. {#content-modeling-headless-basics}
 
 ## Un peu d’histoire… {#story-so-far}
 
@@ -27,17 +43,17 @@ Cet article s’appuie sur ces éléments afin que vous compreniez comment modé
 
 ## Modélisation de contenu avec des modèles de fragment de contenu {#architect-content-fragment-models}
 
-Contenu (données) La modélisation des données est un ensemble de techniques établies, souvent utilisées lors de bases de données de relations développées. Que signifie la modélisation de contenu pour le découplage AEM ?
+La modélisation de contenu (données) est un ensemble de techniques établies, souvent utilisées lors du développement de bases de données relationnelles. Que signifie la modélisation de contenu pour AEM découplé ?
 
 ### Pourquoi ? {#why}
 
 Pour que votre application puisse demander et recevoir le contenu requis d’AEM de manière cohérente et efficace, ce contenu doit être structuré.
 
-Votre application connaît donc à l’avance la forme de réponse et, donc, comment la traiter. Cette approche est plus simple à traiter que de recevoir du contenu sous forme libre, qui doit être analysé pour déterminer ce qu’il contient et, donc, comment l’utiliser.
+Votre application connaît donc à l’avance la forme de réponse et, par conséquent, comment la traiter. Cette approche est plus simple à traiter que de recevoir du contenu sous forme libre, qui doit être analysé pour déterminer ce qu’il contient et, donc, comment l’utiliser.
 
 ### Comment ? {#how}
 
-AEM utilise des fragments de contenu pour fournir les structures nécessaires pour une diffusion en mode découplé de votre contenu vers vos applications.
+AEM utilise des fragments de contenu pour fournir les structures nécessaires à la diffusion découplée de votre contenu vers vos applications.
 
 La structure de votre modèle de contenu possède les caractéristiques suivantes :
 
@@ -48,7 +64,7 @@ La structure de votre modèle de contenu possède les caractéristiques suivante
 >
 >Les modèles de fragment de contenu sont également utilisés comme base des schémas GraphQL d’AEM utilisés pour récupérer votre contenu (découvrez-en plus dans le parcours pour les développeurs).
 
-Les demandes de contenu sont effectuées à l’aide de l’API AEM GraphQL, une mise en œuvre personnalisée de l’API GraphQL standard. L’API AEM GraphQL permet aux applications d’effectuer des requêtes (complexes) sur vos fragments de contenu, chaque requête étant conforme à un type de modèle spécifique.
+Les demandes de contenu sont effectuées à l’aide de l’API GraphQL AEM, une mise en œuvre personnalisée de l’API GraphQL standard. L’API GraphQL AEM permet aux applications d’effectuer des requêtes (complexes) sur vos fragments de contenu, chaque requête étant conforme à un type de modèle spécifique.
 
 Le contenu renvoyé peut alors être utilisé par vos applications.
 
@@ -59,7 +75,7 @@ Les modèles de fragment de contenu offrent divers mécanismes qui vous permette
 Un modèle de fragment de contenu décrit une entité.
 
 >[!NOTE]
->La fonctionnalité de fragment de contenu doit être activée dans l’explorateur de configurations afin que vous puissiez créer des modèles.
+>La fonctionnalité de fragment de contenu doit être activée dans le navigateur de configuration afin que vous puissiez créer de nouveaux modèles.
 
 >[!TIP]
 >
@@ -101,14 +117,14 @@ Deux types de données fournissent des références au contenu en dehors d’un
 
 * **Référence de contenu**
 Il s’agit d’une référence simple à tout autre contenu de n’importe quel type.
-Par exemple, vous pouvez référencer une image à un emplacement spécifié.
+Par exemple, vous pouvez référencer une image située à un emplacement spécifié.
 
 * **Référence de fragment**
 Cette section fournit des références à d’autres fragments de contenu.
-Ce type de référence est utilisé pour créer du contenu imbriqué, présentant les relations nécessaires au modèle de votre contenu.
+Ce type de référence est utilisé pour créer du contenu imbriqué, en introduisant les relations nécessaires pour modéliser votre contenu.
 Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
-   * Modifier directement le fragment référencé.
-   * Créer un fragment de contenu, en fonction du modèle approprié
+  * Modifier directement le fragment référencé.
+  * Créer un fragment de contenu, en fonction du modèle approprié
 
 >[!NOTE]
 >
@@ -124,7 +140,7 @@ Ce référencement vous permet de *connecter* divers modèles de fragment de con
 >
 >Cette méthode doit être utilisée avec précaution. Il est recommandé de définir *autant d’imbrication que nécessaire, mais pas plus*.
 
-C’est à ça que servent les références de fragment : elles vous permettent de faire référence à un autre fragment.
+Les références de fragment remplissent précisément cette fonction : elles vous permettent de faire référence à un autre fragment.
 
 Par exemple, les modèles de fragment de contenu suivants peuvent être définis :
 
@@ -138,23 +154,23 @@ Cela semble assez simple, mais une entreprise compte à la fois un PDG et des em
 Et une personne peut recevoir une distinction (ou peut-être deux).
 
 * Mon entreprise – Société
-   * PDG – Personne
-   * Employé(s) – Personne
-      * Récompense(s) personnelle(s) – Distinction
+  * PDG – Personne
+  * Employé(s) – Personne
+    * Récompense(s) personnelle(s) – Récompense
 
 Voilà pour commencer. En fonction du niveau de complexité, une distinction peut être propre à une entreprise, ou le siège social d’une entreprise peut être situé dans une ville donnée.
 
-En fonction du niveau de complexité, une distinction peut être propre à une entreprise, ou le siège social d’une entreprise peut être situé dans une ville donnée.
+La représentation de ces interrelations peut être réalisée à l’aide de références de fragment, car elles sont comprises par vous (l’architecte), votre créateur ou créatrice de contenu et les applications découplées.
 
 ## Prochaines étapes {#whats-next}
 
-Maintenant que vous avez appris les principes de base, l’étape suivante consiste à [En savoir plus sur la création de modèles de fragment de contenu dans AEM](model-structure.md). Cette section présente et discute les différentes références disponibles, ainsi que la manière de créer des niveaux de structure à l’aide des références de fragment, un élément clé de la modélisation en mode découplé.
+Maintenant que vous avez appris les principes de base, l’étape suivante consiste à [En savoir plus sur la création de modèles de fragment de contenu dans AEM](model-structure.md). Cette section présente et discute des différentes références disponibles, ainsi que la manière de créer des niveaux de structure à l’aide des références de fragment, un élément clé de la modélisation en mode découplé.
 
 ## Ressources supplémentaires {#additional-resources}
 
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 
-   * [Modèles de fragment de contenu – Types de données](/help/assets/content-fragments/content-fragments-models.md#data-types)
+  * [Modèles de fragment de contenu – Types de données](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [Concepts de création](/help/sites-authoring/author.md)
 

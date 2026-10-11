@@ -9,13 +9,22 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
-workflow-type: ht
-source-wordcount: '1898'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1916'
+ht-degree: 95%
 ---
-
 # Création et organisation des pages{#creating-and-organizing-pages}
 
 Cette section décrit comment créer et gérer des pages avec Adobe Experience Manager (AEM) pour pouvoir ensuite [créer du contenu](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) sur ces pages.
@@ -35,7 +44,7 @@ En tant qu’auteur ou autrice, vous devez organiser votre site Web dans AEM. Ce
 
 Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour organiser votre contenu.
 
-La structure d’un site Web peut être comparée à celle d’un *arbre* qui soutient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former des URL qui indiquent les titres lorsque le contenu des pages est affiché.
+La structure d’un site web peut être comparée à celle d’un *arbre* qui soutient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former des URL qui indiquent les titres lorsque le contenu des pages est affiché.
 
 Vous trouverez ci-dessous un extrait du site Geometrixx ; par exemple, où est accessible la page `Triangle` :
 
@@ -79,13 +88,13 @@ Lors de la création d’une page, il y a deux champs clés :
 
 * **[Titre](#title)** :
 
-   * Il s’affiche pour l’utilisateur dans la console et dans la partie supérieure du contenu de la page lors de la modification.
-   * Ce champ est obligatoire.
+  * Il s’affiche pour l’utilisateur dans la console et dans la partie supérieure du contenu de la page lors de la modification.
+  * Ce champ est obligatoire.
 
 * **[Nom](#name)** :
 
-   * Il est utilisé pour générer l’URI.
-   * L’entrée utilisateur pour ce champ est facultative. S’il n’est pas spécifié, le nom est dérivé du titre.
+  * Il est utilisé pour générer l’URI.
+  * L’entrée utilisateur pour ce champ est facultative. S’il n’est pas spécifié, le nom est dérivé du titre.
 
 Lors de la création d’une page, AEM [valide le nom de la page en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
@@ -127,18 +136,18 @@ Dans l’IU classique, vous **ne pouvez pas entrer de caractères non valides** 
 
 Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle est utilisé comme base pour toute nouvelle page créée.
 
-Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
+Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
 
 AEM comporte plusieurs modèles prêts à l’emploi. Les modèles proposés dépendent du site web individuel et des informations qui doivent être fournies (lors de la création d’une page) de l’interface utilisée. Les champs clés sont les suivants :
 
 * **Titre**
-Titre affiché sur la page web obtenue.
+Titre affiché sur la page web qui en résulte.
 
-* **Nom**
-Utilisé lors de l’attribution du nom de la page.
+* **Name**
+Utilisé pour nommer la page.
 
 * **Modèle**
-Liste des modèles utilisables lors de la génération de la nouvelle page.
+Liste des modèles pouvant être utilisés lors de la génération de la nouvelle page.
 
 ### Composants {#components}
 
@@ -164,7 +173,7 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
 
    ![screen_shot_2012-02-15at114413am](assets/screen_shot_2012-02-15at114413am.png)
 
-1. Dans le menu **Nouveau...** (cliquez sur la flèche à côté de **Nouveau...**), sélectionnez **Nouvelle page...**. La fenêtre **Créer une page** s’ouvre.
+1. Dans le menu **Nouveau...** (cliquez sur la flèche en regard de **Nouveau...**), sélectionnez **Nouvelle page...**. La fenêtre **Créer une page** s’ouvre.
 
    Cliquer sur **Nouveau...** agit également comme un raccourci vers la fonction **Nouvelle page...**.
 
@@ -173,8 +182,8 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
    * Fournissez un **Titre**, celui-ci est affiché pour l’utilisateur ou l’utilisatrice.
    * Fournissez un **Nom**, celui-ci est utilisé pour générer l’URI. S’il n’est pas spécifié, le nom est dérivé du titre.
 
-      * Si vous indiquez le **nom** d’une page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
-      * Dans l’IU classique, vous **ne pouvez pas entrer de caractères non valides** dans le champ **Nom**.
+     * Si vous indiquez le **nom** d’une page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
+     * Dans l’IU classique, vous **ne pouvez pas entrer de caractères non valides** dans le champ **Nom**.
 
    * Cliquez sur le modèle à utiliser pour créer la nouvelle page.
 

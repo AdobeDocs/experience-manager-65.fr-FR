@@ -9,13 +9,17 @@ exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 3%
-
 ---
-
 # Gestion des bannières{#managing-banners}
 
 {{ue-over-mobile}}
@@ -78,7 +82,7 @@ Utilisez l’éditeur de glisser-déposer intégré d’AEM pour ajouter ou modi
 Workflow de modification d’un article :
 
 1. Dans Mobile, choisissez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez une bannière source AEM dans la mosaïque **&#x200B; Gérer les bannières &#x200B;**.
+1. Sélectionnez une bannière source AEM dans la mosaïque ** Gérer les bannières **.
 1. Cliquez sur la bannière en surbrillance dans la vue Liste pour l’ouvrir dans l’éditeur de contenu.
 1. Utilisez l’éditeur de contenu pour faire glisser le contenu de la bannière (manuscrits, images, texte, etc.).
 

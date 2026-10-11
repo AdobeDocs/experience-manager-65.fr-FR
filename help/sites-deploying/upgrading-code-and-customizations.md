@@ -11,13 +11,22 @@ feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 91%
-
 ---
-
 # Mettre à jour le code et les personnalisations{#upgrading-code-and-customizations}
 
 Lors de la planification d’une mise à niveau, les aspects suivants d’une mise en œuvre doivent être étudiés et abordés.
@@ -29,7 +38,7 @@ Lors de la planification d’une mise à niveau, les aspects suivants d’une mi
 
 ## Présentation {#overview}
 
-1. **Détecteur de motifs** : exécutez le détecteur de motifs comme décrit dans la planification de la mise à niveau détaillée sur la page [Évaluer la complexité de la mise à niveau à l’aide du détecteur de motifs](/help/sites-deploying/pattern-detector.md). Vous obtenez un rapport du détecteur de motifs qui contient plus de détails sur les zones à traiter en plus des API/lots indisponibles dans la version cible d’AEM. Le rapport du détecteur de motifs vous donne une indication des incompatibilités éventuelles de votre code. S’il n’y a aucune incompatibilité, votre déploiement est déjà compatible avec la version 6.5. Vous pouvez toujours choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité 6.5, mais vous n’en avez pas besoin pour conserver la compatibilité. Si des incompatibilités sont signalées, vous pouvez choisir d’effectuer une exécution en mode de compatibilité et de différer le développement pour les nouvelles fonctionnalités de la version 6.5 ou pour la compatibilité. Vous pouvez également décider de procéder au développement après la mise à niveau, puis passer à l’étape 2. Pour en savoir plus, consultez la [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md).
+1. **Détecteur de motifs** : exécutez le détecteur de motifs comme décrit dans la planification de la mise à niveau détaillée sur la page [Évaluer la complexité de la mise à niveau à l’aide du détecteur de motifs](/help/sites-deploying/pattern-detector.md). Vous obtenez un rapport du détecteur de motifs qui contient plus de détails sur les zones à traiter en plus des API/bundles indisponibles dans la version cible d’AEM. Le rapport du détecteur de motifs vous donne une indication des incompatibilités éventuelles de votre code. S’il n’y a aucune incompatibilité, votre déploiement est déjà compatible avec la version 6.5. Vous pouvez toujours choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité 6.5, mais vous n’en avez pas besoin pour conserver la compatibilité. Si des incompatibilités sont signalées, vous pouvez choisir d’effectuer une exécution en mode de compatibilité et de différer le développement pour les nouvelles fonctionnalités de la version 6.5 ou pour la compatibilité. Vous pouvez également décider de procéder au développement après la mise à niveau, puis passer à l’étape 2. Pour en savoir plus, consultez la [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 
 1. **Développement de la base de code pour la version 6.5**- Créez une branche ou un référentiel dédié à la base de code pour la version cible. Utilisez les informations de la compatibilité avant la mise à niveau pour prévoir les zones de code à mettre à jour.
 1. **Compilation avec 6.5 Uber jar** : mettez à jour les POM de la base de code pour pointer vers 6.5 Uber jar et compilez le code par rapport à cette opération.
@@ -42,7 +51,8 @@ Avant de procéder à une mise à niveau, vous devez disposer d’une base de co
 
 Outre la mise à niveau facultative de votre base de code et de vos personnalisations pour qu’elles fonctionnent avec la nouvelle version d’AEM, la version 6.5 permet de gérer plus efficacement vos personnalisations à l’aide de la fonctionnalité de compatibilité descendante, comme décrit dans [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 
-Comme mentionné ci-dessus et illustré dans le diagramme ci-dessous, en exécutant le [Détecteur de motifs](/help/sites-deploying/pattern-detector.md) dans la première étape, vous pouvez évaluer la complexité globale de la mise à niveau. Il peut également vous aider à décider si vous souhaitez exécuter le mode de compatibilité ou mettre à jour vos personnalisations pour utiliser toutes les nouvelles fonctionnalités d’AEM 6.5. Pour en savoir plus, consultez la page [Compatibilité descendante dans AEM 6.5.](/help/sites-deploying/backward-compatibility.md) [![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+Comme mentionné ci-dessus et illustré dans le diagramme ci-dessous, en exécutant le [Détecteur de motifs](/help/sites-deploying/pattern-detector.md) dans la première étape, vous pouvez évaluer la complexité globale de la mise à niveau. Il peut également vous aider à décider si vous souhaitez exécuter le mode de compatibilité ou mettre à jour vos personnalisations pour utiliser toutes les nouvelles fonctionnalités d’AEM 6.5. Pour en savoir plus, consultez la page [Compatibilité descendante dans AEM 6.5.](/help/sites-deploying/backward-compatibility.md)
+[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Mise à niveau de la base de code {#upgrade-code-base}
 
@@ -130,7 +140,7 @@ Vous pouvez préparer les personnalisations de l’interface utilisateur d’Ass
 
 ### Génération d’identifiants pour les ressources existantes {#generating-asset-ids-for-existing-assets}
 
-Pour générer des identifiants pour les ressources existantes, mettez à niveau les ressources lorsque vous mettez à niveau votre instance AEM pour exécuter AEM 6.5. Cette étape est requise pour activer la fonctionnalité Assets Insights [&#128279;](/help/assets/asset-insights.md). Pour plus de détails, consultez la section [Ajout d’un code intégré](/help/assets/use-page-tracker.md#add-embed-code).
+Pour générer des identifiants pour les ressources existantes, mettez à niveau les ressources lorsque vous mettez à niveau votre instance AEM pour exécuter AEM 6.5. Cette étape est requise pour activer la fonctionnalité Assets Insights [](/help/assets/asset-insights.md). Pour plus de détails, consultez la section [Ajout d’un code intégré](/help/assets/use-page-tracker.md#add-embed-code).
 
 Pour mettre à niveau les ressources, configurez le package d’identifiants de ressources associé dans la console JMX. En fonction du nombre de ressources dans le référentiel, `migrateAllAssets` peut prendre beaucoup de temps. Selon les tests internes d’Adobe, cela peut prendre environ une heure pour 125 000 ressources sur TarMK.
 

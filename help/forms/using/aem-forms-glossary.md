@@ -5,13 +5,23 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 hide: true
 exl-id: 1b327871-c861-48c8-aac6-cff864398bee
-source-git-commit: a2a6296acd79fa53bd7ef1622898babf56aaadd7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2960'
 ht-degree: 93%
-
 ---
-
 # Glossaire AEM Forms
 
 ## Formulaires adaptatifs
@@ -30,7 +40,7 @@ Capacité à gérer plusieurs versions d’un formulaire dans le référentiel, 
 
 [Intégration d’Adobe Analytics Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation)
 
-Fournit des informations détaillées sur les interactions des utilisateurs et des utilisatrices (par exemple, abandons de champs, temps passé par section) à l’aide d’Adobe Analytics, ce qui permet une optimisation basée sur des données de la conception des formulaires.
+Fournit des informations détaillées sur les interactions des utilisateurs et des utilisatrices (par exemple, abandons de champs, temps passé par section) à l’aide d’Adobe Analytics, ce qui permet une optimisation axée sur les données de la conception des formulaires.
 
 ## Package de modules complémentaires AEM Forms
 
@@ -60,7 +70,7 @@ Service RESTful pour des workflows de signature numérique sécurisés et transp
 
 [AEM Forms Document Services 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/use-document-services/overview-aem-document-services)
 
-API fournies par la couche web d’AEM Forms pour une consommation à distance par des clients HTTP, comme le SDK mobile de Forms. Les fonctionnalités d’AEM Forms permettent la création, l’assemblage, la distribution et l’archivage de documents PDF, l’ajout de signatures numériques et le décodage de formulaires à code-barres.
+API fournies par la couche web d’AEM Forms pour une consommation à distance par des clients HTTP, comme le SDK mobile de Forms. Les fonctionnalités d’AEM Forms permettent la création, l’assemblage, la distribution et l’archivage de documents PDF, l’ajout de signatures numériques et le décodage de Barcoded Forms.
 
 | **Nom du service** | **Description** | **Lien de la documentation** |
 |------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -97,7 +107,7 @@ Application de bureau permettant de créer, modifier et déployer des workflows,
 
 [Archétype](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/developing/archetype/overview)
 
-Modèle ou motif dans AEM utilisé pour générer un nouveau projet avec une structure prédéfinie, ce qui facilite la normalisation, une configuration rapide et le respect des bonnes pratiques de développement d’AEM.
+Modèle ou schéma dans AEM utilisé pour générer un nouveau projet avec une structure prédéfinie, ce qui facilite la normalisation, une configuration rapide et le respect des bonnes pratiques de développement d’AEM.
 
 ## Instance de création
 
@@ -109,7 +119,7 @@ Environnement dans lequel les créateurs et créatrices et les administrateurs e
 
 [Interface frontale de création](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/install-aem-forms/aem-forms-architecture-deployment#architecture)
 
-Interface d’utilisation de création et de gestion de formulaires dans AEM Forms.
+Interface d’utilisation pour la création et la gestion de formulaires dans AEM Forms.
 
 ## Bloc de formulaire adaptatif
 
@@ -121,7 +131,7 @@ Unité d’encapsulation qui regroupe logiquement les composants et les métadon
 
 [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-Blocs de création réutilisables prêts à l’emploi pour la création de formulaires, y compris les champs de formulaire, les conteneurs de mises en page, les boutons et autres éléments interactifs.
+Blocs réutilisables prêts à l’emploi pour la création de formulaires, y compris les champs de formulaire, les conteneurs de mise en page, les boutons et autres éléments interactifs.
 
 ## Correspondence Management
 
@@ -163,7 +173,7 @@ Interfaces d’intégration de données externes dans des formulaires, notamment
 
 [Fragments de document](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/letters-correspondences/lists)
 
-Composants réutilisables de documents, tels que des en-têtes, des pieds de page ou des clauses, qui peuvent être inclus dynamiquement dans des formulaires ou des correspondances pour garantir la cohérence.
+Composants réutilisables de documents, tels que des en-têtes, des pieds de page, des avis de non-responsabilité ou des clauses, qui peuvent être inclus dynamiquement dans des formulaires ou des correspondances pour garantir la cohérence.
 
 ## Document d’enregistrement (DE)
 
@@ -175,13 +185,13 @@ Fonctionnalité d’AEM Forms qui génère une version d’archive non modifiabl
 
 [Edge Delivery Services](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/overview)
 
-Diffusion de contenu optimisée pour AEM Forms, qui permet de réduire la latence des ressources telles que les formulaires, les thèmes et les bibliothèques clientes, où les auteurs et les autrices peuvent mettre à jour et publier du contenu rapidement.
+Diffusion de contenu optimisée pour AEM Forms, garantissant une latence réduite pour les ressources telles que les formulaires, les thèmes et les bibliothèques clientes, afin que les auteurs et les autrices puissent mettre à jour et publier du contenu rapidement.
 
 ## Intégration de Forms
 
 [Intégration de Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/form-data-model/data-integration)
 
-Implique de connecter AEM Forms à des systèmes d’entreprise (par exemple, SAP, Salesforce) à l’aide de lots et de connecteurs OSGi, avec une prise en charge des flux de données bidirectionnels et des mises à jour en temps réel.
+Implique de connecter AEM Forms à des systèmes d’entreprise (par exemple, SAP, Salesforce) à l’aide de bundles et de connecteurs OSGi, avec une prise en charge des flux de données bidirectionnels et des mises à jour en temps réel.
 
 ## Révision de formulaire
 
@@ -193,7 +203,7 @@ Fonctionnalité axée sur les workflows permettant aux parties prenantes de pass
 
 [Modèle de données de formulaire (FDM)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model)
 
-Couche de représentation qui connecte des formulaires adaptatifs aux sources de données back-end, ce qui permet l’intégration aux services web RESTful, aux services SOAP et à OData. Le modèle de données de formulaire permet aux auteurs et aux autrices de formulaires de mapper directement les champs de formulaire aux structures de données back-end, assurant ainsi une synchronisation transparente des entrées des utilisateurs et des utilisatrices avec les systèmes externes.
+Couche de représentation qui connecte des formulaires adaptatifs aux sources de données back-end, ce qui permet l’intégration aux services web RESTful, aux services SOAP et à OData. FDM permet aux auteurs et aux autrices de formulaires de mapper directement les champs de formulaire aux structures de données back-end, assurant ainsi une synchronisation transparente des entrées des utilisateurs et des utilisatrices avec les systèmes externes.
 
 ## Localisation du formulaire
 
@@ -205,7 +215,7 @@ Processus des formulaires adaptatifs visant à prendre en charge plusieurs langu
 
 [Portail Formulaires](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/use-forms-portal/creating-form-portal-page)
 
-Les composants du portail de formulaires permettent aux développeurs et aux développeuses web de créer et de personnaliser un portail de formulaires sur les sites web créés à l’aide d’Adobe Experience Manager (AEM). Il permet aux utilisateurs et utilisatrices de découvrir des formulaires, d’y accéder et de les envoyer efficacement sur les plateformes web et mobiles.
+Les composants du Portail Formulaires permettent aux développeurs et aux développeuses web de créer et de personnaliser un Portail Formulaires sur les sites web créés à l’aide d’Adobe Experience Manager (AEM). Il permet aux utilisateurs et utilisatrices de découvrir des formulaires, d’y accéder et de les envoyer efficacement sur les plateformes web et mobiles.
 
 ## Rendu de formulaire et front-end d’envoi
 
@@ -223,7 +233,7 @@ Ensemble de formulaires associés regroupés pour être présentés sous la form
 
 [Concepteur Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/installing-configuring-designer)
 
-Application autonome utilisée pour concevoir un modèle de formulaire dans un formulaire XDP et l’utiliser dans AEM Forms pour générer un document d’enregistrement.
+Application autonome utilisée pour concevoir un modèle de formulaire dans un formulaire XDP et l’utiliser dans AEM Forms pour générer un document de référence.
 
 ## Workflow centré sur Forms
 
@@ -235,7 +245,7 @@ Ensemble d’étapes automatisées ou manuelles dans AEM Forms qui gèrent les p
 
 [Communication interactive](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/getting-started/interactive-communications-overview)
 
-Implémentation personnalisée pour la gestion de communications multicanaux hautement personnalisées. Elle combine des données provenant de diverses sources, telles que des systèmes CRM ou ERP, pour diffuser des communications dans plusieurs formats tels que le web, les appareils mobiles, les e-mails et l’impression papier.
+Mise en œuvre personnalisée pour la gestion de communications multicanal hautement personnalisées. Elle combine des données provenant de diverses sources, telles que des systèmes CRM ou ERP, pour diffuser des communications dans plusieurs formats tels que le web, les appareils mobiles, les e-mails et l’impression papier.
 
 ## JCR (référentiel de contenu Java)
 
@@ -283,13 +293,13 @@ Fonction dans AEM Forms permettant aux utilisateurs et aux utilisatrices de sign
 
 [Action Envoyer dans AEM Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/configuring-submit-actions)
 
-Actions côté serveur ou côté client exécutées lors de l’envoi du formulaire. Par exemple, les appels d’API REST, l’appel d’un workflow ou l’écriture de données dans un JCR.
+Actions côté serveur ou côté client exécutées lors de l’envoi du formulaire. Par exemple, les appels d’API REST, l’appel d’un workflow ou l’écriture de données dans un JCR (référentiel de contenu Java).
 
 ## Thèmes
 
 [Thèmes](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-Frameworks de style basés sur du CSS appliqués à des formulaires adaptatifs et utilisant LESS/SASS comme préprocesseurs. Les thèmes garantissent la conformité aux directives des marques et aux normes d’accessibilité. Vous pouvez personnaliser un thème, modifier ses éléments de conception, sa disposition, ses couleurs, sa typographie et parfois son code sous-jacent.
+Frameworks de style basés sur du CSS appliqués à des formulaires adaptatifs et utilisant LESS/SASS comme préprocesseurs. Les thèmes garantissent la conformité aux directives de branding et aux normes d’accessibilité. Vous pouvez personnaliser un thème, modifier ses éléments de conception, sa disposition, ses couleurs, sa typographie et parfois son code sous-jacent.
 
 ## Modèle
 

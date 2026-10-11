@@ -5,7 +5,18 @@ exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 90%
@@ -62,7 +73,7 @@ Sélectionnez le modèle requis pour votre site, puis confirmez avec **OK**.
 
 ## Création d’une configuration de l’exportateur de page pour votre site {#creating-a-page-exporter-configuration-for-your-site}
 
-L’exportateur de page repose sur le [framework de synchronisation du contenu. &#x200B;](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/package-summary.html) Les configurations disponibles dans la boîte de dialogue **Propriétés de la page** sont des modèles d’exportation qui définissent les dépendances requises pour une page.
+L’exportateur de page repose sur le [framework de synchronisation du contenu. ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/package-summary.html) Les configurations disponibles dans la boîte de dialogue **Propriétés de la page** sont des modèles d’exportation qui définissent les dépendances requises pour une page.
 
 Lorsqu’une exportation de page est déclenchée, le modèle d’exportation est référencé. Le chemin d’accès à la page et le chemin d’accès à la conception sont appliqués dynamiquement. Le fichier compressé est alors créé à l’aide de la fonctionnalité de synchronisation de contenu standard.
 
@@ -79,7 +90,7 @@ La méthode la plus simple pour créer un modèle d’exporteur de page consiste
 
 * copier le modèle `default` ;
 
-* lui attribuer un nouveau nom, approprié à votre site ;
+* lui attribuer un nouveau nom adapté à votre site,
 
 * effectuer ensuite les mises à jour requises.
 
@@ -112,7 +123,7 @@ Le modèle se compose d’une structure de nœud, dans la mesure où il utilise 
 For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
-Les nœuds ci-dessous peuvent être utilisés pour créer un modèle de d’exportation :
+Les nœuds ci-dessous peuvent être utilisés pour créer un modèle d’exportation :
 
 * `page`
 Le nœud page est utilisé pour copier le code HTML de la page dans le fichier compressé. Il possède les caractéristiques suivantes :

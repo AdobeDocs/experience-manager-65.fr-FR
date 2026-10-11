@@ -1,6 +1,6 @@
 ---
 title: Ajouter des domaines
-description: Découvrez comment ajouter un domaine d’entreprise, local ou hybride à l’aide des paramètres et des remarques générales de Gestion des domaines concernant les noms et les ID de domaine.
+description: Découvrez comment ajouter un domaine d’entreprise, local ou hybride à l’aide des paramètres de Gestion des domaines et des considérations générales relatives aux noms et aux ID de domaine.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
@@ -9,7 +9,23 @@ exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 97%
@@ -30,11 +46,11 @@ ht-degree: 97%
 
    Si vous sélectionnez LDAP, vous pouvez utiliser le serveur LDAP spécifié dans la configuration de l’annuaire, ou vous pouvez choisir un serveur LDAP différent à utiliser pour l’authentification. Si vous choisissez un serveur différent, les utilisateurs doivent exister sur les deux serveurs LDAP.
 
-1. Fournissez toutes les autres informations requises dans la page. (Voir [Paramètres d’authentification](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
+1. Fournissez toutes les autres informations requises sur la page. (Voir [Paramètres d’authentification](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
 1. Ajoutez un annuaire ou une interface SPI (Service Provider Interface) personnalisée. (Voir [Ajout d’annuaires ou d’interfaces SPI personnalisées](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
-1. Cliquez sur Suivant, puis sur OK.
+1. Cliquez sur Terminer, puis sur OK.
 
-Après avoir créé un domaine d’entreprise, synchronisez manuellement l’annuaire ou créez un déclencheur à cet effet pour que User Management puisse l’utiliser. Vous pouvez ensuite configurer un planning de synchronisation des annuaires et effectuer une synchronisation manuelle, si nécessaire. (Voir [Synchronisation des annuaires](/help/forms/using/admin-help/synchronizing-directories.md#synchronizing-directories).)
+Après avoir créé un domaine d’entreprise, synchronisez manuellement l’annuaire ou créez un déclencheur à cet effet pour que User Management puisse l’utiliser. Vous pouvez ensuite configurer un planning de synchronisation des répertoires et effectuer une synchronisation manuelle, si nécessaire. (Voir [Synchronisation des annuaires](/help/forms/using/admin-help/synchronizing-directories.md#synchronizing-directories).)
 
 ## Ajout d’un domaine local {#add-a-local-domain}
 
@@ -58,22 +74,22 @@ Gardez à l’esprit les points suivants lors du choix d’un nom et d’un ID d
 
 ### Remarques générales {#general-considerations}
 
-* Lors de l’utilisation de fournisseurs de base de données autres que DB2, l’ID de domaine peut atteindre 50 octets. Si vous utilisez des caractères ASCII sur un octet, la limite est de 50 caractères. Si ce dernier contient des caractères multi-octets, cette limite est réduite. Par exemple, si vous créez un domaine dont l’identificateur contient des caractères sur trois octets, la limite est réduite à 16 caractères. De plus, il n’est pas possible de créer des domaines comportant des caractères sur quatre octets. Si vous créez un ID de domaine dépassant cette limite, AEM Forms devient instable. Pour annuler les effets de cette instabilité, voir [Suppression d’un domaine contenant des caractères étendus ou multi-octet](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters) sur cette page.
-* Le nombre de domaines, locaux ou d’entreprise, pouvant être créés dans AEM Forms dépend de la longueur de chacun des ID de domaine. Lors de l’ajout d’un domaine d’entreprise ou hybride, le gestionnaire des utilisateurs met à jour la chaîne configInstance du nœud AuthProviders du fichier de configuration (config.xml) d’AEM forms. La chaîne configInstance contient une liste des chemins d’accès absolus de tous les domaines associés au fournisseur d’autorisations, séparés par des deux-points. La limite de taille de cette chaîne est de 8 192 caractères. Lorsque cette limite est atteinte, vous ne pouvez pas créer de domaine supplémentaire.
+* Lors de l’utilisation de fournisseurs de base de données autres que DB2, l’ID de domaine peut atteindre 50 octets. Si vous utilisez des caractères ASCII sur un octet, la limite est de 50 caractères. Si ce dernier contient des caractères multi-octets, cette limite est réduite. Par exemple, si vous créez un domaine dont l’identificateur contient des caractères sur trois octets, la limite est de 16 caractères. De plus, il n’est pas possible de créer des domaines comportant des caractères sur quatre octets. Si vous créez un ID de domaine dépassant cette limite, AEM Forms devient instable. Pour annuler les effets de cette instabilité, voir [Suppression d’un domaine contenant des caractères étendus ou multi-octet](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters) sur cette page.
+* Le nombre de domaines, locaux ou d’entreprise, pouvant être créés dans AEM Forms dépend de la longueur de chacun des ID de domaine. Lors de l’ajout d’un domaine d’entreprise ou hybride, le gestionnaire des utilisateurs met à jour la chaîne configInstance du nœud AuthProviders du fichier de configuration (config.xml) d’AEM forms. La chaîne configInstance contient une liste des chemins d’accès absolus de tous les domaines associés au fournisseur d’autorisations, séparés par des deux-points. La limite de taille de cette chaîne est de 8 192 caractères. Lorsque cette limite est atteinte, vous ne pouvez pas créer de domaines supplémentaires.
 
 ### Remarques relatives à l’utilisation de DB2 {#considerations-when-using-db2}
 
 Lorsque vous utilisez DB2 pour la base de données AEM Forms, la longueur maximale d’ID de domaine autorisée dépend des types de caractères utilisés :
 
-* 100 sur un octet (ASCII) (par exemple, les caractères utilisés en anglais, français ou allemand)
-* 50 sur deux octets (par exemple, les caractères utilisés en chinois, japonais ou coréen)
-* 25 sur quatre octets (par exemple, les caractères utilisés en chinois traditionnel)
+* 100 caractères sur un octet (ASCII) (par exemple, les caractères utilisés en anglais, français ou allemand)
+* 50 caractères sur deux octets (par exemple, les caractères utilisés en chinois, japonais ou coréen)
+* 25 caractères sur quatre octets (par exemple, les caractères utilisés en chinois traditionnel)
 
 ### Remarques relatives à l’utilisation de MySQL {#considerations-when-using-mysql}
 
 Lors de l’utilisation de MySQL comme base de données AEM Forms, les restrictions suivantes s’appliquent :
 
-* N’utilisez que des caractères ASCII (sur un octet) dans l’ID de domaine et le nom de domaine. Si vous utilisez des caractères ASCII étendus, AEM Forms devient instable et renvoie parfois une exception lorsque vous tentez de supprimer le domaine. Pour annuler les effets de cette instabilité, voir la section [Suppression d’un domaine contenant des caractères étendus ou multi-octet](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters) sur cette page.
+* N’utilisez que des caractères ASCII (sur un octet) dans l’ID de domaine et le nom de domaine. Si vous utilisez des caractères ASCII étendus, AEM Forms devient instable et peut renvoyer une exception lorsque vous tentez de supprimer le domaine. Pour annuler les effets de cette instabilité, voir la section [Suppression d’un domaine contenant des caractères étendus ou multi-octet](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters) sur cette page.
 * Vous ne pouvez pas créer deux domaines portant le même nom, même si la casse est différente. Par exemple, si vous essayez de créer un domaine nommé *Adobe* alors qu’un domaine nommé *adobe* existe déjà, une erreur se produit.
 * User Management n’est pas en mesure de différencier les noms de deux domaines qui ne diffèrent que par l’utilisation de caractères étendus. Par exemple, si vous créez un domaine appelé *abcde* et un autre appelé *âbcdè*, ils sont considérés comme identiques.
 
@@ -84,6 +100,6 @@ Lors de l’utilisation de MySQL comme base de données AEM Forms, les restrict
 1. Dans la base de données, recherchez le domaine dans la table edcprincipaldomainentity :
 
    * Sélectionnez `*` dans edcprincipaldomainentity.
-   * Recherchez le nom de domaine contenant des caractères étendus ou multi-octet et définissez son statut sur OBSOLÈTE.
+   * Recherchez le nom de domaine contenant des caractères étendus ou multi-octet et définissez son statut sur OBSOLETE.
 
 1. Importez le fichier de configuration mis à jour, comme indiqué dans la section [Importation et exportation du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).

@@ -1,18 +1,32 @@
 ---
 title: Développement de proxy [!DNL Assets]
-description: Un proxy est une instance  [!DNL Experience Manager]  qui utilise des programmes de travail par proxy pour le traitement des tâches. Découvrez comment configurer un proxy  [!DNL Experience Manager] , les opérations prises en charge et les composants de proxy, ainsi que comment développer un programme de travail par proxy personnalisé.
+description: Un proxy est une instance [!DNL Experience Manager] qui utilise des programmes de travail par proxy pour le traitement des tâches. Découvrez comment configurer un proxy [!DNL Experience Manager], les opérations prises en charge et les composants de proxy, ainsi que comment développer un programme de travail par proxy personnalisé.
 contentOwner: AG
 role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: cf4d26de-6586-4a7a-8ccb-6e8a29ee21ea
+    internal-label: Proxy workers
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 100%
-
+source-wordcount: '858'
+ht-degree: 96%
 ---
-
 # Développement de proxy [!DNL Assets] {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] utilise un proxy pour distribuer le traitement de certaines tâches.
@@ -23,7 +37,7 @@ Lorsque le proxy est une instance distincte d’[!DNL Experience Manager], il co
 
 ## Proxy (Accès HTTP) {#proxy-http-access}
 
-Un proxy est disponible via le servlet HTTP lorsqu’il est configuré de sorte à accepter les traitements dans : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Il est ensuite ajouté à la file d’attente des tâches de proxy et connecté au secondaire de proxy approprié.
+Un proxy est disponible via le servlet HTTP lorsqu’il est configuré de sorte à accepter les traitements dans : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres envoyés. Il est ensuite ajouté à la file d’attente des tâches de proxy et connecté au secondaire de proxy approprié.
 
 ### Opérations prises en charge {#supported-operations}
 
@@ -145,15 +159,15 @@ Pour configurer votre propre programme de travail de proxy personnalisé, vous d
 
 * Configurer et mettre en œuvre (à l’aide des événements Sling) :
 
-   * une rubrique de tâche personnalisée ;
-   * un gestionnaire d’événements personnalisé
+  * une rubrique de tâche personnalisée ;
+  * un gestionnaire d’événements personnalisé
 
 * Utilisez ensuite l’API JobService pour :
 
-   * distribuer votre tâche personnalisée au proxy ;
-   * gérer votre tâche
+  * distribuer votre tâche personnalisée au proxy ;
+  * gérer votre tâche
 
-* Si vous souhaitez utiliser le proxy d’un workflow, vous devez mettre en œuvre une étape externe personnalisée à l’aide de l’API WorkflowExternalProcess et de l’API JobService.
+* Si vous souhaitez utiliser le proxy à partir d’un workflow, vous devez mettre en œuvre une étape externe personnalisée à l’aide de l’API WorkflowExternalProcess et de l’API JobService.
 
 Le diagramme et les étapes suivants décrivent la marche à suivre :
 
@@ -167,7 +181,7 @@ Le diagramme et les étapes suivants décrivent la marche à suivre :
 
    Par exemple, consultez `IDSJob.IDS_EXTENDSCRIPT_JOB` pour le programme de travail de proxy IDS.
 
-1. L’étape externe est utilisée pour déclencher l’événement et attendre qu’il soit terminé en interrogeant l’identifiant. Vous devez développer votre propre étape pour mettre en œuvre de nouvelles fonctionnalités.
+1. L’étape externe est utilisée pour déclencher l’évènement et attendre qu’il soit terminé en interrogeant l’identifiant. Développez votre propre étape pour mettre en œuvre de nouvelles fonctionnalités.
 
    Mettez en œuvre une API `WorkflowExternalProcess`, puis utilisez l’API JobService et votre rubrique de tâche pour préparer un événement de tâche et le distribuer à l’API JobService (un service OSGi).
 

@@ -1,21 +1,29 @@
 ---
 title: Comment utiliser hCaptcha&reg; dans un Forms AEM 6.5 ?
-description: Améliorez sans effort la sécurité des formulaires grâce au service hCaptcha&reg;. Guide détaillé inclus.
+description: Améliorez sans effort la sécurité des formulaires grâce au service hCaptcha&reg ;. Guide détaillé inclus.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
-source-git-commit: 8025412849a1f324537019247a5e37b7931df7e7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 95%
-
+source-wordcount: '903'
+ht-degree: 96%
 ---
-
 # Connecter votre environnement AEM Forms à hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<span class="preview">Cette fonctionnalité est basée sur l’ID de basculement de fonctionnalité `FT_FORMS-12407`. Pour activer la fonction, procédez comme indiqué dans l’article [&#x200B; Activer le bouton (bascule) de fonction &#x200B;](/help/forms/using/enable-feature-toggle.md). </span>
+<span class="preview">Cette fonctionnalité est basée sur l’ID de basculement de fonctionnalité `FT_FORMS-12407`. Pour activer la fonction, procédez comme indiqué dans l’article [ Activer le bouton (bascule) de fonction ](/help/forms/using/enable-feature-toggle.md). </span>
 
-CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
+CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
 En plus de hCaptcha®, AEM Forms 6.5 prend en charge les solutions CAPTCHA suivantes :
 

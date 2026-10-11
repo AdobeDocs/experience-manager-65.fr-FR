@@ -1,19 +1,28 @@
 ---
 title: Créer et gérer les ensembles de politiques
-
 description: Les ensembles de politiques regroupent plusieurs politiques ayant une finalité commune. Vous pouvez créer, modifier et supprimer des politiques dans un ensemble de politiques.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 100%
@@ -26,7 +35,7 @@ ht-degree: 100%
 
 Les ensembles de politiques regroupent plusieurs politiques ayant une finalité commune. Ces ensembles de politiques sont ensuite rendus accessibles à un sous-ensemble d’utilisateurs et d’utilisatrices du système.
 
-Chaque ensemble de politiques est associé à au moins un coordinateur ou une coordinatrice. Le *coordinateur ou la coordinatrice d’ensembles de politiques* est un administrateur ou une administratrice, ou un utilisateur ou une utilisatrice possédant des autorisations supplémentaires. Au sein de l’organisation, le coordinateur ou la coordinatrice d’ensembles de politiques est généralement la personne la plus à même de créer des politiques dans un ensemble donné.
+Chaque ensemble de politiques est associé à au moins un coordinateur ou une coordinatrice de l’ensemble de politiques. Le *coordinateur ou la coordinatrice d’ensembles de politiques* est un administrateur ou une administratrice, ou un utilisateur ou une utilisatrice possédant des autorisations supplémentaires. Au sein de l’organisation, le coordinateur ou la coordinatrice d’ensembles de politiques est généralement la personne la plus à même de créer des politiques dans un ensemble donné.
 
 Les coordinateurs et coordinatrices d’ensembles de politiques peuvent effectuer les tâches suivantes :
 
@@ -40,17 +49,17 @@ Les coordinateurs et coordinatrices d’ensembles de politiques peuvent effectue
 
 Les ensembles de politiques sont créés et supprimés dans l’interface d’administration de Document Security par les super-utilisateurs et super-utilisatrices et les coordinateurs et coordinatrices d’ensembles de politiques bénéficiant des autorisations requises.
 
-Lorsque vous supprimez un ensemble de politiques, les politiques qui en faisaient partie ne peuvent pas être appliquées aux nouveaux documents. Cependant, vous pouvez afficher les informations de politique dans la console d’administration et dans les pages web destinées aux utilisateurs finaux et utilisatrices finales pour les politiques toujours utilisées. Vous pouvez afficher les informations de politique à partir de la page des détails du document pour tout document protégé par la politique. Les politiques toujours utilisées peuvent être modifiées.
+Lorsque vous supprimez un ensemble de politiques, les politiques qui en faisaient partie ne peuvent pas être appliquées aux nouveaux documents. Cependant, vous pouvez afficher les informations de politique dans la console d’administration et dans les pages web destinées aux utilisateurs finaux et utilisatrices finales pour les politiques toujours utilisées. Vous pouvez afficher les informations de politique à partir de la page de détails du document pour tout document protégé par la politique. Les politiques toujours utilisées peuvent être modifiées.
 
-Le super-utilisateur ou la super-utilisatrice (ou le coordinateur ou la coordinatrice) d’ensembles de politiques ajoute les domaines créés dans User Management à l’utilisateur ou l’utilisatrice et au groupe visible pour chaque ensemble de politiques. Cette liste est visible par le coordinateur ou la coordinatrice de l’ensemble de politiques et est utilisée pour limiter les domaines que le coordinateur ou la coordinatrice de l’ensemble de politiques peut parcourir lors du choix des personnes à ajouter aux politiques.
+Le super-utilisateur ou la super-utilisatrice (ou le coordinateur ou la coordinatrice) d’ensembles de politiques ajoute les domaines créés dans User Management à l’utilisateur ou l’utilisatrice et au groupe visible pour chaque ensemble de politiques. Cette liste est visible au coordinateur ou à la coordinatrice de l’ensemble de politiques et est utilisée pour limiter les domaines que le coordinateur ou la coordinatrice de l’ensemble de politiques peut parcourir lors du choix des personnes à ajouter aux politiques.
 
-Lorsque vous créez des ensembles de politiques, vous attribuez aux utilisateurs et aux utilisatrices le rôle d’éditeurs et d’éditrices de document. L’*éditeur ou l’éditrice de documents* est l’utilisateur ou l’utilisatrice qui protège le document avec une politique. Par défaut, cette personne est toujours incluse dans une politique avec des droits d’accès complets, y compris les fonctionnalités de révocation et de changement de politique. Toutefois, l’équipe d’administration peut modifier les droits d’accès de l’éditeur ou de l’éditrice pour les politiques partagées. Par exemple, l’équipe d’administration peut désactiver le droit de l’éditeur ou de l’éditrice à révoquer l’accès au document ou à changer de politique. Si l’équipe d’administration change la politique associée au document, le nom de l’éditeur ou de l’éditrice est mis à jour avec le nom de la personne propriétaire de la dernière politique appliquée au document.
+Lorsque vous créez des ensembles de politiques, vous attribuez aux utilisateurs et aux utilisatrices le rôle d’éditeur ou d’éditrice de document. L’*éditeur ou l’éditrice de documents* est l’utilisateur ou l’utilisatrice qui protège le document avec une politique. Par défaut, cette personne est toujours incluse dans une politique avec des droits d’accès complets, y compris les fonctionnalités de révocation et de changement de politique. Toutefois, les administrateurs et administratrices peuvent modifier les droits d’accès de l’éditeur ou de l’éditrice pour les politiques partagées. Par exemple, l’administrateur ou l’administratrice peut désactiver le droit de l’éditeur ou de l’éditrice à révoquer l’accès au document ou à changer de politique. Si un administrateur ou une administratrice change la politique associée au document, le nom de l’éditeur ou de l’éditrice est mis à jour avec le nom de la personne propriétaire de la dernière politique appliquée au document.
 
 L’installation de Document Security crée un ensemble de politiques par défaut appelé *Ensemble de politiques global*. Cet ensemble de politiques est géré par l’administrateur ou l’administratrice qui a installé le logiciel ou par le coordinateur ou la coordinatrice d’ensembles de politiques désigné pour cet ensemble en particulier.
 
 ## Créer un ensemble de politiques {#create-a-policy-set}
 
-L’ensemble de politiques global est le seul ensemble de politiques par défaut créé lors de l’installation. Vous pouvez créer d’autres ensembles de politiques et ajouter des politiques, des utilisateurs ou des utilisatrices, des coordinateurs ou des coordinatrices d’ensembles de politiques et des éditeurs ou des éditrices. Après avoir créé un ensemble de politiques, vous pouvez créer des politiques dans cet ensemble.
+L’ensemble de politiques global est le seul ensemble de politiques par défaut créé lors de l’installation. Vous pouvez créer d’autres ensembles de politiques et ajouter des politiques, des utilisateurs ou des utilisatrices, des coordinateurs ou des coordinatrices d’ensembles de politiques et des éditeurs ou des éditrices de document. Après avoir créé un ensemble de politiques, vous pouvez créer des politiques dans cet ensemble.
 
 Lorsque vous créez un ensemble de politiques, vous pouvez utiliser le bouton Précédent pour revenir à l’écran précédent et le bouton Enregistrer pour enregistrer votre ensemble de politiques à tout moment.
 
@@ -59,15 +68,15 @@ Lorsque vous créez un ensemble de politiques, vous pouvez utiliser le bouton Pr
 
    >[!NOTE]
    >
-   >Vous pouvez créer un nom d’ensemble de politiques contenant des caractères étendus. Toutefois, lors d’une comparaison entre deux chaînes, les caractères accentués et non accentués tels que « e » et « é » sont considérés comme identiques. Lorsqu’un utilisateur ou une utilisatrice crée un ensemble de politiques, une comparaison est effectuée pour vérifier s’il en existe déjà un portant ce nom. La comparaison ne fait pas de distinction entre les noms identiques, à l’exception des caractères accentués. L’ensemble de politiques étant considéré comme existant dans la base de données, aucun ajout n’est possible.
+   >Vous pouvez créer un nom d’ensemble de politiques contenant des caractères étendus. Toutefois, lors d’une comparaison entre deux chaînes, les caractères accentués et non accentués tels que « e » et « é » sont considérés comme identiques. Lorsqu’un utilisateur ou une utilisatrice crée un ensemble de politiques, une comparaison est effectuée pour vérifier s’il en existe déjà un portant ce nom. La comparaison ne peut pas distinguer les noms qui sont identiques à l’exception des caractères accentués. L’ensemble de politiques étant considéré comme existant dans la base de données, aucun ajout n’est possible.
 
-1. (Facultatif) Pour définir les domaines visibles aux éditeurs et éditrices lorsqu’ils ajoutent des utilisateurs et utilisatrices à une politique, cliquez sur Ajouter des domaines, sélectionnez les domaines dans lesquels vous souhaitez autoriser la recherche, cliquez sur Ajouter, puis sur OK.
-1. Dans la page Ajouter des utilisateurs, des utilisatrices ou des groupes visibles, cliquez sur Suivant.
+1. (Facultatif) Pour définir les domaines visibles aux éditeurs et éditrices de documents lorsqu’ils ajoutent des utilisateurs et utilisatrices à une politique, cliquez sur Ajouter des domaines, sélectionnez les domaines dans lesquels vous souhaitez autoriser la recherche, cliquez sur Ajouter, puis sur OK.
+1. Dans la page Ajouter des utilisateurs, des utilisatrices et des groupes visibles, cliquez sur Suivant.
 1. (Facultatif) Pour ajouter un coordinateur ou une coordinatrice d’ensembles de politiques, cliquez sur Ajouter des utilisateurs, des utilisatrices ou des groupes dans la page Ajouter un ou plusieurs coordinateurs et coordinatrices d’ensembles de politiques (étape 3 sur 4) et effectuez les tâches suivantes :
 
    * Dans la zone Rechercher, saisissez le nom ou l’adresse e-mail.
    * Dans la liste Utilisation, sélectionnez l’option appropriée.
-   * Dans la liste Type, sélectionnez Utilisateur ou utilisatrice et, dans la liste Dans, sélectionnez un domaine à rechercher.
+   * Dans la liste Type, sélectionnez Utilisateur ou utilisatrice et, dans la liste Dans, sélectionnez un domaine dans lequel effectuer la recherche.
    * Dans la liste Afficher, indiquez le nombre de résultats de recherche à afficher par page et cliquez sur Rechercher.
    * Cochez la case correspondant à l’utilisateur, à l’utilisatrice ou au groupe à ajouter, puis cliquez sur Suivant.
    * Sélectionnez les autorisations du coordinateur ou de la coordinatrice d’ensembles de politiques, puis cliquez sur Ajouter. Les autorisations suivantes peuvent être définies :
@@ -75,17 +84,17 @@ Lorsque vous créez un ensemble de politiques, vous pouvez utiliser le bouton Pr
      * Affichage des événements
      * Gérer les documents (révoquer et rétablir l’accès aux documents et changer de politiques sur les documents)
      * Gérer les politiques (création, modification et suppression de politiques)
-     * Gérer les éditeurs et éditrices (ajout et suppression d’éditeurs ou d’éditrices)
+     * Gérer les éditeurs et éditrices de documents (ajout et suppression d’éditeurs ou d’éditrices de documents)
      * Déléguer (ajout et suppression de coordinateurs ou de coordinatrices d’ensembles de politiques)
 
 1. Répétez l’étape 5 pour ajouter d’autres coordinateurs ou coordinatrices d’ensembles de politiques.
-1. Vérifiez les paramètres du coordinateur ou de la coordinatrice de jeux de politiques, puis cliquez sur Suivant.
+1. Vérifiez les paramètres du coordinateur ou de la coordinatrice d’ensemble de politiques, puis cliquez sur Suivant.
 1. Cliquez sur Ajouter des utilisateurs, des utilisatrices et des groupes pour ajouter des éditeurs et éditrices qui peuvent utiliser les politiques de l’ensemble de politiques pour protéger les documents.
-1. Dans la page Ajouter des éditeurs et éditrices, effectuez les tâches suivantes :
+1. Dans la page Ajouter des éditeurs et éditrices de documents, effectuez les tâches suivantes :
 
    * Dans la zone Rechercher, saisissez le nom ou l’adresse e-mail.
    * Dans la liste Utilisation, sélectionnez l’option appropriée.
-   * Dans la liste Type, sélectionnez Utilisateur ou utilisatrice et, dans la liste Dans, sélectionnez un domaine à rechercher.
+   * Dans la liste Type, sélectionnez Utilisateur ou utilisatrice et, dans la liste Dans, sélectionnez un domaine dans lequel effectuer la recherche.
    * Dans la liste Afficher, indiquez le nombre de résultats de recherche à afficher par page et cliquez sur Rechercher.
    * Cochez les cases des utilisateurs, des utilisatrices et des groupes à ajouter, cliquez sur Ajouter, puis cliquez sur OK.
 

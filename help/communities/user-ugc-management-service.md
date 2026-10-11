@@ -10,13 +10,20 @@ role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
 solution: Experience Manager
 feature: Communities
-source-git-commit: f4fc3b788d4128135ff77ebb87f1369059b1d2ec
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 2%
-
+source-wordcount: '628'
+ht-degree: 4%
 ---
-
 # Service de gestion des utilisateurs et du contenu créé par l’utilisateur dans AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 
 >[!IMPORTANT]
@@ -29,7 +36,7 @@ Pour plus d’informations, consultez la page [RGPD dans le Centre de traitement
 
 >[!NOTE]
 >
->Si vous avez configuré [Adobe Analytics sur le site AEM Communities](/help/communities/analytics.md), les données utilisateur capturées sont envoyées aux serveurs Adobe Analytics. Adobe Analytics fournit des API qui vous permettent d’accéder aux données utilisateur, de les exporter et de les supprimer, tout en respectant le RGPD. Pour plus d’informations, voir [Soumettre des demandes d’accès et de suppression](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html?lang=fr).
+>Si vous avez configuré [Adobe Analytics sur le site AEM Communities](/help/communities/analytics.md), les données utilisateur capturées sont envoyées aux serveurs Adobe Analytics. Adobe Analytics fournit des API qui vous permettent d’accéder aux données utilisateur, de les exporter et de les supprimer, tout en respectant le RGPD. Pour plus d’informations, voir [Soumettre des demandes d’accès et de suppression](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 Pour utiliser ces API, vous devez activer le point d’entrée `/services/social/ugcmanagement` en activant le service UserUgcManagement. Pour activer ce service, installez le [exemple de servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponible sur [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Ensuite, accédez au point d’entrée sur l’instance de publication de votre site de communautés avec les paramètres appropriés à l’aide d’une requête http, similaire à :
 
@@ -61,7 +68,7 @@ Par exemple, pour supprimer le contenu créé par l’utilisateur d’un utilisa
 
 ### Supprimer le contenu créé par l’utilisateur d’Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
-Pour supprimer des données utilisateur d’Adobe Analytics, suivez le workflow [RGPD d’Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=fr), car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
+Pour supprimer des données utilisateur d’Adobe Analytics, suivez le workflow [RGPD d’Analytics ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=fr), car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
 
 Pour les mappages de variables Adobe Analytics utilisés par AEM Communities, reportez-vous à l’image suivante :
 
@@ -84,4 +91,4 @@ Par exemple, pour supprimer le profil d’un utilisateur dont l’ID autorisable
 
 >[!NOTE]
 >
->L’API `deleteUserAccount()` désactive uniquement un profil utilisateur dans le système et supprime le contenu créé par l’utilisateur. Toutefois, pour supprimer un profil utilisateur du système, accédez à **&#x200B;**&#x200B;à l’adresse `https://<server>:<port>/crx/de`, localisez le nœud utilisateur et supprimez-le.
+>L’API `deleteUserAccount()` désactive uniquement un profil utilisateur dans le système et supprime le contenu créé par l’utilisateur. Toutefois, pour supprimer un profil utilisateur du système, accédez à **** à l’adresse `https://<server>:<port>/crx/de`, localisez le nœud utilisateur et supprimez-le.

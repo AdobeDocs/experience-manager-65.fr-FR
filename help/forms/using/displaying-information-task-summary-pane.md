@@ -9,20 +9,34 @@ exl-id: 0b3087fe-a3fb-4eac-ad4b-c123526e8195
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 100%
-
+source-wordcount: '266'
+ht-degree: 99%
 ---
-
 # Afficher des informations dans le volet Résumé de la tâche {#displaying-information-in-the-task-summary-pane}
 
 Lorsque vous ouvrez une tâche dans l’espace de travail AEM Forms, un volet Résumé de la tâche peut afficher un résumé de la tâche. Ces informations supplémentaires et pertinentes pour une tâche ajoutent de la valeur pour l’utilisateur final ou l’utilisatrice finale de l’espace de travail AEM Forms.
 
 L’espace de travail AEM Forms permet d’afficher une page web de votre choix dans le volet Résumé de la tâche. Un processus peut être créé pour afficher un volet Résumé de la tâche en utilisant Workbench.
 
-1. Créez un processus Affecter une tâche dans Workbench. Pour plus d’informations sur l’opération Affecter une tâche, voir la rubrique Référence de service dans l’[Aide de Workbench](https://help.adobe.com/fr_FR/AEMForms/6.1/WorkbenchHelp/).
+1. Créez un processus Affecter une tâche dans Workbench. Pour plus d’informations sur l’opération Affecter une tâche, voir la rubrique Référence de service dans l’[Aide de Workbench](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 
    >[!NOTE]
    >

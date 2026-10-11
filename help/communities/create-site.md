@@ -10,13 +10,20 @@ exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1631'
 ht-degree: 2%
-
 ---
-
 # Créer un site communautaire{#author-a-new-community-site}
 
 ## Créer un site communautaire {#create-a-community-site}
@@ -38,7 +45,7 @@ Pour commencer à créer un site communautaire :
 
 ![modèle de création de site](assets/create-site.png)
 
-À l’étape [&#x200B; Modèle de site &#x200B;](/help/communities/sites-console.md#step2013asitetemplate), saisissez un titre, une description et le nom de l’URL, puis sélectionnez un modèle de site de communauté, par exemple :
+À l’étape [ Modèle de site ](/help/communities/sites-console.md#step2013asitetemplate), saisissez un titre, une description et le nom de l’URL, puis sélectionnez un modèle de site de communauté, par exemple :
 
 * **Titre du site communautaire** : `Getting Started Tutorial`
 * **Description du site de la communauté** : `A site for engaging with the community.`
@@ -48,10 +55,10 @@ Pour commencer à créer un site communautaire :
 
 * **Nom du site de la communauté** : engage
 
-   * Vérifiez à nouveau le nom, car il ne peut pas être facilement modifié une fois le site créé
-   * L’URL initiale s’affiche sous le nom du site de la communauté
-   * Pour obtenir une URL valide, ajoutez un code de langue de base + « .html »
-   * *Par exemple*, https://localhost:4502/content/sites/ `engage/en.html`
+  * Vérifiez à nouveau le nom, car il ne peut pas être facilement modifié une fois le site créé
+  * L’URL initiale s’affiche sous le nom du site de la communauté
+  * Pour obtenir une URL valide, ajoutez un code de langue de base + « .html »
+  * *Par exemple*, https://localhost:4502/content/sites/ `engage/en.html`
 
 * **Modèle** : faites défiler l’écran vers le bas pour choisir `Reference Site`
 
@@ -97,14 +104,14 @@ Cochez toutes les cases de [Gestion des utilisateurs](/help/communities/sites-co
 
 #### BALISAGE {#tagging}
 
-Les balises appliquées au contenu de la communauté sont contrôlées en sélectionnant les espaces de noms AEM précédemment définis via la [console de balisage](/help/sites-administering/tags.md#tagging-console) (par exemple, l’espace de noms [&#x200B; Tutoriel](/help/communities/setup.md#create-tutorial-tags)).
+Les balises appliquées au contenu de la communauté sont contrôlées en sélectionnant les espaces de noms AEM précédemment définis via la [console de balisage](/help/sites-administering/tags.md#tagging-console) (par exemple, l’espace de noms [ Tutoriel](/help/communities/setup.md#create-tutorial-tags)).
 
 La recherche d’espaces de noms est facile à l’aide de la recherche avec saisie semi-automatique. Par exemple :
 
 * Type `tut`
 * Sélectionnez `Tutorial`.
 
-![balisage &#x200B;](assets/tagging.png)
+![balisage ](assets/tagging.png)
 
 #### ROLE {#roles}
 
@@ -119,7 +126,7 @@ Par exemple :
 
 >[!NOTE]
 >
->Le [service Tunnel](https://helpx.adobe.com/fr/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) permet de sélectionner des membres et des groupes qui existent uniquement dans l’environnement de publication.
+>Le [service Tunnel](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) permet de sélectionner des membres et des groupes qui existent uniquement dans l’environnement de publication.
 
 ![rôles utilisateur dans le nouveau site](assets/site-admin-1.png)
 
@@ -127,7 +134,7 @@ Par exemple :
 
 Acceptez les paramètres globaux par défaut pour [modération](/help/communities/sites-console.md#moderation) du contenu créé par l’utilisateur).
 
-![modération &#x200B;](assets/moderation1.png)
+![modération ](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 
@@ -139,7 +146,7 @@ Voir [Configuration d’Analytics pour les fonctionnalités de Communities](/hel
 
 #### TRADUCTION {#translation}
 
-Les [&#x200B; Paramètres de traduction &#x200B;](/help/communities/sites-console.md#translation) spécifient la langue de base du site, indiquent si le contenu créé par l’utilisateur peut être traduit et dans quelle langue, le cas échéant.
+Les [ Paramètres de traduction ](/help/communities/sites-console.md#translation) spécifient la langue de base du site, indiquent si le contenu créé par l’utilisateur peut être traduit et dans quelle langue, le cas échéant.
 
 * Cochez **Autoriser la traduction automatique**
 * Laissez les langues par défaut sélectionnées pour la traduction par le service de traduction automatique par défaut
@@ -207,7 +214,7 @@ De gauche à droite, ils sont :
 >1. Sélectionnez **[!UICONTROL Agent par défaut (publication)]**.
 >1. En regard de **[!UICONTROL Paramètres]**, sélectionnez **[!UICONTROL Modifier]**.
 >1. Dans la boîte de dialogue pop-up des paramètres d’agent, sélectionnez l’onglet **[!UICONTROL Transport]**.
->1. Dans URI, remplacez le numéro de port, 4503, par le numéro de port souhaité. Par exemple, pour utiliser le port 6103: :6103/bin/receive?sling:authRequestLogin=1
+>1. Dans URI, remplacez le numéro de port, 4503, par le numéro de port souhaité. Par exemple, pour utiliser le port 6103 : :authRequestLogin=1
 >1. Sélectionnez **[!UICONTROL OK]**.
 >1. (Facultatif) Sélectionnez **[!UICONTROL Effacer]** ou **[!UICONTROL Forcer une nouvelle tentative]** pour réinitialiser la file d’attente de réplication.
 
@@ -263,35 +270,35 @@ Pour ce faire, vous devez utiliser [CRXDE](https://localhost:4503/crx/de) Lite p
 Pour commencer :
 
 1. Sur l’instance de publication, connectez-vous avec les privilèges d’administrateur.
-1. Accédez à [:4503/crx/de](https://localhost:4503/crx/de).
+1. Accédez à [](https://localhost:4503/crx/de).
 1. Dans l’explorateur de projets, développez `/etc/map.`
 1. Sélectionnez le nœud `http` :
 
    * Sélectionnez **Créer un nœud :**
 
-      * **Name** localhost.4503
-(ne *pas* utiliser &#39;:&#39;)
+     * **Name** localhost.4503
+       (ne *pas* utiliser &#39;:&#39;)
 
-      * **Type** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+     * **Type** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. Avec le nœud `localhost.4503` nouvellement créé sélectionné :
 
    * Ajoutez la propriété :
 
    * **Nom** sling:match
-      * **Type** String
-      * **Value** localhost.4503/$
-(doit se terminer par le caractère &#39;$&#39;)
+     * **Type** String
+     * **Value** localhost.4503/$
+       (doit se terminer par le caractère &#39;$&#39;)
 
    * Ajoutez la propriété :
 
-      * **Nom** sling:internalRedirect
-      * **Type** String
-      * **Value** /content/sites/engage/en.html
+     * **Nom** sling:internalRedirect
+     * **Type** String
+     * **Value** /content/sites/engage/en.html
 
 1. Sélectionnez **Enregistrer tout.**
 1. (Facultatif) Supprimez l’historique de navigation.
-1. Accédez à :4503/.
+1. Accédez à https://localhost:4503/.
 
    * Arrivée à https://localhost:4503/content/sites/engage/en.html
 

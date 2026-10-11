@@ -9,7 +9,16 @@ role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 2%
@@ -115,7 +124,7 @@ Le script SQL est obtenu à partir du référentiel AEM :
 
 1. Accéder à CRXDE Lite
 
-   * Par exemple, [&#128279;](http://localhost:4502/crx/de)
+   * Par exemple, [](http://localhost:4502/crx/de)
 
 1. Sélectionnez le dossier /libs/social/config/datastore/dsrp/schema .
 1. Télécharger `init-schema.sql`
@@ -142,7 +151,7 @@ Dans MySQL Workbench
 * Dans le menu déroulant Fichier , sélectionnez l’option **[!UICONTROL Ouvrir le script SQL]**
 * Sélectionner le script de `init_schema.sql` téléchargé
 
-![select-sql-script &#x200B;](assets/select-sql-script.png)
+![select-sql-script ](assets/select-sql-script.png)
 
 #### Etape 2 : exécuter le script SQL {#step-execute-sql-script}
 
@@ -168,9 +177,9 @@ Lorsque MySQL s’exécute sur un serveur différent d’AEM, le nom d’hôte d
 
 * Sur chaque instance AEM de création et de publication.
 * Connecté avec des droits d&#39;administrateur.
-* Accédez à la [&#x200B; console web &#x200B;](../../help/sites-deploying/configuring-osgi.md).
+* Accédez à la [ console web ](../../help/sites-deploying/configuring-osgi.md).
 
-  * Par exemple, [&#128279;](http://localhost:4502/system/console/configMgr)
+  * Par exemple, [](http://localhost:4502/system/console/configMgr)
 
 * Localiser le `Day Commons JDBC Connections Pool`
 * Sélectionnez l’icône `+` pour créer une configuration de connexion.

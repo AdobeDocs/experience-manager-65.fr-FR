@@ -9,13 +9,27 @@ exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
-workflow-type: ht
-source-wordcount: '1015'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1025'
+ht-degree: 97%
 ---
-
 
 # Synchroniser des annuaires {#synchronizing-directories}
 
@@ -25,7 +39,7 @@ La synchronisation des annuaires permet d’extraire, dans la base de données U
 
 Vous pouvez également définir une synchronisation quotidienne pour harmoniser automatiquement la base de données User Management avec les modifications ou les mises à jour effectuées sur les serveurs d’annuaire sources. Toutefois, ce processus utilise des ressources réseau et serveur. Choisissez des périodes de faible utilisation et évitez de planifier des synchronisations inutiles qui bloquent les ressources système et réseau. Pour minimiser les synchronisations inutiles, utilisez plutôt l’option de synchronisation immédiate.
 
-Vous pouvez également indiquer s’il convient d’envoyer des informations relatives aux utilisateurs, aux utilisatrices et aux groupes dans LiveCycle Content Services 9 (obsolète) lors de la synchronisation de domaines.
+Vous pouvez également indiquer s’il convient d’envoyer des informations relatives aux utilisateurs, aux utilisatrices et aux groupes dans Adobe LiveCycle Content Services  9 (obsolète) lors de la synchronisation de domaines.
 
 >[!NOTE]
 >
@@ -33,11 +47,11 @@ Vous pouvez également indiquer s’il convient d’envoyer des informations rel
 
 >[!NOTE]
 >
->Si le processus de synchronisation des domaines est interrompu (par exemple, le serveur d’applications est arrêté pendant le processus), patientez avant de tenter de synchroniser le domaine. Pour évaluer la synchronisation, observez son état. Si User Management a appliqué un verrou avant l’arrêt, patientez dix minutes pour son déverrouillage après le redémarrage du serveur. Si le statut de synchronisation est « En cours » mais que la synchronisation a été interrompue ou bloquée, User Management tente une nouvelle synchronisation après 3 minutes. Après trois tentatives infructueuses, User Management déclare l’échec de la synchronisation et procède au déverrouillage.
+>Si le processus de synchronisation du domaine est interrompu (par exemple, le serveur d’applications est arrêté pendant le processus), patientez avant de tenter de synchroniser le domaine. Pour évaluer le statut de la synchronisation, observez son état. Si User Management a appliqué un verrou avant l’arrêt, patientez dix minutes pour son déverrouillage après le redémarrage du serveur. Si le statut de synchronisation est « En cours » mais que la synchronisation a été interrompue ou bloquée, User Management tente une nouvelle synchronisation après 3 minutes. Après trois tentatives infructueuses, User Management déclare l’échec de la synchronisation et procède au déverrouillage.
 
 >[!NOTE]
 >
->Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
+>Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus centrés sur l’humain. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
 
 ## Activation de la synchronisation différentielle d’annuaires {#enable-delta-directory-synchronization}
 
@@ -47,7 +61,7 @@ Lorsque la synchronisation différentielle des annuaires est activée, User Mana
 
 * récupération de l’ensemble des utilisateurs et utilisatrices des serveurs d’annuaire, mais mise à jour de la base de données User Management uniquement avec les utilisateurs et utilisatrices dont l’horodatage a été modifié ;
 * récupération de tous les groupes, mais mise à jour de la base de données User Management uniquement avec les groupes dont l’horodatage a été modifié ;
-* récupération des membres de groupes uniquement pour les groupes dont l’horodatage a été modifié et mise à jour de la base de données User Management avec ces informations.
+* Récupérez les membres des groupes uniquement pour les groupes dont l’horodatage a été modifié et mettez à jour la base de données User Management avec ces informations.
 
 >[!NOTE]
 >
@@ -63,17 +77,17 @@ Lorsque la synchronisation différentielle des annuaires est activée, User Mana
 
 Par défaut, User Management consigne les statistiques détaillées pendant le processus de synchronisation.
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
+1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
 1. Sous Journalisation des statistiques de synchronisation, décochez la case pour désactiver la journalisation détaillée ou sélectionnez-la pour activer la journalisation, puis cliquez sur Enregistrer.
 
 ## Configuration de l’option de nouvelle synchronisation des annuaires {#configure-the-directory-synchronization-retry-option}
 
 Vous pouvez configurer User Management de manière à ce qu’il vérifie périodiquement si des tentatives de synchronisation d’annuaires ont échoué. User Management tente ensuite de terminer les synchronisations ayant échoué.
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
+1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
 1. Sous Expression cron d’achèvement de synchronisation, saisissez une expression cron qui représente l’intervalle auquel User Management tente de relancer les synchronisations ayant échoué. L’utilisation de l’expression cron est basée sur le système de planification des tâches open source Quartz, version 1.4.0.
 
-   La valeur par défaut est 0 0/13 &amp;ast; ? &amp;ast; , ce qui signifie que la vérification survient toutes les 13 minutes.
+   La valeur par défaut est 0 0/13 &amp;ast; ? &amp;ast; , ce qui signifie que la vérification a lieu toutes les 13 minutes.
 
 ## Synchronisation manuelle des annuaires {#manually-synchronize-directories}
 
@@ -81,7 +95,7 @@ Vous pouvez configurer User Management de manière à ce qu’il vérifie pério
 1. (Facultatif) Pour envoyer des informations sur les utilisateurs, les utilisatrices et les groupes à Content Services (obsolète), activez Sélectionnez cette option pour forcer les utilisateurs, les utilisatrices et les groupes à devenir des fournisseurs de stockage de principaux de sécurité externes enregistrés. Cette option s’applique également lors de l’ajout d’utilisateurs, d’utilisatrices et de groupes via la page Utilisateurs et groupes.
 1. Cochez la case correspondant à chaque domaine d’entreprise à synchroniser, puis cliquez sur Synchroniser maintenant.
 
-   Si vous sélectionnez plusieurs domaines, il est possible de les synchroniser simultanément. Cependant, si vous sélectionnez les domaines séparément, un seul domaine est synchronisé à la fois.
+   Si vous sélectionnez plusieurs domaines, il est possible de les synchroniser simultanément. Cependant, si vous sélectionnez les domaines séparément, une seule synchronisation de domaine peut être exécutée à la fois.
 
 ## Planification de la synchronisation des annuaires {#schedule-directory-synchronization}
 
@@ -89,7 +103,7 @@ Vous pouvez configurer User Management de manière à ce qu’il vérifie pério
 1. Planifiez la synchronisation :
 
    * Pour activer une synchronisation automatique quotidienne, sélectionnez Se produit sous Planificateur. Sélectionnez Quotidiennement dans la liste, puis saisissez l’heure au format 24 heures dans la zone correspondante. Lorsque vous enregistrez vos paramètres, cette valeur est convertie en une expression cron qui s’affiche dans la zone Expression Cron.
-   * Pour planifier la synchronisation un jour donné de la semaine ou du mois, ou au cours d’un mois donné, sélectionnez Expression Cron et saisissez l’expression appropriée dans la zone. Par exemple, synchronisez à 13 h 30 le dernier vendredi du mois.
+   * Pour planifier la synchronisation un jour donné de la semaine ou du mois, ou au cours d’un mois donné, sélectionnez Expression Cron et saisissez l’expression appropriée dans la zone. Par exemple, effectuez une synchronisation à 1 h 30 du matin le dernier vendredi du mois.
 
 L’utilisation de l’expression cron est basée sur le système de planification des tâches open source Quartz, version 1.4.0.
 

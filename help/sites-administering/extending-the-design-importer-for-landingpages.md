@@ -10,7 +10,18 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3524'
 ht-degree: 94%
@@ -468,7 +479,7 @@ L’utilisation de sélecteurs CSS similaires aux suivants n’est pas recommand
 En effet, des éléments HTML supplémentaires tels que les balises &lt;div> sont ajoutés au fichier Html généré après l’import.
 
 * Les scripts reposant sur une structure similaire à ci-dessus ne sont pas non plus recommandés pour une utilisation avec des éléments marqués pour conversion en composants AEM.
-* Il n’est pas recommandé d’utiliser des styles sur les balises de mise en forme pour la conversion d’un composant, comme &lt;div data-cq-component=« &ast;« >.
+* Il n’est pas recommandé d’utiliser des styles sur les balises de mise en forme pour la conversion d’un composant, comme &lt;div data-cq-component=« &amp;ast;« >.
 * La disposition de conception doit suivre les bonnes pratiques relatives au modèle HTML5 Boilerplate. Pour en savoir plus, consultez [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuration de modules OSGI {#configuring-osgi-modules}
@@ -529,7 +540,7 @@ Le tableau ci-dessous décrit brièvement les propriétés :
 >
 >Par exemple, si la configuration par défaut est
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >Et vous devez remplacer `CQ_DESIGN_PATH` par `VIPURL` dans le modèle de recherche, qui doit se présenter comme suit :
 >

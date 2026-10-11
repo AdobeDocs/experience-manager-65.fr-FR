@@ -1,19 +1,30 @@
 ---
 title: Facettes de recherche pour filtrer les résultats de recherche
-description: Découvrez comment créer, modifier et utiliser les facettes de recherche dans  [!DNL Adobe Experience Manager].
+description: Découvrez comment créer, modifier et utiliser les facettes de recherche dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2437'
-ht-degree: 98%
-
+ht-degree: 97%
 ---
-
 # Facettes de recherche {#search-facets}
 
 | Version | Lien de l’article |
@@ -23,17 +34,17 @@ ht-degree: 98%
 
 Le déploiement de [!DNL Adobe Experience Manager Assets] à l’échelle de l’entreprise offre la capacité de stocker de nombreuses ressources. Dans certains cas, la recherche de la bonne ressource peut être difficile et longue si vous utilisez uniquement les fonctionnalités de recherche génériques d’[!DNL Experience Manager].
 
-Utilisez les facettes de recherche du panneau Filtres pour ajouter plus de granularité à votre expérience de recherche et rendre la fonctionnalité de recherche plus efficace et plus polyvalente. Ces facettes de recherche utilisent plusieurs dimensions (prédicats) qui vous permettent d’effectuer des recherches plus complexes. Le panneau Filtres inclut quelques facettes standard. Vous pouvez également ajouter des facettes de recherche personnalisées.
+Utilisez les facettes de recherche du panneau Filtres pour ajouter plus de granularité à votre expérience de recherche et rendre la fonctionnalité de recherche plus efficace et plus polyvalente. Ces facettes de recherche ajoutent plusieurs dimensions (prédicats) qui vous permettent d’effectuer des recherches plus complexes. Le panneau Filtres inclut quelques facettes standard. Vous pouvez également ajouter des facettes de recherche personnalisées.
 
 En résumé, les facettes de recherche permettent de rechercher des ressources de plusieurs façons plutôt que selon un seul ordre taxonomique prédéterminé. Vous pouvez facilement descendre dans la hiérarchie jusqu’au niveau de détail souhaité pour effectuer une recherche plus précise.
 
-Par exemple, si vous recherchez une image, vous pouvez choisir si vous souhaitez une bitmap ou une image vectorielle. Vous pouvez réduire davantage la portée de la recherche en spécifiant le type MIME de l’image. De même, lors de la recherche de documents, vous pouvez spécifier le format, par exemple PDF ou MS Word.
+Par exemple, si vous recherchez une image, vous pouvez choisir si vous souhaitez une image matricielle ou une image vectorielle. Vous pouvez réduire davantage la portée de la recherche en spécifiant le type MIME de l’image. De même, lors de la recherche de documents, vous pouvez spécifier le format, par exemple PDF ou MS Word.
 
 ## Ajout d’un prédicat {#adding-a-predicate}
 
 Les facettes de recherche qui apparaissent dans le panneau Filtres sont définies dans le formulaire de recherche sous-jacent à l’aide de prédicats. Pour afficher d’autres facettes, ajoutez des prédicats au formulaire par défaut ou utilisez un formulaire personnalisé qui comprend les facettes de votre choix.
 
-Pour des recherches de texte intégral, ajoutez le prédicat **[!UICONTROL Texte intégral]** au formulaire. Utilisez le prédicat Propriété pour rechercher des ressources qui correspondent à une seule propriété que vous spécifiez. Ajoutez le prédicat Options pour rechercher des ressources correspondant à une ou plusieurs valeurs pour une propriété spécifique. Ajoutez le prédicat Période pour rechercher des ressources créées au cours d’une période donnée.
+Pour des recherches de texte intégral, ajoutez le prédicat **[!UICONTROL Texte intégral]** au formulaire. Utilisez le prédicat Propriété pour rechercher des ressources qui correspondent à une seule propriété que vous spécifiez. Utilisez le prédicat Options pour rechercher des ressources correspondant à une ou plusieurs valeurs pour une propriété spécifique. Ajoutez le prédicat Période pour rechercher des ressources créées au cours d’une période donnée.
 
 1. Cliquez sur le logo d’[!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
 1. Sur la page [!UICONTROL Formulaires de recherche], sélectionnez **[!UICONTROL Rail de recherche d’administration de ressources]**, puis cliquez sur **[!UICONTROL Modifier]** ![icône modifier](assets/do-not-localize/aemassets_edit.png).
@@ -91,7 +102,7 @@ Par exemple, si vous sélectionnez Images comme type de fichier, la requête de 
 
 La propriété de valeur d’un type de fichier, telle qu’affichée dans CRXDE, est utilisée pour que les requêtes fonctionnent.
 
-Au lieu de créer manuellement une structure de nœud pour les options du référentiel CRX, vous pouvez définir les options d’un fichier JSON en spécifiant les paires clé-valeur correspondantes. Spécifiez le chemin du fichier JSON dans le champ **[!UICONTROL Nom de la propriété]**. Par exemple, vous pouvez définir les paires clé-valeur `image/bmp`, `image/gif`, `image/jpeg` et `image/png`, puis spécifier leurs valeurs comme illustré dans l’échantillon de fichier JSON ci-dessous. Dans le champ **[!UICONTROL Nom de la propriété]**, vous pouvez spécifier le chemin d’accès CRXDE de ce fichier.
+Au lieu de créer manuellement une structure de nœud pour les options dans le référentiel CRXDE, vous pouvez définir les options dans un fichier JSON en spécifiant les paires clé-valeur correspondantes. Spécifiez le chemin du fichier JSON dans le champ **[!UICONTROL Nom de la propriété]**. Par exemple, vous pouvez définir les paires clé-valeur `image/bmp`, `image/gif`, `image/jpeg` et `image/png`, puis spécifier leurs valeurs comme illustré dans l’échantillon de fichier JSON ci-dessous. Dans le champ **[!UICONTROL Nom de la propriété]**, vous pouvez spécifier le chemin d’accès CRXDE de ce fichier.
 
 ```json
 {
@@ -131,7 +142,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 
 ## Ajout d’un prédicat de propriété à plusieurs valeurs {#adding-a-multi-value-property-predicate}
 
-Le prédicat de propriété à plusieurs valeurs vous permet de rechercher plusieurs valeurs dans des ressources. Supposons que vous disposiez des images de plusieurs produits dans [!DNL Assets] et que les métadonnées de chaque image comprennent un numéro de SKU qui est associé au produit. Vous pouvez utiliser ce prédicat pour rechercher des images de produit sur la base de plusieurs numéros de SKU.
+Le prédicat de propriété à plusieurs valeurs vous permet de rechercher des ressources à l’aide de plusieurs valeurs. Supposons que vous disposiez des images de plusieurs produits dans [!DNL Assets] et que les métadonnées de chaque image comprennent un numéro de SKU qui est associé au produit. Vous pouvez utiliser ce prédicat pour rechercher des images de produit sur la base de plusieurs numéros de SKU.
 
 1. Cliquez sur le logo d’[!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
 1. Dans la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administration de ressources]**, puis cliquez sur **[!UICONTROL Modifier]** ![icône modifier](assets/do-not-localize/aemassets_edit.png).

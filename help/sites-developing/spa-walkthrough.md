@@ -1,6 +1,6 @@
 ---
-title: Introduction et présentation des applications monopage (SPA)
-description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
+title: Introduction et guide pas à pas des applications monopage (SPA)
+description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une application SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
@@ -8,19 +8,33 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 99%
-
 ---
-
 
 # Introduction et présentation des applications monopage (SPA) {#spa-introduction-and-walkthrough}
 
 Les applications monopage (SPA) peuvent améliorer considérablement l’expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
 
-L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une SPA élémentaire à des fins de création et indique comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
+L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une application SPA élémentaire à des fins de création et indique comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 
 {{ue-over-spa}}
 
@@ -28,21 +42,21 @@ L’éditeur de SPA constitue une solution complète pour la prise en charge des
 
 ### Objectif de l’article {#article-objective}
 
-Cet article présente les concepts de base des SPA, puis passe en revue l’éditeur de SPA en utilisant une SPA simple pour démontrer les fonctions de base de modification de contenu. Il détaille ensuite la construction de la page et indique comment la SPA est liée à l’éditeur de SPA AEM et interagit avec lui.
+Cet article présente les concepts de base des SPA, puis passe en revue l’éditeur de SPA en utilisant une application SPA simple pour démontrer les fonctions de base de modification de contenu. Il détaille ensuite la construction de la page et indique comment l’application SPA est liée à l’éditeur de SPA AEM et interagit avec lui.
 
 L’objectif de cette introduction et de cette présentation est de montrer aux développeurs AEM pourquoi les SPA sont pertinentes, comment elles fonctionnent, comment elles sont gérées par l’éditeur de SPA AEM et en quoi elles diffèrent d’une application AEM standard.
 
 ## Conditions requises {#requirements}
 
-La présentation repose sur les fonctionnalités AEM standard et l’exemple d’application de projet SPA WKND. Pour suivre cette présentation, vous devez disposer des éléments suivants.
+La présentation repose sur la fonctionnalité standard d’AEM et l’exemple d’application de projet SPA WKND. Pour suivre cette présentation, vous devez disposer des éléments suivants.
 
 * [Version 6.5.4 ou ultérieure d’AEM](/help/release-notes/release-notes.md)
-   * Vous devez disposer des droits d’administration sur le système.
+  * Vous devez disposer des droits d’administration sur le système.
 * [Exemple d’application de projet WKND SPA disponible sur GitHub](https://github.com/adobe/aem-guides-wknd-spa)
-   * Téléchargez la [dernière version de l’application React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Son nom sera similaire à `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
-   * Téléchargez les [exemples d’images les plus récents](https://github.com/adobe/aem-guides-wknd-spa/releases) pour l’application. Son nom sera similaire à `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [Utilisez le gestionnaire de modules](/help/sites-administering/package-manager.md) pour installer les packages comme vous le feriez pour tout autre package dans AEM.
-   * L’application n’a pas besoin d’être installée à l’aide de Maven pour cette présentation.
+  * Téléchargez la [dernière version de l’application React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Son nom sera similaire à `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+  * Téléchargez les [exemples d’images les plus récents](https://github.com/adobe/aem-guides-wknd-spa/releases) pour l’application. Son nom sera similaire à `wknd-spa-sample-images-X.Y.Z.zip`.
+  * [Utilisez le gestionnaire de modules](/help/sites-administering/package-manager.md) pour installer les packages comme vous le feriez pour tout autre package dans AEM.
+  * L’application n’a pas besoin d’être installée à l’aide de Maven pour ce guide pas à pas.
 
 >[!CAUTION]
 >
@@ -83,7 +97,7 @@ Plus rapide, fluide et ressemblant davantage à une application native, une SPA,
 
 L’idée principale sous-jacente à une SPA est que les appels à un serveur et la dépendance envers un serveur sont réduits pour minimiser les retards liés aux appels du serveur, de sorte que la SPA s’approche de la réactivité d’une application native.
 
-Sur une page web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque vous passez à une autre page, le serveur est appelé pour que les ressources supplémentaires soient mises à disposition. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de lenteur, car la page doit rattraper les requêtes du visiteur.
+Sur une page web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque le visiteur ou la visiteuse passe à une autre page, le serveur est appelé pour que les ressources supplémentaires soient mises à disposition. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de lenteur, car la page doit rattraper les requêtes du visiteur.
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
@@ -127,7 +141,7 @@ Lorsqu’une SPA est créée pour exploiter l’éditeur de SPA d’AEM, le cré
 
    ![Étape 5](assets/spa-walkthrough-step-5.png)
 
-D’autres outils de création, tels que le glisser-déposer de composants supplémentaires sur la page, la réorganisation des composants et la modification de la disposition, sont pris en charge comme dans toute application autre que SPA.
+D’autres outils de création, tels que le glisser-déposer de composants supplémentaires sur la page, la réorganisation des composants et la modification de la disposition, sont pris en charge comme dans toute application non SPA.
 
 >[!NOTE]
 >
@@ -157,7 +171,7 @@ Expérimenter le comportement d’une SPA pour l’utilisateur final puis inspec
 
    ![Étape 3](assets/spa-walkthrough-step-1-3.png)
 
-   Le trafic est très faible, car vous passez d’une page à l’autre dans l’application. La page n’est pas rechargée et seules les nouvelles images sont demandées.
+   Le trafic est très faible, car vous passez d’une page à l’autre dans l’application. La page n’est pas rechargée et seules les nouvelles images sont chargées.
 
    La SPA gère le contenu et le routage entièrement du côté client.
 
@@ -199,7 +213,7 @@ La section suivante, [Chargement d’une application SPA](#loading-an-spa-applic
 
    En implémentant des interfaces spécifiques, les modèles Sling fournissent les informations nécessaires à la SPA. La diffusion des données JSON est déléguée vers le bas à chaque composant (de la page, au paragraphe, au composant, etc).
 
-   Chaque composant choisit les données qu’il expose et le mode de rendu de ces données (côté serveur avec HTL ou côté client avec React). Cet article porte sur le rendu côté client avec React.
+   Chaque composant choisit ce qu’il expose et la manière dont il est rendu (côté serveur avec HTL ou côté client avec React). Cet article porte sur le rendu côté client avec React.
 
 1. Le modèle peut également regrouper les pages afin qu’elles soient chargées de manière synchrone, ce qui réduit le nombre de rechargements de page nécessaires.
 
@@ -246,7 +260,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
    >Ce comportement diffère de celui des pages générées côté serveur dans AEM, où un élément `cq` est inséré pour chaque composant modifiable.
    >
    >
-   >Cette approche dans la SPA élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour l’équipe de développement front-end.
+   >Cette approche dans la SPA élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour le développeur ou la développeuse front-end.
 
 ## Étapes suivantes {#next-steps}
 

@@ -1,6 +1,6 @@
 ---
-title: Notions fondamentales sur le contenu proposé
-description: Découvrez les principes de base de l’utilisation du contenu présenté que vous souhaitez mettre en évidence n’importe où sur le site de la communauté.
+title: Contenu en vedette - Essentiels
+description: Découvrez les principes de base de l’utilisation du contenu mis en avant n’importe où sur le site de la communauté.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,21 +9,28 @@ exl-id: 70b0ad6a-c891-4588-8515-449aed206805
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '122'
 ht-degree: 5%
-
 ---
+# Contenu en vedette - Essentiels  {#featured-content-essentials}
 
-# Notions fondamentales sur le contenu proposé  {#featured-content-essentials}
+Cette page fournit des informations essentielles sur l’utilisation du contenu présenté.
 
-Cette page fournit les informations essentielles pour utiliser le contenu présenté.
-
-Contrairement à l’épinglage d’une publication en haut d’un forum, cette fonctionnalité permet de mettre en évidence le contenu n’importe où sur le site de la communauté.
+Contrairement à l’épinglage d’une publication dans la partie supérieure d’un forum, cette fonctionnalité permet de mettre en évidence le contenu n’importe où sur le site de la communauté.
 
 
-## Principes élémentaires pour le côté client {#essentials-for-client-side}
+## Essentials pour le côté client {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -32,7 +39,7 @@ Contrairement à l’épinglage d’une publication en haut d’un forum, cette 
    <td>social/commons/components/hbs/featuredcontent</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
    <td>Non</td>
   </tr>
   <tr>
@@ -40,8 +47,8 @@ Contrairement à l’épinglage d’une publication en haut d’un forum, cette 
    <td> <i>default</i></td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
-   <td> /libs/social/commons/components/hbs/featuredcontent/featuredcontent.hbs<br /> /libs/social/commons/components/hbs/featuredtopic/featuredtopic.hbs</td>
+   <td> <strong>modèles</strong></td>
+   <td> <br /> /libs/social/commons/components/hbs/featuredtopic/featuredtopic.hbs</td>
   </tr>
   <tr>
    <td> <strong>css</strong></td>
@@ -49,7 +56,7 @@ Contrairement à l’épinglage d’une publication en haut d’un forum, cette 
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir <a href="featured.md">Contenu en vedette</a></td>
+   <td>Voir <a href="featured.md"> Contenu en vedette </a></td>
   </tr>
  </tbody>
 </table>
@@ -58,4 +65,4 @@ Contrairement à l’épinglage d’une publication en haut d’un forum, cette 
 
 ### Fonction Bibliothèque de fichiers {#file-library-function}
 
-Une structure de site de communauté qui inclut la [fonction de contenu proposé](functions.md#featured-content-function), comprend un composant `featured content` configuré.
+Une structure de site de communauté qui inclut la fonction [Contenu en vedette](functions.md#featured-content-function) comprend un composant `featured content` configuré.

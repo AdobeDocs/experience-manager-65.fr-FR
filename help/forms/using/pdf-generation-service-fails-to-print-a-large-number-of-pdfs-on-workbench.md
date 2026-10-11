@@ -1,17 +1,33 @@
 ---
-title: La génération de PDF ne parvient pas à imprimer un grand nombre de PDF avec Workbench.
+title: La génération de PDF ne parvient pas à imprimer un grand nombre de PDF avec atelier.
 description: Lorsqu’une personne génère un grand nombre de PDF via des services implémentés par le biais de Workbench, le service d’impression échoue.
 exl-id: f3746b8e-4c38-447a-b5bf-d11fc77556f7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 role: User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '809'
 ht-degree: 100%
-
 ---
-
 # La génération de PDF ne parvient pas à imprimer un grand nombre de PDF via Workbench. {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
 
 ## Problème {#issue}
@@ -49,16 +65,16 @@ Autres facteurs à prendre en compte lors de la conception d’un modèle de for
 
 1. Évitez d’utiliser du texte statique pour étiqueter un champ. Utilisez plutôt des légendes dans le champ de texte.
 2. N’utilisez pas de Rectangles, Lignes, Objets et Tableaux de manière excessive.
-3. Si possible, évitez d’utiliser des sous-formulaires RichText et de choix.
+3. Si possible, évitez d’utiliser RichText et les sous-formulaires de choix.
 4. Évitez l’utilisation excessive de sous-formulaires et de sous-formulaires imbriqués.
 
 ### Limite de taille des données {#data-size-limitations}
 
-Comme il existe une limite de mémoire de processus maximale et que la mémoire consommée par le processus ne dépend pas seulement de la taille du fichier de données. Cela est très étroitement lié à la conception de formulaire et, dans une certaine mesure, à la quantité réelle de données fusionnées dans le formulaire.
+Comme il existe une limite de mémoire de processus maximale et que la mémoire consommée par le processus ne dépend pas seulement de la taille du fichier de données. Cela est très étroitement lié à la conception du formulaire et, dans une certaine mesure, à la quantité réelle de données fusionnées dans le formulaire.
 
 Si le formulaire contient de nombreux petits nœuds avec des données de petite taille, le processus consomme plus de mémoire (et donc provoque une insuffisance de mémoire plus rapidement), qu’un formulaire comportant moins de nœuds (même) avec des données volumineuses.
 
-Lisez l’[annexe ci-dessous](#appendix) pour plus d’informations, où les résultats du test sont basés sur le formulaire d’impression (PDF non balisé). L’utilisation de la mémoire de processus de PDF balisé augmente. Cela dépend également du nombre de champs dans le formulaire. Pour faire simple, l’exigence de mémoire de processus serait un peu plus de 1,5 fois supérieure à celle du PDF non balisé.
+Lisez l’[annexe ci-dessous](#appendix) pour plus d’informations, où les résultats du test sont basés sur le formulaire d’impression (PDF non balisé). L’utilisation d’un PDF balisé augmente les besoins en mémoire du processus. Cela dépend également du nombre de champs dans le formulaire. Pour faire simple, l’exigence de mémoire de processus serait un peu plus de 1,5 fois supérieure à celle du PDF non balisé.
 
 ### Formulaires interactifs {#interactive-forms}
 
@@ -86,4 +102,4 @@ Ici, tout est identique au tableau précédent, mais les noms des balises xml so
 
    ![table_bigger_xml_tagname](/help/forms/using/assets/table_bigger_xml_tagname.png)
 
-Il est donc difficile d’appliquer une limite supérieure générale à la taille du fichier de données. Chaque formulaire est unique. Par conséquent, la consommation de mémoire diffère d’un formulaire à l’autre.
+Il est donc difficile de fixer une limite supérieure générale à la taille du fichier de données. Chaque formulaire est unique. Par conséquent, la consommation de mémoire diffère d’un formulaire à l’autre.

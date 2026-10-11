@@ -1,6 +1,6 @@
 ---
-title: Rechercher des images et des ressources numériques dans  [!DNL Adobe Experience Manager]
-description: Découvrez comment localiser les ressources nécessaires dans  [!DNL Adobe Experience Manager] à l’aide du panneau Filtres, et comment exploiter les ressources affichées dans les résultats de recherche.
+title: Recherche d’images et de ressources numériques dans [!DNL Adobe Experience Manager]
+description: Découvrez comment trouver les ressources requises dans [!DNL Adobe Experience Manager] à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search, Metadata
@@ -8,13 +8,27 @@ role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5796'
+source-wordcount: '5854'
 ht-degree: 97%
-
 ---
-
 # Recherche de ressources numériques dans [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
 | Version | Lien de l’article |
@@ -22,7 +36,7 @@ ht-degree: 97%
 | AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/search-assets) |
 | AEM 6.5 | Cet article |
 
-[!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Les équipes peuvent accélérer la mise sur le marché grâce à une expérience de recherche fluide et intelligente, en combinant des fonctionnalités prêtes à l’emploi et des méthodes personnalisées. La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les personnes chargées de la création, pour une gestion robuste des ressources par les utilisateurs et utilisatrices et les personnes spécialisées dans le marketing ou pour l’administration par les administrateurs et administratrices DAM. Les recherches simples, avancées ou personnalisées effectuées via l’interface utilisateur [!DNL Assets] ou d’autres applications et surfaces permettent de répondre à ces besoins.
+[!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Les équipes peuvent accélérer la mise sur le marché grâce à une expérience de recherche fluide et intelligente, en combinant des fonctionnalités prêtes à l’emploi et des méthodes personnalisées. La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des actifs digitaux, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et utilisatrices métier et spécialistes marketing ou pour l’administration par les administrateurs et admiistratrices de la gestion des actifs digitaux (DAM). Les recherches simples, avancées ou personnalisées effectuées via l’interface utilisateur [!DNL Assets] ou d’autres applications et surfaces permettent de répondre à ces besoins.
 
 [!DNL Experience Manager Assets] prend en charge les cas d’utilisation suivants dont cet article décrit l’utilisation, les concepts, les configurations, les limitations et le dépannage.
 
@@ -41,7 +55,7 @@ ht-degree: 97%
 
 Recherchez des ressources numériques à l’aide du champ Omnisearch situé en haut de l’interface web [!DNL Experience Manager]. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]** dans [!DNL Experience Manager], cliquez sur ![icône_recherche](assets/do-not-localize/search_icon.png) dans la barre supérieure, entrez le mot-clé de recherche et sélectionnez `Return`. Vous pouvez également utiliser le raccourci `/` (barre oblique) pour ouvrir le champ Omni-recherche. `Location:Assets` est présélectionné afin de limiter les recherches aux ressources de la gestion des ressources numériques. [!DNL Experience Manager] fournit des suggestions lorsque vous commencez à saisir un mot-clé de recherche.
 
-Utilisez le panneau **[!UICONTROL Filtres]** pour rechercher des ressources, des dossiers, des balises et des métadonnées. Vous pouvez filtrer les résultats de recherche en fonction des différentes options (prédicats), telles que le type et la taille de fichier, la date de dernière modification, l’état de la ressource, les données d&#39;aperçu et les licences Adobe Stock. Vous pouvez personnaliser le panneau Filtres et ajouter ou supprimer des prédicats de recherche à l’aide des [facettes de recherche](/help/assets/search-facets.md). Le filtre [!UICONTROL Type de fichier] du panneau [!UICONTROL Filtres] comporte des cases à cocher à états mixtes. Les cases à cocher du premier niveau sont donc partiellement cochées à moins que vous ne sélectionniez tous les prédicats (ou formats) imbriqués.
+Utilisez le panneau **[!UICONTROL Filtres]** pour rechercher des ressources, des dossiers, des balises et des métadonnées. Vous pouvez filtrer les résultats de recherche en fonction des différentes options (prédicats), telles que le type et la taille de fichier, la date de dernière modification, le statut de la ressource, les données d’aperçu et les licences Adobe Stock. Vous pouvez personnaliser le panneau Filtres et ajouter ou supprimer des prédicats de recherche à l’aide des [facettes de recherche](/help/assets/search-facets.md). Le filtre [!UICONTROL Type de fichier] du panneau [!UICONTROL Filtres] comporte des cases à cocher à états mixtes. Les cases à cocher du premier niveau sont donc partiellement cochées à moins que vous ne sélectionniez tous les prédicats (ou formats) imbriqués.
 
 La fonctionnalité de recherche [!DNL Experience Manager] prend en charge la recherche de collections et la recherche de ressources dans une collection. Voir [Recherche de collections](/help/assets/manage-collections.md).
 
@@ -67,7 +81,7 @@ Vous pouvez découvrir plus rapidement les ressources souhaitées à partir de l
 
 ### Termes et résultats de recherche de base {#searchbasics}
 
-Vous pouvez exécuter des recherches de mots-clés à partir du champ Omni-recherche. La recherche de mots-clés n’est pas sensible à la casse et il s’agit d’une recherche en texte intégral (dans les champs de métadonnées courants). Si plusieurs mots-clés sont utilisés, `AND` est l’opérateur par défaut entre les mots-clés.
+Vous pouvez exécuter des recherches de mots-clés à partir du champ OmniSearch. La recherche de mots-clés n’est pas sensible à la casse et il s’agit d’une recherche en texte intégral (dans les champs de métadonnées courants). Si plusieurs mots-clés sont utilisés, `AND` est l’opérateur par défaut entre les mots-clés.
 
 Les résultats sont triés par pertinence, en commençant par les correspondances les plus proches. Pour plusieurs mots-clés, les ressources qui contiennent les deux termes dans leurs métadonnées génèrent des résultats plus pertinents. Dans les métadonnées, les mots-clés qui apparaissent sous forme de balises intelligentes sont classés plus haut que les mots-clés qui apparaissent dans d’autres champs de métadonnées. [!DNL Experience Manager] permet de donner plus de poids à un terme de recherche particulier. Il est également possible d’[améliorer le classement](#searchrank) de quelques ressources ciblées pour des termes de recherche spécifiques.
 
@@ -87,8 +101,8 @@ Par défaut, la recherche d’[!DNL Experience Manager] associe les termes de re
 * `woman.running`
 * `woman-running`
 
-Toutefois, la requête renvoie `woman -running` des ressources sans `running` dans leurs métadonnées.
-L’utilisation de balises intelligentes ajoute une clause de `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes appliquées. Une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît également dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
+Toutefois, la requête `woman -running` renvoie des ressources sans `running` dans leurs métadonnées.
+L’utilisation des balises intelligentes ajoute une clause supplémentaire `OR` permettant de retrouver n’importe quel terme de recherche correspondant aux balises intelligentes appliquées. Une ressource étiquetée avec `woman` ou `running` à l’aide des balises intelligentes apparaît également dans ce type de requête. Les résultats de la recherche sont donc une combinaison de :
 
 * ressources avec les mots-clés `woman` et `running` dans les métadonnées (comportement par défaut) ;
 
@@ -118,7 +132,7 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 1. Correspondances de `woman running` dans les balises intelligentes.
 1. Correspondances de `woman` ou de `running` dans les balises intelligentes.
 
-Vous pouvez améliorer la pertinence des mots-clés pour des ressources particulières afin d’améliorer les recherches basées sur les mots-clés. En d’autres termes, les images pour lesquelles vous convertissez des mots-clés spécifiques apparaissent en haut des résultats de la recherche lorsque vous effectuez une recherche en fonction de ces mots-clés.
+Vous pouvez améliorer la pertinence des mots-clés pour des ressources particulières afin d’améliorer les recherches basées sur les mots-clés. En d’autres termes, les images pour lesquelles vous promouvez des mots-clés spécifiques apparaissent en haut des résultats de la recherche lorsque vous effectuez une recherche en fonction de ces mots-clés.
 
 1. Dans l’interface utilisateur [!DNL Assets], ouvrez la page des propriétés de la ressource. Cliquez sur **[!UICONTROL Avancé]** et cliquez sur **[!UICONTROL Ajouter]** sous **[!UICONTROL Élever pour les mots-clés de recherche]**.
 1. Dans la boîte de dialogue **[!UICONTROL Rechercher une promotion]**, indiquez un mot-clé pour lequel vous souhaitez améliorer la recherche d’image, puis cliquez sur **[!UICONTROL Ajouter]**. Vous pouvez indiquer plusieurs mots-clés de la même manière.
@@ -126,7 +140,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/search-and-discovery/search-boost).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410336/?captions=fre_fr&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
@@ -152,11 +166,11 @@ Pour rechercher des images visuellement similaires à une image sélectionnée p
 
 ### Images Adobe Stock {#adobe-stock}
 
-Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs peuvent rechercher des [ressources Adobe Stock](/help/assets/aem-assets-adobe-stock.md) et obtenir des licences pour les ressources requises. Ajoutez `Location: Adobe Stock` dans la barre OmniSearch. Vous pouvez également utiliser le panneau Filtres pour trouver toutes les ressources qui sont ou non sous licence, ou effectuer des recherches dans une ressource spécifique à l’aide du numéro de fichier Adobe Stock.
+Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs peuvent rechercher des [ressources Adobe Stock](/help/assets/aem-assets-adobe-stock.md) et obtenir des licences pour les ressources requises. Ajoutez `Location: Adobe Stock` dans la barre OmniSearch. Vous pouvez également utiliser le panneau Filtres pour trouver toutes les ressources qui sont ou non sous licence, ou rechercher une ressource spécifique à l’aide du numéro de fichier Adobe Stock.
 
 ### Ressources Dynamic Media {#dmassets}
 
-Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media]** > **[!UICONTROL Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des ressources telles que des ensembles d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°.
+Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media]** > **[!UICONTROL Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des ressources telles que des ensembles d’images, des carrousels, des ensembles de médias variés et des ensembles de rotation.
 
 ### Recherche GQL à l’aide de valeurs spécifiques dans les champs de métadonnées {#gql-search}
 
@@ -192,7 +206,7 @@ Les propriétés `path`, `limit`, `size` et `orderby` ne peuvent pas être combi
 TBD: Where are the limit, size, orderby properties defined?
 -->
 
-Le mot-clé d’une propriété générée par un utilisateur correspond au libellé de son champ dans l’éditeur de propriétés en minuscules et sans espace.
+Le mot-clé d’une propriété générée par un utilisateur ou une utilisatrice correspond au libellé de son champ dans l’éditeur de propriétés, en minuscules et sans espace.
 
 Voici quelques exemples de formats de recherche pour des requêtes complexes :
 
@@ -206,7 +220,7 @@ Voici quelques exemples de formats de recherche pour des requêtes complexes :
 
 ## Recherche de ressources numériques à partir d’autres offres ou interfaces [!DNL Experience Manager] {#search-assets-other-surfaces}
 
-[!DNL Adobe Experience Manager] connecte le référentiel de gestion des ressources numériques à d’autres solutions [!DNL Experience Manager] afin de fournir un accès plus rapide aux ressources numériques et de rationaliser les workflows de création. Toute découverte de ressources commence par la navigation ou la recherche. Le comportement de recherche reste largement le même sur les différentes surfaces et solutions. Certaines méthodes de recherche changent lorsque l’audience cible, les cas d’utilisation et l’interface utilisateur varient d’une solution [!DNL Experience Manager] à l’autre. Les méthodes spécifiques sont documentées pour les solutions individuelles dans les liens ci-dessous. Les conseils et comportements universellement applicables sont décrits dans cet article.
+[!DNL Adobe Experience Manager] connecte le référentiel de gestion des ressources numériques à d’autres solutions [!DNL Experience Manager] afin de fournir un accès plus rapide aux ressources numériques et de rationaliser les workflows de création. Toute découverte de ressources commence par la navigation ou la recherche. Le comportement de recherche reste largement le même sur les différentes surfaces et solutions. Certaines méthodes de recherche changent lorsque l’audience cible, les cas d’utilisation et l’interface utilisateur varient d’une solution [!DNL Experience Manager] à l’autre. Les méthodes spécifiques sont documentées pour chaque solution dans les liens ci-dessous. Les conseils et comportements universellement applicables sont décrits dans cet article.
 
 ### Recherche de ressources numériques à partir du panneau Adobe Asset Link {#aal}
 
@@ -226,7 +240,7 @@ Dans l’interface utilisateur d’[!DNL Experience Manager], les utilisateurs p
 
 ### Recherche de [!DNL Dynamic Media] ressources {#dynamic-media}
 
-Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media]** > **[!UICONTROL Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des ressources telles que des ensembles d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°. Lors de la création de pages web, les auteurs peuvent rechercher des visionneuses dans l’outil de recherche de contenu. Un filtre est disponible pour les visionneuses dans un menu pop-up.
+Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media]** > **[!UICONTROL Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des ressources telles que des ensembles d’images, des carrousels, des ensembles de médias variés et des ensembles de rotation. Lors de la création de pages web, les auteurs et autrices peuvent rechercher des ensembles dans Content Finder. Un filtre est disponible pour les visionneuses dans un menu pop-up.
 
 ### Recherche de ressources numériques dans l’outil de recherche de contenu lors de la création de pages web {#content-finder}
 
@@ -242,21 +256,21 @@ La fonctionnalité de recherche [!DNL Experience Manager] prend en charge la rec
 >
 >Le sélecteur de ressources s’appelait [Asset Picker](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) dans les versions antérieures d’[!DNL Adobe Experience Manager].
 
-Le sélecteur de ressources vous permet de rechercher, de filtrer et de parcourir les ressources de la gestion des ressources numériques de façon spéciale. Le sélecteur de ressources est disponible à l’adresse `https://[aem_server]:[port]/aem/assetpicker.html`. Vous pouvez récupérer les métadonnées des ressources sélectionnées à l’aide du sélecteur de ressources. Vous pouvez le lancer avec les paramètres de requête pris en charge, tels que le type de ressource (image, vidéo, texte) et le mode de sélection (sélections simples ou multiples). Ces paramètres définissent le contexte du sélecteur de ressources pour une instance de recherche particulière et restent inchangés tout au long de la sélection.
+Le sélecteur de ressources vous permet de rechercher, de filtrer et de parcourir les ressources de la gestion des actifs digitaux de façon spéciale. Le sélecteur de ressources est disponible à l’adresse `https://[aem_server]:[port]/aem/assetpicker.html`. Vous pouvez récupérer les métadonnées des ressources sélectionnées à l’aide du sélecteur de ressources. Vous pouvez le lancer avec les paramètres de requête pris en charge, tels que le type de ressource (image, vidéo, texte) et le mode de sélection (sélections simples ou multiples). Ces paramètres définissent le contexte du sélecteur de ressources pour une instance de recherche particulière et restent inchangés tout au long de la sélection.
 
-Le sélecteur de ressources utilise le message HTML5 `Window.postMessage` pour envoyer au destinataire les données correspondant à la ressource sélectionnée. Il fonctionne uniquement en mode navigation et exclusivement avec la page de résultats Omni-recherche.
+Le sélecteur de ressources utilise le message HTML5 `Window.postMessage` pour envoyer au destinataire les données correspondant à la ressource sélectionnée. Il fonctionne uniquement en mode navigation et exclusivement avec la page de résultats OmniSearch.
 
-Transmettez les paramètres de requête suivants dans une URL pour démarrer le sélecteur de ressources dans un contexte spécifique :
+Transmettez les paramètres de demande suivants dans une URL pour ouvrir le sélecteur de ressources dans un contexte spécifique :
 
 | Nom | Valeurs | Exemple | Objectif |
 |---|---|---|---|
 | suffixe de la ressource (B) | Chemin du dossier comme suffixe de la ressource dans l’URL : [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Pour démarrer le sélecteur de ressources avec un dossier particulier sélectionné, par exemple, le dossier `/content/dam/we-retail/en/activities`, l’URL doit se présentée comme suit : `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Si vous avez besoin de sélectionner un dossier en particulier au démarrage du sélecteur de ressources, vous pouvez l’indiquer comme suffixe de ressource. |
 | `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | En mode multiple, vous pouvez sélectionner plusieurs ressources simultanément à l’aide du sélecteur de ressources. |
-| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilisez ces paramètres pour ouvrir le sélecteur de ressources en tant que boîte de dialogue Granite. Cette option ne peut être appliquée qu’au démarrage du sélecteur de ressources via le champ Chemin de Granite, en la configurant comme URL pickerSrc. |
-| `root` | &lt;chemin_dossier> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Utilisez cette option pour spécifier le dossier racine du sélecteur de ressources. Dans ce cas, le sélecteur de ressources vous permet de sélectionner uniquement les ressources enfants (directes/indirectes) sous le dossier racine. |
+| `dialog` | true, false | [](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilisez ces paramètres pour ouvrir le sélecteur de ressources en tant que boîte de dialogue Granite. Cette option ne peut être appliquée qu’à l’ouverture du sélecteur de ressources via le champ Chemin de Granite, en la configurant comme URL pickerSrc. |
+| `root` | &lt;chemin_dossier> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Utilisez cette option pour spécifier le dossier racine du sélecteur de ressources. Dans ce cas, le sélecteur de ressources vous permet de sélectionner uniquement les ressources enfant (directes/indirectes) sous le dossier racine. |
 | `viewmode` | de recherches | | Pour lancer le sélecteur de ressources en mode recherche, avec les paramètres `assettype` et `mimetype`. |
 | `assettype` | Images, documents, multimédia, archives. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Utilisez l’option pour filtrer les types de ressources en fonction de la valeur indiquée. |
-| `mimetype` | Type MIME (`/jcr:content/metadata/dc:format`) d’une ressource (le caractère générique est également pris en charge). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Utilisez-le pour filtrer les ressources basées sur le() type(s) MIME |
+| `mimetype` | Type MIME (`/jcr:content/metadata/dc:format`) d’une ressource (le caractère générique est également pris en charge). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Utilisez-le pour filtrer les ressources en fonction du type MIME. |
 
 Pour accéder à l’interface du sélecteur de ressources, accédez à `https://[aem_server]:[port]/aem/assetpicker`. Recherchez le dossier souhaité, puis sélectionnez une ou plusieurs ressources. Vous pouvez également rechercher la ressource souhaitée dans la zone Omnisearch, appliquer un filtre selon vos besoins, puis la sélectionner.
 
@@ -272,7 +286,7 @@ La fonctionnalité de recherche dans [!DNL Experience Manager Assets] présente 
 * [!DNL Experience Manager] peut continuer à afficher le terme de recherche une fois que vous avez sélectionné les propriétés d’une ressource à partir des résultats de recherche, puis annuler la recherche. <!-- (CQ-4273540) -->
 * Lors de la recherche de dossiers ou de fichiers et de dossiers, les résultats de recherche ne peuvent être triés selon aucun paramètre.
 * Si vous sélectionnez `Return` sans rien taper dans la barre Omni-recherche, [!DNL Experience Manager] renvoie une liste contenant uniquement des fichiers et non des dossiers. Si vous recherchez spécifiquement des dossiers sans utiliser de mot-clé, [!DNL Experience Manager] ne renvoie aucun résultat.
-* Vous pouvez effectuer une recherche de texte intégral dans un dossier. Spécifiez un terme pour que la recherche fonctionne.
+* Vous pouvez effectuer une recherche de texte intégral dans un dossier. Spécifiez un terme de recherche pour que la recherche fonctionne.
 
 La recherche visuelle ou par analogie présente les restrictions suivantes :
 
@@ -285,12 +299,12 @@ La fonctionnalité de recherche peut présenter des limitations de performances 
 
 ## Conseils de recherche {#tips}
 
-* Si vous surveillez l’état de révision des ressources, utilisez l’option appropriée pour trouver les ressources qui sont approuvées ou en attente d’approbation.
+* Lors de la surveillance du statut d’approbation des ressources, utilisez l’option appropriée pour trouver les ressources qui sont approuvées ou en attente d’approbation.
 * Utilisez le prédicat Informations pour rechercher les ressources prises en charge en fonction de leurs statistiques d’utilisation obtenues auprès de diverses applications Creative. Les données d’utilisation sont regroupées sous Note d’utilisation, Impressions, Clics et Canaux de médias où les ressources apparaissent dans des catégories.
-* Cochez la case **[!UICONTROL Sélectionner tout]** pour sélectionner les ressources recherchées. [!DNL Experience Manager] affiche initialement 100 ressources dans la vue Carte et 200 ressources dans la vue Liste. Des ressources supplémentaires sont chargées lorsque vous faites défiler les résultats de la recherche. Vous pouvez sélectionner plus de ressources que les ressources chargées. Le nombre de ressources sélectionnées est affiché dans l’angle supérieur droit de la page des résultats de la recherche. Vous pouvez agir sur la sélection, par exemple télécharger les ressources sélectionnées, mettre à jour des propriétés de métadonnées en bloc pour les ressources sélectionnées ou ajouter les ressources sélectionnées à une collection. Lorsqu’il y a moins de ressources affichées que de ressources sélectionnées, une action est appliquée à toutes les ressources sélectionnées ou une boîte de dialogue affiche le nombre de ressources auxquelles elle est appliquée. Pour appliquer une action aux ressources qui n’ont pas été chargées, veillez à ce que toutes les ressources soient sélectionnées explicitement.
+* Cochez la case **[!UICONTROL Sélectionner tout]** pour sélectionner les ressources recherchées. [!DNL Experience Manager] affiche initialement 100 ressources dans la vue Carte et 200 ressources dans la vue Liste. Des ressources supplémentaires sont chargées lorsque vous faites défiler les résultats de la recherche. Vous pouvez sélectionner plus de ressources que les ressources chargées. Le nombre de ressources sélectionnées est affiché dans l’angle supérieur droit de la page des résultats de la recherche. Vous pouvez agir sur la sélection, par exemple télécharger les ressources sélectionnées, mettre à jour des propriétés de métadonnées en bloc pour les ressources sélectionnées ou ajouter les ressources sélectionnées à une collection. Lorsqu’il y a plus de ressources sélectionnées que de ressources affichées, une action est appliquée à toutes les ressources sélectionnées ou une boîte de dialogue affiche le nombre de ressources auxquelles elle est appliquée. Pour appliquer une action aux ressources qui n’ont pas été chargées, veillez à ce que toutes les ressources soient sélectionnées explicitement.
 * Pour rechercher les ressources qui ne contiennent pas les métadonnées obligatoires, voir [Métadonnées obligatoires](#mandatorymetadata).
 * La recherche utilise tous les champs de métadonnées. Une recherche générique, telle que la recherche du nombre 12, renvoie généralement de nombreux résultats. Pour de meilleurs résultats, utilisez des guillemets doubles (et non des guillemets simples) ou assurez-vous que le nombre est attaché à un mot sans caractère spécial (par exemple, `shoe12`).
-* La recherche en texte intégral prend en charge les opérateurs tels que `-` et `^`. Pour rechercher des informations sous forme de chaînes littérales, indiquez la phrase de recherche entre guillemets. Par exemple, utilisez `"Notebook - Beauty"` au lieu de `Notebook - Beauty`.
+* La recherche en texte intégral prend en charge les opérateurs tels que `-` et `^`. Pour rechercher ces lettres sous forme de chaînes littérales, indiquez l’expression de recherche entre guillemets doubles. Par exemple, utilisez `"Notebook - Beauty"` au lieu de `Notebook - Beauty`.
 * Si les résultats de recherche sont trop nombreux, limitez la [portée de la recherche](#scope) pour trouver les ressources souhaitées. Cela fonctionne mieux lorsque vous avez une idée de la meilleure manière de rechercher les ressources que vous recherchez, par exemple un type de fichier, un emplacement ou des métadonnées spécifiques.
 
 * **Balisage** : les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et workflows. [!DNL Experience Manager] propose des méthodes pour baliser automatiquement les ressources à l’aide des services Adobe AI qui améliorent constamment le balisage de vos ressources avec utilisation et formation. Lorsque vous recherchez des ressources, les balises intelligentes sont prises en compte si la fonction est activée sur votre compte. Cela fonctionne avec la fonctionnalité de recherche intégrée. Voir [Comportement de la recherche](#searchbehavior). Pour optimiser l’ordre d’affichage des résultats de recherche, vous pouvez [améliorer le classement](#searchrank) de quelques ressources sélectionnées.
@@ -340,7 +354,7 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des ressou
 
 ### Configurations d’index de recherche {#searchindex}
 
-La découverte de ressources repose sur l’indexation du contenu de la gestion des ressources numériques, y compris sur les métadonnées. La précision et la rapidité de la découverte de ressources reposent sur une indexation optimisée et des configurations appropriées. Consultez les sections [Index de recherche](/help/assets/performance-tuning-guidelines.md#search-indexes), [Requêtes et indexation oak](/help/sites-deploying/queries-and-indexing.md) et [Bonnes pratiques](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+La découverte de ressources repose sur l’indexation du contenu de la gestion des actifs digitaux, y compris les métadonnées. La précision et la rapidité de la découverte de ressources reposent sur une indexation optimisée et des configurations appropriées. Consultez les sections [Index de recherche](/help/assets/performance-tuning-guidelines.md#search-indexes), [Requêtes et indexation oak](/help/sites-deploying/queries-and-indexing.md) et [Bonnes pratiques](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 Pour exclure des ressources spécifiques des résultats de recherche, utilisez la propriété `excludedPath` dans l’index Lucene.
 
@@ -378,11 +392,11 @@ Pour obtenir des informations connexes, consultez les sections [Présentation de
 
 ### Métadonnées obligatoires {#mandatorymetadata}
 
-Les utilisateurs de l’entreprise, les administrateurs ou les bibliothécaires de la gestion des ressources numériques peuvent définir certaines métadonnées comme des métadonnées obligatoires qui sont indispensables au fonctionnement des processus d’entreprise. Pour diverses raisons, il se peut que certaines ressources ne disposent pas de ces métadonnées, telles que les ressources héritées ou les ressources migrées en bloc. Les ressources contenant des métadonnées manquantes ou non valides sont détectées et consignées en fonction de la propriété de métadonnées indexée. Pour configurer cette propriété, consultez la section [Métadonnées obligatoires](/help/assets/metadata-schemas.md#define-mandatory-metadata).
+Les utilisateurs et utilisatrices métier, les administrateurs et administratrices ou les bibliothécaires de la gestion des actifs digitaux peuvent définir certaines métadonnées comme des métadonnées obligatoires qui sont indispensables au fonctionnement des processus métier. Pour diverses raisons, il se peut que certaines ressources ne disposent pas de ces métadonnées, telles que les ressources héritées ou les ressources migrées en bloc. Les ressources contenant des métadonnées manquantes ou non valides sont détectées et consignées en fonction de la propriété de métadonnées indexée. Pour configurer cette propriété, consultez la section [Métadonnées obligatoires](/help/assets/metadata-schemas.md#define-mandatory-metadata).
 
 ### Modification des facettes de recherche {#searchfacets}
 
-Pour accélérer la découverte, [!DNL Experience Manager Assets] propose des facettes de recherche à l’aide desquelles vous pouvez filtrer les résultats de la recherche. Le panneau Filtres inclut quelques facettes standard par défaut. L’équipe d’administration peut personnaliser le panneau Filtres pour modifier les facettes par défaut à l’aide des prédicats intégrés. [!DNL Experience Manager] fournit une collection fournie de prédicats intégrés et un éditeur pour personnaliser les facettes. Consultez la section [Facettes de recherche](/help/assets/search-facets.md).
+Pour accélérer la découverte, [!DNL Experience Manager Assets] propose des facettes de recherche à l’aide desquelles vous pouvez filtrer les résultats de la recherche. Le panneau Filtres inclut quelques facettes standard par défaut. Les administrateurs et administratrices peuvent personnaliser le panneau Filtres pour modifier les facettes par défaut à l’aide des prédicats intégrés. [!DNL Experience Manager] fournit une collection fournie de prédicats intégrés et un éditeur pour personnaliser les facettes. Consultez la section [Facettes de recherche](/help/assets/search-facets.md).
 
 ### Extraction de texte lors du chargement de ressources {#extracttextupload}
 
@@ -407,7 +421,7 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 | Style | Couleur ou Noir et blanc. |
 | Hauteur de la vidéo | Indiqué sous la forme d’une valeur minimale et d’une valeur maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Largeur de la vidéo | Indiqué sous la forme d’une valeur minimale et d’une valeur maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
-| Format vidéo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. La valeur est stockée uniquement dans les métadonnées de la source vidéo et de tout rendu. |
+| Format vidéo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. La valeur est stockée dans les métadonnées de la source vidéo et de tout rendu. |
 | Codec vidéo | x264. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Débit vidéo | Indiqué sous la forme d’une valeur minimale et d’une valeur maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Codec audio | Libvorbis, Lame MP3, codage AAC. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
@@ -430,7 +444,7 @@ Vous pouvez effectuer les opérations suivantes avec les ressources que vous ave
 
 Trier les résultats de la recherche pour découvrir plus rapidement les ressources requises. Vous pouvez trier les résultats de recherche dans la vue Liste et uniquement lorsque vous sélectionnez **[[!UICONTROL Fichiers]](#searchui)** dans le panneau **[!UICONTROL Filtres]**. [!DNL Assets] utilise le tri côté serveur pour trier rapidement toutes les ressources (quel que soit leur nombre) dans un dossier ou les résultats d’une requête. Le tri côté serveur fournit des résultats plus rapides et plus précis que le tri côté client.
 
-Dans la vue Liste, vous pouvez trier les résultats de la recherche tout comme vous pouvez trier les ressources de n’importe quel dossier. Le tri fonctionne sur ces colonnes : Nom, Titre, Statut, Dimensions, Taille, Évaluation, Utilisation, Création, Modification, Publication, Workflow et Extraits.
+Dans la vue Liste, vous pouvez trier les résultats de la recherche tout comme vous pouvez trier les ressources de n’importe quel dossier. Le tri fonctionne sur ces colonnes : Nom, Titre, Statut, Dimensions, Taille, Évaluation, Utilisation, Création, Modification, Publication, Workflow et Extraction.
 
 Pour connaître les restrictions de la fonctionnalité de tri, voir [Restrictions](#limitations).
 
@@ -460,7 +474,7 @@ Pour les ressources se trouvant dans un dossier ou une collection unique, il est
 
 Une collection est un ensemble ordonné de ressources pouvant inclure des ressources provenant de différents emplacements, car les collections ne contiennent que des références à ces ressources. Les collections sont de deux types :
 
-* Une liste de référence statique de ressources, dossiers et autres collections
+* Une liste de référence statique de ressources, dossiers et autres collections.
 * Une liste dynamique (collection dynamique) qui peuple la collection de ressources en fonction de critères de recherche
 
 Vous pouvez créer des collections dynamiques en fonction des critères de recherche. Dans le panneau **[!UICONTROL Filtres]**, sélectionnez **[!UICONTROL Fichiers]** et cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**. Voir [Gérer les collections](/help/assets/manage-collections.md).
@@ -482,17 +496,17 @@ Liez et dissociez les ressources qui s’affichent dans les résultats de recher
 | Erreur, problèmes, symptômes | Raison possible | Solution possible ou explication du problème |
 |---|---|---|
 | Résultats incorrects lors de la recherche de ressources avec des métadonnées manquantes. | Lors de la recherche de ressources qui ne contiennent pas les métadonnées obligatoires, [!DNL Experience Manager] peut afficher certaines ressources qui ont des métadonnées valides. Les résultats reposent sur la propriété de métadonnées indexées. | Une fois les métadonnées mises à jour, une nouvelle indexation est nécessaire pour refléter l’état correct des métadonnées des ressources. Voir [Métadonnées obligatoires](metadata-schemas.md#define-mandatory-metadata). |
-| Trop de résultats de recherche. | Paramètre de recherche étendu. | Envisagez de limiter la [portée de la recherche](#scope). L’utilisation de balises intelligentes peut produire plus de résultats de recherche que vous ne le pensiez. Voir [Comportement de la recherche avec des balises intelligentes](#withsmarttags). |
+| Trop de résultats de recherche. | Paramètre de recherche étendu. | Envisagez de limiter la [portée de la recherche](#scope). L’utilisation du balisage intelligent peut produire plus de résultats de recherche que vous ne le pensiez. Voir [Comportement de la recherche avec des balises intelligentes](#withsmarttags). |
 | Résultats de recherche sans rapport ou partiellement liés. | Le comportement de la recherche change avec le balisage intelligent. | Comprendre [comment change la recherche après le balisage intelligent](#withsmarttags). |
 | Aucune suggestion de saisie semi-automatique pour les ressources. | Les ressources qui viennent d’être chargées ne sont pas encore indexées. Les métadonnées ne sont pas immédiatement disponibles comme suggestions lorsque vous commencez à saisir un mot-clé de recherche dans la barre OmniSearch. | [!DNL Experience Manager] attend jusqu’au dépassement d’un délai d’expiration (par défaut, une heure) avant d’effectuer une tâche en arrière-plan afin d’indexer les métadonnées pour toutes les ressources chargées/mises à jour dernièrement et de les ajouter à la liste de suggestions. |
-| Aucun résultat de recherche. | <ul><li>Les ressources correspondant à votre requête n’existent pas. </li><li> Espace ajouté avant la requête de recherche. </li><li> Un champ de métadonnées non pris en charge contient le mot-clé que vous avez recherché.</li><li> Recherche effectuée pendant qu’une ressource était désactivée. </li></ul> | <ul><li>Rechercher avec un autre mot-clé. Vous pouvez également utiliser le balisage intelligent ou la recherche par analogie pour améliorer les résultats de la recherche. </li><li>[Limite connue](#limitations).</li><li>Certains champs de métadonnées ne sont pas pris en compte pour les recherches. Voir [Portée](#scope).</li><li>Effectuer une recherche plus tard ou modifier l’heure d’activation et de désactivation des ressources requises.</li></ul> |
-| Aucun filtre de recherche ou prédicat n’est disponible. | <ul><li>Le filtre de recherche n’est pas configuré.</li><li>Il n’est pas disponible pour votre connexion.</li><li>(Moins probable) Les options de recherche ne sont pas personnalisées sur le déploiement que vous utilisez.</li></ul> | <ul><li>Contacter l’administrateur pour vérifier la disponibilité de personnalisations de la recherche.</li><li>Contacter l’administrateur pour vérifier si votre compte dispose du privilège ou d’autorisations permettant d’utiliser la personnalisation.</li><li>Contacter l’administrateur et vérifier les personnalisations disponibles pour le déploiement [!DNL Assets] que vous utilisez.</li></ul> |
+| Aucun résultat de recherche. | <ul><li>Les ressources correspondant à votre requête n’existent pas. </li><li> Espace ajouté avant la requête de recherche. </li><li> Un champ de métadonnées non pris en charge contient le mot-clé que vous avez recherché.</li><li> Recherche effectuée pendant qu’une ressource était désactivée. </li></ul> | <ul><li>Rechercher avec un autre mot-clé. Vous pouvez également utiliser le balisage intelligent ou la recherche par analogie pour améliorer les résultats de la recherche. </li><li>[Limite connue](#limitations).</li><li>Aucun champ de métadonnées n’est pris en compte pour les recherches. Voir [Portée](#scope).</li><li>Effectuer une recherche plus tard ou modifier l’heure d’activation et de désactivation des ressources requises.</li></ul> |
+| Aucun filtre de recherche ou prédicat n’est disponible. | <ul><li>Le filtre de recherche n’est pas configuré.</li><li>Il n’est pas disponible pour votre connexion.</li><li>(Moins probable) Les options de recherche ne sont pas personnalisées sur le déploiement que vous utilisez.</li></ul> | <ul><li>Contactez l’administrateur ou l’administratrice pour vérifier si des personnalisations de la recherche sont disponibles ou non.</li><li>Contacter l’administrateur pour vérifier si votre compte dispose du privilège ou d’autorisations permettant d’utiliser la personnalisation.</li><li>Contacter l’administrateur et vérifier les personnalisations disponibles pour le déploiement [!DNL Assets] que vous utilisez.</li></ul> |
 | Lors de la recherche d’images similaires visuellement, une image attendue est manquante. | <ul><li>L’image n’est pas disponible dans [!DNL Experience Manager].</li><li>L’image n’est pas indexée. Généralement lorsqu’elle a été téléchargée récemment.</li><li>L’image ne présente pas de balises intelligentes.</li></ul> | <ul><li>Ajoutez l’image à [!DNL Assets].</li><li>Contactez votre administrateur pour indexer à nouveau le référentiel. Veillez également à utiliser l’index approprié.</li><li>Contactez votre administrateur ou administratrice pour procéder au balisage intelligent des ressources appropriées.</li></ul> |
 | Lors de la recherche d’images similaires visuellement, une image inappropriée est affichée. | Comportement de recherche visuelle. | [!DNL Experience Manager] affiche autant de ressources potentiellement pertinentes que possible. Les images moins pertinentes, le cas échéant, sont ajoutées aux résultats, mais avec un classement inférieur dans les résultats de recherche. La qualité des correspondances et la pertinence des ressources recherchées diminuent à mesure que vous descendez dans les résultats de la recherche. |
 | Lors de la sélection de résultats de la recherche et d’action sur ces résultats, aucune action n’est réalisée sur certaines ressources recherchées. | L’option [!UICONTROL Sélectionner tout] ne sélectionne que les 100 premiers résultats de la recherche dans la vue Carte et les 200 premiers résultats de la recherche dans la vue Liste. | |
 
 >[!MORELIKETHIS]
 >
->* Guide de mise en œuvre des recherches[[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
+>* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
 >* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
 

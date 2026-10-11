@@ -9,7 +9,18 @@ exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 88%
@@ -114,19 +125,19 @@ Pour identifier et corriger un processus de réindexation bloqué, procédez com
 
      * Accédez à le console web OSGi AEM > Principal > JMX > IndexStat > async
 
-       ou rendez-vous sur [&#128279;](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+       ou rendez-vous sur [](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
 
    * Utilisez le [mode console de oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) pour collecter les informations de ce qui se trouve sous le nœud *`/:async`*.
    * Collectez une liste des points de contrôle du référentiel à l’aide du MBean `CheckpointManager` :
 
      * Console web OSGi AEM > Principal > JMX > CheckpointManager > listCheckpoints()
 
-       ou rendez-vous sur [&#128279;](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
+       ou rendez-vous sur [](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. Après la collecte de toutes les informations décrites à l’étape 1, redémarrez AEM.
 
    * Le redémarrage d’AEM peut résoudre le problème dans le cas d’une charge simultanée élevée (débordement de la file d’attente d’observation ou situation similaire).
-   * Si un redémarrage ne permet pas de résoudre le problème, signalez-le à l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support) et fournissez toutes les informations collectées lors de l’étape 1.
+   * Si un redémarrage ne permet pas de résoudre le problème, signalez-le à l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support) et fournissez toutes les informations collectées lors de l’étape 1.
 
 ## Abandon sécurisé de la réindexation asynchrone {#safely-aborting-asynchronous-re-indexing}
 

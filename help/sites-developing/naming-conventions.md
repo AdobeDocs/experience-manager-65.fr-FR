@@ -9,13 +9,22 @@ exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '320'
 ht-degree: 100%
-
 ---
-
 # Conventions de dénomination {#naming-conventions}
 
 Les nœuds dans le référentiel sont soumis aux conventions de dénomination de [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Toutefois, AEM impose d’autres conventions pour le nom des nœuds de page.
@@ -28,8 +37,8 @@ Ces conventions de dénomination sont implémentées à différents niveaux :
 * PageManager : le [Gestionnaire de pages](#page-manager) fournit des méthodes pour les opérations au niveau de la page.
 * Selon l’interface utilisateur utilisée :
 
-   * [IU tactile standard](#standard-ui)
-   * [Interface utilisateur classique](#classic-ui)
+  * [IU tactile standard](#standard-ui)
+  * [Interface utilisateur classique](#classic-ui)
 
 ### Utilitaires JCR {#jcr-utilities}
 
@@ -37,13 +46,13 @@ Ces conventions de dénomination sont implémentées à différents niveaux :
 
 * `isValidName`
 
-   * Vérifie si le nom n’est pas vide et s’il contient uniquement des caractères valides.
-   * Peut être utilisé pour vérifier si un nom proposé est valide.
+  * Vérifie si le nom n’est pas vide et s’il contient uniquement des caractères valides.
+  * Peut être utilisé pour vérifier si un nom proposé est valide.
 
 * `createValidName`
 
-   * Crée un libellé valide à partir d’une chaîne arbitraire.
-   * Peut être utilisé pour créer un nom à partir d’un titre.
+  * Crée un libellé valide à partir d’une chaîne arbitraire.
+  * Peut être utilisé pour créer un nom à partir d’un titre.
 
 ### Gestionnaire de pages {#page-manager}
 
@@ -55,8 +64,8 @@ L’interface utilisateur tactile standard :
 
 * Valide le nom en fonction des restrictions imposées par PageManager quand :
 
-   * un titre de page est fourni pour être converti en nom de nœud ;
-   * un nom de nœud explicite est fourni.
+  * un titre de page est fourni pour être converti en nom de nœud ;
+  * un nom de nœud explicite est fourni.
 
 ### Interface utilisateur classique {#classic-ui}
 
@@ -64,13 +73,13 @@ L’IU classique impose des restrictions plus strictes :
 
 * Valide le nom lorsqu’un nom de nœud explicite se présente dans l’une des situations suivantes :
 
-   * un titre de page est fourni pour être converti en nom de nœud ;
-   * un nom de nœud explicite est fourni.
+  * un titre de page est fourni pour être converti en nom de nœud ;
+  * un nom de nœud explicite est fourni.
 
 * Caractères valides (seuls ces caractères sont effectivement valides lorsqu’une page est créée dans l’IU classique, même si `PageManagerImpl` autorise des caractères supplémentaires) :
 
-   * « a » à « z »
-   * « A » à « Z »
-   * « 0 » à « 9 »
-   * _ (trait de soulignement)
-   * `-` (tiret/moins)
+  * « a » à « z »
+  * « A » à « Z »
+  * « 0 » à « 9 »
+  * _ (trait de soulignement)
+  * `-` (tiret/moins)

@@ -9,7 +9,16 @@ role: Admin
 exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 1%
@@ -56,7 +65,7 @@ Le bouton **Suivre** inclut l’option `Email Subscriptions` uniquement lorsqu�
 
 ## Répondre par e-mail {#reply-by-email}
 
-Lorsque l’adresse e-mail est [&#x200B; configurée pour répondre par e-mail](email.md#configure-polling-importer), le membre qui s’est abonné reçoit un e-mail contenant le contenu publié et un lien vers le contenu en ligne.
+Lorsque l’adresse e-mail est [ configurée pour répondre par e-mail](email.md#configure-polling-importer), le membre qui s’est abonné reçoit un e-mail contenant le contenu publié et un lien vers le contenu en ligne.
 
 S’ils répondent à l’e-mail, le contenu qu’ils saisissent dans la réponse s’affiche en tant que contenu en ligne.
 

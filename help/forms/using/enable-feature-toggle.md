@@ -4,20 +4,28 @@ description: La fonction d’activation/désactivation des fonctionnalités est 
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 84%
-
+source-wordcount: '448'
+ht-degree: 85%
 ---
-
 # Fonction d’activation/désactivation des fonctionnalités dans Adobe Experience Manager (AEM) 6.5{#enable-feature-toggle-aem-forms-65}
 
 La fonction d’activation/désactivation des fonctionnalités est une fonctionnalité d’AEM qui permet aux administrateurs et aux administratrices d’activer ou de désactiver des fonctionnalités spécifiques de manière dynamique. Cette fonctionnalité est particulièrement utile pour gérer les **fonctionnalités destinées aux utilisateurs et utilisatrices précoces** et les **fonctionnalités de version préliminaire** sans nécessiter de déploiements ou de modifications importants de la base du code. Elle offre de la flexibilité et du contrôle sur les fonctionnalités accessibles dans un environnement AEM.
 
 ## Pourquoi utiliser la fonction d’activation/désactivation des fonctionnalités dans une configuration AEM 6.5 ?
 
-Lorsque vous travaillez dans une configuration AEM 6.5, la fonction d’activation/désactivation des fonctionnalités aide à :
+Lorsque vous travaillez dans une configuration AEM 6.5, les fonctions d’activation/désactivation des fonctionnalités aident à :
 
 * Tester des fonctionnalités expérimentales en toute sécurité.
 
@@ -37,7 +45,7 @@ Avant d’activer la fonction d’activation/désactivation des fonctionnalités
 
 * L’utilisateur ou l’utilisatrice est membre du groupe `forms-users`.
 
-* Accédez à `http://<author-instance-url>:portnumber/system/console/bundles` et vérifiez si le lot **(com.adobe.granite.toggle.impl.dev-1.1.8.jar)** est présent ou non. S’il n’est pas présent, [téléchargez le lot à partir de ce lien](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcom.adobe.granite.toggle.impl.dev-1.1.8.jar).
+* Accédez à `http://<author-instance-url>:portnumber/system/console/bundles` et vérifiez si le lot **(com.adobe.granite.toggle.impl.dev-1.1.8.jar)** est présent ou non. S’il n’est pas présent, [téléchargez le bundle à partir de ce lien](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcom.adobe.granite.toggle.impl.dev-1.1.8.jar).
 
 ![Fonction d’activation/désactivation des fonctionnalités](/help/forms/using/assets/feature-toggle-1.1.8.png)
 
@@ -68,7 +76,7 @@ Pour désactiver la fonction d’activation/désactivation des fonctionnalités 
 3. Recherchez **Fournisseur de fonction bascule dynamique Adobe Granite** dans le gestionnaire de configuration.
 4. Cliquez sur l’icône ![icône-de-crayon](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 5. Dans la section [!UICONTROL Fonctions bascules désactivées], cliquez sur ![icône-de-crayon](assets/aem6forms_add.png).
-6. Ajoutez le numéro de la fonction bascule pour désactiver la fonction.
+6. Ajoutez le numéro de bascule de la fonctionnalité à désactiver.
    ![Supprimer la fonction bascule](assets/remove_toggle_feature_forms.png)
 7. Cliquez sur Enregistrer.
 

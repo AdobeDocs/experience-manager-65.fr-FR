@@ -9,13 +9,22 @@ exl-id: 5a16be40-eede-4a47-b03b-3993e285232e
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '270'
 ht-degree: 100%
-
 ---
-
 # Les tests - Quand et avec qui ?{#testing-when-and-with-whom}
 
 Différents rôles peuvent être concernés par les tests et impliqués à diverses étapes du développement du projet.
@@ -35,14 +44,14 @@ Différents rôles peuvent être concernés par les tests et impliqués à diver
   <tr>
    <td>Équipe d’assurance qualité</td>
    <td><p>Vous aurez besoin d’une équipe d’assurance qualité (de la taille appropriée) pour les tests fonctionnels et de performances.</p> <p>Il s’agit de testeurs neutres et dédiés. Dans le domaine du développement, la règle d’or veut que le développeur ne doit jamais tester son propre travail.</p> <p>Les membres de cette équipe peuvent être issus de l’équipe du projet Jour, l’équipe du partenaire et/ou celle de votre client.</p> </td>
-   <td><p>La première version des fonctions doit être mise à la disposition des testeurs et des testeuses (dès que possible). Bien qu’une version intermédiaire préalable puisse générer de nombreux bugs, elle permet néanmoins de faire le point sur des problèmes majeurs.</p> </td>
+   <td><p>La première version des fonctions doit être mise à la disposition des testeurs et des testeuses (dès que possible). Bien qu’une version intermédiaire précoce puisse générer de nombreux bugs, elle permet de recueillir rapidement du feedback sur les problèmes critiques.</p> </td>
   </tr>
   <tr>
    <td>Équipe de test client</td>
    <td><p>Selon le modèle de projet sélectionné, vous pouvez prévoir que des membres de l’équipe client participent aux tests, en particulier les auteurs et autrices du site client.</p> <p>Ceci est avantageux car :</p>
     <ul>
      <li><p>Le client ou la cliente peut expérimenter le projet en cours de développement.</p> </li>
-     <li><p>Permet de faire rapidement le point avec le client ou la cliente.</p> </li>
+     <li><p>Permet de recueillir rapidement du feedback de la part de la clientèle.</p> </li>
      <li><p>Les utilisateurs et les utilisatrices expriment souvent leurs exigences par rapport à leurs expériences passées. La participation des clientes et des clients en amont le plus tôt possible améliore leur expérience du nouveau projet d’un point de vue <i>pratique</i>.</p> </li>
     </ul> </td>
    <td><p>Là aussi, une participation au plus tôt est préférable. Toute version utilisée par les clients doit être stable et offrir un nombre raisonnable de fonctionnalités.</p> <p>Les premières impressions sont toujours importantes.</p> </td>

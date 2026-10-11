@@ -11,25 +11,34 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 100%
-
 ---
-
 
 # Bonnes pratiques relatives aux modèles d’e-mail {#best-practices-for-email-templates}
 
 >[!CAUTION]
 >
->Cet article s’applique aux composants de base obsolètes basés sur les composants d’e-mail AEM.
+>Cet article s’applique aux composants d’e-mail AEM obsolètes basés sur les Foundation Components.
 >
 >Les utilisateurs et utilisatrices sont encouragés à utiliser les [composants principaux modernes : composants d’e-mail.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=fr)
 
 Ce document décrit certaines des bonnes pratiques concernant la conception d’e-mails, ce qui se traduit par un modèle de campagne par e-mail bien développé.
 
-La campagne de démonstration disponible dans AEM observe toutes ces meilleures pratiques. La manière dont les bonnes pratiques sont mises en œuvre dans la campagne de démonstration est décrite pour chaque bonne pratique.
+La campagne de démonstration disponible dans AEM observe toutes ces bonnes pratiques. La manière dont les bonnes pratiques sont mises en œuvre dans la campagne de démonstration est décrite pour chaque bonne pratique.
 
 Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
 
@@ -65,26 +74,26 @@ Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
   </tr>
   <tr>
    <td><p>Spécifiez la définition des caractères afin d’assurer le rendu correct des caractères spéciaux.</p> <p>Ajoutez la déclaration CHARSET (par exemple, iso-8859-15, UTF-8) à &lt;head&gt;</p> </td>
-   <td><p>Définie sur UTF-8.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td>
+   <td><p>Est définie sur UTF-8.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td>
   </tr>
   <tr>
-   <td><p>Codez toute la structure à l’aide de la fonction &lt;table&gt;élément. Pour des mises en page plus compliquées, vous devez imbriquer les tableaux pour créer des structures complexes.</p> <p>L’e-mail doit présenter un aspect correct, même sans CSS.</p> </td>
+   <td><p>Codez toute la structure à l’aide de l’élément &lt;table&gt;. Pour des mises en page plus compliquées, vous devez imbriquer les tableaux pour créer des structures complexes.</p> <p>L’e-mail doit présenter un aspect correct, même sans CSS.</p> </td>
    <td><p>Les tableaux sont utilisés dans tout le modèle pour structurer le contenu. Actuellement, il est possible d’utiliser un maximum de quatre tableaux imbriqués (1 tableau de base + max. 3 niveaux d’imbrication).</p> <p>Les balises &lt;div&gt; ne sont utilisées qu’en mode création pour garantir la modification correcte des composants.</p> </td>
   </tr>
   <tr>
-   <td>Utilisez des attributs d’élément (par exemple, cellpadding, valign et width) pour définir les dimensions de table. Vous forcez ainsi une structure boîte-modèle.</td>
+   <td>Utilisez des attributs d’élément (par exemple, cellpadding, valign et width) pour définir les dimensions du tableau. Vous forcez ainsi une structure boîte-modèle.</td>
    <td><p>Toutes les tables contiennent les attributs nécessaires, tels que <i>border</i>, <i>cellpadding</i>, <i>cellspacing</i> et <i>width</i>.</p> <p>Pour que le positionnement des éléments dans les tableaux soit harmonisé, toutes les cellules des tableaux doive avoir l’attribut <i>valign="top"</i> défini.</p> </td>
   </tr>
   <tr>
-   <td><p>Prenez en compte, si possible, de la convivialité des appareils mobiles. Utilisez les requêtes multimédias pour augmenter la taille du texte sur les petits écrans et fournir des zones actives de la taille d’une vignette pour les liens.</p> <p>Rendez un e-mail interactif si la conception l’autorise.</p> </td>
+   <td><p>Tenez compte, si possible, de la convivialité sur les appareils mobiles. Utilisez les requêtes multimédias pour augmenter la taille du texte sur les petits écrans et fournir des zones actives de la taille d’une vignette pour les liens.</p> <p>Rendez un e-mail interactif si la conception l’autorise.</p> </td>
    <td>Même si les styles CSS sont utilisés pour illustrer le design de démonstration, les requêtes multimédias sont utilisées pour proposer une version conviviale pour les appareils mobiles.</td>
   </tr>
   <tr>
    <td>Les styles CSS intégrés sont un meilleur choix que l’insertion de tous les styles CSS au début.</td>
-   <td><p>Pour mieux mettre en évidence la structure HTML sous-jacente et faciliter la possibilité de personnaliser la structure de newsletter, seules certaines définitions CSS ont été intégrées.</p> <p>Les styles de base et les variations de modèle ont été extraits dans un bloc de style dans l’élément &lt;head&gt; de la page. À l’envoi final de la newsletter, ces définitions CSS doivent être intégrées dans la structure HTML. Un mécanisme d’intégration automatique est prévu, mais actuellement pas disponible.</p> </td>
+   <td><p>Pour mieux mettre en évidence la structure HTML sous-jacente et faciliter la personnalisation de la structure de la newsletter, seules certaines définitions CSS ont été intégrées.</p> <p>Les styles de base et les variations de modèle ont été extraits dans un bloc de style dans l’élément &lt;head&gt; de la page. À l’envoi final de la newsletter, ces définitions CSS sont intégrées dans la structure HTML. Un mécanisme d’intégration automatique est prévu, mais n’est actuellement pas disponible.</p> </td>
   </tr>
   <tr>
-   <td>Restez simple avec votre CSS. Évitez les déclarations de style composées, les formes courtes de code, les propriétés de mise en page CSS, les sélecteurs complexes et les pseudo-éléments.</td>
+   <td>Gardez un CSS simple. Évitez les déclarations de style composées, les formes courtes de code, les propriétés de mise en page CSS, les sélecteurs complexes et les pseudo-éléments.</td>
    <td>Même si les styles CSS sont utilisés pour illustrer le design de démonstration, les recommandations CSS sont observées.</td>
   </tr>
   <tr>
@@ -130,9 +139,9 @@ Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
 
 | **Bonne pratique** | **Mise en œuvre** |
 |---|---|
-| Utilisez le validateur W3C pour corriger le code du HTML. Assurez-vous que toutes les balises ouvertes sont correctement fermées. | Le code doit être validé. Pour le composant Doctype de transition XHTML seulement, l’attribut xmlns manquant pour l’élément `<html>` est manquant. |
-| Évitez d’utiliser JavaScript ou Flash, car ces technologies ne sont souvent pas prises en charge par les clients de messagerie. | JavaScript et Flash ne sont pas utilisés dans le modèle de newsletter. |
-| Ajoutez une version en texte brut pour l’envoi multipartie. | Un nouveau widget a été intégré aux propriétés de page pour extraire facilement une version en texte brut à partir du contenu de page. Vous pouvez l’utiliser comme point de départ pour la version en texte brut finale. |
+| Utilisez le validateur W3C pour corriger le code HTML. Assurez-vous que toutes les balises ouvertes sont correctement fermées. | Le code doit être validé. Pour le composant Doctype de transition XHTML seulement, l’attribut xmlns manquant pour l’élément `<html>` est manquant. |
+| Évitez d’utiliser JavaScript ou Flash, car ces technologies ne sont souvent pas prises en charge par les clients de messagerie. | JavaScript ou Flash ne sont pas utilisés dans le modèle de newsletter. |
+| Ajoutez une version en texte brut pour l’envoi multipartie. | Un nouveau widget a été intégré aux propriétés de page pour extraire facilement une version en texte brut du contenu de la page. Vous pouvez l’utiliser comme point de départ pour la version en texte brut finale. |
 
 ## Modèles et exemples de newsletter Campaign {#campaign-newsletter-templates-and-examples}
 

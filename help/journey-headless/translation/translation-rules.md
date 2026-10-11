@@ -5,13 +5,37 @@ exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 100%
-
 ---
-
 # Configuration des règles de traduction {#configure-translation-rules}
 
 Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
@@ -27,9 +51,9 @@ Maintenant que votre intégration est configurée, cet article vous guide tout a
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment utiliser les règles de traduction d’AEM pour identifier votre contenu de traduction. Après avoir lu ce document, vous devriez :
+Ce document vous aide à comprendre comment utiliser les règles de traduction d’AEM pour identifier le contenu à traduire. Après avoir lu ce document, vous devriez :
 
-* comprendre ce que font les règles de traduction ;
+* Comprendre ce que font les règles de traduction.
 * être capable de définir vos propres règles de traduction.
 
 ## Règles de traduction {#translation-rules}
@@ -41,9 +65,9 @@ Les règles de traduction identifient le contenu à inclure dans les projets de 
 Les règles de traduction comprennent les informations suivantes :
 
 * Le chemin d’accès au contenu auquel la règle s’applique
-   * La règle s’applique également aux descendants du contenu
+  * La règle s’applique également aux descendants du contenu
 * Les noms des propriétés contenant le contenu à traduire
-   * Cette propriété peut être spécifique à un type de ressource en particulier ou à tous les types de ressource
+  * Cette propriété peut être spécifique à un type de ressource en particulier ou à tous les types de ressource
 
 Les modèles de fragment de contenu, qui définissent la structure de vos fragments de contenu, sont uniques à votre projet, c’est pourquoi il est essentiel de configurer des règles de traduction pour qu’AEM sache quels éléments traduire parmi vos modèles de contenu.
 
@@ -92,7 +116,7 @@ Ces fonctionnalités ne sont généralement pas nécessaires pour commencer à l
 
 Maintenant que vous avez terminé cette partie du parcours de traduction découplée, vous devriez savoir :
 
-* comprendre ce que font les règles de traduction ;
+* Comprendre ce que font les règles de traduction.
 * être capable de définir vos propres règles de traduction.
 
 Tirez parti de ces connaissances et continuez à progresser sur votre parcours de traduction découplée AEM en consultant le document [Traduire le contenu](translate-content.md), dans lequel vous découvrirez comment votre intégration et vos règles s’associent pour traduire du contenu découplé.

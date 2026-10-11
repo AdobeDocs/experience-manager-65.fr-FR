@@ -9,13 +9,24 @@ feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7478'
 ht-degree: 98%
-
 ---
-
 # Configuration des paramètres Adobe PDF{#configuring-adobe-pdf-settings}
 
 La page Paramètres Adobe PDF affiche les paramètres de conversion que vous pouvez spécifier pour que vos sources les utilisent. Vous pouvez utiliser les paramètres de PDF prédéfinis ou en créer de nouveaux. Les paramètres de PDF déterminent précisément le mode de conversion des fichiers, ainsi que la structure et les fonctions du PDF qui en résultent. Les paramètres Adobe PDF étaient auparavant appelés paramètres Distiller® ou options de traitement.
@@ -23,9 +34,9 @@ La page Paramètres Adobe PDF affiche les paramètres de conversion que vous pou
 Sur la page Paramètres Adobe PDF, vous pouvez effectuer les tâches suivantes :
 
 * Afficher les paramètres de PDF prédéfinis. (Voir [À propos des paramètres de PDF prédéfinis](configuring-pdf-settings.md#about-the-predefined-pdf-settings).)
-* Créer un paramètre de PDF ou modifier un paramètre existant. (Voir [Ajout ou modification de paramètres de PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).)
+* Créer un paramètre de PDF ou modifier un paramètre que vous avez créé précédemment. (Voir [Ajout ou modification de paramètres de PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).)
 * Spécifier les paramètres de PDF par défaut. (Voir [Modification des paramètres par défaut](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings).)
-* Charger un fichier de paramètres de PDF sur le serveur. (Voir [Chargement des paramètres de PDF](configuring-pdf-settings.md#upload-pdf-settings).)
+* Charger un fichier de paramètres PDF sur le serveur. (Voir [Chargement des paramètres de PDF](configuring-pdf-settings.md#upload-pdf-settings).)
 * Supprimer les paramètres de PDF personnalisés. (Voir [Suppression des paramètres de PDF](configuring-pdf-settings.md#delete-pdf-settings).)
 * Charger et télécharger des fichiers épilogue et prologue. (voir [Chargement et téléchargement des fichiers épilogue et prologue](configuring-pdf-settings.md#uploading-and-downloading-prologue-and-epilogue-files).)
 
@@ -47,31 +58,31 @@ PDF Generator fournit plusieurs paramètres de PDF prédéfinis. Vous ne pouvez 
 
 **Haute qualité d’impression :** crée des fichiers PDF pour une sortie de haute qualité. Ce paramètre :
 
-* sous-échantillonne les images en couleur et en niveaux de gris à 300 dpi ;
-* sous-échantillonne les images monochromes à 1 200 dpi ;
-* imprime avec une résolution d’image supérieure ;
+* sous-échantillonne les images en couleur et en niveaux de gris à 300 dpi ;
+* sous-échantillonne les images monochromes à 1 200 dpi ;
+* imprime avec une résolution d’image supérieure ;
 * utilise d’autres paramètres pour conserver le maximum d’informations sur le document d’origine.
 
 Vous pouvez ouvrir ces fichiers PDF dans Adobe Acrobat 5 et Adobe Acrobat Reader® 5 ou versions ultérieures.
 
 **Pages surdimensionnées :** permet de créer des documents PDF adaptés à un affichage et à une impression fiables des dessins industriels dont les dimensions sont supérieures à 508 x 508 cm. Les documents PDF créés peuvent être ouverts dans Adobe Acrobat Professional, Acrobat Standard 7 ou versions ultérieures et Adobe Reader 7 ou versions ultérieures.
 
-**PDF/A-1B 2005 CMJN/PDF/A-1B 2005 RGB :** vérifie la conformité des tâches entrantes à la norme ISO relative à la conservation à long terme (archivage) des documents électroniques et crée des fichiers PDF/A uniquement en cas de conformité. Ces fichiers sont principalement utilisés à des fins d’archivage. Les fichiers conformes ne peuvent contenir que du texte, des images pixellisées et des objets vectoriels ; ils ne peuvent pas contenir de chiffrement ni de scripts. En outre, toutes les polices doivent être incorporées afin que les documents puissent être ouverts et affichés comme ils ont été créés. PDF/A-1b utilise PDF 1.4 et convertit toutes les couleurs en CMJN ou en RGB, selon la norme choisie. Vous pouvez ouvrir les fichiers PDF créés avec ce fichier de paramètres dans Acrobat 5 et Acrobat Reader 5 et versions ultérieures. Pour plus d’informations sur PDF/A, voir Adobe et les standards du marché.
+**PDF/A-1B 2005 CMJN/PDF/A-1B 2005 RGB :** vérifie la conformité des tâches entrantes à la norme ISO relative à la conservation à long terme (archivage) des documents électroniques et crée des fichiers PDF/A uniquement en cas de conformité. Ces fichiers sont principalement utilisés à des fins d’archivage. Les fichiers conformes ne peuvent contenir que du texte, des images pixellisées et des objets vectoriels ; ils ne peuvent pas contenir de chiffrement ni de scripts. En outre, toutes les polices doivent être incorporées afin que les documents puissent être ouverts et affichés comme ils ont été créés. PDF/A-1b utilise PDF 1.4 et convertit toutes les couleurs en CMJN ou en RGB, selon la norme choisie. Vous pouvez ouvrir les fichiers PDF créés avec ce fichier de paramètres dans Acrobat 5 et Acrobat Reader 5 et versions ultérieures. Pour plus d’informations sur PDF/A, voir Adobe et les normes du secteur.
 
-**PDF/X-1a 2001 :** vérifie la conformité des tâches entrantes à la norme PDF/X-1a et ne crée des fichiers PDF que s’ils sont conformes. PDF/X-1a est une norme ISO relative à l’échange de contenu graphique. PDF/X-1a requiert l’incorporation de toutes les polices, la définition des zones de PDF et l’affichage des couleurs en tant que couleurs CMJN ou d’accompagnement. Les fichiers PDF qui répondent aux exigences de PDF/X-1a sont ciblés sur une condition de sortie spécifique, telle que l’impression décalée web selon les spécifications des publications de décalage web. Pour plus d’informations sur PDF/X, voir Adobe et les standards du marché.
+**PDF/X-1a 2001 :** vérifie la conformité des tâches entrantes à la norme PDF/X-1a et ne crée des fichiers PDF que s’ils sont conformes. PDF/X-1a est une norme ISO relative à l’échange de contenu graphique. PDF/X-1a requiert l’incorporation de toutes les polices, la définition des zones de PDF et l’affichage des couleurs en tant que couleurs CMJN ou d’accompagnement. Les fichiers PDF qui répondent aux exigences de PDF/X-1a sont ciblés sur une condition de sortie spécifique, telle que l’impression décalée web selon les spécifications des publications de décalage web. Pour plus d’informations sur PDF/X, voir Adobe et les normes du secteur.
 
-**PDF/X-3 2002 :** vérifie la conformité des travaux entrants à la norme PDF/X-3 et crée des fichiers PDF uniquement s’ils sont conformes. Tout comme PDF/X-1a, PDF/X-3 est une norme ISO relative à l’échange de contenu graphique. La principale différence est que PDF/X-3 prend en charge les couleurs indépendamment de l’appareil.
+**PDF/X-3 2002 :** vérifie la conformité des travaux entrants à la norme PDF/X-3 et crée des fichiers PDF uniquement s’ils sont conformes. Tout comme PDF/X-1a, PDF/X-3 est une norme ISO relative à l’échange de contenu graphique. La principale différence est que PDF/X-3 prend en charge les couleurs indépendantes du périphérique.
 
 **Qualité d’impression :** crée des fichiers PDF pour une production d’impression de haute qualité (par exemple, sur une imageuse film ou une imageuse de plaques). Dans ce cas, la taille de fichier n’est pas prise en compte. L’objectif est de conserver toutes les informations du fichier PDF dont un imprimeur commercial ou un prestataire de services de prépresse a besoin pour l’imprimer correctement. Cet ensemble d’options :
 
 * sous-échantillonne les images en couleur et en niveaux de gris à 300 dpi ;
 * sous-échantillonne les images monochromes à 1 200 dpi ;
-* incorpore les sous-ensembles de toutes les polices utilisées dans le document ;
-* imprime avec une résolution d’image supérieure ;
-* ne fait pas pivoter automatiquement les pages en fonction de l’orientation du texte ou des commentaires DSC (Document Structuring Conventions) ;
+* incorpore les sous-ensembles de toutes les polices utilisées dans le document ;
+* imprime avec une résolution d’image supérieure ;
+* ne fait pas pivoter automatiquement les pages en fonction de l’orientation du texte ou des commentaires DSC (Document Structuring Conventions) ;
 * utilise d’autres paramètres pour conserver le maximum d’informations sur le document d’origine.
 
-Les traitements d’impression échouent s’ils incluent des polices qui ne peuvent pas être incorporées. Vous pouvez ouvrir ces fichiers PDF dans Acrobat 5 et Acrobat Reader 5 et versions ultérieures.
+Les traitements d’impression échouent s’ils incluent des polices qui ne peuvent pas être incorporées. Ces fichiers PDF peuvent être ouverts dans Acrobat 5 et Acrobat Reader 5 et versions ultérieures.
 
 >[!NOTE]
 >
@@ -87,11 +98,11 @@ Les traitements d’impression échouent s’ils incluent des polices qui ne peu
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-Les paramètres de PDF déterminent précisément le mode de conversion des fichiers, ainsi que la structure et les fonctions du PDF qui en résultent. Définissez un nouveau paramètre de PDF ou modifiez un paramètre existant. Vous ne pouvez pas modifier des paramètres prédéfinis. Toutefois, vous pouvez créer un paramètre basé sur un paramètre existant en le modifiant et en l’enregistrant sous un nouveau nom.
+Les paramètres de PDF déterminent précisément le mode de conversion des fichiers, ainsi que la structure et les fonctions du PDF qui en résultent. Définissez un nouveau paramètre de PDF ou retouchez un paramètre existant. Vous ne pouvez pas modifier des paramètres prédéfinis. Toutefois, vous pouvez créer un paramètre basé sur un paramètre existant en le modifiant et en l’enregistrant sous un nouveau nom.
 
 1. Dans la console d’administration, cliquez sur Services > PDF Generator > Paramètres Adobe PDF.
 1. Cliquez sur Nouveau ou sur le nom d’un paramètre.
-1. Sur la page Nouveau/Modifier le paramètre Adobe PDF, renseignez les informations requises dans les sections suivantes :
+1. Sur la page Nouveau/Retoucher le paramètre Adobe PDF, renseignez les informations requises dans les sections suivantes :
 
    [Options générales](configuring-pdf-settings.md#general-options)
 
@@ -103,7 +114,7 @@ Les paramètres de PDF déterminent précisément le mode de conversion des fich
 
    [Options avancées](configuring-pdf-settings.md#advanced-options)
 
-   [Options de rapport et de conformité aux normes](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
+   [Options de reporting et de conformité aux normes](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
 
    [Options d’affichage initial](configuring-pdf-settings.md#initial-view-options)
 
@@ -116,12 +127,12 @@ Les paramètres de PDF déterminent précisément le mode de conversion des fich
 Vous pouvez rendre les paramètres de PDF disponibles sur le serveur PDF Generator en les chargeant depuis un ordinateur local ou un emplacement réseau.
 
 1. Dans la console d’administration, cliquez sur Services > PDF Generator > Paramètres Adobe PDF, puis cliquez sur Charger.
-1. Sur la page Charger les paramètres Adobe PDF, cliquez sur Parcourir, recherchez le fichier de paramètres de PDF, puis cliquez sur Ouvrir.
+1. Sur la page Charger les paramètres Adobe PDF, cliquez sur Parcourir, recherchez le fichier de paramètres Adobe PDF, puis cliquez sur Ouvrir.
 1. Cliquez sur OK, puis de nouveau sur OK.
 
 ## Suppression de paramètres de PDF {#delete-pdf-settings}
 
-Vous pouvez supprimer définitivement les paramètres de PDF si vous n’en avez plus besoin.
+Vous pouvez supprimer définitivement les paramètres Adobe PDF si vous n’en avez plus besoin.
 
 1. Dans la console d’administration, cliquez sur Services > PDF Generator > Paramètres Adobe PDF.
 1. Cochez la case en regard du paramètre à supprimer. Vous pouvez sélectionner plusieurs paramètres.
@@ -133,7 +144,7 @@ Utilisez les options générales pour spécifier la version d’Acrobat à utili
 
 ### Options de fichier {#file-options}
 
-**Compatibilité :** niveau de compatibilité du fichier PDF. Pour les documents qui seront largement distribués, pensez à sélectionner Acrobat 4 (PDF 1.3) ou Acrobat 5 (PDF 1.4) pour vous assurer que tous les utilisateurs et utilisatrices peuvent afficher et imprimer le document. Si vous créez des fichiers en utilisant la compatibilité Acrobat 5 ou versions ultérieures, ils peuvent ne pas être compatibles avec les versions antérieures d’Acrobat. Les sous-sections suivantes présentent les différences entre les fichiers PDF créés à l’aide de différents niveaux de compatibilité Acrobat.
+**Compatibilité :** niveau de compatibilité du fichier PDF. Pour les documents qui seront largement distribués, pensez à sélectionner Acrobat 4 (PDF 1.3) ou Acrobat 5 (PDF 1.4) pour vous assurer que tous les utilisateurs et utilisatrices peuvent afficher et imprimer le document. Si vous créez des fichiers en utilisant la compatibilité Acrobat 5 ou versions ultérieures, ils peuvent ne pas être compatibles avec les versions antérieures d’Acrobat. Les sous-sections suivantes affichent certaines des différences entre les fichiers PDF créés à l’aide de différents niveaux de compatibilité Acrobat.
 
 <table>
  <tbody>
@@ -150,7 +161,7 @@ Utilisez les options générales pour spécifier la version d’Acrobat à utili
    <td><p>La plupart peuvent être ouvertes avec Acrobat 4 et Acrobat Reader 4.0 et versions ultérieures. Les fonctionnalités spécifiques aux versions ultérieures peuvent être perdues ou non visibles.</p> </td>
   </tr>
   <tr>
-   <td><p>Ne peut pas contenir d’illustrations qui utilisent des effets de transparence en direct. Toute transparence doit être aplatie avant la conversion en PDF 1.3.</p> </td>
+   <td><p>Ne peut pas contenir d’illustrations qui utilisent des effets de transparence dynamique. Toute transparence doit être aplatie avant la conversion en PDF 1.3.</p> </td>
    <td><p>Prend en charge l’utilisation de la transparence dynamique dans les illustrations. (La fonction Acrobat Distiller aplatit la transparence.)</p> </td>
    <td><p>Prend en charge l’utilisation de la transparence dynamique dans les illustrations. (La fonction Acrobat Distiller aplatit la transparence.)</p> </td>
    <td><p>Prend en charge l’utilisation de la transparence dynamique dans les illustrations. (La fonction Acrobat Distiller aplatit la transparence.)</p> </td>
@@ -192,17 +203,17 @@ Utilisez les options générales pour spécifier la version d’Acrobat à utili
 
 >[!NOTE]
 >
->Si vous avez sélectionné Traiter les commentaires DSC dans les paramètres avancés et si %%des commentaires d’orientation d’affichage sont inclus, ces commentaires sont prioritaires pour déterminer l’orientation de la page.
+>Si l’option Traiter les commentaires DSC est sélectionnée dans les paramètres avancés et si des commentaires %%Viewing Orientation sont inclus, ces commentaires sont prioritaires pour déterminer l’orientation de la page.
 
 **Lier :** permet de définir si le fichier PDF doit être affiché avec une liaison à gauche ou à droite. Ce paramètre modifie l’affichage des pages en mise en page Continue-Page double et l’affichage des miniatures côte à côte.
 
-**Résolution :** permet de définir l’émulation de la résolution d’une imprimante pour les fichiers d’entrée qui ajustent leur comportement en fonction de la résolution de l’imprimante vers laquelle ils envoient l’impression. Pour la plupart des fichiers d’entrée, un paramètre de résolution plus élevé génère des fichiers PDF de plus grande taille mais de meilleure qualité, et un paramètre plus faible génère des fichiers PDF de plus faible qualité. La résolution détermine généralement le nombre d’étapes d’un dégradé ou d’une fusion. Vous pouvez saisir une valeur comprise entre 72 et 4 000. Conservez ce paramètre comme valeur par défaut, sauf si vous envisagez d’imprimer le fichier PDF sur une imprimante spécifique et que vous souhaitez émuler la résolution définie dans le fichier d’entrée d’origine.
+**Résolution :** permet de définir l’émulation de la résolution d’une imprimante pour les fichiers d’entrée qui ajustent leur comportement en fonction de la résolution de l’imprimante vers laquelle ils envoient l’impression. Pour la plupart des fichiers d’entrée, un paramètre de résolution plus élevé génère des fichiers PDF de plus grande taille mais de meilleure qualité, et un paramètre plus faible génère des fichiers PDF de plus petite taille mais de moindre qualité. La résolution détermine généralement le nombre d’étapes d’un dégradé ou d’une fusion. Vous pouvez saisir une valeur comprise entre 72 et 4 000. Conservez ce paramètre comme valeur par défaut, sauf si vous envisagez d’imprimer le fichier PDF sur une imprimante spécifique et que vous souhaitez émuler la résolution définie dans le fichier d’entrée d’origine.
 
 >[!NOTE]
 >
 >L’augmentation du paramètre de résolution augmente la taille du fichier et peut légèrement accroître le temps nécessaire au traitement de certains fichiers.
 
-**Toutes les pages ou Pages de :** indique les pages à convertir. Ne renseignez pas la zone A afin de créer une plage comprise entre le numéro de page entré dans la zone De et la fin du fichier.
+**Toutes les pages ou Pages de :** indique les pages à convertir. Laissez la zone À vide pour créer une plage comprise entre le numéro de page saisi dans la zone De et la fin du fichier.
 
 **Optimiser pour l’affichage web rapide :** Restructure le fichier pour le téléchargement page par page (service d’octets) à partir des serveurs web. Cette option compresse le texte et les dessins au trait, quels que soient les paramètres de compression sélectionnés dans l’onglet Images. La compression se traduit par un accès et un affichage plus rapides lors du téléchargement du fichier à partir du web ou d’un réseau. Cette option est désactivée par défaut.
 
@@ -236,9 +247,9 @@ Déterminez également si les utilisateurs et utilisatrices doivent agrandir une
 
 >[!NOTE]
 >
->Le rééchantillonnage d’images monochromes peut avoir des effets inattendus, comme l’affichage d’aucune image. Si tel est le cas, désactivez le rééchantillonnage et convertissez de nouveau le fichier. Ce problème est davantage susceptible de survenir au cours d’un sous-échantillonnage, alors que c’est au cours du sous-échantillonnage bicubique qu’il est le moins fréquent.
+>Le rééchantillonnage d’images monochromes peut avoir des effets inattendus, comme l’absence totale d’affichage de l’image. Si tel est le cas, désactivez le rééchantillonnage et convertissez de nouveau le fichier. Ce problème est plus susceptible de survenir lors d’un sous-échantillonnage et moins susceptible de se produire lors d’un sous-échantillonnage bicubique.
 
-Ce tableau répertorie les types d’imprimantes courants ainsi que leur résolution mesurée en dpi, leur linéature de trame par défaut mesurée en lpi, et une résolution de rééchantillonnage des images mesurées en ppi. Par exemple, pour imprimer sur une imprimante laser de 600 dpi, saisissez 170 comme résolution de rééchantillonnage des images.
+Ce tableau présente les types d’imprimantes courants, leur résolution mesurée en dpi, leur linéature de trame par défaut mesurée en lpi, ainsi qu’une résolution de rééchantillonnage pour les images mesurées en ppi. Par exemple, pour imprimer sur une imprimante laser de 600 dpi, saisissez 170 comme résolution de rééchantillonnage des images.
 
 <table>
  <tbody>
@@ -273,11 +284,11 @@ Ce tableau répertorie les types d’imprimantes courants ainsi que leur résolu
 **Compression :** définit une valeur à appliquer aux images monochromes, à niveaux de gris et en couleur. Pour les images en niveaux de gris et en couleur, définissez également la qualité de l’image :
 
 * Pour les images en niveaux de gris ou en couleur, sélectionnez ZIP pour appliquer une compression qui fonctionne bien sur les images avec des grandes zones de couleurs uniques ou de motifs répétés. Ces images peuvent être des captures d’écran, des images simples créées à l’aide de programmes de dessin et des images monochromes contenant des motifs répétés. Sélectionnez JPEG, qualité minimale à maximale, pour appliquer une compression adaptée aux images en niveaux de gris ou en couleur, comme les photographies en demi-teinte, qui contiennent davantage de détails reproductibles à l’écran ou sur papier. Sélectionnez Automatique (JPEG) pour déterminer automatiquement la meilleure qualité pour les images en niveaux de gris et en couleur.
-* Pour les images monochromes, sélectionnez la compression CCITT Group 4, CCITT Group 3, ZIP, JPEG200, automatique (JPEG2000) ou Run Length.
+* Pour les images monochromes, sélectionnez la compression CCITT groupe 4, CCITT groupe 3, ZIP, JPEG200, automatique (JPEG2000) ou Run Length.
 
 Assurez-vous que les images monochromes sont numérisées en monochrome et non en niveaux de gris. Par défaut, le texte numérisé est parfois enregistré en tant qu’images en niveaux de gris. Le texte en niveaux de gris compressé à l’aide de la méthode de compression JPEG n’est pas clair et peut être illisible.
 
-**Qualité d’image :** configure la qualité de l’image pour les images à niveaux de gris et en couleur. Les options disponibles sont Minimale, Faible, Moyenne, Elevée et Maximale.
+**Qualité d’image :** configure la qualité de l’image pour les images à niveaux de gris et en couleur. Les options disponibles sont minimale, faible, moyenne, élevée et maximale.
 
 **Anti-alias à gris :** lisse les bords dentés des images monochromes. Sélectionnez 2 bits, 4 bits ou 8 bits pour définir 4, 16 ou 256 niveaux de gris. (Le lissage peut donner un aspect flou aux petits motifs ou aux lignes fines).
 
@@ -312,7 +323,7 @@ Est inférieur à :** si vous sélectionnez cette option, indiquez un pourcentag
 1. Dans la liste Source des polices, sélectionnez une source de police, puis cliquez sur Atteindre pour actualiser la liste des polices dans la zone située sur le côté gauche.
 1. Cliquez sur une police dans la zone située à gauche. Cliquez ensuite sur Ajouter en regard de la zone appropriée pour la déplacer vers la liste Toujours incorporer ou Ne jamais incorporer. Répétez l’opération pour chaque police. Maintenez la touche Ctrl enfoncée tout en cliquant sur la souris pour sélectionner plusieurs polices à déplacer.
 1. Pour supprimer une police de la liste Toujours incorporer ou Ne jamais incorporer, sélectionnez-la et cliquez sur Supprimer en regard de la case voulue. Par cette action, vous ne supprimez pas la police de votre système, mais vous supprimez uniquement la référence de celle-ci dans la liste.
-1. Si la police à définir n’est pas affichée, tapez son nom dans la zone Ajouter une police, puis cliquez sur Toujours incorporer ou Ne jamais incorporer. Les noms de police ne peuvent pas contenir de caractères alphanumériques.
+1. Si la police à définir n’est pas affichée, tapez son nom dans la zone Ajouter une police, puis cliquez sur Toujours incorporer ou Ne jamais incorporer. Les noms de police ne peuvent pas contenir de caractères non alphanumériques.
 
 >[!NOTE]
 >
@@ -320,7 +331,7 @@ Est inférieur à :** si vous sélectionnez cette option, indiquez un pourcentag
 
 >[!NOTE]
 >
->Les polices sont sélectionnées à partir du cache des polices du système Windows et un redémarrage du système est requis pour mettre à jour le cache. Après avoir spécifié le répertoire des polices du client ou de la cliente, assurez-vous de redémarrer le système sur lequel AEM forms est installé.
+>Les polices sont sélectionnées à partir du cache des polices du système Windows et un redémarrage du système est requis pour mettre à jour le cache. Après avoir spécifié le répertoire des polices client, assurez-vous de redémarrer le système sur lequel AEM Forms est installé.
 
 ## Options relatives aux couleurs {#color-options}
 
@@ -345,17 +356,17 @@ CMJN :** calibre la couleur du fichier en la rendant indépendante de l’appare
 
 Quelle que soit l’option de compatibilité choisie, les images en niveaux de gris ne sont pas modifiées. Cela entraîne habituellement une réduction du volume et une augmentation de la vitesse d’affichage des fichiers PDF, car la description des images RVB nécessite une quantité d’informations moins importante que celle des images CMJN. RVB est l’espace colorimétrique natif utilisé sur les écrans, c’est pourquoi aucune conversion de la couleur n’est nécessaire lors de l’affichage, ce qui contribue à accélérer l’affichage en ligne. Cette option est recommandée si le fichier PDF est utilisé en ligne ou avec des imprimantes à faible résolution.
 
-**Mode de génération du document :** méthode de mappage des couleurs entre les espaces colorimétriques. Quelle que soit la méthode, son résultat dépend des profils des espaces colorimétriques. Par exemple, certains profils donnent des résultats identiques avec des méthodes différentes. Voici les options de disponibles :
+**Mode de génération du document :** méthode de mappage des couleurs entre les espaces colorimétriques. Quelle que soit la méthode, son résultat dépend des profils des espaces colorimétriques. Par exemple, certains profils donnent des résultats identiques avec des méthodes différentes. Voici les options disponibles :
 
 >[!NOTE]
 >
->dans tous les cas, il est possible d’ignorer ou de remplacer les modes par des opérations de gestion des couleurs qui surviennent après la création du fichier PDF.
+>Dans tous les cas, il est possible d’ignorer ou de remplacer les modes par des opérations de gestion des couleurs qui surviennent après la création du fichier PDF.
 
 **Conserver :** signifie que l’intention est spécifiée dans l’appareil de sortie plutôt que dans le fichier PDF. Dans de nombreux appareils de sortie, Colorimétrie relative est le mode par défaut.
 
 **Perception :** maintient les valeurs de couleur relatives entre les pixels d’origine lorsqu’ils sont mappés à la gamme de destination. Cette méthode donne la possibilité de conserver la relation visuelle entre les couleurs, bien que les valeurs des couleurs elles-mêmes puissent changer.
 
-**Saturation :** maintient les valeurs de saturation relatives des pixels d’origine. Cette méthode est adaptée aux graphiques d’entreprise, pour lesquels la relation exacte entre les couleurs n’est pas aussi importante que le fait d’avoir des couleurs saturées éclatantes.
+**Saturation :** maintient les valeurs de saturation relatives des pixels d’origine. Cette méthode est adaptée aux graphiques métier, pour lesquels la relation exacte entre les couleurs n’est pas aussi importante que le fait d’avoir des couleurs saturées éclatantes.
 
 **Colorimétrie relative :** permet de remapper le point blanc de l’espace source avec celui de l’espace de destination.
 
@@ -363,9 +374,9 @@ Quelle que soit l’option de compatibilité choisie, les images en niveaux de g
 
 ### Espaces de travail {#working-spaces}
 
-Pour l’ensemble des valeurs de la liste se trouvant sous Politiques de gestion des couleurs, autres que Reproduire les couleurs, sélectionnez les options répertoriées dans les listes situées dans la zone Espace de travail afin de spécifier les profils ICC à utiliser pour la définition et l’étalonnage des espaces colorimétriques en niveaux de gris, RVB et CMJN des fichiers PDF convertis. Voici les options de disponibles :
+Pour l’ensemble des valeurs de la liste se trouvant sous Politiques de gestion des couleurs, autres que Reproduire les couleurs, sélectionnez les options répertoriées dans les listes situées dans la zone Espace de travail afin de spécifier les profils ICC à utiliser pour la définition et l’étalonnage des espaces colorimétriques en niveaux de gris, RVB et CMJN des fichiers PDF convertis. Voici les options disponibles :
 
-**Gris :** définit l’espace colorimétrique de toutes les images en niveaux de gris des fichiers. Cette option est disponible uniquement si vous choisissez Référencer les couleurs ou Référencer les images uniquement. Le profil ICC par défaut pour les images grises est Gray Gamma 2.2. Vous pouvez également sélectionner Aucun pour empêcher la conversion des images en niveaux de gris.
+**Gris :** définit l’espace colorimétrique de toutes les images en niveaux de gris des fichiers. Cette option est disponible uniquement si vous choisissez Baliser toutes les couleurs ou Baliser uniquement les images pour la gestion des couleurs. Le profil ICC par défaut pour les images grises est Gray Gamma 2.2. Vous pouvez également sélectionner Aucun pour empêcher la conversion des images en niveaux de gris.
 
 **RVB :** définit l’espace colorimétrique de toutes les images en RVB des fichiers. La valeur par défaut sRVB IEC61966-2.1 est généralement recommandée, car ce standard est en passe de devenir la référence et de nombreux périphériques de sortie le prennent en charge. Vous pouvez également sélectionner Aucun pour empêcher la conversion des images en RVB.
 
@@ -373,9 +384,9 @@ Pour l’ensemble des valeurs de la liste se trouvant sous Politiques de gestion
 
 >[!NOTE]
 >
->Sélectionner Aucun pour les trois espaces de travail revient à sélectionner Reproduire les couleurs.
+>Sélectionner Aucun pour les trois espaces de travail revient à sélectionner Laisser les couleurs inchangées.
 
-**Conserver les valeurs CMYK pour les espaces couleur CMYK calibrés :** lorsque cette option est sélectionnée, les valeurs CMJN indépendantes de l’appareil sont traitées comme des valeurs dépendantes de l’appareil (DeviceCMYK), les espaces couleur indépendants de l’appareil sont ignorés et les fichiers PDF/X-1a utilisent la valeur Convertir toutes les couleurs en CMJN. Si cette option est désélectionnée, les espaces colorimétriques indépendants de l’appareil sont convertis en CMJN si la politiques de gestion des couleurs est définie sur Convertir toutes les couleurs en CMJN.
+**Conserver les valeurs CMYK pour les espaces couleur CMYK calibrés :** lorsque cette option est sélectionnée, les valeurs CMJN indépendantes de l’appareil sont traitées comme des valeurs dépendantes de l’appareil (DeviceCMYK), les espaces couleur indépendants de l’appareil sont ignorés et les fichiers PDF/X-1a utilisent la valeur Convertir toutes les couleurs en CMJN. Si cette option est désélectionnée, les espaces colorimétriques indépendants de l’appareil sont convertis en CMJN si la politique de gestion des couleurs est définie sur Convertir toutes les couleurs en CMJN.
 
 ### Données dépendantes de l’appareil {#device-dependent-data}
 
@@ -399,19 +410,19 @@ En imprimerie traditionnelle, une demi-teinte est obtenue en plaçant une trame 
 
 ## Options avancées {#advanced-options}
 
-Les options avancées spécifient les commentaires DSC (Document Structure Conventions) à conserver dans le fichier PDF et comment définir d’autres options qui affectent la conversion à partir de PostScript. Dans un fichier PostScript, les commentaires DSC contiennent des informations sur le fichier (telles que l’application d’origine, la date de création et l’orientation de page). Ils fournissent également une structure pour les descriptions de page dans le fichier (comme les instructions de début et de fin pour une section de prologue). Les commentaires DSC peuvent être utiles lorsque votre document est destiné à l’impression ou à la presse. Pour plus d’informations sur l’accès aux options avancées, voir [Ajout ou modification de paramètres PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
+Les options avancées spécifient les commentaires DSC (Document Structuring Conventions) à conserver dans le fichier PDF et comment définir d’autres options qui affectent la conversion à partir de PostScript. Dans un fichier PostScript, les commentaires DSC contiennent des informations sur le fichier (telles que l’application d’origine, la date de création et l’orientation de page). Ils fournissent également une structure pour les descriptions de page dans le fichier (comme les déclarations de début et de fin pour une section de prologue). Les commentaires DSC peuvent être utiles lorsque votre document est destiné à l’impression ou à la presse. Pour plus d’informations sur l’accès aux options avancées, voir [Ajout ou modification de paramètres PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
-Lorsque vous utilisez les options avancées, il est utile de connaître le langage PostScript et la manière dont il est traduit en PDF. (Voir [Adobe PostScript 3](https://www.adobe.com/fr/products/postscript.html).)
+Lorsque vous travaillez avec les options avancées, il est utile de connaître le langage PostScript et la manière dont il est traduit en PDF. (Voir [Adobe PostScript 3](https://www.adobe.com/fr/products/postscript.html).)
 
 **Permettre au fichier PostScript d’ignorer les paramètres Adobe PDF :** permet d’utiliser les paramètres stockés dans un fichier PostScript plutôt que dans le fichier des paramètres Adobe PDF actuel. Avant de traiter un fichier PostScript, vous pouvez y placer des paramètres afin de contrôler les aspects suivants :
 
 * Compression de texte et de graphiques.
 * Sous-échantillonnage et codage des images échantillonnées.
-* Incorporation de polices Type 1 et d’instances de polices Type 1 Multiple Master.
+* incorporation de polices Type 1 et d’instances de polices Type 1 Multiple Master.
 
 **Autoriser les XObjects au format PostScript :** les XObjects au format PostScript permettent de stocker les informations qui apparaissent sur de nombreuses pages du même fichier, comme une image en arrière-plan ou les informations relatives à l’en-tête ou au pied de page. L’utilisation de XObjects au format PostScript peut entraîner une impression plus rapide, mais nécessite davantage de mémoire d’imprimante. Pour empêcher la création de XObjects au format PostScript, désélectionnez cette option si vous créez des fichiers PDF avec une compatibilité Acrobat 5 (PDF 1.4) ou ultérieure.
 
-**Convertir les dégradés en ombres lissées :** permet de convertir des dégradés en ombres lissées pour Acrobat 4 et versions ultérieures en réduisant les fichiers PDF et en améliorant potentiellement la qualité de l’impression finale. PDF Generator convertit les dégradés issus d’Adobe Illustrator, Adobe InDesign, Adobe Freehand MX, CorelDraw, Quark Xpress et Microsoft PowerPoint.
+**Convertir les dégradés en ombres lissées :** permet de convertir des dégradés en ombres lissées pour Acrobat 4 et versions ultérieures en réduisant les fichiers PDF et en améliorant potentiellement la qualité de l’impression finale. PDF Generator convertit les dégradés issus d’Adobe Illustrator, Adobe InDesign, Adobe FreeHand MX, CorelDraw, QuarkXPress et Microsoft PowerPoint.
 
 **Convertir les traits lissés en courbes :** permet de réduire le nombre de points de contrôle utilisés pour créer des courbes dans des dessins CAO, ce qui entraîne une réduction de la taille des fichiers PDF et une accélération du rendu à l’écran.
 
@@ -423,11 +434,11 @@ Lorsque vous utilisez les options avancées, il est utile de connaître le langa
 
 **Enregistrer les paramètres Adobe PDF dans le fichier PDF :** permet d’incorporer le fichier de paramètres utilisé pour créer le fichier PDF. Vous pouvez ouvrir et afficher le fichier de paramètres (qui a une extension de nom de fichier .joboptions) dans la boîte de dialogue Pièces jointes dans Acrobat. Le fichier de paramètres Adobe PDF devient un élément de l’arborescence EmbeddedFiles dans le fichier PDF.
 
-**Enregistrer les images au format JPEG dans le fichier PDF (si possible) :** permet de traiter les images compressées au format JPEG (images déjà compressées à l’aide de l’encodage DCT) sans avoir à les compresser de nouveau. Si cette option est sélectionnée, PDF Generator décompresse les images du JPEG pour s’assurer qu’elles ne sont pas corrompues. Toutefois, il ne recompresse pas les images valides, ce qui rend l’image d’origine intacte. Lorsque cette option est sélectionnée, les performances s’améliorent, car seule la décompression (et non la recompression) se produit, et les données et métadonnées d’image sont conservées.
+**Enregistrer les images au format JPEG dans le fichier PDF (si possible) :** permet de traiter les images compressées au format JPEG (images déjà compressées à l’aide de l’encodage DCT) sans avoir à les compresser de nouveau. Si cette option est sélectionnée, PDF Generator décompresse les images du JPEG pour s’assurer qu’elles ne sont pas corrompues. Toutefois, il ne recompresse pas les images valides et traite donc l’image d’origine sans la modifier. Lorsque cette option est sélectionnée, les performances s’améliorent, car seule la décompression (et non la recompression) se produit, et les données et métadonnées d’image sont conservées.
 
-**Enregistrer le dossier de correspondance dans le fichier PDF :** permet de conserver un dossier de correspondance PostScript dans un fichier PDF. Le dossier de correspondance contient des informations relatives au fichier PostScript, telles que le format de page, la résolution et des informations de recouvrement, plutôt que les informations sur le contenu. Ces informations peuvent être utilisées ultérieurement dans un workflow ou pour imprimer le PDF.
+**Enregistrer le dossier de correspondance dans le fichier PDF :** permet de conserver un dossier de correspondance PostScript dans un fichier PDF. Le ticket de traitement contient des informations relatives au fichier PostScript, telles que le format de page, la résolution et des informations de recouvrement, plutôt que des informations sur le contenu. Ces informations peuvent être utilisées ultérieurement dans un workflow ou pour imprimer le PDF.
 
-**Utiliser les fichiers Prologue.ps/Epilogue.ps :** permet d’envoyer un fichier prologue et épilogue avec chaque traitement. Ces fichiers ont de nombreux usages. Par exemple, les fichiers prologue peuvent être modifiés pour définir des pages de couverture. Les fichiers épilogue peuvent être modifiés pour résoudre une série de procédures d’un fichier PostScript. Vous pouvez charger ou télécharger les fichiers. (voir Téléchargement des fichiers épilogue et prologue).
+**Utiliser les fichiers Prologue.ps/Epilogue.ps :** permet d’envoyer un fichier prologue et épilogue avec chaque traitement. Ces fichiers ont de nombreux usages. Par exemple, les fichiers prologue peuvent être modifiés pour définir des pages de couverture. Les fichiers épilogue peuvent être modifiés pour exécuter une série de procédures dans un fichier PostScript. Vous pouvez charger ou télécharger les fichiers. (voir Téléchargement des fichiers prologue et épilogue).
 
 **Traiter les commentaires DSC :** permet de gérer les informations d’un fichier PostScript. Les sous-options disponibles sont les suivantes :
 
@@ -439,15 +450,15 @@ Lorsque vous utilisez les options avancées, il est utile de connaître le langa
 
 **Préserver les informations sur le document des commentaires DSC :** permet de conserver des informations relatives au titre, à la date et à l’heure de création, par exemple. Lorsque vous ouvrez un fichier PDF dans Acrobat, ces informations s’affichent dans le panneau de description des propriétés du document.
 
-**Redimensionner la page et centrer les illustrations des fichiers EPS :** centre une image EPS et redimensionne la page de sorte qu’elle s’adapte étroitement à l’image. Cette option concerne uniquement les travaux composés d’un seul fichier EPS.
+**Redimensionner la page et centrer les illustrations des fichiers EPS :** centre une image EPS et redimensionne la page de sorte qu’elle s’adapte étroitement à l’image. Cette option concerne uniquement les traitements composés d’un seul fichier EPS.
 
-## Options de rapport et de conformité aux normes {#standards-reporting-and-compliance-options}
+## Options de reporting et de conformité aux normes {#standards-reporting-and-compliance-options}
 
 PDF Generator peut vérifier le contenu du document dans un fichier PostScript pour s’assurer qu’il répond aux critères standard PDF/X-1a, PDF/X-3 ou PDF/A avant de créer le fichier PDF. Pour les fichiers conformes à la norme PDF/X, vous pouvez demander que le fichier PostScript réponde à des critères supplémentaires en sélectionnant d’autres options dans « Rapports et conformité aux normes ». La disponibilité des options dépend de la norme choisie.
 
 Les fichiers conformes à la norme PDF/X sont principalement utilisés en tant que format d’échange normalisé de fichiers PDF dédiés à une impression haute résolution. A moins de créer un document PDF destiné à être imprimé, vous pouvez ignorer les normes de conformité PDF/X.
 
-Les fichiers compatibles avec PDF/A sont principalement utilisés à des fins d’archivage. La conservation à long terme étant l’objectif, le document doit contenir uniquement les éléments nécessaires à l’ouverture et à l’affichage tout au long de la vie à laquelle il se destine. Par exemple, les fichiers compatibles avec PDF/A ne peuvent contenir que du texte, des images matricielles et des objets vectoriels ; ils ne peuvent contenir ni chiffrement ni scripts. En outre, toutes les polices doivent être incorporées afin que les documents puissent être ouverts et affichés comme ils ont été créés. En d’autres termes, les documents conformes à la norme PDF/A sont *plus fins* que ceux conformes à la norme PDF/X, qui sont dédiés à une impression de pointe.
+Les fichiers compatibles avec PDF/A sont principalement utilisés à des fins d’archivage. La conservation à long terme étant l’objectif, le document doit contenir uniquement les éléments nécessaires à l’ouverture et à l’affichage tout au long de la vie à laquelle il se destine. Par exemple, les fichiers compatibles avec PDF/A ne peuvent contenir que du texte, des images matricielles et des objets vectoriels ; ils ne peuvent contenir ni chiffrement ni scripts. En outre, toutes les polices doivent être incorporées afin que les documents puissent être ouverts et affichés comme ils ont été créés. En d’autres termes, les documents conformes à la norme PDF/A sont *plus fins* que ceux conformes à la norme PDF/X, qui sont dédiés à une impression de pointe.
 
 >[!NOTE]
 >
@@ -455,7 +466,7 @@ Les fichiers compatibles avec PDF/A sont principalement utilisés à des fins d�
 
 Pour plus d’informations sur l’accès aux options de rapport et de conformité aux normes, voir [Ajout ou modification de paramètres PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
-**Norme de conformité :** permet de sélectionner une norme afin de générer un rapport indiquant si le fichier est conforme aux exigences, et si tel n’est pas le cas, les problèmes rencontrés. Lorsque l’option Compatibilité de la page Paramètres généraux est définie sur Acrobat 4.0, les options ci-dessous sont activées. Lorsque l’option Compatibilité est définie sur Acrobat 5.0, seules les options Acrobat 5.0 sont disponibles pour la sélection. Lorsque l’option Compatibilité est définie sur une autre option, les options suivantes sont grisées :
+**Norme de conformité :** permet de sélectionner une norme afin de générer un rapport indiquant si le fichier est conforme aux exigences, et si tel n’est pas le cas, les problèmes rencontrés. Lorsque l’option Compatibilité de la page Paramètres généraux est définie sur Acrobat 4.0, les options ci-dessous sont activées. Lorsque l’option Compatibilité est définie sur Acrobat 5.0, seules les options Acrobat 5.0 sont disponibles. Lorsque l’option Compatibilité est définie sur une autre option, les options suivantes sont grisées :
 
 * PDF/X-1a (compatible avec Acrobat 4.0)
 * PDF/X-3 (compatible avec Acrobat 4.0)
@@ -465,7 +476,7 @@ Pour plus d’informations sur l’accès aux options de rapport et de conformit
 
 ### Options des normes PDF/X {#options-for-pdf-x-standards}
 
-**Si non conforme :** indique s’il faut créer le fichier PDF en cas de non-conformité du fichier PostScript aux exigences de la norme PDF/X. Cette option est disponible si une valeur autre qu’Aucune est affectée à l’option Norme de conformité de la page Rapport et conformité aux normes.
+**Si non conforme :** indique s’il faut créer le fichier PDF en cas de non-conformité du fichier PostScript aux exigences de la norme PDF/X. Cette option est disponible si une valeur autre qu’Aucune est affectée à l’option Norme de conformité de la page Rapports et conformité aux normes.
 
 **Continuer :** permet de créer un fichier PDF.
 
@@ -493,7 +504,7 @@ Pour plus d’informations sur l’accès aux options de rapport et de conformit
 
 **Nom du registre (URL) :** indique l’adresse Web pour plus d’informations sur le registre. L’URL est saisie automatiquement pour les noms de registre ICC.
 
-**Recouvrement :** permet d’indiquer l’état de recouvrement du document. La conformité PDF/X requiert la valeur True ou False. Si le document ne spécifie pas l’état de recouvrement, la valeur fournie ici est utilisée. Si votre workflow nécessite que le document spécifie l’état de recouvrement, sélectionnez Ne pas définir. Tout document ne répondant pas aux exigences ne passe pas le contrôle de conformité.
+**Recouvrement :** permet d’indiquer l’état de recouvrement du document. La conformité PDF/X requiert une valeur Vrai ou Faux. Si le document ne spécifie pas l’état de recouvrement, la valeur fournie ici est utilisée. Si votre workflow nécessite que le document spécifie l’état de recouvrement, sélectionnez Ne pas définir. Tout document ne répondant pas aux exigences ne passe pas le contrôle de conformité.
 
 ### Options de la norme PDF/A {#options-for-pdf-a-standard}
 
@@ -507,7 +518,7 @@ Ces options sont activées lorsque l’option Compatibilité (dans la zone Gén�
 
 **Nom du profil du mode de sortie :** indique les conditions d’impression particulières pour lesquelles le document a été préparé et qui sont requises pour la conformité aux exigences PDF/A. Si votre workflow nécessite que le document spécifie des informations sur le mode de sortie, sélectionnez « Aucun ». La conformité du document ne pourra être vérifiée si cette information n’est pas fournie.
 
-**Condition de sortie :** permet de décrire la condition d’impression voulue. Cette entrée n’est pas obligatoire, mais elle peut être utilisée pour fournir des informations utiles à la personne destinataire prévue du document PDF.
+**Condition de sortie :** permet de décrire la condition d’impression voulue. Cette entrée n’est pas obligatoire, mais elle peut être utilisée pour fournir des informations utiles au ou à la destinataire prévu du document PDF.
 
 ## Options d’affichage initial {#initial-view-options}
 
@@ -559,15 +570,15 @@ Les options de l’interface utilisateur déterminent les commandes à afficher 
 
 ## Chargement et téléchargement des fichiers prologue et épilogue {#uploading-and-downloading-prologue-and-epilogue-files}
 
-Les fichiers prologue permettent d’ajouter du code PostScript personnalisé qui s’exécute au début de chaque tâche PostScript en cours de conversion. Les fichiers épilogue servent à ajouter du code PostScript personnalisé qui s’exécute à la fin de chaque tâche PostScript. Vous pouvez télécharger des fichiers épilogue et prologue à partir du serveur pour les enregistrer localement. Vous pouvez télécharger les fichiers pour les configurer indépendamment ou pour les charger vers un autre emplacement ou un autre ordinateur.
+Les fichiers prologue permettent d’ajouter du code PostScript personnalisé qui s’exécute au début de chaque tâche PostScript en cours de conversion. Les fichiers épilogue servent à ajouter du code PostScript personnalisé qui s’exécute à la fin de chaque traitement PostScript. Vous pouvez télécharger des fichiers prologue et épilogue à partir du serveur pour les enregistrer localement. Vous pouvez télécharger les fichiers pour les configurer indépendamment ou pour les charger sur un autre emplacement ou un autre ordinateur.
 
-Ces fichiers ont de nombreux usages. Par exemple, les fichiers prologue peuvent être modifiés pour définir les pages de couverture et les fichiers épilogue pour résoudre une série de procédures d’un fichier PostScript. Vous pouvez également sélectionner et charger les fichiers épilogue et prologue à envoyer avec chaque travail.
+Ces fichiers ont de nombreux usages. Par exemple, les fichiers prologue peuvent être modifiés pour définir les pages de couverture et les fichiers épilogue peuvent être modifiés pour exécuter une série de procédures dans un fichier PostScript. Vous pouvez également sélectionner et charger les fichiers épilogue et prologue à envoyer avec chaque traitement.
 
 ### Téléchargement d’un fichier prologue ou épilogue {#download-a-prologue-or-epilogue-file}
 
 1. Dans la console d’administration, cliquez sur Services > PDF Generator > Paramètres Adobe PDF.
 1. Cliquez sur Nouveau ou sur le nom d’un paramètre.
-1. Cliquez sur Avancées puis, en regard de l’option Utiliser les fichiers Prologue.ps/Epilogue, cliquez sur Télécharger.
+1. Cliquez sur Avancées puis, en regard de l’option Utiliser les fichiers Prologue.ps/Epilogue.ps, cliquez sur Télécharger.
 1. Dans la page Télécharger des fichiers Prologue et Epilogue, cliquez sur Prologue.ps ou Epilogue.ps, puis sur Enregistrer.
 
 ### Chargement d’un fichier prologue ou épilogue {#upload-a-prologue-or-epilogue-file}
@@ -582,4 +593,4 @@ Ces fichiers ont de nombreux usages. Par exemple, les fichiers prologue peuvent 
 
 >[!NOTE]
 >
->PDF Generator ne prend en charge les fichiers épilogue et prologue que pour la conversion de fichiers PostScript et Postscript encapsulés en PDF.
+>PDF Generator ne prend en charge les fichiers prologue et épilogue que pour la conversion de fichiers PostScript et Encapsulated PostScript en PDF.

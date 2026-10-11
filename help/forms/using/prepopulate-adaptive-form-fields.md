@@ -9,13 +9,29 @@ docset: aem65
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2289'
+source-wordcount: '2290'
 ht-degree: 98%
-
 ---
-
 # Préremplissage des champs de formulaires adaptatifs{#prefill-adaptive-form-fields}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -241,7 +257,7 @@ Pour activer le service de préremplissage, spécifiez la configuration de servi
 >La configuration du service de préremplissage s’applique aux formulaires adaptatifs, aux formulaires HTML5 et aux ensembles de formulaires HTML5.
 
 1. Ouvrez la **[!UICONTROL configuration de la console web d’Adobe Experience Manager]** à l’aide de l’URL :\
-   https://&lt;serveur>:&lt;port>/system/console/configMgr
+   https://<serveur>:<port>/system/console/configMgr
 1. Recherchez et ouvrez la **[!UICONTROL configuration de service de préremplissage par défaut]**.
 
    ![Configuration du préremplissage](assets/prefill_config_new.png)
@@ -348,7 +364,7 @@ Vous pouvez utiliser le service de préremplissage personnalisé pour les scéna
 
 ### Création et exécution d’un service de préremplissage {#create-and-run-a-prefill-service}
 
-Le service de préremplissage est un service OSGi et fait partie du bundle OSGi. Vous créez le lot OSGi, vous le chargez et l’installez sur les lots AEM Forms. Avant de débuter la création du bundle :
+Le service de préremplissage est un service OSGi et il est empaqueté via un bundle OSGi. Vous créez le bundle OSGi, vous le chargez et l’installez sur les bundles AEM Forms. Avant de débuter la création du bundle :
 
 * [Télécharger le SDK client AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
 * Téléchargement du package standard
@@ -386,14 +402,14 @@ Lorsque vous préremplissez un formulaire adaptatif, le serveur AEM Forms fusio
 Vous pouvez configurer le serveur AEM Forms pour qu’il effectue l’action de fusion des données sur le client et non sur le serveur. Cela réduit considérablement le temps nécessaire pour préremplir et générer les formulaires adaptatifs. Par défaut, cette fonctionnalité est désactivée. Vous pouvez l’activer à partir de Configuration Manager ou d’une ligne de commande.
 
 * Pour activer ou désactiver Configuration Manager :
-   1. Ouvrez AEM Configuration Manager.
-   1. Recherchez et ouvrez la configuration de canal web de la communication interactive et du formulaire adaptatif.
-   1. Activez l’option Configuration.af.clientside.datamerge.enabled.name.
+  1. Ouvrez AEM Configuration Manager.
+  1. Recherchez et ouvrez la configuration de canal web de la communication interactive et du formulaire adaptatif.
+  1. Activez l’option Configuration.af.clientside.datamerge.enabled.name.
 * Pour effectuer l’activation ou la désactivation à partir de la ligne de commande :
-   * Pour procéder à l’activation, exécutez la commande cURL suivante :
-     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+  * Pour procéder à l’activation, exécutez la commande cURL suivante :
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   * Pour procéder à la désactivation, exécutez la commande cURL suivante :
-     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+  * Pour procéder à la désactivation, exécutez la commande cURL suivante :
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
   Pour tirer pleinement parti de l’option de préremplissage des données au niveau du client, mettez à jour votre service de préremplissage pour renvoyer [FileAttachmentMap](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) et [CustomContext](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html).

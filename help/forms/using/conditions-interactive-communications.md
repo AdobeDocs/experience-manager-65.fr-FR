@@ -8,13 +8,27 @@ feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 97%
-
+source-wordcount: '1508'
+ht-degree: 93%
 ---
-
 # Conditions dans les communications interactives{#conditions-in-interactive-communications}
 
 Création et modification de fragments de condition à utiliser dans les communications interactives - la condition est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont les fragments de texte, de liste et de disposition.
@@ -77,7 +91,7 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
 
    **[A] Rejeter la modification.** Sélectionnez cette icône pour rejeter les modifications que vous avez apportées à l’actif et à la règle dans la condition.
    **[B] Accepter la modification.** Sélectionnez cette icône pour accepter les modifications que vous avez apportées à l’actif et à la règle dans la condition.
-   **[C] Dupliquer la ressource.** Sélectionnez cette icône pour créer une copie de la ressource avec la règle appliquée, le cas échéant, dans la condition. Vous pouvez ensuite procéder à la modification de la règle et de la ressource pour la ressource dupliquée. La duplication d’une ressource est utile pour créer des règles similaires afin d’afficher d’autres ressources en fonction d’un contexte particulier.
+   **[C] Dupliquer La Ressource.** Sélectionnez cette icône pour créer une copie de la ressource avec la règle appliquée, le cas échéant, dans la condition. Vous pouvez ensuite modifier la règle et la ressource pour la ressource dupliquée. La duplication d’une ressource est utile pour créer des règles similaires afin d’afficher des ressources alternatives basées sur un contexte particulier.
    **[D] Afficher l’aperçu.** Sélectionnez cette icône pour afficher un aperçu de la ressource dans la page Créer/Modifier la condition.
    **&#39;server&#39; Reorder.** Sélectionnez cette icône et maintenez-la enfoncée pour glisser-déposer des ressources et les réorganiser dans une condition.
 

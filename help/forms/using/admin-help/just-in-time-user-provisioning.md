@@ -1,6 +1,6 @@
 ---
 title: Approvisionnement juste à temps d’utilisateurs
-description: Utilisez l’approvisionnement juste à temps pour ajouter des utilisateurs et des utilisatrices à User Management après l’authentification réussie et pour affecter de manière dynamique les rôles et les groupes appropriés au nouvel utilisateur ou à la nouvelle utilisatrice.
+description: Utilisez le provisionnement juste à temps pour ajouter des utilisateurs et des utilisatrices à User Management après l’authentification réussie et pour affecter de manière dynamique les rôles et les groupes appropriés au nouvel utilisateur ou à la nouvelle utilisatrice.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
@@ -9,14 +9,30 @@ exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 100%
 ---
 # Approvisionnement juste à temps {#just-in-time-user-provisioning}
 
-AEM Forms prend en charge l’approvisionnement juste à temps d’utilisateurs et d’utilisatrices n’existant pas encore dans User Management. Grâce à la fonction d’approvisionnement juste à temps, les utilisateurs et les utilisatrices sont automatiquement ajoutés à User Management une fois leurs informations d’identification authentifiées. En outre, les rôles et groupes appropriés sont affectés dynamiquement au nouvel utilisateur ou à la nouvelle utilisatrice.
+AEM Forms prend en charge le provisionnement juste à temps d’utilisateurs et d’utilisatrices n’existant pas encore dans User Management. Grâce au provisionnement juste à temps, les utilisateurs et les utilisatrices sont automatiquement ajoutés à User Management une fois leurs informations d’identification authentifiées avec succès. En outre, les rôles et groupes appropriés sont affectés dynamiquement au nouvel utilisateur ou à la nouvelle utilisatrice.
 
 ## Fonction de l’approvisionnement juste à temps d’utilisateurs et d’utilisatrices {#need-for-just-in-time-user-provisioning}
 
@@ -24,15 +40,15 @@ Voici comment l’authentification traditionnelle fonctionne :
 
 1. Lorsqu’un utilisateur ou une utilisatrice tente de se connecter à AEM Forms, User Management transmet les informations d’identification de l’utilisateur ou de l’utilisatrice de manière séquentielle à tous les fournisseurs d’authentification disponibles. (Les informations d’identification comprennent le nom d’utilisateur ou d’utilisatrice et le mot de passe, le ticket Kerberos, la signature PKCS7, etc.)
 1. Le fournisseur d’authentification valide les informations d’identification.
-1. Le fournisseur d’authentification vérifie ensuite si l’utilisateur ou l’utilisatrice existe dans la base de données User Management. Voici les résultats possibles :
+1. Le fournisseur d’authentification vérifie ensuite si l’utilisateur ou l’utilisatrice existe dans la base de données User Management. Voici les résultats possibles :
 
-   **Existe :** si l’utilisateur est en cours et déverrouillé, User Management renvoie un succès d’authentification. Toutefois, si l’utilisateur n’est pas en cours ou s’il est verrouillé, User Management signale un échec d’authentification.
+   **Existe :** si l’utilisateur est en cours et déverrouillé, User Management renvoie un succès d’authentification. Toutefois, si l’utilisateur ou l’utilisatrice n’est pas valide ou si sa session est verrouillée, User Management signale un échec d’authentification.
 
    **N’existe pas :** User Management renvoie un échec d’authentification.
 
    **Non valide :** User Management renvoie un échec d’authentification.
 
-1. Le résultat renvoyé par le fournisseur d’authentification est évalué. Si le fournisseur d’authentification renvoie une authentification réussie, l’utilisateur ou l’utilisatrice est autorisés à se connecter. Dans le cas contraire, User Management vérifie auprès du fournisseur d’authentification suivant (étapes 2 et 3).
+1. Le résultat renvoyé par le fournisseur d’authentification est évalué. Si le fournisseur d’authentification renvoie une authentification réussie, l’utilisateur ou l’utilisatrice est autorisé à se connecter. Dans le cas contraire, User Management vérifie auprès du fournisseur d’authentification suivant (étapes 2 et 3).
 1. Un échec de l’authentification est renvoyé si aucun fournisseur d’authentification disponible ne valide les informations d’identification de l’utilisateur ou de l’utilisatrice.
 
 Lors de l’implémentation de l’approvisionnement juste à temps, une nouvelle personne est créée dynamiquement dans User Management si l’un des fournisseurs d’authentification valide les informations d’identification de celle-ci. (Après l’étape 3 de la procédure d’authentification traditionnelle décrite ci-dessus.)
@@ -78,7 +94,7 @@ public Boolean assign(User user);
 }
 ```
 
-### Éléments à prendre en compte lors de la création d’un domaine prenant en charge l’approvisionnement juste à temps {#considerations-while-creating-a-just-in-time-enabled-domain}
+### Éléments à prendre en compte lors de la création d’un domaine prenant en charge le provisionnement juste à temps {#considerations-while-creating-a-just-in-time-enabled-domain}
 
 * Lors de la création d’un `IdentityCreator` personnalisé pour un domaine hybride, assurez-vous qu’un mot de passe factice est spécifié pour l’utilisateur local. Ne laissez pas ce champ de mot de passe vide.
 * Recommandation : utilisez `DomainSpecificAuthentication` pour valider les informations d’identification de l’utilisateur pour un domaine spécifique.
@@ -89,7 +105,7 @@ public Boolean assign(User user);
 1. Déployez le DSC sur le serveur Forms Server.
 1. Créez un domaine prenant en charge l’approvisionnement juste à temps :
 
-   * Dans Administration Console, cliquez sur Paramètres > User Management > Gestion des domaines > Nouveau domaine d’entreprise.
+   * Dans la console d’administration, cliquez sur Paramètres > User Management > Gestion des domaines > Nouveau domaine d’entreprise.
    * Configurez le domaine et sélectionnez Activer l’approvisionnement juste à temps. <!--Fix broken link (See Setting up and managing domains).-->
    * Ajoutez des fournisseurs d’authentification. Lors de l’ajout de fournisseurs d’authentification, dans l’écran Nouvelle authentification, sélectionnez un créateur d’identités et un fournisseur d’affectation enregistrés.
 

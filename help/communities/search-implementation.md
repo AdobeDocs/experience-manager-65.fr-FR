@@ -9,7 +9,16 @@ exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 4%
@@ -18,7 +27,7 @@ ht-degree: 4%
 
 ## Vue d’ensemble {#overview}
 
-La fonction de recherche est une fonctionnalité essentielle des communautés Adobe Experience Manager (AEM). Outre les fonctionnalités de recherche de la plateforme [&#128279;](../../help/sites-deploying/queries-and-indexing.md), AEM Communities fournit l’API de recherche [UGC](#ugc-search-api) pour rechercher du contenu créé par l’utilisateur. Le contenu créé par l’utilisateur possède des propriétés uniques, car il est saisi et stocké séparément des autres données utilisateur et du contenu AEM.
+La fonction de recherche est une fonctionnalité essentielle des communautés Adobe Experience Manager (AEM). Outre les fonctionnalités de recherche de la plateforme [](../../help/sites-deploying/queries-and-indexing.md), AEM Communities fournit l’API de recherche [UGC](#ugc-search-api) pour rechercher du contenu créé par l’utilisateur. Le contenu créé par l’utilisateur possède des propriétés uniques, car il est saisi et stocké séparément des autres données utilisateur et du contenu AEM.
 
 Pour Communities, les deux éléments généralement recherchés sont les suivants :
 
@@ -50,7 +59,7 @@ Pour [ASRP](asrp.md), le contenu créé par l’utilisateur est stocké dans le 
 
 Il n’existe actuellement aucun outil permettant de gérer les recherches ASRP.
 
-Lors de la création de propriétés personnalisées pouvant faire l’objet de recherches, il est nécessaire de respecter les [&#x200B; exigences en matière de dénomination &#x200B;](#naming-of-custom-properties).
+Lors de la création de propriétés personnalisées pouvant faire l’objet de recherches, il est nécessaire de respecter les [ exigences en matière de dénomination ](#naming-of-custom-properties).
 
 ### Recherches MSRP {#msrp-searches}
 
@@ -65,7 +74,7 @@ En ce qui concerne MSRP et Solr :
 
 Les fonctionnalités de recherche personnalisées doivent utiliser l’[API de recherche UGC](#ugc-search-api).
 
-Lors de la création de propriétés personnalisées pouvant faire l’objet de recherches, il est nécessaire de respecter les [&#x200B; exigences en matière de dénomination &#x200B;](#naming-of-custom-properties).
+Lors de la création de propriétés personnalisées pouvant faire l’objet de recherches, il est nécessaire de respecter les [ exigences en matière de dénomination ](#naming-of-custom-properties).
 
 ### Recherches JSRP {#jsrp-searches}
 
@@ -83,9 +92,9 @@ Bien que les index Oak ne soient pas automatiquement créés pour la recherche s
 
 Si des propriétés personnalisées sont en cours d’utilisation et que les recherches sont lentes, des index supplémentaires doivent être créés pour les propriétés personnalisées afin de les rendre plus performantes. Pour maintenir la portabilité, respectez les exigences en matière de [dénomination](#naming-of-custom-properties) lors de la création de propriétés personnalisées pouvant faire l’objet de recherches.
 
-Pour modifier des index existants ou créer des index personnalisés, consultez [Requêtes et indexation &#x200B;](../../help/sites-deploying/queries-and-indexing.md).
+Pour modifier des index existants ou créer des index personnalisés, consultez [Requêtes et indexation ](../../help/sites-deploying/queries-and-indexing.md).
 
-Le [gestionnaire d’index &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) est disponible à partir d’ACS AEM Commons. Elle fournit les éléments suivants :
+Le [gestionnaire d’index ](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) est disponible à partir d’ACS AEM Commons. Elle fournit les éléments suivants :
 
 * Une vue des index existants.
 * Possibilité de lancer la réindexation.
@@ -163,7 +172,7 @@ Solr est un exemple de langage de requête qui utilise un schéma.
 
 ## Filtres {#filters}
 
-Les composants, qui incluent le [&#x200B; système de commentaires &#x200B;](essentials-comments.md), prennent en charge le paramètre de filtre en plus de leurs points d’entrée.
+Les composants, qui incluent le [ système de commentaires ](essentials-comments.md), prennent en charge le paramètre de filtre en plus de leurs points d’entrée.
 
 La syntaxe de filtre pour la logique AND et OR est exprimée comme suit (affichée avant d’être encodée en URL) :
 
@@ -175,7 +184,7 @@ La syntaxe de filtre pour la logique AND et OR est exprimée comme suit (affich�
 
   * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
-L’implémentation par défaut du [composant Recherche](search.md) utilise cette syntaxe, comme vous pouvez le voir dans l’URL qui ouvre la page Résultats de la recherche dans le guide [Composants de communauté](components-guide.md). Pour tester, accédez à [&#128279;](http://localhost:4503/content/community-components/en/search.html).
+L’implémentation par défaut du [composant Recherche](search.md) utilise cette syntaxe, comme vous pouvez le voir dans l’URL qui ouvre la page Résultats de la recherche dans le guide [Composants de communauté](components-guide.md). Pour tester, accédez à [](http://localhost:4503/content/community-components/en/search.html).
 
 Les opérateurs de filtre sont les suivants :
 

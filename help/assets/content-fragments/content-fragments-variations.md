@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2442'
 ht-degree: 100%
-
 ---
-
 # Variations – créer du contenu de fragment{#variations-authoring-fragment-content}
 
 Les [variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu AEM car elles permettent de créer et de modifier des copies du contenu maître pour une utilisation sur des canaux spécifiques ou dans des cas spécifiques, ce qui rend la diffusion de votre contenu découplé encore plus flexible.
@@ -51,22 +63,22 @@ Vous pouvez effectuer les actions suivantes :
 
 * Apportez des modifications à votre contenu directement dans l’onglet **Variations**. Chaque type de données fournit différentes options de modification, par exemple :
 
-   * Pour les champs **Plusieurs lignes de texte**, vous pouvez également ouvrir l’[éditeur plein écran](#full-screen-editor) pour :
+  * Pour les champs **Plusieurs lignes de texte**, vous pouvez également ouvrir l’[éditeur plein écran](#full-screen-editor) pour :
 
-      * sélectionner le [format](#formats) ;
-      * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
-      * accéder à un éventail d’[actions](#actions).
+    * sélectionner le [format](#formats) ;
+    * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
+    * accéder à un éventail d’[actions](#actions).
 
-   * Pour les champs **Référence de fragment**, l’option [Modifier le fragment de contenu](#fragment-references-edit-content-fragment) peut être disponible, selon la définition du modèle.
+  * Pour les champs **Référence de fragment**, l’option [Modifier le fragment de contenu](#fragment-references-edit-content-fragment) peut être disponible, selon la définition du modèle.
 
 * Attribuez des **Balises** à la variation actuelle. Les balises peuvent être ajoutées, mises à jour et supprimées.
 
-   * Les [balises](/help/sites-authoring/tags.md) sont puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées pour rechercher du contenu (par balises) et appliquer des opérations en bloc.
+  * Les [balises](/help/sites-authoring/tags.md) sont puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées pour rechercher du contenu (par balises) et appliquer des opérations en bloc.
 
-      * Les recherches d’une balise renvoient le fragment avec la variation balisée en surbrillance.
-      * Vous pouvez également utiliser les balises de variation pour regrouper des variations pour un profil de réseau de diffusion de contenu (CDN) spécifique (pour la mise en cache CDN), au lieu d’utiliser le nom de la variation.
+    * Les recherches d’une balise renvoient le fragment avec la variation balisée en surbrillance.
+    * Vous pouvez également utiliser les balises de variation pour regrouper des variations pour un profil de réseau de diffusion de contenu (CDN) spécifique (pour la mise en cache CDN), au lieu d’utiliser le nom de la variation.
 
-     Par exemple, vous pouvez baliser les fragments pertinents en tant que « lancement de Noël » pour ne les parcourir que sous forme de sous-ensemble, ou les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
+    Par exemple, vous pouvez baliser les fragments pertinents en tant que « lancement de Noël » pour ne les parcourir que sous forme de sous-ensemble, ou les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
 
   >[!NOTE]
   >
@@ -130,10 +142,10 @@ La modification de texte enrichi permet de mettre en forme :
 * Style de paragraphe : paragraphe et en-tête 1/2/3
 * [Insérer une ressource](#inserting-assets-into-your-fragment)
 * Ouvrez l’éditeur plein écran où les options de mise en forme suivantes sont disponibles :
-   * Rechercher
-   * Rechercher/remplacer
-   * Vérificateur orthographique
-   * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * Rechercher
+  * Rechercher/remplacer
+  * Vérificateur orthographique
+  * [Annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Insérer un fragment de contenu](#inserting-content-fragment-into-your-fragment) ; disponible lorsque votre champ **Plusieurs lignes de texte** est configuré avec l’option **Autoriser la référence de fragment** activée.
 
 Les [actions](#actions) sont également accessibles à partir de l’éditeur plein écran.

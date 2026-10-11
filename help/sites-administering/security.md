@@ -10,13 +10,25 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2cc34ce568fc533d41f53d8007825264ca9baad3
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '5471'
 ht-degree: 93%
-
 ---
-
 # Administration et sécurité des utilisateurs{#user-administration-and-security}
 
 Ce chapitre décrit comment configurer et gérer l’autorisation utilisateur ainsi que la théorie du fonctionnement de l’authentification et de l’autorisation dans AEM.
@@ -291,7 +303,7 @@ Voici des recommandations pour la gestion des listes de contrôle d’accès :
 
   L’utilisation de l’autorisation Autoriser peut avoir des effets inattendus si les autorisations sont appliquées dans un ordre différent de l’ordre prévu. Si un utilisateur ou une utilisatrice est membre de plusieurs groupes, les instructions Refuser d’un groupe peuvent annuler l’instruction Autoriser d’un autre groupe ou vice versa. Il est difficile de garder une vue d’ensemble dans ce genre de situation qui peut facilement donner des résultats imprévus, alors que les attributions Autoriser ne provoquent pas de tels conflits.
 
-  Adobe vous recommande d’utiliser Autoriser plutôt que Refuser. Voir [&#x200B; Bonnes pratiques &#x200B;](#best-practices).
+  Adobe vous recommande d’utiliser Autoriser plutôt que Refuser. Voir [ Bonnes pratiques ](#best-practices).
 
 Avant de modifier l’une des autorisations, assurez-vous de comprendre son fonctionnement et ses interactions. Consultez la documentation CRX qui explique comment la gestion de contenu web AEM [évalue les droits d’accès](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated), ainsi que des exemples sur la configuration des listes de contrôle d’accès.
 

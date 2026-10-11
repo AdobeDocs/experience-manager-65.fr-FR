@@ -10,7 +10,16 @@ exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 1%
@@ -45,7 +54,7 @@ Ainsi, il est possible d’indiquer à ASRP d’utiliser `AEM 6.0 compatability-
 Pour toutes les instances d’auteur et de publication AEM 6.3 :
 
 * Connectez-vous avec des droits d’administrateur.
-* Configurez [&#x200B; ASRP &#x200B;](/help/communities/asrp.md).
+* Configurez [ ASRP ](/help/communities/asrp.md).
 * Pour rendre le contenu créé par l’utilisateur préexistant visible, procédez comme suit :
 
   * Accédez à la console web :
@@ -66,7 +75,7 @@ Pour toutes les instances d’auteur et de publication AEM 6.3 :
 Si le site mis à niveau n’utilisait pas l’espace de stockage dans le cloud, tout contenu créé par l’utilisateur préexistant doit être converti conformément à la nouvelle structure introduite dans les communautés AEM 6.1 pour prendre en charge le magasin commun.
 
 À cet effet, un outil de migration open source est disponible sur GitHub :
-[Outil de migration du contenu créé par l’utilisateur &#x200B;](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+[Outil de migration du contenu créé par l’utilisateur ](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
 ### API Java {#java-apis}
 

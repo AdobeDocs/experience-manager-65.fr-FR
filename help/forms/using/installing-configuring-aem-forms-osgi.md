@@ -8,13 +8,31 @@ role: Admin, User, Developer
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 98%
-
 ---
-
 # Installation et configuration des fonctionnalités de capture de données{#install-and-configure-data-capture-capabilities}
 
 ## Présentation {#introduction}
@@ -44,18 +62,18 @@ Avant de commencer à installer et configurer la fonctionnalité de capture de d
 * Le chemin d’installation de l’instance AEM ne contient pas d’espaces.
 * Une instance AEM est en cours d’exécution. Pour les utilisateurs de Windows, installez l’instance AEM en mode élevé. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. Vous avez besoin d’au moins deux instances [AEM (une instance de création et une instance de publication)](/help/sites-deploying/deploy.md) pour exécuter les fonctionnalités de capture de données AEM Forms :
 
-   * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
-   * **Publication** : une instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
+  * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
+  * **Publication** : une instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
 
 * Les exigences de mémoire sont respectées. Le package complémentaire AEM Forms nécessite :
 
-   * 15 Go d’espace temporaire pour les installations Microsoft Windows.
-   * 6 Go d’espace temporaire pour les installations Unix.
+  * 15 Go d’espace temporaire pour les installations Microsoft Windows.
+  * 6 Go d’espace temporaire pour les installations Unix.
 
 * La réplication et la réplication inversée pour les instances de création et de publication sont définies. Pour plus de détails, voir [Réplication](/help/sites-deploying/replication.md).
 * Pour les systèmes UNIX :
 
-   * Installez les packages 32 bits suivants à partir du support d’installation :
+  * Installez les packages 32 bits suivants à partir du support d’installation :
 
 <table>
  <tbody>
@@ -100,7 +118,7 @@ Avant de commencer à installer et configurer la fonctionnalité de capture de d
 
 * Installez le package 64 bits suivant à partir du support d’installation :
 
-   * libicu
+  * libicu
 
 * Installez le [Package redistribuable Microsoft Visual Studio 2019 32 bits](https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
@@ -109,7 +127,7 @@ Avant de commencer à installer et configurer la fonctionnalité de capture de d
 
 Le module complémentaire AEM Forms est une application déployée sur AEM. Le package contient des captures de données AEM Forms et d’autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
 
-1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à Software Distribution.
 1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** situé dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
@@ -182,9 +200,9 @@ Pour autoriser le package, procédez comme suit sur toutes les instances dʼaute
 
 #### La configuration de Dispatcher {#configure-dispatcher}
 
-Dispatcher est l’outil de mise en cache et/ou d’équilibrage de charge d’Adobe Experience Manager, qui peut être utilisé conjointement avec un serveur web de niveau élevé. Si vous utilisez [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), effectuez les configurations suivantes pour AEM Forms :
+Dispatcher est l’outil de mise en cache et/ou d’équilibrage de charge d’Adobe Experience Manager, qui peut être utilisé conjointement avec un serveur web d’entreprise. Si vous utilisez [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), effectuez les configurations suivantes pour AEM Forms :
 
-1. Configurez l’accès à AEM Forms:
+1. Configurez l’accès à AEM Forms :
 
    Ouvrez le fichier dispatcher.any en mode d’édition. Accédez à la section des filtres et ajoutez le filtre suivant à la section des filtres :
 
@@ -220,7 +238,7 @@ Vous pouvez activer la communication SSL pour le modèle de données de formulai
 
 #### Configurer Adobe Sign {#configure-adobe-sign}
 
-Adobe Sign autorise les workflows de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
+Adobe Sign permet les processus de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
 
 Dans un scénario Adobe Sign et de formulaires adaptatifs standard, un utilisateur remplit un formulaire adaptatif pour effectuer une **demande de service**. Par exemple, un formulaire de demande de carte bancaire et d’allocation. Lorsqu’un utilisateur ou une utilisatrice remplit, envoie et signe le formulaire de demande, le formulaire est envoyé au fournisseur de services pour qu’il effectue d’autres actions. Le prestataire de services passe en revue la demande et utilise Adobe Sign pour marquer la demande approuvée. Pour activer les processus de signature électronique similaires, vous pouvez intégrer Adobe Sign à AEM Forms.
 

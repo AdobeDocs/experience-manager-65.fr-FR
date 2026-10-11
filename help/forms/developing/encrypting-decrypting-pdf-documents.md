@@ -9,13 +9,29 @@ role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '8295'
 ht-degree: 98%
-
 ---
-
 # Chiffrer et déchiffrer des documents PDF {#encrypting-and-decrypting-pdf-documents}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -26,7 +42,7 @@ Le service Encryption vous donne la possibilité de chiffrer et de déchiffrer d
 
 Vous pouvez accomplir les tâches suivantes à l’aide du service Encryption :
 
-* Chiffrez un document de PDF avec un mot de passe. (Voir [Chiffrer des documents PDF avec un mot de passe](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+* Chiffrez un document PDF avec un mot de passe. (Voir [Chiffrer des documents PDF avec un mot de passe](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 * Chiffrez un document PDF avec un certificat. (Voir [Chiffrer des documents PDF avec des certificats](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
 * Supprimez le chiffrement par mot de passe d’un document PDF. (Voir [Supprimer le chiffrement par mot de passe](encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
 * Supprimez le chiffrement par certificat d’un document PDF. (Voir [Supprimer le chiffrement par certificat](encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
@@ -39,7 +55,7 @@ Vous pouvez accomplir les tâches suivantes à l’aide du service Encryption :
 
 ## Chiffrer des documents PDF avec un mot de passe {#encrypting-pdf-documents-with-a-password}
 
-Si vous chiffrez un document PDF avec un mot de passe, les utilisateurs devront indiquer ce même mot de passe pour pouvoir ouvrir le document PDF dans Adobe Reader ou Acrobat. Avant qu’une autre opération de pour AEM Forms (signer numérique un document PDF par exemple) puisse être exécutée sur le document, un document PDF chiffré par mot de passe doit être déverrouillé.
+Si vous chiffrez un document PDF avec un mot de passe, les utilisateurs devront indiquer ce même mot de passe pour pouvoir ouvrir le document PDF dans Adobe Reader ou Acrobat. Avant qu’une autre opération AEM Forms, telle que la signature numérique du document PDF, puisse être exécutée sur le document, un document PDF chiffré par mot de passe doit être déverrouillé.
 
 >[!NOTE]
 >
@@ -54,7 +70,7 @@ Si vous chiffrez un document PDF avec un mot de passe, les utilisateurs devront 
 Pour chiffrer un document PDF avec un mot de passe, procédez comme suit :
 
 1. Incluez les fichiers de projet.
-1. Créez un objet API client Encryption.
+1. Créez un objet API client de chiffrement.
 1. Obtenez un document PDF à chiffrer.
 1. Définissez les options d’exécution du chiffrement.
 1. Ajoutez le mot de passe.
@@ -74,7 +90,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 
 **Créer un objet API client Encryption**
 
-Pour effectuer par programmation une opération de service Encryption, vous devez créer un client de service Encryption.
+Pour effectuer par programmation une opération de service de chiffrement, vous devez créer un client de service de chiffrement.
 
 **Obtenir un document PDF à chiffrer**
 
@@ -82,11 +98,11 @@ Vous devez obtenir un document PDF non chiffré pour chiffrer le document avec u
 
 **Définir les options d’exécution du chiffrement**
 
-Pour chiffrer un document PDF avec un mot de passe, vous devez indiquer quatre valeurs, dont deux valeurs de mot de passe. La première valeur de mot de passe est utilisée pour chiffrer le document PDF et doit être indiquée lors de l’ouverture du document PDF. La deuxième valeur de mot de passe, encore appelée valeur de mot de passe principale, est utilisée pour supprimer le chiffrement du document PDF. Les valeurs de mot de passe sont sensibles à la casse et ces deux valeurs de mot de passe ne peuvent pas être identiques.
+Pour chiffrer un document PDF avec un mot de passe, vous devez indiquer quatre valeurs, dont deux valeurs de mot de passe. La première valeur de mot de passe est utilisée pour chiffrer le document PDF et doit être indiquée lors de l’ouverture du document PDF. La deuxième valeur de mot de passe, appelée valeur de mot de passe principale, est utilisée pour supprimer le chiffrement du document PDF. Les valeurs de mot de passe sont sensibles à la casse et ces deux valeurs de mot de passe ne peuvent pas être identiques.
 
-Spécifiez les ressources de document PDF à chiffrer. Vous pouvez chiffrer l’intégralité du document PDF, à l’exception des métadonnées du document, ou uniquement des pièces jointes du document. Si vous chiffrez uniquement les pièces jointes du document, l’utilisateur est invité à saisir un mot de passe lorsqu’il essaie d’accéder aux pièces jointes.
+Spécifiez les ressources de document PDF à chiffrer. Vous pouvez chiffrer l’intégralité du document PDF, à l’exception des métadonnées du document, ou uniquement des pièces jointes du document. Si vous chiffrez uniquement les pièces jointes du document, l’utilisateur ou l’utilisatrice est invité à saisir un mot de passe lorsqu’il ou elle essaie d’accéder aux pièces jointes du document.
 
-Lors du chiffrement d’un document PDF, vous pouvez indiquer les autorisations associées au document sécurisé. En spécifiant les autorisations, vous pouvez contrôler les actions qu’un utilisateur qui ouvre un document PDF chiffré par mot de passe est autorisé à effectuer. Par exemple, pour extraire efficacement les données de formulaire, vous devez définir les autorisations suivantes :
+Lors du chiffrement d’un document PDF, vous pouvez indiquer les autorisations associées au document sécurisé. En spécifiant les autorisations, vous pouvez contrôler les actions qu’un utilisateur qui ouvre un document PDF chiffré par mot de passe est autorisé à effectuer. Par exemple, pour extraire avec succès les données de formulaire, vous devez définir les autorisations suivantes :
 
 * PASSWORD_EDIT_ADD
 * PASSWORD_EDIT_MODIFY
@@ -190,10 +206,10 @@ Chiffrez un document PDF avec un mot de passe à l’aide de l’API Encryption 
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenez un document PDF à chiffrer.
 
@@ -237,22 +253,22 @@ Chiffrez un document PDF avec un mot de passe à l’aide de l’API Encryption 
 
 ## Chiffrer des documents PDF avec des certificats {#encrypting-pdf-documents-with-certificates}
 
-Le chiffrement par certificat vous permet de chiffrer le document pour des destinataires spécifiques utilisant la technologie de clé publique. Différents destinataires peuvent recevoir différents droits pour le document. De nombreux aspects de chiffrement sont possibles grâce à la technologie de clé publique. Un algorithme est utilisé pour générer deux grands nombres, encore appelés *clés* possédant les propriétés suivantes :
+Le chiffrement par certificat vous permet de chiffrer un document pour des destinataires spécifiques utilisant la technologie de clé publique. Différents destinataires peuvent recevoir différents droits pour le document. De nombreux aspects du chiffrement sont possibles grâce à la technologie de clé publique. Un algorithme est utilisé pour générer deux grands nombres, encore appelés *clés* possédant les propriétés suivantes :
 
 * Une clé est utilisée pour chiffrer un ensemble de données. Par la suite, seule l’autre clé peut être utilisée pour déchiffrer les données.
 * Il est impossible de distinguer une clé d’une autre.
 
-L’une des clés fait office de clé privée pour l’utilisateur. Il est important que seul l’utilisateur ait accès à cette clé. L’autre clé est la clé publique de l’utilisateur, qui peut être partagée avec d’autres utilisateurs.
+L’une des clés fait office de clé privée pour l’utilisateur. Il est important que seul l’utilisateur ait accès à cette clé. L’autre clé est la clé publique de l’utilisateur ou de l’utilisatrice, qui peut être partagée avec d’autres.
 
-Un certificat de clé publique contient la clé publique d’un utilisateur et ses données d’identification. Le format X.509 est utilisé pour le stockage des certificats. Les certificats sont généralement émis et signés numériquement par une autorité de certification, qui est une entité reconnue qui garantit la validité du certificat. Les certificats comportent une date d’expiration ; au-delà de cette date, ils ne sont plus valides. En outre, les listes de révocation des certificats (CRL) fournissent des informations sur les certificats révoqués avant leur date d’expiration. Les listes CRL sont publiées régulièrement par les autorités de certification. Vous pouvez également récupérer l’état de révocation d’un certificat par l’intermédiaire du protocole OCSP (Online Certificate Status Protocol, protocole d’état de certificat en ligne) sur le réseau.
-
->[!NOTE]
->
->Si vous téléchargez un document PDF chiffré dans le référentiel AEM Forms, ce dernier ne pourra pas déchiffrer le document PDF et extraire le contenu XDP. Il est recommandé de ne pas chiffrer un document avant de le charger dans le référentiel AEM Forms. (Voir [Écriture de ressources](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+Un certificat de clé publique contient la clé publique d’un utilisateur et ses données d’identification. Le format X.509 est utilisé pour le stockage des certificats. Les certificats sont généralement émis et signés numériquement par une autorité de certification, qui est une entité reconnue qui offre un certain niveau de confiance quant à la validité du certificat. Les certificats comportent une date d’expiration ; au-delà de cette date, ils ne sont plus valides. En outre, les listes de révocation des certificats (CRL) fournissent des informations sur les certificats révoqués avant leur date d’expiration. Les listes CRL sont publiées régulièrement par les autorités de certification. Vous pouvez également récupérer le statut de révocation d’un certificat par l’intermédiaire du protocole OCSP (Online Certificate Status Protocol, protocole d’état de certificat en ligne) sur le réseau.
 
 >[!NOTE]
 >
->Avant de chiffrer un document PDF avec un certificat, vous devez vérifier que vous ajoutez le certificat à AEM Forms. Un certificat est ajouté à l’aide de la console d’administration ou par programmation à l’aide de l’API Trust Manager. (Voir [Importation des informations d’identification à l’aide de l’API Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+>Si vous chargez un document PDF chiffré dans le référentiel AEM Forms, ce dernier ne pourra pas déchiffrer le document PDF et extraire le contenu XDP. Il est recommandé de ne pas chiffrer un document avant de le charger dans le référentiel AEM Forms. (Voir [Écriture de ressources](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+
+>[!NOTE]
+>
+>Avant de chiffrer un document PDF avec un certificat, vous devez vous assurer que vous ajoutez le certificat à AEM Forms. Un certificat est ajouté à l’aide de la console d’administration ou par programmation à l’aide de l’API Trust Manager. (Voir [Importation des informations d’identification à l’aide de l’API Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 >[!NOTE]
 >
@@ -263,11 +279,11 @@ Un certificat de clé publique contient la clé publique d’un utilisateur et s
 Pour chiffrer un document PDF avec un certificat, procédez comme suit :
 
 1. Incluez les fichiers de projet.
-1. Créez un objet API client Encryption.
+1. Créez un objet API client de chiffrement.
 1. Obtenez un document PDF à chiffrer.
 1. Référencez le certificat.
 1. Définissez les options d’exécution du chiffrement.
-1. Créez un document PDF chiffré par certificat.
+1. Créez un document PDF chiffré au moyen d’un certificat.
 1. Enregistrez le document PDF chiffré en tant que fichier PDF.
 
 **Inclure les fichiers de projet**
@@ -292,7 +308,7 @@ Vous devez obtenir un document PDF non chiffré à chiffrer. Si vous tentez de s
 
 **Référencer le certificat**
 
-Pour chiffrer un document PDF avec un certificat, référencez un certificat utilisé pour chiffrer un document PDF. Le certificat est un fichier .cer, un fichier .crt ou un fichier .pem. Un fichier PKCS#12 est utilisé pour stocker des clés privées avec les certificats correspondants.
+Pour chiffrer un document PDF avec un certificat, utilisez un certificat qui sert à chiffrer un document PDF. Le certificat est un fichier .cer, un fichier .crt ou un fichier .pem. Un fichier PKCS#12 est utilisé pour stocker des clés privées avec les certificats correspondants.
 
 Lors du chiffrement d’un document PDF avec un certificat, spécifiez les autorisations associées au document sécurisé. En spécifiant les autorisations, vous pouvez contrôler les actions qu’un utilisateur qui ouvre un document PDF chiffré par certificat peut effectuer.
 
@@ -312,7 +328,7 @@ Vous pouvez enregistrer le document PDF chiffré en tant que fichier PDF.
 
 [Chiffrer un document PDF avec un certificat à l’aide de l’API Java](encrypting-decrypting-pdf-documents.md#encrypt-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[Chiffrer un document PDF avec un certificat à l’aide de l’API Web Service](encrypting-decrypting-pdf-documents.md#encrypt-a-pdf-document-with-a-certificate-using-the-web-service-api)
+[Chiffrer un document PDF avec un certificat à l’aide de l’API de service web](encrypting-decrypting-pdf-documents.md#encrypt-a-pdf-document-with-a-certificate-using-the-web-service-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -320,17 +336,17 @@ Vous pouvez enregistrer le document PDF chiffré en tant que fichier PDF.
 
 [Démarrages rapides de l’API du service Encryption](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
-[Chiffrer des documents PDF avec un mot de passe](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
+[Chiffrer des documents PDF avec un mot de passe.](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
 
 ### Chiffrer un document PDF avec un certificat à l’aide de l’API Java {#encrypt-a-pdf-document-with-a-certificate-using-the-java-api}
 
-Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (Java) :
+Chiffrez un document PDF avec un certificat à l’aide de l’API de chiffrement (Java) :
 
 1. Incluez les fichiers de projet.
 
    Incluez des fichiers JAR clients, tels que adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
-1. Créez un objet API client Encryption.
+1. Créez un objet API client de chiffrement.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `EncryptionServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
@@ -387,7 +403,7 @@ Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (J
 
 ### Chiffrer un document PDF avec un certificat à l’aide de l’API Web Service {#encrypt-a-pdf-document-with-a-certificate-using-the-web-service-api}
 
-Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (Web Service) :
+Chiffrez un document PDF avec un certificat à l’aide de l’API de chiffrement (service web) :
 
 1. Incluez les fichiers de projet.
 
@@ -405,10 +421,10 @@ Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (W
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenez un document PDF à chiffrer.
 
@@ -464,7 +480,7 @@ Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (W
 
 ## Supprimer un chiffrement avec certificat {#removing-certificate-based-encryption}
 
-Vous pouvez supprimer le chiffrement avec certificat d’un document PDF afin que les utilisateurs puissent ouvrir le document PDF dans Adobe Reader ou Acrobat. Pour supprimer le chiffrement d’un document PDF chiffré avec un certificat, une clé publique doit être référencée. Une fois le chiffrement par mot de passe du document PDF supprimé, celui-ci n’est plus sécurisé.
+Vous pouvez supprimer le chiffrement avec certificat d’un document PDF afin que les utilisateurs puissent ouvrir le document PDF dans Adobe Reader ou Acrobat. Pour supprimer le chiffrement d’un document PDF chiffré avec un certificat, une clé publique doit être référencée. Une fois le chiffrement du document PDF supprimé, celui-ci n’est plus sécurisé.
 
 >[!NOTE]
 >
@@ -476,7 +492,7 @@ Pour supprimer le chiffrement avec certificat d’un document PDF, procédez com
 
 1. Incluez les fichiers de projet.
 1. Créez un client de service de chiffrement.
-1. Prenez le document PDF chiffré.
+1. Obtenez le document PDF chiffré.
 1. Supprimez le chiffrement.
 1. Enregistrez le document PDF au format PDF.
 
@@ -494,7 +510,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 
 **Créer un client de service de chiffrement**
 
-Pour effectuer par programmation une opération de service Encryption, vous devez créer un client de service Encryption. Si vous utilisez l’API Java Encryption Service, créez un objet `EncrytionServiceClient`. Si vous utilisez l’API de service web Encryption Service, créez un objet `EncryptionServiceService`.
+Pour effectuer par programmation une opération de service de chiffrement, vous devez créer un client de service de chiffrement. Si vous utilisez l’API Java Encryption Service, créez un objet `EncrytionServiceClient`. Si vous utilisez l’API de service web Encryption Service, créez un objet `EncryptionServiceService`.
 
 **Obtenir le document PDF chiffré**
 
@@ -522,22 +538,22 @@ Une fois le chiffrement au moyen dʼun certificat supprimé d’un document PDF 
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrages rapides de l’API du service Encryption](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[Démarrages rapides de l’API du service de chiffrement](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
 ### Supprimer le chiffrement avec certificat à l’aide de l’API Java {#remove-certificate-based-encryption-using-the-java-api}
 
-Supprimez le chiffrement avec certificat d’un document PDF à l’aide de l’API Encryption (Java) :
+Supprimez le chiffrement avec certificat d’un document PDF à l’aide de l’API de chiffrement (Java) :
 
 1. Incluez les fichiers de projet.
 
-   Incluez des fichiers JAR clients, tels que adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez des fichiers JAR clients, tels que adobe-encryption-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un client de service de chiffrement.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `EncryptionServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
-1. Prenez le document PDF chiffré.
+1. Obtenez le document PDF chiffré.
 
    * Créez un objet `java.io.FileInputStream` représentant le document PDF chiffré en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF chiffré.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
@@ -568,7 +584,7 @@ Supprimez le chiffrement avec certificat d’un document PDF à l’aide de l’
 
 ### Supprimer le chiffrement avec certificat à l’aide de l’API de service web {#remove-certificate-based-encryption-using-the-web-service-api}
 
-Supprimez le chiffrement avec certificat à l’aide de l’API Encryption (service web) :
+Supprimer le chiffrement avec certificat à l’aide de l’API Encryption (service web) :
 
 1. Incluez les fichiers de projet.
 
@@ -586,12 +602,12 @@ Supprimez le chiffrement avec certificat à l’aide de l’API Encryption (serv
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Prenez le document PDF chiffré.
+1. Obtenez le document PDF chiffré.
 
    * Créez un objet `BLOB` en utilisant son constructeur. Lʼobjet `BLOB` sert à stocker le document PDF chiffré.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF chiffré et le mode d’ouverture du fichier.
@@ -625,7 +641,7 @@ Supprimez le chiffrement avec certificat à l’aide de l’API Encryption (serv
 
 ## Supprimer le chiffrement avec mot de passe {#removing-password-encryption}
 
-Supprimez le chiffrement avec mot de passe d’un document PDF et permettez ainsi aux utilisateurs d’ouvrir le document PDF dans Adobe Reader ou Acrobat sans avoir besoin de saisir de mot de passe. Une fois le chiffrement avec mot de passe du document PDF supprimé, celui-ci n’est plus sécurisé.
+Le chiffrement avec mot de passe peut être supprimé d’un document PDF afin de permettre aux utilisateurs et utilisatrices d’ouvrir le document PDF dans Adobe Reader ou Acrobat sans avoir besoin de saisir de mot de passe. Une fois le chiffrement avec mot de passe du document PDF supprimé, celui-ci n’est plus sécurisé.
 
 >[!NOTE]
 >
@@ -655,7 +671,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 
 **Créer un client de service de chiffrement**
 
-Pour effectuer par programmation une opération de service Encryption, vous devez créer un client de service Encryption. Si vous utilisez l’API Java Encryption Service, créez un objet `EncrytionServiceClient`. Si vous utilisez l’API de service web Encryption Service, créez un objet `EncryptionServiceService`.
+Pour effectuer par programmation une opération de service de chiffrement, vous devez créer un client de service de chiffrement. Si vous utilisez l’API Java Encryption Service, créez un objet `EncrytionServiceClient`. Si vous utilisez l’API de service web Encryption Service, créez un objet `EncryptionServiceService`.
 
 **Obtenir le document PDF chiffré**
 
@@ -667,7 +683,7 @@ Pour supprimer le chiffrement avec mot de passe d’un document PDF chiffré, vo
 
 **Enregistrer le document PDF**
 
-Une fois que le service Encryption a supprimé le chiffrement avec mot de passe d’un document PDF, vous pouvez enregistrer le document PDF au format PDF. Les utilisateurs peuvent ouvrir le document PDF dans Adobe Reader ou Acrobat sans avoir besoin de saisir de mot de passe.
+Une fois que le service Encryption a supprimé le chiffrement avec mot de passe d’un document PDF, vous pouvez enregistrer le document PDF au format PDF. Les utilisateurs et utilisatrices peuvent ouvrir le document PDF dans Adobe Reader ou Acrobat sans spécifier de mot de passe.
 
 **Voir également**
 
@@ -713,7 +729,7 @@ Supprimez le chiffrement avec mot de passe d’un document PDF à l’aide de l�
 
 **Voir également**
 
-[Démarrage rapide (mode SOAP) : supprimer le chiffrement par mot de passe à l’aide de l’API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[Démarrage rapide (mode SOAP) : supprimez le chiffrement par mot de passe à l’aide de l’API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
 ### Supprimer le chiffrement par mot de passe à l’aide de l’API de service web {#remove-password-based-encryption-using-the-web-service-api}
 
@@ -735,12 +751,12 @@ Supprimez le chiffrement par mot de passe à l’aide de l’API Encryption (ser
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Prenez le document PDF chiffré.
+1. Obtenez le document PDF chiffré.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF chiffré par mot de passe.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du fichier du document PDF chiffré et son mode d’ouverture.
@@ -772,7 +788,7 @@ Supprimez le chiffrement par mot de passe à l’aide de l’API Encryption (ser
 
 ## Déverrouiller des documents PDF chiffrés {#unlocking-encrypted-pdf-documents}
 
-Un document PDF chiffré par mot de passe ou par certificat doit être déverrouillé avant qu’une autre opération AEM Forms puisse être effectuée sur ce dernier. Si vous tentez d’effectuer une opération sur un document PDF chiffré, vous allez générer une exception. Après avoir déverrouillé un document PDF chiffré, vous pouvez y effectuer une ou plusieurs opérations. Ces opérations peuvent appartenir à d’autres services, tels que le service Extensions Acrobat Reader DC.
+Un document PDF chiffré par mot de passe ou par certificat doit être déverrouillé avant qu’une autre opération AEM Forms puisse être effectuée sur ce dernier. Si vous tentez d’effectuer une opération sur un document PDF chiffré, vous générerez une exception. Après avoir déverrouillé un document PDF chiffré, vous pouvez y effectuer une ou plusieurs opérations. Ces opérations peuvent appartenir à d’autres services, tels que le service Extensions Acrobat Reader DC.
 
 >[!NOTE]
 >
@@ -802,7 +818,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 
 **Créer un client de service de chiffrement**
 
-Pour effectuer par programmation une opération de service Encryption, vous devez créer un client de service Encryption. Si vous utilisez l’API Java Encryption Service, créez un objet `EncrytionServiceClient`. Si vous utilisez l’API de service web Encryption Service, créez un objet `EncryptionServiceService`.
+Pour effectuer par programmation une opération de service de chiffrement, vous devez créer un client de service de chiffrement. Si vous utilisez l’API Java Encryption Service, créez un objet `EncrytionServiceClient`. Si vous utilisez l’API de service web Encryption Service, créez un objet `EncryptionServiceService`.
 
 **Obtenir le document PDF chiffré**
 
@@ -810,7 +826,7 @@ Vous devez obtenir un document PDF chiffré pour le déverrouiller. Si vous tent
 
 **Déverrouiller le document**
 
-Pour déverrouiller un document PDF chiffré avec mot de passe, vous avez besoin, dʼune part, d’un document PDF chiffré et, dʼautre part, d’une valeur de mot de passe, capable dʼouvrir un document PDF chiffré avec mot de passe. Cette valeur est spécifiée lors du chiffrement du document PDF avec un mot de passe. (Consultez la section [Chiffrer des documents PDF avec un mot de passe](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)).
+Pour déverrouiller un document PDF chiffré avec mot de passe, vous avez besoin, dʼune part, d’un document PDF chiffré et, dʼautre part, d’une valeur de mot de passe utilisée pour ouvrir un document PDF chiffré avec mot de passe. Cette valeur est spécifiée lors du chiffrement du document PDF avec un mot de passe. (Consultez la section [Chiffrer des documents PDF avec un mot de passe](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)).
 
 Pour déverrouiller un document PDF chiffré avec certificat, vous avez besoin d’un document PDF chiffré ainsi que de la valeur de l’alias de la clé publique qui correspond à la clé privée utilisée pour chiffrer le document PDF.
 
@@ -832,18 +848,18 @@ Une fois un document PDF chiffré déverrouillé, vous pouvez effectuer une autr
 
 ### Déverrouiller un document PDF chiffré à l’aide de l’API Java {#unlock-an-encrypted-pdf-document-using-the-java-api}
 
-Déverrouillez un document PDF chiffré à l’aide de l’API Encryption (Java) :
+Déverrouillez un document PDF chiffré à l’aide de l’API de chiffrement (Java) :
 
 1. Incluez les fichiers de projet.
 
-   Incluez des fichiers JAR clients, tels que adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez des fichiers JAR clients, tels que adobe-encryption-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un client de service de chiffrement.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `EncryptionServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
-1. Prenez le document PDF chiffré.
+1. Obtenez le document PDF chiffré.
 
    * Créez un objet `java.io.FileInputStream` représentant le document PDF chiffré en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF chiffré.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
@@ -866,7 +882,7 @@ Déverrouillez un document PDF chiffré à l’aide de l’API Encryption (Java)
 
 1. Effectuez une opération AEM Forms.
 
-   Effectuez une opération AEM Forms sur le document PDF déverrouillé pour répondre aux besoins de votre entreprise. Par exemple, si vous souhaitez appliquer des droits d’utilisation à un document PDF déverrouillé, transmettez lʼobjet `com.adobe.idp.Document`, renvoyé par la méthode `unlockPDFUsingPassword` ou `unlockPDFUsingCredential`, à la méthode `applyUsageRights` de lʼobjet `ReaderExtensionsServiceClient`.
+   Effectuez une opération AEM Forms sur le document PDF déverrouillé pour répondre à vos besoins métier. Par exemple, si vous souhaitez appliquer des droits d’utilisation à un document PDF déverrouillé, transmettez lʼobjet `com.adobe.idp.Document`, renvoyé par la méthode `unlockPDFUsingPassword` ou `unlockPDFUsingCredential`, à la méthode `applyUsageRights` de lʼobjet `ReaderExtensionsServiceClient`.
 
 **Voir également**
 
@@ -882,7 +898,7 @@ Déverrouillez un document PDF chiffré à l’aide de l’API Encryption (Java)
 
 ### Déverrouiller un document PDF chiffré à l’aide de l’API de service web {#unlock-an-encrypted-pdf-document-using-the-web-service-api}
 
-Déverrouillez un document PDF chiffré à l’aide de l’API Encryption (service web) :
+Déverrouillez un document PDF chiffré à l’aide de l’API de chiffrement (service web) :
 
 1. Incluez les fichiers de projet.
 
@@ -900,10 +916,10 @@ Déverrouillez un document PDF chiffré à l’aide de l’API Encryption (servi
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenez un document PDF chiffré.
 
@@ -979,7 +995,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 
 **Créer un client de service**
 
-Pour effectuer par programmation une opération de service Encryption, vous devez créer un client de service Encryption. Si vous utilisez l’API Java Encryption Service, créez un objet `EncrytionServiceClient`. Si vous utilisez l’API de service web Encryption Service, créez un objet `EncryptionServiceService`.
+Pour effectuer par programmation une opération de service de chiffrement, vous devez créer un client de service de chiffrement. Si vous utilisez l’API Java Encryption Service, créez un objet `EncrytionServiceClient`. Si vous utilisez l’API de service web Encryption Service, créez un objet `EncryptionServiceService`.
 
 **Obtenir le document PDF chiffré**
 
@@ -987,7 +1003,7 @@ Vous devez obtenir un document PDF pour déterminer le type de chiffrement qui l
 
 **Déterminer le type de chiffrement**
 
-Vous pouvez déterminer le type de chiffrement qui protège un document PDF. Si le document PDF n’est pas protégé, le service Encryption vous informe que le document PDF n’est pas sécurisé.
+Vous pouvez déterminer le type de chiffrement qui protège un document PDF. Si le document PDF n’est pas protégé, le service de chiffrement vous informe que le document PDF n’est pas sécurisé.
 
 **Voir également**
 
@@ -999,7 +1015,7 @@ Vous pouvez déterminer le type de chiffrement qui protège un document PDF. Si 
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrages rapides de l’API du service Encryption](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[Démarrages rapides de l’API du service de chiffrement](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
 [Protéger des documents à lʼaide de politiques](/help/forms/developing/protecting-documents-policies.md#protecting-documents-with-policies)
 
@@ -1009,14 +1025,14 @@ Déterminez le type de chiffrement qui protège un document PDF à l’aide de l
 
 1. Incluez les fichiers de projet.
 
-   Incluez des fichiers JAR clients, tels que adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez des fichiers JAR clients, tels que adobe-encryption-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un client de service.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `EncryptionServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
-1. Prenez le document PDF chiffré.
+1. Obtenez le document PDF chiffré.
 
    * Créez un objet `java.io.FileInputStream` qui représente le document PDF en utilisant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du document PDF.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
@@ -1056,12 +1072,12 @@ Déterminez le type de chiffrement qui protège un document PDF à l’aide de l
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Prenez le document PDF chiffré.
+1. Obtenez le document PDF chiffré.
 
    * Créez un objet `BLOB` en utilisant son constructeur.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF chiffré et le mode d’ouverture du fichier.

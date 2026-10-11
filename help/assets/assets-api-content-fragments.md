@@ -1,18 +1,34 @@
 ---
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager dans l’API Assets HTTP
-description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion d’AEM découplé.
+description: Découvrez la prise en charge des fragments de contenu dans l’API Assets HTTP, un élément important de la fonctionnalité de diffusion découplée d’AEM.
 feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+  - id: c7140a77-10cf-4213-a7e9-f0d69c9fb56c
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+  - id: e5184d7e-fd36-480c-b5e5-d8161f2210ca
+    internal-label: Assets HTTP API
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 98%
-
 ---
-
 # Prise en charge des fragments de contenu dans l’API HTTP AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 | Version | Lien de l’article |
@@ -23,7 +39,7 @@ ht-degree: 98%
 
 ## Vue d’ensemble {#overview}
 
-Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion d’AEM découplé.
+Découvrez la prise en charge des fragments de contenu dans l’API Assets HTTP, un élément important de la fonctionnalité de diffusion découplée d’AEM.
 
 >[!NOTE]
 >
@@ -38,7 +54,7 @@ L’[API REST Assets](/help/assets/mac-api-assets.md) permet aux développeurs 
 
 L’API permet d’utiliser Adobe Experience Manager en tant que système de gestion de contenu (CMS) découplé en fournissant des services de contenu à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
 
-Par exemple, les applications monopages, basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
+Par exemple, les applications Une seule page (SPA), basées sur un framework ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
 Bien que les [composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) fournissent une API très complète, flexible et personnalisable pouvant traiter les opérations de lecture requises à cette fin, et dont la sortie JSON peut être personnalisée, ils ne nécessitent pas de connaissances sur AEM WCM (Web Content Management) pour la mise en œuvre, car ils doivent être hébergés sur des pages reposant sur des modèles AEM dédiés. Les entreprises de développement d’applications sur une seule page n’ont pas toutes accès à ces connaissances.
 
@@ -67,9 +83,9 @@ L’API REST Assets offre un accès de type [REST](https://fr.wikipedia.org/wiki
 Elle utilise le point d’entrée `/api/assets` et requiert le chemin d’accès de la ressource pour y accéder (sans `/content/dam` qui précède).
 
 * Cela signifie que pour accéder à la ressource à l’adresse suivante :
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * Vous devez demander :
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 Par exemple, pour accéder à `/content/dam/wknd/en/adventures/cycling-tuscany`, demandez `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -98,7 +114,7 @@ Toutes les requêtes sont atomiques.
 
 Cela signifie que les requêtes suivantes (`write`) ne peuvent pas être combinées en une seule transaction pouvant aboutir ou échouer en tant qu’entité unique.
 
-### API REST AEM (Assets) et composants AEM {#aem-assets-rest-api-versus-aem-components}
+### API REST AEM (Assets) versus composants AEM {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <thead>
@@ -134,7 +150,7 @@ Cela signifie que les requêtes suivantes (`write`) ne peuvent pas être combin�
   </tr>
   <tr>
    <td>Remarques architecturales</td>
-   <td><p>L’accès en écriture concerne généralement une instance de création.</p> <p>Un accès en lecture peut également être redirigé vers une instance de publication.</p> </td>
+   <td><p>L’accès en écriture concerne généralement une instance de création.</p> <p>Un accès en lecture peut également être dirigé vers une instance de publication.</p> </td>
    <td>Comme cette approche est en lecture seule, elle est généralement utilisée pour les instances de publication.</td>
   </tr>
   <tr>
@@ -213,7 +229,7 @@ L’API REST Assets expose l’accès aux propriétés d’un dossier (par exemp
 
 ### Assets {#assets}
 
-Si une ressource est demandée, la réponse renvoie ses métadonnées, telles que le titre, le nom et les autres informations, comme défini par le schéma des ressources respectives.
+Si une ressource est demandée, la réponse renvoie ses métadonnées, telles que le titre, le nom et les autres informations, comme défini par le schéma de la ressource concernée.
 
 Les données binaires d’une ressource sont exposées sous la forme d’un lien SIREN de type `content`.
 
@@ -249,11 +265,11 @@ Le contenu associé n’est actuellement pas exposé.
 L’utilisation peut varier selon que vous utilisez un environnement d’auteur ou de publication AEM dans votre cas d’utilisation spécifique.
 
 * Il est vivement recommandé de lier la création à une instance de création ([et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API](/help/assets/assets-api-content-fragments.md#limitations)).
-* La diffusion est possible à partir des deux, car AEM diffuse le contenu demandé au format JSON uniquement.
+* La diffusion est possible à partir des deux instances, car AEM diffuse le contenu demandé au format JSON uniquement.
 
-   * Le stockage et la diffusion depuis une instance de création AEM doivent suffire pour les applications de bibliothèque de médias situées derrière le pare-feu.
+  * Le stockage et la diffusion depuis une instance de création AEM doivent suffire pour les applications de bibliothèque de médias situées derrière le pare-feu.
 
-   * Pour une diffusion web en direct, une instance de publication AEM est recommandée.
+  * Pour une diffusion web en direct, une instance de publication AEM est recommandée.
 
 >[!CAUTION]
 >
@@ -273,11 +289,11 @@ Par exemple :
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
-La réponse est un JSON sérialisé avec le contenu structuré comme dans le fragment de contenu. Les références sont diffusées en tant qu’URL de référence.
+La réponse est sérialisée au format JSON, avec le contenu structuré comme dans le fragment de contenu. Les références sont diffusées en tant qu’URL de référence.
 
 Deux types d’opérations de lecture sont possibles :
 
-* Lecture d’un fragment de contenu spécifique par chemin, ce qui renvoie la représentation JSON du fragment de contenu.
+* Lecture d’un fragment de contenu spécifique par chemin : renvoie la représentation JSON du fragment de contenu.
 * Lecture d’un dossier de fragments de contenu par chemin : cela renvoie les représentations JSON de tous les fragments de contenu du dossier.
 
 ### Créer {#create}
@@ -296,7 +312,7 @@ Mode d’utilisation :
 
 Le corps doit contenir une représentation JSON de ce qui doit être mis à jour pour le fragment de contenu donné.
 
-Il peut simplement s’agir du titre ou de la description d’un fragment de contenu, d’un élément unique ou de toutes les valeurs et/ou métadonnées d’un élément.
+Il peut simplement s’agir du titre ou de la description d’un fragment de contenu, d’un élément unique ou de toutes les valeurs d’élément et/ou métadonnées.
 
 ### Supprimer {#delete}
 
@@ -319,18 +335,18 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 * **200** (OK)
 Affiché dans le scénario suivant :
 
-   * demande d’un fragment de contenu via `GET`
-   * mise à jour réussie d’un fragment de contenu via `PUT`
+  * demande d’un fragment de contenu via `GET`
+  * mise à jour réussie d’un fragment de contenu via `PUT`
 
 * **201** (Créé)
 Affiché dans le scénario suivant :
 
-   * création réussie d’un fragment de contenu via `POST`
+  * création réussie d’un fragment de contenu via `POST`
 
 * **404** (Introuvable)
 Affiché dans le scénario suivant :
 
-   * le fragment de contenu demandé n’existe pas
+  * le fragment de contenu demandé n’existe pas
 
 * **500** (Erreur interne du serveur)
 
@@ -338,33 +354,33 @@ Affiché dans le scénario suivant :
   >
   >Cette erreur est renvoyée :
   >
-  >* lorsqu’une erreur ne pouvant pas être identifiée avec un code spécifique s’est produite ;
+  >* lorsqu’une erreur ne pouvant pas être identifiée avec un code spécifique s’est produite
   >* lorsque la payload donnée n’était pas valide.
 
   L’exemple suivant répertorie les scénarios courants lorsque cet état d’erreur est renvoyé, ainsi que le message d’erreur (à espacement fixe) généré :
 
-   * Le dossier parent n’existe pas (lors de la création d’un fragment de contenu via `POST`)
-   * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant), ne peut pas être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment valide :
+  * Le dossier parent n’existe pas (lors de la création d’un fragment de contenu via `POST`)
+  * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant), ne peut pas être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment valide :
 
-      * `No content fragment model specified`
-      * `Cannot create a resource of given model '/foo/bar/qux'`
+    * `No content fragment model specified`
+    * `Cannot create a resource of given model '/foo/bar/qux'`
 
-   * Impossible de créer le fragment de contenu (problème d’autorisation potentiel) :
+  * Impossible de créer le fragment de contenu (problème d’autorisation potentiel) :
 
-      * `Could not create content fragment`
+    * `Could not create content fragment`
 
-   * Le titre et/ou la description n’ont pas pu être mis à jour :
+  * Le titre et/ou la description n’ont pas pu être mis à jour :
 
-      * `Could not set value on content fragment`
+    * `Could not set value on content fragment`
 
-   * Impossible de définir les métadonnées :
+  * Impossible de définir les métadonnées :
 
-      * `Could not set metadata on content fragment`
+    * `Could not set metadata on content fragment`
 
-   * Élément de contenu introuvable ou impossible à mettre à jour
+  * Élément de contenu introuvable ou impossible à mettre à jour
 
-      * `Could not update content element`
-      * `Could not update fragment data of element`
+    * `Could not update content element`
+    * `Could not update fragment data of element`
 
   Les messages d’erreur détaillés sont généralement renvoyés de la façon suivante :
 
@@ -388,7 +404,7 @@ Pour accéder aux références d’API détaillées :
 * [API Adobe Experience Manager Assets - Fragments de contenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
 
-   * [Fonctionnalités disponibles](/help/assets/mac-api-assets.md#assets)
+  * [Fonctionnalités disponibles](/help/assets/mac-api-assets.md#assets)
 
 ## Ressources supplémentaires {#additional-resources}
 
