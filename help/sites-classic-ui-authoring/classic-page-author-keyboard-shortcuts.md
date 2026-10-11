@@ -9,16 +9,25 @@ exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 100%
-
+source-wordcount: '308'
+ht-degree: 81%
 ---
-
 # Raccourcis clavier lors de la modification de pages{#keyboard-shortcuts-when-editing-pages}
 
-Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent lors de la modification de pages, d’autres lors de l’[utilisation de consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont disponibles dans AEM. Certains raccourcis clavier peuvent être utilisés lors de la modification de pages, d’autres lors de l[utilisation de consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -69,7 +78,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Coupez les paragraphes sélectionnés. <strong><br />Remarque</strong> : le paragraphe coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement. </td>
+   <td>Couper les paragraphes sélectionnés.<strong><br /> Remarque </strong> le paragraphe coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement.</td>
   </tr>
   <tr>
    <td> </td>
@@ -94,7 +103,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forcez le menu contextuel par défaut (navigateur).<br /> <strong>Remarque :</strong> les menus contextuels AEM apparaissent uniquement dans l’IU classique.</td>
+   <td>Forcer le menu contextuel par défaut (navigateur).<br /> <strong>Remarque :</strong> les menus contextuels d’AEM s’affichent uniquement dans l’IU classique.</td>
   </tr>
   <tr>
    <td> </td>

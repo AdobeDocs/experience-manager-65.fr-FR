@@ -8,13 +8,27 @@ exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1173'
 ht-degree: 100%
-
 ---
-
 # Lancement des API de Services de document à partir d’un workflow AEM  {#initiate-document-services-apis-from-aem-workflow}
 
 ## Assembler {#assembler}
@@ -38,9 +52,9 @@ Le workflow Invoke DDX nécessite les documents d’entrée suivants :
 
 * **DDX** : il s’agit d’une entrée obligatoire pour l’étape du workflow Invoke DDX et elle peut être spécifiée en sélectionnant l’une des options suivantes dans la liste déroulante d’entrée DDX.
 
-   * *Relative To Payload* : le fichier DDX input est relatif au dossier de charge pour l’élément de workflow.
-   * *Use Payload* : la charge pour l’élément du workflow est utilisée comme document d’entrée DDX.
-   * *Absolute Path* : chemin d’accès absolu au document DDX dans le référentiel CRX.
+  * *Relative To Payload* : le fichier DDX input est relatif au dossier de charge pour l’élément de workflow.
+  * *Use Payload* : la charge pour l’élément du workflow est utilisée comme document d’entrée DDX.
+  * *Absolute Path* : chemin d’accès absolu au document DDX dans le référentiel CRX.
 
 * **Create Map from PayLoad** : si vous activez cette option, les documents sous le dossier de charge sont ajoutés au mappage de document d’entrée pour l’API `invoke` dans Assembler. Le nom du nœud pour chaque document est utilisé comme clé dans la carte.
 
@@ -50,7 +64,7 @@ Le workflow Invoke DDX nécessite les documents d’entrée suivants :
 
 L’onglet Environment Options permet de définir différentes options de traitement pour l’API d’appel.
 
-* *Job Log Level* : indique le niveau de journal pour les journaux de traitement.
+* *Niveau du log de traitement* : indique le niveau de journalisation pour les logs de traitement.
 * *Validate Only* : vérifie la validité d’input DDX.
 
 * *Fail On Error* : indique si l’appel au service Assembler peut échouer en cas d’erreur. La valeur par défaut est False.
@@ -62,11 +76,11 @@ Selon l’entrée DDX, l’API d’appel peut produire plusieurs documents de so
 1. *Save Output dans Payload* : enregistre les documents de sortie sous le dossier de payload, ou remplace la payload, si celle-ci est un fichier.
 1. *Output Document&#39;s Map* : permet de spécifier explicitement où enregistrer chaque document de sortie en ajoutant une entrée par document de sortie. Chaque entrée spécifie le document et l’emplacement d’enregistrement. Un document de sortie peut écraser la charge ou être enregistré dans le dossier de charge. Cette option peut être utile lorsque qu’il y a plusieurs documents de sortie.
 
-1. *Job Log* : indique l’emplacement d’enregistrement du document de journal de tâche, ce qui peut être utile pour le dépannage des échecs.
+1. *Log de traitement* : indique l’emplacement d’enregistrement du document de log de traitement, ce qui peut être utile pour la résolution des échecs.
 
 ### Workflow de conversion en PDF/A {#convert-to-pdf-a-workflow}
 
-L’étape de workflow Convert to PDF/A (Convertir en PDF/A) appel l’API du service d’Assembler `toPDFA`. Il est utilisé pour convertir des documents PDF en documents conformes au format PDF/A.
+L’étape de workflow Convert to PDF/A (Convertir en PDF/A) appelle l’API Assembler Service `toPDFA`. Il est utilisé pour convertir des documents PDF en documents conformes au format PDF/A.
 
 1. Faites glisser l’étape de flux de travail **[!UICONTROL ConvertToPDFA]** sous l’onglet Forms Workflow dans Sidekick.
 
@@ -90,7 +104,7 @@ L’onglet Conversion Options permet de spécifier des options qui affectent le 
 * *Signatures* : indique la façon dont les signatures du document d’entrée doivent être traitées lors de la conversion.
 * *Color Space* : indique l’espace colorimétrique prédéfini à utiliser pour le document de sortie PDF/A.
 * *Vérifier la conversion* : indique si le document converti en PDF/A doit être vérifié pour assurer la conformité PDF/A après conversion.
-* *Job Log Level* : indique le niveau de journal à utiliser pour les journaux de traitement.
+* *Niveau du log de traitement* : indique le niveau de journalisation à utiliser pour les logs de traitement.
 
 * *Metadata Extension Schema* : indique le chemin du schéma d’extension de métadonnées à utiliser pour les propriétés XMP dans les métadonnées du document PDF.
 
@@ -134,7 +148,7 @@ Le workflow Render PDF Form est une enveloppe de l’API du service Forms `rende
 
 Le flux de travail Generate Non Interactive PDF Workflow (Générer un PDF non interactif) est une enveloppe de l’API de service Output `generatePDFOutput`. Il est utilisé pour générer des documents PDF non interactifs à partir de modèles XDP et des fichiers .xml de données.
 
-### Workflow Generate Non Interactive PDF Output   {#generate-non-interactive-pdf-output-workflow-nbsp}
+### Workflow Generate Non Interactive PDF Output   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
 1. Faites glisser le workflow Générer une sortie de PDF non interactif dans l’onglet Forms Workflow du sidekick.
 1. Double-cliquez sur l’étape de workflow ajoutée pour modifier le composant.

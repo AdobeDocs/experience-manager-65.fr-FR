@@ -1,6 +1,6 @@
 ---
 title: Structure de l’apparence des formulaires adaptatifs et HTML5
-description: Mobile Forms génère des modèles de formulaire sous forme de formulaires HTML5. Ces formulaires utilisent les fichiers jQuery, Backbone.js et Underscore.js pour l’apparence et l’activation des scripts.
+description: Mobile Forms génère des modèles de formulaires sous forme de formulaires HTML5. Ces formulaires utilisent les fichiers jQuery, Backbone.js et Underscore.js pour l’apparence et l’activation des scripts.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -8,13 +8,26 @@ exl-id: 3458471a-9815-463e-8044-68631073863c
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
-
+source-wordcount: '1165'
+ht-degree: 96%
 ---
-
 # Structure de l’apparence des formulaires adaptatifs et HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
 Les formulaires (formulaires adaptatifs et HTML5) utilisent [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) et [Underscore.js](https://underscorejs.org/) pour l’apparence et les scripts. Les formulaires utilisent également l’architecture des [jQuery UI](https://jqueryui.com/) **widgets** pour tous les éléments interactifs (comme les champs ou les boutons) qu’ils contiennent. Cette architecture permet aux développeurs et aux développeuses de formulaires d’utiliser un riche ensemble de widgets et de modules externes jQuery disponibles dans des formulaires. Vous pouvez également implémenter une logique spécifique au formulaire lors de l’acquisition des données des utilisateurs comme les restrictions leadDigits/trailDigits ou l’implémentation de clauses d’image. Les développeurs et développeuses de formulaires peuvent créer et utiliser des apparences personnalisées pour améliorer l’expérience d’acquisition des données et la rendre plus facile d’utilisation.
@@ -218,7 +231,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
   </tr>
   <tr>
    <td>deleteItem<em> : function(nIndex)<br /> nIndex : index de l’élément à supprimer de la liste<br /> </em><br /> <br /> </td>
-   <td>Supprime une option de la liste. </td>
+   <td>Supprime une option de la liste.</td>
   </tr>
   <tr>
    <td>clearItems:<code> function()</code></td>
@@ -234,8 +247,8 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
 | dataType | Chaîne représentant le type de données du champ (entier/décimal). |
 | leadDigits | Nombre maximal de chiffres autorisés dans la partie entière du nombre décimal. |
 | fracDigits | Nombre maximal de chiffres autorisés dans la partie décimale du nombre décimal. |
-| zero | Chaîne représentant zéro selon la langue du champ. |
-| decimal | Chaîne représentant les décimales selon la langue du champ. |
+| zero | Chaîne représentant zéro dans les paramètres régionaux du champ. |
+| decimal | Chaîne représentant les décimales dans les paramètres régionaux du champ. |
 
 ### CheckButton : RadioButton, CheckBox {#checkbutton-radiobutton-checkbox}
 
@@ -264,7 +277,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
 
 | Option | Description |
 |---|---|
-|  jours | Nom localisé des jours pour ce champ. |
+| jours | Nom localisé des jours pour ce champ. |
 | mois | Nom localisé des mois pour ce champ. |
 | zero | Texte localisé pour le chiffre 0. |
 | clearText | Texte localisé pour le bouton Effacer. |

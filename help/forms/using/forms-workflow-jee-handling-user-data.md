@@ -7,20 +7,34 @@ role: Admin,User
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1407'
 ht-degree: 100%
-
 ---
-
 # Workflows AEM Forms JEE | Gestion des données utilisateur {#forms-jee-workflows-handling-user-data}
 
 Les workflows AEM Forms JEE fournissent des outils pour concevoir, créer et gérer des processus d’entreprise. Un workflow se compose d’une série d’étapes qui s’exécutent dans un ordre spécifié. Chaque étape exécute une action spécifique, comme affecter une tâche à un utilisateur ou une utilisatrice ou envoyer un e-mail. Un processus peut interagir avec des ressources, des comptes d’utilisateurs ou d’utilisatrices et des services. Il peut être déclenché à l’aide de l’une des méthodes suivantes :
 
 * Démarrer un processus à partir d’AEM Forms Workspace
 * Utiliser le service SOAP ou RESTful
-* Envoyer un formulaire adaptatif
+* Envoi d’un formulaire adaptatif
 * Utilisant le dossier de contrôle
 * Utiliser la messagerie
 
@@ -28,11 +42,11 @@ Pour plus d’informations sur la création du processus de workflow AEM Forms J
 
 ## Données utilisateur et stockage de données {#user-data-and-data-stores}
 
-Lorsqu’un processus est déclenché et qu’il progresse, il capture les données sur les participantes et participants au processus, les données saisies par les participantes et participants dans le formulaire associé au processus et les pièces jointes ajoutées au formulaire. Les données sont stockées dans la base de données du serveur AEM Forms JEE et, si elles sont configurées, certaines données telles que les pièces jointes sont stockées dans le répertoire de stockage global de documents (GDS). Le répertoire de stockage global de documents peut être configuré sur un système de fichiers partagé ou une base de données.
+Lorsqu’un processus est déclenché et qu’il progresse, il capture les données sur les participantes et participants au processus, les données saisies par les participantes et participants dans le formulaire associé au processus et les pièces jointes ajoutées au formulaire. Les données sont stockées dans la base de données du serveur AEM Forms JEE et, si elles sont configurées, certaines données telles que les pièces jointes sont stockées dans le répertoire de stockage global de documents (GDS). Le répertoire de stockage global de documents (GDS) peut être configuré sur un système de fichiers partagé ou une base de données.
 
 ## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
-Lorsqu’un processus est déclenché, un ID d’instance de processus unique et un ID d’appel de longue durée sont générés et associés à l’instance de processus. Vous pouvez accéder et supprimer des données pour une instance de processus en fonction de l’ID d’appel de longue durée. Vous pouvez déduire l’ID d’appel de longue durée d’une instance de processus à l’aide du nom d’utilisateur de l’initiateur du processus ou des participants au processus qui ont envoyés leurs tâches.
+Lorsqu’un processus est déclenché, un ID d’instance de processus unique et un ID d’appel de longue durée sont générés et associés à l’instance de processus. Vous pouvez accéder aux données d’une instance de processus et les supprimer en fonction de l’ID d’appel de longue durée. Vous pouvez déduire l’ID d’appel de longue durée d’une instance de processus à l’aide du nom d’utilisateur ou d’utilisatrice de l’initiateur ou de l’initiatrice du processus ou des participants au processus qui ont envoyé leurs tâches.
 
 Cependant, vous ne pouvez pas identifier l’ID de l’instance de processus pour un initiateur ou une initiatrice dans les scénarios suivants :
 
@@ -69,7 +83,7 @@ Effectuez les étapes suivantes afin d’identifier les ID d’instance de proce
    select distinct a.process_instance_id from tb_assignment a join tb_queue q on a.queue_id = q.id where q.workflow_user_id='participant_principal_id'
    ```
 
-   La requête renvoie les ID d’instance pour tous les processus associés au participant ou à la participante, y compris ceux où le participant ou la participante n’a envoyé aucune tâche.
+   La requête renvoie les ID d’instance pour tous les processus associés au participant ou à la participante, y compris ceux pour lesquels le participant ou la participante n’a soumis aucune tâche.
 
    Notez tous les ID d’instance de processus pour les tâches envoyées et suivez les étapes.
 
@@ -87,7 +101,7 @@ Un workflow peut être conçu de manière à capturer les données utilisateur d
 
 Effectuez les étapes suivantes afin de déterminer si un workflow qui stocke des données dans des variables de type primitif contient des données pour l’utilisateur ou l’utilisatrice :
 
-1. Exécutez la commande de base de données suivante : 
+1. Exécutez la commande de base de données suivante :
 
    ```sql
    select database_table from omd_object_type where name='pt_<app_name>/<workflow_name>'
@@ -99,7 +113,7 @@ Effectuez les étapes suivantes afin de déterminer si un workflow qui stocke de
    >
    >La valeur de la propriété `name` peut être complexe si le workflow est imbriqué dans des sous-dossiers au sein de l’application. Assurez-vous d’indiquer le chemin d’accès complet et exact du workflow. Vous pouvez l’obtenir à partir de la table de base de données `omd_object_type`.
 
-1. Consultez le schéma du tableau `tb_<number>`. Le tableau contient des variables qui stockent les données utilisateur pour le workflow spécifié. Les variables de la table correspondent aux variables du workflow.
+1. Consultez le schéma du tableau `tb_<number>`. La table contient des variables qui stockent les données utilisateur pour le workflow spécifié. Les variables de la table correspondent aux variables du workflow.
 
    Identifiez et notez la variable qui correspond à la variable de workflow contenant l’ID utilisateur. Si la variable identifiée est de type primitif, vous pouvez exécuter une requête pour déterminer les instances de workflow associées à un ID utilisateur.
 
@@ -141,7 +155,7 @@ Maintenant que vous avez identifié les ID d’instance de processus associés �
 
 ### Utiliser les tâches orphelines {#orphan}
 
-Les tâches orphelines sont les tâches dont le processus contenant a été lancé, mais pas encore envoyé. Dans ce cas, l’`process_instance_id` est **0**(zéro). Par conséquent, vous ne pouvez pas suivre les données utilisateur stockées pour les tâches orphelines à l’aide des ID d’instance de processus. Vous pouvez toutefois les suivre à l’aide de l’identifiant de tâche d’une tâche orpheline. Vous pouvez identifier les ID de tâches pour un utilisateur dans la table `tb_task` comme décrit dans la section [Identification des ID de l’instance de processus lorsque l’initiateur ou le participant de flux de travail est connu](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
+Les tâches orphelines sont les tâches dont le processus contenant a été lancé, mais pas encore soumis. Dans ce cas, l’`process_instance_id` est **0**(zéro). Par conséquent, vous ne pouvez pas suivre les données utilisateur stockées pour les tâches orphelines à l’aide des ID d’instance de processus. Vous pouvez toutefois les suivre à l’aide de l’identifiant de tâche d’une tâche orpheline. Vous pouvez identifier les ID de tâches pour un utilisateur dans la table `tb_task` comme décrit dans la section [Identification des ID de l’instance de processus lorsque l’initiateur ou le participant de flux de travail est connu](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
 
 Une fois que vous disposez des ID de tâche, procédez comme suit pour purger les fichiers et données associés à une tâche orpheline du répertoire de stockage global de documents et de la base de données.
 
@@ -157,11 +171,11 @@ Une fois que vous disposez des ID de tâche, procédez comme suit pour purger le
    * `_wftask<fd_id>`
    * `_wftaskformid<fd_id>`
 
-1. Selon que votre stockage global de document pointe vers un système de fichiers ou une base de données, effectuez l’une des opérations suivantes :
+1. Selon que votre GDS pointe vers un système de fichiers ou une base de données, effectuez l’une des opérations suivantes :
 
    1. **Répertoire de stockage global de documents dans le système de fichiers**
 
-      Dans le système de fichiers du répertoire de stockage global de documents :
+      Dans le système de fichiers GDS :
 
       1. Recherchez les fichiers avec les extensions de chaînes d’ID de session suivantes :
 
