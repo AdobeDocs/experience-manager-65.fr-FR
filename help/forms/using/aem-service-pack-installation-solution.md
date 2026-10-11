@@ -51,7 +51,7 @@ Cette solution s’applique aux éléments suivants :
 >
 >Les étapes de résolution de problèmes s’appliquent à tous les serveurs d’applications, à l’exception de JBoss EAP 7.4.
 
-Après l’installation du pack de services AEM 6.5.15.0 [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), si le CRX/bundle et la page de démarrage affichent des erreurs de service indisponible, procédez comme suit :
+Après l’installation du pack de services AEM 6.5.15.0 [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), si le CRX/bundle et la page de démarrage affichent des erreurs de service indisponible, procédez comme suit :
 
 1. Arrêtez le serveur d’applications.
 1. Accédez à `[aem-forms root]\crx-repository\launchpad\felix\bundle52`.

@@ -91,7 +91,7 @@ Pour plus d’informations sur le répertoire de stockage global de documents, c
 
 **Emplacement du répertoire des polices du client** *ndash; Saisissez le chemin d’accès à un répertoire contenant les polices supplémentaires que vous souhaitez utiliser.
 
-***Remarque &#x200B;** : les polices sont sélectionnées à partir du cache des polices du système Windows et un redémarrage du système est requis pour mettre à jour le cache. Après avoir spécifié le répertoire des polices du client, assurez-vous de redémarrer le système sur lequel AEM forms est installé.*
+***Remarque ** : les polices sont sélectionnées à partir du cache des polices du système Windows et un redémarrage du système est requis pour mettre à jour le cache. Après avoir spécifié le répertoire des polices du client, assurez-vous de redémarrer le système sur lequel AEM forms est installé.*
 
 **Emplacement du répertoire des polices système** *ndash; Saisissez le chemin d’accès au répertoire des polices fourni par votre système d’exploitation. Vous pouvez ajouter plusieurs répertoires en les séparant par des points-virgules **;**.
 
