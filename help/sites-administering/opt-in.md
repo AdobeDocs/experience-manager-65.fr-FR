@@ -169,7 +169,7 @@ Vous n’avez pas besoin de modifier les configurations cloud. Toutefois, vous p
 >
 >Le ciblage précis implique que cette configuration du service cloud attend le chargement du contexte avant de charger le contenu. Par conséquent, en termes de performances, un ciblage précis peut entraîner un délai de quelques millisecondes avant le chargement du contenu.
 >
->Le ciblage précis est toujours activé sur l’instance de création. Cependant, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (****). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
+>Le ciblage précis est toujours activé sur l’instance de création. Cependant, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (**&#x200B;**). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
 >
 >Si vous avez ***déjà*** créé les composants ciblés et si vous modifiez ce paramètre, vos modifications n’affectent pas ces composants. Apportez les modifications directement à ces composants.
 

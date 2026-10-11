@@ -48,7 +48,7 @@ Pour ajouter dynamiquement des composants SCF, procédez comme suit :
 
 >[!NOTE]
 >
->Le chargement latéral de [ ressources non existantes ](scf.md#add-or-include-a-communities-component) n’est pas pris en charge.
+>Le chargement latéral de [&#x200B; ressources non existantes &#x200B;](scf.md#add-or-include-a-communities-component) n’est pas pris en charge.
 
 ## Ajout dynamique d’un composant au DOM {#dynamically-add-component-to-dom}
 
