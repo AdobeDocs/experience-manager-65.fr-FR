@@ -308,7 +308,7 @@ Pour copier le contenu clé de l’instance de création vers toutes les autres 
 
 >[!CAUTION]
 >
->Si une autre fonctionnalité de sécurité basée sur les clés cryptographiques a déjà été configurée, la réplication des clés cryptographiques peut endommager la configuration. Pour obtenir de l’aide, [contactez l’assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support).
+>Si une autre fonctionnalité de sécurité basée sur les clés cryptographiques a déjà été configurée, la réplication des clés cryptographiques peut endommager la configuration. Pour obtenir de l’aide, [contactez l’assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support).
 
 #### Réplication du référentiel {#repository-replication}
 
@@ -373,7 +373,7 @@ Veillez en particulier à utiliser le nom de serveur correct, et non `localhost`
 Si vous utilisez un Dispatcher, voir :
 
 * Documentation AEM [Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)
-* [Installation de Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
+* [Installation de Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Configuration de Dispatcher pour Communities](/help/communities/dispatcher.md)
 * [Problèmes connus](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

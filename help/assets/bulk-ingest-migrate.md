@@ -32,13 +32,13 @@ ht-degree: 100%
 
 L’installation du pack de fonctionnalités 18912 est *facultative*.
 
-Le pack de fonctionnalités 18912 vous permet d’ingérer des ressources en bloc directement dans Dynamic Media en mode Scene7 sur Adobe Experience Manager par FTP. Il vous permet également de migrer des ressources de Dynamic Media Classic vers Dynamic Media en mode Scene7 sur Experience Manager. Le pack de fonctionnalités est disponible à l’adresse [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+Le pack de fonctionnalités 18912 vous permet d’ingérer des ressources en bloc directement dans Dynamic Media en mode Scene7 sur Adobe Experience Manager par FTP. Il vous permet également de migrer des ressources de Dynamic Media Classic vers Dynamic Media en mode Scene7 sur Experience Manager. Le pack de fonctionnalités est disponible à l’adresse [Adobe Professional Services](https://business.adobe.com/fr/customers/consulting-services/main.html).
 
 >[!IMPORTANT]
 >
 >Il est possible d’utiliser le pack de fonctionnalités pour migrer en bloc des ressources de Dynamic Media Classic vers Dynamic Media en mode Scene7 dans Experience Manager. Il est également possible de migrer des ressources en bloc à l’aide de la fonction FTP dans Dynamic Media Classic. Cependant, Adobe ne recommande *pas* d’utiliser ces méthodes en raison de la complexité de la tâche.
 >
->C’est pour cela que ce pack de fonctionnalités de migration est *seulement* pris en charge dans le cadre d’un projet de migration avec [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+>C’est pour cela que ce pack de fonctionnalités de migration est *seulement* pris en charge dans le cadre d’un projet de migration avec [Adobe Professional Services](https://business.adobe.com/fr/customers/consulting-services/main.html).
 
 Avant d’installer le pack de fonctionnalités, créez un utilisateur de service et fournissez ses informations à l’assistance d’Adobe.
 
@@ -48,7 +48,7 @@ Consultez également la section [Configuration de Dynamic Media en mode Scene7]
 
 1. Dans votre instance Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]** et sélectionnez **[!UICONTROL Créer un utilisateur]**. Cet utilisateur de service doit disposer des autorisations de *lecture/écriture* sur `/content/dam.`.
 1. Dans les champs **[!UICONTROL ID]** et **[!UICONTROL Mot de passe]** , saisissez un nom d’utilisateur ou d’utilisatrice et un mot de passe, par exemple : **Utilisateur FTP**. Ce nom apparaît dans la chronologie en tant qu’utilisateur ou utilisatrice ayant créé la ressource. Lorsqu’une ressource est chargée à partir du FTP, elle est considérée comme créée lorsqu’elle est chargée sur le serveur FTP et envoyée vers Experience Manager.
-1. Contactez l’[assistance clientèle Adobe pour Experience Manager](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support) pour demander l’accès au pack de fonctionnalités 18912 pour le téléchargement. Vous aurez peut-être besoin des informations suivantes lorsque vous contactez l’assistance :
+1. Contactez l’[assistance clientèle Adobe pour Experience Manager](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support) pour demander l’accès au pack de fonctionnalités 18912 pour le téléchargement. Vous aurez peut-être besoin des informations suivantes lorsque vous contactez l’assistance :
 
    * L’adresse IP du serveur de l’instance de création, y compris le numéro de port (4502 par défaut)
    * Le nom d’utilisateur et le mot de passe du service Experience Manager de l’étape précédente

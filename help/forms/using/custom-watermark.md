@@ -92,7 +92,7 @@ Pour personnaliser le texte et l’apparence du filigrane, procédez comme suit�
    </DDX>
    ```
 
-   Pour plus d’informations sur la personnalisation de l’apparence, du texte et de l’alignement du filigrane, consultez la section « Ajouter et supprimer des filigranes et des arrière-plans » dans le document [Guide de référence du service Assembler et de DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf).
+   Pour plus d’informations sur la personnalisation de l’apparence, du texte et de l’alignement du filigrane, consultez la section « Ajouter et supprimer des filigranes et des arrière-plans » dans le document [Guide de référence du service Assembler et de DDX](https://help.adobe.com/fr_FR/livecycle/11.0/ddxRef.pdf).
 
    >[!NOTE]
    >
