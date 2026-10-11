@@ -35,7 +35,7 @@ L’[assistant de souscription](/help/sites-administering/opt-in.md) qui [intèg
 
 Vous pouvez également configurer Adobe Target pour utiliser Adobe Target en tant que source de création de rapports lors du ciblage de contenu en configurant la configuration d’Analytics Cloud A4T.
 
-Pour trouver la configuration et le framework de cloud, accédez à **Services cloud** via **Outils** > **Déploiement** > **Cloud**. ([](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+Pour trouver la configuration et le framework de cloud, accédez à **Services cloud** via **Outils** > **Déploiement** > **Cloud**. ([&#128279;](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 Sous Adobe Target, cliquez sur **Afficher les configurations**.
 
 ### Propriétés de configuration de Target configurée {#provisioned-target-configuration-properties}
@@ -140,7 +140,7 @@ Vous pouvez configurer la configuration de cloud pour synchroniser les segments 
 
 Pour créer une configuration cloud Target dans AEM, procédez come suit :
 
-1. Accédez aux **Services cloud** via le **logo AEM** > **Outils** >**Services cloud** > **Services cloud hérités**. ([](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Accédez aux **Services cloud** via le **logo AEM** > **Outils** >**Services cloud** > **Services cloud hérités**. ([&#128279;](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
    La page d’aperçu **Services cloud** s’ouvre.
 
@@ -188,7 +188,7 @@ Pour créer une configuration cloud Target dans AEM, procédez come suit :
    >
    >Le ciblage précis implique que cette configuration du service cloud attend le chargement du contexte avant de charger le contenu. Par conséquent, en termes de performances, un ciblage précis peut entraîner un délai de quelques millisecondes avant le chargement du contenu.
    >
-   >Le ciblage précis est toujours activé sur l’instance de création. Cependant, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (****). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
+   >Le ciblage précis est toujours activé sur l’instance de création. Cependant, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (**&#x200B;**). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
    >
    >Si vous avez ***déjà*** créé les composants ciblés et si vous modifiez ce paramètre, vos modifications n’affectent pas ces composants. Modifiez directement ces composants.
 

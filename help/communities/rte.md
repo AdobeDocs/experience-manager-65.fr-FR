@@ -29,7 +29,7 @@ ht-degree: 3%
 
 L’éditeur de texte enrichi vous permet de saisir du texte avec des balises.
 
-Pour les composants de communautés, tout en étant similaire à l’éditeur de texte enrichi [ dans l’environnement de création](../../help/sites-authoring/rich-text-editor.md), il affecte le texte saisi dans l’environnement de publication.
+Pour les composants de communautés, tout en étant similaire à l’éditeur de texte enrichi [&#x200B; dans l’environnement de création](../../help/sites-authoring/rich-text-editor.md), il affecte le texte saisi dans l’environnement de publication.
 
 ![éditeur-texte-enrichi](assets/rich-text-editor.png)
 

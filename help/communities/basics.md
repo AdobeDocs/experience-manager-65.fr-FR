@@ -88,7 +88,7 @@ Pour la création d’informations :
 Pour des informations administratives :
 
 * Création d’espaces de noms de balises (taxonomie) : [Administration des balises](../../help/sites-administering/tags.md)
-* Configuration du site de la communauté : voir [ BALISAGE ](sites-console.md#tagging)
+* Configuration du site de la communauté : voir [&#x200B; BALISAGE &#x200B;](sites-console.md#tagging)
 * [Balisage de contenu généré par l’utilisateur](../../help/sites-authoring/tags.md)
 
 Pour obtenir des informations sur le développeur :

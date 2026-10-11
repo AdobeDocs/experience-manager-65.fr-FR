@@ -137,7 +137,7 @@ Les options suivantes permettent de déterminer comment les fichiers image sont 
 
 **Utiliser la reconnaissance optique des caractères :** définit si l’OCR (reconnaissance optique de caractères) doit être appliquée au fichier PDF. Un logiciel d’OCR vous permet de rechercher, corriger et copier du texte dans un fichier PDF.
 
-***Remarque ** : la fonction OCR pour les fichiers PDF (PDF indexables) est uniquement prise en charge sous Microsoft Windows.*
+***Remarque &#x200B;** : la fonction OCR pour les fichiers PDF (PDF indexables) est uniquement prise en charge sous Microsoft Windows.*
 
 **Langue principale de reconnaissance optique des caractères :** définit la langue à utiliser par le moteur de reconnaissance optique des caractères pour identifier les caractères.
 
@@ -276,7 +276,7 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Créer ou modi
 
    >[!NOTE]
    >
-   >*Si vous utilisez cette option en association avec **Désincorporer certaines polices**, les polices figurant dans la liste **Ajouter des polices à désincorporer**sont tout de même désincorporées en totalité.*
+   >*Si vous utilisez cette option en association avec **Désincorporer certaines polices**, les polices figurant dans la liste **Ajouter des polices à désincorporer**&#x200B;sont tout de même désincorporées en totalité.*
 
    >[!NOTE]
    >

@@ -39,7 +39,7 @@ Pour configurer votre environnement et commencer à utiliser le Control Center,
 1. [Configuration du Cloud Service de build d’Adobe PhoneGap](/help/mobile/configure-phonegap-build-cloud.md)
 1. [Configuration de votre service Adobe Analytics Cloud](/help/mobile/configure-adobe-mobile-cloud-service.md)
 
-Pour en savoir plus sur Content Services, voir [ Administration de Content Services ](/help/mobile/developing-content-services.md).
+Pour en savoir plus sur Content Services, voir [&#x200B; Administration de Content Services &#x200B;](/help/mobile/developing-content-services.md).
 
 >[!NOTE]
 >

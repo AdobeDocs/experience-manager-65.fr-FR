@@ -90,7 +90,7 @@ Créez un utilisateur ou une utilisatrice sur *auteur*, qui se voit attribuer le
 
 * Sur l’instance d’auteur
 
-  * Par exemple, [](http://localhost:4503/)
+  * Par exemple, [&#128279;](http://localhost:4503/)
 
 * Se connecter avec des droits d’administrateur
 
@@ -104,7 +104,7 @@ Créez un utilisateur ou une utilisatrice sur *auteur*, qui se voit attribuer le
   * **[!UICONTROL ID]** : sirius
   * **[!UICONTROL Adresse e-mail]** : sirius.nilson@mailinator.com
   * **[!UICONTROL Mot de passe]** : password
-  * **[!UICONTROL Confirm Password&amp;ast;]** : mot de passe
+  * **[!UICONTROL Confirm Password&ast;]** : mot de passe
   * **[!UICONTROL Prénom]** : Sirius
   * **[!UICONTROL Nom]** : Nilson
 

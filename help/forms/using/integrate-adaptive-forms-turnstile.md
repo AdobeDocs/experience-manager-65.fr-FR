@@ -21,7 +21,7 @@ ht-degree: 97%
 ---
 # Connecter votre environnement AEM Forms à Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
-<span class="preview">Cette fonctionnalité est basée sur l’ID de basculement de fonctionnalité `FT_FORMS-12407`. Pour activer la fonction, procédez comme indiqué dans l’article [ Activer le bouton (bascule) de fonction ](/help/forms/using/enable-feature-toggle.md). </span>
+<span class="preview">Cette fonctionnalité est basée sur l’ID de basculement de fonctionnalité `FT_FORMS-12407`. Pour activer la fonction, procédez comme indiqué dans l’article [&#x200B; Activer le bouton (bascule) de fonction &#x200B;](/help/forms/using/enable-feature-toggle.md). </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
@@ -68,7 +68,7 @@ Pour intégrer le service Turnstile à AEM Forms, procédez comme suit :
       ![Configuration de Turnstile](assets/config-hcaptcha.png)
    1. Spécifiez le **[!UICONTROL Type de widget]** comme managé, non interactif ou invisible.
    1. Fournissez d’autres détails tels que le **[!UICONTROL Titre]** et le **[!UICONTROL Nom]**.
-   1. Spécifiez la **[!UICONTROL clé de site]** et la **[!UICONTROL clé secrète]** pour le service Turnstile [ obtenues précédemment](#prerequisite).
+   1. Spécifiez la **[!UICONTROL clé de site]** et la **[!UICONTROL clé secrète]** pour le service Turnstile [&#x200B; obtenues précédemment](#prerequisite).
    1. Cliquez sur **[!UICONTROL Créer]**.
 
       ![Configurer le service cloud pour connecter votre environnement AEM Forms à Turnstile](assets/config-turntstile.png)

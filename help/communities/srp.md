@@ -31,7 +31,7 @@ Depuis Adobe Experience Manager (AEM) Communities 6.1, le contenu de la communau
 
 Il existe plusieurs options SRP, qui accèdent toutes au contenu créé par l’utilisateur par le biais d’une nouvelle interface d’AEM Communities, l’[API SocialResourceProvider](srp-and-ugc.md) (API SRP), qui inclut toutes les opérations CRUD (create, read, update et delete).
 
-Tous les composants SCF sont implémentés à l’aide de l’API SRP, ce qui permet de développer le code sans connaître la [ topologie sous-jacente ](topologies.md) ou l’emplacement du contenu créé par l’utilisateur.
+Tous les composants SCF sont implémentés à l’aide de l’API SRP, ce qui permet de développer le code sans connaître la [&#x200B; topologie sous-jacente &#x200B;](topologies.md) ou l’emplacement du contenu créé par l’utilisateur.
 
 ***L’API SocialResourceProvider est disponible uniquement pour les clients sous licence d’AEM Communities.***
 
@@ -55,7 +55,7 @@ Cette norme définit un modèle de données et une interface de programmation d�
 Une implémentation de JCR est le référentiel AEM, Oak.
 
 **Apache Jackrabbit Oak**
-[](../../help/sites-deploying/platform.md) est une implémentation de JCR 2.0 qui est un système de stockage de données conçu pour les applications orientées contenu. Il s’agit d’un type de base de données hiérarchique conçu pour les données non structurées et semi-structurées. Le référentiel stocke non seulement le contenu destiné à l’utilisateur ou à l’utilisatrice, mais également l’ensemble du code, des modèles et des données internes utilisés par l’application. L’interface utilisateur permettant d’accéder au contenu est [](../../help/sites-developing/developing-with-crxde-lite.md).
+[&#128279;](../../help/sites-deploying/platform.md) est une implémentation de JCR 2.0 qui est un système de stockage de données conçu pour les applications orientées contenu. Il s’agit d’un type de base de données hiérarchique conçu pour les données non structurées et semi-structurées. Le référentiel stocke non seulement le contenu destiné à l’utilisateur ou à l’utilisatrice, mais également l’ensemble du code, des modèles et des données internes utilisés par l’application. L’interface utilisateur permettant d’accéder au contenu est [&#128279;](../../help/sites-developing/developing-with-crxde-lite.md).
 
 JCR et Oak sont généralement utilisés pour faire référence au référentiel AEM.
 

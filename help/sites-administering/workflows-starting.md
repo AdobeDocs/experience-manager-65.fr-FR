@@ -182,7 +182,7 @@ Un package de workflow :
 
      Cette propriété de lanceur est une liste d’éléments séparés par des virgules :
 
-     * `property-name` ignorez tout événement `jcr` qui s’est déclenché avec le nom de propriété spécifié. ``
+     * `property-name` ignorez tout événement `jcr` qui s’est déclenché avec le nom de propriété spécifié. &grave;&grave;
      * `event-user-data:<*someValue*>` ignore tout événement contenant les `user-data` `*<someValue*`> définies via l’API [`ObservationManager`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String)).
 
      Par exemple :

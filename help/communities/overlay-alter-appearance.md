@@ -65,7 +65,7 @@ Envoyez le composant Commentaires superposés à l’instance de publication à 
 
 >[!NOTE]
 >
->Une forme de réplication plus robuste consiste à créer un package dans le gestionnaire de packages et [ l](/help/sites-administering/package-manager.md#replicating-packages)activer. Un package peut être exporté et archivé.
+>Une forme de réplication plus robuste consiste à créer un package dans le gestionnaire de packages et [&#x200B; l](/help/sites-administering/package-manager.md#replicating-packages)activer. Un package peut être exporté et archivé.
 
 Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]** et cliquez sur **[!UICONTROL Activer l’arborescence]**.
 

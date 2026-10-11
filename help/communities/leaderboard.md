@@ -29,7 +29,7 @@ Cette page contient les informations essentielles relatives à l&#39;utilisation
 
 Avant d’inclure le composant Tableau des scores sur une page, il est nécessaire de configurer [Notation et pastilles de communautés](implementing-scoring.md).
 
-Voir [ Notions fondamentales sur la notation et l’attribution de badges](configure-scoring.md).
+Voir [&#x200B; Notions fondamentales sur la notation et l’attribution de badges](configure-scoring.md).
 
 ## Essentials pour le côté client {#essentials-for-client-side}
 

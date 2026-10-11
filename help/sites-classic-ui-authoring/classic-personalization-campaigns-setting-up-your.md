@@ -33,11 +33,11 @@ ht-degree: 99%
 La configuration d’une nouvelle campagne comprend les étapes (génériques) suivantes :
 
 1. [Créer une marque](#creating-a-new-brand) pour organiser vos campagnes.
-1. Le cas échéant, vous pouvez[ définir les propriétés de votre nouvelle marque](#defining-the-properties-for-your-new-brand).
+1. Le cas échéant, vous pouvez[&#x200B; définir les propriétés de votre nouvelle marque](#defining-the-properties-for-your-new-brand).
 1. [Créer une campagne](#creating-a-new-campaign) pour organiser des expériences, par exemple des pages teaser ou une newsletter.
-1. Le cas échéant, vous pouvez[ définir les propriétés de votre nouvelle campagne](#defining-the-properties-for-your-new-campaign).
+1. Le cas échéant, vous pouvez[&#x200B; définir les propriétés de votre nouvelle campagne](#defining-the-properties-for-your-new-campaign).
 
-Ensuite, selon le type d’expériences que vous créez, vous devez[ créer une expérience](#creating-a-new-experience). Les détails de l’expérience et les actions qui suivent sa création dépendent du type d’expérience que vous souhaitez créer :
+Ensuite, selon le type d’expériences que vous créez, vous devez[&#x200B; créer une expérience](#creating-a-new-experience). Les détails de l’expérience et les actions qui suivent sa création dépendent du type d’expérience que vous souhaitez créer :
 
 * Pour la création d’un teaser :
 

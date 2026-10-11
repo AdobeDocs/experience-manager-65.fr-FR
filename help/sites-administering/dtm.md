@@ -37,8 +37,8 @@ Une fois que vous avez configuré l’intégration, les modifications apportées
 >
 >Si vous utilisez la gestion dynamique des balises avec une configuration de proxy personnalisée, vous devez configurer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’AEM utilisent les API 3.x et d’autres les API 4.x :
 >
->* 3.x est configuré avec [](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x est configuré avec [](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 3.x est configuré avec [&#128279;](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 4.x est configuré avec [&#128279;](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
 ## Options de déploiement {#deployment-options}

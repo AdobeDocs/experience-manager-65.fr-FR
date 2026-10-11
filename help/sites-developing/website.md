@@ -104,7 +104,7 @@ Exemple de fichier static.css et d’images
 
 [Obtenir le fichier](assets/mywebsite.zip)
 
-1. Sur la page d’accueil d’AEM, cliquez sur **Outils**. ([](https://localhost:4502/libs/cq/core/content/welcome.html))
+1. Sur la page d’accueil d’AEM, cliquez sur **Outils**. ([&#128279;](https://localhost:4502/libs/cq/core/content/welcome.html))
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -275,7 +275,7 @@ Dans cette section, vous allez créer les pages suivantes qui utilisent toutes l
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur web, ouvrez [](https://localhost:4502/content/mywebsite/en/products.html) pour afficher la page Produits :
+1. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur web, ouvrez [&#128279;](https://localhost:4502/content/mywebsite/en/products.html) pour afficher la page Produits :
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -1298,7 +1298,7 @@ Lorsque vous avez terminé, la zone de saisie de la recherche doit se présenter
 1. Copiez les nœuds suivants et collez-les dans le nœud apps/mywebsite/components/search :
 
    * `/libs/foundation/components/search/dialog`
-   * `` `/libs/foundation/components/search/i18n`
+   * &grave;&grave; `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 

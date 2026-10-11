@@ -107,7 +107,7 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 ## Emplacements de stockage liés au contenu créé par l’utilisateur {#ugc-related-storage-locations}
 
-Les descriptions suivantes de l’emplacement de stockage peuvent s’avérer utiles lors du développement avec JSRP ou peut-être MSRP. Il n’existe actuellement aucune interface utilisateur pour accéder au contenu créé par l’utilisateur stocké dans ASRP, comme il en existe pour JSRP ([](../../help/sites-developing/developing-with-crxde-lite.md)) et MSRP (outils MongoDB).
+Les descriptions suivantes de l’emplacement de stockage peuvent s’avérer utiles lors du développement avec JSRP ou peut-être MSRP. Il n’existe actuellement aucune interface utilisateur pour accéder au contenu créé par l’utilisateur stocké dans ASRP, comme il en existe pour JSRP ([&#128279;](../../help/sites-developing/developing-with-crxde-lite.md)) et MSRP (outils MongoDB).
 
 **Emplacement du composant**
 
@@ -126,7 +126,7 @@ La création du contenu créé par l’utilisateur crée également un [nœud fa
 
 **Emplacement du contenu créé par l’utilisateur**
 
-Le contenu créé par l’utilisateur n’est créé dans aucun de ces emplacements et n’est accessible qu’à l’aide d’une [ méthode utilitaire](#utility-method-to-access-ugc) qui appelle l’API SRP.
+Le contenu créé par l’utilisateur n’est créé dans aucun de ces emplacements et n’est accessible qu’à l’aide d’une [&#x200B; méthode utilitaire](#utility-method-to-access-ugc) qui appelle l’API SRP.
 
 * Chemin racine = `/content/usergenerated/asi/srp-choice`
 * Nœud UGC pour JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`

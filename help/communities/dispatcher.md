@@ -33,7 +33,7 @@ Pour savoir ce qui est nécessaire pour votre déploiement et votre conception d
 
 * Contacter l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support)
 
-Consultez également la documentation principale de [](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
+Consultez également la documentation principale de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
 
 ## Mise en cache du Dispatcher {#dispatcher-caching}
 
@@ -61,7 +61,7 @@ La configuration OSGi **ACS AEM Commons - En-tête de contrôle du cache de Disp
 
 * À partir de la [console web](../../help/sites-deploying/configuring-osgi.md).
 
-  * Par exemple, [](http://localhost:4503/system/console/configMgr)
+  * Par exemple, [&#128279;](http://localhost:4503/system/console/configMgr)
 
 * Localiser `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Sélectionnez l’icône « + » pour créer une configuration de connexion.
@@ -71,7 +71,7 @@ La configuration OSGi **ACS AEM Commons - En-tête de contrôle du cache de Disp
 * **Modèles de filtre**
   *(obligatoire)* Un ou plusieurs chemins d’accès aux pages de la communauté. Par exemple, `/content/sites/engage/(.*)`.
 
-* Âge Max. Du Contrôle De Cache ****
+* Âge Max. Du Contrôle De Cache **&#x200B;**
   *(obligatoire)* âge maximal (en secondes) à ajouter à l’en-tête du contrôle du cache. La valeur doit être supérieure à zéro (0).
 
 ## Filtres Dispatcher {#dispatcher-filters}
@@ -90,7 +90,7 @@ Voir également :
 
 >[!NOTE]
 >
->Exemples de noms de propriété ****
+>Exemples de noms de propriété **&#x200B;**
 >Tous les noms de propriété affichés, tels que **/0050** et **/0170**, doivent être ajustés pour s’adapter à un fichier de configuration `dispatcher.any` existant.
 >
 

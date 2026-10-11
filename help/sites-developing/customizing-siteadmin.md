@@ -124,12 +124,12 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 Lorsque vous ouvrez la console d’administration Sites web et parcourez votre site, le navigateur émet un appel Ajax pour obtenir l’objet JSON utilisé pour créer la console. Par exemple, lorsque vous accédez au dossier `/content/geometrixx`, la requête suivante est envoyée au serveur AEM pour créer la console :
 
-[](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[&#128279;](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 Pour vous assurer que le nouveau service s’exécute après le déploiement du bundle où il réside, procédez comme suit :
 
 1. Pointez votre navigateur vers l’URL suivante :
-   [](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [&#128279;](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. La réponse doit afficher les nouvelles propriétés comme suit :
 
@@ -174,7 +174,7 @@ La dernière étape consiste à adapter la structure de nœuds de la console Adm
 Pour rediriger l’ensemble vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété `sling:vanityOrder` pour que sa valeur soit supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
 
 1. Accédez à la console Administration de sites Web et rendez-vous sur le site de Geometrixx à l’adresse :
-   [](https://localhost:4502/siteadmin#/content/geometrixx).
+   [&#128279;](https://localhost:4502/siteadmin#/content/geometrixx).
 
 1. La nouvelle colonne nommée **Starred** affiche des informations personnalisées comme suit :
 

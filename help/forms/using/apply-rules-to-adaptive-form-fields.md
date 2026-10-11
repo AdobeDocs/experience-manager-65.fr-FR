@@ -58,7 +58,7 @@ Chaque client ou cliente se voit attribuer un numéro d’identification client 
 
 1. Ouvrez le formulaire adaptatif pour le modifier.
 
-   [](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
+   [&#128279;](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
 1. Sélectionnez le champ **[!UICONTROL Identifiant client]** et sélectionnez l’icône **[!UICONTROL Modifier les règles]**. La fenêtre Éditeur de règles s’ouvre.
 1. Sélectionnez l’icône **[!UICONTROL + Créer]** pour ajouter une règle. L’éditeur visuel s’ouvre.

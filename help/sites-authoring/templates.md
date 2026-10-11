@@ -136,7 +136,7 @@ Lors de la création d’un modèle modifiable :
 
 * Utilisez la console **Modèles**. Cette option est disponible dans la section **Général** de la console **Outils**.
 
-  * Ou directement à : [](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+  * Ou directement à : [&#128279;](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Si besoin, vous pouvez [créer un dossier pour les modèles](#creating-a-template-folder-admin).
 * [Créez un modèle](#creatinganewtemplateauthor), initialement vide.
@@ -503,7 +503,7 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   >[!NOTE]
   >
-  >[Les politiques de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) peuvent uniquement être définies pour les options accessibles par ses propres paramètres d’interface utilisateur.[](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Les politiques de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) peuvent uniquement être définies pour les options accessibles par ses propres paramètres d’interface utilisateur.[&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Politique et propriétés (conteneur de mise en page)**
 

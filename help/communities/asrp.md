@@ -114,7 +114,7 @@ Sur l’instance d’auteur AEM :
 >
 >Si vous activez ASRP sur un site communautaire publié, tout contenu créé par l’utilisateur déjà stocké dans [JCR](/help/communities/jsrp.md) n’est plus visible, car il n’y a pas de synchronisation des données entre le stockage on-premise et le stockage dans le cloud.
 
-**`AEM Communities Extension`** a précédemment été introduit dans les communautés sociales AEM 6.0 as a cloud service. Depuis AEM 6.1 Communities, aucune configuration cloud n’est nécessaire, il vous suffit de sélectionner ASRP dans la [ console de configuration du stockage ](/help/communities/srp-config.md).
+**`AEM Communities Extension`** a précédemment été introduit dans les communautés sociales AEM 6.0 as a cloud service. Depuis AEM 6.1 Communities, aucune configuration cloud n’est nécessaire, il vous suffit de sélectionner ASRP dans la [&#x200B; console de configuration du stockage &#x200B;](/help/communities/srp-config.md).
 
 En raison de la nouvelle structure de stockage, il est nécessaire de suivre les instructions [upgrade](/help/communities/upgrade.md#adobe-cloud-storage) lors de la mise à niveau de communautés sociales vers Communities.
 
@@ -149,7 +149,7 @@ Assurez-vous que l’ASRP a été configuré pour être le fournisseur par défa
 
 Sur toutes les instances d’AEM de création et de publication, revenez sur la console de configuration du stockage ou vérifiez le référentiel AEM.
 
-Dans JCR, si [/conf/global/settings/communities ](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) :
+Dans JCR, si [/conf/global/settings/communities &#x200B;](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) :
 
 * Ne contient pas de nœud [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp), ce qui signifie que le fournisseur de stockage est JSRP.
 * Si le nœud srpc existe et contient le nœud [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration), les propriétés de la configuration par défaut définissent ASRP comme fournisseur par défaut.

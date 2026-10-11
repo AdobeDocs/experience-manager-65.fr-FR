@@ -100,7 +100,7 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=fr) offre un module complémentaire SaaS configurable pour [!DNL Experience Manager Assets] afin de publier des ressources.
 * Les solutions personnalisées sont créées à partir de la base de code d’[Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/).
-* [!DNL Experience Manager][Partage de liens](/help/assets/link-sharing.md) pour partager des ressources à la demande à l’aide de liens.
+* [!DNL Experience Manager]&#x200B;[Partage de liens](/help/assets/link-sharing.md) pour partager des ressources à la demande à l’aide de liens.
 * L’[interface Web Experience Manager Assets](/help/assets/manage-assets.md) avec des zones destinées aux parties externes, sécurisées par la configuration du contrôle d’accès [!DNL Experience Manager] et avec les ajustements de configuration informatique/réseau nécessaires pour permettre à ces utilisateurs externes d’accéder à [!DNL Experience Manager].
 
 ## Concepts clés et cas d’utilisation {#key-concepts-and-use-cases}

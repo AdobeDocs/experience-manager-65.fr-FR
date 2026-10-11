@@ -59,7 +59,7 @@ Voici quelques liens utiles pour les développeurs qui découvrent la plateforme
 * [Prise en main](../../help/sites-deploying/deploy.md#getting-started) : pour le déploiement d’instances AEM.
 
   * [Principes de base](../../help/sites-developing/the-basics.md) : pour les développeurs de sites web et de fonctionnalités.
-  * [Premières étapes pour les auteurs ](../../help/sites-authoring/first-steps.md) : pour la création de contenu de page.
+  * [Premières étapes pour les auteurs &#x200B;](../../help/sites-authoring/first-steps.md) : pour la création de contenu de page.
 
 ## Utilisation de l’environnement de développement CRXDE Lite {#using-crxde-lite-development-environment}
 
@@ -77,7 +77,7 @@ Après vous être connecté avec des droits d’administrateur, il existe diffé
 
 3. Accédez directement à `CRXDE Lite` : `<server>:<port>/crx/de`
 
-   Par exemple, sur une instance d’auteur locale : [](http://localhost:4502/crx/de)
+   Par exemple, sur une instance d’auteur locale : [&#128279;](http://localhost:4502/crx/de)
 
 Pour utiliser CRXDE Lite, vous devez vous connecter avec des privilèges de développeur ou d’administrateur. Pour l’instance localhost par défaut, vous pouvez vous connecter avec
 

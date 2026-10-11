@@ -173,7 +173,7 @@ Sans approvisionnement juste à temps, lorsqu’une personne est authentifiée a
 1. Pour créer un domaine, cliquez sur Nouveau domaine d’entreprise ou Nouveau domaine hybride. Pour modifier un domaine existant, cliquez sur son nom.
 1. Sélectionnez Activer l’approvisionnement juste à temps.
 
-   ***Remarque ** : si la case à cocher correspondant à Activer l’approvisionnement juste à temps n’apparaît pas, cliquez sur Accueil > Paramètres > User Management > Configuration > Attributs système avancés, puis sur Recharger.*
+   ***Remarque &#x200B;** : si la case à cocher correspondant à Activer l’approvisionnement juste à temps n’apparaît pas, cliquez sur Accueil > Paramètres > User Management > Configuration > Attributs système avancés, puis sur Recharger.*
 
 1. Ajoutez des fournisseurs d’authentification. Lors de l’ajout de fournisseurs d’authentification, dans l’écran Nouvelle authentification, sélectionnez un créateur d’identités et un fournisseur d’affectation enregistrés. (Voir [Configuration des fournisseurs d’authentification](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Enregistrez le domaine.

@@ -40,7 +40,7 @@ Vous pouvez éventuellement indiquer la **date de lancement** (et l’heure) pou
 
 Pour créer un lancement, procédez comme suit.
 
-1. Ouvrez la page d’administration de site web ([](http://localhost:4502/siteadmin)).
+1. Ouvrez la page d’administration de site web ([&#128279;](http://localhost:4502/siteadmin)).
 1. Cliquez sur **Nouveau...**, puis sur **Nouveau lancement...**.
 1. Dans la boîte de dialogue **Créer un lancement** renseignez les valeurs des propriétés suivantes :
 

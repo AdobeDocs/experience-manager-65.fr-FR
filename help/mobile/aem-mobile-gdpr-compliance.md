@@ -33,7 +33,7 @@ AEM Mobile est prêt à aider les clients avec leurs obligations de conformité 
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Le produit de publication numérique d’Adobe (qui précède AEM Mobile) prend en charge les initiatives de préparation d’Adobe au RGPD. Voir [](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html). Vous trouverez ci-dessous des informations détaillées sur la prise en charge des fonctions relatives au RGPD dans le produit Digital Publishing Suite, y compris sur la manière de travailler avec Adobe pour envoyer des demandes relatives au RGPD.
+Le produit de publication numérique d’Adobe (qui précède AEM Mobile) prend en charge les initiatives de préparation d’Adobe au RGPD. Voir [&#128279;](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html). Vous trouverez ci-dessous des informations détaillées sur la prise en charge des fonctions relatives au RGPD dans le produit Digital Publishing Suite, y compris sur la manière de travailler avec Adobe pour envoyer des demandes relatives au RGPD.
 
 Pour vous assurer de ne pas confondre AEM Mobile avec l’ancien produit Digital Publishing Suite, vous pouvez vous connecter au produit Digital Publishing Suite ici :
 
@@ -57,11 +57,11 @@ Fournissez au moins 1 des éléments suivants :
 
 ### Questions fréquentes {#frequently-asked-questions-faq}
 
-Adobe supprime-t-il mes achats App Store lors du lancement d’une requête DELETE ?****
+Adobe supprime-t-il mes achats App Store lors du lancement d’une requête DELETE ?**&#x200B;**
 
 Adobe supprime les informations dont il dispose sur les achats effectués dans l’App Store (abonnements, etc.), mais les achats sont toujours enregistrés dans l’App Store. Si l’application (utilisateur final) est connectée à l’App Store, ces accusés de réception sont à nouveau récupérés et envoyés à Adobe. Par la suite, ils sont considérés comme de nouveaux achats et sont restaurés par l’application, avec un nouvel accès.
 
-Adobe supprime-t-il les droits fournis par le client lors du lancement d’une requête DELETE ?****
+Adobe supprime-t-il les droits fournis par le client lors du lancement d’une requête DELETE ?**&#x200B;**
 
 Adobe supprime les informations dont il dispose sur les droits directs supplémentaires du client. Si l’application (utilisateur final) se connecte au mécanisme OAuth que le client a utilisé, elle envoie des informations à Adobe et les services récupèrent à nouveau les droits supplémentaires.
 

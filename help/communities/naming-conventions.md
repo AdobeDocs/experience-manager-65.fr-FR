@@ -33,6 +33,6 @@ Bien que l’utilisation de tirets dans les noms des éléments de référentiel
 
 La plateforme CRX sous-jacente doit être en mesure de faire la distinction entre un trait de soulignement réel `_ `et un trait d’`-`. Ainsi, dans JCR, le trait d’union doit être remplacé par sa valeur Unicode (u002d) et placé dans une séquence d’échappement avec un trait de soulignement `_`.
 
-Par exemple, si le chemin du référentiel est ****, le nom du package doit être `java package apps.my_002dexample.component.info;`
+Par exemple, si le chemin du référentiel est **&#x200B;**, le nom du package doit être `java package apps.my_002dexample.component.info;`
 
 Notez qu’un trait de soulignement doit également être placé dans une séquence d’échappement, de sorte que `_` devienne `_005f`.

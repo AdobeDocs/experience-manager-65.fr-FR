@@ -179,15 +179,15 @@ AEM propose des API prêtes à l’emploi pour récupérer les objets disponible
 
 Pour chaque nœud de l’explorateur, il existe une API qui lui est liée. Par exemple pour le nœud :
 
-* [](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
+* [&#128279;](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
 L’API est la suivante :
 
-* [](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
+* [&#128279;](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 La fin de l’URL **.1.json** peut être remplacé par **.2.json** ou **.3.json** en fonction du nombre de sous-niveaux que vous souhaitez obtenir. Pour tous les obtenir, vous pouvez utiliser le mot-clé **infinity** :
 
-* [](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
+* [&#128279;](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 Pour utiliser l’API, AEM utilise par défaut une authentification de base.
 

@@ -508,7 +508,7 @@ Créez une application CQ et ajoutez le composant geoloc.
 
 1. Ouvrez CRXDE Lite dans votre navigateur web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Cliquez avec le bouton droit de la souris sur le dossier `/apps`, puis cliquez sur Créer > Créer un dossier. Indiquez le nom `myapp`, puis cliquez sur OK.
-1. De même, sous `myapp`, créez un dossier nommé `contextstores`. ``
+1. De même, sous `myapp`, créez un dossier nommé `contextstores`. &grave;&grave;
 1. Cliquez avec le bouton droit de la souris sur le dossier `/apps/myapp/contextstores`, puis sélectionnez Créer > Créer un composant. Spécifiez les valeurs de propriété suivantes, puis cliquez sur Suivant :
 
    * Libellé : geoloc
@@ -623,7 +623,7 @@ Ajoutez le composant de lieu de stockage à ClientContext afin qu’il soit init
 
 Ouvrez la page d’accueil de Geometrixx Outdoors en mode d’édition, puis ouvrez ClientContext pour afficher les données du composant de lieu de stockage.
 
-1. Ouvrez la page anglaise du site Geometrixx Outdoors. ([](https://localhost:4502/content/geometrixx-outdoors/en.html))
+1. Ouvrez la page anglaise du site Geometrixx Outdoors. ([&#128279;](https://localhost:4502/content/geometrixx-outdoors/en.html))
 1. Pour ouvrir le contexte client, appuyez sur Ctrl+Alt+C (Windows) ou Ctrl+Option+C (Mac).
 
 ## Création d’un ClientContext personnalisé {#creating-a-customized-client-context}

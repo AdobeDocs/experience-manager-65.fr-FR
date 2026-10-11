@@ -48,7 +48,7 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 
 Après avoir créé un lancement, vous pouvez en modifier le nom et la date. Vous pouvez également spécifier une image à associer au lancement.
 
-1. Ouvrez la page d’administration des lancements ([](http://localhost:4502/libs/launches/content/admin.html)).
+1. Ouvrez la page d’administration des lancements ([&#128279;](http://localhost:4502/libs/launches/content/admin.html)).
 
 1. Sélectionnez le lancement requis, puis cliquez sur **Modifier** pour ouvrir la boîte de dialogue :
 

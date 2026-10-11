@@ -113,12 +113,12 @@ La suppression du fichier JSP créé automatiquement est due au fait que le fich
 
 ### Copier et modifier les scripts HBS par défaut {#copy-and-modify-the-default-hbs-scripts}
 
-Utilisation de [](../../help/sites-developing/developing-with-crxde-lite.md) :
+Utilisation de [&#128279;](../../help/sites-developing/developing-with-crxde-lite.md) :
 
 * Copier `comments.hbs`
 
   * Depuis [/libs/social/commons/components/hbs/comments](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
-  * Pour [/apps/custom/components/comments ](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
+  * Pour [/apps/custom/components/comments &#x200B;](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
 
 * Modifiez le `comments.hbs` en :
 
@@ -135,7 +135,7 @@ Utilisation de [](../../help/sites-developing/developing-with-crxde-lite.md) :
 * Copier `comment.hbs`
 
   * Depuis [/libs/social/commons/components/hbs/comments/comment](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments/comment)
-  * Pour [/apps/custom/components/comments/comment ](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
+  * Pour [/apps/custom/components/comments/comment &#x200B;](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
 
 * Modifiez le `comment.hbs` en :
 
@@ -151,7 +151,7 @@ Utilisation de [](../../help/sites-developing/developing-with-crxde-lite.md) :
 
 Pour éviter d’avoir à inclure cette bibliothèque cliente, la valeur de catégories pour la bibliothèque cliente du système de commentaires par défaut peut être utilisée ( `cq.social.author.hbs.comments`). Cependant, cette bibliothèque cliente doit également être incluse pour toutes les instances du composant par défaut.
 
-Utilisation de [](../../help/sites-developing/developing-with-crxde-lite.md) :
+Utilisation de [&#128279;](../../help/sites-developing/developing-with-crxde-lite.md) :
 
 * Sélectionner `/apps/custom/components/comments` nœud
 * Sélectionnez **[!UICONTROL Créer un nœud]**

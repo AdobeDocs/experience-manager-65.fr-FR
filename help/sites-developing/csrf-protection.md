@@ -54,6 +54,6 @@ Pour utiliser les jetons, vous devez répliquer le HMAC binaire sur toutes les i
 
 >[!NOTE]
 >
->Si vous utilisez le cache de manifeste avec votre application web, veillez à ajouter « **&amp;ast;** » au manifeste pour vous assurer que le jeton ne prend pas l’appel de génération de jeton CSRF hors ligne. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-Webapps/).
+>Si vous utilisez le cache de manifeste avec votre application web, veillez à ajouter « **&ast;** » au manifeste pour vous assurer que le jeton ne prend pas l’appel de génération de jeton CSRF hors ligne. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-Webapps/).
 >
 >Pour plus d’informations sur les attaques CSRF et les moyens de s’en protéger, consultez la page [Cross-Site Request Forgery OWASP](https://owasp.org/www-community/attacks/csrf).

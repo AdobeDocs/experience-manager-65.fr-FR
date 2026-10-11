@@ -62,7 +62,7 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via une interface JSON standard ou une interface réactive en mode texte**
-* **Via une interface réactive en lignes JSON, **qui génère un document JSON distinct sur chaque ligne.
+* **Via une interface réactive en lignes JSON, &#x200B;** qui génère un document JSON distinct sur chaque ligne.
 
 Les deux méthodes sont présentées ci-dessous :
 

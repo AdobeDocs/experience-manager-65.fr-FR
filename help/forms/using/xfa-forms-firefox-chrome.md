@@ -62,7 +62,7 @@ Pour utiliser des formulaires PDF XFA dans Firefox et Chrome, procédez comme su
 
 1. Cliquez sur Désactiver sous Visionneuse PDF Chrome, puis sur Activer sous Extension Adobe PDF.
    ![chrome-pdf-viewer](/help/forms/using/assets/chrome-image.png)
-   Pour plus d’informations, voir la documentation du plug-in [](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) de Google.
+   Pour plus d’informations, voir la documentation du plug-in [&#128279;](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) de Google.
 
 >[!NOTE]
 > 

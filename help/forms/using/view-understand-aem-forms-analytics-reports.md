@@ -142,7 +142,7 @@ Les tableaux Répartition des navigateurs, Répartition des systèmes d’exploi
 
 Pour filtrer davantage les données d’analyse, vous pouvez cliquer sur une entrée dans l’un des tableaux. Par exemple, si vous cliquez sur Google Chrome dans le tableau de répartition des navigateurs, le rapport est rendu avec les données relatives au navigateur Google Chrome, comme suit :
 
-![Filtre appliqué au Rapport d’analyse - Google Chrome ](assets/filter-1.png)
+![Filtre appliqué au Rapport d’analyse - Google Chrome &#x200B;](assets/filter-1.png)
 
 Si vous consultez le rapport Panneau après l’application d’un filtre, les données des rapports sont également affichées selon le filtre appliqué.
 

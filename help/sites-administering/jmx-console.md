@@ -897,7 +897,7 @@ Les MBeans déployés avec un service OSGi exposent les attributs et les opérat
 
 La page principale de la console JMX comporte un tableau des services. Chaque ligne du tableau représente un service exposé par un MBean.
 
-1. Ouvrez la console web et cliquez sur l’onglet JMX. ([](http://localhost:4502/system/console/jmx))
+1. Ouvrez la console web et cliquez sur l’onglet JMX. ([&#128279;](http://localhost:4502/system/console/jmx))
 2. Cliquez sur une valeur de cellule pour un service afin d’afficher les attributs et les opérations du service.
 3. Pour modifier une valeur d’attribut, cliquez sur la valeur, spécifiez la valeur dans la boîte de dialogue qui s’affiche, puis cliquez sur Enregistrer.
 4. Pour appeler une opération de service, cliquez sur le nom de l’opération, spécifiez les valeurs d’argument dans la boîte de dialogue qui s’affiche, puis cliquez sur Appeler.

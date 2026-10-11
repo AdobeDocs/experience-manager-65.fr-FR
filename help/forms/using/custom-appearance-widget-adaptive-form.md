@@ -146,9 +146,9 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> <code class="code">{
+   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Cet exemple montre que <code>blur</code> est un événement HTML et <code>XFA_EXIT_EVENT</code> est l’événement XFA correspondant. </td>
+      &rbrace;</code><br /> Cet exemple montre que <code>blur</code> est un événement HTML et <code>XFA_EXIT_EVENT</code> est l’événement XFA correspondant. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

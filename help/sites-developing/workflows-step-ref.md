@@ -181,7 +181,7 @@ function check(){
 
 ### Simulation d’une boucle for à l’aide la définition de règle {#simulateforloop}
 
-Vous pouvez également simuler une boucle for à l’aide de la définition de règle comme expression de routage. [Créez une variable **count** ](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) de type de données Long. Utilisez **Expression** comme mode de mappage dans l’étape **[Définir la variable](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)** pour définir la valeur de la variable **count** sur **count + 1** à chaque exécution de l’étape **Définir la variable**.
+Vous pouvez également simuler une boucle for à l’aide de la définition de règle comme expression de routage. [Créez une variable **count** &#x200B;](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) de type de données Long. Utilisez **Expression** comme mode de mappage dans l’étape **[Définir la variable](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)** pour définir la valeur de la variable **count** sur **count + 1** à chaque exécution de l’étape **Définir la variable**.
 
 ![Simulation d’une boucle for](assets/variable_use_case_count_new.png)
 

@@ -25,9 +25,9 @@ ht-degree: 0%
 ---
 # Personnalisation côté client  {#client-side-customization}
 
-| ⇐ Feature Essentials ](essentials.md)****[ | ⇒ de personnalisation côté serveur ](server-customize.md)****[ |
+| ⇐ Feature Essentials [&#128279;](essentials.md)**&#x200B;**|[&#x200B;  ⇒ de personnalisation côté serveur &#x200B;](server-customize.md)**&#x200B;** |
 |---|---|
-|   | ⇒ des assistants Handlebars SCF ](handlebars-helpers.md)****[ |
+|   | ⇒ des assistants Handlebars SCF [&#128279;](handlebars-helpers.md)**&#x200B;** |
 
 Pour personnaliser l’apparence et/ou le comportement d’un composant AEM Communities côté client, il existe plusieurs approches.
 
@@ -35,7 +35,7 @@ Deux approches principales consistent à recouvrir ou étendre un composant.
 
 [Recouvrement](#overlays) un composant modifie le composant par défaut et affecte chaque référence au composant.
 
-[L’extension ](#extensions)’un composant, qui porte un nom unique, limite la portée des modifications. Le terme « extend » est utilisé de manière interchangeable avec « override ».
+[L’extension &#x200B;](#extensions)’un composant, qui porte un nom unique, limite la portée des modifications. Le terme « extend » est utilisé de manière interchangeable avec « override ».
 
 ## Recouvrements {#overlays}
 
@@ -157,7 +157,7 @@ Les balises de script dans les scripts SCF ne doivent pas être supprimées lors
 
 ## Bibliothèques clientes pour SCF {#clientlibs-for-scf}
 
-L’utilisation de [ bibliothèques côté client ](../../help/sites-developing/clientlibs.md) (clientlibs) permet d’organiser et d’optimiser le JavaScript et le CSS utilisés pour effectuer le rendu du contenu sur le client.
+L’utilisation de [&#x200B; bibliothèques côté client &#x200B;](../../help/sites-developing/clientlibs.md) (clientlibs) permet d’organiser et d’optimiser le JavaScript et le CSS utilisés pour effectuer le rendu du contenu sur le client.
 
 Les bibliothèques clientes pour SCF suivent un modèle de dénomination très spécifique pour deux variantes, qui ne varient que par la présence de « author » dans le nom de la catégorie :
 
@@ -210,6 +210,6 @@ Chaque site est différent dans la manière dont il gère les bibliothèques cli
 * Délai court jusqu’à la première page : il est peut-être préférable que la première page se charge rapidement. Dans ce cas, le JavaScript se trouve dans plusieurs petits fichiers à référencer uniquement là où cela est nécessaire.
 * Équilibre entre le premier chargement de page et les téléchargements suivants.
 
-| ⇐ Feature Essentials ](essentials.md)****[ | ⇒ de personnalisation côté serveur ](server-customize.md)****[ |
+| ⇐ Feature Essentials [&#128279;](essentials.md)**&#x200B;**|[&#x200B;  ⇒ de personnalisation côté serveur &#x200B;](server-customize.md)**&#x200B;** |
 |---|---|
-|   | ⇒ des assistants Handlebars SCF ](handlebars-helpers.md)****[ |
+|   | ⇒ des assistants Handlebars SCF [&#128279;](handlebars-helpers.md)**&#x200B;** |

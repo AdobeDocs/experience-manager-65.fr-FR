@@ -89,7 +89,7 @@ Si le modèle de workflow est stocké dans `/var/workflow/models`, vous pouvez a
 
 ### Créez un sous-dossier dans /var/workflow/models et appliquez-lui la liste de contrôle d’accès. {#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that}
 
-Votre équipe de développement [ peut créer les workflows dans un sous-dossier ](/help/sites-developing/workflows-models.md#creating-a-new-workflow) de
+Votre équipe de développement [&#x200B; peut créer les workflows dans un sous-dossier &#x200B;](/help/sites-developing/workflows-models.md#creating-a-new-workflow) de
 
 `/var/workflow/models`
 

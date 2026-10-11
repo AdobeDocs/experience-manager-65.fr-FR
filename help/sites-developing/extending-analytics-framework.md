@@ -276,7 +276,7 @@ Le dossier de bibliothèque cliente /libs/cq/analytics/clientlibs/sitecatalyst/p
 
 Suivez la procédure ci-après pour créer le dossier de bibliothèque cliente de vos modules externes. Vous n’avez à réaliser cette opération qu’une seule fois. Pour ajouter un module externe au dossier de bibliothèque cliente, procédez comme suit.
 
-1. Dans un navigateur Web, ouvrez CRXDE Lite. ([](http://localhost:4502/crx/de))
+1. Dans un navigateur Web, ouvrez CRXDE Lite. ([&#128279;](http://localhost:4502/crx/de))
 
 1. Cliquez avec le bouton droit sur le dossier /apps/my-app/clientlibs puis sur Créer > Créer un nœud. Entrez les valeurs de propriété suivantes, puis cliquez sur OK :
 

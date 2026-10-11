@@ -95,11 +95,11 @@ Pour suivre cet exemple et utiliser les agents de réplication par défaut, vous
 #### Réplication (création vers publication) {#replication-author-to-publish}
 
 1. Ouvrez la page d’assistance dans l’environnement de création.
-   **** `<pi>`
+   **&#x200B;**&#x200B;`<pi>`
 1. Modifiez la page afin de pouvoir ajouter du nouveau texte.
 1. **Activez la page** pour pouvoir publier les modifications.
 1. Ouvrez la page d’assistance dans l’environnement de publication :
-   ****
+   **&#x200B;**
 1. Vous pouvez désormais voir les modifications que vous avez apportées sur l’instance de création.
 
 Cette réplication est effectuée à partir de l’environnement de création par :

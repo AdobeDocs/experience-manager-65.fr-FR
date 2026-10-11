@@ -157,7 +157,7 @@ Pour effectuer la procédure suivante, vous devez être connecté(e) en tant qu�
 
 ### Installer la clé privée de création {#install-the-author-private-key}
 
-1. Ouvrez la page de gestion des utilisateurs et utilisatrices pour l’instance de création. ([](http://localhost:4502/libs/granite/security/content/useradmin.html))
+1. Ouvrez la page de gestion des utilisateurs et utilisatrices pour l’instance de création. ([&#128279;](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Pour ouvrir les propriétés de votre compte d’utilisateur ou d’utilisatrice, cliquez sur votre nom d’utilisateur ou d’utilisatrice.
 1. Si le lien Créer un KeyStore apparaît dans la zone Paramètres du compte, cliquez sur le lien. Configurez un mot de passe, puis cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le KeyStore.
@@ -176,7 +176,7 @@ Pour effectuer la procédure suivante, vous devez être connecté(e) en tant qu�
 
 ### Installation du certificat de publication {#install-the-publish-certificate}
 
-1. Ouvrez la page de gestion des utilisateurs et utilisatrices pour l’instance de création. ([](http://localhost:4502/libs/granite/security/content/useradmin.html))
+1. Ouvrez la page de gestion des utilisateurs et utilisatrices pour l’instance de création. ([&#128279;](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Pour ouvrir les propriétés de votre compte d’utilisateur ou d’utilisatrice, cliquez sur votre nom d’utilisateur ou d’utilisatrice.
 1. Si le lien Créer TrustStore apparaît dans la zone Paramètres du compte, cliquez sur le lien, créez un mot de passe pour TrustStore et cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le TrustStore.
@@ -200,7 +200,7 @@ Pour effectuer la procédure suivante, vous devez être connecté(e) en tant qu�
 
 ### Installer la clé privée de publication {#install-the-publish-private-key}
 
-1. Ouvrez la page Gestion des utilisateurs pour l’instance de création. ([](http://localhost:4503/libs/granite/security/content/useradmin.html))
+1. Ouvrez la page Gestion des utilisateurs pour l’instance de création. ([&#128279;](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Pour ouvrir les propriétés de votre compte d’utilisateur ou d’utilisatrice, cliquez sur votre nom d’utilisateur ou d’utilisatrice.
 1. Si le lien Créer un KeyStore apparaît dans la zone Paramètres du compte, cliquez sur le lien. Configurez un mot de passe, puis cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le KeyStore.
@@ -211,7 +211,7 @@ Pour effectuer la procédure suivante, vous devez être connecté(e) en tant qu�
 
 ### Installer le certificat de création {#install-the-author-certificate}
 
-1. Ouvrez la page Gestion des utilisateurs pour l’instance de création. ([](http://localhost:4503/libs/granite/security/content/useradmin.html))
+1. Ouvrez la page Gestion des utilisateurs pour l’instance de création. ([&#128279;](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Si le lien Créer un TrustStore apparaît dans la zone TrustStore global, cliquez sur le lien, créez un mot de passe pour TrustStore, puis cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le TrustStore.
 1. Cliquez sur Ajouter le certificat à partir du fichier CER.

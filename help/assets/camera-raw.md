@@ -32,7 +32,7 @@ Vous pouvez activer la prise en charge d’[!DNL Adobe Camera Raw] pour le trait
 
 Pour activer la prise en charge de [!DNL Camera Raw] dans [!DNL Experience Manager Assets], procédez comme suit :
 
-1. Téléchargez le package [[!DNL Camera Raw] ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) à partir de la [!DNL Software Distribution].
+1. Téléchargez le package [[!DNL Camera Raw] &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) à partir de la [!DNL Software Distribution].
 1. Accédez à l’adresse `https://[aem_server]:[port]/workflow`. Ouvrez le workflow **[!UICONTROL Ressource de mise à jour de la gestion des ressources numériques]**.
 1. Modifier l’étape **[!UICONTROL Miniatures des processus]**.
 1. Indiquez la configuration suivante dans l’onglet **[!UICONTROL Miniatures]** :

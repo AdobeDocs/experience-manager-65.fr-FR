@@ -83,7 +83,7 @@ Consultez également [Facultatif - Installation et configuration de Dynamic Med
    * Onglet [Attributs de gestion des couleurs](#color-management-attributes-tab)
 
    ![Page de configuration de la publication Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
-   *Page de configuration de la publication Dynamic Media, avec l’onglet **[!UICONTROL Attributs de requête]**sélectionné.*<br><br>
+   *Page de configuration de la publication Dynamic Media, avec l’onglet **[!UICONTROL Attributs de requête]**&#x200B;sélectionné.*<br><br>
 
 1. Lorsque vous avez terminé, près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Enregistrer]**.
 

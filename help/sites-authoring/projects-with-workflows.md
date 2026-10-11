@@ -54,12 +54,12 @@ Selon le modèle de projet que vous sélectionnez, certains workflows sont dispo
 | Demander le lancement | x |  |  |  |
 | Demander une page de destination | x |  |  |  |
 | Demander un e-mail | x |  |  |  |
-| DAM Create Language Copy&amp;ast; |  |  |  | x |
+| DAM Create Language Copy&ast; |  |  |  | x |
 | Création et traduction de la copie et de la traduction de la langue dans la gestion des ressources numériques |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Ces workflows ne sont pas démarrés à partir de la mosaïque **Workflow** dans les projets. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-administering/tc-manage.md).
+>&ast; Ces workflows ne sont pas démarrés à partir de la mosaïque **Workflow** dans les projets. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-administering/tc-manage.md).
 
 Les étapes de démarrage et d’achèvement des workflows sont les mêmes, quel que soit le workflow choisi. Seules les étapes changent.
 

@@ -72,7 +72,7 @@ Depuis AEM 6.0, des modifications ont été apportées à la manière dont les 
 
 Il est conseillé de recourir aux recouvrements pour de nombreuses modifications, par exemple, pour [configurer vos consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) ou [créer votre catégorie de sélection dans l’explorateur de ressources au niveau du panneau latéral](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (lors de la création de pages). Ils sont requis pour les raisons suivantes :
 
-* ***Ne pas effectuer* de modifications dans la branche `/libs`**Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est sensible aux modifications lorsque vous :
+* ***Ne pas effectuer* de modifications dans la branche `/libs`**&#x200B;Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est sensible aux modifications lorsque vous :
 
   * procédez à une mise à niveau sur votre instance
   * appliquez un correctif

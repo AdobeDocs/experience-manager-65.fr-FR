@@ -63,13 +63,13 @@ Vous y trouverez notamment **Arctic Surfing in Lofoten**, un fragment avec des r
 
 * Naviguez par le biais de **Ressources**, **Fichiers**, **We.Retail**, **Anglais**, **Expériences**, **Arctic Surfing in Lofoten** :
 
-  * [](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
+  * [&#128279;](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 
 ![cf-44](assets/cf-44.png)
 
 Vous pouvez sélectionner et modifier le fragment **Arctic Surfing in Lofoten** :
 
-* [](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
+* [&#128279;](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
 Ici, vous pouvez [modifier et gérer](/help/assets/content-fragments/content-fragments.md) votre fragment à l’aide des onglets (panneau de gauche) :
 
@@ -85,13 +85,13 @@ Ici, vous pouvez [modifier et gérer](/help/assets/content-fragments/content-fra
 
 Pour illustrer la [création de page avec un fragment de contenu](/help/sites-authoring/content-fragments.md), plusieurs exemples de pages sont proposés, par exemple :
 
-* [](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
+* [&#128279;](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 
 Le fragment de contenu **Arctic Surfing in Lofoten**, par exemple, est référencé sur la page Sites :
 
 * Accédez à **Sites**, **We.Retail**, **Gabarits de langue**, **Anglais**, **Expérience**. Ouvrez ensuite le fragment **Arctic Surfing in Lofoten** en vue de le modifier :
 
-  * [](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
+  * [&#128279;](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
 
 ![cf-53](assets/cf-53.png)
 

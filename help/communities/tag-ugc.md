@@ -57,7 +57,7 @@ Les autorisations par défaut sont définies de manière à ne pas autoriser la 
 
 Étant donné que les balises sont appliquées au contenu créé par l’utilisateur dans l’environnement de publication, l’autorisation de lecture doit être activée pour que les membres de la communauté puissent sélectionner les balises à appliquer.
 
-Voir [ Définition des autorisations de balises ](../../help/sites-administering/tags.md#setting-tag-permissions).
+Voir [&#x200B; Définition des autorisations de balises &#x200B;](../../help/sites-administering/tags.md#setting-tag-permissions).
 
 Voici comment cela apparaît dans CRXDE lorsqu’un administrateur applique des autorisations de lecture aux `/etc/tag/discussions` pour le groupe `Community Engage Members`.
 

@@ -77,7 +77,7 @@ Assurez-vous que JSRP a été configuré en tant que fournisseur par défaut en 
 
 Sur toutes les instances d’auteur et de publication AEM, accédez de nouveau à la console de configuration du stockage ou vérifiez le référentiel AEM :
 
-* Dans JCR, si [/conf/global/settings/community ](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
+* Dans JCR, si [/conf/global/settings/community &#x200B;](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
   * Il ne contient pas de nœud [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc), ce qui signifie que le fournisseur de stockage est JSRP.
   * Si le nœud srpc existe et contient le nœud [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), les propriétés de la configuration par défaut doivent définir JSRP comme fournisseur par défaut.

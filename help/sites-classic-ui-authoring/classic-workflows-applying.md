@@ -51,7 +51,7 @@ La colonne **Statut** de la console **Sites web** indique si un workflow a ét�
 
 ### Démarrage d’un workflow à partir de la console Sites web {#starting-a-workflow-from-the-websites-console}
 
-1. Ouvrez la console Sites web. ([](http://localhost:4502/siteadmin))
+1. Ouvrez la console Sites web. ([&#128279;](http://localhost:4502/siteadmin))
 1. Dans l’arborescence Sites web, sélectionnez le parent de la page à laquelle vous souhaitez appliquer le workflow.
 1. Dans la liste de pages, sélectionnez la page, puis cliquez sur Workflow.
 1. Dans la boîte de dialogue Démarrer le workflow, sélectionnez le workflow à appliquer. Vous pouvez éventuellement saisir un commentaire et un titre. Cliquez ensuite sur Démarrer.

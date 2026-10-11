@@ -152,7 +152,7 @@ Alors que les instances de production sont généralement exécutées sur des or
 
 Pour se familiariser avec AEM et développer sur AEM, il est courant d’utiliser une instance installée sur un ordinateur local exécutant Apple OS X ou les versions de bureau de Microsoft® Windows ou Linux®.
 
-Côté client, AEM fonctionne avec tous les navigateurs modernes (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome ** 51 ou version ultérieure ****, **Firefox **47 ou version ultérieure, **Safari 8 ou version ultérieure**) sous les systèmes d’exploitation de tablette et de poste de travail. Pour plus d’informations, consultez [Plateformes client prises en charge](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
+Côté client, AEM fonctionne avec tous les navigateurs modernes (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51 ou version ultérieure **&#x200B;**, **Firefox &#x200B;**&#x200B;47 ou version ultérieure, **Safari 8 ou version ultérieure**) sous les systèmes d’exploitation de tablette et de poste de travail. Pour plus d’informations, consultez [Plateformes client prises en charge](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
 
 ### Obtention du logiciel {#getting-the-software}
 

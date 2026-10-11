@@ -57,7 +57,7 @@ Dans AEM 6.3, par défaut, lorsqu’une traversée de 100 000 est atteinte, la
 
 #### Pendant le développement {#during-development}
 
-Expliquez **toutes** les requêtes et assurez-vous que leurs plans de requête ne contiennent pas l’explication **/&amp;ast; traverse**. Exemple de traversée du plan de requête :
+Expliquez **toutes** les requêtes et assurez-vous que leurs plans de requête ne contiennent pas l’explication **/&ast; traverse**. Exemple de traversée du plan de requête :
 
 * **PLAN :** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
@@ -153,7 +153,7 @@ La définition de seuils bas permet d’éviter les requêtes gourmandes en ress
 
 #### Après le déploiement {#post-deployment-2}
 
-* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de nœuds importante ou une consommation élevée de mémoire de tas : ``
+* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de nœuds importante ou une consommation élevée de mémoire de tas : &grave;&grave;
 
   * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
   * Optimisez la requête afin de réduire le nombre de nœuds parcourus.

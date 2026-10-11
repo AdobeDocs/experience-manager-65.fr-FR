@@ -42,7 +42,7 @@ Les bibliothèques clientes sont requises pour le bon fonctionnement (JavaScript
 
 Lorsqu’il existe une [fonction de communauté](/help/communities/functions.md) pour une fonctionnalité, tous les composants et configurations nécessaires, y compris les bibliothèques clientes requises, sont présents dans le site de la communauté. D’autres bibliothèques clientes doivent être ajoutées uniquement si des composants supplémentaires doivent être disponibles pour les auteurs.
 
-Lorsque les bibliothèques clientes requises sont manquantes, [ l’ajout d’un composant Communities à une page](/help/communities/author-communities.md) peut entraîner des erreurs JavaScript et une apparence inattendue.
+Lorsque les bibliothèques clientes requises sont manquantes, [&#x200B; l’ajout d’un composant Communities à une page](/help/communities/author-communities.md) peut entraîner des erreurs JavaScript et une apparence inattendue.
 
 ### Exemple : révisions effectuées sans Clientlibs {#example-placed-reviews-without-clientlibs}
 
@@ -71,7 +71,7 @@ Lorsque vous souhaitez ajouter un composant Communities à une page, il est néc
 
 Utilisez [CRXDE|Lite](#using-crxde-lite) pour modifier une liste de bibliothèques clientes existante pour une page de site communautaire.
 
-Pour ajouter une bibliothèque cliente pour un site communautaire à l’aide de [](/help/sites-developing/developing-with-crxde-lite.md) :
+Pour ajouter une bibliothèque cliente pour un site communautaire à l’aide de [&#128279;](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * Accédez à [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
 * Recherchez le nœud `clientlibslist` de la page sur laquelle vous souhaitez ajouter le composant :

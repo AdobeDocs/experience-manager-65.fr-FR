@@ -161,7 +161,7 @@ Le résultat est un nœud enfant JCR sous un nœud par, qui est adressable Sling
 
 **Inclure un composant**
 
-L’inclusion d’un composant fait référence au processus d’ajout d’une référence à une [ ressource « non existante »](srp.md#for-non-existing-resources-ners) (aucun nœud JCR) dans le modèle, par exemple à l’aide d’un langage de script.
+L’inclusion d’un composant fait référence au processus d’ajout d’une référence à une [&#x200B; ressource « non existante »](srp.md#for-non-existing-resources-ners) (aucun nœud JCR) dans le modèle, par exemple à l’aide d’un langage de script.
 
 Depuis Adobe Experience Manager (AEM) 6.1, lorsqu’un composant est inclus dynamiquement au lieu d’être ajouté, il est possible de modifier les propriétés du composant en mode de création *conception*.
 

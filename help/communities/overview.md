@@ -49,7 +49,7 @@ Les fonctionnalités de Communities peuvent être démontrées à l’aide de la
 
 Un site communautaire est un site AEM créé à l’aide d’un simple assistant qui génère un site web avec de nombreuses fonctionnalités courantes pré-connectées dans le site.
 
-L&#39;assistant [ création de site ](/help/communities/sites-console.md) :
+L&#39;assistant [&#x200B; création de site &#x200B;](/help/communities/sites-console.md) :
 
 * Assemble les fonctionnalités du site, en fonction du [modèle de site de la communauté](/help/communities/sites.md) sélectionné, qui est :
 
@@ -69,7 +69,7 @@ L&#39;assistant [ création de site ](/help/communities/sites-console.md) :
   * Connexion : auto-inscription, [connexion au réseau social](/help/communities/social-login.md), profils utilisateur
 
     * Notifications:
-      les membres voient les événements qui les concernent et le contenu généré par l&#39;utilisateur où ils se trouvent [](/help/communities/overview.md#mentionssupport).
+      les membres voient les événements qui les concernent et le contenu généré par l&#39;utilisateur où ils se trouvent [&#128279;](/help/communities/overview.md#mentionssupport).
 
     * Messages : les membres peuvent envoyer ou recevoir des messages sur le site de la communauté.
     * Recherche : possibilité de rechercher dans le site de la communauté.
@@ -124,7 +124,7 @@ Dans l’environnement de création, la console de navigation globale permet d�
 
 La console Outils globaux permet d’accéder aux outils de communautés suivants :
 
-* Console [ Modèles de site ](/help/communities/tools.md#sitetemplatesconsole)
+* Console [&#x200B; Modèles de site &#x200B;](/help/communities/tools.md#sitetemplatesconsole)
 
   * Créer et gérer des modèles de site de la communauté.
 
@@ -206,7 +206,7 @@ Pour découvrir la facilité de création rapide d’une communauté d’engagem
 
 ## Machine de démonstration AEM {#aem-demo-machine}
 
-La [machine de démonstration ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) gère et exécute des démonstrations pour AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) et [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms), qui nécessitent souvent plus de configuration que le simple lancement d’une instance QuickStart. La machine de démonstration d’AEM configure d’autres [infrastructures](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) telles que MongoDB, Solr, MySQL, FFmpeg et des serveurs de messagerie.
+La [machine de démonstration &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) gère et exécute des démonstrations pour AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) et [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms), qui nécessitent souvent plus de configuration que le simple lancement d’une instance QuickStart. La machine de démonstration d’AEM configure d’autres [infrastructures](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) telles que MongoDB, Solr, MySQL, FFmpeg et des serveurs de messagerie.
 
 La machine de démonstration AEM comprend :
 

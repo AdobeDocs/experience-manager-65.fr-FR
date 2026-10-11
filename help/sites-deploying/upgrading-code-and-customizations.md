@@ -140,7 +140,7 @@ Vous pouvez préparer les personnalisations de l’interface utilisateur d’Ass
 
 ### Génération d’identifiants pour les ressources existantes {#generating-asset-ids-for-existing-assets}
 
-Pour générer des identifiants pour les ressources existantes, mettez à niveau les ressources lorsque vous mettez à niveau votre instance AEM pour exécuter AEM 6.5. Cette étape est requise pour activer la fonctionnalité Assets Insights [](/help/assets/asset-insights.md). Pour plus de détails, consultez la section [Ajout d’un code intégré](/help/assets/use-page-tracker.md#add-embed-code).
+Pour générer des identifiants pour les ressources existantes, mettez à niveau les ressources lorsque vous mettez à niveau votre instance AEM pour exécuter AEM 6.5. Cette étape est requise pour activer la fonctionnalité Assets Insights [&#128279;](/help/assets/asset-insights.md). Pour plus de détails, consultez la section [Ajout d’un code intégré](/help/assets/use-page-tracker.md#add-embed-code).
 
 Pour mettre à niveau les ressources, configurez le package d’identifiants de ressources associé dans la console JMX. En fonction du nombre de ressources dans le référentiel, `migrateAllAssets` peut prendre beaucoup de temps. Selon les tests internes d’Adobe, cela peut prendre environ une heure pour 125 000 ressources sur TarMK.
 

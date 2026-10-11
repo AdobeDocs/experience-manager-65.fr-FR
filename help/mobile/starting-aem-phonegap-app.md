@@ -34,7 +34,7 @@ Les développeurs peuvent utiliser cet exemple comme point de départ pour teste
 
 * Utilisez le [Kit de démarrage AEM PhoneGap](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) pour créer des applications adaptées au catalogue AEM Mobile.
 * Une [application de référence](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) avec source complète a été créée, qui illustre de nombreuses nouvelles fonctionnalités d’AEM Mobile, que vous migriez une application existante vers AEM Mobile ou que vous démarriez à partir de zéro.
-* Tous les exemples se trouvent sur github : [](https://github.com/Adobe-Marketing-Cloud-Apps) et incluent le bootstrapping de votre projet avec Maven.
+* Tous les exemples se trouvent sur github : [&#128279;](https://github.com/Adobe-Marketing-Cloud-Apps) et incluent le bootstrapping de votre projet avec Maven.
 * La plupart des conférences utilisent le tutoriel [Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink), que vous pouvez également trouver dans GitHub et qui se concentre sur l’utilisation de l’extensibilité native d’Apache Cordova.
 
 >[!NOTE]

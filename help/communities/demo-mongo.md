@@ -43,7 +43,7 @@ Cette configuration est adaptée aux environnements *hors production* tels que l
 
 ### Installation de MongoDB {#install-mongodb}
 
-* Téléchargez MongoDB depuis [](https://www.mongodb.com/)
+* Téléchargez MongoDB depuis [&#128279;](https://www.mongodb.com/)
 
   * Choix du système d’exploitation :
 
@@ -131,7 +131,7 @@ Pour plus de simplicité, en utilisant la version 4.10 comme exemple, démarrez 
 
 Ce processus démarre un serveur HTTP Solr à l’aide du port par défaut 8983. Vous pouvez accéder à la console Solr pour obtenir une console Solr à des fins de test.
 
-* Console Solr par défaut : [](http://localhost:8983/solr/)
+* Console Solr par défaut : [&#128279;](http://localhost:8983/solr/)
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
 
 1. Affichez le contenu créé par l’utilisateur dans Solr :
 
-   * Accédez au tableau de bord Solr : [](http://localhost:8983/solr/).
+   * Accédez au tableau de bord Solr : [&#128279;](http://localhost:8983/solr/).
    * L’utilisateur `core selector` sélectionner des `collection1`.
    * Sélectionnez `Query`.
    * Sélectionnez `Execute Query`.

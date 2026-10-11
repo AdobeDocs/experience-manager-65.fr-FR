@@ -268,7 +268,7 @@ Par exemple, vous pouvez corriger une référence rompue dans un composant Réf�
 
 ## Événements – Chronologie {#events-timeline}
 
-Pour les ressources appropriées (par exemple, des pages de la console **Sites** ou des ressources de la console **Assets**), utilisez la chronologie [ pour afficher l’activité récente d’un élément sélectionné](/help/sites-authoring/basic-handling.md#timeline).
+Pour les ressources appropriées (par exemple, des pages de la console **Sites** ou des ressources de la console **Assets**), utilisez la chronologie [&#x200B; pour afficher l’activité récente d’un élément sélectionné](/help/sites-authoring/basic-handling.md#timeline).
 
 Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez la **Chronologie** à l’aide de :
 

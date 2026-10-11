@@ -140,7 +140,7 @@ Pour plus d’informations, consultez [Clientlibs pour les composants de communa
 
 Sur l’instance d’auteur, où l’un d’eux est souvent connecté en tant qu’administrateur ou développeur, pour tester le composant connecté en tant qu’autre utilisateur, utilisez la zone de texte à gauche du bouton **[!UICONTROL Emprunter l’identité]** pour saisir le nom d’utilisateur ou sélectionnez-le dans la liste déroulante, puis cliquez sur le bouton. Cliquez sur Rétablir pour vous déconnecter et terminer l’emprunt d’identité.
 
-L’instance de publication n’a pas besoin d’emprunter l’identité. Il vous suffit d’utiliser le lien Connexion/Déconnexion pour emprunter l’identité de différents utilisateurs, tels que les [ utilisateurs de démonstration](tutorials.md#demo-users).
+L’instance de publication n’a pas besoin d’emprunter l’identité. Il vous suffit d’utiliser le lien Connexion/Déconnexion pour emprunter l’identité de différents utilisateurs, tels que les [&#x200B; utilisateurs de démonstration](tutorials.md#demo-users).
 
 ## Personnalisation {#customization}
 
@@ -156,9 +156,9 @@ Pour tester rapidement les personnalisations, la propriété `scg:showIde` doit 
 
 Utilisation du composant Comments à titre d’exemple, sur l’instance d’auteur ou de publication, connectée avec des droits d’administrateur :
 
-1. Accéder à [](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Accéder à [&#128279;](../../help/sites-developing/developing-with-crxde-lite.md)
 
-   Par exemple, [](http://localhost:4503/crx/de)
+   Par exemple, [&#128279;](http://localhost:4503/crx/de)
 
 1. Sélectionnez le nœud de `jcr:content` du composant
 
@@ -173,7 +173,7 @@ Utilisation du composant Comments à titre d’exemple, sur l’instance d’aut
 1. Sélectionnez **[!UICONTROL Enregistrer tout]**
 1. Recharger la page Commentaires du guide
 
-   [](http://localhost:4503/content/community-components/en/comments.html)
+   [&#128279;](http://localhost:4503/content/community-components/en/comments.html)
 
 1. Notez qu’il existe désormais trois onglets pour Modèles, CSS et Données.
 

@@ -60,7 +60,7 @@ Le répertoire /apps est protégé et n’est pas accessible au public, tout com
 
 1. Créez un dossier `/apps/an-scf-sandbox`.
 
-   Utilisation de ****, dans le volet de l&#39;explorateur
+   Utilisation de **&#x200B;**, dans le volet de l&#39;explorateur
 
    1. Sélectionnez le dossier `/apps`.
    1. Cliquez avec le bouton droit de la souris **[!UICONTROL Créer]**... ou faites glisser le menu **[!UICONTROL Créer...]** vers le bas.

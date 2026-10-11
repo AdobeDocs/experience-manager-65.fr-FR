@@ -135,7 +135,7 @@ Procédez comme suit pour configurer votre base de données MySQL :
 
 1. Installez le pilote JDBC pour la base de données MySQL en tant que bundle OSGi :
 
-   1. Connectez-vous à l’instance de création AEM Forms en tant qu’administrateur ou administratrice et accédez aux bundles de la console web d’AEM. L’URL par défaut est [](https://localhost:4502/system/console/bundles).
+   1. Connectez-vous à l’instance de création AEM Forms en tant qu’administrateur ou administratrice et accédez aux bundles de la console web d’AEM. L’URL par défaut est [&#128279;](https://localhost:4502/system/console/bundles).
    1. Sélectionnez **Installer/Mettre à jour**. Une boîte de dialogue **Charger/installer les bundles** s’affiche.
 
    1. Sélectionnez **Choisir un fichier** pour rechercher et sélectionner le bundle OSGi du pilote JDBC MySQL. Sélectionnez **Démarrer le bundle** et **Actualiser les packages**, puis sélectionnez **Installer** ou **Mettre à jour**. Assurez-vous que le pilote JDBC d’Oracle Corporation pour MySQL est actif. Le pilote est installé.
@@ -196,7 +196,7 @@ La configuration d’un modèle de données de formulaire inclut :
 
 ### Ajout d’objets et de services de modèle de données {#add-data-model-objects-and-services}
 
-1. Dans l’instance de création AEM, accédez à **Formulaires** > **Intégrations de données**. L’URL par défaut est [](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. Dans l’instance de création AEM, accédez à **Formulaires** > **Intégrations de données**. L’URL par défaut est [&#128279;](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. Le modèle de données de formulaire **FDM_Create_First_IC** que vous avez créé précédemment est répertorié ici. Sélectionnez-le, puis sélectionnez **Modifier**.
 
    La source de données sélectionnée **MySQL** est affichée dans le volet **Sources de données**.

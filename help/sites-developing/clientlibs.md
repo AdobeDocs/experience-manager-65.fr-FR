@@ -404,7 +404,7 @@ Pour plus d’informations sur les options GCC, consultez la [documentation de G
 
 YUI est défini comme minificateur par défaut dans AEM. Pour modifier ce paramètre en GCC, procédez comme suit.
 
-1. Accédez à Apache Felix Config Manager à l’adresse [](https://localhost:4502/system/console/configMgr)
+1. Accédez à Apache Felix Config Manager à l’adresse [&#128279;](https://localhost:4502/system/console/configMgr)
 1. Recherchez et modifiez le **Gestionnaire de bibliothèques HTML Adobe Granite**.
 1. Activez l’option **Minifier** (le cas échéant).
 1. Définissez la valeur **Configuration par défaut du processeur JS** sur `min:gcc`.

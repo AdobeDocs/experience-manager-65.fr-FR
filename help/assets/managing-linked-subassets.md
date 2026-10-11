@@ -38,7 +38,7 @@ Les références sont résolues sur la base du chemin d’accès, du document et
 
 Vous pouvez référencer des ressources numériques existantes dans un fichier [!DNL Adobe Illustrator].
 
-1. À l’aide de l’application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr), récupérez les ressources numériques sur le système de fichiers local. Accédez à l’emplacement du système de fichier que vous souhaitez référencer.
+1. À l’aide de l’application de bureau [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr), récupérez les ressources numériques sur le système de fichiers local. Accédez à l’emplacement du système de fichier que vous souhaitez référencer.
 1. Faites glisser la ressource du dossier local jusqu’au fichier [!DNL Illustrator].
 
 1. Enregistrez le fichier [!DNL Illustrator] sur le lecteur monté ou [chargez-le](/help/assets/manage-assets.md#uploading-assets) dans le référentiel [!DNL Experience Manager].

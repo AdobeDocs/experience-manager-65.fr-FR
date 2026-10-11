@@ -252,7 +252,7 @@ Si la valeur configurée du chemin se termine par une barre oblique, la recherch
 
 **Configuration du proxy de composants HTTP Apache** : il s’agit de la configuration de proxy pour tout le code utilisant le client HTTP Apache, utilisée lorsque du code HTTP est créé. Par exemple, lors de la réplication.
 
-Lors de la création d’une configuration, ne modifiez pas la configuration d’usine. Créez plutôt une configuration d’usine pour ce composant à l’aide du gestionnaire de configuration disponible ici : ****. La configuration du proxy est disponible à l’adresse **org.apache.http.proxyconfigurator.**
+Lors de la création d’une configuration, ne modifiez pas la configuration d’usine. Créez plutôt une configuration d’usine pour ce composant à l’aide du gestionnaire de configuration disponible ici : **&#x200B;**. La configuration du proxy est disponible à l’adresse **org.apache.http.proxyconfigurator.**
 
 >[!NOTE]
 >

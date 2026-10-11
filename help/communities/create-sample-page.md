@@ -117,7 +117,7 @@ Dans la [console de sites de la communauté](sites-console.md), sélectionnez l�
 
 Sélectionnez l’icône Ouvrir le site pour pouvoir afficher le site en mode d’édition.
 
-L&#39;URL est [](http://localhost:4502/editor.html/content/sites/sample/en.html)
+L&#39;URL est [&#128279;](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
 ![author-site](assets/author-site.png)
 

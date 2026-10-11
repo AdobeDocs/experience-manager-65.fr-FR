@@ -52,7 +52,7 @@ Il est plus facile de créer et de gérer des formulaires en suivant un processu
 
 ## Étape 1 : création du formulaire adaptatif {#step-create-the-adaptive-form}
 
-1. Connectez-vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**. L’URL par défaut est [](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+1. Connectez-vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**. L’URL par défaut est [&#128279;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 1. Sélectionnez **[!UICONTROL Créer]** et **[!UICONTROL Formulaire adaptatif]**. Une option permettant de sélectionner un modèle s’affiche. Sélectionnez le modèle **[!UICONTROL Vide]**, puis sélectionnez **[!UICONTROL Suivant]**.
 
 1. L’option **[!UICONTROL Ajouter des propriétés]** s’affiche. Les champs **[!UICONTROL Titre]** et **[!UICONTROL Nom]** sont obligatoires :

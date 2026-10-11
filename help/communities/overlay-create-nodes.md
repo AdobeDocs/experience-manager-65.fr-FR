@@ -31,7 +31,7 @@ Recouvrez le système de commentaires avec une version personnalisée en copiant
 >
 >Le contenu du dossier /libs n’est jamais modifié, car toute réinstallation ou mise à niveau peut supprimer ou remplacer le dossier /libs sans toucher au contenu du dossier /apps.
 
-À l’aide de [](../../help/sites-developing/developing-with-crxde-lite.md) sur une instance de création, commencez par créer un chemin d’accès dans le dossier /apps identique au chemin d’accès aux composants superposés dans le dossier /libs.
+À l’aide de [&#128279;](../../help/sites-developing/developing-with-crxde-lite.md) sur une instance de création, commencez par créer un chemin d’accès dans le dossier /apps identique au chemin d’accès aux composants superposés dans le dossier /libs.
 
 Le chemin d’accès en cours de duplication est :
 
@@ -39,7 +39,7 @@ Le chemin d’accès en cours de duplication est :
 
 Certains nœuds du chemin d’accès sont des dossiers et d’autres des composants.
 
-1. Accédez à [](http://localhost:4502/crx/de/index.jsp)
+1. Accédez à [&#128279;](http://localhost:4502/crx/de/index.jsp)
 1. Créer un `/apps/social` (s’il n’existe pas déjà)
    * Sélectionner `/apps` nœud
    * **[!UICONTROL Créer > Dossier]**

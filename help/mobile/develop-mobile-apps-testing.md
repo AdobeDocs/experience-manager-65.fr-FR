@@ -78,21 +78,21 @@ Pour plus d’informations, consultez [https://www.selenium.dev/](https://www.se
 * Un service de test basé sur le cloud avec des hooks d’intégration continus et des tests d’appareils réels.
 * Un Robot d&#39;exploration d’application est inclus pour vérifier la compatibilité des appareils, analyser les journaux, parcourir les vues, prendre des captures d’écran et surveiller les performances.
 
-Pour plus d’informations, voir [](https://testdroid.com/).
+Pour plus d’informations, voir [&#128279;](https://testdroid.com/).
 
 **Appium**
 
 * Appium est un framework populaire sur plusieurs plateformes pour automatiser les tests mobiles.
 * En outre, un inspecteur est inclus avec des capacités d’enregistrement pour aider les cas de test de code.
 
-Pour plus d’informations, voir [](https://appium.io/).
+Pour plus d’informations, voir [&#128279;](https://appium.io/).
 
 **SauceLabs**
 
 * SauceLabs fournit des tests basés sur le cloud et s’intègre avec une intégration continue.
 * Les tests s’exécutent automatiquement dans leur environnement cloud ou vous pouvez démarrer un appareil ou une plateforme spécifique et effectuer des tests manuels pour résoudre les problèmes.
 
-Pour plus d’informations, voir [](https://saucelabs.com/).
+Pour plus d’informations, voir [&#128279;](https://saucelabs.com/).
 
 <!--
 **AppTestNow**
@@ -107,10 +107,10 @@ For more information, see [https://apptestnow.com/](https://apptestnow.com/).
 
 * HockeyApp est soumis à des tests manuels où l&#39;application mobile est envoyée à une boutique d&#39;applications personnelles où les testeurs peuvent la télécharger et l&#39;essayer.
 
-Pour plus d’informations, voir [](https://hockeyapp.net/features/).
+Pour plus d’informations, voir [&#128279;](https://hockeyapp.net/features/).
 
 **Jenkins**
 
 * Bien qu’il ne s’agisse pas d’un outil de test, Jenkins est une structure d’intégration continue fournissant la colonne vertébrale pour les tests automatisés. De nombreux plug-ins tiers sont disponibles pour étendre les fonctionnalités. Par exemple, le plug-in SeleniumGrid fournit une interface utilisateur pour aider à gérer le hub et les nœuds Selenium.
 
-Pour plus d’informations, voir [](https://www.jenkins.io/) et [https://plugins.jenkins.io/](https://plugins.jenkins.io/).
+Pour plus d’informations, voir [&#128279;](https://www.jenkins.io/) et [https://plugins.jenkins.io/](https://plugins.jenkins.io/).

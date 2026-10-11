@@ -133,7 +133,7 @@ La console de lancements fournit une vue d’ensemble de vos lancements et perme
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 
-* Ou directement avec [](https://localhost:4502/libs/launches/content/launches.html?lang=fr)
+* Ou directement avec [&#128279;](https://localhost:4502/libs/launches/content/launches.html?lang=fr)
 
 ## Lancements dans les références (console Sites) {#launches-in-references-sites-console}
 

@@ -137,7 +137,7 @@ Lorsque le contenu du site est répliqué, le contenu créé par l’utilisateur
 
 ### Gestion des données utilisateur {#managing-user-data}
 
-Les CommunityIes s’intéressent également aux [*utilisateurs*, *groupes d’utilisateurs* et *profils d’utilisateurs*](/help/communities/users.md). Ces données utilisateur, lorsqu’elles sont créées et mises à jour dans l’environnement de publication, doivent être mises à la disposition d’autres instances de publication lorsque la topologie consiste en une [ ferme de publication ](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
+Les CommunityIes s’intéressent également aux [*utilisateurs*, *groupes d’utilisateurs* et *profils d’utilisateurs*](/help/communities/users.md). Ces données utilisateur, lorsqu’elles sont créées et mises à jour dans l’environnement de publication, doivent être mises à la disposition d’autres instances de publication lorsque la topologie consiste en une [&#x200B; ferme de publication &#x200B;](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
 Depuis AEM Communities 6.1, les données utilisateur sont synchronisées à l’aide de la distribution Sling au lieu de la réplication. Pour plus d’informations, consultez [Synchronisation des utilisateurs](/help/communities/sync.md).
 

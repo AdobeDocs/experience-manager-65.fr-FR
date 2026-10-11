@@ -46,7 +46,7 @@ Exemple de mise en page de la barre d’outils
 
 Les formulaires adaptatifs fournissent un ensemble de dispositions prêtes à l’emploi :
 
-![Mises en page de barre d’outils prêtes à l’emploi ](assets/toolbar1.png)
+![Mises en page de barre d’outils prêtes à l’emploi &#x200B;](assets/toolbar1.png)
 
 Mises en page de barre d’outils prêtes à l’emploi
 

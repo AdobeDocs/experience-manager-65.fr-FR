@@ -200,7 +200,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
 Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à moins que toutes les pages n’aient été créées pour vous à l’avance :
 
-1. Ouvrez la console Sites (par exemple, [](https://localhost:4502/sites.html/content)).
+1. Ouvrez la console Sites (par exemple, [&#128279;](https://localhost:4502/sites.html/content)).
 1. Accédez à l’emplacement où créer la page.
 1. Ouvrez le sélecteur de liste déroulante avec l’option **Créer** de la barre d’outils, puis sélectionnez **Page** dans la liste :
 

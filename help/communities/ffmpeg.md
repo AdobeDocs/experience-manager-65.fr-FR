@@ -33,7 +33,7 @@ FFmpeg est une solution de conversion et de diffusion audio et vidéo en continu
 
 FFmpeg doit être installé sur le ou les serveurs hébergeant la ou les instances AEM *author*.
 
-1. Accédez à [](https://www.ffmpeg.org/).
+1. Accédez à [&#128279;](https://www.ffmpeg.org/).
 1. Téléchargez la dernière version de FFmpeg pour votre environnement spécifique (Macintosh, Windows ou Linux).
 
    * Il est important de garder FFmpeg à jour en raison des vulnérabilités de sécurité dans les versions plus anciennes.
@@ -52,14 +52,14 @@ Par défaut, lorsque FFmpeg est installé, plusieurs rendus sont configurés (tr
 
 Comme les transcodages utilisent beaucoup CPU, il est recommandé de modifier la liste des rendus cibles. Dans la plupart des cas, le transcodage n’est pas nécessaire.
 
-Pour modifier le workflow [!UICONTROL  Ressource de mise à jour de gestion des ressources numériques ] et, dans cet exemple, pour désactiver le transcodage :
+Pour modifier le workflow [!UICONTROL &#x200B; Ressource de mise à jour de gestion des ressources numériques &#x200B;] et, dans cet exemple, pour désactiver le transcodage :
 
 * Connectez-vous à l’instance d’auteur avec les privilèges d’administration.
 * Dans la navigation globale, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 * Recherchez **[!UICONTROL Ressource de mise à jour de la gestion des ressources numériques]**.
 * Double-cliquez pour ouvrir le workflow à modifier dans l’interface utilisateur classique.
 
-  Emplacement résultant : [](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
+  Emplacement résultant : [&#128279;](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
 * Double-cliquez sur l’étape **[!UICONTROL Transcodage FFmpeg]** pour accéder à la boîte de dialogue Propriétés de l’étape.
 * Sous l’onglet **[!UICONTROL Processus]** :

@@ -71,7 +71,7 @@ En mode de création, pour accéder à la console de configuration du stockage
   * Sélectionnez **[!UICONTROL Communities]**
   * Sélectionnez **[!UICONTROL Configuration de stockage]**
 
-    * Par exemple, l’emplacement obtenu est : [](http://localhost:4502/communities/admin/defaultsrp)
+    * Par exemple, l’emplacement obtenu est : [&#128279;](http://localhost:4502/communities/admin/defaultsrp)
 
     >[!NOTE]
     >
@@ -114,10 +114,10 @@ En mode de création, pour accéder à la console de configuration du stockage
 
 ### Pas d’étapes de migration sans temps d’arrêt pour defaultsrp {#zerodt-migration-steps}
 
-Pour vous assurer que la page defaultsrp [](http://localhost:4502/communities/admin/defaultsrp) fonctionne comme prévu, procédez comme suit :
+Pour vous assurer que la page defaultsrp [&#128279;](http://localhost:4502/communities/admin/defaultsrp) fonctionne comme prévu, procédez comme suit :
 
 1. Renommez le chemin d’accès à `/etc/socialconfig` en `/etc/socialconfig_old`, de sorte que la configuration système retourne à jsrp (par défaut).
-1. Accédez à la page defaultsrp [](http://localhost:4502/communities/admin/defaultsrp), où jsrp est configuré. Cliquez sur le bouton **[!UICONTROL Envoyer]** pour créer un nœud de configuration par défaut au `/conf/global/settings/community/srpc`.
+1. Accédez à la page defaultsrp [&#128279;](http://localhost:4502/communities/admin/defaultsrp), où jsrp est configuré. Cliquez sur le bouton **[!UICONTROL Envoyer]** pour créer un nœud de configuration par défaut au `/conf/global/settings/community/srpc`.
 1. Supprimez le `/conf/global/settings/community/srpc/defaultconfiguration` de configuration par défaut créé.
 1. Copiez l’ancienne `/etc/socialconfig_old/srpc/defaultconfiguration` de configuration à la place du nœud supprimé (`/conf/global/settings/community/srpc/defaultconfiguration`) à l’étape précédente.
 1. Supprimez l’ancien nœud de `etc` `/etc/socialconfig_old`.

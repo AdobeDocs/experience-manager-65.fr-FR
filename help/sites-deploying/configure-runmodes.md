@@ -150,7 +150,7 @@ Vous pouvez utiliser le fichier `sling.properties` pour définir le mode d’ex�
 
 ### Utilisation de l’option -r {#using-the-r-option}
 
-Un mode d’exécution personnalisé peut être activé à l’aide de l’option `-r` lors du lancement du démarrage rapide. Par exemple, utilisez la commande suivante pour lancer une instance AEM avec le mode d’exécution défini sur dev. ``
+Un mode d’exécution personnalisé peut être activé à l’aide de l’option `-r` lors du lancement du démarrage rapide. Par exemple, utilisez la commande suivante pour lancer une instance AEM avec le mode d’exécution défini sur dev. &grave;&grave;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev

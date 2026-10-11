@@ -80,8 +80,8 @@ L’éditeur de ressources utilise le sélecteur de formulaire, qui permet de mo
 
 Par exemple :
 
-* Page au format brut : [](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
-* Ressource chargée dans la page de formulaire : [](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
+* Page au format brut : [&#128279;](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
+* Ressource chargée dans la page de formulaire : [&#128279;](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
 Les exemples de gestionnaires dans `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) procèdent ainsi :
 

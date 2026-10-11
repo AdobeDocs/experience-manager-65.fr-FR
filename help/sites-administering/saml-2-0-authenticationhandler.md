@@ -119,7 +119,7 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 >
 >Les étapes ci-dessous sont obligatoires, sinon l’exception suivante sera générée : `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`.
 
-1. Accédez à : [](http://localhost:4502/libs/granite/security/content/useradmin.html)
+1. Accédez à : [&#128279;](http://localhost:4502/libs/granite/security/content/useradmin.html)
 1. Modifiez l’utilisateur `authentication-service`.
 1. Créez un KeyStore en cliquant sur **Créer le KeyStore** sous **Paramètres du compte**.
 

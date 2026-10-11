@@ -162,7 +162,7 @@ Procédez comme suit pour configurer les services RESTful :
 Le modèle de données de formulaire d’[!DNL Experience Manager Forms] lors de l’intégration des services web RESTful comme source de données comprend des configurations de client HTTP pour l’optimisation des performances.
 Effectuez les étapes suivantes pour configurer le client HTTP du modèle de données de formulaire :
 
-1. Connectez-vous à l’instance de création [!DNL Experience Manager Forms] en tant qu’administrateur ou administratrice et accédez aux bundles de la console web d’[!DNL Experience Manager]. L’URL par défaut est [](https://localhost:4502/system/console/configMgr).
+1. Connectez-vous à l’instance de création [!DNL Experience Manager Forms] en tant qu’administrateur ou administratrice et accédez aux bundles de la console web d’[!DNL Experience Manager]. L’URL par défaut est [&#128279;](https://localhost:4502/system/console/configMgr).
 
 1. Sélectionnez **[!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST]**.
 

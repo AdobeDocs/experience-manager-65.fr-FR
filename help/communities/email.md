@@ -43,7 +43,7 @@ Le service de messagerie par défaut est requis pour les notifications et les ab
 
 * Connectez-vous à l’éditeur principal avec les droits d’administrateur et accédez à la [console web](../../help/sites-deploying/configuring-osgi.md) :
 
-  * Par exemple, [](http://localhost:4503/system/console/configMgr)
+  * Par exemple, [&#128279;](http://localhost:4503/system/console/configMgr)
 
 * Recherchez le `Day CQ Mail Service` .
 * Sélectionnez l’icône Modifier .
@@ -98,7 +98,7 @@ Pour accéder aux instances de configuration d’e-mail de Communities :
 
 * Connectez-vous à l’éditeur principal avec les droits d’administrateur et accédez à la [console web](../../help/sites-deploying/configuring-osgi.md)
 
-  * Par exemple, [](http://localhost:4503/system/console/configMgr)
+  * Par exemple, [&#128279;](http://localhost:4503/system/console/configMgr)
 
 * Localisez `AEM Communities Email Reply Configuration`.
 
@@ -177,7 +177,7 @@ Pour que l’e-mail soit importé dans le référentiel, il est nécessaire de c
 
 * Connectez-vous à l’éditeur principal avec les droits d’administrateur et accédez à la console d’importation d’interrogations :
 
-  Par exemple, [](http://localhost:4503/etc/importers/polling.html)
+  Par exemple, [&#128279;](http://localhost:4503/etc/importers/polling.html)
 
 * Sélectionnez **[!UICONTROL Ajouter]**
 
@@ -191,7 +191,7 @@ Pour que l’e-mail soit importé dans le référentiel, il est nécessaire de c
 
   *(Obligatoire)* Serveur de courrier sortant. Par exemple, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
-* **[!UICONTROL Importer dans le chemin d’accès]**&amp;ast;
+* **[!UICONTROL Importer dans le chemin d’accès]**&ast;
 
   *(Obligatoire)* Définir sur `/content/usergenerated/mailFolder/postEmails`
   en accédant au dossier `postEmails` et en sélectionnant **OK**.
@@ -214,7 +214,7 @@ Pour que l’e-mail soit importé dans le référentiel, il est nécessaire de c
 
 Une fois la nouvelle configuration d’interrogation enregistrée, il est nécessaire de modifier davantage les propriétés de l’importateur d’e-mails d’abonnement pour remplacer le protocole `POP3` par `emailreply`.
 
-Utilisation de [](../../help/sites-developing/developing-with-crxde-lite.md) :
+Utilisation de [&#128279;](../../help/sites-developing/developing-with-crxde-lite.md) :
 
 * Connectez-vous à l’éditeur principal avec le privilège administrateur et accédez à [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/attributes/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Sélectionnez la configuration que vous venez de créer et modifiez les propriétés suivantes :

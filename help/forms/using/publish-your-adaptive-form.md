@@ -66,9 +66,9 @@ AEM [!DNL Forms] permet aux développeurs de formulaires d’incorporer facileme
 
 AEM [!DNL Forms] fournit un composant, le conteneur AEM [!DNL Forms], pour incorporer un formulaire adaptatif à une page AEM [!DNL Sites]. Par défaut, le composant n’est pas visible dans le conteneur AEM [!DNL Sites]. Pour activer le composant Conteneur AEM [!DNL Forms] et incorporer le formulaire adaptatif dans une page AEM [!DNL Sites], procédez comme suit :
 
-1. Créez et ouvrez une page dans le site We.Retail pour la modifier. Par exemple, [](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Le formulaire adaptatif est incorporé à la page du [!DNL Sites].
+1. Créez et ouvrez une page dans le site We.Retail pour la modifier. Par exemple, [&#128279;](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Le formulaire adaptatif est incorporé à la page du [!DNL Sites].
 
-   Vous pouvez également incorporer le formulaire adaptatif dans une page du [!DNL Site's] We.Retail existante. Par exemple, la page À NOTRE SUJET [](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Cela vous permet de créer une page plus rapidement. Les étapes ci-dessous utilisent la page nouvellement créée.
+   Vous pouvez également incorporer le formulaire adaptatif dans une page du [!DNL Site's] We.Retail existante. Par exemple, la page À NOTRE SUJET [&#128279;](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Cela vous permet de créer une page plus rapidement. Les étapes ci-dessous utilisent la page nouvellement créée.
 
    Le site We.Retail est présent nativement dans AEM. Si vous nʼavez pas installé le site We.Retail, consultez la section [Implémentation de référence de We.Retail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) pour installer le site.
 

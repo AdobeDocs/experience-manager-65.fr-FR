@@ -30,7 +30,7 @@ En règle générale, un ***administrateur*** est chargé d’ajouter une nouvel
 
 À partir de là, un ***auteur*** (ou un *spécialiste marketing*) peut désormais utiliser les modèles et composants prêts à l’emploi pour ajouter et modifier des pages, faire glisser et déposer des composants et ajouter des médias de tous types à partir de la gestion des ressources numériques, y compris des images, des vidéos et des fragments de texte (fragments de contenu).
 
-La véritable force d’AEM Mobile réside dans le fait qu’un ***développeur AEM* avisé&#x200B;**** peut étendre et créer des modèles et des composants web personnalisés pour permettre à l’*auteur AEM* de créer des expériences mobiles attrayantes et magnifiques. Ces modèles et composants ne sont pas seulement optimisés pour le monde des applications mobiles. Ils communiquent également à l’appareil et au serveur AEM (tout serveur distant) aux points d’entrée de service omnicanal.
+La véritable force d’AEM Mobile réside dans le fait qu’un ***développeur AEM* avisé&#x200B;**&#x200B;** peut étendre et créer des modèles et des composants web personnalisés pour permettre à l’*auteur AEM* de créer des expériences mobiles attrayantes et magnifiques. Ces modèles et composants ne sont pas seulement optimisés pour le monde des applications mobiles. Ils communiquent également à l’appareil et au serveur AEM (tout serveur distant) aux points d’entrée de service omnicanal.
 
 >[!NOTE]
 >

@@ -32,9 +32,9 @@ Maintenant que les composants du système de commentaires personnalisés sont en
 
 Les bibliothèques clientes nécessaires pour le style et le fonctionnement des commentaires par défaut sont également nécessaires pour les commentaires étendus.
 
-Le [ Guide des composants de communauté ](/help/communities/components-guide.md) identifie les bibliothèques clientes requises. Accédez au Guide du composant et affichez le composant Commentaires, par exemple :
+Le [&#x200B; Guide des composants de communauté &#x200B;](/help/communities/components-guide.md) identifie les bibliothèques clientes requises. Accédez au Guide du composant et affichez le composant Commentaires, par exemple :
 
-[](https://localhost:4502/content/community-components/en/comments.html)
+[&#128279;](https://localhost:4502/content/community-components/en/comments.html)
 
 Notez les trois bibliothèques clientes requises pour que Comments s’affiche et fonctionne correctement. Ils doivent être inclus là où les commentaires étendus sont référencés, ainsi que la [bibliothèque cliente des commentaires étendus](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
@@ -64,7 +64,7 @@ Vous pouvez vérifier resourceType dans CRXDE en affichant les propriétés du n
 
 #### Publier l’exemple de page {#publish-sample-page}
 
-Une fois le composant personnalisé ajouté à la page, il est également nécessaire de (re)[publier la page](/help/communities/sites-console.md#publishing-the-site).
+Une fois le composant personnalisé ajouté à la page, il est également nécessaire de (re) [publier la page](/help/communities/sites-console.md#publishing-the-site).
 
 #### Publier : commentaire alternatif sur l’exemple de page {#publish-alt-comment-on-sample-page}
 

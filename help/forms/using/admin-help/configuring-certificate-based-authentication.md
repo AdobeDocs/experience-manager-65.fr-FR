@@ -76,7 +76,7 @@ Lorsque vous testez un certificat, User Management charge les vérifications de 
    Vous pouvez utiliser les caractères suivants dans l’expression régulière :
 
    * . (n’importe quel caractère)
-   * &amp;ast; (0 occurrence ou plus)
+   * &ast; (0 occurrence ou plus)
    * () (spécifier le groupe entre parenthèses)
    * \ (permet d’utiliser un caractère regex en tant que caractère normal)
    * $n (permet de faire référence au énième groupe)
@@ -85,21 +85,21 @@ Lorsque vous testez un certificat, User Management charge les vérifications de 
 
    * Pour extraire « Alex Pink » de « Alex Pink (Authentification) »
 
-     **Regex:** (.&amp;ast;) \(Authentification\)
+     **Regex:** (.&ast;) \(Authentification\)
 
    * Pour extraire « Alex Pink » de « Alex (Authentification) Pink »
 
-     **Regex:** (.&amp;ast;)\(Authentification\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Authentification\) (.&ast;)
 
    * Pour extraire « Pink Alex » de « Alex (Authentification) Pink »
 
-     **Regex:** (.&amp;ast;)\(Authentification\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Authentification\) (.&ast;)
 
      Ordre personnalisé : $2 $1 (renvoyer le deuxième groupe, concaténé au premier groupe, capturé par un espace blanc)
 
    * Pour extraire « apink@sampleorg.com » de « smtp:apink@sampleorg.com »
 
-     **Regex:** smtp:(.&amp;ast;)
+     **Regex:** smtp:(.&ast;)
 
    Pour plus d’informations sur l’utilisation des expressions régulières, voir [Tutoriel Java sur les expressions régulières](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

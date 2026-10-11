@@ -59,7 +59,7 @@ Modifiez le nom d’utilisateur et le mot de passe d’une configuration BrightE
 
 Associez des pages à une configuration BrightEdge pour envoyer des données de page au service BrightEdge pour analyse. Lorsque vous associez une page à une configuration, les pages enfants héritent de l’association. En règle générale, vous associez la page d’accueil de votre site afin que les données de toutes les pages soient envoyées à BrightEdge.
 
-1. Ouvrez la console Sites web classique. ([](http://localhost:4502/siteadmin#/content))
+1. Ouvrez la console Sites web classique. ([&#128279;](http://localhost:4502/siteadmin#/content))
 1. Dans l’arborescence des sites web, sélectionnez le dossier ou la page qui contient la page à associer à la configuration BrightEdge.
 1. Dans la liste des pages, cliquez avec le bouton droit sur la page à configurer, puis cliquez sur Propriétés.
 1. Dans l’onglet Services cloud, cliquez sur le bouton Ajouter un service. Dans la boîte de dialogue Services cloud, sélectionnez BrightEdge Content Optimizer, puis cliquez sur OK.

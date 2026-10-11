@@ -36,7 +36,7 @@ Pour une simple démonstration, une fonctionnalité visuelle, l’avatar de l’
 
 ## Modification des scripts HBS {#modify-the-hbs-scripts}
 
-Utilisation de [](/help/sites-developing/developing-with-crxde-lite.md) :
+Utilisation de [&#128279;](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * Ouvrez [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 

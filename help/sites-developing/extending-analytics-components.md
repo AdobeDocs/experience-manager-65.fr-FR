@@ -305,7 +305,7 @@ Le contenu du fichier `topnav.jsp` devrait se présenter comme suit :
 
 Ajoutez au sidekick des composants permettant le suivi en utilisant Adobe Analytics afin de pouvoir les inclure dans votre framework.
 
-1. Ouvrez votre framework Adobe Analytics à partir de votre configuration Adobe Analytics. ([](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
+1. Ouvrez votre framework Adobe Analytics à partir de votre configuration Adobe Analytics. ([&#128279;](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
 1. Sur Sidekick, cliquez sur le bouton Conception.
 
    ![Bouton Conception avec un carré en angle droit.](assets/chlimage_1a.png)

@@ -29,7 +29,7 @@ ht-degree: 94%
 
 >[!CAUTION]
 >
->La plupart des composants de base sont désormais obsolètes avec AEM 6.5. Voir les [ notes de mise à jour](/help/release-notes/deprecated-removed-features.md) pour plus d’informations.
+>La plupart des composants de base sont désormais obsolètes avec AEM 6.5. Voir les [&#x200B; notes de mise à jour](/help/release-notes/deprecated-removed-features.md) pour plus d’informations.
 >
 >Adobe recommande l’utilisation des [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) plus modernes et extensibles dans les projets AEM. Ces composants sont inclus dans l’[exemple de contenu We.Retail](/help/sites-developing/we-retail.md) et peuvent également être [installés séparément et utilisés pour le développement](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=fr) par votre administration.
 >
