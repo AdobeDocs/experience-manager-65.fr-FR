@@ -1,5 +1,5 @@
 ---
-title: "Base de données IBM DB2\_: exécution des commandes pour des opérations de maintenance standard"
+title: 'Base de données IBM DB2 : exécution des commandes pour des opérations de maintenance standard'
 description: Ce document répertorie les commandes IBM DB2 recommandées dans le cadre des opérations de maintenance standard de votre base de données AEM Forms.
 contentOwner: admin
 content-type: reference
@@ -9,13 +9,27 @@ exl-id: 7a4281e7-1544-473a-a471-e9a4c2819a58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 100%
-
 ---
-
 # Base de données IBM DB2 : exécution des commandes pour des opérations de maintenance standard {#ibm-db-database-running-commands-for-regular-maintenance}
 
 Il est recommandé d’exécuter régulièrement les commandes IBM DB2 suivantes dans le cadre des opérations de maintenance standard de votre base de données AEM Forms. Pour obtenir des informations détaillées sur la maintenance et l’amélioration des performances de la base de données DB2, reportez-vous au *Guide d’administration d’IBM DB2*.
@@ -34,7 +48,7 @@ Pour une base de données de petite taille, par exemple 10 000 utilisateurs ou
 
 Pour les bases de données plus volumineuses, par exemple 100 000 utilisateurs ou 10 000 groupes, exécutez la commande `reorg` avant la commande `runstats`.
 
-## Utilisation de la commande runstats sur la base de données AEM forms {#use-the-runstats-command-on-your-aem-forms-database}
+## Utilisation de la commande runstats sur la base de données AEM Forms {#use-the-runstats-command-on-your-aem-forms-database}
 
 Exécutez la commande `runstats` sur les tables et index de base de données AEM forms suivants.
 
@@ -66,7 +80,7 @@ Pour une syntaxe et une utilisation correctes, consultez la documentation du fab
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY FOR INDEXES ALL
 ```
 
-## Exécution de la commande reorg sur la base de données AEM Forms {#run-the-reorg-command-on-your-aem-forms-database}
+## Exécuter la commande reorg sur la base de données AEM Forms {#run-the-reorg-command-on-your-aem-forms-database}
 
 Exécutez la commande `reorg` sur les tables et index de base de données AEM forms suivants. Pour une syntaxe et une utilisation correctes, consultez la documentation du fabricant de la base de données.
 

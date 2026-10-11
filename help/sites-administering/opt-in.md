@@ -9,24 +9,33 @@ exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 100%
-
+source-wordcount: '1329'
+ht-degree: 97%
 ---
-
 # Souscrire à Adobe Analytics et Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
 
 AEM dispose d’une procédure de souscription pour vous aider à l’intégrer à Adobe Analytics et Target. Elle est prête à l’emploi sous la forme d’une tâche préchargée attribuée au groupe d’utilisateurs administrateurs.
 
-Lorsque vous vous connectez en tant qu’administrateur, cette tâche (**Configurer Analytics et Targeting**) est disponible dans la [boîte de réception](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks). Sur la base des informations d’identification que vous fournissez, elle vous aide à configurer et à intégrer ces services.
+Lorsque vous vous connectez avec un profil d’administration, cette tâche (**Configurer Analytics et Targeting**) est disponible dans la [boîte de réception](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks). Sur la base des informations d’identification que vous fournissez, elle vous aide à configurer et à intégrer ces services.
 
 Vous disposez des options suivantes pour configurer l’intégration :
 
 * Configurer l’intégration via la tâche.
 
-   Cela peut être effectué immédiatement ou ultérieurement ; la tâche reste dans la boîte de réception jusqu’à ce qu’une action soit effectuée. Dans les deux cas, la configuration peut être réalisée directement dans l’IU ou à l’aide d’un fichier `.properties` prédéfini.
+  Cela peut être effectué immédiatement ou ultérieurement ; la tâche reste dans la boîte de réception jusqu’à ce qu’une action soit effectuée. Dans les deux cas, la configuration peut être réalisée directement dans l’IU ou à l’aide d’un fichier `.properties` prédéfini.
 
 * Exclusion de l’intégration
 
@@ -158,9 +167,9 @@ Vous n’avez pas besoin de modifier les configurations cloud. Toutefois, vous p
 >
 >Par défaut, lorsque vous souscrivez à l’assistant de configuration Adobe Target, le ciblage précis est activé.
 >
->Le ciblage précis implique que cette configuration du service cloud attend le chargement du contexte avant de charger le contenu. Par conséquent, en termes de performances, un ciblage précis peut créer un délai de quelques millisecondes avant le chargement du contenu.
+>Le ciblage précis implique que cette configuration du service cloud attend le chargement du contexte avant de charger le contenu. Par conséquent, en termes de performances, un ciblage précis peut entraîner un délai de quelques millisecondes avant le chargement du contenu.
 >
->Le ciblage précis est toujours activé sur l’instance de création. Toutefois, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (**http://localhost:4502/etc/cloudservices.html**). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
+>Le ciblage précis est toujours activé sur l’instance de création. Cependant, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (****). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
 >
 >Si vous avez ***déjà*** créé les composants ciblés et si vous modifiez ce paramètre, vos modifications n’affectent pas ces composants. Apportez les modifications directement à ces composants.
 
@@ -180,9 +189,9 @@ Les paramètres que vous envoyez dépendent des éléments suivants :
 
 * Si vous souhaitez utiliser le fichier **marketingcloud.properties** rempli avec toutes les informations d’identification requises, vous devez alors envoyer les paramètres suivants :
 
-   * `automaticProvisioning` = `true`
-   * `servicename` = `analytics|target`
-   * `path`=chemin d’une page AEM à laquelle joindre les configurations de services cloud créées
+  * `automaticProvisioning` = `true`
+  * `servicename` = `analytics|target`
+  * `path`=chemin d’une page AEM à laquelle joindre les configurations de services cloud créées
 
   Par exemple, une requête curl qui crée à la fois des configurations Analytics et Target, et les joint à la page we.retail prendrait la forme suivante :
 
@@ -191,17 +200,17 @@ Les paramètres que vous envoyez dépendent des éléments suivants :
   ```
 
 * Si vous ne souhaitez pas utiliser le fichier **marketingcloud.properties**, vous devez alors envoyer les informations d’identification et les paramètres. Par exemple :
-   * automaticProvisioning= `true`
-   * serviceName= `analytics|target`
-   * path=chemin d’une page AEM à laquelle joindre les configurations de services cloud créées ; plusieurs chemins peuvent être définis.
-   * analytics.server= `https://servername`
-   * analytics.company= `Name of company`
-   * analytics.username= `me`
-   * analytics.secret= `secret`
-   * analytics.reportsuite= `we-retail`
-   * target.clientcode= `mycompany`
-   * target.email= `me@adobe.com`
-   * target.password= `password`
+  * automaticProvisioning= `true`
+  * serviceName= `analytics|target`
+  * path=chemin d’une page AEM à laquelle joindre les configurations de services cloud créées ; plusieurs chemins peuvent être définis.
+  * analytics.server= `https://servername`
+  * analytics.company= `Name of company`
+  * analytics.username= `me`
+  * analytics.secret= `secret`
+  * analytics.reportsuite= `we-retail`
+  * target.clientcode= `mycompany`
+  * target.email= `me@adobe.com`
+  * target.password= `password`
 
   Dans ce cas, la requête curl qui crée à la fois des configurations Analytics et Target, et qui les joint à la page we-retail, prendrait la forme suivante :
 
