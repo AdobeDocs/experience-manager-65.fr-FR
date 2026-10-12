@@ -289,9 +289,9 @@ Lors de la résolution des problèmes, définissez les enregistreurs suivants su
 
 >[!MORELIKETHIS]
 >
->* Métadonnées [C2PA dans la vue Assets de  [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)
->* [Métadonnées C2PA dans  [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/content-credentials)
->* [Métadonnées C2PA dans  [!DNL Dynamic Media]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)
+>* Métadonnées [C2PA dans la vue Assets de  [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)
+>* [Métadonnées C2PA dans  [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/fr/docs/experience-manager-assets-essentials/help/content-credentials)
+>* [Métadonnées C2PA dans  [!DNL Dynamic Media]](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)
 >* [Écriture différée XMP sur les rendus](/help/assets/xmp-writeback.md)
 >* [Ajoutez un filigrane à vos ressources](/help/assets/watermarking.md)
 >* [&#128279;](https://contentauthenticity.org/)
