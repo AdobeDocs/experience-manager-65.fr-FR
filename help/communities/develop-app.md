@@ -53,7 +53,7 @@ Utilisation de CRXDE Lite :
 
 ### Scripts d’en-tête et de corps {#head-and-body-scripts}
 
-1. Dans le volet de l’explorateur **&#x200B;**, accédez à `/apps/an-scf-sandbox/components/playpage` et double-cliquez sur le fichier `playpage.jsp` pour l’ouvrir dans le volet d’édition.
+1. Dans le volet de l’explorateur ****, accédez à `/apps/an-scf-sandbox/components/playpage` et double-cliquez sur le fichier `playpage.jsp` pour l’ouvrir dans le volet d’édition.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -189,4 +189,4 @@ Modifiez l’URL du navigateur en page racine : `http://localhost:4502/editor.ht
 
 Une fois le site publié, accéder à la page racine sur une instance de publication redirige vers la page en anglais.
 
-La dernière étape avant de lire les composants SCF de Communities consiste à ajouter un dossier de bibliothèques clientes (clientlibs) .... [&#x200B; Ajouter des bibliothèques clientes &#x200B;](add-clientlibs.md)
+La dernière étape avant de lire les composants SCF de Communities consiste à ajouter un dossier de bibliothèques clientes (clientlibs) .... [ Ajouter des bibliothèques clientes ](add-clientlibs.md)
