@@ -95,7 +95,7 @@ Si vous remplacez la ressource d’origine par un fichier binaire qui n’a pas 
 
 ### Affichage des métadonnées C2PA dans l’interface utilisateur [!DNL Assets] {#view-c2pa-metadata}
 
-Les Assets qui transportent des métadonnées C2PA affichent le badge **cr** (métadonnées C2PA) dans l’interface utilisateur [!DNL Assets]. Accédez à **** > **[!UICONTROL Fichiers]** et recherchez le badge dans le coin inférieur gauche de :
+Les Assets qui transportent des métadonnées C2PA affichent le badge **cr** (métadonnées C2PA) dans l’interface utilisateur [!DNL Assets]. Accédez à **&#x200B;**&#x200B;> **[!UICONTROL Fichiers]** et recherchez le badge dans le coin inférieur gauche de :
 
 * Miniature de la ressource en **[!UICONTROL mode Carte]**.
 * Miniature de la ressource en mode **[!UICONTROL Colonnes]**. Sélectionnez la ressource pour afficher sa miniature.
@@ -294,5 +294,5 @@ Lors de la résolution des problèmes, définissez les enregistreurs suivants su
 >* [Métadonnées C2PA dans  [!DNL Dynamic Media]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)
 >* [Écriture différée XMP sur les rendus](/help/assets/xmp-writeback.md)
 >* [Ajoutez un filigrane à vos ressources](/help/assets/watermarking.md)
->* [](https://contentauthenticity.org/)
+>* [&#128279;](https://contentauthenticity.org/)
 >* [Vérifier](https://contentcredentials.org/verify)
