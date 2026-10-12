@@ -41,4 +41,4 @@ Un lancement est créé afin de vous permettre d’activer des modifications pou
 >
 >Dans l’interface utilisateur classique, il n’est pas possible d’utiliser plusieurs branches sources pour un lancement.
 
-Vous pouvez accéder directement à la console Lancements avec [](http://localhost:4502/libs/launches/content/admin.html)
+Vous pouvez accéder directement à la console Lancements avec [&#128279;](http://localhost:4502/libs/launches/content/admin.html)
