@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: f46e653863a8724a5f50bed7a2f76079803b162e
+source-git-commit: 1af0281a94789888e87ba959f82ff491f4d7ee60
 workflow-type: tm+mt
-source-wordcount: '8300'
+source-wordcount: '8302'
 ht-degree: 95%
 ---
 
@@ -419,7 +419,7 @@ ht-degree: 95%
     + [Intégration de ressources avec le flux d’activités](/help/assets/extending-activity-stream.md)
     + [Extension de l’éditeur de ressources](/help/assets/asseteditorx.md)
     + [API HTTP [!DNL Assets]](/help/assets/mac-api-assets.md)
-    + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] &#x200B;](/help/assets/assets-api-content-fragments.md)
+    + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] ](/help/assets/assets-api-content-fragments.md)
     + [API GraphQL pour les fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
     + [Utilisation de l’IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
     + [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
@@ -433,6 +433,7 @@ ht-degree: 95%
     + [Configuration de la fonctionnalité de métadonnées](/help/assets/metadata-config.md)
     + [Schémas de métadonnées](/help/assets/metadata-schemas.md)
     + [Écriture différée XMP sur les rendus](/help/assets/xmp-writeback.md)
+    + [Métadonnées C2PA](/help/assets/c2pa-metadata.md)
     + [Partage des liens des ressources](/help/assets/link-sharing.md)
     + [Rapports de ressources](/help/assets/asset-reports.md)
     + [Configuration du service de contenu dynamique pour le balisage](/help/assets/config-smart-tagging.md)
@@ -446,7 +447,7 @@ ht-degree: 95%
     + [[!DNL Assets] et MediaLibrary](/help/assets/medialibrary.md)
     + [Utilisation de PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
     + [Configuration des restrictions de chargement](/help/assets/configuring-asset-upload-restrictions.md)
-    + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+    + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
     + [Intégration à  [!DNL InDesign Server]](/help/assets/indesign.md)
     + [Digital Rights Management dans Assets](/help/assets/drm.md)
     + [Utilisation du package de démonstration pour Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
@@ -1233,7 +1234,7 @@ ht-degree: 95%
     + [Génération et utilisation de hachages dans des formulaires PDF dynamiques](/help/forms/developing/hashing-forms.md)
     + [Transmettre des informations d’identification à l’aide des en-têtes WS-Security](/help/forms/developing/passing-credentials.md)
   + Glossaire {#aem-forms-glossary}
-    + {hide-from-toc}[Glossaires &#x200B;](/help/forms/using/aem-forms-glossary.md)
+    + {hide-from-toc}[Glossaires ](/help/forms/using/aem-forms-glossary.md)
 + IA dans AEM {#ai-in-aem}
   + [Vue d’ensemble](/help/ai-in-aem/overview.md)
   + Assistant IA {#ai-assistant}
