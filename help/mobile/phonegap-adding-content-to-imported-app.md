@@ -35,7 +35,7 @@ Pour faciliter la compréhension de l’explication, AEM Experience Cloud est ut
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-Dans cet exemple, la page d’accueil de l’application va être créée. En examinant la source [&#128279;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Notez que le développeur ou la développeuse d’applications a défini une page d’accueil et fourni un modèle pour la page générée par l’application. Sur cette page, le développeur d’application et le développeur AEM doivent se coordonner. Le chemin d’accès au modèle de page d’accueil dans l’application de référence hybride est défini sur « content/mobileapps/hybrid-reference-app/en/welcome.template.html ». Ce chemin est important, car le développeur AEM créera sa page d’accueil dans le référentiel AEM à l’aide du même chemin.
+Dans cet exemple, la page d’accueil de l’application va être créée. En examinant la source [](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Notez que le développeur ou la développeuse d’applications a défini une page d’accueil et fourni un modèle pour la page générée par l’application. Sur cette page, le développeur d’application et le développeur AEM doivent se coordonner. Le chemin d’accès au modèle de page d’accueil dans l’application de référence hybride est défini sur « content/mobileapps/hybrid-reference-app/en/welcome.template.html ». Ce chemin est important, car le développeur AEM créera sa page d’accueil dans le référentiel AEM à l’aide du même chemin.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
