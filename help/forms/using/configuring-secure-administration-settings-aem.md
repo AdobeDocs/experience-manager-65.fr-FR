@@ -1,37 +1,51 @@
 ---
 title: Configurer les paramètres d’administration sécurisée d’AEM Forms sur JEE
-
 description: Découvrez comment administrer des comptes d’utilisateurs et services qui, contrairement à un environnement de développement privé, ne sont pas nécessaires dans un environnement de production AEM Forms sur JEE.
-
-
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
-
 role: Admin,User
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 100%
 ---
 # Configurer les paramètres d’administration sécurisée d’AEM Forms sur JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
-Découvrez comment administrer des comptes d’utilisateurs et services qui, contrairement à un environnement de développement privé, ne sont pas nécessaires dans un environnement de production AEM Forms sur JEE.
+Découvrez comment administrer des comptes d’utilisateurs et d’utilisatrices et des services qui, bien que nécessaires dans un environnement de développement privé, ne sont pas nécessaires dans un environnement de production d’AEM Forms on JEE.
 
 En règle générale, les développeurs et les développeuses n’utilisent pas l’environnement de production pour créer et tester leurs applications. Pour cette raison, vous devez administrer des comptes utilisateur et des services qui, bien que nécessaires dans un environnement de développement privé, ne le sont pas dans un environnement de production.
 
-Cet article décrit les méthodes permettant de réduire la surface d’attaque globale par le biais d’options d’administration fournies par AEM Forms sur JEE.
+Cet article décrit les méthodes permettant de réduire la surface d’attaque globale par le biais d’options d’administration fournies par AEM Forms on JEE.
 
 ## Désactivation de l’accès distant non essentiel aux services {#disabling-non-essential-remote-access-to-services}
 
-Une fois AEM Forms sur JEE installé et configuré, de nombreux services sont disponibles pour un appel distant sur SOAP et Enterprise JavaBeans™ (EJB). Le terme distant, dans ce cas, fait référence à tout appelant disposant d’un accès réseau aux ports SOAP, EJB ou Action Message Format (AMF) pour le serveur d’applications.
+Une fois AEM Forms on JEE installé et configuré, de nombreux services sont disponibles pour un appel distant sur SOAP et Enterprise JavaBeans™ (EJB). Le terme distant, dans ce cas, fait référence à tout appelant disposant d’un accès réseau aux ports SOAP, EJB ou Action Message Format (AMF) pour le serveur d’applications.
 
-Bien que l’utilisation des services d’AEM Forms sur JEE implique la transmission d’informations d’identification valides pour un appelant autorisé, vous devriez limiter la possibilité d’accès distant aux seuls services dont vous souhaitez effectivement qu’ils soient accessibles à distance. Pour limiter efficacement l’accessibilité, réduisez au minimum le nombre de services accessibles à distance sans gêner le fonctionnement du système, puis activez l’appel distant pour les services supplémentaires dont vous avez besoin.
+Bien que l’utilisation des services d’AEM Forms on JEE implique la transmission d’informations d’identification valides pour un appelant autorisé, vous devriez limiter la possibilité d’accès distant aux seuls services dont vous souhaitez effectivement qu’ils soient accessibles à distance. Pour limiter efficacement l’accessibilité, réduisez au minimum le nombre de services accessibles à distance sans gêner le fonctionnement du système, puis activez l’appel distant pour les services supplémentaires dont vous avez besoin.
 
-Les services AEM Forms on JEE ont toujours besoin d’au moins un accès SOAP. Ces services sont généralement requis par Workbench, mais comprennent également des services appelés par l’application web Workspace.
+Les services AEM Forms on JEE ont toujours besoin d’au moins un accès SOAP. Ces services sont généralement requis par l’atelier, mais comprennent également des services appelés par l’application web Workspace.
 
 Suivez cette procédure à l’aide de la page web Applications et services dans la console d’administration :
 
@@ -68,7 +82,7 @@ Suivez cette procédure à l’aide de la page web Applications et services dans
 
 ## Désactivation des accès anonymes non essentiels pour des services {#disabling-non-essential-anonymous-access-to-services}
 
-Certains services du serveur Forms Server permettent d’effectuer des appels non authentifiés (anonymes) pour certaines opérations. Cela signifie qu’une ou plusieurs opérations exposées par le service peuvent être appelées par une personne authentifiée ou non.
+Certains services du Serveur Formulaires permettent d’effectuer des appels non authentifiés (anonymes) pour certaines opérations. Cela signifie qu’une ou plusieurs opérations exposées par le service peuvent être appelées par une personne authentifiée ou non.
 
 1. Connectez-vous à la console d’administration en saisissant l’URL suivante dans un navigateur web :
 

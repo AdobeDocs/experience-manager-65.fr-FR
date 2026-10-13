@@ -9,13 +9,22 @@ exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 98%
-
 ---
-
 # Résolution des problèmes d’AEM lors de la création{#troubleshooting-aem-when-authoring}
 
 La section suivante traite de certains problèmes susceptibles d’être rencontrés lorsque vous utilisez AEM, ainsi que des suggestions pour résoudre ces problèmes.
@@ -32,56 +41,56 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 * **Problème** :
 
-   * Vous avez réalisé des modifications sur une page et répliqué la page sur le site de publication, mais c’est toujours l’*ancienne* version de la page qui s’affiche sur le site de publication.
+  * Vous avez réalisé des modifications sur une page et répliqué la page sur le site de publication, mais c’est toujours l’*ancienne* version de la page qui s’affiche sur le site de publication.
 
 * **Raison** :
 
-   * Cela peut être dû à plusieurs raisons, le plus souvent le cache (votre navigateur local ou le Dispatcher), bien que cela puisse parfois venir d’un problème avec la file d’attente de réplication.
+  * Cela peut être dû à plusieurs raisons, le plus souvent le cache (votre navigateur local ou le Dispatcher), bien que cela puisse parfois venir d’un problème avec la file d’attente de réplication.
 
 * **Solutions** :
 
-   * Il existe alors plusieurs possibilités :
-   * Vérifiez que la page a bien été répliquée. Vérifiez le statut de la page et, si nécessaire, le statut de la file d’attente de réplication.
-   * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
-   * Ajoutez `?` à la fin de l’URL de la page. Par exemple :
+  * Il existe alors plusieurs possibilités :
+  * Vérifiez que la page a bien été répliquée. Vérifiez le statut de la page et, si nécessaire, le statut de la file d’attente de réplication.
+  * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
+  * Ajoutez `?` à la fin de l’URL de la page. Par exemple :
 
-     `http://localhost:4502/sites.html/content?`
+    `http://localhost:4502/sites.html/content?`
 
-     Ceci demandera la page directement auprès d’AEM et contournera le dispatcher. Si vous recevez la page mise à jour, ceci indique que vous devez vider la mémoire cache du dispatcher.
+    Ceci demandera la page directement auprès d’AEM et contournera le dispatcher. Si vous recevez la page mise à jour, ceci indique que vous devez vider la mémoire cache du dispatcher.
 
-   * Contactez l’administrateur du système en cas de problèmes avec les files d’attente de réplication.
+  * Contactez l’administrateur du système en cas de problèmes avec les files d’attente de réplication.
 
 ## Sidekick non visible {#sidekick-not-visible}
 
 * **Problème** :
 
-   * Le sidekick n’est pas visible lors de la modification d’une page de contenu dans l’environnement de création.
+  * Le sidekick n’est pas visible lors de la modification d’une page de contenu dans l’environnement de création.
 
 * **Raison** :
 
-   * Dans de rares cas, il se peut que vous ayez positionné l’en-tête de votre sidekick en dehors de votre fenêtre active. Cela signifie que vous ne pouvez pas le repositionner.
+  * Dans de rares cas, il se peut que vous ayez positionné l’en-tête de votre sidekick en dehors de votre fenêtre active. Cela signifie que vous ne pouvez pas le repositionner.
 
 * **Solution** :
 
-   * Fermez votre session en cours et rouvrez-la. Le sidekick revient à la position par défaut.
+  * Fermez votre session en cours et rouvrez-la. Le sidekick revient à la position par défaut.
 
 ## Chercher et remplacer : toutes les instances ne sont pas remplacées {#find-replace-not-all-instances-are-replaced}
 
 * **Problème :**
 
-   * Si vous utilisez l’option **Rechercher et remplacer**, il se peut que certaines instances du terme `find` ne soient pas remplacées sur une page.
+  * Si vous utilisez l’option **Rechercher et remplacer**, il se peut que certaines instances du terme `find` ne soient pas remplacées sur une page.
 
 * **Raison** :
 
-   * Le fonctionnement de l’option **Rechercher et remplacer** dépend de la façon dont le contenu est enregistré et s’il peut faire l’objet de recherches. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
+  * Le fonctionnement de l’option **Rechercher et remplacer** dépend de la façon dont le contenu est enregistré et s’il peut faire l’objet de recherches. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
 
-      * `jcr:title`
-      * `jcr:description`
-      * `jcr:text`
-      * `text`
+    * `jcr:title`
+    * `jcr:description`
+    * `jcr:text`
+    * `text`
 
 * **Solution** :
 
-   * Ces définitions peuvent être modifiées dans la configuration du **servlet Rechercher et remplacer de la gestion de contenu Web Day CQ** à l’aide de la **console Web**, par exemple à l’adresse
+  * Ces définitions peuvent être modifiées dans la configuration du **servlet Rechercher et remplacer de la gestion de contenu Web Day CQ** à l’aide de la **console Web**, par exemple à l’adresse
 
-     `http://localhost:4502/system/console/configMgr`
+    `http://localhost:4502/system/console/configMgr`

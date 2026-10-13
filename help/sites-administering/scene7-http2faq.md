@@ -9,13 +9,22 @@ exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 100%
-
 ---
-
 # FAQ sur la diffusion de contenu HTTP/2{#http-delivery-of-content-faq}
 
 Adobe se réjouit d’annoncer la disponibilité de la diffusion de contenu HTTP/2. Lorsque vous utilisez HTTP/2, les performances globales augmentent.
@@ -24,7 +33,7 @@ Adobe se réjouit d’annoncer la disponibilité de la diffusion de contenu HTTP
 
 Le HTTP/2 améliore la communication entre les navigateurs et les serveurs, en accélérant le transfert d’informations tout en réduisant la puissance de traitement nécessaire.
 
-Le site web suivant décrit le HTTP/2 et ses avantages de manière simple et rapide :
+Le site web suivant décrit le HTTP/2 et ses avantages de manière brève et simple :
 
 [Ce que vous devez savoir sur le HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
@@ -81,7 +90,7 @@ Les demandes sont traitées dans l’ordre dans lequel l’assistance clientèle
 
 ## Quels risques présente la transition vers HTTP/2 ? {#what-are-the-risks-with-moving-to-http}
 
-La transition vers HTTP/2 efface votre cache sur le réseau CDN, car elle implique de passer à une nouvelle configuration de réseau CDN.
+La transition vers HTTP/2 efface votre cache sur le CDN, car elle implique de passer à une nouvelle configuration du CDN.
 
 Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. C’est pour cette raison qu’Adobe prévoit de ne gérer que quelques transitions à la fois afin d’offrir des performances acceptables lors de l’extraction des demandes du site d’origine d’Adobe.
 

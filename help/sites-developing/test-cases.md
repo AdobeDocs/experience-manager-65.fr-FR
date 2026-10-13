@@ -10,13 +10,22 @@ exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
-
+source-wordcount: '532'
+ht-degree: 83%
 ---
-
 # Définir vos cas de test{#defining-your-test-cases}
 
 Vos cas de test doivent être basés sur les éléments suivants :
@@ -58,12 +67,12 @@ Bien que le sujet soit traité dans [Environnements](/help/sites-developing/the-
 
 Vous devez traiter AEM comme s’il s’agissait de deux applications séparées :
 
-* L’environnement *Auteur*
+* l’environnement *Auteur* ;
 Cette instance permet aux auteurs de saisir et de publier du contenu.
 Elle comporte un plus petit nombre prévisible d’utilisateurs et d’utilisatrices, pour qui des fonctionnalités et des performances spécifiques sont indispensables.
 
-* L’environnement de *Publication*
-Cette instance affiche le site web sous sa forme publiée pour que les visiteurs et visiteuses puissent y accéder.
+* l’environnement *Publication* ;
+Cette instance présente le site web sous sa forme publiée pour que les visiteurs puissent y accéder.
 Elle comporte généralement un plus grand nombre d’utilisateurs pour lequel le volume de trafic n’est pas toujours prévisible à 100 %. La performance est toujours cruciale lors de la réponse aux demandes. Tenez également compte de la mise en cache et de la répartition de charge.
 
 Bien que le même logiciel soit utilisé, ces éléments :
@@ -89,20 +98,20 @@ La plupart des projets installent Dispatcher pour la mise en cache et la répart
 Les tests sont difficiles (la mise en cache se fait à différents niveaux et à divers endroits) et doivent être réalisés en boîte noire. Les aspects clés à tester sont les suivants :
 
 * **Précision**
-Assurez-vous que les mises à jour du contenu sont visibles pour les visiteurs et visiteuses sur le site.
+Garantit que les mises à jour du contenu sont visibles pour le visiteur du site Web.
 
 * **Continuité**
 Assurez-vous que le site web est toujours disponible lorsqu’un serveur est arrêté.
 
 * **Clusters**
-Utilisés pour fournir les éléments suivants :
+Utilisé pour fournir les éléments suivants :
 
-   * **Basculement**
-Si un serveur tombe en panne, les autres serveurs du cluster prennent le relais.
+  * **Basculement**
+    Si un serveur tombe en panne, les autres serveurs du cluster prennent le relais.
 
-   * **Performances**
-L’équilibrage de charge avec basculement intégral améliore les performances d’un cluster.
-Lorsqu’il est utilisé pour un projet client, le cluster doit être testé pour confirmer le bon fonctionnement de la configuration.
+  * **Performance**
+    L’équilibrage de charge avec basculement intégral améliore les performances d’un cluster.
+    Lorsqu’il est utilisé pour un projet client, le cluster doit être testé pour confirmer le bon fonctionnement de la configuration.
 
 ## Test de logiciels tiers {#testing-third-party-software}
 

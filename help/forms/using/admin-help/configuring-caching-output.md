@@ -1,6 +1,6 @@
 ---
-title: Configurer la mise en cache pour la sortie
-description: Le service Output met en cache les conceptions de formulaire, les fragments et les images. Découvrez comment configurer la mise en cache pour la sortie.
+title: Configurer la mise en cache pour Output
+description: Le service Output met en cache les conceptions de formulaire, les fragments et les images. Découvrez comment configurer la mise en cache pour Output.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
@@ -9,12 +9,28 @@ exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 100%
 ---
-# Configurer la mise en cache pour la sortie  {#configuring-caching-for-output}
+# Configurer la mise en cache pour Output  {#configuring-caching-for-output}
 
 >[!NOTE]
 > 
@@ -47,37 +63,37 @@ L’heure du point de contrôle du cache est automatiquement réinitialisée lor
 
 ### Utilisation de la mise en cache sans condition {#using-unconditional-caching}
 
-Dans ce mode, lorsque le service Output reçoit une demande, il valide les ressources requises (conception de formulaire et toute ressource liée comme les fragments et les images). Le service compare la date et l’heure des ressources du référentiel à celles des ressources du cache. Si la ressource du cache est plus ancienne, le service la met à jour.
+Dans ce mode, lorsque le service Output reçoit une demande, il valide les ressources requises (conception de formulaire et toute ressource liée comme les fragments et les images). Le service Output compare la date et l’heure des ressources du référentiel à celles des ressources du cache. Si la ressource du cache est plus ancienne, le service Output la met à jour.
 
 Ce mode de mise en cache garantit l’utilisation des ressources les plus récentes. Cependant, les performances sont affectées car le service Output valide les éléments mis en cache en les comparant à ceux du référentiel à chaque demande. Ce mode de mise en cache convient aux environnements de développement ou de test dans lesquels les ressources sont fréquemment mises à jour et pour lesquels les performances ne sont pas la priorité.
 
 **Définition de la mise en cache sans condition**
 
-1. Dans Administration Console, cliquez sur Services > Output.
-1. Sous Paramètres de contrôle du cache de sortie, sélectionnez Sans condition et cliquez sur Enregistrer.
+1. Dans la console d’administration, cliquez sur Services > Output.
+1. Sous Paramètres de contrôle du cache Output, sélectionnez Sans condition et cliquez sur Enregistrer.
 
 ### Utilisation du point de contrôle du cache {#use-the-cache-check-point}
 
-Lorsqu’il est dans ce mode, le service Output ne recherche les versions des ressources les plus récentes dans le référentiel que lorsque la date et l’heure de la ressource mise en cache est antérieures à l’heure du point de contrôle du cache. L’heure du point de contrôle du cache le plus récent s’affiche dans la page Output de la console d’administration.
+Lorsqu’il est dans ce mode, le service Output ne recherche les versions des ressources les plus récentes dans le référentiel que lorsque la date et l’heure de la ressource mise en cache sont antérieures à l’heure du point de contrôle du cache. L’heure du point de contrôle du cache le plus récent s’affiche dans la page Output de la console d’administration.
 
-Utilisez ce mode de mise en cache dans des environnements de production hautement performants où les performances sont d’un intérêt important et où les modifications apportées aux ressources sont peu fréquentes. Vous pouvez réinitialiser l’heure du point de contrôle du cache lorsque vous souhaitez déployer les modifications apportées aux ressources du référentiel.
+Utilisez ce mode de mise en cache dans des environnements de production hautement performants où les performances sont une préoccupation et où les modifications apportées aux ressources sont peu fréquentes. Vous pouvez réinitialiser l’heure du point de contrôle du cache lorsque vous souhaitez déployer les modifications apportées aux ressources du référentiel.
 
 **Définition de l’utilisation d’un point de contrôle du cache**
 
 1. Dans la console d’administration, cliquez sur Services > Output.
-1. Sous Paramètres de contrôle du cache de sortie, sélectionnez Uniquement si la dernière validation est antérieure à l’heure du point de contrôle du cache et cliquez sur Enregistrer.
+1. Sous Paramètres de contrôle du cache Output, sélectionnez Uniquement si la dernière validation est antérieure à l’heure du point de contrôle du cache et cliquez sur Enregistrer.
 
 **Réinitialisation du point de contrôle du cache**
 
-1. Dans Administration Console, cliquez sur Services > Output.
-1. Sous Paramètres de contrôle du cache de sortie, cliquez sur Point de contrôle du cache.
+1. Dans la console d’administration, cliquez sur Services > Output.
+1. Sous Paramètres de contrôle du cache Output, cliquez sur Point de contrôle du cache.
 
 ### Réinitialisation du contenu du cache {#reset-the-cache-contents}
 
-Vous pouvez vider le contenu du cache à tout moment. Après la réinitialisation du cache, la première demande est plus lente pour chaque formulaire, car le service Output effectue un rendu complet et crée un nouveau contenu de cache.
+Vous pouvez vider le contenu du cache à tout moment. Après la réinitialisation du cache, la première demande pour chaque formulaire est plus lente, car le service Output effectue un rendu complet et crée un nouveau contenu de cache.
 
-1. Dans Administration Console, cliquez sur Services > Output.
-1. Sous Paramètres de contrôle du cache de sortie, cliquez sur Réinitialiser le cache.
+1. Dans la console d’administration, cliquez sur Services > Output.
+1. Sous Paramètres de contrôle du cache Output, cliquez sur Réinitialiser le cache.
 
 ## Configuration des paramètres du cache {#configuring-cache-settings}
 
@@ -93,9 +109,9 @@ Pour accéder à ces paramètres, dans la console d’administration, cliquez su
 
 Les paramètres de la zone **Paramètres du cache global** affectent tous les types de cache. Si vous modifiez l’un de ces paramètres, redémarrez le service Output pour que ce changement soit appliqué. Pour redémarrer ce service, utilisez Workbench ou consultez la section [Démarrage ou arrêt des services associés aux modules AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) pour obtenir des instructions.
 
-**Taille max. du document du cache (Ko) :** taille maximale, en kilo-octets, d’une conception de formulaire ou autre ressource pouvant être stockée dans un cache mémoire. Ce paramètre global s’applique à tous les caches mémoire. Si une ressource est supérieure à cette valeur, elle n’est pas mise en cache dans la mémoire. La valeur par défaut est 1024 kilo-octets. Ce paramètre n’a aucune incidence sur le cache disque.
+**Taille max. du document du cache (Ko) :** taille maximale, en kilo-octets, d’une conception de formulaire ou autre ressource pouvant être stockée dans un cache mémoire. Ce paramètre global s’applique à tous les caches mémoire. Si une ressource dépasse cette valeur, elle n’est pas mise en cache dans la mémoire. La valeur par défaut est 1024 kilo-octets. Ce paramètre n’a aucune incidence sur le cache disque.
 
-**Mise en cache des rendus de formulaire activée :** cette option est sélectionnée par défaut, ce qui signifie que les formulaires rendus sont mis en cache pour récupération ultérieure. Ce paramètre a peu d’effet sur les performances du service Output, car il ne met pas en cache les documents non interactifs. Cette option n’a aucune incidence lorsque vous utilisez le service Output avec des documents non interactifs rendus sur le client.
+**Mise en cache des rendus de formulaire activée :** cette option est sélectionnée par défaut, ce qui signifie que les formulaires rendus sont mis en cache pour récupération ultérieure. Ce paramètre a peu d’effet sur les performances du service Output, car il ne met pas en cache les documents non interactifs. Cette option a toutefois une incidence lorsque vous utilisez le service Output avec des documents non interactifs rendus sur le client.
 
 ### Mise en cache des conceptions de formulaire {#caching-form-designs}
 
@@ -111,7 +127,7 @@ Le service Output met toujours les conceptions de formulaire en cache sur le dis
 
 ### Mise en cache des fragments et images {#caching-fragments-and-images}
 
-Le service Output met en cache les fragments et les images utilisés dans les conceptions de formulaire sur le disque. Les performances sont améliorées, car les fragments et les images ne sont lus à partir du référentiel qu’à la première demande. Lors des demandes suivantes, le service Output lit les fragments et les images à partir du cache disque. Les fragments et les images ne sont mis en cache que sur le disque, pas dans la mémoire.
+Le service Output met en cache les fragments et les images utilisés dans les conceptions de formulaire sur le disque. Les performances sont améliorées, car les fragments et les images ne sont lus à partir du référentiel qu’à la première demande. Lors des demandes suivantes, le service Output lit les fragments et les images à partir du cache disque. Les fragments et les images ne sont mis en cache que sur le disque, pas en mémoire.
 
 Vous pouvez utiliser les paramètres suivants pour contrôler la mise en cache de fragments et d’images sur le disque. Ces paramètres se situent dans la zone **Paramètres du cache des ressources de modèle** :
 

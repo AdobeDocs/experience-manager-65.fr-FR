@@ -9,7 +9,23 @@ exl-id: 800bffd5-0cdc-4251-bba4-e350f226f019
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 96%
@@ -37,7 +53,7 @@ La chaîne comprend les éléments suivants :
 
 **Version des droits d’utilisation :** décrit la version de l’algorithme des droits d’utilisation que le certificat peut utiliser, par exemple V6.1. Cette version ne correspond pas à la version des extensions Acrobat ou Acrobat Reader DC.
 
-**Code de profil :** le code de profil est une description brève des propriétés complètes du certificat (par exemple, P8). Pour la liste des codes de profil associés à chaque type de fichier, reportez-vous à la colonne Profil du tableau de la section Profils de certificat.
+**Code de profil :** le code de profil est une description brève des propriétés complètes du certificat (par exemple, P8). Pour la liste des codes de profil associés à chaque type de fichier, reportez-vous à la colonne Code de profil du tableau de la section Profils de certificat.
 
 **Numéro de série :** un numéro de série est attribué à chaque certificat émis par Adobe, par exemple 0002054. Le support aux entreprises d’Adobe ou un représentant commercial Adobe Enterprise peut utiliser ce numéro de série pour rattacher le certificat à une commande de produit spécifique ou à une relation OEM.
 
@@ -144,7 +160,7 @@ Le tableau suivant répertorie les différents profils de certificat que vous po
 
 ## Période de validité {#validity-period}
 
-Les certificats d’évaluation sont délivrés aux client et clientes et aux développeurs et développeuses afin qu’ils puissent évaluer et développer des exemples d’applications pour les produits. La période de validité de ces certificats est comprise entre 60 et 90 jours. Ils expirent à la fin du second mois suivant la date d’émission.
+Les certificats d’évaluation sont délivrés aux clients et clientes et aux développeurs et développeuses afin qu’ils puissent évaluer et développer des exemples d’applications pour les produits. La période de validité de ces certificats est comprise entre 60 et 90 jours. Ils expirent à la fin du second mois suivant la date d’émission.
 
 Les certificats du type Intégration de partenaire sont fournis aux partenaires commerciaux Adobe pour prendre en charge le développement, l’intégration, le prototypage et la démonstration de logiciels. Ces certificats sont valables deux ans à partir de la date d’émission.
 
@@ -164,7 +180,7 @@ Les droits d’utilisation des extensions Acrobat Reader DC autorisés se comp
  <thead>
   <tr>
    <th><p>Élément Droits d’utilisation</p></th>
-   <th><p>Fonctionnalité activée dans Adobe Reader lors de l’affichage d’un document PDF dont les droits sont activés</p></th>
+   <th><p>Fonctionnalité activée dans Adobe Reader lors de l’affichage d’un document PDF pour lequel des droits d’utilisation sont activés</p></th>
   </tr>
  </thead>
  <tbody>
@@ -202,11 +218,11 @@ Les droits d’utilisation des extensions Acrobat Reader DC autorisés se comp
   </tr>
   <tr>
    <td><p>BarcodePlaintext</p></td>
-   <td><p>Imprimer un document avec des données de formulaire sous forme de code-barres et non chiffrée qui ne nécessite pas de logiciel de serveur sous licence pour être décodée.</p></td>
+   <td><p>Imprimer un document avec des données de formulaire codées en code-barres sous une forme non chiffrée ne nécessitant pas de logiciel serveur sous licence pour le décodage.</p></td>
   </tr>
   <tr>
    <td><p>AnnotOnline</p></td>
-   <td><p>Télécharger des annotations (comme des commentaires) vers et depuis un serveur permettant de réviser et de commenter des documents en ligne.</p></td>
+   <td><p>Charger et télécharger des annotations (comme des commentaires) vers et depuis un serveur permettant de réviser et de commenter des documents en ligne.</p></td>
   </tr>
   <tr>
    <td><p>FormOnline</p></td>

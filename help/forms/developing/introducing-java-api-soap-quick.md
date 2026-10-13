@@ -1,6 +1,6 @@
 ---
-title: Présentation du démarrage rapide de lʼAPI Java™
-description: Découvrez comment les opérations AEM Forms peuvent être effectuées à l’aide de l’API Java™ fortement typée d’AEM Forms activée et avec une connexion définie sur SOAP.
+title: Présentation de Java&trade ; API QuickStart
+description: Découvrez comment les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms Java&trade ; fortement typée activée avec la connexion SOAP.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,13 +9,25 @@ role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 100%
-
+source-wordcount: '533'
+ht-degree: 95%
 ---
-
 # Présentation du démarrage rapide de lʼAPI Java™ {#introducing-java-api-quickstart}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -65,7 +77,7 @@ La liste des fichiers JAR se trouve dans une section de commentaires située au 
 
 ## Démarrage rapide de plusieurs services {#multiple-services-quick-start}
 
-La plupart des démarrages rapides situés dans *Programmation avec AEM Forms sur JEE* appellent un service spécifique pour effectuer une opération. Cependant, certains démarrages rapides appellent plusieurs services AEM Forms pour effectuer un workflow donné. La liste suivante fournit des démarrages rapides Java™ qui appellent plusieurs services AEM Forms :
+La plupart des démarrages rapides situés dans *Programmation avec AEM Forms sur JEE* appellent un service spécifique pour effectuer une opération. Cependant, certains démarrages rapides appellent plusieurs services AEM Forms pour effectuer un workflow donné. La liste suivante fournit des démarrages rapides Java™ qui appellent plus d’un service AEM Forms :
 
 [Démarrage rapide (mode SOAP) : transmettre un document situé dans le référentiel AEM Forms au service Output à l’aide de l’API Java™](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (appelle les services Repository et Output).
 

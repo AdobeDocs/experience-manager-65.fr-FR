@@ -1,6 +1,6 @@
 ---
 title: Console Rapports
-description: Découvrez comment utiliser différents rapports auxquels vous pouvez accéder de plusieurs manières à partir de l’environnement de création Adobe Experience Manager.
+description: Découvrez comment utiliser différents rapports auxquels vous pouvez accéder de différentes manières à partir de l’environnement de création Adobe Experience Manager.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -10,28 +10,35 @@ role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '415'
 ht-degree: 6%
-
 ---
-
 # Console Rapports {#reports-console}
 
 ## Vue d’ensemble {#overview}
 
-Pour AEM Communities, plusieurs rapports sont accessibles de plusieurs manières à partir de l’environnement de création.
+Pour AEM Communities, différents rapports sont accessibles de différentes manières à partir de l’environnement de création.
 
-En général, les différents rapports sont :
+En général, les différents rapports sont les suivants :
 
 * [Rapport Vues](#views-report)
 
-  Fournit un tableau des vues du contenu par les membres de la communauté et les visiteurs du site pour n’importe quel site de la communauté.
+  Fournit un graphique des vues du contenu par les membres de la communauté et les visiteurs de n’importe quel site de la communauté.
 
 * [Rapport Publications](#posts-report)
 
-  Fournit un graphique des différents types de publications par membres de la communauté sur n’importe quel site de la communauté.
+  Fournit un graphique des différents types de publications des membres de la communauté sur n’importe quel site de la communauté.
 
 Les rapports tabulaires peuvent être exportés au format .csv pour un traitement ultérieur.
 
@@ -39,48 +46,48 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
 ### Rapports pour les sites de la communauté {#reports-for-community-sites}
 
-* À partir de la navigation globale : **[!UICONTROL Navigation]** > **[!UICONTROL Communautés]** > **[!UICONTROL Rapports]**
+* À partir de la navigation globale : **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Reports]**
 
-* Choisissez parmi :
+* Choisir parmi :
 
-   * **[!UICONTROL Rapport d’affectations]**
+  * **[!UICONTROL Rapport d&#39;affectations]**
 
-      * Générez un rapport pour le site, l’utilisateur ou le groupe de la communauté sélectionné et l’affectation.
+    * Générer un rapport pour le site, l’utilisateur ou le groupe de la communauté sélectionné et l’affectation.
 
-   * **[!UICONTROL Rapport Publications]**
+  * **[!UICONTROL Rapport Publications]**
 
-      * Générez un rapport pour le site de la communauté, le type de contenu et la période sélectionnés.
+    * Générer un rapport pour le site communautaire, le type de contenu et la période sélectionnés.
 
-   * **[!UICONTROL Rapport Vues]**
+  * **[!UICONTROL Rapport Vues]**
 
-      * générez un rapport pour le site de la communauté, le type de contenu et la période sélectionnés.
+    * générer un rapport pour le site de la communauté, le type de contenu et la période sélectionnés.
 
-![reports](assets/reports1.png)
+![rapports](assets/reports1.png)
 
 ## Rapport des vues {#views-report}
 
-La console Vues permet de générer des rapports sur les pages vues par les fonctionnalités de la communauté pendant une période donnée.
+La console Vues permet de générer des rapports sur les pages vues par les fonctionnalités de communauté pendant une période donnée.
 
-![view-report](assets/view-report.png)
+![vue-rapport](assets/view-report.png)
 
 Sélectionnez les critères du rapport :
 
 * **[!UICONTROL Site]**
 
-  Sélectionnez un site de la communauté.
+  Sélectionnez un site communautaire.
 
 * **[!UICONTROL Type de contenu]**
 
-  Vous pouvez choisir l’option Tout contenu ou sélectionner l’une des fonctionnalités présentes sur le site.
+  Vous pouvez choisir Tout le contenu ou sélectionner l’une des fonctionnalités présentes sur le site.
 
 * **[!UICONTROL Période]**
 
   Sélectionnez l’une des options suivantes :
 
-   * 7 derniers jours
-   * 30 derniers jours
-   * 90 derniers jours
-   * L’année dernière
+  * 7 derniers jours
+  * 30 derniers jours
+  * 90 derniers jours
+  * Année dernière
 
 Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
 
@@ -88,7 +95,7 @@ Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
 
 ## Rapport des publications {#posts-report}
 
-La console Publications permet de générer des rapports sur le nombre de publications aux fonctions de la communauté pour une période donnée.
+La console Publications permet de générer des rapports sur le nombre de publications dans les fonctionnalités de la communauté pour une période donnée.
 
 ![post-report](assets/posts-report.png)
 
@@ -96,20 +103,20 @@ Sélectionnez les critères du rapport :
 
 * **[!UICONTROL Site]**
 
-  Sélectionnez un site de la communauté.
+  Sélectionnez un site communautaire.
 
 * **[!UICONTROL Type de contenu]**
 
-  Vous pouvez choisir l’option Tout contenu ou sélectionner l’une des fonctionnalités présentes sur le site.
+  Vous pouvez choisir Tout le contenu ou sélectionner l’une des fonctionnalités présentes sur le site.
 
 * **[!UICONTROL Période]**
 
   Sélectionnez l’une des options suivantes :
 
-   * 7 derniers jours
-   * 30 derniers jours
-   * 90 derniers jours
-   * L’année dernière
+  * 7 derniers jours
+  * 30 derniers jours
+  * 90 derniers jours
+  * Année dernière
 
 Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
 
@@ -117,12 +124,12 @@ Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
 
 ## Résolution des problèmes {#troubleshooting}
 
-### Aucun site de communauté répertorié {#no-community-sites-listed}
+### Aucun site communautaire répertorié {#no-community-sites-listed}
 
-Si aucun site de communauté n’est répertorié, vérifiez qu’Adobe Analytics a été activé pour un site. Si vous choisissez des rapports sur les affectations, assurez-vous que les affectations fonctionnent dans la structure du site de la communauté.
+Si aucun site communautaire n’est répertorié, assurez-vous qu’Adobe Analytics a été activé pour un site. Si vous choisissez des rapports sur les affectations, assurez-vous que la fonction Affectations figure dans la structure du site de la communauté.
 
-### Les rapports ne s’affichent pas dans AEM instance d’auteur {#reports-do-not-show-in-aem-author-instance}
+### Les rapports ne s’affichent pas dans l’instance d’auteur AEM {#reports-do-not-show-in-aem-author-instance}
 
-Si les rapports ne s’affichent pas dans l’instance d’auteur AEM, vérifiez les personnalisations, comme le mappage des URL sur l’instance Publish. Si le mappage des URL n’est effectué que sur l’instance Publish AEM du site Communities, assurez-vous que le même a été configuré dans l’instance AEM Author dans la configuration **Site Trend Report Social Component Factory** .
+Si les rapports ne s’affichent pas dans l’instance de création AEM, recherchez les personnalisations, telles que le mappage d’URL sur l’instance de publication. Si le mappage des URL est effectué uniquement sur l’instance de publication AEM du site des communautés, assurez-vous que le même élément a été configuré dans l’instance de création AEM dans la configuration **Fabrique de composants sociaux du rapport de tendance du site**.
 
-![Mappage d’URL sur AEM Auteur](assets/sitetrend.png)
+![Mappage d’URL sur l’auteur AEM](assets/sitetrend.png)

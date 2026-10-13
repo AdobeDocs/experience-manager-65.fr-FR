@@ -1,20 +1,33 @@
 ---
 title: Importer et exporter des données
-
 description: Utilisez le service d’intégration des données de formulaire pour importer des données dans un formulaire PDF et exporter des données d’un formulaire PDF à l’aide de l’API Java et de l’API Web Service.
-
-
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2784'
 ht-degree: 98%
@@ -27,13 +40,13 @@ ht-degree: 98%
 
 Le service d’intégration des données de formulaire peut importer des données dans un formulaire PDF et exporter des données d’un formulaire PDF. Les opérations d’import et d’export prennent en charge deux types de formulaires PDF :
 
-* Un formulaire PDF (créé dans Acrobat) est un document PDF qui contient des champs de formulaire.
+* Un formulaire Acrobat (créé dans Acrobat) est un document PDF qui contient des champs de formulaire.
 * Un formulaire XML d’Adobe (créé dans Designer) est un document PDF conforme à l’Adobe XML Forms Architecture (XFA).
 
-Les données de formulaire peuvent exister dans l’un des formats suivants en fonction du type de formulaire de PDF :
+Les données de formulaire peuvent exister dans l’un des formats suivants en fonction du type de formulaire PDF :
 
 * Un fichier XFDF, qui constitue une version XML du format de données de formulaire Acrobat.
-* Un fichier XDP, qui correspond à un fichier XML contenant des définitions de champ de formulaire. Ce fichier peut également inclure des données de champ de formulaire, ainsi qu’un fichier PDF incorporé. Un fichier XDP généré par Designer n’est utilisable que s’il incorpore un document PDF codé en base 64.
+* Un fichier XDP, qui correspond à un fichier XML contenant des définitions de champs de formulaire. Ce fichier peut également inclure des données de champ de formulaire, ainsi qu’un fichier PDF incorporé. Un fichier XDP généré par Designer n’est utilisable que s’il incorpore un document PDF codé en base 64.
 
 Vous pouvez accomplir ces tâches à l’aide du service d’intégration des données de formulaire :
 
@@ -52,7 +65,7 @@ Pour importer des données dans un formulaire créé dans Designer, vous devez r
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
-Pour importer des valeurs de données dans ce formulaire, vous devez disposer d’une source de données XML XDP valide correspondant au formulaire. Vous ne pouvez pas utiliser une source de données XML arbitraire pour importer des données dans un formulaire à l’aide du service d’intégration des données de formulaire. La différence entre une source de données XML arbitraire et une source de données XML XDP est qu’une source de données XDP est conforme à l’architecture Forms XML (XFA). Le code XML suivant représente une source de données XML XDP correspondant à l’exemple de formulaire de demande de prêt immobilier.
+Pour importer des valeurs de données dans ce formulaire, vous devez disposer d’une source de données XML XDP valide correspondant au formulaire. Vous ne pouvez pas utiliser une source de données XML arbitraire pour importer des données dans un formulaire à l’aide du service d’intégration des données de formulaire. La différence entre une source de données XML arbitraire et une source de données XML XDP est qu’une source de données XDP est conforme à XML Forms Architecture (XFA). Le code XML suivant représente une source de données XML XDP correspondant à l’exemple de formulaire de demande de prêt immobilier.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8" ?>
@@ -97,7 +110,7 @@ Pour importer des données de formulaire dans un formulaire PDF, procédez comme
 1. Créez un client de service d’intégration des données de formulaire.
 1. Référencez un formulaire PDF.
 1. Référencez une source de données XML.
-1. Importez des données dans un formulaire PDF.
+1. Importez des données dans le formulaire PDF.
 1. Enregistrez le formulaire au format PDF.
 
 **Inclure les fichiers de projet**
@@ -116,7 +129,7 @@ Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure de
 
 **Créer un client de service d’intégration des données de formulaire**
 
-Avant de pouvoir importer des données par programmation dans une API client de formulaire PDF, vous devez créer un client de service Data Integration (Intégration de données). Lors de la création d’un client de service, vous définissez les paramètres de connexion requis pour appeler un service. Pour plus d’informations, voir [Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+Avant de pouvoir importer des données par programmation dans un formulaire PDF à l’aide de l’API cliente, vous devez créer un client du service Data Integration. Lors de la création d’un client de service, vous définissez les paramètres de connexion requis pour appeler un service. Pour plus d’informations, voir [Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Référencer un formulaire PDF**
 
@@ -207,7 +220,7 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
    >
    >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
-1. Créez un client de service d’intégration des données de formulaire.
+1. Créer un client du service Form Data Integration.
 
    * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur par défaut.
    * Créez un objet `FormDataIntegrationClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
@@ -220,7 +233,7 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Référencez un formulaire PDF.
+1. Référencer un formulaire PDF.
 
    * Créez un objet `BLOB` en utilisant son constructeur. Cet objet `BLOB` sert à stocker le formulaire PDF.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du formulaire PDF et son mode d’ouverture.
@@ -314,7 +327,7 @@ Une fois les données de formulaire exportées, vous pouvez les enregistrer au f
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrage rapide de l’API Form Data du service d’intégration](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
+[Démarrages rapides de l’API Form Data Integration Service](/help/forms/developing/form-data-integration-service-java.md#form-data-integration-service-java-api-quick-start-soap)
 
 [Importer des données de formulaire](importing-exporting-data.md#importing-form-data)
 
@@ -365,7 +378,7 @@ Pour exporter les données de formulaire à l’aide de l’API Form Data Inte
 
    * Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
-1. Créez un client de service d’intégration des données de formulaire.
+1. Créer un client du service Form Data Integration.
 
    * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur par défaut.
    * Créez un objet `FormDataIntegrationClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
@@ -378,7 +391,7 @@ Pour exporter les données de formulaire à l’aide de l’API Form Data Inte
      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Référencez un formulaire PDF.
+1. Référencer un formulaire PDF.
 
    * Créez un objet `BLOB` en utilisant son constructeur. Cet objet `BLOB` est utilisé pour stocker le formulaire PDF à partir duquel les données sont exportées.
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du formulaire PDF et son mode d’ouverture.

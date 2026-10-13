@@ -9,13 +9,27 @@ exl-id: 68a9d95a-d51c-4a97-ae36-d4cb16c6fac0
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '259'
 ht-degree: 100%
-
 ---
-
 # Présentation du processus des formulaires {#overview-of-forms-workflow}
 
 Forms Workflow permet aux utilisateurs et aux utilisatrices de concevoir, de gérer et d’optimiser des processus pour des intervenants humains. Grâce à Forms Workflow, les utilisateurs et les utilisatrices peuvent également gérer des applications de processus d’entreprise automatisées qui mettent en relation des systèmes et des personnes.
@@ -38,7 +52,7 @@ Sur chaque page de Forms Workflow, dans la console d’administration, vous pou
      <li><p>Configuration des paramètres d’e-mail</p></li>
      <li><p>Configuration des notifications de tâche pour les utilisateurs et utilisatrices</p></li>
      <li><p>Configuration des notifications pour l’administrateur ou l’administratrice</p></li>
-     <li><p>Configuration des paramètres de configuration de Business Activity Monitoring </p></li>
+     <li><p>Configurer les paramètres de Business Activity Monitoring </p></li>
     </ul></td>
    <td><p><a href="/help/forms/using/admin-help/configuring-server-settings.md#configuring-server-settings">Configuration des paramètres du serveur</a></p></td>
   </tr>

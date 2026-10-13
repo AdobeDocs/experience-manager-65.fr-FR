@@ -9,13 +9,22 @@ exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3628'
 ht-degree: 98%
-
 ---
-
 # Extension des fonctionnalités de workflows{#extending-workflow-functionality}
 
 Cette rubrique décrit le développement de composants d’étape personnalisés pour vos workflows. Elle explique également comment interagir par programmation avec les workflows.
@@ -63,8 +72,8 @@ Le composant `/libs/cq/workflow/components/model/step` est l’ancêtre commun l
 
   Boîte de dialogue avec les onglets suivants :
 
-   * **Courant** : pour modifier le titre et la description.
-   * **Avancé** : pour modifier les propriétés des notifications par e-mail.
+  * **Courant** : pour modifier le titre et la description.
+  * **Avancé** : pour modifier les propriétés des notifications par e-mail.
 
   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
@@ -104,9 +113,9 @@ Pour hériter de l’un des composants de l’étape de base (existante), ajoute
 * Type : `String`
 * Valeur : l’un des chemins suivants qui se résout en un composant de base :
 
-   * `cq/workflow/components/model/process`
-   * `cq/workflow/components/model/participant`
-   * `cq/workflow/components/model/dynamic_participant`
+  * `cq/workflow/components/model/process`
+  * `cq/workflow/components/model/participant`
+  * `cq/workflow/components/model/dynamic_participant`
 
 ### Spécification du titre et de la description par défaut pour les instances d’étape {#specifying-the-default-title-and-description-for-step-instances}
 
@@ -240,16 +249,16 @@ Sous le nœud `cq:Component`, ajoutez un nœud `cq:EditConfig`. En dessous, ajou
 
 * Nom : `PROCESS_AUTO_ADVANCE`
 
-   * Type : `Boolean`
-   * Valeur :
+  * Type : `Boolean`
+  * Valeur :
 
-      * Lorsque la propriété est définie sur `true`, le workflow exécute cette étape et se poursuit (c’est le paramètre par défaut qui est également recommandé).
-      * Si sa valeur est `false`, le processus s’exécute et s’arrête. Ceci nécessite une manipulation supplémentaire, donc la valeur `true` est recommandée.
+    * Lorsque la propriété est définie sur `true`, le workflow exécute cette étape et se poursuit (c’est le paramètre par défaut qui est également recommandé).
+    * Si sa valeur est `false`, le processus s’exécute et s’arrête. Ceci nécessite une manipulation supplémentaire, donc la valeur `true` est recommandée.
 
 * Nom : `DO_NOTIFY`
 
-   * Type : `Boolean`
-   * Valeur : indique si des notifications par e-mail doivent être envoyées pour les étapes de participation de la personne (et suppose que le serveur de messagerie est correctement configuré).
+  * Type : `Boolean`
+  * Valeur : indique si des notifications par e-mail doivent être envoyées pour les étapes de participation de la personne (et suppose que le serveur de messagerie est correctement configuré).
 
 ## Persistance et accès aux données {#persisting-and-accessing-data}
 
@@ -838,12 +847,12 @@ Pour commencer facilement à créer votre propre étape personnalisée, copiez u
 
      Doit être l’un des éléments suivants :
 
-      * Workflow de collaboration
-      * Workflow de gestion des ressources numériques
-      * Workflows de formulaires
-      * Projets
-      * Workflow de gestion de contenu web
-      * Workflow
+     * Workflow de collaboration
+     * Workflow de gestion des ressources numériques
+     * Workflows de formulaires
+     * Projets
+     * Workflow de gestion de contenu web
+     * Workflow
 
    ![wf-35](assets/wf-35.png)
 

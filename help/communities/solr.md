@@ -9,13 +9,20 @@ role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 3%
-
 ---
-
 # Configuration de Solr pour SRP {#solr-configuration-for-srp}
 
 ## Solr pour AEM Platform {#solr-for-aem-platform}
@@ -36,13 +43,13 @@ Téléchargez et installez Apache Solr :
 * Aucun service n’est nécessaire
 * Choix des modes d’exécution :
 
-   * Mode autonome
-   * [mode SolrCloud](#solrcloud-mode) (recommandé pour les environnements de production)
+  * Mode autonome
+  * [mode SolrCloud](#solrcloud-mode) (recommandé pour les environnements de production)
 
 * Choix de la recherche multilingue (MLS)
 
-   * [Installation de MLS standard](#installing-standard-mls)
-   * [Installation du MLS avancé](#installing-advanced-mls)
+  * [Installation de MLS standard](#installing-standard-mls)
+  * [Installation du MLS avancé](#installing-advanced-mls)
 
 ## Mode SolrCloud {#solrcloud-mode}
 
@@ -288,35 +295,35 @@ Une fois le contenu du package extrait sur le serveur hébergeant le serveur aut
 * Installez Solr en mode autonome.
 * Si vous exécutez Solr5, créez une collection1 (similaire à Solr4) :
 
-   * `./bin/solr start`
-   * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
+  * `./bin/solr start`
+  * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
 
 * Exécutez le script d’installation : Installez [-v 4|5] [-d solrhome] [-c collectionpath .]
 où :
 
-   * -d solrhome
+  * -d solrhome
 
-     Répertoire d’installation de Solr
+    Répertoire d’installation de Solr
 
-   * -c collectionpath
+  * -c collectionpath
 
-     Chemin de la collection dans solr
+    Chemin de la collection dans solr
 
-   * --help
+  * --help
 
-     Options de ligne de commande d’impression
+    Options de ligne de commande d’impression
 
-   * -v [4|5]
+  * -v [4|5]
 
-     Définir la version de solr
+    Définir la version de solr
 
 * Exemple pour Solr 4.10.4 :
 
-   * Install.bat -v 4 -d c:/solr-4.10.4 -c:/solr-4.10.4/example/solr/collection1
+  * Install.bat -v 4 -d c:/solr-4.10.4 -c:/solr-4.10.4/example/solr/collection1
 
 * Exemple pour Solr 5.4.0 :
 
-   * Install.sh -v 5 -d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
+  * Install.sh -v 5 -d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
 
 **Remarque** :
 

@@ -9,13 +9,27 @@ exl-id: 34ac5f8b-f209-4f99-ad71-4df6f2c88c1e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 100%
-
 ---
-
 # Modification et conversion de domaines existants{#editing-and-converting-existing-domains}
 
 >[!NOTE]
@@ -29,8 +43,8 @@ Vous pouvez modifier les paramètres des domaines existants à partir de la page
 1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le nom du domaine à modifier.
 1. Pour modifier le nom du domaine, saisissez les modifications voulues dans le champ Nom.
-1. Pour modifier les informations d’authentification d’un domaine d’entreprise ou hybride, cliquez sur le nom de l’authentification approprié situé au bas de la page. Sur la page Modifier l’authentification, modifiez les paramètres selon les besoins. (Voir [Paramètres d’authentification](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings)).
-1. Pour modifier les informations d’annuaire d’un domaine d’entreprise, cliquez sur le nom de l’annuaire situé au bas de la page. Sur la page Modifier l’annuaire, modifiez les paramètres selon les besoins. (Voir [Ajout d’annuaires ou d’interfaces SPI personnalisées](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
+1. Pour modifier les informations d’authentification d’un domaine d’entreprise ou hybride, cliquez sur le nom de l’authentification approprié situé au bas de la page. Sur la page Modification de l’authentification, modifiez les paramètres selon les besoins. (Voir [Paramètres d’authentification](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings)).
+1. Pour modifier les informations d’annuaire d’un domaine d’entreprise, cliquez sur le nom de l’annuaire situé au bas de la page. Sur la page Modification de l’annuaire, modifiez les paramètres selon les besoins. (Voir [Ajout d’annuaires ou d’interfaces SPI personnalisées](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
 1. Une fois les modifications effectuées, cliquez sur OK.
 
 ## Convertir un domaine d’entreprise en domaine hybride {#convert-an-enterprise-domain-to-a-hybrid-domain}

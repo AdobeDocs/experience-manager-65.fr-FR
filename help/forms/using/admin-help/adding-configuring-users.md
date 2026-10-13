@@ -7,24 +7,38 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 98%
-
 ---
-
 # Ajout et configuration d’utilisateurs et d’utilisatrices {#adding-and-configuring-users}
 
 >[!NOTE]
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-Les informations relatives aux utilisateurs, utilisatrices et aux groupes sont gérées dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management n’a pas la possibilité d’écrire dans le système de stockage tiers, mais assure la synchronisation de ces informations avec sa propre base de données
+Les informations relatives aux utilisateurs, utilisatrices et aux groupes sont gérées dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management n’écrit pas dans le système de stockage tiers. mais assure la synchronisation de ces informations avec sa propre base de données
 
 ## Créer un utilisateur {#create-a-user}
 
-Lorsque vous créez des utilisateurs pu des utilisatrices, vous pouvez les ajouter à des groupes et leur affecter des rôles.
+Lorsque vous créez des utilisateurs ou des utilisatrices, vous pouvez les ajouter à des groupes et leur affecter des rôles.
 
 1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Gestion des utilisateurs > Utilisateurs et groupes]**, puis sur **[!UICONTROL Nouvel utilisateur]**.
 .
@@ -56,7 +70,7 @@ Spécifiez les paramètres ci-dessous lorsque vous créez ou modifiez un utilisa
 
 **Nom :**(obligatoire) nom de l’utilisateur ou de l’utilisatrice.
 
-**Nom commun :** nom complet ou nom d’affichage de l’utilisateur. Par exemple, si Prénom = Gloria et Nom = Rios, alors Nom commun = Gloria Rios.
+**Nom commun :** nom complet ou nom d’affichage de l’utilisateur. Par exemple, si Prénom = Gloria et Nom = Rios, alors Nom complet = Gloria Rios.
 
 **Adresse électronique :** adresse électronique de l’utilisateur ou de l’utilisatrice.
 
@@ -78,23 +92,23 @@ Spécifiez les paramètres ci-dessous lorsque vous créez ou modifiez un utilisa
 
 Si vous utilisez un domaine local ou hybride, les informations relatives aux utilisateurs et utilisatrices ne sont stockées que dans la base de données User Management. Pour ces utilisateurs et utilisatrices, définissez la clé de calendrier professionnel sur une chaîne. Associez ensuite la clé de calendrier professionnel (la chaîne) à un calendrier professionnel dans Forms Workflow.
 
-Si vous utilisez un domaine d’entreprise, les informations sur les utilisateurs et utilisatrices résident dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management synchronise les informations utilisateur de l’annuaire avec la base de données User Management. Cette fonctionnalité vous permet d’associer une clé de calendrier professionnel à un champ de l’annuaire LDAP. Imaginons, par exemple, un scénario où chaque utilisateur ou utilisatrice enregistré(e) dans votre annuaire dispose d’un champ pays et où vous souhaitez affecter des calendriers professionnels en fonction du pays dans lequel l’utilisateur ou l’utilisatrice se trouve. Dans ce cas, vous indiquez le nom du champ pays dans le champ clé du calendrier professionnel. Vous pouvez ensuite associer les clés de calendrier professionnel (valeurs définies pour le champ pays dans l’annuaire LDAP) aux calendriers professionnels dans Forms Workflow.
+Si vous utilisez un domaine d’entreprise, les informations sur les utilisateurs et utilisatrices résident dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management synchronise les informations utilisateur de l’annuaire avec la base de données User Management. Cette fonctionnalité vous permet d’associer une clé de calendrier professionnel à un champ de l’annuaire LDAP. Imaginons, par exemple, un scénario où chaque enregistrement d’utilisateur ou d’utilisatrice dans votre répertoire contient un champ pays et où vous souhaitez affecter des calendriers professionnels en fonction du pays dans lequel l’utilisateur ou l’utilisatrice se trouve. Dans ce cas, vous indiquez le nom du champ pays comme valeur du paramètre Clé de calendrier professionnel. Vous pouvez ensuite associer les clés de calendrier professionnel (valeurs définies pour le champ pays dans l’annuaire LDAP) aux calendriers professionnels dans Forms Workflow.
 
 Pour plus d’informations sur les calendriers professionnels, notamment sur la façon d’associer des clés de calendrier professionnel à des calendriers professionnels, voir [Configuration des calendriers professionnels](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
 
-Limitez la longueur du nom à moins de 53 caractères. Un nom court contribue à réduire les problèmes d’affichage de la clé de calendrier professionnel dans les pages Process Management d’Administration Console.
+Limitez la longueur du nom à moins de 53 caractères. Un nom court contribue à réduire les problèmes d’affichage de la clé de calendrier professionnel dans les pages Gestion des processus de la console d’administration.
 
 **ID utilisateur :**(obligatoire) ID que l’utilisateur utilise pour se connecter. L’ID utilisateur n’est pas sensible à la casse et doit être unique pour tout le domaine.
 
-Dans les domaines d’entreprise, utilisez un attribut non ND comme ID utilisateur, car le ND d’un utilisateur ou d’une utilisatrice peut changer si l’utilisateur évolue au sein de l’entreprise. Ce paramètre dépend du serveur d’annuaire. La valeur est `objectGUID` pour Active Directory 2003, `nsuniqueID` pour Sun™ One et `guid` pour eDirectory.
+Dans les domaines d’entreprise, utilisez un attribut non-DN comme ID utilisateur, car le DN d’un utilisateur ou d’une utilisatrice peut changer si l’utilisateur ou l&#39;utilisatrice évolue au sein de l’entreprise. Ce paramètre dépend du serveur d’annuaire. La valeur est `objectGUID` pour Active Directory 2003, `nsuniqueID` pour Sun™ One et `guid` pour eDirectory.
 
-Assurez-vous que l’ID utilisateur est unique. N’utilisez pas un ID qui était affecté à un utilisateur ou une utilisatrice supprimé(e).
+Assurez-vous que l’ID utilisateur est unique. N’utilisez pas un ID qui a été affecté à un utilisateur ou une utilisatrice supprimé.
 
 AEM forms ne peut pas différencier les comptes d’utilisateurs qui possèdent des ID utilisateur et des mots de passe identiques mais qui appartiennent à des domaines différents. Pour éviter ce problème, ne créez pas de comptes portant le même ID utilisateur dans plusieurs domaines.
 
 Si vous utilisez une base de données SQL Server, vous ne pouvez pas créer d’ID utilisateur contenant plus de 255 caractères.
 
-Avec MySQL, l’ID utilisateur peut contenir des caractères étendus. Cependant, en cas de comparaison entre deux chaînes telles que abcde et âbcdè, aucune distinction n’est faite entre les deux. Par exemple, lors d’une synchronisation après l’ajout d’un nouvel utilisateur ou d’une nouvelle utilisatrice à la base de données, une comparaison est effectuée pour vérifier si cet ID utilisateur existe dans la base de données. Si la base de données contient déjà l’utilisateur ou l’utilisatrice *abcde* lorsque vous ajoutez le nouvel utilisateur ou la nouvelle utilisatrice *âbcdè*, la comparaison ne différencie pas ces deux noms. Le système suppose que l’utilisateur ou l’utilisatrice existe dans la base de données et ne procède donc pas à l’ajout de ce dernier.
+Avec MySQL, l’ID utilisateur peut contenir des caractères étendus. Cependant, en cas de comparaison entre deux chaînes telles que abcde et âbcdè, aucune distinction n’est faite entre les deux. Par exemple, lors d’une synchronisation après l’ajout d’un nouvel utilisateur ou d’une nouvelle utilisatrice à la base de données, une comparaison est effectuée pour vérifier si un utilisateur ou une utilisatrice possédant le même ID utilisateur existe dans la base de données. Si la base de données contient déjà l’utilisateur ou l’utilisatrice *abcde* lorsque vous ajoutez le nouvel utilisateur ou la nouvelle utilisatrice *âbcdè*, la comparaison ne différencie pas ces deux noms. Le système suppose que l’utilisateur ou l’utilisatrice existe dans la base de données et ne procède donc pas à l’ajout de ce dernier.
 
 Évitez de créer des noms d’utilisateur commençant par un dièse (#). Les recherches de tâches ne renvoient aucun résultat pour ces noms d’utilisateur. (Voir [Utilisation des tâches](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
 
@@ -104,9 +118,9 @@ Avec MySQL, l’ID utilisateur peut contenir des caractères étendus. Cependant
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
 1. Indiquez les informations permettant d’affiner la recherche, puis, dans la liste Dans, sélectionnez Utilisateurs et cliquez sur Rechercher. Les résultats de la recherche apparaissent au bas de la page. Vous pouvez trier la liste en cliquant sur l’un des en-têtes de colonne.
-1. Cliquez sur le nom de l’utilisateur ou de l’utilisatrice dont vous souhaitez afficher les détails. La page Modifier l’utilisateur affiche les informations détaillées indiquées relatives à l’utilisateur ou l’utilisatrice :
+1. Cliquez sur le nom de l’utilisateur ou de l’utilisatrice dont vous souhaitez afficher les détails. La page Modifier l’utilisateur affiche les informations détaillées suivantes relatives à l’utilisateur ou l’utilisatrice :
 
-   * Informations d’identification d’ordre général, telles que nom, adresse e-mail, adresse, domaine et société
+   * Informations d’identification d’ordre général, telles que nom, e-mail, adresse, domaine et organisation
    * Rôles qui lui sont affectés
    * Groupes dont il ou elle est membre
 
@@ -136,7 +150,7 @@ Avec MySQL, l’ID utilisateur peut contenir des caractères étendus. Cependant
 
    >[!NOTE]
    >
-   >Les utilisateurs locauxet les utilisatrices locales ne peuvent pas être ajoutés aux groupes de répertoires. Toutefois, les utilisateurs et utilisatrices de répertoires peuvent être ajoutés aux groupes locaux.
+   >Les utilisateurs locaux et les utilisatrices locales ne peuvent pas être ajoutés aux groupes de répertoires. Toutefois, les utilisateurs et utilisatrices de répertoires peuvent être ajoutés aux groupes locaux.
 
    * Pour supprimer l’utilisateur d’un groupe, activez la case à cocher correspondant au groupe, cliquez sur **[!UICONTROL Supprimer]**, puis sur **[!UICONTROL Enregistrer]**.
 
@@ -160,7 +174,7 @@ Avec MySQL, l’ID utilisateur peut contenir des caractères étendus. Cependant
 
 >[!NOTE]
 >
->AEM Forms on JEE permet également aux utilisateurs et utilisatrices du module complémentaire AEM Forms exécuté dans un environnement OSGi d’être reconnus comme des utilisateurs et utilisatrices d’AEM. Cela est nécessaire dans les cas où une authentification unique entre AEM Forms on JEE et AEM Forms exécuté dans un environnement OSGi est requise (par exemple, lʼespace de travail HTML). L’opération de suppression mentionnée ci-dessus supprime un utilisateur d’AEM Forms sur JEE uniquement. L’utilisateur ou l’utilisatrice n’est pas supprimé du module complémentaire AEM Forms exécuté dans un environnement OSGi. Cependant, toute tentative de connexion effectuée après la suppression de l’utilisateur ou de l’utilisatrice (une tentative de connexion au serveur de module complémentaire AEM Forms JEE ou au module complémentaire AEM Forms dans un environnement OSGi) est refusée.
+>AEM Forms on JEE permet également aux utilisateurs et utilisatrices du module complémentaire AEM Forms exécuté dans un environnement OSGi d’être reconnus comme des utilisateurs et utilisatrices d’AEM. Cela est nécessaire dans les cas où une authentification unique entre AEM Forms on JEE et le module complémentaire AEM Forms exécuté dans un environnement OSGi est requise (par exemple, l’espace de travail HTML). L’opération de suppression mentionnée ci-dessus supprime un utilisateur d’AEM Forms sur JEE uniquement. L’utilisateur ou l’utilisatrice n’est pas supprimé du module complémentaire AEM Forms exécuté dans un environnement OSGi. Cependant, toute tentative de connexion effectuée après la suppression de l’utilisateur ou de l’utilisatrice (une tentative de connexion au serveur de module complémentaire AEM Forms JEE ou au module complémentaire AEM Forms dans un environnement OSGi) est refusée.
 
 ## Créer un gestionnaire d’erreur de connexion personnalisé {#create-custom-login-error-handler}
 

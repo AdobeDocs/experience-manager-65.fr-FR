@@ -9,13 +9,27 @@ exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
 source-wordcount: '1643'
 ht-degree: 100%
-
 ---
-
 # Gestion de processus {#managing-processes}
 
 La page Liste des processus affiche les processus initiés par un utilisateur ou une utilisatrice ou démarrés automatiquement.
@@ -34,7 +48,7 @@ La page Liste des processus affiche les processus initiés par un utilisateur ou
 
 ## Utilisation d’instances de processus {#working-with-process-instances}
 
-Si vous accédez à la page Instance du processus à partir de la page Liste des processus, toutes les instances de processus que vous avez sélectionnées sont répertoriées. Si vous accédez à la page Instance du processus après avoir effectué une recherche, seules les instances de processus trouvées sont répertoriées.
+Si vous accédez à la page Instance du processus à partir de la page Liste des processus, toutes les instances du processus que vous avez sélectionnées sont répertoriées. Si vous accédez à la page Instance du processus après avoir effectué une recherche, seules les instances de processus trouvées sont répertoriées.
 
 Pour chaque instance de processus, la liste affiche les informations suivantes :
 
@@ -51,22 +65,22 @@ Pour chaque instance de processus, la liste affiche les informations suivantes 
 Vous pouvez effectuer les tâches suivantes sur la page Instance du processus :
 
 * Sélectionnez une instance de processus pour afficher des détails sur celle-ci, tels que ses opérations et ses sous-processus. Lorsque vous sélectionnez une instance de processus, la page Détails de l’instance du processus s’affiche.
-* Suspendez, annulez la suspension ou arrêtez des instances de processus.
+* Suspendez, annulez la suspension ou terminez des instances de processus.
 * Recherchez une instance de processus. Pour lancer une recherche, cliquez sur Rechercher.
 
 ### À propos des états d’instances de processus {#about-process-instance-statuses}
 
 Une instance de processus, y compris les sous-processus, peut avoir les statuts suivants :
 
-**ACHEVÉ :** toutes les branches et opérations de l’instance de processus sont achevées. ACHEVE est l’état final d’une instance de processus.
+**ACHEVÉ :** toutes les branches et opérations de l’instance de processus sont achevées. COMPLETE est l’état final d’une instance de processus.
 
 **EN COURS D’ACHÈVEMENT :** le statut de l’instance de processus est sur le point de devenir ACHEVÉ.
 
-**INITIÉ :** l’instance de processus a été créée, mais n’est pas encore en cours d’exécution. INITIE est le premier état d’une instance de processus.
+**INITIÉ :** l’instance de processus a été créée, mais n’est pas encore en cours d’exécution. INITIATED est le premier état d’une instance de processus.
 
 **EN COURS :** l’instance de processus s’exécute normalement. Il est possible qu’une étape automatique soit en cours, ou que l’instance de processus reçoive des entrées utilisateur ou qu’elle soit en attente d’une interaction utilisateur.
 
-**SUSPENDU :** l’instance de processus a été suspendue par un administrateur ou par une étape du processus. Aucune opération supplémentaire ne sera exécutée jusqu’au changement de l’état.
+**SUSPENDU :** l’instance de processus a été suspendue par un administrateur ou par une étape du processus. Aucune opération supplémentaire ne sera exécutée tant que le statut n’aura pas été modifié.
 
 **SUSPENSION EN COURS :** le statut est sur le point de devenir SUSPENDU. Si une opération a été conçue pour ignorer les requêtes de suspension et n’est pas encore achevée, cette opération doit s’achever avant que l’instance de processus soit suspendue.
 
@@ -86,16 +100,16 @@ Si vous devez résoudre un problème ou si vous savez qu’une instance de proce
 
 Vous pouvez suspendre les instances de processus dont le statut est EN COURS.
 
-Après avoir suspendu une instance de processus, son statut passe à SUSPENSION, puis SUSPENDU, et le processus s’interrompt au cours de son opération actuelle. L’instance de processus reste dans ce statut jusqu’à ce que le statut soit défini sur NON SUSPENDU.
+Après avoir suspendu une instance de processus, son statut passe à SUSPENDING, puis SUSPENDED, et le processus s’interrompt au cours de son opération actuelle. L’instance de processus reste dans ce statut jusqu’à ce que le statut soit défini sur UNSUSPENDED.
 
-Seules les instances de processus dont le statut est SUSPENDU peuvent être modifiées en NON SUSPENDU.
+Seules les instances de processus dont le statut est SUSPENDED peuvent être modifiées en UNSUSPENDED.
 
-Lorsque vous annulez la suspension d’une instance de processus, son statut devient EN COURS, et l’opération en cours au moment de la suspension se poursuit.
+Lorsque vous annulez la suspension d’une instance de processus, son statut devient RUNNING, et l’opération en cours au moment de la suspension se poursuit.
 
 Lorsque vous suspendez une instance de processus qui a appelé d’autres processus (processus enfants) en utilisant leur opération d’appel, les processus enfants sont également suspendus.
 
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Forms Workflow.
-1. Dans la page Instance du processus, sélectionnez le processus, puis cliquez sur Suspendre ou Annuler la suspension.
+1. Sur la page Instance du processus, sélectionnez le processus, puis cliquez sur Suspendre ou Annuler la suspension.
 
 ### Arrêt d’une instance de processus {#terminate-a-process-instances}
 
@@ -118,7 +132,7 @@ Dans l’onglet Opérations, chaque opération de l’instance de processus s’
 
 **Nom de l’opération :** nom de l’opération, tel que défini dans Workbench.
 
-**Statut :** indique si l’opération est exécutée normalement ou si elle est arrêtée. (voir A propos des états d’instances de processus).
+**Statut :** indique si l’opération est exécutée normalement ou si elle est arrêtée. (voir À propos des états d’instances de processus).
 
 **Nom de la branche :** nom de la branche, tel que défini dans Workbench.
 
@@ -126,13 +140,13 @@ Dans l’onglet Opérations, chaque opération de l’instance de processus s’
 
 **Date d’achèvement :** date et heure auxquelles l’opération s’est achevée.
 
-Un sous-processus est une instance de processus démarrée par un autre processus et qui s’exécute indépendamment de cet autre processus. Les sous-processus ne s’affichent que s’ils ont été conçus comme faisant partie du processus dans Workbench. Dans l’onglet Sous-processus, chaque sous-processus est affiché avec les informations suivantes :
+Un sous-processus est une instance de processus démarrée par un autre processus et qui s’exécute indépendamment de cet autre processus. Les sous-processus ne s’affichent que s’ils ont été conçus comme faisant partie du processus dans l’atelier. Dans l’onglet Sous-processus, chaque sous-processus est affiché avec les informations suivantes :
 
 **Identifiant du processus :** entier positif attribué par Forms Workflow lorsque le processus est instancié (démarré par un utilisateur ou une étape automatisée). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
 **Nom du processus - Version :** nom du processus, tel que défini dans Designer.
 
-**Statut :** indique si l’instance de processus fonctionne normalement, change d’état ou s’est arrêtée. (voir A propos des états d’instances de processus).
+**Statut :** indique si l’instance de processus fonctionne normalement, change d’état ou s’est arrêtée. (voir À propos des états d’instances de processus).
 
 **Date de création :** date et heure auxquelles le processus secondaire a été créé.
 
@@ -188,7 +202,7 @@ Lorsque vous essayez de relancer une opération, une requête est envoyée au pr
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-La page Détails de l’opération présente un résumé d’une opération dans un processus et ses affectations actuelles d’utilisateurs et d’utilisatrices.
+La page Détails de l’opération présente un résumé d’une opération dans un processus et ses affectations utilisateur actuelles.
 
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Forms Workflow.
 1. Cliquez sur le nom d’un processus pour afficher ses instances. Cliquez sur une instance de processus pour afficher la page Détails de l’instance du processus, puis sélectionnez une opération pour afficher la page Détails de l’opération.

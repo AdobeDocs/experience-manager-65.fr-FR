@@ -1,6 +1,6 @@
 ---
 title: Mise à jour du type de licence pour le déploiement
-description: Mettez à jour le type de licence pour le déploiement à l’aide de la page Changer de licence dans Administration Console.
+description: Mettez à jour le type de licence pour le déploiement à l’aide de la page Changer de licence dans la console d’administration.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
@@ -9,7 +9,23 @@ exl-id: 6b975aa1-9270-4098-9af5-c5cc67cb7b5d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 100%
@@ -37,9 +53,9 @@ La page Changer de licence affiche des informations sur votre licence :
 
 ## Mise à jour du type de licence {#update-the-license-type}
 
-1. Dans la console d’adminitration, cliquez sur Obtention de la licence.
-1. Lisez le contrat de licence de l’utilisateur final d’AEM forms, sélectionnez J’accepte si vous en acceptez les termes, puis cliquez sur Suivant.
-1. Sur la page Changer de licence , sélectionnez un type de licence :
+1. Dans la console d’administration, cliquez sur Attribution de licence.
+1. Lisez le contrat de licence de l’utilisateur final d’AEM Forms, sélectionnez J’accepte si vous en acceptez les termes, puis cliquez sur Suivant.
+1. Sur la page Changer de licence, sélectionnez un type de licence :
 
    * **EVAL :** licence d’évaluation de 60 jours
    * **DEV :** licence de développement perpétuelle

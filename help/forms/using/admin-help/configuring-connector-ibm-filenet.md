@@ -9,13 +9,27 @@ exl-id: f4045df5-a35b-41d7-910e-971017148597
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '742'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '748'
 ht-degree: 100%
-
 ---
-
 # Configuration de Connector for IBM FileNet {#configuring-connector-for-ibm-filenet}
 
 >[!NOTE]
@@ -26,11 +40,11 @@ Connector for IBM FileNet permet la communication entre AEM Forms et IBM Fi
 
 >[!NOTE]
 >
->Dans les versions antérieures, les ressources pouvaient être stockées dans un référentiel ECM. Dans cette version, les ressources sont stockées dans le référentiel natif d’AEM Forms et les services du fournisseur de référentiel sont obsolètes. La migration des ressources d’un référentiel ECM vers le référentiel AEM Forms est effectuée lorsque vous exécutez une mise à niveau vers AEM Forms. Pour plus d’informations, consultez le guide de mise à niveau d’AEM Forms correspondant à votre serveur d’applications.
+>Dans les versions antérieures, les ressources pouvaient être stockées dans un référentiel ECM. Dans cette version, les ressources sont stockées dans le référentiel natif d’AEM Forms et les services du fournisseur de référentiels sont obsolètes. La migration des ressources d’un référentiel ECM vers le référentiel AEM Forms est effectuée lorsque vous exécutez une mise à niveau vers AEM Forms. Pour plus d’informations, consultez le guide de mise à niveau d’AEM Forms correspondant à votre serveur d’applications.
 
 ## Configurer la connexion à Content Engine {#configure-the-connection-to-the-content-engine}
 
-IBM FileNet P8 Content Engine fournit des services logiciels pour gérer le contenu d’entreprise et les objets commerciaux définis par les clientes et clients dans les référentiels de contenu FileNet.
+IBM FileNet P8 Content Engine fournit des services logiciels pour gérer le contenu d’entreprise et les objets métier définis par les clientes et clients dans les référentiels de contenu FileNet.
 
 1. Dans la console d’administration, cliquez sur Services > Connector for IBM FileNet.
 1. Dans la zone URL de Content Engine, saisissez l’URL de connexion complète. Par exemple :
@@ -39,7 +53,7 @@ IBM FileNet P8 Content Engine fournit des services logiciels pour gérer le 
 
    `cemp:https://ContentEngineHostNameorIP:port/wsi/FNCEWS40DIME?jaasConfigurationName=FileNetP8WSI`
 
-   Si vous utilisez FileNet Content Engine 4.x avec le transport EJB, qui est pris en charge sur WebLogic, saisissez :
+   Si vous utilisez FileNet Content Engine 4.x avec le transport EJB, qui est pris en charge uniquement sur WebLogic, saisissez :
 
    `cemp:t3://ContentEngineHostNameorIP:port/FileNet/Engine?jaasConfigurationName=FileNetP8Engine`
 
@@ -50,8 +64,8 @@ IBM FileNet P8 Content Engine fournit des services logiciels pour gérer le 
 
 1. Dans la zone Emplacement du fichier de chiffrement, saisissez le chemin d’accès au fichier de chiffrement :
 
-   * Si vous avez sélectionné Effacer comme schéma de protection des informations d’identification, ce mot-clé et sa valeur sont ignorés.
-   * Si vous avez sélectionné Symétrique comme schéma de protection des informations d’identification, le chemin que vous saisissez pointe vers l’emplacement d’un fichier de chiffrement sur le serveur Forms qui contient les clés de chiffrement à utiliser.
+   * Si vous avez sélectionné Clear comme schéma de protection des informations d’identification, ce mot-clé et sa valeur sont ignorés.
+   * Si vous avez sélectionné Symétrique comme schéma de protection des informations d’identification, le chemin que vous saisissez pointe vers l’emplacement d’un fichier de chiffrement sur le Serveur Formulaires qui contient les clés de chiffrement à utiliser.
 
 1. Dans la zone Magasin d’objets par défaut, saisissez le connecteur de magasin d’objets auquel AEM Forms se connecte par défaut.
 1. Dans la case Nom d’utilisateur ou d’utilisatrice, saisissez le nom d’un utilisateur ou d’une utilisatrice disposant de droits d’accès au magasin d’objets par défaut que vous avez spécifié à l’étape précédente.

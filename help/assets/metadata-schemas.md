@@ -8,13 +8,27 @@ feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3637'
 ht-degree: 97%
-
 ---
-
 # Schémas de métadonnées {#metadata-schemas}
 
 | Version | Lien de l’article |
@@ -48,7 +62,7 @@ Pour afficher la liste des formulaires ou des modèles, dans l’interface [!DNL
 
 | Modèles | | Description |
 |---|---|---|
-| [!UICONTROL default] | | Le formulaire de schéma de métadonnées de base pour les ressources |
+| [!UICONTROL default] | | Le formulaire de schéma de métadonnées de base pour les ressources. |
 | | Les formulaires enfants suivants héritent des propriétés du formulaire par [!UICONTROL défaut] : | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulaire de schéma pour les vidéos Dynamic Media. |
 | | <ul><li>[!UICONTROL image]</li></ul> | Formulaire de schéma pour les images dotées d’un type MIME telles que `image/jpeg` et `image/png`. <br> Le formulaire [!UICONTROL image] a les modèles de formulaire enfant suivants : <ul><li> [!UICONTROL jpeg] : formulaire de schéma pour les ressources avec le sous-type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff] : formulaire de schéma pour les ressources avec le sous-type TIFF.</li></ul> |
@@ -57,7 +71,7 @@ Pour afficher la liste des formulaires ou des modèles, dans l’interface [!DNL
 | [!UICONTROL collection] | | Formulaire de schéma pour les collections |
 | [!UICONTROL contentfragment] | | [Formulaire de schéma pour les fragments de contenu](/help/sites-developing/customizing-content-fragments.md) |
 | [!UICONTROL formulaires] | | Ce formulaire de schéma est associé aux [Adobe Experience Manager Forms](/help/forms/using/introduction-aem-forms.md). |
-| [!UICONTROL ugc_contentfragment] | | Formulaire de schéma pour les éléments de contenu et les ressources générés par l’utilisateur intégrés dans Experience Manager à partir des médias sociaux. |
+| [!UICONTROL ugc_contentfragment] | | Formulaire de schéma pour les éléments de contenu et les ressources générés par l’utilisateur ou l’utilisatrice intégrés dans Experience Manager à partir des réseaux sociaux. |
 
 >[!NOTE]
 >
@@ -134,7 +148,7 @@ Pour garantir que le composant s’affiche correctement dans le formulaire de sc
 
 >[!NOTE]
 >
->Le composant [!UICONTROL Champ masqué] n’inclut pas ces attributs. Il inclut plutôt des propriétés, telles que le nom des attributs, la valeur, le libellé du champ et la description. Les valeurs du composant Champ masqué sont envoyées en tant que paramètre POST chaque fois que la ressource est enregistrée. Elle n’est pas enregistrée en tant que métadonnées pour la ressource.
+>Le composant [!UICONTROL Champ masqué] n’inclut pas ces attributs. Il inclut plutôt des propriétés, telles que les attributs Nom, Valeur, Libellé du champ et Description. Les valeurs du composant Champ masqué sont envoyées en tant que paramètre POST chaque fois que la ressource est enregistrée. Elle n’est pas enregistrée en tant que métadonnées pour la ressource.
 
 Si vous sélectionnez l’option **[!UICONTROL Obligatoire]**, vous pouvez rechercher des fichiers dont les métadonnées obligatoires sont manquantes. Dans le panneau **[!UICONTROL Filtres]**, développez le prédicat **[!UICONTROL Validation des métadonnées]** et sélectionnez l’option **[!UICONTROL Non valide]**. Les résultats de la recherche affichent des fichiers dont les métadonnées obligatoires que vous avez configurées via le formulaire de schéma sont manquantes.
 
@@ -174,7 +188,7 @@ Utilisez des schémas de métadonnées pour définir les règles d’affichage d
 
 Voici quelques cas d’utilisation pour lesquels vous pouvez définir des métadonnées en cascade :
 
-* Lorsque l’emplacement de l’utilisateur ou de l’utilisatrice est requis, afficher les noms de ville pertinents en fonction du pays de l’utilisateur ou l’utilisatrice.
+* Lorsque l’emplacement de l’utilisateur ou de l’utilisatrice est requis, afficher les noms de ville pertinents en fonction du choix du pays et de l’État de l’utilisateur ou de l’utilisatrice.
 * Charger les noms de marque pertinents dans une liste en fonction du choix de catégorie de produits de l’utilisateur ou l’utilisatrice.
 * Activer/désactiver la visibilité d’un champ spécifique en fonction de la valeur spécifiée dans un autre champ. Par exemple, afficher des champs d’adresse d’expédition distincts si l’utilisateur ou l’utilisatrice demande un envoi à une autre adresse.
 * Désigner un champ comme obligatoire en fonction de la valeur spécifiée dans un autre champ.
@@ -225,7 +239,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. (Facultatif) Ajoutez les autres champs obligatoires. Par exemple, format, codec et durée pour le type de ressource vidéo.
 
-   De même, ajoutez des champs dépendants pour d’autres types de ressources. Par exemple, ajoutez des champs Nombre de pages et Auteur pour les ressources de documents, tels que des fichiers PDF et Word.
+   De même, ajoutez des champs dépendants pour d’autres types de ressources. Par exemple, ajoutez des champs nombre de pages et auteur pour les ressources de documents, tels que des fichiers PDF et Word.
 
    ![video_dependent_fields](assets/video_dependent_fields.png)
 
@@ -270,7 +284,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    *Image : métadonnées en cascade pour un document.*
 
-## Suppression de formulaires de schéma de métadonnées {#delete-metadata-schema-forms}
+## Supprimer les formulaires de schéma de métadonnées {#delete-metadata-schema-forms}
 
 [!DNL Experience Manager] vous permet uniquement de supprimer des formulaires de schéma personnalisés. Elle ne permet pas de supprimer les modèles/formulaires de schéma par défaut. Cependant, vous pouvez supprimer toutes les modifications personnalisées dans ces formulaires.
 
@@ -287,7 +301,7 @@ Pour supprimer un formulaire, sélectionnez-le puis cliquez sur Supprimer.
 
 ### Ajouter des formulaires pour les types MIME {#add-new-forms-for-mime-types}
 
-Créez un formulaire doté du type de formulaire approprié. Par exemple, pour ajouter un modèle pour le sous-type `image/png`, créez le formulaire dans les formulaires « image ». Le titre du formulaire de schéma est le nom du sous-type. Dans ce cas, le titre est `png`.
+Créez un formulaire sous le type de formulaire approprié. Par exemple, pour ajouter un modèle pour le sous-type `image/png`, créez le formulaire dans les formulaires « image ». Le titre du formulaire de schéma de métadonnées est le nom du sous-type. Dans ce cas, le titre est `png`.
 
 #### Utiliser un modèle de schéma existant pour divers types MIME {#use-an-existing-schema-template-for-various-mime-types}
 
@@ -318,7 +332,7 @@ Dans ce cas, créez un nœud sous `/etc/dam/metadataeditor/mimetypemappings` dan
 
 ## Octroi de l’accès aux schémas de métadonnées {#grant-access-to-metadata-schemas}
 
-La fonction Schéma de métadonnées est réservée aux administrateurs. Toutefois, les administrateurs peuvent fournir l’accès aux non-administrateurs en modifiant certaines autorisations. Fournissez les autorisations de création, de modification et de suppression des utilisateurs non-administrateurs sur le dossier `/conf`.
+La fonction Schéma de métadonnées est réservée aux administrateurs. Toutefois, les administrateurs et administratrices peuvent accorder l’accès aux non-administrateurs et non-administratrices en modifiant certaines autorisations. Fournissez les autorisations de création, de modification et de suppression des utilisateurs non-administrateurs sur le dossier `/conf`.
 
 ## Application de métadonnées spécifiques au dossier {#apply-folder-specific-metadata}
 
@@ -328,7 +342,7 @@ Par exemple, vous pouvez définir une variante du schéma de métadonnées par d
 
 Les métadonnées modifiées définies dans le schéma de métadonnées de la variation seront uniquement appliquées aux ressources chargées dans le dossier auquel est appliqué le schéma. Dans les autres dossiers pour lesquels le schéma d’origine est appliqué, [!DNL Assets] continue à utiliser les métadonnées définies dans le schéma d’origine.
 
-L’héritage des métadonnées par les ressources est basé sur le schéma appliqué au dossier de premier niveau dans la hiérarchie. Le même schéma est appliqué ou hérité par les sous-dossiers. Si un autre schéma est appliqué au niveau du sous-dossier, l’héritage s’arrête.
+L’héritage des métadonnées par les ressources est basé sur le schéma appliqué au dossier de premier niveau dans la hiérarchie. Le même schéma est appliqué aux sous-dossiers ou hérité par ceux-ci. Si un autre schéma est appliqué au niveau du sous-dossier, l’héritage s’arrête.
 
 1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**. La page **[!UICONTROL Formulaires de schéma de métadonnées]** s’affiche.
 1. Cochez la case en regard d’un formulaire, par exemple le formulaire de métadonnées par défaut, puis cliquez sur **[!UICONTROL Copier]** et enregistrez-le en tant que formulaire personnalisé. Spécifiez un nom personnalisé pour le formulaire, par exemple `my_default`. Vous pouvez également créer un formulaire personnalisé.
@@ -371,7 +385,7 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées]**. Sélectionnez le formulaire et cliquez sur **[!UICONTROL Appliquer au(x) dossier(s)]** dans la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
 
-1. Accédez au dossier et chargez des ressources présentant des données manquantes pour le champ obligatoire que vous avez ajouté au formulaire personnalisé. Un message concernant les métadonnées manquantes pour le champ obligatoire apparaît dans l’affichage Carte de la ressource.
+1. Accédez au dossier et chargez des ressources présentant des métadonnées manquantes pour le champ obligatoire que vous avez ajouté au formulaire personnalisé. Un message concernant les métadonnées manquantes pour le champ obligatoire apparaît dans la vue Carte de la ressource.
 
    ![Message indiquant l’absence de métadonnées obligatoires en mode Carte des ressources lors du chargement de ressources dans un dossier](assets/metadata-missing-info-card-view.png)
 

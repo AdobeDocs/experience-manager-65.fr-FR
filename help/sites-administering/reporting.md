@@ -10,13 +10,22 @@ exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2806'
 ht-degree: 99%
-
 ---
-
 # Création de rapports {#reporting}
 
 Pour vous aider à analyser et surveiller l’état de votre instance, Adobe Experience Manager (AEM) propose une sélection de rapports par défaut, qui peut être configuré en fonction de vos besoins :
@@ -73,8 +82,8 @@ Pour modifier la sélection des données :
 
 * Pour ajouter une nouvelle colonne, faites glisser le composant requis à partir du sidekick et déposez-le dans la position souhaitée.
 
-   * Une coche verte indique quand la position est valide et une double flèche indique exactement où elle est placée.
-   * Un symbole rouge indique quand la position n’est pas valide.
+  * Une coche verte indique quand la position est valide et une double flèche indique exactement où elle est placée.
+  * Un symbole rouge indique quand la position n’est pas valide.
 
 * Pour déplacer une colonne, cliquez sur l’en-tête, maintenez le bouton de la souris enfoncé et faites-la glisser vers la nouvelle position.
 * Pour supprimer une colonne, cliquez sur le titre de la colonne, maintenez le bouton de la souris enfoncé et faites-la glisser dans la zone d’en-tête du rapport (un signe moins rouge indique que la position n’est pas valide). Relâchez le bouton de la souris. La boîte de dialogue Supprimer les composants vous invite alors à confirmer la suppression de la colonne.
@@ -173,8 +182,8 @@ Lorsque la collecte de données démarre, vous pouvez sélectionner les élémen
 
   Par exemple, si des instantanés quotidiens sont disponibles pour le mois de février 2011 :
 
-   * Si l’intervalle est défini sur `Day`, chaque instantané s’affiche comme une valeur unique dans le graphique.
-   * Si l’intervalle est défini sur `Month`, tous les instantanés de février sont regroupés en une seule valeur (affichée sous la forme d’un « point » unique dans le graphique).
+  * Si l’intervalle est défini sur `Day`, chaque instantané s’affiche comme une valeur unique dans le graphique.
+  * Si l’intervalle est défini sur `Month`, tous les instantanés de février sont regroupés en une seule valeur (affichée sous la forme d’un « point » unique dans le graphique).
 
 Faites vos choix selon vos besoins, puis cliquez sur **Aller** pour les appliquer au rapport. Pour mettre à jour l’affichage après la création d’autres instantanés, cliquez de nouveau sur **OK**.
 
@@ -250,17 +259,17 @@ Il s’agit d’un emplacement où la période de collecte des instantanés pour
 
 * **Traitement du rapport**
 
-   * **données automatiquement actualisées**
+  * **données automatiquement actualisées**
 
-     Les données du rapport sont actualisées à chaque fois que vous mettez à jour la définition du rapport.
+    Les données du rapport sont actualisées à chaque fois que vous mettez à jour la définition du rapport.
 
-   * **données actualisées manuellement**
+  * **données actualisées manuellement**
 
-     Cette option peut être utilisée pour éviter les retards causés par des opérations d’actualisation automatique en cas de volume de données élevé.
+    Cette option peut être utilisée pour éviter les retards causés par des opérations d’actualisation automatique en cas de volume de données élevé.
 
-     Cette option indique que les données du rapport doivent être actualisées manuellement lorsqu’un aspect de la configuration du rapport a changé. Cela signifie également que lorsque vous changez un aspect de la configuration, le tableau du rapport est effacé.
+    Cette option indique que les données du rapport doivent être actualisées manuellement lorsqu’un aspect de la configuration du rapport a changé. Cela signifie également que lorsque vous changez un aspect de la configuration, le tableau du rapport est effacé.
 
-     Lorsque cette option est sélectionnée, le bouton **[Charger les données](#load-data)** s’affiche (en regard de **Modifier** sur le rapport). Le bouton **Charger les données** charge les données et actualise les données du rapport affichées.
+    Lorsque cette option est sélectionnée, le bouton **[Charger les données](#load-data)** s’affiche (en regard de **Modifier** sur le rapport). Le bouton **Charger les données** charge les données et actualise les données du rapport affichées.
 
 * **Instantanés**
 Vous pouvez définir la fréquence pour créer des instantanés : quotidienne, horaire ou pas du tout.
@@ -385,7 +394,7 @@ Les [colonnes d’informations](#selecting-and-positioning-the-data-columns) sur
 * Type
 * Utilisateur
 
-Vous pouvez contrôler les éléments suivants :
+Vous pouvez  les éléments suivants :
 
 * Les dernières modifications.
 * Les auteurs travaillant sur des pages spécifiques.

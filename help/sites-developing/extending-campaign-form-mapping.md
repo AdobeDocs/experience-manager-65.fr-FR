@@ -9,13 +9,22 @@ exl-id: bce6c586-9962-4217-82cb-c837e479abc0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
-
+source-wordcount: '538'
+ht-degree: 92%
 ---
-
 # Créer des mappages de formulaires personnalisés{#creating-custom-form-mappings}
 
 Lorsque vous créez un tableau personnalisé dans Adobe Campaign, vous souhaiterez peut-être créer un formulaire dans AEM mappé à ce tableau personnalisé.
@@ -122,7 +131,7 @@ Vous pouvez désormais envoyer le formulaire et valider, du côté Adobe Campai
 
 ## Résolution des problèmes {#troubleshooting}
 
-**« Invalid type for value &#39;02/02/2015&#39; from element &#39;@eventdate&#39; (document of type &#39;Event ([adb:event])&#39;) »**
+**« Type invalide sur la valeur &#39;02/02/2015&#39; à partir de l&#39;élément &#39;@eventdate&#39; (document de type &#39;Evénement ([adb:event])&#39;)«**
 
 Lors de l’envoi du formulaire, cette erreur est consignée dans la variable **error.log** dans AEM.
 

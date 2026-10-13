@@ -6,17 +6,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 96%
-
 ---
-
 
 # Composant RemotePage {#remote-page-component}
 
-Lorsque vous décidez du niveau d’intégration vous souhaitez avoir entre votre SPA externe et votre instance AEM, il est souvent évident que vous devez être capable d’afficher et de modifier la SPA dans AEM. Le composant RemotePage est un composant de page personnalisé destiné uniquement à cette fin.
+Lorsque vous décidez du niveau d’intégration que vous souhaitez avoir entre votre SPA externe et AEM, il est souvent évident que vous devez être capable d’afficher et de modifier la SPA dans AEM. Le composant RemotePage est un composant de page personnalisé destiné uniquement à cette fin.
 
 {{ue-over-spa}}
 
@@ -35,10 +49,10 @@ Consultez l’article [Modification d’un SPA externe dans AEM](spa-edit-extern
 * Activer CORS en développement
 * Configurer l’URL distante dans les propriétés de page
 * Effectuer le rendu de la SPA dans AEM
-* L’application web doit utiliser un des manifestes de ressource de lot suivants et exposer un fichier asset-manifest.json à la racine du domaine qui répertorie dans une propriété de points d’entrée tous les fichiers CSS et JS à charger :
-   * https://github.com/shellscape/webpack-manifest-plugin
-   * https://github.com/webdeveric/webpack-assets-manifest
-   * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
+* L’application web doit utiliser un des manifestes de ressource de bundler suivants et exposer un fichier asset-manifest.json à la racine du domaine qui répertorie, dans une propriété de points d’entrée, tous les fichiers CSS et JS à charger :
+  * https://github.com/shellscape/webpack-manifest-plugin
+  * https://github.com/webdeveric/webpack-assets-manifest
+  * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
 
   ![Points d’entrée](assets/asset-manifest-entrypoints.png)
 

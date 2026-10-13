@@ -8,23 +8,34 @@ feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '706'
 ht-degree: 100%
-
 ---
-
 # Enregistrement en tant qu’utilisateur ou utilisatrice {#registering-as-a-user}
 
-Vous pouvez utiliser des documents protégés par une politique que vous recevez d’un utilisateur ou d’une utilisatrice de Document Security, même si vous n’appartenez pas à l’organisation de l’utilisateur ou de l’utilisatrice. Pour utiliser un document protégé par une politique, vous devez vous enregistrer auprès de Document Security. Si vous n’avez pas déjà reçu d’invitation à vous enregistrer, Document Security lance le processus d’enregistrement lorsque ces événements se produisent :
+Vous pouvez utiliser des documents protégés par une politique que vous recevez d’un utilisateur ou d’une utilisatrice de Document Security, même si vous n’appartenez pas à l’organisation de l’utilisateur ou de l’utilisatrice. Pour utiliser un document protégé par une politique, vous devez vous enregistrer auprès de la sécurité des documents. Si vous n’avez pas déjà reçu d’invitation à vous enregistrer, Document Security lance le processus d’enregistrement lorsque ces événements se produisent :
 
 * Un utilisateur ou une utilisatrice de Document Security qui souhaite vous envoyer un fichier protégé par une politique vous ajoute à une politique.
-* Un administrateur ou une administratrice de Document Security vous crée un compte.
+* Un administrateur ou une administratrice de la sécurité des documents vous crée un compte.
 
   Après votre enregistrement et l’activation de votre compte, vous pouvez utiliser les fichiers protégés par une politique pour lesquels vous disposez d’une autorisation. Si l’administrateur ou l’administratrice Document Security active ces fonctionnalités pour les utilisateurs et utilisatrices invités, vous pouvez avoir l’autorisation d’effectuer les tâches suivantes :
 
-* Protégez des documents à l’aide de politiques Document Security.
+* Protégez des documents à l’aide de politiques de sécurité des documents.
 * Créez vos propres politiques d’utilisateur ou d’utilisatrice que vous pouvez appliquer à vos documents.
 * Invitez d’autres utilisateurs et utilisatrices externes à utiliser un document protégé par une politique en les ajoutant à la politique.
 
@@ -32,16 +43,16 @@ Vous pouvez utiliser des documents protégés par une politique que vous recevez
 
 >[!NOTE]
 >
->Si vous recevez un document protégé par une politique, mais ne recevez pas d’invitation d’enregistrement par e-mail, contactez la personne qui vous a envoyé le document pour plus d’informations.
+>Si vous recevez un document protégé par une politique, mais ne recevez pas d’invitation par e-mail à vous enregistrer, contactez la personne qui vous a envoyé le document pour plus d’informations.
 
 ## S’enregistrer en tant que personne invitée {#register-as-an-invited-user}
 
-Si vous recevez une invitation à vous enregistrer par e-mail de la part de Document Security, vous pouvez vous enregistrer à l’aide de l’URL indiquée pour ouvrir la page d’enregistrement en ligne. Une fois enregistré, vous recevrez un second e-mail concernant l’activation de votre compte.
+Si vous recevez une invitation à vous enregistrer par e-mail de la part de Document Security, vous pouvez vous enregistrer à l’aide de l’URL indiquée pour ouvrir la page d’enregistrement en ligne. Une fois enregistré, vous recevrez un second avis concernant l’activation de votre compte.
 
 1. Ouvrez l’e-mail d’enregistrement de Document Security. L’URL contenue dans le message est un lien vers la page Enregistrement des utilisateurs et utilisatrices externes de Document Security.
 1. Cliquez sur l’URL ou copiez-la et collez-la dans votre navigateur. La page Enregistrement des utilisateurs et utilisatrices externes s’affiche.
 1. Saisissez vos nom, numéro de téléphone, adresse, organisation et mot de passe dans les zones appropriées, puis saisissez à nouveau votre mot de passe dans la zone Confirmer le mot de passe. Votre mot de passe peut être n’importe quelle combinaison de huit caractères.
-1. Cliquez sur Enregistrer. Un message s’affiche pour vous demander de vérifier votre adresse e-mail en vue d’envoyer un e-mail d’activation. Activez maintenant votre compte pour terminer le processus d’enregistrement.
+1. Cliquez sur Enregistrer. Un message s’affiche pour vous demander de vérifier votre adresse e-mail afin d’y rechercher un e-mail d’activation. Activez maintenant votre compte pour terminer le processus d’enregistrement.
 
 ## Activation de votre compte de personne invitée {#activate-your-invited-user-account}
 
@@ -49,7 +60,7 @@ Une fois l’enregistrement effectué, Document Security vous envoie un e-mail d
 
 Votre compte reste actif jusqu’à ce que l’administrateur ou l’administratrice le désactive ou le supprime.
 
-1. Ouvrez l’e-mail de confirmation d’enregistrement de Document security.
+1. Ouvrez l’e-mail de confirmation d’enregistrement de Document Security.
 1. Cliquez sur l’URL qui apparaît dans le message. La page d’activation de Document Security s’affiche.
 1. Cliquez sur le mot Ici pour accéder à la page de connexion.
 1. Dans la zone Nom d’utilisateur, saisissez l’adresse e-mail à l’aide de laquelle vous avez effectué votre enregistrement auprès de Document Security. Cette adresse correspond à votre nom d’utilisateur ou d’utilisatrice Document Security par défaut.
@@ -59,10 +70,10 @@ Votre compte reste actif jusqu’à ce que l’administrateur ou l’administrat
 
 Si vous oubliez votre mot de passe, l’administrateur ou l’administratrice de politique peut le réinitialiser à votre place. La réinitialisation d’un mot de passe génère un e-mail qui vous invite à vous connecter à l’aide d’un mot de passe temporaire. Vous pouvez ensuite créer un autre mot de passe.
 
-Pour plus d’informations sur les contacts avec un administrateur ou une administratrice de Document Security afin d’obtenir un nouveau mot de passe, vérifiez votre notification par e-mail d’activation ou d’autres notifications de l’entreprise qui vous a envoyé une invitation à vous enregistrer.
+Pour plus d’informations sur la façon de contacter un administrateur ou une administratrice de Document Security afin d’obtenir un nouveau mot de passe, vérifiez votre notification par e-mail d’activation ou d’autres notifications de l’entreprise qui vous a envoyé une invitation à vous enregistrer.
 
 1. Indiquez à l’administrateur ou à l’administratrice de politique que vous avez besoin d’un nouveau mot de passe.
-1. Lorsque vous recevez l’e-mail de mot de passe de Document Security, ouvrez-le et obtenez votre nouveau mot de passe temporaire.
+1. Lorsque vous recevez l’e-mail de mot de passe de Document Security, ouvrez-le et relevez votre nouveau mot de passe temporaire.
 1. Connectez-vous à Document Security à l’aide du nouveau mot de passe temporaire.
 1. Dans l’angle supérieur droit de la page, cliquez sur Options. La page Utilisateurs et utilisatrices externes s’affiche.
 1. Sélectionnez Modifier le mot de passe et saisissez le mot de passe temporaire dans la zone Ancien mot de passe.

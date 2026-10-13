@@ -1,6 +1,6 @@
 ---
 title: Assembler plusieurs fragments XDP
-description: Assemblez plusieurs fragments XDP en un seul document XDP à l’aide de l’API Java et de l’API de service Web.
+description: Assembler plusieurs fragments XDP dans un seul document XDP à l’aide de l’API Java et de l’API de service Web.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
@@ -11,16 +11,30 @@ role: Developer
 exl-id: 54d98c69-2b2e-46cb-9f6a-7e9bdbe5c378
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 98%
-
 ---
-
 # Assembler plusieurs fragments XDP{#assembling-multiple-xdp-fragments}
 
-Vous pouvez assembler plusieurs fragments XDP en un seul document XDP. Prenons l’exemple des fragments XDP où chaque fichier XDP contient un ou plusieurs sous-formulaires utilisés pour créer un formulaire d’intégrité. L’illustration suivante montre le mode Plan (représente le fichier tuc018_template_flowed.xdp utilisé dans le démarrage rapide *Assembler plusieurs fragments XDP*) :
+Vous pouvez assembler plusieurs fragments XDP en un seul document XDP. Prenons l’exemple des fragments XDP où chaque fichier XDP contient un ou plusieurs sous-formulaires utilisés pour créer un formulaire de santé. L’illustration suivante montre le mode Plan (représente le fichier tuc018_template_flowed.xdp utilisé dans le démarrage rapide *Assembler plusieurs fragments XDP*) :
 
 ![am_am_forma](assets/am_am_forma.png)
 
@@ -91,7 +105,7 @@ Pour assembler plusieurs fragments XDP, effectuez les tâches suivantes :
 1. Incluez les fichiers de projet.
 1. Créez un client Assembler PDF.
 1. Référencez un document DX existant.
-1. Référencez les documents XDP.
+1. Indiquez les documents XDP.
 1. Définissez les options d’exécution.
 1. Assemblez plusieurs documents XDP.
 1. Récupérez le document XDP assemblé.
@@ -105,7 +119,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utility.jar (obligatoire si AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss)
 
 **Créer un client PDF Assembler**
@@ -154,7 +168,7 @@ Un document XDP assemblé est renvoyé dans un objet de collection. Effectuez u
 
 ## Assembler plusieurs fragments XDP à l’aide de l’API Java {#assemble-multiple-xdp-fragments-using-the-java-api}
 
-Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (Java) :
+Assemblez plusieurs fragments XDP à l’aide de l’API du service Assembler (Java) :
 
 1. Incluez les fichiers de projet.
 
@@ -176,8 +190,8 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (Ja
    * Créez un objet `com.adobe.idp.Document` et transmettez l’objet `java.io.FileInputStream` contenant le fichier XDP d’entrée (répétez cette tâche pour chaque fichier XDP).
    * Ajoutez une entrée à l’objet `java.util.Map` en appelant sa méthode `put` et en transmettant les arguments suivants :
 
-      * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément `source` spécifiée dans le document DDX (répétez cette tâche pour chaque fichier XDP).
-      * Un objet `com.adobe.idp.Document` qui contient le document XDP correspondant à l’élément `source` (répétez cette tâche pour chaque fichier XDP).
+     * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément `source` spécifiée dans le document DDX (répétez cette tâche pour chaque fichier XDP).
+     * Un objet `com.adobe.idp.Document` qui contient le document XDP correspondant à l’élément `source` (répétez cette tâche pour chaque fichier XDP).
 
 1. Définissez les options d’exécution.
 
@@ -211,7 +225,7 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (Ja
 
 ## Assembler plusieurs fragments XDP à l’aide de l’API de service Web {#assemble-multiple-xdp-fragments-using-the-web-service-api}
 
-Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (service Web) :
+Assemblez plusieurs fragments XDP à l’aide de l’API du service Assembler (service Web) :
 
 1. Incluez les fichiers de projet.
 
@@ -225,7 +239,7 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (se
    >
    >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
-1. Créez un client Assembler PDF.
+1. Créez un client PDF Assembler.
 
    * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
    * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms, telle que `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
@@ -233,10 +247,10 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (se
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur des formulaires AEM au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur du mot de passe correspondant au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur des formulaires AEM au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur du mot de passe correspondant au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Référencez un document DX existant.
 
@@ -280,7 +294,7 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (se
 
    * Accédez au champ `documents` de l’objet `AssemblerResult`, qui est un objet `Map` contenant les documents PDF générés.
    * Effectuez une itération par le biais de l’objet `Map` pour obtenir chaque document généré. Convertissez ensuite l’élément `value` du membre de tableau en `BLOB`.
-   * Extrayez les données binaires qui représentent le document PDF en accédant à la propriété `MTOM` de son objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez retranscrire dans un fichier XDP.
+   * Extrayez les données binaires qui représentent le document PDF en accédant à la propriété `MTOM` de son objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez écrire dans un fichier XDP.
 
 **Voir également**
 

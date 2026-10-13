@@ -9,13 +9,25 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 31b52a82-5062-403e-bba7-e6a7e32ee961
-source-git-commit: 913e249ba52f1ee262ed78167ce3b2a857e86213
-workflow-type: ht
-source-wordcount: '287'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 95%
 ---
-
 # Comment ouvrir un formulaire PDF XFA dans Firefox et Chrome
 
 ## Problème
@@ -50,11 +62,11 @@ Pour utiliser des formulaires PDF XFA dans Firefox et Chrome, procédez comme su
 
 1. Cliquez sur Désactiver sous Visionneuse PDF Chrome, puis sur Activer sous Extension Adobe PDF.
    ![chrome-pdf-viewer](/help/forms/using/assets/chrome-image.png)
-Pour plus d’informations, consultez la documentation Google de l’extension [Adobe PDF](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538).
+   Pour plus d’informations, voir la documentation du plug-in [&#128279;](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) de Google.
 
 >[!NOTE]
 > 
 > LiveCycle ES4 prend en charge le rendu de formulaires XFA en formulaires HTML5 afin que les formulaires puissent être ouverts dans les navigateurs prenant en charge le format HTML5, y compris ceux qui sont installés sur des appareils mobiles, tels que les iPad. Le rendu HTML5 des formulaires conserve la disposition du formulaire et prend en charge la plupart des logiques de formulaire (JavaScript, Form Calc et les validations de formulaire, par exemple) intégrées dans le modèle de formulaire XFA. Ainsi, vos investissements technologiques dans les formulaires XFA sont facilement transférés vers les appareils sur lesquels l’exécution du plug-in Adobe Reader n’est pas possible.
-> >Pour plus d’informations, consultez la [documentation de produit LiveCycle](https://business.adobe.com/fr/products/experience-manager/forms/aem-forms.html).
+>Pour plus d’informations, consultez la [documentation de produit LiveCycle](https://business.adobe.com/fr/products/experience-manager/forms/aem-forms.html).
 
 [Mentions légales](https://chl-author-preview.corp.adobe.com/content/help/fr/legal/legal-notices.html) | [Politique de confidentialité en ligne](https://www.adobe.com/privacy.html)

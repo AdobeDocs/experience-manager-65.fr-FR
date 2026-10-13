@@ -9,13 +9,27 @@ exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2503'
 ht-degree: 99%
-
 ---
-
 # Créer et configurer des rôles{#creating-and-configuring-roles}
 
 Les pages web de User Management vous permettent d’associer des utilisateurs, des utilisatrices et des groupes à des rôles faisant partie de la base de données User Management. Vous pouvez également créer, modifier et supprimer des rôles.
@@ -26,7 +40,7 @@ User Management comporte deux types de rôles :
 
 **Rôles non-modifiables :** les rôles par défaut inclus dans User Management sont des rôles non modifiables. Ils ne peuvent être ni modifiés ni supprimés. Toutefois, vous pouvez ajouter ou supprimer des utilisateurs, des utilisatrices et des groupes affectés à des rôles non modifiables.
 
-Les API d’AEM forms permettent également de créer des rôles modifiables et non modifiables.
+Les API d’AEM Forms permettent également de créer des rôles modifiables et non modifiables.
 
 ## Rôles par défaut {#default-roles}
 
@@ -34,7 +48,7 @@ Les rôles par défaut suivants sont inclus dans la base de données User Manage
 
 **Utilisateur de la console d’administration :** peut accéder à la console d’administration.
 
-**Administrateur de l’application :** peut utiliser toutes les fonctionnalités de Workbench. Peut utiliser les pages Applications et services d’Administration Console pour configurer des propriétés d’exécution de services, des points d’entrée et la sécurité.
+**Administrateur de l’application :** peut utiliser toutes les fonctionnalités de Workbench. Peut utiliser les pages Applications et services de la console d’administration pour configurer des propriétés d’exécution de services, des points d’entrée et la sécurité.
 
 **Administrateur d’AEM Forms :** peut effectuer toutes les tâches pour tous les services installés.
 
@@ -104,7 +118,7 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-1. Dans la console d’administration, cliquez sur Paramètres > User Management > Gestion des rôles, puis sur Nouveau rôle.
+1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des rôles, puis sur Nouveau rôle.
 1. Dans la zone Nom du rôle, saisissez le nom du rôle, indiquez éventuellement une description, puis cliquez sur Suivant.
 
    >[!NOTE]
@@ -117,11 +131,11 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 
    * Cliquez sur Rechercher des utilisateurs/groupes.
    * Dans la zone Rechercher, saisissez vos critères de recherche.
-   * Sélectionnez Nom, E-mail ou ID utilisateur, puis Utilisateurs, Groupes ou Utilisateurs et groupes.
+   * Sélectionnez Nom, E-mail ou ID utilisateur, puis Utilisateurs, Groupes ou Utilisateurs et Groupes.
    * Sélectionnez le domaine, le nombre de résultats à afficher, puis cliquez sur Rechercher.
-   * Cochez les cases correspondant aux personnes et aux groupes auxquels affecter ce rôle, puis cliquez sur OK.
+   * Cochez les cases correspondant aux utilisateurs et utilisatrices et aux groupes auxquels affecter ce rôle, puis cliquez sur OK.
 
-1. Pour afficher les détails relatifs aux personnes et aux groupes, sélectionnez l’entité.
+1. Pour afficher les détails relatifs aux utilisateurs et utilisatrices et aux groupes, sélectionnez l’entité.
 1. Cliquez sur OK, puis sur Terminer.
 
 ## Modifier un rôle {#edit-a-role}
@@ -138,7 +152,7 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 
 1. Pour gérer l’affectation d’un rôle, cliquez sur l’onglet Utilisateurs de rôle et procédez comme suit :
 
-   * Pour affecter le rôle à de nouvelles personnes et à de nouveaux groupes, cliquez sur Rechercher des utilisateurs/groupes et saisissez les informations de recherche. Cochez la case correspondant à chaque personne et groupe auxquels affecter ce rôle, cliquez sur OK, puis sur Enregistrer.
+   * Pour affecter le rôle à de nouveaux utilisateurs, utilsatrices et groupes, cliquez sur Rechercher des utilisateurs/groupes et saisissez les informations de recherche. Cochez la case correspondant à chaque utilisateur et utilisatrice et groupe auxquels affecter ce rôle, cliquez sur OK, puis sur Enregistrer.
    * Pour supprimer le rôle, cochez la case correspondant aux personnes ou aux groupes, cliquez sur Annuler l’attribution, puis sur Enregistrer.
 
 ## Supprimer un rôle {#delete-a-role}
@@ -166,13 +180,13 @@ Vous pouvez également attribuer des rôles à l’aide de la page Gestion des r
 
    Par défaut, la page Gestion des rôles affiche tous les rôles de la base de données User Management. Si la liste des rôles est trop importante, utilisez la zone Rechercher située en haut de la page pour rechercher un nom de rôle particulier.
 
-1. Sur la page Détails du rôle, cliquez sur l’onglet Utilisateurs de rôle. Une liste des personnes et des groupes directement associés au rôle s’affiche.
+1. Sur la page Détails du rôle, cliquez sur l’onglet Utilisateurs du rôle. Une liste des personnes et des groupes directement associés au rôle s’affiche.
 
 ## Modifier les autorisations de rôle {#change-role-permissions}
 
 Vous pouvez modifier les autorisations de l’un des rôles que vous avez créés. Vous ne pouvez pas modifier les autorisations des rôles d’AEM par défaut inclus dans le produit.
 
-1. Dans la console d’administration, cliquez sur Paramètres > User Management > Gestion des rôles, puis sur Nom du rôle.
+1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des rôles, puis sur Nom du rôle.
 
    Par défaut, la page Gestion des rôles affiche tous les rôles de la base de données User Management. Si la liste des rôles est trop importante, utilisez la zone Rechercher située en haut de la page pour rechercher un nom de rôle particulier.
 
@@ -344,7 +358,7 @@ Vous pouvez modifier les autorisations de l’un des rôles que vous avez créé
 
 **Ouverture de fichiers dans Workbench**
 
-Pour consulter le contenu de la vue Ressources de Workbench et ouvrir des fichiers, les autorisations suivantes sont nécessaires :
+Pour consulter le contenu de la vue Ressources de l’atelier et ouvrir des fichiers, les autorisations suivantes sont nécessaires :
 
 * Repository Read
 * Repository Traverse
@@ -353,7 +367,7 @@ Pour consulter le contenu de la vue Ressources de Workbench et ouvrir des fichie
 
 ## Supprimer un utilisateur, une utilisatrice ou un groupe d’un rôle {#remove-a-user-or-group-from-a-role}
 
-La page Gestion des rôles permet de supprimer des utilisateurs, des utilisatrices et des groupes d’un rôle particulier. Si l’utilisateur, l’utilisatrice ou le groupe a hérité de l’affectation du rôle, il est impossible de supprimer ce rôle au niveau de l’utilisateur, de l’utilisatrice ou du groupe. Supprimez l’utilisateur, l’utilisatrice ou le groupe dans l’arborescence d’héritage ou supprimez le rôle depuis le parent.
+La page Gestion des rôles permet de supprimer des utilisateurs, des utilisatrices et des groupes d’un rôle particulier. Si l’utilisateur, l’utilisatrice ou le groupe a hérité de l’affectation du rôle, il est impossible de supprimer ce rôle au niveau de l’utilisateur, de l’utilisatrice ou du groupe. Supprimez l’utilisateur, l’utilisatrice ou le groupe de l’arborescence d’héritage ou supprimez le rôle du parent.
 
 1. Dans la console d’administration, cliquez sur Paramètres > User Management > Gestion des rôles, puis sur Nom du rôle.
 

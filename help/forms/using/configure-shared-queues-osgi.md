@@ -8,13 +8,31 @@ exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '847'
 ht-degree: 100%
-
 ---
-
 # Partage et demande d’accès aux éléments de la boîte de réception d’un utilisateur {#share-and-request-access}
 
 Une file d’attente est une liste d’éléments dans une boîte de réception AEM d’un utilisateur. Il peut s’agir d’éléments affectés à un utilisateur ou d’éléments partagés avec le groupe auquel un utilisateur appartient. Vous pouvez accéder à votre boîte de réception pour afficher un l’élément et exécuter une action dessus, par exemple le partager avec un autre utilisateur.
@@ -57,7 +75,7 @@ Pour partager un élément de boîte de réception avec un autre utilisateur, pr
 >
 >(Pour les éléments de processus orienté formulaire uniquement) Activez l’option **[Autoriser les personnes désignées à partager explicitement dans la boîte de réception](aem-forms-workflow-step-reference.md)** de l’étape **Affecter une tâche** dans le processus. Seuls les éléments pour lesquels cette option est activée s’affichent pour les autres utilisateurs.
 
-## Demande d’accès aux éléments de la boîte de réception  {#request-access}
+## Demande d’accès aux éléments de la boîte de réception {#request-access}
 
 Vous pouvez demander l’accès aux éléments de la boîte de réception d’un autre utilisateur. Une fois l’accès accordé, vous pouvez afficher, demander et exécuter des actions appropriées sur les éléments partagés. Pour demander l’accès aux éléments de la boîte de réception d’un autre utilisateur, procédez comme suit :
 
@@ -78,7 +96,7 @@ Vous ne pouvez commencer à travailler sur un élément partagé qu’après l�
 
 ## Libération des éléments demandés {#release-items}
 
-Vous ne pouvez travailler sur un élément partagé qu’après l’avoir demandé. Les autres utilisateurs ne peuvent pas afficher ni travailler sur un élément que vous avez demandé. Si vous ne pouvez pas continuer à travailler sur un élément, vous pouvez le remettre dans le pool. Une fois l’élément libéré, d’autres utilisateurs peuvent le demander et travailler dessus :
+Vous ne pouvez travailler sur un élément partagé qu’après l’avoir demandé. Les autres utilisateurs ne peuvent pas afficher ni travailler sur un élément que vous avez demandé. Si vous ne pouvez pas continuer à travailler sur un élément, vous pouvez le remettre dans le pool.   Une fois l’élément libéré, d’autres utilisateurs peuvent le demander et travailler dessus :
 
 Pour libérer un élément, procédez comme suit :
 

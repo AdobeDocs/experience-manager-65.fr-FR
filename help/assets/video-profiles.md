@@ -15,25 +15,35 @@ autotag-review: '2026-05-18T18:37:44.170Z'
 TQID: 'https://experienceleague.adobe.com/ePAqMpipETShCgP-zIuOJjvkopRXp77eHxrGlgBC1SQ'
 product_v2:
   - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8ea7e82-d45e-442f-bb04-b3788a7abcb0
+    internal-label: Video profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Artificial intelligence
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: 3779
+source-wordcount: '3782'
 ht-degree: 93%
-
 ---
-
 # Profils vidéo {#video-profiles}
 
 Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Lorsque vous codez vos vidéos sources originales à l’aide du profil de codage vidéo adaptatif, au cours de la lecture, le lecteur vidéo ajuste automatiquement la qualité du flux vidéo en fonction de la vitesse de la connexion Internet de vos clients. Cette action est connue sous le nom de diffusion en continu à débit adaptatif.
@@ -76,7 +86,7 @@ Le tableau suivant identifie les profils de codage correspondant aux bonnes prat
    <td><strong>Taille de la vidéo – Hauteur (px)</strong></td>
    <td><strong>Conserver les proportions ?</strong></td>
    <td><strong>Débit vidéo (kbit/s)</strong></td>
-   <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td>
+   <td><strong>Fréquence d’images vidéo (i/s)</strong></td>
    <td><strong>Codec audio</strong></td>
    <td><strong>Débit audio (Kbits/s)</strong></td>
   </tr>
@@ -210,11 +220,11 @@ Sélectionnez l’icône d’information en regard de chaque option pour accéde
 
 Vous pouvez maintenant appliquer le profil aux dossiers contenant des vidéos. Consultez la section [Application d’un profil vidéo à des dossiers](#applying-a-video-profile-to-folders) ou [Application d’un profil vidéo à l’ensemble des ressources](#applying-a-video-profile-globally).
 
-## Création d’un profil vidéo pour la diffusion progressive en continu {#creating-a-video-encoding-profile-for-progressive-streaming}
+## Créer un profil vidéo pour le streaming progressif {#creating-a-video-encoding-profile-for-progressive-streaming}
 
 Si vous choisissez de ne pas utiliser l’option **[!UICONTROL Coder pour la diffusion adaptative en continu]**, tous les paramètres prédéfinis de codage que vous ajoutez au profil sont traités comme des rendus vidéo individuels pour la diffusion en flux continu à débit unique ou la diffusion vidéo progressive. En outre, il n’existe aucune validation permettant de s’assurer que tous les rendus vidéo ont le même format.
 
-En fonction du mode que vous exécutez, les codecs de format vidéo pris en charge sont les suivants :
+Selon le mode utilisé, les codecs de format vidéo pris en charge sont les suivants :
 
 * Dynamic Media en mode Scene7 : H.264 (.mp4)
 * Dynamic Media en mode hybride : H.264 (.mp4), WebM
@@ -237,13 +247,13 @@ Sélectionnez l’icône d’information en regard de chaque option pour accéde
 1. Procédez comme suit :
    * Dans le champ **[!UICONTROL Largeur]**, saisissez **[!UICONTROL auto]**.
    * Dans le champ **[!UICONTROL Hauteur]**, saisissez une valeur en pixels.
-Pour visualiser plus facilement la taille de la vidéo, sélectionnez l’icône d’informations de hauteur pour ouvrir la page **[!UICONTROL Calcul de la taille]**. Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions de votre choix pour la vidéo (encadré bleu). Lorsque vous avez terminé, dans le coin supérieur droit de la boîte de dialogue, sélectionnez **[!UICONTROL X]**.
+     Pour visualiser plus facilement la taille de la vidéo, sélectionnez l’icône d’informations de hauteur pour ouvrir la page **[!UICONTROL Calcul de la taille]**. Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions de votre choix pour la vidéo (encadré bleu). Lorsque vous avez terminé, dans le coin supérieur droit de la boîte de dialogue, sélectionnez **[!UICONTROL X]**.
 1. (Facultatif) Effectuez l’une des opérations suivantes :
 
    * Sélectionnez l’onglet **[!UICONTROL Avancé]** et assurez-vous que la case **[!UICONTROL Utiliser les valeurs par défaut]** est sélectionnée (recommandé).
 
    * Désélectionnez la case **[!UICONTROL Utiliser les valeurs par défaut]** et spécifiez les paramètres vidéo et audio de votre choix.
-Sélectionnez l’icône d’information en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
+     Sélectionnez l’icône d’information en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
 
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le paramètre prédéfini.
 1. Utilisez l’une des méthodes suivantes :
@@ -349,7 +359,7 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**.
 1. Sur la page Profil de codage vidéo, modifiez le nom et la description, le cas échéant.
 1. La bonne pratique consiste à vérifier que la case **[!UICONTROL Coder pour la diffusion en continu à débit adaptatif]** est cochée.
-Sélectionnez l’icône d’information pour obtenir une description de la diffusion en continu à débit adaptatif. (Si vous modifiez un profil de vidéo progressive, ne cochez pas cette case.)
+Sélectionnez l’icône d’information pour obtenir une description du streaming à débit adaptatif. (Si vous modifiez un profil vidéo progressif, ne cochez pas cette case.)
 1. Sous le titre Paramètres prédéfinis de codage vidéo, ajoutez, modifiez ou supprimez des paramètres prédéfinis de codage vidéo qui constituent le profil.
 
    Sélectionnez l’icône d’information en regard de chaque option des onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]** pour accéder à des descriptions supplémentaires ou à des paramètres recommandés en fonction du codec vidéo sélectionné.
@@ -362,7 +372,7 @@ Sélectionnez l’icône d’information pour obtenir une description de la diff
 1. Sur la page Profils vidéo, cochez un nom de profil vidéo.
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Copier]**.
 1. Sur la page Profil de codage vidéo, saisissez un nouveau nom pour le profil.
-1. La bonne pratique consiste à vérifier que la case **[!UICONTROL Coder pour la diffusion en continu adaptative]** est cochée. Sélectionnez l’icône d’information pour obtenir une description de la diffusion en continu à débit adaptatif. (Si vous copiez un profil de vidéo progressive, ne cochez pas cette case.)
+1. La bonne pratique consiste à vérifier que la case **[!UICONTROL Coder pour la diffusion en continu adaptative]** est cochée. Sélectionnez l’icône d’information pour obtenir une description de la diffusion en continu à débit adaptatif. (Si vous copiez un profil vidéo progressif, ne cochez pas cette case.)
 
    Dans le mode hybride de Dynamic Media, si un paramètre prédéfini vidéo WebM fait partie du profil vidéo, l’option **[!UICONTROL Coder pour la diffusion en continu adaptative]** n’est pas disponible, car tous les paramètres prédéfinis doivent être des paramètres MP4.
 1. Sous le titre Paramètres prédéfinis de codage vidéo, ajoutez, modifiez ou supprimez des paramètres prédéfinis de codage vidéo qui constituent le profil.
@@ -380,7 +390,7 @@ Sélectionnez l’icône d’information pour obtenir une description de la diff
 
 ## Application d’un profil vidéo à des dossiers {#applying-a-video-profile-to-folders}
 
-Lorsque vous affectez un profil de vidéo à un dossier, tous les sous-dossiers héritent automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil vidéo à un dossier. Ainsi, réfléchissez soigneusement à la structure de dossiers de l’emplacement où vous chargez, stockez, utilisez et archivez les ressources.
+Lorsque vous affectez un profil vidéo à un dossier, tous les sous-dossiers héritent automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil vidéo à un dossier. Ainsi, réfléchissez soigneusement à la structure de dossiers de l’emplacement où vous chargez, stockez, utilisez et archivez les ressources.
 
 Si vous avez affecté un profil vidéo différent à un dossier, le nouveau profil remplace le précédent. Les ressources du dossier précédent restent inchangées. Le nouveau profil est appliqué aux ressources ajoutées ultérieurement au dossier.
 
@@ -400,21 +410,21 @@ Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profi
 
 Voir aussi [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
 
-#### Application d’un profil vidéo à des dossiers à l’aide de l’interface utilisateur Profils {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
+#### Appliquer un profil vidéo à des dossiers à l’aide de l’interface ’utilisation Profils {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
 1. Sélectionnez le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
 1. Sélectionnez le profil vidéo à appliquer à un ou plusieurs dossiers.
 1. Sélectionnez **[!UICONTROL Appliquer le profil au(x) dossier(s)]** et sélectionnez le ou les dossiers que vous voulez voir recevoir les ressources récemment chargées, puis sélectionnez **[!UICONTROL Appliquer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier en **[!UICONTROL mode Carte]**.
 Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
 
-#### Application d’un profil vidéo à des dossiers à partir des Propriétés {#applying-video-profiles-to-folders-from-properties}
+#### Appliquer un profil vidéo à des dossiers à partir des Propriétés {#applying-video-profiles-to-folders-from-properties}
 
 1. Sélectionnez le logo Experience Manager et accédez à **[!UICONTROL Assets]**, puis au dossier auquel vous souhaitez appliquer un profil vidéo.
 1. Dans le dossier, sélectionnez la coche pour la sélectionner, puis **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]**, sélectionnez le profil dans le menu déroulant, puis sélectionnez **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
-Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
+   Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
 
 ### Application d’un profil vidéo à l’ensemble des ressources {#applying-a-video-profile-globally}
 
@@ -429,11 +439,11 @@ Consultez également la section [Retraitement des ressources dans un dossier apr
   ![chlimage_1-519](assets/chlimage_1-519.png)
 * Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
 
-## Surveillance de la progression d’une tâche de traitement de profil vidéo {#monitoring-the-progress-of-an-encoding-job}
+## Surveiller la progression d’une tâche de traitement de profil vidéo {#monitoring-the-progress-of-an-encoding-job}
 
 Un indicateur (ou une barre) de progression s’affiche afin que vous puissiez surveiller visuellement la progression d’une tâche de traitement d’un profil vidéo.
 
-Vous pouvez également consulter le fichier `error.log` pour contrôler la progression d’une tâche de codage, voir si le codage est terminé ou afficher les erreurs d’une tâche. Le fichier `error.log` se trouve dans le dossier `logs` où vous avez installé votre instance d’Experience Manager.
+Vous pouvez également consulter le fichier `error.log` pour  la progression d’une tâche de codage, voir si le codage est terminé ou afficher les erreurs d’une tâche. Le fichier `error.log` se trouve dans le dossier `logs` où vous avez installé votre instance d’Experience Manager.
 
 ## Suppression d’un profil vidéo dans des dossiers {#removing-a-video-profile-from-folders}
 
@@ -449,7 +459,7 @@ Vous pouvez supprimer un profil vidéo d’un dossier depuis le menu **[!UICONTR
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil vidéo n’est plus appliqué à un dossier.
 
-### Suppression d’un profil vidéo dans des dossiers à l’aide des Propriétés {#removing-video-profiles-from-folders-by-way-of-properties}
+### Supprimer un profil vidéo de dossiers à l’aide des Propriétés {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Sélectionnez le logo Experience Manager et accédez à **[!UICONTROL Assets]**, puis au dossier duquel vous souhaitez supprimer un profil vidéo.
 1. Dans le dossier, sélectionnez la case à cocher pour l’activer, puis sélectionnez **[!UICONTROL Propriétés]**.

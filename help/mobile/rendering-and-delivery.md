@@ -8,13 +8,17 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 6%
-
+source-wordcount: '571'
+ht-degree: 7%
 ---
-
 # Rendu et diffusion{#rendering-and-delivery}
 
 {{ue-over-mobile}}
@@ -33,7 +37,7 @@ Le diagramme suivant montre le rendu de Content Services.
 
 ## Demande de JSON {#requesting-json}
 
-Utilisez **&lt;RESOURCE.caas`[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;]`.json** pour demander le format JSON.
+Utilisez **&lt;RESOURCE.caas`[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;]`.json** pour demander JSON.
 
 <table>
  <tbody>
@@ -156,7 +160,7 @@ Le tableau suivant affiche les propriétés :
    <td>Chaîne[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Pour les types de ressources sling suivants, ne renvoyez pas l’exportation json par défaut de CaaS.<br /> Renvoyer une exportation JSON client en effectuant le rendu de la ressource sous la forme;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Pour les types de ressources sling suivants, ne renvoyez pas l’exportation json CaaS par défaut.<br /> Renvoyez une exportation json client en effectuant le rendu de la ressource sous la forme;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -172,7 +176,7 @@ Content Services comprend deux configurations d’exportation :
 
 La configuration d’exportation par défaut de Content Services est appliquée si une configuration est spécifiée dans l’URI demandé.
 
-&lt;RESSOURCE>.caas[.&lt;DEPTH-INT>].json
+&lt;RESOURCE>.caas[.&lt;DEPTH-INT>].json
 
 <table>
  <tbody>

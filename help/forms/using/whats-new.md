@@ -1,6 +1,6 @@
 ---
 title: Résumé des nouvelles fonctionnalités | AEM 6.5 Forms
-description: Dernières fonctionnalités et améliorations apportées aux formulaires et documents AEM, la solution de gestion de l’expérience numérique la plus avancée au monde.
+description: Dernières fonctionnalités et améliorations apportées à AEM Forms et aux documents, la solution de gestion de l’expérience digitale la plus avancée au monde.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -8,13 +8,29 @@ exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 94%
-
 ---
-
 # Résumé des nouvelles fonctionnalités | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
 | Produit | Adobe Experience Manager 6.5 |
@@ -29,7 +45,7 @@ Experience Manager 6.5.19.0 comprend de nouvelles fonctionnalités, des amélior
 
 ### Nouvelles fonctionnalités
 
-#### Nouveaux composants principaux des formulaires adaptatifs
+#### Nouveaux composants principaux de formulaire adaptatif
 
 Des onglets verticaux, des conditions générales et une case à cocher sont ajoutés afin d’améliorer l’évolutivité des formulaires.
 
@@ -45,28 +61,28 @@ Des onglets verticaux, des conditions générales et une case à cocher sont ajo
 
 La [version 64 bits d’AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) offre des performances, une évolutivité et une gestion de la mémoire améliorées pour optimiser votre expérience de création de formulaires. Grâce à l’architecture 64 bits, vous pouvez aborder facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Améliorez encore vos capacités de conception de formulaire et accueillez l’avenir d’AEM Forms Designer avec cette version de pointe.
 
-#### Connexion de formulaires adaptatifs à une liste Microsoft® SharePoint
+#### Connexion d’un formulaire adaptatif à une liste Microsoft® SharePoint
 
 AEM Forms fournit une intégration prête à l’emploi pour [envoyer des données de formulaire directement à la liste SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list), ce qui vous permet d’utiliser les fonctionnalités des listes SharePoint. Vous pouvez configurer une liste Microsoft® SharePoint comme source de données pour un modèle de données de formulaire et utiliser l’action Envoyer à l’aide du modèle de données de formulaire pour connecter un formulaire adaptatif à la liste SharePoint.
 
-#### Prise en charge de la configuration des propriétés de document d’enregistrement pour les fragments de formulaire adaptatif
+#### Prise en charge de la configuration des propriétés de document de référence pour les fragments de formulaire adaptatif
 
 Vous pouvez maintenant facilement [personnaliser vos fragments de formulaire adaptatif et ses champs dans l’éditeur de formulaires adaptatifs](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 #### Inclut la version 64 bits de XMLFM
 
-L’itération 64 bits de XMLFM améliore les performances, l’évolutivité et la gestion de la mémoire. Il s’agit du premier service natif 64 bits déployé côté serveur. En exploitant sa capacité inhérente à accéder à des ressources de mémoire considérablement plus importantes par rapport à son équivalent 32 bits, XMLFM 64 bits permet une gestion transparente des charges de travail de rendu plus importantes. Ce jalon représente non seulement un bond en avant en termes de performances, mais il introduit également des améliorations clés de la structure de service native dans le serveur AEM Forms. Cette mise à jour permet au serveur AEM Forms de prendre en charge n’importe quel service natif 64 bits en toute transparence.
+L’itération 64 bits de XMLFM améliore les performances, l’évolutivité et la gestion de la mémoire. Il s’agit du premier service natif 64 bits déployé côté serveur. En exploitant sa capacité inhérente à accéder à des ressources de mémoire considérablement plus importantes par rapport à son équivalent 32 bits, XMLFM 64 bits permet une gestion transparente des charges de travail de rendu plus importantes. Ce jalon représente non seulement un bond en avant en termes de performances, mais il introduit également des améliorations clés de la structure de service native dans le serveur AEM Forms. Cette mise à jour permet au Serveur Formulaires AEM de prendre en charge n’importe quel service natif 64 bits en toute transparence.
 
 
 
 ## Correctifs
 
-Cette version comprend également des correctifs pour plus de 20 problèmes signalés par des clientes et clients. Pour obtenir la liste détaillée des correctifs inclus dans le Pack de services, voir les [notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=fr#forms-6519?lang=fr).
+Cette version comprend également des correctifs pour plus de 20 problèmes signalés par des clients. Pour obtenir la liste détaillée des correctifs inclus dans le Pack de services, voir les [notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=fr#forms-6519?lang=fr).
 
 
 ## Installer le Pack de services
 
-Le Pack de services apporte de nouvelles fonctionnalités et des correctifs de bugs pour AEM Forms on JEE et AEM Forms on OSGi. Les instructions d’installation présentent des modifications par rapport aux Packs de service précédents. Pour obtenir des instructions d’installation, voir les [instructions d’installation du Pack de services AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=fr).
+Le pack de services apporte de nouvelles fonctionnalités et des correctifs de bugs pour AEM Forms on JEE et AEM Forms on OSGi. Les instructions d’installation présentent des modifications par rapport aux Packs de service précédents. Pour obtenir des instructions d’installation, voir les [instructions d’installation du Pack de services AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=fr).
 
 
 

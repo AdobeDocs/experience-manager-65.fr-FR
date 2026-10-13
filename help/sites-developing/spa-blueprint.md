@@ -10,13 +10,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2114'
 ht-degree: 98%
-
 ---
-
 
 # Plan directeur d’applications d’une seule page (SPA){#spa-blueprint}
 
@@ -26,7 +40,7 @@ Pour permettre à l’auteur d’utiliser l’éditeur de SPA AEM en vue de modi
 
 ## Présentation {#introduction}
 
-Ce document décrit le contrat général que tout framework SPA devrait respecter (c’est-à-dire le type de calque de prise en charge AEM) afin de mettre en œuvre des composants SPA modifiables dans AEM.
+Ce document décrit le contrat général que tout framework SPA devrait respecter (c’est-à-dire le type de couche de support AEM) afin de mettre en œuvre des composants SPA modifiables dans AEM.
 
 >[!NOTE]
 >
@@ -42,7 +56,7 @@ Pour que l’auteur puisse utiliser l’éditeur de page AEM pour modifier les d
 
 ### PageModelManager {#pagemodelmanager}
 
-La bibliothèque `PageModelManager` est fournie sous la forme d’un package NPM destiné à être utilisé par un projet de SPA. Il accompagne l’application sur une seule page et fait office de gestionnaire de modèles de données.
+La bibliothèque `PageModelManager` est fournie sous la forme d’un package NPM destiné à être utilisé par un projet de SPA. Il accompagne la SPA et fait office de gestionnaire de modèle de données.
 
 Au nom de l’application sur une seule page, il extrait la récupération et la gestion de la structure JSON qui représente la structure de contenu proprement dite. Il assure également la synchronisation avec l’application sur une seule page, en lui faisant savoir à quel moment un nouveau rendu de ses composants doit être effectué.
 
@@ -92,7 +106,7 @@ Voir aussi [Prise en main d’AEM Content Services](https://helpx.adobe.com/fr
 
 ### Module spécifique au framework {#framework-specific-module}
 
-La séparation des préoccupations facilite la mise en œuvre des projets. Il est donc utile de fournir un package spécifique à NPM. Ce package assure l’agrégation et l’exposition des modules, services et composants de base. Ces composants doivent encapsuler la logique de gestion des modèles de données et donner accès aux données attendues par le composant du projet. Le module assure également l’exposition transitoire des points d’entrée utiles des bibliothèques sous-jacentes.
+La séparation des préoccupations facilite la mise en œuvre des projets. Il est donc utile de fournir un package spécifique à NPM. Ce package assure l’agrégation et l’exposition des modules, services et composants de base. Ces composants doivent encapsuler la logique de gestion du modèle de données et donner accès aux données attendues par le composant du projet. Le module assure également l’exposition transitoire des points d’entrée utiles des bibliothèques sous-jacentes.
 
 Pour faciliter l’interopérabilité des bibliothèques, Adobe recommande que le module spécifique au framework regroupe les bibliothèques suivantes. Si nécessaire, la couche peut encapsuler et adapter les API sous-jacentes avant de les exposer au projet.
 
@@ -115,9 +129,9 @@ Les entités suivantes devraient être mises en œuvre conformément aux directi
 
 ### Le fournisseur de modèles {#the-model-provider}
 
-Les composants du projet doivent déléguer l’accès aux fragments d’un modèle à un fournisseur de modèles. Le fournisseur de modèles assure alors l’écoute des modifications apportées au fragment spécifié du modèle et le retour du modèle mis à jour au composant délégateur.
+Les composants du projet doivent déléguer l’accès aux fragments d’un modèle à un fournisseur de modèles. Le fournisseur de modèles est alors chargé d’écouter les modifications apportées au fragment spécifié du modèle et de renvoyer le modèle mis à jour au composant délégateur.
 
-Le fournisseur de modèles doit pour cela être inscrit auprès de ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)`. Ensuite, lorsqu’une modification se produit, il reçoit et transmet les données mises à jour au composant délégateur. Par convention, la propriété mise à la disposition du composant délégateur qui transportera le fragment de modèle est nommée `cqModel`. L’implémentation peut fournir cette propriété au composant, mais doit tenir compte d’aspects tels que l’intégration à l’architecture du framework, la capacité de découverte et la facilité d’utilisation.
+Le fournisseur de modèles doit pour cela être inscrit auprès de ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)`. Ensuite, lorsqu’une modification se produit, il reçoit et transmet les données mises à jour au composant délégateur. Par convention, la propriété mise à la disposition du composant délégateur qui transportera le fragment de modèle est nommée `cqModel`. La mise en œuvre peut fournir cette propriété au composant, mais doit tenir compte d’aspects tels que l’intégration à l’architecture du framework, la capacité de découverte et la facilité d’utilisation.
 
 ### Le décorateur HTML du composant {#the-component-html-decorator}
 
@@ -157,7 +171,7 @@ Le composant `Page` étend le composant `Container`. Un conteneur est un composa
 
 ### Grille réactive {#responsive-grid}
 
-Le composant Grille réactive est un conteneur. Il contient une variante spécifique du fournisseur de modèles qui représente ses colonnes. La grille réactive et ses colonnes assurent la décoration de l’élément HTML externe du composant du projet avec les noms de classe spécifiques contenus dans le modèle.
+Le composant Grille réactive est un conteneur. Il contient une variante spécifique du fournisseur de modèles qui représente ses colonnes. La grille réactive et ses colonnes sont chargées d’ajouter à l’élément HTML externe du composant du projet les noms de classe spécifiques contenus dans le modèle.
 
 Le composant Grille réactive doit être fourni prémappé à son homologue AEM, car ce composant est complexe et rarement personnalisé.
 
@@ -249,7 +263,7 @@ Le fragment suivant illustre la représentation HTML type d’une structure de c
 
 * L’élément de grille réactive contient les noms de classe, précédés de `aem-Grid--`
 * L’élément de colonne réactive contient les noms de classe, précédés de `aem-GridColumn--`
-* Une grille réactive, qui est également la colonne d’une grille parent, est enveloppée de telle sorte que les deux préfixes précédents n’apparaissent pas sur le même élément
+* Une grille réactive, qui est également la colonne d’une grille parente, est enveloppée de telle sorte que les deux préfixes précédents n’apparaissent pas sur le même élément
 * Les éléments correspondant à des ressources modifiables possèdent une propriété `data-cq-data-path`. Consultez la section [Contrat avec l’éditeur de page](#contract-wtih-the-page-editor) de ce document.
 
 ```

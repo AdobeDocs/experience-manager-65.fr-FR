@@ -10,20 +10,35 @@ exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '649'
 ht-degree: 100%
-
 ---
-
 # Appliquer des workflows aux pages{#applying-workflows-to-pages}
 
 Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
 
 Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes :
 
-* Le workflow à appliquer.
+* Workflow à appliquer.
 Vous pouvez appliquer n’importe quel workflow (auquel vous avez accès, selon les affectations réalisées par votre administrateur AEM).
 * Éventuellement, un titre qui permet d’identifier l’instance de workflow dans la boîte de réception d’une personne utilisatrice.
 * La payload du workflow. Il peut s’agir d’une ou de plusieurs pages.
@@ -95,14 +110,14 @@ Indiquez les détails suivants :
    * **Modèle de workflow**
    * **Titre du workflow**
 
-      * Vous pouvez donner un titre à l’instance afin de l’identifier plus tard.
+     * Vous pouvez donner un titre à l’instance afin de l’identifier plus tard.
 
    Selon le modèle de workflow, les options suivantes sont également disponibles. Elles permettent de conserver le package créé en tant que payload une fois le workflow terminé.
 
    * **Conserver le package de workflow**
    * **Titre de package**
 
-      * Donnez un titre au package afin de l’identifier plus tard.
+     * Donnez un titre au package afin de l’identifier plus tard.
 
    >[!NOTE]
    >
@@ -118,16 +133,16 @@ Indiquez les détails suivants :
 
    * Une ressource existante pour afficher d’autres actions :
 
-      * **Inclure les enfants** pour indiquer que les enfants de la ressource seront inclus dans le workflow.
-Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection selon les critères suivants :
+     * **Inclure les enfants** pour indiquer que les enfants de la ressource seront inclus dans le workflow.
+       Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection selon les critères suivants :
 
-         * Inclure seulement les enfants immédiats
-         * Inclure seulement les pages modifiées
-         * Inclure seulement les pages déjà publiées
+       * Inclure seulement les enfants immédiats
+       * Inclure seulement les pages modifiées
+       * Inclure seulement les pages déjà publiées
 
-        Tous les enfants spécifiés sont ajoutés à la liste des ressources auxquelles le workflow s’appliquera.
+       Tous les enfants spécifiés sont ajoutés à la liste des ressources auxquelles le workflow s’appliquera.
 
-      * **Supprimer la sélection** pour supprimer cette ressource du workflow.
+     * **Supprimer la sélection** pour supprimer cette ressource du workflow.
 
    ![wf-53](assets/wf-53.png)
 

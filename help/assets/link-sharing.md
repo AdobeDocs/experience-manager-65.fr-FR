@@ -1,19 +1,33 @@
 ---
 title: Partage de ressources à l’aide d’un lien
-description: Partagez des ressources, des dossiers et des collections sous forme de lien.
+description: Partagez des ressources, des dossiers et des collections sous forme d’URL.
 contentOwner: AG
 role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: cda65036-5305-4f01-89da-9b3506ae8c50
+    internal-label: Administration
+subfeature_v2:
+  - id: b03f468b-ba84-4dc3-a306-cb2c69e43324
+    internal-label: Link sharing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 100%
-
 ---
-
 # Partage de ressources en tant que lien {#asset-link-sharing}
 
 | Version | Lien de l’article |
@@ -61,7 +75,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
 1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec les utilisateurs et les utilisatrices par e-mail.
 
-1. Pour afficher la ressource partagée, cliquez sur le lien dans l’e-mail envoyé. Pour générer un aperçu de la ressource, cliquez sur la ressource partagée. Pour fermer l’aperçu, cliquez sur **[!UICONTROL Précédent]**. Si vous avez partagé un dossier, cliquez sur **[!UICONTROL Dossier parent]** pour revenir au dossier parent.
+1. Pour afficher la ressource partagée, cliquez sur le lien dans l’e-mail envoyé à l’utilisateur. Pour générer un aperçu de la ressource, cliquez sur la ressource partagée. Pour fermer l’aperçu, cliquez sur **[!UICONTROL Précédent]**. Si vous avez partagé un dossier, cliquez sur **[!UICONTROL Dossier parent]** pour revenir au dossier parent.
 
    ![Aperçu de la ressource partagée](assets/chlimage_1-546.png)
 
@@ -77,7 +91,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
 1. Pour annuler le partage d’une ressource, sélectionnez-la et cliquez sur **[!UICONTROL Annuler le partage]** dans la barre d’outils. Un message de confirmation apparaît. L’entrée correspondante est supprimée de la liste.
 
-## Configuration du service de messagerie Day CQ {#configure-day-cq-mail-service}
+## Configurer le service de messagerie Day CQ {#configure-day-cq-mail-service}
 
 1. Sur la [!DNL Experience Manager] page d’accueil, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. Dans la liste des services, recherchez le **[!UICONTROL service de messagerie Day CQ]**.
@@ -109,13 +123,13 @@ Lorsque vous téléchargez des ressources via le lien partagé avec la fonction 
 * Les collections ou les dossiers de ressources dont le nom contient un espace blanc risquent de ne pas être partagés.
 * Si des personnes ne peuvent pas télécharger les ressources partagées, contactez votre équipe d’administration [!DNL Experience Manager] pour connaître les [limites de téléchargement](#configure-maximum-data-size).
 * Si vous ne pouvez pas envoyer d’e-mail avec des liens vers des ressources partagées ou si les autres personnes ne peuvent pas recevoir votre e-mail, contactez votre équipe d’administration [!DNL Experience Manager] pour savoir si le [service de messagerie](#configure-day-cq-mail-service) est configuré ou non.
-* Si vous ne pouvez pas partager des fichiers à l’aide de la fonctionnalité de partage de liens, assurez-vous que vous disposez des autorisations appropriées. Voir [Partager des fichiers](#share-assets).
+* Si vous ne pouvez pas partager des ressources à l’aide de la fonctionnalité de partage de liens, assurez-vous que vous disposez des autorisations appropriées. Voir [Partager des fichiers](#share-assets).
 * Si une ressource partagée est déplacée vers un autre emplacement, son lien cesse de fonctionner. Recréez ce lien et partagez-le de nouveau avec les utilisateurs.
 
 * Si vous souhaitez partager des liens depuis votre déploiement auteur [!DNL Experience Manager] vers des entités externes, assurez-vous de ne présenter les URL suivantes que pour des requêtes de type `GET` (spécifiquement utilisées pour le partage de liens). Bloquez les autres URL pour des raisons de sécurité.
 
-   * `http://[aem_server]:[port]/linkshare.html`
-   * `http://[aem_server]:[port]/linksharepreview.html`
-   * `http://[aem_server]:[port]/linkexpired.html`
+  * `http://[aem_server]:[port]/linkshare.html`
+  * `http://[aem_server]:[port]/linksharepreview.html`
+  * `http://[aem_server]:[port]/linkexpired.html`
 
   Dans l’interface d’[!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**. Ouvrez la configuration de **[!UICONTROL l’externaliseur de liens Day CQ]** et modifiez les propriétés suivantes dans le champ **[!UICONTROL Domaines]** avec les valeurs correspondantes pour : `local`, `author` et `publish`. Pour les propriétés `local` et `author`, saisissez respectivement l’URL du site local et l’URL de l’instance de création. Si vous exécutez une seule Instance de création [!DNL Experience Manager], utilisez la même valeur pour les propriétés `local` et `author`. Pour les instances de Publication, indiquez l’URL de l’instance de publication [!DNL Experience Manager].

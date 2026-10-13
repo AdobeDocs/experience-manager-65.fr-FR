@@ -9,22 +9,29 @@ exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 4%
-
 ---
-
 # Contenu initial du sandbox {#initial-sandbox-content}
 
 Dans cette section, vous allez créer les pages suivantes qui utilisent toutes le [modèle de page](initial-app.md#createthepagetemplate) :
 
 * Site Sandbox SCF, qui redirige vers la version anglaise de la page principale.
 
-   * Sandbox SCF : page principale de la version anglaise du site.
+  * Sandbox SCF : page principale de la version anglaise du site.
 
-   * SCF Play - Enfant de la page principale sur laquelle jouer.
+  * SCF Play - Enfant de la page principale sur laquelle jouer.
 
 Ce tutoriel n’aborde pas les [copies de langue](../../help/sites-administering/tc-prep.md). Au lieu de cela, il est conçu de sorte que la page racine puisse implémenter la détection de la langue souhaitée par l’utilisateur via l’en-tête HTML et le rediriger vers la page principale appropriée pour la langue. La convention consiste à utiliser le code de pays à deux lettres pour le nom de nœud de la page, par exemple « en » pour l’anglais et « fr » pour le français.
 
@@ -90,9 +97,9 @@ a été défini, ce qui permet de référencer des ressources de conception dans
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
 
-   * Nom : `cq:designPath`
-   * Type : `String`
-   * Valeur : `/etc/designs/an-scf-sandbox`
+  * Nom : `cq:designPath`
+  * Type : `String`
+  * Valeur : `/etc/designs/an-scf-sandbox`
 
 * Cliquez sur le `[+] Add` vert
 

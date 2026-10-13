@@ -1,6 +1,6 @@
 ---
 title: Stratégie de sauvegarde et de restauration dans un environnement organisé en grappes
-description: Si votre déploiement d’AEM Forms stocke les données personnalisées supplémentaires dans une base de données différente, vous devez mettre en place une stratégie de sauvegarde pour ces données veillant à ce qu’elles soient synchronisées avec les données AEM Forms.
+description: Si votre déploiement d’AEM forms stocke les données personnalisées supplémentaires dans une base de données différente, vous devez mettre en place une stratégie de sauvegarde pour ces données veillant à ce qu’elles soient synchronisées avec les données AEM forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
@@ -9,13 +9,27 @@ exl-id: 98c96349-f253-475f-b646-352269814a38
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 100%
-
+source-wordcount: '1428'
+ht-degree: 98%
 ---
-
 # Stratégie de sauvegarde et de restauration dans un environnement organisé en grappes {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
 >[!NOTE]
@@ -34,21 +48,21 @@ Vous devez sauvegarder les éléments suivants du système de formulaires d’AE
 
 ## Sauvegarder un environnement organisé en cluster {#back-up-a-clustered-environment}
 
-Cette rubrique présente les stratégies suivantes pour sauvegarder tout environnement organisé en grappes d’AEM Forms :
+Cette rubrique présente les stratégies suivantes pour sauvegarder tout environnement AEM Forms en cluster :
 
 * Sauvegarder hors connexion avec temps d’interruption
-* Sauvegarder hors connexion sans temps d’interruption (sauvegarde d’un nœud secondaire qui est arrêté)
+* Sauvegarder hors ligne sans temps d’interruption (sauvegarde d’un nœud secondaire qui est arrêté)
 * Sauvegarder en ligne sans temps d’interruption, mais avec un retard de réponse
 * Sauvegarder le fichier de propriétés Bootstrap
 
 ### Sauvegarder hors connexion avec temps d’interruption {#offline-backup-with-downtime}
 
-1. Arrêtez l’ensemble du cluster et des services associés (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)).
-1. Sur n’importe quel nœud, sauvegardez la base de données, le répertoire de stockage global de documents et les connecteurs (voir [Fichiers à sauvegarder et à récupérer](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover)).
-1. Pour sauvegarder le référentiel AEM hors connexion, procédez comme suit :
+1. Arrêtez l’ensemble du cluster et les services associés. (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)).
+1. Sur n’importe quel nœud, sauvegardez la base de données, GDS et les connecteurs. (voir [Fichiers à sauvegarder et à récupérer](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover)).
+1. Pour sauvegarder le référentiel AEM hors ligne, procédez comme suit :
 
    1. Pour chaque nœud du cluster, sauvegardez le fichier contenant l’ID du nœud du cluster.
-   1. Sauvegardez tous les fichiers de tout nœud secondaire du cluster, notamment les sous-répertoires.
+   1. Sauvegardez tous les fichiers de tout nœud secondaire du cluster, y compris les sous-répertoires.
    1. Sauvegardez l’identifiant du référentiel/système de chaque nœud de la grappe séparément.
 
    Pour obtenir des instructions détaillées, voir [Sauvegarde et restauration](https://helpx.adobe.com/fr/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
@@ -60,11 +74,11 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
 
 1. Passez en mode de sauvegarde de restauration (voir [Activation des modes de sauvegarde](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes)).
 
-   Quittez le mode de sauvegarde de restauration après une récupération.
+   Quittez le mode de sauvegarde progressive après une récupération.
 
-1. Concernant AEM, arrêtez l’un des nœuds secondaires du cluster (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)).
-1. Sur n’importe quel nœud, sauvegardez la base de données, le répertoire de stockage global de documents et les connecteurs (voir [Fichiers à sauvegarder et à récupérer](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover)).
-1. Pour sauvegarder le référentiel AEM hors connexion, procédez comme suit :
+1. Arrêtez l’un des nœuds secondaires du cluster AEM. (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)).
+1. Sur n’importe quel nœud, sauvegardez la base de données, GDS et les connecteurs. (voir [Fichiers à sauvegarder et à récupérer](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover)).
+1. Pour sauvegarder le référentiel AEM hors ligne, procédez comme suit :
 
    1. Pour chaque nœud du cluster, sauvegardez le fichier contenant l’ID du nœud du cluster.
    1. Sauvegardez tous les fichiers de tout nœud secondaire du cluster, notamment les sous-répertoires.
@@ -79,13 +93,13 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
 
 1. Passez en mode de sauvegarde de restauration (voir [Activation des modes de sauvegarde](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes)).
 
-   Quittez le mode de sauvegarde de restauration après une récupération.
+   Quittez le mode de sauvegarde progressive après une récupération.
 
-1. Concernant AEM, arrêtez l’un des nœuds secondaires du cluster (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)).
-1. Sur n’importe quel nœud, sauvegardez la base de données, le répertoire de stockage global de documents et les connecteurs (voir [Fichiers à sauvegarder et à récupérer](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover)).
+1. Arrêtez l’un des nœuds secondaires du cluster AEM. (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)).
+1. Sur n’importe quel nœud, sauvegardez la base de données, GDS et les connecteurs. (voir [Fichiers à sauvegarder et à récupérer](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover)).
 1. Pour sauvegarder le référentiel AEM en ligne, procédez comme suit :
 
-   1. Pour chaque nœud du cluster, sauvegardez le fichier contenant le fichier cluster_node.id.
+   1. Pour chaque nœud du cluster, sauvegardez le fichier qui contient le cluster_node.id.
    1. Sauvegardez le fichier repository/system.id de chaque nœud de la grappe séparément.
    1. Sur n’importe quel nœud secondaire, réalisez une sauvegarde en ligne du référentiel (pour connaître les étapes détaillées, reportez-vous à la section Sauvegarde en ligne).
 
@@ -116,7 +130,7 @@ En cas de panne de l’ensemble du cluster en raison de problèmes tels que le c
 
    >[!NOTE]
    >
-   >Si le nœud corrompu est un nœud principal AEM, arrêtez le nœud de l’intégralité du cluster.
+   >Si le nœud corrompu est un nœud principal AEM, arrêtez l’ensemble du cluster.
 
 1. Recréez le système physique à partir d’une image système.
 1. Appliquez les correctifs ou les mises à jour à AEM Forms qui ont été appliqués depuis que l’image a été créée. Ces informations ont été enregistrées pendant la procédure de sauvegarde. AEM Forms doit être restauré au même niveau de correctif que lors de la sauvegarde du système.
@@ -133,7 +147,7 @@ En cas de panne de l’ensemble du cluster en raison de problèmes tels que le c
    1. Supprimez le fichier clusterNode/revision.log sur le nœud.
    1. Supprimez le fichier .lock sur le nœud, le cas échéant.
    1. Supprimez le fichier repository/system.id sur le nœud, le cas échéant.
-   1. Supprimez les fichiers &amp;ast;&amp;ast;/listener.properties sur le nœud, le cas échéant.
+   1. Supprimez les fichiers &ast;&ast;/listener.properties sur le nœud, le cas échéant.
    1. Restaurez le fichier repository/cluster_node.id pour chaque nœud du cluster.
 
 >[!NOTE]
@@ -149,7 +163,7 @@ En cas de panne de l’ensemble du cluster en raison de problèmes tels que le c
 1. Arrêtez tous les nœuds du cluster.
 1. Recréez le système physique à partir d’une image système.
 1. Appliquez les correctifs ou les mises à jour à AEM Forms qui ont été appliqués depuis que l’image a été créée. Ces informations ont été enregistrées à l’étape 1 de la procédure de sauvegarde. AEM Forms doit être restauré au même niveau de correctif que lors de la sauvegarde du système.
-1. Restaurez la base de données, le répertoire de stockage global de documents et les connecteurs.
+1. Restaurez la base de données, GDS et les connecteurs.
 1. Procédez comme suit pour récupérer le référentiel AEM hors ligne :
 
    >[!NOTE]
@@ -159,11 +173,11 @@ En cas de panne de l’ensemble du cluster en raison de problèmes tels que le c
    1. Sur tous les nœuds du cluster, supprimez les répertoires du référentiel, partagé, de version et des espaces de travail dans le répertoire clusterNode.
    1. Supprimez tous les fichiers et répertoires du répertoire partagé.
    1. Restaurez la sauvegarde du nœud du cluster (y compris les sous-répertoires) sur un nœud du cluster.
-   1. Copiez tous les fichiers du nœud du cluster restauré dans tous les autres nœuds du cluster. Une fois cette opération terminée, tous les nœuds du cluster contiennent les mêmes données.
+   1. Copiez tous les fichiers du nœud du cluster restauré dans tous les autres nœuds du cluster. Une fois cette opération terminée, chaque nœud du cluster contient les mêmes données.
    1. Supprimez le fichier clusterNode/revision.log sur tous les nœuds du cluster.
    1. Supprimez le fichier .lock sur tous les nœuds du cluster, le cas échéant.
-   1. Supprimez le fichier repository/system.id tous les nœuds du cluster, le cas échéant.
-   1. Supprimez les fichiers &amp;ast;&amp;ast;/listener.properties sur tous les nœuds de la grappe, le cas échéant.
+   1. Supprimez le fichier repository/system.id sur tous les nœuds du cluster, le cas échéant.
+   1. Supprimez les fichiers &ast;&ast;/listener.properties sur tous les nœuds du cluster, le cas échéant.
    1. Restaurez le fichier repository/cluster_node.id pour chaque nœud du cluster.
 
 >[!NOTE]

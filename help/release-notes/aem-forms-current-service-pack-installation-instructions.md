@@ -5,7 +5,23 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2149'
 ht-degree: 92%
@@ -27,14 +43,14 @@ ht-degree: 92%
 
 ## Éléments inclus dans Experience Manager Forms 6.5
 
-Le pack de services Adobe Experience Manager (AEM) Forms comprend de nouvelles fonctionnalités et des fonctionnalités mises à niveau, telles que les améliorations importantes demandées par les clientes et clients, ainsi que des performances, une stabilité et une sécurité renforcées. AEM Forms lance des packs de service à intervalles réguliers pour fournir les dernières fonctionnalités et améliorations. Selon votre pile technologique, sélectionnez l’un des chemins suivants pour télécharger et installer le Pack de services sur votre environnement :
+Le pack de services Adobe Experience Manager (AEM) Forms comprend de nouvelles fonctionnalités et des fonctionnalités mises à niveau, telles que les améliorations importantes demandées par les clientes et clients, ainsi que des performances, une stabilité et une sécurité renforcées. AEM Forms lance des packs de service à intervalles réguliers pour fournir les dernières fonctionnalités et améliorations. Selon votre pile technologique, sélectionnez l’un des chemins suivants pour télécharger et installer le pack de services sur votre environnement :
 
 * [Télécharger et installer le pack de services sur un environnement AEM Forms on JEE](#download-and-install-for-jee-service-pack)
 * [Télécharger et installer le pack de services sur AEM Forms dans un environnement OSGi](#download-and-install-for-osgi-service-pack)
 
 >[!NOTE]
 >
-> * Adobe publie un programme d’installation complet tous les six Packs de services. Le pack de services 18 d’AEM Forms 6.5 (6.5.18.0) est le dernier programme d’installation complet. Le programme d’installation complet prend en charge les nouvelles plateformes, tandis que le programme d’installation du pack de services normal inclut de nouvelles fonctionnalités, des correctifs de bug et des améliorations générales. Si vous effectuez une nouvelle installation ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM 6.5 Forms on JEE, Adobe recommande d’utiliser le programme d’installation complet d’AEM 6.5.18.0 Forms on JEE sorti le 31 août 2023 au lieu du programme d’installation d’AEM 6.5 Forms, sorti le 8 avril 2019 ou du programme d’installation d’AEM 6.5.12.0 sorti le 3 mars 2022. Après avoir utilisé le programme d’installation complet, installez le dernier pack de services.
+> * Adobe publie un programme d’installation complet tous les six Packs de services. Le pack de services 18 d’AEM Forms 6.5 (6.5.18.0) est le dernier programme d’installation complet. Le programme d’installation complet prend en charge les nouvelles plateformes, tandis que le programme d’installation du pack de services normal inclut de nouvelles fonctionnalités, des corrections de bugs et des améliorations générales. Si vous effectuez une nouvelle installation ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM 6.5 Forms on JEE, Adobe recommande d’utiliser le programme d’installation complet d’AEM 6.5.18.0 Forms on JEE sorti le 31 août 2023 au lieu du programme d’installation d’AEM 6.5 Forms, sorti le 8 avril 2019 ou du programme d’installation d’AEM 6.5.12.0 sorti le 3 mars 2022. Après avoir utilisé le programme d’installation complet, installez le dernier pack de services.
 > * Les fonctionnalités d’AEM Forms, telles que les formulaires adaptatifs, disponibles dans [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=fr), sont uniquement destinées à des fins d’exploration et d’évaluation. Pour une utilisation en production, il est essentiel d’obtenir une licence valide pour AEM Forms.
 
 <!--
@@ -61,7 +77,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 >[!NOTE]
 >
-> Avant d’exécuter le programme d’installation du Pack de services d’AEM, assurez-vous de disposer des droits d’accès en écriture sur le répertoire d’installation AEM.
+> Avant d’exécuter le programme d’installation du pack de services d’AEM, assurez-vous de disposer des droits d’accès en écriture sur le répertoire d’installation d’AEM.
 
 +++
 

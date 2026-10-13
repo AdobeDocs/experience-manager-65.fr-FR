@@ -9,13 +9,22 @@ feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 100%
-
+source-wordcount: '1796'
+ht-degree: 99%
 ---
-
 # Mettre à niveau les formulaires de recherche personnalisés{#upgrading-custom-search-forms}
 
 Dans AEM 6.2, l’emplacement de stockage des formulaires de recherche personnalisés dans le référentiel n’est plus le même. Lors de la mise à niveau, ils sont déplacés de leur emplacement dans la version 6.1 vers :
@@ -40,7 +49,7 @@ Vous pouvez changer la propriété en procédant comme suit :
 
 1. Ouvrez CRXDE Lite en accédant à `https://server:port/crx/de/index.jsp`.
 1. Accédez à l’emplacement du nœud qui doit être ajusté, comme indiqué dans la liste de [formulaires de recherche personnalisée](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) ci-dessous.
-1. Cliquez sur le nœud. Dans le volet des propriétés de droite, cliquez sur la propriété **sling:resourceType** et modifiez-la.
+1. Cliquez sur le nœud. Dans le volet de droite des propriétés, cliquez sur la propriété **sling:resourceType** et modifiez-la.
 1. Enfin, enregistrez les modifications en appuyant sur le bouton **Enregistrer tout**.
 
 ## Liste des formulaires de recherche personnalisés {#list-of-custom-search-forms}
@@ -97,7 +106,7 @@ Dans AEM 6.1, le prédicat de texte intégral standard faisait partie du formul
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>path</td>
+   <td>chemin</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -159,13 +168,13 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
 * Supprimez le nœud `pagestatuspredicate`.
 * Copiez le nœud
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * vers `/conf/global/settings/cq/search/facets/sites/jcr:content/items`.
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * vers `/conf/global/settings/cq/search/facets/sites/jcr:content/items`.
 
 * Copier le nœud
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * vers `/conf/global/settings/cq/search/facets/sites/jcr:content/items`.
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * vers `/conf/global/settings/cq/search/facets/sites/jcr:content/items`.
 
 * Assurez-vous de définir la propriété `listOrder` pour le nœud `analyticspredicate` sur « **8** ». Cela est nécessaire pour éviter les conflits.
 
@@ -238,7 +247,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>n/a</td>
+   <td>s.o.</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -263,7 +272,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>n/a</td>
+   <td>s.o.</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -284,7 +293,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>n/a</td>
+   <td>s.o.</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -305,7 +314,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>n/a</td>
+   <td>s.o.</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -326,7 +335,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>n/a</td>
+   <td>s.o.</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -347,7 +356,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>n/a</td>
+   <td>s.o.</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>

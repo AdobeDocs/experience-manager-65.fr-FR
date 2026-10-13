@@ -8,13 +8,26 @@ feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2096'
-ht-degree: 97%
-
+source-wordcount: '2186'
+ht-degree: 99%
 ---
-
 # Configurer des sources de données{#configure-data-sources}
 
 | Version | Lien de l’article |
@@ -131,10 +144,10 @@ Procédez comme suit pour configurer les services RESTful :
    * Sélectionnez URL ou Fichier dans le menu déroulant Source Swagger, et indiquez en conséquence l’URL Swagger du fichier de définition Swagger ou chargez le fichier Swagger à partir de votre système de fichiers local.
    * En fonction de l’entrée Source Swagger, les champs suivants sont préremplis avec des valeurs :
 
-      * Schéma : protocoles de transfert utilisés par l’API REST. Le nombre de types de schémas qui s’affichent dans la liste déroulante dépend des schémas définis dans la source Swagger.
-      * Hôte : nom de domaine ou adresse IP de l’hôte qui sert l’API REST. Ce champ est obligatoire.
-      * Chemin d’accès de base : le préfixe d’URL de tous les chemins d’API. Ce champ est facultatif.\
-        Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
+     * Schéma : protocoles de transfert utilisés par l’API REST. Le nombre de types de schémas qui s’affichent dans la liste déroulante dépend des schémas définis dans la source Swagger.
+     * Hôte : nom de domaine ou adresse IP de l’hôte qui sert l’API REST. Ce champ est obligatoire.
+     * Chemin d’accès de base : le préfixe d’URL de tous les chemins d’API. Ce champ est facultatif.\
+       Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
 
    * Sélectionnez le type d’authentification : aucune, OAuth2.0 ([code d’authentification](https://oauth.net/2/grant-types/authorization-code/), [informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), authentification de base, clé API, authentification personnalisée ou authentification mutuelle, pour accéder au service RESTful et spécifiez les détails de l’authentification.
 
@@ -146,10 +159,10 @@ Procédez comme suit pour configurer les services RESTful :
 
 ### Configurer le client HTTP du modèle de données de formulaire pour optimiser les performances {#fdm-http-client-configuration}
 
-Le modèle de données de formulaire [!DNL Experience Manager Forms] lors de l’intégration des services web RESTful comme source de données inclut des configurations de client HTTP pour l’optimisation des performances.
-Effectuez les étapes suivantes pour configurer le client HTTP du modèle de données de formulaire :
+Le modèle de données de formulaire d’[!DNL Experience Manager Forms] lors de l’intégration des services web RESTful comme source de données comprend des configurations de client HTTP pour l’optimisation des performances.
+Effectuez les étapes suivantes pour configurer le client HTTP du modèle de données de formulaire :
 
-1. Connectez-vous à l’instance de création [!DNL Experience Manager Forms] en tant qu’administrateur ou administratrice et accédez aux bundles de la console web d’[!DNL Experience Manager]. L’URL par défaut est [:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Connectez-vous à l’instance de création [!DNL Experience Manager Forms] en tant qu’administrateur ou administratrice et accédez aux bundles de la console web d’[!DNL Experience Manager]. L’URL par défaut est [&#128279;](https://localhost:4502/system/console/configMgr).
 
 1. Sélectionnez **[!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST]**.
 
@@ -165,7 +178,7 @@ Effectuez les étapes suivantes pour configurer le client HTTP du modèle de don
 
    * Spécifiez la période maximale d’inactivité entre deux paquets de données dans le champ **[!UICONTROL Délai d’expiration du socket]**. La valeur par défaut est de 30 secondes.
 
-## Configuration des services web SOAP {#configure-soap-web-services}
+## Configurer les services web SOAP {#configure-soap-web-services}
 
 Les services web SOAP sont décrits à l’aide des [spécifications WSDL (Web Services Description Language)](https://www.w3.org/TR/wsdl). Pour configurer le service web SOAP dans les services cloud AEM, vérifiez que vous disposez de l’URL WSDL pour le service web et procédez comme suit :
 
@@ -180,8 +193,8 @@ Les services web SOAP sont décrits à l’aide des [spécifications WSDL (Web S
    * Point d’entrée du service. Spécifiez une valeur dans ce champ pour remplacer le point d’entrée du service mentionné dans WSDL.
    * Sélectionnez le type d’authentification : aucune, OAuth2.0 ([code d’authentification,](https://oauth.net/2/grant-types/authorization-code/),[informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), authentification de base, authentification personnalisée, jeton X509 ou authentification mutuelle, pour accéder au service SOAP et spécifiez les détails de l’authentification.
 
-     Si vous sélectionnez Jeton **[!UICONTROL X509]** comme type d’authentification, configurez le certificat X509. Pour plus d’informations, voir [Configurer des certificats](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
-Indiquez l’alias KeyStore du certificat X509 dans le champ **[!UICONTROL Alias Key]**. Indiquez la durée, en secondes, pendant laquelle la demande d’authentification reste valide, dans le champ **[!UICONTROL Durée de vie]**. Si vous le souhaitez, sélectionnez pour signer le corps du message, l’en-tête d’horodatage ou les deux.
+     Si vous sélectionnez **[!UICONTROL Jeton X509]** comme type d’authentification, configurez le certificat X509. Pour plus d’informations, voir [Configurer des certificats](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+     Indiquez l’alias KeyStore du certificat X509 dans le champ **[!UICONTROL Alias Key]**. Indiquez la durée, en secondes, pendant laquelle la demande d’authentification reste valide, dans le champ **[!UICONTROL Durée de vie]**. Vous pouvez également choisir de signer le corps du message ou l’en-tête d’horodatage, voire les deux.
 
      Si vous sélectionnez **[!UICONTROL Authentification mutuelle]** comme type d’authentification, reportez-vous à [Authentification mutuelle basée sur des certificats pour les services Web RESTful et SOAP](#mutual-authentication).
 
@@ -193,8 +206,8 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
 >[!NOTE]
 >
->Le modèle de données de formulaire prend en charge [OData version 4](https://www.odata.org/documentation/).
->Pour obtenir un guide détaillé sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
+>Le modèle de données de formulaire prend en charge [OData version 4](https://www.odata.org/documentation/).
+>Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Accédez à **[!UICONTROL Outils > Services Cloud > Sources de données]**. Sélectionnez le dossier dans lequel vous souhaitez créer une configuration cloud.
 

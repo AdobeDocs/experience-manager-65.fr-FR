@@ -9,13 +9,27 @@ role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '10799'
-ht-degree: 99%
-
+source-wordcount: '10888'
+ht-degree: 98%
 ---
-
 # Gestion des points d’entrée par programmation {#programmatically-managing-endpoints}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -75,7 +89,7 @@ Pour ajouter un point d’entrée EJB à un service, effectuez les tâches suiva
 1. Créez un point d’entrée EJB.
 1. Activez le point d’entrée.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
 
@@ -84,7 +98,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Les fichi
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créez un objet client EndpointRegistry**
 
@@ -104,7 +118,7 @@ Pour créer un point d’entrée EJB pour un service, spécifiez les valeurs sui
 
 Après avoir défini les attributs du point d’entrée EJB, vous pouvez créer un point d’entrée EJB pour un service.
 
-**Activez le point d’entrée**
+**Activer le point d’entrée**
 
 Après avoir créé un point d’entrée, vous devez l’activer. Une fois le point d’entrée activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
 
@@ -127,7 +141,7 @@ Ajoutez un point d’entrée EJB à l’aide de l’API Java :
 1. Créez un objet client EndpointRegistry.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Définissez les attributs du point d’entrée EJB.
 
@@ -174,11 +188,11 @@ Pour ajouter un point d’entrée SOAP à un service, effectuez les tâches suiv
 
 1. Incluez les fichiers de projet.
 1. Créez un objet `EndpointRegistryClient`.
-1. Définissez les attributs de point d’entrée SOAP.
+1. Définir les attributs de point d’entrée SOAP.
 1. Créez un point d’entrée SOAP.
 1. Activez le point d’entrée.
 
-**Incluez les fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -232,7 +246,7 @@ Ajoutez un point d’entrée SOAP à un service à l’aide de l’API Java :
 1. Créez un objet client EndpointRegistry.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Définissez les attributs de point d’entrée SOAP.
 
@@ -263,7 +277,7 @@ Ajoutez un point d’entrée SOAP à un service à l’aide de l’API Java :
 
 ## Ajouter des points d’entrée Watched Folder {#adding-watched-folder-endpoints}
 
-Vous pouvez ajouter par programmation un point d’entrée Watched Folder à un service à l’aide de l’API Java AEM Forms. L’ajout d’un point d’entrée Watched Folder permet aux utilisateurs de placer un fichier (un fichier PDF, par exemple) dans un dossier. Lorsque le fichier est placé dans le dossier, le service configuré est alors appelé et manipule le fichier. Après que le service a effectué l’opération spécifiée, il enregistre le fichier modifié dans un dossier de sortie spécifié. Un dossier de contrôle est configuré pour être analysé à intervalles fixes ou selon une planification cron, par exemple tous les lundis, mercredis et vendredis à midi.
+Vous pouvez ajouter par programmation un point d’entrée Watched Folder à un service à l’aide de l’API Java AEM Forms. L’ajout d’un point d’entrée Watched Folder permet aux utilisateurs de placer un fichier (un fichier PDF, par exemple) dans un dossier. Lorsque le fichier est placé dans le dossier, le service configuré est alors appelé et manipule le fichier. Après que le service a effectué l’opération spécifiée, il enregistre le fichier modifié dans un dossier de sortie spécifié. Un dossier de contrôle est configuré pour être analysé à intervalles fixes ou selon un planning cron, par exemple tous les lundis, mercredis et vendredis à midi.
 
 Pour ajouter par programmation un point d’entrée Watched Folder à un service, prenez en compte le processus de courte durée suivant nommé *EncryptDocument*. (Voir [Comprendre les processus AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
 
@@ -288,7 +302,7 @@ Pour ajouter un point d’entrée Watched Folder à un service, effectuez les t�
 1. Créez un point d’entrée Watched Folder.
 1. Activez le point d’entrée.
 
-**Incluez les fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -299,7 +313,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créez un objet client EndpointRegistry**
 
@@ -310,43 +324,43 @@ Pour ajouter par programmation un point d’entrée Watched Folder, vous devez c
 Pour créer un point d’entrée Watched Folder pour un service, spécifiez les valeurs suivantes :
 
 * **Identifiant du connecteur** : indique le type de point d’entrée créé. Pour créer un point d’entrée Watched Folder, spécifiez `WatchedFolder`.
-* **Description** : indique la description du point d’entrée.
-* **Nom :** indique le nom du point d’entrée.
+* **Description** : fournit une description du point d’entrée.
+* **Nom** : indique le nom du point d’entrée.
 * **Identifiant du service** : indique le service auquel appartient le point d’entrée. Par exemple, pour ajouter un point d’entrée Watched Folder au processus présenté dans cette section (un processus devient un service lorsqu’il est activé à l’aide de Workbench), spécifiez `EncryptDocument`.
 * **Nom de l’opération** : indique le nom de l’opération appelée à l’aide du point d’entrée. En règle générale, lors de la création d’un point d’entrée Watched Folder pour un service issu d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
 
 **Définissez les valeurs de configuration**
 
-Vous devez spécifier des valeurs de configuration pour un point d’entrée Watched Folder lors de l’ajout par programmation d’un point d’entrée Watched Folder à un service. Ces valeurs de configuration sont spécifiées par un administrateur si un point d’entrée Watched Folder est ajouté à l’aide de la console d’administration.
+Vous devez spécifier des valeurs de configuration pour un point d’entrée Dossier de contrôle lors de l’ajout par programmation d’un point d’entréet Dossier de contrôle à un service. Ces valeurs de configuration sont spécifiées par un administrateur si un point d’entrée Watched Folder est ajouté à l’aide de la console d’administration.
 
 La liste suivante spécifie les valeurs de configuration définies lors de l’ajout par programmation d’un point d’entrée Watched Folder à un service :
 
 * **URL** : indique l’emplacement du dossier surveillé. Dans un environnement organisé en grappe, ce paramètre doit pointer vers un dossier réseau partagé accessible à tous les ordinateurs de la grappe.
 * **Asynchrone** : identifie le type d’invocation comme étant asynchrone ou synchrone. Les processus provisoires et synchrones peuvent être appelés uniquement de façon synchrone. La valeur par défaut est true. Asynchrone est recommandé.
 * **cronExpression** : utilisé par quartz pour planifier l’interrogation du répertoire d’entrée.
-* **purgeDuration** : il s’agit d’un attribut obligatoire. Les fichiers et les sous-dossiers du dossier Résultats sont vidés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Grâce à ce paramètre, le dossier obtenu n’est jamais plein. La valeur -1 jour indique de ne jamais supprimer le dossier de résultats. La valeur par défaut est -1.
+* **purgeDuration** : il s’agit d’un attribut obligatoire. Les fichiers et les dossiers du dossier résultats sont vidés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Ce paramètre est utile pour éviter que le dossier de résultats ne soit saturé. La valeur -1 jour indique de ne jamais supprimer le dossier de résultats. La valeur par défaut est -1.
 * **repeatInterval** : intervalle (en secondes) entre les analyses du dossier de contrôle d’entrée. A moins que le paramètre Ralentissement ne soit activé, cette valeur doit être supérieure à la durée du traitement d’une tâche moyenne, faute de quoi le système risque d’être surchargé. La valeur par défaut est 5.
 * **repeatCount** : nombre d’analyses du dossier ou du répertoire par un dossier de contrôle. La valeur -1 indique une analyse sans limite. La valeur par défaut est -1.
 * **throttleOn** : limite le nombre de tâches du dossier de contrôle pouvant être traitées à un moment donné. La valeur batchSize (taille du lot) détermine le nombre maximal de tâches.
 * **userName** : nom d’utilisateur utilisé lors de l’appel d’un service cible à partir du dossier de contrôle. Cette valeur est obligatoire. La valeur par défaut est SuperAdmin.
 * **domainName** : domaine de l’utilisateur ou utilisatrice. Cette valeur est obligatoire. La valeur par défaut est DefaultDom.
 * **batchSize** : le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.
-* **waitTime** : délai d’attente (en millisecondes) avant l’analyse d’un dossier ou d’un fichier après sa création. Par exemple, si la durée d’attente est de 36 000 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce dernier sera sélectionné à l’issue d’un laps de temps de 59 minutes ou plus. Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&ast;60 &ast;1000 millisecondes. Ce paramètre empêche le dossier de contrôle d’analyser le fichier s’il n’a pas attendu dix minutes. La valeur par défaut est 0.
-* **excludeFilePattern** : le modèle utilisé par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Vous pouvez copier le contenu du dossier dans un dossier dont le nom sera choisi par le dossier de contrôle. Ceci empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. Ainsi, si l’attribut excludeFilePattern a la valeur `data*`, tous les fichiers et les dossiers correspondant à `data*` ne sont pas sélectionnés. Cela inclut les fichiers et les dossiers nommés `data1`, `data2`, etc. En outre, le modèle peut être complété par des caractères génériques pour spécifier des modèles de fichier. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières.
+* **waitTime** : délai d’attente (en millisecondes) avant l’analyse d’un dossier ou d’un fichier après sa création. Par exemple, si la durée d’attente est de 36 000 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce dernier sera sélectionné à l’issue d’un laps de temps de 59 minutes ou plus. Cet attribut permet de s’assurer qu’un fichier ou un dossier est entièrement copié dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&ast;60 &ast;1 000 millisecondes. Ce paramètre empêche le dossier de contrôle d’analyser le fichier s’il n’a pas attendu dix minutes. La valeur par défaut est 0.
+* **excludeFilePattern** : le modèle utilisé par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Vous pouvez copier le contenu du dossier dans un dossier dont le nom sera détecté par le dossier de contrôle. Cela empêche le dossier de contrôle de sélectionner un dossier pour le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. Ainsi, si l’attribut excludeFilePattern a la valeur `data*`, tous les fichiers et les dossiers correspondant à `data*` ne sont pas sélectionnés. Cela inclut les fichiers et les dossiers nommés `data1`, `data2`, etc. En outre, le modèle peut être complété par des caractères génériques pour spécifier des modèles de fichier. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières.
 * **includeFilePattern** : le modèle utilisé par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Ainsi, si l’attribut IncludeFilePattern a la valeur `*`, tous les fichiers et les dossiers correspondant à `input*` sont sélectionnés. Cela inclut les fichiers et les dossiers nommés `input1`, `input2`, etc. La valeur par défaut est `*`. Cette valeur indique tous les fichiers et dossiers. En outre, le modèle peut être complété par des caractères génériques pour spécifier des modèles de fichier. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières. Cette valeur n’est pas obligatoire.
-* **resultFolderName** : le dossier dans lequel les résultats enregistrés sont stockés. Cet emplacement peut être un chemin d’accès absolu ou relatif au répertoire. Si les résultats ne s’affichent pas dans ce dossier, vérifiez le dossier failure. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier failure. La valeur par défaut est `result/%Y/%M/%D/`. Il s’agit du dossier de résultats dans le dossier de contrôle.
+* **resultFolderName** : le dossier dans lequel les résultats enregistrés sont stockés. Cet emplacement peut être un chemin d’accès absolu ou relatif au répertoire. Si les résultats ne s’affichent pas dans ce dossier, vérifiez le dossier des erreurs. Les fichiers en lecture seule ne sont pas traités et sont enregistrés dans le dossier des erreurs. La valeur par défaut est `result/%Y/%M/%D/`. Il s’agit du dossier de résultats dans le dossier de contrôle.
 * **preserveFolderName :** l’emplacement où les fichiers sont stockés après avoir été analysés et sélectionnés. Cet emplacement peut être un chemin d’accès de répertoire absolu, relatif ou nul. La valeur par défaut est `preserve/%Y/%M/%D/`.
 * **failureFolderName :** le dossier dans lequel les fichiers d’échec sont enregistrés. Cet emplacement dépend toujours du dossier de contrôle. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier failure. La valeur par défaut est `failure/%Y/%M/%D/`.
 * **preserveOnFailure** : conservez les fichiers d’entrée en cas d’échec de l’exécution de l’opération sur un service. La valeur par défaut est true.
-* **overwriteDuplicateFilename :** lorsque la valeur définie est True, les fichiers du dossier de résultats et du dossier de fichiers conservés sont remplacés. Lorsqu’il est défini sur False, les fichiers et les dossiers qui ont un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est false. 
+* **overwriteDuplicateFilename :** lorsque la valeur définie est True, les fichiers du dossier de résultats et du dossier de fichiers conservés sont remplacés. Lorsqu’il est défini sur faux, les fichiers et les dossiers qui ont un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est false.
 
 **Définir les valeurs des paramètres d’entrée**
 
-Lorsque vous créez un point d’entrée de dossier de contrôle, vous devez définir les valeurs des paramètres d’entrée. En d’autres termes, vous devez décrire les valeurs d’entrée qui sont transmises à l’opération appelée par le dossier de contrôle. Prenons le cas du processus introduit dans cette rubrique. Il comporte une valeur d’entrée appelée `InDoc` et son type de données est `com.adobe.idp.Document`. Lorsque vous créez un point d’entrée de dossier de contrôle pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
+Lorsque vous créez un point d’entrée de dossier de contrôle, vous devez définir les valeurs des paramètres d’entrée. En d’autres termes, vous devez décrire les valeurs d’entrée qui sont transmises à l’opération appelée par le dossier de contrôle. Prenons le cas du processus introduit dans cette rubrique. Il comporte une valeur d’entrée nommée `InDoc` et son type de données est `com.adobe.idp.Document`. Lorsque vous créez un point d’entrée de dossier de contrôle pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
 
 Pour définir les valeurs des paramètres d’entrée requis pour un point d’entrée de dossier de contrôle, spécifiez les valeurs suivantes :
 
-**Nom du paramètre d’entrée :** le nom du paramètre d’entrée. Le nom d’une valeur d’entrée est spécifié dans Workbench pour un processus. Si la valeur d’entrée appartient à une opération de service (un service qui n’est pas un processus créé dans Workbench), le nom d’entrée est spécifié dans le fichier component.xml. Par exemple, le nom du paramètre d’entrée pour le processus présenté dans cette section est `InDoc`.
+**Input parameter name** : nom du paramètre d’entrée. Le nom d’une valeur d’entrée est spécifié dans Workbench pour un processus. Si la valeur d’entrée appartient à une opération de service (un service qui n’est pas un processus créé dans Workbench), le nom d’entrée est spécifié dans le fichier component.xml. Par exemple, le nom du paramètre d’entrée pour le processus présenté dans cette section est `InDoc`.
 
 **Type de mappage :** utilisé pour configurer les valeurs d’entrée requises pour appeler l’opération de service. Il existe deux types de mappage :
 
@@ -359,11 +373,11 @@ Pour définir les valeurs des paramètres d’entrée requis pour un point d’e
 
 **Définir une valeur de paramètre de sortie**
 
-Lors de la création d’un point d’entrée de dossier de contrôle, vous devez définir une valeur de paramètre de sortie. En d’autres termes, vous devez décrire la valeur de sortie qui est renvoyée par le service qui est appelé par le point d’entrée de dossier de contrôle. Prenons le cas du processus introduit dans cette rubrique. Il a une valeur de sortie nommée `SecuredDoc` et son type de données est `com.adobe.idp.Document`. Lorsque vous créez un point d’entrée de dossier de contrôle pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre de sortie.
+Lors de la création d’un point d’entrée de dossier de contrôle, vous devez définir une valeur de paramètre de sortie. En d’autres termes, vous devez décrire la valeur de sortie qui est renvoyée par le service qui est appelé par le point d’entrée de dossier de contrôle. Prenons le cas du processus introduit dans cette rubrique. Elle a une valeur de sortie nommée `SecuredDoc` et son type de données est `com.adobe.idp.Document`. Lorsque vous créez un point d’entrée de dossier de contrôle pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre de sortie.
 
 Pour définir une valeur de paramètre de sortie requise pour un point d’entrée de dossier de contrôle, spécifiez les valeurs suivantes :
 
-**Nom du paramètre de sortie :** le nom du paramètre de sortie. Le nom d’une valeur de sortie de processus est spécifié dans Workbench. Si la valeur de sortie appartient à une opération de service (un service qui n’est pas un processus créé dans Workbench), le nom de sortie est spécifié dans le fichier component.xml. Par exemple, le nom du paramètre de sortie pour le processus introduit dans cette section est `SecuredDoc`.
+**Nom du paramètre de sortie**: Nom du paramètre de sortie. Le nom d’une valeur de sortie de processus est spécifié dans Workbench. Si la valeur de sortie appartient à une opération de service (un service qui n’est pas un processus créé dans Workbench), le nom de sortie est spécifié dans le fichier component.xml. Par exemple, le nom du paramètre de sortie pour le processus introduit dans cette section est `SecuredDoc`.
 
 **Type de mappage** : permet de configurer les sorties du service et de l’opération. Les options suivantes sont disponibles :
 
@@ -400,7 +414,7 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 1. Créez un objet client EndpointRegistry.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Définissez les attributs du point d’entrée Watched Folder.
 
@@ -415,8 +429,8 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 
    Pour chaque valeur de configuration à définir pour le point d’entrée Watched Folder, vous devez appeler la méthode `setConfigParameterAsText` de l’objet `CreateEndpointInfo`. Par exemple, pour définir la valeur de configuration `url`, appelez la méthode `setConfigParameterAsText` de l’objet `CreateEndpointInfo` et transmettez les valeurs de chaîne suivantes :
 
-   * Valeur de chaîne spécifiant le nom de la nouvelle conception de formulaire. Lors de la définition de la valeur de configuration `url`, spécifiez `url`.
-   * Valeur string qui spécifie la valeur de la valeur de configuration. Lors de la définition de la valeur de configuration `url`, spécifiez l’emplacement du dossier de contrôle.
+   * Valeur de chaîne spécifiant le nom de la valeur de configuration. Lors de la définition de la valeur de configuration `url`, spécifiez `url`.
+   * Valeur de type chaîne qui spécifie la valeur du paramètre de configuration. Lors de la définition de la valeur de configuration `url`, spécifiez l’emplacement du dossier de contrôle.
 
    >[!NOTE]
    >
@@ -426,10 +440,10 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 
    Définissez une valeur de paramètre d’entrée en appelant la méthode `setInputParameterMapping` de l’objet `CreateEndpointInfo` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du nouveau paramètre d’entrée. Par exemple, le nom du paramètre d’entrée pour le service EncryptDocument est `InDoc`.
-   * Valeur string qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre d’entrée `InDoc` est `com.adobe.idp.Document`.
+   * Une valeur de chaîne qui spécifie le nom du paramètre d’entrée. Par exemple, le nom du paramètre d’entrée pour le service EncryptDocument est `InDoc`.
+   * Valeur de chaîne qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre d’entrée `InDoc` est `com.adobe.idp.Document`.
    * Valeur string qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `variable`.
-   * Valeur string qui spécifie la valeur du type de mappage. Par exemple, vous pouvez spécifier &ast;.pdf comme modèle de fichier.
+   * Une valeur de chaîne qui spécifie la valeur du type de mappage. Par exemple, vous pouvez spécifier &ast;.pdf comme modèle de fichier.
 
    >[!NOTE]
    >
@@ -439,9 +453,9 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 
    Définissez une valeur de paramètre de sortie en appelant la méthode `setOutputParameterMapping` de l’objet `CreateEndpointInfo` et en transmettant les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du paramètre de sortie. Par exemple, le nom du paramètre de sortie pour le service EncryptDocument est `SecuredDoc`.
-   * Valeur string qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de sortie `SecuredDoc` est `com.adobe.idp.Document`.
-   * Valeur string qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `%F.pdf`.
+   * Une valeur de chaîne spécifiant le nom du paramètre de sortie. Par exemple, le nom du paramètre de sortie pour le service EncryptDocument est `SecuredDoc`.
+   * Une valeur de chaîne qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de sortie `SecuredDoc` est `com.adobe.idp.Document`.
+   * Une valeur de chaîne qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `%F.pdf`.
 
 1. Créez un point d’entrée Watched Folder.
 
@@ -461,9 +475,9 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Fichier constant des valeurs de configuration du dossier de contrôle {#watched-folder-configuration-values-constant-file}
+### Fichier de constantes des valeurs de configuration du dossier de contrôle {#watched-folder-configuration-values-constant-file}
 
-Le [QuickStart : ajouter un point d’entrée Watched Folder à l’aide de l’API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le démarrage rapide. Ce fichier constant représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point d’entrée Watched Folder. Le code Java suivant représente le fichier constant.
+Le [QuickStart : ajouter un point d’entrée Watched Folder à l’aide de l’API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le démarrage rapide. Ce fichier de constantes représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point d’entrée Dossier de contrôle. Le code Java suivant représente le fichier de constantes.
 
 ```java
  /**
@@ -496,13 +510,13 @@ Le [QuickStart : ajouter un point d’entrée Watched Folder à l’aide de l�
 
 ## Ajouter des points d’entrée de courrier électronique {#adding-email-endpoints}
 
-Vous pouvez ajouter par programmation un point d’entrée de courrier électronique à un service à l’aide de l’API Java AEM Forms. En ajoutant un point d’entrée de courrier électronique, vous permettez aux utilisateurs d’envoyer un message électronique contenant une ou plusieurs pièces jointes à un compte de messagerie spécifié. Ensuite, l’opération de configuration du service est appelée et manipule les fichiers. Une fois que le service a effectué l’opération spécifiée, il envoie un message électronique à l’expéditeur avec les fichiers modifiés comme pièces jointes.
+Vous pouvez ajouter par programmation un point d’entrée E-mail à un service à l’aide de l’API Java AEM Forms. En ajoutant un point d’entrée de courrier électronique, vous permettez aux utilisateurs d’envoyer un message électronique contenant une ou plusieurs pièces jointes à un compte de messagerie spécifié. Ensuite, l’opération de configuration du service est appelée et manipule les fichiers. Une fois que le service a effectué l’opération spécifiée, il envoie un message électronique à l’expéditeur avec les fichiers modifiés comme pièces jointes.
 
 Pour ajouter par programmation un point d’entrée de courrier électronique à un service, considérez le processus de courte durée suivant nommé *MyApplication\EncryptDocument*. Pour plus d’informations sur les processus de courte durée, voir [Comprendre les processus AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
-Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, puis transmet le document PDF non sécurisé à l’opération `EncryptPDFUsingPassword` du service de chiffrement. Ce processus chiffre le document PDF avec un mot de passe et le renvoie comme valeur de sortie. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
+Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, puis transmet le document PDF non sécurisé à l’opération `EncryptPDFUsingPassword` du service de chiffrement. Ce processus chiffre le document PDF avec un mot de passe et renvoie le document PDF chiffré par mot de passe comme valeur de sortie. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -521,7 +535,7 @@ Pour ajouter un point d’entrée de courrier électronique à un service, effec
 1. Créez le point d’entrée de courrier électronique.
 1. Activez le point d’entrée.
 
-**Incluez les fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -532,15 +546,15 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Créer un objet client EndpointRegistry**
+**Créez un objet client EndpointRegistry**
 
 Avant de pouvoir ajouter par programmation un point d’entrée de courrier électronique, vous devez créer un objet `EndpointRegistryClient`.
 
 **Définir les attributs de point d’entrée de courrier électronique**
 
-Pour créer un point d’entrée de courrier électronique pour un service, spécifiez les valeurs suivantes :
+Pour créer un point d’entrée E-mail pour un service, spécifiez les valeurs suivantes :
 
 * **Valeur de l’identifiant du connecteur** : indique le type de point d’entrée créé. Pour créer un point d’entrée de courrier électronique, spécifiez `Email`.
 * **Description** : indique une description du point d’entrée.
@@ -550,13 +564,13 @@ Pour créer un point d’entrée de courrier électronique pour un service, spé
 
 **Spécifier les valeurs de configuration**
 
-Spécifiez des valeurs de configuration pour un point d’entrée d’e-mail lorsque vous en ajoutez un par programmation à un service. Ces valeurs de configuration sont spécifiées par un administrateur si un point d’entrée de courrier électronique est ajouté à l’aide de la console d’administration.
+Spécifiez des valeurs de configuration pour un point d’entrée d’e-mail lorsque vous en ajoutez un par programmation à un service. Ces valeurs de configuration sont spécifiées par un administrateurou une administratricesi un point d’entrée E-mail est ajouté à l’aide de la console d’administration.
 
 >[!NOTE]
 >
->Le compte de messagerie surveillé est un compte spécial, utilisé uniquement pour le point d’entrée de courrier électronique. Ce compte n’est pas un compte de messagerie typique d’un utilisateur. Le compte de messagerie d’un utilisateur ou d’une utilisatrice ordinaire ne doit pas être configuré comme le compte utilisé par le fournisseur de messagerie, car celui-ci supprime les messages e-mail de la boîte de réception une fois qu’il a terminé avec les messages.
+>Le compte de messagerie surveillé est un compte spécial, utilisé uniquement pour le point d’entrée E-mail. Ce compte n’est pas un compte e-mail typique d’un utilisateur ou d’une utilisatrice. Le compte de messagerie d’un utilisateur ou d’une utilisatrice ordinaire ne doit pas être configuré comme le compte utilisé par le fournisseur de messagerie, car celui-ci supprime les messages e-mail de la boîte de réception une fois leur traitement terminé.
 
-Les valeurs de configuration suivantes sont définies lors de l’ajout par programmation d’un point d’entrée de courrier électronique à un service :
+Les valeurs de configuration suivantes sont définies lors de l’ajout par programmation d’un point d’entrée E-mail à un service :
 
 * **cronExpression** : saisissez une expression Cron si l’e-mail doit être programmé en utilisant une expression de ce type.
 * **repeatCount** : nombre d’analyses du dossier ou du répertoire par le point d’entrée de courrier électronique. La valeur -1 indique une analyse sans limite. La valeur par défaut est -1.
@@ -566,14 +580,14 @@ Les valeurs de configuration suivantes sont définies lors de l’ajout par prog
 * **userName** : nom d’utilisateur utilisé lors de l’appel d’un service cible à partir d’un e-mail. La valeur par défaut est `SuperAdmin`.
 * **domainName** : valeur de configuration obligatoire. La valeur par défaut est `DefaultDom`.
 * **domainPattern** : spécifie les modèles de domaine d’e-mail entrant acceptés par le fournisseur. Par exemple, si le domaine `adobe.com` est utilisé, seuls les e-mails de ce domaine sont traités. Ceux provenant d’autres domaines sont ignorés.
-*  **filePattern**: indique les modèles de pièce jointe de fichier entrant acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions de nom de fichier spécifiques (&ast;.dat, &ast;.xml), les fichiers ayant des noms spécifiques (données) et les fichiers dont le nom et l’extension comportent des expressions composites (&ast;.``[dD][aA]``&#39;port&#39;). La valeur par défaut est `*`.
-* **recipientSuccessfulJob** : adresse électronique à laquelle sont envoyés les messages pour signaler les travaux effectués. Par défaut, un message de travail effectué est toujours envoyé à l’expéditeur. Si vous saisissez `sender`, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires au moyen de leurs adresses e-mail, séparées par des virgules. Pour désactiver cette option, ne remplissez pas ce champ. Dans certains cas, il se peut que vous souhaitiez déclencher un processus et ne pas recevoir de courrier électronique de notification du résultat. La valeur par défaut est `sender`.
-* **recipientFailedJob** : adresse électronique à laquelle sont envoyés les messages pour signaler les travaux ayant échoué. Par défaut, un message de travail ayant échoué est toujours envoyé à l’expéditeur. Si vous saisissez `sender`, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires au moyen de leurs adresses e-mail, séparées par des virgules. Pour désactiver cette option, ne remplissez pas ce champ. La valeur par défaut est `sender`.
+* **filePattern**: indique les modèles de pièce jointe de fichier entrant acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions de nom de fichier spécifiques (&ast;.dat, &ast;.xml), les fichiers ayant des noms spécifiques (données) et les fichiers dont le nom et l’extension comportent des expressions composites (&ast;.``[dD][aA]``&#39;port&#39;). La valeur par défaut est `*`.
+* **recipientSuccessfulJob** : adresse électronique à laquelle sont envoyés les messages pour signaler les travaux effectués. Par défaut, un message de traitement réussi est toujours envoyé à l’expéditeur ou à l’expéditrice. Si vous saisissez `sender`, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires au moyen de leurs adresses e-mail, séparées par des virgules. Pour désactiver cette option, ne remplissez pas ce champ. Dans certains cas, il se peut que vous souhaitiez déclencher un processus et ne pas recevoir de notification par e-mail du résultat. La valeur par défaut est `sender`.
+* **recipientFailedJob** : adresse électronique à laquelle sont envoyés les messages pour signaler les travaux ayant échoué. Par défaut, un message de traitement ayant échoué est toujours envoyé à l’expéditeur ou à l’expéditrice. Si vous saisissez `sender`, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires au moyen de leurs adresses e-mail, séparées par des virgules. Pour désactiver cette option, ne remplissez pas ce champ. La valeur par défaut est `sender`.
 * **inboxHost** : nom ou adresse IP de l’hôte de la boîte de réception du fournisseur de messagerie électronique à analyser.
-* **inboxPort** : port utilisé par le serveur de messagerie. La valeur POP3 par défaut est 110 et la valeur IMAP par défaut est 143. Si le protocole SSL est activé, la valeur POP3 par défaut est 995 et la valeur IMAP par défaut est 993.
+* **inboxPort** : port utilisé par le serveur de messagerie. La valeur POP3 par défaut est 110 et la valeur IMAP par défaut est 143. Si SSL est activé, la valeur par défaut pour POP3 est 995 et la valeur par défaut pour IMAP est 993.
 * **inboxProtocol** : protocole utilisé par le point d’entrée de courrier électronique pour analyser la boîte de réception. Les options disponibles sont `IMAP` ou `POP3`. Le serveur de messagerie de l’hôte boîte de réception doit prendre en charge ces protocoles.
-* **inboxTimeOut** : délai (en secondes) pendant lequel le fournisseur d’e-mail attend les réponses de la boîte de réception. La valeur par défaut est 60.
-* **inboxUser** : nom d’utilisateur requis pour se connecter au compte e-mail. En fonction du serveur de messagerie et de la configuration, il peut s’agir uniquement de la partie nom d’utilisateur de l’e-mail ou de l’e-mail complet.
+* **inboxTimeOut** : délai d’expiration (en secondes) pendant lequel le fournisseur d’e-mail attend les réponses de la boîte de réception. La valeur par défaut est 60.
+* **inboxUser** : nom d’utilisateur requis pour se connecter au compte e-mail. En fonction du serveur de messagerie et de la configuration, il peut s’agir uniquement de la partie nom d’utilisateur de l’e-mail ou de l’adresse e-mail complète.
 * **inboxPassword** : mot de passe de l’utilisateur de la boîte de réception.
 * **inboxSSLEnabled** : définissez cette valeur pour forcer le fournisseur de messagerie à utiliser SSL lors de l’envoi de messages de notification de résultats ou d’erreurs. Assurez-vous que l’hôte IMAP ou POP3 prend en charge SSL.
 * **smtpHost** : nom d’hôte du serveur de messagerie auquel le fournisseur de messagerie envoie les résultats et les messages d’erreur.
@@ -581,19 +595,19 @@ Les valeurs de configuration suivantes sont définies lors de l’ajout par prog
 * **smtpUser** : compte d’utilisateur que le fournisseur d’e-mail doit utiliser lorsqu’il envoie des notifications par e-mail pour signaler des résultats et des erreurs.
 * **smtpPassword** : mot de passe du compte SMTP. Certains serveurs de messagerie ne nécessitent pas de mot de passe SMTP.
 * **charSet** : jeu de caractères utilisé par le fournisseur de messagerie. La valeur par défaut est `UTF-8`.
-* **smtpSSLEnabled** : définissez cette valeur pour forcer le fournisseur de messagerie à utiliser SSL lors de l’envoi de messages de notification de résultats ou d’erreurs. Assurez-vous que le serveur SMTP prend en charge SSL.
+* **smtpSSLEnabled** : définissez cette valeur pour forcer le fournisseur de messagerie à utiliser SSL lors de l’envoi de messages de notification de résultats ou d’erreurs. Assurez-vous que l’hôte SMTP prend en charge SSL.
 * **failedJobFolder** : spécifie un répertoire dans lequel stocker les résultats en cas de non-fonctionnement du serveur de courrier SMTP.
 * **Asynchrone** : lorsque l’option est définie sur synchrone, tous les documents d’entrée sont traités, puis une seule réponse est renvoyée. Lorsque l’option est définie sur asynchrone, une réponse est envoyée pour chaque document traité. Par exemple, un point d’entrée de courrier électronique est créé pour le processus introduit dans cette rubrique et un message électronique est envoyé à la boîte de réception du point d’entrée qui contient plusieurs documents PDF non sécurisés. Lorsque tous les documents PDF sont chiffrés avec un mot de passe et que le point d’entrée est configuré comme synchrone, un seul message électronique de réponse est envoyé avec tous les documents PDF sécurisés joints. Si le point d’entrée est configuré comme asynchrone, un message électronique de réponse distinct est envoyé pour chaque document PDF sécurisé. Chaque message électronique contient un document PDF unique en tant que pièce jointe. La valeur par défaut est asynchrone.
 
 **Définissez les valeurs de paramètre d’entrée**
 
-Lors de la création d’un point d’entrée de courrier électronique, vous devez définir des valeurs de paramètre d’entrée. En d’autres termes, vous devez décrire les valeurs d’entrée transmises à l’opération appelée par le point d’entrée de courrier électronique. Prenons le cas du processus introduit dans cette rubrique. Il comporte une valeur d’entrée nommée `InDoc` et son type de données est `com.adobe.idp.Document`. Lors de la création d’un point d’entrée de courrier électronique pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
+Lors de la création d’un point d’entrée de courrier électronique, vous devez définir des valeurs de paramètre d’entrée. En d’autres termes, vous devez décrire les valeurs d’entrée transmises à l’opération appelée par le point d’entrée e-mail. Prenons le cas du processus introduit dans cette rubrique. Il comporte une valeur d’entrée nommée `InDoc` et son type de données est `com.adobe.idp.Document`. Lors de la création d’un point d’entrée e-mail pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
 
-Pour définir les valeurs de paramètre d’entrée requises pour un point d’entrée de courrier électronique, spécifiez les valeurs suivantes :
+Pour définir les valeurs de paramètre d’entrée requises pour un point d’entrée e-mail, spécifiez les valeurs suivantes :
 
 **Input parameter name** : nom du paramètre d’entrée. Le nom d’une valeur d’entrée est spécifié dans Workbench pour un processus. Si la valeur d’entrée appartient à une opération de service (un service Forms qui n’est pas un processus créé dans Workbench), le nom d’entrée est spécifié dans le fichier component.xml. Par exemple, le nom du paramètre d’entrée pour le processus présenté dans cette section est `InDoc`.
 
-**Type de mappage** : utilisé pour configurer les valeurs d’entrée requises pour appeler l’opération de service. Deux types de mappage sont les suivants :
+**Type de mappage :** utilisé pour configurer les valeurs d’entrée requises pour appeler l’opération de service. Deux types de mappage sont les suivants :
 
 * `Literal` : le point d’entrée de courrier électronique utilise la valeur saisie dans le champ telle qu’affichée. Tous les types Java de base sont pris en charge. Par exemple, si une interface API utilise une entrée de type chaîne, long, nombre entier ou valeur booléenne, cette entrée est convertie en type approprié, puis le service est appelé.
 * `Variable` : la valeur saisie est un modèle de fichier que le point d’entrée de courrier électronique utilise pour sélectionner l’entrée. Par exemple, si vous sélectionnez Variable pour le type de mappage et que le document d’entrée doit être un fichier PDF, vous pouvez spécifier `*.pdf` comme valeur de mappage.
@@ -604,7 +618,7 @@ Pour définir les valeurs de paramètre d’entrée requises pour un point d’e
 
 **Définir une valeur de paramètre de sortie**
 
-Lors de la création d’un endpoint Email, vous devez définir une valeur de paramètre de sortie. En d’autres termes, vous devez décrire la valeur de sortie renvoyée par le service appelé par l’endpoint Email. Prenons le cas du processus introduit dans cette rubrique. Elle a une valeur de sortie nommée `SecuredDoc` et son type de données est `com.adobe.idp.Document`. Lors de la création d’un endpoint Email pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre de sortie.
+Lors de la création d’un endpoint Email, vous devez définir une valeur de paramètre de sortie. En d’autres termes, vous devez décrire la valeur de sortie renvoyée par le service appelé par l’endpoint Email. Prenons le cas du processus introduit dans cette rubrique. Il a une valeur de sortie nommée `SecuredDoc` et son type de données est `com.adobe.idp.Document`. Lors de la création d’un endpoint Email pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre de sortie.
 
 Pour définir une valeur de paramètre de sortie requise pour un endpoint Email, spécifiez les valeurs suivantes :
 
@@ -620,21 +634,21 @@ Pour définir une valeur de paramètre de sortie requise pour un endpoint Email,
 
 **Créer le point d’entrée de courrier électronique**
 
-Après avoir défini les attributs de point d’entrée de courrier électronique et les valeurs de configuration, ainsi que les valeurs des paramètres d’entrée et de sortie, vous devez créer le point de fin de courrier électronique.
+Après avoir défini les attributs du point d’entrée E-mail et les valeurs de configuration, ainsi que les valeurs des paramètres d’entrée et de sortie, vous devez créer le point d’entrée E-mail.
 
 **Activer le point d’entrée**
 
-Après avoir créé un point d’entrée de courrier électronique, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
+Après avoir créé un point d’entrée E-mail, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
 
 **Voir également**
 
-[Ajouter un point d’entrée de courrier électronique à l’aide de l’API Java](programmatically-endpoints.md#add-an-email-endpoint-using-the-java-api)
+[Ajouter un point d’entrée E-mail à l’aide de l’API Java](programmatically-endpoints.md#add-an-email-endpoint-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajouter un point d’entrée de courrier électronique à l’aide de l’API Java {#add-an-email-endpoint-using-the-java-api}
+### Ajouter un point d’entrée E-mail à l’aide de l’API Java {#add-an-email-endpoint-using-the-java-api}
 
 Ajoutez un point d’entrée Email à l’aide de l’API Java :
 
@@ -645,23 +659,23 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
 1. Créez un objet client EndpointRegistry.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
-1. Définissez les attributs de point d’entrée de courrier électronique.
+1. Définissez les attributs de point d’entrée E-mail.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
    * Spécifiez la valeur de l’identifiant du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `Email`.
    * Fournissez une description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
    * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
    * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `setServiceId` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom du service.
-   * Spécifiez l’opération appelée en appelant la méthode `setOperationName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée E-mail pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est appelé.
+   * Spécifiez l’opération appelée en appelant la méthode `setOperationName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée E-mail pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est invoke.
 
 1. Spécifiez les valeurs de configuration.
 
    Pour chaque valeur de configuration à définir pour le point d’entrée d’e-mail, vous devez appeler la méthode `setConfigParameterAsText` de l’objet `CreateEndpointInfo`. Par exemple, pour définir la valeur de configuration `smtpHost`, appelez la méthode `setConfigParameterAsText` de l’objet `CreateEndpointInfo` et transmettez les valeurs suivantes :
 
-   * Valeur de chaîne spécifiant le nom de la nouvelle conception de formulaire. Lors de la définition de la valeur de configuration `smtpHost`, spécifiez `smtpHost`.
-   * Valeur string qui spécifie la valeur de la valeur de configuration. Lors du paramétrage de la valeur de configuration `smtpHost`, spécifiez une valeur string qui spécifie le nom du serveur SMTP. 
+   * Valeur de chaîne spécifiant le nom de la valeur de configuration. Lors de la définition de la valeur de configuration `smtpHost`, spécifiez `smtpHost`.
+   * Valeur string qui spécifie la valeur de la valeur de configuration. Lors du paramétrage de la valeur de configuration `smtpHost`, spécifiez une valeur string qui spécifie le nom du serveur SMTP.
 
    >[!NOTE]
    >
@@ -671,10 +685,10 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
 
    Définissez une valeur de paramètre d’entrée en appelant la méthode `setInputParameterMapping` de l’objet `CreateEndpointInfo` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du nouveau paramètre d’entrée. Par exemple, le nom du paramètre d’entrée pour le service EncryptDocument est `InDoc`.
-   * Valeur string qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre d’entrée `InDoc` est `com.adobe.idp.Document`.
+   * Une valeur de chaîne qui spécifie le nom du paramètre d’entrée. Par exemple, le nom du paramètre d’entrée pour le service EncryptDocument est `InDoc`.
+   * Valeur de chaîne qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre d’entrée `InDoc` est `com.adobe.idp.Document`.
    * Valeur string qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `variable`.
-   * Valeur string qui spécifie la valeur du type de mappage. Par exemple, vous pouvez spécifier &ast;.pdf comme modèle de fichier.
+   * Une valeur de chaîne qui spécifie la valeur du type de mappage. Par exemple, vous pouvez spécifier &ast;.pdf comme modèle de fichier.
 
    >[!NOTE]
    >
@@ -685,10 +699,10 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
    Définissez une valeur de paramètre de sortie en appelant la méthode `setOutputParameterMapping` de l’objet `CreateEndpointInfo` et en transmettant les valeurs suivantes :
 
    * Valeur string spécifiant le nom du paramètre de sortie. Par exemple, le nom du paramètre de sortie pour le service EncryptDocument est `SecuredDoc`.
-   * Valeur string qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de sortie `SecuredDoc` est `com.adobe.idp.Document`.
-   * Valeur string qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `%F.pdf`.
+   * Une valeur de chaîne qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de sortie `SecuredDoc` est `com.adobe.idp.Document`.
+   * Une valeur de chaîne qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `%F.pdf`.
 
-1. Créez le point d’entrée de courrier électronique.
+1. Créez le point d’entrée E-mail.
 
    Créez le point d’entrée en appelant la méthode `createEndpoint` de l’objet `EndpointRegistryClient` et en transmettant l’objet `CreateEndpointInfo`. Cette méthode renvoie un objet `Endpoint` qui représente le point d’entrée de courrier électronique.
 
@@ -706,9 +720,9 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Fichier constant de valeurs de configuration des emails {#email-configuration-values-constant-file}
+### Fichier de constantes des valeurs de configuration du canal e-mail {#email-configuration-values-constant-file}
 
-[QuickStart : ajouter un point d’entrée d’e-mail à l’aide de l’API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le démarrage rapide. Ce fichier constant représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point d’entrée de courrier électronique. Le code Java suivant représente le fichier constant.
+[QuickStart : ajouter un point d’entrée d’e-mail à l’aide de l’API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le démarrage rapide. Ce fichier de constantes représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point d’entrée E-mail. Le code Java suivant représente le fichier de constantes.
 
 ```java
  /**
@@ -750,15 +764,15 @@ Ajoutez un point d’entrée Email à l’aide de l’API Java :
 
 >[!NOTE]
 >
->API LiveCycle Remoting obsolètes pour AEM Forms on JEE.
+>API LiveCycle Remoting obsolètes pour AEM Forms sur environnement JEE.
 
-Vous pouvez ajouter par programmation un point d’entrée Remoting à un service à l’aide de l’API Java AEM Forms. En ajoutant un point d’entrée Remoting, vous activez une application Flex pour appeler le service à l’aide de la commande Remoting. (Voir [Appeler AEM Forms à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Vous pouvez ajouter par programmation un point d’entrée Remoting à un service à l’aide de l’API Java AEM Forms. En ajoutant un point d’entrée Remoting, vous permettez à une application Flex d’appeler le service à l’aide de Remoting. (Voir [Appeler AEM Forms à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Pour ajouter par programmation un point d’entrée Remoting à un service, considérez le processus de courte durée suivant nommé *EncryptDocument*.
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, puis transmet le document PDF non sécurisé à l’opération `EncryptPDFUsingPassword` du service de chiffrement. Le document PDF est chiffré avec un mot de passe et le document PDF chiffré par mot de passe est la valeur de sortie de ce processus. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
+Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, puis transmet le document PDF non sécurisé à l’opération `EncryptPDFUsingPassword` du service de chiffrement. Le document PDF est chiffré avec un mot de passe et le document PDF chiffré par mot de passe est la valeur de sortie de ce processus. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
 
 Pour montrer comment ajouter un point d’entrée Remoting à un service, cette section ajoute un point d’entrée Remoting à un service nommé EncryptDocument.
 
@@ -772,11 +786,11 @@ Pour supprimer un point d’entrée d’un service, effectuez les tâches suivan
 
 1. Incluez les fichiers de projet.
 1. Créez un objet `EndpointRegistryClient`.
-1. Définissez les attributs des points d’entrée Remoting.
+1. Définissez les attributs du point d’entrée Remoting.
 1. Créez un point d’entrée Remoting.
 1. Activez le point d’entrée.
 
-**Incluez les fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -787,9 +801,9 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Créer un objet client EndpointRegistry**
+**Créez un objet client EndpointRegistry**
 
 Pour ajouter un point d’entrée Remoting par programmation, vous devez créer un objet `EndpointRegistryClient`.
 
@@ -807,7 +821,7 @@ Pour créer un point d’entrée Remoting pour un service, spécifiez les valeur
 
 Une fois que vous avez défini les attributs du point d’entrée Remoting, vous pouvez créer un point d’entrée Remoting pour un service.
 
-**Activer le point d’entrée**
+**Activez le point d’entrée**
 
 Après avoir créé un point d’entrée, vous devez l’activer. Lorsqu’un point d’entrée Remoting est activé, il permet à un client Flex d’appeler le service.
 
@@ -821,7 +835,7 @@ Après avoir créé un point d’entrée, vous devez l’activer. Lorsqu’un po
 
 ### Ajouter un point d’entrée Remoting à l’aide de l’API Java {#add-a-remoting-endpoint-using-the-java-api}
 
-Poir ajouter un point d’entrée Remoting à l’aide de l’API Java, procédez comme suit :
+Pour ajouter un point d’entrée Remoting à l’aide de l’API Java, procédez comme suit :
 
 1. Incluez les fichiers de projet.
 
@@ -839,7 +853,7 @@ Poir ajouter un point d’entrée Remoting à l’aide de l’API Java, procéde
    * Fournissez une description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
    * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
    * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `setServiceId` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom du service.
-   * Spécifiez l’opération appelée par la méthode `setOperationName` de l’objet `CreateEndpointInfo` et transmettez une valeur de chaîne qui spécifie le nom de l’opération. Pour un point d’entrée Remoting, spécifiez un caractère générique (&ast;).
+   * Spécifiez l’opération appelée par la méthode `setOperationName` de l’objet `CreateEndpointInfo` et transmettez une valeur de chaîne qui spécifie le nom de l’opération. Pour un point d’entrée Remoting, spécifiez un caractère générique (*).
 
 1. Créez un point d’entrée Remoting.
 
@@ -861,7 +875,7 @@ Poir ajouter un point d’entrée Remoting à l’aide de l’API Java, procéde
 
 ## Ajouter des points d’entrée TaskManager {#adding-taskmanager-endpoints}
 
-Vous pouvez ajouter par programmation un point d’entrée TaskManager à un service à l’aide de l’API Java AEM Forms. En ajoutant un point d’entrée TaskManager à un service, vous permettez à un utilisateur Workspace d’appeler le service. En d’autres termes, un utilisateur travaillant dans Workspace peut appeler un processus auquel correspond un point d’entrée TaskManager.
+Vous pouvez ajouter par programmation un point d’entrée TaskManager à un service à l’aide de l’API Java AEM Forms. En ajoutant un point d’entrée TaskManager à un service, vous activez la possibilité pour un utilisateur ou une utilisatrice Workspace d’appeler le service. En d’autres termes, un utilisateur travaillant dans Workspace peut appeler un processus auquel correspond un point d’entrée TaskManager.
 
 >[!NOTE]
 >
@@ -878,7 +892,7 @@ Pour ajouter un point d’entrée TaskManager à un service, procédez comme sui
 1. Créez un point d’entrée TaskManager.
 1. Activez le point d’entrée.
 
-**Incluez les fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -889,9 +903,9 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Créer un objet client EndpointRegistry**
+**Créez un objet client EndpointRegistry**
 
 Avant de pouvoir ajouter un point d’entrée TaskManager par programmation, vous devez créer un objet `EndpointRegistryClient`.
 
@@ -908,8 +922,8 @@ Les catégories sont utilisées pour organiser les services dans Workspace. En d
 Pour créer un point d’entrée TaskManager pour un service, spécifiez les valeurs suivantes :
 
 * **Identifiant du connecteur**: indique le type de point d’entrée créé. Pour créer un point d’entrée TaskManager, spécifiez `TaskManagerConnector`.
-* **Description**: indique la description du point d’entrée.
-* **Nom :** indique le nom du point d’entrée.
+* **Description** : fournit une description du point d’entrée.
+* **Nom** : indique le nom du point d’entrée.
 * **Identifiant du service** : indique le service auquel appartient le point d’entrée.
 * **Catégorie** : spécifie une valeur d’identifiant de catégorie associée au point d’entrée TaskManager.
 * **Nom de l’opération** : en règle générale, lors de la création d’un point d’entrée TaskManager pour un service issu d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
@@ -918,7 +932,7 @@ Pour créer un point d’entrée TaskManager pour un service, spécifiez les val
 
 Après avoir défini des attributs de point d’entrée TaskManager, vous pouvez créer un point d’entrée TaskManager pour un service.
 
-**Activez le point d’entrée**
+**Activer le point d’entrée**
 
 Après avoir créé un point d’entrée, vous devez l’activer. Lorsque le point d’entrée est activé, il peut être utilisé pour appeler le service depuis Workspace. Une fois le point d’entrée activé, vous pouvez l’afficher dans la console d’administration.
 
@@ -941,14 +955,14 @@ Ajoutez un point d’entrée TaskManager à l’aide de l’API Java :
 1. Créez un objet client EndpointRegistry.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Créez une catégorie pour le point d’entrée.
 
    * Créez un objet `CreateEndpointCategoryInfo` en utilisant son constructeur et en transmettant les valeurs suivantes :
 
-      * Une valeur string représentant la valeur de l’identifiant de la catégorie
-      * Valeur string spécifiant la description de la catégorie
+     * Une valeur de chaîne représentant la valeur de l’identifiant de la catégorie
+     * Une valeur de chaîne spécifiant la description de la catégorie
 
    * Créez la catégorie en appelant la méthode `createEndpointCategory` de l’objet `EndpointRegistryClient` et en transmettant l’objet `CreateEndpointCategoryInfo`. Cette méthode renvoie un objet `EndpointCategory` représentant la nouvelle catégorie.
 
@@ -982,7 +996,7 @@ Ajoutez un point d’entrée TaskManager à l’aide de l’API Java :
 
 ## Modifier les points d’entrée {#modifying-endpoints}
 
-Vous pouvez modifie par programmation un point d’entrée existant à l’aide de l’API Java dʼAEM Forms. Lorsque vous modifiez un point d’entrée, vous modifiez également son comportement. Prenons l’exemple d’un point d’entrée « Watched Folder » (Dossier de contrôle), qui spécifie un dossier utilisé comme dossier de contrôle. Vous pouvez modifier par programmation les valeurs de configuration qui appartiennent au point d’entrée Watched Folder. En conséquence, un autre dossier agira en tant que dossier de contrôle. Pour plus d’informations sur les valeurs de configuration qui appartiennent à un point d’entrée Watched Folder, consultez la section [Ajouter des points d’entrée Watched Folder](programmatically-endpoints.md#adding-watched-folder-endpoints).
+Vous pouvez modifier par programmation un point d’entrée existant à l’aide de l’API Java dʼAEM Forms. Lorsque vous modifiez un point d’entrée, vous modifiez également son comportement. Prenons l’exemple d’un point d’entrée « Watched Folder » (Dossier de contrôle), qui spécifie un dossier utilisé comme dossier de contrôle. Vous pouvez modifier par programmation les valeurs de configuration qui appartiennent au point d’entrée Watched Folder. En conséquence, un autre dossier agira en tant que dossier de contrôle. Pour plus d’informations sur les valeurs de configuration qui appartiennent à un point d’entrée Watched Folder, consultez la section [Ajouter des points d’entrée Watched Folder](programmatically-endpoints.md#adding-watched-folder-endpoints).
 
 Cette section décrit la modification dʼun point d’entrée, en lʼoccurence un point d’entrée Watched Folder, en modifiant le dossier qui se comporte comme le dossier de contrôle.
 
@@ -992,7 +1006,7 @@ Cette section décrit la modification dʼun point d’entrée, en lʼoccurence u
 
 ### Résumé des étapes {#summary_of_steps-6}
 
-Pour modifier un point dʼentée, procédez comme suit :
+Pour modifier un point dʼentrée, procédez comme suit :
 
 1. Incluez les fichiers de projet.
 1. Créez un objet `EndpointRegistryClient`.
@@ -1010,21 +1024,21 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Créer un objet EndpointRegistry Client**
+**Créez un objet client EndpointRegistry**
 
 Pour modifier un point dʼentrée par programmation, vous devez créer un objet `EndpointRegistryClient`.
 
 **Récupérer le point dʼentrée à modifier**
 
-Avant de pouvoir modifier un point dʼentrée, vous devez le récupérer. Pour récupérer un point d’entrée, vous devez vous connecter en tant qu’utilisateur autorisé à accéder aux points d’entrée. Il est recommandé de se connecter en tant qu’administrateur. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
+Avant de pouvoir modifier un point d’entrée, vous devez le récupérer. Pour récupérer un point d’entrée, vous devez vous connecter en tant qu’utilisateur autorisé à accéder aux points d’entrée. Il est recommandé de se connecter en tant qu’administrateur. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
-Vous pouvez récupérer un point d’entrée en récupérant une liste de points d’entrée. Vous pouvez ensuite effectuer une itération au sein de la liste et rechercher le point d’entrée spécifique à supprimer. Par exemple, vous pouvez localiser un point d’entrée en déterminant le service correspondant et le type de point d’entrée. Lorsque vous avez localisé le point dʼentrée, vous pouvez le modifier.
+Vous pouvez récupérer un point d’entrée en récupérant une liste de points d’entrée. Vous pouvez ensuite effectuer une itération au sein de la liste et rechercher le point d’entrée spécifique à supprimer. Par exemple, vous pouvez localiser un point d’entrée en déterminant le service correspondant et le type de point d’entrée. Lorsque vous avez localisé le point d’entrée, vous pouvez le modifier.
 
 **Définir de nouvelles valeurs de configuration**
 
-Lors de la modification d’un point dʼentrée, spécifiez de nouvelles valeurs de configuration. Par exemple, pour modifier un point dʼentrée Watched Folder, réinitialisez toutes les valeurs de configuration du point dʼentrée Watched Folder, et pas seulement celles que vous souhaitez modifier. Pour plus d’informations sur les valeurs de configuration disponibles pour un point dʼentrée Watched Folder, consultez la section [Ajouter des points dʼentrée Watched Folder](programmatically-endpoints.md#adding-watched-folder-endpoints).
+Lors de la modification d’un point d’entrée, spécifiez de nouvelles valeurs de configuration. Par exemple, pour modifier un point d’entrée de dossier de contrôle, réinitialisez toutes les valeurs de configuration du point d’entrée de dossier de contrôle, et pas seulement celles que vous souhaitez modifier. Pour plus d’informations sur les valeurs de configuration disponibles pour un point dʼentrée Watched Folder, consultez la section [Ajouter des points dʼentrée Watched Folder](programmatically-endpoints.md#adding-watched-folder-endpoints).
 
 >[!NOTE]
 >
@@ -1032,7 +1046,7 @@ Lors de la modification d’un point dʼentrée, spécifiez de nouvelles valeurs
 
 >[!NOTE]
 >
->Vous ne pouvez pas modifier le service appelé par le point dʼentrée. Dans le cas contraire, une exception est générée. Pour modifier le service associé à un point dʼentrée spécifique, supprimez ce dernier et créez-en un. (Consultez la section [Supprimer des points dʼentrée](programmatically-endpoints.md#removing-endpoints)).
+>Vous ne pouvez pas modifier le service appelé par le point dʼentrée. Si vous tentez de modifier le service, une exception est générée. Pour modifier le service associé à un point dʼentrée spécifique, supprimez ce dernier et créez-en un. (Consultez la section [Supprimer des points dʼentrée](programmatically-endpoints.md#removing-endpoints)).
 
 **Voir également**
 
@@ -1055,7 +1069,7 @@ Pour modifier un point dʼentrée à l’aide de l’API Java, procédez comme s
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `EndpointRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
-1. Récupérez le point dʼentrée à modifier.
+1. Récupérez le point d’entrée à modifier.
 
    * Récupérez une liste de tous les points dʼentrée auxquels l’utilisateur ou l’utilisatrice en cours (spécifiés dans les propriétés de connexion) peut accéder en appelant la méthode `getEndpoints` de lʼobjet `EndpointRegistryClient` et en transmettant un objet `PagingFilter` qui agit comme un filtre. Vous pouvez transmettre une valeur `(PagingFilter)null` pour retourner tous les points dʼentrée. Cette méthode renvoie un objet `java.util.List` où chaque élément est un objet `Endpoint`. Pour plus d’informations sur lʼobjet `PagingFilter`, consultez la section [Référence API pour AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Effectuez une itération à l’aide de l’objet `java.util.List` pour déterminer s’il contient des points d’entrée. Si des points d’entrée existent, chaque élément est une instance `EndPoint`.
@@ -1067,8 +1081,8 @@ Pour modifier un point dʼentrée à l’aide de l’API Java, procédez comme s
    * Créez un objet `ModifyEndpointInfo` en utilisant son constructeur.
    * Pour chaque valeur de configuration à définir, appelez la méthode `setConfigParameterAsText` de l’objet `ModifyEndpointInfo`. Par exemple, pour définir la valeur de configuration de l’URL, appelez la méthode `setConfigParameterAsText` de l’objet `ModifyEndpointInfo` et transmettez les valeurs suivantes :
 
-      * Valeur de chaîne spécifiant le nom de la nouvelle conception de formulaire. Par exemple, pour définir la valeur de configuration `url`, spécifiez `url`.
-      * Valeur string qui spécifie la valeur de la valeur de configuration. Pour définir une valeur pour la valeur de configuration `url`, spécifiez l’emplacement du dossier de contrôle.
+     * Valeur de chaîne spécifiant le nom de la valeur de configuration. Par exemple, pour définir la valeur de configuration `url`, spécifiez `url`.
+     * Valeur de type chaîne qui spécifie la valeur du paramètre de configuration. Pour définir une valeur pour la valeur de configuration `url`, spécifiez l’emplacement du dossier de contrôle.
 
    * Appelez la méthode `modifyEndpoint` de l’objet `EndpointRegistryClient` et transmettez l’objet `ModifyEndpointInfo`.
 
@@ -1101,7 +1115,7 @@ Pour supprimer un point d’entrée d’un service, effectuez les tâches suivan
 1. Récupérez le point d’entrée.
 1. Supprimez le point d’entrée.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -1112,9 +1126,9 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Créer un objet client EndpointRegistry**
+**Créez un objet client EndpointRegistry**
 
 Pour supprimer un point d’entrée par programmation, vous devez créer un objet `EndpointRegistryClient`.
 
@@ -1122,7 +1136,7 @@ Pour supprimer un point d’entrée par programmation, vous devez créer un obje
 
 Avant de pouvoir supprimer un point d’entrée, vous devez le récupérer. Pour récupérer un point d’entrée, vous devez vous connecter en tant qu’utilisateur autorisé à accéder aux points d’entrée. Il est recommandé de se connecter en tant qu’administrateur. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
-Vous pouvez récupérer un point d’entrée en récupérant une liste de points d’entrée. Vous pouvez ensuite effectuer une itération au sein de la liste et rechercher le point d’entrée spécifique à supprimer. Par exemple, vous pouvez localiser un point d’entrée en déterminant le service correspondant et le type de point d’entrée. Une fois localisé, vous pouvez le supprimer.
+Vous pouvez récupérer un point d’entrée en récupérant une liste de points d’entrée. Vous pouvez ensuite effectuer une itération au sein de la liste et rechercher le point d’entrée spécifique à supprimer. Par exemple, vous pouvez localiser un point d’entrée en déterminant le service correspondant et le type de point d’entrée. Une fois le point d’entrée localisé, vous pouvez le supprimer.
 
 **Supprimer le point d’entrée**
 
@@ -1172,9 +1186,9 @@ Pour supprimer un point d’entrée à l’aide de l’API Java, procédez comme
 
 ## Récupérer les informations du connecteur de point d’entrée {#retrieving-endpoint-connector-information}
 
-Vous pouvez récupérer par programmation des informations sur les connecteurs de point d’entrée à l’aide de l’API AEM Forms. Un connecteur permet à un point d’entrée d’appeler un service à l’aide de diverses méthodes d’appel. Par exemple, un connecteur Watched Folder permet à un point d’entrée d’appeler un service à l’aide de dossiers de contrôle. En récupérant par programmation des informations sur les connecteurs de point d’entrée, vous pouvez récupérer les valeurs de configuration associées à un connecteur, telles que les valeurs de configuration requises et celles facultatives.
+Vous pouvez récupérer par programmation des informations sur les connecteurs de point d’entrée à l’aide de l’API AEM Forms. Un connecteur permet à un point d’entrée d’appeler un service à l’aide de diverses méthodes d’appel. Par exemple, un connecteur Dossier de contrôle permet à un point d’entrée d’appeler un service à l’aide de dossiers surveillés. En récupérant par programmation des informations sur les connecteurs de point d’entrée, vous pouvez récupérer les valeurs de configuration associées à un connecteur, telles que les valeurs de configuration requises et celles facultatives.
 
-Dans cette section, découvrez comment récupérer des informations sur les connecteurs de point d’entrée, en l’occurence le connecteur Watched Folder. (Consultez la section [Ajouter des points d’entrée Watched Folder](programmatically-endpoints.md#adding-watched-folder-endpoints)).
+Dans cette section, découvrez comment récupérer des informations sur les connecteurs de point d’entrée, en l’occurrence le connecteur Dossier de contrôle. (Consultez la section [Ajouter des points d’entrée Watched Folder](programmatically-endpoints.md#adding-watched-folder-endpoints)).
 
 >[!NOTE]
 >
@@ -1193,7 +1207,7 @@ Pour récupérer les informations du connecteur de point d’entrée, procédez 
 1. Spécifiez le type de connecteur.
 1. Récupérez les valeurs de configuration.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -1223,7 +1237,7 @@ Spécifiez le type de connecteur à partir duquel récupérer les informations. 
 
 **Récupérez les valeurs de configuration**
 
-Après avoir spécifié le type de connecteur, vous pouvez récupérer des informations sur le connecteur, telles que la valeur de configuration prise en charge. Par exemple, pour n’importe quel connecteur, vous pouvez déterminer les valeurs de configuration requises et celles qui sont facultatives.
+Après avoir spécifié le type de connecteur, vous pouvez récupérer des informations sur le connecteur, telles que les valeurs de configuration prises en charge. Par exemple, pour n’importe quel connecteur, vous pouvez déterminer les valeurs de configuration requises et celles qui sont facultatives.
 
 **Voir également**
 
@@ -1244,7 +1258,7 @@ Récupérez les informations du connecteur de point d’entrée à l’aide de l
 1. Créez un objet client ConnectorRegistry.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `ConnectorRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `ConnectorRegistryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Spécifiez le type de connecteur.
 

@@ -9,7 +9,18 @@ feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 98%
@@ -35,7 +46,7 @@ L’outil peut être utilisé pour :
 
 * migrer d’anciennes versions de CQ 5 vers AEM 6 ;
 * copier des données entre plusieurs référentiels Oak ;
-* convertir des données entre différentes implémentations Oak Microkernel.
+* convertir des données entre différentes implémentations Oak MicroKernel.
 
 La prise en charge de la migration de référentiels à l’aide de magasins Blob externes (communément appelés magasins de données) est fournie dans différentes combinaisons. Un chemin de migration possible va du référentiel CRX2 utilisant un `FileDataStore` externe vers un référentiel Oak à l’aide d’un `S3DataStore`.
 
@@ -79,7 +90,7 @@ La logique Java™ personnalisée peut être mise en œuvre en utilisant `Commit
 
 #### Prise en charge des opérations de mappage de mémoire {#support-for-memory-mapped-operations}
 
-CRX2Oak prend également en charge les opérations de mappage de mémoire par défaut. Le mappage de mémoire améliore considérablement les performances et doit être utilisé dans la mesure du possible.
+CRX2Oak prend également en charge les opérations de mappage de mémoire par défaut. Le mappage mémoire améliore considérablement les performances et doit être utilisé dans la mesure du possible.
 
 >[!CAUTION]
 >
@@ -87,7 +98,7 @@ CRX2Oak prend également en charge les opérations de mappage de mémoire par d�
 
 #### Migration sélective de contenu {#selective-migration-of-content}
 
-Par défaut, le référentiel est entièrement migré sous le chemin `"/"`. Néanmoins, vous avez un contrôle total du contenu devant être migré.
+Par défaut, le référentiel est entièrement migré sous le chemin `"/"`. Néanmoins, vous avez un contrôle total sur le contenu devant être migré.
 
 S’il existe des parties de contenu qui ne sont pas nécessaires sur la nouvelle instance, vous pouvez utiliser le paramètre `--exclude-path` pour supprimer le contenu et optimiser la procédure de mise à niveau.
 
@@ -99,7 +110,7 @@ Si les données doivent être copiées entre deux référentiels différents et 
 
 #### Prise en charge des versions {#version-support}
 
-Par défaut, AEM crée une version de chaque page ou nœud modifiés et les stocke dans le référentiel. Les versions peuvent ensuite être utilisées pour restaurer la page à un état antérieur.
+Par défaut, AEM crée une version de chaque page ou nœud modifié et la stocke dans le référentiel. Les versions peuvent ensuite être utilisées pour restaurer la page à un état antérieur.
 
 Toutefois, ces versions ne sont jamais purgées, même si la page d’origine est supprimée. Les migrations effectuées avec des référentiels utilisés depuis une longue période peuvent avoir à traiter des données redondantes en raison de versions orphelines.
 
@@ -113,11 +124,11 @@ Les deux paramètres prennent également en charge le format de date `YYYY-MM-DD
 
 #### Version open source {#open-source-version}
 
-Une version open source de CRX2Oak est disponible sous la forme oak-upgrade. Elle prend en charge toutes les fonctionnalités, à l’exception des suivantes :
+Une version open source de CRX2Oak est disponible sous la forme d’oak-upgrade. Elle prend en charge toutes les fonctionnalités, à l’exception des suivantes :
 
 * prise en charge de CRX2 ;
 * prise en charge des profils de migration ;
-* prise en charge de la reconfiguration automatisée d’AEM.
+* prise en charge de la reconfiguration automatisée d’AEM
 
 Consultez la [documentation Apache](https://jackrabbit.apache.org/oak/docs/migration.html) pour en savoir plus.
 
@@ -156,7 +167,7 @@ Consultez la [documentation Apache](https://jackrabbit.apache.org/oak/docs/migra
 * `--merge-paths` : liste séparée par des virgules de chemins à fusionner pendant la copie
 * `--exclude-paths:` : liste séparée par des virgules de chemins à exclure lors de la copie
 
-### Options d’entrepôt de blob source {#source-blob-store-options}
+### Options de BlobStore source {#source-blob-store-options}
 
 * `--src-datastore:` : le répertoire du magasin de données à utiliser comme `FileDataStore` source
 
@@ -182,7 +193,7 @@ Consultez la [documentation Apache](https://jackrabbit.apache.org/oak/docs/migra
 
 ## Débogage {#debugging}
 
-Vous pouvez également activer les informations de débogage pour le processus de migration afin de résoudre les éventuels problèmes pouvant survenir pendant le processus. Vous pouvez effectuer cette opération différemment selon le mode sur lequel vous souhaitez exécuter l’outil :
+Vous pouvez également activer les informations de débogage pour le processus de migration afin de résoudre les éventuels problèmes pouvant survenir pendant le processus. Vous pouvez effectuer cette opération différemment selon le mode dans lequel vous souhaitez exécuter l’outil :
 
 <table>
  <tbody>

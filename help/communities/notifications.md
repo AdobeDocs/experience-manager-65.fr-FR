@@ -10,13 +10,20 @@ role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 1%
-
 ---
-
 # Notifications Communities {#communities-notifications}
 
 ## Vue d’ensemble {#overview}
@@ -34,13 +41,13 @@ Ce qui distingue les notifications des activités et des abonnements est le suiv
 
 * Un lien vers la section des notifications est toujours présent dans l’en-tête d’un site communautaire :
 
-   * Les activités nécessitent que la fonction [flux d’activités](/help/communities/functions.md#activity-stream-function) soit incluse dans la structure du site communautaire.
-   * Les abonnements nécessitent [configuration de l’e-mail](/help/communities/email.md).
+  * Les activités nécessitent que la fonction [flux d’activités](/help/communities/functions.md#activity-stream-function) soit incluse dans la structure du site communautaire.
+  * Les abonnements nécessitent [configuration de l’e-mail](/help/communities/email.md).
 
 * L’implémentation des notifications s’effectue par le biais de canaux évolutifs et enfichables :
 
-   * Les activités ne sont disponibles que sur le Web.
-   * Les abonnements ne sont disponibles qu’en utilisant l’e-mail.
+  * Les activités ne sont disponibles que sur le Web.
+  * Les abonnements ne sont disponibles qu’en utilisant l’e-mail.
 
 Depuis Communities [FP1](/help/communities/deploy-communities.md#latestfeaturepack), les canaux de notification disponibles sont les suivants :
 
@@ -80,11 +87,11 @@ Le bouton **[!UICONTROL Suivre]** s’affiche :
 * Lors de l&#39;affichage du profil d&#39;un autre membre.
 * Sur une page de fonctionnalités principale, telle que les forums, QnA et les blogs :
 
-   * Suit toutes les activités pour cette fonctionnalité générale.
+  * Suit toutes les activités pour cette fonctionnalité générale.
 
 * Pour une entrée spécifique, telle qu’un sujet de forum, une question QA ou un article de blog :
 
-   * Suit toutes les activités pour cette entrée spécifique.
+  * Suit toutes les activités pour cette entrée spécifique.
 
 ## Gestion des paramètres de notification {#managing-notification-settings}
 

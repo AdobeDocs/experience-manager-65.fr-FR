@@ -1,19 +1,33 @@
 ---
 title: Configuration et administration des fonctionnalités de métadonnées.
-description: Configuration et administration des fonctionnalités d’ [!DNL Experience Manager Assets]  liées à l’ajout et à la gestion de métadonnées.
+description: Configuration et administration des fonctionnalités [!DNL Experience Manager Assets] liées à l’ajout et à la gestion de métadonnées.
 contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2005'
-ht-degree: 93%
-
+source-wordcount: '2006'
+ht-degree: 92%
 ---
-
 # Configuration et administration des fonctionnalités de métadonnées dans [!DNL Assets] {#config-metadata}
 
 | Version | Lien de l’article |
@@ -158,7 +172,7 @@ Vous pouvez modifier un formulaire de schéma de métadonnées existant ou nouve
 * Onglets
 * Éléments de formulaire dans des onglets.
 
-Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter des onglets ou des éléments de formulaire au formulaire de schéma de métadonnées.
+Vous pouvez associer ou configurer ces éléments de formulaire à un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter des onglets ou des éléments de formulaire au formulaire de schéma de métadonnées.
 
 1. Sur la page Formulaires de schéma, sélectionnez le formulaire que vous avez créé, puis sélectionnez l’option **[!UICONTROL Modifier]** dans la barre d’outils.
 1. Sur la page Éditeur de schéma de métadonnées de dossier, cliquez sur `+` pour ajouter un onglet au formulaire. Pour renommer l’onglet, cliquez sur le nom par défaut, puis indiquez le nouveau nom sous **[!UICONTROL Paramètres]**.
@@ -222,7 +236,7 @@ Pour vous assurer que le composant est affiché correctement dans le formulaire 
 
 **[!UICONTROL Classe]** : classe d’objet à laquelle la propriété est associée.
 
-### Suppression de formulaires de schéma de métadonnées de dossier {#delete-folder-metadata-schema-forms}
+### Supprimer les formulaires de schéma de métadonnées de dossier {#delete-folder-metadata-schema-forms}
 
 Vous pouvez supprimer des formulaires de schéma de métadonnées de dossier sur la page Formulaires de schéma de métadonnées de dossier. Pour supprimer un formulaire, sélectionnez-le et cliquez sur l’option de suppression de la barre d’outils.
 
@@ -240,7 +254,7 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 1. Sur la page Formulaires de schéma de métadonnées de dossier, sélectionnez le formulaire à appliquer à un dossier.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Appliquer au(x) dossier(s)]**.
 
-1. Sélectionnez le dossier auquel appliquer le schéma, puis cliquez sur **[!UICONTROL Appliquer]**. Si un schéma de métadonnées est déjà appliqué au dossier, un message d’avertissement vous informe que vous êtes sur le point de remplacer le schéma existant. Cliquez sur **[!UICONTROL Remplacer]**.
+1. Sélectionnez le dossier auquel appliquer le schéma, puis cliquez sur **[!UICONTROL Appliquer]**. Si un schéma de métadonnées est déjà appliqué au dossier, un message d’avertissement vous informe que vous êtes sur le point de remplacer le schéma de métadonnées existant. Cliquez sur **[!UICONTROL Remplacer]**.
 1. Ouvrez les propriétés des métadonnées pour le dossier auquel vous avez appliqué le schéma de métadonnées.
 
    ![folder_properties](assets/folder_properties.png)
@@ -274,7 +288,7 @@ Saisissez les valeurs de métadonnées dans les différents champs, puis cliquez
 
 * Pour importer des métadonnées sur des espaces de noms personnalisés, commencez par enregistrer les espaces de noms.
 * Le sélecteur de propriétés affiche les propriétés utilisées dans les éditeurs de schéma et les formulaires de recherche. Le sélecteur de propriétés ne sélectionne pas les propriétés de métadonnées d’une ressource.
-* Des profils de métadonnées préexistants peuvent exister et dater d’avant la mise à niveau vers [!DNL Experience Manager] 6.5. Après la mise à niveau, si vous appliquez un tel profil dans le dossier [!UICONTROL Propriétés] dans l’onglet [!UICONTROL Profils de métadonnées], les champs de formulaire de métadonnées ne s’affichent pas. Cependant, si vous appliquez un nouveau profil de métadonnées, les champs de formulaire s’affichent mais ne sont pas disponibles comme prévu. Vous ne rencontrerez pas de perte de fonctionnalités mais si vous souhaitez voir les champs de formulaire (indisponibles), modifiez et enregistrez les profils de métadonnées existants.
+* Des profils de métadonnées préexistants peuvent exister et dater d’avant la mise à niveau vers [!DNL Experience Manager] 6.5. Après la mise à niveau, si vous appliquez un tel profil dans le dossier [!UICONTROL Propriétés] dans l’onglet [!UICONTROL Profils de métadonnées], les champs de formulaire de métadonnées ne s’affichent pas. Cependant, si vous appliquez un nouveau profil de métadonnées, les champs de formulaire s’affichent mais ne sont pas disponibles comme prévu. Il n’y a aucune perte de fonctionnalité, mais si vous souhaitez voir les champs de formulaire (indisponibles), modifiez et enregistrez les profils de métadonnées existants.
 
 >[!MORELIKETHIS]
 >

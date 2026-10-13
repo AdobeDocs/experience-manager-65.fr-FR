@@ -7,7 +7,25 @@ exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 97%
@@ -16,13 +34,13 @@ ht-degree: 97%
 
 Découvrez comment sélectionner un utilisateur ou un groupe pour un processus AEM Forms au moment de l’exécution.
 
-Dans les grandes organisations, il est nécessaire de sélectionner dynamiquement les utilisateurs et utilisatrices pour un processus. On peut par exemple sélectionner un agent ou une agente de terrain pour servir un client ou une cliente en fonction de leur proximité. Dans un tel scénario, la sélection de l’agent ou de l’agente est dynamique.
+Dans les grandes organisations, il est nécessaire de sélectionner dynamiquement les utilisateurs et utilisatrices pour un processus. On peut par exemple sélectionner un agent ou une agente de terrain pour servir un client ou une cliente en fonction de la proximité de l’agent ou de l’agente avec le client ou la cliente. Dans un tel scénario, la sélection de l’agent ou de l’agente est dynamique.
 
 Attribuez une tâche et les étapes Adobe Sign des [workflows centrés sur les formulaires sur OSGi](/help/forms/using/aem-forms-workflow.md) fournissent des options pour sélectionner de manière dynamique un utilisateur. Vous pouvez utiliser des bundles ECMAScript ou OSGi pour sélectionner de manière dynamique une personne désignée pour l’étape Affecter une tâche ou pour sélectionner des signataires pour l’étape Signer un document.
 
 ## Utilisation de ECMAScript pour sélectionner de manière dynamique un utilisateur ou un groupe {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
-ECMAScript est un langage de script. Il est utilisé pour les applications de script et de serveur côté client. Suivez les étapes ci-après pour sélectionner dynamiquement un utilisateur, une utilisatrice ou un groupe à l’aide d’ECMAScript :
+ECMAScript est un langage de script. Il est utilisé pour les scripts côté client et les applications serveur. Suivez les étapes ci-après pour sélectionner dynamiquement un utilisateur, une utilisatrice ou un groupe à l’aide d’ECMAScript :
 
 1. Ouvrez CRXDE Lite. L’URL est `https://'[server]:[port]'/crx/de/index.jsp`
 1. Créez un fichier avec l’extension .ecma à l’emplacement suivant. Si le chemin d’accès (structure du nœud) n’existe pas, créez-le :
@@ -50,7 +68,7 @@ ECMAScript est un langage de script. Il est utilisé pour les applications de sc
 
 ### Exemples de ECMAScript pour sélectionner de manière dynamique un utilisateur ou un groupe {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
 
-L’exemple ECMAScript suivant sélectionne de manière dynamique une personne désignée pour l’étape Affecter une tâche. Dans ce script, une personne est sélectionnée en fonction du chemin de la payload. Avant d’utiliser ce script, veillez à ce que toutes les personnes mentionnées dans le script existent dans AEM. Dans le cas contraire, le processus associé peut échouer.
+L’exemple ECMAScript suivant sélectionne de manière dynamique la personne à laquelle l’étape Affecter une tâche est attribuée. Dans ce script, une personne est sélectionnée en fonction du chemin de la payload. Avant d’utiliser ce script, veillez à ce que toutes les personnes mentionnées dans le script existent dans AEM. Dans le cas contraire, le processus associé peut échouer.
 
 ```javascript
 function getParticipant() {

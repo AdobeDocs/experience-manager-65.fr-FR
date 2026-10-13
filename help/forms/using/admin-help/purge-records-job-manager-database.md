@@ -9,13 +9,27 @@ exl-id: 5279f6c3-5954-472c-9ea0-18e8a7ec860e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '483'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '487'
 ht-degree: 100%
-
 ---
-
 # Purger les enregistrements de la base de données de Job Manager {#purge-records-from-the-job-manager-database}
 
 >[!NOTE]
@@ -40,7 +54,7 @@ Les informations sur les purges actuellement planifiées s’affichent dans la z
 **Planifier une purge ponctuelle**
 
 1. Sélectionnez Une seule fois.
-1. Dans la zone Filtrer les enregistrements terminés par une purge, spécifiez le nombre de jours ou de semaines après lequel un enregistrement est considéré comme obsolète et prêt à être purgé.
+1. Dans la zone Filtre de purge des enregistrements terminés, spécifiez le nombre de jours ou de semaines après lequel un enregistrement est considéré comme obsolète et prêt à être purgé.
 
    >[!NOTE]
    >
@@ -57,7 +71,7 @@ Les informations sur les purges actuellement planifiées s’affichent dans la z
 **Configurer un planning de purge automatique**
 
 1. Sélectionnez Répéter chaque et spécifiez le nombre de jours ou de semaines entre les purges.
-1. Dans la zone Filtrer les enregistrements terminés par une purge, spécifiez le nombre de jours ou de semaines après lequel un enregistrement est considéré comme obsolète et prêt à être purgé. Vous ne pouvez pas définir la valeur sur `0`.
+1. Dans la zone Filtre de purge des enregistrements terminés, spécifiez le nombre de jours ou de semaines après lequel un enregistrement est considéré comme obsolète et prêt à être purgé. Vous ne pouvez pas définir la valeur sur `0`.
 
    >[!NOTE]
    >
@@ -69,4 +83,4 @@ Les informations sur les purges actuellement planifiées s’affichent dans la z
    >
    >Si vous spécifiez une date et une heure de début passées, AEM Forms calcule la prochaine date de début logique en fonction de la date que vous avez spécifiée. Par exemple, si vous planifiez les purges de traitement de manière hebdomadaire à partir du 7 avril et que nous sommes désormais le 9 avril, la première purge aura lieu le 14 avril.
 
-1. Cliquez sur Démarrer le planificateur. Tous les paramètres du planificateur précédemment planifiés sont remplacés par les nouveaux paramètres.
+1. Cliquez sur Démarrer le planificateur. Tous les paramètres précédemment définis dans le planificateur sont remplacés par les nouveaux paramètres.

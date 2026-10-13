@@ -9,13 +9,27 @@ exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1082'
 ht-degree: 100%
-
 ---
-
 # Stratégies de sauvegarde pour les dossiers de contrôle {#backup-strategies-for-watched-folders}
 
 Ce contenu décrit l’impact des dossiers de contrôle sur différents scénarios de sauvegarde et de récupération, les limites et les résultats de ces scénarios, ainsi que la manière de minimiser les pertes de données.
@@ -28,7 +42,7 @@ Ce contenu décrit l’impact des dossiers de contrôle sur différents scénari
 * Échec
 * Preserve (Conservés)
 
-Une personne ou une application cliente dépose tout d’abord le fichier ou le dossier dans le dossier d’entrée. L’opération de service déplace ensuite le fichier dans le dossier stage en vue de son traitement. Après l’exécution par le service de l’opération indiquée, l’enregistrement du fichier modifié intervient dans le dossier output. Les fichiers source correctement traités sont déplacés vers le dossier preserve (Conservés). Les fichiers dont le traitement a échoué sont quant à eux déplacés dans le dossier failure (Échecs) du dossier de contrôle. Si l’attribut `Preserve On Failure` est activé pour le dossier de contrôle, les fichiers source dont le traitement a échoué sont déplacés dans le dossier preserve (Conservés). (Voir [Configurer des points d’entrée de Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
+Une personne ou une application cliente dépose tout d’abord le fichier ou le dossier dans le dossier d’entrée. L’opération de service déplace ensuite le fichier dans le dossier stage en vue de son traitement. Après l’exécution par le service de l’opération indiquée, l’enregistrement du fichier modifié intervient dans le dossier output. Les fichiers source correctement traités sont déplacés vers le dossier preserve, et les fichiers dont le traitement a échoué sont déplacés vers le dossier failure. Si l’attribut `Preserve On Failure` est activé pour le dossier de contrôle, les fichiers source dont le traitement a échoué sont déplacés dans le dossier preserve (Conservés). (Voir [Configurer des points d’entrée de Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
 
 Vous pouvez sauvegarder les dossiers de contrôle en sauvegardant le système de fichiers.
 
@@ -40,7 +54,7 @@ Vous pouvez sauvegarder les dossiers de contrôle en sauvegardant le système de
 
 Ce contenu décrit le processus de manipulation des fichiers du dossier de contrôle. Il est important de comprendre ce processus avant d’élaborer un plan de restauration. Dans l’exemple fourni, l’attribut `Preserve On Failure` est activé pour le dossier de contrôle. Les fichiers sont traités selon leur ordre d’arrivée.
 
-Le tableau suivant décrit la manipulation de cinq fichiers d’exemple (file1, file2, file3, file4, file5) tout au long du processus. Dans le tableau, l’axe X représente le temps, par exemple Temps 1 ou T1, et l’axe Y représente les dossiers dans la hiérarchie des dossiers de contrôle, par exemple output.
+Le tableau suivant décrit la manipulation de cinq fichiers d’exemple (file1, file2, file3, file4, file5) tout au long du processus. Dans le tableau, l’axe X représente le temps, par exemple Temps 1 ou T1, et l’axe Y représente les dossiers dans la hiérarchie des dossiers de contrôle, par exemple Input.
 
 <table>
  <thead>
@@ -115,11 +129,11 @@ Le texte suivant décrit la manipulation des fichiers à chacun des temps défin
 
 **T2 :** l’opération de service déplace le fichier1 dans la scène dossier stage pour la manipulation.
 
-**T3 :** l’opération de service déplace le fichier2 dans le dossier de traitement pour la manipulation. Elle place les résultats de file1 dans le dossier output, et déplace file1 dans le dossier de preserve.
+**T3 :** l’opération de service déplace le fichier2 dans le dossier de traitement pour la manipulation. Elle place les résultats de file1 dans le dossier output et déplace file1 dans le dossier Preserve.
 
 **T4 :** l’opération de service déplace le fichier3 dans le dossier stage pour la manipulation. Elle place les résultats du fichier2 dans le dossier output, et déplace le fichier2 dans le dossier preserve.
 
-**T5 :** l’opération de service déplace le fichier4 dans le dossier stage pour la manipulation. La manipulation du fichier3 échoue et l’opération de service le place dans le dossier failure.
+**T5 :** l’opération de service déplace le fichier4 dans le dossier stage pour la manipulation. La manipulation de file3 échoue et l’opération de service le place dans le dossier failure.
 
 **T6 :** l’opération de service place fichier5 dans le dossier input. Elle place les résultats du fichier4 dans le dossier output et le fichier4 dans le dossier preserve.
 
@@ -133,7 +147,7 @@ Il est recommandé de sauvegarder l’intégralité du système de fichiers du d
 
 Cette section décrit comment restaurer les dossiers de contrôle. Les dossiers de contrôle appellent souvent des processus de courte durée (une minute ou moins). Dans de tels cas, la restauration du dossier de contrôle au moyen d’une sauvegarde effectuée toutes les heures n’empêche pas les pertes de données.
 
-Par exemple, si une sauvegarde est entreprise à T1 et que le serveur échoue à T7, alors file1, file2, file3 et file4 font déjà l’objet d’une manipulation. La restauration d’un dossier de contrôle au moyen d’une sauvegarde entreprise à T1 n’empêche pas les pertes de données.
+Par exemple, si une sauvegarde est entreprise à T1 et que le serveur échoue à T7, alors file1, file2, file3 et file4 font déjà l’objet d’une manipulation. La restauration d’un dossier de contrôle au moyen d’une sauvegarde effectuée à T1 n’empêche pas les pertes de données.
 
 Si une sauvegarde plus récente a été effectuée, vous pouvez restaurer les fichiers. Lors de cette restauration, vous devez prendre en compte le dossier de la hiérarchie du dossier de contrôle dans lequel se trouve le fichier actuel :
 
@@ -149,23 +163,23 @@ Si une sauvegarde plus récente a été effectuée, vous pouvez restaurer les fi
 
 ## Stratégies de réduction des pertes de données {#strategies-to-minimize-data-loss}
 
-Les stratégies suivantes peuvent réduire la perte de données des dossiers de sortie et d’entrée lors de la restauration d’un dossier de contrôle :
+Les stratégies suivantes peuvent réduire la perte de données des dossiers Output et d’entrée lors de la restauration d’un dossier de contrôle :
 
-* Sauvegardez fréquemment les dossiers de sortie et d’échec, par exemple toutes les heures, afin d’éviter toute perte de fichiers de résultat et d’échec.
-* Sauvegardez les fichiers d’entrée dans un dossier autre que le dossier de contrôle. Cela garantit la disponibilité des fichiers après récupération, au cas où vous ne trouveriez pas les fichiers dans le dossier de sortie ou celui d’échec. Assurez-vous que votre schéma d’affectation de noms de fichier est cohérent.
+* Sauvegardez fréquemment les dossiers Output et d’échec, par exemple toutes les heures, afin d’éviter toute perte de fichiers de résultat et d’échec.
+* Sauvegardez les fichiers d’entrée dans un dossier autre que le dossier de contrôle. Cela garantit la disponibilité des fichiers après récupération, au cas où vous ne trouveriez pas les fichiers dans le dossier Output ou celui d’échec. Assurez-vous que votre convention de nommage des fichiers est cohérente.
 
   Par exemple, si vous enregistrez la sortie avec l’`%F.`*extension*, le fichier de sortie porte le même nom que le fichier d’entrée. Vous pouvez ainsi déterminer les fichiers d’entrée manipulés et ceux qui doivent être envoyés à nouveau. Si vous voyez uniquement le fichier file1_out dans le dossier de résultat et non file2_out, file3_out et file4_out, vous devez envoyer à nouveau file2, file3 et file4.
 
 * Si la sauvegarde du dossier de contrôle disponible est antérieure au temps nécessaire à l’exécution du traitement, vous devez autoriser le système à créer un dossier de contrôle et à placer automatiquement les fichiers dans le dossier d’entrée.
 * Si la dernière sauvegarde disponible n’est pas suffisamment récente, que le temps de sauvegarde est inférieur au temps nécessaire au traitement des fichiers et que le dossier de contrôle est restauré, le fichier a été manipulé au cours de l’une des étapes suivantes :
 
-   * **Étape 1 :** dans le dossier d’entrée.
-   * **Étape 2 :** copié dans le dossier d’évaluation, mais le processus n’est pas encore appelé.
-   * **Étape 3 :** copié dans le dossier d’évaluation et le processus est appelé.
-   * **Étape 4 :** manipulation en cours.
-   * **Étape 5 :** résultats renvoyés.
+  * **Étape 1 :** dans le dossier d’entrée.
+  * **Étape 2 :** copié dans le dossier d’évaluation, mais le processus n’est pas encore appelé.
+  * **Étape 3 :** copié dans le dossier d’évaluation et le processus est appelé.
+  * **Étape 4 :** manipulation en cours.
+  * **Étape 5 :** résultats renvoyés.
 
-  Si les fichiers se trouvent dans l’étape 1, ils seront manipulés. Si les fichiers se trouvent dans l’étape 2 ou 3, placez-les dans le dossier d’entrée pour que la manipulation se reproduise.
+  Si les fichiers se trouvent dans l’étape 1, ils seront manipulés. Si les fichiers se trouvent dans l’étape 2 ou 3, placez-les dans le dossier d’entrée pour que la manipulation ait lieu à nouveau.
 
   >[!NOTE]
   >

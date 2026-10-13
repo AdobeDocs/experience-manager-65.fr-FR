@@ -10,13 +10,22 @@ exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 99%
-
+source-wordcount: '1461'
+ht-degree: 100%
 ---
-
 # Mapper des données de composant à des propriétés Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
 Ajoutez à la structure des composants qui rassemblent les données à envoyer à Adobe Analytics. Les composants conçus pour collecter des données d’analyse stockent les données dans la **variable CQ** appropriée. Lorsque vous ajoutez ce type de composant à un framework, celle-ci affiche la liste des variables CQ afin que vous puissiez associer chacune d’elles à la **variable Analytics** appropriée.
@@ -180,25 +189,26 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 
    * **Trafic** :
 
-      * Variable de trafic (`prop1`) mappée à une variable CQ (`eventdata.downloadLink`)
+     * Variable de trafic (`prop1`) mappée à une variable CQ (`eventdata.downloadLink`)
 
-      * Lorsque le composant est accompagné d’un cadenas, cela signifie qu’il est hérité d’un framework parent et ne peut donc pas être modifié.
+     * Lorsque le composant est accompagné d’un cadenas, cela signifie qu’il est hérité d’un framework parent et ne peut donc pas être modifié.
 
    * **Conversion** :
 
-      * Variable de conversion (`eVar1`) mappée à une variable CQ (`pagedata.title`)
+     * Variable de conversion (`eVar1`) mappée à une variable CQ (`pagedata.title`)
 
-      * La variable de conversion (`eVar3`) est mappée à une expression JavaScript ajoutée en ligne en double-cliquant sur le champ Variable CQ et en saisissant manuellement le code.
+     * La variable de conversion (`eVar3`) est mappée à une expression JavaScript ajoutée en ligne en double-cliquant sur le champ Variable CQ et en saisissant manuellement le code.
 
    * **Événement** :
 
-      * Variable d’événement (`event1`) mappée à un événement CQ (`eventdata.events.pageView`)
+     * Variable d’événement (`event1`) mappée à un événement CQ (`eventdata.events.pageView`)
 
 >[!NOTE]
 >
 >La colonne Variable CQ de chaque table peut également être renseignée en ligne en double-cliquant sur le champ et en ajoutant du texte. Ces champs acceptent JavaScript comme entrée.
 >
->Par exemple, à côté de `prop3` vous pouvez ajouter :> `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>Par exemple, à côté de `prop3`, vous pouvez ajouter :
+>     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >pour envoyer la variable *title* d’une page concaténé avec sa variable *sitesection* à l’aide d’un *:* (deux-points) et précédé du préfixe *Adobe* en tant que `prop3`.
 >
 

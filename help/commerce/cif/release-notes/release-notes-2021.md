@@ -5,13 +5,21 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 96%
-
 ---
-
 # Vue d’ensemble de la version GitHub de Commerce Integration Framework
 
 ## Présentation de la configuration système requise
@@ -127,9 +135,9 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 ### Nouveautés {#what-is-new-july}
 
 * Composants principaux CIF v2
-  * Simplification et amélioration des configurations pour URL PDP/PLP et SEO
-  * Indicateur visuel pour les données de produits évaluées en mode création pour une meilleure visibilité des modifications à venir
-  * Nouveau composant sitemap pour pages de contenu et de commerce
+  * Simplification et amélioration des configurations pour les URL PDP/PLP et le SEO
+  * Indicateur visuel pour les données produit intermédiaires en mode création pour une meilleure visibilité des modifications à venir
+  * Nouveau composant de plan du site pour les pages de contenu et de commerce
 
 * Prise en charge de la recommandation de produit [Adobe Commerce AI, optimisée par Adobe AI](https://business.adobe.com/ai/adobe-genai.html) dans le storefront AEM à l’aide de recommandations prédéfinies ou créées à la volée
 

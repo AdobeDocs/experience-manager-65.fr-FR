@@ -9,7 +9,23 @@ exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 100%
@@ -24,7 +40,7 @@ Vous pouvez également utiliser l’onglet Archives de la page Gestion des appli
 
 >[!NOTE]
 >
->Il est bien connu que les fichiers LCA d’une version ultérieure ne sont pas nécessairement rétrocompatibles. Bien qu’il soit possible d’afficher et d’importer des fichiers LCA à partir d’une version ultérieure d’AEM Forms (par exemple, une version d’aperçu), cette opération n’est pas prise en charge et peut entraîner un comportement anormal.
+>Il existe un problème connu : les fichiers LCA d’une version ultérieure ne sont pas nécessairement rétrocompatibles. Bien qu’il soit possible d’afficher et d’importer des fichiers LCA à partir d’une version ultérieure d’AEM Forms (par exemple, une version d’aperçu), cette opération n’est pas prise en charge et peut entraîner un comportement anormal.
 
 Utilisez l’onglet Applications pour importer et gérer des applications créées dans Workbench. Les administrateurs et administratrices d’applications peuvent également exporter la configuration d’exécution d’une application. L’exportation de la configuration d’exécution élimine la nécessité de reconfigurer manuellement les paramètres dans l’environnement de production avant de démarrer les applications déployées. Le fichier de configuration d’exécution contient :
 
@@ -60,7 +76,7 @@ Utilisez l’onglet Applications pour importer et gérer des applications créé
 
 ## Déployer une application {#deploy-an-application}
 
-Vous pouvez déployer des applications que vous avez importées ou que des utilisateurs et utilisatrices de Workbench ont importées depuis Workbench.
+Vous pouvez déployer des applications que vous avez importées ou que des utilisateurs et utilisatrices de l’atelier ont importées depuis l’atelier.
 
 1. Dans la console d’administration, cliquez sur Services > Applications et services > Gestion des applications.
 1. Cochez la case en regard de l’application à déployer et cliquez sur Déployer.
@@ -68,7 +84,7 @@ Vous pouvez déployer des applications que vous avez importées ou que des utili
 
 ## Annuler le déploiement d’une application {#undeploy-an-application}
 
-Vous pouvez annuler le déploiement des applications à partir de l’exécution.
+Vous pouvez annuler le déploiement des applications de l’environnement d’exécution.
 
 1. Dans la console d’administration, cliquez sur Services > Applications et services > Gestion des applications.
 1. Cochez la case en regard de l’application dont vous souhaitez annuler le déploiement, puis cliquez sur Annuler le déploiement.

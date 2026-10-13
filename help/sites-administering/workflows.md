@@ -9,20 +9,29 @@ exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: f1eb41d08bb35adb93237f0ad09daa5bcd07fac8
-workflow-type: ht
-source-wordcount: '782'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+workflow-type: tm+mt
+source-wordcount: '783'
 ht-degree: 100%
-
 ---
-
 # Administration des workflows{#administering-workflows}
 
 Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM). Workflows :
 
 * ils se composent d’une série d’étapes effectuées dans un ordre spécifique.
 
-   * Chaque étape effectue une activité distincte, telle que l’attente de l’entrée d’un utilisateur ou d’une utilisatrice, l’activation d’une page ou l’envoi d’un e-mail.
+  * Chaque étape effectue une activité distincte, telle que l’attente de l’entrée d’un utilisateur ou d’une utilisatrice, l’activation d’une page ou l’envoi d’un e-mail.
 
 * Ils peuvent interagir avec des ressources dans le référentiel, les comptes d’utilisateur ou d’utilisatrice et dans les services AEM.
 * Peuvent coordonner des activités complexes impliquant n’importe quel aspect d’AEM.

@@ -1,6 +1,6 @@
 ---
 title: Formats de fichiers et types MIME pris en charge
-description: Formats de fichiers et types MIME pris en charge par  [!DNL Assets]  et  [!DNL Dynamic Media] , et les fonctionnalités prises en charge pour chaque format.
+description: Formats de fichiers et types MIME pris en charge par [!DNL Assets] et [!DNL Dynamic Media], et les fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
@@ -8,13 +8,29 @@ feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2045'
-ht-degree: 98%
-
+source-wordcount: '2047'
+ht-degree: 97%
 ---
-
 # Formats pris en charge dans [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
 [!DNL Experience Manager Assets] prend en charge un large éventail de formats de fichier. Chaque fonctionnalité prend en charge différents types MIME. Pour intégrer [!DNL Assets] à d’autres solutions de gestion des ressources numériques (DAM) et logiciels de bureau conformes aux normes, utilisez la plateforme [!DNL Extensible Metadata Platform] (XMP) d’Adobe.
@@ -24,7 +40,7 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 | Niveau de prise en charge | Description |
 | :-----------: | ------------------------------ |
 | ✓ | Pris en charge |
-| &#42; | Prise en charge avec des fonctionnalités de composant additionnel |
+| &#42; | Prise en charge avec des fonctionnalités de module complémentaire |
 | − | Non applicable |
 
 ## Formats d’image matricielle pris en charge dans [!DNL Experience Manager] {#supported-raster-image-formats}
@@ -76,9 +92,9 @@ Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/assets-3d.
 
 La bibliothèque Adobe PDF Rasterizer génère des miniatures de haute qualité et des aperçus pour les fichiers [!DNL Adobe Illustrator] et PDF de grande taille et riches en contenu. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit :
 
-* Les fichiers AI/PDF à fort contenu dont le traitement nécessite un nombre important de ressources
+* Les fichiers AI/PDF à fort contenu dont le traitement nécessite un nombre important de ressources.
 * Fichiers AI/PDF pour lesquels les miniatures ne sont pas générées par défaut.
-* Fichiers AI contenant des couleurs PMS (Pantone Matching System)
+* Fichiers AI contenant des couleurs PMS (Pantone Matching System).
 
 Consultez [Utilisation de PDF Rasterizer](aem-pdf-rasterizer.md).
 
@@ -168,7 +184,7 @@ L’applicabilité des fonctionnalités de gestion des ressources numériques ha
 
 >[!NOTE]
 >
->Il se peut que le téléchargement et la distribution de fichiers JavaScript puissent présenter des failles de sécurité. Si nécessaire, vous pouvez utiliser des recouvrements pour empêcher les utilisateurs de télécharger des fichiers JS.
+>Le téléchargement et la distribution de fichiers JavaScript peuvent être sûrs ou non. Si nécessaire, vous pouvez utiliser des overlays pour empêcher les utilisateurs et utilisatrices de télécharger des fichiers JS.
 
 ## Types MIME pris en charge {#supported-mime-types}
 
@@ -176,7 +192,7 @@ Par défaut, [!DNL Experience Manager] détecte le type de fichier à l’aide d
 
 Une liste des types MIME pris en charge est disponible dans CRXDE Lite à l’adresse `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
-| Extension de fichier | Type MIME/type de support Internet | Valeur de jobParam par défaut | Valeur de jobParam autorisée |
+| Extension de fichier | Type MIME/type de médias Internet | Valeur de jobParam par défaut | Valeur de jobParam autorisée |
 |---|---|---|---|
 | Image | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | La valeur de jobParam par défaut s’applique à toutes les ressources de type MIME image.<ul><li>[knockoutBackgroundOptions](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options)</li><li>[manualCropOptions](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options)</li><li>[autoColorCropOptions](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options)</li><li>[autoTransparentCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html?lang=fr)</li><li>[colorManagementOptions](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options)</li><li>[autoSetCreationOptions](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options)</li><li>[emailSetting](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings)</li><li>[xmpKeywords](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords)</li><li>[unsharpMaskOptions](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options)</li></ul> |
 | 3G2 | video/3gpp2 | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
@@ -262,7 +278,7 @@ Une liste des types MIME pris en charge est disponible dans CRXDE Lite à l’a
 
 >[!NOTE]
 >
->Pour les PDF sécurisés, seul le téléchargement est pris en charge.
+>Pour les PDF sécurisés, seul Charger est pris en charge.
 
 Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
@@ -304,8 +320,8 @@ La liste suivante décrit les sous-types de formats de fichiers d’images matri
 
 * Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
 * Fichiers PSB.
-* Les fichiers PSD avec un espace colorimétrique autre que CMJN, RVB, niveaux de gris ou bitmap ne sont pas pris en charge. Les espaces colorimétriques DuoTone, Lab et indexé ne sont pas pris en charge.
-* Fichiers PSD ayant une résolution binaire supérieure à 16.
+* Les fichiers PSD avec un espace colorimétrique autre que CMJN, RVB, niveaux de gris ou bitmap ne sont pas pris en charge. Les espaces colorimétriques Bichromie, Lab et indexés ne sont pas pris en charge.
+* Fichiers PSD ayant une profondeur de bits supérieure à 16.
 * Fichiers TIFF contenant des données à virgule flottante.
 * Fichiers TIFF dotés d’un espace colorimétrique Lab.
 

@@ -9,7 +9,25 @@ exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 98%
@@ -39,13 +57,13 @@ Pour obtenir des informations et des instructions concernant les extensions Acro
 
    Pour plus d’informations sur l’obtention d’informations d’identification, voir [Préparation à l’installation d’AEM Forms](https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf).
 
-1. Dans la zone Alias, saisissez un identifiant pour les informations d’identification. Cet identifiant sert de nom d’affichage aux informations d’identification dans les extensions Acrobat Reader DC et dans le service Signature. Cet alias est également utilisé pour accéder aux informations d’identification par programmation à l’aide du SDK AEM Forms.
+1. Dans la zone Alias, saisissez un identifiant pour les informations d’identification. Cet identifiant sert de nom d’affichage aux informations d’identification dans Extensions Acrobat Reader DC et dans le service Signature. Cet alias est également utilisé pour accéder aux informations d’identification par programmation à l’aide du SDK AEM Forms.
 
    >[!NOTE]
    >
    >Le nom d’alias est automatiquement converti en majuscules à des fins d’affichage. Le nom d’alias n’est pas sensible à la casse lorsque vous y faites référence dans un processus.
 
-1. Cliquez sur Parcourir pour accéder aux informations d’identification, saisissez le mot de passe correspondant, puis cliquez sur OK.
+1. Cliquez sur Parcourir pour localiser les informations d’identification, saisissez le mot de passe correspondant, puis cliquez sur OK.
 
    Si le message d’erreur « Échec de l’import des informations d’identification en raison d’un format de fichier incorrect ou d’un mot de passe incorrect » s’affiche, assurez-vous que le mot de passe est valide.
 
@@ -58,9 +76,9 @@ Elles sont exportées sous forme de fichiers P12 au format PKCS#12.
 1. Dans le champ Mot de passe, saisissez le mot de passe. Ce mot de passe est nouveau et permet de chiffrer les informations d’identification exportées.
 1. Cliquez sur Exporter, suivez les instructions pour exporter les informations d’identification, puis cliquez sur OK.
 
-## Modification de l’alias ou du type de Trust Store des informations d’identification {#edit-a-credential-s-alias-or-trust-store-type}
+## Modifier l’alias ou le type de Trust Store des informations d’identification {#edit-a-credential-s-alias-or-trust-store-type}
 
-Une fois que des informations d’identification ont été importées, vous pouvez modifier le nom d’alias et le type de Trust Store qui leur sont associés.
+Une fois que les informations d’identification ont été importées, vous pouvez modifier leur nom d’alias et leur type de Trust Store.
 
 1. Dans la console d’administration, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
 1. Cliquez sur le nom d’alias des informations d’identification à modifier.

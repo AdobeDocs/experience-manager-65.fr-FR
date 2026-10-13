@@ -9,13 +9,22 @@ exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 100%
-
 ---
-
 
 # Résolution des problèmes d’intégration d’Adobe Campaign Classic{#troubleshooting-your-adobe-campaign-classic-integration}
 
@@ -28,8 +37,8 @@ Les conseils de dépannage suivants permettent de résoudre les problèmes les p
 Vérifiez si les appels HTTP sont envoyés et reçus par les deux solutions (AEM > Adobe Campaign Classic, Adobe Campaign Classic > AEM). Cette astuce vous permet d’éviter les problèmes de pare-feu/SSL.
 
 * Pour la fonctionnalité AEM, vous pouvez constater que les appels JSON sont demandés depuis l’interface de création d’AEM.
-   * Ces appels ne doivent pas entraîner d’erreur HTTP-500.
-   * Si vous voyez des erreurs HTTP 500, vérifiez le fichier `error.log` pour plus d’informations.
+  * Ces appels ne doivent pas entraîner d’erreur HTTP-500.
+  * Si vous voyez des erreurs HTTP 500, vérifiez le fichier `error.log` pour plus d’informations.
 * L’augmentation du niveau de débogage pour les classes de campagne dans AEM peut également aider à résoudre les problèmes.
 
 ## Si la connexion échoue {#when-the-connection-fails}
@@ -131,8 +140,8 @@ Pour résoudre ce problème, procédez comme suit :
 
 * Le Dispatcher AEM ou le proxy inverse doit être configuré pour transmettre le protocole d’origine en tant qu’en-tête.
 * Le **Filtre SSL du service HTTP Apache Felix** dans la configuration OSGi d’AEM doit être configuré avec les paramètres d’en-tête requis.
-   * `https://<host>:<port>/system/console/configMgr`
-   * Voir [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
+  * `https://<host>:<port>/system/console/configMgr`
+  * Voir [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
 
 ## Un modèle personnalisé ne peut pas être sélectionné dans les propriétés de la page. {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 

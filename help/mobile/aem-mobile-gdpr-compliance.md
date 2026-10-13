@@ -6,13 +6,17 @@ exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 1%
-
+source-wordcount: '707'
+ht-degree: 2%
 ---
-
 # AEM Mobile - Préparation pour le RGPD {#aem-mobile-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -29,9 +33,9 @@ AEM Mobile est prêt à aider les clients avec leurs obligations de conformité 
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Le produit de publication numérique d’Adobe (qui précède AEM Mobile) prend en charge les initiatives de préparation d’Adobe au RGPD. Voir [https://business.adobe.com/fr/privacy/general-data-protection-regulation.html](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html). Vous trouverez ci-dessous des informations détaillées sur la prise en charge des fonctions relatives au RGPD dans le produit Digital Publishing Suite, y compris sur la manière de travailler avec l’Adobe pour lancer des demandes RGPD.
+Le produit de publication numérique d’Adobe (qui précède AEM Mobile) prend en charge les initiatives de préparation d’Adobe au RGPD. Voir [&#128279;](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html). Vous trouverez ci-dessous des informations détaillées sur la prise en charge des fonctions relatives au RGPD dans le produit Digital Publishing Suite, y compris sur la manière de travailler avec Adobe pour envoyer des demandes relatives au RGPD.
 
-Pour vous assurer de ne pas confondre AEM Mobile avec l’ancien produit de Digital Publishing Suite, vous pouvez vous connecter au produit de Digital Publishing Suite ici :
+Pour vous assurer de ne pas confondre AEM Mobile avec l’ancien produit Digital Publishing Suite, vous pouvez vous connecter au produit Digital Publishing Suite ici :
 
 [https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/us/en/)
 
@@ -53,13 +57,13 @@ Fournissez au moins 1 des éléments suivants :
 
 ### Questions fréquentes {#frequently-asked-questions-faq}
 
-**L’Adobe est-il en train de supprimer mes achats App Store lors du lancement d’une demande de DELETE ?**
+Adobe supprime-t-il mes achats App Store lors du lancement d’une requête DELETE ?**&#x200B;**
 
-L’Adobe supprime les informations dont il dispose sur les achats effectués dans l’App Store (abonnements, etc.), mais les achats sont toujours enregistrés dans l’App Store. Si l’application (utilisateur final) est connectée à l’App Store, ces reçus sont à nouveau récupérés et envoyés à l’Adobe. Par la suite, ils sont considérés comme de nouveaux achats et sont restaurés par l’application, avec un nouvel accès.
+Adobe supprime les informations dont il dispose sur les achats effectués dans l’App Store (abonnements, etc.), mais les achats sont toujours enregistrés dans l’App Store. Si l’application (utilisateur final) est connectée à l’App Store, ces accusés de réception sont à nouveau récupérés et envoyés à Adobe. Par la suite, ils sont considérés comme de nouveaux achats et sont restaurés par l’application, avec un nouvel accès.
 
-**L’Adobe supprime-t-il les droits fournis par le client lors du lancement d’une demande de DELETE ?**
+Adobe supprime-t-il les droits fournis par le client lors du lancement d’une requête DELETE ?**&#x200B;**
 
-L’Adobe supprime les informations dont il dispose sur les droits directs supplémentaires du client. Si l’application (utilisateur final) se connecte au mécanisme OAuth que le client a utilisé, elle envoie des informations à l’Adobe et les services récupèrent à nouveau les droits supplémentaires.
+Adobe supprime les informations dont il dispose sur les droits directs supplémentaires du client. Si l’application (utilisateur final) se connecte au mécanisme OAuth que le client a utilisé, elle envoie des informations à Adobe et les services récupèrent à nouveau les droits supplémentaires.
 
 **Qu’attend-on de l’utilisateur final ?**
 
@@ -67,7 +71,7 @@ Comme la clé d’attribution des droits à l’application réside sur l’appa
 
 **Que se passe-t-il lorsqu’une application est partagée entre des personnes sur un appareil ?**
 
-L’Adobe contient des informations minimales qui s’associent directement à un utilisateur spécifique. Il associe les données à l’aide d’un UUID créé de manière aléatoire qui est conservé dans les données de l’application et transmis dans chaque requête initiée par l’application. Cela signifie que les utilisateurs finaux partageant l’application sur le même appareil utilisent le même UUID et que toutes les données sont considérées comme détenues par la personne qui effectue la requête RGPD. Pour les demandes d’accès et de suppression, DPSC considère les personnes qui partagent une application comme une seule et même personne.
+Adobe dispose d’informations minimales qui s’associent directement à un utilisateur spécifique. Il associe les données à l’aide d’un UUID créé de manière aléatoire qui est conservé dans les données de l’application et transmis dans chaque requête initiée par l’application. Cela signifie que les utilisateurs finaux partageant l’application sur le même appareil utilisent le même UUID et que toutes les données sont considérées comme détenues par la personne qui effectue la requête RGPD. Pour les demandes d’accès et de suppression, DPSC considère les personnes qui partagent une application comme une seule et même personne.
 
 **Quelles données personnelles sont suivies avec Analytics ?**
 
@@ -79,9 +83,9 @@ Aucune. Des données sont suivies, mais elles se trouvent au niveau de l’appli
 
 ### Exemple {#example}
 
-Contactez l’assistance clientèle d’Adobe afin de pouvoir lancer une demande RGPD.
+Contactez l’assistance clientèle d’Adobe pour lancer une demande en vertu du RGPD.
 
-Voici un exemple des entrées et des sorties résultantes d’une requête RGPD Digital Publishing Suite :
+Voici un exemple des entrées et des sorties résultantes d’une requête RGPD de Digital Publishing Suite :
 
 #### Entrées : {#inputs}
 

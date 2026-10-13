@@ -10,13 +10,27 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3025'
-ht-degree: 97%
-
+source-wordcount: '3049'
+ht-degree: 98%
 ---
-
 # Liste de contrôle de sécurité {#security-checklist}
 
 Cette section traite des différentes étapes à suivre pour s’assurer que votre installation AEM est sécurisée une fois déployée. La liste de contrôle doit être appliquée de haut en bas.
@@ -78,7 +92,7 @@ Vous pouvez modifier le compte `admin` et [modifier le mot de passe](/help/sites
 En plus du compte `admin` d’AEM, si vous ne modifiez pas le mot de passe par défaut du mot de passe de la console web OSGi, cela peut entraîner :
 
 * Exposition du serveur avec un mot de passe par défaut au démarrage et à l’arrêt (ce qui peut prendre quelques minutes pour les serveurs volumineux) ;
-* Exposition du serveur lorsque le référentiel est en panne ou qu’il redémarre le bundle - et qu’OSGI est en cours d’exécution.
+* Exposition du serveur lorsque le référentiel est en panne ou qu’il redémarre le bundle ; et qu’OSGI est en cours d’exécution.
 
 Pour plus d’informations sur la modification du mot de passe de la console Web, reportez-vous à la section [Modification du mot de passe d’administrateur de la console Web OSGi](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) ci-dessous.
 
@@ -95,7 +109,7 @@ Le mot de passe doit être modifié *après* l’installation initiale pour gara
 
 **Pour modifier le mot de passe d’administration de la console web OSGi** :
 
-1. À l’aide du menu **Outils** **Opérations**, ouvrez la **Console web** et accédez à la section **Configuration**.
+1. À l’aide du menu **Outils**, **Opérations**, ouvrez la **console Web** et accédez à la section **Configuration**.
 Par exemple, à `<server>:<port>/system/console/configMgr`.
 1. Accédez à l’entrée pour la **console de gestion OSGi Apache Felix** et ouvrez-la.
 1. Modifiez le **nom d’utilisateur** et le **mot de passe**.
@@ -225,27 +239,27 @@ Pour chacun des services suivants, les paramètres spécifiés doivent être mod
 
 * [Gestionnaire de bibliothèque HTML Adobe Granite](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager) :
 
-   * Activez **Minifier** (pour supprimer les caractères CRLF et les espaces blancs).
-   * Activez **Gzip** (pour permettre l’extraction et l’accès aux fichiers avec une seule requête).
-   * Désactivez **Déboguer**
-   * Désactivez **Minutage**
+  * Activez **Minifier** (pour supprimer les caractères CRLF et les espaces blancs).
+  * Activez **Gzip** (pour permettre l’extraction et l’accès aux fichiers avec une seule requête).
+  * Désactivez **Déboguer**
+  * Désactivez **Minutage**
 
 * [Filtre de débogage de la gestion de contenu web Day CQ](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter) :
 
-   * Décochez **Activer**
+  * Décochez **Activer**
 
 * [Filtre de la gestion de contenu web Day CQ](/help/sites-deploying/osgi-configuration-settings.md) :
 
-   * Lors de la publication uniquement, définissez le **Mode de gestion de contenu web** sur Désactivé.
+  * Lors de la publication uniquement, définissez le **Mode de gestion de contenu web** sur Désactivé.
 
 * [Gestionnaire JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler) :
 
-   * Désactivez l’option **Générer les informations de débogage**.
+  * Désactivez l’option **Générer les informations de débogage**.
 
 * [Gestionnaire de scripts JSP Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler) :
 
-   * Désactivez l’option **Générer les informations de débogage**.
-   * Désactivez l’option **Contenu mappé**.
+  * Désactivez l’option **Générer les informations de débogage**.
+  * Désactivez l’option **Contenu mappé**.
 
 Voir [Paramètres de configuration d’OSGi](/help/sites-deploying/osgi-configuration-settings.md).
 
@@ -266,9 +280,9 @@ Une attaque par déni de service (DoS) est une tentative de rendre une ressource
 
   Par exemple, `.../en.html` peut également être demandé comme suit :
 
-   * `.../en.ExtensionDosAttack`
-   * `.../en.SelectorDosAttack.html`
-   * `.../en.html/SuffixDosAttack`
+  * `.../en.ExtensionDosAttack`
+  * `.../en.SelectorDosAttack.html`
+  * `.../en.html/SuffixDosAttack`
 
   Toutes les variantes possibles (par exemple, le renvoi d’une réponse `200` configurée pour être mise en cache) seront mises en cache par le Dispatcher, ce qui entraîne la saturation du système de fichiers et l’indisponibilité du service pour d’autres requêtes.
 
@@ -343,7 +357,7 @@ Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactiv
 
 ### Désactiver WebDAV {#disable-webdav}
 
-Désactivez WebDAV dans les environnements de création et de publication en arrêtant les lots OSGi appropriés.
+Désactivez WebDAV dans les environnements de création et de publication en arrêtant les bundles OSGi appropriés.
 
 1. Connectez-vous à la **Console de gestion Felix** s’exécutant sur :
 
@@ -351,17 +365,17 @@ Désactivez WebDAV dans les environnements de création et de publication en arr
 
    Par exemple, `http://localhost:4503/system/console/bundles`.
 
-1. Dans la liste des lots, recherchez le lot nommé :
+1. Dans la liste des bundles, recherchez le bundle nommé :
 
    `Apache Sling Simple WebDAV Access to repositories (org.apache.sling.jcr.webdav)`
 
-1. Pour arrêter ce lot, dans la colonne Actions, cliquez sur le bouton Arrêter.
+1. Pour arrêter ce bundle, dans la colonne Actions, cliquez sur le bouton Arrêter.
 
-1. Là encore, dans la liste des lots, recherchez le lot nommé :
+1. Là encore, dans la liste des bundles, recherchez le bundle nommé :
 
    `Apache Sling DavEx Access to repositories (org.apache.sling.jcr.davex)`
 
-1. Pour arrêter ce lot, cliquez sur le bouton Arrêter.
+1. Pour arrêter ce bundle, cliquez sur le bouton Arrêter.
 
    >[!NOTE]
    >
@@ -430,11 +444,11 @@ Par conséquent, pour répliquer vos clés entre les instances, vous devez les c
 Plus précisément, vous devez effectuer les opérations suivantes :
 
 1. Accédez à l’instance AEM, généralement une instance de création, qui contient le matériel clé à copier.
-1. Cherchez le lot com.adobe.granite.crypto.file dans le système de fichiers local. Par exemple, sous ce chemin d’accès :
+1. Cherchez le bundle com.adobe.granite.crypto.file dans le système de fichiers local. Par exemple, sous ce chemin d’accès :
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
-   Le fichier `bundle.info` à l’intérieur de chaque dossier identifie le nom du lot.
+   Le fichier `bundle.info` à l’intérieur de chaque dossier identifie le nom du bundle.
 
 1. Accédez au dossier des données. Par exemple :
 
@@ -446,7 +460,7 @@ Plus précisément, vous devez effectuer les opérations suivantes :
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Collez les deux fichiers copiés précédemment.
-1. [Actualisez le lot de chiffrement](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) si l’instance cible est déjà en cours d’exécution.
+1. [Actualisez le bundle de chiffrement](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) si l’instance cible est déjà en cours d’exécution.
 1. Répétez les étapes ci-dessus pour toutes les instances sur lesquelles vous souhaitez répliquer la clé.
 
 #### Réplication des clés pour AEM 6.2 et les versions antérieures {#replicating-keys-for-aem-and-older-versions}

@@ -9,13 +9,22 @@ exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '495'
 ht-degree: 97%
-
 ---
-
 # Test des modèles modifiables dans We.Retail{#trying-out-editable-templates-in-we-retail}
 
 Grâce aux modèles modifiables, la création et la maintenance de modèles ne sont plus des tâches réservées à l’équipe de développement. Un type d’utilisateur ou d’utilisatrice avancé, appelé auteur ou autrice de modèles, peut également créer des modèles. L’équipe de développement doit encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’auteur de modèles peut créer et configurer des modèles sans projet de développement.
@@ -57,10 +66,10 @@ Toutes les pages de We.Retail sont basées sur des modèles modifiables, ce qui 
    * Sélectionner une politique existante ou créer une politique pour le conteneur
    * Définir les fonctionnalités disponibles pour l’auteur ou l’autrice de la page lors de l’utilisation de ce composant, telles que :
 
-      * Sources de collage autorisées
-      * Options de mise en forme
-      * Styles de paragraphe autorisés
-      * Caractères spéciaux autorisés
+     * Sources de collage autorisées
+     * Options de mise en forme
+     * Styles de paragraphe autorisés
+     * Caractères spéciaux autorisés
 
    De nombreux composants basés sur les composants principaux permettent de configurer des options au niveau du composant par le biais de modèles modifiables, ce qui évite aux développeurs et développeuses de devoir les personnaliser.
 

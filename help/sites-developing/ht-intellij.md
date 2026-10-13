@@ -9,13 +9,24 @@ exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '663'
 ht-degree: 100%
-
 ---
-
 # Comment développer des projets AEM à l’aide d’IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
 ## Vue d’ensemble {#overview}
@@ -148,6 +159,6 @@ La configuration est à présent terminée pour le débogage de vos JSP dans AEM
 
 ![chlimage_1-52](assets/chlimage_1-52a.png)
 
-### Débogage des lots avec IntelliJ IDEA {#debugging-bundles-with-intellij-idea}
+### Débogage des bundles avec IntelliJ IDEA {#debugging-bundles-with-intellij-idea}
 
-Le code des lots peut être débogué à l’aide d’une connexion de débogage à distance générique standard. Vous pouvez suivre la [Documentation Jetbrain sur le débogage à distance](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter).
+Le code des bundles peut être débogué à l’aide d’une connexion de débogage à distance générique standard. Vous pouvez suivre la [Documentation Jetbrain sur le débogage à distance](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter).

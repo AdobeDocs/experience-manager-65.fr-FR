@@ -5,13 +5,37 @@ exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 96%
-
 ---
-
 # Configuration de l’intégration de la traduction {#configure-integration}
 
 Découvrez comment connecter AEM à un service de traduction.
@@ -22,7 +46,7 @@ Dans le document précédent du parcours de traduction AEM, [Prise en main de la
 
 * comprendre l’importance de la structure de contenu pour la traduction ;
 * savoir comment AEM stocke du contenu découplé ;
-* être familiarisé avec les outils de traduction AEM.
+* Être familiarisé avec les outils de traduction AEM.
 
 Cet article s’appuie sur ces principes de base afin que vous puissiez effectuer la première étape de configuration et configurer un service de traduction, que vous utiliserez ultérieurement dans le parcours pour traduire votre contenu.
 
@@ -31,13 +55,13 @@ Cet article s’appuie sur ces principes de base afin que vous puissiez effectue
 Ce document vous permet de comprendre comment configurer une intégration AEM pour le service de traduction de votre choix. Après avoir lu ce document, vous devriez :
 
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
-* savoir configurer votre propre connexion à votre service de traduction.
+* Savoir configurer votre propre connexion à votre service de traduction.
 
 ## Framework d’intégration de la traduction {#tif}
 
-Le framework d’intégration de la traduction dans AEM s’intègre à des services de traduction tiers pour orchestrer la traduction du contenu d’AEM. Elle implique trois étapes de base.
+Le framework d’intégration de la traduction dans AEM (TIF) s’intègre à des services de traduction tiers pour orchestrer la traduction du contenu d’AEM. Elle implique trois étapes de base.
 
-1. Connectez-vous à un fournisseur de services de traduction.
+1. Connectez-vous à votre prestataire de services de traduction.
 1. Créez une configuration de framework d’intégration de traduction.
 1. Associez la configuration à votre contenu.
 
@@ -51,7 +75,7 @@ La première étape consiste à choisir le service de traduction que vous souhai
 >
 >Le spécialiste de traduction est généralement chargé de choisir le service de traduction à utiliser, mais l’administrateur est généralement chargé d’installer le package de connecteur de traduction requis.
 
-Pour les besoins de ce parcours, nous utilisons Microsoft Translator à qui AEM fournit une licence d’évaluation prête à l’emploi. Consultez la section [Ressources supplémentaires](#additional-resources) pour plus d’informations sur ce fournisseur.
+Pour les besoins de ce parcours, nous utilisons Microsoft Translator, qu’AEM fournit avec une licence d’évaluation prête à l’emploi. Consultez la section [Ressources supplémentaires](#additional-resources) pour plus d’informations sur ce fournisseur.
 
 Si vous choisissez un autre fournisseur, votre administrateur doit installer le package de connecteur conformément aux instructions fournies par le service de traduction.
 
@@ -94,7 +118,7 @@ Pour créer une configuration de traduction :
 
 1. Fournissez les informations suivantes.
 
-   1. **Méthode de traduction** : sélectionnez **Traduction automatique** ou **Traduction humaine** selon votre fournisseur de traduction. Pour les besoins de ce parcours, nous supposons la traduction sera automatique.
+   1. **Méthode de traduction** : sélectionnez **Traduction automatique** ou **Traduction humaine** selon votre fournisseur de traduction. Pour les besoins de ce parcours, nous supposons que la traduction sera automatique.
    1. **Fournisseurs de traduction** : sélectionnez dans la liste le connecteur que vous avez installé pour votre service de traduction.
    1. **Catégorie de contenu** : sélectionnez la catégorie la plus appropriée pour mieux cibler la traduction (uniquement pour la traduction automatique).
    1. **Traduire les ressources de fragments de contenu** : cochez cette case pour traduire les ressources associées aux fragments de contenu.

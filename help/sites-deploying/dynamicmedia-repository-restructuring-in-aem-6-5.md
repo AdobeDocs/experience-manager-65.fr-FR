@@ -8,13 +8,22 @@ feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 100%
-
+source-wordcount: '413'
+ht-degree: 98%
 ---
-
 # Restructuration du référentiel Dynamic Media dans Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
 Comme indiqué dans la page parent [Restructuration des référentiels dans Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers Experience Manager 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la Dynamic Media. Certaines modifications demandent du travail lors du processus de mise à niveau vers Experience Manager 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version future.
@@ -69,7 +78,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans Adob
    <td><p>Le client peut exécuter un script de migration à cet emplacement :<br /> </p>
     <ul>
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
-     <li>Redémarrez le lot OSGi Dynamic Media.</li>
+     <li>Redémarrez le bundle OSGi Dynamic Media.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -116,7 +125,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans Adob
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>1. Dépubliez toutes les vidéos de YouTube.<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle TouchUI (à partir de <code>/conf</code>), y compris en copiant toutes les chaînes de l’ancien emplacement.<br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une configuration YouTube TouchUI, plusieurs URL YouTube seront répertoriées sous Propriétés, car les chaînes recréées seront publiées si l’occasion se présente. Cela signifie que des URL inutiles seront répertoriées sous Propriétés.</p> </td>
+   <td><p>1. Dépubliez toutes les vidéos de <br /> 2. Créez la configuration YouTube à l’aide de la nouvelle TouchUI (à partir de <code>/conf</code>), y compris en copiant toutes les chaînes de l’ancien emplacement.<br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une configuration YouTube TouchUI, plusieurs URL YouTube seront répertoriées sous Propriétés, car les chaînes recréées seront publiées si l’occasion se présente. Cela signifie que des URL inutiles seront répertoriées sous Propriétés.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>

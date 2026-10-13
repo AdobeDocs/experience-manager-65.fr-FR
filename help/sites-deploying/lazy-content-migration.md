@@ -10,7 +10,18 @@ feature: Upgrading
 exl-id: 946c7c2a-806b-4461-a38b-9c2e5ef1e958
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 100%
@@ -19,7 +30,7 @@ ht-degree: 100%
 
 Pour des raisons de rétrocompatibilité, le contenu et la configuration situés dans **/etc** et **/content** ne seront pas modifiés ni transformés immédiatement par la mise à niveau à partir d’Adobe Experience Manager (AEM) 6.3. Cela permet de s’assurer que les dépendances des applications des clientes et clients sur ces structures restent intactes. Les fonctionnalités relatives à ces structures de contenu restent les mêmes, même si du contenu AEM 6.5 prêt à l’emploi est hébergé à un autre endroit.
 
-Bien que ces emplacements ne soient pas tous transformés automatiquement, il existe quelques `CodeUpgradeTasks` différées ; ce que l’on désigne sous le nom de migration différée du contenu. Cela permet aux utilisateurs de déclencher ces transformations automatiques en redémarrant l’instance avec cette propriété système :
+Bien que ces emplacements ne soient pas tous transformés automatiquement, il existe quelques `CodeUpgradeTasks` différées ; ce que l’on désigne sous le nom de migration différée du contenu. Cela permet aux clientes et clients de déclencher ces transformations automatiques en redémarrant l’instance avec cette propriété système :
 
 ```shell
 -Dcom.adobe.upgrade.forcemigration=true
@@ -29,7 +40,7 @@ Cela entraîne l’exécution de `CodeUpgradeTasks` pendant la migration.
 
 Bien que l’objectif soit une exécution efficace, ce processus de mise à niveau est synchrone et s’accompagne donc d’un temps d’arrêt en fonction de la quantité de contenu à traiter. Adobe vous conseille d’évaluer les temps d’exécution dans un environnement d’évaluation en amont du système de production afin de planifier une fenêtre de maintenance adéquate.
 
-Comme cela nécessite généralement d’ajuster l’application, cette activité doit être effectuée lors du déploiement d’application correspondant.
+Comme cela nécessite généralement d’ajuster l’application, cette activité doit être effectuée lors du déploiement de l’application correspondante.
 
 Vous trouverez, ci-dessous, la liste complète des `CodeUpgradeTasks` introduites dans la version 6.5 :
 
@@ -37,7 +48,7 @@ Vous trouverez, ci-dessous, la liste complète des `CodeUpgradeTasks` introduite
 |---|---|---|---|
 | `Cq561ProjectContentUpgrade` | &lt; 5.6.1 | Immédiat |  |
 | `Cq60MSMContentUpgrade` | &lt; 6.0 | Immédiat | Détecte toutes les `LiveRelationShips` de `VersionStorage` qui ont été supprimées et ajoute une propriété d’exclusion au parent. |
-| `Cq61CloudServicesContentUpgrade` | &lt; 6.1 | Immédiat | Restructuration des services cloud pour une configuration sécurisée par défaut |
+| `Cq61CloudServicesContentUpgrade` | &lt; 6.1 | Immédiat | Restructure les services cloud pour une configuration sécurisée par défaut |
 | `Cq62ConfContentUpgrade` | &lt; 6.2 | Immédiat | Supprime la liaison basée sur les propriétés entre **/content** et **/conf** (remplacée par le mécanisme OSGi), génère la configuration OSGi correspondante. |
 | `Cq62FormsContentUpgrade` | &lt; 6.2 | Immédiat | En raison de la gestion via merge_preserve, la règle de refus de sécurisation par défaut remplace les autorisations données, ce qui entraîne la nécessité d’une réorganisation lors de la mise à niveau. |
 | `CQ62Html5SmartFileUpgrade` | &lt; 6.2 | Immédiat | Détecte les composants à l’aide du widget Html5SmartFile, recherche les utilisations du composant dans le contenu et restructure la persistance, en déplaçant le fichier binaire d’un niveau vers le bas et en ne le stockant pas au niveau du composant. |

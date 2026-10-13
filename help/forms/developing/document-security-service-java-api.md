@@ -9,13 +9,29 @@ role: Developer
 exl-id: 76d855cf-ebfa-487a-b1c8-755e7e45dd73
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 98%
-
 ---
-
 # Démarrage rapide de l’API Java du service Document Security (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
 Le démarrage rapide de l’API Java (SOAP) est disponible pour le service Rights Management :
@@ -1207,7 +1223,7 @@ public class TextWatermarks {
 
 ## Démarrage rapide (mode SOAP) : modifier un filigrane de texte à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-text-watermark-using-the-java-api}
 
-L’exemple de code Java suivant permet de modifier un filigrane nommé « Exemple de filigrane de texte » et définit l’opacité du premier élément sur 100.
+L’exemple de code Java suivant permet de modifier un filigrane nommé « Sample Text Watermark » et définit l’opacité du premier élément sur 100.
 
 ```java
 /*
@@ -1417,7 +1433,7 @@ L’exemple de code Java suivant permet de modifier un filigrane nommé *Confide
 
 ## Démarrage rapide (mode SOAP) : rechercher des événements à l’aide de l’API Java {#quick-start-soap-mode-searching-for-events-using-the-java-api}
 
-L’exemple de code Java suivant permet de rechercher l’événement de création de politique.
+L’exemple de code Java suivant permet de rechercher l’évènement de création de politique.
 
 ```java
  /*
@@ -1753,7 +1769,7 @@ L’exemple de code suivant permet de supprimer une politique d’un document Wo
 
 ## Démarrage rapide (mode SOAP) : créer une politique abstraite à l’aide de l’API Java {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
 
-L’exemple de code Java suivant permet de créer une politique abstraite nommée AllowCopy. L’ensemble de politiques auquel la politique est ajoutée est nommé Ensemble de politiques global. Cet ensemble de politiques existe par défaut. (Consultez la section Créer des politiques).
+L’exemple de code Java suivant crée une nouvelle politique abstraite nommée AllowCopy. L’ensemble de politiques auquel la politique est ajoutée est nommé Ensemble de politiques global. Cet ensemble de politiques existe par défaut. (Consultez la section Créer des politiques).
 
 ```java
 /*
@@ -2162,9 +2178,9 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : protéger un PDF dans le workflow d’instructions pour un nouvel utilisateur à l’aide de l’API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+## Démarrage rapide (mode SOAP) : protéger un PDF dans Statement Workflow pour un nouvel utilisateur ou une nouvelle utilisatrice à l’aide de l’API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
-L’exemple de code Java suivant montre comment protéger un document dans le workflow d’instructions. Il s’agit d’un processus en deux étapes :
+L’exemple de code Java suivant montre comment protéger un document dans Statement Workflow. Il s’agit d’un processus en deux étapes :
 
 * Un nouvel utilisateur, une nouvelle licence et une nouvelle politique sont créés.
 * L’utilisateur est associé à la licence et à la politique, et le document est protégé.

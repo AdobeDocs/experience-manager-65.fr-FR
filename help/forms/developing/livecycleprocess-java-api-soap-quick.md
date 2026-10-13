@@ -9,24 +9,40 @@ role: Developer
 exl-id: 7b309743-10ea-4d10-adb6-be5ce9f03ce2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 100%
-
 ---
-
 # Démarrage rapide de l’API Java (SOAP) LiveCycleProcess {#livecycleprocess-java-api-soap-quick-start}
 
 Le démarrage rapide de l’API Java (SOAP) est disponible pour les processus. Une *instance de processus* est une occurrence d’un processus spécifique qui a été lancé par une méthode d’invocation telle que l’API d’invocation ou depuis Workspace.
 
-[Démarrage rapide (mode SOAP) : rechercher des instances de processus à l’aide de l’API Java.](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
+[Démarrage rapide (mode SOAP) : rechercher des instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : suspendre des instances de processus à l’aide de l’API Java.](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
+[Démarrage rapide (mode SOAP) : suspendre des instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : démarrer des instances de processus suspendues à l’aide de l’API Java.](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
+[Démarrage rapide (mode SOAP) : démarrer des instances de processus suspendues à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : terminer des instances de processus à l’aide de l’API Java.](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
+[Démarrage rapide (mode SOAP) : terminer des instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
 
 [Démarrage rapide (mode SOAP) : purger des données de processus à l’aide de l’API Java.](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
 
@@ -36,7 +52,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 
 >[!NOTE]
 >
->Les démarrages rapides dans Programmation avec AEM Forms sont basés sur le système d’exploitation Forms. Si vous utilisez un autre système d’exploitation, tel qu’Unix, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Les démarrages rapides dans Programmation avec AEM Forms sont basés sur Forms. Si vous utilisez un autre système d’exploitation, tel qu’Unix, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 ## Démarrage rapide (mode SOAP) : rechercher des instances de processus à l’aide de l’API Java. {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 

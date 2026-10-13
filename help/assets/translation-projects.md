@@ -1,21 +1,35 @@
 ---
 title: Création de projets de traduction
-description: Apprenez à créer des projets de traduction dans  [!DNL Adobe Experience Manager].
+description: Découvrez comment créer des projets de traduction dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Developer, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ee8e0f18-03e5-48ca-a013-04a577cd9a60
+    internal-label: Translation
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1889'
-ht-degree: 100%
-
+source-wordcount: '1897'
+ht-degree: 99%
 ---
-
 # Création de projets de traduction {#creating-translation-projects}
 
-Pour créer une copie linguistique, déclenchez l’un des workflows de copie linguistique disponibles sous le rail Références dans l’interface utilisateur d’[!DNL Experience Manager]. 
+Pour créer une copie linguistique, déclenchez l’un des workflows de copie linguistique disponibles sous le rail Références dans l’interface utilisateur d’[!DNL Experience Manager].
 
 * **Créer et traduire** : dans ce workflow, les ressources à traduire sont copiées dans la racine de la langue vers laquelle vous souhaitez effectuer la traduction. En outre, en fonction des options que vous choisissez, un projet de traduction est créé pour les ressources dans la console Projets. Selon les paramètres, le projet de traduction peut être démarré manuellement ou exécuté automatiquement dès sa création.
 
@@ -114,7 +128,7 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 Si vous utilisez cette option, le workflow de traduction s’exécute pour les ressources que vous ajoutez au dossier source après l’exécution d’un précédent workflow de traduction. Seules les ressources nouvellement ajoutées sont copiées dans le dossier cible contenant les ressources précédemment traduites. Dans ce cas, aucun nouveau projet de traduction n’est créé.
 
 1. Dans l’interface utilisateur d’[!DNL Assets], accédez au dossier source qui contient des ressources non traduites.
-1. Sélectionnez une ressource à traduire, puis ouvrez le **[!UICONTROL volet Référence]**. La section **[!UICONTROL Copies de langue]** indique le nombre de copies de traduction actuellement disponibles.
+1. Sélectionnez une ressource à traduire, puis ouvrez le **[!UICONTROL volet Référence]**. La section **[!UICONTROL Copies linguistiques]** indique le nombre de copies de traduction actuellement disponibles.
 1. Cliquez sur **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]**. La liste des copies de traduction disponibles s’affiche.
 1. Cliquez sur **[!UICONTROL Créer et traduire]** dans la partie inférieure.
 
@@ -163,7 +177,7 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
 ## Mise à jour des copies de langue {#update-language-copies}
 
-Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire et de l’intégrer à une copie linguistique pour un ensemble de paramètres régionaux en particulier. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites. Selon le choix des options, un projet de traduction est créé ou un projet de traduction existant est mis à jour pour les nouvelles ressources. Le workflow Màj des copies de langue comprend les options suivantes :
+Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire et de l’intégrer à une copie linguistique pour un ensemble de paramètres régionaux en particulier. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites. Selon le choix des options, un projet de traduction est créé ou un projet de traduction existant est mis à jour pour les nouvelles ressources. Le workflow Mettre à jour des copies linguistiques comprend les options suivantes :
 
 * Créer un projet de traduction
 * Ajouter à un projet de traduction existant

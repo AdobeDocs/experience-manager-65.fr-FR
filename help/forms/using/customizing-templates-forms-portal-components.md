@@ -9,13 +9,24 @@ feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 89%
-
+source-wordcount: '1257'
+ht-degree: 91%
 ---
-
 # Personnaliser des modèles pour les composants du portail Formulaires{#customizing-templates-for-forms-portal-components}
 
 ## Conditions préalables {#prerequisites}
@@ -41,8 +52,8 @@ Procédez comme suit pour créer un modèle personnalisé pour divers composants
    * Composant Search &amp; Lister : « /libs/fd/fp/formTemplate »
    * Composant Brouillons et envois :
 
-      * Section Brouillons : /libs/fd/fp/draftTemplate
-      * Section Envois : /libs/fd/fp/submissionsTemplate
+     * Section Brouillons : /libs/fd/fp/draftTemplate
+     * Section Envois : /libs/fd/fp/submissionsTemplate
 
    * Composant Link : /libs/fd/fp/linkTemplate
 
@@ -120,8 +131,8 @@ Prise en charge de la localisation et du tri et utilisation des propriétés de 
 1. **Prise en charge de la localisation** : pour localiser du texte statique, utilisez l’attribut `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, si elle ne l’est déjà.
    *Dans l’exemple présenté, les attributs `${localize-Apply}` et `${localize-Download}` sont utilisés pour localiser les termes Apply et Download.*
 
-1. **Prise en charge du tri** : cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour implémenter le tri dans une mise en page de tableau, ajoutez l’attribut « data-sortKey » dans l’en-tête particulier du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
-Par exemple, pour l’en-tête « Title » dans la vue Grille, la valeur de l’en-tête « data-sortKey » est « title ». Cliquez sur l’en-tête pour trier les valeurs d’une colonne particulière.
+1. **Prise en charge du tri** : cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour mettre en œuvre le tri dans une disposition de tableau, ajoutez l’attribut « data-sortKey » sur l’en-tête particulier du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
+Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur de l’en-tête &quot;data-sortKey&quot; est &quot;title&quot;. Cliquez sur l’en-tête pour trier les valeurs d’une colonne particulière.
 
 1. **Utilisation des propriétés de configuration** : le composant Recherche et énumérateur possède plusieurs configurations que vous pouvez utiliser dans l’interface utilisateur. Par exemple, pour afficher du texte d’info-bulle HTML enregistré dans la boîte de dialogue Modifier, utilisez l’attribut `${config-htmlLinkText}`. **De même, pour le texte d’info-bulle PDF, utilisez l’attribut** `${config-pdfLinkText}`.
 

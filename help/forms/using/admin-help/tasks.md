@@ -1,6 +1,6 @@
 ---
 title: Utiliser les tâches
-description: Utilisez la page Recherche de tâche pour rechercher des tâches par nom d’utilisateur ou d’utilisatrice ou ID de tâche. Découvrez l’utilisation des tâches.
+description: Utilisez la page Recherche de tâches pour rechercher des tâches par nom d’utilisateur ou d’utilisatrice ou par ID de tâche. Découvrez l’utilisation des tâches.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
@@ -9,38 +9,52 @@ exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 100%
-
 ---
-
 # Utiliser les tâches {#working-with-tasks}
 
 >[!NOTE]
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-Utilisez la page Recherche de tâche pour rechercher des tâches par nom d’utilisateur ou d’utilisatrice ou ID de tâche. Les résultats de recherche s’affichent sur la page Liste des tâches, où vous pouvez accéder à l’historique d’une tâche. Vous pouvez également réaffecter une tâche si une personne a trop de tâches ou si une personne a reçu une affectation de tâche par erreur.
+Utilisez la page Recherche de tâches pour rechercher des tâches par nom d’utilisateur ou d’utilisatrice ou par ID de tâche. Les résultats de recherche s’affichent sur la page Liste des tâches, où vous pouvez accéder à l’historique d’une tâche. Vous pouvez également réaffecter une tâche si une personne a trop de tâches ou si une personne a reçu une affectation de tâche par erreur.
 
 >[!NOTE]
 >
->Les recherches de tâches ne renvoient aucun résultat pour les noms d’utilisateur commençant par un signe dièse (#). Dans la mesure du possible, évitez de créer des noms d’utilisateur commençant par ce signe.
+>Les recherches de tâches ne renvoient aucun résultat pour les noms d’utilisateur commençant par un signe dièse (#). Dans la mesure du possible, évitez de créer des noms d’utilisateur ou d’utilisatrice commençant par un signe dièse.
 
 ## Recherche de tâches associées à un utilisateur ou à une utilisatrice {#search-for-tasks-associated-with-a-user}
 
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Recherche de tâches.
 1. Dans Rechercher par, sélectionnez Nom d’utilisateur. Si vous connaissez une partie du nom d’utilisateur que vous recherchez, saisissez-la dans la zone. Cliquez sur Rechercher un utilisateur.
-1. La page Rechercher un utilisateur s’affiche. Vous pouvez affiner davantage votre recherche en effectuant une recherche par nom d’utilisateur ou d’utilisatrice ou adresse e-mail. Lorsque vous localisez l’utilisateur ou l’utilisatrice que vous recherchez, sélectionnez le bouton radio situé à côté du nom, puis cliquez sur OK.
+1. La page Rechercher un utilisateur s’affiche. Vous pouvez affiner davantage votre recherche en effectuant une recherche par nom d’utilisateur ou d’utilisatrice ou par adresse e-mail. Lorsque vous localisez l’utilisateur ou l’utilisatrice que vous recherchez, sélectionnez la case d’option située à côté du nom, puis cliquez sur OK.
 1. Par défaut, la recherche de tâches recherche les tâches actuellement affectées à l’utilisateur ou à l’utilisatrice. Pour rechercher également les tâches précédemment affectées à l’utilisateur ou à l’utilisatrice, sélectionnez Afficher la tâche non affectée. Pour rechercher également les tâches que l’utilisateur ou l’utilisatrice a terminées, sélectionnez Afficher la tâche terminée.
 1. Cliquez sur Rechercher. La page Liste des tâches s’affiche, répertoriant les résultats de la recherche.
 
 ## Recherche d’une tâche dont vous connaissez l’identifiant {#search-for-a-task-when-you-know-its-task-id}
 
-1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Recherche de tâches.
+1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Recherche de tâches.
 1. Dans Rechercher par, sélectionnez l’ID de la tâche et saisissez l’ID de la tâche dans la zone.
-1. Cliquez sur Rechercher. La page Liste des tâches s’affiche, répertoriant les résultats de la recherche.
+1. Cliquez sur Rechercher. La page Liste des tâches s’affiche, répertoriant les résultats de recherche.
 
 ## Utilisation de la liste de tâches {#working-with-the-task-list}
 
@@ -84,9 +98,9 @@ Pour chaque affectation de tâche, la liste affiche les informations suivantes 
 
 **Demande :** l’utilisateur a demandé que la tâche lui soit affectée dans une liste de tâches partagée.
 
-**Transmission :** une durée prédéterminée est passée (comme définie dans l’action d’utilisateur dans Workbench) sans interaction de l’utilisateur et la tâche a été affectée à un autre utilisateur.
+**Transmission :** une durée prédéterminée est passée (comme définie dans l’action Utilisateur dans Workbench) sans interaction de l’utilisateur ou de l’utilisatrice et la tâche a été affectée à une autre personne.
 
-**Consultation :** le propriétaire de la tâche l’a envoyée pour consultation à un autre utilisateur qui peut ouvrir le formulaire, enregistrer les données, modifier les pièces jointes et les notes, mais qui ne peut pas terminer l’étape. L’utilisateur doit renvoyer la tâche au propriétaire qui lui a demandé de la consulter.
+**Consultation :** le propriétaire de la tâche l’a envoyée pour consultation à un autre utilisateur qui peut ouvrir le formulaire, enregistrer les données, modifier les pièces jointes et les notes, mais qui ne peut pas terminer l’étape. L’utilisateur ou l’utilisatrice doit renvoyer la tâche au ou à la propriétaire de la tâche qui a consulté l’utilisateur.
 
 **Réaffectation admin. :** la tâche a été réaffectée par un administrateur.
 

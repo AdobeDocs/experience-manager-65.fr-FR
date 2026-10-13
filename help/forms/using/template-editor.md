@@ -9,13 +9,31 @@ feature: Adaptive Forms,Foundation Components
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 96%
-
+source-wordcount: '2087'
+ht-degree: 99%
 ---
-
 # Modèles de formulaires adaptatifs{#adaptive-form-templates}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -48,8 +66,8 @@ Après avoir créé un dossier, ouvrez-le et suivez les étapes ci-après pour c
 1. Dans la console Modèle, sélectionnez **Créer** à l’intérieur du dossier que vous avez créé.
 1. Dans la section Choisir un type de modèle, sélectionnez **Modèle de formulaire adaptatif** et choisissez **Suivant**.
 
-1. Dans la section Détails du modèle , indiquez un titre de modèle et sélectionnez **Créer**.
-Vous pouvez fournir une description et une miniature que vous pouvez voir lorsque vous pouvez sélectionner le modèle créé au moment de la création de formulaire.
+1. Dans la section Détails du modèle, indiquez un titre de modèle, puis sélectionnez **Créer**.
+Vous pouvez indiquer une description et une miniature que vous pouvez afficher lorsque vous pouvez sélectionner le modèle créé au moment de la création de formulaire.
 
 1. Sélectionnez **Terminé** pour revenir à la console ou **Ouvrir** pour ouvrir le modèle dans l’éditeur.
 
@@ -60,13 +78,13 @@ Lorsque vous ouvrez un modèle à des fins d’édition, vous pouvez voir les co
 * **Barre d’outils Page**
 Contient les options suivantes :
 
-   * **Activer/désactiver le panneau latéral** : permet d’afficher ou de masquer la barre latérale.
-   * **Informations sur la page** : permet de spécifier des informations telles que l’heure de publication/dépublication, les vignettes, les bibliothèques côté client, la politique de page et la bibliothèque côté client de conceptions de pages.
-   * **Émulateur** : permet de simuler et de personnaliser l’aspect des différents appareils.
-   * **Sélecteur de calque :** permet de modifier le calque.
-Vous pouvez choisir le calque **Structure** ou **Contenu initial**. Le calque de structure vous permet d’ajouter et de personnaliser l’en-tête et le pied de page. Le calque Contenu initial permet de personnaliser le contenu du formulaire.
+  * **Activer/désactiver le panneau latéral** : permet d’afficher ou de masquer la barre latérale.
+  * **Informations sur la page** : permet de spécifier des informations telles que l’heure de publication/dépublication, les vignettes, les bibliothèques côté client, la politique de page et la bibliothèque côté client de conceptions de pages.
+  * **Émulateur** : permet de simuler et de personnaliser l’aspect des différents appareils.
+  * **Sélecteur de calque :** permet de modifier le calque.
+    Vous pouvez choisir le calque **Structure** ou le calque **Contenu initial**. Le calque Structure vous permet d’ajouter et de personnaliser l’en-tête et le pied de page. Le calque Contenu initial vous permet de personnaliser le contenu du formulaire.
 
-   * **Aperçu** : permet de prévisualiser le modèle avant de le publier. Vous pouvez utiliser le sélecteur de calques et l’aperçu pour activer/désactiver les modes de modification et d’aperçu.
+  * **Aperçu** : permet de prévisualiser le modèle avant de le publier. Vous pouvez utiliser le sélecteur de calques et l’aperçu pour activer/désactiver les modes de modification et d’aperçu.
 
 * **Barre latérale** : fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
 * **Barre d’outils de composant** : quand vous choisissez un composant, vous voyez une barre d’outils qui vous permet de personnaliser le composant.
@@ -115,8 +133,8 @@ Par exemple, vous pouvez ajouter le composant d’en-tête dans le modèle. Lors
 
 Lorsque l’option Contenu initial est sélectionnée, le conteneur de formulaires adaptatifs du modèle s’affiche comme un formulaire adaptatif à des fins de modification. Comme lors de la création d’un formulaire adaptatif, vous pouvez spécifier des paramètres initiaux, par exemple en sélectionnant un thème et des actions Envoyer.
 
-Les auteurs l’utilisent comme base pour créer un formulaire. La structure du flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à la modification du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, sélectionnez ![canvas-drop-down](assets/canvas-drop-down.png) **> Contenu initial**.
-![&#x200B; Calque Contenu initial dans l’éditeur de modèles &#x200B;](assets/initial-content-layer.png)
+Les auteurs et autrices de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à la modification du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, sélectionnez ![canvas-drop-down](assets/canvas-drop-down.png) **> Contenu initial**.
+![Calque Contenu initial dans l’éditeur de modèles](assets/initial-content-layer.png)
 
 Calque Contenu initial dans l’éditeur de modèles affichant le conteneur de formulaires adaptatifs sélectionné pour la spécification des propriétés.
 
@@ -167,8 +185,8 @@ Lorsque vous créez un modèle, il est ajouté en tant que brouillon. Activez le
 1. Accédez à **Adobe Experience Manager > Outils > Modèles**, et ouvrez le dossier dans lequel vous avez créé le modèle.
 
 1. Le modèle que vous avez créé est marqué comme Brouillon.
-1. Sélectionnez le modèle et sélectionnez **Activer** dans la barre d’outils.
-Lorsque vous créez un formulaire adaptatif, vous pouvez voir le modèle répertorié lorsque vous êtes invité à choisir un modèle.
+1. Sélectionnez le modèle, puis cliquez sur **Activer** dans la barre d’outils.
+Lorsque vous créez un formulaire adaptatif, vous pouvez voir le modèle affiché lorsque vous êtes invité à choisir un modèle.
 
 ## Importation ou exportation d’un modèle {#importing-or-exporting-a-template}
 
@@ -200,5 +218,5 @@ Pour afficher et masquer des modèles, procédez comme suit :
 ## Recommandations {#recommendations}
 
 * Lorsque vous modifiez les propriétés du formulaire dans l’éditeur de modèles, n’utilisez pas la propriété BindReference.
-* Si vous souhaitez ajouter un point d’arrêt, créez-le lorsque vous créez un modèle de formulaire adaptatif.
-Pour plus d’informations sur les points d’arrêt, voir [Disposition réactive](/help/sites-authoring/responsive-layout.md).
+* Si vous souhaitez ajouter un point d’arrêt, créez-le lorsque vous rédigez un modèle de formulaire adaptatif.
+Pour plus d’informations sur les points d’arrêt, voir [Mise en page réactive](/help/sites-authoring/responsive-layout.md).

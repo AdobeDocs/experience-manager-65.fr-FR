@@ -1,18 +1,30 @@
 ---
 title: Exigences techniques
-description: Liste des plateformes clientes et serveur prises en charge pour Adobe Experience Manager.
+description: Liste des plateformes client et serveur prises en charge pour Adobe Experience Manager.
 topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 06cdf1211a48838d1e578d1d804aad00cd01eb79
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3853'
 ht-degree: 91%
-
 ---
-
 # Exigences techniques{#technical-requirements}
 
 Adobe prend en charge Adobe Experience Manager (AEM) sur les plateformes, comme décrit ci-après dans ce document.
@@ -65,7 +77,7 @@ Adobe recommande ces configurations et fournit une prise en charge complète dan
   </tr>
   <tr>
    <td><strong>R : Prise en charge limitée</strong></td>
-   <td>Pour garantir la réussite des projets des clients et clientes, Adobe fournit une prise en charge complète dans le cadre d’un programme d’assistance restreint, qui nécessite que des conditions spécifiques soient remplies. La prise en charge au niveau R nécessite une requête formelle de la part du client ou de la cliente et une confirmation par Adobe. Pour plus d’informations, contactez l’assistance clientèle d’Adobe.</td>
+   <td>Pour garantir la réussite des projets des clients, Adobe fournit une prise en charge complète dans le cadre d’un programme d’assistance restreint, qui nécessite que des conditions spécifiques soient remplies. La prise en charge au niveau R nécessite une demande formelle de la part du client et une confirmation par Adobe. Pour plus d’informations, contactez l’assistance clientèle d’Adobe.</td>
   </tr>
  </tbody>
 </table>
@@ -80,13 +92,13 @@ Adobe recommande ces configurations et fournit une prise en charge complète dan
 
 ### Machines virtuelles Java™ {#java-virtual-machines}
 
-L’application nécessite l’exécution d’une machine virtuelle Java™, fournie par la distribution Java™ Development Kit (JDK).
+L’application nécessite une machine virtuelle Java™ pour s’exécuter, fournie par la distribution Java™ Development Kit (JDK).
 
 Adobe Experience Manager fonctionne avec les versions suivantes des machines virtuelles Java™ :
 
 >[!CAUTION]
 >
->Consultez les bulletins de sécurité publiés par le fournisseur Java™. Vous contribuez ainsi à la sécurité des environnements de production. Installez également toujours les mises à jour Java™ les plus récentes.
+>Consultez les bulletins de sécurité publiés par le fournisseur Java™. Vous contribuez ainsi à la sécurité des environnements d’exploitation. Installez également toujours les mises à jour Java™ les plus récentes.
 
 | **Plateforme** | **Niveau de prise en charge** | **Lien** |
 |---|---|---|
@@ -96,16 +108,17 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 | Oracle Java™ SE 10 JDK | Z : non pris en charge `[1]` |  |
 | Oracle Java™ SE 9 JDK | Z : non pris en charge `[1]` |  |
 | Oracle Java™ SE 8 JDK - 64 bits | A : pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
-| Machine virtuelle IBM® J9 - Version 2.9, JRE 1.8.0 | A : prise en charge de `[2]` |  |
-| Machine virtuelle IBM® J9 - Version 2.8, JRE 1.8.0 | A : prise en charge de `[2]` |  |
+| Machine virtuelle IBM® J9 - build 2.9, JRE 1.8.0 | A : prise en charge de `[2]` |  |
+| Machine virtuelle IBM® J9 - build 2.8, JRE 1.8.0 | A : prise en charge de `[2]` |  |
 | Azul Zulu OpenJDK 11 - 64 bits | A : pris en charge de `[3]` | |
 | Azul Zulu OpenJDK 8 - 64 bits | A : prise en charge de `[3]` | |
 
-1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10 et Java™ 12 sont des versions non-LTS fournies par Oracle (consultez la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS, sont directement prises en charge par Adobe pour tous les clients AEM qui utilisent la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).   **Important : Oracle Java™ 17 et 21 sont pris en charge sur [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10 et Java™ 12 sont des versions non-LTS fournies par Oracle (consultez la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS, sont directement prises en charge par Adobe pour tous les clients AEM qui utilisent la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+   **Important : Oracle Java™ 17 et 21 sont pris en charge sur [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. IBM® JRE est pris en charge uniquement avec le serveur d’applications WebSphere®.
 
-1. Les versions LTS OpenJDK Azul Zulu sont prises en charge pour les déploiements d’AEM On-Premise commençant par la version 6.5 SP9. La prise en charge et la distribution des versions du JDK LTS Azul Zulu doivent être autorisées directement depuis Azul par les clients et clientes Adobe.
+1. Les versions LTS d’Azul Zulu OpenJDK sont prises en charge pour les déploiements AEM sur site à partir de la version 6.5 SP9. La prise en charge et la distribution des versions du JDK LTS Azul Zulu doivent être autorisées directement depuis Azul par les clients et clientes Adobe.
 
 
 ### Stockage et persistance {#storage-persistence}
@@ -116,7 +129,7 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 |---|---|---|
 | **Système de fichiers avec fichiers TAR** `[1]` | Référentiel | A : pris en charge |
 | **Système de fichiers avec le magasin de données** `[1]` | Binaires | A : pris en charge |
-| Stockage de binaires dans des fichiers TAR sur le système de fichiers `[1]` | Binaires | Z : Non pris en charge pour la production |
+| Stockage de binaires dans des fichiers TAR sur le système de fichiers `[1]` | Binaires | Z : Non pris en charge pour l’exploitation |
 | Amazon S3 | Binaires | A : pris en charge |
 | Stockage d’objets blob Microsoft® Azure. | Binaires | A : pris en charge |
 | MongoDB Enterprise 8.0 | Référentiel | A : pris en charge `[3, 4]` |
@@ -137,7 +150,7 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 | **Apache Lucene (démarrage rapide intégré)** | Service de recherche | A : pris en charge |
 | Apache Solr | Service de recherche | A : pris en charge |
 
-1. Le système de fichiers comprend le stockage de bloc compatible avec POSIX. Cela inclut la technologie de stockage réseau. Gardez à l’esprit que les performances du système de fichiers peuvent varier et avoir une incidence sur les performances globales. Chargez la version test d’AEM avec le système de fichiers réseau/distant.
+1. Le système de fichiers comprend le stockage de bloc compatible avec POSIX. Cela inclut la technologie de stockage réseau. Gardez à l’esprit que les performances du système de fichiers peuvent varier et avoir une incidence sur les performances globales. Effectuez un test de charge d’AEM avec le système de fichiers réseau/distant.
 2. MongoDB Enterprise versions 4.2 et 4.4 nécessitent AEM 6.5 SP9 au minimum.
 3. La fragmentation MongoDB n’est pas prise en charge dans AEM.
 4. Seul le moteur de stockage WiredTiger de MongoDB est pris en charge.
@@ -157,7 +170,7 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 >
 >Pour tirer pleinement parti de votre déploiement AEM avec MongoDB, Adobe conseille d’utiliser la version MongoDB Enterprise sous licence afin de bénéficier d’une assistance professionnelle. Consultez la section [Déploiements recommandées](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) pour plus d’informations.
 >
->La licence comprend un ensemble de répliques, composé d’une instance principale et de deux instances secondaires qui peuvent être utilisées pour les déploiements de création ou de publication.
+>La licence comprend un ensemble standard de répliques, composé d’une instance principale et de deux instances secondaires qui peuvent être utilisées pour les déploiements de création et de publication.
 >
 >Si vous souhaitez exécuter les instances de création et de publication sur MongoDB, vous devez acheter deux licences distinctes.
 >
@@ -185,8 +198,8 @@ La version minimale requise de l’API servlet est Servlet 3.1.
 |---|---|
 | **Moteur de servlet intégré à démarrage rapide (Jetty 9.4)** | A : pris en charge |
 | Oracle WebLogic Server 12.2 (12cR2) | Z : non pris en charge |
-| Serveur d’applications IBM WebSphere en livraison continue (LibertyProfile) avec Web Profile 7.0 et IBM® JRE 1.8 | R : prise en charge restreinte des nouveaux contrats `[2]` |
-| Serveur d’applications IBM® WebSphere® 9.0 et IBM® JRE 1.8 | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
+| IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) avec Web Profile 7.0 et IBM® JRE 1.8 | R : prise en charge restreinte des nouveaux contrats `[2]` |
+| IBM® WebSphere® Application Server 9.0 et IBM® JRE 1.8 | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
 | serveur d’application IBM® WebSphere® 9.0.0.10 | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R : prise en charge restreinte des nouveaux contrats `[2]` |
 | JBoss EAP 7.2.x avec le serveur d’applications JBoss® | Z : non pris en charge |
@@ -195,7 +208,7 @@ La version minimale requise de l’API servlet est Servlet 3.1.
 | JBoss® EAP 7.4 avec JBoss® Application Server <sup>[2] [3] | A : pris en charge |
 
 1. Recommandé pour les déploiements avec AEM Forms.
-2. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée sera activée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.
+2. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée est appliquée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.
 3. Applicable à AEM Forms uniquement :
    * Suppression de la prise en charge de JBoss® EAP 7.1.4 et ajout de la prise en charge de JBoss® EAP 7.4.10.
    * À partir du pack de services 6.5.25.0 d’AEM Forms, la prise en charge de JBoss® EAP 7.4.23 est ajoutée . Vous pouvez télécharger JBoss® EAP 7.4.23 à partir du Portail de distribution logicielle en utilisant ce [lien](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip).
@@ -208,7 +221,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 |---|---|
 | **Linux®, basé sur la distribution Red Hat®** | A : prise en charge de : `[1]` `[3]` |
 | Linux®, basé sur la distribution Debian, Ubuntu inclus | A : prise en charge de : `[1]` `[2]` |
-| Linux, en fonction de la distribution SUSE® | A : prise en charge de `[1]` |
+| Linux® basé sur la distribution SUSE® | A : prise en charge de `[1]` |
 | Microsoft® Windows Server 2022 | R : Prise en charge limitée |
 | Microsoft® Windows Server 2019 `[4]` (obsolète) | R : prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R : prise en charge restreinte des nouveaux contrats `[5]` |
@@ -216,7 +229,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | Oracle Solaris™ 11 | Z : non pris en charge |
 | IBM® AIX® 7.2 | Z : non pris en charge |
 
-1. Noyau Linux® 2.6.3. x, 4. x, 5. x, 6. x et 9. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
+1. Noyau Linux® 2.6.3. x, 4. x, 5. x, 6. x et 9. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux®, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
 2. AEM Forms est pris en charge sous Ubuntu 20.04 et SUSE® Linux® Enterprise Server 15 SP6 (64 bits).
 3. Distribution Linux® prise en charge par Adobe Managed Services.
 
@@ -233,8 +246,8 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 
    *Pour l’installation d’OpenSSL 3 : les bibliothèques libcrypto.so.3 et libssl.so.3 doivent être disponibles dans le chemin d’accès par défaut à la bibliothèque, représenté par la variable d’environnement LD_LIBRARY_PATH. Si elles sont installées dans un emplacement non standard, assurez-vous que ce chemin est ajouté à LD_LIBRARY_PATH avant de démarrer le serveur.*
 
-4. Les déploiements en exploitation Microsoft® Windows sont pris en charge pour les clients et clientes effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement d’exploitation. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
-5. AEM Forms est pris en charge sur Microsoft® Window Server sans les restrictions de niveau de prise en charge R.
+4. Les déploiements en exploitation Microsoft® Windows sont pris en charge pour les clients et clientes effectuant une mise à niveau vers la version 6.5 et pour une utilisation en environnement non production. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
+5. AEM Forms est pris en charge sur Microsoft® Windows Server sans les restrictions de niveau de prise en charge R.
 6. AEM Forms a supprimé la prise en charge de Microsoft® Windows Server 2016.
 
 >[!NOTE]
@@ -249,15 +262,15 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 
 ### Environnements virtuels et de cloud computing {#virtual-cloud-computing-environments}
 
-Adobe Experience Manager est pris en charge dans le cadre d’une exécution sur une machine virtuelle dans des environnements de cloud computing. Ces environnements incluent Microsoft® Azure et Amazon Web Services (AWS), s’exécutant conformément aux exigences techniques répertoriées sur cette page et conformément aux conditions de prise en charge standard d’Adobe.
+Adobe Experience Manager est pris en charge dans le cadre d’une exécution sur une machine virtuelle dans des environnements de cloud computing. Ces environnements incluent, par exemple, Microsoft® Azure et Amazon Web Services (AWS), s’exécutant conformément aux exigences techniques répertoriées sur cette page et conformément aux conditions de prise en charge standard d’Adobe.
 
 Pour un environnement natif dans le cloud, passez en revue la dernière offre de la gamme de produits AEM : Adobe Experience Manager as a Cloud Service. Consultez la [Documentation d’Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) pour plus d’informations.
 
-Adobe propose également l’utilisation d’Adobe Managed Services pour déployer AEM sur Azure ou AWS. Adobe Managed Services fournit aux experts les compétences nécessaires pour déployer et utiliser AEM dans ces environnements de cloud computing. Consultez les [documents complémentaires sur Adobe Managed Services](https://business.adobe.com/fr/products/experience-manager/managed-services.html?aemClk=t).
+Adobe propose également l’utilisation d’Adobe Managed Services pour déployer AEM sur Azure ou AWS. Adobe Managed Services fournit des expertes et experts disposant de l’expérience et des compétences nécessaires pour déployer et utiliser AEM dans ces environnements de cloud computing. Consultez les [documents complémentaires sur Adobe Managed Services](https://business.adobe.com/fr/products/experience-manager/managed-services.html?aemClk=t).
 
 Dans tous les autres cas de déploiement d’AEM sur Azure ou AWS, ou tout autre environnement de cloud computing, la prise en charge d’Adobe se limite à l’environnement informatique virtuel. Cet environnement virtuel doit être exécuté conformément aux spécifications techniques répertoriées sur cette page. Tout problème signalé relatif à AEM s’exécutant dans l’un de ces environnements cloud doit être reproductible, indépendamment de tout service cloud spécifique à l’environnement de cloud computing. Sauf dans le cas où le service cloud est pris en charge dans le cadre des exigences techniques répertoriées sur cette page, par exemple, le stockage Azure Blob ou AWS S3.
 
-Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande de travailler directement avec le fournisseur de services cloud. Vous pouvez également travailler avec des partenaires d’Adobe pour prendre en charge le déploiement d’AEM dans l’environnement cloud de votre choix. Le partenaire ou le fournisseur de services cloud sélectionné est responsable des spécifications de dimensionnement, de la conception et de l’implémentation de l’architecture, afin de répondre à vos exigences spécifiques en matière de performances, de charge, d’évolutivité et de sécurité.
+Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande de travailler directement avec le fournisseur de services cloud. Vous pouvez également travailler avec des partenaires d’Adobe pour prendre en charge le déploiement d’AEM dans l’environnement cloud de votre choix. Le partenaire ou le fournisseur de services cloud sélectionné est responsable des spécifications de dimensionnement, de la conception et de la mise en œuvre de l’architecture, afin de répondre à vos exigences spécifiques en matière de performances, de charge, d’évolutivité et de sécurité.
 
 ### Plateformes de Dispatcher (serveurs web) {#dispatcher-platforms-web-servers}
 
@@ -271,10 +284,10 @@ Les serveurs web suivants sont pris en charge pour une utilisation avec Dispatch
 | Microsoft® IIS 10 (Internet Information Server) | A : pris en charge |
 | Microsoft® IIS 8.5 (Internet Information Server) | Z : non pris en charge |
 
-1. Les serveurs web créés à partir du code source Apache httpd prennent autant en charge que la version de httpd sur laquelle ils sont basés. En cas de doute, demandez à Adobe de confirmer le niveau de prise en charge relatif au produit serveur correspondant. Les cas suivants :
+1. Les serveurs web créés à partir du code source Apache httpd bénéficient du même niveau de prise en charge que la version de httpd sur laquelle ils sont basés. En cas de doute, demandez à Adobe de confirmer le niveau de prise en charge relatif au produit serveur correspondant. Les cas suivants :
 
    1. Le serveur HTTP a été créé en utilisant uniquement les distributions source Apache officielles, ou
-   1. Le serveur HTTP a été livré dans le cadre du système d’exploitation sur lequel il est exécuté. Exemples : serveur IBM® HTTP, serveur Oracle HTTP.
+   1. Le serveur HTTP a été livré dans le cadre du système d’exploitation sur lequel il est exécuté. Exemples : IBM® HTTP Server, Oracle HTTP Server.
 
 1. Dispatcher n’est pas disponible pour Apache 2.4.x pour les systèmes d’exploitation Windows.
 
@@ -282,9 +295,9 @@ Les serveurs web suivants sont pris en charge pour une utilisation avec Dispatch
 
 ### Navigateurs pris en charge pour l’interface utilisateur de création {#supported-browsers-for-authoring-user-interface}
 
-L’interface utilisateur d’Adobe Experience Manager fonctionne avec les plates-formes clientes suivantes : Tous les navigateurs sont testés avec l’ensemble par défaut de plug-ins et de modules complémentaires.
+L’interface d’utilisation d’Adobe Experience Manager fonctionne avec les plateformes clientes suivantes : Tous les navigateurs sont testés avec l’ensemble par défaut de plug-ins et de modules complémentaires.
 
-L’interface utilisateur d’AEM est optimisée pour les grands écrans (généralement les notebooks et les ordinateurs de bureau) et le format de tablette (comme Apple iPad ou Microsoft® Surface). Le format de téléphone n’est pas pris en charge.
+L’interface d’utilisation d’AEM est optimisée pour les grands écrans (généralement les notebooks et les ordinateurs de bureau) et le format de tablette (comme Apple iPad ou Microsoft® Surface). Le format de téléphone n’est pas pris en charge.
 
 >[!NOTE]
 >
@@ -297,7 +310,7 @@ L’interface utilisateur d’AEM est optimisée pour les grands écrans (géné
   <tr>
    <td><strong>Navigateur</strong></td>
    <td><strong>Prise en charge de l’interface utilisateur<br /> </strong></td>
-   <td><strong>Prise en charge de l’interface utilisateur classique</strong></td>
+   <td><strong>Prise en charge de l’interface d’utilisation classique</strong></td>
   </tr>
   <tr>
    <td><strong>Google Chrome (Evergreen)</strong></td>
@@ -320,7 +333,7 @@ L’interface utilisateur d’AEM est optimisée pour les grands écrans (géné
    <td>A : pris en charge</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox, dernier ESR [1]</td>
+   <td>Mozilla Firefox dernier ESR [1]</td>
    <td>A : pris en charge</td>
    <td>A : pris en charge</td>
   </tr>
@@ -352,7 +365,7 @@ L’interface utilisateur d’AEM est optimisée pour les grands écrans (géné
 
 ### Navigateurs pris en charge pour les sites web {#supported-browsers-for-websites}
 
-En règle générale, la prise en charge des navigateurs pour les sites web rendus par AEM Sites dépend de l’implémentation des modèles de page d’AEM, de la conception et de la sortie des composants, et relève donc de celui ou celle qui met en œuvre ces parties.
+En règle générale, la prise en charge des navigateurs pour les sites web rendus par AEM Sites dépend de la mise en œuvre des modèles de page d’AEM, de la conception et de la sortie des composants, et relève donc de celui ou celle qui met en œuvre ces parties.
 
 ### Clients et clientes WebDAV {#webdav-clients}
 
@@ -428,7 +441,7 @@ Si vous utilisez Dynamic Media sous Linux®, les conditions préalables ci-dess
 >
 >**Architecture NUMA :** les systèmes dotés de processeurs AMD64 et Intel® EM64T sont généralement configurés en tant que plateformes NUMA (Non Uniform Memory Architecture). En d’autres termes, le noyau construit plusieurs nœuds de mémoire au moment du démarrage plutôt que de construire un seul nœud de mémoire.
 >
->La construction de plusieurs nœuds peut entraîner un épuisement de la mémoire sur un ou plusieurs nœuds avant que d’autres nœuds ne s’épuisent. Lorsque l’épuisement de la mémoire se produit, le noyau peut décider d’interrompre les processus (par exemple, la diffusion d’images ou le serveur de plateformes) même s’il existe de la mémoire disponible.
+>La construction de plusieurs nœuds peut entraîner un épuisement de la mémoire sur un ou plusieurs nœuds avant que d’autres nœuds ne s’épuisent. Lorsque l’épuisement de la mémoire se produit, le noyau peut décider d’interrompre les processus (par exemple, Image Server ou Platform Server) même s’il existe de la mémoire disponible.
 >
 >Par conséquent, si vous exécutez un tel système, Adobe recommande de désactiver NUMA à l’aide de l’option de démarrage **numa=off** pour éviter que le noyau n’arrête ces processus.
 
@@ -462,7 +475,7 @@ Pour Windows x86 :
 * 10.9.x et versions ultérieures
 * Pris en charge uniquement à des fins d’évaluation et de démonstration
 
-### Conditions requises pour PDF Generator {#software-support-for-pdf-generator}
+### Considérations relatives à PDF Generator {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
@@ -506,16 +519,16 @@ OpenOffice 4.1.15 </td>
 
 * ® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10® 11 ou Microsoft® Windows Terminal Server 2025
 * Processeur d’1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
-* Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
-* Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
-* Mémoire graphique – 128 Mo de GPU (256 Mo recommandé)
+* Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
+* Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
+* Mémoire graphique : 128 Mo de GPU (256 Mo recommandés).
 * 2,35 Go d’espace disponible sur le disque dur
 * Résolution d’écran de 1 024 x 768 pixels ou plus
 * Accélération matérielle de la vidéo (facultatif)
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
 * Droits d’administration pour l’installation de Designer
 * Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits pour AEM Forms Designer 32 bits
-* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) 64 bits pour AEM Forms Designer 64 bits (pour les piles OSGI et JEE)
+* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 64 bits pour AEM Forms Designer 64 bits (pour les piles OSGI et JEE)
 
 [Installer et configurer AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
 
@@ -525,15 +538,15 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 * **Systèmes d’exploitation :**
 
-   * Linux® (32 bits, prise en charge des applications 32 bits sur les systèmes 64 bits).
+  * Linux® (32 bits, prise en charge des applications 32 bits sur les systèmes 64 bits).
 
-   * Windows Server
-   * macOS X (64 bits)
+  * Windows Server
+  * macOS X (64 bits)
 
 * **Formats de fichier :** JPEG, PNG, TIFF, PDF, INDD, AI et EPS.
 
 ### Conditions requises pour qu’AEM Assets traite les ressources lourdes en métadonnées sous Linux® {#assetsonlinux}
 
-Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Il améliore les performances de traitement des ressources contenant une grande quantité de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Le processus XMPFilesProcessor nécessite la bibliothèque GLIBC_2.14 pour fonctionner. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Il améliore les performances de traitement des ressources contenant une grande quantité de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
 
 Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[&#128279;](https://business.adobe.com/in/support/main.html)

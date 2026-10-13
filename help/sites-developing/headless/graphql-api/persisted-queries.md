@@ -5,13 +5,25 @@ exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 98%
-
+source-wordcount: '1444'
+ht-degree: 96%
 ---
-
 # Requêtes GraphQL persistantes {#persisted-queries-caching}
 
 Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur Adobe Experience Manager (AEM). Elles peuvent être demandées avec une requête GET par les applications clientes. La réponse d’une requête GET peut être mise en cache au niveau du Dispatcher et du réseau de diffusion de contenu (CDN), ce qui améliore finalement les performances de l’application cliente qui la demande. Elle est en cela différente de la requête GraphQL standard, qui est exécutée à l’aide de requêtes POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
@@ -32,7 +44,7 @@ Les requêtes persistantes doivent toujours utiliser le point d’entrée associ
 La requête a accès à tous les modèles de fragment de contenu.
 * Configuration(s) de sites spécifiques et point(s) d’entrée
 La création d’une requête persistante pour une configuration Sites spécifique nécessite un point d’entrée spécifique à la configuration Sites correspondant (pour fournir l’accès aux modèles de fragment de contenu associés).
-Par exemple, pour créer une requête persistante spécifique à la configuration Sites WKND, une configuration Sites spécifique à WKND correspondante et un point d’entrée spécifique à WKND doivent être créés à l’avance.
+Par exemple, pour créer une requête persistante spécifique à la configuration WKND Sites, une configuration de sites spécifique à WKND correspondante et un point d’entrée spécifique à WKND doivent être créés à l’avance.
 
 >[!NOTE]
 >

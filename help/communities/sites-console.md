@@ -10,13 +10,20 @@ role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2963'
+source-wordcount: '3201'
 ht-degree: 1%
-
 ---
-
 # Console Sites Communities {#communities-sites-console}
 
 La console Sites de communautés permet d’accéder aux éléments suivants :
@@ -103,12 +110,12 @@ Dans le panneau Modèle de site, le titre, la description, la racine du site, la
 
   Nom de la page racine du site qui apparaît dans l’URL.
 
-   * Vérifiez à nouveau le nom, car il ne peut pas être facilement modifié une fois le site créé.
-   * L’URL de base ( `https://server:port/site root/site name)` s’affiche sous le `Community Site Name` .
+  * Vérifiez à nouveau le nom, car il ne peut pas être facilement modifié une fois le site créé.
+  * L’URL de base ( `https://server:port/site root/site name)` s’affiche sous le `Community Site Name` .
 
-   * Pour obtenir une URL valide, ajoutez un code de langue de base + « .html »
+  * Pour obtenir une URL valide, ajoutez un code de langue de base + « .html »
 
-     *Par exemple*, `https://localhost:4502/content/sites/mysight/en.html`
+    *Par exemple*, `https://localhost:4502/content/sites/mysight/en.html`
 
 * Menu **Modèle de site de la communauté**
 
@@ -144,8 +151,8 @@ Lors de la création ou de la sélection d’une image, gardez à l’esprit les
 * L’image est épinglée sur le bord gauche de la fenêtre du navigateur.
 * Il n’y a pas de redimensionnement de l’image, de sorte que lorsque la largeur de l’image est...
 
-   * Inférieure à la largeur du navigateur, l’image se répète horizontalement.
-   * L’image semble être recadrée si elle est supérieure à la largeur du navigateur.
+  * Inférieure à la largeur du navigateur, l’image se répète horizontalement.
+  * L’image semble être recadrée si elle est supérieure à la largeur du navigateur.
 
 * Sélectionnez **Suivant**.
 
@@ -179,32 +186,32 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant des fonction
 * **Autoriser l’enregistrement des utilisateurs**
 
   Si cette case est cochée, les visiteurs du site peuvent devenir membres de la communauté en s’auto-enregistrant.
-Si cette option n’est pas cochée, le site communautaire est *restreint* et les visiteurs du site doivent être affectés au groupe de membres du site communautaire, effectuer une demande ou recevoir une invitation par e-mail. Si cette option n’est pas cochée, l’accès anonyme ne doit pas être autorisé.
-Désélectionnez un site communautaire *privé*. La valeur par défaut est cochée.
+  Si cette option n’est pas cochée, le site communautaire est *restreint* et les visiteurs du site doivent être affectés au groupe de membres du site communautaire, effectuer une demande ou recevoir une invitation par e-mail. Si cette option n’est pas cochée, l’accès anonyme ne doit pas être autorisé.
+  Désélectionnez un site communautaire *privé*. La valeur par défaut est cochée.
 
 * **Autoriser l’accès anonyme**
 
   Si cette case est cochée, le site communautaire est *ouvert* et tout visiteur du site peut y accéder.
-Si cette option n&#39;est pas cochée, seuls les membres connectés peuvent accéder au site.
-Désélectionnez un site communautaire *privé*. La valeur par défaut est cochée.
+  Si cette option n&#39;est pas cochée, seuls les membres connectés peuvent accéder au site.
+  Désélectionnez un site communautaire *privé*. La valeur par défaut est cochée.
 
 * **Autoriser la messagerie**
 
   Si cette case est cochée, les membres peuvent envoyer des messages les uns aux autres et au groupe au sein du site communautaire.
-Si cette option n’est pas cochée, la messagerie n’est pas configurée pour la communauté.
-La valeur par défaut n’est pas cochée.
+  Si cette option n’est pas cochée, la messagerie n’est pas configurée pour la communauté.
+  La valeur par défaut n’est pas cochée.
 
 * **Autoriser les connexions sociales : Facebook**
 
   Si cette case est cochée, autorisez les visiteurs du site à se connecter avec leurs informations d’identification de compte Facebook. La [configuration cloud Facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) sélectionnée doit être configurée pour ajouter des utilisateurs au groupe des membres du site communautaire une fois le site communautaire créé.
-Si cette option n’est pas cochée, aucune connexion Facebook n’est présentée.
-Laissez cette option non cochée pour un site communautaire *privé*. La valeur par défaut n’est pas cochée.
+  Si cette option n’est pas cochée, aucune connexion Facebook n’est présentée.
+  Laissez cette option non cochée pour un site communautaire *privé*. La valeur par défaut n’est pas cochée.
 
 * **Autoriser les connexions sociales : Twitter**
 
   Si cette case est cochée, autorisez les visiteurs du site à se connecter avec leurs informations d’identification de compte Twitter. La [configuration du cloud Twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) sélectionnée doit être configurée pour ajouter des utilisateurs au groupe des membres du site communautaire une fois le site communautaire créé.
-Si cette option n’est pas cochée, aucun identifiant Twitter ne s’affiche.
-Laissez cette option non cochée pour un site communautaire *privé*. La valeur par défaut n’est pas cochée.
+  Si cette option n’est pas cochée, aucun identifiant Twitter ne s’affiche.
+  Laissez cette option non cochée pour un site communautaire *privé*. La valeur par défaut n’est pas cochée.
 
 >[!NOTE]
 >
@@ -267,7 +274,7 @@ Le paramètre global de modération du contenu créé par l’utilisateur est co
 * **Activer Analytics**
 
   Disponible uniquement lorsqu’Adobe Analytics a été [configuré](/help/communities/analytics.md) pour les fonctionnalités de Communities.
-La valeur par défaut n’est pas cochée. Lorsque cette case est cochée, un menu de sélection supplémentaire s’affiche :
+  La valeur par défaut n’est pas cochée. Lorsque cette case est cochée, un menu de sélection supplémentaire s’affiche :
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
@@ -304,39 +311,39 @@ La valeur par défaut n’est pas cochée. Lorsque cette case est cochée, un me
 
 * **Sélectionnez les options de traduction de votre site communautaire**
 
-   * **Traduire la page entière**
+  * **Traduire la page entière**
 
-     Si cette option est sélectionnée, tout le contenu créé par l’utilisateur sur une page est traduit dans la langue de base de la page.
+    Si cette option est sélectionnée, tout le contenu créé par l’utilisateur sur une page est traduit dans la langue de base de la page.
 
-     La valeur par défaut est *non sélectionné*.
+    La valeur par défaut est *non sélectionné*.
 
-   * **Traduire la sélection uniquement**
+  * **Traduire la sélection uniquement**
 
-     Si cette option est sélectionnée, une option de traduction s’affiche en regard de chaque publication, permettant à chaque publication d’être traduite dans la langue de base de la page.
-La valeur par défaut est *sélectionné*.
+    Si cette option est sélectionnée, une option de traduction s’affiche en regard de chaque publication, permettant à chaque publication d’être traduite dans la langue de base de la page.
+    La valeur par défaut est *sélectionné*.
 
 * **Sélectionner les options de persistance**
 
-   * **Traduire les contributions à la demande de l’utilisateur et les conserver par la suite**
-Si cette option est sélectionnée, le contenu n’est pas traduit tant qu’une requête n’a pas été effectuée. Une fois traduit, le texte traduit est stocké dans le référentiel.
+  * **Traduire les contributions à la demande de l’utilisateur et les conserver par la suite**
+    Si cette option est sélectionnée, le contenu n’est pas traduit tant qu’une requête n’a pas été effectuée. Une fois traduit, le texte traduit est stocké dans le référentiel.
 
-     La valeur par défaut est *non sélectionné*.
+    La valeur par défaut est *non sélectionné*.
 
-   * **Ne pas conserver les traductions**
+  * **Ne pas conserver les traductions**
 
-     Si cette option est sélectionnée, les traductions ne sont pas stockées dans le référentiel.
+    Si cette option est sélectionnée, les traductions ne sont pas stockées dans le référentiel.
 
-     Si cette option n’est pas sélectionnée, les traductions sont conservées.
+    Si cette option n’est pas sélectionnée, les traductions sont conservées.
 
-     La valeur par défaut est *non sélectionné*.
+    La valeur par défaut est *non sélectionné*.
 
 * **Rendu intelligent**
 
   Sélectionnez l’une des options suivantes :
 
-   * `Always show contributions in the original language` (par défaut)
-   * `Always show contributions in user preferred language`
-   * `Show contributions in user preferred language for only logged-in users`
+  * `Always show contributions in the original language` (par défaut)
+  * `Always show contributions in user preferred language`
+  * `Show contributions in user preferred language for only logged-in users`
 
 ### Étape 4 : Créer Un Site De Communautés {#step-create-communities-site}
 
@@ -409,17 +416,17 @@ Le panneau STRUCTURE permet de modifier la structure initialement créée à par
 * Glissez-déposez des [fonctions de communauté](/help/communities/functions.md) supplémentaires dans la structure du site.
 * Sur une instance d’une fonction de communauté dans la structure du site :
 
-   * **`gear icon`**
+  * **`gear icon`**
 
-     Modifiez les paramètres, notamment le titre d’affichage et le nom de l’URL, ainsi que les [groupes de membres privilégiés](/help/communities/users.md#privilegedmembersgroups).
+    Modifiez les paramètres, notamment le titre d’affichage et le nom de l’URL, ainsi que les [groupes de membres privilégiés](/help/communities/users.md#privilegedmembersgroups).
 
-   * **`trashcan icon`**
+  * **`trashcan icon`**
 
-     Supprimez (supprimez) des fonctions de la structure du site.
+    Supprimez (supprimez) des fonctions de la structure du site.
 
-   * **`grid icon`**
+  * **`grid icon`**
 
-     Modifiez l’ordre des fonctions tel qu’affiché dans la barre de navigation de niveau supérieur du site.
+    Modifiez l’ordre des fonctions tel qu’affiché dans la barre de navigation de niveau supérieur du site.
 
 >[!NOTE]
 >
@@ -448,7 +455,7 @@ Le panneau CONCEPTION permet d’appliquer un nouveau thème :
 * [Thème des sites de la communauté](#community-site-theme)
 * [Valorisation de marque des sites de la communauté](#community-site-branding)
 
-   * Faites défiler jusqu’au bas du panneau pour modifier l’image de marque.
+  * Faites défiler jusqu’au bas du panneau pour modifier l’image de marque.
 
 ### Modifier les paramètres {#modify-settings}
 
@@ -510,8 +517,8 @@ Pour plus d’informations, voir [Gestion des utilisateurs et des groupes d’ut
 
 >[!NOTE]
 >
->Si [Autoriser la connexion au réseau social : Facebook](#user-management) est activé, une fois que le groupe d’utilisateurs `community-<site-name>-<uid>-members`
->est créé, le [service cloud Facebook](/help/communities/social-login.md#createafacebookcloudservice) appliqué doit être configuré pour ajouter des utilisateurs à ce groupe.
+>Si [Autoriser la connexion au réseau social : Facebook](#user-management) est activé, une fois le groupe d’utilisateurs `community-<site-name>-<uid>-members`
+>Une fois créé, le [service cloud Facebook](/help/communities/social-login.md#createafacebookcloudservice) appliqué doit être configuré pour ajouter des utilisateurs à ce groupe.
 
 ## Erreur de configuration d’pour l’authentification {#configure-for-authentication-error}
 
@@ -523,7 +530,7 @@ Pour rediriger correctement, une fois qu’un site a été configuré et envoyé
 * Connectez-vous avec des droits d’administrateur.
 * Accédez à la [console web](/help/sites-deploying/configuring-osgi.md).
 
-   * Par exemple, [:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+  * Par exemple, [&#128279;](https://localhost:4503/system/console/configMgr).
 
 * Localisez `Adobe Granite Login Selector Authentication Handler`.
 * Sélectionnez l’icône `pencil` pour pouvoir ouvrir la configuration à modifier.
@@ -544,7 +551,7 @@ Sur la même instance de publication AEM configurée avec un mappage de page de 
 
 * Accédez à la page d’accueil du site de la communauté .
 
-   * Par exemple, [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
+  * Par exemple, [&#128279;](https://localhost:4503/content/sites/engage/en.html)
 
 * Sélectionnez Déconnexion.
 * Sélectionnez Connexion.

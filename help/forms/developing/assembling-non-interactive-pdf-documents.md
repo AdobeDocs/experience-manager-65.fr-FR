@@ -10,13 +10,27 @@ role: Developer
 exl-id: 4677b9e5-3811-4de3-b4f4-9574b5898486
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1819'
 ht-degree: 100%
-
 ---
-
 # Assembler des documents PDF non interactifs {#assembling-non-interactive-pdf-documents}
 
 Vous pouvez assembler un document PDF non interactif lorsque vous utilisez un formulaire PDF interactif en tant quʼentrée. Prenons lʼexemple suivant : vous disposez dʼun formulaire que les utilisateurs peuvent utiliser pour saisir des données dans ses champs. Vous pouvez transmettre ce formulaire au service Assembler. Ce dernier renvoie alors un document PDF qui empêche les utilisateurs de saisir des données dans ses champs. Ce document est un formulaire PDF non interactif. L’illustration suivante est un exemple de prêt immobilier, sous la forme dʼun formulaire interactif.
@@ -39,11 +53,11 @@ En revanche, lors de la transmission de plusieurs documents PDF d’entrée au s
 
 Ce document DDX contient lʼélément `NoXFA`, qui indique au service Assembler de renvoyer un document PDF non interactif.
 
-Le service Assembler peut assembler des documents PDF non interactifs sans que le service Output fasse partie de votre installation AEM Forms si le documentu PDF d’entrée est basé sur un formulaire Acrobat ou un formulaire XFA statique. Cependant, si le document PDF d’entrée est un formulaire XFA dynamique, le service Output doit faire partie de votre installation AEM Forms. Si le service Output ne fait pas partie de votre installation AEM Forms lorsquʼun formulaire XFA dynamique est assemblé, une exception est générée. Consultez la section [Créer des flux de sortie pour les documents](/help/forms/developing/creating-document-output-streams.md).
+Le service Assembler peut assembler des documents PDF non interactifs sans que le service Output fasse partie de votre installation AEM Forms si le document PDF d’entrée est basé sur un formulaire Acrobat ou un formulaire XFA statique. Cependant, si le document PDF d’entrée est un formulaire XFA dynamique, le service Output doit faire partie de votre installation AEM Forms. Si le service Output ne fait pas partie de votre installation AEM Forms lorsquʼun formulaire XFA dynamique est assemblé, une exception est générée. Consultez la section [Créer des flux de sortie pour les documents](/help/forms/developing/creating-document-output-streams.md).
 
 >[!NOTE]
 >
->Avant dʼentamer cette section, il est recommandé de se familiariser avec l’assemblage de documents PDF à l’aide du service Assembler. Cette section nʼaborde pas les concepts tels que la création dʼun objet de collection contenant des documents dʼentrée, ou lʼapprentissage de lʼextraction des résultats de lʼobjet de collection retourné. (Consultez la section [Assembler par programmation des documents PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)).
+>Avant de lire cette section, il est recommandé de se familiariser avec l’assemblage de documents PDF à l’aide du service Assembler. Cette section nʼaborde pas les concepts tels que la création dʼun objet de collection contenant des documents dʼentrée ou la manière dʼextraire les résultats de lʼobjet de collection retourné. (Consultez la section [Assembler par programmation des documents PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)).
 
 >[!NOTE]
 >
@@ -74,7 +88,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utility.jar (obligatoire si AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss)
 
 Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge et différent de JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
@@ -154,7 +168,7 @@ Assemblez un document PDF non interactif à l’aide de l’API du service Assem
    * Créez un objet `java.io.File` et assurez-vous que l’extension du nom du fichier est .pdf.
    * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier. Veillez à utiliser l’objet `Document` renvoyé par la méthode `invokeOneDocument`.
 
-* « Démarrage rapide (mode SOAP) : assembler un document PDF non interactif à l’aide de l’API Java. »
+* « Démarrage rapide (mode SOAP) : assembler un document PDF non-interactif à l’aide de l’API Java »
 
 ## Assembler un document PDF non interactif à l’aide de l’API Web Service {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 
@@ -176,12 +190,12 @@ Assemblez un document PDF non interactif en utilisant l’API du Service Assembl
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Référencez un document DX existant.
+1. Référencez un document DDX existant.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document DDX.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document DDX et le mode d’ouverture du fichier.

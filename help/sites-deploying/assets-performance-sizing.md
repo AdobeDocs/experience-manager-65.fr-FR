@@ -9,13 +9,22 @@ exl-id: fbe15e1b-830b-4752-bd02-0d239a90bc68
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
-source-wordcount: '1205'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1224'
 ht-degree: 100%
-
 ---
-
 # Guide de performances des ressources{#assets-performance-guide}
 
 La gestion des ressources numériques (DAM) est souvent utilisée dans les cas où les performances sont importantes. Cependant, la configuration de la gestion des ressources numériques standard contient plusieurs composants matériels et logiciels qui peuvent avoir un impact sur les performances. Ce document fournit ce qui suit :
@@ -75,7 +84,7 @@ La légende suivante décrit les zones présentant un risque pour les performanc
 
 **Outil de recherche de la gestion des ressources numériques** Les problèmes de performances interactive, souvent rencontrés lors des recherches, sont dus à une utilisation élevée du processeur en raison de nombreux utilisateurs simultanés ou d’autres processus utilisant le processeur sur la même instance. Passer de machines virtuelles à des machines dédiées et s’assurer qu’aucun autre service ne s’exécute sur l’ordinateur peut contribuer à améliorer les performances. Si une charge élevée de l’UC est due au traitement des ressources et à de nombreux utilisateurs et utilisatrices simultanés, Day recommande d’ajouter des nœuds de cluster supplémentaires.
 
-**Processus de gestion des ressources numériques AEM** Les workflows dont l’exécution est longue pendant l’intégration des ressources entraînent des problèmes de performances du traitement des ressources. Selon le type de ressources qui sont en cours de traitement, cela peut indiquer une surutilisation de l’UC. Day recommande de réduire le nombre d’autres processus s’exécutant sur le système et d’augmenter le nombre d’UC disponibles en ajoutant des nœuds de cluster.
+**Processus de gestion des ressources numériques AEM** Les workflows dont l’exécution est longue pendant l’ingestion des ressources entraînent des problèmes de performances du traitement des ressources. Selon le type de ressources qui sont en cours de traitement, cela peut indiquer une surutilisation de l’UC. Day recommande de réduire le nombre d’autres processus s’exécutant sur le système et d’augmenter le nombre d’UC disponibles en ajoutant des nœuds de cluster.
 
 **Connectivité aux NAS** Une mauvaise connectivité réseau aux périphériques NAS (Network Attached Storage, stockage réseau) entraîne des problèmes de performances des interactions, car l’accès à de nouveaux nœuds pendant le traitement des ressources est ralenti en raison de la latence du réseau. En outre, un débit réseau lent altère le débit, mais aussi les performances de traitement des ressources, car le chargement et l’enregistrement des rendus sont ralentis.
 
@@ -83,7 +92,7 @@ Les raisons d’une latence et d’un débit faibles dans un NAS sont la topolo
 
 **NAS (Network Attached Storage)** La surutilisation de systèmes de stockage réseau (NAS) peut entraîner différents problèmes :
 
-* Un espace disque faible est un problème rencontré fréquemment, qui peut être résolu en dimensionnant correctement un projet de gestion des ressources numériques. 
+* Un espace disque faible est un problème rencontré fréquemment, qui peut être résolu en dimensionnant correctement un projet de gestion des ressources numériques.
 * Une latence de disque élevée se traduit par des temps d’accès lents pour CRX et peut entraîner des problèmes de performances des interactions.
 * Un débit de disque lent peut entraîner des performances faibles pour la gestion des ressources numériques CQ5.
 

@@ -10,13 +10,25 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6582'
+source-wordcount: '6584'
 ht-degree: 99%
-
 ---
-
 # Adobe Experience Manager avec MongoDB{#aem-with-mongodb}
 
 Cet article vise à améliorer les connaissances sur les tâches et les considérations nécessaires pour déployer AEM (Adobe Experience Manager) avec MongoDB.
@@ -78,7 +90,7 @@ Une mémoire RAM insuffisante entraîne une dégradation importante des performa
 
 Pour faciliter le processus de test de charge, le ratio suivant entre le jeu de travail et la taille totale de la base de données peut être supposé :
 
-* 1:10 pour le stockage sur SSD
+* 1:10 pour le stockage SSD
 * 1:3 pour le stockage sur disque dur
 
 Ces ratios signifient que, pour les déploiements sur SSD, 200 Go de RAM sont nécessaires pour une base de données de 2 To.
@@ -244,8 +256,8 @@ MongoDB s’exécute sur plusieurs systèmes d’exploitation, notamment un larg
 * Désactivez les paramètres Transparent Huge Pages et défragmentez. Voir [Paramètres Transparent Huge Pages](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) pour plus d’informations.
 * [Réglez les paramètres de lecture anticipée](https://docs.mongodb.com/manual/administration/production-notes/#readahead) sur les périphériques qui stockent vos fichiers de base de données afin que vous puissiez les adapter à votre cas d’utilisation.
 
-   * Pour le moteur de stockage MMAPv1, si votre jeu de travail est plus volumineux que la RAM disponible et que le modèle d’accès aux documents est aléatoire, envisagez de réduire la lecture anticipée à 32 ou 16. Évaluez différents paramètres afin de trouver une valeur optimale qui optimise la mémoire résidente et réduit le nombre d’erreurs de page.
-   * Pour le moteur de stockage WiredTiger, définissez la lecture anticipée sur 0, quel que soit le type de support de stockage (tournant, SSD, etc.). En règle générale, utilisez le paramètre de lecture anticipée recommandé à moins que les tests ne présentent un avantage mesurable, répétable et fiable dans une valeur de lecture anticipée plus élevée. La [prise en charge professionnelle de MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) peut fournir des conseils sur les configurations de lecture anticipée non nulles.
+  * Pour le moteur de stockage MMAPv1, si votre jeu de travail est plus volumineux que la RAM disponible et que le modèle d’accès aux documents est aléatoire, envisagez de réduire la lecture anticipée à 32 ou 16. Évaluez différents paramètres afin de trouver une valeur optimale qui optimise la mémoire résidente et réduit le nombre d’erreurs de page.
+  * Pour le moteur de stockage WiredTiger, définissez la lecture anticipée sur 0, quel que soit le type de support de stockage (tournant, SSD, etc.). En règle générale, utilisez le paramètre de lecture anticipée recommandé à moins que les tests ne présentent un avantage mesurable, répétable et fiable dans une valeur de lecture anticipée plus élevée. La [prise en charge professionnelle de MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) peut fournir des conseils sur les configurations de lecture anticipée non nulles.
 
 * Désactivez l’outil optimisé si vous exécutez RHEL 7/CentOS 7 dans un environnement virtuel.
 * Lorsque RHEL 7/CentOS 7 s’exécute dans un environnement virtuel, l’outil optimisé appelle automatiquement un profil de performance dérivé du débit de performances, qui définit automatiquement les paramètres de lecture anticipée à 4 Mo. Ce paramètre peut avoir un impact négatif sur les performances.
@@ -258,9 +270,9 @@ MongoDB s’exécute sur plusieurs systèmes d’exploitation, notamment un larg
 * Utilisez noatime pour le point de montage [dbPath](https://docs.mongodb.com/manual/reference/configuration-options/#storage.dbPath).
 * Configurez un nombre suffisant de handles de fichier (fs.file-max), une limite d’identifiants PID de noyau (kernel.pid_max) et un nombre maximal de threads par processus (kernel.threads-max) pour votre déploiement. Pour les systèmes volumineux, les valeurs suivantes constituent un bon point de départ :
 
-   * fs.file-max : valeur définie sur 98000,
-   * kernel.pid_max : valeur définie sur 64000,
-   * andkernel.threads-max : valeur définie sur 64000.
+  * fs.file-max : valeur définie sur 98000,
+  * kernel.pid_max : valeur définie sur 64000,
+  * andkernel.threads-max : valeur définie sur 64000.
 
 * Assurez-vous que votre système dispose d’assez d’espace d’échange. Pour plus d’informations sur la quantité nécessaire, consultez la documentation de votre système d’exploitation.
 * Assurez-vous que la valeur du message TCP keepalive par défaut du système est correctement définie. Une valeur de 300 offre souvent de meilleures performances pour les ensembles de répliques et les clusters partitionnés. Voir : [La durée de maintien en vie du protocole TCP affecte-t-elle les déploiements de MongoDB ?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) dans les questions fréquentes pour plus d’informations.

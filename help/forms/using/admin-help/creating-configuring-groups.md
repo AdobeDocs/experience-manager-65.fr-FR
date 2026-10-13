@@ -9,20 +9,34 @@ exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1585'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1590'
 ht-degree: 100%
-
 ---
-
 # Créer et configurer des groupes{#creating-and-configuring-groups}
 
 >[!NOTE]
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-La création de groupes d’utilisateurs et utilisatrices vous permet d’affecter des rôles au groupe plutôt qu’à des personnes individuelles.
+La création de groupes d’utilisateurs et utilisatrices vous permet d’affecter des rôles au groupe plutôt qu’à des utilisateurs et utilisatrices individuels.
 
 Deux types de groupes sont disponibles. Vous pouvez créer manuellement un groupe et y ajouter des personnes et d’autres groupes. Vous pouvez également créer des groupes dynamiques qui incluent automatiquement toutes les personnes qui répondent à un ensemble de règles spécifié.
 
@@ -37,28 +51,28 @@ Si vous utilisez Content Services (obsolète), vous pouvez sélectionner l’op
 1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes, puis cliquez sur Nouveau groupe.
 1. Renseignez la section Paramètres généraux et cliquez sur Suivant. Le Nom canonique et le Nom du groupe sont des attributs obligatoires.
 
-   Le Nom canonique est l’identificateur unique du groupe. Toutes les personnes et groupes d’un domaine doivent disposer d’un nom canonique unique. Cochez la case Généré par le système pour laisser User Management affecter une valeur unique au paramètre Nom canonique ou désélectionnez la case et saisissez une valeur personnalisée.
+   Le Nom canonique est l’identificateur unique du groupe. Toutes les personnes et groupes d’un domaine doivent disposer d’un nom canonique unique. Cochez la case Généré par le système pour laisser Gestion des utilisateurs affecter une valeur unique au paramètre Nom canonique ou désélectionnez la case et saisissez une valeur personnalisée pour le Nom canonique.
 
    Évitez d’utiliser les caractères de soulignement (_) dans les noms canoniques, par exemple `sample_group`. Lorsque vous recherchez des groupes à l’aide de leur nom canonique, les noms contenant des caractères de soulignement n’apparaissent pas dans les résultats.
 
-1. Pour ajouter des personnes et des groupes à ce nouveau groupe, cliquez sur Rechercher des utilisateurs/groupes et procédez comme suit :
+1. Pour ajouter des utilisateurs, des utilisatrices et des groupes à ce nouveau groupe, cliquez sur Rechercher des utilisateurs/groupes et procédez comme suit :
 
    * Dans la zone Rechercher, saisissez vos critères de recherche.
    * Dans la liste Dans, sélectionnez Utilisateurs, Groupes ou Utilisateurs et groupes.
    * Dans la liste Utilisation, sélectionnez Nom, Adresse électronique ou ID utilisateur.
    * Sélectionnez le domaine, le nombre d’éléments à afficher, puis cliquez sur Rechercher.
-   * Dans les résultats de la recherche, cochez les cases en regard des personnes et des groupes à ajouter à ce nouveau groupe, puis cliquez sur OK.
+   * Dans les résultats de la recherche, cochez les cases en regard des utilisateurs, des utilisatrices et des groupes à ajouter à ce nouveau groupe, puis cliquez sur OK.
 
 1. Cliquez sur Suivant.
 1. Pour ajouter ce nouveau groupe à d’autres groupes existants, cliquez sur Rechercher des groupes et procédez comme suit :
 
    * Dans la zone Rechercher, saisissez vos critères de recherche.
    * Sélectionnez le domaine, le nombre d’éléments à afficher, puis cliquez sur Rechercher.
-   * Dans les résultats de la recherche, cochez les cases correspondant aux groupes auxquels ajouter le nouveau groupe, puis cliquez sur OK.
+   * Dans les résultats de la recherche, cochez les cases correspondant aux groupes auxquels le nouveau groupe appartient, puis cliquez sur OK.
 
 1. Cliquez sur Suivant.
 1. Pour affecter des rôles au groupe, cliquez sur Rechercher des rôles, cochez les cases correspondant à chaque rôle à affecter au groupe, puis cliquez sur OK. Les personnes du groupe héritent des rôles affectés au niveau du groupe.
-1. Cliquez sur Finish (Terminer). 
+1. Cliquez sur Finish (Terminer).
 
 ## Créer un groupe dynamique {#create-a-dynamic-group}
 
@@ -66,14 +80,14 @@ Dans un groupe dynamique, vous ne devez pas sélectionner les personnes une à u
 
 Pour créer des groupes dynamiques, utilisez l’une de ces deux méthodes :
 
-* Activez la création automatique de groupes dynamiques à partir de domaines de messagerie, tels que @adobe.com. Lorsque vous activez cette fonction, User Management crée un groupe dynamique pour chaque domaine de messagerie unique dans la base de données AEM Forms. Utilisez une expression cron pour définir la fréquence à laquelle User Management recherche de nouveaux domaines de messagerie dans la base de données AEM Forms. Ces groupes dynamiques sont ajoutés au domaine local DefaultDom et sont appelés « Tous les utilisateurs avec un ID d’e-mail *`[email domain]`* ».
-* Créez un groupe dynamique à partir de critères spécifiques, notamment le domaine de messagerie de la personne, la description, le nom canonique et le nom de domaine. Pour faire partie du groupe dynamique, une personne doit répondre à l’ensemble des critères spécifiés. Pour définir une condition « ou », créez deux groupes dynamiques distincts et ajoutez-les tous les deux à un groupe local. Par exemple, adoptez cette démarche pour créer un groupe de personnes appartenant au domaine de messagerie @adobe.com ou dont le nom canonique contient ou=adobe.com. Notez que les personnes ne sont pas tenues de respecter ces deux conditions.
+* Activez la création automatique de groupes dynamiques à partir de domaines de messagerie, tels que @adobe.com. Lorsque vous activez cette fonction, Gestion des utilisateurs crée un groupe dynamique pour chaque domaine de messagerie unique dans la base de données AEM Forms. Utilisez une expression cron pour définir la fréquence à laquelle User Management recherche de nouveaux domaines de messagerie dans la base de données AEM Forms. Ces groupes dynamiques sont ajoutés au domaine local DefaultDom et sont appelés « Tous les utilisateurs avec un ID d’e-mail *`[email domain]`* ».
+* Créez un groupe dynamique à partir de critères spécifiques, notamment le domaine de messagerie de la personne, la description, le nom canonique et le nom de domaine. Pour faire partie du groupe dynamique, une personne doit répondre à l’ensemble des critères spécifiés. Pour définir une condition « ou », créez deux groupes dynamiques distincts et ajoutez-les tous les deux à un groupe local. Par exemple, adoptez cette démarche pour créer un groupe d’utilisateurs ou d&#39;utilisatrices appartenant au domaine de messagerie @adobe.com ou dont le nom canonique contient ou=adobe.com. Notez que les personnes ne sont pas tenues de respecter ces deux conditions.
 
 Un groupe dynamique contient uniquement des utilisateurs et des utilisatrices. Il ne peut pas contenir d’autres groupes. Cependant, un groupe dynamique peut appartenir à un groupe parent.
 
 ### Créer automatiquement des groupes dynamiques à partir de domaines de messagerie {#automatically-create-dynamic-groups-based-on-email-domains}
 
-1. Cliquez sur Paramètres > User Management > Configuration > Configurer les attributs système avancés.
+1. Cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
 1. Sous Création automatique de groupe dynamique, cochez la case.
 1. Indiquez à quel moment User Manager recherche de nouveaux domaines de messagerie. Ce moment doit être postérieur à la synchronisation des domaines, car la création de groupes dynamiques n’est logique que si la synchronisation des domaines est terminée.
 
@@ -113,18 +127,18 @@ Un groupe dynamique contient uniquement des utilisateurs et des utilisatrices. I
 
 1. Cliquez sur Suivant.
 1. Pour affecter des rôles au groupe dynamique, cliquez sur Rechercher des rôles, cochez les cases correspondant à chaque rôle à affecter au groupe, puis cliquez sur OK. Les personnes du groupe héritent des rôles affectés au niveau du groupe.
-1. Cliquez sur Finish (Terminer). 
+1. Cliquez sur Finish (Terminer).
 
 ## Afficher les détails concernant un groupe {#view-details-about-a-group}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
+1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
 1. Dans la liste Dans, sélectionnez Groupe, puis cliquez sur Rechercher. Les résultats de la recherche apparaissent au bas de la page. Vous pouvez trier la liste en cliquant sur l’un des en-têtes de colonne.
 1. Cliquez sur le nom du groupe dont vous souhaitez afficher les détails. La page Détails du groupe s’affiche.
 1. Pour afficher les membres directs du groupe, cliquez sur Entités enfants.
 
 ## Modifier un groupe {#edit-a-group}
 
-1. Dans la console d’administration, cliquez sur Paramètres > User Management > Utilisateurs et groupes.
+1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
 1. Pour rechercher le groupe à modifier, procédez comme suit :
 
    * Dans la zone Rechercher, saisissez vos critères de recherche.
@@ -149,11 +163,11 @@ Un groupe dynamique contient uniquement des utilisateurs et des utilisatrices. I
 1. Pour modifier des affectations de rôles, cliquez sur l’onglet Affectations de rôles et procédez comme suit :
 
    * Pour rechercher des rôles à affecter au groupe, cliquez sur Rechercher des rôles.
-   * Pour ajouter un nouveau rôle, activez la case à cocher qui lui correspond, cliquez sur OK, puis sur Enregistrer.
+   * Pour ajouter un rôle, activez la case à cocher qui lui correspond, cliquez sur OK, puis sur Enregistrer.
    * Pour retirer l’affectation d’un rôle, cochez la case correspondante, cliquez sur Retirer, puis sur Enregistrer.
 
 ## Supprimer un groupe {#delete-a-group}
 
-1. Dans la console d’administration, cliquez sur Paramètres > User Management > Utilisateurs et groupes.
+1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs > Utilisateurs et groupes.
 1. Dans la liste Rechercher, sélectionnez Groupes, puis cliquez sur Rechercher.
 1. Cochez la case située en regard du groupe à supprimer, cliquez sur Supprimer, puis sur OK.

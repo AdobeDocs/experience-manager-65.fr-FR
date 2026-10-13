@@ -10,13 +10,22 @@ exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '9584'
+source-wordcount: '9591'
 ht-degree: 88%
-
 ---
-
 # Création d’un contenu accessible (conformité au WCAG 2.0){#creating-accessible-content-wcag-conformance}
 
 >[!CAUTION]
@@ -118,8 +127,8 @@ Il existe diverses formes de contenus non textuels. Par conséquent, la valeur d
 * Les textes secondaires doivent être succincts, tout en communiquant clairement l’information essentielle du contenu non textuel.
 * Les descriptions longues (plus de 100 caractères) doivent être évitées. Si un texte secondaire nécessite plus de détails :
 
-   * fournissez une brève description dans le texte secondaire ;
-   * proposez une description plus longue, ailleurs sur la même page ou dans une page web distincte. Créez un lien vers cette description distincte en faisant de l’image un lien ou en plaçant un lien textuel en regard de l’image.
+  * fournissez une brève description dans le texte secondaire ;
+  * proposez une description plus longue, ailleurs sur la même page ou dans une page web distincte. Créez un lien vers cette description distincte en faisant de l’image un lien ou en plaçant un lien textuel en regard de l’image.
 
 * Le texte secondaire ne doit pas répliquer le contenu fourni sous forme de texte à proximité sur la même page. N’oubliez pas que de nombreuses images sont des illustrations de points déjà couverts dans le texte d’une page. Il existe donc peut-être déjà un texte de remplacement détaillé.
 * Si le contenu non textuel est un lien vers une autre page ou un autre document et qu’il n’existe pas de texte faisant partie dudit lien, le texte secondaire de l’image doit indiquer la destination du lien. Il ne doit pas décrire l’image.
@@ -168,9 +177,9 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
   Le W3C propose plusieurs suggestions, telles que les suivantes : Chacune de ces approches a ses avantages et ses inconvénients.
 
-   * Tests de logique
-   * Utilisation de la sortie son au lieu des images
-   * Comptes d’utilisateur limités et filtres de courrier indésirable
+  * Tests de logique
+  * Utilisation de la sortie son au lieu des images
+  * Comptes d’utilisateur limités et filtres de courrier indésirable
 
 * Images d’arrière-plan :
 
@@ -201,8 +210,8 @@ Ces informations traitent du contenu web *temporel*. Cela concerne le contenu qu
 * Niveau A
 * Contenu audio ou vidéo uniquement (pré-enregistré) : pour les médias pré-enregistrés audio uniquement et les médias pré-enregistrés vidéo uniquement, les faits suivants sont vrais, sauf lorsque l’audio ou la vidéo est un média secondaire pour le texte et qu’il est clairement marqué comme tel :
 
-   * Contenu pré-enregistré audio uniquement : une alternative pour les médias temporels, qui présente des informations équivalentes pour le contenu pré-enregistré audio uniquement.
-   * Contenu pré-enregistré vidéo uniquement : une alternative pour les médias temporels ou une piste audio, qui présente des informations équivalentes pour le contenu pré-enregistré vidéo uniquement.
+  * Contenu pré-enregistré audio uniquement : une alternative pour les médias temporels, qui présente des informations équivalentes pour le contenu pré-enregistré audio uniquement.
+  * Contenu pré-enregistré vidéo uniquement : une alternative pour les médias temporels ou une piste audio, qui présente des informations équivalentes pour le contenu pré-enregistré vidéo uniquement.
 
 #### Objectif – Contenu uniquement audio ou vidéo (pré-enregistré) (1.2.1) {#purpose-audio-only-and-video-only-pre-recorded}
 
@@ -220,14 +229,14 @@ Fournir ces informations dans un format différent, tel que du texte (ou de l’
 
 * Si le contenu est un contenu audio pré-enregistré sans vidéo (podcast par exemple) :
 
-   * fournissez un lien juste avant ou après le contenu vers une transcription textuelle du contenu audio ;
+  * fournissez un lien juste avant ou après le contenu vers une transcription textuelle du contenu audio ;
 
-     La transcription doit être une page de HTML avec un équivalent textuel de tout le contenu non parlé important et parlé. Elle doit également indiquer qui parle, une description du décor, des expressions vocales et une description de tout autre son significatif.
+    La transcription doit être une page de HTML avec un équivalent textuel de tout le contenu non parlé important et parlé. Elle doit également indiquer qui parle, une description du décor, des expressions vocales et une description de tout autre son significatif.
 
 * Si le contenu est une animation ou une vidéo préenregistrée sans son :
 
-   * Fournissez un lien juste avant ou après le contenu vers une description textuelle équivalente des informations fournies par la vidéo
-   * ou une audio-description équivalente dans un format audio couramment utilisé, tel que MP3.
+  * Fournissez un lien juste avant ou après le contenu vers une description textuelle équivalente des informations fournies par la vidéo
+  * ou une audio-description équivalente dans un format audio couramment utilisé, tel que MP3.
 
 >[!NOTE]
 >
@@ -299,8 +308,8 @@ Deux méthodes peuvent être adoptées pour satisfaire ce critère de réussite.
    * Pendant les pauses dans la boîte de dialogue existante, fournissez des informations sur les modifications de la scène qui ne sont pas présentées dans la piste audio existante.
    * Fournissez une nouvelle piste audio supplémentaire et facultative contenant la piste audio originale, mais aussi des informations audio supplémentaires sur les modifications dans la scène.
 
-      * Les utilisateurs et utilisatrices peuvent passer de la piste audio existante (qui *ne contient pas* de description audio) à la nouvelle piste audio (qui *contient* une description audio).
-      * Cette méthode permet d’éviter toute perturbation pour les utilisateurs et utilisatrices qui n’ont pas besoin d’une description supplémentaire.
+     * Les utilisateurs et utilisatrices peuvent passer de la piste audio existante (qui *ne contient pas* de description audio) à la nouvelle piste audio (qui *contient* une description audio).
+     * Cette méthode permet d’éviter toute perturbation pour les utilisateurs et utilisatrices qui n’ont pas besoin d’une description supplémentaire.
 
    * Créez une deuxième version du contenu vidéo pour pouvoir ajouter des audio-descriptions plus longues. Cela permet de réduire les difficultés liées à l’insertion de descriptions audio détaillées dans les espaces entre les dialogues existants, en mettant temporairement le contenu audio et vidéo en pause aux moments appropriés. Une audio-description beaucoup plus longue peut ainsi être fournie avant que l’action ne reprenne. Comme dans l’exemple précédent, il est préférable de la fournir en tant que piste audio supplémentaire en option, afin d’éviter de perturber les utilisateurs et utilisatrices qui n’ont pas besoin de la description supplémentaire.
 
@@ -400,8 +409,8 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
   Utilisez la balise &lt;strong> ou &lt;em> element to indicate emphasis. N’utilisez pas d’en-têtes pour mettre le texte en évidence au sein des paragraphes.
 
-   * Surlignez le texte à mettre en évidence.
-   * Cliquez sur l’icône **B** (pour &lt;strong>) ou **I** (pour &lt;em>) du panneau **Propriétés** (HTML doit être sélectionné).
+  * Surlignez le texte à mettre en évidence.
+  * Cliquez sur l’icône **B** (pour &lt;strong>) ou **I** (pour &lt;em>) du panneau **Propriétés** (HTML doit être sélectionné).
 
   >[!NOTE]
   >
@@ -414,13 +423,13 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
 * **Utiliser les listes** : vous pouvez spécifier trois différents types de listes en HTML :
 
-   * L’élément `<ul>` est utilisé pour les listes *non triées* (à puces). Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`.
+  * L’élément `<ul>` est utilisé pour les listes *non triées* (à puces). Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`.
 
-     Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste à puces**.
+    Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste à puces**.
 
-   * L’élément `<ol>` est utilisé pour les listes *numérotées*. Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`.
+  * L’élément `<ol>` est utilisé pour les listes *numérotées*. Les éléments de liste individuels sont identifiés à l’aide de l’élément `<li>`.
 
-     Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste numérotée**.
+    Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste numérotée**.
 
   Si vous souhaitez modifier le contenu existant d’un type de liste spécifique, mettez en surbrillance le texte approprié et sélectionnez le type de liste approprié. Comme dans l’exemple précédent illustrant comment le texte du paragraphe est saisi, les éléments de liste appropriés sont automatiquement ajoutés à votre HTML, mais vous pouvez l’afficher en mode d’édition de la source.
 
@@ -432,10 +441,10 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
   Les tableaux de données doivent être identifiés à l’aide des éléments de tableau HTML :
 
-   * un élément `<table>` ;
-   * un élément `<tr>` pour chaque ligne du tableau ;
-   * un élément `<th>` pour chaque en-tête de ligne et de colonne ;
-   * un élément `<td>` pour chaque cellule de données.
+  * un élément `<table>` ;
+  * un élément `<tr>` pour chaque ligne du tableau ;
+  * un élément `<th>` pour chaque en-tête de ligne et de colonne ;
+  * un élément `<td>` pour chaque cellule de données.
 
   >[!NOTE]
   >
@@ -443,9 +452,9 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
   En outre, les tableaux accessibles utilisent les éléments et attributs suivants :
 
-   * L’élément `<caption>` sert à fournir un sous-titre visible pour le tableau. Les légendes apparaissent par défaut centrées au-dessus du tableau, mais peuvent être positionnées de manière appropriée à l’aide de CSS. La légende est associée au tableau par programmation, ce qui en fait une méthode utile pour fournir une introduction au contenu.
-   * L’élément `<h3 class="summary">` aide les utilisateurs non voyants à comprendre plus facilement les informations présentées dans un tableau, en fournissant une synthèse de ce qu’un utilisateur voyant peut voir. Cela s’avère particulièrement utile lorsque des mises en page de tableau complexes ou non conventionnelles sont utilisées (cet attribut n’est pas affiché dans le navigateur, il est uniquement lu pour les technologies d’assistance).
-   * L’attribut `scope` de l’élément `<th>` sert à indiquer si une cellule représente un en-tête pour une ligne ou une colonne particulière. Une approche similaire consiste à utiliser les attributs header et id dans des tableaux complexes, où les cellules de données peuvent être associées à un ou plusieurs en-têtes.
+  * L’élément `<caption>` sert à fournir un sous-titre visible pour le tableau. Les légendes apparaissent par défaut centrées au-dessus du tableau, mais peuvent être positionnées de manière appropriée à l’aide de CSS. La légende est associée au tableau par programmation, ce qui en fait une méthode utile pour fournir une introduction au contenu.
+  * L’élément `<h3 class="summary">` aide les utilisateurs non voyants à comprendre plus facilement les informations présentées dans un tableau, en fournissant une synthèse de ce qu’un utilisateur voyant peut voir. Cela s’avère particulièrement utile lorsque des mises en page de tableau complexes ou non conventionnelles sont utilisées (cet attribut n’est pas affiché dans le navigateur, il est uniquement lu pour les technologies d’assistance).
+  * L’attribut `scope` de l’élément `<th>` sert à indiquer si une cellule représente un en-tête pour une ligne ou une colonne particulière. Une approche similaire consiste à utiliser les attributs header et id dans des tableaux complexes, où les cellules de données peuvent être associées à un ou plusieurs en-têtes.
 
   >[!NOTE]
   >
@@ -453,8 +462,8 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
   En ajoutant un **Tableau**, vous pouvez configurer les **Propriétés du tableau** à l’aide de la boîte de dialogue.
 
-   * une **légende** appropriée.
-   * Idéalement, supprimez toutes les valeurs par défaut pour **Largeur**, **Hauteur**, **Bordure**, **Marge intérieure des cellules** et **Espacement des cellules**. En effet, ces propriétés peuvent être définies dans une feuille de style globale.
+  * une **légende** appropriée.
+  * Idéalement, supprimez toutes les valeurs par défaut pour **Largeur**, **Hauteur**, **Bordure**, **Marge intérieure des cellules** et **Espacement des cellules**. En effet, ces propriétés peuvent être définies dans une feuille de style globale.
 
   ![Boîte de dialogue Propriétés du tableau.](assets/chlimage_1-20a.png)
 
@@ -599,17 +608,17 @@ Si vous utilisez la couleur comme vecteur d’information, vous devez fournir un
 
 * [Comprendre le critère de réussite 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 * [Comment remplir le critère de réussite 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Conseils pour obtenir un rapport de contraste de 3 :1, avec une liste de couleurs adaptées au Web](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Conseils pour obtenir un rapport de contraste de 3:1, avec une liste de couleurs adaptées au Web](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
 ### Contraste (minimum) (1.4.3) {#contrast-minimum}
 
 * Critère de réussite 1.4.3
 * Niveau AA
-* Contraste (minimum) : la présentation visuelle du texte et des images du texte a un rapport de contraste d’au moins 4,5:1, à l’exception des éléments suivants :
+* Contraste (minimum) : la présentation visuelle du texte et des images du texte a un rapport de contraste d’au moins 4,5:1, sauf dans les cas suivants :
 
-   * Texte grand format : le texte à grande échelle et les images de texte à grande échelle ont un rapport de contraste d’au moins 3 :1.
-   * Texte décoratif : aucune exigence de contraste pour le texte ou le texte sous forme d’image intégré à un composant d’interface utilisateur inactif. Il s’agit d’un élément purement décoratif, invisible de tous ou intégré à une partie d’une image contenant un autre contenu significatif.
-   * Logotypes : aucune exigence de contraste pour le texte faisant partie d’un logo ou d’un nom de marque.
+  * Texte grand format : le texte à grande échelle et les images de texte à grande échelle ont un rapport de contraste d’au moins 3:1.
+  * Texte décoratif : aucune exigence de contraste pour le texte ou le texte sous forme d’image intégré à un composant d’interface utilisateur inactif. Il s’agit d’un élément purement décoratif, invisible de tous ou intégré à une partie d’une image contenant un autre contenu significatif.
+  * Logotypes : aucune exigence de contraste pour le texte faisant partie d’un logo ou d’un nom de marque.
 
 #### Objectif – Contraste (minimum) (1.4.3) {#purpose-contrast-minimum}
 
@@ -626,9 +635,9 @@ Les personnes atteintes de certaines déficiences visuelles peuvent être incapa
 
 Assurez-vous que le texte contraste suffisamment avec son arrière-plan. Les rapports de contraste dépendent de la taille et du style du texte en question :
 
-* Pour un texte dont la taille est inférieure à 18 points (ou 14 points en gras), le rapport de contraste entre le texte/les images du texte et l’arrière-plan doit être d’au moins 4,5 :1.
+* Pour un texte dont la taille est inférieure à 18 points (ou 14 points en gras), le rapport de contraste entre le texte/les images du texte et l’arrière-plan doit être d’au moins 4,5:1.
 * Pour un texte d’au moins 18 points (ou 14 points en gras), le rapport de contraste doit être d’au moins 3:1.
-* Si un arrière-plan est répété, l’arrière-plan autour de tout texte doit être ombré de sorte que le rapport de 4,5:1 ou 3:1 soit conservé.
+* Si un arrière-plan est modélisé, l’arrière-plan autour de tout texte doit être ombré de sorte que le rapport 4,5:1 ou 3:1 soit conservé.
 
 Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que l’[analyseur de contraste des couleurs du groupe Paciello](https://www.paciellogroup.com/resources/contrast-analyser.html) ou le [vérificateur de contraste des couleurs WebAIM](https://webaim.org/resources/contrastchecker/). Ces outils vous permettent de vérifier des paires de couleurs et de signaler tout problème de contraste.
 
@@ -647,8 +656,8 @@ S’il est impossible de respecter les niveaux de contraste recommandés, fourni
 * Niveau AA
 * Texte sous forme d’image : si les technologies utilisées peuvent réaliser la présentation visuelle, du texte est utilisé pour véhiculer l’information plutôt que du texte sous forme d’image sauf dans les cas suivants :
 
-   * Personnalisable : l’image du texte peut être personnalisée visuellement en fonction des besoins de l’utilisateur ou de l’utilisatrice.
-   * Essentiel : une présentation particulière du texte est essentielle à la transmission de l’information.
+  * Personnalisable : l’image du texte peut être personnalisée visuellement en fonction des besoins de l’utilisateur ou de l’utilisatrice.
+  * Essentiel : une présentation particulière du texte est essentielle à la transmission de l’information.
 
 >[!NOTE]
 >
@@ -677,15 +686,15 @@ Si des images de texte doivent être utilisées, utilisez le CSS pour remplacer 
 * Niveau A
 * Mettre en pause, arrêter, masquer : pour toute information en mouvement, clignotante, défilante ou mise à jour automatiquement, tous les points suivants sont vrais :
 
-   * Déplacement, clignotement, défilement : pour toute information en mouvement, clignotante ou défilante qui
-      * (a) démarre automatiquement,
-      * (b) dure plus de cinq secondes, et
-      * (c) est présenté en parallèle avec d&#39;autres contenus,
-il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de le suspendre, de l’arrêter ou de le masquer, sauf si le mouvement, le clignotement ou le défilement fait partie intégrante de l’activité ;
-   * Mise à jour automatique : pour toute information mise à jour automatiquement qui
-      * (a) démarre automatiquement, et
-      * (b) est présenté en parallèle avec d&#39;autres contenus,
-il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de la suspendre, de l’arrêter ou de la masquer, ou de contrôler la fréquence de la mise à jour, sauf si la mise à jour automatique fait partie intégrante de l’activité.
+  * Déplacement, clignotement, défilement : pour toute information en mouvement, clignotante ou défilante qui
+    * (a) démarre automatiquement,
+    * (b) dure plus de cinq secondes, et
+    * (c) est présenté en parallèle avec d&#39;autres contenus,
+      il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de le suspendre, de l’arrêter ou de le masquer, sauf si le mouvement, le clignotement ou le défilement fait partie intégrante de l’activité ;
+  * Mise à jour automatique : pour toute information mise à jour automatiquement qui
+    * (a) démarre automatiquement, et
+    * (b) est présenté en parallèle avec d&#39;autres contenus,
+      il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de la suspendre, de l’arrêter ou de la masquer, ou de contrôler la fréquence de la mise à jour, sauf si la mise à jour automatique fait partie intégrante de l’activité.
 
 Remarques :
 
@@ -780,13 +789,13 @@ Avant tout, veillez à ce que l’objectif d’un lien soit clairement décrit d
 
 * Mauvais exemple :
 
-   * Texte : pour en savoir plus sur les classes du soir en automne 2010, cliquez ici.
-   * Motif : le lien est ambigu et n’indique pas clairement sa destination.
+  * Texte : pour en savoir plus sur les classes du soir en automne 2010, cliquez ici.
+  * Motif : le lien est ambigu et n’indique pas clairement sa destination.
 
 * Bon exemple :
 
-   * Texte : Cours du soir de l’automne 2010 – Détails.
-   * Motif : il est possible d’améliorer le texte du lien en adaptant légèrement le texte et sa position.
+  * Texte : Cours du soir de l’automne 2010 – Détails.
+  * Motif : il est possible d’améliorer le texte du lien en adaptant légèrement le texte et sa position.
 
 Les liens doivent être formulés de manière cohérente sur toutes les pages, en particulier pour les barres de navigation. Par exemple, si un lien vers une page spécifique est nommé **Publications** sur une page, utilisez ce texte sur d’autres pages pour garantir la cohérence.
 

@@ -11,13 +11,20 @@ role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 solution: Experience Manager
 feature: Communities
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1739'
 ht-degree: 1%
-
 ---
-
 # Console des groupes communautaires {#community-groups-console}
 
 La console Groupes permet d’accéder à la création de groupes de communautés lorsque la [structure de modèle](/help/communities/sites-console.md#step1) d’un site de communauté inclut la fonction [groupes](/help/communities/functions.md#groups-function).
@@ -56,8 +63,8 @@ Pour accéder à la console Groupes :
 * Sélectionnez un dossier de site communautaire existant afin de pouvoir l’ouvrir.
 * Sélectionnez une instance d’un site communautaire dans le dossier .
 
-   * La structure du site de la communauté doit inclure une fonction de groupes.
-   * Ces captures d’écran sont issues du tutoriel de prise en main après la [création de groupes sur l’instance de publication](/help/communities/published-site.md).
+  * La structure du site de la communauté doit inclure une fonction de groupes.
+  * Ces captures d’écran sont issues du tutoriel de prise en main après la [création de groupes sur l’instance de publication](/help/communities/published-site.md).
 
   ![create-group](assets/create-group.png)
 
@@ -78,7 +85,7 @@ Pour accéder à la console Groupes :
 * **Titre du groupe communautaire**
 
   Titre affiché pour le groupe.
-Le titre s’affiche sur le site publié pour le groupe.
+  Le titre s’affiche sur le site publié pour le groupe.
 
 * **Description du groupe communautaire**
 
@@ -87,7 +94,7 @@ Le titre s’affiche sur le site publié pour le groupe.
 * **Racine du groupe communautaire**
 
   Chemin d’accès racine au groupe.
-La racine par défaut est le site parent, mais la racine peut être déplacée vers n’importe quel emplacement du site web. Il n’est pas recommandé de le modifier.
+  La racine par défaut est le site parent, mais la racine peut être déplacée vers n’importe quel emplacement du site web. Il n’est pas recommandé de le modifier.
 
 * **Autres langues de groupe de la communauté disponibles** menu
 
@@ -97,10 +104,10 @@ La racine par défaut est le site parent, mais la racine peut être déplacée v
 
   Nom de la page racine du groupe qui apparaît dans l’URL. Évitez d’utiliser les caractères de soulignement (_) et les mots-clés tels que les ressources et la configuration dans le nom du groupe.
 
-   * Vérifiez à nouveau le nom, car il ne peut pas être facilement modifié une fois le groupe créé.
-   * L’URL de base s’affiche sous le `Community Group Name` .
-   * Pour obtenir une URL valide, ajoutez « .html »
-     *par exemple*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+  * Vérifiez à nouveau le nom, car il ne peut pas être facilement modifié une fois le groupe créé.
+  * L’URL de base s’affiche sous le `Community Group Name` .
+  * Pour obtenir une URL valide, ajoutez « .html »
+    *par exemple*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * Menu **Modèle de groupe de la communauté**
 
@@ -134,8 +141,8 @@ Lors de la création ou de la sélection d’une image, gardez à l’esprit les
 * L’image est épinglée sur le bord gauche de la fenêtre du navigateur
 * Il n’y a pas de redimensionnement de l’image, de sorte que lorsque la largeur de l’image est :
 
-   * Inférieure à la largeur du navigateur, l’image est répétée horizontalement.
-   * L’image apparaît recadrée si elle est supérieure à la largeur du navigateur.
+  * Inférieure à la largeur du navigateur, l’image est répétée horizontalement.
+  * L’image apparaît recadrée si elle est supérieure à la largeur du navigateur.
 
 ### Étape 3 : Paramètres {#step-settings}
 
@@ -239,14 +246,14 @@ Le panneau STRUCTURE permet de modifier la structure initialement créée à par
 * Glissez-déposez des [fonctions de communauté](/help/communities/functions.md) supplémentaires dans la structure du site.
 * Sur une instance d’une fonction de communauté dans la structure du site :
 
-   * **`Gear icon`**
-Modifiez les paramètres, notamment le titre d’affichage, l’URL et les [groupes de membres privilégiés](/help/communities/users.md#privilegedmembersgroups).
+  * **`Gear icon`**
+    Modifiez les paramètres, notamment le titre d’affichage, l’URL et les [groupes de membres privilégiés](/help/communities/users.md#privilegedmembersgroups).
 
-   * **`Trashcan icon`**
-Supprimez (supprimez) des fonctions de la structure du site.
+  * **`Trashcan icon`**
+    Supprimez (supprimez) des fonctions de la structure du site.
 
-   * **`Grid icon`**
-Modifiez l’ordre des fonctions tel qu’affiché dans la barre de navigation de niveau supérieur du site.
+  * **`Grid icon`**
+    Modifiez l’ordre des fonctions tel qu’affiché dans la barre de navigation de niveau supérieur du site.
 
 >[!CAUTION]
 >
@@ -271,7 +278,7 @@ Le panneau CONCEPTION permet de modifier le thème :
 * [Thème de groupe de communautés](#community-group-theme)
 * [Valorisation marque groupe communautés](#community-group-branding)
 
-   * Faites défiler jusqu’au bas du panneau pour modifier l’image de marque.
+  * Faites défiler jusqu’au bas du panneau pour modifier l’image de marque.
 
 ### Modifier les paramètres {#modify-settings}
 

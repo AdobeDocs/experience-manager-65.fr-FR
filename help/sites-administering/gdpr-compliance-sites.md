@@ -9,13 +9,31 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Developer, Leader, User
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '902'
 ht-degree: 100%
-
 ---
-
 # AEM Sites – Préparation au RGPD{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -77,11 +95,11 @@ Le ou la propriétaire du site doit mettre en œuvre un composant d’exclusion 
 Ces instructions implémentent l’inclusion comme valeur par défaut. Ainsi, un visiteur ou une visiteuse du site web doit clairement donner son accord avant que toute donnée personnelle soit stockée dans la persistance du navigateur (côté client).
 
 * Le composant d’exclusion doit être inclus à chaque fois que le composant ContextHub est inclus.
-* Les conditions générales relatives au RGPD pour le site web doivent être présentées à ce visiteur ou à cette visiteuse du site web, pour lui permettre de :
+* Les conditions générales relatives au RGPD pour le site web doivent être présentées à la personne qui visite le site web, pour lui permettre de :
 
-   * d’accepter ;
-   * de refuser ;
-   * de modifier leur choix précédent ;
+  * d’accepter ;
+  * de refuser ;
+  * de modifier leur choix précédent ;
 
 * Si un visiteur ou une visiteuse du site accepte les conditions générales du site, le cookie d’exclusion ContextHub doit être supprimé :
 
@@ -108,49 +126,49 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur ou u
 
 * Utiliser la console du navigateur, par exemple :
 
-   * Chrome :
+  * Chrome :
 
-      * Ouvrez Outils de développement > Application > Stockage :
+    * Ouvrez Outils de développement > Application > Stockage :
 
-         * Stockage local > (site web) > ContextHubPersistence
-         * Stockage de session > (site web) > ContextHubPersistence
-         * Cookies > (site web) > SessionPersistence
+      * Stockage local > (site web) > ContextHubPersistence
+      * Stockage de session > (site web) > ContextHubPersistence
+      * Cookies > (site web) > SessionPersistence
 
-   * Firefox :
+  * Firefox :
 
-      * Ouvrez Outils de développement > Stockage :
+    * Ouvrez Outils de développement > Stockage :
 
-         * Stockage local > (site web) > ContextHubPersistence
-         * Stockage de session > (site web) > ContextHubPersistence
-         * Cookies > (site web) > SessionPersistence
+      * Stockage local > (site web) > ContextHubPersistence
+      * Stockage de session > (site web) > ContextHubPersistence
+      * Cookies > (site web) > SessionPersistence
 
-   * Safari :
+  * Safari :
 
-      * Ouvrez Préférences > Avancé > Afficher le menu Développer dans la barre de menus
-      * Ouvrez Développer > Afficher la console JavaScript
+    * Ouvrez Préférences > Avancé > Afficher le menu Développer dans la barre de menus
+    * Ouvrez Développer > Afficher la console JavaScript
 
-         * Console > Stockage > Stockage local > (site web) > ContextHubPersistence
-         * Console > Stockage > Stockage de session > (site web) > ContextHubPersistence
-         * Console > Stockage > Cookies > (site web) > ContextHubPersistence
+      * Console > Stockage > Stockage local > (site web) > ContextHubPersistence
+      * Console > Stockage > Stockage de session > (site web) > ContextHubPersistence
+      * Console > Stockage > Cookies > (site web) > ContextHubPersistence
 
-   * Internet Explorer :
+  * Internet Explorer :
 
-      * Ouvrez Outils de développement > Console :
+    * Ouvrez Outils de développement > Console :
 
-         * localStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * document.cookie
+      * localStorage.getItem(&#39;ContextHubPersistence&#39;)
+      * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
+      * document.cookie
 
 * Utiliser l’API ContextHub dans la console du navigateur :
 
-   * ContextHub fournit les couches de persistance des données suivantes :
+  * ContextHub fournit les couches de persistance des données suivantes :
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL (par défaut)
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL (par défaut)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     Le magasin ContextHub définit la couche de persistance à utiliser. Pour afficher l’état actuel de la persistance, tous les niveaux doivent être vérifiés.
+    Le magasin ContextHub définit la couche de persistance à utiliser. Pour afficher l’état actuel de la persistance, tous les niveaux doivent être vérifiés.
 
 Par exemple, pour afficher les données stockées dans localStorage :
 
@@ -158,28 +176,28 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur ou u
 
 * Utiliser la console du navigateur :
 
-   * Chrome - Ouvrez Outils de développement > Application > Stockage :
+  * Chrome - Ouvrez Outils de développement > Application > Stockage :
 
-      * Stockage local > (site web) > ContextHubPersistence
-      * Stockage de session > (site web) > ContextHubPersistence
-      * Cookies > (site web) > SessionPersistence
+    * Stockage local > (site web) > ContextHubPersistence
+    * Stockage de session > (site web) > ContextHubPersistence
+    * Cookies > (site web) > SessionPersistence
 
-   * Firefox - Ouvrez Outils de développement > Stockage :
+  * Firefox - Ouvrez Outils de développement > Stockage :
 
-      * Stockage local > (site web) > ContextHubPersistence
-      * Stockage de session > (site web) > ContextHubPersistence
-      * Cookies > (site web) > SessionPersistence
+    * Stockage local > (site web) > ContextHubPersistence
+    * Stockage de session > (site web) > ContextHubPersistence
+    * Cookies > (site web) > SessionPersistence
 
 * Utiliser l’API ContextHub dans la console du navigateur :
 
-   * ContextHub fournit les couches de persistance des données suivantes :
+  * ContextHub fournit les couches de persistance des données suivantes :
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL (par défaut)
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL (par défaut)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     Le magasin ContextHub définit la couche de persistance à utiliser. Pour afficher l’état actuel de la persistance, tous les niveaux doivent être vérifiés.
+    Le magasin ContextHub définit la couche de persistance à utiliser. Pour afficher l’état actuel de la persistance, tous les niveaux doivent être vérifiés.
 
 Par exemple, pour afficher les données stockées dans localStorage :
 
@@ -218,7 +236,7 @@ Pour effacer la persistance ContextHub :
 
 * Pour effacer tous les niveaux de persistance ContextHub, le code approprié doit être appelé pour tous les niveaux :
 
-   * ContextHub.Utils.Persistence.Modes.LOCAL (par défaut)
-   * ContextHub.Utils.Persistence.Modes.SESSION
-   * ContextHub.Utils.Persistence.Modes.COOKIE
-   * ContextHub.Utils.Persistence.Modes.WINDOW
+  * ContextHub.Utils.Persistence.Modes.LOCAL (par défaut)
+  * ContextHub.Utils.Persistence.Modes.SESSION
+  * ContextHub.Utils.Persistence.Modes.COOKIE
+  * ContextHub.Utils.Persistence.Modes.WINDOW

@@ -10,13 +10,29 @@ role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2358'
 ht-degree: 98%
-
 ---
-
 # Effectuer le rendu des formulaires HTML avec des barres d’outils personnalisées {#rendering-html-forms-with-customtoolbars}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -93,24 +109,24 @@ La syntaxe XML suivante présente un exemple de fichier fscmenu.xml.
 
 >[!NOTE]
 >
->Le texte en gras représente les URI des fichiers CSS et JS qui doivent être référencées.
+>Le texte en gras représente les URI des fichiers CSS et JS qui doivent être référencés.
 
 Les éléments suivants décrivent comment personnaliser une barre d’outils :
 
 * Modifiez les valeurs des attributs `fscJS`, `fscCSS`, `fscVCSS` et `fscIECSS` (dans le fichier fscmenu.xml) pour refléter les emplacements personnalisés des fichiers référencés en utilisant l’une des méthodes décrites dans cette section (par exemple, `fscJS="FSToolBarURI/scripts/fscmenu.js"`).
-* Tous les fichiers CSS et JS doivent être spécifiés. Si aucun des fichiers n’est modifié, indiquez celui par défaut à l’emplacement personnalisé. Vous pouvez obtenir les fichiers par défaut en ouvrant divers fichiers comme décrit dans cette section.
+* Tous les fichiers CSS et JS doivent être spécifiés. Si aucun des fichiers n’est modifié, placez le fichier par défaut à l’emplacement personnalisé. Vous pouvez obtenir les fichiers par défaut en ouvrant divers fichiers comme décrit dans cette section.
 * La fourniture dʼune référence absolue (par exemple, https://www.example.com/scripts/custom-vertical-fscmenu.css) pour tout fichier est autorisée.
 * Les fichiers JS et CSS requis par le nœud `div#fscmenu` sont essentiels au fonctionnement de la barre d’outils. Les nœuds `ul#fscmenuItem` individuels avoir ou non des fichiers JS ou CSS.
 
 **Modifier la valeur des paramètres régionaux**
 
-Lors de la personnalisation d’une barre d’outils, vous pouvez modifier la valeur des paramètres régionaux de celle-ci. En d’autres termes, vous pouvez l’afficher dans une autre langue. L’illustration suivante montre une barre d’outils personnalisée en langue française.
+Lors de la personnalisation d’une barre d’outils, vous pouvez modifier la valeur des paramètres régionaux de celle-ci. En d’autres termes, vous pouvez l’afficher dans une autre langue. L’illustration suivante montre une barre d’outils personnalisée affichée en français.
 
 >[!NOTE]
 >
 >Il n’est pas possible de créer une barre d’outils personnalisée dans plusieurs langues. Les barres d’outils ne peuvent pas utiliser différents fichiers XML en fonction des paramètres régionaux.
 
-Pour modifier la valeur des paramètres régionaux d’une barre d’outils, assurez-vous que le fichier fscmenu.xml contient la langue que vous souhaitez utiliser. La syntaxe XML suivante montre le fichier fscmenu.xml permettant dʼafficher une barre d’outils en français.
+Pour modifier la valeur des paramètres régionaux d’une barre d’outils, assurez-vous que le fichier fscmenu.xml contient la langue que vous souhaitez afficher. La syntaxe XML suivante montre le fichier fscmenu.xml permettant dʼafficher une barre d’outils en français.
 
 ```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
@@ -147,7 +163,7 @@ Pour modifier la valeur des paramètres régionaux d’une barre d’outils, ass
 
 >[!NOTE]
 >
->Les démarrages rapides associés à cette section utilisent ce fichier XML pour afficher une barre d’outils personnalisée en français (cf illustration précédente).
+>Les Quick Starts associés à cette section utilisent ce fichier XML pour afficher une barre d’outils personnalisée en français, comme indiqué dans l’illustration précédente.
 
 Spécifiez également une valeur de paramètres régionaux valide en appelant la méthode `setLocale` de l’objet `HTMLRenderSpec` et en transmettant une valeur de chaîne qui spécifie la valeur des paramètres régionaux. Par exemple, transmettez `fr_FR` pour spécifier le français. Le service Forms est fourni avec des barres d’outils localisées.
 
@@ -177,7 +193,7 @@ Avant de pouvoir effectuer par programmation une opération prise en charge par 
 
 **Référencer un fichier XML fscmenu personnalisé**
 
-Pour effectuer le rendu d’un formulaire HTML qui contient une barre d’outils personnalisée, référencez un fichier XML fscmenu qui décrit la barre d’outils. (Cette section fournit deux exemples de fichier XML fscmenu.) Assurez-vous également que le fichier fscmenu.xml spécifie correctement les emplacements de tous les fichiers référencés. Comme mentionné précédemment dans cette section, veillez à ce que tous les fichiers soient référencés par le mot-clé `FSToolBarURI` ou par leur emplacement absolu.
+Pour effectuer le rendu d’un formulaire HTML qui contient une barre d’outils personnalisée, indiquez un fichier XML fscmenu qui décrit la barre d’outils. (Cette section fournit deux exemples de fichier XML fscmenu.) Assurez-vous également que le fichier fscmenu.xml spécifie correctement les emplacements de tous les fichiers référencés. Comme mentionné précédemment dans cette section, veillez à ce que tous les fichiers soient référencés par le mot-clé `FSToolBarURI` ou par leur emplacement absolu.
 
 **Rendre un formulaire HTML**
 
@@ -213,7 +229,7 @@ Effectuez le rendu d’un formulaire HTML contenant une barre d’outils personn
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers clients JAR, tels qu’adobe-forms-client.jar, dans votre projet Java Classpath.
+   Incluez les fichiers JAR clients, comme adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créer un objet API Java Forms
 

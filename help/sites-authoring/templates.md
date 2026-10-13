@@ -10,13 +10,26 @@ exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '4886'
+source-wordcount: '4887'
 ht-degree: 99%
-
 ---
-
 # Création de modèles de page{#creating-page-templates}
 
 Lors de la création d’une page, vous devez sélectionner un modèle, qui est utilisé comme base pour créer la page. Le modèle définit la structure de la page créée, le contenu initial éventuel et les composants qui peuvent être utilisés.
@@ -64,29 +77,29 @@ La création d’un modèle à l’aide de la **console Modèles** et de l’**�
 
 * **Administrateur** :
 
-   * La création d’un dossier pour les modèles nécessite des droits `admin`.
+  * La création d’un dossier pour les modèles nécessite des droits `admin`.
 
-   * Ces tâches peuvent souvent être aussi effectuées par un développeur ou une développeuse.
+  * Ces tâches peuvent souvent être aussi effectuées par un développeur ou une développeuse.
 
 * **Développeur** :
 
-   * Se concentre sur les détails techniques/internes
-   * Requiert une expérience de l’environnement de développement.
-   * Fournit au créateur de modèles les informations nécessaires.
+  * Se concentre sur les détails techniques/internes
+  * Requiert une expérience de l’environnement de développement.
+  * Fournit au créateur de modèles les informations nécessaires.
 
 * **Créateur de modèles** :
 
-   * Il s’agit d’un créateur particulier qui est membre du groupe `template-authors`
+  * Il s’agit d’un créateur particulier qui est membre du groupe `template-authors`
 
-      * Ce groupe affecte les privilèges et les autorisations nécessaires.
+    * Ce groupe affecte les privilèges et les autorisations nécessaires.
 
-   * Peut configurer l’utilisation de composants et d’autres détails de haut niveau qui nécessitent les éléments suivants :
+  * Peut configurer l’utilisation de composants et d’autres détails de haut niveau qui nécessitent les éléments suivants :
 
-      * Quelques connaissances techniques
+    * Quelques connaissances techniques
 
-         * Par exemple, l’utilisation de modèles lors de la définition de chemins.
+      * Par exemple, l’utilisation de modèles lors de la définition de chemins.
 
-      * Des informations techniques provenant du développeur.
+    * Des informations techniques provenant du développeur.
 
 En raison de la nature de certaines tâches, telles que la création d’un dossier, un environnement de développement est nécessaire, lequel nécessite des connaissances/de l’expérience.
 
@@ -98,18 +111,18 @@ AEM propose désormais deux types de modèles de base :
 
 * [Modèles modifiables](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-   * Peuvent être [créés](#creatinganewtemplate) et [modifiés](#editingatemplate) à l’aide de la **console de modèles** et de l’éditeur de modèles. La **console de modèles** est accessible dans la section **Général** de la console **Outils**.
+  * Peuvent être [créés](#creatinganewtemplate) et [modifiés](#editingatemplate) à l’aide de la **console de modèles** et de l’éditeur de modèles. La **console de modèles** est accessible dans la section **Général** de la console **Outils**.
 
-   * Une fois la page créée, une connexion dynamique est maintenue entre la page et le modèle. Cela signifie que les modifications apportées à la structure du modèle et/ou au contenu verrouillé seront répercutées sur toutes les pages créées avec ce modèle. Les modifications apportées au contenu déverrouillé (c’est-à-dire initial) ne sont pas répercutées.
-   * Pour conserver les propriétés de conception, utilisez des politiques de contenu que vous pouvez définir à partir de l’éditeur de modèles. Le mode de conception de l’éditeur de page n’est plus utilisé pour les modèles modifiables.
+  * Une fois la page créée, une connexion dynamique est maintenue entre la page et le modèle. Cela signifie que les modifications apportées à la structure du modèle et/ou au contenu verrouillé seront répercutées sur toutes les pages créées avec ce modèle. Les modifications apportées au contenu déverrouillé (c’est-à-dire initial) ne sont pas répercutées.
+  * Pour conserver les propriétés de conception, utilisez des politiques de contenu que vous pouvez définir à partir de l’éditeur de modèles. Le mode de conception de l’éditeur de page n’est plus utilisé pour les modèles modifiables.
 
 * Modèles statiques
 
-   * Ces modèles sont disponibles dans différentes versions d’AEM.
-   * Ils sont [fournis par l’équipe de développement](/help/sites-developing/page-templates-static.md), et ne peuvent pas être créés ou modifiés par les créateurs.
-   * Ils sont copiés pour créer la page. Il n’y a ensuite aucune connexion dynamique (même si le nom du modèle est enregistré pour information).
-   * Utilisez le [mode Création](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
-   * Comme la modification des modèles statiques est une tâche réservée aux développeurs et développeuses, consultez le document qui leur est destiné [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md) pour en savoir plus.
+  * Ces modèles sont disponibles dans différentes versions d’AEM.
+  * Ils sont [fournis par l’équipe de développement](/help/sites-developing/page-templates-static.md), et ne peuvent pas être créés ou modifiés par les créateurs.
+  * Ils sont copiés pour créer la page. Il n’y a ensuite aucune connexion dynamique (même si le nom du modèle est enregistré pour information).
+  * Utilisez le [mode Création](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
+  * Comme la modification des modèles statiques est une tâche réservée aux développeurs et développeuses, consultez le document qui leur est destiné [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md) pour en savoir plus.
 
 Par définition, la console de modèles et l’éditeur de modèles permettent uniquement la création et l’édition de modèles modifiables. Par conséquent, ce document traite exclusivement des modèles modifiables.
 
@@ -123,7 +136,7 @@ Lors de la création d’un modèle modifiable :
 
 * Utilisez la console **Modèles**. Cette option est disponible dans la section **Général** de la console **Outils**.
 
-   * Ou directement à : [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+  * Ou directement à : [&#128279;](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Si besoin, vous pouvez [créer un dossier pour les modèles](#creating-a-template-folder-admin).
 * [Créez un modèle](#creatinganewtemplateauthor), initialement vide.
@@ -131,10 +144,10 @@ Lors de la création d’un modèle modifiable :
 * [Définissez des propriétés supplémentaires](#definingtemplatepropertiesauthor) pour le modèle, le cas échéant.
 * [Modifiez le modèle](#editingtemplates) pour définir :
 
-   * [Structure](#editingatemplatestructureauthor) : contenu prédéfini ne pouvant pas être modifié dans les pages créées avec le modèle.
-   * [Contenu initial](#editing-a-template-initial-content-author) : contenu prédéfini pouvant être modifié dans les pages créées avec le modèle.
-   * [Mise en page](#editingatemplatelayoutauthor) : pour de nombreux appareils.
-   * [Styles](/help/sites-authoring/style-system.md) : définissez les styles à utiliser avec le modèle et ses composants.
+  * [Structure](#editingatemplatestructureauthor) : contenu prédéfini ne pouvant pas être modifié dans les pages créées avec le modèle.
+  * [Contenu initial](#editing-a-template-initial-content-author) : contenu prédéfini pouvant être modifié dans les pages créées avec le modèle.
+  * [Mise en page](#editingatemplatelayoutauthor) : pour de nombreux appareils.
+  * [Styles](/help/sites-authoring/style-system.md) : définissez les styles à utiliser avec le modèle et ses composants.
 
 * [Activer le modèle](#enablingatemplateauthor) à utiliser lors de la création d’une page
 * [Autoriser le modèle](#allowing-a-template-author) pour la page ou la branche requise de votre site web
@@ -188,18 +201,18 @@ Un modèle peut avoir les propriétés suivantes :
 
 * Image
 
-   * Image à utiliser comme [miniature du modèle](/help/sites-authoring/templates.md#template-thumbnail-image) pour faciliter la sélection, par exemple dans l’assistant Créer une page.
+  * Image à utiliser comme [miniature du modèle](/help/sites-authoring/templates.md#template-thumbnail-image) pour faciliter la sélection, par exemple dans l’assistant Créer une page.
 
-      * Peut être chargé
-      * Peut être générée en fonction du contenu du modèle
+    * Peut être chargé
+    * Peut être générée en fonction du contenu du modèle
 
 * Titre
 
-   * Titre utilisé pour identifier le modèle, comme dans l’assistant **Créer une page**.
+  * Titre utilisé pour identifier le modèle, comme dans l’assistant **Créer une page**.
 
 * Description
 
-   * Description facultative permettant de fournir des informations supplémentaires sur le modèle et son utilisation. Elle peut s’afficher, par exemple, dans l’assistant **Créer une page**.
+  * Description facultative permettant de fournir des informations supplémentaires sur le modèle et son utilisation. Elle peut s’afficher, par exemple, dans l’assistant **Créer une page**.
 
 Pour afficher et/ou modifier les propriétés :
 
@@ -367,16 +380,16 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   Plusieurs mécanismes permettent d’ajouter des composants au modèle :
 
-   * Dans le navigateur **Composants** du panneau latéral.
-   * En utilisant l’option **Insérer le composant** (icône **+**) disponible dans la barre d’outils des composants figurant déjà dans le modèle ou la zone **Faire glisser les composants ici**.
+  * Dans le navigateur **Composants** du panneau latéral.
+  * En utilisant l’option **Insérer le composant** (icône **+**) disponible dans la barre d’outils des composants figurant déjà dans le modèle ou la zone **Faire glisser les composants ici**.
 
-   * En faisant glisser une ressource (à partir du navigateur **Ressources** du panneau latéral) directement sur le modèle pour générer le composant approprié in situ.
+  * En faisant glisser une ressource (à partir du navigateur **Ressources** du panneau latéral) directement sur le modèle pour générer le composant approprié in situ.
 
   Une fois ajouté, chaque composant est marqué par :
 
-   * Une bordure
-   * Une marque pour afficher le type de composant
-   * Une marque indiquant le moment où le composant a été déverrouillé
+  * Une bordure
+  * Une marque pour afficher le type de composant
+  * Une marque indiquant le moment où le composant a été déverrouillé
 
   >[!NOTE]
   >
@@ -422,8 +435,8 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   La fenêtre de configuration est divisée en deux.
 
-   * Dans la partie gauche de la boîte de dialogue, sous **Politique**, vous avez la possibilité de sélectionner une politique existante.
-   * Dans la partie droite de la boîte de dialogue, sous **Propriétés**, vous pouvez définir les propriétés spécifiques au type de composant.
+  * Dans la partie gauche de la boîte de dialogue, sous **Politique**, vous avez la possibilité de sélectionner une politique existante.
+  * Dans la partie droite de la boîte de dialogue, sous **Propriétés**, vous pouvez définir les propriétés spécifiques au type de composant.
 
   Les propriétés disponibles dépendent du composant sélectionné. Par exemple, pour un composant de texte, les propriétés définissent les options de copier-coller, de mise en forme et de style de paragraphe, entre autres options.
 
@@ -457,8 +470,8 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   Sous le titre **Propriétés**, vous pouvez définir les paramètres du composant. Le titre comporte deux onglets :
 
-   * Principal
-   * Fonctions
+  * Principal
+  * Fonctions
 
   *Principal*
 
@@ -512,19 +525,19 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   Sous le titre **Propriétés**, vous pouvez choisir les composants disponibles pour le conteneur de mises en page et définir leurs paramètres. Le titre se compose de trois onglets :
 
-   * Composants autorisés
-   * Composants par défaut
-   * Paramètres réactifs
+  * Composants autorisés
+  * Composants par défaut
+  * Paramètres réactifs
 
   *Composants autorisés*
 
   Dans l’onglet **Composants autorisés**, vous définissez les composants disponibles pour le conteneur de mises en page.
 
-   * Les composants sont regroupés par groupes de composants, qui peuvent être développés et réduits.
-   * Vous pouvez sélectionner un groupe entier en cochant le nom du groupe et tout peut être désélectionné en décochant la case.
-   * Un signe moins représente au moins un élément, mais tous les éléments d’un groupe ne sont pas sélectionnés.
-   * Une recherche est disponible pour filtrer un composant par nom.
-   * Les nombres répertoriés à droite du nom du groupe de composants représentent le nombre total de composants sélectionnés dans ces groupes, quel que soit le filtre.
+  * Les composants sont regroupés par groupes de composants, qui peuvent être développés et réduits.
+  * Vous pouvez sélectionner un groupe entier en cochant le nom du groupe et tout peut être désélectionné en décochant la case.
+  * Un signe moins représente au moins un élément, mais tous les éléments d’un groupe ne sont pas sélectionnés.
+  * Une recherche est disponible pour filtrer un composant par nom.
+  * Les nombres répertoriés à droite du nom du groupe de composants représentent le nombre total de composants sélectionnés dans ces groupes, quel que soit le filtre.
 
   ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -548,13 +561,13 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   Lorsqu’un composant a été déverrouillé :
 
-   * Un indicateur de cadenas ouvert s’affiche dans la bordure.
-   * La barre d’outils du composant sera ajustée en conséquence.
-   * Le contenu déjà saisi ne s’affichera plus en mode **Structure**.
+  * Un indicateur de cadenas ouvert s’affiche dans la bordure.
+  * La barre d’outils du composant sera ajustée en conséquence.
+  * Le contenu déjà saisi ne s’affichera plus en mode **Structure**.
 
-      * Le contenu déjà saisi est considéré comme du contenu initial et n’est visible qu’en mode **Contenu initial**.
+    * Le contenu déjà saisi est considéré comme du contenu initial et n’est visible qu’en mode **Contenu initial**.
 
-   * Les parents du composant déverrouillé ne peuvent être ni déplacés, ni coupés, ni supprimés.
+  * Les parents du composant déverrouillé ne peuvent être ni déplacés, ni coupés, ni supprimés.
 
   ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -705,30 +718,30 @@ Lors de la création de modèles, tenez compte des points suivants :
 
    * Modifications apportées à la structure :
 
-      * Elles sont immédiatement appliquées aux pages concernées.
-      * La publication du modèle modifié est toujours nécessaire pour que les visiteurs et visiteuses puissent voir les modifications.
+     * Elles sont immédiatement appliquées aux pages concernées.
+     * La publication du modèle modifié est toujours nécessaire pour que les visiteurs et visiteuses puissent voir les modifications.
 
    * Modifications apportées aux politiques de contenu et aux configurations de conception :
 
-      * Elles s’appliquent immédiatement aux pages concernées.
-      * La publication des modifications est nécessaire pour que les visiteurs et visiteuses puissent voir les modifications.
+     * Elles s’appliquent immédiatement aux pages concernées.
+     * La publication des modifications est nécessaire pour que les visiteurs et visiteuses puissent voir les modifications.
 
    * Modifications apportées au contenu initial :
 
-      * Elles s’appliquent uniquement aux pages créées après les modifications apportées au modèle.
+     * Elles s’appliquent uniquement aux pages créées après les modifications apportées au modèle.
 
    * Les modifications apportées à la mise en page dépendent du fait que le composant modifié appartient ou non aux éléments suivants :
 
-      * Structure seule : appliquée immédiatement
-      * Contenir le contenu initial : uniquement sur les pages créées après la modification
+     * Structure seule : appliquée immédiatement
+     * Contenir le contenu initial : uniquement sur les pages créées après la modification
 
    Procédez avec prudence lors des opérations suivantes :
 
    * Verrouillage ou déverrouillage de composants sur des modèles activés.
    * Cela peut avoir des effets indésirables, car les pages existantes risquent de déjà l’utiliser. En règle générale :
 
-      * Le déverrouillage des composants (qui étaient verrouillés) est manquant sur les pages existantes.
-      * Le verrouillage des composants (modifiables) empêche l’affichage de ce contenu sur les pages.
+     * Le déverrouillage des composants (qui étaient verrouillés) est manquant sur les pages existantes.
+     * Le verrouillage des composants (modifiables) empêche l’affichage de ce contenu sur les pages.
 
    >[!NOTE]
    >

@@ -9,13 +9,27 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2665'
 ht-degree: 100%
-
 ---
-
 # Configurer les paramètres du serveur {#configuring-server-settings}
 
 La page Paramètres du serveur permet d’accéder aux différents paramètres de Forms Workflow :
@@ -26,13 +40,13 @@ La page Paramètres du serveur permet d’accéder aux différents paramètres d
 
 ## Configuration des paramètres d’e-mail {#configuring-email-settings}
 
-Vous pouvez indiquer un compte e-mail pour le serveur Forms, grâce auquel il envoie des e-mails aux utilisateurs et utilisatrices ainsi qu’aux administrateurs et administratrices d’AEM Forms. Ces e-mails servent à rappeler aux utilisateurs et utilisatrices les tâches qu’ils doivent effectuer, les informer des tâches qui ont atteint la date d’échéance et informer l’administrateur ou l’administratrice des erreurs de processus.
+Vous pouvez indiquer un compte e-mail pour le Serveur Formulaires, grâce auquel il envoie des e-mails aux utilisateurs et utilisatrices ainsi qu’aux administrateurs et administratrices d’AEM Forms. Ces e-mails servent à rappeler aux utilisateurs et utilisatrices les tâches qu’ils doivent effectuer, les informer des tâches qui ont atteint la date d’échéance et informer l’administrateur ou l’administratrice des erreurs de processus.
 
 Pour activer l’envoi d’e-mails entre AEM Forms et les utilisateurs et utilisatrices, configurez les paramètres des e-mails sortants sur la page Paramètres d’e-mail. L’e-mail sortant doit utiliser un serveur SMTP.
 
 Pour permettre à AEM Forms de recevoir et de traiter les e-mails entrants envoyés par les utilisateurs et utilisatrices, créez un point d’entrée d’e-mail pour le service Complete Task. (Voir [Création d’un point d’entrée d’e-mail pour le service Complete Task](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
 
-Si vos processus sont conçus et mis en œuvre sans avoir besoin d’e-mail. Il n’est pas nécessaire de configurer les options de la page Paramètres d’e-mail.
+Si vos processus sont conçus et mis en œuvre sans nécessiter d’e-mail, il n’est pas nécessaire de configurer les options de la page Paramètres d’e-mail.
 
 ### Configurer les paramètres d’e-mails sortants {#configure-outgoing-email-settings}
 
@@ -90,7 +104,7 @@ Pour générer des notifications par e-mail pour un groupe, spécifiez une adres
 
 ### Configuration des rappels pour les utilisateurs, les utilisatrices ou les groupes {#configure-reminders-for-users-or-groups}
 
-Vous pouvez choisir d’envoyer des notifications de rappel à l’utilisateur, l’utilisatrice ou au groupe affecté à une tâche lorsque le délai d’exécution de cette tâche se rapproche. Les règles déterminant exactement quand une notification de rappel est envoyée sont décidées par l’équipe de développement du processus.
+Vous pouvez envoyer des notifications de rappel à l’utilisateur, l’utilisatrice ou au groupe affecté à une tâche lorsque le délai d’exécution de cette tâche se rapproche. Les règles déterminant exactement quand une notification de rappel est envoyée sont décidées par l’équipe de développement du processus.
 
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Paramètres du serveur > Notifications de tâche.
 1. Sous Type de notification, cliquez sur Rappel (pour les utilisateurs et utilisatrices) ou sur Groupe : rappel (pour les groupes).
@@ -98,7 +112,7 @@ Vous pouvez choisir d’envoyer des notifications de rappel à l’utilisateur, 
 1. (Notifications à l’utilisateur ou l’utilisatrice seulement) Pour inclure le formulaire et ses données en pièce jointe dans l’e-mail de rappel, sélectionnez Inclure les données de formulaire.
 1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Dans la liste Format du message , sélectionnez le format d’envoi de l’e-mail, HTML ou Texte. Le format par défaut est HTML.
+1. Dans la liste Format du message, sélectionnez le format d’envoi de l’e-mail, HTML ou Texte. Le format par défaut est HTML.
 1. Dans la liste d’encodage des e-mails , sélectionnez le format d’encodage à utiliser pour l’e-mail. La valeur par défaut est UTF-8, que la plupart des utilisateurs et utilisatrices en dehors du Japon utiliseront. Les utilisateurs et utilisatrices japonais peuvent sélectionner ISO2022-JP.
 1. Cliquez sur Enregistrer.
 
@@ -112,7 +126,7 @@ Vous pouvez envoyer des notifications d’affectation de tâche à un utilisateu
 1. (Notifications aux utilisateurs ou utilisatrices seulement) Pour inclure le formulaire et ses données en pièce jointe à l’e-mail d’affectation de tâche, sélectionnez Inclure les données de formulaire.
 1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Dans la liste Format du message , sélectionnez le format d’envoi de l’e-mail, HTML ou Texte. Le format par défaut est HTML.
+1. Dans la liste Format du message, sélectionnez le format d’envoi de l’e-mail, HTML ou Texte. Le format par défaut est HTML.
 1. Dans la liste d’encodage des e-mails , sélectionnez le format d’encodage à utiliser pour l’e-mail. La valeur par défaut est UTF-8, que la plupart des utilisateurs et utilisatrices en dehors du Japon utiliseront. Les utilisateurs et utilisatrices japonais peuvent sélectionner ISO2022-JP.
 1. Cliquez sur Enregistrer.
 
@@ -125,7 +139,7 @@ Vous pouvez envoyer des notifications d’échéance à des utilisateurs, à des
 1. Sélectionnez Activer l’échéance ou Activer le groupe - Échéance.
 1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Dans la liste Format du message , sélectionnez le format d’envoi de l’e-mail, HTML ou Texte. Le format par défaut est HTML.
+1. Dans la liste Format du message, sélectionnez le format d’envoi de l’e-mail, HTML ou Texte. Le format par défaut est HTML.
 1. Dans la liste d’encodage des e-mails , sélectionnez le format d’encodage à utiliser pour l’e-mail. La valeur par défaut est UTF-8, que la plupart des utilisateurs et utilisatrices en dehors du Japon utiliseront. Les utilisateurs et utilisatrices japonais peuvent sélectionner ISO2022-JP.
 1. Cliquez sur Enregistrer.
 
@@ -153,11 +167,11 @@ Si une branche se bloque (dont le fonctionnement s’arrête soit délibérémen
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Paramètres du serveur > Notifications de l’administrateur.
 1. Sous Type de notification, cliquez sur Branche bloquée.
 1. Sélectionnez Activer pour les branches bloquées.
-1. Dans la zone adresse e-mail, saisissez les adresses des utilisateurs et utilisatrices à avertir lorsqu’une branche se bloque. Utilisez le format utilisateur@domaine.com et séparez chaque adresse par une virgule. En règle générale, cette adresse e-mail est destinée à un administrateur ou une administratrice.
+1. Dans la zone Adresse e-mail, saisissez les adresses des utilisateurs et utilisatrices à avertir lorsqu’une branche se bloque. Utilisez le format utilisateur@domaine.com et séparez chaque adresse par une virgule. En règle générale, cette adresse e-mail est destinée à un administrateur ou une administratrice.
 1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Dans la liste Format du message , sélectionnez le format d’envoi de l’e-mail, HTML ou Texte. Le format par défaut est HTML.
-1. Dans la liste d’encodage des e-mails , sélectionnez le format d’encodage à utiliser pour l’e-mail. La valeur par défaut est UTF-8, que la plupart des utilisateurs et utilisatrices en dehors du Japon utilisent. Les utilisateurs et utilisatrices japonais peuvent sélectionner ISO2022-JP.
+1. Dans la liste Format du message, sélectionnez le format d’envoi de l’e-mail, HTML ou Texte. Le format par défaut est HTML.
+1. Dans la liste d’encodage des e-mails, sélectionnez le format d’encodage à utiliser pour l’e-mail. La valeur par défaut est UTF-8, que la plupart des utilisateurs et utilisatrices en dehors du Japon utilisent. Les utilisateurs et utilisatrices japonais peuvent sélectionner ISO2022-JP.
 1. Cliquez sur Enregistrer.
 
 ### Configurer les notifications pour les opérations bloquées {#configure-stalled-operation-notifications}
@@ -167,7 +181,7 @@ Si une opération se bloque (dont le fonctionnement s’arrête soit délibéré
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Paramètres du serveur > Notifications de l’administrateur.
 1. Sous Type de notification, cliquez sur Opération bloquée.
 1. Sélectionnez Activer pour les opération bloquées.
-1. Dans la zone e-mail, saisissez les adresses des utilisateurs et utilisatrices à avertir lorsqu’une opération se bloque. Utilisez le format utilisateur@domaine.com et séparez chaque adresse par une virgule. En règle générale, cette adresse e-mail est destinée à un administrateur ou une administratrice.
+1. Dans la zone Adresses e-mail, saisissez les adresses des utilisateurs et utilisatrices à avertir lorsqu’une opération se bloque. Utilisez le format utilisateur@domaine.com et séparez chaque adresse par une virgule. En règle générale, cette adresse e-mail est destinée à un administrateur ou une administratrice.
 1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications)
 1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, consultez [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Cliquez sur Enregistrer.
@@ -186,13 +200,13 @@ La zone Modèle de notification est un éditeur de texte enrichi qui vous permet
 
 ### Génération d’URL {#url-generation}
 
-Pour les notifications de tâche uniquement, Forms Workflow comprend deux configurations d’URL prédéfinies que vous pouvez faire glisser de la liste Génération d’URL vers la case Modèle de notification, puis personnaliser :
+Pour les notifications de tâche uniquement, Forms Workflow comprend deux configurations d’URL prédéfinies que vous pouvez faire glisser de la liste Génération d’URL vers la case Modèle de notification, puis personnaliser :
 
 * OpenTask est disponible pour les types de notification Rappel et Affectation de tâche. Cette URL fournit un lien vers la tâche dans Workspace, ce qui permet à l’utilisateur ou l’utilisatrice d’y accéder rapidement à partir de la notification par e-mail. Lorsque vous faites glisser l’URL OpenTask vers la zone Modèle de notification, l’URL est au format suivant :
 
   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
-* Demander la tâche est disponible pour les types de notification Groupe - Rappel et Groupe - Affectation de tâche. Cette URL fournit un lien vers la page des détails de la tâche dans Workspace, où l’utilisateur ou l’utilisatrice peut soit demander, soit demander et ouvrir l’élément de travail. Lorsque vous faites glisser l’URL Demander la tâche vers la zone Modèle de notification, l’URL est au format suivant :
+* ClaimTask est disponible pour les types de notification Groupe - Rappel et Groupe - Affectation de tâche. Cette URL fournit un lien vers la page des détails de la tâche dans Workspace, où l’utilisateur ou l’utilisatrice peut soit se l’attribuer, soit se l’attribuer et ouvrir l’élément de travail. Lorsque vous faites glisser l’URL ClaimTask vers la zone Modèle de notification, l’URL est au format suivant :
 
   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
@@ -282,7 +296,7 @@ L’administrateur reçoit un courrier électronique avec le contenu suivant si 
 
 `Branch 4868 has stalled! You have received this notification from ServerXYZ.`
 
-## Configuration des connexions Business Activity Monitoring {#configuring-business-activity-monitoring-connections}
+## Configurer les connexions Business Activity Monitoring {#configuring-business-activity-monitoring-connections}
 
 Business Activity Monitoring, qui est un module facultatif, fournit un ensemble de tableaux de bord opérationnels qui offrent une visibilité en temps réel de vos opérations et des indicateurs de performances clés.
 
@@ -292,6 +306,6 @@ Sur la page Paramètres de configuration BAM, vous définissez les connexions a
 1. Dans la zone Hôte BAM, saisissez le nom du serveur exécutant BAM. Le paramètre par défaut est localhost.
 1. Dans la zone Port BAM, saisissez le port à utiliser pour la connexion au serveur qui exécute BAM. Le port BAM par défaut pour JBoss est 8080, celui de WebLogic est 7001 et celui de WebSphere est 9080.
 1. Dans la zone Hôte du serveur, saisissez le nom ou l’adresse IP du serveur Forms hôte. La valeur par défaut est localhost.
-1. Dans la zone Port du serveur, saisissez le numéro de port utilisé par le serveur Forms.
+1. Dans la zone Port du serveur, saisissez le numéro de port utilisé par le Serveur Formulaires.
 1. Dans les zones Nom d’utilisateur et Mot de passe, saisissez l’identifiant et le mot de passe appropriés pour accéder au serveur BAM. Le nom d’utilisateur ou d’utilisatrice par défaut est CognosNowAdmin et le mot de passe par défaut est manager.
 1. Cliquez sur Enregistrer.

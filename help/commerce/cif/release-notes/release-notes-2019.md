@@ -1,17 +1,25 @@
 ---
-title: Notes de mise à jour d’AEM Content and Commerce 2019
+title: Notes de mise à jour d’AEM Contenu et Commerce 2019
 description: Notes de mise à jour d’Adobe Experience Manager Content and Commerce 2019.
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 100%
-
 ---
-
 # Vue d’ensemble de la version GitHub de Commerce Integration Framework
 
 ## Date de publication : novembre 2019
@@ -28,17 +36,17 @@ ht-degree: 100%
 
 * Les auteurs peuvent baliser des ressources par SKU de produit et rechercher des ressources spécifiques à un produit par SKU.
 
-* Ajout/suppression de la prise en charge des bons dans le panier
+* Ajout/suppression de la prise en charge des bons dans le panier.
 
 * Ajout d’une assistance pour le paiement Braintree dans le storefront AEM Venia.
 
 ### Améliorations {#what-is-improved-november}
 
-* Les sélecteurs de catégorie/produit ont été améliorés pour respecter la vue spécifiée pour la boutique Adobe Commerce dans une configuration à plusieurs boutiques.
+* Les sélecteurs de catégorie/produit ont été améliorés pour respecter la vue de boutique Adobe Commerce spécifiée dans une configuration à plusieurs boutiques.
 
-* Les composants basés sur React sont disponibles sous la forme d’un package npm. Cela permet à l’équipe de développement d’utiliser le package Composants React comme dépendance pour un nouveau projet React afin de permettre la personnalisation des composants existants ou le développement de nouveaux composants React.
+* Les composants basés sur React sont disponibles sous la forme d’un package npm. Cela permet aux développeurs et développeuses d’utiliser le package Composants React comme dépendance pour un nouveau projet React afin de permettre la personnalisation des composants existants ou le développement de nouveaux composants React.
 
-* La personnalisation des requêtes GraphQL est simplifiée. Cela permet à l’équipe de développement de personnaliser les composants principaux CIF avec moins de code.
+* La personnalisation des requêtes GraphQL est simplifiée. Cela permet aux développeurs et développeuses de personnaliser les composants principaux CIF avec moins de code.
 
 ## Date de publication : octobre 2019
 
@@ -72,7 +80,7 @@ ht-degree: 100%
 
 ### Nouveautés {#what-is-new-september}
 
-* La fonction de modèle multiple permet aux auteurs et aux autrices d’enrichir une page de détails de produits ou une page de liste de produits spécifique. Les auteurs et autrices peuvent facilement créer une page de détails de produits ou une page de liste de produits personnalisée et utiliser le sélecteur de produit ou de catégorie pour attribuer la page personnalisée à un ou plusieurs produits ou catégories spécifiques.
+* La fonction de modèle multiple permet aux auteurs et aux autrices d’enrichir une page de détails de produits ou une page de liste de produits spécifique. Les auteurs et autrices peuvent facilement créer une page de détails de produits ou une page de liste de produits personnalisée et utiliser le sélecteur de produit ou de catégorie pour attribuer la page personnalisée à un produit ou une catégorie spécifique.
 
 * Liaison multi-catalogue pour permettre aux auteurs de lier plusieurs catalogues dans la console de produit AEM. Les auteurs peuvent également modifier et afficher les propriétés de liaison du catalogue après la création de la liaison.
 
@@ -94,13 +102,13 @@ ht-degree: 100%
 
 ### Nouveautés {#what-is-new-august}
 
-* L’incorporation du connecteur CIF dans l’archétype CIF est devenue facultative pour offrir plus de flexibilité à l’équipe de développement.
+* L’incorporation du connecteur CIF dans l’archétype CIF est devenue facultative pour offrir plus de flexibilité aux développeurs et développeuses.
 
-* Les composants CIF ont été découplés de la mise en forme CSS spécifique à Venia pour permettre à l’équipe de développement d’appliquer le style CSS de son choix.
+* Les composants CIF ont été découplés de la mise en forme CSS spécifique à Venia pour permettre aux développeurs et développeuses d’appliquer le style CSS de leur choix.
 
 * Fonctionnalité multi-magasin multisite pour permettre l’utilisation des composants principaux CIF sur plusieurs structures de site AEM et permettre à l’implémentation du client GraphQL sous-jacent de se connecter à différentes vues de magasin ou magasins Adobe Commerce.
 
-* Le caching GraphQL es activé pour certaines requêtes GraphQL via GET HTTP afin de réduire le temps de réponse.
+* Le cache GraphQL est activé pour certaines requêtes GraphQL via GET HTTP afin de réduire le temps de réponse.
 
 * La vue de description du produit est activée dans la console Produits d’AEM.
 
@@ -110,7 +118,7 @@ ht-degree: 100%
 
 ### Améliorations {#what-is-improved-august}
 
-* La configuration du magasin Adobe Commerce a été déplacée d’OSGi vers la console Produit d’AEM afin de rendre la configuration de l’intégration plus conviviale pour la création.
+* La configuration de la boutique internet Adobe Commerce a été déplacée d’OSGi vers la console Produit d’AEM afin de rendre la configuration de l’intégration plus conviviale pour les auteurs et autrices.
 
 ## Date de publication : juillet 2019
 
@@ -124,7 +132,7 @@ ht-degree: 100%
 
 * Premier archétype CIF à fournir à l’équipe de développement, avec plusieurs options de déploiement : 1. Déployez me storefront AEM Venia. 2. Déployez un modèle automatique pour un nouveau projet. 3. Utilisez des éléments CIF dans un projet existant.
 
-* Navigation catalogue à plusieurs niveaux pour prendre en charge la navigation au travers des catégories et sous-catégories.
+* Navigation du catalogue à plusieurs niveaux pour prendre en charge la navigation au travers des catégories et sous-catégories.
 
 * Pagination sur les pages de catégorie pour une meilleure expérience utilisateur.
 
@@ -136,7 +144,7 @@ ht-degree: 100%
 
 ### Améliorations {#what-is-improved-july}
 
-* La prise en charge d’Adobe Commerce 2.3.2 et les correctifs liés aux propriétés du produit s’affichent dans la console du produit.
+* Prise en charge d’Adobe Commerce 2.3.2 et correctifs de bugs liés à l’affichage des propriétés du produit dans la console du produit.
 
 ## Date de publication : juin 2019
 

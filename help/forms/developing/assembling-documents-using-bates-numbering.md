@@ -10,13 +10,27 @@ role: Developer
 exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 100%
-
 ---
-
 # Assembler des documents à l’aide de la numérotation Bates {#assembling-documents-using-bates-numbering}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -81,14 +95,14 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utility.jar (obligatoire si AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss)
 
-Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utility.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. Pour plus d’informations sur l’emplacement de ces fichiers, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. Pour plus d’informations sur l’emplacement de ces fichiers, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un client Assembler PDF**
 
-Avant de pouvoir effectuer une opération Assembler de manière programmée, vous devez créer un client de service Assembler.
+Avant de pouvoir effectuer une opération Assembler par programmation, vous devez créer un client du service Assembler.
 
 **Référencer un document DDX existant**
 
@@ -108,7 +122,7 @@ Après avoir créé le client de service Assembler, référencé le document DDX
 
 **Extraire les résultats**
 
-Le service Assembler renvoie un objet de collection contenant les résultats de la tâche. Vous pouvez extraire le document PDF généré et les exceptions qui sont générées. Dans ce cas, un document de PDF chiffré se trouve dans l’objet de collection.
+Le service Assembler renvoie un objet de collection contenant les résultats de la tâche. Vous pouvez extraire le document PDF généré et les exceptions qui sont générées. Dans ce cas, un document PDF chiffré se trouve dans l’objet de collection.
 
 >[!NOTE]
 >
@@ -124,7 +138,7 @@ Le service Assembler renvoie un objet de collection contenant les résultats de 
 
 ## Assembler des documents avec numérotation Bates à l’aide de l’API Java {#assemble-documents-with-bates-numbering-using-the-java-api}
 
-Assemblez un document PDF qui utilise des identifiants de page uniques (numérotation Bates) à l’aide de l’API Assembler Service (Java) :
+Assemblez un document PDF qui utilise des identifiants de page uniques (numérotation Bates) à l’aide de l’API du service Assembler (Java) :
 
 1. Incluez les fichiers de projet.
 
@@ -147,8 +161,8 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
    * Pour chaque document PDF d’entrée, créez un objet `com.adobe.idp.Document` et transmettez l’objet `java.io.FileInputStream` contenant le document PDF.
    * Ajoutez une entrée à l’objet `java.util.Map` en appelant sa méthode `put` et en transmettant les arguments suivants :
 
-      * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX. Par exemple, le nom du fichier source du PDF spécifié dans le document DDX présenté dans cette section est Loan.pdf.
-      * Objet `com.adobe.idp.Document` contenant le document PDF non sécurisé.
+     * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX. Par exemple, le nom du fichier source du PDF spécifié dans le document DDX présenté dans cette section est Loan.pdf.
+     * Objet `com.adobe.idp.Document` contenant le document PDF non sécurisé.
 
 1. Définissez la valeur initiale du nombre Bates.
 
@@ -183,7 +197,7 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
 
 ## Assembler des documents avec numérotation Bates à l’aide de l’API Web Service {#assemble-documents-with-bates-numbering-using-the-web-service-api}
 
-Assemblez un document PDF qui utilise des identifiants de page uniques (numérotation Bates) à l’aide de l’API Assembler Service (Web Service) :
+Assemblez un document PDF qui utilise des identifiants de page uniques (numérotation Bates) à l’aide de l’API du service Assembler (Web Service) :
 
 1. Incluez les fichiers de projet.
 
@@ -193,7 +207,7 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
    >
    >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
-1. Créez un client Assembler PDF.
+1. Créez un client PDF Assembler.
 
    * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
    * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
@@ -201,12 +215,12 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Référencez un document DX existant.
+1. Référencez un document DDX existant.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document DDX.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document DDX et le mode d’ouverture du fichier.
@@ -223,8 +237,8 @@ Assemblez un document PDF qui utilise des identifiants de page uniques (numérot
    * Renseignez l’objet `BLOB` en affectant à sa propriété `MTOM` le contenu du tableau d’octets.
    * Créez un objet `MyMapOf_xsd_string_To_xsd_anyType`. Cet objet de collection est utilisé pour stocker les documents PDF d’entrée.
    * Pour chaque document PDF d’entrée, créez un objet `MyMapOf_xsd_string_To_xsd_anyType_Item`. Par exemple, si deux documents PDF d’entrée sont utilisés, créez deux objets `MyMapOf_xsd_string_To_xsd_anyType_Item`.
-   * Attribuez une valeur de chaîne qui représente le nom de la clé au champ `key` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX. (Répétez cette tâche pour chaque document PDF d’entrée).
-   * Attribuez lʼobjet `BLOB` qui stocke le document PDF au champ `value` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. (Répétez cette tâche pour chaque document PDF d’entrée).
+   * Attribuez une valeur de chaîne qui représente le nom de la clé au champ `key` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX. (Effectuez cette tâche pour chaque document PDF d’entrée.)
+   * Attribuez lʼobjet `BLOB` qui stocke le document PDF au champ `value` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. (Effectuez cette tâche pour chaque document PDF d’entrée.)
    * Ajoutez lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item` à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. Appelez la méthode `Add` de l’objet `MyMapOf_xsd_string_To_xsd_anyType` et transmettez-la à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. (Répétez cette tâche pour chaque document PDF d’entrée).
 
 1. Définissez la valeur initiale du nombre Bates.

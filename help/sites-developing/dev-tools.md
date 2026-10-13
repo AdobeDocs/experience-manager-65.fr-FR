@@ -9,13 +9,24 @@ exl-id: 97310ed5-f8fb-416c-8a66-68f652abeaa0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
-
+source-wordcount: '394'
+ht-degree: 99%
 ---
-
 # Outils de développement{#development-tools}
 
 Pour développer vos applications JCR, Apache Sling ou Adobe Experience Manager (AEM), les ensembles d’outils suivants sont disponibles :
@@ -25,12 +36,12 @@ Pour développer vos applications JCR, Apache Sling ou Adobe Experience Manager 
   CRXDE Lite est recommandé si vous ne disposez pas d’un accès direct au serveur CRX/AEM, lorsque vous développez une application en étendant ou en modifiant les composants prêts à l’emploi et les bundles Java™ ou lorsque vous n’avez pas besoin d’un débogueur dédié, de la saisie semi-automatique du code et de la mise en surbrillance de la syntaxe.
 
 * un ensemble constitué des éléments suivants :
-   * Un environnement de développement intégré. Par exemple : [Eclipse](/help/sites-developing/howto-projects-eclipse.md) ou [IntelliJ](/help/sites-developing/ht-intellij.md).
-   * Un outil de génération. Par exemple : [Apache Maven](/help/sites-developing/ht-projects-maven.md).
-   * FileVault qui a été développé par Adobe pour mapper un référentiel à un système de fichiers, un système de gestion de versions. Par exemple : Subversion.
-   * Un système de suivi des bugs. Par exemple : Jira.
-   * Un système central de gestion des dépendances. Par exemple : Apache Archiva.
-   * Et un système d’automatisation des générations. Par exemple : Apache Continuum.
+  * Un environnement de développement intégré. Par exemple : [Eclipse](/help/sites-developing/howto-projects-eclipse.md) ou [IntelliJ](/help/sites-developing/ht-intellij.md).
+  * Un outil de génération. Par exemple : [Apache Maven](/help/sites-developing/ht-projects-maven.md).
+  * FileVault qui a été développé par Adobe pour mapper un référentiel à un système de fichiers, un système de gestion de versions. Par exemple : Subversion.
+  * Un système de suivi des bugs. Par exemple : Jira.
+  * Un système central de gestion des dépendances. Par exemple : Apache Archiva.
+  * Et un système d’automatisation des générations. Par exemple : Apache Continuum.
 
   Cette configuration vous permet d’intégrer complètement votre application (contenu, code, configuration) dans n’importe quel environnement et processus de développement. Le lien entre les différents éléments est la représentation du système de fichiers du référentiel via FileVault, car tous les outils de développement mentionnés précédemment peuvent fonctionner avec des fichiers.
 
@@ -48,8 +59,8 @@ AEM est fourni avec d’autres outils qui facilitent le développement :
 * [Éditeur de boîtes de dialogue](/help/sites-developing/dialog-editor.md)
 * [Utilisation du traducteur pour gérer les dictionnaires](/help/sites-developing/i18n-translator.md)
 * [Gestion des packages à l’aide de Maven](/help/sites-developing/vlt-mavenplugin.md)
-* [Développement de projets AEM à l’aide d’Eclipse](/help/sites-developing/howto-projects-eclipse.md)
-* [Création de projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md)
+* [Comment développer des projets AEM à l’aide d’Eclipse](/help/sites-developing/howto-projects-eclipse.md)
+* [Comment créer des projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md)
 * [Développement de projets AEM à l’aide de IntelliJ IDEA](/help/sites-developing/ht-intellij.md)
 * [Utilisation de l’outil VLT](/help/sites-developing/ht-vlttool.md)
 * [Utilisation de l’outil de serveur proxy](/help/sites-developing/ht-proxy-server.md)
@@ -59,7 +70,7 @@ AEM est fourni avec d’autres outils qui facilitent le développement :
 Outils facilitant la création de projets :
 
 * [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype)
-* [Modèles AEM Lazybones](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
+* [Modèles AEM Lazybones](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
 
 >[!NOTE]
 >

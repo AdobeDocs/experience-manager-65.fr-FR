@@ -9,13 +9,20 @@ role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '802'
 ht-degree: 1%
-
 ---
-
 # Configuration de MongoDB pour la démonstration {#how-to-setup-mongodb-for-demo}
 
 ## Présentation {#introduction}
@@ -38,25 +45,25 @@ Cette configuration est adaptée aux environnements *hors production* tels que l
 
 * Téléchargez MongoDB depuis [&#128279;](https://www.mongodb.com/)
 
-   * Choix du système d’exploitation :
+  * Choix du système d’exploitation :
 
-      * Linux®
-      * Mac 10.8
-      * Windows 7
+    * Linux®
+    * Mac 10.8
+    * Windows 7
 
-   * Choix de la version :
+  * Choix de la version :
 
-      * Utilisez au minimum la version 2.6
+    * Utilisez au minimum la version 2.6
 
 * Configuration de base
 
-   * Suivez les instructions d’installation de MongoDB.
-   * Configurez pour mongod :
+  * Suivez les instructions d’installation de MongoDB.
+  * Configurez pour mongod :
 
-      * Pas besoin de configurer les mongos ou le partage.
+    * Pas besoin de configurer les mongos ou le partage.
 
-   * Le dossier MongoDB installé est nommé &lt;mongo-install>.
-   * Le chemin d’accès au répertoire de données défini est appelé &lt;mongo-dbpath>.
+  * Le dossier MongoDB installé est nommé &lt;mongo-install>.
+  * Le chemin d’accès au répertoire de données défini est appelé &lt;mongo-dbpath>.
 
 * MongoDB peut s’exécuter sur le même hôte qu’AEM ou à distance.
 
@@ -79,16 +86,16 @@ Les commandes suivantes sont un exemple de configuration d’un ensemble de rép
 * `bin/mongod --port 27017 --dbpath data --replSet rs0&`
 * `bin/mongo`
 
-   * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
-   * `rs.initiate(cfg)`
+  * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
+  * `rs.initiate(cfg)`
 
 * `bin/mongod --port 27018 --dbpath data1 --replSet rs0&`
 * `bin/mongod --port 27019 --dbpath data2 --replSet rs0&`
 * `bin/mongo`
 
-   * `rs.add("127.0.0.1:27018")`
-   * `rs.add("127.0.0.1:27019")`
-   * `rs.status()`
+  * `rs.add("127.0.0.1:27018")`
+  * `rs.add("127.0.0.1:27019")`
+  * `rs.status()`
 
 ## Solr {#solr}
 
@@ -96,15 +103,15 @@ Les commandes suivantes sont un exemple de configuration d’un ensemble de rép
 
 * Téléchargez Solr à partir de [Apache Lucene](https://archive.apache.org/dist/lucene/solr/) :
 
-   * Convient à tous les systèmes d&#39;exploitation.
-   * Solr version 7.0.
-   * Solr nécessite Java™ 1.7 ou une version ultérieure.
+  * Convient à tous les systèmes d&#39;exploitation.
+  * Solr version 7.0.
+  * Solr nécessite Java™ 1.7 ou une version ultérieure.
 
 * Configuration de base
 
-   * Suivez la configuration Solr « exemple ».
-   * Aucun service n’est nécessaire.
-   * Le dossier Solr installé est nommé &lt;solr-install>.
+  * Suivez la configuration Solr « exemple ».
+  * Aucun service n’est nécessaire.
+  * Le dossier Solr installé est nommé &lt;solr-install>.
 
 ### Configuration de Solr pour AEM Communities {#configure-solr-for-aem-communities}
 
@@ -124,7 +131,7 @@ Pour plus de simplicité, en utilisant la version 4.10 comme exemple, démarrez 
 
 Ce processus démarre un serveur HTTP Solr à l’aide du port par défaut 8983. Vous pouvez accéder à la console Solr pour obtenir une console Solr à des fins de test.
 
-* console Solr par défaut : [:8983/solr/](http://localhost:8983/solr/)
+* Console Solr par défaut : [&#128279;](http://localhost:8983/solr/)
 
 >[!NOTE]
 >
@@ -168,7 +175,7 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
 
 1. Affichez le contenu créé par l’utilisateur dans Solr :
 
-   * Accédez au tableau de bord Solr : [:8983/solr/](http://localhost:8983/solr/).
+   * Accédez au tableau de bord Solr : [&#128279;](http://localhost:8983/solr/).
    * L’utilisateur `core selector` sélectionner des `collection1`.
    * Sélectionnez `Query`.
    * Sélectionnez `Execute Query`.

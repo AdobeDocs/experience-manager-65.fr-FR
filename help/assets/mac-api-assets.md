@@ -1,19 +1,33 @@
 ---
 title: API HTTP [!DNL Assets].
-description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans  [!DNL Adobe Experience Manager Assets].
+description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
 feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: c7140a77-10cf-4213-a7e9-f0d69c9fb56c
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e5184d7e-fd36-480c-b5e5-d8161f2210ca
+    internal-label: Assets HTTP API
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1798'
-ht-degree: 100%
-
+ht-degree: 99%
 ---
-
 # API HTTP [!DNL Assets] {#assets-http-api}
 
 | Version | Lien de l’article |
@@ -52,7 +66,7 @@ Il expose également des éléments plus détaillés pour les modèles de donné
 
 ### Dossiers {#folders}
 
-Les dossiers sont comparables aux répertoires des systèmes de fichiers traditionnels. Il s’agit de conteneurs pour d’autres dossiers ou assertions. Les dossiers se composent des éléments suivants :
+Les dossiers sont comparables aux répertoires des systèmes de fichiers traditionnels. Il s’agit de conteneurs pour d’autres dossiers ou ressources. Les dossiers se composent des éléments suivants :
 
 **Entités** : les entités d’un dossier sont ses éléments enfants qui peuvent, à leur tour, être des dossiers et des ressources.
 
@@ -121,7 +135,7 @@ Récupère une représentation Siren d’un dossier existant et de ses entités 
 
 * 200 – OK – succès.
 * 404 – INTROUVABLE – le dossier n’existe pas ou n’est pas accessible.
-* 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
+* 500 – ERREUR INTERNE DU SERVEUR – si quelque chose d’autre se passe mal.
 
 **Réponse** : la classe de l’entité renvoyée est une ressource ou un dossier. Les propriétés des entités contenues représentent un sous-ensemble du jeu complet des propriétés de chaque entité. Pour obtenir une représentation complète de l’entité, la clientèle doit récupérer le contenu de l’URL vers laquelle pointe le lien avec l’élément `rel` `self`.
 
@@ -147,7 +161,7 @@ Un appel d’API échoue avec un code de réponse `500` si le nœud parent du ch
 
 ## Créer une ressource {#create-an-asset}
 
-Placez le fichier fourni à l’emplacement indiqué pour créer une ressource dans le référentiel de gestion des ressources numériques. Si un astérisque `*` est indiqué au lieu d’un nom de nœud, le servlet utilise le nom du paramètre ou du fichier comme nom de nœud.
+Placez le fichier fourni au chemin d’accès indiqué pour créer une ressource dans le référentiel de gestion des actifs digitaux. Si un astérisque `*` est indiqué au lieu d’un nom de nœud, le servlet utilise le nom du paramètre ou du fichier comme nom de nœud.
 
 **Paramètres** : les paramètres sont `name` pour le nom de la ressource et `file` pour la référence au fichier.
 
@@ -178,7 +192,7 @@ Met à jour un fichier binaire de ressource (rendu avec le nom d’origine). La 
 
 ## Mettre à jour les métadonnées d’une ressource {#update-asset-metadata}
 
-Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété de l’espace de noms `dc:`, l’API met à jour cette même propriété dans l’espace de noms `jcr`. L’API ne synchronise pas les propriétés des deux espaces de noms.
+Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété de l’espace de noms `dc:`, l’API met à jour cette même propriété dans l’espace de noms `jcr`. L’API ne synchronise pas les propriétés sous les deux espaces de noms.
 
 **Requête** : `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
@@ -226,7 +240,7 @@ Créer un rendu de ressource pour une ressource. Si le nom de paramètre de requ
 * 201 – CRÉÉ – si le rendu a été créé avec succès.
 * 404 – INTROUVABLE – si la ressource n’a pas été trouvée ou est inaccessible à l’aide de l’URI fourni.
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
-* 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
+* 500 – ERREUR INTERNE DU SERVEUR – si quelque chose d’autre se passe mal.
 
 ## Mettre à jour un rendu de ressource {#update-an-asset-rendition}
 
@@ -239,7 +253,7 @@ Met à jour et remplace le rendu d’une ressource par les nouvelles données bi
 * 200 – OK – si le rendu a été mis à jour avec succès.
 * 404 – INTROUVABLE – si la ressource n’a pas été trouvée ou est inaccessible à l’aide de l’URI fourni.
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
-* 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
+* 500 – ERREUR INTERNE DU SERVEUR – si quelque chose d’autre se passe mal.
 
 ## Ajouter un commentaire pour une ressource {#create-an-asset-comment}
 
@@ -254,11 +268,11 @@ Crée un commentaire de ressource.
 * 201 – CRÉÉ – si le commentaire a été créé avec succès.
 * 404 – INTROUVABLE – si la ressource n’a pas été trouvée ou est inaccessible à l’aide de l’URI fourni.
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
-* 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
+* 500 – ERREUR INTERNE DU SERVEUR – si quelque chose d’autre se passe mal.
 
 ## Copier un dossier ou une ressource {#copy-a-folder-or-asset}
 
-Copie un fichier ou une ressource disponible à l’emplacement indiqué vers une nouvelle destination.
+Copie un dossier ou une ressource disponible au chemin d’accès indiqué vers une nouvelle destination.
 
 **En-têtes de la requête** : les paramètres sont les suivants :
 
@@ -273,11 +287,11 @@ Copie un fichier ou une ressource disponible à l’emplacement indiqué vers un
 * 201 – CRÉÉ – si le dossier ou la ressource a été copié vers une destination inexistante.
 * 204 – AUCUN CONTENU – si le dossier ou la ressource a été copié vers une destination existante.
 * 412 – ÉCHEC DE LA PRÉCONDITION – s’il manque un en-tête de requête.
-* 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
+* 500 – ERREUR INTERNE DU SERVEUR – si quelque chose d’autre se passe mal.
 
 ## Déplacer un dossier ou une ressource {#move-a-folder-or-asset}
 
-Déplace un dossier ou une ressource de l’emplacement indiqué vers une nouvelle destination.
+Déplace un dossier ou une ressource du chemin d’accès indiqué vers une nouvelle destination.
 
 **En-têtes de la requête** : les paramètres sont les suivants :
 
@@ -298,11 +312,11 @@ curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.p
 * 201 – CRÉÉ – si le dossier ou la ressource a été copié vers une destination inexistante.
 * 204 – AUCUN CONTENU – si le dossier ou la ressource a été copié vers une destination existante.
 * 412 – ÉCHEC DE LA PRÉCONDITION – s’il manque un en-tête de requête.
-* 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
+* 500 – ERREUR INTERNE DU SERVEUR – si quelque chose d’autre se passe mal.
 
 ## Supprimer un dossier, une ressource ou un rendu {#delete-a-folder-asset-or-rendition}
 
-Supprime une ressource (arborescence) pour le chemin indiqué.
+Supprime une ressource (arborescence) au chemin d’accès indiqué.
 
 **Requête**
 

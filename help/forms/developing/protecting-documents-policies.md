@@ -9,13 +9,29 @@ role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '15601'
 ht-degree: 98%
-
 ---
-
 # Protéger des documents à lʼaide de politiques {#protecting-documents-with-policies}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -26,13 +42,13 @@ Le service Document Security permet aux utilisateurs d’appliquer de manière 
 
 Le service Document Security empêche la diffusion des informations au-delà de la portée des utilisateurs et des utilisatrices en permettant à ceux-ci de garder le contrôle sur la manière dont les personnes destinataires utilisent le document PDF protégé par une politique. Un utilisateur peut spécifier les personnes autorisées à ouvrir un document, limiter son utilisation et le surveiller après distribution. Un utilisateur peut également contrôler de manière dynamique l’accès à un document protégé par une politique et même révoquer dynamiquement l’accès au document.
 
-Le service Document Security protège également d’autres types de fichiers tels que les fichiers Microsoft Word (fichiers DOC). Vous pouvez utiliser l’API client Document Security pour utiliser ces types de fichiers. Les versions ci-dessous sont prises en charge :
+Le service Document Security protège également d’autres types de fichiers tels que les fichiers Microsoft Word (fichiers DOC). Vous pouvez utiliser l’API client Document Security pour travailler avec ces types de fichiers. Les versions ci-dessous sont prises en charge :
 
 * Fichiers Microsoft Office 2003 (fichiers DOC, XLS, PPT)
 * Fichiers Microsoft Office 2007 (fichiers DOCX, XLSX, PPTX)
 * Fichiers PTC Pro/E
 
-Pour plus dʼinformations, les deux sections suivantes expliquent comment utiliser les documents Word :
+Pour plus de clarté, les deux sections suivantes expliquent comment travailler avec des documents Word :
 
 * [Appliquer des politiques à des documents Word](protecting-documents-policies.md#applying-policies-to-word-documents)
 * [Supprimer des politiques de documents Word](protecting-documents-policies.md#removing-policies-from-word-documents)
@@ -45,7 +61,7 @@ Les tâches suivantes peuvent être accomplies à l’aide du service Document 
 * Appliquer des politiques à des documents PDF. Pour plus d’informations, consultez la section [Appliquer des politiques à des documents PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents).
 * Supprimer des politiques de documents PDF. Pour plus d’informations, consultez la section [Supprimer des politiques de documents PDF](protecting-documents-policies.md#removing-policies-from-pdf-documents).
 * Inspecter des documents protégés par une politique. Pour plus d’informations, consultez la section [Inspecter des documents PDF protégés par une politique](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
-* Révoquer l’accès aux documents PDF. Pour plus d’informations, consultez la section [Révoquer l’accès aux documents](protecting-documents-policies.md#revoking-access-to-documents).
+* Révoquez l’accès aux documents PDF. Pour plus d’informations, consultez la section [Révoquer l’accès aux documents](protecting-documents-policies.md#revoking-access-to-documents).
 * Rétablir l’accès aux documents révoqués. Pour plus d’informations, consultez la section [Rétablir l’accès aux documents révoqués](protecting-documents-policies.md#reinstating-access-to-revoked-documents).
 * Créer des filigranes. Pour plus d’informations, consultez la section [Créer des filigranes](protecting-documents-policies.md#creating-watermarks).
 * Rechercher des événements. Pour plus d’informations, consultez la section [Rechercher des événements](protecting-documents-policies.md#searching-for-events).
@@ -67,7 +83,7 @@ Les politiques vous permettent d’effectuer les tâches suivantes :
 
 ### Créer une politique à l’aide de services web {#creating-a-policy-using-web-services}
 
-Lors de la création d’une politique à l’aide de l’API de service web, référencez un fichier XML Portable Document Rights Language (PDRL) existant qui décrit la politique. Les autorisations de politique et le mandant sont définis dans le document PDRL. Le document XML suivant est un exemple de document PDRL.
+Lors de la création d’une règle à l’aide de l’API de services web, référencez un fichier XML Portable Document Rights Language (PDRL) existant qui décrit la règle. Les autorisations de politique et le principal sont définis dans le document PDRL. Le document XML suivant est un exemple de fichier PDRL.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -172,7 +188,7 @@ Avant d’effectuer par programmation une opération de service Document Securit
 
 **Définir les attributs de la politique**
 
-Pour créer une politique, définissez des attributs de politique. Un attribut obligatoire est le nom de la politique. Les noms des politiques doivent être uniques pour chaque ensemble de politiques. Un jeu de politiques est simplement un ensemble de politiques. Deux politiques peuvent porter le même nom si elles appartiennent à des ensembles de politiques distincts. Toutefois, deux politiques d’un seul ensemble ne peuvent pas avoir le même nom de politique.
+Pour créer une politique, définissez des attributs de politique. Un attribut obligatoire est le nom de la politique. Les noms des politiques doivent être uniques pour chaque ensemble de politiques. Un jeu de politiques est simplement un ensemble de politiques. Deux politiques peuvent porter le même nom si elles appartiennent à des ensembles de politiques distincts. Toutefois, deux politiques d’un seul ensemble de politiques ne peuvent pas avoir le même nom de politique.
 
 La période de validité est un autre attribut utile à définir. Une période de validité est la période pendant laquelle un document protégé par une politique est accessible aux destinataires autorisés. Si vous ne définissez pas cet attribut, la politique est toujours valide.
 
@@ -183,7 +199,7 @@ Une période de validité peut être définie sur l’une des options suivantes�
 * Période spécifique pour laquelle le document est accessible.
 * Toujours valide
 
-Vous pouvez spécifier uniquement une date de début, ce qui entraîne la validité de la politique après la date de début. Si vous indiquez uniquement une date de fin, la politique est valide jusqu’à la date de fin. Cependant, une exception est générée si aucune date de début et date de fin n’est définie.
+Vous pouvez spécifier uniquement une date de début, ce qui entraîne la validité de la politique après la date de début. Si vous indiquez uniquement une date de fin, la politique est valide jusqu’à la date de fin. Cependant, une exception est générée si aucune date de début ni aucune date de fin n’est définie.
 
 Lors de la définition d’attributs appartenant à une politique, vous pouvez également définir des paramètres de chiffrement. Ces paramètres de chiffrement prennent effet lorsque la politique est appliquée à un document. Vous pouvez spécifier les valeurs de chiffrement suivantes :
 
@@ -199,7 +215,7 @@ Lors de la spécification de l’option `NoEncryption`, vous ne pouvez pas défi
 
 **Créer un jeu de politiques**
 
-Une entrée de politique associe des entités, qui sont des groupes et des utilisateurs, ainsi que des autorisations à une politique. Une politique doit comporter au moins une entrée de politique. Supposons, par exemple, que vous effectuez les tâches suivantes :
+Une entrée de politique associe des principaux, qui sont des groupes et des utilisateurs et utilisatrices, ainsi que des autorisations à une politique. Une politique doit comporter au moins une entrée de politique. Supposons, par exemple, que vous effectuez les tâches suivantes :
 
 * Créez et enregistrez une entrée de politique qui permet à un groupe d’afficher uniquement un document en ligne et interdit aux destinataires de le copier.
 * Associez l’entrée de politique à la politique.
@@ -209,9 +225,9 @@ Grâce à ces actions, les destinataires ne peuvent consulter le document qu’e
 
 **Enregistrer la politique**
 
-Une nouvelle politique doit être enregistrée avant de pouvoir être utilisée. Après avoir enregistré une politique, vous pouvez l’utiliser pour protéger les documents.
+Une nouvelle politique doit être enregistrée avant de pouvoir être utilisée. Après avoir enregistré une règle, vous pouvez l’utiliser pour protéger les documents.
 
-### Créer une politique à l’aide de l’API Java {#create-a-policy-using-the-java-api}
+### Créer une règle à l’aide de l’API Java {#create-a-policy-using-the-java-api}
 
 Créez une politique à l’aide de l’API Document Security (Java) :
 
@@ -219,7 +235,7 @@ Créez une politique à l’aide de l’API Document Security (Java) :
 
    Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
-1. Créez un objet API client Document Security.
+1. Créez un objet d’API client Document Security.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `DocumentSecurityClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
@@ -264,7 +280,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * « Démarrage rapide (mode SOAP) : créer une politique à l’aide de l’API Java »
 
-### Créer une politique à l’aide de l’API Web Service {#create-a-policy-using-the-web-service-api}
+### Créer une politique à l’aide de l’API de service web {#create-a-policy-using-the-web-service-api}
 
 Créez une politique à l’aide de l’API Document Security (Web Service) :
 
@@ -325,7 +341,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Modifier les politiques {#modifying-policies}
 
-Vous pouvez modifier une politique existante à l’aide de l’API Java Document Security ou de l’API Web Service. Pour changer une politique existante, vous devez la récupérer, la modifier, puis la mettre à jour sur le serveur. Supposons, par exemple, que vous récupérez une politique existante et que vous étendez sa période de validité. Avant que la modification ne prenne effet, vous devez mettre la politique à jour.
+Vous pouvez modifier une politique existante à l’aide de l’API Java Document Security ou de l’API de service Web. Pour changer une politique existante, vous devez la récupérer, la modifier, puis la mettre à jour sur le serveur. Supposons, par exemple, que vous récupérez une politique existante et que vous étendez sa période de validité. Avant que la modification ne prenne effet, vous devez mettre la politique à jour.
 
 Vous pouvez modifier une politique lorsque les besoins de l’entreprise changent et que la politique ne reflète plus ces besoins. Au lieu de créer une nouvelle politique, vous pouvez simplement mettre à jour une politique existante.
 
@@ -340,7 +356,7 @@ Pour modifier les attributs de politique à l’aide d’un service web (par exe
 Pour modifier une politique existante, procédez comme suit :
 
 1. Incluez les fichiers de projet.
-1. Créez un objet API client Document Security.
+1. Créez un objet d’API client Document Security.
 1. Récupérez une politique existante.
 1. Modifiez les attributs de politique.
 1. Mettez à jour la politique.
@@ -359,7 +375,7 @@ Récupérez une politique existante pour la modifier. Pour récupérer une polit
 
 **Définir les attributs de la politique**
 
-Pour modifier une politique, vous modifiez la valeur des attributs de politique. Le seul attribut de politique que vous ne pouvez pas modifier est l’attribut name. Par exemple, pour modifier la période de bail hors ligne de la politique, vous pouvez modifier la valeur de l’attribut de période de bail hors ligne de la politique.
+Pour modifier une règle, vous modifiez la valeur des attributs de la règle. Le seul attribut de règle que vous ne pouvez pas modifier est l’attribut &quot;name&quot;. Par exemple, pour modifier la durée de bail hors ligne de la règle, vous pouvez modifier la valeur de l’attribut de durée de bail hors ligne de la règle.
 
 Lorsque vous modifiez la période de bail hors ligne d’une politique à l’aide d’un service web, le champ `offlineLeasePeriod` de l’interface `PolicySpec` est ignoré. Pour mettre à jour la période de bail hors ligne, modifiez l’élément `OfflineLeasePeriod` dans le document XML PDRL. Référencez ensuite le document XML PDRL mis à jour à l’aide de l’élément de données `policyXML` de l’interface `PolicySpec`.
 
@@ -369,7 +385,7 @@ Lorsque vous modifiez la période de bail hors ligne d’une politique à l’ai
 
 **Mettre à jour la politique**
 
-Avant que les modifications apportées à une politique ne prennent effet, vous devez mettre à jour la politique avec le service Document Security. Les modifications apportées aux politiques qui protègent des documents sont mises à jour la prochaine fois que le document protégé par une politique sera synchronisé avec le service Document Security.
+Avant que les modifications apportées à une règle ne prennent effet, vous devez mettre à jour la règle avec le service Document Security. Les modifications apportées aux politiques qui protègent des documents sont mises à jour la prochaine fois que le document protégé par une politique sera synchronisé avec le service Document Security.
 
 ### Modifier les politiques existantes à l’aide de l’API Java {#modify-existing-policies-using-the-java-api}
 
@@ -379,7 +395,7 @@ Modifiez une politique existante à l’aide de l’API Document Security (Java)
 
    Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
-1. Créez un objet API client Document Security.
+1. Créez un objet d’API client Document Security.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `RightsManagementClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
@@ -402,9 +418,9 @@ Modifiez une politique existante à l’aide de l’API Document Security (Java)
 
 **Exemples de code**
 
-Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous à la section Démarrage rapide (mode SOAP) : modifier une politique à l’aide de la section API Java.
+Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous à la section Démarrage rapide (mode SOAP) : modifier une politique à l’aide de l’API Java.
 
-### Modifier les politiques existantes à l’aide de l’API Web Service {#modify-existing-policies-using-the-web-service-api}
+### Modifier les politiques existantes à l’aide de l’API de service web {#modify-existing-policies-using-the-web-service-api}
 
 Modifiez une politique existante à l’aide de l’API Document Security (Web Service) :
 
@@ -439,7 +455,7 @@ Modifiez une politique existante à l’aide de l’API Document Security (Web S
 
 1. Définissez les attributs de la politique.
 
-   Modifiez les attributs de la politique pour répondre aux besoins de votre entreprise.
+   Modifiez les attributs de la politique pour répondre aux exigences métier.
 
 1. Mettez à jour la politique.
 
@@ -454,7 +470,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Supprimer des politiques {#deleting-policies}
 
-Vous pouvez supprimer une politique existante à l’aide de l’API Java Document Security ou de l’API de service Web. Une fois une politique supprimée, elle ne peut plus être utilisée pour protéger les documents. Toutefois, les documents existants protégés par une politique qui utilisent la politique restent protégés. Vous pouvez supprimer une politique lorsqu’une politique plus récente est disponible.
+Vous pouvez supprimer une politique existante à l’aide de l’API Java Document Security ou de l’API de service Web. Une fois une politique supprimée, elle ne peut plus être utilisée pour protéger les documents. Toutefois, les documents déjà protégés par cette politique restent protégés. Vous pouvez supprimer une politique lorsqu’une politique plus récente est disponible.
 
 >[!NOTE]
 >
@@ -478,9 +494,9 @@ Avant d’effectuer une opération de service Document Security par programme, v
 
 **Supprimer la politique**
 
-Pour supprimer une politique, vous spécifiez la politique à supprimer et l’ensemble de politiques auquel elle appartient. L’utilisateur dont les paramètres sont utilisés pour appeler AEM Forms doit être autorisé à supprimer la politique. Dans le cas contraire, une exception se produit. De même, si vous tentez de supprimer une politique qui n’existe pas, une exception se produit.
+Pour supprimer une politique, vous spécifiez la politique à supprimer et l’ensemble de politiques auquel elle appartient. L’utilisateur dont les paramètres sont utilisés pour appeler AEM Forms doit disposer de l’autorisation de supprimer la politique ; dans le cas contraire, une exception se produit. De même, si vous tentez de supprimer une règle qui n’existe pas, une exception se produit.
 
-### Supprimer des politiques à l’aide de l’API Java {#delete-policies-using-the-java-api}
+### Supprimer des règles à l’aide de l’API Java {#delete-policies-using-the-java-api}
 
 Supprimez une politique à l’aide de l’API Document Security (Java) :
 
@@ -488,7 +504,7 @@ Supprimez une politique à l’aide de l’API Document Security (Java) :
 
    Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
-1. Créez un objet API client Document Security.
+1. Créez un objet d’API client Document Security.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `RightsManagementClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
@@ -505,9 +521,9 @@ Supprimez une politique à l’aide de l’API Document Security (Java) :
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (mode SOAP) : créer une politique à l’aide de l’API Java »
+* « Démarrage rapide (mode SOAP) : suppression d’une politique à l’aide de l’API Java »
 
-### Supprimer des politiques à l’aide de l’API de service web {#delete-policies-using-the-web-service-api}
+### Supprimer des règles à l’aide de l’API de service web {#delete-policies-using-the-web-service-api}
 
 Supprimez une politique à l’aide de l’API Document Security (service web) :
 
@@ -553,7 +569,7 @@ Vous pouvez appliquer une politique à un document PDF afin de le protéger. L�
 
 Lorsque le document est ouvert, vous pouvez également restreindre l’accès aux fonctionnalités d’Acrobat et d’Adobe Reader, notamment la possibilité d’imprimer et de copier du texte, d’y apporter des modifications et d’y ajouter des signatures et des commentaires. En outre, vous pouvez révoquer un document PDF protégé par une politique lorsque vous ne souhaitez plus que les utilisateurs accèdent au document.
 
-Vous pouvez contrôler l’utilisation d’un document protégé par une politique après sa distribution. En d’autres termes, vous pouvez voir comment le document est utilisé et qui l’utilise. Par exemple, vous pouvez savoir quand un utilisateur a ouvert le document.
+Vous pouvez  l’utilisation d’un document protégé par une politique après sa distribution. En d’autres termes, vous pouvez voir comment le document est utilisé et qui l’utilise. Par exemple, vous pouvez savoir quand un utilisateur a ouvert le document.
 
 >[!NOTE]
 >
@@ -579,7 +595,7 @@ Avant d’effectuer par programmation une opération du service Document Securi
 
 **Récupérer un document PDF**
 
-Vous pouvez récupérer un document PDF afin d’y appliquer une politique. Une fois que vous avez appliqué une politique au document PDF, l’accès au document est restreint aux utilisateurs. Par exemple, si la politique ne permet pas l’ouverture du document hors ligne, les utilisateurs doivent être en ligne pour pouvoir ouvrir le document.
+Vous pouvez récupérer un document PDF afin d’y appliquer une politique. Une fois que vous avez appliqué une politique au document PDF, les utilisateurs et utilisatrices sont soumis à des restrictions lorsqu’ils utilisent le document. Par exemple, si la politique ne permet pas l’ouverture du document hors ligne, les utilisateurs et utilisatrices doivent être en ligne pour pouvoir ouvrir le document.
 
 **Appliquer une politique existante au document PDF**
 
@@ -605,7 +621,7 @@ Appliquez une politique à un document PDF à l’aide de l’API Document Secu
 
    Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
-1. Créez un objet API client Document Security.
+1. Créez un objet d’API client Document Security.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `RightsManagementClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
@@ -624,13 +640,13 @@ Appliquez une politique à un document PDF à l’aide de l’API Document Secu
      * Une valeur de chaîne indiquant le nom du document.
      * Une valeur de chaîne représentant le nom de l’ensemble de politiques auquel la politique appartient. Vous pouvez définir une valeur `null`, ce qui entraîne l’utilisation de l’ensemble de politiques `MyPolicies`.
      * Une valeur de chaîne qui spécifie le nom de la politique.
-     * Une valeur de chaîne représentant le nom du domaine User Manager de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être une valeur null (si ce paramètre est null, la valeur de paramètre suivante doit être null).
+     * Une valeur de chaîne représentant le nom du domaine User Manager de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être null (si ce paramètre est null, la valeur du paramètre suivant doit également être null).
      * Une valeur de chaîne représentant le nom canonique de l’utilisateur User Manager qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être `null` (si ce paramètre est null, la valeur du paramètre précédent doit être `null`).
      * Une valeur `com.adobe.livecycle.rightsmanagement.Locale` représentant les paramètres régionaux utilisés pour sélectionner le modèle MS Office. Cette valeur de paramètre est facultative et n’est pas utilisée pour les documents PDF. Pour protéger un document PDF, indiquez `null`.
 
      La méthode `protectDocument` renvoie un objet `RMSecureDocumentResult` contenant le document PDF protégé par une politique.
 
-1. Enregistrez le formulaire PDF.
+1. Enregistrez le document PDF.
 
    * Appelez la méthode `getProtectedDoc` de l’objet `RMSecureDocumentResult` pour obtenir le document PDF protégé par une politique. Cette méthode renvoie un objet `com.adobe.idp.Document`.
    * Créez un objet `java.io.File` et s’assure que l’extension du fichier est PDF.
@@ -692,10 +708,10 @@ Pour appliquer une politique à un document PDF à l’aide de l’API Document�
    * Une valeur de chaîne représentant le nom de l’ensemble de politiques auquel la politique appartient. Vous pouvez définir une valeur `null`, ce qui entraîne l’utilisation de l’ensemble de politiques `MyPolicies`.
    * Une valeur de chaîne qui spécifie le nom de la politique.
    * Une valeur de chaîne représentant le nom du domaine User Manager de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être définie sur null (si ce paramètre est défini sur null, la valeur du paramètre suivant doit être `null`).
-   * Une valeur de chaîne représentant le nom canonique de l’utilisateur User Manager qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être définie sur null (si ce paramètre est défini sur null, la valeur du paramètre précédent doit être `null`).
+   * Une chaîne de caractères correspondant au nom canonique de l’utilisateur ou de l’utilisatrice User Manager qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être définie sur null (si ce paramètre est défini sur null, la valeur du paramètre précédent doit être `null`).
    * Une valeur `RMLocale` spécifiant la valeur des paramètres régionaux (par exemple, `RMLocale.en`).
    * Un paramètre de sortie de chaîne utilisé pour stocker la valeur de l’identifiant de politique.
-   * Un paramètre de sortie de chaîne utilisé pour stocker la valeur de l’identifiant protégée par une politique.
+   * Un paramètre de sortie de chaîne utilisé pour stocker la valeur de l’identifiant protégé par une politique.
    * Paramètre de sortie de chaîne utilisé pour stocker le type MIME (par exemple `application/pdf`).
 
    La méthode `protectDocument` renvoie un objet `BLOB` contenant le document PDF protégé par une politique.
@@ -762,13 +778,13 @@ Une fois que le service Document Security a supprimé une politique d’un docu
 
 ### Supprimer une politique d’un document PDF à l’aide de l’API Java {#remove-a-policy-from-a-pdf-document-using-the-java-api}
 
-Pour supprimer une politique d’un document PDF protégé par une politique à l’aide de l’API Document Security (Java), procédez comme suit :
+Supprimez une politique d’un document PDF protégé par une politique à l’aide de l’API Document Security (Java)a0:
 
 1. Incluez les fichiers de projet.
 
    Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
-1. Créez un objet API client Document Security.
+1. Créez un objet d’API client Document Security.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `DocumentSecurityClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
@@ -792,9 +808,9 @@ Pour supprimer une politique d’un document PDF protégé par une politique à 
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (mode SOAP) : appliquer une politique à un document PDF à l’aide de l’API Java »
+* « Démarrage rapide (mode SOAP) : suppression d’une politique d’un document PDF à l’aide de l’API Java »
 
-### Supprimer une politique à l’aide de l’API de service web {#remove-a-policy-using-the-web-service-api}
+### Supprimer une règle à l’aide de l’API de service web {#remove-a-policy-using-the-web-service-api}
 
 Pour supprimer une politique d’un document PDF protégé par une politique à l’aide de l’API Document Security (service web), procédez comme suit :
 
@@ -923,7 +939,7 @@ Révoquez l’accès à un document PDF protégé par une politique à l’aide 
 1. Révoquer le document protégé par une politique
 
    * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `DocumentSecurityClient`.
-   * Récupérez la valeur de l’identifiant de licence du document protégé par une politique en appelant la méthode `getLicenseId` de l’objet `DocumentManager`. Transmettez l’objet `com.adobe.idp.Document` représentant le document protégé par une politique. Cette méthode renvoie une valeur string qui représente la valeur de l’identifiant de licence.
+   * Récupérez la valeur de l’identifiant de licence du document protégé par une politique en appelant la méthode `getLicenseId` de l’objet `DocumentManager`. Transmettez l’objet `com.adobe.idp.Document` représentant le document protégé par une politique. Cette méthode renvoie une valeur de chaîne qui représente la valeur de l’identifiant de licence.
    * Créez un objet `LicenseManager` en appelant la méthode `getLicenseManager` de l’objet `DocumentSecurityClient`.
    * Révoquez le document protégé par une politique en appelant la méthode `revokeLicense` de l’objet `LicenseManager` et en transmettant les valeurs suivantes :
 
@@ -937,7 +953,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * « Démarrage rapide (mode SOAP) : révoquer un document à l’aide de l’API Java »
 
-### Révoquer l’accès aux documents à l’aide de l’API Web Service {#revoke-access-to-documents-using-the-web-service-api}
+### Révoquer l’accès aux documents à l’aide de l’API de service Web {#revoke-access-to-documents-using-the-web-service-api}
 
 Révoquez l’accès à un document PDF protégé par une politique à l’aide de l’API Document Security (Web Service) :
 
@@ -949,7 +965,7 @@ Révoquez l’accès à un document PDF protégé par une politique à l’aide 
    >
    >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
-1. Créer un objet API client Document Security
+1. Créez un objet d’API client Document Security
 
    * Créez un objet `DocumentSecurityServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `DocumentSecurityServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
@@ -963,7 +979,7 @@ Révoquez l’accès à un document PDF protégé par une politique à l’aide 
 
    * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Récupérer un document PDF protégé par une politique
+1. Récupérez un document PDF protégé par une politique
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF protégé par une politique révoqué.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF protégé par une politique à révoquer et le mode d’ouverture du fichier.
@@ -1008,7 +1024,7 @@ Vous pouvez rétablir l’accès à un document PDF révoqué, ce qui rend toute
 Pour rétablir l’accès à un document PDF révoqué, procédez comme suit :
 
 1. Incluez les fichiers de projet.
-1. Créez un objet API client Document Security.
+1. Créez un objet d’API client Document Security.
 1. Récupérez l’identifiant de licence du document PDF révoqué.
 1. Rétablissez l’accès au document PDF révoqué.
 
@@ -1046,7 +1062,7 @@ Rétablissez l’accès à un document révoqué à l’aide de l’API Document
 
    Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
-1. Créez un objet API client Document Security.
+1. Créez un objet d’API client Document Security.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `DocumentSecurityClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
@@ -1069,7 +1085,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * « Démarrage rapide (mode SOAP) : rétablir l’accès à un document révoqué à l’aide de l’API de service web »
 
-### Rétablir l’accès aux documents révoqués à l’aide de l’API Web Service {#reinstate-access-to-revoked-documents-using-the-web-service-api}
+### Rétablir l’accès aux documents révoqués à l’aide de l’API de service web {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
 Rétablissez l’accès à un document révoqué à l’aide de l’API Document Security (Web Service) :
 
@@ -1125,7 +1141,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 Vous pouvez utiliser l’API du service Document Security (Java et service web) pour inspecter les documents PDF protégés par une politique. L’inspection des documents PDF protégés par une politique renvoie des informations sur le document PDF protégé par une politique. Vous pouvez, par exemple, déterminer la politique utilisée pour protéger le document et la date à laquelle le document a été protégé.
 
-Vous ne pouvez pas effectuer cette tâche si vous posséder LiveCycle version 8.x ou antérieure. AEM Forms prend en charge de l’inspection des documents protégés par une politique. Si vous tentez d’inspecter un document protégé par une politique à l’aide de LiveCycle version 8.x ou antérieure, une exception est générée.
+Vous ne pouvez pas effectuer cette tâche si vous possédez LiveCycle en version 8.x ou antérieure. La prise en charge de l’inspection des documents protégés par une politique a été ajoutée dans AEM Forms. Si vous tentez d’inspecter un document protégé par une politique à l’aide de LiveCycle version 8.x ou antérieure, une exception est générée.
 
 >[!NOTE]
 >
@@ -1154,7 +1170,7 @@ Pour inspecter un document protégé par une politique, récupérez-le. Si vous 
 
 **Inspecter le document**
 
-Une fois quʼun document protégé par une stratégie est récupéré, vous pouvez l’inspecter.
+Une fois qu’un document protégé par une politique est récupéré, vous pouvez l’inspecter.
 
 **Obtenir des informations sur le document protégé par une politique**
 
@@ -1203,7 +1219,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * « Démarrage rapide (mode SOAP) : inspecter des documents PDF protégés par une politique à l’aide de l’API Java »
 
-### Inspecter des documents PDF protégés par une politique à l’aide de l’API de service web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
+### Inspecter des documents PDF protégés par une politique à l’aide de l’API de services web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
 Pour inspecter un document PDF protégé par une politique à l’aide de l’API du service Document Security (service web), procédez comme suit :
 
@@ -1232,7 +1248,7 @@ Pour inspecter un document PDF protégé par une politique à l’aide de l’AP
 1. Récupérez un document protégé par une politique à inspecter.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF à inspecter.
-   * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du document PDF et son mode d’ouverture.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du fichier PDF et le mode dans lequel l’ouvrir.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
@@ -1354,12 +1370,12 @@ Le tableau suivant répertorie les paires clé-valeur requises lors de la créat
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:IS_USE_BACKGROUND</code></p></td>
-   <td><p>Indique si le filigrane est en arrière-plan. La valeur par défaut est false.</p></td>
+   <td><p>Indique si le filigrane est en arrière-plan. La valeur par défaut est faux.</p></td>
    <td><p>True ou false</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:IS_SIZE_ENABLED</code></p></td>
-   <td><p>Valeur « true » si une échelle personnalisée est spécifiée. Si cette valeur est définie sur « true », SCALE doit également être spécifié. Si cette valeur est définie sur « false », la valeur par défaut est adaptée à la page.</p></td>
+   <td><p>Valeur « vrai » si une échelle personnalisée est spécifiée. Si cette valeur est définie sur « vrai », SCALE doit également être spécifié. Si cette valeur est définie sur « faux », la valeur par défaut est adaptée à la page.</p></td>
    <td><p>True ou false</p></td>
   </tr>
   <tr>
@@ -1415,7 +1431,7 @@ Créer un filigrane à l’aide de l’API Document Security (Java) :
 1. Enregistrez le filigrane.
 
    * Créez un objet `WatermarkManager` en appelant la méthode `getWatermarkManager` de l’objet `RightsManagementClient`. Cette méthode renvoie un objet `WatermarkManager`.
-   * Enregistrez le filigrane en appelant la méthode `registerWatermark` de l’objet `WatermarkManager` et en transmettant l’objet `Watermark` qui représente le filigrane à enregistrer. Cette méthode renvoie une valeur de chaîne qui représente la valeur d’identification du filigrane.
+   * Enregistrez le filigrane en appelant la méthode `registerWatermark` de l’objet `WatermarkManager` et en transmettant l’objet `Watermark` qui représente le filigrane à enregistrer. Cette méthode renvoie une chaîne qui représente l’identifiant du filigrane.
 
 **Exemples de code**
 
@@ -1427,7 +1443,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 Créez un filigrane à l’aide de l’API Document Security (service Web) :
 
-1. Créez un objet API client Document Security.
+1. Créez un objet d’API client Document Security.
 
    Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
@@ -1570,7 +1586,7 @@ Modifiez un filigrane en utilisant l’API Document Security (Java) :
 
 Pour des exemples de code utilisant le service Document Security, reportez-vous à la section Démarrage rapide (mode SOAP) : modifier un filigrane à l’aide de l’API Java.
 
-### Modifier des filigranes à l’aide de l’API Web Service {#modify-watermarks-using-the-web-service-api}
+### Modifier des filigranes à l’aide de l’API de service web {#modify-watermarks-using-the-web-service-api}
 
 Modifiez un filigrane à l’aide de l’API de Document Security (Web Service) :
 
@@ -1598,7 +1614,7 @@ Modifiez un filigrane à l’aide de l’API de Document Security (Web Service)�
 
 1. Récupérez le filigrane à modifier.
 
-   Récupérez le filigrane à modifier en appelant la méthode `getWatermarkByName` de l’objet `DocumentSecurityServiceClient`. Transmettez une valeur string qui spécifie le nom du filigrane. Cette méthode renvoie un objet `WatermarkSpec` qui représente le filigrane à modifier.
+   Récupérez le filigrane à modifier en appelant la méthode `getWatermarkByName` de l’objet `DocumentSecurityServiceClient`. Transmettez une valeur de chaîne qui spécifie le nom du filigrane. Cette méthode renvoie un objet `WatermarkSpec` qui représente le filigrane à modifier.
 
 1. Définissez les attributs du filigrane.
 
@@ -1620,7 +1636,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Rechercher des événements {#searching-for-events}
 
-Le service Rights Management effectue le suivi d’actions spécifiques au fur et à mesure qu’elles se produisent, telles que l’application d’une politique à un document, l’ouverture d’un document protégé par une politique et la révocation de l’accès aux documents. Le contrôle des événements doit être activé pour le service Rights Management. Dans le cas contraire, les événements ne seront pas suivis.
+Le service Rights Management effectue le suivi d’actions spécifiques au fur et à mesure qu’elles se produisent, telles que l’application d’une politique à un document, l’ouverture d’un document protégé par une politique et la révocation de l’accès aux documents. L’audit des événements doit être activé pour le service Rights Management, dans le cas contraire les événements ne seront pas suivis.
 
 Les événements appartiennent à l’une des catégories suivantes :
 
@@ -1654,7 +1670,7 @@ Avant de pouvoir effectuer par programmation une opération de service Rights M
 
 **Définir les événements à rechercher**
 
-Définissez les événements à rechercher. Vous pouvez, par exemple, rechercher l’événement de création de politique qui se produit lors de la création d’une politique.
+Définissez l’évènement à rechercher. Vous pouvez, par exemple, rechercher l’événement de création de politique qui se produit lors de la création d’une politique.
 
 **Rechercher l’événement**
 
@@ -1672,9 +1688,9 @@ Pour rechercher des événements à l’aide de l’API Rights Management (Java
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java.
 
-1. Créer un objet API client Rights Management
+1. Créez un objet d’API client Rights Management.
 
    Créez un objet `DocumentSecurityClient` en utilisant son constructeur et en transmettant un objet `ServiceClientFactory` contenant des propriétés de connexion.
 
@@ -1696,7 +1712,7 @@ Pour rechercher des événements à l’aide de l’API Rights Management (Java
 
 Pour obtenir des exemples de code à l’aide du service Rights Management, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide ( SOAP) : rechercher des événements à l’aide de l’API Java »
+* « Démarrage rapide (SOAP) : rechercher des événements à l’aide de l’API Java »
 
 ### Rechercher des événements à l’aide de l’API de service web {#search-for-events-using-the-web-service-api}
 
@@ -2005,7 +2021,7 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
 
    Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
-1. Créez un objet API client Document Security.
+1. Créez un objet d’API client Document Security.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `DocumentSecurityClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
@@ -2021,10 +2037,10 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
    * Appliquez une politique au document Word en appelant la méthode `protectDocument` de l’objet `DocumentManager` et en transmettant les valeurs suivantes :
 
      * Objet `com.adobe.idp.Document` contenant le document Word auquel s’applique la politique.
-     * Une valeur de chaîne indiquant le nom du document.
+     * Une chaîne de caractères indiquant le nom du document.
      * Une valeur de chaîne représentant le nom de l’ensemble de politiques auquel la politique appartient. Vous pouvez définir une valeur `null`, ce qui entraîne l’utilisation de l’ensemble de politiques `MyPolicies`.
      * Une valeur de chaîne qui spécifie le nom de la politique.
-     * Une valeur de chaîne représentant le nom du domaine User Manager de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être une valeur null (si ce paramètre est null, la valeur de paramètre suivante doit être null).
+     * Une valeur de chaîne représentant le nom du domaine User Manager de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être null (si ce paramètre est null, la valeur du paramètre suivant doit également être null).
      * Une valeur de chaîne représentant le nom canonique de l’utilisateur User Manager qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être `null` (si ce paramètre est `null`, alors la valeur du paramètre précédent doit être `null`).
      * Une valeur `com.adobe.livecycle.rightsmanagement.Locale` représentant les paramètres régionaux utilisés pour sélectionner le modèle MS Office. Cette valeur de paramètre est facultative et vous pouvez spécifier `null`.
 
@@ -2042,9 +2058,9 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * « Démarrage rapide (mode SOAP) : appliquer une politique à un document Word à l’aide de l’API Java »
 
-### Appliquer une politique à un document Word à l’aide de l’API Web Service {#apply-a-policy-to-a-word-document-using-the-web-service-api}
+### Appliquer une politique à un document Word à l’aide de l’API de service Web. {#apply-a-policy-to-a-word-document-using-the-web-service-api}
 
-Appliquez une politique à un document Word à l’aide de l’API Document Security (Web Service) :
+Appliquez une politique à un document Word à l’aide de l’API Document Security (web service)a0:
 
 1. Incluez les fichiers de projet.
 
@@ -2081,14 +2097,14 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
    Appliquez une politique au document Word en appelant la méthode `protectDocument` de l’objet `DocumentSecurityServiceClient` et en transmettant les valeurs suivantes :
 
    * Objet `BLOB` contenant le document Word auquel s’applique la politique.
-   * Une valeur de chaîne indiquant le nom du document.
+   * Une chaîne de caractères indiquant le nom du document.
    * Une valeur de chaîne représentant le nom de l’ensemble de politiques auquel la politique appartient. Vous pouvez définir une valeur `null`, ce qui entraîne l’utilisation de l’ensemble de politiques `MyPolicies`.
    * Une valeur de chaîne qui spécifie le nom de la politique.
    * Une valeur de chaîne représentant le nom du domaine User Manager de l’utilisateur qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être définie sur null (si ce paramètre est défini sur null, la valeur du paramètre suivant doit être `null`).
-   * Une valeur de chaîne représentant le nom canonique de l’utilisateur User Manager qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être définie sur null (si ce paramètre est défini sur null, la valeur du paramètre précédent doit être `null`).
+   * Une chaîne de caractères correspondant au nom canonique de l’utilisateur ou de l’utilisatrice User Manager qui est l’éditeur du document. Cette valeur de paramètre est facultative et peut être définie sur null (si ce paramètre est défini sur null, la valeur du paramètre précédent doit être `null`).
    * Une valeur `RMLocale` spécifiant la valeur des paramètres régionaux (par exemple, `RMLocale.en`).
    * Un paramètre de sortie de chaîne utilisé pour stocker la valeur de l’identifiant de politique.
-   * Un paramètre de sortie de chaîne utilisé pour stocker la valeur de l’identifiant protégée par une politique.
+   * Un paramètre de sortie de chaîne utilisé pour stocker la valeur de l’identifiant protégé par une politique.
    * Paramètre de sortie de chaîne utilisé pour stocker le type MIME (par exemple `application/doc`).
 
    La méthode `protectDocument` renvoie un objet `BLOB` contenant le document Word protégé par une politique.
@@ -2142,7 +2158,7 @@ Vous pouvez supprimer une politique d’un document Word protégé par une polit
 
 **Enregistrer le document Word non protégé**
 
-Une fois que le service Document Security a supprimé une politique d’un document Word, vous pouvez enregistrer le document Word non sécurisé au format DOC.
+Une fois que le service Document Security a supprimé une politique d’un document Word, vous pouvez enregistrer le document Word non sécurisé en tant que fichier DOC.
 
 **Voir également**
 
@@ -2186,7 +2202,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * « Démarrage rapide (mode SOAP) : supprimer une politique d’un document Word à l’aide de l’API Java »
 
-### Supprimer une politique d’un document Word à l’aide de l’API de service web {#remove-a-policy-from-a-word-document-using-the-web-service-api}
+### Supprimer une règle d’un document Word à l’aide de l’API de services web {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 
 Pour supprimer une politique d’un document Word protégé par une politique en utilisant l’API Document Security (service web), procédez comme suit :
 
@@ -2198,7 +2214,7 @@ Pour supprimer une politique d’un document Word protégé par une politique en
    >
    >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
-1. Créer un objet API client Document Security
+1. Créez un objet d’API client Document Security
 
    * Créez un objet `RightsManagementServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `RightsManagementServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
@@ -2234,7 +2250,7 @@ Pour supprimer une politique d’un document Word protégé par une politique en
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous au tutoriel de démarrage rapide suivant :
 
-* « Démarrage rapide (MTOM) : supprimer une politique d’un document Word à l’aide de l’API de service web »
+* « Démarrage rapide (MTOM) : suppression d’une politique d’un document Word à l’aide de l’API de service web »
 
 **Voir également**
 

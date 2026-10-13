@@ -1,18 +1,31 @@
 ---
-title: Présentation d’ [!DNL Adobe Experience Manager Assets]
+title: Introduction à [!DNL Adobe Experience Manager Assets]
 description: Créez, gérez, traitez et distribuez des ressources numériques dans Experience Manager. Ces guides décrivent les bonnes pratiques, les fonctionnalités d’accessibilité et la manière d’utiliser les ressources AEM 6.5.
 hide: true
 feature: Asset Management
 role: Leader, Developer, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 100%
-
 ---
-
 
 # A propos d’[!DNL Adobe Experience Manager Assets] en tant que solution de gestion des ressources numériques (DAM) {#administering-assets}
 
@@ -32,7 +45,7 @@ Les fonctionnalités d’[!DNL Assets] d’[!DNL Experience Manager] vous permet
 * Ajouter et partager des images, des documents, ainsi que des fichiers audio et vidéo dans divers formats.
 * Gérer les ressources en les regroupant par balise, lightbox ou étoiles (vos favoris) Ajouter des annotations aux ressources.
 * Trouver des ressources en recherchant les noms de fichiers, le texte intégral des documents et en recherchant des dates, un type de document et des balises.
-* Ajouter ou modifier des informations sur les métadonnées pour les ressources Le contrôle de version des métadonnées se fait automatiquement en fonction de la ressource correspondante. Vous pouvez importer ou exporter des métadonnées de ressources.
+* Ajouter ou modifier les métadonnées des ressources. Les métadonnées sont automatiquement versionnées avec la ressource correspondante. Vous pouvez importer ou exporter des métadonnées de ressources.
 * Exécuter des fonctions d’édition d’images, telles que la mise à l’échelle et l’ajout de filtres d’images. Importer et exporter simultanément plusieurs ressources numériques à l’aide d’un dossier WebDAV ou CIFS.
 * Utiliser les workflows et les notifications pour permettre le traitement et le téléchargement communs de n’importe quel groupe de ressources et gérer les droits d’accès aux ressources
 
@@ -44,7 +57,7 @@ L’interface utilisateur de base est la même que celle de [!DNL Sites]. Consul
 
 ### Comparaison entre gestion des ressources numériques et composant de l’image {#digital-asset-management-versus-image-component}
 
-Pour déterminer s’il est nécessaire de mettre une image dans le référentiel de gestion des ressources numériques ou d’utiliser un composant image, tenez compte du cycle de vie de l’image :
+Pour déterminer s’il est nécessaire de mettre une image dans le référentiel de gestion des actifs digitaux ou d’utiliser un composant image, tenez compte du cycle de vie de l’image :
 
 * Si l’image a le même cycle de vie que la page, utilisez le composant Image.
 * Si l’image a un cycle de vie distinct, par exemple, si vous utilisez l’image deux fois ou en dehors de la gestion de contenu Web, utilisez [!DNL Assets].
@@ -67,9 +80,9 @@ Lorsque vous utilisez des ressources numériques dans [!DNL Experience Manager],
 
 * **Métadonnées** : les ressources [!DNL Assets] ont des métadonnées ; par exemple, l’auteur ou l’autrice, la date d’expiration et les informations DRM (Digital Rights Management). Les métadonnées sont sous contrôle d’accès. [!DNL Assets] prend en charge les schémas de métadonnées communs suivants :
 
-   * Dublin Core : auteur ou autrice, description, date, objet, etc.
-   * IPTC : comprenant l’événement, le modèle, l’emplacement, etc.
-   * Gestion de contenu web : notamment les propriétés de page, l’[!UICONTROL Heure d’activation] et l’[!UICONTROL Heure de désactivation], etc.
+  * Dublin Core : auteur ou autrice, description, date, sujet, etc.
+  * IPTC : comprenant l’évènement, le modèle, l’emplacement, etc.
+  * Gestion de contenu web : notamment les propriétés de page, l’[!UICONTROL Heure d’activation] et l’[!UICONTROL Heure de désactivation], etc.
 
 * **Balisage** : les ressources [!DNL Assets] peuvent être balisées et classifiées. Consultez [Organisation des ressources](/help/assets/organize-assets.md).
 
@@ -85,9 +98,9 @@ Vous effectuez une action sur une ressource ou une collection. Les actions peuve
 
 Les tâches que vous pouvez réaliser avec ces workflows préconfigurés sont les suivantes :
 
-* Enregistrer la ressource dans le référentiel ou la supprimer
-* Extraire et enregistrer des métadonnées pour la ressource, avec les différents éléments de métadonnées enregistrés au format XMP
-* Générer des rendus et des vignettes pour la ressource, notamment le redimensionnement et le recadrage automatiques si nécessaire
+* Enregistrer la ressource dans le référentiel ou la supprimer.
+* Extraire et enregistrer des métadonnées pour la ressource ; les différents éléments de métadonnées sont enregistrés au format XMP.
+* Générer des rendus et des vignettes pour la ressource, notamment le redimensionnement et le recadrage automatiques si nécessaire.
 * Transcoder la ressource si nécessaire Par exemple, une vidéo pour utilisation sur appareils mobiles et sur le Web est transcodée avec 24 images par seconde et téléchargée avec 30 images par seconde. Un fichier audio pour utilisation sur appareils mobiles et sur le Web est transcodé à 128 Kbits/s et téléchargé à 192 Kbits/s.
 
 Vous pouvez aussi appliquer des workflows manuellement. Consultez [Gestionnaires de médias Assets](media-handlers.md) pour obtenir une liste des workflows par défaut.

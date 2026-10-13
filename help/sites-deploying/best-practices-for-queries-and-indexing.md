@@ -9,13 +9,22 @@ exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4700'
+source-wordcount: '4702'
 ht-degree: 98%
-
 ---
-
 # Bonnes pratiques relatives aux requêtes et à l’indexation{#best-practices-for-queries-and-indexing}
 
 Avec la transition vers Oak dans AEM 6, certains changements majeurs ont été apportés à la façon dont les requêtes et les index sont gérés. Sous Jackrabbit 2, tout le contenu était indexé par défaut et pouvait être interrogé librement. Dans Oak, les index doivent être créés manuellement sous le nœud `oak:index`. Une requête peut être exécutée sans index, mais pour les jeux de données volumineux, elle l’est très lentement et risque même d’être abandonnée.
@@ -128,13 +137,13 @@ Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire 
 
 * Surveillez les journaux à la recherche de requêtes déclenchant une traversée de nœuds importante ou une consommation élevée de mémoire de tas : &grave;&grave;
 
-   * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
-   * Optimisez la requête pour réduire le nombre de nœuds parcourus.
+  * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
+  * Optimisez la requête pour réduire le nombre de nœuds parcourus.
 
 * Surveillez les journaux à la recherche de requêtes déclenchant une consommation importante de mémoire de tas :
 
-   * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
-   * Optimisez la requête pour réduire la consommation de mémoire de tas.
+  * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
+  * Optimisez la requête pour réduire la consommation de mémoire de tas.
 
 Pour les versions d’AEM 6.0 à 6.2, vous pouvez ajuster le seuil de la traversée de nœuds à l’aide des paramètres JVM du script de démarrage AEM pour éviter que les requêtes volumineuses ne surchargent l’environnement.
 
@@ -248,59 +257,59 @@ Problèmes possibles et solutions :
 
 * S’applique pour/si :
 
-   * Toutes les versions d’Oak
-   * Uniquement les [index de propriété](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
+  * Toutes les versions d’Oak
+  * Uniquement les [index de propriété](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
 
 * Symptômes :
 
-   * Nœuds existants avant la mise à jour de la définition de l’index de propriété manquants dans les résultats
+  * Nœuds existants avant la mise à jour de la définition de l’index de propriété manquants dans les résultats
 
 * Comment vérifier :
 
-   * Déterminez si des noeuds manquants ont été créés/modifiés avant le déploiement de la définition d’index mise à jour.
-   * Vérifiez les propriétés `jcr:created` ou `jcr:lastModified` de tous les nœuds manquants par rapport à l’heure de modification de l’index.
+  * Déterminez si des noeuds manquants ont été créés/modifiés avant le déploiement de la définition d’index mise à jour.
+  * Vérifiez les propriétés `jcr:created` ou `jcr:lastModified` de tous les nœuds manquants par rapport à l’heure de modification de l’index.
 
 * Mode de résolution :
 
-   * [Réindexez](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) l’index Lucene.
-   * Vous pouvez également toucher (effectuer une opération d’écriture bénigne) les nœuds manquants.
+  * [Réindexez](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) l’index Lucene.
+  * Vous pouvez également toucher (effectuer une opération d’écriture bénigne) les nœuds manquants.
 
-      * Requiert des touches manuelles ou du code personnalisé
-      * Nécessite que le jeu de nœuds manquants soit connu.
-      * Nécessite de modifier toute propriété sur le nœud.
+    * Requiert des touches manuelles ou du code personnalisé
+    * Nécessite que le jeu de nœuds manquants soit connu.
+    * Nécessite de modifier toute propriété sur le nœud.
 
 #### Modification de la définition d’un index Lucene {#lucene-index-definition-change}
 
 * S’applique pour/si :
 
-   * Toutes les versions d’Oak
-   * Seulement les [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+  * Toutes les versions d’Oak
+  * Seulement les [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptômes :
 
-   * L’index Lucene ne contient pas les résultats attendus.
-   * Les résultats de requête ne reflètent pas le comportement attendu de la définition de l’index.
-   * Le plan de requête ne signale pas la sortie attendue en fonction de la définition de l’index.
+  * L’index Lucene ne contient pas les résultats attendus.
+  * Les résultats de requête ne reflètent pas le comportement attendu de la définition de l’index.
+  * Le plan de requête ne signale pas la sortie attendue en fonction de la définition de l’index.
 
 * Comment vérifier :
 
-   * Vérifiez que la définition de l’index a été modifiée à l’aide du MBean JMX de statistiques sur les index Lucene (LuceneIndex), méthode `diffStoredIndexDefinition`.
+  * Vérifiez que la définition de l’index a été modifiée à l’aide du MBean JMX de statistiques sur les index Lucene (LuceneIndex), méthode `diffStoredIndexDefinition`.
 
 * Mode de résolution :
 
-   * Versions d’Oak antérieures à la version 1.6 :
+  * Versions d’Oak antérieures à la version 1.6 :
 
-      * [Réindexez](#how-to-re-index) l’index Lucene.
+    * [Réindexez](#how-to-re-index) l’index Lucene.
 
-   * Oak versions 1.6 et ultérieures
+  * Oak versions 1.6 et ultérieures
 
-      * Si le contenu existant n’est pas concerné par les modifications, seule une actualisation est nécessaire.
+    * Si le contenu existant n’est pas concerné par les modifications, seule une actualisation est nécessaire.
 
-         * [Actualisez](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) l’index Lucene en définissant [oak:queryIndexDefinition]@refresh=true.
+      * [Actualisez](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) l’index Lucene en définissant [oak:queryIndexDefinition]@refresh=true.
 
-      * Sinon, [réindexez](#how-to-re-index) l’index Lucene.
+    * Sinon, [réindexez](#how-to-re-index) l’index Lucene.
 
-         * Remarque : l’état de l’index de la dernière bonne réindexation (ou l’indexation initiale) est utilisé jusqu’au déclenchement d’une nouvelle réindexation.
+      * Remarque : l’état de l’index de la dernière bonne réindexation (ou l’indexation initiale) est utilisé jusqu’au déclenchement d’une nouvelle réindexation.
 
 ### Erreurs et situations exceptionnelles {#erring-and-exceptional-situations}
 
@@ -317,62 +326,62 @@ Problèmes possibles et solutions :
 
 * S’applique pour/si :
 
-   * Toutes les versions d’Oak
-   * Seulement les [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+  * Toutes les versions d’Oak
+  * Seulement les [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptômes :
 
-   * L’index Lucene ne contient pas les résultats attendus.
+  * L’index Lucene ne contient pas les résultats attendus.
 
 * Comment vérifier :
 
-   * Le fichier journal des erreurs contient une exception indiquant qu’un fichier binaire de l’index Lucene est manquant.
+  * Le fichier journal des erreurs contient une exception indiquant qu’un fichier binaire de l’index Lucene est manquant.
 
 * Mode de résolution :
 
-   * Effectuez une vérification du référentiel de traversée ; par exemple :
+  * Effectuez une vérification du référentiel de traversée ; par exemple :
 
-     [:4502/system/console/repositorycheck &#x200B;](http://localhost:4502/system/console/repositorycheck)
+    [&#128279;](http://localhost:4502/system/console/repositorycheck)
 
-     La traversée du référentiel détermine si d’autres fichiers binaires (à part les fichiers lucene) sont manquants.
+    La traversée du référentiel détermine si d’autres fichiers binaires (à part les fichiers lucene) sont manquants.
 
-   * Si des binaires autres que les index Lucene sont manquants, restaurez à partir de la sauvegarde.
-   * Sinon, [réindexez](#how-to-re-index) *tous* les index Lucene.
-   * Remarque :
+  * Si des binaires autres que les index Lucene sont manquants, restaurez à partir de la sauvegarde.
+  * Sinon, [réindexez](#how-to-re-index) *tous* les index Lucene.
+  * Remarque :
 
-     Cette condition indique qu’un magasin de données mal configuré peut entraîner l’absence de TOUT fichier binaire (par exemple, les fichiers binaires des ressources).
+    Cette condition indique qu’un magasin de données mal configuré peut entraîner l’absence de TOUT fichier binaire (par exemple, les fichiers binaires des ressources).
 
-     Dans ce cas, restaurez la dernière version fonctionnelle connue du référentiel pour récupérer tous les binaires manquants.
+    Dans ce cas, restaurez la dernière version fonctionnelle connue du référentiel pour récupérer tous les binaires manquants.
 
 #### Le binaire de l’index Lucene est corrompu {#lucene-index-binary-is-corrupt}
 
 * S’applique pour/si :
 
-   * Toutes les versions d’Oak
-   * Seulement les [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+  * Toutes les versions d’Oak
+  * Seulement les [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptômes :
 
-   * L’index Lucene ne contient pas les résultats attendus.
+  * L’index Lucene ne contient pas les résultats attendus.
 
 * Comment vérifier :
 
-   * La requête `AsyncIndexUpdate` (toutes les cinq secondes) échoue avec une exception dans le fichier error.log :
+  * La requête `AsyncIndexUpdate` (toutes les cinq secondes) échoue avec une exception dans le fichier error.log :
 
-     `...a Lucene index file is corrupt...`
+    `...a Lucene index file is corrupt...`
 
 * Mode de résolution :
 
-   * Supprimez la copie locale de l’index Lucene.
+  * Supprimez la copie locale de l’index Lucene.
 
-      1. Arrêtez AEM.
-      1. Supprimez la copie locale de l’index Lucene dans `crx-quickstart/repository/index`.
-      1. Redémarrez AEM.
+    1. Arrêtez AEM.
+    1. Supprimez la copie locale de l’index Lucene dans `crx-quickstart/repository/index`.
+    1. Redémarrez AEM.
 
-   * Si cela ne résout pas le problème et que les exceptions `AsyncIndexUpdate` persistent, alors :
+  * Si cela ne résout pas le problème et que les exceptions `AsyncIndexUpdate` persistent, alors :
 
-      1. [Réindexez](#how-to-re-index) l’index erroné.
-      1. Ouvrez également un ticket auprès de l’[assistance d’Adobe](https://helpx.adobe.com/fr/support.html).
+    1. [Réindexez](#how-to-re-index) l’index erroné.
+    1. Ouvrez également un ticket auprès de l’[assistance d’Adobe](https://helpx.adobe.com/fr/support.html).
 
 ### Réindexation {#how-to-re-index}
 
@@ -385,20 +394,20 @@ Problèmes possibles et solutions :
 * Utilisez [oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) pour réindexer l’index de propriété.
 * Définissez la propriété async-reindex sur true dans l’index de propriété.
 
-   * `[oak:queryIndexDefinition]@reindex-async=true`
+  * `[oak:queryIndexDefinition]@reindex-async=true`
 
 * Réindexez l’index de propriété de manière asynchrone à l’aide de la console web via le MBean **PropertyIndexAsyncReindex** ;
 
   par exemple,
 
-  [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
+  [&#128279;](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
 
 #### Réindexation des index de propriété Lucene {#re-indexing-lucene-property-indexes}
 
 * Utilisez [oak-run.jar pour réindexer](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) l’index de propriété Lucene.
 * Définissez la propriété async-reindex sur true dans l’index de propriété Lucene.
 
-   * `[oak:queryIndexDefinition]@reindex-async=true`
+  * `[oak:queryIndexDefinition]@reindex-async=true`
 
 >[!NOTE]
 >
@@ -440,7 +449,7 @@ Si AEM fonctionne normalement, par exemple en chargeant des ressources via l’I
 * [oak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)version 1.7.4+
 * Un dossier/partage de système de fichiers pour stocker le texte extrait accessible depuis les instances AEM d’indexation
 
-   * La configuration OSGi de pré-extraction de texte nécessite un chemin d’accès au système de fichiers vers les fichiers texte extraits. Ils doivent donc être accessibles directement à partir de l’instance AEM (lecteur local ou montage de partage de fichiers).
+  * La configuration OSGi de pré-extraction de texte nécessite un chemin d’accès au système de fichiers vers les fichiers texte extraits. Ils doivent donc être accessibles directement à partir de l’instance AEM (lecteur local ou montage de partage de fichiers).
 
 #### Comment procéder à la pré-extraction du texte ? {#how-to-perform-text-pre-extraction}
 

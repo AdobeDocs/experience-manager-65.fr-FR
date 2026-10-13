@@ -7,13 +7,27 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2152'
 ht-degree: 98%
-
 ---
-
 # Traitement des ressources à l’aide des workflows et des gestionnaires de médias {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets] s’accompagne d’un ensemble de workflows et de gestionnaires de médias par défaut destinés au traitement des ressources. Un workflow définit les tâches à exécuter sur les ressources, puis délègue les tâches spécifiques aux gestionnaires de médias, par exemple la génération de miniatures ou l’extraction de métadonnées.
@@ -64,13 +78,13 @@ Pour afficher les gestionnaires de médias actifs, procédez comme suit :
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Utilisation des gestionnaires de médias dans les workflows afin d’effectuer des tâches sur les ressources {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Utiliser des gestionnaires de médias dans les workflows afin d’effectuer des tâches sur les ressources {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
-Les gestionnaires de médias sont des services généralement utilisés conjointement avec des workflows.
+Les gestionnaires de médias sont des services utilisés avec des workflows.
 
 [!DNL Experience Manager] comporte des workflows par défaut pour le traitement des ressources. Pour les afficher, ouvrez la console Workflow et cliquez sur l’onglet **[!UICONTROL Modèles]** : les titres de workflow commençant par [!DNL Assets] sont ceux qui concernent des ressources.
 
-Les workflows existants peuvent être étendus et de nouveaux workflows peuvent être créés pour gérer les ressources en fonction d’exigences spécifiques.
+Les workflows existants peuvent être étendus et de nouveaux workflows peuvent être créés pour traiter les ressources en fonction d’exigences spécifiques.
 
 L’exemple suivant indique comment développer le workflow de **[!UICONTROL synchronisation AEM Assets]**, de sorte que des sous-ressources soient générées pour toutes les ressources, à l’exception des documents PDF.
 
@@ -87,7 +101,7 @@ Pour activer/désactiver un gestionnaire de médias :
 
 ### Créer un gestionnaire de médias {#creating-a-new-media-handler}
 
-Pour prendre en charge un nouveau type de média ou pour exécuter des tâches spécifiques sur une ressource, il est nécessaire de créer un gestionnaire de média. Cette section décrit comment procéder.
+Pour prendre en charge un nouveau type de média ou pour exécuter des tâches spécifiques sur une ressource, il est nécessaire de créer un gestionnaire de médias. Cette section décrit comment procéder.
 
 #### Classes et interfaces importantes {#important-classes-and-interfaces}
 
@@ -113,7 +127,7 @@ L’interface et les classes sont les suivantes :
 * `com.day.cq.dam.core.AbstractAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes.
 * Classe `com.day.cq.dam.core.AbstractSubAssetHandler` :
   * Cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes, ainsi que la fonctionnalité commune d’extraction de sous-ressources.
-  * La meilleure façon de démarrer une implémentation est d’hériter d’une implémentation abstraite fournie qui prend en charge l’essentiel du traitement et qui fournit un comportement raisonnable par défaut : à savoir la classe com.day.cq.dam.core.AbstractAssetHandler.
+  * La meilleure façon de démarrer une mise en œuvre est d’hériter d’une implémentation abstraite fournie qui prend en charge l’essentiel du traitement et qui fournit un comportement raisonnable par défaut : à savoir la classe com.day.cq.dam.core.AbstractAssetHandler.
   * Cette classe fournit déjà un descripteur de service abstrait. Donc, si vous héritez de cette classe et que vous utilisez le plug-in maven-sling, assurez-vous que vous avez défini l’indicateur inherit sur true.
 
 Les méthodes suivantes doivent être implémentées :
@@ -457,13 +471,13 @@ Les conversions suivantes peuvent être automatiquement exécutées et stockées
 
 >[!NOTE]
 >
->Sur les systèmes autres que Windows, l’outil FFMpeg renvoie une erreur lors de la génération de rendus pour une ressource vidéo dont le nom de fichier contient une apostrophe (’). Si le nom de votre fichier vidéo comprend une apostrophe, supprimez-la avant de charger le fichier dans [!DNL Experience Manager].
+>Sur les systèmes autres que Windows, l’outil FFmpeg renvoie une erreur lors de la génération de rendus pour une ressource vidéo dont le nom de fichier contient une apostrophe (’). Si le nom de votre fichier vidéo comprend une apostrophe, supprimez-la avant de charger le fichier dans [!DNL Experience Manager].
 
 Le processus `CommandLineProcess` effectue les opérations suivantes dans la liste ordonnée :
 
 * Filtre le fichier en fonction des types MIME indiqués, le cas échéant.
 * Crée un répertoire temporaire sur le disque hébergeant le serveur [!DNL Experience Manager].
-* Diffuse le fichier d’origine vers le répertoire temporaire.
+* Transfère le fichier d’origine vers le répertoire temporaire.
 * Exécute la commande définie par les arguments de l’étape. La commande est exécutée dans le répertoire temporaire avec les autorisations de l’utilisateur exécutant [!DNL Experience Manager].
 * Renvoie le résultat dans le dossier de rendu du serveur [!DNL Experience Manager].
 * Supprime le répertoire temporaire.

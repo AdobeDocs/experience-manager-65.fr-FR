@@ -7,13 +7,27 @@ feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2029'
 ht-degree: 99%
-
 ---
-
 # Préparer et envoyer une communication interactive à l’aide de l’interface utilisateur de l’agent {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 L’interface utilisateur de l’agent permet aux agentes et aux agents de préparer et d’envoyer une communication interactive au post-traitement. L’agent ou l’agente apporte les modifications nécessaires dans la mesure du possible et envoie la communication interactive en post-traitement, comme un e-mail ou une impression.
@@ -71,8 +85,8 @@ Dans l’onglet Contenu, gérez le contenu tel que les fragments de document et 
 
    * [Options de mise en forme](#formattingtext)
 
-      * [Copier-coller du texte formaté depuis d’autres applications](#pasteformattedtext)
-      * [Parties du texte en surbrillance](#highlightemphasize)
+     * [Copier-coller du texte formaté depuis d’autres applications](#pasteformattedtext)
+     * [Parties du texte en surbrillance](#highlightemphasize)
 
    * [Caractères spéciaux](#specialcharacters)
    * [Raccourcis clavier](/help/forms/using/keyboard-shortcuts.md)
@@ -182,10 +196,10 @@ Par défaut, la fonction Enregistrer en tant que brouillon n’est pas activée.
 
 1. Implémentez l’Interface du fournisseur de services (SPI) [ccrDocumentInstance](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
 
-   La SPI vous permet d’enregistrer la version préliminaire de la communication interactive dans la base de données avec un ID de brouillon comme identifiant unique. Ces instructions supposent que vous ayez des connaissances préalables sur la création d’un lot OSGi à l’aide d’un projet Maven.
+   La SPI vous permet d’enregistrer la version préliminaire de la communication interactive dans la base de données avec un ID de brouillon comme identifiant unique. Ces instructions supposent que vous ayez des connaissances préalables sur la création d’un bundle OSGi à l’aide d’un projet Maven.
 
    Pour obtenir un exemple d’implémentation de SPI, voir [Exemple d’implémentation SPI ccrDocumentInstance](#sample-ccrDocumentInstance-spi).
-1. Ouvrez `http://<hostname>:<port>/ system/console/bundles` et sélectionnez **[!UICONTROL Installer/Mettre à jour]** pour charger le lot OSGi. Vérifiez que l’état du package chargé s’affiche comme étant **Actif**. Redémarrez le serveur si l’état du package ne s’affiche pas comme étant **Actif**.
+1. Ouvrez `http://<hostname>:<port>/ system/console/bundles` et sélectionnez **[!UICONTROL Installer/Mettre à jour]** pour charger le bundle OSGi. Vérifiez que l’état du package chargé s’affiche comme étant **Actif**. Redémarrez le serveur si l’état du package ne s’affiche pas comme étant **Actif**.
 1. Accédez à `https://'[server]:[port]'/system/console/configMgr`.
 1. Sélectionnez **[!UICONTROL Créer la configuration de correspondance]**.
 1. Sélectionnez **[!UICONTROL Activer l’enregistrement à l’aide de CCRDocumentInstanceService]**, puis **[!UICONTROL Enregistrer]**.

@@ -10,13 +10,28 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: aee0e36fe488af764459494c1bc802fb519b1a54
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 97%
-
+source-wordcount: '2004'
+ht-degree: 98%
 ---
-
 
 # Questions fréquentes (FAQ) des formulaires HTML5{#frequently-asked-questions-faq-for-html-forms}
 
@@ -24,13 +39,13 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
 ## Mise en page {#layout}
 
-1. Pourquoi les champs des codes à barres et de signature ne figurent-ils dans pas dans mon formulaire ?
+1. Pourquoi les champs des codes à barres et de signature ne figurent-ils pas dans mon formulaire ?
 
-   Réponse : les champs de codes à barres et de signatures ne sont pas adaptés aux cas de figures impliquant du HTML ou des périphériques mobiles. Ces champs apparaissent comme des zones non interactives. Cependant, AEM Forms Designer propose un nouveau champ de saisie tactile de signature qui peut être utilisé à la place du champ de signature. Vous pouvez également ajouter un [widget personnalisé](../../forms/using/custom-widgets.md) pour les codes à barres et l’intégrer.
+   Réponse : les champs de codes à barres et de signatures ne sont pas adaptés aux cas de figures impliquant du HTML ou des périphériques mobiles. Ces champs apparaissent comme des zones non interactives. Cependant, AEM Forms Designer propose un nouveau champ de griffonnage de signature qui peut être utilisé à la place du champ de signature. Vous pouvez également ajouter un [widget personnalisé](../../forms/using/custom-widgets.md) pour les codes à barres et l’intégrer.
 
 1. Le texte enrichi est-il pris en charge pour le champ de texte XFA ?
 
-   Réponse : le champ XFA, qui supporte le contenu enrichi dans AEM Forms Designer, n’est pas pris en charge ; il est généré sous forme de texte normal sans prise en charge du style du texte à partir de l’interface utilisateur. En outre, les champs XFA avec la propriété comb s’affichent comme un champ normal, bien qu’il existe toujours des restrictions sur le nombre de caractères autorisés en fonction de la valeur des chiffres comb.
+   Réponse : le champ XFA, qui permet le contenu enrichi dans AEM Forms Designer, n’est pas pris en charge ; il est généré sous forme de texte normal sans prise en charge du style du texte à partir de l’interface d’utilisation. En outre, les champs XFA avec la propriété comb s’affichent comme un champ normal, bien qu’il existe toujours des restrictions sur le nombre de caractères autorisés en fonction de la valeur des chiffres comb.
 
 1. Existe-t-il des restrictions concernant l’utilisation de sous-formulaires répétables ?
 
@@ -86,11 +101,11 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
 1. Existe-t-il des restrictions concernant l’utilisation de sous-formulaires masqués ?
 
-   Réponse : un sous-formulaire masqué avec une hiérarchie complexe fractionnée sur plusieurs pages génère des problèmes de mise en page. Une façon de contourner ce problème consiste à marquer le sous-formulaire visible au début, puis de le masquer dans un script d’initialisation basé sur une logique ou des données.
+   Réponse : un sous-formulaire masqué avec une hiérarchie complexe fractionnée sur plusieurs pages génère des problèmes de mise en page. Une façon de contourner ce problème consiste à marquer le sous-formulaire visible au début, puis à le masquer dans un script d’initialisation basé sur une logique ou des données.
 
-1. Pourquoi certains texte sont-ils tronqués ou ne s’affichent-ils pas correctement en HTML5 ?
+1. Pourquoi certains textes sont-ils tronqués ou ne s’affichent-ils pas correctement en HTML5 ?
 
-   Réponse : lorsque l’espace attribué à un champ de texte constitué d’une illustration ou d’une légende est insuffisant et ne lui permet pas d’afficher le contenu, le texte apparaît tronqué dans le formulaire pour périphériques mobiles généré. Cette troncature est également visible dans la vue de conception d’AEM Forms Designer. Bien que cette troncature puisse être prise en charge dans les fichiers PDF, ce n’est pas le cas dans les formulaires HTML5. Pour éviter ce problème, assurez-vous de prévoir un espace suffisant pour qu’un champ de texte constitué d’une illustration ou d’une légende puisse s’afficher sans être tronqué dans le mode de conception d’AEM Forms Designer.
+   Réponse : lorsque l’espace attribué à un champ de texte constitué d’une illustration ou d’une légende est insuffisant et ne lui permet pas d’afficher le contenu, le texte apparaît tronqué dans le rendu du formulaire mobile. Cette troncature est également visible dans la vue de conception d’AEM Forms Designer. Bien que cette troncature puisse être prise en charge dans les fichiers PDF, ce n’est pas le cas dans les formulaires HTML5. Pour éviter ce problème, assurez-vous de prévoir un espace suffisant pour qu’un champ de texte constitué d’une illustration ou d’une légende puisse s’afficher sans être tronqué dans le mode de conception d’AEM Forms Designer.
 
 1. Je constate des problèmes de mise en page liés à du contenu manquant ou à des chevauchements. Quelle en est la raison ?
 
@@ -100,17 +115,17 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
    Réponse : les formulaires HTML5 n’intègrent pas de polices (contrairement aux formulaires PDF où les polices sont intégrées au formulaire). Pour que la version HTML d’un formulaire s’affiche comme prévu, assurez-vous que les polices sont disponibles dans le référentiel CRX (référentiel de contenu AEM) de votre serveur AEM Forms et sur la machine sur laquelle AEM Designer est installé. Lorsque les polices ne sont pas disponibles dans le référentiel CRX de votre serveur AEM Forms ou à l’emplacement d’installation d’AEM Designer, le formulaire s’affiche avec des polices de secours.
 
-1. Les attributs d’alignement vertical et horizontal sont-ils pris en charge dans les formulaires HTML ?
+1. Les attributs vAlign et hAlign sont-ils pris en charge dans les formulaires HTML ?
 
    Réponse : oui, les attributs vAlign et hAlign sont pris en charge. L’attribut vAlign n’est pas pris en charge dans Internet Explorer et dans le champ multiligne.
 
-1. Les formulaires HTML5 prennent-ils en charge les caractères de l’hébreu ?
+1. Les formulaires HTML5 prennent-ils en charge les caractères hébreux ?
 
    Réponse : les formulaires HTML5 prennent en charge les caractères hébreux dans tous les navigateurs, à l’exception de Microsoft Internet Explorer.
 
-1. Existe-t-il des limites de caractères dans les champs numériques des formulaires HTML5 ?
+1. Existe-t-il des limitations concernant les champs numériques dans les formulaires HTML5 ?
 
-   Réponse : oui, les formulaires HTML5 sont soumis à certaines limitations. Si le nombre de chiffres dépasse celui indiqué dans la clause d’image, les numéros ne sont pas traduits et s’affichent dans les paramètres régionaux anglais.
+   Réponse : oui, les formulaires HTML5 sont soumis à certaines limitations. Si le nombre de chiffres dépasse celui indiqué dans la clause d’image, les nombres ne sont pas localisés et s’affichent avec les paramètres régionaux anglais.
 
 1. Pourquoi les formulaires HTML sont-ils plus volumineux que les formulaires PDF ?
 
@@ -120,13 +135,13 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
    Pour les formulaires HTML5, les navigateurs ne disposent pas d’un moteur XTG intégré pour créer des structures de données intermédiaires et des objets à partir d’octets XDP bruts. Ainsi, pour les formulaires HTML5, des structures intermédiaires sont générées sur le serveur et envoyées au client ou à la cliente. Côté client, les scripts basés sur JavaScript et le moteur de disposition utilisent ces structures intermédiaires.
 
-   La taille de la structure intermédiaire dépend de la taille du XDP original et des données fusionnées avec XDP.
+   La taille de la structure intermédiaire dépend de la taille du XDP original et des données fusionnées avec le XDP.
 
 1. Existe-t-il des restrictions concernant l’utilisation des tableaux dans mon xdp ?
 
    Réponse : les tableaux complexes génèrent des problèmes de rendu.
 
-   * La section (SubformSet) à l’intérieur d’un tableau n’est pas prise en charge.
+   * Les sections (SubformSet) à l’intérieur d’un tableau ne sont pas prises en charge.
    * Les lignes d’en-tête ou de pied de page de certains tableaux sont marquées pour répétition. La division de ces tableaux sur plusieurs pages peut entraîner des problèmes.
 
 1. Les tableaux accessibles sont-ils soumis à des restrictions ?
@@ -134,10 +149,10 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
    Réponse : oui, les tableaux accessibles sont soumis aux restrictions suivantes :
 
    * Les tableaux imbriqués et les sous-formulaires à l’intérieur d’un tableau ne sont pas pris en charge.
-   * Les en-têtes sont uniquement pris en charge pour la ligne supérieure ou les colonnes à gauche du tableau. Les en-têtes ne sont pas pris en charge pour les éléments de tableau intermédiaire. Vous pouvez appliquer des en-têtes à plusieurs lignes et les en-têtes de colonne sont pris en charge si toutes les lignes et colonnes sont associées à la ligne la plus élevée ou la colonne la plus à gauche du tableau.
+   * Les en-têtes sont uniquement pris en charge pour la ligne supérieure ou les colonnes à gauche du tableau. Les en-têtes ne sont pas pris en charge pour les éléments situés au milieu du tableau. Vous pouvez appliquer des en-têtes à plusieurs lignes et les en-têtes de colonne sont pris en charge si toutes les lignes et colonnes sont associées à la ligne la plus élevée ou la colonne la plus à gauche du tableau.
    * `Rowspan` et `colspan` ne sont pas pris en charge depuis un emplacement aléatoire du tableau.
 
-   * Vous ne pouvez pas dynamiquement ajouter ou supprimer l’occurrence des lignes contenant des éléments possédant une valeur rowspan supérieure à 1.
+   * Vous ne pouvez pas ajouter ou supprimer dynamiquement des instances de lignes contenant des éléments possédant une valeur rowspan supérieure à 1.
 
 1. Quel est l’ordre de lecture de l’info-bulle et de la légende pour les lecteurs d’écran ?
 
@@ -147,13 +162,13 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
 1. Lorsque vous survolez un champ, une info-bulle s’affiche. Comment désactiver cette fonction ?
 
-   Réponse : pour désactiver l’affichage d’info-bulles lorsque vous survolez un champ, sélectionnez Aucun dans le panneau de Designer.
+   Réponse : pour désactiver l’affichage d’info-bulles lorsque vous survolez un champ, sélectionnez Aucun dans le panneau du concepteur.
 
 1. Dans Designer, un utilisateur peut configurer les propriétés personnalisées d’aspect des boutons radio et des cases à cocher. Lors du rendu des formulaires, les formulaires HTML5 prennent-ils en compte ces propriétés personnalisées d’aspect ?
 
-   Réponse : Les formulaires HTML5 ignorent les propriétés personnalisées d’aspect des boutons radio et des cases à cocher. Les boutons radio et les cases à cocher s’affichent selon les spécifications du navigateur sous-jacent.
+   Réponse : Les formulaires HTML5 ignorent les propriétés personnalisées d’aspect des cases d’option et des cases à cocher. Les boutons radio et les cases à cocher s’affichent selon les spécifications du navigateur sous-jacent.
 
-1. Lorsqu’un formulaire HTML5 est ouvert dans un navigateur pris en charge, la bordure des champs placés de manière adjacente n’est pas alignée correctement ou les sous-formulaires apparaissent recouverts. Lorsque le même formulaire HTML5 est prévisualisé dans Forms Designer, les champs et la disposition ne sont pas mal alignés et les sous-formulaires sont dans la bonne position. Comment résoudre le problème ?
+1. Lorsqu’un formulaire HTML5 est ouvert dans un navigateur pris en charge, la bordure des champs placés côte à côte n’est pas alignée correctement ou les sous-formulaires se chevauchent. Lorsque le même formulaire HTML5 est prévisualisé dans Forms Designer, les champs et la disposition ne sont pas mal alignés et les sous-formulaires sont dans la bonne position. Comment résoudre le problème ?
 
    Réponse : lorsqu’un sous-formulaire peut enchaîner un contenu et qu’il présente un élément de bordure masqué, la bordure des champs placés de manière adjacente n’est pas alignée correctement ou les sous-formulaires se chevauchent. Pour résoudre le problème, vous pouvez supprimer ou commenter les éléments &lt;border> masqués du fichier XDP correspondant. Par exemple, l’élément &lt;border> suivant est marqué comme commentaire :
 
@@ -168,14 +183,14 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
 1. Pourquoi les lecteurs d’écran ne fonctionnent-ils pas correctement avec l’objet de champ Date/Heure ?
 
-   Réponse : les lecteurs d’écran ne prennent pas en charge les champs Date/Heure. Cependant, vous pouvez saisir manuellement la date et l’heure du champ pour que le lecteur d’écran puisse les lire. Utilisez une info-bulle ou du texte de lecteur d’écran pour indiquer à l’utilisateur de sélectionner manuellement la date et l’heure du champ.
+   Réponse : les lecteurs d’écran ne prennent pas en charge les champs Date/Heure. Cependant, vous pouvez saisir manuellement la date et l’heure dans le champ pour que le lecteur d’écran puisse les lire. Utilisez une info-bulle ou du texte de lecteur d’écran pour indiquer à l’utilisateur ou l’utilisatrice de sélectionner manuellement la date et l’heure pour le champ.
 
 1. Les formulaires HTML5 prennent-ils en charge les modèles d’affichage pour les champs flottants ?
 
    Réponse : les formulaires HTML5 ne prennent pas en charge les modèles d’affichage pour les champs flottants.
 
-1. Quel est le format du champ Date dans HTML5 Forms ?
-Réponse : le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez une date dans un autre format, le champ de date n’accepte pas le formatage tant que l’utilisateur n’a pas désélectionné le champ.
+1. Quel est le format du champ Date dans les formulaires HTML5 ?
+Réponse : le champ Date accepte le format ISO YYYY-MM-DD. Si vous spécifiez une date dans un autre format, le champ Date n’accepte pas la mise en forme tant que l’utilisateur ou l’utilisatrice n’a pas quitté le champ à l’aide de la touche de tabulation.
 
 ### Scripts {#scripting}
 
@@ -184,8 +199,8 @@ Réponse : le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez un
    Réponse:
 
    * La prise en charge du script xfa.connectionSet est limitée. Pour connectionSet, seul l’appel côté serveur du service web est pris en charge. Pour plus d’informations, consultez la section [Prise en charge des scripts](/help/forms/using/scripting-support.md).
-   * Il n’existe aucune prise en charge de $record et $data dans les scripts côté client. Cependant, si les scripts sont constitués de blocs formReady ou layoutReady, ils continuent de fonctionner car ces événements s’exécutent côté serveur.
-   * Les scripts spécifiques des éléments XFA constitués d’illustrations, comme pour la modification du texte du dessin (ou les éléments de texte constitués de légendes quand il s’agit de champs) ne sont pas pris en charge.
+   * Il n’existe aucune prise en charge de $record et $data dans les scripts côté client. Cependant, si les scripts sont écrits dans un bloc formReady ou layoutReady, ils continuent de fonctionner car ces événements s’exécutent côté serveur.
+   * Les scripts spécifiques aux éléments Draw de XFA, tels que la modification du texte Draw (ou du texte de légende s’il y a des champs), ne sont pas pris en charge.
 
 1. Existe-t-il des restrictions concernant l’utilisation de formCalc ?
 
@@ -195,7 +210,7 @@ Réponse : le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez un
 
    Réponse :
    * Dans AEM Forms Designer, nous recommandons de ne pas faire commencer le nom d’un objet (tel qu’un sous-formulaire ou un champ de texte) par un tiret bas (_). Pour utiliser le tiret bas au début du nom, ajoutez un préfixe juste après : _&lt;prefix>&lt;objectname>.
-   * Toutes les API des formulaires HTML5 API sont des mots-clés réservés. Pour les API/fonctions personnalisées, utilisez un nom différent de celui des [API de formulaires HTML5](/help/forms/using/scripting-support.md).
+   * Toutes les API des formulaires HTML5 sont des mots-clés réservés. Pour les API/fonctions personnalisées, utilisez un nom différent de celui des [API de formulaires HTML5](/help/forms/using/scripting-support.md).
 
 1. Les formulaires HTML5 prennent-ils en charge les champs flottants ?
 

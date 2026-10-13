@@ -1,6 +1,6 @@
 ---
-title: Démarrages rapides de l’API du service Backup and Restore
-description: Découvrez comment les démarrages rapide de l’API du service Backup and Restore d’AEM Forms permettent de créer et de restaurer des sauvegardes efficacement.
+title: Démarrages rapides de l’API du service de sauvegarde et de restauration
+description: Découvrez comment les démarrages rapides de l’API du service de sauvegarde et de restauration d’AEM Forms permettent de créer et de restaurer des sauvegardes efficacement.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,28 @@ role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 92%
-
 ---
-
-# Démarrage rapide de l’API du service de sauvegarde et de restauration {#backup-and-restore-service-apiquick-starts}
+# Démarrages rapides de l’API du service de sauvegarde et de restauration {#backup-and-restore-service-apiquick-starts}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
@@ -30,11 +44,11 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 
 >[!NOTE]
 >
->Les tutoriels de démarrage rapide dans Programmer avec AEM Forms sont basés sur le système d’exploitation Forms. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX®, remplacez les chemins spécifiques à Windows par ceux pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les tutoriels de démarrage rapide de Programming with AEM Forms sont basés sur le système d’exploitation Forms. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX®, remplacez les chemins spécifiques à Windows par ceux pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Démarrage rapide (mode SOAP) : activer le mode de sauvegarde à l’aide de l’API Java™ {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-L’exemple de code Java™ suivant passe en mode de sauvegarde avec un libellé unique pendant deux heures. Une fois le délai de sauvegarde expiré ou si le mode de sauvegarde est explicitement quitté, le serveur Forms revient à la purge des fichiers du stockage global de documents. (Voir [Activer le mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
+L’exemple de code Java™ suivant passe en mode de sauvegarde avec un libellé unique pendant deux heures. Une fois le délai de sauvegarde expiré ou si le mode de sauvegarde est explicitement quitté, le Serveur Formulaires revient à la purge des fichiers du stockage global de documents. (Voir [Activer le mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -149,7 +163,7 @@ L’exemple de code Java™ suivant passe en mode de sauvegarde avec un libellé
 
 ## Démarrage rapide (mode SOAP) : quitter le mode de sauvegarde à l’aide de l’API Java™ {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-L’exemple de code Java™ suivant amène de façon explicite le serveur Forms à quitter le mode de sauvegarde et à revenir à la purge des fichiers du stockage global de documents. (Voir [Quitter le mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
+L’exemple de code Java™ suivant amène de façon explicite le Serveur Formulaires à quitter le mode de sauvegarde et à revenir à la purge des fichiers du stockage global de documents. (Voir [Quitter le mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*

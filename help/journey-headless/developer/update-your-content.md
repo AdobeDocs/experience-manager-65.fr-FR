@@ -5,13 +5,39 @@ exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 98%
-
 ---
-
 # Comment mettre à jour votre contenu à l’aide des API AEM Assets {#update-your-content}
 
 Dans cette partie du [parcours de développement AEM découplé](overview.md), découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
@@ -21,7 +47,7 @@ Dans cette partie du [parcours de développement AEM découplé](overview.md), d
 Dans le document précédent du parcours découplé AEM, [Comment accéder à votre contenu à l’aide des API de diffusion AEM](access-your-content.md), vous avez appris à accéder à votre contenu en mode découplé via l’API AEM GraphQL et vous devriez maintenant :
 
 * Connaître GraphQL dans ses grandes lignes.
-* Comprendre le fonctionnement de l’API AEM GraphQL.
+* Comprendre le fonctionnement de l’API GraphQL d’AEM.
 * Connaître quelques exemples pratiques de requêtes.
 
 Cet article s’appuie sur ces principes de base afin que vous compreniez comment mettre à jour votre contenu découplé existant dans AEM à l’aide de l’API REST.
@@ -30,15 +56,15 @@ Cet article s’appuie sur ces principes de base afin que vous compreniez commen
 
 * **Audience** : Niveau avancé
 * **Objectif** : Découvrir comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour :
-   * Présentation de l’API HTTP d’AEM Assets.
-   * Présentation et description de la prise en charge des fragments de contenu dans l’API.
-   * Illustration de détails de l’API.
+  * Présentation de l’API HTTP d’AEM Assets.
+  * Présentation et description de la prise en charge des fragments de contenu dans l’API.
+  * Illustrez les détails de l’API.
 
 <!--
   * Look at sample code to see how things work in practice.
 -->
 
-## Pourquoi avez-vous besoin de l’API HTTP Assets pour le fragment de contenu {#why-http-api}
+## Pourquoi avez-vous besoin de l’API HTTP Assets pour les fragments de contenu {#why-http-api}
 
 À l’étape précédente du parcours en mode découplé, vous avez appris à utiliser l’API AEM GraphQL afin de récupérer votre contenu à l’aide de requêtes.
 
@@ -215,9 +241,9 @@ Associated content is currently not exposed.
 L’API REST Assets utilise le point d’entrée `/api/assets` et nécessite le chemin d’accès de la ressource pour y accéder (sans `/content/dam` en préfixe).
 
 * Cela signifie que pour accéder à la ressource à l’adresse suivante :
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * Vous devez demander :
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 Par exemple, pour accéder à `/content/dam/wknd/en/adventures/cycling-tuscany`, demandez `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -242,14 +268,14 @@ La méthode HTTP détermine l’opération à exécuter :
 
 Le format exact des requêtes prises en charge est défini dans la documentation Référence d’API.
 
-L’utilisation peut varier selon que vous utilisez un environnement d’auteur ou de publication AEM dans votre cas d’utilisation spécifique.
+L’utilisation peut varier selon que vous utilisez un environnement de création ou de publication AEM, ainsi qu’en fonction de votre cas d’usage spécifique.
 
-* Il est vivement recommandé de lier la création à une instance de création (et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API).
+* Il est vivement recommandé de lier la création à une instance de création (et il n’existe actuellement aucun moyen de répliquer un fragment vers l’instance de publication à l’aide de cette API).
 * La diffusion est possible à partir des deux, car AEM diffuse le contenu demandé au format JSON uniquement.
 
-   * Le stockage et la diffusion depuis une instance de création AEM doivent suffire pour les applications de bibliothèque de médias situées derrière le pare-feu.
+  * Le stockage et la diffusion depuis une instance de création AEM doivent suffire pour les applications de bibliothèque de médias situées derrière le pare-feu.
 
-   * Pour une diffusion web en direct, une instance de publication AEM est recommandée.
+  * Pour une diffusion web en direct, une instance de publication AEM est recommandée.
 
 >[!CAUTION]
 >
@@ -269,11 +295,11 @@ Par exemple :
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
-La réponse est un JSON sérialisé avec le contenu structuré comme dans le fragment de contenu. Les références sont diffusées en tant qu’URL de référence.
+La réponse est sérialisée au format JSON, avec le contenu structuré comme dans le fragment de contenu. Les références sont diffusées en tant qu’URL de référence.
 
 Deux types d’opérations de lecture sont possibles :
 
-* Lecture d’un fragment de contenu spécifique par chemin, ce qui renvoie la représentation JSON du fragment de contenu.
+* Lecture d’un fragment de contenu spécifique par chemin : renvoie la représentation JSON du fragment de contenu.
 * Lecture d’un dossier de fragments de contenu par chemin : cela renvoie les représentations JSON de tous les fragments de contenu du dossier.
 
 ### Créer {#create}
@@ -292,7 +318,7 @@ Mode d’utilisation :
 
 Le corps doit contenir une représentation JSON de ce qui doit être mis à jour pour le fragment de contenu donné.
 
-Il peut simplement s’agir du titre ou de la description d’un fragment de contenu, d’un élément unique ou de toutes les valeurs et/ou métadonnées d’un élément.
+Il peut simplement s’agir du titre ou de la description d’un fragment de contenu, d’un élément unique ou de toutes les valeurs d’élément et/ou métadonnées.
 
 ### Supprimer {#delete}
 
@@ -325,8 +351,8 @@ Poursuivez votre parcours dans AEM découplé en consultant le document [Comment
 ## Ressources supplémentaires {#additional-resources}
 
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
-* [API REST de fragments de contenu](/help/assets/assets-api-content-fragments.md)
-   * [Référence d’API](/help/assets/assets-api-content-fragments.md#api-reference)
+* [API REST des fragments de contenu](/help/assets/assets-api-content-fragments.md)
+  * [Référence d’API](/help/assets/assets-api-content-fragments.md#api-reference)
 * [API Adobe Experience Manager Assets - Fragments de contenu](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 * [Composants principaux d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)

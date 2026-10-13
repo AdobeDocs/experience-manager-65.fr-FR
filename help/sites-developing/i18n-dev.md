@@ -1,6 +1,6 @@
 ---
 title: Internationaliser des chaînes d’interface utilisateur
-description: Les API Java™ et JavaScript vous permettent d’internationaliser des chaînes.
+description: Les API Java&trade; et JavaScript vous permettent d’internationaliser des chaînes
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,13 +9,22 @@ exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 100%
-
+ht-degree: 96%
 ---
-
 # Internationaliser des chaînes d’interface utilisateur {#internationalizing-ui-strings}
 
 Les API Java™ et JavaScript vous permettent d’internationaliser des chaînes dans les types de ressources suivants :
@@ -59,7 +68,7 @@ I18n i18n = new I18n(slingRequest);
 
 Le constructeur utilise l’objet `SlingHTTPRequest` pour récupérer le paramètre de langue de l’utilisateur.
 
-Pour utiliser les paramètres régionaux de la page afin de déterminer la langue, obtenez d’abord le ResourceBundle pour la langue de la page demandée :
+Pour utiliser les paramètres régionaux de la page afin de déterminer la langue, obtenez d’abord le ResourceBundle correspondant à la langue de la page demandée :
 
 ```java
 Locale pageLang = currentPage.getLanguage(false);
@@ -110,7 +119,7 @@ La classe `I18N` définit une méthode `get` statique qui s’avère utile lorsq
 * Utilisation de la préférence de langue de l’utilisateur : indiquez l’objet SlingHttpRequest comme premier paramètre.
 
   `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
-* Utilisation de la langue de la page : indiquez ResourceBundle comme premier paramètre.
+* Utilisation de la langue de la page : indiquez le ResourceBundle comme premier paramètre.
 
   `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 
@@ -120,7 +129,7 @@ L’API JavaScript vous permet de localiser des chaînes sur le client. Comme po
 
 Le [dossier de bibliothèques clientes](/help/sites-developing/clientlibs.md) `granite.utils` fournit l’API JavaScript. Pour utiliser l’API, vous devez inclure ce dossier sur votre page. Les fonctions de localisation utilisent l’espace de noms `Granite.I18n`.
 
-Avant de présenter les chaînes localisées, vous devez définir les paramètres régionaux à l’aide de la fonction `Granite.I18n.setLocale`. Pour cette fonction, le code de langue du paramètre régional doit être défini comme argument :
+Avant de présenter les chaînes localisées, vous devez définir les paramètres régionaux à l’aide de la fonction `Granite.I18n.setLocale`. Pour cette fonction, le code de langue des paramètres régionaux doit être défini comme argument :
 
 ```
 Granite.I18n.setLocale("fr");
@@ -145,7 +154,7 @@ Les paramètres de la fonction sont différents de la méthode Java™ I18n.get�
 * Le deuxième paramètre est un tableau de valeurs à injecter dans le littéral de chaîne.
 * Le troisième paramètre est l’indicateur de localisation.
 
-L’exemple suivant utilise JavaScript pour localiser « Welcome back Administrator. » Vous avez 2 nouveaux messages dans votre boîte de réception ».  :
+L’exemple suivant utilise JavaScript pour localiser « Welcome back Administrator. » Vous avez 2 nouveaux messages dans votre boîte de réception ». :
 
 ```
 Granite.I18n.setLocale("fr");
@@ -169,7 +178,7 @@ Comme pour les [indicateurs de traduction dans l’API Java™](#using-translati
 
 `${prop}_commentI18n`
 
-Par exemple, un nœud `cq:page` comprend la propriété jcr:title en cours de localisation. L’indicateur est fourni comme valeur de la propriété nommée jcr:title_commentI18n.
+Par exemple, un nœud de `cq:page` inclut la propriété jcr:title en cours de localisation. L’indice est fourni comme valeur de la propriété nommée jcr:title_commentI18n.
 
 ### Tester la couverture d’internationalisation {#testing-internationalization-coverage}
 

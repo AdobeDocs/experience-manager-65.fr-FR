@@ -9,13 +9,27 @@ exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 97%
-
 ---
-
 # Ajouter des pièces jointes{#adding-attachments}
 
 >[!NOTE]
@@ -24,7 +38,7 @@ ht-degree: 97%
 
 ## Ajouter des pièces jointes dans les formulaires synchronisés avec le serveur AEM Forms Workflow (AEM Forms sur JEE) {#adding-annotations}
 
-L’application AEM Forms vous permet de joindre des images, des annotations et des notes de texte à votre formulaire synchronisé avec le serveur AEM Forms JEE. Si votre formulaire est chargé à partir d’un serveur AEM Forms Workflow, vos pièces jointes sont ajoutées au formulaire. Vous pouvez sélectionner le bouton de pièce jointe ![attachments-app](assets/attachments-app.png) pour afficher toutes les pièces jointes dans un formulaire. La notification rouge indique le nombre de pièces jointes du formulaire. Si le formulaire ne compte aucune pièce jointe, le bouton rouge de notification n’est pas visible. Si le formulaire ne compte aucune pièce jointe, lorsque vous sélectionnez le bouton des pièces jointes ![attch](assets/attch.png), vous avez la possibilité de joindre des photos ou des annotations.
+L’application AEM Forms vous permet de joindre des images, des notes de griffonnage et des notes de texte à votre formulaire synchronisé avec le serveur AEM Forms JEE. Si votre formulaire est chargé à partir d’un serveur AEM Forms Workflow, vos pièces jointes sont ajoutées au formulaire. Vous pouvez sélectionner le bouton de pièce jointe ![attachments-app](assets/attachments-app.png) pour afficher toutes les pièces jointes dans un formulaire. La notification rouge indique le nombre de pièces jointes du formulaire. Si le formulaire ne compte aucune pièce jointe, le bouton rouge de notification n’est pas visible. Si le formulaire ne compte aucune pièce jointe, lorsque vous sélectionnez le bouton des pièces jointes ![attch](assets/attch.png), vous avez la possibilité de joindre des photos ou des annotations.
 
 Vous avez le choix entre :
 
@@ -88,8 +102,8 @@ L’option **Notes** vous permet d’ajouter des annotations à main levée et d
 
 ## Pièces jointes dans les formulaires synchronisés avec les serveurs AEM Forms sans AEM Forms Workflow (AEM Forms sur OSGi) {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
 
-Les pièces jointes pour les formulaires mobiles synchronisés avec les serveurs AEM Forms OSGi fonctionnent de la même manière que les serveurs AEM Forms JEE.
+Les pièces jointes des formulaires mobiles synchronisés avec les serveurs AEM Forms OSGi fonctionnent de la même manière que celles des serveurs AEM Forms JEE.
 
 Les pièces jointes au niveau du formulaire ne sont pas prises en charge pour les formulaires adaptatifs chargés dans l’application à partir d’un serveur AEM Forms OSGi. Pour joindre des images ou des notes de texte, activez les pièces jointes au niveau du champ dans le formulaire lorsque vous le créez. Faites glisser et déposez le composant de pièce jointe depuis l’explorateur de composants sur le champ.
 
-Pour les formulaires adaptatifs, vous pouvez afficher les fichiers joints dans le document d’enregistrement (DoR). Consultez [Générer un document d’enregistrement pour les formulaires adaptatifs non basés sur XFA](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+Pour les formulaires adaptatifs, vous pouvez afficher les fichiers joints dans le document de référence (DoR). Consultez [Générer un document d’enregistrement pour les formulaires adaptatifs non basés sur XFA](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).

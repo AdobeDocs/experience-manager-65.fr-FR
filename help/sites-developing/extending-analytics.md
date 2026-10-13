@@ -9,13 +9,22 @@ exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '492'
 ht-degree: 100%
-
 ---
-
 # Optimisation du suivi des événements{#extending-event-tracking}
 
 AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur sur votre site web. En tant que développeur ou développeuse, vous aurez peut-être besoin :
@@ -77,7 +86,7 @@ Où :
 
 * `componentPath` est un attribut nécessaire, et il est recommandé de le définir sur `<%=resource.getResourceType()%>`.
 
- Par exemple, avec la définition suivante, un utilisateur cliquant sur le lien **Aller en haut** entraîne le déclenchement de deux événements, `jumptop` et `headlineclick` :
+Par exemple, avec la définition suivante, un utilisateur cliquant sur le lien **Aller en haut** entraîne le déclenchement de deux événements, `jumptop` et `headlineclick` :
 
 ```xml
 <h1 data-tracking="{event: 'headline', values: {level:'1'}, componentPath: '<%=resource.getResourceType()%>'}">

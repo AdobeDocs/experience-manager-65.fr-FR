@@ -1,17 +1,30 @@
 ---
 title: Configuration des paramètres de sécurité
 description: Découvrez comment configurer les paramètres de sécurité. Vous pouvez protéger les documents PDF en limitant l’accès. Vous pouvez chiffrer, certifier ou protéger le document par mot de passe.
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 feature: PDF Generator,Document Security
 exl-id: be076477-2681-4570-953d-6c44d3c30843
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 88%
@@ -20,7 +33,7 @@ ht-degree: 88%
 
 Vous pouvez limiter l’accès aux documents PDF en définissant des mots de passe et en limitant certaines fonctionnalités, telles que l’impression et la modification. Lorsqu’un document PDF comporte des fonctionnalités restreintes, les outils et les éléments de menu associés à ces fonctionnalités sont grisés. Vous pouvez utiliser d’autres méthodes pour créer des documents sécurisés, tels que le chiffrement ou la certification. Un paramètre de sécurité contient le mot de passe et des options spécifiques à utiliser pour certaines conversions de PDF.
 
-Dans la page Paramètres de sécurité, vous pouvez effectuer les tâches suivantes :
+Sur la page Paramètres de sécurité, vous pouvez effectuer les tâches suivantes :
 
 ## Créer ou modifier un paramètre de sécurité {#create-or-edit-a-security-setting}
 
@@ -30,9 +43,9 @@ Dans la page Paramètres de sécurité, vous pouvez effectuer les tâches suivan
 
 Un *paramètre de sécurité* contrôle la sécurité et les autorisations des fichiers convertis avec ce paramètre de sécurité.
 
-1. Dans Administration Console, cliquez sur Services > PDF Generator > Paramètres de sécurité.
+1. Dans la console d’administration, cliquez sur Services > PDF Generator > Paramètres de sécurité.
 1. Cliquez sur Nouveau ou sur le nom d’un paramètre de sécurité.
-1. Dans la page Nouveau/Modifier le paramètre de sécurité, renseignez les informations requises pour le paramètre de sécurité. (Voir [Configuration des paramètres de type de fichier](/help/forms/using/admin-help/configuring-file-type-settings.md#configuring-file-type-settings).)
+1. Sur la page Nouveau/Modifier le paramètre de sécurité, renseignez les informations requises pour le paramètre de sécurité. (Voir [Configuration des paramètres de type de fichier](/help/forms/using/admin-help/configuring-file-type-settings.md#configuring-file-type-settings).)
 1. Cliquez sur Enregistrer et, dans la boîte de dialogue qui s’affiche, saisissez un nom pour le paramètre, puis cliquez sur OK.
 
 ### Paramètres de sécurité {#security-settings}
@@ -47,13 +60,13 @@ Ces paramètres configurent la compatibilité et le chiffrement. Pour plus de pr
 
 **Acrobat 6.0 et versions ultérieures :** utilise un chiffrement élevé (RC4 128 bits). Cette option permet d’activer des métadonnées pour la recherche.
 
-**Acrobat 7.0 et versions ultérieures :** utilise un chiffrement élevé (AES 128 bits). Cette option permet d’activer des métadonnées pour la recherche et le chiffrement des pièces jointes uniquement.
+**Acrobat 7.0 et versions ultérieures :** utilise un chiffrement élevé (AES 128 bits). Cette option permet d’activer les métadonnées pour la recherche et de chiffrer uniquement les pièces jointes.
 
 **Acrobat 9.0 et versions ultérieures :** utilise un niveau de chiffrement élevé (AES 256 bits). Cette option permet d’activer des métadonnées pour la recherche et le chiffrement des pièces jointes uniquement.
 
 Une version antérieure d’Acrobat ne peut pas ouvrir un document PDF ayant un paramètre de compatibilité plus élevé. Par exemple, si vous sélectionnez l’option Acrobat 7.0 et versions ultérieures, vous ne pouvez pas ouvrir le document dans Acrobat 6.0 ou version antérieure.
 
-Assurez-vous que le niveau de compatibilité est cohérent avec celui du PDF pour la même source. Par exemple, si un dossier de contrôle est configuré de manière à utiliser l’option PDF standard (compatible avec Acrobat 5.0 ou une version ultérieure), le niveau de compatibilité de l’option ne doit pas être plus élevé que Acrobat 5.0.
+Assurez-vous que le niveau de compatibilité est cohérent avec celui du PDF pour la même source. Par exemple, si un dossier de contrôle est configuré de manière à utiliser l’option PDF standard (compatible avec Acrobat 5.0 ou une version ultérieure), votre niveau de compatibilité de sécurité ne doit pas être supérieur à Acrobat 5.0.
 
 **Restrictions du document :** les restrictions du document disponibles dépendent de l’option Compatibilité sélectionnée.
 
@@ -62,7 +75,7 @@ Assurez-vous que le niveau de compatibilité est cohérent avec celui du PDF pou
 **Chiffrer tout le contenu du document :** chiffre le document et ses métadonnées. Lorsque cette option est sélectionnée, les moteurs de recherche n’ont pas accès aux métadonnées du document.
 
 **Chiffrer Tout Le Contenu Du Document À L’Exception Des Métadonnées (Acrobat
-6 et versions ultérieures (compatible) :** chiffre le contenu d’un document tout en permettant aux moteurs de recherche d’accéder aux métadonnées du document. Cette option n’est disponible que si Acrobat 6.0 ou versions ultérieures, Acrobat 7.0 ou versions ultérieures, ou Acrobat 9.0 ou versions ultérieures est affecté à l’option Compatibilité.
+6 et versions ultérieures (compatible) :** chiffre le contenu d’un document tout en permettant aux moteurs de recherche d’accéder aux métadonnées du document. Cette option n’est disponible que si l’option Compatibilité est définie sur Acrobat 6.0 ou version ultérieure, Acrobat 7.0 ou version ultérieure, ou Acrobat 9.0 ou version ultérieure.
 
 **Chiffrer Uniquement Les Pièces Jointes (Acrobat 7 Et Versions Ultérieures)
 Compatible) :** les utilisateurs peuvent ouvrir le document sans mot de passe, mais ils doivent saisir un mot de passe pour ouvrir les pièces jointes. Cette option n’est disponible que si l’option Compatibilité est définie sur Acrobat 7.0 ou version ultérieure, ou Acrobat 9.0 ou version ultérieure.
@@ -79,11 +92,11 @@ Ces paramètres permettent de configurer la protection par mot de passe :
 
 **Saisir à nouveau le mot de passe d’ouverture du document :** vérifie que le mot de passe d’ouverture du document est correct.
 
-**Exiger un mot de passe pour l’ouverture des pièces jointes :** active les options de mot de passe. Cette option n’est disponible que si l’option Compatibilité sélectionnée est Acrobat 7.0 ou versions ultérieures ou Acrobat 9.0 ou versions ultérieures, et si l’option Restrictions du document sélectionnée est Chiffrer les pièces jointes.
+**Exiger un mot de passe pour l’ouverture des pièces jointes :** active les options de mot de passe. Cette option n’est disponible que si l’option Compatibilité sélectionnée est Acrobat 7.0 ou versions ultérieures ou Acrobat 9.0 ou versions ultérieures, et si l’option Restrictions du document sélectionnée est Chiffrer uniquement les pièces jointes.
 
-**Mot de passe d’ouverture de la pièce jointe :** vérifie qu’un mot de passe est requis pour ouvrir une pièce jointe. Les utilisateurs et utilisatrices peuvent ouvrir le document sans mot de passe. Cette option n’est disponible que si l’option Compatibilité sélectionnée est Acrobat 7.0 ou versions ultérieures ou Acrobat 9.0 ou versions ultérieures, et si l’option Restrictions du document sélectionnée est Chiffrer les pièces jointes.
+**Mot de passe d’ouverture de la pièce jointe :** vérifie qu’un mot de passe est requis pour ouvrir une pièce jointe. Les utilisateurs et utilisatrices peuvent ouvrir le document sans mot de passe. Cette option n’est disponible que si l’option Compatibilité sélectionnée est Acrobat 7.0 ou versions ultérieures ou Acrobat 9.0 ou versions ultérieures, et si l’option Restrictions du document sélectionnée est Chiffrer uniquement les pièces jointes.
 
-**Saisir à nouveau le mot de passe d’ouverture des pièces jointes :** vérifie que le mot de passe est correct. Cette option n’est disponible que si l’option Compatibilité sélectionnée est Acrobat 7.0 ou versions ultérieures ou Acrobat 9.0 ou versions ultérieures, et si l’option Restrictions du document sélectionnée est Chiffrer les pièces jointes.
+**Saisir à nouveau le mot de passe d’ouverture des pièces jointes :** vérifie que le mot de passe est correct. Cette option n’est disponible que si l’option Compatibilité sélectionnée est Acrobat 7.0 ou versions ultérieures ou Acrobat 9.0 ou versions ultérieures, et si l’option Restrictions du document sélectionnée est Chiffrer uniquement les pièces jointes.
 
 Ces options permettent de configurer les autorisations :
 

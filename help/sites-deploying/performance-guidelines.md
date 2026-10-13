@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 99%
-
 ---
-
 # Directives de performance{#performance-guidelines}
 
 Cet page fournit des directives générales sur l’optimisation de la performance de votre déploiement AEM. Si vous débutez avec AEM, consultez les pages suivantes avant de commencer à lire les directives de performance :
@@ -354,12 +363,12 @@ Développez pour AEM et optimisez les **performances et l’évolutivité**. Vou
 * N’utilisez pas de requêtes dans la mesure du possible.
 * N’utilisez pas de liaisons Sling pour obtenir des services OSGi dans le code Java™, mais utilisez plutôt :
 
-   * @Reference dans un composant DS ;
-   * @Inject dans un modèle Sling ;
-   * sling.getService() dans une classe d’utilisation Sightly ;
-   * sling.getService() dans un JSP ;
-   * un ServiceTracker ;
-   * un accès direct au registre du service OSGi.
+  * @Reference dans un composant DS ;
+  * @Inject dans un modèle Sling ;
+  * sling.getService() dans une classe d’utilisation Sightly ;
+  * sling.getService() dans un JSP ;
+  * un ServiceTracker ;
+  * un accès direct au registre du service OSGi.
 
 Pour plus d’informations sur le développement sur AEM, consultez la section [Principes de base du développement](/help/sites-developing/the-basics.md). Pour consulter d’autres bonnes pratiques, rendez-vous sur [Bonnes pratiques en matière de développement](/help/sites-developing/best-practices.md).
 
@@ -834,24 +843,24 @@ Consultez ci-dessous un résumé des recommandations fournies sur cette page :
 
 * **TarMK avec magasin de données du fichier** : l’architecture recommandée pour la plupart des clientes et clients :
 
-   * Topologie minimale : une instance de création, deux instances de publication, deux Dispatcher.
-   * La réplication sans fichiers binaires doit être activée si le magasin de données du fichier est partagé.
+  * Topologie minimale : une instance de création, deux instances de publication, deux Dispatcher.
+  * La réplication sans fichiers binaires doit être activée si le magasin de données du fichier est partagé.
 
 * **MongoMK avec magasin de données du fichier** : l’architecture recommandée pour l’évolutivité horizontale au niveau de création :
 
-   * Topologie minimale : trois instances de création, trois instances MongoDB, deux instances de publication, deux Dispatcher.
-   * La réplication sans fichiers binaires doit être activée si le magasin de données du fichier est partagé.
+  * Topologie minimale : trois instances de création, trois instances MongoDB, deux instances de publication, deux Dispatcher.
+  * La réplication sans fichiers binaires doit être activée si le magasin de données du fichier est partagé.
 
 * **Magasin de nœuds** : stocké sur le disque local et non sur un serveur NAS (dispositif de stockage réseau).
 * Lorsque vous utilisez **Amazon S3** :
 
-   * Le magasin de données Amazon S3 est partagé entre les niveaux de création et de publication.
-   * La réplication sans fichiers binaire doit être activée.
-   * La récupération de l’espace mémoire du magasin de données nécessite une première exécution sur tous les nœuds des instances de création et de publication, puis une seconde exécution sur l’instance de création.
+  * Le magasin de données Amazon S3 est partagé entre les niveaux de création et de publication.
+  * La réplication sans fichiers binaire doit être activée.
+  * La récupération de l’espace mémoire du magasin de données nécessite une première exécution sur tous les nœuds des instances de création et de publication, puis une seconde exécution sur l’instance de création.
 
 * **L’index personnalisé doit être créé en plus de l’index prêt à l’emploi.** : selon les recherches les plus courantes.
 
-   * Les index Lucene doivent être utilisés pour les index personnalisés.
+  * Les index Lucene doivent être utilisés pour les index personnalisés.
 
 * **La personnalisation du workflow peut améliorer sensiblement les performances** : la suppression de l’étape vidéo dans le workflow « Ressource de mise à jour », la désactivation d’écouteurs qui ne sont pas utilisés, etc.
 

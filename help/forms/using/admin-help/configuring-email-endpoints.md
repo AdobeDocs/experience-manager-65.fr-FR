@@ -9,13 +9,27 @@ exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3811'
 ht-degree: 92%
-
 ---
-
 # Configuration des points d’entrée d’e-mail {#configuring-email-endpoints}
 
 >[!NOTE]
@@ -24,15 +38,15 @@ ht-degree: 92%
 
 Les points d’entrée d’e-mail permettent aux utilisateurs et utilisatrices d’appeler un service en envoyant un ou plusieurs documents (en tant que pièces jointes) à un compte de messagerie spécifique. La boîte de réception de la messagerie sert de point de collecte pour les pièces jointes. Le service surveille la boîte de réception et traite les pièces jointes. Les résultats de la conversion sont transférés aux personnes définies dans le point d’entrée.
 
-Pour un point d’entrée d’e-mail, les utilisateurs et les utilisatrices autorisés peuvent appeler un processus en envoyant des fichiers par e-mail au compte approprié. Les résultats sont renvoyés à l’utilisateur ou à l’utilisatrice qui envoie (par défaut) ou à la personne définie dans les paramètres des points d’entrées.
+Pour un point d’entrée d’e-mail, les utilisateurs et les utilisatrices autorisés peuvent appeler un processus en envoyant des fichiers par e-mail au compte approprié. Les résultats sont renvoyés à l’utilisateur ou à l’utilisatrice qui envoie (par défaut) ou à la personne définie dans les paramètres du point d’entrée.
 
 Avant de configurer un point d’entrée d’e-mail, créez un compte de messagerie POP3 ou IMAP à utiliser par le point d’entrée. Configurez un compte distinct pour chaque type de conversion. Par exemple, vous pouvez configurer un compte pour générer des documents PDF standard à partir de pièces jointes entrantes, et un autre compte pour générer des documents PDF sécurisés.
 
 >[!NOTE]
 >
->Chaque adresse e-mail ne doit correspondre qu’à un seul point d’entrée d’e-mail. Vous ne pouvez pas configurer plusieurs point d’entrée d’e-mail sur une seule adresse, même si les points d’entrée d’e-mail supplémentaires sont désactivés.
+>Chaque adresse e-mail ne doit correspondre qu’à un seul point d’entrée de messagerie. Vous ne pouvez pas configurer plusieurs point d’entrée d’e-mail sur une seule adresse, même si les points d’entrée d’e-mail supplémentaires sont désactivés.
 
-Tous les points d’entrée d’e-mail sont configurés avec un nom d’utilisateur et un mot de passe autorisés pour la boîte de réception, qui sont requis lors de l’appel du service. Le compte de messagerie est protégé par le système de serveur de messagerie sur lequel il est configuré.
+Tous les points d’entrée d’e-mail sont configurés avec le nom d’utilisateur et le mot de passe d’un utilisateur ou d’une utilisatrice autorisé pour la boîte de réception, qui sont requis lors de l’appel du service. Le compte de messagerie est protégé par le serveur de messagerie sur lequel il est configuré.
 
 Si vos utilisateurs envoient des documents dont les noms et les chemins de conversion contiennent des caractères d’alphabet des langues de l’Europe occidentale, ils doivent utiliser une application d’e-mail prenant en charge les types d’encodage requis (Latin1 [ISO-8859-1], Langues de l’Europe occidentale [Windows] ou UTF-8). Pour plus d’informations, consultez le document *Installation et déploiement d’AEM forms* correspondant à votre serveur d’applications.
 
@@ -55,7 +69,7 @@ Vous pouvez configurer les protocoles POP3, IMAP ou SMTP pour utiliser le protoc
 
 1. A l’invite, spécifiez votre mot de passe (pour Java, le mot de passe par défaut est « `changeit` »). Vous recevrez un message indiquant que le certificat a bien été importé.
 1. Utilisez la console d’administration pour ajouter le point d’entrée d’e-mail au service.
-1. Créez le point d’entrée d’e-mail dans la console d’administration. Lors de la configuration des paramètres des points d’entrée, sélectionnez SSL POP3/IMAP activé pour les messages entrants et SSL SMTP activé pour les messages sortants, puis modifiez les propriétés du port en conséquence.
+1. Créez le point d’entrée d’e-mail dans la console d’administration. Lors de la configuration des paramètres du point d’entrée, sélectionnez SSL POP3/IMAP activé pour les messages entrants et SSL SMTP activé pour les messages sortants, puis modifiez les propriétés du port en conséquence.
 
 >[!NOTE]
 >
@@ -63,14 +77,14 @@ Vous pouvez configurer les protocoles POP3, IMAP ou SMTP pour utiliser le protoc
 
 ## Configuration des paramètres par défaut des points d’entrée d’e-mail {#configure-default-email-endpoint-settings}
 
-Vous pouvez utiliser la page Gestion des services pour configurer les attributs communs à tous les points d’entrée d’e-mail et fournir les valeurs par défaut de tous les points d’entrée d’e-mail.
+Vous pouvez utiliser la page Gestion des services pour configurer les attributs communs à tous les points d’entrée d’e-mail et fournir des valeurs par défaut à tous les points d’entrée d’e-mail.
 
 Pour que le workflow des formulaires reçoive et traite les e-mails entrants envoyés par les utilisateurs et les utilisatrices, vous devez créer un point d’entrée d’e-mail pour le service Complete Task. Ce point d’entrée d’e-mail nécessite des paramètres supplémentaires, comme décrit dans la section [Création d’un point d’entrée d’e-mail pour le service Complete Task](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service).
 
 ### Modification des valeurs par défaut des points d’entrée d’e-mail {#change-the-default-values-for-email-endpoints}
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
-1. Sur la page Gestion des services, cliquez sur Email: 1.0 (l’ID de composant est com.adobe.idp.dsc.provider.service.email.Email).
+1. Sur la page Gestion des services, cliquez sur Email : 1.0 (l’ID de composant est com.adobe.idp.dsc.provider.service.email.Email).
 1. Dans l’onglet Configuration, spécifiez les paramètres par défaut des points d’entrée d’e-mail, puis cliquez sur Enregistrer.
 
 ### Paramètres par défaut des points d’entrée d’e-mail {#default-email-endpoint-settings}
@@ -99,7 +113,7 @@ Pour que le workflow des formulaires reçoive et traite les e-mails entrants env
 
 **Port de boîte de réception :** numéro de port de boîte de réception que le fournisseur de messagerie électronique doit analyser. Avec la valeur 0, le port IMAP ou POP3 par défaut est utilisé.
 
-**Protocole de boîte de réception :** protocole utilisé par le point d’entrée d’e-mail pour analyser la boîte de réception. Les choix possibles sont IMAP ou POP3. Le serveur de messagerie de l’hôte boîte de réception doit prendre en charge ces protocoles.
+**Protocole de boîte de réception :** protocole utilisé par le point d’entrée d’e-mail pour analyser la boîte de réception. Les choix possibles sont IMAP ou POP3. Le serveur de messagerie hôte de la boîte de réception doit prendre en charge ces protocoles.
 
 **Délai d’expiration de la boîte de réception :** indique le délai d’expiration du point d’entrée pour annuler une tentative de connexion à la boîte de réception. Si une connexion n’est pas établie avant que cette valeur ne soit atteinte, la boîte de réception n’est pas interrogée.
 
@@ -125,13 +139,13 @@ Pour que le workflow des formulaires reçoive et traite les e-mails entrants env
 
 **Utiliser la ligne d’objet originelle pour les e-mails de résultat :** par défaut, le serveur Forms utilise les valeurs spécifiées dans les paramètres d’objet des e-mails de succès et d’erreur en tant qu’objet des e-mails de résultat envoyés. Pour que l’objet des messages électroniques de résultat soit le même que l’objet du message électronique original envoyé au serveur, sélectionnez cette option.
 
-**Objet de l’e-mail de succès :** après l’envoi d’un e-mail à un point d’entrée d’e-mail pour commencer ou continuer un processus, le serveur AEM Forms vous renvoie un message. Si votre e-mail est envoyé avec succès, vous recevez un e-mail de succès. Si l’envoi de votre e-mail échoue, vous recevez un e-mail d’échec vous informant des raisons de cet échec. Ce paramètre vous permet de spécifier l’objet des e-mails de succès envoyés pour ce point d’entrée.
+**Objet de l’e-mail de succès :** après l’envoi d’un e-mail à un point d’entrée d’e-mail pour commencer ou continuer un processus, le serveur AEM Forms vous renvoie un message. Si votre e-mail aboutit, vous recevez un e-mail de confirmation. Si l’envoi de votre e-mail échoue, vous recevez un e-mail d’échec vous informant des raisons de cet échec. Ce paramètre vous permet de spécifier l’objet des e-mails de succès envoyés pour ce point d’entrée.
 
 **Corps de l’e-mail de succès :** permet de spécifier le corps de texte des e-mails de succès envoyés pour ce point d’entrée.
 
 **Préfixe d’objet des e-mails d’erreurs :** permet de spécifier le préfixe utilisé au début de l’objet des e-mails d’erreur envoyés pour ce point d’entrée.
 
-**Objet de l’e-mail d’erreur :** permet de spécifier l’objet des e-mails d’erreur envoyés pour ce point d’entrée. Ce texte est affichée après le préfixe de l’objet des messages électroniques d’erreur.
+**Objet de l’e-mail d’erreur :** permet de spécifier l’objet des e-mails d’erreur envoyés pour ce point d’entrée. Ce texte est affiché après le préfixe de l’objet des e-mails d’erreur.
 
 **Corps des e-mails d’erreur :** permet de spécifier la première ligne du corps du texte des e-mails d’erreur envoyés pour ce point d’entrée.
 
@@ -139,13 +153,13 @@ Pour que le workflow des formulaires reçoive et traite les e-mails entrants env
 
 **Valider la boîte de réception avant de créer/mettre à jour ce point d’entrée :** lorsque cette option est sélectionnée, le serveur Forms vérifie que les paramètres SMTP/POP3 sont corrects avant de créer le point d’entrée. Lorsque vous cliquez sur Ajouter, un message s’affiche, indiquant si le compte de la boîte de réception est valide ou non. Si cette option n’est pas sélectionnée, le serveur AEM Forms crée le point d’entrée sans valider la boîte de réception.
 
-**Encodage du jeu de caractères :** format de codage à utiliser pour l’e-mail. La valeur par défaut est UTF-8, que la plupart des utilisateurs et des utilisatrices en dehors du Japon utiliseront. Les utilisateurs et utilisatrices d’un environnement en japonais peuvent choisir ISO2022-JP.
+**Encodage du jeu de caractères :** format de codage à utiliser pour l’e-mail. La valeur par défaut est UTF-8, que la plupart des utilisateurs et des utilisatrices en dehors du Japon utiliseront. Les utilisateurs et utilisatrices dans un environnement japonais peuvent choisir ISO2022-JP.
 
 **Dossier Échec d’envoi de l’e-mail :** spécifie un répertoire dans lequel stocker les résultats en cas de non-fonctionnement du serveur de courrier SMTP.
 
 ## Paramètres des points d’entrée de courrier électronique {#email-endpoint-settings}
 
-Définissez les paramètres suivants pour configurer un point d’entrée d’e-mail.
+Définissez les paramètres suivants pour configurer un point d’entrée e-mail.
 
 **Nom :** paramètre obligatoire qui identifie le point d’entrée. N’incluez pas de caractère&lt;, car le nom affiché dans Workspace serait tronqué. Si vous saisissez une URL comme nom du point d’entrée, assurez-vous qu’elle est conforme aux règles de syntaxe spécifiées dans la RFC1738.
 
@@ -169,11 +183,11 @@ Définissez les paramètres suivants pour configurer un point d’entrée d’e-
 
 **Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant qui sont acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions spécifiques (&ast;.dat, &ast;.xml), des noms spécifiques (data) ou des expressions composites dans le nom et l’extension (&ast;.`[dD][aA]`&#39;port&#39;).
 
-**Destinataires des tâches effectuées :** adresse e-mail à laquelle sont envoyés les messages pour signaler les tâches effectuées. Par défaut, un message de travail effectué est toujours envoyé à l’expéditeur. Si vous saisissez sender, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires avec des adresses e-mail séparées par des virgules (,).
+**Destinataires des tâches effectuées :** adresse e-mail à laquelle sont envoyés les messages pour signaler les tâches effectuées. Par défaut, un message de travail effectué est toujours envoyé à l’expéditeur. Si vous saisissez sender, les résultats sont envoyés par e-mail à l’expéditeur ou à l’expéditrice. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires avec des adresses e-mail séparées par des virgules (,).
 
 Pour désactiver ce paramètre, laissez-le vide. Dans certains cas, il se peut que vous souhaitiez déclencher un processus et ne pas recevoir d’e-mail de notification du résultat.
 
-**Destinataires des tâches en échec :** adresse e-mail à laquelle sont envoyés les messages pour signaler les travaux ayant échoué. Par défaut, un message de travail ayant échoué est toujours envoyé à l’expéditeur. Si vous saisissez sender, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires avec des adresses e-mail séparées par des virgules (,).
+**Destinataires des tâches en échec :** adresse e-mail à laquelle sont envoyés les messages pour signaler les travaux ayant échoué. Par défaut, un message de travail ayant échoué est toujours envoyé à l’expéditeur. Si vous saisissez sender, les résultats sont envoyés par e-mail à l’expéditeur ou à l’expéditrice. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires avec des adresses e-mail séparées par des virgules (,).
 
 Pour désactiver ce paramètre, laissez-le vide. Dans certains cas, il se peut que vous souhaitiez déclencher un processus et ne pas recevoir d’e-mail de notification du résultat.
 
@@ -181,7 +195,7 @@ Pour désactiver ce paramètre, laissez-le vide. Dans certains cas, il se peut q
 
 **Port de la boîte de réception :** port utilisé par le serveur de messagerie. La valeur POP3 par défaut est 110 et la valeur IMAP par défaut est 143. Si SSL est activé, la valeur par défaut pour POP3 est 995 et la valeur par défaut pour IMAP est 993.
 
-**Protocole de la boîte de réception :** protocole utilisé par le point d’entrée d’e-mail pour analyser la boîte de réception. Les valeurs sont IMAP ou POP3. Le serveur de messagerie de l’hôte boîte de réception doit prendre en charge ces protocoles.
+**Protocole de la boîte de réception :** protocole utilisé par le point d’entrée d’e-mail pour analyser la boîte de réception. Les valeurs sont IMAP ou POP3. Le serveur de messagerie de l’hôte de la boîte de réception doit prendre en charge ces protocoles.
 
 **Délai d’expiration de la boîte de réception :** délai (en secondes) pendant lequel le fournisseur d’e-mail attend les réponses de la boîte de réception.
 
@@ -215,13 +229,13 @@ La valeur par défaut est asynchrone.
 
 **Utiliser la ligne d’objet d’origine pour les e-mails de résultats :** par défaut, le serveur Forms utilise les valeurs spécifiées dans les paramètres d’objet des e-mails de réussite et d’erreur en tant qu’objet des e-mails de résultat envoyés. Pour que l’objet des messages électroniques de résultat soit le même que l’objet du message électronique original envoyé au serveur, sélectionnez cette option.
 
-**Objet de l’e-mail de succès :** après l’envoi d’un e-mail à un point d’entrée d’e-mail pour commencer ou continuer un processus, le serveur AEM Forms vous renvoie un message. Si votre e-mail est envoyé avec succès, vous recevez un e-mail de succès. Si l’envoi de votre e-mail échoue, vous recevez un e-mail d’échec vous informant des raisons de cet échec. Ce paramètre vous permet de spécifier l’objet des e-mails de succès envoyés pour ce point d’entrée.
+**Objet de l’e-mail de succès :** après l’envoi d’un e-mail à un point d’entrée d’e-mail pour commencer ou continuer un processus, le serveur AEM Forms vous renvoie un message. Si votre e-mail aboutit, vous recevez un e-mail de confirmation. Si l’envoi de votre e-mail échoue, vous recevez un e-mail d’échec vous informant des raisons de cet échec. Ce paramètre vous permet de spécifier l’objet des e-mails de succès envoyés pour ce point d’entrée.
 
 **Corps de l’e-mail de succès :** permet de spécifier le corps de texte des e-mails de succès envoyés pour ce point d’entrée.
 
 **Préfixe d’objet des e-mails d’erreurs :** permet de spécifier le préfixe utilisé au début de l’objet des e-mails d’erreur envoyés pour ce point d’entrée.
 
-**Objet de l’e-mail d’erreur :** permet de spécifier l’objet des e-mails d’erreur envoyés pour ce point d’entrée. Ce texte est affichée après le préfixe de l’objet des messages électroniques d’erreur.
+**Objet de l’e-mail d’erreur :** permet de spécifier l’objet des e-mails d’erreur envoyés pour ce point d’entrée. Ce texte est affiché après le préfixe de l’objet des e-mails d’erreur.
 
 **Corps des e-mails d’erreur :** permet de spécifier la première ligne du corps du texte des e-mails d’erreur envoyés pour ce point d’entrée.
 
@@ -231,11 +245,11 @@ La valeur par défaut est asynchrone.
 
 **Nom de l’opération :** ce paramètre est obligatoire. Liste des opérations pouvant être affectées au point d’entrée de l’e-mail. L’opération que vous sélectionnez ici détermine quels champs sont affichés dans les sections Mappages des paramètres d’entrée et Mappages des paramètres de sortie.
 
-**Mappage du paramètre d’entrée :** permet de configurer l’entrée requise pour traiter le service et l’opération. Il existe deux types d’entrées : littéral et variable.
+**Mappage du paramètre d’entrée :** permet de configurer l’entrée requise pour traiter le service et l’opération. Il existe deux types d’entrées : littérales et variables.
 
 **Littéral :** l’e-mail utilise la valeur saisie dans le champ telle qu’elle est affichée.
 
-**Variable :** vous pouvez associer une chaîne à l’objet, au corps, à l’en-tête ou à l’adresse e-mail de l’expéditeur de l’e-mail. Pour ce faire, utilisez l’un des mots-clés suivants : %SUBJECT%, %BODY%, %HEADER% ou %SENDER%. Par exemple, si vous utilisez %SUBJECT%, le contenu de l’objet de l’email est utilisé comme paramètre d’entrée. Pour sélectionner des pièces jointes, saisissez un modèle de fichier que le point d’entrée de l’e-mail peut utiliser pour sélectionner les documents joints. Par exemple, la saisie de &ast;.pdf sélectionne tout document joint dont l’extension est .pdf. La saisie de &ast; sélectionne tout document joint. Saisir exemple.pdf sélectionne tout document joint dont le nom est example.pdf.
+**Variable :** vous pouvez associer une chaîne à l’objet, au corps, à l’en-tête ou à l’adresse e-mail de l’expéditeur de l’e-mail. Pour ce faire, utilisez l’un des mots-clés suivants : %SUBJECT%, %BODY%, %HEADER% ou %SENDER%. Par exemple, si vous utilisez %SUBJECT%, le contenu de l’objet de l’email est utilisé comme paramètre d’entrée. Pour sélectionner des pièces jointes, saisissez un modèle de fichier que le point d’entrée de l’e-mail peut utiliser pour sélectionner les documents joints. Par exemple, la saisie de &ast;.pdf sélectionne tout document joint dont l’extension est .pdf. La saisie de &ast; sélectionne tout document joint. La saisie de example.pdf sélectionne tout document joint dont le nom est example.pdf.
 
 **Mappage du paramètre de sortie :** permet de configurer les sorties du service et de l’opération. Les caractères suivants indiqués dans les valeurs de mappage des paramètres de sortie sont développés dans le nom du fichier de la pièce jointe :
 
@@ -249,7 +263,7 @@ Toute occurrence de la barre oblique inverse (\) est remplacée par %%.
 
 Les valeurs suivantes sont disponibles :
 
-**Objet unique :** le fournisseur de messagerie électronique n’a pas la destination du dossier source. Les résultats sont renvoyés en tant que pièces jointes. Le modèle est Result/%F.ps et renvoie Result%%nom_fichier_source.ps comme pièce jointe du nom du fichier.
+**Objet unique :** le fournisseur de messagerie électronique n’a pas la destination du dossier source. Les résultats sont renvoyés en tant que pièces jointes. Le modèle est Result/%F.ps et renvoie Result%%nom_fichier_source.ps comme nom de fichier de la pièce jointe.
 
 **Liste :** le modèle est Result/%F/ et renvoie Result%%sourcefilename%%file1 comme pièce jointe du nom de fichier.
 
@@ -260,16 +274,16 @@ Les valeurs suivantes sont disponibles :
 Pour que le workflow des formulaires reçoive et traite les e-mails entrants envoyés par les utilisateurs et les utilisatrices, vous devez créer un point d’entrée d’e-mail pour le service Complete Task.
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
-1. Dans la page Gestion des services, cliquez sur le service Complete Task.
+1. Sur la page Gestion des services, cliquez sur le service Complete Task.
 1. Dans l’onglet Points d’entrée, sélectionnez E-mail dans la liste déroulante, puis cliquez sur Ajouter.
 1. Dans la zone Hôte de la boîte de réception, saisissez le nom d’hôte ou l’adresse IP du serveur de messagerie.
-1. Dans la zone Utilisateur ou utilisatrice de la boîte de réception, saisissez le nom requis pour vous connecter au compte de messagerie que vous avez créé afin de gérer les envois de formulaire. En fonction du serveur de messagerie et de la configuration, il peut s’agir uniquement de la partie nom d’utilisateur ou d’utilisatrice de l’e-mail ou de l’adresse e-mail complète.
+1. Dans la zone Utilisateur ou utilisatrice de la boîte de réception, saisissez le nom d’utilisateur requis pour vous connecter au compte de messagerie que vous avez créé afin de gérer les envois de formulaire. En fonction du serveur de messagerie et de la configuration, il peut s’agir uniquement de la partie nom d’utilisateur ou d’utilisatrice de l’e-mail ou de l’adresse e-mail complète.
 1. Dans la zone Mot de passe de la boîte de réception, saisissez le mot de passe de l’utilisateur ou de l’utilisatrice de la boîte de réception.
 1. Dans la zone Hôte SMTP, saisissez le nom d’hôte ou l’adresse IP du serveur de messagerie à partir duquel le fournisseur de messagerie envoie les résultats et les messages d’erreur.
 1. Dans la zone Utilisateur ou utilisatrice SMTP, saisissez le compte d’utilisateur ou d’utilisatrice que le fournisseur de messagerie doit utiliser pour envoyer des e-mails de résultats et d’erreurs. Ce compte d’utilisateur ou d’utilisatrice peut comporter la même valeur que celle utilisée pour l’utilisateur ou l’utilisatrice de la boîte de réception.
 1. Dans la zone Mot de passe SMTP, saisissez le mot de passe du compte SMTP.
 1. Dans la liste Nom de l’opération, sélectionnez appel.
-1. Dans la liste attachmentMap, sélectionnez Variable et saisissez `*.*` dans le champ adjacent. Toutes les pièces jointes des messages électroniques entrants sont alors envoyées vers une variable map pour le processus Terminer la tâche.
+1. Dans la liste attachmentMap, sélectionnez Variable et saisissez `*.*` dans le champ adjacent. Toutes les pièces jointes des messages électroniques entrants sont alors envoyées vers une variable de mappage pour le processus Terminer la tâche.
 1. Dans la liste mailBody, sélectionnez Variable et saisissez `%BODY%` dans le champ adjacent.
 1. Dans la liste mailFrom, sélectionnez Variable et saisissez `%SENDER%` dans le champ adjacent. L’adresse de l’expéditeur est alors mise en correspondance avec les données du processus Terminer la tâche.
 1. Dans la zone des résultats, saisissez `results`. Le processus Terminer la tâche (Complete Task) ou Démarrer le processus (Start Process) renvoie alors une chaîne de résultat.

@@ -9,7 +9,23 @@ exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 100%
@@ -54,12 +70,12 @@ Ce mode de mise en cache garantit l’utilisation des ressources les plus récen
 
 **Définition de la mise en cache sans condition**
 
-1. Dans Administration Console, cliquez sur Services > Forms.
+1. Dans la console d’administration, cliquez sur Services > Forms.
 1. Dans les Paramètres de contrôle du cache de Forms, sélectionnez Sans condition et cliquez sur Enregistrer.
 
 ### Utilisation du point de contrôle du cache {#use-the-cache-check-point}
 
-Dans ce mode, le service Forms ne recherche les versions des ressources les plus récentes dans le référentiel que lorsque la date et l’heure de la ressource mise en cache sont antérieures à l’heure du point de contrôle du cache. L’heure du point de contrôle du cache le plus récent s’affiche dans la page Forms de la console d’administration.
+Dans ce mode, le service Forms ne recherche les versions des ressources les plus récentes dans le référentiel que lorsque la date et l’heure de la ressource mise en cache sont antérieures à l’heure du point de contrôle du cache. L’heure du point de contrôle du cache le plus récent s’affiche sur la page Forms de la console d’administration.
 
 Utilisez ce mode de mise en cache dans des environnements de production hautement performants où les performances sont d’un intérêt important et où les modifications apportées aux ressources sont peu fréquentes. Vous pouvez réinitialiser l’heure du point de contrôle du cache lorsque vous souhaitez déployer les modifications apportées aux ressources du référentiel.
 
@@ -70,14 +86,14 @@ Utilisez ce mode de mise en cache dans des environnements de production hautemen
 
 **Réinitialisation du point de contrôle du cache**
 
-1. Dans Administration Console, cliquez sur Services > Forms.
+1. Dans la console d’administration, cliquez sur Services > Forms.
 1. Dans les Paramètres de contrôle du cache de Forms, cliquez sur Point de contrôle du cache.
 
 **Réinitialisation du contenu du cache**
 
-Vous pouvez vider le contenu du cache à tout moment. Après la réinitialisation du cache, la premiè requête est plus lente pour chaque formulaire, car le service Forms effectue un rendu complet et crée un nouveau contenu de cache.
+Vous pouvez vider le contenu du cache à tout moment. Après la réinitialisation du cache, la première requête pour chaque formulaire est plus lente, car le service Forms effectue un rendu complet et crée un nouveau contenu de cache.
 
-1. Dans Administration Console, cliquez sur Services > Forms.
+1. Dans la console d’administration, cliquez sur Services > Forms.
 1. Dans les Paramètres de contrôle du cache de Forms, cliquez sur Réinitialiser le cache.
 
 ## Configuration des paramètres du cache {#configuring-cache-settings}
@@ -94,7 +110,7 @@ Pour accéder à ces paramètres, dans la console d’administration, cliquez su
 
 Les paramètres de la zone **Paramètres du cache global** affectent tous les types de cache. Si vous modifiez l’un de ces paramètres, redémarrez le service Forms pour que la modification soit prise en compte. Pour redémarrer ce service, utilisez Workbench ou consultez la section [Démarrage ou arrêt des services associés aux modules AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) pour obtenir des instructions.
 
-**Taille max. du document du cache (Ko) :** taille maximale, en kilo-octets, d’une conception de formulaire ou autre ressource pouvant être stockée dans un cache mémoire. Ce paramètre global s’applique à tous les caches mémoire. Si une ressource est supérieure à cette valeur, elle n’est pas mise en cache dans la mémoire. La valeur par défaut est 1024 kilo-octets. Ce paramètre n’a aucune incidence sur le cache disque.
+**Taille max. du document du cache (Ko) :** taille maximale, en kilo-octets, d’une conception de formulaire ou autre ressource pouvant être stockée dans un cache mémoire. Ce paramètre global s’applique à tous les caches mémoire. Si une ressource est supérieure à cette valeur, elle n’est pas mise en cache en mémoire. La valeur par défaut est 1024 kilo-octets. Ce paramètre n’a aucune incidence sur le cache disque.
 
 **Mise en cache des rendus de formulaire activée :** cette option est sélectionnée par défaut, ce qui signifie que les formulaires rendus sont mis en cache pour récupération ultérieure. Ce paramètre améliore les performances, car le service Forms ne doit effectuer le rendu d’un formulaire donné qu’une seule fois ; il utilise ensuite la version mise en cache. Cette option est associée à la propriété de mise en cache d’une conception de formulaire. Pour plus d’informations sur la configuration de cette valeur lors de la conception de formulaire, voir Aide de Designer.
 
@@ -142,4 +158,4 @@ Dans un environnement organisé en clusters, chaque nœud gère ses propres cach
 
 L’emplacement du cache doit être identique (même disque et même chemin d’accès) pour chaque nœud du cluster. Ne placez pas le cache à un emplacement de stockage partagé.
 
-Si vous utilisez la page Forms d’Administration Console pour modifier les paramètres de mise en cache d’un nœud particulier, les paramètres de mise en cache des autres nœuds sont mis à jour lorsqu’une demande atteint le nœud en question. Ce comportement s’applique également au bouton Réinitialiser le cache. Si vous cliquez sur le bouton Réinitialiser le cache pour un nœud, le cache est immédiatement supprimé de ce nœud. Le cache des autres nœuds est vidé lorsqu’une demande atteint le nœud en question.
+Si vous utilisez la page Forms de la console d’administration pour modifier les paramètres de mise en cache d’un nœud particulier, les paramètres de mise en cache des autres nœuds sont mis à jour lorsqu’une demande atteint le nœud en question. Ce comportement s’applique également au bouton Réinitialiser le cache. Si vous cliquez sur le bouton Réinitialiser le cache pour un nœud, le cache est immédiatement supprimé de ce nœud. Le cache des autres nœuds est vidé lorsqu’une demande atteint le nœud en question.

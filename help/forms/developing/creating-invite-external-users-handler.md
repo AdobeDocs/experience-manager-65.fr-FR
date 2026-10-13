@@ -1,17 +1,31 @@
 ---
-title: Créer un gestionnaire d’utilisateurs externes
+title: Créer un gestionnaire d’invitation d’utilisateurs et utilisatrices externes
 description: Découvrez comment créer un gestionnaire d’utilisateurs et d’utilisatrices externes. Un gestionnaire d’utilisateurs et d’utilisatrices externes permet au service Rights Management d’inviter des utilisateurs et utilisatrices externes à devenir des utilisateurs et utilisatrices de Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 99%
-
 ---
-
 # Créer un gestionnaire d’invitation d’utilisateurs externes {#create-invite-external-users-handler}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -36,7 +50,7 @@ Pour développer un gestionnaire d’invitation d’utilisateurs externes, proc�
 
 Pour configurer votre environnement de développement, vous devez créer un projet Java, tel qu’un projet Eclipse. La version d’Eclipse prise en charge est la version `3.2.1` ou ultérieure.
 
-La SPI Rights Management nécessite de spécifier le fichier `edc-server-spi.jar` dans le chemin d’accès de classe de votre projet. Si vous ne référencez pas ce fichier JAR, vous ne pouvez pas utiliser la SPI Rights Management dans votre projet Java. Ce fichier JAR est installé avec le SDK AEM Forms dans le dossier `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
+La SPI Rights Management nécessite de spécifier le fichier `edc-server-spi.jar` dans le chemin d’accès de classe de votre projet. Si vous ne référencez pas ce fichier JAR, vous ne pouvez pas utiliser la SPI de Rights Management dans votre projet Java. Ce fichier JAR est installé avec le SDK AEM Forms dans le dossier `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
 
 En plus de l’ajout du fichier `edc-server-spi.jar` dans le chemin de classe de votre projet, vous devez également ajouter les fichiers JAR requis pour utiliser l’API du service Rights Management. Ces fichiers sont nécessaires pour utiliser l’API du service Rights Management dans le gestionnaire d’invitation d’utilisateurs externes.
 
@@ -52,7 +66,7 @@ La méthode `invitedUser` accepte une instance `java.util.List` qui contient des
 
 L’implémentation du gestionnaire d’invitation d’utilisateurs externes contient une méthode définie par l’utilisateur nommée `createLocalPrincipalAccount`. Cette méthode accepte une valeur de chaîne qui indique une adresse électronique comme valeur de paramètre. La méthode `createLocalPrincipalAccount` suppose la préexistence d’un domaine local appelé `EDC_EXTERNAL_REGISTERED`. Vous pouvez configurer ce nom de domaine comme vous le souhaitez ; toutefois, pour une application de production, vous pouvez vouloir l’intégrer à un domaine d’entreprise.
 
-La méthode `createUsers` effectue une itération sur chaque adresse électronique et crée un objet Utilisateur correspondant (un utilisateur local dans le domaine `EDC_EXTERNAL_REGISTERED`). Enfin, la méthode `doEmails` est appelée. Cette méthode est délibérément laissée sous la forme d’un bulletin dans l’échantillon. Dans une implémentation destinée à la production, elle contiendrait la logique de l’application pour envoyer des messages d’invitation par e-mail aux utilisateurs et utilisatrices nouvellement créés. Il est laissé dans l’exemple pour démontrer le flux logique d’application d’une application réelle.
+La méthode `createUsers` effectue une itération sur chaque adresse électronique et crée un objet Utilisateur correspondant (un utilisateur local dans le domaine `EDC_EXTERNAL_REGISTERED`). Enfin, la méthode `doEmails` est appelée. Cette méthode est délibérément laissée sous la forme d’un stub dans l’exemple. Dans une mise en œuvre destinée à la production, elle contiendrait la logique de l’application pour envoyer des messages d’invitation par e-mail aux utilisateurs et utilisatrices nouvellement créés. Il est laissé dans l’exemple pour démontrer le flux de logique applicative d’une application réelle.
 
 ### Définir l’implémentation du gestionnaire d’invitation d’utilisateurs externes {#user-handler-implementation}
 
@@ -172,11 +186,11 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## Définir un fichier XML du composant du gestionnaire d’autorisations {#define-component-xml-authorization-handler}
 
-Vous devez définir un fichier XML composant pour déployer le composant du gestionnaire d’utilisateurs et d’utilisatrices externes. Un fichier XML de composant existe pour chaque composant et fournit des métadonnées sur le composant.
+Vous devez définir un fichier XML du composant pour déployer le composant du gestionnaire d’utilisateurs et d’utilisatrices externes. Un fichier XML de composant existe pour chaque composant et fournit des métadonnées sur le composant.
 
 Le fichier `component.xml` suivant est utilisé pour le gestionnaire d’invitation d’utilisateurs externes. Notez que le nom du service est `InviteExternalUsersSample` et que l’opération exposée par ce service est nommée `invitedUser`. Le paramètre d’entrée est une instance `java.util.List` et la valeur de sortie est un tableau d’instances `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult`.
 
-### Définir un fichier XML de composant pour le gestionnaire d’invitation d’utilisateurs externes {#component-xml-invite-external-users-handler}
+### Définir le fichier XML du composant pour le gestionnaire d’invitation d’utilisateurs et d&#39;utilisatrices externes {#component-xml-invite-external-users-handler}
 
 ```as3
 <component xmlns="https://adobe.com/idp/dsc/component/document"> 
@@ -231,9 +245,9 @@ Vous devez compresser le gestionnaire d’utilisateurs et d’utilisatrices exte
 
 Pour tester le gestionnaire d’invitations d’utilisateurs externes, vous pouvez ajouter des utilisateurs externes à inviter en utilisant la console d’administration.
 
-Pour ajouter des utilisateurs externes à l’invitation à l’aide de la console d’administration :
+Pour ajouter des utilisateurs et utilisatrices externes à inviter à l’aide de la console d’administration :
 
-1. Déployez le fichier JAR du gestionnaire d’utilisateurs et d’utilisatrices externes à l’aide de Workbench.
+1. Déployez le fichier JAR du gestionnaire d’utilisateurs et d’utilisatrices externes à l’aide de l’atelier.
 1. Redémarrez le serveur d’applications.
 
    >[!NOTE]

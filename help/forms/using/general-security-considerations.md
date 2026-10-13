@@ -9,13 +9,29 @@ role: Admin,User
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 100%
-
 ---
-
 # Considérations générales sur la sécurité pour AEM Forms sur JEE{#general-security-considerations-for-aem-forms-on-jee}
 
 Cet article présente des informations préliminaires qui vous aideront à préparer le renforcement de votre environnement AEM Forms. Il comprend les informations préalables concernant la sécurité d’AEM Forms sur JEE, le système d’exploitation, le serveur d’applications et la base de données. Passez en revue ces informations avant de continuer à verrouiller votre environnement.
@@ -24,11 +40,11 @@ Cet article présente des informations préliminaires qui vous aideront à prép
 
 Cette section présente les informations relatives à la sécurité sur les systèmes d’exploitation, les serveurs d’applications et les bases de données intégrés à votre solution AEM Forms sur JEE.
 
-Suivez les liens de cette section pour trouver des informations de sécurité spécifiques à un fournisseur pour votre système d’exploitation, votre base de données et votre serveur d’applications.
+Utilisez les liens de cette section pour trouver des informations de sécurité spécifiques au fournisseur pour votre système d’exploitation, votre base de données et votre serveur d’applications.
 
 ### Informations sur la sécurité du système d’exploitation {#operating-system-security-information}
 
-Lorsque vous sécurisez votre système d’exploitation, veillez à implémenter soigneusement les mesures indiquées par le revendeur de votre système d’exploitation, parmi lesquelles :
+Lorsque vous sécurisez votre système d’exploitation, veillez à implémenter soigneusement les mesures indiquées par le fournisseur de votre système d’exploitation, parmi lesquelles :
 
 * Définir et contrôler les utilisateurs et utilisatrices, les rôles et les privilèges
 * Surveiller les logs et les journaux d’audit
@@ -111,7 +127,7 @@ Pour obtenir des informations sur la sécurité des serveurs d’application pri
 
 ### Informations sur la sécurité des bases de données {#database-security-information}
 
-Lorsque vous sécurisez votre base de données, veillez à implémenter soigneusement les mesures indiquées par le revendeur de votre base de données, parmi lesquelles :
+Lorsque vous sécurisez votre base de données, veillez à implémenter soigneusement les mesures indiquées par le fournisseur de votre base de données, parmi lesquelles :
 
 * Restreindre des opérations avec des listes de contrôle d’accès (ACL)
 * Utiliser des ports non standard
@@ -199,7 +215,7 @@ Ce tableau décrit les ports par défaut devant être ouverts pendant le process
   </tr>
   <tr>
    <td>&gt;<p>LDAP</p> </td>
-   <td><p>Port sur lequel le serveur LDAP est en cours d’exécution. Le port par défaut est généralement 389. Cependant, si vous sélectionnez l’option SSL, le port par défaut est généralement 636. Vérifiez auprès de votre administrateur LDAP le numéro de port à utiliser.</p> </td>
+   <td><p>Port sur lequel le serveur LDAP s’exécute. Le port par défaut est généralement 389. Cependant, si vous sélectionnez l’option SSL, le port par défaut est généralement 636. Vérifiez auprès de votre administrateur LDAP le numéro de port à utiliser.</p> </td>
   </tr>
  </tbody>
 </table>

@@ -5,13 +5,39 @@ exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 100%
-
 ---
-
 # Premiers pas vers votre première expérience d’utilisation d’AEM découplé {#path-to-first-experience}
 
 Dans cette partie du [Parcours de développement découplé AEM,](overview.md) vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
@@ -21,8 +47,8 @@ Dans cette partie du [Parcours de développement découplé AEM,](overview.md) v
 Dans le document précédent traitant du parcours découplé AEM, intitulé [Prise en main d’AEM découplé](getting-started.md), vous avez appris la théorie sur ce qu’est un CMS découplé, et vous devriez maintenant :
 
 * comprendre les principes de base des fonctionnalités d’AEM découplé ;
-* connaître les conditions préalables requises pour utiliser les fonctionnalités AEM découplées ;
-* avoir conscience des niveaux d’intégration AEM découplé ;
+* connaître les conditions préalables requises pour utiliser les fonctionnalités découplées d’AEM ;
+* avoir conscience des niveaux d’intégration découplée d’AEM ;
 * être en mesure de définir votre projet et sa portée.
 
 Cet article s’appuie sur ces principes de base pour que vous compreniez comment préparer votre propre projet AEM découplé.
@@ -47,7 +73,7 @@ Avant de poursuivre avec ce document, assurez-vous d’avoir consulté le docume
 
 Pour lancer votre premier projet découplé AEM, vous devez vous assurer que vous disposez d’un modèle de contenu qui prendra en charge la personnalisation et les mises à jour que vous souhaitez effectuer sur tous vos canaux.
 
-En dehors d’AEM, nous vous recommandons également de vous assurer que vous disposez d’un environnement de développement correctement configuré si vous créez une application côté client afin de pouvoir tester votre client par rapport aux appels des API à AEM.
+En dehors d’AEM, nous vous recommandons également de vous assurer que vous disposez d’un environnement de développement correctement configuré si vous créez une application côté client afin de pouvoir tester votre client avec des appels d’API à AEM.
 
 ### Définition des modèles de contenu et des API {#defining-models}
 
@@ -55,7 +81,7 @@ Votre objectif est de générer une expérience cohérente et de gérer des camp
 
 Il vous faut plutôt examiner la manière dont les contenus des différentes surfaces sont associés les uns aux autres en fonction de principes d’organisation tels que les hiérarchies de marques et de produits, les catégories de produits ou de surfaces, ou les étapes du parcours client. Par exemple, si vous disposez d’un ensemble de surfaces qui prennent en charge une marque spécifique de voitures que vous fabriquez, vous pouvez commencer par un modèle de contenu pour des informations générales qui seraient vraies pour l’ensemble de la voiture, puis avoir des éléments plus spécifiques, comme le contenu nécessaire pour le démarrage de la voiture, ou lorsqu’il y a des problèmes de service. Un tel modèle va appliquer un héritage pour le contenu général de la marque automobile tout en permettant des modifications en fonction du contexte spécifique nécessaire. Il permet également de gérer les futures mises à jour de ce contenu, car vous pouvez appliquer un contrôle en fonction de rôles tels que celui de responsable marketing global ou de chef de produit pour l’ensemble de la marque de voiture, par rapport à un auteur responsable de l’expérience « démarrage de la voiture ».
 
-Une fois que vous disposez du modèle de contenu et d’une vue claire sur les différents clients pour lesquels le contenu doit être affiché, vous devez vous assurer que les API GraphQL/API associées à l’accès à divers modèles de contenu sont publiées pour tous les clients qui ont besoin de ce contenu. Il existe différentes options pour accéder à un contenu particulier. Vous pouvez demander un élément de contenu statique spécifique qui permet la mise en cache du contenu et des performances supérieures. Vous pouvez également demander de générer dynamiquement du contenu, ce qui nécessitera davantage de traitement. Assurez-vous que les clientes et les clients utilisent les API les plus efficaces pour répondre aux besoins de leur entreprise.
+Une fois que vous disposez du modèle de contenu et d’une vue claire sur les différents clients pour lesquels le contenu doit être affiché, vous devez vous assurer que les API GraphQL associées à l’accès aux différentes parties du modèle de contenu sont publiées pour tous les clients et toutes les clientes qui ont besoin de ce contenu. Il existe différentes options pour accéder à un contenu particulier. Vous pouvez demander un élément de contenu statique spécifique qui permet la mise en cache du contenu et des performances supérieures. Vous pouvez également demander de générer dynamiquement du contenu, ce qui nécessitera davantage de traitement. Assurez-vous que les clientes et les clients utilisent les API les plus efficaces pour répondre à leurs besoins métier.
 
 ## Présentation de vos environnements {#understanding-environments}
 
@@ -89,7 +115,7 @@ Vous pouvez également consulter les [ressources supplémentaires](#additional-r
 
 ## Mise en œuvre de votre première application découplée AEM
 
-Voici un aperçu de ce qui est nécessaire pour mettre en œuvre votre première application découplée pour diffuser votre contenu à l’aide d’AEM. La procédure à suivre pour effectuer ces étapes sera décrite en détail dans les parties suivantes du Parcours de développement découplé.
+Voici un aperçu de ce qui est nécessaire pour mettre en œuvre votre première application découplée à l’aide d’AEM afin de diffuser votre contenu. La procédure à suivre pour effectuer ces étapes sera décrite en détail dans les parties suivantes du Parcours de développement découplé.
 
 1. Créer des modèles de fragment de contenu
 1. Créer des fragments de contenu
@@ -104,18 +130,18 @@ Un projet découplé doit son succès non seulement à la technologie mise en œ
 * Concevez votre structure de manière aussi complexe que nécessaire, mais restez au plus simple. Des structures de contenu plus simples permettent de rationaliser la gouvernance et d’améliorer les performances du système.
 * La réutilisation du contenu doit être une priorité dans votre stratégie. Créez des sous-modèles et des références de contenu qui peuvent être réutilisés sur plusieurs canaux et sur des modèles de niveau supérieur.
 * Concevez les structures de contenu de façon aussi explicite que possible afin que les auteurs de contenu puissent apprendre et s’adapter rapidement aux tâches de création.
-* En cas de restrictions d’accès, essayez d’aligner votre modèle de contenu avec ces exigences.
+* En cas de restrictions d’accès, essayez d’aligner votre modèle de contenu avec les exigences d’accès.
 * Votre hiérarchie de contenu doit se calquer sur ces exigences d’accès. Regroupez les contenus édités par le même groupe de personnes.
 * Regroupez les contenus similaires dans un dossier.
-   * Un auteur ou une autrice de contenu utilisera probablement un contenu existant pour le copier-coller et créer un nouveau contenu. C’est pourquoi il sera plus efficace de le faire dans le même dossier.
-   * AEM permet de définir des modèles autorisés par dossier afin que le bouton **Créer** n’affiche que les modèles pris en charge à cet emplacement.
+  * Un auteur ou une autrice de contenu utilisera probablement un contenu existant pour le copier-coller et créer un nouveau contenu. C’est pourquoi il sera plus efficace de le faire dans le même dossier.
+  * AEM permet de définir des modèles autorisés par dossier afin que le bouton **Créer** n’affiche que les modèles pris en charge à cet emplacement.
 * La création de fragments de contenu en ligne par l’éditeur de fragments de contenu peut être simplifiée si le dossier racine est défini dans le modèle. Le professionnel ou la professionnelle n’a alors pas à choisir un emplacement, mais doit simplement fournir un nom et peut commencer à modifier la nouvelle référence.
 
 ### Création de contenu {#authoring}
 
 * Pour les versions spécifiques à un canal de votre contenu, pensez à utiliser des variations de fragment de contenu. Les variations sont synchronisées avec le gabarit de contenu afin de rationaliser la gestion des changements de contenu.
-* Invitez d’autres producteurs de contenu à passer en revue le contenu et à faire part de leur point de vue à l’aide d’annotations et de commentaires, disponibles dans l’éditeur de fragments de contenu et globalement dans les fragments d’Admin Console des fragments de contenu.
-* Créez un système efficace qui nécessite le moins d’éléments obligatoires possible. Des éléments obligatoires peuvent bloquer le workflow.
+* Invitez d’autres producteurs de contenu à passer en revue le contenu et à faire part de leur point de vue à l’aide d’annotations et de commentaires, disponibles dans l’éditeur de fragments de contenu et globalement dans l’Admin Console des fragments de contenu.
+* Faites avancer les choses avec le moins d’éléments obligatoires possible. Des éléments obligatoires peuvent bloquer le workflow.
 
 ### Création de contenu global {#localization}
 
@@ -127,7 +153,7 @@ Un projet découplé doit son succès non seulement à la technologie mise en œ
 
 Maintenant que vous avez terminé cette partie du parcours de développement découplé AEM, vous devriez pouvoir :
 
-* comprendre les points importants de sa planification pour concevoir votre contenu ;
+* comprendre les points importants à prendre en compte lors de la planification pour concevoir votre contenu ;
 * découvrir les étapes à suivre pour implémenter du contenu découplé dans AEM ;
 * découvrir les outils et les configurations AEM nécessaires ;
 * connaître les bonnes pratiques vous permettant de fluidifier votre parcours découplé, d’optimiser la génération du contenu et de garantir une diffusion rapide du contenu.
@@ -136,7 +162,7 @@ Nous voulons que vous puissiez tirer parti de ces connaissances fondamentales po
 
 ### Choisissez votre propre parcours {#choose-your-path}
 
-Quel que soit votre style d’apprentissage, Adobe veut que vous réussissiez dans le lancement de votre projet découplé AEM.
+Quel que soit votre style d’apprentissage, Adobe veut que vous réussissiez lorsque vous démarrez votre projet AEM découplé.
 
 * Si vous préférez continuer à **découvrir les concepts du découplage et les technologies AEM découplées**, vous devez continuer votre parcours découplé AEM en consultant le document [Comment modéliser votre contenu en tant que modèles de contenu](model-your-content.md) où vous apprendrez à modéliser votre structure de contenu dans AEM.
 * Si vous préférez **apprendre en pratiquant**, vous pouvez passer au [tutoriel Prise en main d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=fr) où vous allez directement vous lancez dans le développement d’AEM découplé en mettant en œuvre un projet simple pour exposer un contenu AEM découplé.

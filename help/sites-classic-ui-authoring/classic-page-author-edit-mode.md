@@ -10,13 +10,22 @@ exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5721'
-ht-degree: 91%
-
+source-wordcount: '6065'
+ht-degree: 92%
 ---
-
 # Composants pour la création de page{#components-for-page-authoring}
 
 Les composants suivants sont destinés à être utilisés lors de la création du contenu d’une page web standard. Les composants forment un sous-ensemble des composants prêts à l’emploi pour une installation standard d’AEM.
@@ -99,7 +108,7 @@ La boîte de dialogue permet de modifier les propriétés pour votre instance du
 * **Image**
 
   * **Image**
-    Faites glisser une image à partir de l’outil de recherche de contenu ou cliquez pour ouvrir une fenêtre de navigation dans laquelle vous pouvez charger une image. Une fois l’image chargée, vous pouvez la recadrer, la faire pivoter ou la supprimer. Pour effectuer un zoom arrière et avant sur l’image, utilisez le curseur situé en dessous de l’image (et au-dessus des boutons OK et Annuler).
+    Faites glisser une image à partir de l’outil de recherche de contenu ou cliquez pour ouvrir une fenêtre de navigation dans laquelle vous pouvez charger une image. Une fois l’image chargée, vous pouvez la recadrer, la faire pivoter ou la supprimer. Pour effectuer un zoom avant et arrière sur l’image, utilisez le curseur situé en dessous de l’image (et au-dessus des boutons OK et Annuler).
 
   * **Recadrer**
     Permet d’extraire des parties d’une image. Faites glisser la bordure pour recadrer l’image.
@@ -158,8 +167,8 @@ Vous spécifiez ici la manière dont les pages sont incluses dans votre carrouse
 
   * **Créer la liste à l’aide de**
     Il existe plusieurs façons de créer une liste de pages : Pages enfants, Liste fixe, Recherche ou Recherche avancée (toutes décrites ci-dessous).
-    Quelle que soit la méthode choisie, les pages que vous incluez dans votre liste doivent déjà être associées à une image. C’est cette image qui s’affiche dans le carrousel. S’il n’existe aucune image pour une page sous les propriétés de page de cette page, vous devez associer une image à la page avant de commencer. Sinon, le carrousel affiche une page vierge. Voir [&#x200B; Modification des propriétés de page &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
-    Selon l’élément que vous choisissez, un nouveau panneau s’affiche :
+    Quelle que soit la méthode choisie, les pages que vous incluez dans votre liste doivent déjà être associées à une image. C’est cette image qui s’affiche dans le carrousel. S’il n’existe aucune image pour une page dans les Propriétés de page, vous devez associer une image à la page avant de commencer. Sinon, le carrousel affiche une page vierge. Voir [Modification des propriétés de page](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+    Selon l’élément que vous choisissez, un nouveau panneau s’affiche :
 
     * **Options des pages enfants**
 
@@ -181,8 +190,8 @@ Vous spécifiez ici la manière dont les pages sont incluses dans votre carrouse
 
     * **Options de la recherche avancée**
 
-      * **Notation des prédicats de QueryBuilder**
-        Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat QueryBuilder. Par exemple, vous pouvez saisir « fulltext=Marketing » pour que toutes les pages comportant le terme « Marketing » dans leur contenu s’affichent dans le carrousel.
+      * Notation des prédicats de **QueryBuilder)**
+        Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat QueryBuilder. Par exemple, vous pouvez saisir « fulltext=Marketing » pour que toutes les pages comportant « Marketing » dans leur contenu s’affichent dans le carrousel.
         Consultez [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour découvrir une étude complète sur les expressions de requête et d’autres exemples.
 
   * **Classer par**
@@ -362,7 +371,7 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
 * **Barre de zoom**
 
-  Pour effectuer un zoom arrière et avant sur l’image, utilisez le curseur situé en dessous de l’image (et au-dessus des boutons OK et Annuler).
+  Pour effectuer un zoom avant et arrière sur l’image, utilisez le curseur situé en dessous de l’image (et au-dessus des boutons OK et Annuler).
 
 * **Titre**
 
@@ -577,8 +586,8 @@ Vous pouvez configurer :
 
   * **Vérifier l’orthographe du texte**
 
-    Si une personne saisit un terme similaire, ce texte s’affiche avant le terme.
-    Par exemple, si vous saisissez `Geometrixxe`, le système affiche « Vouliez-vous dire Geometrixx ».
+    Si une personne saisit un terme similaire, ce texte est affiché devant le terme.
+    Par exemple, si vous saisissez `Geometrixxe`, le système affiche « Vouliez-vous dire ? Geometrixx ».
 
   * **Texte Pages similaires**
 
@@ -898,8 +907,8 @@ Ces onglets vous fournissent les paramètres nécessaires. Les onglets dépenden
 
   * **Nom de l’élément**
 
-    Nom de l’élément de formulaire. Elle indique l’emplacement de stockage des données dans le référentiel.
-    Ce champ est obligatoire et ne doit contenir que les caractères suivants :
+    Nom de l’élément de formulaire. Indique l’emplacement de stockage des données dans le référentiel.
+    Ce champ est obligatoire et ne doit contenir que les caractères suivants :
 
     * caractères alphanumériques
     * `_ . / : -`
@@ -1012,9 +1021,9 @@ Ce composant nécessaire définit le début d’un nouveau formulaire sur une pa
 
   * **Chemin de chargement**
 
-    Chemin d’accès aux propriétés de nœud utilisé pour charger les valeurs prédéfinies dans les champs du formulaire.
-    Ce champ est facultatif et indique le chemin d’accès à un nœud dans le référentiel. Lorsque ce nœud possède des propriétés qui correspondent aux noms des champs, les champs appropriés du formulaire sont préchargés avec la valeur de ces propriétés. S’il n’existe aucune correspondance, le champ contient la valeur par défaut.
-    Le champ **Chemin de chargement** vous permet de précharger des valeurs dans les champs obligatoires du formulaire. Voir [&#x200B; Préchargement des valeurs de formulaire &#x200B;](/help/sites-developing/developing-forms.md#preloading-form-values).
+    Chemin d’accès aux propriétés de nœud, utilisé pour charger les valeurs prédéfinies dans les champs du formulaire.
+    Ce champ est facultatif et indique le chemin d’accès à un nœud dans le référentiel. Lorsque ce nœud comporte des propriétés qui correspondent aux noms des champs, les champs adéquats du formulaire sont préchargés avec la valeur de ces propriétés. S’il n’existe aucune correspondance, le champ contient la valeur par défaut.
+    Le champ **Chemin de chargement** vous permet de précharger des valeurs dans les champs obligatoires du formulaire. Consultez [Préchargement des valeurs de formulaire](/help/sites-developing/developing-forms.md#preloading-form-values).
 
   * **Validation du client**
 
@@ -1044,7 +1053,7 @@ Ce composant nécessaire définit le début d’un nouveau formulaire sur une pa
     * **Créer le contenu**
 
       * Chemin d’accès au contenu
-Chemin d’accès à tout contenu dont le formulaire produit une image mémoire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement donné ; par exemple :
+Chemin d’accès à tout type de contenu utilisé par le formulaire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
         `/forms/feedback/`
 
       * **Type**
@@ -1120,7 +1129,7 @@ Chemin d’accès à tout contenu dont le formulaire produit une image mémoire.
 
       * **Chemin d’accès au contenu**
 
-        Chemin d’accès à tout contenu dont le formulaire produit une image mémoire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement donné ; par exemple :
+        Chemin d’accès à tout type de contenu utilisé par le formulaire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
         `/forms/feedback/`
 
       * **Afficher des données...**

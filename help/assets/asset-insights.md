@@ -7,13 +7,29 @@ feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a4e1c1f5-18fc-592e-bfc7-453ce6ae0030
+    internal-label: Asset Insights
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c29e3a96-cd2b-4e21-b382-a8279aa04553
+    internal-label: Asset reports
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 100%
-
 ---
-
 # Assets Insights {#asset-insights}
 
 | Version | Lien de l’article |
@@ -21,7 +37,7 @@ ht-degree: 100%
 | AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-La fonction Assets Insights vous permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites Web tiers, les campagnes marketing et les solutions de création d’Adobe. Elle permet d’extraire les statistiques sur leurs performances et leur popularité.
+La fonction Assets Insights vous permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites Web tiers, les campagnes marketing et les solutions de création d’Adobe. Elle permet d’obtenir des informations sur leurs performances et leur popularité.
 
 [!DNL Assets] Insights capture les détails de l’activité des utilisateurs, comme le nombre de fois où une image est évaluée et a fait l’objet d’un clic, ainsi que le nombre d’impressions (nombre de fois où une image est chargée sur le site Web). Elle attribue des scores aux images en fonction de ces statistiques. Vous pouvez utiliser les scores et les statistiques de performances pour sélectionner les images populaires à inclure dans les catalogues, les campagnes marketing et ainsi de suite. Vous pouvez même formuler des politiques de renouvellement de licence et d’archivage en fonction de ces statistiques.
 
@@ -64,7 +80,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
    >[!NOTE]
    >
-   >Contrairement à la section Solutions, la section Statistiques de performances affiche les données les plus récentes.
+   >Contrairement aux données de la section Solutions, la section Statistiques de performances affiche les données les plus récentes.
 
 1. Pour obtenir le code intégré de la ressource que vous incluez sur les sites Web afin d’obtenir les données de performances, cliquez sur **[!UICONTROL Obtenir le code intégré]** au-dessous de la miniature de la ressource. Pour plus d’informations sur la manière d’inclure votre code intégré sur des pages Web tierces, reportez-vous à la section [Utilisation du dispositif de suivi de page et du code intégré sur les pages Web](/help/assets/use-page-tracker.md).
 
@@ -87,4 +103,4 @@ La fonction Assets Insights extrait les données d’utilisation des ressources
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
 
-1. Spécifiez la fréquence du planificateur souhaitée et l’heure de début de la tâche dans l’expression du planificateur de propriété. Enregistrez les modifications.
+1. Spécifiez la fréquence souhaitée du planificateur et l’heure de début de la tâche dans la propriété d’expression du planificateur. Enregistrez les modifications.

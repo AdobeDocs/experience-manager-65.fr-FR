@@ -7,22 +7,40 @@ role: Admin, User, Developer
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1712'
 ht-degree: 97%
-
 ---
-
 # Installation et configuration d’un workflow basé sur l’utilisation de Forms sur OSGi{#installing-and-configuring-forms-centric-workflow-on-osgi}
 
 ## Présentation {#introduction}
 
-Les entreprises collectent et traitent des données à partir de plusieurs formulaires, systèmes d’arrière-plan et autres sources de données. Le traitement des données implique des procédures de révision et d’approbation, des tâches répétitives et l’archivage données. Par exemple, lʼexamen d’un formulaire et sa conversion en document PDF. Lorsquʼelles sont effectuées manuellement, les tâches répétitives peuvent prendre beaucoup de temps et de ressources.
+Les entreprises collectent et traitent des données à partir de plusieurs formulaires, systèmes d’arrière-plan et autres sources de données. Le traitement des données implique des procédures de révision et d’approbation, des tâches répétitives et l’archivage des données. Par exemple, lʼexamen d’un formulaire et sa conversion en document PDF. Lorsquʼelles sont effectuées manuellement, les tâches répétitives peuvent prendre beaucoup de temps et de ressources.
 
-Vous pouvez utiliser le [Workflow basé sur lʼutilisation de Forms sur OSGi](../../forms/using/aem-forms-workflow.md) pour créer rapidement des workflows basés sur des formulaires adaptatifs. Ces workflows peuvent vous aider à automatiser les workflows de révision et d’approbation, les workflows de gestion commerciale et d’autres tâches répétitives. Ces workflows permettent également de traiter des documents (création, assemblage, distribution et archivage de documents PDF, ajout de signatures numériques pour limiter l’accès aux documents, décodage de formulaires à code-barres, etc.) et dʼutiliser le workflow de signature Adobe Sign avec des formulaires et des documents.
+Vous pouvez utiliser le [Workflow basé sur lʼutilisation de Forms sur OSGi](../../forms/using/aem-forms-workflow.md) pour créer rapidement des workflows basés sur des formulaires adaptatifs. Ces workflows peuvent vous aider à automatiser les workflows de révision et d’approbation, les workflows de processus métier et d’autres tâches répétitives. Ces workflows permettent également de traiter des documents (création, assemblage, distribution et archivage de documents PDF, ajout de signatures numériques pour limiter l’accès aux documents, décodage de formulaires à code-barres, etc.) et dʼutiliser le workflow de signature Adobe Sign avec des formulaires et des documents.
 
-Une fois configurés, ces workflows peuvent être déclenchés manuellement pour terminer un processus ou une exécution défini par programmation lorsque les utilisateurs envoient un formulaire ou une communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms.
+Une fois configurés, ces workflows peuvent être déclenchés manuellement pour exécuter un processus défini ou s’exécuter par programmation lorsque les utilisateurs ou utilisatrices envoient un formulaire ou une communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms.
 
 AEM Forms est une plateforme d’entreprise performante. Le workflow basé sur lʼutilisation de Forms sur OSGi n’est qu’une des fonctionnalités d’AEM Forms. Pour obtenir la liste complète des fonctionnalités, voir [Présentation d’AEM Forms](introduction-aem-forms.md).
 
@@ -53,17 +71,17 @@ Avant dʼinstaller et de configurer le workflow basé sur lʼutilisation de Form
 * Le matériel et l’infrastructure logicielle sont en place. Pour obtenir une liste détaillée des matériels et logiciels pris en charge, voir [Conditions techniques applicables](/help/sites-deploying/technical-requirements.md).
 
 * Le chemin d’installation de l’instance AEM ne contient pas d’espaces.
-* Une instance AEM est en cours d’exécution. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. Vous avez besoin d’au moins une instance AEM (auteur ou traitement) pour exécuter un workflow basé sur lʼutilisation de Forms sur OSGi :
+* Une instance AEM est en cours d’exécution. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. Vous avez besoin d’au moins une instance AEM (création ou traitement) pour exécuter le workflow centré sur les formulaires sur OSGi :
 
-   * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
-   * **Traitement :** une instance de [création AEM renforcée](/help/forms/using/hardening-securing-aem-forms-environment.md). Vous pouvez configurer une instance de création et renforcer sa sécurité après avoir effectué l’installation.
+  * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site web. Une fois que le contenu est prêt à être mis en ligne, il est répliqué sur l’instance de publication.
+  * **Traitement :** une instance de [création AEM renforcée](/help/forms/using/hardening-securing-aem-forms-environment.md). Vous pouvez configurer une instance de création et renforcer sa sécurité après avoir effectué l’installation.
 
-   * **Publication** : une instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
+  * **Publication** : une instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
 
 * Les exigences de mémoire sont respectées. Le package complémentaire AEM Forms nécessite :
 
-   * 15 Go d’espace temporaire pour les installations Microsoft Windows.
-   * 6 Go d’espace temporaire pour les installations Unix.
+  * 15 Go d’espace temporaire pour les installations Microsoft Windows.
+  * 6 Go d’espace temporaire pour les installations Unix.
 
 * Configuration requise supplémentaire pour les systèmes UNIX : si vous utilisez un système d’exploitation UNIX, installez les packages suivants à partir du support d’installation du système d’exploitation correspondant.
 
@@ -98,9 +116,9 @@ Avant dʼinstaller et de configurer le workflow basé sur lʼutilisation de Form
 
 ## Installation du package complémentaire AEM Forms {#install-aem-forms-add-on-package}
 
-Le module complémentaire AEM Forms est une application déployée sur AEM. Le package contient un workflow basé sur l’utilisation de Forms sur OSGi ainsi que d’autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
+Le module complémentaire AEM Forms est une application déployée sur AEM. Le package contient le workflow centré sur les formulaires sur OSGi ainsi que d’autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
 
-1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à Software Distribution.
 1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** situé dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
@@ -121,7 +139,7 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
 
 ## Configurations post-installation {#post-installation-configurations}
 
-AEM Forms comporte des configurations obligatoires et facultatives. Les configurations obligatoires incluent la configuration des bibliothèques BouncyCastle et de l’agent de sérialisation. Les configurations facultatives incluent la configuration du répartiteur et d’Adobe Target.
+AEM Forms comporte des configurations obligatoires et facultatives. Les configurations obligatoires incluent la configuration des bibliothèques BouncyCastle et de l’agent de sérialisation. Les configurations facultatives incluent la configuration de Dispatcher et d’Adobe Target.
 
 ### Configurations post-installation obligatoires {#mandatory-post-installation-configurations}
 
@@ -147,7 +165,7 @@ Pour déléguer le démarrage des bibliothèques, procédez comme suit sur toute
 
 Pour autoriser le package, procédez comme suit sur toutes les instances dʼauteur et de publication :
 
-1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. L’URL par défaut est https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Ouvrez AEM Configuration Manager dans une fenêtre du navigateur. L’URL par défaut est https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Recherchez et ouvrez la **configuration du pare-feu de désérialisation**.
 1. Ajoutez le package **sun.util.calendar** au champ **Placer sur la liste autorisée**. Cliquez sur Enregistrer.
 1. Répétez les étapes 1 à 3 sur toutes les instances de création et de publication.
@@ -156,9 +174,9 @@ Pour autoriser le package, procédez comme suit sur toutes les instances dʼaute
 
 #### La configuration de Dispatcher {#configure-dispatcher}
 
-Dispatcher est un outil de mise en cache et d’équilibrage de charge pour AEM. Le répartiteur AEM aide également à protéger le serveur AEM des attaques. Vous pouvez augmenter la sécurité de votre instance AEM en utilisant le répartiteur conjointement avec un serveur Web de niveau élevé. Si vous utilisez [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), effectuez les configurations suivantes pour AEM Forms :
+Dispatcher est un outil de mise en cache et d’équilibrage de charge pour AEM. AEM Dispatcher aide également à protéger le serveur AEM des attaques. Vous pouvez augmenter la sécurité de votre instance AEM en utilisant Dispatcher conjointement avec un serveur web de niveau élevé. Si vous utilisez [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), effectuez les configurations suivantes pour AEM Forms :
 
-1. Configurez l’accès à AEM Forms:
+1. Configurez l’accès à AEM Forms :
 
    Ouvrez le fichier dispatcher.any en mode d’édition. Accédez à la section des filtres et ajoutez le filtre suivant à la section des filtres :
 
@@ -188,7 +206,7 @@ Pour configurer la mise en cache des formulaires adaptatifs, procédez comme sui
 
 #### Configurer Adobe Sign {#configure-adobe-sign}
 
-Adobe Sign autorise les workflows de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
+Adobe Sign permet les processus de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
 
 Dans un scénario typique de workflow centré sur l’utilisation d’Adobe Sign et de Forms sur OSGi, un utilisateur remplit un formulaire adaptatif pour **demander un service**. Par exemple, un formulaire de demande de carte de paiement et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, un workflow d’approbation / de rejet est lancé. Le fournisseur examine la demande dans la boîte de réception AEM et utilise Adobe Sign pour la signer électroniquement. Pour activer les processus de signature électronique similaires, vous pouvez intégrer Adobe Sign à AEM Forms.
 

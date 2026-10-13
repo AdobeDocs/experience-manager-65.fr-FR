@@ -9,13 +9,22 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: d4b1cd8bc04ea21378c8084f4fac8cd66d6c1d3c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2079'
-ht-degree: 89%
-
+source-wordcount: '2083'
+ht-degree: 90%
 ---
-
 
 # Configuration des formulaires de recherche{#configuring-search-forms}
 
@@ -27,9 +36,9 @@ Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-f
 
 * **Outils**
 
-   * **Général**
+  * **Général**
 
-      * **Formulaires de recherche**
+    * **Formulaires de recherche**
 
 Lorsque vous accédez à cette console pour la première fois, vous pouvez constater que toutes les configurations comportent un symbole de cadenas. Cela signifie que la configuration appropriée est la configuration par défaut (prête à l’emploi) et qu’elle ne peut pas être supprimée. Une fois la configuration personnalisée, le verrou disparaît sauf si vous [supprimez votre configuration personnalisée](#deleting-a-configuration-to-reinstate-the-default). Dans ce cas, la valeur par défaut est rétablie (tout comme l’indicateur de cadenas).
 
@@ -255,7 +264,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Plage </td>
-   <td>Recherchez des ressources figurant dans une plage spécifiée. Vous pouvez spécifier, dans le panneau Rechercher, les valeurs minimale et maximale de la plage concernée.</td>
+   <td>Recherchez des ressources figurant dans une plage spécifiée. Vous pouvez spécifier, dans le panneau Recherche, les valeurs minimale et maximale de la plage concernée.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -332,10 +341,10 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 
 >[!NOTE]
 >
->* Les prédicats de recherche courants sont définis dans :
+>* Les prédicats de recherche courants sont définis dans :
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->* Les prédicats de recherche liés uniquement à siteadmin (interface utilisateur classique) se trouvent sous :
+>* Les prédicats de recherche liés uniquement à siteadmin (IU classique) se trouvent sous :
 >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * Ils sont obsolètes et disponibles uniquement à des fins de rétrocompatibilité.
 >

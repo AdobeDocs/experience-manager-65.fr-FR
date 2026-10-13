@@ -5,26 +5,40 @@ exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 9b4dd5a4a137e529be8142fff1ddbfca889e64ae
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 95%
-
+source-wordcount: '1045'
+ht-degree: 97%
 ---
-
 # Intégrer AEM Forms aux protocoles de serveur de messagerie Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
 Pour permettre aux entreprises de se conformer aux exigences en matière de messagerie sécurisée, AEM Forms propose la prise en charge OAuth 2.0 pour l’intégration aux protocoles de serveur de messagerie Microsoft® Office 365. Vous pouvez utiliser le service d’authentification OAuth 2.0 d’Azure Active Directory (Azure AD) pour vous connecter à différents protocoles tels que IMAP, POP ou SMTP et accéder aux données de messagerie des utilisateurs et utilisatrices d’Office 365. Vous trouverez ci-dessous des instructions étape par étape pour configurer les protocoles du serveur de messagerie Microsoft® Office 365 pour s’authentifier via le service OAuth 2.0 :
 
-1. Connectez-vous à [&#128279;](https://portal.azure.com/) recherchez **Azure Active Directory** dans la barre de recherche et cliquez sur le résultat.
-Vous pouvez également accéder directement à [&#128279;](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+1. Connectez-vous sur [https://portal.azure.com/](https://portal.azure.com/) et recherchez **Azure Active Directory** dans la barre de recherche et cliquez sur le résultat.
+Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 1. Cliquez sur **Ajouter** > **Enregistrement de l’application** > **Nouvel enregistrement**.
 
    ![Enregistrement de l’application](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. Renseignez les informations selon vos besoins puis cliquez sur **Enregistrement**.
    ![Compte pris en charge](/help/forms/using/assets/azure_suuportedaccountype.png)
-Dans le cas ci-dessus, l’option **Comptes dans n’importe quel répertoire de l’entreprise (n’importe quel répertoire Azure AD - à plusieurs clients) et comptes Microsoft® personnels (par exemple, Skype, Xbox)** est sélectionnée.
+   Dans le cas ci-dessus, l’option **Comptes dans n’importe quel répertoire de l’entreprise (n’importe quel répertoire Azure AD - à plusieurs clients) et comptes Microsoft® personnels (par exemple, Skype, Xbox)** est sélectionnée.
 
    >[!NOTE]
    >
@@ -137,7 +151,7 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   >Si vous le souhaitez, vous pouvez modifier le paramètre d’authentification OAuth 2.0 en authentification de base pour un processus particulier dans un atelier. Pour ce faire, définissez la valeur **Authentification OAuth 2.0** sur « False » sous **Utiliser les paramètres globaux** dans l’onglet **Paramètres de connexion**.
+   >Si vous le souhaitez, vous pouvez modifier le paramètre d’authentification Auth 2.0 en authentification de base pour un processus particulier dans un atelier. Pour ce faire, définissez la valeur **Authentification OAuth 2.0** sur « False » sous **Utiliser les paramètres globaux** dans l’onglet **Paramètres de connexion**.
 
 ## Pour activer les notifications de tâche oAuth {#enable_oauth_task}
 

@@ -9,13 +9,26 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 100%
-
+source-wordcount: '1873'
+ht-degree: 95%
 ---
-
 
 # Disposition réactive{#responsive-layout}
 
@@ -36,7 +49,7 @@ Le conteneur de mise en page :
 * Permet un alignement horizontal sur la grille, ainsi que la possibilité de placer côte à côte les composants dans la grille et de définir quand ils doivent être réduits/développés.
 * Il utilise des points d’arrêt prédéfinis (par exemple, pour le téléphone, la tablette, etc.) vous permettant de définir le comportement requis du contenu pour l’orientation/les appareils associés.
 
-   * Par exemple, vous pouvez personnaliser la taille du composant ou décider s’il peut être affiché sur des appareils spécifiques.
+  * Par exemple, vous pouvez personnaliser la taille du composant ou décider s’il peut être affiché sur des appareils spécifiques.
 
 * Peut être imbriqué pour permettre le contrôle des colonnes.
 
@@ -86,10 +99,10 @@ Dans AEM, vous pouvez définir des dispositions qui dépendent de la largeur de 
 * L’émulateur vous permet d’émuler ces mises en page sur divers appareils. Tout comme le type d’appareil, l’orientation, qui est sélectionnée à l’aide de l’option **Rotation du périphérique**, peut avoir une incidence sur le point d’arrêt sélectionné lors du changement de largeur.
 * Les points d’arrêt sont des points qui séparent les définitions de mise en page.
 
-   * Ils définissent la largeur maximale (en pixels) de n’importe quel appareil à l’aide d’une mise en page spécifique.
-   * Les points d’arrêt sont généralement valides pour plusieurs appareils en fonction de la largeur de leur écran.
-   * La plage d’un point d’arrêt s’étend sur la gauche, jusqu’au point d’arrêt suivant.
-   * Vous ne pouvez pas sélectionner le point d’arrêt. La sélection de l’appareil et de l’orientation permet de sélectionner automatiquement le point d’arrêt adéquat.
+  * Ils définissent la largeur maximale (en pixels) de n’importe quel appareil à l’aide d’une mise en page spécifique.
+  * Les points d’arrêt sont généralement valides pour plusieurs appareils en fonction de la largeur de leur écran.
+  * La plage d’un point d’arrêt s’étend sur la gauche, jusqu’au point d’arrêt suivant.
+  * Vous ne pouvez pas sélectionner le point d’arrêt. La sélection de l’appareil et de l’orientation permet de sélectionner automatiquement le point d’arrêt adéquat.
 
 L’appareil **Bureau**, qui ne possède pas de largeur spécifique, est associé au point d’arrêt par défaut (c’est-à-dire tout ce qui se trouve au-dessus du dernier point d’arrêt configuré).
 
@@ -105,7 +118,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
 ## Sélection d’un appareil à émuler {#selecting-a-device-to-emulate}
 
-1. Ouvrez la page requise en vue de la modifier. Par exemple :
+1. Ouvrez la page à modifier. Par exemple :
 
    `http://localhost:4502/editor.html/content/we-retail/us/en/experience.html`
 
@@ -162,7 +175,7 @@ Un **conteneur de mise en page** est un système de paragraphes qui présente le
 >S’il n’est pas déjà disponible, le **conteneur de mise en page** doit être explicitement [activé pour un système de paragraphes ou une page](/help/sites-administering/configuring-responsive-layout.md) (en utilisant le mode de [**conception**, par exemple](/help/sites-authoring/default-components-designmode.md)).
 
 1. Le **conteneur de mise en page** est disponible en tant que composant standard dans l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser). De là, vous pouvez le faire glisser vers l’emplacement souhaité sur la page, après lequel vous verrez l’espace réservé **Faire glisser les composants ici**.
-1. Vous pouvez ensuite ajouter des composants au conteneur de mise en page, qui contiendront le contenu proprement dit :
+1. Vous pouvez ensuite ajouter des composants au conteneur de mises en page. Ces composants contiennent le contenu réel :
 
    ![screen_shot_2018-03-23at085500](assets/screen_shot_2018-03-23at085500.png)
 
@@ -208,17 +221,17 @@ Le mode **Mise en page** peut être activé de deux façons.
 
 * À l’aide du [menu de mode de la barre d’outils](/help/sites-authoring/author-environment-tools.md#page-modes), en sélectionnant le mode **Mise en page**.
 
-   * Sélectionnez le mode **Mise en page** de la même façon que vous passeriez en mode **Édition** ou en mode **Ciblage**.
-   * Le mode **Mise en page** est un **mode** persistant, ce qui signifie qu’il reste sélectionné jusqu’à ce que vous choisissiez un autre mode à l’aide du sélecteur de mode.
+  * Sélectionnez le mode **Mise en page** de la même façon que vous passeriez en mode **Édition** ou en mode **Ciblage**.
+  * Le mode **Mise en page** est un **mode** persistant, ce qui signifie qu’il reste sélectionné jusqu’à ce que vous choisissiez un autre mode à l’aide du sélecteur de mode.
 
 * Lors de la [modification d’un composant individuel.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
-   * En utilisant l’option **Mise en page** dans le menu d’action rapide du composant, vous pouvez passer au mode **Mise en page**.
-   * Le mode **Mise en page** persiste pendant la modification du composant et bascule vers le mode **Édition** lorsqu’un autre composant est sélectionné.
+  * En utilisant l’option **Mise en page** dans le menu d’action rapide du composant, vous pouvez passer au mode **Mise en page**.
+  * Le mode **Mise en page** persiste pendant la modification du composant et bascule vers le mode **Édition** lorsqu’un autre composant est sélectionné.
 
 Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses actions sur une grille :
 
-* Redimensionnez les composants de contenu à l’aide des points bleus. Le redimensionnement s’accroche toujours à la grille. Lors du redimensionnement, la grille d’arrière-plan s’affiche pour faciliter l’alignement :
+* Redimensionnez les composants de contenu à l’aide des points bleus. Le redimensionnement s’adaptera toujours à la grille. Lors du redimensionnement, la grille d’arrière-plan s’affiche pour faciliter l’alignement :
 
   ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 
@@ -228,17 +241,17 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
 * Cliquez ou appuyez sur un composant de contenu. La barre d’outils propose les options suivantes :
 
-   * **Parent**
+  * **Parent**
 
-     Permet de sélectionner l’intégralité du composant Conteneur de disposition pour effectuer une opération.
+    Permet de sélectionner l’intégralité du composant Conteneur de disposition pour effectuer une opération.
 
-   * **Flotter sur une nouvelle ligne**
+  * **Flotter sur une nouvelle ligne**
 
-     Le composant est déplacé vers une nouvelle ligne selon l’espace disponible dans la grille.
+    Le composant est déplacé vers une nouvelle ligne selon l’espace disponible dans la grille.
 
-   * **Masquer le composant**
+  * **Masquer le composant**
 
-     Le composant devient invisible (il peut être restauré à partir de la barre d’outils du conteneur de mise en page).
+    Le composant devient invisible (il peut être restauré à partir de la barre d’outils du conteneur de mise en page).
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
@@ -246,34 +259,34 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
   La barre d’outils propose différentes options en fonction de l’état du composant de mise en page et des composants qui lui sont associés. Par exemple :
 
-   * **Parent** : permet de sélectionner le composant parent.
+  * **Parent** : permet de sélectionner le composant parent.
 
-     ![Parent](do-not-localize/screen_shot_2018-03-23at090823.png)
+    ![Parent](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Afficher les composants masqués** - Affiche tous les composants, ou individuellement certains composants. Ce nombre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
+  * **Afficher les composants masqués** - Affiche tous les composants, ou individuellement certains composants. Ce nombre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
 
-     ![Afficher les composants masqués](do-not-localize/screen_shot_2018-03-23at091007.png)
+    ![Afficher les composants masqués](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Rétablir la disposition du point d’arrêt** : rétablit la disposition par défaut. Cela signifie qu’aucune disposition personnalisée ne sera imposée.
+  * **Rétablir la disposition du point d’arrêt** : rétablit la disposition par défaut. Cela signifie qu’aucune disposition personnalisée ne sera imposée.
 
-     ![Rétablir la disposition du point d’arrêt](do-not-localize/screen_shot_2018-03-23at091013.png)
+    ![Rétablir la disposition du point d’arrêt](do-not-localize/screen_shot_2018-03-23at091013.png)
 
-   * **Flotter sur une nouvelle ligne** : déplace le composant d’une position vers le haut si l’espace est suffisant.
+  * **Flotter sur une nouvelle ligne** : déplace le composant d’une position vers le haut si l’espace est suffisant.
 
-     ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
+    ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
-   * **Masquer le composant** : masque le composant actif.
+  * **Masquer le composant** : masque le composant actif.
 
-     ![Masquer le composant](do-not-localize/screen_shot_2018-03-23at090834.png)
+    ![Masquer le composant](do-not-localize/screen_shot_2018-03-23at090834.png)
 
-     >[!NOTE]
-     >
-     >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mise en page est imbriqué dans un conteneur de mise en page parent.
+    >[!NOTE]
+    >
+    >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mise en page est imbriqué dans un conteneur de mise en page parent.
 
-   * **Afficher les composants**
-Sélectionnez les composants parents pour afficher la barre d’outils comportant l’option **Afficher les composants masqués**. Dans cet exemple, deux composants sont masqués.
+  * **Afficher les composants**
+    Sélectionnez les composants parents pour afficher la barre d’outils d’actions à l’aide de l’option **Afficher les composants masqués**. Dans cet exemple, deux composants sont masqués.
 
-     ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
+    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
   Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
 

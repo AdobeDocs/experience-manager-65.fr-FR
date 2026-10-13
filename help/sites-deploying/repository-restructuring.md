@@ -9,13 +9,22 @@ feature: Upgrading
 exl-id: 2572aa8d-2a3a-4e5b-ae5f-07e1017ea0f4
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '550'
 ht-degree: 100%
-
 ---
-
 # Restructuration des référentiels dans AEM 6.5{#repository-restructuring-in-aem}
 
 ## Présentation {#introduction}
@@ -34,7 +43,7 @@ Il est possible d’éviter ces conflits en définissant clairement les hiérarc
 Lors de la mise à niveau vers AEM 6.5, un sous-ensemble important du contenu sous /etc sera dupliqué dans d’autres dossiers du référentiel. Ces nouveaux emplacements sont les emplacements favoris dans lesquels le contenu est référencé. Cependant, tout a été mis en œuvre pour que la mise à niveau d’AEM 6.5 soit rétrocompatible avec les emplacements précédents du dossier /etc. Ainsi, dans la plupart des cas, les anciens emplacements continueront à être référencés par le code AEM jusqu’à ce que les modifications soient activement - et dans de nombreux cas manuellement - créées dans l’application d’un client. Du point de vue de la chronologie, il existe deux catégories de modifications :
 
 * Avec la mise à niveau vers la version 6.5 : quelques modifications de restructuration /etc ne sont pas compatibles avec les versions antérieures. Par conséquent, les modifications doivent être planifiées et implémentées dans le cadre de la mise à niveau d’AEM 6.5.
-* Avant la mise à niveau vers la future version : la grande majorité des modifications de restructuration /etc peuvent être différées à une période ultérieure à la mise à niveau. Comme mentionné précédemment, le code AEM 6.5 continuera à faire référence aux anciens emplacements jusqu’à ce que les modifications soient implémentées dans le cadre d’une version client. Bien qu’il n’y ait pas de calendrier forcé pour apporter les modifications, il est recommandé de les effectuer avant la mise à niveau vers la version car les fonctionnalités futures peuvent s’appuyer sur les nouveaux emplacements référencés. De plus, par convention, la documentation relative à une fonctionnalité donnée référencera les nouveaux emplacements. Cela pourrait donc prêter à confusion si les anciens emplacements sont toujours utilisés.
+* Avant la mise à niveau vers la future version : la grande majorité des modifications de restructuration /etc peuvent être différées à une période ultérieure à la mise à niveau. Comme mentionné précédemment, le code AEM 6.5 continuera à faire référence aux anciens emplacements jusqu’à ce que les modifications soient implémentées dans le cadre d’une version client. Bien qu’il n’y ait pas de chronologie forcée pour apporter les modifications, il est recommandé de les effectuer avant la mise à niveau vers la version car les fonctionnalités futures peuvent s’appuyer sur les nouveaux emplacements référencés. De plus, par convention, la documentation relative à une fonctionnalité donnée référencera les nouveaux emplacements. Cela pourrait donc prêter à confusion si les anciens emplacements sont toujours utilisés.
 
 ### Conseils de restructuration {#restructuring-guidance}
 

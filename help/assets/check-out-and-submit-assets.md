@@ -1,5 +1,5 @@
 ---
-title: Archivage et extraction de fichiers dans  [!DNL Assets]
+title: Archivage et extraction de fichiers dans [!DNL Assets]
 description: Découvrez comment extraire les ressources pour modification et les archiver à nouveau une fois les modifications effectuées.
 contentOwner: AG
 role: User
@@ -7,13 +7,22 @@ feature: Asset Management
 exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
-
+source-wordcount: '479'
+ht-degree: 98%
 ---
-
 # Archivage et extraction de fichiers dans la gestion des ressources numériques [!DNL Experience Manager] {#check-in-and-check-out-files-in-assets}
 
 | Version | Lien de l’article |
@@ -55,7 +64,7 @@ Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous
 
 ## Archivage forcé {#forced-check-in}
 
-Les administrateurs peuvent archiver les ressources extraites par d’autres utilisateurs.
+Les administrateurs et administratrices peuvent réintégrer les ressources extraites par d’autres utilisateurs et utilisatrices.
 
 1. Connectez-vous à [!DNL Assets] en tant qu’administrateur.
 1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez une ou plusieurs ressources extraites par d’autres utilisateurs.
@@ -70,5 +79,5 @@ Les administrateurs peuvent archiver les ressources extraites par d’autres uti
 
 >[!MORELIKETHIS]
 >
->* [Présentation de l’archivage et de l’extraction dans l’appli de bureau [!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#how-app-works2)
+>* [Présentation de l’archivage et de l’extraction dans l’appli de bureau [!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#how-app-works2)
 >* [Tutoriel vidéo pour comprendre l’archivage et l’extraction [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html?lang=fr)

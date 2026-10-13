@@ -1,5 +1,5 @@
 ---
-title: Multi Site Manager et traduction
+title: Multi-Site Manager et traduction
 description: Découvrez comment réutiliser votre contenu dans tout votre projet et comment gérer des sites web multilingues dans Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,38 +9,54 @@ exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
 solution: Experience Manager, Experience Manager Sites
 feature: Multi Site Manager, Language Copy
 role: Admin
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '370'
 ht-degree: 100%
-
 ---
-
-# Multi Site Manager et traduction {#msm-and-translation}
+# Multi-Site Manager et traduction {#msm-and-translation}
 
 Les outils d’administration suivants sont disponibles pour gérer les sites et les pages web :
 
 * Multi Site Manager (MSM) vous permet d’utiliser le même contenu de site à plusieurs endroits différents, tout en autorisant des variations :
 
-   * [Réutilisation de contenu : Multi-Site Manager et Live Copy](/help/sites-administering/msm.md)
+  * [Réutilisation de contenu : Multi-Site Manager et Live Copy](/help/sites-administering/msm.md)
 
 * La traduction vous permet d’automatiser la traduction du contenu des pages, des ressources et du contenu créé par l’utilisateur ou l’utilisatrice pour créer et tenir à jour des sites web multilingues :
 
-   * [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md)
+  * [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md)
 
 * Ces deux fonctionnalités peuvent être combinées pour gérer les sites web qui sont à la fois [internationaux et multilingues](#multinational-and-multilingual-sites).
 
 ## Sites internationaux et multilingues {#multinational-and-multilingual-sites}
 
-Vous pouvez créer efficacement du contenu pour les sites internationaux et multilingues par l’utilisation conjointe de Multi Site Manager et du workflow de traduction. Créez un site principal dans une langue, pour un pays spécifique, puis utilisez ce contenu comme base pour les autres sites, à l’aide de la traduction quand nécessaire :
+Vous pouvez créer efficacement du contenu pour les sites internationaux et multilingues en utilisant conjointement Multi-Site Manager et le workflow de traduction. Créez un site principal dans une langue, pour un pays spécifique, puis utilisez ce contenu comme base pour les autres sites, à l’aide de la traduction quand nécessaire :
 
 * [Traduisez](/help/sites-administering/translation.md) le site de gabarit dans différentes langues.
 
 * Utilisez [Multi Site Manager](/help/sites-administering/msm.md) pour effectuer les tâches suivantes :
 
-   * Réutilisez le contenu du site principal et ses traductions afin de créer des sites pour d’autres pays et cultures.
-   * Veillez à limiter l’utilisation de Multi Site Manager à du contenu dans une langue, par exemple, gabarit anglais -> branches de langue anglaise dans les sites de pays, gabarit français -> branches de langue française dans les sites de pays.
-   * Si nécessaire, désolidarisez les éléments des Live Copies pour ajouter les détails de localisation.
+  * Réutilisez le contenu du site principal et ses traductions afin de créer des sites pour d’autres pays et cultures.
+  * Veillez à limiter l’utilisation de Multi-Site Manager à du contenu dans une langue, par exemple, gabarit anglais -> branches de langue anglaise dans les sites de pays, gabarit français -> branches de langue française dans les sites de pays.
+  * Si nécessaire, désolidarisez les éléments des Live Copies pour ajouter les détails de localisation.
 
 Le diagramme suivant illustre la manière dont les principaux concepts sont en corrélation (mais n’affiche pas tous les niveaux/éléments impliqués) :
 

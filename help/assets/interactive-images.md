@@ -10,13 +10,27 @@ feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: de661f96-7584-43db-a310-e01b57fdf199
+    internal-label: Interactive images
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4454'
 ht-degree: 97%
-
 ---
-
 # Images interactives{#interactive-images}
 
 Vous pouvez facilement créer des expériences riches et attrayantes pour vos clients à partir d’images statiques en faisant glisser des zones réactives « shoppable » sur une image. Les zones réactives Shoppable combinent des informations supplémentaires sur un produit ou un service avec une fonctionnalité directe de point de vente de type « Ajouter au panier » ou « Acheter ». Les clientes et clients peuvent sélectionner ces zones réactives et accéder directement au produit ou service, l’ajouter à un panier d’achat ou encore être dirigés vers une page web. Les expériences directes de ce type augmentent l’engagement et les conversions des clients sur votre site web.
@@ -45,11 +59,15 @@ Le tutoriel permet d’illustrer les étapes d’intégration de vidéos interac
 
 Étapes des images interactives :
 
-1. **(Facultatif) Identification des variables de zone réactive** - Si vous utilisez des instances autonomes d’Experience Manager Assets et de Dynamic Media, commencez par identifier les variables dynamiques utilisées dans votre mise en œuvre existante de l’aperçu rapide. Vous pouvez ensuite saisir des données de zone réactive lors de la création de l’image interactive. Consultez la section [(Facultatif) Identification des variables de zone réactive](#optional-identifying-hotspot-variables).Cependant, si vous utilisez Adobe Experience Manager Sites ou Experience Manager eCommerce, ou les deux, cette étape n’est pas nécessaire.Consultez la section [Concepts d’eCommerce dans Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+1. **(Facultatif) Identification des variables de zone réactive** - Si vous utilisez des instances autonomes d’Experience Manager Assets et de Dynamic Media, commencez par identifier les variables dynamiques utilisées dans votre mise en œuvre existante de l’aperçu rapide. Vous pouvez ensuite saisir des données de zone réactive lors de la création de l’image interactive. Consultez la section [(Facultatif) Identification des variables de zone réactive](#optional-identifying-hotspot-variables).
+Cependant, si vous utilisez Adobe Experience Manager Sites ou Experience Manager eCommerce, ou les deux, cette étape n’est pas nécessaire.
+Consultez la section [Concepts d’eCommerce dans Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
-1. **(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactive**. Personnalisez l’image utilisée pour représenter des zones réactives. Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse d’images interactives si vous envisagez plutôt d’utiliser le paramètre prédéfini de visionneuse d’images interactive prêt à l’emploi `Shoppable_Banner`.Consultez la section [(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactive](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
+1. **(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactive**. Personnalisez l’image utilisée pour représenter des zones réactives. Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse d’images interactives si vous envisagez plutôt d’utiliser le paramètre prédéfini de visionneuse d’images interactive prêt à l’emploi `Shoppable_Banner`.
+Consultez la section [(Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactive](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **Chargement d’une bannière d’image** - Téléchargez les bannières d’image que vous souhaitez rendre interactives.Consultez la section [Chargement d’une bannière d’image](#uploading-an-image-banner).
+1. **Chargement d’une bannière d’image** - Téléchargez les bannières d’image que vous souhaitez rendre interactives.
+Consultez la section [Chargement d’une bannière d’image](#uploading-an-image-banner).
 
 1. **Ajout de zones réactives à une bannière d’image** : ajoutez une ou plusieurs zones réactives à une bannière d’image et associez chacune d’elles à une action, comme un lien hypertexte, un aperçu rapide ou un fragment d’expérience. Après avoir ajouté des zones réactives, vous terminez cette tâche en publiant l’image interactive.
 
@@ -87,7 +105,7 @@ Il suffit parfois de consulter les spécialistes informatiques chargés de la mi
 La plupart des implémentations d’aperçu rapide utilisent le modèle suivant :
 
 * L’utilisateur active un élément d’interface utilisateur sur le site web. Par exemple, en sélectionnant un bouton « Aperçu rapide ».
-* Le site Web envoie une requête Ajax au serveur principal afin de charger les données ou le contenu de l’aperçu rapide, le cas échéant.
+* Le site Web envoie une demande Ajax au serveur principal afin de charger les données ou le contenu de l’aperçu rapide, le cas échéant.
 * Les données de l’aperçu rapide sont traduites en contenu en préparation du rendu sur la page Web.
 * Enfin, le code en front-end effectue le rendu visuel de ce contenu à l’écran.
 
@@ -95,9 +113,11 @@ L’approche consiste ensuite à visiter différentes zones du site web existant
 
 Normalement, il n’est pas nécessaire d’utiliser des outils de débogage spécialisés. Les navigateurs web modernes disposent d’inspecteurs web qui effectuent un travail adéquat. Voici quelques exemples de navigateurs web qui incluent des inspecteurs web :
 
-* Pour voir toutes les demandes HTTP sortantes dans Google Chrome, appuyez sur F12 pour ouvrir le panneau Outils de développement, puis sélectionnez l’onglet Réseau.Sur Mac, appuyez sur Commande+Option+I pour ouvrir le panneau Outils de développement, puis sélectionnez l’onglet Réseau.
+* Pour voir toutes les demandes HTTP sortantes dans Google Chrome, appuyez sur F12 pour ouvrir le panneau Outils de développement, puis sélectionnez l’onglet Réseau.
+Sur Mac, appuyez sur Commande+Option+I pour ouvrir le panneau Outils de développement, puis sélectionnez l’onglet Réseau.
 
-* Dans Firefox, vous pouvez activer le plug-in Firebug en appuyant sur F12 et utiliser l’onglet Réseau, ou utiliser l’outil Inspecteur intégré et son onglet Réseau.Sur Mac, appuyez sur Commande+Option+I pour ouvrir le panneau Outils de développement, puis sélectionnez l’onglet Inspecteur.
+* Dans Firefox, vous pouvez activer le plug-in Firebug en appuyant sur F12 et utiliser l’onglet Réseau, ou utiliser l’outil Inspecteur intégré et son onglet Réseau.
+Sur Mac, appuyez sur Commande+Option+I pour ouvrir le panneau Outils de développement, puis sélectionnez l’onglet Inspecteur.
 
 Lorsque la surveillance de réseau est activée dans le navigateur, déclenchez l’aperçu rapide sur la page.
 
@@ -273,17 +293,17 @@ Voir [(Facultatif) Aperçu des images interactives](#optional-previewing-interac
 
    * Sélectionnez **[!UICONTROL Aperçu rapide]**.
 
-      * Si vous êtes un client ou une cliente Experience Manager Sites ou eCommerce, sélectionnez l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Sélectionnez le produit à utiliser, puis appuyez sur **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page pour revenir à la page Gestion des zones réactives.
-      * Si vous *n’êtes pas* client Experience Manager Sites ou eCommerce :
+     * Si vous êtes un client ou une cliente Experience Manager Sites ou eCommerce, sélectionnez l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Sélectionnez le produit à utiliser, puis appuyez sur **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page pour revenir à la page Gestion des zones réactives.
+     * Si vous *n’êtes pas* client Experience Manager Sites ou eCommerce :
 
-         * Consultez la section [Identification des variables de zone réactive](#optional-identifying-hotspot-variables) ; vous devez définir ces variables.
-         * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte Valeur de SKU, entrez la SKU, qui est un identifiant unique pour chaque produit ou service que vous proposez. La valeur de SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer la zone réactive sélectionnée à l’aperçu rapide d’un SKU spécifique.
-         * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide que vous devez utiliser pour identifier un produit, sélectionnez **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Males` est une variable ajoutée.
+       * Consultez la section [Identification des variables de zone réactive](#optional-identifying-hotspot-variables) ; vous devez définir ces variables.
+       * Ensuite, entrez manuellement la valeur de SKU. Dans le champ de texte Valeur de SKU, entrez la SKU, qui est un identifiant unique pour chaque produit ou service que vous proposez. La valeur de SKU entrée est renseignée automatiquement dans la partie variable du modèle d’aperçu rapide afin que le système sache associer la zone réactive sélectionnée à l’aperçu rapide d’un SKU spécifique.
+       * (Facultatif) S’il existe d’autres variables dans l’aperçu rapide que vous devez utiliser pour identifier un produit, sélectionnez **[!UICONTROL Ajouter la variable générique]**. Dans le champ de texte, spécifiez une variable supplémentaire. Par exemple, `category=Males` est une variable ajoutée.
 
    * Sélectionnez **[!UICONTROL Lien hypertexte]**.
 
-      * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Sélecteur de site (dossier) pour accéder à une URL. La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
-      * Si vous êtes un client ou une cliente autonome, dans le champ de texte HREF, spécifiez le chemin URL complet vers une page web liée.
+     * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Sélecteur de site (dossier) pour accéder à une URL. La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+     * Si vous êtes un client ou une cliente autonome, dans le champ de texte HREF, spécifiez le chemin URL complet vers une page web liée.
 
    Veillez à spécifier si vous souhaitez ouvrir le lien dans un nouvel onglet du navigateur (paramètre par défaut recommandé) ou dans le même onglet.
 
@@ -291,13 +311,14 @@ Voir [(Facultatif) Aperçu des images interactives](#optional-previewing-interac
 
    * Sélectionnez **[!UICONTROL Fragment d’expérience]**.
 
-      * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Rechercher (loupe) afin d’ouvrir la page Fragment d’expérience. Sélectionnez le fragment d’expérience à utiliser, puis **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page afin de revenir à la page de gestion des zones réactives.Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
+     * Si vous êtes client Experience Manager Sites, sélectionnez l’icône Rechercher (loupe) afin d’ouvrir la page Fragment d’expérience. Sélectionnez le fragment d’expérience à utiliser, puis **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page afin de revenir à la page de gestion des zones réactives.
+       Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
-      * Indiquez la largeur et la hauteur du fragment d’expérience tel que vous souhaitez qu’il apparaisse dans la bannière.
+     * Indiquez la largeur et la hauteur du fragment d’expérience tel que vous souhaitez qu’il apparaisse dans la bannière.
 
-        >[!NOTE]
-        >
-        >Les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+       >[!NOTE]
+       >
+       >Les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer vos modifications et revenir à la page du navigateur.
 1. Publiez l’image interactive. La publication permet de fournir la bannière par le biais du cloud et génère également le code intégré si vous avez besoin de l’intégrer à un site web tiers.
@@ -316,7 +337,10 @@ Voir [(Facultatif) Aperçu des images interactives](#optional-previewing-interac
 
 Vous pouvez utiliser la prévisualisation pour afficher une représentation de la manière dont votre image interactive s’affichera pour les clientes et clients, et pour tester les zones réactives de l’image pour vous assurer qu’elles se comportent comme prévu.
 
-Lorsque vous êtes satisfait de l’image interactive, vous pouvez la publier.Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).Consultez [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Lorsque vous êtes satisfait de l’image interactive, vous pouvez la publier.
+Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
+Consultez [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Pour prévisualiser des images interactives :**
 
@@ -337,9 +361,11 @@ Si vous êtes un client Experience Manager Sites, vous pouvez ajouter l’imag
 
 Si vous êtes un client Experience Manager Assets autonome, vous pouvez ajouter manuellement l’image interactive à votre site web, comme indiqué dans cette section.
 
-1. Copiez le code intégré de l’image interactive publiée.Consultez [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
+1. Copiez le code intégré de l’image interactive publiée.
+Consultez [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
 
-1. Ajoutez le code intégré copié à l’emplacement souhaité dans la page web.Le code intégré copié est défini pour un environnement réactif afin qu’il s’adapte automatiquement à la zone qui lui est affectée.
+1. Ajoutez le code intégré copié à l’emplacement souhaité dans la page web.
+Le code intégré copié est défini pour un environnement réactif afin qu’il s’adapte automatiquement à la zone qui lui est affectée.
 
 **Exemple**
 
@@ -440,7 +466,7 @@ En utilisant nos exemples précédents d’URL d’aperçu rapide, vous pouvez v
       &rbrace;);</code></td>
   </tr>
   <tr>
-   <td><p>SKU unique, trouvé dans le chemin d’accès à l’URL</p> </td>
+   <td><p>SKU unique, trouvée dans le chemin d’accès</p> </td>
    <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
       "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;

@@ -9,7 +9,23 @@ exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 100%
@@ -20,15 +36,15 @@ ht-degree: 100%
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-Vous pouvez spécifier les emplacements URL, URI et fichier des attributs, tels que la racine web, l’emplacement des formulaires à récupérer, le fichier du PDF de contrôle utilisé dans les transformations PDFForm et l’emplacement du cache.
+Vous pouvez spécifier les emplacements URL, URI et fichier des attributs, tels que la racine web, l’emplacement des formulaires à récupérer, le fichier PDF initial utilisé dans les transformations PDFForm et l’emplacement du cache.
 
-1. Dans Administration Console, cliquez sur Services > Forms.
+1. Dans la console d’administration, cliquez sur Services > Forms.
 1. Sous Emplacements, spécifiez les options appropriées. Les options sont décrites ci-dessous.
 1. Cliquez sur Enregistrer.
 
 ## Paramètres des emplacements {#locations-settings}
 
-**URL de base :** URL de base où se trouvent les ressources de formulaires telles que les images et les scripts. Cette valeur est requise pour les transformations de HTML qui incluent des références HREF à des dépendances externes, telles que des images ou des scripts. xfasubset.js est l’un de ces scripts, nécessaire pour que les formulaires HTML puissent effectuer des opérations d’intelligence XFA. Cette valeur doit être l’équivalent HTTP de l’URI racine du contenu.
+**URL de base :** URL de base où se trouvent les ressources de formulaires telles que les images et les scripts. Cette valeur est requise pour les transformations HTML qui incluent des références HREF à des dépendances externes, telles que des images ou des scripts. xfasubset.js est l’un de ces scripts, nécessaire pour que les formulaires HTML puissent effectuer des opérations d’intelligence XFA. Cette valeur doit être l’équivalent HTTP de l’URI racine du contenu.
 
 >[!NOTE]
 >
@@ -54,15 +70,15 @@ Où `host name` et `port` correspondent au nom du serveur et au numéro de port 
 
 La valeur par défaut est une chaîne vide.
 
-**URI racine web :** racine web de l’application. Cette valeur est combinée avec le paramètre sTargetURL (lorsque sTargetURL est fourni en tant que valeur relative), indiqué via le SDK d’AEM forms, pour construire une URL absolue et accéder ainsi au contenu Web spécifique de l’application.
+**URI racine web :** racine web de l’application. Cette valeur est combinée avec le paramètre sTargetURL (lorsque sTargetURL est fourni en tant que valeur relative), indiqué via le SDK d’AEM Forms, pour construire une URL absolue et accéder ainsi au contenu web spécifique de l’application.
 
 La valeur par défaut est une chaîne vide.
 
-**URI racine du contenu :** URI ou emplacement absolu pour la récupération des formulaires. Cette valeur est combinée avec le paramètre sFormQuery, indiqué via l’API, pour construire l’URL absolue vers le formulaire à récupérer. Cette valeur peut référencer un répertoire ou un emplacement web accessible via HTTP.
+**URI racine du contenu :** URI ou emplacement absolu pour la récupération des formulaires. Cette valeur est combinée avec le paramètre sFormQuery, indiqué via l’API, pour construire le chemin d’accès absolu vers le formulaire à récupérer. Cette valeur peut référencer un répertoire ou un emplacement web accessible via HTTP.
 
 La valeur par défaut est une chaîne vide.
 
-**URI de configuration XCI :** emplacement relatif ou absolu du fichier XCI utilisé pour le rendu. Si la valeur est relative, il est supposé que le fichier XCI réside dans le fichier EAR déployable d’AEM forms.
+**URI de configuration XCI :** emplacement relatif ou absolu du fichier XCI utilisé pour le rendu. Si la valeur est relative, il est supposé que le fichier XCI réside dans le fichier EAR déployable d’AEM Forms.
 
 La valeur par défaut est `com/adobe/formServer/PA/pa.xci`.
 
@@ -76,7 +92,7 @@ L’exemple suivant présente une entrée dans le fichier de mappage de polices�
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Fichier PDF initial :** fichier PDF initial utilisé dans une transformation PDFForm pour un envoi optimisé. Le fichier PDF de départ spécifie un fichier de PDF personnalisé (contenant uniquement des ressources de flux XFA, d’image et de police) qui est ajouté à la conception de formulaire et aux données. Le formulaire est rendu par Acrobat 7 ou une version ultérieure et s’applique à la transformation PDFForm.
+**Fichier PDF initial :** fichier PDF initial utilisé dans une transformation PDFForm pour un envoi optimisé. Le fichier PDF de départ spécifie un fichier PDF personnalisé (contenant uniquement des ressources de flux XFA, d’image et de police) auquel sont ajoutées la conception du formulaire et les données. Le formulaire est rendu par Acrobat 7 ou une version ultérieure et s’applique à la transformation PDFForm.
 
 La valeur par défaut est une chaîne vide.
 

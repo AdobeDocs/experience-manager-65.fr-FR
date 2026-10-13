@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5992'
+source-wordcount: '6001'
 ht-degree: 97%
-
 ---
-
 # Surveillance et maintenance de votre instance Adobe Experience Manager{#monitoring-and-maintaining-your-aem-instance}
 
 Une fois vos instances AEM déployées, vous devez surveiller et maintenir leur fonctionnement, leurs performances et leur intégrité.
@@ -126,7 +135,7 @@ Pour purger les versions d’un site web, procédez comme suit :
    ![la configuration de la purge de version](assets/version-purge-configuration.png),
 
    * **Purger les chemins d’accès**
-Définissez le chemin d’accès de début du contenu à purger, par exemple, `/content/wknd`.
+     Définissez le chemin d’accès de début du contenu à purger, par exemple, `/content/wknd`.
 
      >[!CAUTION]
      >
@@ -136,17 +145,17 @@ Définissez le chemin d’accès de début du contenu à purger, par exemple, `/
 
    * **Purge récursive des versions**
 
-      * À désélectionner si vous souhaitez purger uniquement le nœud défini par le chemin d’accès.
-      * À sélectionner si vous souhaitez purger le nœud défini par le chemin d’accès et ses descendants.
+     * À désélectionner si vous souhaitez purger uniquement le nœud défini par le chemin d’accès.
+     * À sélectionner si vous souhaitez purger le nœud défini par le chemin d’accès et ses descendants.
 
    * **Nombre maximal de versions**
-Définissez le nombre maximal de versions (pour chaque nœud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
+     Définissez le nombre maximal de versions (pour chaque nœud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
 
    * **Nombre minimum de versions**
-Définissez le nombre minimal de versions (pour chaque nœud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
+     Définissez le nombre minimal de versions (pour chaque nœud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
 
    * **Âge de version maximal**
-Définissez l’âge maximal de la version en jours (pour chaque nœud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
+     Définissez l’âge maximal de la version en jours (pour chaque nœud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
 
    Cliquez ensuite sur **Enregistrer**.
 
@@ -219,37 +228,37 @@ Divers fichiers journaux sont conservés sur le serveur de fichiers sur lequel v
 
 * `<cq-installation-dir>/crx-quickstart/logs`
 
-   * `access.log`
-Toutes les demandes d’accès à la gestion de contenu web d’AEM et au référentiel sont enregistrées ici.
+  * `access.log`
+    Toutes les demandes d’accès à la gestion de contenu web d’AEM et au référentiel sont enregistrées ici.
 
-   * `audit.log`
-Les actions de modération sont enregistrées ici.
+  * `audit.log`
+    Les actions de modération sont enregistrées ici.
 
-   * `error.log`
-Les messages d’erreur (de différents niveaux de gravité) sont enregistrés ici.
+  * `error.log`
+    Les messages d’erreur (de différents niveaux de gravité) sont enregistrés ici.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=fr)
-Ce journal n’est utilisé que si [!DNL Dynamic Media] est activé. Il propose des statistiques et des informations d’analyse utilisées pour analyser le comportement du processus interne d’ImageServer.
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=fr)
+    Ce journal n’est utilisé que si [!DNL Dynamic Media] est activé. Il propose des statistiques et des informations d’analyse utilisées pour analyser le comportement du processus interne d’ImageServer.
 
-   * `request.log`
-Chaque demande d’accès est enregistrée ici en même temps que la réponse.
+  * `request.log`
+    Chaque demande d’accès est enregistrée ici en même temps que la réponse.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=fr)
-Ce journal n’est utilisé que si [!DNL Dynamic Media] est activé. Le journal s7access enregistre chaque demande faite à [!DNL Dynamic Media] via `/is/image` et `/is/content`.
+  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=fr)
+    Ce journal n’est utilisé que si [!DNL Dynamic Media] est activé. Le journal s7access enregistre chaque demande faite à [!DNL Dynamic Media] via `/is/image` et `/is/content`.
 
-   * `stderr.log`
-Contient les messages d’erreur, de différents niveaux de gravité, générés lors du démarrage. Par défaut, le niveau de journalisation est défini sur `Warning` (`WARN`)
+  * `stderr.log`
+    Contient les messages d’erreur, de différents niveaux de gravité, générés lors du démarrage. Par défaut, le niveau de journalisation est défini sur `Warning` (`WARN`)
 
-   * `stdout.log`
-Contient des messages de journaux indiquant les événements pendant le démarrage.
+  * `stdout.log`
+    Contient des messages de journaux indiquant les événements pendant le démarrage.
 
-   * `upgrade.log`
-Fournit un journal de toutes les opérations de mise à niveau qui s’exécutent à partir des packages `com.day.compat.codeupgrade` et `com.adobe.cq.upgradesexecutor`.
+  * `upgrade.log`
+    Fournit un journal de toutes les opérations de mise à niveau qui s’exécutent à partir des packages `com.day.compat.codeupgrade` et `com.adobe.cq.upgradesexecutor`.
 
 * `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
-   * `journal.log`
-Informations sur la journalisation des révisions.
+  * `journal.log`
+    Informations sur la journalisation des révisions.
 
 >[!NOTE]
 >
@@ -316,9 +325,9 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
      Valeur : spécifiez les services OSGi pour lequel l’enregistreur consigne les messages ; par exemple, tous les services suivants :
 
-      * `org.apache.sling`
-      * `org.apache.felix`
-      * `com.day`
+     * `org.apache.sling`
+     * `org.apache.felix`
+     * `com.day`
 
    * Nom : `org.apache.sling.commons.log.level`
 
@@ -328,13 +337,13 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
    * Configurez les autres paramètres en fonction de vos besoins :
 
-      * Nom : `org.apache.sling.commons.log.pattern`
+     * Nom : `org.apache.sling.commons.log.pattern`
 
-        Type : `String`
+       Type : `String`
 
-        Valeur : spécifier le modèle du message du journal, au besoin ; par exemple,
+       Valeur : spécifier le modèle du message du journal, au besoin ; par exemple,
 
-        `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+       `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
    >[!NOTE]
    >
@@ -411,17 +420,17 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
    * Configurez les autres paramètres en fonction de vos besoins :
 
-      * Nom : `org.apache.sling.commons.log.file.number`
+     * Nom : `org.apache.sling.commons.log.file.number`
 
-        Type : `Long`
+       Type : `Long`
 
-        Valeur : spécifiez le nombre de fichiers journaux que vous souhaitez conserver ; par exemple, `5`.
+       Valeur : spécifiez le nombre de fichiers journaux que vous souhaitez conserver ; par exemple, `5`.
 
-      * Nom : `org.apache.sling.commons.log.file.size`
+     * Nom : `org.apache.sling.commons.log.file.size`
 
-        Type : `String`
+       Type : `String`
 
-        Valeur : spécifiez-la comme nécessaire pour contrôler la rotation du fichier par taille/date ; par exemple, `'.'yyyy-MM-dd`.
+       Valeur : spécifiez-la comme nécessaire pour contrôler la rotation du fichier par taille/date ; par exemple, `'.'yyyy-MM-dd`.
 
    >[!NOTE]
    >
@@ -552,7 +561,7 @@ Vous trouverez ci-après une liste des problèmes de performances qui surviennen
 | Serveur |  |  |  |
 | Réseau | Faible usage du processeur sur les serveurs et les clients. | Supprimez tous les goulets d’étranglement réseau. | Améliorez/optimisez la configuration du cache client. |
 |   | La navigation locale sur le serveur est (relativement) rapide. | Augmentez la bande passante du réseau. | Réduisez le « poids » de vos pages web (par exemple, moins d’images, HTML optimisé). |
-| Serveur web | L’utilisation du processeur sur le serveur web est élevée. | Mettez vos serveurs web en cluster. | Réduisez les accès par page (visite). |
+| Serveur web | L’utilisation du processeur sur le serveur web est élevée. | Mettez vos serveurs web en cluster. | Réduisez les hits par page (visite). |
 |   |  | Utilisez un équilibreur de charge matériel. |  |
 | Application | L’utilisation du processeur du serveur est élevée. | Mettez en cluster vos instances AEM. | Recherchez et éliminez les problèmes de processeur et de mémoire (utilisez la révision du code et la sortie du minutage). |
 |   | Consommation de mémoire élevée. |  | Améliorez la mise en cache à tous les niveaux. |
@@ -568,19 +577,19 @@ Toutes ces informations doivent être obtenues, classées et analysées avant de
 
 * Avant de rencontrer un problème de performances :
 
-   * collecter le plus d’informations possible pour acquérir une bonne connaissance pratique du système dans des circonstances normales ;
+  * collecter le plus d’informations possible pour acquérir une bonne connaissance pratique du système dans des circonstances normales ;
 
 * Lorsque vous rencontrez un problème lié aux performances :
 
-   * essayez de le répliquer avec un navigateur web standard (ou de préférence plus), sur un autre client dont vous savez qu’il présente de bonnes performances générales et/ou sur le serveur lui-même (si possible).
-   * vérifier si des éléments (liés au système) ont changé dans un espace temporel approprié et si l’une de ces modifications a pu avoir une incidence sur les performances
-   * posez-vous des questions telles que :
+  * essayez de le répliquer avec un navigateur web standard (ou de préférence plus), sur un autre client dont vous savez qu’il présente de bonnes performances générales et/ou sur le serveur lui-même (si possible).
+  * vérifier si des éléments (liés au système) ont changé dans un espace temporel approprié et si l’une de ces modifications a pu avoir une incidence sur les performances
+  * posez-vous des questions telles que :
 
-      * le problème se produit-il uniquement à des moments spécifiques ?
-      * le problème se produit-il uniquement sur des pages spécifiques ?
-      * les autres demandes sont-elles affectées ?
+    * le problème se produit-il uniquement à des moments spécifiques ?
+    * le problème se produit-il uniquement sur des pages spécifiques ?
+    * les autres demandes sont-elles affectées ?
 
-   * collecter autant d’informations que possible à comparer avec vos connaissances du système dans des circonstances normales :
+  * collecter autant d’informations que possible à comparer avec vos connaissances du système dans des circonstances normales :
 
 ### Outils de surveillance et d’analyse des performances {#tools-for-monitoring-and-analyzing-performance}
 
@@ -719,15 +728,15 @@ Ce journal comporte une ligne par requête ou réponse :
 * Flèche indiquant s’il s’agit d’une requête (flèche pointant vers la droite) ou d’une réponse (flèche pointant vers la gauche).
 * Pour les demandes, la ligne contient :
 
-   * la méthode (généralement, GET, HEAD ou POST)
-   * la page demandée
-   * le protocole
+  * la méthode (généralement, GET, HEAD ou POST)
+  * la page demandée
+  * le protocole
 
 * Pour les réponses, la ligne contient :
 
-   * le code d’état (200 signifie « réussite », 404 signifie « page non trouvée »
-   * le type MIME
-   * le temps de réponse
+  * le code d’état (200 signifie « réussite », 404 signifie « page non trouvée »
+  * le type MIME
+  * le temps de réponse
 
 En utilisant de petits scripts, vous pouvez extraire les informations requises du fichier journal et assembler les statistiques de votre choix. Ces statistiques vous permettent de déterminer les pages ou les types de pages lents et de savoir si les performances globales sont satisfaisantes.
 
@@ -768,7 +777,7 @@ Des tests doivent être effectués pour déterminer le nombre d’utilisateurs e
 
 ### Utilisation de rlog.jar pour rechercher des requêtes avec des durées longues {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM comprend divers outils d’assistance dans les cas suivants :
+AEM comprend divers outils d’assistance dans les cas suivants :
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 L’un de ces outils, `rlog.jar`, peut être utilisé pour trier rapidement `request.log` afin que les requêtes soient affichées selon la durée, c’est-à-dire de la plus longue à la plus courte durée.
@@ -1124,17 +1133,17 @@ Si votre système manque d’espace disque ou vous constatez une fragmentation d
 
 * Bien que vous ayez désactivé la collecte des informations de débogage, elle peut être configurée à différents emplacements, notamment :
 
-   * [Gestionnaire de script JSP Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Gestionnaire JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Configuration de journalisation Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [Gestionnaire de bibliothèques HTML CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [Filtre de débogage de la gestion du contenu web CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Enregistreurs](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+  * [Gestionnaire de script JSP Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
+  * [Gestionnaire JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+  * [Configuration de journalisation Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+  * [Gestionnaire de bibliothèques HTML CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+  * [Filtre de débogage de la gestion du contenu web CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+  * [Enregistreurs](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * Si et comment vous avez configuré [la purge de version](/help/sites-deploying/version-purging.md)
 * La base de connaissances :
 
-   * [Trop De Fichiers Ouverts]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=fr
+  * [Trop De Fichiers Ouverts]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=fr
 
 ### Détérioration régulière des performances {#regular-performance-degradation}
 
@@ -1143,7 +1152,7 @@ Si les performances de votre instance se détériorent après chaque redémarrag
 * [Mémoire insuffisante](#outofmemory)
 * La base de connaissances :
 
-   * [Résolveur de ressources non fermé](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-23761)
+  * [Résolveur de ressources non fermé](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### Réglage JVM {#jvm-tuning}
 

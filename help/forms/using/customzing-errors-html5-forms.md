@@ -7,13 +7,28 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '508'
 ht-degree: 100%
-
 ---
-
 # Personnaliser les messages d’erreur pour les formulaires HTML5 {#customizing-error-messages-for-html-forms}
 
 Dans les formulaires HTML5, hors de la zone, les messages d’erreur et les avertissements ont une position et un aspect fixes (police et couleur), l’erreur est affichée uniquement pour un champ sélectionné, et une seule erreur s’affiche.
@@ -21,18 +36,18 @@ Dans les formulaires HTML5, hors de la zone, les messages d’erreur et les aver
 Cet article décrit les étapes de personnalisation des messages d’erreur des formulaires HTML5 afin que vous puissiez effectuer les opérations suivantes :
 
 * changer l’aspect et la position des messages d’erreur. Vous pouvez faire qu’une erreur apparaisse en haut, en bas, et sur le côté droit de chaque champ.
-* afficher les messages d’erreur pour plusieurs champs à tout moment spécifié. 
+* afficher les messages d’erreur pour plusieurs champs à tout moment spécifié.
 * afficher l’erreur, que le champ soit sélectionné ou non.
 
 ## Personnalisation des messages d’erreur  {#customizing-error-messages-nbsp}
 
-Avant de personnaliser les messages d’erreur, téléchargez et extrayez le package ci-joint (CustomErrorManager-1.0-SNAPSHOT.zip). 
+Avant de personnaliser les messages d’erreur, téléchargez et extrayez le package ci-joint (CustomErrorManager-1.0-SNAPSHOT.zip).
 
 Une fois que vous avez extrait le package, ouvrez le dossier CustomErrorManager-1.0-SNAPSHOT. Il contient les dossiers jcr_root et META-INF. Ces dossiers contiennent les fichiers CSS et .JS requis pour personnaliser le message d’erreur.
 
 [Obtenir le fichier](assets/customerrormanager-1.0-snapshot.zip)
 
-### Personnaliser la position des messages d’erreur {#customizing-the-position-of-error-messages-nbsp}
+### Personnaliser la position des messages d’erreur  {#customizing-the-position-of-error-messages-nbsp}
 
 Pour personnaliser la position du message d’erreur, ajoutez une balise &lt;div> pour chaque champ d’erreur et d’avertissement, puis positionnez la balise &lt;div> sur la gauche ou la droite et appliquez des styles CSS à la balise &lt;div>. Pour obtenir des instructions détaillées, suivez la procédure ci-dessous :
 
@@ -78,7 +93,7 @@ Pour personnaliser la position du message d’erreur, ajoutez une balise &lt;div
 1. Accédez au dossier `CustomErrorManager-1.0-SNAPSHOT` et créez une archive des dossiers jcr_root et META-INF. Renommez l’archive en CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Utilisez le gestionnaire de modules pour charger et installer le package.
 
-## Afficher les messages d’erreur pour plusieurs champs {#display-error-messages-for-multiple-fields-nbsp}
+## Afficher les messages d’erreur pour plusieurs champs  {#display-error-messages-for-multiple-fields-nbsp}
 
 Utilisez le package joint pour afficher simultanément les messages d’erreur pour tous les champs. Pour afficher un seul message d’erreur, utilisez le profil par défaut.
 

@@ -1,21 +1,34 @@
 ---
 title: Générer des formulaires reposant sur des fragments
-
 description: Utilisez le service Forms pour restituer des formulaires reposant sur des fragments créés à l’aide de Designer.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2204'
 ht-degree: 100%
@@ -26,19 +39,19 @@ ht-degree: 100%
 
 ## Générer des formulaires reposant sur des fragments {#rendering-forms-based-on-fragments-inner}
 
-Le service Forms peut restituer des formulaires reposant sur des fragments créés à l’aide de Designer. Un *fragment* est une partie réutilisable d’un formulaire et est enregistrée en tant que fichier XDP distinct pouvant être inséré dans plusieurs conceptions de formulaire. Un fragment peut très bien inclure un bloc d’adresse ou un paragraphe juridique, par exemple.
+Le service Forms peut restituer des formulaires reposant sur des fragments créés à l’aide de Designer. Un *fragment* est une partie réutilisable d’un formulaire et est enregistrée en tant que fichier XDP distinct pouvant être inséré dans plusieurs conceptions de formulaire. Un fragment peut inclure un bloc d’adresse ou du texte juridique, par exemple.
 
 L’utilisation de fragments simplifie et accélère la création et la gestion d’un grand nombre de formulaires. Lors de la création d’un formulaire, vous insérez une référence au fragment requis et celui-ci s’affiche dans le nouveau formulaire. La référence au fragment contient un sous-formulaire pointant vers le fichier XDP physique. Pour plus d’informations sur la création de conceptions de formulaires reposant sur des fragments, consultez la section [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
 Un fragment peut inclure plusieurs sous-formulaires qui sont placés dans un jeu de sous-formulaires de choix. Les jeux de sous-formulaires de choix contrôlent l’affichage des sous-formulaires en fonction du flux de données d’une connexion aux données. Vous vous servez d’instructions conditionnelles pour déterminer le sous-formulaire du jeu devant s’afficher dans le formulaire obtenu. Par exemple, chaque sous-formulaire faisant partie d’un jeu peut comprendre des informations relatives à un emplacement géographique particulier et le sous-formulaire affiché peut être déterminé d’après l’emplacement de lʼutilisateur.
 
-Un *fragment de script* contient des valeurs ou des fonctions JavaScript réutilisables stockées séparément des objets, tels qu’un analyseur de dates ou un appel de services web. Ces fragments incluent un seul objet de script qui apparaît comme enfant de variables dans la palette Hiérarchie. Les fragments ne peuvent pas être créés à partir de scripts qui sont des propriétés d’autres objets, tels que des scripts d’événement (scripts de validation, de calcul ou d’initialisation).
+Un *fragment de script* contient des valeurs ou des fonctions JavaScript réutilisables stockées séparément des objets, tels qu’un analyseur de dates ou un appel de services web. Ces fragments incluent un seul objet de script qui apparaît comme enfant des variables dans la palette Hiérarchie. Les fragments ne peuvent pas être créés à partir de scripts qui sont des propriétés d’autres objets, tels que des scripts d’événement (scripts de validation, de calcul ou d’initialisation).
 
 L’utilisation de fragments présente les avantages suivants :
 
 * **Réutilisation du contenu** : les fragments vous permettent de réutiliser un contenu dans plusieurs conceptions de formulaire. Lorsque vous devez utiliser le même contenu dans plusieurs formulaires, il est plus rapide et plus simple d’utiliser un fragment que de copier ou de recréer le contenu. L’emploi de fragments permet par ailleurs de garantir l’homogénéité du contenu et de l’aspect de parties de formulaire reprises dans les différents formulaires de référencement.
 * **Mises à jour globales** : l’utilisation de fragments vous permet d’effectuer des changements globaux dans plusieurs formulaires en une opération et en modifiant un seul fichier. Vous pouvez modifier le contenu, les objets de script, les liaisons de données, la disposition ou les styles d’un fragment : tous les formulaires XDP référençant ce fragment reflèteront ces changements.
-* Par exemple, vous pouvez retrouver dans de nombreux formulaires un élément commun tel qu’un bloc d’adresse comprenant un objet de liste déroulante de pays. Si vous mettez à jour les valeurs de cet objet de liste déroulante, vous devez ouvrir un grand nombre de formulaires afin d’y apporter les modifications voulues. En revanche, si vous placez le bloc d’adresse dans un fragment, il vous suffit d’ouvrir un fichier de fragment pour y apporter les modifications voulues.
+* Par exemple, vous pouvez retrouver dans de nombreux formulaires un élément commun tel qu’un bloc d’adresse comprenant un objet de liste déroulante de pays. Si vous mettez à jour les valeurs de cet objet de liste déroulante, vous devez ouvrir un grand nombre de formulaires afin d’y apporter les modifications voulues. Si vous placez le bloc d’adresse dans un fragment, il vous suffit d’ouvrir un fichier de fragment pour y apporter les modifications voulues.
 * Pour mettre à jour un fragment dans un formulaire PDF, vous devez réenregistrer le formulaire dans Designer.
 * **Création de formulaires partagée** : lʼutilisation de fragments permet de partager la création de formulaires entre plusieurs ressources. Les développeurs et développeuses de formulaires familiarisés avec le scripting ou d’autres fonctionnalités avancées de Designer peuvent développer et partager des fragments qui utilisent le scripting et des propriétés dynamiques. Les concepteurs et conceptrices de formulaires peuvent ensuite se servir de ces fragments pour définir la disposition de leurs conceptions de formulaire et s’assurer que toutes les parties de formulaires créés par plusieurs personnes revêtent un aspect, une présentation et des fonctionnalités homogènes.
 
@@ -123,7 +136,7 @@ Restituer un formulaire reposant sur des fragments à l’aide de l’API Forms 
 
    * Créez un objet `URLSpec` stockant des valeurs URI en utilisant son constructeur.
    * Appelez la méthode `setApplicationWebRoot` de l’objet `URLSpec` et transmettez une valeur de chaîne qui représente la racine web de l’application.
-   * Appelez la méthode `setContentRootURI` de l’objet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur de la racine du contenu URI. Vérifiez que la conception et les fragments du formulaire apparaissent dans l’URI racine du contenu. Dans le cas contraire, le service Forms renvoie une exception. Pour référencer le référentiel, spécifiez `repository://`.
+   * Appelez la méthode `setContentRootURI` de l’objet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur de la racine du contenu URI. Vérifiez que la conception du formulaire et les fragments se trouvent dans l’URI racine du contenu. Dans le cas contraire, le service Forms renvoie une exception. Pour référencer le référentiel, spécifiez `repository://`.
    * Appeler la méthode `setTargetURL` de l’objet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur de l’URL cible à l’endroit où les données de formulaire sont publiées. Si vous définissez l’URL cible dans la conception de formulaire, vous pouvez transmettre une chaîne vide. Vous pouvez également spécifier l’URL où est envoyé un formulaire pour effectuer des calculs.
 
 1. Restituer le formulaire

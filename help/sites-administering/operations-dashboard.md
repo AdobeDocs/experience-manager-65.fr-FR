@@ -10,13 +10,22 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6016'
+source-wordcount: '6022'
 ht-degree: 96%
-
 ---
-
 # Tableau de bord des opérations {#operations-dashboard}
 
 ## Présentation {#introduction}
@@ -77,7 +86,7 @@ Dans le tableau de bord des opérations, vous pouvez visualiser le résultat des
 
 La création d’un contrôle d’intégrité individuel se compose de deux étapes : implémentation d’un contrôle d’intégrité Sling et ajout d’une entrée pour le contrôle d’intégrité dans les nœuds de configuration du tableau de bord.
 
-1. Pour créer un contrôle d’intégrité Sling, créez un composant OSGI qui implémente l’interface de contrôle d’intégrité Sling. Ajoutez ce composant dans un lot. Les propriétés du composant identifient entièrement le contrôle d’intégrité. Une fois le composant installé, un MBean JMX est automatiquement créé pour le contrôle d’intégrité. Voir la [documentation du contrôle d’intégrité Sling](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) pour plus d’informations.
+1. Pour créer un contrôle d’intégrité Sling, créez un composant OSGI qui implémente l’interface de contrôle d’intégrité Sling. Ajoutez ce composant dans un bundle. Les propriétés du composant identifient entièrement le contrôle d’intégrité. Une fois le composant installé, un MBean JMX est automatiquement créé pour le contrôle d’intégrité. Voir la [documentation du contrôle d’intégrité Sling](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) pour plus d’informations.
 
    Exemple de composant de contrôle de l’intégrité Sling, écrit avec des annotations de composant de service OSGi :
 
@@ -107,13 +116,13 @@ La création d’un contrôle d’intégrité individuel se compose de deux éta
 
    * **Nom :** `sling:resourceType`
 
-      * **Type :** `String`
-      * **Valeur :** `granite/operations/components/mbean`
+     * **Type :** `String`
+     * **Valeur :** `granite/operations/components/mbean`
 
    * **Nom :** `resource`
 
-      * **Type :** `String`
-      * **Valeur :** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+     * **Type :** `String`
+     * **Valeur :** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
 
    >[!NOTE]
    >
@@ -164,19 +173,19 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
 
    * **Nom :** `Composite Health Check`
 
-      * **Type :** `nt:unstructured`
+     * **Type :** `nt:unstructured`
 
    Avec les propriétés suivantes :
 
    * **Nom :** `sling:resourceType`
 
-      * **Type :** `String`
-      * **Valeur :** `granite/operations/components/mbean`
+     * **Type :** `String`
+     * **Valeur :** `granite/operations/components/mbean`
 
    * **Nom :** `resource`
 
-      * **Type :** `String`
-      * **Valeur :** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+     * **Type :** `String`
+     * **Valeur :** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
 
    >[!NOTE]
    >
@@ -262,7 +271,8 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
    <td>Tâches Sling</td>
    <td>
     <div>
-      Le contrôle Tâches Sling vérifie le nombre de tâches dans la file d’attente du gestionnaire de tâches, le compare au seuil <code>maxNumQueueJobs</code> et :
+      Le contrôle Tâches Sling vérifie le nombre de tâches dans la file d’attente du gestionnaire de tâches et le compare à l’
+     <code>maxNumQueueJobs</code> seuil, et :
     </div>
     <ul>
      <li>renvoie le statut « Critique » si la file d’attente comporte plus de tâches que ne le définit la valeur <code>maxNumQueueJobs</code> ;</li>
@@ -300,10 +310,10 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
   </tr>
   <tr>
    <td>Lots actifs</td>
-   <td><p>Lots actifs vérifie l’état de tous les lots et :</p>
+   <td><p>Active Bundles vérifie l’état de tous les bundles et :</p>
     <ul>
-     <li>renvoie l’état Avertissement si l’un des lots n’est pas actif ou (en commençant par l’activation différée)</li>
-     <li>il ignore l’état des lots dans la liste d’exclusion.</li>
+     <li>renvoie l’état Avertissement si l’un des bundles n’est pas actif ou (en commençant par l’activation différée)</li>
+     <li>il ignore l’état des bundles dans la liste d’exclusion.</li>
     </ul> <p>Le paramètre de liste d’exclusion est configurable.</p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DinactiveBundles%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -461,7 +471,7 @@ L’interface utilisateur peut servir à filtrer les index du tableau en saisiss
 
 ### Télécharger le fichier compressé d’état {#download-status-zip}
 
-Cette option permet de déclencher le téléchargement d’un fichier compressé contenant des informations utiles sur l’état et la configuration du système. L’archive contient des configurations d’instance, une liste de lots, OSGi, des mesures Sling et des statistiques. Le fichier qui en résulte peut être volumineux. Pour ne pas surcharger votre système de fichiers de statut volumineux, utilisez la fenêtre **Télécharger le fichier de statut au format ZIP**. Pour y accéder, sélectionnez **AEM > Outils > Opérations > Diagnostic > Télécharger le fichier de statut au format ZIP.**
+Cette option permet de déclencher le téléchargement d’un fichier compressé contenant des informations utiles sur l’état et la configuration du système. L’archive contient des configurations d’instance, une liste de bundles, OSGi, des mesures Sling et des statistiques. Le fichier qui en résulte peut être volumineux. Pour ne pas surcharger votre système de fichiers de statut volumineux, utilisez la fenêtre **Télécharger le fichier de statut au format ZIP**. Pour y accéder, sélectionnez **AEM > Outils > Opérations > Diagnostic > Télécharger le fichier de statut au format ZIP.**
 
 Dans cette fenêtre, vous pouvez sélectionner les éléments à exporter (fichiers journaux et images mémoire de threads) ainsi que le nombre de jours à prendre en compte dans le téléchargement par rapport à la date actuelle.
 
@@ -494,7 +504,7 @@ Les tâches ci-dessous sont disponibles dans le tableau de bord des opérations�
 1. Tâche de maintenance **Purge du projet**, située sous le menu **Période de maintenance hebdomadaire** ; à l’aide de l’option **Ajouter**.
 1. Tâche de maintenance **Purge des tâches ad hoc**, située sous le menu **Période de maintenance hebdomadaire** ; à l’aide de l’option **Ajouter**.
 
-La synchronisation par défaut pour la fenêtre de maintenance quotidienne s’effectue de 2 :00 à 5 :00. Les tâches configurées pour s’exécuter dans la fenêtre de maintenance hebdomadaire s’exécutent entre 1:00 et 2:00 le samedi.
+La synchronisation par défaut de la fenêtre de maintenance quotidienne s’effectue de 2 h 00 à 5 h 00. Les tâches configurées pour s’exécuter dans la fenêtre de maintenance hebdomadaire s’exécutent entre 1 h 00 et 2 h 00 le samedi.
 
 Vous pouvez également configurer les heures en appuyant sur l’icône d’engrenage sur l’une des deux cartes de maintenance :
 

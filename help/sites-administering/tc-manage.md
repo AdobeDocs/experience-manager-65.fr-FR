@@ -5,13 +5,25 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3546'
 ht-degree: 99%
-
 ---
-
 # Gestion de projets de traduction{#managing-translation-projects}
 
 Après avoir préparé le contenu à traduire, vous devez compléter la structure linguistique en créant des copies de langue manquantes et créer des projets de traduction.
@@ -38,13 +50,13 @@ Les projets et les tâches de traduction sont créés avec des processus de pré
 
 ## Réalisation de traductions initiales et mise à jour de traductions existantes {#performing-initial-translations-and-updating-existing-translations}
 
-AEM détecte si un projet de traduction est créé pour la traduction initiale du contenu ou pour mettre à jour des copies de langue déjà traduites. Lorsque vous créez un projet de traduction d’une page et indiquez les copies de langue pour lesquelles vous effectuez la traduction, AEM détecte si la page source existe déjà dans les copies de langue ciblées :
+AEM détecte si un projet de traduction est créé pour la traduction initiale du contenu ou pour mettre à jour des copies de langue déjà traduites. Lorsque vous créez un projet de traduction d’une page et indiquez les copies linguistiques pour lesquelles vous effectuez la traduction, AEM détecte si la page source existe déjà dans les copies linguistiques ciblées :
 
 * **La copie linguistique n’inclut pas la page :** AEM traite cette situation comme une traduction initiale. La page est copiée immédiatement dans la copie linguistique et incorporée au projet. Lorsque la page traduite est importée dans AEM, AEM la copie directement dans la copie linguistique.
 * **La copie linguistique inclut déjà la page :** AEM traite cette situation comme une traduction mise à jour. Un lancement est créé, et une copie de la page est ajoutée au lancement et incorporée au projet. Les lancements vous permettent de passer en revue les traductions mises à jour avant de les valider dans la copie linguistique :
 
-   * Lorsque la page traduite est importée dans AEM, elle remplace la page du lancement.
-   * La page traduite ne remplace la copie linguistique que lorsque le lancement est converti.
+  * Lorsque la page traduite est importée dans AEM, elle remplace la page du lancement.
+  * La page traduite ne remplace la copie linguistique que lorsque le lancement est converti.
 
 Par exemple, la racine de la langue /content/geometrixx/fr est créée pour la traduction française de la langue principale /content/geometrixx/en. Il n’y a pas d’autres pages dans la copie linguistique française.
 
@@ -53,11 +65,11 @@ Par exemple, la racine de la langue /content/geometrixx/fr est créée pour la t
 
 ## Création de projets de traduction à l’aide du panneau Références {#creating-translation-projects-using-the-references-panel}
 
-Créez des projets de traduction afin de pouvoir exécuter et gérer le processus pour traduire les ressources de votre gabarit de langue. Lorsque vous créez des projets, vous spécifiez la page dans le gabarit de langue que vous traduisez et les copies de langue pour lesquelles vous effectuez la traduction :
+Créez des projets de traduction afin de pouvoir exécuter et gérer le processus pour traduire les ressources de votre gabarit de langue. Lorsque vous créez des projets, vous spécifiez la page dans la langue maître que vous traduisez et les copies linguistiques pour lesquelles vous effectuez la traduction :
 
 * La configuration cloud du framework d’intégration de traduction associé à la page sélectionnée détermine de nombreuses propriétés des projets de traduction, telles que le workflow de traduction à utiliser.
 * Un projet est créé pour chaque copie linguistique sélectionnée.
-* Une copie de la page sélectionnée et des ressources associées est créée et ajoutée à chaque projet. Ces copies sont ensuite envoyées au fournisseur de traduction pour traduction.
+* Une copie de la page sélectionnée et des ressources associées est créée et ajoutée à chaque projet. Ces copies sont ensuite envoyées au fournisseur de traduction pour être traduites.
 
 Vous pouvez spécifier que les pages enfants de la page sélectionnée soient elles aussi sélectionnées. Dans ce cas, les copies des pages enfants sont également ajoutées à chaque projet afin d’être traduites. Lorsque des pages enfants sont associées à différentes configurations de la structure d’intégration de traduction, AEM crée des projets supplémentaires.
 
@@ -239,7 +251,7 @@ Lors de la création d’un projet à l’aide du volet Ressources d’une page,
 
 ![chlimage_1-258](assets/chlimage_1-258.png)
 
-## Suivi du statut d’une tâche de traduction {#monitoring-the-status-of-a-translation-job}
+## Su du statut d’une tâche de traduction {#monitoring-the-status-of-a-translation-job}
 
 La vignette Tâche de traduction d’un projet de traduction fournit le statut d’une tâche de traduction, ainsi que le nombre de pages et les ressources de la tâche.
 

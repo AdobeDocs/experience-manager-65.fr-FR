@@ -1,17 +1,31 @@
 ---
 title: Configuration du balisage des ressources à l’aide du service de contenu dynamique
-description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans  [!DNL Adobe Experience Manager] à l’aide du service de contenu dynamique.
+description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans [!DNL Adobe Experience Manager] à l’aide du service de contenu dynamique.
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
-source-git-commit: ab9292c491cc9dfcd8f239ba279b1e0ae6d1560f
-workflow-type: ht
-source-wordcount: '1089'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 96%
 ---
-
 # Dépanner les balises intelligentes pour les informations d’identification OAuth {#oauth-config}
 
 Une configuration d’autorisation ouverte est nécessaire pour adopter le consentement de l’application [!DNL Adobe Experience Manager] afin d’interagir avec les services de contenu dynamique de manière sécurisée.
@@ -27,7 +41,7 @@ Reportez-vous à la section [configuration des services de contenu dynamique](#i
 
 >[!NOTE]
 >
->Si nécessaire, vous pouvez envoyer un ticket d’assistance après le [processus d’assistance](https://experienceleague.adobe.com/fr?lang=fr&amp;support-tab=home#support).
+>Si nécessaire, vous pouvez envoyer un ticket d’assistance après le [processus d’assistance](https://experienceleague.adobe.com/fr?lang=fr&support-tab=home#support).
 
 ## Configuration OAuth pour les utilisateurs et utilisatrices AMS existants {#oauth-config-new-ams-users}
 
@@ -39,12 +53,12 @@ Une configuration OAuth requiert les conditions préalables suivantes :
 
 * Créez une intégration OAuth dans [Developer Console](https://developer.adobe.com/console/user/servicesandapis). Utilisez les propriétés `ClientID`, `ClientSecret`, `OrgID` et autres dans les étapes ci-dessous :
 * Les fichiers suivants se trouvent à ce chemin `/apps/system/config in crx/de` :
-   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### Configuration OAuth pour les utilisateurs et utilisatrices AMS et On-Premise existants {#steps-config-oauth-onprem}
 
-Les étapes ci-dessous peuvent être effectuées par l’administrateur ou l’administratrice système dans **CRXDE**. Le client ou la cliente AMS peut contacter le représentant ou la représentante Adobe ou envoyer un ticket d’assistance après le [processus d’assistance](https://experienceleague.adobe.com/fr?lang=fr&amp;support-tab=home#support).
+Les étapes ci-dessous peuvent être effectuées par l’administrateur ou l’administratrice système dans **CRXDE**. Le client ou la cliente AMS peut contacter le représentant ou la représentante Adobe ou envoyer un ticket d’assistance après le [processus d’assistance](https://experienceleague.adobe.com/fr?lang=fr&support-tab=home#support).
 
 1. Ajoutez ou mettez à jour les propriétés ci-dessous dans `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config` :
 
@@ -59,7 +73,7 @@ Les étapes ci-dessous peuvent être effectuées par l’administrateur ou l’a
 
    >[!IMPORTANT]
    >
-   >Remplacez le point (.) par le trait d’union (-) comme préfixe à `<randomnumber>`.
+   >Remplacer point (.) avec un tiret (-) comme préfixe à `<randomnumber>`.
 
 1. Suivez les étapes ci-dessous dans `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config` :
    * Mettez à jour la propriété auth.ims.client.secret avec le secret client de la nouvelle intégration OAuth.
@@ -84,7 +98,7 @@ Une fois la configuration terminée, vous pouvez utiliser un MBean JMX pour vali
 
 1. Cliquez sur `validateConfigs()`. Dans la boîte de dialogue **[!UICONTROL Valider les configurations]**, cliquez sur **[!UICONTROL Invoquer]**.
 
-Le résultat de la validation s’affiche dans la même boîte de dialogue.
+Les résultats de la validation s’affichent dans la même boîte de dialogue.
 
 >[!NOTE]
 >
@@ -120,7 +134,7 @@ Un certificat public permet d’authentifier votre profil sur Adobe Developer 
 
    **[!UICONTROL URL du service]** : `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   Par exemple, `https://smartcontent.adobe.io/apac`. Vous pouvez indiquer `na`, `emea`, ou `apac` comme les régions où votre instance d’auteur Experience Manager est hébergée.
+   Par exemple, `https://smartcontent.adobe.io/apac`. Vous pouvez indiquer `na`, `emea` ou `apac` en tant que régions où votre instance de création Experience Manager est hébergée.
 
    >[!NOTE]
    >
@@ -147,7 +161,7 @@ Un certificat public permet d’authentifier votre profil sur Adobe Developer 
 
 ## Création de l’intégration de la console Adobe Developer {#create-adobe-i-o-integration}
 
-Pour utiliser les API de service de contenu dynamique, créez une intégration dans la console Adobe Developer afin d’obtenir la [!UICONTROL Clé API] (générée dans le champ [!UICONTROL ID CLIENT] de l’intégration de la console Adobe Developer), [!UICONTROL ID DE COMPTE TECHNIQUE], [!UICONTROL ID D’ORGANISATION] et [!UICONTROL SECRET CLIENT] pour les [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager].
+Pour utiliser les API de service de contenu dynamique, créez une intégration dans Adobe Developer Console afin d’obtenir la [!UICONTROL Clé API] (générée dans le champ [!UICONTROL ID CLIENT] de l’intégration de Adobe Developer Console), [!UICONTROL ID DE COMPTE TECHNIQUE], [!UICONTROL ID D’ORGANISATION] et [!UICONTROL SECRET CLIENT] pour les [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager].
 
 1. Accédez à l’URL [https://developer.adobe.com/console](https://developer.adobe.com/console/) dans un navigateur. Sélectionnez le compte approprié et vérifiez que le rôle d’organisation associé est administrateur système.
 
@@ -172,7 +186,7 @@ Pour utiliser les API de service de contenu dynamique, créez une intégration d
 -->
 
 ![oauth config](assets/oauth-config.png)
-*Illustration : configuration d’OAuth de serveur à serveur dans Adobe Developer Console*
+*Image : configuration d’OAuth serveur à serveur dans Adobe Developer Console*
 
 ## Configuration du service de contenu dynamique {#configure-smart-content-service}
 
@@ -180,7 +194,7 @@ Pour configurer l’intégration, utilisez les valeurs d’[!UICONTROL ID DE COM
 
 1. [!DNL Experience Manager]Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Services cloud hérités]** pour ouvrir la console [!UICONTROL Services cloud].
 
-1. Sous les **[!UICONTROL balises intelligentes des ressources]**, ouvrez la configuration créée ci-dessus. Sur la page des paramètres du service, cliquez sur **[!UICONTROL Modifier]**.
+1. Sous les **[!UICONTROL balises intelligentes d’Assets]**, ouvrez la configuration créée ci-dessus. Sur la page des paramètres du service, cliquez sur **[!UICONTROL Modifier]**.
 
 1. Dans la boîte de dialogue **[!UICONTROL Service de contenu dynamique AEM]**, utilisez les valeurs préremplies pour les champs **[!UICONTROL URL de service]** et **[!UICONTROL Serveur d’autorisation]**.
 

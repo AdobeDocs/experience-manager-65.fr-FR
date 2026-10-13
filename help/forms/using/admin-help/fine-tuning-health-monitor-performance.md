@@ -9,13 +9,27 @@ exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 100%
-
 ---
-
 # Optimiser les performances de Health Monitor{#fine-tuning-health-monitor-performance}
 
 La collecte des statistiques système qui renseignent Health Monitor a un impact sur les performances de votre environnement AEM Forms. Vous pouvez contrôler cet impact en définissant les options Java répertoriées ci-dessous dans votre serveur d’applications.
@@ -46,7 +60,7 @@ La collecte des statistiques système qui renseignent Health Monitor a un impac
   </tr>
   <tr>
    <td><p>adobe.cache.multicast-port</p></td>
-   <td><p>Port multidiffusion utilisé pour communiquer avec d’autres membres du système distribué. S’il est défini sur zéro, la multidiffusion est désactivée pour la découverte et la distribution de membres. </p><p>Remarque : sélectionnez plusieurs adresses et ports de multidiffusion pour différents systèmes distribués. N’utilisez pas uniquement des adresses différentes.</p></td>
+   <td><p>Port multidiffusion utilisé pour communiquer avec d’autres membres du système distribué. S’il est défini sur zéro, la multidiffusion est désactivée pour la découverte et la distribution de membres. </p><p>Remarque : sélectionnez des adresses et des ports de multidiffusion différents pour différents systèmes distribués. N’utilisez pas uniquement des adresses différentes.</p></td>
    <td><p>Pas de valeur par défaut. Les valeurs valides sont comprises entre 0 et 65 535.</p></td>
   </tr>
   <tr>
@@ -71,8 +85,8 @@ La collecte des statistiques système qui renseignent Health Monitor a un impac
 ## Ajouter des options Java à WebLogic {#add-java-options-to-weblogic}
 
 1. Ouvrez la console d’administration WebLogic en saisissant https://[nom hôte]:&#39;port&#39;/console dans la ligne d’URL d’un navigateur web.
-1. Tapez le nom d’utilisateur et le mot de passe que vous avez créés pour le domaine du serveur WebLogic, cliquez sur Se connecter sous Centre des modifications, puis sur Verrouiller et modifier.
-1. Sous Structure du domaine, cliquez sur Environment > Serveurs et, dans le volet de droite, cliquez sur le nom du serveur géré.
+1. Tapez le nom d’utilisateur et le mot de passe que vous avez créés pour le domaine du serveur WebLogic, puis cliquez sur Se connecter. Sous Centre des modifications, cliquez sur Verrouiller et modifier.
+1. Sous Structure du domaine, cliquez sur Environnement > Serveurs et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
 1. Dans la zone Arguments, ajoutez les arguments dont vous avez besoin à la fin du contenu actuel. Par exemple, ajouter ‑ `Dadobe.healthmonitor.enabled=false` permet de désactiver Health Monitor.
 1. Cliquez sur Save, puis sur Activate Changes.

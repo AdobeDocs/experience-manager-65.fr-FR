@@ -5,29 +5,42 @@ exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 100%
-
 ---
-
 # Votre boîte de réception{#your-inbox}
 
 Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris des workflows et des projets, par exemple sur des :
 
 * Tâches :
 
-   * Elles peuvent également être créées à différents endroits de l’interface utilisateur d’AEM (par exemple, sous **Projets**).
-   * Elles peuvent être le produit de l’étape **Créer une tâche** ou **Créer une tâche de projet** d’un workflow.
+  * Elles peuvent également être créées à différents endroits de l’interface utilisateur d’AEM (par exemple, sous **Projets**).
+  * Elles peuvent être le produit de l’étape **Créer une tâche** ou **Créer une tâche de projet** d’un workflow.
 
 * Workflows :
 
-   * Éléments de travail correspondant à des actions que vous devez effectuer sur le contenu de la page.
+  * Éléments de travail correspondant à des actions que vous devez effectuer sur le contenu de la page.
 
-      * Ils sont le produit des étapes **Participant** du workflow.
+    * Ils sont le produit des étapes **Participant** du workflow.
 
-   * Éléments d’échec, pour permettre aux administrateurs et administratrices d’effectuer à nouveau l’étape qui a échoué.
+  * Éléments d’échec, pour permettre aux administrateurs et administratrices d’effectuer à nouveau l’étape qui a échoué.
 
 Vous recevez ces notifications dans votre propre boîte de réception où vous pouvez les afficher et prendre des mesures.
 
@@ -112,9 +125,9 @@ Pour les deux vues (Liste et Calendrier), vous pouvez définir des paramètres 
 
   Pour la **vue Calendrier**, vous pouvez configurer les éléments suivants :
 
-   * **Regrouper par**
-   * **Planification** ou **Aucun**
-   * **Taille des cartes**
+  * **Regrouper par**
+  * **Planification** ou **Aucun**
+  * **Taille des cartes**
 
   ![wf-92](assets/wf-92.png)
 
@@ -122,8 +135,8 @@ Pour les deux vues (Liste et Calendrier), vous pouvez définir des paramètres 
 
   Pour la **vue Liste**, vous pouvez configurer le mécanisme de tri :
 
-   * **Champ de tri**
-   * **Ordre de tri**
+  * **Champ de tri**
+  * **Ordre de tri**
 
   ![wf-83](assets/inbox-settings.png)
 
@@ -140,21 +153,21 @@ L’option Contrôle d’administration permet les actions suivantes aux respons
 L’option Contrôle d’administration n’est visible que pour les membres du groupe `administrators` ou `workflow-administrators`.
 
 * **Personnalisation des colonnes** : personnalisez une boîte de réception AEM pour modifier le titre par défaut d’une colonne, réorganiser la position d’une colonne et afficher des colonnes supplémentaires en fonction des données d’un workflow.
-   * **Ajouter une colonne** : sélectionnez une colonne à ajouter dans la boîte de réception AEM.
-   * **Modifier une colonne** : passez la souris sur le titre de la colonne et cliquez sur l’icône ![modifier](assets/edit.svg) pour saisir le nom d’affichage d’une colonne.
-   * **Supprimer une colonne** : cliquez sur l’icône ![supprimer](assets/delete_updated.svg) pour supprimer la colonne de la boîte de réception AEM.
-   * **Déplacer la colonne** : faites glisser l’icône ![déplacer](assets/move_updated.svg) pour déplacer une colonne vers un nouvel emplacement dans la boîte de réception d’AEM.
+  * **Ajouter une colonne** : sélectionnez une colonne à ajouter dans la boîte de réception AEM.
+  * **Modifier une colonne** : passez la souris sur le titre de la colonne et cliquez sur l’icône ![modifier](assets/edit.svg) pour saisir le nom d’affichage d’une colonne.
+  * **Supprimer une colonne** : cliquez sur l’icône ![supprimer](assets/delete_updated.svg) pour supprimer la colonne de la boîte de réception AEM.
+  * **Déplacer la colonne** : faites glisser l’icône ![déplacer](assets/move_updated.svg) pour déplacer une colonne vers un nouvel emplacement dans la boîte de réception d’AEM.
 
   ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personnalisation de l’image de marque**
 
-   * **Personnaliser le texte de l’en-tête :** spécifiez le texte à afficher dans l’en-tête pour remplacer le texte **Adobe Experience Manager** par défaut.
+  * **Personnaliser le texte de l’en-tête :** spécifiez le texte à afficher dans l’en-tête pour remplacer le texte **Adobe Experience Manager** par défaut.
 
-   * **Personnaliser le logo :** spécifiez l’image à afficher dans l’en-tête en tant que logo. Chargez une image dans la gestion des ressources numériques (DAM) et faites-y référence dans le champ.
+  * **Personnaliser le logo :** spécifiez l’image à afficher dans l’en-tête en tant que logo. Chargez une image dans la gestion des ressources numériques (DAM) et faites-y référence dans le champ.
 
 * **Navigation de l’utilisateur**
-   * **Masquer les options de navigation :** sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation incluent des liens vers d’autres solutions, un lien Aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte Adobe Experience Manager.
+  * **Masquer les options de navigation :** sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation incluent des liens vers d’autres solutions, un lien Aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte Adobe Experience Manager.
 * **Enregistrer :** cliquez sur cette option pour enregistrer les paramètres.
 
 ## Action sur un élément {#taking-action-on-an-item}
@@ -174,9 +187,9 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
    * **Réaffecter**/**Déléguer** un élément.
    * **Ouvrir** un élément ; selon le type d’élément, cette action permet d’effectuer les opérations suivantes :
 
-      * afficher les propriétés de l’élément ;
-      * Ouvrir un tableau de bord ou un assistant pour effectuer d’autres actions ;
-      * ouvrir la documentation connexe.
+     * afficher les propriétés de l’élément ;
+     * Ouvrir un tableau de bord ou un assistant pour effectuer d’autres actions ;
+     * ouvrir la documentation connexe.
 
    * **Revenir** à une étape précédente.
    * Afficher le payload pour un workflow.
@@ -213,20 +226,20 @@ Vous pouvez créer des tâches à partir de la boîte de réception :
 
    * **De base** :
 
-      * **Titre**
-      * **Projet**
-      * **Cessionnaire**
-      * **Contenu** : similaire à payload, il s’agit d’une référence de la tâche à un emplacement dans le référentiel.
-      * **Description**
-      * **Priorité de la tâche**
-      * **Date de début**
-      * **Date d’échéance**
+     * **Titre**
+     * **Projet**
+     * **Cessionnaire**
+     * **Contenu** : similaire à payload, il s’agit d’une référence de la tâche à un emplacement dans le référentiel.
+     * **Description**
+     * **Priorité de la tâche**
+     * **Date de début**
+     * **Date d’échéance**
 
    ![wf-86](assets/wf-86.png)
 
    * **Avancé**
 
-      * **Nom** : ce champ est utilisé pour former l’URL. S’il est vide, le nom est basé sur le champ **Titre**.
+     * **Nom** : ce champ est utilisé pour former l’URL. S’il est vide, le nom est basé sur le champ **Titre**.
 
    ![wf-87](assets/wf-87.png)
 
@@ -250,15 +263,15 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-authoring/pro
 
    * **De base**
 
-      * **Titre**
-      * **Description**
-      * **Date de début**
-      * **Date d’échéance**
-      * **Utilisateur** et rôle
+     * **Titre**
+     * **Description**
+     * **Date de début**
+     * **Date d’échéance**
+     * **Utilisateur** et rôle
 
    * **Avancé**
 
-      * **Nom**
+     * **Nom**
 
    >[!NOTE]
    >

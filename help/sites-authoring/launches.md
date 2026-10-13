@@ -10,13 +10,31 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 99%
-
+source-wordcount: '908'
+ht-degree: 98%
 ---
-
 # Lancements{#launches}
 
 Les lancements vous permettent de développer efficacement du contenu en vue d’une publication ultérieure.
@@ -51,45 +69,45 @@ Les lancements permettent d’effectuer les opérations suivantes :
 
 * Créez une copie de vos pages source :
 
-   * La copie est votre lancement.
-   * Les pages source de niveau supérieur sont connues sous le nom de **Production**.
+  * La copie est votre lancement.
+  * Les pages source de niveau supérieur sont connues sous le nom de **Production**.
 
-      * Les pages source peuvent provenir de plusieurs branches (distinctes).
+    * Les pages source peuvent provenir de plusieurs branches (distinctes).
 
   ![Présentation des actions de lancement](assets/chlimage_1-111.png)
 
 * Modifier la configuration de lancement :
 
-   * Ajoutez ou supprimez des pages et/ou des branches au/du lancement.
-   * Modifiez des propriétés de lancement, comme le **titre**, la **date de lancement** et l’indicateur **Prêt pour la production**.
+  * Ajoutez ou supprimez des pages et/ou des branches au/du lancement.
+  * Modifiez des propriétés de lancement, comme le **titre**, la **date de lancement** et l’indicateur **Prêt pour la production**.
 
 * Vous pouvez convertir et publier le contenu manuellement ou automatiquement :
 
-   * Manuellement :
+  * Manuellement :
 
-      * Effectuez la promotion de votre contenu de lancement dans la **cible** (pages source) lorsqu’elles sont prêtes à être publiées.
-      * Publiez le contenu à partir des pages source (après leur promotion).
-      * Effectuez la promotion de toutes les pages ou uniquement des pages modifiées.
+    * Effectuez la promotion de votre contenu de lancement dans la **cible** (pages source) lorsqu’elles sont prêtes à être publiées.
+    * Publiez le contenu à partir des pages source (après leur promotion).
+    * Effectuez la promotion de toutes les pages ou uniquement des pages modifiées.
 
-   * Automatiquement, ce qui implique les étapes suivantes :
+  * Automatiquement, ce qui implique les étapes suivantes :
 
-      * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
+    * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
 
-      * L’indicateur **Prêt pour la production** : cette option ne peut être définie que lors de la modification d’un lancement.
-      * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la **date** de **lancement** (**En direct**) spécifiée. Après la promotion, les pages de production sont automatiquement publiées.\
-        Si aucune date n’a été définie, l’indicateur n’a aucun effet.
+    * L’indicateur **Prêt pour la production** : cette option ne peut être définie que lors de la modification d’un lancement.
+    * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la **date** de **lancement** (**En direct**) spécifiée. Après la promotion, les pages de production sont automatiquement publiées.\
+      Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 
 * Mettez à jour vos pages source et de lancement en parallèle :
 
-   * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy).
-   * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source.
+  * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy).
+  * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source.
 
   ![Présentation des mises à jour](assets/chlimage_1-112.png)
 
 * [Créer un lancement imbriqué](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) (un lancement dans un autre lancement) :
 
-   * La source est un lancement existant.
-   * Vous pouvez [promouvoir un lancement imbriqué](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) à toute cible ; il peut s’agir d’un lancement parent ou des pages source de niveau supérieur (production).
+  * La source est un lancement existant.
+  * Vous pouvez [promouvoir un lancement imbriqué](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) à toute cible ; il peut s’agir d’un lancement parent ou des pages source de niveau supérieur (production).
 
   ![Présentation du lancement imbriqué](assets/chlimage_1-113.png)
 
@@ -115,7 +133,7 @@ La console de lancements fournit une vue d’ensemble de vos lancements et perme
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 
-* Ou directement avec [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html?lang=fr)
+* Ou directement avec [&#128279;](https://localhost:4502/libs/launches/content/launches.html?lang=fr)
 
 ## Lancements dans les références (console Sites) {#launches-in-references-sites-console}
 

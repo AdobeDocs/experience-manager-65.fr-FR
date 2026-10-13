@@ -1,21 +1,32 @@
 ---
 title: Modèles de ressources
-description: Découvrez les modèles de ressources dans  [!DNL Adobe Experience Manager Assets]  et comment les utiliser pour créer des dérivés marketing.
+description: Découvrez les modèles de ressources dans [!DNL Adobe Experience Manager Assets] et comment les utiliser pour créer des dérivés marketing.
 contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 100%
-
+source-wordcount: '1572'
+ht-degree: 99%
 ---
-
 # Modèles de ressources {#asset-templates}
 
-Les modèles de ressources correspondent à une catégorie spéciale de ressources qui permet de réutiliser rapidement des contenus riches pour les médias papier et numériques. Un modèle de ressource comprend deux parties : une section de message fixe et une section modifiable. La section fixe peut comprendre du contenu propriétaire, comme le logo d’une marque ou des informations sur les droits d’auteur, pour lequel la modification n’est pas activée. La section modifiable peut contenir du contenu visuel et textuel dans des champs qui peuvent être modifiés afin de personnaliser le message.
+Les modèles de ressources constituent à une catégorie spéciale de ressources qui permet de réutiliser rapidement des contenus visuellement riches pour les médias numériques et imprimés. Un modèle de ressource comprend deux parties : une section de message fixe et une section modifiable. La section fixe peut comprendre du contenu propriétaire, comme le logo d’une marque ou des informations sur les droits d’auteur, pour lequel la modification n’est pas activée. La section modifiable peut contenir du contenu visuel et textuel dans des champs qui peuvent être modifiés afin de personnaliser le message.
 
 Les modèles de ressources offrent une flexibilité permettant d’apporter des modifications limitées tout en garantissant la sécurité des éléments graphiques globaux. Cette capacité en fait des composants idéaux pour adapter et diffuser rapidement du contenu dans différents services. La réutilisation de contenu permet de réduire les coûts de gestion des canaux papier et numériques. Cela garantit en outre une expérience globale cohérente, quel que soit le canal de diffusion.
 

@@ -9,13 +9,29 @@ role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 99%
-
 ---
-
 # Démarrages rapides de l’API Forms Service {#forms-service-api-quick-starts}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -1694,7 +1710,7 @@ L’exemple de code suivant gère un formulaire HTML envoyé en tant que donnée
 
 ## Démarrage rapide (mode SOAP) : création de documents PDF avec des données XML envoyées à l’aide de l’API Java™ {#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api}
 
-L’exemple de code Java™ suivant gère les données de formulaire envoyées au format XML. Les données de formulaire sont récupérées à partir de l’envoi du formulaire à l’aide de l’API Forms et envoyées au service Output. Les données de formulaire et une conception de formulaire sont utilisées pour créer un document PDF non interactif. Le document PDF non interactif est stocké dans un nœud Content Services (obsolète) intitulé `/Company Home/Test Directory`. Le nom du formulaire est créé de façon dynamique. En d’autres termes, le prénom et le nom de l’utilisateur ou de l’utilisatrice sont utilisés pour nommer le fichier PDF. L’identifiant de la ressource du nouveau contenu est écrit dans le navigateur web client. (Voir [Créer des documents PDF avec des données XML envoyées](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data).)
+L’exemple de code Java™ suivant gère les données de formulaire envoyées au format XML. Les données de formulaire sont récupérées à partir de l’envoi du formulaire à l’aide de l’API AEM Forms et envoyées au service Output. Les données de formulaire et une conception de formulaire sont utilisées pour créer un document PDF non interactif. Le document PDF non interactif est stocké dans un nœud Content Services (obsolète) intitulé `/Company Home/Test Directory`. Le nom du formulaire est créé de façon dynamique. En d’autres termes, le prénom et le nom de l’utilisateur ou de l’utilisatrice sont utilisés pour nommer le fichier PDF. L’identifiant de la ressource du nouveau contenu est affiché dans le navigateur web client. (Voir [Créer des documents PDF avec des données XML envoyées](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data).)
 
 ```java
  /*
@@ -2251,7 +2267,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
 
 ## Démarrage rapide (mode SOAP) : gérer un formulaire contenant un script de calcul à l’aide de l’API Java™ {#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api}
 
-L’exemple de code suivant traite un formulaire contenant un script de calcul et réécrit les résultats dans le navigateur web client. (Voir [Calculer les données de formulaire](/help/forms/developing/rendering-forms.md#calculating-form-data).)
+L’exemple de code suivant traite un formulaire contenant un script de calcul et renvoie les résultats au navigateur web du client. (Voir [Calculer les données de formulaire](/help/forms/developing/rendering-forms.md#calculating-form-data).)
 
 ```java
  /*

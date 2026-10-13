@@ -9,19 +9,35 @@ feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 91%
-
 ---
-
 # Introduction à l’interface utilisateur de création d’une communication interactive{#introduction-to-interactive-communication-authoring-ui}
 
 L’interface utilisateur de création d’une [Communication interactive](/help/forms/using/interactive-communications-overview.md) est intuitive et fournit les éléments suivants pour la création de canaux d’impression et web de la communication interactive :
 
 * Editeur de document glisser-déposer WYSIWYGM
-* Référentiel intégré des ressources : les ressources chargées et créées sur le serveur sont disponibles dans l’explorateur des ressources de l’interface de création des communications interactives.
+* Référentiel intégré des ressources : les ressources chargées et créées sur le serveur sont disponibles dans l’explorateur des ressources de l’interface de création de la communication interactive.
 
 Lorsque vous [créez une communication interactive ou en modifiez une existante](../../forms/using/create-interactive-communication.md), vous utilisez les éléments suivants de l’interface utilisateur :
 
@@ -58,7 +74,7 @@ Dans l’explorateur de contenu, vous pouvez voir la hiérarchie des objets du d
 * **Explorateur de propriétés**
 
   Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction du composant. Par exemple, pour afficher les propriétés du conteneur de document :
-Sélectionnez un composant, puis sélectionnez ![field-level](assets/field-level.png) > **Conteneur de documents**, puis sélectionnez ![cmppr](assets/cmppr.png).
+  Sélectionnez un composant, puis sélectionnez ![field-level](assets/field-level.png) > **Conteneur de documents**, puis sélectionnez ![cmppr](assets/cmppr.png).
 
 * **Navigateur Assets**
 Isole différents types de contenu, tels que des fragments de disposition, des images, des documents, des pages ou des vidéos. L’auteur peut glisser-déposer des actifs dans la communication interactive.
@@ -69,7 +85,7 @@ Inclut des composants que vous pouvez utiliser pour créer les canaux d’impres
 | **Composant** | **Canal d’impression** | **Canal web** | **Fonctionnalité** |
 |---|---|---|---|
 | Graphique | ✓ | ✓ | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles récupérées d’un élément de collection du modèle de données de formulaire. |
-| Fragment de document | ✓ | ✓ | Vous permet d’ajouter un composant réutilisable, du texte, une liste ou une condition à une communication interactive. Le composant réutilisable que vous ajoutez à une communication interactive peut être basé sur modèle de données de formulaire ou sans modèle de données de formulaire. |
+| Fragment de document | ✓ | ✓ | Vous permet d’ajouter un composant réutilisable, du texte, une liste ou une condition à une communication interactive. Le composant réutilisable que vous ajoutez à une communication interactive peut être basé sur un modèle de données de formulaire ou sans modèle de données de formulaire. |
 | Image | ✓ | ✓ | Permet d’insérer une image. |
 | Panneau | - | ✓ | Le composant Panneau est un espace réservé pour regrouper d’autres composants et contrôle la disposition d’un groupe de composants dans une communication interactive. Un composant de panneau vous donne également la possibilité de permettre la répétition d’un groupe de composants pour l’utilisateur ou l’utilisatrice, par exemple dans plusieurs entrées requises pour remplir des informations d’identification pédagogiques. Il est également recommandé d’utiliser un panneau pour chaque onglet d’une communication interactive dotée de plusieurs onglets. |
 | Tableau | &#42; | ✓ | Ajoute un tableau qui permet de classer les données par lignes et par colonnes. |
@@ -91,10 +107,10 @@ Les points clés lorsque vous utilisez des composants de communication interacti
 * Un composant est identifié par son nom d’élément. Lorsque vous sélectionnez ![cmppr](assets/cmppr.png), vous pouvez changer le nom du composant en modifiant la valeur du champ Nom de l’élément dans l’explorateur de propriétés. Vous pouvez saisir uniquement des lettres, des chiffres, des traits d’union (-) et des traits de soulignement (_) dans le champ Nom de l’élément. D’autres caractères spéciaux ne sont pas autorisés et le nom de l’élément doit commencer par une lettre.
 * Vous pouvez modifier la propriété de titre d’un composant de communication interactive en ligne dans l’éditeur sans ouvrir l’explorateur de propriétés tant que le titre est visible sur la communication interactive. Pour ce faire :
 
-   1. Sélectionnez un composant qui a une propriété Titre et dont la propriété Masquer le titre est désactivée.
-   1. Sélectionnez ![aem_6_3_edit](assets/aem_6_3_edit.png) pour rendre le titre modifiable.
+  1. Sélectionnez un composant qui a une propriété Titre et dont la propriété Masquer le titre est désactivée.
+  1. Sélectionnez ![aem_6_3_edit](assets/aem_6_3_edit.png) pour rendre le titre modifiable.
 
-   1. Modifiez le titre et sélectionnez la touche Retour ou sélectionnez un emplacement en dehors du composant pour enregistrer les modifications. Sélectionnez la touche Échap pour annuler les modifications.
+  1. Modifiez le titre et appuyez sur la touche Retour, ou sélectionnez un emplacement en dehors du composant pour enregistrer les modifications. Sélectionnez la touche Échap pour annuler les modifications.
 
 ## Barre d’outils de composants {#component-toolbar}
 
@@ -139,13 +155,13 @@ La barre d’outils de la page, située en haut de l’écran, propose des optio
 * Émulateur ![règle](assets/ruler.png): vous permet de simuler l’aspect de votre communication interactive pour différentes tailles d’affichage telles que des tablettes et des téléphones.
 * Modifier : permet de sélectionner d’autres modes comme : Modifier, Style, Développeur et Conception.
 
-   * Modifier : modifie les propriétés de la communication interactive et de ses composants. Exemple : l’ajout d’un composant, le dépôt d’une image et l’indication des champs obligatoires.
-   * Style : définit l’aspect des composants de votre communication interactive. Par exemple, en mode Style, vous pouvez sélectionner un panneau et définir sa couleur d’arrière-plan.
-   * Développeur : permet à un développeur de :
+  * Modifier : modifie les propriétés de la communication interactive et de ses composants. Exemple : l’ajout d’un composant, le placement d’une image et l’indication des champs obligatoires.
+  * Style : définit l’aspect des composants de votre communication interactive. Par exemple, en mode Style, vous pouvez sélectionner un panneau et définir sa couleur d’arrière-plan.
+  * Développeur : permet à un développeur de :
 
-      * Découvrir en quoi consiste la communication interactive.
-      * Déboguer en temps réel afin de mieux résoudre les problèmes.
+    * Découvrir en quoi consiste la communication interactive.
+    * Déboguer en temps réel afin de mieux résoudre les problèmes.
 
-   * Cible : permet d’activer ou de désactiver les composants personnalisés ou les composants prêts à l’emploi qui ne sont pas répertoriés dans la barre latérale.
+  * Cible : permet d’activer ou de désactiver les composants personnalisés ou les composants prêts à l’emploi qui ne sont pas répertoriés dans la barre latérale.
 
 * Aperçu : permet de prévisualiser la communication interactive avant de le publier.

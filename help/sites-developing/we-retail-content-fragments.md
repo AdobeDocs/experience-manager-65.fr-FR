@@ -9,24 +9,38 @@ exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,Developing
 role: Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
-
+source-wordcount: '516'
+ht-degree: 88%
 ---
-
 # Test des fragments de contenu dans We.Retail{#trying-out-content-fragments-in-we-retail}
 
 Les fragments de contenu vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). **We.Retail** (disponible en tant qu’instance prête à l’emploi d’Adobe Experience Manager) fournit le fragment **Arctic Surfing in Lofoten** comme exemple de base. Il illustre que :
 
 * Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux).
 
-   * Consultez la section [Emplacement des ressources de Fragment de contenu dans We.Retail](#where-to-find-content-fragments-in-we-retail).
+  * Consultez la section [Emplacement des ressources de Fragment de contenu dans We.Retail](#where-to-find-content-fragments-in-we-retail).
 
 * Vous pouvez ensuite [utiliser ces fragments et leurs variantes lors de la création](/help/sites-authoring/content-fragments.md) de vos pages de contenu.
 
-   * Consultez la section [Où les fragments de contenu sont-ils utilisés dans We.Retail](#where-content-fragments-are-used-in-we-retail).
+  * Consultez la section [Où les fragments de contenu sont-ils utilisés dans We.Retail](#where-content-fragments-are-used-in-we-retail).
 
 Pour consulter la documentation complète traitant de la création, de la gestion, de l’utilisation et du développement de fragments de contenu :
 
@@ -49,19 +63,19 @@ Vous y trouverez notamment **Arctic Surfing in Lofoten**, un fragment avec des r
 
 * Naviguez par le biais de **Ressources**, **Fichiers**, **We.Retail**, **Anglais**, **Expériences**, **Arctic Surfing in Lofoten** :
 
-   * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
+  * [&#128279;](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 
 ![cf-44](assets/cf-44.png)
 
 Vous pouvez sélectionner et modifier le fragment **Arctic Surfing in Lofoten** :
 
-* [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
+* [&#128279;](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
 Ici, vous pouvez [modifier et gérer](/help/assets/content-fragments/content-fragments.md) votre fragment à l’aide des onglets (panneau de gauche) :
 
 <!--![cf-45-aa](do-not-localize/cf-45-aa.png) ![cf-45-a](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
-* **[Variations](/help/assets/content-fragments/content-fragments-variations.md)**, y compris [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) 
+* **[Variations](/help/assets/content-fragments/content-fragments-variations.md)**, y compris [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
 * **[Contenu associé](/help/assets/content-fragments/content-fragments-assoc-content.md)**
 * **[Métadonnées](/help/assets/content-fragments/content-fragments-metadata.md)**
 
@@ -71,13 +85,13 @@ Ici, vous pouvez [modifier et gérer](/help/assets/content-fragments/content-fra
 
 Pour illustrer la [création de page avec un fragment de contenu](/help/sites-authoring/content-fragments.md), plusieurs exemples de pages sont proposés, par exemple :
 
-* [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
+* [&#128279;](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 
 Le fragment de contenu **Arctic Surfing in Lofoten**, par exemple, est référencé sur la page Sites :
 
 * Accédez à **Sites**, **We.Retail**, **Gabarits de langue**, **Anglais**, **Expérience**. Ouvrez ensuite le fragment **Arctic Surfing in Lofoten** en vue de le modifier :
 
-   * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
+  * [&#128279;](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
 
 ![cf-53](assets/cf-53.png)
 
@@ -87,16 +101,16 @@ Pour plus d’informations, consultez :
 
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 
-   * Découvrez comment créer, modifier et gérer vos ressources Fragment de contenu.
+  * Découvrez comment créer, modifier et gérer vos ressources Fragment de contenu.
 
 * [Création de page à partir de fragments de contenu](/help/sites-authoring/content-fragments.md)
 
-   * Utilisez votre fragment de contenu lors de la création d’une page.
+  * Utilisez votre fragment de contenu lors de la création d’une page.
 
 * [Développement de composants AEM pour les fragments de contenu](/help/sites-developing/components-content-fragments.md)
 
-   * Une présentation des composants pour les fragments de contenu.
+  * Une présentation des composants pour les fragments de contenu.
 
 * [Développement et extension de fragments de contenu](/help/sites-developing/customizing-content-fragments.md)
 
-   * Les informations de cette section vous aident à développer et à étendre des fragments de contenu.
+  * Les informations de cette section vous aident à développer et à étendre des fragments de contenu.

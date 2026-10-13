@@ -10,26 +10,35 @@ feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3293'
-ht-degree: 93%
-
+source-wordcount: '3453'
+ht-degree: 94%
 ---
-
 # Paramètres de configuration OSGi{#osgi-configuration-settings}
 
-L’[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
+L’[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’AEM. Il est utilisé pour contrôler les bundles composites d’AEM et leur configuration.
 
 OSGi « *fournit les primitives normalisées qui permettent de créer des applications à partir de petits composants réutilisables et collaboratifs. Ces composants peuvent être créés dans une application et déployés* ».
 
-Cette fonctionnalité permet une gestion conviviale des offres groupées, car elles peuvent être arrêtées, installées et démarrées individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (voir [Spécifications OSGi](https://docs.osgi.org/specification/)) se trouve dans l’un des lots. Avec AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration de ces offres groupées ; voir [Configurer OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et les pratiques recommandées.
+Cette fonctionnalité permet une gestion aisée des bundles, car ils peuvent être arrêtés, installés et démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (consultez [Spécification OSGi](https://docs.osgi.org/specification/)) est contenu dans l’un des différents bundles. Avec AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration de ces bundles ; voir [Configurer OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et les pratiques recommandées.
 
 Les paramètres de configuration OSGi suivants (répertoriés en fonction de l’offre groupée) sont pertinents pour la mise en œuvre du projet. Les paramètres répertoriés ne doivent pas tous être ajustés, certains sont mentionnés pour vous aider à comprendre comment fonctionne AEM.
 
 >[!CAUTION]
 >
->La liste est destinée à servir de ligne directrice et n’est pas exhaustive. Toutes les offres groupées ne sont pas répertoriées, pas plus que tous les paramètres de certaines des offres groupées qui le sont.
+>La liste est destinée à servir de ligne directrice et n’est pas exhaustive. Les bundles ne sont pas tous répertoriés, et l’ensemble des paramètres n’est pas forcément présenté pour ceux qui sont répertoriés.
 >
 >La configuration nécessaire varie d’un projet à l’autre.
 >
@@ -41,7 +50,7 @@ Les paramètres de configuration OSGi suivants (répertoriés en fonction de l�
 
 >[!NOTE]
 >
->D’autres lots peuvent être nécessaires pour des zones spécifiques de fonctionnalité dans AEM. Dans ce cas, les informations de configuration figurent sur la page liée à la fonctionnalité en question.
+>D’autres bundles peuvent être nécessaires pour des zones spécifiques de fonctionnalité dans AEM. Dans ce cas, les informations de configuration figurent sur la page liée à la fonctionnalité en question.
 
 Le **Listener d’événement de réplication AEM** configure les éléments suivants :
 
@@ -67,7 +76,7 @@ La **Console de gestion OSGi Apache Felix** configure :
 >Veillez à configurer les éléments suivants :
 >
 >**Nom d’utilisateur** et **Mot de passe**, les informations d’identification pour accéder à la console de gestion web Apache Felix.
->Le mot de passe doit être modifié après l’installation initiale pour garantir la [sécurité](/help/sites-administering/security-checklist.md) de votre instance.
+>Le mot de passe doit être modifié après l’installation initiale pour garantir [la sécurité](/help/sites-administering/security-checklist.md) de votre instance.
 
 >[!NOTE]
 >
@@ -83,8 +92,8 @@ Le **Pool de threads d’événement Apache Sling** configure les éléments su
 
 * La **Taille minimale du pool** et la **Taille max. du pool**, les taille du pool utilisées pour contenir les threads d’événement.
 
-* **Taille de la file d’attente**, taille maximale de la file d’attente de thread si le pool est épuisé.
-La valeur recommandée est `-1` car elle définit la file d’attente sur illimitée. Si une limite est définie, des pertes peuvent survenir lorsqu’elle est dépassée.
+* La **Taille de la file d’attente**, taille maximale de la file d’attente de thread si le pool est épuisé.
+La valeur recommandée est la suivante : `-1` car elle définit la file d’attente sur Illimité. Si une limite est définie, des pertes peuvent survenir lorsqu’elle est dépassée.
 
 * La modification de ces paramètres peut améliorer les performances dans des scénarios comportant un grand nombre d’événements. Par exemple, une utilisation importante de la gestion des ressources numériques ou des workflows AEM.
 * Les valeurs spécifiques à votre scénario doivent être établies à l’aide de tests.
@@ -93,7 +102,7 @@ La valeur recommandée est `-1` car elle définit la file d’attente sur illimi
 Le **Servlet GET Apache Sling** configure certains aspects du rendu :
 
 * L’**Index automatique** pour activer ou désactiver le rendu du répertoire pour la navigation.
-* **Activer** (ou désactiver) les rendus par défaut, tels que **HTML**, **Texte brut**, **JSON** ou **XML**.
+* **Activez** (ou désactivez) les rendus par défaut, tels qu’**HTML**, **texte brut**, **JSON** ou **XML**.
 Ne désactivez pas JSON.
 
 >[!NOTE]
@@ -108,7 +117,7 @@ Certains paramètres peuvent affecter les performances. Désactivez ces paramèt
 
 * pour les instances de production :
 
-   * Désactivez l’option **Générer les informations de débogage**.
+  * Désactivez l’option **Générer les informations de débogage**.
 
 **Programme d’installation de JCR Apache Sling** Ces paramètres n’ont pas besoin d’être configurés, mais peuvent être utiles pour savoir quand développer ou déboguer. Par exemple, les dossiers d’installation peuvent être utiles pour archiver ou extraire, ou créer un package.
 
@@ -234,8 +243,8 @@ Le **Gestionnaire d’erreur et résolveur de script et le servlet Apache Sling
 
 Plusieurs paramètres peuvent être définis, notamment :
 
-* **Chemins d’exécution** - Répertorie les chemins d’accès à rechercher pour les scripts exécutables. En configurant des chemins spécifiques, vous pouvez limiter les scripts à exécuter. Si aucun chemin n’est configuré, la valeur par défaut est utilisée ( `/` = root), ce qui permet d’exécuter de tous les scripts.
-Si une valeur de chemin configuré se termine par une barre oblique, la recherche porte sur l’ensemble de la sous-arborescence. En l’absence de barre oblique, le script n’est exécuté que s’il s’agit d’une correspondance exacte.
+* Les **chemins d’exécution** : ils répertorient les chemins d’accès à rechercher pour les scripts exécutables. En configurant des chemins spécifiques, vous pouvez limiter les scripts à exécuter. Si vous ne configurez aucun chemin, le chemin par défaut est utilisé (`/` = root). Cela permet d’exécuter de tous les scripts.
+Si la valeur configurée du chemin se termine par une barre oblique, la recherche concerne l’arborescence entière. En l’absence de barre oblique, le script n’est exécuté que s’il s’agit d’une correspondance exacte.
 
 * **Utilisateur du script** : cette propriété facultative peut spécifier le compte d’utilisateur du référentiel utilisé pour lire les scripts. Si vous ne spécifiez aucun compte, l’utilisateur `admin` est utilisé par défaut.
 
@@ -243,7 +252,7 @@ Si une valeur de chemin configuré se termine par une barre oblique, la recherch
 
 **Configuration du proxy de composants HTTP Apache** : il s’agit de la configuration de proxy pour tout le code utilisant le client HTTP Apache, utilisée lorsque du code HTTP est créé. Par exemple, lors de la réplication.
 
-Lors de la création d’une configuration, ne modifiez pas la configuration d’usine. Créez plutôt une configuration d’usine pour ce composant à l’aide du gestionnaire de configuration disponible ici : **:4502/system/console/configMgr/**. La configuration du proxy est disponible à l’adresse **org.apache.http.proxyconfigurator.**
+Lors de la création d’une configuration, ne modifiez pas la configuration d’usine. Créez plutôt une configuration d’usine pour ce composant à l’aide du gestionnaire de configuration disponible ici : **&#x200B;**. La configuration du proxy est disponible à l’adresse **org.apache.http.proxyconfigurator.**
 
 >[!NOTE]
 >
@@ -259,17 +268,17 @@ L’**Antispam Day CQ** configure le service anti-spam (Akismet) utilisé. Pour
 
 * Pour les instances de production :
 
-   * Activez **Minifier** (pour supprimer les caractères CRLF et les espaces blancs).
-   * Activez **Gzip** (pour permettre l’extraction et l’accès aux fichiers avec une seule requête).
-   * Désactivez **Déboguer**
-   * Désactivez **Minutage**
+  * Activez **Minifier** (pour supprimer les caractères CRLF et les espaces blancs).
+  * Activez **Gzip** (pour permettre l’extraction et l’accès aux fichiers avec une seule requête).
+  * Désactivez **Déboguer**
+  * Désactivez **Minutage**
 
 * Pour le développement JS (en particulier lors du débogage) :
 
-   * désactivez **Minifier** ;
-   * activez **Déboguer** pour séparer les fichiers à des fins de débogage et les utiliser avec un bug de déclenchement ;
-   * activez **Minutage** si le minutage vous intéresse ;
-   * activez **Déboguer** pour afficher les messages du journal de la console JS.
+  * désactivez **Minifier** ;
+  * activez **Déboguer** pour séparer les fichiers à des fins de débogage et les utiliser avec un bug de déclenchement ;
+  * activez **Minutage** si le minutage vous intéresse ;
+  * activez **Déboguer** pour afficher les messages du journal de la console JS.
 
 >[!CAUTION]
 >
@@ -338,7 +347,7 @@ Différentes propriétés de configuration sont disponibles :
 Chemin pour lequel ce gestionnaire d’authentification est actif. Si ce paramètre n’est pas renseigné, le gestionnaire d’authentification est désactivé. Par exemple, si vous utilisez le chemin /, le gestionnaire d’authentification est utilisé pour l’ensemble du référentiel.
 
 * **Classement des services**
-La valeur Classement du service de structure OSGi est utilisée pour indiquer l’ordre d’appel de ce service. Il s’agit d’une valeur `int` pour laquelle des valeurs plus élevées désignent une priorité plus élevée.
+La valeur Classement du service de structure OSGi est utilisée pour indiquer l’ordre d’appel de ce service. Cette valeur est une valeur `int` où les valeurs supérieures désignent une plus grande priorité.
 La valeur par défaut est `0`.
 
 * **Noms des en-têtes**
@@ -356,19 +365,19 @@ Pour les utilisateurs sélectionnés, le nom d’utilisateur extrait de la requ�
 * **Format**
 Indique le format dans lequel l’ID utilisateur est fourni. Utilisez :
 
-   * `Basic` si l’identifiant utilisateur est codé au format d’authentification HTTP de base ;
-   * `AsIs` si l’identifiant utilisateur est fourni en texte brut ou si une valeur appliquée d’expression régulière doit être utilisée telle quelle.
+  * `Basic` si l’identifiant utilisateur est codé au format d’authentification HTTP de base ;
+  * `AsIs` si l’identifiant utilisateur est fourni en texte brut ou si une valeur appliquée d’expression régulière doit être utilisée telle quelle.
 
 **Filtre de débogage de la gestion de contenu web Day CQ**
-Utile lors du développement car il permet d’utiliser des suffixes comme ?debug=layout lors de l’accès à une page. Par exemple, :4502/cf#/content/geometrixx/en/support.html?debug=layout fournit des informations de mise en page qui peuvent intéresser le développeur.
+Utile lors du développement car il permet d’utiliser des suffixes comme ?debug=layout lors de l’accès à une page. Par exemple, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout fournit des informations de mise en page qui peuvent intéresser le développeur.
 
 * Pour garantir les performances et la sécurité, désactivez-le sur les instances d’exploitation.
 
 Le **Filtre de gestion de contenu web Day CQ** configure les éléments suivants :
 
 * Le **mode de gestion de contenu web** permet de définir le mode par défaut.
-* Sur une instance de création, ce mode peut être `edit`, `disable,preview` ou `analytics`.
-Les autres modes sont accessibles depuis le sidekick. Vous pouvez également utiliser le suffixe `?wcmmode=disabled` pour simuler un environnement d’exploitation.
+* Sur une instance de création, ce mode pourrait être `edit`, `disable,preview`, ou `analytics`.
+Les autres modes sont accessibles depuis le sidekick. Vous pouvez également utiliser le suffixe `?wcmmode=disabled` pour simuler un environnement de production.
 
 * Sur une instance de publication, ce mode doit être défini sur `disabled` afin de vous assurer qu’aucun autre mode n’est accessible.
 

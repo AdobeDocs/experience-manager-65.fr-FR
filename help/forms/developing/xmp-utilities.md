@@ -1,20 +1,33 @@
 ---
 title: Utiliser XMP Utilities
-
-description: Utilisez les API Java et Web Service XMP Utilities pour importer des métadonnées XMP par programmation dans un document PDF et récupérer et enregistrer les métadonnées d’un document PDF.
-
-
+description: Utilisez les API Java et Web Service XMP Utilities pour importer des métadonnées XMP par programmation dans un document PDF et récupérer et enregistrer des métadonnées XMP à partir d’un document PDF.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-
 role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 100%
@@ -27,7 +40,7 @@ ht-degree: 100%
 
 Les documents PDF contiennent des métadonnées. Ce sont des informations sur le document qui se distinguent du contenu du document, telles que le texte et les graphiques. Adobe Extensible Metadata Platform (XMP) est un standard de gestion des métadonnées de document.
 
-Le service XMP Utilities peut récupérer et enregistrer des métadonnées XMP à partir de documents PDF, et importer des métadonnées dans des documents PDF.
+Le service XMP Utilities peut récupérer et enregistrer des métadonnées XMP à partir de documents PDF, et importer des métadonnées XMP dans des documents PDF.
 
 Vous pouvez accomplir les tâches suivantes à l’aide du service XMP Utilities :
 
@@ -155,7 +168,7 @@ Importez des métadonnées XMP à l’aide de l’API XMP Utilities (Java) :
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR clients, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes du projet Java.
+   Incluez les fichiers JAR clients, tels qu’adobe-pdfutility-client.jar, dans le chemin d’accès aux classes du projet Java.
 
    >[!NOTE]
    >
@@ -191,7 +204,7 @@ Importez des métadonnées XMP à l’aide de l’API XMP Utilities (Java) :
 
 ### Importer des métadonnées XMP à l’aide de l’API Web Service {#importing-xmp-metadata-using-the-web-service-api}
 
-Pour importer des métadonnées XMP par programmation à l’aide de l’API Web Service Utilities, effectuez les tâches suivantes :
+Pour importer des métadonnées XMP par programmation à l’aide de l’API de service web XMP Utilities, effectuez les tâches suivantes :
 
 1. Inclure les fichiers du projet
 
@@ -254,7 +267,7 @@ Avant d’effectuer une opération XMP Utilities par programmation, vous devez c
 
 **Appeler l’opération d’exportation des métadonnées XMP**
 
-Après avoir créé le client de service, vous pouvez appeler l’une des opérations d’exportation de métadonnées XMP, qui peut être utilisée pour examiner les métadonnées XMP ou les enregistrer sur le disque.
+Après avoir créé le client de service, vous pouvez appeler l’une des opérations d’export de métadonnées XMP, qui peuvent être utilisées pour examiner les métadonnées XMP ou les enregistrer sur le disque.
 
 **Voir également**
 
@@ -272,7 +285,7 @@ Exportez des métadonnées XMP à l’aide de l’API XMP Utilities (Java) :
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR clients, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes du projet Java.
+   Incluez les fichiers JAR clients, tels qu’adobe-pdfutility-client.jar, dans le chemin d’accès aux classes du projet Java.
 
    >[!NOTE]
    >

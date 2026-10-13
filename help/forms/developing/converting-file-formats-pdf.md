@@ -9,20 +9,34 @@ role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7942'
 ht-degree: 98%
-
 ---
-
 # Convertir entre les formats de fichier et le PDF {#converting-between-file-formatsand-pdf}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
 **À propos du service Generate PDF**
 
-Le service Generate PDF peut convertir de nombreux formats de fichier natifs en PDF. Il convertit également des fichiers PDF en d’autres formats et optimise la taille des documents PDF.
+Le service Generate PDF convertit des formats de fichiers natifs en PDF. Il convertit également des fichiers PDF en d’autres formats et optimise la taille des documents PDF.
 
 Le service Generate PDF utilise des applications natives pour convertir les formats de fichiers suivants en PDF. Sauf précision contraire, seules les versions allemande, anglaise, française et japonaise de ces applications sont prises en charge. *Windows uniquement* indique la prise en charge de Windows Server® 2003 et Windows Server 2008 uniquement.
 
@@ -30,7 +44,7 @@ Le service Generate PDF utilise des applications natives pour convertir les for
 
 >[!NOTE]
 >
->Acrobat® 9.2 ou une version ultérieure est requis pour convertir le format Microsoft XPS en PDF.
+>Acrobat® 9.2 ou une version ultérieure est requise pour convertir le format Microsoft XPS en PDF.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008 et 2009 pour convertir les fichiers DWF, DWG et DXW (en anglais uniquement).
 * Corel WordPerfect 12 et X4 pour convertir WPD, QPW, SHW (en anglais uniquement).
@@ -38,7 +52,7 @@ Le service Generate PDF utilise des applications natives pour convertir les for
 
 >[!NOTE]
 >
->le service Generate PDF ne prend pas en charge les versions 64 bits d’OpenOffice.
+>Le service Generate PDF ne prend pas en charge les versions 64 bits d’OpenOffice.
 
 * Adobe Photoshop® CS2 pour convertir le format PSD (Windows uniquement).
 
@@ -48,12 +62,12 @@ Le service Generate PDF utilise des applications natives pour convertir les for
 
 * Adobe FrameMaker® 7.2 et 8 pour convertir le format FM (Windows uniquement).
 * Adobe PageMaker 7.0 pour convertir les formats PMD, PM6, P65 et PM (Windows uniquement).
-* Formats natifs pris en charge par les applications tierces (requiert le développement de fichiers d’installation spécifiques à l’application) (Windows uniquement)
+* Formats natifs pris en charge par les applications tierces (requiert le développement de fichiers de configuration spécifiques à l’application) (Windows uniquement)
 
-Le service Generate PDF peut convertir les formats standards suivants en PDF.
+Le service Generate PDF peut convertir les formats de fichiers standard suivants en PDF.
 
 * Formats vidéo : SWF, FLV (Windows uniquement)
-* Formats image : JPEG, JPG, JP2, J2Kí, JPC, J2C, GIF, BMP, TIFF, TIF, PNG, JPF
+* Formats d’image : JPEG, JPG, JP2, J2Kí, JPC, J2C, GIF, BMP, TIFF, TIF, PNG, JPF
 * HTML (Windows, Sun™, Solaris™ et Linux®).
 
 Le service Generate PDF peut convertir des PDF aux formats de fichiers suivants (Windows uniquement) :
@@ -65,22 +79,22 @@ Le service Generate PDF peut convertir des PDF aux formats de fichiers suivants
 * RTF
 * Texte (à la fois accessible et brut)
 * XML
-* PDF/A-1a utilisant uniquement l’espace colorimétrique DeviceRGB.
-* PDF/A-1b utilisant uniquement l’espace colorimétrique DeviceRGB.
+* PDF/A-1a utilisant uniquement l’espace colorimétrique DeviceRGB
+* PDF/A-1b utilisant uniquement l’espace colorimétrique DeviceRGB
 
 Le service Generate PDF requiert que vous réalisiez ces tâches administratives :
 
 * Installez les applications natives requises sur l’ordinateur hébergeant AEM Forms.
-* Installez Adobe Acrobat Professional ou Acrobat Pro Extended 9.2 sur l’ordinateur hébergeant AEM Forms.
-* Réalisez les tâches consécutives à l’installation.
+* Installer Adobe Acrobat Professional ou Acrobat Pro Extended 9.2 sur l’ordinateur hébergeant AEM Forms
+* Réalisez les tâches de configuration post-installation.
 
 Ces tâches sont décrites dans la section Installation et déploiement d’AEM Forms à l’aide de la procédure clé en main de JBoss.
 
 Vous pouvez accomplir ces tâches à l’aide du service Generate PDF :
 
 * Convertissez des formats de fichiers natifs en PDF.
-* Convertissez des documents de HTML en documents PDF.
-* Convertissez des documents PDF en formats de fichiers.
+* Convertir des documents HTML en documents PDF.
+* Convertir des documents PDF en formats de fichiers.
 
 >[!NOTE]
 >
@@ -96,7 +110,7 @@ Cette section décrit comment utiliser l’API Generate PDF pour convertir par p
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -132,7 +146,7 @@ Une fois le fichier converti en document PDF, vous pouvez récupérer les résul
 
 [Convertir des documents Word en documents PDF à l’aide de l’API Java](converting-file-formats-pdf.md#convert-word-documents-to-pdf-documents-using-the-java-api)
 
-[Convertir des documents Word en documents PDF à l’aide de l’API Web Service](converting-file-formats-pdf.md#convert-word-documents-to-pdf-documents-using-the-web-service-api)
+[Convertir des documents Word en documents PDF à l’aide de l’API de service web](converting-file-formats-pdf.md#convert-word-documents-to-pdf-documents-using-the-web-service-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -188,13 +202,13 @@ Convertissez un document Microsoft Word en document PDF à l’aide de l’API G
 
 [Résumé des étapes](converting-file-formats-pdf.md#summary-of-steps)
 
-[Démarrage rapide (mode SOAP) : convertir un document Microsoft Word au format PDF à l’aide de l’API Java.](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : convertir un document Microsoft Word au format PDF à l’aide de l’API Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Convertir des documents Word en documents PDF à l’aide de l’API Web Service {#convert-word-documents-to-pdf-documents-using-the-web-service-api}
+### Convertir des documents Word en documents PDF à l’aide de l’API de service web {#convert-word-documents-to-pdf-documents-using-the-web-service-api}
 
 Convertissez un document Microsoft Word en document PDF à l’aide de l’API Generate PDF (service web) :
 
@@ -214,10 +228,10 @@ Convertissez un document Microsoft Word en document PDF à l’aide de l’API 
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Récupérez le fichier à convertir en document PDF.
 
@@ -262,7 +276,7 @@ Cette section décrit comment utiliser l’API Generate PDF pour convertir par 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Generate PDF, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -278,13 +292,13 @@ Pour convertir un document HTML en document PDF, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-**Créer un client Generate PDF**
+**Créer un client Generate PDF**
 
 Avant de pouvoir effectuer par programmation une opération Generate PDF, vous devez créer un client de service Generate PDF. Si vous utilisez l’API Java, créez un objet `GeneratePdfServiceClient`. Si vous utilisez l’API de service web, créez un objet `GeneratePDFServiceService`.
 
 **Récupérer le contenu HTML à convertir en document PDF**
 
-Référencez le contenu HTML que vous souhaitez convertir en document PDF. Vous pouvez référencer un contenu HTML, tel qu’un fichier HTML ou un contenu HTML accessible à l’aide d’une URL.
+Indiquez le contenu HTML que vous souhaitez convertir en document PDF. Vous pouvez référencer un contenu HTML, tel qu’un fichier HTML ou un contenu HTML accessible à l’aide d’une URL.
 
 **Convertir le contenu HTML en document PDF**
 
@@ -371,10 +385,10 @@ Pour convertir le contenu HTML en document PDF à l’aide de l’API Generate 
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Récupérez le contenu du fichier HTML à convertir en document PDF.
 
@@ -386,7 +400,7 @@ Pour convertir le contenu HTML en document PDF à l’aide de l’API Generate 
 
    * Une chaîne contenant le contenu HTML à convertir.
    * Un objet `java.lang.String` contenant les paramètres de type de fichier à utiliser lors de la conversion.
-   * Un objet de chaîne contenant les paramètres de sécurité à utiliser.
+   * Un objet de type chaîne contenant les paramètres de sécurité à utiliser.
    * Un objet `BLOB` facultatif contenant les paramètres à appliquer lors de la génération du document PDF.
    * Un objet facultatif `BLOB` contenant des informations de métadonnées à appliquer au document PDF.
    * Paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` renseigne cet objet avec le document converti. (Cette valeur de paramètre est requise uniquement pour l’appel du service web).
@@ -412,7 +426,7 @@ Cette section décrit comment utiliser l’API Java Generate PDF et l’API Web 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -420,8 +434,8 @@ Pour convertir un document PDF en l’un des types pris en charge, procédez com
 
 1. Incluez les fichiers de projet.
 1. Créez un client Generate PDF.
-1. Récupérez le document du PDF à convertir.
-1. Convertissez le document PDF.
+1. Récupérez le document PDF à convertir.
+1. Convertir le document PDF.
 1. Enregistrez le fichier converti.
 
 **Inclure les fichiers de projet**
@@ -434,15 +448,15 @@ Avant de pouvoir effectuer par programmation une opération Generate PDF, vous 
 
 **Récupérer un document PDF à convertir**
 
-Récupérez le document PDF à convertir en un format non-image.
+Récupérer le document PDF à convertir en un format non-image.
 
 **Convertir le document PDF**
 
-Après avoir créé le client de service, vous pouvez appeler l’opération d’exportation du PDF. Cette opération nécessite des informations sur le document à convertir, notamment le chemin d’accès au document cible.
+Après avoir créé le client de service, vous pouvez invoquer l’opération d’export du PDF. Cette opération nécessite des informations sur le document à convertir, notamment le chemin d’accès au document cible.
 
 **Enregistrer le fichier converti**
 
-Enregistrez le fichier converti. Par exemple, si vous convertissez un document PDF en fichier RTF, enregistrez le document converti en fichier RTF.
+Enregistrez le fichier converti. Par exemple, si vous convertissez un document PDF en fichier RTF, enregistrez le document converti au format RTF.
 
 **Voir également**
 
@@ -468,7 +482,7 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
 
    Créez un objet `GeneratePdfServiceClient` en utilisant son constructeur et en transmettant un objet `ServiceClientFactory` contenant des propriétés de connexion.
 
-1. Récupérez le document du PDF à convertir.
+1. Récupérez le document PDF à convertir.
 
    * Créez un objet `java.io.FileInputStream` représentant le document PDF à convertir à l’aide de son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du document PDF.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
@@ -522,12 +536,12 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Récupérez le document du PDF à convertir.
+1. Récupérez le document PDF à convertir.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF converti.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
@@ -540,9 +554,9 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
    Appelez la méthode `ExportPDF2` de l’objet `GeneratePDFServiceServiceWse` et transmettez les valeurs suivantes :
 
    * Objet `BLOB` représentant le fichier PDF à convertir.
-   * Chaîne contenant le nom du chemin d’accès au fichier à convertir.
+   * Chaîne contenant le chemin d’accès du fichier à convertir.
    * Objet `java.lang.String` indiquant l’emplacement du fichier.
-   * Objet de chaîne spécifiant le type de fichier cible pour la conversion. Spécifiez `RTF`.
+   * Une chaîne de caractères qui spécifie le type de fichier cible pour la conversion. Spécifiez `RTF`.
    * Objet `BLOB` facultatif contenant les paramètres à appliquer lors de la génération du document PDF.
    * Paramètre de sortie de type `BLOB` renseigné par la méthode `ExportPDF2`. La méthode `ExportPDF2` renseigne cet objet avec le document converti. (Cette valeur de paramètre est requise uniquement pour l’appel du service web).
 
@@ -561,7 +575,7 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
 
 [Appel d’AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Ajouter la prise en charge de formats de fichier natifs supplémentaires {#adding-support-for-additional-native-file-formats}
+## Ajouter la prise en charge de formats de fichiers natifs supplémentaires {#adding-support-for-additional-native-file-formats}
 
 Cette section explique comment ajouter la prise en charge de formats de fichiers natifs supplémentaires. Elle présente un aperçu des interactions entre le service Generate PDF et les applications natives utilisées par ce service pour convertir les formats de fichiers natifs en PDF.
 
@@ -573,7 +587,7 @@ Cette section explique également les points suivants :
 
 ### Les interactions entre composants. {#component-interactions}
 
-Le service Generate PDF convertit les formats de fichiers natifs en appelant l’application associée au format de fichier, puis en interagissant avec l’application pour imprimer le document à l’aide de l’imprimante par défaut. L’imprimante par défaut doit être configurée en tant qu’imprimante Adobe PDF.
+Le service Generate PDF convertit les formats de fichiers natifs en appelant l’application associée au format de fichier, puis en interagissant avec l’application pour imprimer le document à l’aide de l’imprimante par défaut. L’imprimante par défaut doit être définie en tant qu’imprimante Adobe PDF.
 
 Cette illustration présente les composants et les pilotes impliqués dans la prise en charge des applications natives. Elle mentionne également les grammaires XML qui influencent les interactions.
 
@@ -631,7 +645,7 @@ Ce tableau répertorie le type d’informations utilisées pour imprimer des for
   </tr>
   <tr>
    <td><p>Instructions relatives aux boîtes de dialogue supplémentaires spécifiques à l’application </p></td>
-   <td><p>Spécifie les remplacements et les ajouts aux instructions de boîte de dialogue spécifiques à l’application. Cette section présente un exemple de ces informations. </p><p>Le fichier qui contient ces informations est appmon.<i>`[appname]`</i>.addition.<i>`[locale]`</i>.xml. Par exemple, appmon.addition.en_US.xml.</p></td>
+   <td><p>Spécifie des remplacements et des ajouts aux instructions de boîte de dialogue spécifiques à l’application. Cette section présente un exemple de ces informations. </p><p>Le fichier qui contient ces informations est appmon.<i>`[appname]`</i>.addition.<i>`[locale]`</i>.xml. Par exemple, appmon.addition.en_US.xml.</p></td>
    <td><p>Les fichiers de ce type peuvent être créés et modifiés à l’aide dʼune application dʼédition XML. (Consultez la section <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Créer ou modifier un fichier XML de boîte de dialogue supplémentaire pour une application native</a>). </p><p><strong>Important</strong> : créez des instructions de boîte de dialogue supplémentaires spécifiques à l’application pour chaque application native que votre serveur prendra en charge. </p></td>
   </tr>
  </tbody>
@@ -669,7 +683,7 @@ Un *fichier XML de script* spécifie une série d’étapes qui demandent à l�
 
 Le service Generate PDF prend en charge les fichiers XML de script afin de permettre à une application native d’imprimer un fichier natif. Cependant, les fichiers XML de script peuvent être utilisés pour accomplir toute tâche qu’un utilisateur ou une utilisatrice peut effectuer lors de l’interaction avec les boîtes de dialogue de l’application native.
 
-Les étapes dʼun fichier XML de script sont exécutées dans lʼordre et chacune dʼentre elles doit obligatoirement être réalisée avant de passer à la suivante. Le seul test conditionnel pris en charge est le délai d’expiration/de nouvelle tentative, qui entraîne l’arrêt d’un script si une étape ne se termine pas correctement dans un délai spécifique et après un certain nombre de tentatives.
+Les étapes d’un fichier XML de script sont exécutées dans l’ordre, sans aucune possibilité de branchement. Le seul test conditionnel pris en charge est le délai d’expiration/de nouvelle tentative, qui entraîne la terminaison d’un script si une étape ne se termine pas correctement dans un délai spécifique et après un nombre spécifique de reprises.
 
 Outre le fait que les étapes sont séquentielles, les instructions d’une étape sont également exécutées dans l’ordre. Vous devez vous assurer que les étapes et les instructions reflètent lʼordre dans lequel une personne exécuterait ces mêmes étapes.
 
@@ -687,9 +701,9 @@ Lorsque le système ou l’application native affiche une boîte de dialogue qui
 * appmon.`[appname]`.`[locale]`.xml (ne modifiez pas ce fichier).
 * appmon.global.`[locale]`.xml (ne modifiez pas ce fichier).
 
-Si le service Generate PDF trouve une correspondance pour la boîte de dialogue, il la ferme en lui envoyant la frappe ou toute autre action spécifiée pour la boîte de dialogue. Si les instructions de la boîte de dialogue indiquent un message d’abandon, le service Generate PDF met fin à la tâche en cours d’exécution et génère un message d’erreur. Un tel message d’abandon serait spécifié dans l’élément `abortMessage` de la grammaire XML du script.
+Si le service Generate PDF trouve une correspondance pour la boîte de dialogue, il la ferme en lui envoyant la frappe ou toute autre action spécifiée pour la boîte de dialogue. Si les instructions de la boîte de dialogue indiquent un message d’abandon, le service Generate PDF met fin au traitement en cours d’exécution et génère un message d’erreur. Un tel message d’abandon serait spécifié dans l’élément `abortMessage` de la grammaire XML du script.
 
-Si le service Generate PDF rencontre une boîte de dialogue qui n’est décrite dans aucun des fichiers répertoriés précédemment, le service Generate PDF intègre la légende de la boîte de dialogue dans l’entrée du fichier journal. La tâche en cours d’exécution finit par s’arrêter. Vous pouvez alors utiliser les informations du fichier journal pour composer de nouvelles instructions dans le fichier XML de boîte de dialogue supplémentaire pour l’application native.
+Si le service Generate PDF rencontre une boîte de dialogue qui n’est décrite dans aucun des fichiers répertoriés précédemment, le service Generate PDF intègre la légende de la boîte de dialogue dans l’entrée du fichier journal. Le traitement en cours d’exécution finit par s’arrêter. Vous pouvez alors utiliser les informations du fichier journal pour composer de nouvelles instructions dans le fichier XML de boîte de dialogue supplémentaire pour l’application native.
 
 ### Ajouter ou modifier la prise en charge d’un format de fichier natif {#adding-or-modifying-support-for-a-native-file-format}
 
@@ -707,14 +721,14 @@ Vous pouvez facilement identifier une boîte de dialogue par la légende qu’el
 1. L’identifiant de contrôle, qui peut être unique ou non pour une boîte de dialogue donnée.
 1. Le nom de la classe, qui peut être unique ou non.
 
-L’un ou l’autre de ces trois attributs, ou une combinaison de ceux-ci peut être utilisé pour identifier une fenêtre.
+L’un ou l’autre de ces trois attributs, ou une combinaison de ceux-ci, peut être utilisé pour identifier une fenêtre.
 
 Si les attributs ne permettent pas d’identifier une légende, vous pouvez identifier un élément de fenêtre en utilisant son index par rapport à son parent. Un *index* spécifie la position de l’élément de fenêtre par rapport à ses éléments de fenêtre apparentés. Souvent, les index sont le seul moyen d’identifier les zones de liste modifiable.
 
 Tenez compte de ces problèmes :
 
 * Microsoft Spy++ affiche les légendes à l’aide de l’esperluette (&amp;) pour identifier la touche de raccourci de la légende. Par exemple, Spy++ affiche la légende d’une boîte de dialogue d’impression sous la forme `Pri&nt`, ce qui indique que la touche de raccourci est *n*. Les titres des légendes dans les fichiers XML des scripts et des boîtes de dialogue doivent omettre les esperluettes.
-* Certaines légendes comportent des sauts de ligne. Le service Generate PDF ne peut pas identifier les sauts de ligne. Si une légende comprend un saut de ligne, incluez une partie suffisante de la légende pour la différencier des autres éléments du menu, puis utilisez des expressions régulières pour la partie omise. Un exemple est (`^Long caption title$`). (Voir [Utiliser des expressions régulières dans les attributs de légende](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
+* Certaines légendes comportent des sauts de ligne. le service Generate PDF ne peut pas identifier les sauts de ligne. Si une légende comprend un saut de ligne, incluez une partie suffisante de la légende pour la différencier des autres éléments du menu, puis utilisez des expressions régulières pour la partie omise. Un exemple est (`^Long caption title$`). (Voir [Utiliser des expressions régulières dans les attributs de légende](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
 * Utilisez des entités de caractères (également appelées séquences d’échappement) pour les caractères XML réservés. Par exemple, utilisez `&` pour les esperluettes, `<` et `>` pour les symboles inférieur à ou supérieur à, `&apos;` pour les apostrophes et `&quot;` pour les guillemets.
 
 Si vous envisagez de travailler sur des fichiers XML de boîte de dialogue ou de script, vous devez installer l’application Microsoft Spy++.
@@ -756,9 +770,9 @@ Le script contient des instructions qui parcourent les éléments de fenêtre de
 
 #### Identifier les étapes que le script doit exécuter {#identifying-steps-the-script-must-execute}
 
-À l’aide de l’application native, déterminez les éléments de fenêtre à parcourir et chaque réponse à exécuter pour imprimer le document. Remarquez les boîtes de dialogue qui résultent de chaque réponse. Les étapes sont similaires à celles-ci :
+À l’aide de l’application native, déterminez les éléments de fenêtre à parcourir et chaque réponse à exécuter pour imprimer le document. Remarquez les boîtes de dialogue qui s’affichent en fonction de chaque réponse. Les étapes sont similaires à celles-ci :
 
-1. Choisissez Fichier > Ouvrir.
+1. Sélectionnez Fichier > Ouvrir.
 1. Spécifiez le chemin d’accès, puis cliquez sur Ouvrir.
 1. Sur la barre de menus, sélectionnez Fichier > Imprimer.
 1. Spécifiez les propriétés requises pour l’imprimante.
@@ -851,8 +865,8 @@ Si vous créez un script pour une application native qui n’était pas prise en
 
 Vous pouvez également modifier le fichier XML de boîte de dialogue supplémentaire pour une application native à ces fins :
 
-* Pour remplacer le fichier XML de boîte de dialogue pour une application avec une réponse différente.
-* Pour ajouter une réponse à une boîte de dialogue qui n’est pas gérée dans le fichier XML de boîte de dialogue pour cette application.
+* Pour remplacer le fichier XML de boîte de dialogue d’une application par une réponse différente
+* Pour ajouter une réponse à une boîte de dialogue qui n’est pas gérée dans le fichier XML de boîte de dialogue pour cette application
 
 Le nom du fichier qui identifie un fichier XML de boîte de dialogue supplémentaire est `appmon.[appname].addition.[locale].xml`. Exemple : appmon.excel.addition.en_US.xml.
 

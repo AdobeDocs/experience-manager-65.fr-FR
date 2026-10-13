@@ -1,6 +1,6 @@
 ---
 title: Architecture de HTML5 forms
-description: Les formulaires HTML5 sont déployés sous la forme d’un package au sein de l’instance intégrée d’AEM et expose la fonctionnalité sous la forme d’un point d’entrée REST sur HTTP/S à l’aide de l’architecture Apache Sling RESTful.
+description: Les formulaires HTML5 sont déployés sous la forme d’un package au sein de l’instance intégrée d’AEM et exposent la fonctionnalité sous la forme d’un point d’entrée REST sur HTTP/S à l’aide de l’architecture Apache Sling RESTful.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,13 +10,28 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 94%
-
+source-wordcount: '2051'
+ht-degree: 96%
 ---
-
 # Architecture de HTML5 forms{#architecture-of-html-forms}
 
 ## Architecture {#architecture}
@@ -27,11 +42,11 @@ La fonctionnalité de formulaire HTML5 est déployée sous la forme d’un pack
 
 ### Utilisation de la structure Sling {#using-sling-framework}
 
-[Apache Sling](https://sling.apache.org/) est centré sur la ressource. Elle commence par utiliser une URL de requête pour résoudre la ressource. Chaque ressource possède une propriété **sling:resourceType** (ou **sling:resourceSuperType**). Suivant cette propriété, la méthode de requête et les propriétés de l’URL de requête, un script Sling est sélectionné pour gérer la requête. Ce script Sling peut être un JSP ou un servlet. Pour les formulaires HTML5, les nœuds de **Profil** agissent en tant que ressources sling et le **Rendu de profil** a le rôle du script sling qui gère la demande pour générer un formulaire pour périphériques mobiles avec un profil particulier. Un **Rendu de profil** est un JSP qui lit les paramètres depuis une requête et appelle le service Forms OSGi.
+[Apache Sling](https://sling.apache.org/) est centré sur la ressource. Elle commence par utiliser une URL de requête pour résoudre la ressource. Chaque ressource possède une propriété **sling:resourceType** (ou **sling:resourceSuperType**). Suivant cette propriété, la méthode de requête et les propriétés de l’URL de requête, un script Sling est sélectionné pour gérer la requête. Ce script Sling peut être une JSP ou une servlet. Pour les formulaires HTML5, les nœuds de **Profil** agissent en tant que ressources sling et le **Rendu de profil** a le rôle du script sling qui gère la demande pour générer un formulaire pour périphériques mobiles avec un profil particulier. Un **Rendu de profil** est un JSP qui lit les paramètres depuis une requête et appelle le service Forms OSGi.
 
 Pour plus d’informations sur les points de terminaison REST et les paramètres de demande, reportez-vous à [Générer un modèle de formulaire](/help/forms/using/rendering-form-template.md).
 
-Lorsqu’un utilisateur ou une utilisatrice effectue une requête à partir d’un périphérique client, comme un navigateur iOS ou Android™, Sling résout d’abord le nœud de profil en fonction de l’URL de requête. Dans ce nœud de profil, il lit **sling:resourceSuperType** et **sling:resourceType** pour déterminer tous les scripts disponibles capables de gérer cette requête de rendu de formulaire. Il utilise ensuite les sélecteurs de requête Sling avec la méthode de requête pour identifier le script le mieux adapté pour traiter cette requête. Une fois que la requête atteint un JSP de rendu du profil, le JSP appelle le service Forms OSGi.
+Lorsqu’un utilisateur ou une utilisatrice effectue une requête à partir d’un appareil client, comme un navigateur iOS ou Android™, Sling résout d’abord le nœud de profil en fonction de l’URL de requête. Dans ce nœud de profil, il lit **sling:resourceSuperType** et **sling:resourceType** pour déterminer tous les scripts disponibles capables de gérer cette requête de rendu de formulaire. Il utilise ensuite les sélecteurs de requête Sling avec la méthode de requête pour identifier le script le mieux adapté pour traiter cette requête. Une fois que la requête atteint un JSP de rendu du profil, le JSP appelle le service Forms OSGi.
 
 Pour plus d’informations sur la résolution du script Sling, reportez-vous à l’[Aide-mémoire sur Sling dans AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) ou à la [décomposition de l’URL d’Apache Sling](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
@@ -45,14 +60,14 @@ Les formulaires mobiles conservent deux niveaux différents de caches, le cache 
 
 Processus HTML5 forms
 
-HTML5 forms ne met pas en cache les modèles avec des références d’images ou de fragments manquantes. Si HTML5 forms a besoin de plus de temps que d’habitude, alors vérifiez les journaux du serveur pour voir les références et avertissements manquants. Assurez-vous également que l’objet n’a pas encore atteint la taille maximale.
+HTML5 forms ne met pas en cache les modèles comportant des références manquantes à des fragments et à des images. Si HTML5 forms a besoin de plus de temps que d’habitude, alors vérifiez les journaux du serveur pour voir les références et avertissements manquants. Assurez-vous également que la taille maximale de l’objet n’est pas atteinte.
 
 Le service Forms OSGi traite une requête en deux étapes :
 
-* **Génération de mises en page et d’état de formulaire initial** : le service de rendu Forms OSGi appelle le composant Forms Cache pour déterminer si le formulaire a déjà été mis en cache et s’il n’a pas été invalidé. Si le formulaire est mis en cache et valide, il sert la sortie HTML du cache. Si le formulaire est invalidé, le service de rendu Forms OSGi génère la mise en page et l’état initiaux du formulaire au format XML. Ce fichier XML est transformé en mise en page HTML et en état de formulaire JSON initial par le service Forms OSGi, puis mis en mémoire cache pour les requêtes suivantes.
-* **Formulaires préremplis** : pendant le rendu, si une personne demande des formulaires avec des données préremplies, le service de rendu Forms OSGi appelle le conteneur de services de formulaires et génère un nouvel état de formulaire avec des données fusionnées. Toutefois, dans la mesure où une mise en page est déjà créée à l’étape précédente, cet appel est plus rapide que le premier. Cet appel exécute uniquement la fusion des données et les scripts sur les données.
+* **Génération de mises en page et d’état de formulaire initial** : le service de rendu Forms OSGi appelle le composant Forms Cache pour déterminer si le formulaire a déjà été mis en cache et s’il n’a pas été invalidé. Si le formulaire est mis en cache et valide, il sert le HTML généré à partir du cache. Si le formulaire est invalidé, le service de rendu Forms OSGi génère la mise en page et l’état initiaux du formulaire au format XML. Ce fichier XML est transformé en mise en page HTML et en état de formulaire JSON initial par le service Forms OSGi, puis mis en cache pour les requêtes suivantes.
+* **Formulaires préremplis** : pendant le rendu, si une personne demande des formulaires avec des données préremplies, le service de rendu Forms OSGi appelle le conteneur de services de formulaires et génère un nouvel état de formulaire avec des données fusionnées. Toutefois, dans la mesure où la mise en page est déjà créée à l’étape précédente, cet appel est plus rapide que le premier. Cet appel effectue uniquement la fusion des données et exécute les scripts sur les données.
 
-S’il existe des mises à jour dans un formulaire ou tout autre actif utilisé à l’intérieur d’un formulaire, le composant de mise en cache du formulaire les détecte et le cache de ce formulaire en particulier est invalidé. Une fois que le service Forms OSGi a terminé le traitement, le JSP du rendu du profil ajoute les références à la bibliothèque JavaScript et le style à ce formulaire et renvoie la réponse au client. Un serveur web standard tel qu’[Apache](https://httpd.apache.org/) peut être utilisé ici avec la compression HTML activée. Un serveur web réduirait considérablement le temps de réponse, le trafic réseau et la durée nécessaire au trafic des données entre le serveur et le client.
+S’il existe des mises à jour dans un formulaire ou tout autre actif utilisé à l’intérieur d’un formulaire, le composant de mise en cache du formulaire les détecte et le cache de ce formulaire en particulier est invalidé. Une fois que le service Forms OSGi a terminé le traitement, le JSP du rendu du profil ajoute les références à la bibliothèque JavaScript et le style à ce formulaire et renvoie la réponse au client. Un serveur web standard tel qu’[Apache](https://httpd.apache.org/) peut être utilisé ici avec la compression HTML activée. Un serveur web réduirait considérablement la taille de la réponse, le trafic réseau et le temps nécessaire pour transmettre les données entre le serveur et la machine cliente.
 
 Lorsqu’un utilisateur envoie le formulaire, le navigateur envoie l’état du formulaire au format JSON au [proxy de service d’envoi](../../forms/using/service-proxy.md), puis le proxy de service d’envoi génère un fichier XML avec les données provenant des fichiers JSON et envoie le fichier XML au point d’entrée d’envoi.
 
@@ -99,7 +114,7 @@ Les formulaires HTML5 utilisent la mise en mémoire cache pour optimiser le déb
  </tbody>
 </table>
 
-Les formulaires HTML5 effectuent la mise en mémoire cache à l’aide de la stratégie LRU. Si la stratégie de cache est définie sur Aucune, le cache ne sera pas créé et les données existantes en mémoire cache seront effacées. Outre la stratégie de mise en mémoire cache, vous pouvez également configurer la taille du cache en mémoire, ce qui permet de disposer plus facilement de la taille maximale de cache ; en cas de dépassement, le mode LRU sera utilisé pour supprimer des ressources de la mémoire cache.
+Les formulaires HTML5 effectuent la mise en mémoire cache à l’aide de la stratégie LRU. Si la stratégie de cache est définie sur Aucune, le cache ne sera pas créé et les données existantes en mémoire cache, le cas échéant, seront effacées. Outre la stratégie de mise en mémoire cache, vous pouvez également configurer la taille totale du cache en mémoire, ce qui permet de définir une limite maximale pour la taille du cache ; en cas de dépassement, le mode LRU sera utilisé pour libérer des ressources du cache.
 
 >[!NOTE]
 >
@@ -121,11 +136,11 @@ Le package d’exécution contient les bibliothèques côté client utilisées p
 
 #### Moteur de script {#scripting-engine}
 
-L’implémentation d’Adobe XFA prend en charge deux types de langage de script pour activer l’exécution de la logique définie par l’utilisateur dans les formulaires : JavaScript et FormCalc.
+La mise en œuvre d’Adobe XFA prend en charge deux types de langage de script pour activer l’exécution de la logique définie par l’utilisateur ou l&#39;utilisatrice dans les formulaires : JavaScript et FormCalc.
 
 Le moteur de script des formulaires HTML est écrit en langage JavaScript pour prendre en charge l’API de script XFA dans ces deux langages.
 
-Lors du rendu, le script FormCalc est traduit (et mis en mémoire cache) en JavaScript sur le serveur de manière transparente pour l’utilisateur ou l’utilisatrice, ou le concepteur ou la conceptrice.
+Lors du rendu, le script FormCalc est traduit (et mis en mémoire cache) en JavaScript sur le serveur de manière transparente pour l’utilisateur ou l’utilisatrice et le concepteur ou la conceptrice.
 
 Ce moteur de script utilise certaines fonctionnalités d’ECMAScript5 comme Object.defineProperty. Le moteur et/ou la bibliothèque sont délivrés en tant que bibliothèques client CQ avec pour nom de catégorie **xfaforms.profile**. L’**API FormBridge** est également fournie pour permettre aux portails ou applications externes d’interagir avec le formulaire. À l’aide de FormBridge, une application externe peut masquer certains éléments, obtenir ou définir leurs valeurs, ou encore modifier leurs attributs par programmation.
 
@@ -133,7 +148,7 @@ Pour plus d’informations, voir l’article sur [Form Bridge](/help/forms/usin
 
 #### Moteur de mise en page {#layout-engine}
 
-La mise en page et l’aspect visuel des formulaires HTML5 reposent sur les fonctionnalités SVG 1.1, jQuery, BackBone et CSS3. L’aspect initial d’un formulaire est généré et mis en mémoire cache sur le serveur. Les ajustements de cette mise en page initiale et toutes les modifications incrémentielles supplémentaires apportées à la mise en page du formulaire sont gérés sur le client. Pour ce faire, le package d’exécution contient un moteur de mise en page écrit dans Javascript et basé sur jQuery/Backbone. Ce moteur gère l’intégralité du comportement dynamique, comme l’ajout/la suppression des instances répétables, ou encore la mise en page évolutive d’un objet. Ce moteur de mise en page génère un formulaire page par page. L’utilisateur ne voit qu’une page au début, et la barre de défilement horizontale ne prend qu’une page en compte. Cependant, lorsqu’un utilisateur ou une utilisatrice défile vers le bas, le rendu de la page suivante commence. Ce rendu page par page réduit la quantité de temps nécessaire pour effectuer le rendu de la première page dans un navigateur et améliore les performances perçues du formulaire. Ce moteur ou cette bibliothèque fait partie de la bibliothèque client CQ avec pour nom de catégorie **xfaforms.profile**.
+La mise en page et l’aspect visuel des formulaires HTML5 reposent sur les fonctionnalités SVG 1.1, jQuery, BackBone et CSS3. L’aspect initial d’un formulaire est généré et mis en mémoire cache sur le serveur. Les ajustements de cette mise en page initiale et toutes les modifications incrémentielles supplémentaires apportées à la mise en page du formulaire sont gérés sur le client. Pour ce faire, le package d’exécution contient un moteur de mise en page écrit dans JavaScript et basé sur jQuery/Backbone. Ce moteur gère l’intégralité du comportement dynamique, comme l’ajout/la suppression des instances répétables, ou encore la mise en page évolutive d’un objet. Ce moteur de mise en page génère un formulaire page par page. L’utilisateur ne voit qu’une page au début, et la barre de défilement horizontale ne prend qu’une page en compte. Cependant, lorsqu’un utilisateur ou une utilisatrice défile vers le bas, le rendu de la page suivante commence. Ce rendu page par page réduit le temps nécessaire pour effectuer le rendu de la première page dans un navigateur et améliore les performances perçues du formulaire. Ce moteur ou cette bibliothèque fait partie de la bibliothèque client CQ avec pour nom de catégorie **xfaforms.profile**.
 
 Le moteur de mise en page contient également un ensemble de widgets utilisés pour capturer la valeur des champs de formulaire à partir d’un utilisateur ou d’une utilisatrice. Ces widgets sont modélisés en tant que [widgets UI jQuery](https://api.jqueryui.com/jQuery.widget/) qui implémentent certains contrats supplémentaires pour travailler en toute transparence avec le moteur de mise en page.
 
@@ -141,9 +156,9 @@ Pour plus d’informations sur les widgets et les contrats correspondants, voir 
 
 #### Style {#styling}
 
-Le style associé aux éléments HTML est ajouté soit en ligne, soit en fonction du bloc CSS intégré. Certains styles courants et indépendants sur les formulaires font partie de la bibliothèque client CQ avec pour nom de catégorie xfaforms.profile.
+Le style associé aux éléments HTML est ajouté soit en ligne, soit à partir d’un bloc CSS intégré. Certains styles courants qui ne dépendent pas du formulaire font partie de la bibliothèque client CQ avec pour nom de catégorie xfaforms.profile.
 
-En plus des propriétés de style par défaut, chaque élément du formulaire contient également certaines classes CSS en fonction du type d’élément, du nom et d’autres propriétés. A l’aide de ces classes, vous pouvez redéfinir le style des éléments en spécifiant leur propre CSS.
+En plus des propriétés de style par défaut, chaque élément du formulaire contient également certaines classes CSS en fonction du type d’élément, du nom et d’autres propriétés. À l’aide de ces classes, vous pouvez redéfinir le style des éléments en spécifiant leur propre CSS.
 
 Pour plus d’informations sur le style et les classes par défaut, voir [Introduction aux styles](/help/forms/using/css-styles.md).
 
@@ -158,9 +173,9 @@ Le moteur de script client :
 1. génère un nouvel état JSON ;
 1. fusionne le nouvel état JSON sur le client lorsque la réponse est renvoyée.
 
-#### Lots des ressources de localisation {#localization-resource-bundles}
+#### Bundles des ressources de localisation {#localization-resource-bundles}
 
-Les formulaires HTML5 prennent en charge l’italien (it), l’espagnols (es), le portugais du Brésil (pt_BR), le chinois simplifié (zh_CN), le chinois traditionnel (zh_TW, prise en charge limitée uniquement), le coréen (ko_KR), l’anglais (en_US), le français (fr_FR), l’allemand (de_DE) et le japonais (ja). En fonction du jeu de paramètres régionaux reçus dans l’en-tête de requête, le lot de ressources correspondant est envoyé au client. Ce lot de ressources est ajouté au profil JSP sous la forme d’une bibliothèque cliente CQ sous le nom de catégorie **xfaforms.I18N**. Vous pouvez remplacer la logique du profil consistant à prendre les packages avec paramètres régionaux.
+Les formulaires HTML5 prennent en charge l’italien (it), l’espagnol (es), le portugais du Brésil (pt_BR), le chinois simplifié (zh_CN), le chinois traditionnel (prise en charge limitée uniquement) (zh_TW), le coréen (ko_KR), l’anglais (en_US), le français (fr_FR), l’allemand (de_DE) et le japonais (ja). En fonction du jeu de paramètres régionaux reçus dans l’en-tête de requête, le bundle de ressources correspondant est envoyé au client. Ce bundle de ressources est ajouté au profil JSP sous la forme d’une bibliothèque cliente CQ sous le nom de catégorie **xfaforms.I18N**. Vous pouvez remplacer la logique du profil consistant à prendre les packages avec paramètres régionaux.
 
 ### Composants Sling (adobe-lc-forms-content-pkg.zip) {#sling-components-adobe-lc-forms-content-pkg-zip}
 
@@ -168,7 +183,7 @@ Le package Sling contient le contenu associé aux profils et au rendu des profil
 
 #### Profils {#profiles}
 
-Les profils sont les nœuds de ressources dans Sling qui représentent un formulaire ou une famille de formulaires. Au niveau CQ, ces profils sont des nœuds JCR. Les nœuds se trouvent sous le dossier **/content** dans le référentiel JCR et peuvent figurer dans n’importe quel sous-dossier sous le dossier **/content**.
+Les profils sont les nœuds de ressource dans Sling qui représentent un formulaire ou une famille de formulaires. Au niveau CQ, ces profils sont des nœuds JCR. Les nœuds se trouvent sous le dossier **/content** dans le référentiel JCR et peuvent figurer dans n’importe quel sous-dossier sous le dossier **/content**.
 
 #### Rendus des profils {#profile-renderers}
 
@@ -177,10 +192,10 @@ Le nœud de profil possède une propriété **sling:resourceSuperType** avec la 
 * **xfaforms.I18N.&lt;locale>** : cette bibliothèque contient des données localisées.
 * **xfaforms.profile** : cette bibliothèque contient l’implémentation pour les moteurs de script XFA et de mise en page.
 
-Ces bibliothèques sont modélisées en tant que bibliothèques clientes CQ qui tirent parti des fonctionnalités de concaténation, de réduction et de compression automatiques des bibliothèques JavaScript de la structure CQ.
+Ces bibliothèques sont modélisées sous la forme de bibliothèques clientes CQ qui tirent profit des fonctions de concaténation, de réduction et de compression automatiques des bibliothèques JavaScript de la structure CQ.
 Pour plus d’informations sur les bibliothèques clientes CQ, voir [Documentation sur les bibliothèques clientes CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
 Comme décrit ci-dessus, le rendu de profil JSP appelle le service de formulaires grâce à une inclusion sling. Ce JSP définit également diverses options de débogage en fonction de la configuration de l’administration ou des paramètres de requête.
 
-Les formulaires HTML5 permettent aux développeurs de créer un profil et un rendu de profil pour personnaliser l’aspect des formulaires. Par exemple, HTML forms permet aux développeurs d’intégrer des formulaires dans un panneau ou une section &lt;div> d’un portail HTML existant.
-Pour plus d’informations sur la création de profils personnalisés, voir [Création d’un profil personnalisé](/help/forms/using/custom-profile.md).
+HTML5 forms permet aux développeurs de créer un profil et un rendu du profil pour personnaliser l’aspect des formulaires. Par exemple, les formulaires HTML permettent aux équipes de développement d’intégrer des formulaires dans un panneau ou une section &lt;div> d’un portail HTML existant.
+Pour plus d’informations sur la création de profils personnalisés, reportez-vous à [Création d’un profil personnalisé](/help/forms/using/custom-profile.md).

@@ -1,6 +1,6 @@
 ---
 title: Affichage principal de la gestion des autorisations
-description: Découvrez la nouvelle interface utilisateur tactile qui facilite la gestion des autorisations.
+description: Découvrez la nouvelle interface Touch UI qui facilite la gestion des autorisations.
 contentOwner: sarchiz
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,13 +10,25 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 8adc566113beedc408698dccc3a4c072349af5dc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 87%
-
 ---
-
 
 # Affichage principal de la gestion des autorisations{#principal-view-for-permissions-management}
 
@@ -42,9 +54,9 @@ Il existe un filtre qui permet aux utilisateurs et utilisatrices de sélectionne
 
 ![Recherche de types d’entités](assets/image2019-3-20_23-52-51.png)
 
-### Affichage des autorisations d’une entité {#viewing-permissions-for-a-principal}
+### Affichage des autorisations d’un principal {#viewing-permissions-for-a-principal}
 
-Le cadre de gauche permet aux utilisateurs et utilisatrices de faire défiler l’écran vers le bas pour trouver une entité ou rechercher un Groupe ou un Utilisateur en fonction du filtre sélectionné, comme illustré ci-dessous :
+Le cadre de gauche permet aux utilisateurs et utilisatrices de faire défiler l’écran vers le bas pour trouver un principal ou rechercher un Groupe ou un Utilisateur ou une utilisatrice en fonction du filtre sélectionné, comme illustré ci-dessous :
 
 ![Affichage des autorisations d’une entité](assets/doi-1.png)
 
@@ -52,7 +64,7 @@ Cliquez sur le nom pour afficher les autorisations attribuées sur la droite. Le
 
 ![Affichage de la liste des ACL](assets/trei-1.png)
 
-### Ajout d’une nouvelle entrée de contrôle d’accès pour une entité {#adding-new-access-control-entry-for-a-principal}
+### Ajout d’une nouvelle entrée de contrôle d’accès pour un principal {#adding-new-access-control-entry-for-a-principal}
 
 De nouvelles autorisations peuvent être ajoutées grâce à l’ajout d’une entrée de contrôle d’accès. Cliquez simplement sur le bouton Ajouter ACE.
 
@@ -98,13 +110,13 @@ La nouvelle entrée de contrôle d’accès est reflétée dans la liste de cont
 
 ### Modification des ACE {#editing-aces}
 
-Pour modifier les entrées de contrôle d’accès, sélectionnez une entité et choisissez l’entrée de contrôle d’accès que vous souhaitez modifier.
+Pour modifier les entrées de contrôle d’accès, sélectionnez un principal et choisissez l’entrée de contrôle d’accès que vous souhaitez modifier.
 
 Par exemple, il est possible de modifier l’entrée ci-dessous pour **dam-users** en cliquant sur l’icône en forme de crayon à droite :
 
 ![Ajouter une restriction](assets/image2019-3-21_0-35-39.png)
 
-Les entrées de contrôle d’accès configurées présélectionnées apparaissent sur l’écran de modification. Il est possible de les supprimer en cliquant sur la croix située en regard de celles-ci ou d’ajouter de nouvelles autorisations pour le chemin donné, comme illustré ci-dessous.
+Les entrées de contrôle d’accès configurées présélectionnées apparaissent sur l’écran de modification. Il est possible de les supprimer en cliquant sur la croix située en regard de celles-ci ou d’ajouter de nouveaux privilèges pour le chemin donné, comme illustré ci-dessous.
 
 ![Modifier l’entrée](assets/noua-1.png)
 

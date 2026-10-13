@@ -5,27 +5,47 @@ exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 95%
-
+source-wordcount: '1701'
+ht-degree: 97%
 ---
-
 # Principes de base de la création en découplage avec AEM {#author-headless-basics}
 
 ## Un peu d’histoire… {#story-so-far}
 
 Au début du [Parcours de création de contenu découplé AEM](overview.md), l’[Introduction](introduction.md) présentait les concepts de base et la terminologie relatifs à la création découplée.
 
-Cet article s’appuie sur ces éléments afin que vous compreniez comment créer votre propre contenu pour votre projet AEM découplé.
+Cet article s’appuie sur ces éléments afin que vous compreniez comment rédiger votre propre contenu pour votre projet AEM découplé.
 
 ## Objectif {#objective}
 
 * **Audience** : débutant
 * **Objectif** : présentation des principes de base de la création CMS découplée :
-   * Présentation de la création avec AEMaaCS
-   * Présentation des fragments de contenu
+  * Présentation de la création avec AEMaaCS
+  * Présentation des fragments de contenu
 
 ## Manipulation de base {#basic-handling}
 
@@ -50,7 +70,7 @@ Comme pour la plupart des systèmes, vous devez vous connecter. En tant qu’aut
 * Mot de passe
 * Lien d’accès à l’écran de connexion
 
-Votre compte a été configuré avec les privilèges dont vous avez besoin. Si vous rencontrez des problèmes, nous vous recommandons de contacter votre équipe interne d’assistance projet.
+Votre compte a été configuré avec les privilèges dont vous avez besoin. Si vous rencontrez des problèmes, Adobe vous recommande de contacter votre équipe interne d’assistance projet.
 
 ### Navigation {#navigation}
 
@@ -91,7 +111,7 @@ Vous pouvez afficher des informations supplémentaires sur les éléments à l�
 
 ## Créer des fragments de contenu {#authoring-content-fragments}
 
-Fort de cette une introduction très rapide à l’interface utilisateur d’AEM, j’espère que vous avez eu la chance de l’essayer. Maintenant, revenons-en à votre véritable point d’intérêt : les fragments de contenu découplé.
+Fort de cette introduction très rapide à l’interface d’utilisation d’AEM, j’espère que vous avez eu la chance de l’essayer. Maintenant, revenons-en à votre véritable point d’intérêt : les rfagments de contenu pour le mode découplé.
 
 Nous devrons passer en revue les éléments du début à la fin, mais il se peut que votre instance dispose de dossiers ou de fragments déjà créés, et qu’ils se trouvent à des emplacements différents. Les principes restent les mêmes.
 
@@ -111,9 +131,9 @@ Une boîte de dialogue s’ouvre dans laquelle vous pouvez saisir les informatio
 
 #### Utilisation des chemins et des balises pour limiter les modèles de fragment de contenu disponibles dans le dossier {#tags-paths-for-models-in-folder}
 
-Cette section est d’un niveau légèrement plus avancé. Vous n’en avez pas vraiment besoin si vous venez juste de commencer, mais cela peut s’avérer très utile lorsque vous avez de nombreux fragments. Il est donc bon de savoir qu’elle est là, même si vous ne l’exploiterez pas encore à son plein potentiel.
+Cette section est d’un niveau légèrement plus avancé. Vous n’en avez pas vraiment besoin si vous venez juste de commencer, mais cela peut s’avérer très utile lorsque vous avez de nombreux fragments. Il est donc bon de la connaître, même si vous ne l’utilisez pas encore vraiment.
 
-Votre architecte de contenu aura créé tous les modèles de fragment de contenu requis pour votre projet actuel, ainsi que peut-être d’autres projets. Pour vous simplifier les choses ainsi qu’aux autres auteurs, vous pouvez limiter la liste des modèles disponibles pour un dossier spécifique.
+Votre architecte de contenu aura créé tous les modèles de fragment de contenu requis pour votre projet actuel, ainsi que peut-être d’autres projets. Pour vous simplifier la tâche ainsi qu’aux autres auteurs et autrices, vous pouvez limiter la liste des modèles disponibles pour un dossier spécifique.
 
 Après avoir créé votre dossier, vous pouvez ouvrir ses **Propriétés**. Cette section comporte différents onglets avec des informations et des détails de configuration sur le dossier. Pour les fragments de contenu, vous pouvez notamment utiliser l’onglet **Politiques** pour définir des chemins d’accès ou des balises spécifiques pour ce dossier. Cette configuration limite les modèles de fragment de contenu disponibles dans le dossier, car cela signifie que les modèles de fragment de contenu doivent satisfaire à ces exigences avant de pouvoir être utilisés pour générer des fragments dans ce dossier.
 
@@ -121,7 +141,7 @@ Après avoir créé votre dossier, vous pouvez ouvrir ses **Propriétés**. Cett
 
 >[!NOTE]
 >
->Pour plus d’informations, reportez-vous à la section Modèles de fragment de contenu – Autorisation de modèles de fragments de contenu dans votre dossier de ressources.
+>Pour plus d’informations, reportez-vous à la section Modèles de fragment de contenu – Autorisation de modèles de fragments de contenu dans votre dossier Ressources.
 
 Vous pouvez ensuite parcourir ces dossiers pour créer et modifier vos fragments de contenu.
 
@@ -135,7 +155,7 @@ Vous recevrez probablement un dossier initial dans lequel vous pourrez créer vo
 
 >[!NOTE]
 >
->Pour en savoir plus, consultez Application de la configuration à votre dossier de ressources.
+>Pour en savoir plus, consultez Application de la configuration à votre dossier Ressources.
 
 ### Création d’un fragment de contenu {#creating-fragment}
 
@@ -159,15 +179,15 @@ Vous pouvez ouvrir un fragment immédiatement après sa création ou en le séle
 
 Lorsque l’éditeur s’ouvre pour la première fois, les éléments suivants s’affichent :
 
-* Une liste des icônes sur le côté gauche qui vous donne accès à différentes zones de fonctionnalités. L’éditeur s’ouvre dans l’onglet **Variations**, où vous opérerez la plupart de vos modifications. Vous pouvez également être intéressé par les onglets **Annotations** et **Métadonnées**.
+* Une liste des icônes sur le côté gauche qui vous donne accès à différentes zones de fonctionnalité. L’éditeur s’ouvre dans l’onglet **Variations**, où vous opérerez la plupart de vos modifications. Vous pouvez également être intéressé par les onglets **Annotations** et **Métadonnées**.
 
 * En-tête contenant des informations sur le fragment et un accès à différentes actions.
 
-* La zone d’édition principale qui dépend du modèle utilisé pour créer votre fragment.
+* La zone d’édition principale – cela dépend du modèle utilisé pour créer votre fragment.
 
 Par exemple :
 
-* Un fragment qui ne nécessite que plusieurs informations, certaines avec un type spécifique. Pour le contenu découplé, les références sont essentielles. Vous en apprendrez plus tard sur votre parcours.
+* Un fragment qui ne nécessite que plusieurs informations, certaines avec un type spécifique. Pour le contenu découplé, les références sont essentielles. Vous en apprendrez davantage plus tard dans votre parcours.
 
   ![Éditeur de fragment de contenu – Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -177,28 +197,28 @@ Par exemple :
 
 >[!NOTE]
 >
->Une documentation spécifique au projet peut être nécessaire pour aider les auteurs à obtenir des informations sur la manière de remplir certains champs.
+>Une documentation spécifique au projet peut être nécessaire pour aider les auteurs et autrices avec des détails sur la manière de remplir certains champs.
 >
->Consultez « Modèles de fragments de contenu – Types et propriétés de données » pour obtenir des informations générales.
+>Consultez « Modèles de fragments de contenu – Types de données » pour obtenir des informations générales.
 
 Confirmez vos mises à jour en effectuant l’une des opérations suivantes : **Enregistrer** ou **Enregistrer et fermer**.
 
 >[!NOTE]
 >
->Pour plus d’informations, vous pouvez lire Variations – Création de fragments de contenu.
+>Pour plus d’informations, vous pouvez lire Variations – Création de fragments de contenu.
 
 #### Ce dont vous ne devez (probablement) pas vous inquiéter {#what-you-probably-do-not-need-to-worry-about}
 
-Cette section peut sembler un peu étrange mais une fois que vous avez ouvert l’éditeur de fragments de contenu et que vous commencez à l’explorer, vous verrez diverses options qui ne s’appliquent (probablement) pas à votre parcours découplé en tant que créateur ou créatrice de contenu. Il s’agit simplement d’une rapide mise en garde sur ce que vous devriez pouvoir ignorer dans un contexte découplé :
+Cette section peut sembler un peu étrange mais une fois que vous avez ouvert l’éditeur de fragment de contenu et que vous commencez à explorer, vous verrez diverses options qui ne s’appliquent (probablement) pas à votre parcours découplé en tant que créateur ou créatrice de contenu. Il s’agit simplement d’un rapide aperçu de ce que vous devriez pouvoir ignorer dans un contexte découplé :
 
 * **Modèles de fragment de contenu**
 
   Le nom du modèle de fragment de contenu s’affiche en haut de l’éditeur, directement sous celui du fragment. Il s’agit également d’un lien qui vous mène à l’éditeur de modèles.
-Les modèles de fragment de contenu sont essentiels à vos fragments de contenu, car ils définissent la structure que vous utilisez. Cependant, leur création et leur modification relèvent (généralement) de la responsabilité d’une autre personne, l’architecte de contenu.
+  Les modèles de fragment de contenu sont essentiels à vos fragments de contenu, car ils définissent la structure que vous utilisez. Cependant, leur création et leur modification relèvent (généralement) de la responsabilité d’un autre persona, l’architecte de contenu.
 
   >[!NOTE]
   >
-  >Si vous souhaitez en savoir plus, vous pouvez consultez le parcours d’architecture de contenu découplé AEM.
+  >Si vous souhaitez en savoir plus, vous pouvez consulter le parcours d’architecte de contenu AEM découplé.
 
 * **Contenu associé**
 
@@ -226,7 +246,7 @@ Les actions de publication sont disponibles dans l’éditeur (ou dans la barre 
 
 ## Prochaines étapes {#whats-next}
 
-Maintenant que vous avez appris les principes de base, l’étape suivante consiste à [en découvrir plus sur les références](references.md). Cette section présente et discute les différentes références disponibles, ainsi que la manière de créer des niveaux de structure à l’aide des références de fragment, un élément clé de la création de contenu découplé.
+Maintenant que vous avez appris les principes de base, l’étape suivante consiste à [en découvrir plus sur les références](references.md). Cette section présente et discute les différentes références disponibles, ainsi que la manière de créer des niveaux de structure à l’aide des références de fragment, un élément clé de la création de fragments pour un environnement découplé.
 
 ## Ressources supplémentaires {#additional-resources}
 
@@ -234,38 +254,38 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
 
 * [Manipulation de base](/help/sites-authoring/basic-handling.md) : cette page est principalement basée sur la console **Sites**, mais de nombreuses ou la plupart des fonctionnalités sont également pertinentes pour la création de **Fragments de contenu** dans la console **Assets**.
 
-   * [Panneau de navigation](/help/sites-authoring/basic-handling.md#navigation-panel)
+  * [Panneau de navigation](/help/sites-authoring/basic-handling.md#navigation-panel)
 
-   * [En-tête](/help/sites-authoring/basic-handling.md#the-header)
+  * [En-tête](/help/sites-authoring/basic-handling.md#the-header)
 
-   * [Barre d’outils d’Actions](/help/sites-authoring/basic-handling.md#actions-toolbar)
+  * [Barre d’outils d’Actions](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
-   * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
+  * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
 
-   * [Affichage et sélection de ressources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+  * [Affichage et sélection de ressources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [Sélecteur de rail](/help/sites-authoring/basic-handling.md#rail-selector)
+  * [Sélecteur de rail](/help/sites-authoring/basic-handling.md#rail-selector)
 
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 
-   * [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
+  * [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [Application de la configuration à votre dossier de ressources](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [Application de la configuration à votre dossier de ressources](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Création d’un fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [Création d’un fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
 
-   * [Variations – Création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md)
+  * [Variations – Création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
+  * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Modèles de fragment de contenu – Types de données](/help/assets/content-fragments/content-fragments-models.md#data-types)
+    * [Modèles de fragment de contenu – Types de données](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modèles de fragment de contenu – Propriétés](/help/assets/content-fragments/content-fragments-models.md#properties)
+    * [Modèles de fragment de contenu – Propriétés](/help/assets/content-fragments/content-fragments-models.md#properties)
 
-      * [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+    * [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier Ressources](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * Guides de prise en main
-   * [Guide de démarrage rapide sur la création d’un dossier de ressources découplées](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+  * [Guide de démarrage rapide pour la création d’un dossier Ressources découplé](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Parcours d’architecture de contenu découplé AEM](/help/journey-headless/architect/overview.md)
 

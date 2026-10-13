@@ -1,5 +1,5 @@
 ---
-title: Fragments d’expérience dans l’instance de développement d’Adobe Experience Manager Sites
+title: Fragments d’expérience dans le développement d’Adobe Experience Manager Sites
 description: Découvrez comment personnaliser des fragments d’expérience pour Adobe Experience Manager.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,29 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1824'
 ht-degree: 99%
-
 ---
-
 # Fragments d’expérience {#experience-fragments}
 
 ## Principes élémentaires {#the-basics}
 
 Un [fragment d’expérience](/help/sites-authoring/experience-fragments.md) est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages.
 
-Un gabarit et/ou une variation du fragment d’expérience utilise :
+Un fragment d’expérience principal et/ou une variante utilise :
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
@@ -64,11 +73,11 @@ Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts su
 Le rendu HTML est généré à l’aide des pipelines de réécriture Sling. Le pipeline est défini au niveau du chemin `/libs/experience-fragments/config/rewriter/experiencefragments`. Le transformateur HTML prend en charge les options suivantes :
 
 * `allowedCssClasses`
-   * Une expression RegEx correspondant aux classes CSS qui doivent être conservées dans le rendu final.
-   * Cela s’avère utile si le client ou la cliente souhaite supprimer certaines classes CSS spécifiques.
+  * Une expression RegEx correspondant aux classes CSS qui doivent être conservées dans le rendu final.
+  * Cela s’avère utile si le client ou la cliente souhaite supprimer certaines classes CSS spécifiques.
 * `allowedTags`
-   * Une liste des balises HTML autorisées dans le rendu final.
-   * Par défaut, les balises suivantes sont autorisées (aucune configuration requise) : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link et script
+  * Une liste des balises HTML autorisées dans le rendu final.
+  * Par défaut, les balises suivantes sont autorisées (aucune configuration requise) : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link et script
 
 Il est recommandé de configurer la réécriture à l’aide d’un recouvrement. Voir [Recouvrements](/help/sites-developing/overlays.md)
 
@@ -76,22 +85,22 @@ Il est recommandé de configurer la réécriture à l’aide d’un recouvrement
 
 Les variations sociales peuvent être publiées sur les réseaux sociaux (texte et image). Dans Adobe Experience Manager (AEM), ces variations sociales peuvent contenir des composants ; des composants texte ou image, par exemple.
 
-L’image et le texte de la publication sur le réseau social peuvent être extraits de n’importe quel type de ressource d’image ou de ressource de texte, à n’importe quel niveau de profondeur (dans le bloc fonctionnel ou dans le conteneur de mise en page).
+L’image et le texte de la publication sur le réseau social peuvent être extraits de n’importe quel type de ressource d’image ou de ressource de texte, à n’importe quel niveau de profondeur (dans le bloc de création ou dans le conteneur de mise en page).
 
-Les variations sociales autorisent également les blocs fonctionnels et les prennent en compte lors de l’exécution d’actions sur les réseaux sociaux (dans l’environnement de publication).
+Les variations sociales autorisent également les blocs de création et les prennent en compte lors de l’exécution d’actions sur les réseaux sociaux (dans l’environnement de publication).
 
-Pour publier le contenu texte et image approprié sur le réseau social, il convient de respecter certaines conventions si vous développez vos propres composants personnalisés.
+Pour publier le contenu texte et image approprié sur les réseaux sociaux, il convient de respecter certaines conventions si vous développez vos propres composants personnalisés.
 
 Pour ce faire, vous devez utiliser les propriétés suivantes :
 
 * Pour extraire l’image
 
-   * `fileReference`
-   * `fileName`
+  * `fileReference`
+  * `fileName`
 
 * Pour extraire le texte
 
-   * `text`
+  * `text`
 
 Les composants qui ne respectent pas cette convention ne sont pas pris en compte.
 
@@ -114,7 +123,7 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
 
    1. Et le nom du modèle doit commencer par :
       `experience-fragments`
-Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments, étant donné que la propriété `cq:allowedTemplates` de ce dossier inclut tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
+      Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments, étant donné que la propriété `cq:allowedTemplates` de ce dossier inclut tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 
 1. Les [modèles autorisés](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
 <!--
@@ -137,7 +146,7 @@ La seule configuration supplémentaire consiste à s’assurer que les composant
 
 Dans AEM, vous avez la possibilité de créer des fragments d’expérience. Un fragment d’expérience :
 
-* est constitué d’un groupe de composants avec une mise en page ;
+* est constitué d’un groupe de composants avec une mise en page,
 * peut exister indépendamment d’une page AEM.
 
 De tels groupes sont notamment utilisés pour incorporer du contenu dans des points de contact tiers, tels qu’Adobe Target.
@@ -147,7 +156,7 @@ De tels groupes sont notamment utilisés pour incorporer du contenu dans des poi
 La fonction [Exporter vers Target](/help/sites-administering/experience-fragments-target.md) vous permet :
 
 * de créer un fragment d’expérience,
-* d’y ajouter des composants ;
+* d’y ajouter des composants,
 * de l’exporter ensuite en tant qu’offre Adobe Target, au format HTML ou JSON.
 
 Cette fonction peut être [activée sur une instance de création d’AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). Elle nécessite une configuration Adobe Target valide, ainsi que des configurations pour l’externaliseur de liens.
@@ -192,7 +201,7 @@ Pour ces cas d’utilisation, AEM propose l’interface du fournisseur de rééc
 
 Pour les cas plus complexes, non couverts par le [paramètre par défaut](#default-link-rewriting), AEM propose l’interface du fournisseur de réécriture de liens. Il s’agit d’une interface `ConsumerType` que vous pouvez implémenter dans vos bundles sous la forme d’un service. Elle ignore les modifications qu’AEM effectue sur les liens internes d’une offre HTML telle qu’elle est générée à partir d’un fragment d’expérience. Cette interface vous permet de personnaliser le processus de réécriture des liens HTML internes afin de l’adapter aux besoins de votre entreprise.
 
-Voici quelques exemples d’implémentation de cette interface en tant que service :
+Voici quelques exemples de cas d’usage pour l’implémentation de cette interface en tant que service :
 
 * Les mappages Sling sont activés sur les instances de publication, mais pas sur l’instance de création.
 * Un Dispatcher ou une technologie semblable est utilisé pour rediriger les URL en interne.
@@ -218,9 +227,9 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 ### Utilisation de l’interface du fournisseur de réécriture de liens {#how-to-use-the-link-rewriter-provider-interface}
 
-Avant d’utiliser cette interface, vous devez créer un lot contenant un nouveau composant de service qui l’implémente.
+Avant d’utiliser cette interface, vous devez créer un bundle contenant un nouveau composant de service qui l’implémente.
 
-Ce service est utilisé pour se connecter à la réécriture Exporter vers Target du fragment d’expérience afin qu’elle puisse avoir accès aux différents liens.
+Ce service est utilisé pour s’intégrer à la réécriture de l’export vers Target du fragment d’expérience afin d’avoir accès aux différents liens.
 
 Par exemple, `ComponentService` :
 
@@ -257,13 +266,13 @@ Pour que le service fonctionne, trois méthodes doivent à présent être implé
 * ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
 
-   * `rewriteLinkExample2`
+  * `rewriteLinkExample2`
 
 * ` [getPriority](#priorities-getpriority)`
 
 #### shouldRewrite {#shouldrewrite}
 
-Vous devez indiquer au système s’il doit ou non réécrire les liens lorsqu’un appel est effectué pour Exporter vers Target sur une variation donnée du fragment d’expérience. Pour ce faire, implémentez la méthode suivante :
+Vous devez indiquer au système s’il doit ou non réécrire les liens lorsqu’un appel est effectué pour l’export vers Target sur une variation donnée du fragment d’expérience. Pour ce faire, implémentez la méthode suivante :
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
@@ -276,7 +285,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 }
 ```
 
-Cette méthode reçoit, en tant que paramètre, la variation du fragment d’expérience qui est actuellement réécrite par le système Exporter vers Target.
+Cette méthode reçoit, en tant que paramètre, la variation du fragment d’expérience qui est actuellement réécrite par le système Export vers Target.
 
 Dans l’exemple ci-dessus, nous souhaitons réécrire les éléments suivants :
 
@@ -287,7 +296,7 @@ Dans l’exemple ci-dessus, nous souhaitons réécrire les éléments suivants 
 * Pour un fragment d’expérience spécifique :
   `/content/experience-fragment/master`
 
-Les autres fragments d’expérience transitant par le système Exporter vers Target sont ignorés et ne sont pas affectés par les modifications implémentées dans ce service.
+Les autres fragments d’expérience transitant par le système Export to Target sont ignorés et ne sont pas affectés par les modifications implémentées dans ce service.
 
 #### rewriteLink {#rewritelink}
 

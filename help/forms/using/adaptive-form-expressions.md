@@ -8,7 +8,25 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2871'
 ht-degree: 94%
@@ -17,13 +35,13 @@ ht-degree: 94%
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
-Les formulaires adaptatifs facilitent et optimisent le remplissage des formulaires pour les utilisatrices et utilisateurs finaux à l’aide de fonctions de script dynamique. Vous pouvez ainsi écrire des expressions afin d’ajouter différents comportements tels que les champs et panneaux dynamiques d’affichage et de masquage. Vous pouvez également ajouter des champs calculés, afficher les champs en lecture seule, ajouter une logique de validation, et bien d’autres fonctionnalités. Le comportement dynamique se base sur les entrées de l’utilisateur ou les données pré-renseignées.
+Les formulaires adaptatifs facilitent et optimisent le remplissage des formulaires pour les utilisatrices et utilisateurs finaux à l’aide de fonctions de script dynamique. Vous pouvez ainsi écrire des expressions afin d’ajouter différents comportements tels que les champs et panneaux dynamiques d’affichage et de masquage. Vous pouvez également ajouter des champs calculés, rendre les champs en lecture seule, ajouter une logique de validation, et bien d’autres fonctionnalités. Le comportement dynamique se base sur les entrées de l’utilisateur ou les données pré-renseignées.
 
 JavaScript est le langage d’expression des formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez [Référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html).
 
 ## Recommandations relatives à l’écriture d’expressions {#best-practices-for-writing-expressions}
 
-* Lors de l’écriture d’expressions, pour accéder aux champs et aux panneaux, vous pouvez utiliser le nom du champ ou du panneau. Pour accéder à la valeur d’un champ, utilisez la propriété de la valeur. Par exemple, `field1.value`
+* Lors de l’écriture d’expressions, pour accéder aux champs et aux panneaux, vous pouvez utiliser le nom du champ ou du panneau. Pour accéder à la valeur d’un champ, utilisez la propriété value. Par exemple, `field1.value`
 * Utilisez des noms uniques pour les champs et les panneaux du formulaire. Cela permet d’éviter tout conflit possible avec les noms de champ utilisés lors de l’écriture d’expressions.
 * Lors de la création d’expressions multilignes, utilisez un point-virgule à la fin d’une instruction.
 
@@ -69,7 +87,7 @@ Vous pouvez utiliser l’expression d’accès pour activer ou désactiver un ch
 
 ### Expression de calcul {#calculate-expression}
 
-L’expression de calcul est utilisée pour calculer automatiquement la valeur d’un champ à l’aide d’une expression. En règle générale, une telle expression utilise une propriété de valeur d’autres champs. Par exemple, `field2.value + field3.value`. Dès lors que la valeur de `field2`ou `field3`est modifiée, l’expression est redéclenchée et la valeur est recalculée.
+L’expression de calcul est utilisée pour calculer automatiquement la valeur d’un champ à l’aide d’une expression. En règle générale, une telle expression utilise la propriété value d’autres champs. Par exemple, `field2.value + field3.value`. Dès lors que la valeur de `field2`ou `field3`est modifiée, l’expression est redéclenchée et la valeur est recalculée.
 
 **S’applique à** : champs
 
@@ -80,7 +98,7 @@ L’expression de calcul est utilisée pour calculer automatiquement la valeur d
 
 ### Expression de clic {#click-expression}
 
-L’expression de clic gère les actions effectuées sur l’événement clic d’un bouton. GuideBridge fournit des API prêtes à l’emploi pour effectuer différentes fonctions comme l’envoi et la validation, qui sont utilisées avec l’expression de clic. Pour obtenir la liste complète des API, consultez les [API GuideBridge](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html).
+L’expression de clic gère les actions effectuées sur l’évènement de clic d’un bouton. GuideBridge fournit des API prêtes à l’emploi pour effectuer différentes fonctions comme l’envoi et la validation, qui sont utilisées avec l’expression de clic. Pour obtenir la liste complète des API, consultez les [API GuideBridge](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html).
 
 **Application pour** : champs de bouton
 
@@ -119,7 +137,7 @@ Dès lors que la valeur du champ **marital_status** est modifiée, l’expressio
 
 ### Expression récapitulative {#summary}
 
-L’expression récapitulative calcule dynamiquement le titre d’un panneau enfant d’un panneau de disposition en accordéon. Vous pouvez spécifier l’expression récapitulative dans une règle qui utilise un champ de formulaire ou une logique personnalisée pour évaluer le titre. L’expression s’exécute lorsque le formulaire s’initialise. Si vous préremplissez un formulaire, l’expression s’exécute après que les données ont été remplies ou lorsque la valeur des champs dépendants utilisés dans l’expression change.
+L’expression récapitulative calcule dynamiquement le titre d’un panneau enfant d’un panneau de disposition en accordéon. Vous pouvez spécifier l’expression récapitulative dans une règle qui utilise un champ de formulaire ou une logique personnalisée pour évaluer le titre. L’expression s’exécute lorsque le formulaire s’initialise. Si vous préremplissez un formulaire, l’expression s’exécute après le préremplissage des données ou lorsque la valeur des champs dépendants utilisés dans l’expression change.
 
 L’expression récapitulative est généralement utilisée pour répéter les enfants d’un panneau de disposition en accordéon afin de fournir un titre significatif à chaque panneau enfant.
 
@@ -131,7 +149,7 @@ L’expression récapitulative est généralement utilisée pour répéter les e
 
 ### Expression de validation {#validate-expression}
 
-L’expression de validation est utilisée pour valider les champs à l’aide de l’expression donnée. En règle générale, de telles expressions utilisent des expressions régulières ainsi que la valeur de champ pour valider un champ. L’expression est redéclenchée et l’état de validation du champ est recalculé à tout changement de la valeur d’un champ.
+L’expression de validation est utilisée pour valider les champs à l’aide de l’expression donnée. En règle générale, de telles expressions utilisent des expressions régulières ainsi que la valeur du champ pour valider un champ. L’expression est redéclenchée et l’état de validation du champ est recalculé à tout changement de la valeur d’un champ.
 
 **S’applique à** : champs
 
@@ -162,7 +180,7 @@ Le script de validation de valeur est déclenché dans les cas suivants :
 
 >[!NOTE]
 >
->Vous pouvez désactiver l’exécution du script de validation de valeur lorsque la valeur d’un champ est changée par programmation. Pour ce faire, allez à https://&#39;[server]:[port]&#39;/system/console/configMgr r et remplacez **Version de formulaires adaptatifs pour compatibilité** par **AEM Forms 6.1**. Ensuite, le script de validation de valeur est exécuté uniquement lorsque l’utilisateur ou l’utilisatrice modifie la valeur du champ à partir de l’interface utilisateur.
+>Vous pouvez désactiver l’exécution du script Value Commit lorsque la valeur d’un champ est changée par programmation. Pour ce faire, allez à https://&#39;[server]:[port]&#39;/system/console/configMgr r et remplacez **Version de formulaires adaptatifs pour compatibilité** par **AEM Forms 6.1**. Ensuite, le script Value Commit est exécuté uniquement lorsque l’utilisateur ou l’utilisatrice modifie la valeur du champ à partir de l’interface d’utilisation.
 
 ### Expression de visibilité {#visibility-expression}
 
@@ -187,7 +205,7 @@ L’expression d’achèvement de l’étape est utilisée pour empêcher un uti
 
 ## Validations dans un formulaire adaptatif {#validations-in-adaptive-form}
 
-Il existe plusieurs méthodes pour ajouter la validation de champ à un formulaire adaptatif. Si une vérification de validation est ajoutée à un champ, **True** indique que la valeur saisie dans le champ est valide. **False** indique que la valeur n’est pas valide. Si vous appuyez sur la touche de tabulation dans un champ ou en dehors, le message d’erreur n’est pas généré.
+Il existe plusieurs méthodes pour ajouter la validation de champ à un formulaire adaptatif. Si une vérification de validation est ajoutée à un champ, **True** indique que la valeur saisie dans le champ est valide. **False** indique que la valeur n’est pas valide. Si vous entrez dans un champ et en sortez à l’aide de la touche Tabulation, le message d’erreur n’est pas généré.
 
 Les méthodes pour ajouter des validations sur un champ sont les suivantes :
 
@@ -251,7 +269,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->Dans AEM, il est recommandé d’écrire le code dans une bibliothèque cliente et de l’inclure dans votre page (header.jsp et footer.jsp de la page)
+>Dans AEM, il est recommandé d’écrire le code dans une bibliothèque cliente et de l’inclure dans votre page (header.jsp ou footer.jsp de la page)
 
 Pour utiliser GuideBridge après l’initialisation du formulaire (l’événement `bridgeInitializeComplete` est distribué), obtenez l’instance GuideBridge à l’aide de `window.guideBridge`. Vous pouvez vérifier l’état d’initialisation de GuideBridge à l’aide de l’API `guideBride.isConnected`.
 

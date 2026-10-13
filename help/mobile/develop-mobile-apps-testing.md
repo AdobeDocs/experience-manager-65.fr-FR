@@ -9,13 +9,17 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 1%
-
 ---
-
 # Test des applications mobiles{#testing-mobile-apps}
 
 {{ue-over-mobile}}
@@ -37,7 +41,7 @@ Vous devez répondre à ces questions lors de vos tests automatisés et manuels.
 
 ## Test automatisé {#automated-testing}
 
-Un certain degré d’automatisation des tests doit être effectué pour prendre en compte la variété de tailles d’écran, de contraintes de mémoire, de méthodes d’entrée et de systèmes d’exploitation. Non seulement il couvre de nombreux cas de test, mais il peut également accélérer les tests de régression lors de l’introduction de nouvelles fonctionnalités ou de nouveaux appareils. Idéalement, vos outils d’automatisation doivent réduire ou limiter la duplication des efforts. Utilisez des outils ou des structures afin que votre effort de test soit applicable sur toutes les plateformes. Le graphique suivant présente une structure simplifiée d’un environnement de test pour les tests d’interface utilisateur web et les tests d’applications mobiles. Le côté gauche du graphique présente une série de nœuds Selenium avec des navigateurs. SeleniumGrid peut externaliser des tests d’interface utilisateur web courants vers l’un de ces nœuds. Le hub Selenium peut également se connecter à Appium pour des tests d’applications sur plusieurs plateformes. Seuls les simulateurs sont affichés, mais vous pouvez incorporer des utilitaires adb, pour Android™ et Xcode pour les appareils iOS. Des liens sont fournis plus loin dans ce document pour obtenir des détails spécifiques sur les outils mentionnés.
+Un certain degré d’automatisation des tests doit être effectué pour prendre en compte la variété de tailles d’écran, de contraintes de mémoire, de méthodes d’entrée et de systèmes d’exploitation. Non seulement il couvre de nombreux cas de test, mais il peut également accélérer les tests de régression lors de l’introduction de nouvelles fonctionnalités ou de nouveaux appareils. Idéalement, vos outils d’automatisation doivent réduire ou limiter la duplication des efforts. Utilisez des outils ou des structures afin que votre effort de test soit applicable sur toutes les plateformes. Le graphique suivant présente une structure simplifiée d’un environnement de test pour les tests d’interface utilisateur web et les tests d’applications mobiles. Le côté gauche du graphique présente une série de nœuds Selenium avec des navigateurs. SeleniumGrid peut externaliser des tests d’interface utilisateur web courants vers l’un de ces nœuds. Le hub Selenium peut également se connecter à Appium pour des tests d’applications sur plusieurs plateformes. Seuls les simulateurs sont affichés, mais vous pouvez incorporer des utilitaires adb, pour ™ et Xcode pour les appareils iOS. Des liens sont fournis plus loin dans ce document pour obtenir des détails spécifiques sur les outils mentionnés.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -49,12 +53,12 @@ Outre les tests automatisés, votre application doit passer par un cycle de test
 * tester un grand pool de périphériques (idéalement des périphériques réels, mais des simulateurs/émulateurs si des périphériques réels ne sont pas disponibles),
 * fournissez des commentaires informatifs :
 
-   * les rapports d’incident,
-   * analyse/suivi,
-   * la convivialité,
-   * les domaines d&#39;attention,
-   * les performances,
-   * consommation de données/d’énergie, etc.
+  * les rapports d’incident,
+  * analyse/suivi,
+  * la convivialité,
+  * les domaines d&#39;attention,
+  * les performances,
+  * consommation de données/d’énergie, etc.
 
 ## Outils {#tools}
 
@@ -74,21 +78,21 @@ Pour plus d’informations, consultez [https://www.selenium.dev/](https://www.se
 * Un service de test basé sur le cloud avec des hooks d’intégration continus et des tests d’appareils réels.
 * Un Robot d&#39;exploration d’application est inclus pour vérifier la compatibilité des appareils, analyser les journaux, parcourir les vues, prendre des captures d’écran et surveiller les performances.
 
-Pour plus d’informations, voir [https://testdroid.com/](https://testdroid.com/).
+Pour plus d’informations, voir [&#128279;](https://testdroid.com/).
 
 **Appium**
 
 * Appium est un framework populaire sur plusieurs plateformes pour automatiser les tests mobiles.
 * En outre, un inspecteur est inclus avec des capacités d’enregistrement pour aider les cas de test de code.
 
-Pour plus d’informations, voir [https://appium.io/](https://appium.io/).
+Pour plus d’informations, voir [&#128279;](https://appium.io/).
 
 **SauceLabs**
 
 * SauceLabs fournit des tests basés sur le cloud et s’intègre avec une intégration continue.
 * Les tests s’exécutent automatiquement dans leur environnement cloud ou vous pouvez démarrer un appareil ou une plateforme spécifique et effectuer des tests manuels pour résoudre les problèmes.
 
-Pour plus d’informations, voir [https://saucelabs.com/](https://saucelabs.com/).
+Pour plus d’informations, voir [&#128279;](https://saucelabs.com/).
 
 <!--
 **AppTestNow**
@@ -103,10 +107,10 @@ For more information, see [https://apptestnow.com/](https://apptestnow.com/).
 
 * HockeyApp est soumis à des tests manuels où l&#39;application mobile est envoyée à une boutique d&#39;applications personnelles où les testeurs peuvent la télécharger et l&#39;essayer.
 
-Pour plus d’informations, voir [https://hockeyapp.net/features/](https://hockeyapp.net/features/).
+Pour plus d’informations, voir [&#128279;](https://hockeyapp.net/features/).
 
 **Jenkins**
 
 * Bien qu’il ne s’agisse pas d’un outil de test, Jenkins est une structure d’intégration continue fournissant la colonne vertébrale pour les tests automatisés. De nombreux plug-ins tiers sont disponibles pour étendre les fonctionnalités. Par exemple, le plug-in SeleniumGrid fournit une interface utilisateur pour aider à gérer le hub et les nœuds Selenium.
 
-Pour plus d’informations, voir [https://www.jenkins.io/](https://www.jenkins.io/) et [https://plugins.jenkins.io/](https://plugins.jenkins.io/).
+Pour plus d’informations, voir [&#128279;](https://www.jenkins.io/) et [https://plugins.jenkins.io/](https://plugins.jenkins.io/).

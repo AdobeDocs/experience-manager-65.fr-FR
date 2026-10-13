@@ -8,13 +8,22 @@ feature: Upgrading
 exl-id: 28ddd23c-5907-4356-af56-ebc7589a2b5d
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 100%
-
+ht-degree: 92%
 ---
-
 # Restructuration des référentiels d’Assets dans AEM 6.5 {#assets-repository-restructuring-in-aem}
 
 Comme indiqué dans la page parent [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/repository-restructuring.md), les clients et clientes effectuant une mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution AEM Assets. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers une version future.
@@ -77,7 +86,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><strong>Conseils de restructuration</strong></td>
    <td><p>Si les modèles d’e-mail ont été modifiés par le client ou la cliente, effectuez les actions suivantes afin de vous aligner sur la nouvelle structure de référentiel :</p>
     <ol>
-     <li>Le modèle d’e-mail <code>/libs/settings/dam/notification</code> doit être copié à partir de <strong><code>/etc/notification/email/default</code></strong> vers <strong><code>/apps/settings/notification/email/default</code></strong>.
+     <li>Le modèle d’e-mail <code>/libs/settings/dam/notification</code> doit être copié de <strong><code>/etc/notification/email/default</code></strong> vers <strong><code>/apps/settings/notification/email/default</code></strong>
       <ol>
        <li>Étant donné que la destination se trouve dans <strong><code>/apps</code></strong>, cette modification doit être conservée dans SCM.</li>
       </ol> </li>
@@ -140,7 +149,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><strong>Conseils de restructuration</strong></td>
    <td><p>Si les modèles d’e-mail (<strong>downloadasset</strong> ou <strong>transientworkflowcompleted</strong>) ont été modifiés, suivez la procédure ci-dessous pour vous aligner sur la nouvelle structure :</p>
     <ol>
-     <li>Le modèle d’e-mail mis à jour doit être copié depuis <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> dans <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong>.
+     <li>Le modèle d’e-mail mis à jour doit être copié de <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> vers <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong>
       <ol>
        <li>Étant donné que la destination se trouve dans <strong><code>/apps</code></strong>, cette modification doit être conservée dans SCM.</li>
       </ol> </li>
@@ -181,7 +190,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><strong>Conseil de restructuration</strong></td>
    <td><p>Si le modèle d’e-mail a été modifié par le client, alignez-le sur la nouvelle structure de référentiel :</p>
     <ol>
-     <li>Le modèle d’e-mail mis à jour doit être copié depuis <strong><code>/etc/dam/adhocassetshare</code></strong> dans <strong><code>/apps/settings/dam/adhocassetshare</code></strong>.
+     <li>Le modèle d’e-mail mis à jour doit être copié de <strong><code>/etc/dam/adhocassetshare</code></strong> vers <strong><code>/apps/settings/dam/adhocassetshare</code></strong>
       <ol>
        <li>Étant donné que la destination se trouve dans <strong><code>/apps</code></strong>, cette modification doit être conservée dans SCM.</li>
       </ol> </li>
@@ -214,7 +223,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><strong>Conseil de restructuration</strong></td>
    <td><p>Pour s’aligner sur la nouvelle structure de référentiel :</p>
     <ol>
-     <li>Copiez tous les scripts personnalisés ou modifiés depuis <strong><code>/etc/dam/indesign/scripts</code></strong> vers <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />.
+     <li>Copiez tous les scripts personnalisés ou modifiés depuis <strong><code>/etc/dam/indesign/scripts</code></strong> vers . <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
       <ol>
        <li>Copiez uniquement les scripts nouveaux ou modifiés, car les scripts non modifiés fournis par AEM seront disponibles via <strong><code>/libs/settings</code></strong> dans AEM 6.5.</li>
       </ol> </li>

@@ -9,13 +9,29 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 98%
-
+source-wordcount: '869'
+ht-degree: 96%
 ---
-
 # Prise en charge de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs{#supporting-new-locales-for-adaptive-forms-localization}
 
 | Version | Lien de l’article |
@@ -39,18 +55,18 @@ Deux méthodes permettent d’identifier les paramètres régionaux du formulair
 
 * en examinant les paramètres ci-dessous dans l’ordre spécifié :
 
-   * Paramètre de requête `afAcceptLang`
-Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre le paramètre de requête `afAcceptLang` pour forcer les paramètres régionaux. Par exemple, l’URL suivante a forcé le rendu du formulaire dans les paramètres régionaux japonais :
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+  * Paramètre de requête `afAcceptLang`
+Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre le paramètre de requête `afAcceptLang` pour forcer les paramètres régionaux. Par exemple, l’URL ci-dessous a forcé le rendu du formulaire dans les paramètres régionaux japonais :
+    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-   * Les paramètres régionaux du navigateur définis pour l’utilisateur ou l’utilisatrice, qui sont spécifiés dans la demande à l’aide de l’en-tête `Accept-Language`.
+  * Les paramètres régionaux du navigateur définis pour l’utilisateur ou l’utilisatrice, qui sont spécifiés dans la demande à l’aide de l’en-tête `Accept-Language`.
 
-   * Paramètre de langue de l’utilisateur spécifié dans AEM.
+  * Paramètre de langue de l’utilisateur spécifié dans AEM.
 
-   * Les paramètres régionaux du navigateur sont activés par défaut. Pour modifier les paramètres régionaux du navigateur :
-      * Ouvrez Configuration Manager. L’URL est `http://[server]:[port]/system/console/configMgr`
-      * Recherchez et ouvrez la configuration **[!UICONTROL du canal Web du formulaire adaptatif et de la communication interactive]**.
-      * Modifiez le statut de l’option **[!UICONTROL Utiliser les paramètres régionaux du navigateur]** et **[!UICONTROL enregistrez]** la configuration.
+  * Les paramètres régionaux du navigateur sont activés par défaut. Pour modifier les paramètres régionaux du navigateur :
+    * Ouvrez Configuration Manager. L’URL est `http://[server]:[port]/system/console/configMgr`
+    * Recherchez et ouvrez la configuration **[!UICONTROL du canal Web du formulaire adaptatif et de la communication interactive]**.
+    * Modifiez le statut de l’option **[!UICONTROL Utiliser les paramètres régionaux du navigateur]** et **[!UICONTROL enregistrez]** la configuration.
 
 Une fois que les paramètres régionaux sont identifiés, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique au formulaire pour les paramètres régionaux nécessaires est introuvable, il utilise le dictionnaire de la langue dans laquelle le formulaire adaptatif a été créé.
 
@@ -109,7 +125,7 @@ i18n.js
 LogMessages.js
 ```
 
-### Ajouter la prise en charge des paramètres régionaux pour la langue du dictionnaire {#add-locale-support-for-the-dictionary-br}
+### Ajouter la prise en charge des paramètres régionaux pour le dictionnaire {#add-locale-support-for-the-dictionary-br}
 
 Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez ne se trouve pas parmi `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 

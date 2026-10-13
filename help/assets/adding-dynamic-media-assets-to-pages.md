@@ -14,21 +14,38 @@ autotag-review: '2026-05-18T18:40:39.792Z'
 TQID: 'https://experienceleague.adobe.com/rt98uGXgnhI4s10OP5uh5e4tKysOBlBY9vmAnsipI0Y'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a9d2a4a6-0a32-4f6e-8eb1-128ec2b18a80
+    internal-label: Components
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Optimization
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 3403
+source-wordcount: '3404'
 ht-degree: 98%
-
 ---
-
-# Ajout de ressources Dynamic Media à des pages{#adding-dynamic-media-assets-to-pages}
+# Ajouter des ressources Dynamic Media à des pages{#adding-dynamic-media-assets-to-pages}
 
 Pour ajouter la fonctionnalité Dynamic Media aux ressources que vous utilisez sur vos sites web, vous pouvez ajouter le composant **Dynamic Media**, **Média interactif**, **Média panoramique** ou **Média vidéo 360** directement à la page. Pour ce faire, vous devez activer le mode Mise en page et activer les composants Dynamic Media. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media sont intelligents : ils savent si vous ajoutez une image ou une vidéo, et les options de configuration disponibles changent en conséquence.
 
@@ -70,7 +87,7 @@ L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média p
 
 ### Activation des composants Dynamic Media {#enabling-dynamic-media-components}
 
-Si aucun composant Dynamic Media n’est disponible pour ajouter une page, cela signifie probablement que vous devez d’abord activer les composants que vous souhaitez utiliser.
+Si aucun composant Dynamic Media n’est disponible pour être ajouté à une page, cela signifie probablement que vous devez d’abord activer les composants que vous souhaitez utiliser.
 
 **Activation des composants Dynamic Media :**
 
@@ -186,7 +203,7 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en sélectionnant 
 
   L’option **[!UICONTROL Optimiser pour les appareils à résolution plus élevée]** n’est affichée que lorsque la valeur suivante est vraie :
 
-   * Sous Type de paramètre prédéfini, **[!UICONTROL Paramètre d’image prédéfini]** est sélectionné et **[!UICONTROL RESS_IP]** est sélectionné dans la liste déroulante **[!UICONTROL Paramètre d’image prédéfini]**.
+  * Sous Type de paramètre prédéfini, **[!UICONTROL Paramètre d’image prédéfini]** est sélectionné et **[!UICONTROL RESS_IP]** est sélectionné dans la liste déroulante **[!UICONTROL Paramètre d’image prédéfini]**.
 
   ![paramètre de rapport pixels d’appareil pour le paramètre d’image prédéfini](/help/assets/assets-dm/dpr-ress-ip.png)
 
@@ -224,10 +241,10 @@ Modifiez les paramètres Dynamic Media ci-après en sélectionnant **[!UICONTRO
 
   Avec les modificateurs de visionneuse, vous pouvez par exemple effectuer les opérations suivantes :
 
-   * Associer un fichier de légende à une vidéo : [légende](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=fr)
-   * Associer un fichier de navigation à une vidéo : [navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=fr)
+  * Associer un fichier de légende à une vidéo : [légende](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=fr)
+  * Associer un fichier de navigation à une vidéo : [navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=fr)
 
-     Vous pouvez modifier les paramètres avancés ci-après en sélectionnant **[!UICONTROL Modifier]** dans le composant.
+    Vous pouvez modifier les paramètres avancés ci-après en sélectionnant **[!UICONTROL Modifier]** dans le composant.
 
 * **[!UICONTROL Titre]** : modifiez le titre de la vidéo.
 
@@ -261,11 +278,11 @@ Modifiez les paramètres Dynamic Media ci-après en sélectionnant **[!UICONTRO
 
   L’option **[!UICONTROL Optimiser pour les appareils à résolution plus élevée]** n’est affichée que lorsque la valeur suivante est vraie :
 
-   * Sous Type de paramètre prédéfini, l’option **[!UICONTROL Recadrage intelligent]** est sélectionnée.
+  * Sous Type de paramètre prédéfini, l’option **[!UICONTROL Recadrage intelligent]** est sélectionnée.
 
   ![Paramètre de ratio de pixels de périphérique pour le recadrage intelligent](/help/assets/assets-dm/dpr-smartcrop.png)
 
-  Voir aussi [À propos de l’optimisation du rapport pixel d’appareil](/help/assets/imaging-faq.md#dpr). Toutes les valeurs RGPD d’imagerie dynamique Adobe Experience Manager Dynamic Media sont ignorées.
+  Voir aussi [À propos de l’optimisation du rapport pixel d’appareil](/help/assets/imaging-faq.md#dpr). Toutes les valeurs DPR de Smart Imaging d’Adobe Experience Manager Dynamic Media sont ignorées.
 
 * **[!UICONTROL Titre]** : modifiez le titre d’une image avec recadrage intelligent.
 
@@ -302,7 +319,7 @@ Le composant Interactive Media est dynamique. Que vous ajoutiez une image ou une
 
 Vous pouvez modifier les paramètres **[!UICONTROL Général]** ci-après en sélectionnant **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Paramètre prédéfini de la visionneuse]** : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Les paramètres de visionneuse prédéfinis doivent être publiés avant de pouvoir être utilisés. Voir Gestion des paramètres prédéfinis de visionneuse.
+* **[!UICONTROL Paramètre prédéfini de la visionneuse]** : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Les paramètres prédéfinis de la visionneuse doivent être publiés avant de pouvoir être utilisés. Voir Gestion des paramètres prédéfinis de visionneuse.
 
 * **[!UICONTROL Titre]** : modifiez le titre de la vidéo.
 
@@ -322,7 +339,7 @@ Vous pouvez modifier les paramètres **[!UICONTROL Général]** ci-après en sé
 
 Le composant Média panoramique est destiné aux ressources qui sont des images panoramiques sphériques. Ces images offrent une expérience de visionnage à 360 degrés d’une pièce, d’une propriété, d’un emplacement ou d’un paysage. Pour qu’une image soit un panorama sphérique, elle doit posséder l’une ou l’autre des propriétés suivantes, ou les deux :
 
-* Un format de 2 :1.
+* Un format de 2:1.
 * Balisé à l’aide des mots-clés `equirectangular` ou (`spherical` + `panorama`) ou (`spherical` + `panoramic`). Voir [Utilisation des balises](/help/sites-authoring/tags.md).
 
 Les critères de rapport d’aspect et de mots-clés s’appliquent tous deux aux ressources panoramiques pour la page des détails des ressources et le composant WCM **[!UICONTROL Média panoramique]**.
@@ -358,7 +375,7 @@ La visionneuse inclut une prise en charge native de la diffusion de ressources v
 
 Vous pouvez modifier le paramètre suivant en sélectionnant **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Paramètre défini de la visionneuse]** : sélectionnez une visionneuse existante dans le menu déroulant Paramètre prédéfini de la visionneuse. Utilisez `Video360VR` pour les utilisateurs et utilisatrices finaux qui utilisent des lunettes de réalité virtuelle. Cela inclut les commandes de lecture vidéo de base et les fonctionnalités de médias sociaux. Utilisez `Video360_social`, qui inclut les commandes de lecture vidéo de base. Le rendu vidéo est effectué en mode stéréo. Le contrôle manuel du point de vue est désactivé, mais la commande gyroscopique est activée. Il n’existe aucune fonction de réseaux sociaux.
+* **[!UICONTROL Paramètre défini de la visionneuse]** : sélectionnez une visionneuse existante dans le menu déroulant Paramètre prédéfini de la visionneuse. Utilisez `Video360VR` pour les utilisateurs et utilisatrices finaux qui utilisent des lunettes de réalité virtuelle. Cela inclut les commandes de lecture vidéo de base et les fonctionnalités de réseaux sociaux. Utilisez `Video360_social`, qui inclut les commandes de lecture vidéo de base. Le rendu vidéo est effectué en mode stéréo. Le contrôle manuel du point de vue est désactivé, mais la commande gyroscopique est activée. Il n’existe aucune fonction de réseaux sociaux.
 
 Si le paramètre prédéfini de la visionneuse que vous recherchiez n’est pas visible, vérifiez qu’il est publié. Assurez-vous de publier les paramètres prédéfinis de la visionneuse avant de les utiliser. Consultez [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
 

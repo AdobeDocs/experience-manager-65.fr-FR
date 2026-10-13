@@ -9,13 +9,24 @@ feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4769'
 ht-degree: 99%
-
 ---
-
 # Créer et gérer des politiques {#creating-and-managing-policies}
 
 >[!NOTE]
@@ -30,9 +41,9 @@ Document Security fournit les types de politiques suivants.
 
 **Politiques personnelles**
 
-Les utilisateurs et utilisatrices peuvent créer, modifier, copier, supprimer et appliquer leurs propres politiques avec des paramètres appropriés à une situation donnée. Seules la personne qui crée une politique et l’équipe d’administration peuvent accéder à cette politique personnelle. Les politiques personnelles apparaissent dans l’onglet Mes politiques de la page Politiques.
+Les utilisateurs et utilisatrices peuvent créer, modifier, copier, supprimer et appliquer leurs propres politiques avec des paramètres appropriés à une situation donnée. Seules la personne qui crée une politique et l’administrateur ou l’administratrice peuvent accéder à cette politique personnelle. Les politiques personnelles apparaissent dans l’onglet Mes politiques de la page Politiques.
 
-Les utilisateurs et utilisatrices invités peuvent également créer, copier et supprimer des politiques personnelles si l’équipe d’administration active cette fonctionnalité.
+Les utilisateurs et utilisatrices invités peuvent également créer, modifier, copier et supprimer des politiques personnelles si l’équipe d’administration active cette fonctionnalité.
 
 **Politiques partagées**
 
@@ -54,7 +65,7 @@ La manière dont vous interagissez avec les politiques et les ensembles de polit
 
 **Utilisateurs :** les utilisateurs peuvent créer, modifier et supprimer leurs politiques personnelles. Les utilisateurs invités peuvent également créer des politiques personnelles si l’administrateur active cette fonctionnalité.
 
-**Coordinateurs et coordinatrices d’ensembles de politiques :** les coordinateurs et coordinatrices d’ensembles de politiques peuvent créer et gérer les politiques partagées figurant dans les ensembles de politiques dont la coordination leur a été confiée. Au sein de l’organisation, c’est généralement la personne la plus à même de créer des politiques dans un ensemble donné.
+**Coordinateurs et coordinatrices d’ensembles de politiques :** les coordinateurs et coordinatrices d’ensembles de politiques peuvent créer et gérer les politiques partagées figurant dans les ensembles de politiques dont la coordination leur a été confiée. Un coordinateur ou une coordinatrice d’ensemble de politiques est généralement, au sein de l’organisation, la personne la plus à même de créer des politiques dans un ensemble de politiques donné.
 
 **Administrateurs et administratrices :** les équipes d’administration peuvent modifier les politiques personnelles de n’importe quel utilisateur ou n’importe quelle utilisatrice. Elles peuvent créer des politiques partagées. Elles peuvent également créer, modifier et supprimer des ensembles de politiques, et désigner des coordinateurs et coordinatrices d’ensembles de politiques.
 
@@ -80,10 +91,10 @@ Le statut du document détermine le moment où la modification prend effet :
 Lorsque vous modifiez des politiques, ces restrictions s’appliquent :
 
 * Les personnes invitées ne peuvent modifier des politiques que si l’administrateur ou l’administratrice active cette fonctionnalité. Si vous ne pouvez pas modifier de politiques, l’option Modifier n’est pas disponible.
-* Pour modifier des politiques à l’intérieur d’ensembles de politiques, les coordinateurs et coordinatrices doivent disposer des autorisations appropriées. Ces autorisations sont définies par le super-utilisateur ou la super-utilisatrice ou l’administrateur ou administratrice d’ensembles de politiques dans l’interface d’administration de Document Security.
+* Les coordinateurs et coordinatrices d’ensembles de politiques peuvent modifier des politiques à l’intérieur d’ensembles de politiques uniquement s’ils disposent des autorisations appropriées. Ces autorisations sont définies par le super-utilisateur ou la super-utilisatrice, ou par l’administrateur ou l’administratrice d’ensembles de politiques, dans l’interface d’administration de Document Security.
 * Si un filigrane est configuré pour la politique et que l’administrateur ou l’administratrice l’a supprimé depuis la création de la politique, ce filigrane ne sera plus appliqué aux documents si vous modifiez et enregistrez la politique. Les filigranes supprimés restent en vigueur uniquement pour les politiques existantes tant que vous ne modifiez pas la politique. Si vous modifiez la politique, vous devez sélectionner un autre filigrane pour remplacer celui qui a été supprimé.
 * Vous ne pouvez pas accorder l’accès anonyme à un document en modifiant la politique appliquée. Si vous modifiez la politique, les utilisateurs et utilisatrices doivent toujours ouvrir une session pour accéder au document. Pour autoriser un accès anonyme à ce document, vous devez commencer par supprimer la politique dans l’application cliente, puis appliquer une autre politique autorisant l’accès anonyme.
-* Les politiques générées automatiquement par Adobe pour les destinataires d’un document joint à un e-mail dans Microsoft Outlook n’apparaissent pas dans la liste des politiques. Pour accéder à cette politique, recherchez le document dans la page Documents, ouvrez la page Détails du document et cliquez sur le nom de la politique dans la liste des détails du document.
+* Les politiques générées automatiquement par Acrobat pour les destinataires d’un document joint à un e-mail dans Microsoft Outlook n’apparaissent pas dans la liste des politiques. Pour accéder à cette politique, recherchez le document dans la page Documents, ouvrez la page Détails du document et cliquez sur le nom de la politique dans la liste des détails du document.
 
 **Création ou modification d’une politique**
 
@@ -93,15 +104,15 @@ Lorsque vous modifiez des politiques, ces restrictions s’appliquent :
    * Pour créer ou modifier une politique partagée, cliquez sur l’onglet Ensembles de politiques si vous en avez l’autorisation, puis sur le nom de l’ensemble de politiques approprié, et enfin sur l’onglet Politiques.
 
 1. Cliquez sur Nouveau ou sélectionnez la politique à modifier dans la liste.
-1. Dans la zone Nom, saisissez un nom qui identifie de manière unique la politique. Dans la zone Description, décrivez le rôle de la politique et ses conditions d’utilisation. Si la politique se trouve dans un ensemble de politiques, le nom et la description s’affichent dans la liste des politiques pour toutes les personnes spécifiées. Les politiques personnelles sont disponibles uniquement pour les utilisateurs et utilisatrices et les administrateurs et administratrices.
+1. Dans la zone Nom, saisissez un nom qui identifie de manière unique la politique. Dans la zone Description, décrivez le rôle de la politique et ses conditions d’utilisation. Si la politique se trouve dans un ensemble de politiques, le nom et la description s’affichent dans la liste des politiques pour toutes les personnes spécifiées. Les politiques personnelles sont disponibles uniquement pour les utilisateurs et utilisatrices et les administrateurs et les administratrices.
 
    Les caractères suivants ne peuvent pas être utilisés dans le nom ou la description :
 
    * Signe inférieur à (&lt;)
    * Signe supérieur à (>)
    * Esperluette (&amp;)
-   * Apostrophe droite (&#39;)
-   * Guillemet anglais (&quot;)
+   * Apostrophe (’)
+   * Guillemet double (&quot;)
    * barre oblique inverse (\)
    * Barre oblique (/)
 
@@ -118,7 +129,7 @@ Lorsque vous modifiez des politiques, ces restrictions s’appliquent :
 1. Sous Paramètres généraux, sélectionnez les options appropriées. (Voir [Paramètres généraux](creating-policies.md#general-settings)).
 1. (Facultatif) Le cas échéant, sélectionnez un fournisseur d’autorisations externe et indiquez ses propriétés. Si vous ne souhaitez pas utiliser de fournisseur d’autorisations externe, cliquez sur Supprimer le fournisseur par défaut.
 
-   Un fournisseur d’autorisations externe est utilisé pour configurer des propriétés dans la politique. Lorsqu’il est sélectionné, le fournisseur d’autorisations externe utilise ces informations pour évaluer la politique. Les propriétés disponibles sont configurées par l’administrateur ou l’administratrice et la personne qui installe le logiciel.
+   Un fournisseur d’autorisations externe est utilisé pour configurer des propriétés dans la politique. Lorsqu’il est sélectionné, le fournisseur d’autorisations externe utilise ces informations pour évaluer la politique. Les propriétés disponibles sont configurées par l’administrateur et l’administratrice et la personne qui installe le logiciel.
 
 1. Sous Paramètres avancés, sélectionnez les options appropriées. (Voir [Paramètres avancés](creating-policies.md#advanced-settings).)
 1. Sous Paramètres avancés non modifiables, sélectionnez les options appropriées. (Voir [Paramètres avancés non modifiables](creating-policies.md#unchangeable-advanced-settings).)
@@ -128,7 +139,7 @@ Lorsque vous modifiez des politiques, ces restrictions s’appliquent :
 
 ### Utilisateurs et groupes {#users-and-groups}
 
-Dans la zone Utilisateurs et utilisatrices et groupes, vous spécifiez les utilisateurs et utilisatrices ayant accès aux documents protégés par la politique. Pour chaque utilisateur ou utilisatrice ou groupe que vous spécifiez, vous définissez également les privilèges d’utilisation du document.
+Dans la zone Utilisateurs et groupes, vous spécifiez les utilisateurs et utilisatrices ayant accès aux documents protégés par la politique. Pour chaque utilisateur ou utilisatrice ou groupe que vous spécifiez, vous définissez également les privilèges d’utilisation du document.
 
 >[!NOTE]
 >
@@ -136,7 +147,7 @@ Dans la zone Utilisateurs et utilisatrices et groupes, vous spécifiez les utili
 
 **Ajouter un utilisateur ou une utilisatrice ou un groupe :** pour ajouter un utilisateur ou une utilisatrice ou un groupe d’utilisateurs et d’utilisatrices, cliquez sur Ajouter un utilisateur ou une utilisatrice ou un groupe, puis sur Recherche avancée pour trouver des utilisateurs et utilisatrices ou des groupes. Les utilisateurs et utilisatrices incluent les utilisateurs et utilisatrices internes de votre entreprise et les utilisateurs et utilisatrices invités qui se sont enregistrés auprès de Document Security. Lorsque vous sélectionnez cette option, la page Ajouter un utilisateur ou une utilisatrice ou un groupe s’affiche :
 
-* Dans la zone Rechercher, saisissez le nom ou l’adresse électronique de l’utilisateur ou de l’utilisatrice ou du groupe.
+* Dans la zone Rechercher, saisissez le nom ou l’adresse e-mail de l’utilisateur ou de l’utilisatrice ou du groupe.
 * Dans la liste Utilisation, sélectionnez Nom ou E-mail.
 * Dans la liste Type, sélectionnez Utilisateur ou utilisatrice ou Groupe.
 * Sélectionnez le domaine dans lequel effectuer la recherche dans la liste Dans, puis cliquez sur Rechercher.
@@ -146,27 +157,27 @@ Dans la zone Utilisateurs et utilisatrices et groupes, vous spécifiez les utili
 >
 >Si vous saisissez un nom de personne invitée ou une adresse e-mail correcte et qu’aucun résultat n’est renvoyé, la personne n’est peut-être pas encore enregistrée ou le compte peut être supprimé. Vous pouvez essayer d’ajouter l’utilisateur ou l’utilisatrice en tant que personne invitée ou contacter votre administrateur ou administratrice.
 
-**Inviter un nouvel utilisateur ou une nouvelle utilisatrice :** pour ajouter une personne invitée, cliquez sur Inviter un nouvel utilisateur ou une nouvelle utilisatrice, entrez l’adresse e-mail de la personne dans la zone qui s’affiche, puis cliquez sur Inviter. Cette option est disponible uniquement si l’administrateur ou l’administratrice l’a activée. Lorsque vous ajoutez de nouvelles personnes invitées à une politique, Document Security envoie un e-mail d’invitation à s’enregistrer si cela n’a pas été déjà fait. Les personnes doivent utiliser le lien contenu dans l’e-mail pour créer un compte, puis activer le compte.
+**Inviter un nouvel utilisateur ou une nouvelle utilisatrice :** pour ajouter une personne invitée, cliquez sur Inviter un nouvel utilisateur ou une nouvelle utilisatrice, entrez l’adresse e-mail de la personne dans la zone qui s’affiche, puis cliquez sur Inviter. Cette option est disponible uniquement si l’administrateur ou l’administratrice l’a activée. Lorsque vous ajoutez de nouvelles personnes invitées à une politique, Document Security envoie un e-mail d’invitation à s’enregistrer si les utilisateurs et utilisatrices ne sont pas déjà invités à s’enregistrer. Les personnes doivent utiliser le lien contenu dans l’e-mail pour créer un compte, puis activer le compte.
 
-Après leur enregistrement, les personnes invitées peuvent utiliser les documents protégés par une politique pour lesquels elles disposent d’une autorisation. Selon les fonctionnalités activées par l’administrateur ou l’administratrice, les utilisateurs et utilisatrices externes peuvent être autorisés à appliquer des politiques à des documents, à créer, à modifier et à supprimer des politiques et à ajouter d’autres utilisateurs et utilisatrices externes aux politiques.
+Après leur enregistrement, les personnes invitées peuvent utiliser les documents protégés par une politique pour lesquels elles disposent d’une autorisation. Selon les fonctionnalités activées par l’administrateur ou l’administratrice, les utilisateurs et utilisatrices externes peuvent avoir l’autorisation d’appliquer des politiques à des documents, de créer, de modifier et de supprimer des politiques et d’ajouter d’autres utilisateurs et utilisatrices externes aux politiques.
 
-**Ajouter un utilisateur anonyme :** pour autoriser l’accès d’un utilisateur anonyme, cliquez sur Ajouter un utilisateur anonyme. Cette option n’est disponible que si l’administrateur a activé l’accès Utilisateur anonyme à Document Security Voir Configuration du serveur Document Security. Cette option permet à tous les utilisateurs d’accéder aux documents protégés par cette politique, qu’ils disposent ou non d’un compte Document Security. Si vous sélectionnez cette option, vous ne pouvez pas ajouter d’autres types d’utilisateurs et d’utilisatrices à la politique.
+**Ajouter un utilisateur anonyme :** pour autoriser l’accès d’un utilisateur anonyme, cliquez sur Ajouter un utilisateur anonyme. Cette option n’est disponible que si l’administrateur ou l’administratrice a activé l’accès Utilisateur anonyme à Document Security. Voir Configuration du serveur Document Security. Cette option permet à tous les utilisateurs d’accéder aux documents protégés par cette politique, qu’ils disposent ou non d’un compte Document Security. Si vous sélectionnez cette option, vous ne pouvez pas ajouter d’autres types d’utilisateurs et d’utilisatrices à la politique.
 
 >[!NOTE]
 >
 >Pour autoriser l’accès anonyme à un document protégé par une politique qui ne permet pas ce type d’accès, supprimez la politique existante, puis appliquez une politique qui autorise l’accès anonyme. Si vous changez de politique ou si vous la modifiez, les utilisateurs et utilisatrices doivent toujours se connecter pour accéder au document.
 
-#### Spécification des droits de documents pour les utilisateurs, les utilisatrices et les groupes {#specify-the-document-permissions-for-users-and-groups}
+#### Spécifier les droits de document pour les utilisateurs, les utilisatrices et les groupes {#specify-the-document-permissions-for-users-and-groups}
 
 Vous pouvez spécifier des autorisations de document pour un utilisateur, une utilisatrice ou un groupe à la fois, ou sélectionner plusieurs utilisateurs et utilisatrices et groupes dans la liste et modifier leurs autorisations à l’aide des options de la zone des en-têtes de colonne.
 
 Par défaut, tous les documents protégés par une politique disposent d’une autorisation qui permet aux utilisateurs et utilisatrices de les ouvrir en ligne.
 
-Les onglets Droits et Options s’affichent dans Document Security.
+L’onglet Droits et Options s’affiche dans Document Security.
 
 Ces droits de document sont disponibles dans l’onglet Droits. Vous pouvez les appliquer aux fichiers PDF, PTC Pro/E et Microsoft Office.
 
-**Imprimer :** autorise l’utilisateur à imprimer un document protégé par cette politique. Pour les fichiers Office et Pro/E, vous pouvez cocher la case Imprimer pour autoriser l’impression ou la décocher pour empêcher l’impression. Si vous cochez la case Afficher les droits personnalisés pour PDF, vous pouvez choisir l’une des options suivantes :
+**Imprimer :** autorise l’utilisateur à imprimer un document protégé par cette politique. Pour les fichiers Office et Pro/E, vous pouvez cocher la case Imprimer pour autoriser l’impression ou la décocher pour empêcher l’impression. Si vous cochez la case Afficher les droits personnalisés pour PDF, vous pouvez sélectionner l’une des options suivantes :
 
 **Non autorisé :** l’utilisateur n’est pas autorisé à imprimer le PDF.
 
@@ -188,15 +199,15 @@ Ces droits de document sont disponibles dans l’onglet Droits. Vous pouvez les 
 
 **Copier :** autorise l’utilisateur à copier du texte d’un document protégé par cette politique.
 
-**Lecteur d’écran :** cette autorisation s’affiche si vous cochez la case Afficher les droits personnalisés pour PDF. Lorsque cette option est sélectionnée, Adobe Acrobat a l’autorisation d’ajouter des balises temporaires sur le PDF pour améliorer sa lisibilité sur un lecteur d’écrans.
+**Lecteur d’écran :** cette autorisation s’affiche si vous cochez la case Afficher les droits personnalisés pour PDF. Lorsque cette option est sélectionnée, Adobe Acrobat a l’autorisation d’ajouter des balises temporaires au PDF pour améliorer sa lisibilité avec un lecteur d’écran.
 
 Ces droits de document sont disponibles dans l’onglet Options. Vous pouvez les appliquer aux fichiers PDF, PTC Pro/E et Microsoft Office :
 
 **Hors ligne :** autorise l’utilisateur à afficher hors ligne un document protégé par cette politique.
 
-**Validité des autorisations :** sélectionnez Autorisations toujours valables ou définissez une période de validité pour les autorisations du document. Si vous sélectionnez une période de validité, cliquez sur les icônes de calendrier pour sélectionner une date et utilisez les flèches pour spécifier l’heure au format 24 heures.
+**Validité des autorisations :** sélectionnez Autorisations toujours valables ou définissez une période de validité pour les autorisations du document. Si vous sélectionnez une période de validité, cliquez sur l’icône de calendrier pour sélectionner une date et utilisez les flèches pour spécifier l’heure au format 24 heures.
 
-Pour les politiques partagées, les administrateurs et les administratrices peuvent désactiver les privilèges de l’éditeur ou de l’éditrice (l’utilisateur ou l’utilisatrice qui applique la politique à un document) ci-dessous :
+Pour les politiques partagées, les administrateurs et administratrices peuvent désactiver les privilèges de l’éditeur (l’utilisateur ou l’utilisatrice qui applique la politique à un document) ci-dessous :
 
 **Révoquer :** autorise l’éditeur du document à révoquer les privilèges d’accès au document.
 
@@ -206,7 +217,7 @@ Pour les politiques partagées, les administrateurs et les administratrices peuv
 
 La zone Paramètres généraux contient les paramètres suivants :
 
-**Période de validité :** période pendant laquelle le document protégé par une politique est accessible aux destinataires autorisés. Plusieurs périodes de validité sont proposées :
+**Période de validité :** période pendant laquelle le document protégé par une politique est accessible aux destinataires autorisés. Vous pouvez choisir parmi les périodes de validité suivantes :
 
 **Le document ne sera pas valide après :** le document est accessible pendant le nombre de jours spécifié à partir du moment où il a été protégé.
 
@@ -218,9 +229,9 @@ La zone Paramètres généraux contient les paramètres suivants :
 
 >[!NOTE]
 >
->les dates de validité reposent sur le fuseau horaire du système Document Security, et non sur celui de votre ordinateur local.
+>Les dates de validité reposent sur le fuseau horaire du système Document Security, et non sur celui de votre ordinateur local.
 
-**Réaliser un audit :** permet d’activer ou de désactiver la réalisation d’un audit des événements associés à un document protégé par une politique. Par exemple, Document Security peut enregistrer des événements tels que les tentatives d’ouverture d’un document. Les événements contrôlés sont répertoriés dans la liste de la page Evénements. Si vous ne sélectionnez pas cette option, Document Security n’enregistre pas les événements concernant les documents associés à cette politique.
+**Réaliser un audit :** permet d’activer ou de désactiver la réalisation d’un audit des événements associés à un document protégé par une politique. Par exemple, Document Security peut enregistrer des événements tels que les tentatives d’ouverture d’un document. Les événements contrôlés sont répertoriés dans la liste de la page Événements. Si vous ne sélectionnez pas cette option, Document Security n’enregistre pas les événements concernant les documents associés à cette politique.
 
 >[!NOTE]
 >
@@ -228,7 +239,7 @@ La zone Paramètres généraux contient les paramètres suivants :
 
 **Suivi des utilisations étendues :** activez ou désactivez le suivi des utilisations étendues. Document Security prend en charge le suivi des événements utilisateur associés à diverses opérations effectuées sur un fichier PDF. Vous pouvez accéder à l’objet Document Security à l’aide d’un script Java. Le fait de cliquer sur un bouton, un fichier multimédia en cours de lecture ou l’enregistrement d’un fichier sont quelques exemples d’événements pouvant être envoyés par un fichier PDF protégé par une politique. À l’aide de l’objet Document Security, vous pouvez également récupérer des informations sur l’utilisateur ou l’utilisatrice. Le suivi des événements peut être activé sur le serveur Document Security au niveau global ou au niveau de la politique.
 
-**Période de bail hors ligne :** nombre maximum de jours pendant lesquels le destinataire peut utiliser le document protégé par une politique hors ligne (c’est-à-dire sans être connecté à Internet ou à un réseau). À l’issue de cette période de bail, le ou la destinataire doit resynchroniser le document pour continuer à l’utiliser.
+**Période de bail hors ligne :** nombre maximum de jours pendant lesquels le destinataire peut utiliser le document protégé par une politique hors ligne (c’est-à-dire sans être connecté à Internet ou à un réseau). À l’issue de cette période de bail, le ou la destinataire doit synchroniser de nouveau le document pour continuer à l’utiliser.
 
 ### Fournisseurs d’autorisations externes {#external-authorization-providers}
 
@@ -256,7 +267,7 @@ Si vous remplacez les paramètres d’authentification globaux, vous pouvez choi
 
 La zone Paramètres avancés contient les paramètres suivants :
 
-**Filigrane dynamique :** sélectionnez un filigrane à afficher dynamiquement dans les pages d’un document (par exemple lorsqu’un destinataire imprime le document). Les filigranes dynamiques identifient de manière unique un document, ce qui permet d’assurer la confidentialité de ce dernier et d’empêcher toute violation du copyright. Par exemple, l’administrateur ou l’administratrice peut configurer un filigrane dynamique qui affiche la date actuelle, le nom d’utilisateur ou d’utilisatrice ou l’identifiant de la personne qui utilise le document. Ou le nom de la politique utilisée pour protéger le document. Un filigrane peut également afficher du texte ou des éléments graphiques personnalisés, s’ils sont configurés. Les administrateurs et administratrices configurent les options de filigrane, et tout comme les utilisateurs et utilisatrices, peuvent les appliquer à des politiques.
+**Filigrane dynamique :** sélectionnez un filigrane à afficher dynamiquement dans les pages d’un document (par exemple lorsqu’un destinataire imprime le document). Les filigranes dynamiques identifient de manière unique un document, ce qui permet d’assurer la confidentialité de ce dernier et d’empêcher toute violation des droits d’auteur. Par exemple, l’administrateur ou l’administratrice peut configurer un filigrane dynamique qui affiche la date actuelle, le nom d’utilisateur ou d’utilisatrice ou l’identifiant de la personne qui utilise le document. Ou le nom de la politique utilisée pour protéger le document. Un filigrane peut également afficher du texte ou des éléments graphiques personnalisés, s’ils sont configurés. Les administrateurs et administratrices configurent les options de filigrane, et les administrateurs et administratrices comme les utilisateurs et utilisatrices peuvent les appliquer à des politiques.
 
 (Voir [Configuration des filigranes dynamiques](/help/forms/using/admin-help/configuring-client-server-options.md#configure-dynamic-watermarks).)
 
@@ -270,7 +281,7 @@ Si vous modifiez une politique et que l’administrateur ou l’administratrice 
 
 Sélectionnez cette option si une personne destinataire d’un document crée un plug-in susceptible de contourner les protections de documents dans Acrobat 8.0 et versions ultérieures. Ne la sélectionnez pas si les personnes destinataires du document doivent utiliser des plug-ins tiers dans Acrobat pour interagir avec les documents.
 
-Cette option active uniquement le mode certifié dans Acrobat 8.0 ou version ultérieure ; l’administrateur ou l’administratrice doit désactiver l’accès pour Acrobat 7.0.
+Cette option active uniquement le mode certifié dans Acrobat 8.0 ou version ultérieure ; l’administrateur ou l’administratrice doit désactiver l’accès pour Acrobat 7.0.
 
 (Voir [Configuration du serveur Document Security](/help/forms/using/admin-help/configuring-client-server-options.md#configure-the-document-security-server).)
 
@@ -280,7 +291,7 @@ Cette option ne s’applique pas à Adobe Reader.
 
 ### Paramètres avancés non modifiables {#unchangeable-advanced-settings}
 
-La zone Paramètres avancés non modifiables contient les paramètres suivants : Vous ne pouvez pas modifier ces paramètres une fois la politique enregistrée.
+La zone Paramètres avancés non modifiables contient les paramètres suivants. Vous ne pouvez pas modifier ces paramètres une fois la politique enregistrée.
 
 **Algorithme de chiffrement et longueur de la clé :** utilisé pour protéger vos documents. Faites votre choix parmi les options suivantes :
 
@@ -290,13 +301,13 @@ La zone Paramètres avancés non modifiables contient les paramètres suivants 
 
 **Restrictions du document :** sélectionnez les composants du document PDF à chiffrer. D’autres applications clientes chiffrent l’intégralité du document, mais pas les fichiers liés ou incorporés. Faites votre choix parmi les options suivantes :
 
-* L’intégralité du document, avec ses pièces jointes et ses métadonnées. Les *métadonnées* décrivent le document et son contenu, et vous pouvez les consulter dans la boîte de dialogue Propriétés du document ou à partir du menu avancé d’Acrobat. Dans Acrobat, vous pouvez joindre des fichiers de différents types (fichiers texte, audio et vidéo, par exemple) à des documents PDF.
+* L’intégralité du document, avec ses pièces jointes et ses métadonnées. Les *métadonnées* décrivent le document et son contenu, et vous pouvez les consulter dans la boîte de dialogue Propriétés du document ou à partir du menu avancé d’Acrobat. Dans Acrobat, vous pouvez joindre des fichiers de différents types (fichiers texte, son et vidéo, par exemple) à des documents PDF.
 * Le document et ses pièces jointes, mais pas ses métadonnées.
 * Uniquement les pièces jointes du document. Vous pouvez chiffrer les pièces d’un fichier PDF sans chiffrer le contenu du document.
 
 ## Activation ou désactivation de politiques partagées {#enable-or-disable-shared-policies}
 
-Pour qu’une politique partagée soit disponible, l’administrateur ou l’administratrice, ou le coordinateur ou la coordinatrice d’ensembles de politiques doit l’activer. Vous pouvez activer de nouvelles politiques ou des politiques qui ont été désactivées. Une politique partagée que vous désactivez s’applique toujours aux documents qui sont protégés par celle-ci.
+Pour qu’une politique partagée soit disponible, l’administrateur ou l’administratrice, ou le coordinateur ou la coordinatrice d’ensemble de politiques doit l’activer. Vous pouvez activer de nouvelles politiques ou des politiques qui ont été désactivées. Une politique partagée que vous désactivez s’applique toujours aux documents qui sont protégés par celle-ci.
 
 Une croix (X) rouge apparaît en regard d’une politique désactivée.
 
@@ -308,27 +319,27 @@ Une croix (X) rouge apparaît en regard d’une politique désactivée.
 1. Cliquez sur le nom de l’ensemble de politiques approprié, puis sur l’onglet Politiques.
 1. Cochez la case située en regard de la politique appropriée, cliquez sur Activer ou sur Désactiver, puis sur OK.
 
-## Affichage des informations sur une politique {#view-information-about-a-policy}
+## Afficher des informations sur une politique {#view-information-about-a-policy}
 
 L’onglet Mes politiques vous permet de rechercher des politiques personnelles.
 
-Les ensembles de politiques créés par les administrateurs et les administratrices sont répertoriés dans l’onglet Ensembles de politiques de la page Politiques. Ils contiennent des informations sur l’ensemble de politiques, notamment son nom, la date de création et de modification, ainsi qu’une description. Cliquez sur le nom d’un ensemble de politiques pour en afficher les détails. Les coordinateurs et les coordinatrices d’ensembles de politiques autorisés à gérer les politiques peuvent créer des politiques partagées au sein d’un ensemble de politiques spécifique.
+Les ensembles de politiques créés par les administrateurs et les administratrices sont répertoriés dans l’onglet Ensembles de politiques de la page Politiques. Ils contiennent des informations sur l’ensemble de politiques, notamment son nom, la date de création et de modification, ainsi qu’une description. Cliquez sur le nom d’un ensemble de politiques pour en afficher les détails. Les coordinateurs et les coordinatrices d’ensembles de politiques qui ont l’autorisation de gérer les politiques peuvent créer des politiques partagées au sein d’un ensemble de politiques spécifique.
 
-Lorsque vous créez ou modifiez une politique, une page apparaît dans laquelle vous pouvez configurer le nom de la politique, les autorisations, les paramètres de confidentialité et les destinataires à inclure dans la politique.
+Lorsque vous créez ou modifiez une politique, une page apparaît dans laquelle vous pouvez configurer le nom de la politique, les niveaux d’autorisation, les paramètres de confidentialité et les destinataires à inclure dans la politique.
 
 L’administrateur ou l’administratrice peut configurer les paramètres de confidentialité suivants pour une politique :
 
-* les options de confidentialité générales, comme la période de validité et la période de bail hors ligne des documents ;
-* les utilisateurs et les utilisatrices autorisés, ainsi que les restrictions et privilèges de document pour ces utilisateurs et utilisatrices ;
+* les options de confidentialité générales, comme la période de validité et la période de bail hors ligne des documents ;
+* les utilisateurs et les utilisatrices autorisés, ainsi que les restrictions et privilèges de document pour ces utilisateurs et utilisatrices ;
 * les options de confidentialité avancées, notamment les filigranes dynamiques et le chiffrement de document.
 
-Les utilisateurs et les utilisatrices peuvent afficher les politiques créées et celles partagées auxquelles ils ont accès. Les administrateurs et les administratrices peuvent afficher toutes les politiques partagées et personnelles dans Document Security.
+Les utilisateurs et les utilisatrices peuvent afficher les politiques créées et celles partagées auxquelles ils ont accès. Les administrateurs et administratrices peuvent afficher toutes les politiques partagées et personnelles dans Document Security.
 
 Vous pouvez afficher d’autres informations plus détaillées sur une politique de la liste, notamment les utilisateurs et les utilisatrices, ou les groupes inclus dans la politique et les paramètres de confidentialité spécifiés pour ces utilisateurs et utilisatrices.
 
 >[!NOTE]
 >
->Les politiques générées automatiquement par Acrobat pour les destinataires d’un document joint à un e-mail dans Microsoft Outlook n’apparaissent pas dans la liste des politiques. Vous ne pouvez afficher ces politiques qu’en ouvrant la page Détails du document correspondant au document associé.
+>Les politiques générées automatiquement par Acrobat pour les destinataires d’un document joint à un e-mail dans Microsoft Outlook n’apparaissent pas dans la liste des politiques. Vous ne pouvez afficher ces politiques qu’en ouvrant la page Détails du document correspondant.
 
 1. Dans la page Document Security, cliquez sur Politiques, puis sur l’onglet Mes politiques.
 1. Remplissez les informations de recherche pour rechercher des politiques personnelles.
@@ -351,7 +362,7 @@ Les administrateurs et les administratrices peuvent rechercher des politiques pa
 
 1. Dans la zone de texte, saisissez la valeur correspondante. Par exemple, si vous avez sélectionné Nom de la politique, saisissez le nom de la politique que vous recherchez.
 1. Dans la liste Afficher, indiquez le nombre d’éléments à afficher, puis cliquez sur Rechercher. Les résultats de la recherche s’affichent.
-1. (Facultatif) Pour afficher les détails de la politique, cliquez dessus.
+1. (Facultatif) Pour afficher les détails de la politique, cliquez sur la politique.
 
 ## Copie d’une politique {#copy-a-policy}
 
@@ -369,8 +380,8 @@ Les utilisateurs et utilisatrices externes ne peuvent copier des politiques que 
    * Signe inférieur à (&lt;)
    * Signe supérieur à (>)
    * Esperluette (&amp;)
-   * Apostrophe droite (&#39;)
-   * Guillemet anglais (&quot;)
+   * Apostrophe (’)
+   * Guillemet double (&quot;)
    * barre oblique inverse (\)
    * Barre oblique (/)
 
@@ -381,7 +392,7 @@ Les utilisateurs et utilisatrices externes ne peuvent copier des politiques que 
 
    >[!NOTE]
    >
-   >Vous pouvez créer un nom de politique qui contient des caractères étendus. Cependant, en cas de comparaison entre deux chaînes, aucune différence n’est faite entre les caractères accentués et non accentués (« e » et « é », par exemple). Lorsqu’une personne crée une politique, une comparaison est effectuée pour vérifier s’il existe une politique portant le même nom. La comparaison ne fait pas de distinction entre les noms identiques, à l’exception des caractères accentués. La politique étant considérée comme existante dans la base de données, aucun ajout n’est possible.
+   >Vous pouvez créer un nom de politique qui contient des caractères étendus. Cependant, en cas de comparaison entre deux chaînes, aucune différence n’est faite entre les caractères accentués et non accentués (« e » et « é », par exemple). Lorsqu’une personne crée une politique, une comparaison est effectuée pour vérifier s’il existe une politique portant le même nom. La comparaison ne fait pas de distinction entre les noms identiques, à l’exception des caractères accentués. La politique étant considérée comme déjà ajoutée à la base de données, la nouvelle politique n’est pas ajoutée.
 
 1. Cliquez sur OK.
 
@@ -394,15 +405,15 @@ Les personnes invitées ne peuvent supprimer des politiques que si l’administr
 1. Dans la page Document Security, cliquez sur Politiques.
 1. Cliquez sur l’onglet Ma politique.
 1. Pour supprimer une politique partagée, cliquez sur l’onglet Ensembles de politiques, puis sur le nom de l’ensemble de politiques approprié.
-1. Cochez la case située en regard de l’utilisateur ou de l’utilisatrice, cliquez sur Supprimer, puis sur OK.
+1. Cochez la case située en regard de la politique appropriée, cliquez sur Supprimer, puis sur OK.
 
 >[!NOTE]
 >
->Utilisez l’application cliente pour supprimer des politiques de documents. (Consultez l’aide d’Acrobat ou l’aide des extensions Acrobat Reader DC appropriée.)
+>Utilisez l’application cliente pour supprimer des politiques de documents. (Consultez l’aide d’Acrobat ou l’aide des Extensions Acrobat Reader DC appropriées.)
 
 ## Trie de la liste des politiques {#sort-the-policy-list}
 
-Pour faciliter la recherche de politiques, vous pouvez en trier la liste par en-tête de colonne. Une icône en forme de triangle située en regard de l’en-tête de colonne indique la colonne triée. Lorsque le triangle est dirigé vers le haut, l’ordre de tri est croissant et lorsqu’il est dirigé vers le bas, l’ordre de tri est décroissant.
+Pour faciliter la recherche de politiques, vous pouvez en trier la liste par en-tête de colonne. Une icône en forme de triangle située en regard de l’en-tête de colonne indique la colonne actuellement utilisée pour le tri. Lorsque le triangle est dirigé vers le haut, l’ordre de tri est croissant et lorsqu’il est dirigé vers le bas, l’ordre de tri est décroissant.
 
 1. Dans la page Document Security, cliquez sur Politiques, puis sur l’onglet Ensemble de politiques.
 1. Sélectionnez un ensemble de politiques, puis cliquez sur l’onglet Politiques.

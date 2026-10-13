@@ -1,6 +1,6 @@
 ---
 title: Configurer les paramètres du service
-description: Découvrez comment configurer les paramètres des services. Vous pouvez utiliser la page Gestion des services pour configurer les paramètres de chacun des services faisant partie d’AEM Forms.
+description: Découvrez comment configurer les paramètres des services. Vous pouvez utiliser la page Gestion des services pour configurer les paramètres de chacun des services faisant partie d’AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
@@ -9,13 +9,29 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '10923'
 ht-degree: 97%
-
 ---
-
 # Configurer les paramètres du service {#configure-service-settings}
 
 >[!NOTE]
@@ -35,7 +51,7 @@ Vous pouvez utiliser la page Gestion des services pour configurer les paramètre
 
 
 1. Cliquez sur l’onglet Sécurité et définissez les paramètres de sécurité du service. Voir [Modification des paramètres de sécurité d’un service](configure-service-settings.md#modifying-security-settings-for-a-service).
-1. Si le service dispose d’un onglet Points d&#39;entrée, utilisez-le pour modifier les paramètres des points d&#39;entrée. (Voir [Gestion des points d’entrée](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)).
+1. Si le service dispose d’un onglet Points d’entrée, utilisez-le pour modifier les paramètres des points d’entrée. (Voir [Gestion des points d’entrée](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)).
 1. Cliquez sur l’onglet Mise en pool et définissez les paramètres de la mise en pool. Voir [Configuration du pool d’un service](configure-service-settings.md#configuring-pooling-for-a-service).
 1. Cliquez sur Enregistrer pour enregistrer vos modifications ou sur Annuler pour les ignorer.
 1. Cochez la case en regard du nom du service et cliquez sur Démarrer pour redémarrer le service.
@@ -46,7 +62,7 @@ Workbench permet d’enregistrer les instances de processus lorsqu’elles s’e
 
 **maxNumberOfRecordingInstances :** nombre maximal d’enregistrements conservés. Lorsque le nombre maximum est atteint, l’enregistrement le plus ancien est supprimé du système de fichiers lors de la création d’un nouvel enregistrement. Cette propriété est utile si vous avez tendance à créer de nombreux enregistrements et que vous souhaitez supprimer les anciens enregistrements automatiquement. La valeur par défaut est 50.
 
-**maxNumberOfRecordingEntries :** nombre maximal d’entrées de données pouvant être conservées pour chaque enregistrement. Les entrées de données sont des informations sur les opérations du processus. Plusieurs entrées sont stockées pour chaque exécution d’une opération, par exemple si l’opération a démarré, si l’opération s’est réalisée et si le chemin menant à l’opération est complet. Cette propriété est utile lorsque des processus peuvent inclure un grand nombre d’exécutions d’opérations, par exemple en cas de boucle sans fin. La valeur par défaut est 50.
+**maxNumberOfRecordingEntries :** nombre maximal d’entrées de données pouvant être conservées pour chaque enregistrement. Les entrées de données sont des informations sur les opérations du processus. Plusieurs entrées sont stockées pour chaque exécution d’une opération, par exemple si l’opération a démarré, si l’opération s’est terminée et si le chemin menant à l’opération est complet. Cette propriété est utile lorsque des processus peuvent inclure un grand nombre d’exécutions d’opérations, par exemple en cas de boucle sans fin. La valeur par défaut est 50.
 
 ## Paramètres du service Barcoded Forms {#barcoded-forms-service-settings}
 
@@ -72,7 +88,7 @@ Les paramètres ci-dessous sont disponibles pour le service Barcoded Forms.
 
 ## Paramètres (obsolètes) du service Central Migration Bridge {#central-migration-bridge-service-settings}
 
-Le service Central migration Bridge (`CentralMigrationBridge`) appelle un sous-ensemble de fonctionnalités Adobe Central Pro Output Server (Central), qui comprend les commandes JFMERGE, JFTRANS et XMLIMPORT. Les opérations du service Central Migration Bridge vous permettent de réutiliser les ressources Central suivants dans AEM Forms :
+Le service Central migration Bridge (`CentralMigrationBridge`) appelle un sous-ensemble de fonctionnalités Adobe Central Pro Output Server (Central), qui comprend les commandes JFMERGE, JFTRANS et XMLIMPORT. Les opérations du service Central Migration Bridge vous permettent de réutiliser les ressources Central suivantes dans AEM Forms :
 
 * conception de modèle (&ast;.ifd)
 * modèles de sortie (&ast;.mdf)
@@ -84,11 +100,11 @@ Le paramètre ci-dessous est disponible pour le service Central Migration Bridge
 
 **Répertoire d’installation de Central :** répertoire dans lequel Adobe Central 5.7 est installé.
 
-## Paramètres du service Content Repository Connector for EMC Documentum {#content-repository-connector-for-emc-documentum-service-settings}
+## Paramètres du service Connecteur de référentiel de contenu pour EMC Documentum {#content-repository-connector-for-emc-documentum-service-settings}
 
 Le service Content Repository Connector for EMC Documentum (`EMCDocumentumContentRepositoryConnector`) vous permet de créer des processus qui interagissent avec le contenu stocké dans un référentiel Documentum.
 
-Le paramètre suivant est disponible pour le service Content Repository Connector for EMC Documentum.
+Le paramètre suivant est disponible pour le service Connecteur de référentiel de contenu pour EMC Documentum.
 
 **Chemin dʼaccès par défaut de l’objet de lien d’élément :** portion par défaut du chemin dʼaccès dans le référentiel Documentum pour stocker l’objet de lien de ressource. Le chemin d’accès se compose du chemin par défaut et de l’emplacement du modèle de formulaire dans le référentiel AEM forms.
 
@@ -114,7 +130,7 @@ La valeur par défaut de ce paramètre est `/LiveCycleES/ConnectorforIBMFileNet/
 
 ## Paramètres du service Convert PDF {#convert-pdf-service-settings}
 
-Le service Convert PDF (`ConvertPdfService`) convertit des documents PDF en PostScript® et en de nombreux formats d’image (JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document PDF en PostScript est utile pour les impressions sans assistance reposant sur un serveur exécutées sur n’importe quelle imprimante PostScript. La conversion d’un document PDF en fichier TIFF comportant plusieurs pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents PDF.
+Le service Convert PDF (`ConvertPdfService`) convertit des documents PDF en PostScript® et en de nombreux formats d’image (JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document PDF en PostScript est utile pour les impressions sans assistance reposant sur un serveur exécutées sur n’importe quelle imprimante PostScript. La conversion d’un document PDF en fichier TIFF comportant plusieurs pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents PDF.
 
 Les paramètres ci-dessous sont disponibles pour le service Convert PDF.
 
@@ -152,21 +168,21 @@ Les paramètres ci-dessous sont disponibles pour le service Distiller.
 * Smallest file size (Taille de fichier réduite)
 * Standard
 
-Vous pouvez créer des paramètres dans l’interface utilisateur de PDF Generator.
+Vous pouvez créer de nouveaux paramètres dans l’interface d’utilisation de PDF Generator.
 
 **Paramètres de protection :** paramètres de protection préconfigurés appliqués aux documents PDF générés. La valeur par défaut est No Security. Créez des paramètres de sécurité dans PDF Generator, puis saisissez ce paramètre ici.
 
-**Taille du pool :** taille initiale du pool. Lors du déploiement du service Distiller, cette valeur permet de déterminer le nombre d’instances d’implémentation du service à créer et à affecter au pool libre en attente de demandes d’appel. Le conteneur de services peut alors répondre immédiatement aux demandes d’appel sans avoir à initialiser au préalable une instance de service.
+**Taille du pool :** taille initiale du pool. Lors du déploiement du service Distiller, cette valeur permet de déterminer le nombre d’instances de mise en œuvre du service à créer et à affecter au pool libre en attente de demandes d’appel. Le conteneur de services peut alors répondre immédiatement aux demandes d’appel sans avoir à initialiser au préalable une instance de service.
 
 ## Paramètres du service Document Management {#document-management-service-settings}
 
 >[!NOTE]
 >
->Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[&#x200B; Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
+>Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus centrés sur l’humain. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[&#x200B; Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
 
-Le service Document Management (`DocumentManagementService`) permet aux processus d’utiliser la fonctionnalité de gestion de contenu fournie par Content Services (obsolète). Les opérations de Document management fournissent les tâches de base nécessaires pour gérer des espaces et du contenu dans le système de gestion de contenu. Voici quelques exemple de tâches de ce type : copier, supprimer, déplacer, récupérer et stocker du contenu, créer des espaces et des associations, ainsi qu’obtenir et définir des attributs de contenu.
+Le service Document Management (`DocumentManagementService`) permet aux processus d’utiliser la fonctionnalité de gestion de contenu fournie par Content Services (obsolète). Les opérations de Gestion des documents fournissent les tâches de base nécessaires pour gérer des espaces et du contenu dans le système de gestion de contenu. Voici quelques exemple de tâches de ce type : copier, supprimer, déplacer, récupérer et stocker du contenu, créer des espaces et des associations, ainsi qu’obtenir et définir des attributs de contenu.
 
-Les paramètres ci-dessous sont disponibles pour le service Document management.
+Les paramètres ci-dessous sont disponibles pour le service Gestion des documents.
 
 **Schéma de l’emplacement :** schéma de l’emplacement dans lequel le contenu est situé. La valeur par défaut est workspace.
 
@@ -174,11 +190,11 @@ Les paramètres ci-dessous sont disponibles pour le service Document management.
 
 ## Paramètres du service Email {#email-service-settings}
 
-L&#39;e-mail est généralement utilisé pour distribuer du contenu ou fournir des informations d’état dans le cadre d’un processus automatisé. `EmailService` permet aux processus de recevoir des courriers électroniques d’un serveur POP3 ou IMAP et d’en envoyer à un serveur SMTP.
+L’e-mail est généralement utilisé pour distribuer du contenu ou fournir des informations de statut dans le cadre d’un processus automatisé. `EmailService` permet aux processus de recevoir des courriers électroniques d’un serveur POP3 ou IMAP et d’en envoyer à un serveur SMTP.
 
-Par exemple, un processus utilise le service Email pour envoyer un e-mail avec un formulaire PDF en pièce jointe. Le service Email se connecte à un serveur SMTP pour envoyer l&#39;e-mail avec la pièce jointe. Le formulaire au format PDF est conçu pour permettre à la personne destinataire de cliquer sur le bouton d’envoi après l’avoir rempli. Le formulaire est alors renvoyé sous forme de pièce jointe au serveur de messagerie indiqué. Le service Email récupère l&#39;e-mail renvoyé et stocke le formulaire complété dans une variable de formulaire de données de processus.
+Par exemple, un processus utilise le service Email pour envoyer un e-mail avec un formulaire PDF en pièce jointe. Le service Email se connecte à un serveur SMTP pour envoyer l’e-mail avec la pièce jointe. Le formulaire au format PDF est conçu pour permettre à la personne destinataire de cliquer sur le bouton d’envoi après l’avoir rempli. Le formulaire est alors renvoyé sous forme de pièce jointe au serveur de messagerie indiqué. Le service E-mail récupère l’e-mail renvoyé et stocke le formulaire complété dans une variable de formulaire de données de processus.
 
-Les paramètres ci-dessous sont disponibles pour le service Email.
+Les paramètres ci-dessous sont disponibles pour le service E-mail.
 
 **Hôte SMTP :** adresse IP ou URL du serveur SMTP à utiliser pour l’envoi dʼe-mails.
 
@@ -214,7 +230,7 @@ Les paramètres ci-dessous sont disponibles pour le service Email.
 
 ## Paramètres du service Encryption {#encryption-service-settings}
 
-Le service Encryption (`EncryptionService`) vous donne la possibilité de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Une personne autorisée peut déchiffrer le document pour pouvoir accéder à son contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur ou l’utilisatrice doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Adobe Acrobat. De même, si un document PDF est chiffré avec un certificat, l’utilisateur ou l’utilisatrice doit déchiffrer le document PDF avec la clé publique correspondant au certificat (clé privée) qui a été utilisé pour chiffrer le document PDF.
+Le service Encryption (`EncryptionService`) vous donne la possibilité de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Une personne autorisée peut déchiffrer le document pour pouvoir accéder à son contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur ou l’utilisatrice doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Adobe Acrobat. De même, si un document PDF est chiffré avec un certificat, l’utilisateur ou l’utilisatrice doit déchiffrer le document PDF avec la clé privée correspondant au certificat (clé publique) qui a été utilisé pour chiffrer le document PDF.
 
 Les paramètres ci-dessous sont disponibles pour le service Encryption.
 
@@ -254,13 +270,13 @@ Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
 **Paramètres Adobe PDF :** nom des paramètres Adobe PDF préconfigurés à appliquer à une tâche de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appels d’API. Les paramètres Adobe PDF sont configurés dans la console d’administration en cliquant sur Services > PDF Generator > Paramètres Adobe PDF. Ces paramètres sont applicables uniquement aux conversions basées sur PDFMaker.
 
-**Paramètres de protection :** nom des paramètres de protection préconfigurés à appliquer à une tâche de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appels d’API. Les paramètres de protection sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres de protection.
+**Paramètres de protection :** nom des paramètres de protection préconfigurés à appliquer à une tâche de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appels d’API. Les paramètres de protection sont configurés dans la console d’administration en cliquant sur Services > PDF Generator > Paramètres de protection.
 
-**Paramètres de type de fichier :** nom des paramètres de type de fichier préconfigurés à appliquer à une tâche de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appels d’API. Les paramètres de type de fichier sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres de type de fichier.
+**Paramètres de type de fichier :** nom des paramètres de type de fichier préconfigurés à appliquer à une tâche de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appels d’API. Les paramètres de type de fichier sont configurés dans la console d’administration en cliquant sur Services > PDF Generator > Paramètres de type de fichier.
 
 **Utiliser WebCapture (Windows uniquement) :** lorsque ce paramètre est défini sur « true », le service Generate PDF utilise Acrobat pour toutes les conversions de fichiers HTML en PDF. La qualité des fichiers PDF produits à partir de fichiers HTML peut en être améliorée, bien que la performance puisse être légèrement plus faible. La valeur par défaut est false.
 
-**Convertisseur principal pour les conversions de fichiers HTML en PDF :** le service Generate PDF fournit plusieurs itinéraires pour convertir des fichiers HTML en documents PDF : Webkit, WebCapture (Windows uniquement) et WebToPDF. Ce paramètre permet à l’utilisateur ou l’utilisatrice de sélectionner le convertisseur principal pour convertir les fichiers HTML en PDF. WebToPDF est sélectionné par défaut.
+**Convertisseur principal pour les conversions de fichiers HTML en PDF :** le service Generate PDF fournit plusieurs itinéraires pour convertir des fichiers HTML en documents PDF : Webkit, WebCapture (Windows uniquement) et WebToPDF. Ce paramètre permet aux utilisateurs et utilisatrices de sélectionner le convertisseur principal pour convertir les fichiers HTML en PDF. WebToPDF est sélectionné par défaut.
 
 **Convertisseur de secours pour les conversions de fichiers HTML en PDF :** spécifiez le convertisseur pour les conversions de fichiers HTML en PDF en cas d’échec du convertisseur principal. WebCapture (Windows uniquement) est sélectionné par défaut.
 
@@ -289,11 +305,11 @@ Caractères dans le nom d’utilisateur (Windows uniquement) :** spécifie les c
 
 * **Réessayer**
 
-  Effectuez une nouvelle tentative de conversion PDF sans considérer si le délai d’expiration maximal est atteint. Le délai d’expiration par défaut pour la première tentative est de 270 s.
+  Effectuez une nouvelle tentative de conversion PDF indépendamment du fait que le seuil de délai d’expiration ait été atteint ou non. Le délai d’expiration par défaut pour la première tentative est de 270 s.
 
 * **Réessayer selon le temps imparti**
 
-  Effectuez une nouvelle tentative de conversion PDF si la première tentative de conversion a duré moins de temps que le délai d’expiration spécifié. Par exemple, si le délai d’expiration spécifié est de 270 s et que la première tentative a duré 200 s, PDF Generator effectue une nouvelle tentative de conversion. Si la première tentative a duré 270 s, aucune nouvelle tentative de conversion ne sera effectuée.
+  Effectuez une nouvelle tentative de conversion PDF si la durée de la première tentative de conversion est inférieure au délai d’expiration spécifié. Par exemple, si la durée du délai d’expiration est de 270 s et que la première tentative a duré 200 s, PDF Generator effectue une nouvelle tentative de conversion. Si la première tentative a duré 270 s, aucune nouvelle tentative de conversion ne sera effectuée.
 
 ## Paramètres du service Guides ES4 Utilities {#guides-es4-utilities-service-settings}
 
@@ -334,19 +350,19 @@ Les valeurs par défaut du service Guide Utilities prennent en charge la plupart
 
 **macOverlapIntervalInMinutes :** durée pendant laquelle la clé précédente reste valide après la génération d’une nouvelle clé. La valeur par défaut est 1 440 minutes (1 jour).
 
-**macKeySeed :** valeur de base pour la génération de l’URL sécurisée. Lorsque cette valeur est une option, la clé n’est jamais actualisée. En définissant la même valeur de base sur différents serveurs, ceux-ci génèrent des URL sécurisées compatibles. Cela peut s’avérer utile lorsque plusieurs serveurs Forms sont en cours d’utilisation en même temps qu’une répartition de charge. Entrez une séquence aléatoire de caractères et de nombres en tant que valeur de base.
+**macKeySeed :** valeur de base pour la génération de l’URL sécurisée. Lorsque cette option est sélectionnée, la clé n’est jamais actualisée. En définissant la même valeur de base sur différents serveurs, ceux-ci génèrent des URL sécurisées compatibles. Cela peut s’avérer utile lorsque plusieurs serveurs Formulaires sont utilisés derrière un répartiteur de charge. Saisissez une séquence aléatoire de caractères et de nombres en tant que valeur de base.
 
 ### Utiliser des guides dans un cluster de serveurs {#using-guides-in-a-server-cluster}
 
-Le rendu d’un guide dans un cluster de serveurs qui n’utilise pas l’affinité de session échoue et génère une exception NullPointerException. Les demandes de guide utilisent des URL sécurisées qui, par défaut, sont uniques au serveur sur lequel elles sont générées. Dans un cluster utilisant l’affinité de session, quand une demande a atteint un nœud du cluster, toutes les demandes suivantes de cette session ou de l’utilisateur ou utilisatrice sont acheminées exclusivement à ce serveur. Dans le cas d’un cluster n’utilisant pas l’affinité de session, les demandes suivantes peuvent atteindre n’importe quel serveur du cluster. Si le serveur atteint par les demandes n’est pas le serveur d’origine, ces dernières ne parviennent pas à résoudre l’URL sécurisée.
+Le rendu d’un guide dans un cluster de serveurs qui n’utilise pas l’affinité de session échoue et génère une exception NullPointerException. Les demandes Guides utilisent des URL sécurisées qui, par défaut, sont uniques au serveur sur lequel elles sont générées. Dans un cluster utilisant l’affinité de session, quand une demande a atteint un nœud du cluster, toutes les demandes suivantes de cette session ou de cet utilisateur ou utilisatrice sont acheminées exclusivement vers ce serveur, et tout fonctionne correctement. Dans le cas d’un cluster n’utilisant pas l’affinité de session, les demandes suivantes peuvent atteindre n’importe quel serveur du cluster. Si le serveur atteint par les demandes n’est pas le serveur d’origine, ces dernières ne parviennent pas à résoudre l’URL sécurisée.
 
-Si vous utilisez des guides dans un cluster de serveurs sans affinité de session, définissez la valeur macKeySeed pour le service GuidesUtility, puis arrêtez et redémarrez le cluster.
+Si vous utilisez Guides dans un cluster de serveurs sans affinité de session, définissez la valeur macKeySeed pour le service GuidesUtility, puis arrêtez et redémarrez le cluster.
 
 La valeur macKeySeed constitue le point de départ du générateur de nombres aléatoires utilisé pour générer les URL sécurisées. Si cette valeur est définie, chaque nœud du cluster initialise le générateur de nombres aléatoires de la même manière et donne accès aux mêmes URL sécurisées. Vous pouvez utiliser n’importe quelle chaîne aléatoire pour cette valeur de départ.
 
 Modifiez la valeur macKeySeed lorsqu’il est nécessaire d’actualiser les URL sécurisées. L’actualisation des URL sécurisées dépend de votre politique de sécurité. Elle est similaire à la politique d’actualisation permettant de changer le mot de passe racine principal du serveur. La valeur macSeedValue est analogue au mot de passe principal pour les URL sécurisées, car elle est utilisée pour générer un numéro aléatoire unique utilisé pour la génération et la récupération des URL sécurisées.
 
-Redémarrez le cluster, car macSeedValue est en lecture seule au démarrage du système. Tous les nœuds nécessitent un redémarrage afin de lire la valeur, car ils utilisent cette dernière indépendamment afin d’initialiser leurs nombres aléatoires internes avec la valeur de départ.
+Redémarrez le cluster, car macSeedValue n’est lu qu’au démarrage du système. Tous les nœuds doivent redémarrer pour lire la valeur, car ils l’utilisent indépendamment pour initialiser leurs nombres aléatoires internes avec la valeur de départ.
 
 ## Paramètres du service JDBC {#jdbc-service-settings}
 
@@ -354,7 +370,7 @@ Le service JDBC (`JdbcService`) permet aux processus d’interagir avec des base
 
 Le paramètre ci-dessous est disponible pour le service JDBC.
 
-**datasourceName :** valeur de chaîne qui représente le nom JNDI de la source de données à utiliser pour la connexion au serveur de la base de données. La source de données doit être définie sur le serveur d’applications qui héberge le serveur Forms. La valeur par défaut correspond au nom JNDI de la source de données de la base de données AEM Forms.
+**datasourceName :** valeur de chaîne qui représente le nom JNDI de la source de données à utiliser pour la connexion au serveur de la base de données. La source de données doit être définie sur le serveur applicatif qui héberge le Serveur Formulaires. La valeur par défaut correspond au nom JNDI de la source de données de la base de données AEM Forms.
 
 ## Paramètres du service JMS {#jms-service-settings}
 
@@ -372,11 +388,11 @@ Les paramètres ci-dessous sont disponibles pour le service JMS.
 
 **WebSphere :**`<server name>:2809`
 
-**Nom d’utilisateur JNDI :** nom d’utilisateur du compte à utiliser pour l’authentification auprès du fournisseur de services JNDI qui est utilisé pour la recherche de noms de files d’attente et de rubriques. La valeur par défaut est guest.
+**Nom d’utilisateur JNDI :** nom d’utilisateur du compte à utiliser pour l’authentification auprès du fournisseur de services JNDI qui est utilisé pour la recherche de noms de files d’attente et de rubriques. La valeur par défaut est visiteur anonyme.
 
-**Mot de passe JNDI :** mot de passe associé au nom d’utilisateur spécifié pour le Nom d’utilisateur JNDI. La valeur par défaut est guest.
+**Mot de passe JNDI :** mot de passe associé au nom d’utilisateur spécifié pour le Nom d’utilisateur JNDI. La valeur par défaut est visiteur anonyme.
 
-**Initial Context Factory :** classe Java à utiliser en tant que fabrique de contexte de nommage initial. Le service JMS utilise cette classe pour créer un contexte initial qui représente le point de départ pour la résolution des noms des rubriques et des files d’attente. La valeur par défaut est la fonctionnalité ContextFactory initiale pour le service JMS sur JBoss. Les classes suivantes sont les fabriques de contexte de nommage initial pour les serveurs d’applications pris en charge par AEM Forms :
+**Initial Context Factory :** classe Java à utiliser en tant que fabrique de contexte de nommage initial. Le service JMS utilise cette classe pour créer un contexte initial qui représente le point de départ pour la résolution des noms des rubriques et des files d’attente. La valeur par défaut est la fabrique de contexte initial pour le service JMS sur JBoss. Les classes suivantes sont les fabriques de contexte initial pour les serveurs d’applications pris en charge par AEM Forms :
 
 **JBoss :** org.jnp.interfaces.NamingContextFactory
 
@@ -384,11 +400,11 @@ Les paramètres ci-dessous sont disponibles pour le service JMS.
 
 **WebSphere :** com.ibm.websphere.naming.WsnInitialContextFactory
 
-**Connection Username :** mot de passe associé au nom d’utilisateur spécifié pour le Nom d’utilisateur pour la connexion. La valeur par défaut est guest.
+**Connection Username :** mot de passe associé au nom d’utilisateur spécifié pour le Nom d’utilisateur pour la connexion. La valeur par défaut est visiteur anonyme.
 
-**Connection Password :** mot de passe associé au nom d’utilisateur spécifié pour le Nom d’utilisateur pour la connexion. La valeur par défaut est guest.
+**Connection Password :** mot de passe associé au nom d’utilisateur spécifié pour le Nom d’utilisateur pour la connexion. La valeur par défaut est visiteur anonyme.
 
-**Other Properties :** paires nom-valeur de propriétés que vous pouvez transmettre au fournisseur de services JNDI. Ces propriétés dépendent de l’implémentation et de la configuration du fournisseur que vous utilisez.
+**Other Properties :** paires nom-valeur de propriétés que vous pouvez transmettre au fournisseur de services JNDI. Ces propriétés dépendent de la mise en œuvre et de la configuration du fournisseur que vous utilisez.
 
 Les paires nom-valeur de propriétés sont séparées par des points-virgules **;**. Par exemple, le texte suivant indique la valeur qui serait spécifiée pour deux propriétés appelées name1 et name2, avec les valeurs value1 et value2, respectivement :
 
@@ -406,7 +422,7 @@ Les paramètres ci-dessous sont disponibles pour le service LDAP.
 
 *nom du serveur* est le nom de l’ordinateur qui héberge le serveur LDAP.
 
-*port* est le port de communication que le service LDAP utilise. La valeur par défaut est 389 ; elle représente le port standard utilisé pour les connexions LDAP.
+*port* est le port de communication que le service LDAP utilise. La valeur par défaut est 389 ; elle représente le port standard utilisé pour les connexions LDAP.
 
 **Nom d’utilisateur** : nom d’utilisateur du compte d’utilisateur à employer pour se connecter au serveur LDAP. Le compte d’utilisateur doit disposer d’une autorisation pour se connecter au serveur et lire les informations contenues dans le répertoire LDAP.
 
@@ -439,11 +455,11 @@ Les paramètres suivants sont disponibles pour le service de configuration Micro
 
 **Application Content Services :** active la fonctionnalité Content Services dans l’application cliente mobile. Cette fonctionnalité n’est disponible que sur iOS. Lorsque cette option est sélectionnée, les utilisateurs et utilisatrices d’iPhone et d’iPad peuvent accéder aux fichiers stockés sur le serveur WebDAV de votre entreprise.
 
-**Prise en charge hors connexion :** permet aux utilisateurs de continuer à utiliser les applications clientes mobiles même lorsqu’ils ne disposent pas dʼune connexion au serveur (par exemple, s’ils sont hors couverture réseau ou en mode avion). Les utilisateurs doivent également activer le paramètre Prise en charge hors connexion sur leurs appareils mobiles. Cette fonctionnalité est disponible pour les appareils Android et iOS. Par défaut, cette fonctionnalité est désactivée.
+**Prise en charge hors connexion :** permet aux utilisateurs de continuer à utiliser les applications clientes mobiles même lorsqu’ils ne disposent pas dʼune connexion au serveur (par exemple, s’ils sont hors couverture réseau ou en mode avion). Les utilisateurs et utilisatrices doivent également activer le paramètre Prise en charge hors ligne sur leurs appareils mobiles. Cette fonctionnalité est disponible pour les appareils Android et iOS. Par défaut, cette fonctionnalité est désactivée.
 
 >[!NOTE]
 >
->Si la prise en charge hors connexion a été activée et que vous la désactivez ensuite, les profils d’approvisionnement des utilisateurs et des utilisatrices sont mis à jour immédiatement ou dès qu’ils se connectent. Si un utilisateur a travaillé hors connexion, toutes les tâches en attente sont renvoyées à leur liste des tâches et tous les éléments dans leur file d’attente, y compris les formulaires en attente, les tâches et les formulaires contenant des erreurs de validation sont supprimés de la file d’attente.
+>Si la prise en charge hors ligne a été activée et que vous la désactivez ensuite, les profils d’approvisionnement des utilisateurs et des utilisatrices sont mis à jour immédiatement ou dès qu’ils sont en ligne. Si un utilisateur ou une utilisatrice a travaillé hors ligne, toutes les tâches en attente sont renvoyées à leur liste des tâches et tous les éléments dans leur file d’attente, y compris les formulaires en attente, les tâches et les formulaires contenant des erreurs de validation sont supprimés de la file d’attente.
 
 **Android :** autorise les appareils Android à se connecter au serveur.
 
@@ -453,7 +469,7 @@ Les paramètres suivants sont disponibles pour le service de configuration Micro
 
 **BlackBerry :** autorise les appareils BlackBerry à se connecter au serveur.
 
-**Android Microsoft Exchange ActiveSync requis :** indique si le gestionnaire de politique Microsoft Exchange ActiveSync (EAS) doit être installé et actif sur les appareils Android. Lorsque cette option est sélectionnée, EAS doit être installé sur l’appareil Android. Lorsque cette option n’est pas sélectionnée, aucune vérification n’est effectuée, mais dʼautres conditions soient toujours appliquées.
+**Android Microsoft Exchange ActiveSync requis :** indique si le gestionnaire de politique Microsoft Exchange ActiveSync (EAS) doit être installé et actif sur les appareils Android. Lorsque cette option est sélectionnée, EAS doit être installé sur l’appareil Android. Lorsque cette option n’est pas sélectionnée, aucune vérification n’est effectuée, mais les autres conditions continuent d’être appliquées.
 
 **Android Minimum Pin Length :** les appareils Android doivent avoir un paramètre global qui impose que le code PIN ou le mot de passe soit au moins de cette longueur. Le simple fait d’avoir un code PIN de la longueur spécifiée nʼest pas suffisant. La longueur du code PIN doit être appliquée par le système afin que les utilisateurs ne puissent pas le supprimer ni le raccourcir ultérieurement. La valeur par défaut est 4.
 
@@ -465,12 +481,12 @@ Les paramètres suivants sont disponibles pour le service de configuration Micro
 
 Le service Output `(OutputService)`vous permet de fusionner des données de formulaire XML avec une conception de formulaire créée dans AEM Forms Designer pour produire un flux de sortie de document sous l’un des formats suivants :
 
-* Un flux de sortie de document PDF ou PDF/A ;
-* Un flux de sortie de document Adobe PostScript ;
-* Un flux de sortie PCL (Printer Control Language, langage de contrôle d’imprimante) ;
+* Un flux de sortie de document PDF ou PDF/A.
+* Un flux de sortie de document Adobe PostScript.
+* Un flux de sortie PCL (Printer Control Language, langage de contrôle d’imprimante).
 * Un flux de sortie ZPL (Zebra Programming Language, langage de programmation Zebra).
 
-Le flux de sortie peut être envoyé vers une imprimante réseau, une imprimante locale ou un fichier de disque. Lorsque vous utilisez le service Sortie dans le cadre d’un processus, vous pouvez également envoyer le flux de sortie vers un destinataire de messagerie en tant que pièce jointe.
+Le flux de sortie peut être envoyé vers une imprimante réseau, une imprimante locale ou un fichier de disque. Lorsque vous utilisez le service Sortie dans le cadre d’un processus, vous pouvez également envoyer le flux de sortie vers un ou une destinataire de messagerie en tant que pièce jointe.
 
 Les paramètres ci-dessous sont disponibles pour le service Sortie.
 
@@ -494,7 +510,7 @@ Les paramètres ci-dessous sont disponibles pour le service PDFG Config ( `PDFGC
 
 **PS Startup File :** nom du fichier de démarrage requis par Adobe Acrobat Distiller. La valeur par défaut est example.ps.
 
-**Server Conversion Timeout :** délai d’expiration de conversion de tâches maximal (en secondes) pour les services Generate PDF et Distiller. Ce paramètre limite le délai d’expiration de conversion maximal qui peut être spécifié dans le fichier config.xml et dans les pages d’Administration Console pour PDF Generator. La valeur par défaut est 270.
+**Server Conversion Timeout :** délai d’expiration de conversion de tâches maximal (en secondes) pour les services Generate PDF et Distiller. Ce paramètre limite le délai d’expiration de conversion maximal qui peut être spécifié dans le fichier config.xml et dans les pages de la console d’administration pour PDF Generator. La valeur par défaut est 270.
 
 **Server Global Timeout :** pendant les conversions PDF, un serveur Forms prend en compte le délai d’expiration. Configurez la valeur du délai d’expiration pour résoudre ce problème.
 
@@ -506,15 +522,15 @@ Les paramètres ci-dessous sont disponibles pour le service PDFG Config ( `PDFGC
 
 **PDFG Cleanup Scan Seconds :** pour plus d’informations, consultez la section « Secondes avant expiration de la tâche ».
 
-**Job Expiration Seconds :** le service Generate PDF supprime les fichiers d’entrée une fois qu’ils ont été convertis. Elle stocke les fichiers de sortie de façon temporaire, pendant une durée définie par les paramètres Secondes d’analyse de nettoyage PDFG et Secondes avant expiration de la tâche.
+**Job Expiration Seconds :** le service Generate PDF supprime les fichiers d’entrée une fois qu’ils ont été convertis. Elle stocke les fichiers de sortie de façon temporaire, pendant une durée définie par les paramètres Secondes d’analyse de nettoyage PDFG et Secondes avant expiration du traitement.
 
-Le paramètre Secondes avant expiration de la tâche spécifie l’ancienneté que doit avoir un fichier ou un dossier vide avant de pouvoir être supprimé. Le paramètre Secondes d’analyse de nettoyage PDFG indique la fréquence d’analyse, par un thread de nettoyage, des fichiers temporaires à la recherche de fichiers pouvant être supprimés.
+Le paramètre Secondes avant expiration du traitement spécifie l’ancienneté que doit avoir un fichier ou un dossier vide avant de pouvoir être supprimé. Le paramètre Secondes d’analyse de nettoyage PDFG indique la fréquence à laquelle un thread de nettoyage analyse les dossiers temporaires à la recherche de fichiers pouvant être supprimés.
 
 Par exemple, si Secondes avant expiration de la tâche est défini sur 100 et Secondes d’analyse de nettoyage PDFG sur 200, le thread de nettoyage s’exécute toutes les 200 secondes et supprime les fichiers datant de 100 secondes ou plus.
 
 La valeur par défaut de Secondes d’analyse de nettoyage PDFG est `43200` (12 heures). La valeur par défaut de Secondes avant expiration de la tâche est `86400` (24 heures).
 
-**Default Locale :** utilisé pour remplacer les paramètres régionaux par défaut (pays + langue) du serveur dans lequel le service Generate PDF est déployé. Si ce paramètre n’est pas spécifié, les paramètres régionaux par défaut sont alors déterminés à partir du système d’exploitation dans lequel le service est déployé. Ce paramètre contrôle la langue dans laquelle les messages d’erreur sont renvoyés aux API.
+**Default Locale :** utilisé pour remplacer les paramètres régionaux par défaut (pays + langue) du serveur dans lequel le service Generate PDF est déployé. Si ce paramètre n’est pas spécifié, les paramètres régionaux par défaut sont alors déterminés à partir du système d’exploitation sur lequel le service est déployé. Ce paramètre contrôle la langue dans laquelle les messages d’erreur sont renvoyés aux API.
 
 ## Paramètres du service Forms Workflow Data Services {#forms-workflow-data-services-service-settings}
 
@@ -530,17 +546,17 @@ La plupart des services sont configurés afin que vous puissiez y accéder avec 
 
 Les paramètres ci-dessous sont disponibles pour le service Remoting.
 
-**Méthode d’authentification du client Flex :** indique le type de réponse que le serveur renvoie au client lorsque la sécurité du service appelé est activée, l’opération appelée ne prend pas en charge les appels anonymes et le client parvient à se connecter sans informations d’identification ou avec des informations d’identification non valides. Choisissez entre Personnalisée ou Standard. La valeur par défaut est Standard.
+**Méthode d’authentification du client Flex :** indique le type de réponse que le serveur renvoie au client lorsque la sécurité du service appelé est activée, l’opération appelée ne prend pas en charge les appels anonymes et le client parvient à se connecter sans informations d’identification ou avec des informations d’identification non valides. Choisissez entre Personnalisé ou Standard. La valeur par défaut est Standard.
 
 **Allow Serialization Of Non-Serializable Classes :** la plupart des points dʼentrée AEM Forms autorisent uniquement l’utilisation des classes sérialisables pour les appels. Dans les versions antérieures, les points d’entrée Remoting autorisaient l’utilisation des classes non sérialisables pour les appels depuis les clients Flex. Pour éviter toute vulnérabilité de sécurité décrite dans APS11-15, ceci a été modifié. Si vous souhaitez continuer à utiliser des classes non-sérialisables avec le point d’entrée Flex Remoting, cochez cette case.
 
 ## Paramètres du service Référentiel {#repository-service-settings}
 
-Le service Repository (`RepositoryService`) fournit du stockage de ressources et des services de gestion à AEM forms. Lorsque des développeurs et des développeuses créent une application, ils ou elles peuvent déployer les ressources dans le référentiel plutôt que dans un système de fichiers. Les actifs peuvent être constitués de formulaires XML, de formulaires PDF (y compris de formulaires Acrobat), de fragments de formulaire, d’images, de profils, de politiques, de fichiers SWF, DDX et WSDL, de schémas XML et de données de test.
+Le service Repository (`RepositoryService`) fournit du stockage de ressources et des services de gestion à AEM forms. Lorsque des développeurs et des développeuses créent une application, ils ou elles peuvent déployer les ressources dans le référentiel plutôt que sur un système de fichiers. Les ressources peuvent être constituées de tout type de ressources, notamment de formulaires XML, de PDF Forms (y compris des formulaires Acrobat), de fragments de formulaire, d’images, de profils, de politiques, de fichiers SWF, de fichiers DDX, de schémas XML, de fichiers WSDL et de données de test.
 
 Vous pouvez utiliser le référentiel par défaut inclus dans AEM Forms ou utiliser un référentiel tiers (EMC Documentum Content Server, IBM FileNet Content Manager ou IBM Content Manager).
 
-Le service Fournisseur de référentiels est un délégué de service qui sert d’interface à un service du fournisseur. Il vous permet de vous connecter à une interface API commune et de ne pas avoir à connaître le service du fournisseur qui implémente les capacités de stockage. Le service Fournisseur de référentiels fournit un stockage de base de données pour les ressources du service Référentiel.
+Le service Fournisseur de référentiels est un service délégué qui sert d’interface à un service fournisseur. Il vous permet de vous connecter à une interface API commune et de ne pas avoir à connaître le service du fournisseur qui implémente les capacités de stockage. Le service Fournisseur de référentiels fournit un stockage de base de données pour les ressources du service Référentiel.
 
 Le paramètre ci-dessous est disponible pour le service Référentiel.
 
@@ -548,7 +564,7 @@ Le paramètre ci-dessous est disponible pour le service Référentiel.
 
 ## Paramètres du service Signature {#signature-service-settings}
 
-Le service Signature `SignatureService`( ) permet à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures et certifications numériques pour s’assurer que les documents ne sont pas modifiés. La modification d’un document rompt sa signature. Les fonctions de sécurité étant appliquées au document proprement dit, ce dernier reste protégé et contrôlé tout au long de son cycle de vie, aussi bien de l’autre côté du pare-feu que dans le cadre de son téléchargement hors connexion ou de son renvoi à l’entreprise.
+Le service Signature `SignatureService`( ) permet à votre entreprise de garantir la sécurité et la confidentialité des documents Adobe PDF qu’elle diffuse et reçoit. Ce service utilise les signatures et certifications numériques pour s’assurer que les documents ne sont pas modifiés. La modification d’un document rompt sa signature. Les fonctions de sécurité étant appliquées au document proprement dit, ce dernier reste protégé et contrôlé tout au long de son cycle de vie, aussi bien de l’autre côté du pare-feu que lorsqu’il est téléchargé hors ligne ou lorsqu’il est renvoyé à l’entreprise.
 
 Les paramètres ci-dessous sont disponibles pour le service Signature.
 
@@ -579,14 +595,14 @@ Produits Adobe** lorsque cette option est sélectionnée, la signature créée �
 **Verification Time Option :** indique l’heure de vérification du certificat d’un signataire. La valeur par défaut est Secure Time Else Current Time.
 
 **Utiliser les informations de révocation archivées dans la signature pendant
-Validation :** indique si les informations de révocation archivées avec la signature sont utilisées pour la vérification de révocation. La valeur par défaut est true.
+Validation :** indique si les informations de révocation archivées avec la signature sont utilisées pour la vérification de révocation. La valeur par défaut est vrai.
 
 **Utiliser Les Informations De Validation Stockées Dans Le Document Pour
-Validation des signatures :** lorsque cette option est sélectionnée, les informations de validation (y compris les informations de révocation et d’horodatage) intégrées dans le document sont utilisées pour valider les signatures. La valeur par défaut est true.
+Validation des signatures :** lorsque cette option est sélectionnée, les informations de validation (y compris les informations de révocation et d’horodatage) intégrées dans le document sont utilisées pour valider les signatures. La valeur par défaut est vrai.
 
 **Maximum Nested Verification Sessions Allowed :** nombre maximal de sessions de vérification imbriquées autorisées. AEM forms utilise cette valeur pour empêcher une boucle infinie lors de la vérification des certificats des signataires OCSP ou CRL en cas de configuration incorrecte du certificat OCSP ou CRL. La valeur par défaut est 10.
 
-**Maximum Clock Skew for Verification :** délai maximum (en minutes) qui peut s’écouler entre l’heure de signature et l’heure de validation. Si le décalage est supérieur à cette valeur, la signature n’est pas valable. la valeur par défaut est de 65 minutes.
+**Maximum Clock Skew for Verification :** délai maximum (en minutes) qui peut s’écouler entre l’heure de signature et l’heure de validation. Si le décalage est supérieur à cette valeur, la signature n’est pas valide. la valeur par défaut est de 65 minutes.
 
 **Certificate Lifetime Cache :** durée de vie d’un certificat, récupéré en ligne ou par un autre moyen, dans le cache. La valeur par défaut est de 1 jour.
 
@@ -620,9 +636,9 @@ Validation des signatures :** lorsque cette option est sélectionnée, les infor
 
 **Follow URIs in Certificate AIA :** indique si les URI (Uniform Resource Identifiers) de lʼAIA de certificat sont traités lors de la découverte du chemin d’accès. La valeur par défaut est false.
 
-**Basic Constraints Extension required in CA Certificates :** indique si l’extension de contraintes de base de l’autorité de certification (AC) doit être présente pour les certificats AC. Certains des tout premiers certificats racine allemands certifiés (7 et antérieurs) ne sont pas conformes à la RFC 3280 et ne contiennent pas l’extension de contraintes de base. Si le certificat EE d’un utilisateur ou d’une utlisatrice est associé à une telle racine, désactivez cette case à cocher. La valeur par défaut est true.
+**Basic Constraints Extension required in CA Certificates :** indique si l’extension de contraintes de base de l’autorité de certification (AC) doit être présente pour les certificats AC. Certains des tout premiers certificats racine allemands certifiés (7 et antérieurs) ne sont pas conformes à la RFC 3280 et ne contiennent pas l’extension de contraintes de base. Si l’on sait que le certificat EE d’un utilisateur et utilisatrice est associé à une telle racine allemande, désélectionnez cette case à cocher. La valeur par défaut est vrai.
 
-**Require Valid Certificate Signature During Chain Building :** indique si le générateur de chaînes exige des signatures valides sur les certificats utilisés pour créer les chaînes. Lorsque cette case est cochée, le générateur de chaînes ne crée pas de chaînes comportant des signatures RSA non valides dans les certificats. Soit la chaîne CA > ICA > EE où la signature de l’AC (Autorité de certification) sur une ICA est incorrecte. Si ce paramètre est true, la création de chaînes s’arrête au niveau de l’ICA, et l’AC n’est pas incluse dans la chaîne. Si ce paramètre est faux, la chaîne complète des trois certificats est générée. Ce paramètre n’a aucune incidence sur les signatures DSA. La valeur par défaut est false.
+**Require Valid Certificate Signature During Chain Building :** indique si le générateur de chaînes exige des signatures valides sur les certificats utilisés pour créer les chaînes. Lorsque cette case est cochée, le générateur de chaînes ne crée pas de chaînes comportant des signatures RSA non valides dans les certificats. Considérez la chaîne CA > ICA > EE où la signature de l’AC sur une ICA n’est pas valide. Si ce paramètre est vrai, la création de chaînes s’arrête au niveau de l’ICA, et l’AC n’est pas incluse dans la chaîne. Si ce paramètre est faux, la chaîne complète des trois certificats est générée. Ce paramètre n’a aucune incidence sur les signatures DSA. La valeur par défaut est false.
 
 ### Options du fournisseur d’horodatage {#timestamp-provider-options}
 
@@ -640,21 +656,21 @@ Validation des signatures :** lorsque cette option est sélectionnée, les infor
 
 **Use Expired Timestamps During Validation :** lorsque cette option est sélectionnée, les horodatages expirés peuvent être utilisés pour récupérer les temps de validation des signatures. La valeur par défaut est true.
 
-**TSP Response Size :** taille estimée, en octets, de la réponse TSP. Cette valeur doit représenter la taille maximale de la réponse d’horodatage que le fournisseur d’horodatage configuré peut renvoyer. Ne la changez pas si vous avez des doutes. Valeur minimale : 60 octets. Valeur maximale : 10 240 octets. Valeur par défaut : 4 096 octets.
+**TSP Response Size :** taille estimée, en octets, de la réponse TSP. Cette valeur doit représenter la taille maximale de la réponse d’horodatage que le fournisseur d’horodatage configuré peut renvoyer. Ne modifiez cette valeur que si vous n’avez aucun doute à ce sujet. Valeur minimale : 60 octets. Valeur maximale : 10 240 octets. Valeur par défaut : 4 096 octets.
 
-**Ignorer l’extension du serveur de tampons temporels** : sélectionnez **Ignorer l’extension du serveur de tampons temporels** afin d’empêcher le serveur AEM Forms de contacter le serveur de tampons temporels spécifié. La sélection de cette option permet d’éviter les échecs de processus dus à la temporisation de la connexion entre AEM Forms et les serveurs d’horodatages.
+**Ignorer l’extension du serveur de tampons temporels** : sélectionnez **Ignorer l’extension du serveur de tampons temporels** afin d’empêcher le serveur AEM Forms de contacter le serveur de tampons temporels spécifié. La sélection de cette option permet d’éviter les échecs de processus dus à la temporisation de la connexion entre AEM Forms et le serveur d’horodatage.
 
 ### Options de liste de révocation des certificats {#certificate-revocation-list-options}
 
 **Consulter d’abord l’URI local :** indique si l’emplacement de la liste CRL spécifié dans le champ URI local pour la recherche CRL doit être préféré à un emplacement spécifié dans un certificat à des fins de vérification de révocation. La valeur par défaut est false.
 
-**URI Local pour la recherche de la CRL :** URL du fournisseur CRL local. Cette valeur est consultée uniquement si le paramètre Consult Local URI First est défini sur true. Pas de valeur par défaut.
+**URI Local pour la recherche de la CRL :** URL du fournisseur CRL local. Cette valeur est consultée uniquement si le paramètre Consult Local URI First est défini sur vrai. Pas de valeur par défaut.
 
 **Style de vérification de révocation :** spécifie le style de vérification de révocation utilisé pour déterminer le statut de confiance du certificat du fournisseur de CRL à partir de son statut de révocation observé. La valeur par défaut est BestEffort.
 
 **Serveur LDAP pour la recherche de CRL :** le serveur LDAP utilisé pour obtenir les CRL (comme www.ldap.com). Toutes les requêtes basées sur les DN pour les listes CRL seront adressées à ce serveur. Pas de valeur par défaut.
 
-**Aller en ligne :** indique s’il faut aller en ligne pour récupérer une CRL. Si la valeur est false, seules les listes CRL mises en cache (sur le disque local ou avec signature intégrée) sont consultées. La valeur par défaut est true.
+**Aller en ligne :** indique s’il faut aller en ligne pour récupérer une CRL. Si la valeur est faux, seules les listes CRL mises en cache (sur le disque local ou avec signature intégrée) sont consultées. La valeur par défaut est vrai.
 
 **Ignorer les dates de validité :** indique s’il faut ignorer les heures thisUpdate et nextUpdate de la réponse, pour les empêcher d’avoir une incidence négative sur la validité de la réponse. La valeur par défaut est false.
 
@@ -668,27 +684,27 @@ Validation des signatures :** lorsque cette option est sélectionnée, les infor
 
 **Revocation Check Style :** spécifie le style de vérification de révocation utilisé lors de la vérification du certificat du serveur OCSP. La valeur par défaut est CheckIfAvailable.
 
-**Send Nonce :** indique si une valeur à usage unique est envoyée avec la demande OCSP. Une valeur à usage unique peut être un horodatage, un compteur de visites sur une page web ou une marque spéciale destinée à limiter ou empêcher la relecture ou la reproduction non autorisées d’un fichier. La valeur par défaut est true.
+**Send Nonce :** indique si une valeur à usage unique est envoyée avec la demande OCSP. Une valeur à usage unique peut être un horodatage, un compteur de visites sur une page web ou une marque spéciale destinée à limiter ou empêcher la relecture ou la reproduction non autorisées d’un fichier. La valeur par défaut est vrai.
 
-**Max Clock Skew Time :** décalage maximal autorisé (en minutes) entre l’heure de réponse et l’heure locale. Valeur minimale : 0. Valeur maximale : 2 147 483 647 min. La valeur pas défaut est : 5 min.
+**Max Clock Skew Time :** décalage maximal autorisé (en minutes) entre l’heure de réponse et l’heure locale. La valeur minimale est 0 et la valeur maximale est 2 147 483 647 m. La valeur par défaut est 5 m.
 
-**Response Freshness Time :** durée de validité maximale (en minutes) d’une réponse OCSP préconstruite. Valeur minimale : 1 Min. Valeur maximale : 2 147 483 647 min. La valeur par défaut est de 525600 (un an).
+**Response Freshness Time :** durée de validité maximale (en minutes) d’une réponse OCSP préconstruite. La valeur minimale est 1 m et la valeur maximale autorisée est 2 147 483 647. La valeur par défaut est de 525600 (un an).
 
 **Sign OCSP Request :** indique si la requête OCSP doit être signée. La valeur par défaut est false.
 
-**Request Signer Credential Alias :** spécifie l’alias d’authentification à utiliser pour signer la demande OCSP. Utilisé uniquement si la signature de la requête OCSP est activée. Pas de valeur par défaut.
+**Request Signer Credential Alias :** spécifie l’alias d’authentification à utiliser pour signer la demande OCSP. Utilisé uniquement si la signature de la demande OCSP est activée. Pas de valeur par défaut.
 
-**Go Online :** indique s’il convient de se connecter pour effectuer une vérification de la révocation. La valeur par défaut est true.
+**Go Online :** indique s’il convient de se connecter pour effectuer une vérification de la révocation. La valeur par défaut est vrai.
 
 **Ignore the response’s thisUpdate and nextUpdate times :** indique si les heures thisUpdate et nextUpdate de la réponse doivent être ignorées, pour les empêcher d’avoir une incidence négative sur la validité de la réponse. La valeur par défaut est false.
 
-**Allow OCSPNoCheck extension :** indique si l’extension OCSPNoCheck est autorisée dans le certificat de signature de la réponse. La valeur par défaut est true.
+**Allow OCSPNoCheck extension :** indique si l’extension OCSPNoCheck est autorisée dans le certificat de signature de la réponse. La valeur par défaut est vrai.
 
 **Require OCSP ISIS-MTT CertHash Extension :** indique si les réponses OCSP doivent contenir une extension de hachage de clé publique de certificat. La valeur par défaut est false.
 
 ### Options de gestion des erreurs pour le débogage {#error-handling-options-for-debugging}
 
-**Purge Certificate Cache on next API call :** indique si le cache de certificats doit être purgé lors de l’appel de l’opération du service Signature suivante. Une fois l’opération appelée, cette option est redéfinie sur false. La valeur par défaut est false.
+**Purge Certificate Cache on next API call :** indique si le cache de certificats doit être purgé lors de l’appel de l’opération du service Signature suivante. Une fois l’opération appelée, cette option est réinitialisée sur faux. La valeur par défaut est false.
 
 **Purge CRL Cache on next API call :** indique si le cache CRL doit être purgé lors de l’appel de l’opération du service Signature suivante. Une fois l’opération appelée, cette option est redéfinie sur false. La valeur par défaut est false.
 
@@ -704,21 +720,21 @@ Les paramètres ci-dessous sont disponibles pour le service Dossier de contrôle
 
 **Repeat Count :** nombre d’interrogations du répertoire d’entrée. Le nombre de répétitions par défaut à utiliser si cette valeur n’est pas spécifiée dans la configuration des points d’entrée. La valeur -1 indique une analyse indéfinie du répertoire. La valeur par défaut est -1.
 
-**Repeat Interval :** nombre de secondes par défaut s’écoulant entre chaque interrogation. Cette valeur est utilisée comme intervalle de répétition à moins qu’une valeur différente ne soit définie dans la configuration du point d’entrée du dossier de contrôle. La valeur par défaut est 5. Pour plus d’informations, voir la description du paramètre Batch Size.
+**Repeat Interval :** nombre de secondes par défaut s’écoulant entre chaque interrogation. Cette valeur est utilisée comme intervalle de répétition à moins qu’une valeur différente ne soit définie dans la configuration du point d’entrée du dossier de contrôle. La valeur par défaut est 5. Pour plus d’informations, voir la description du paramètre Taille de lot.
 
 **Asynchrone :** identifie le type d’appel comme étant asynchrone ou synchrone. Les processus provisoires et synchrones peuvent être appelés uniquement de façon synchrone. La valeur par défaut est asynchrone.
 
-**Temps d’attente :** valeur par défaut du temps, en secondes, au terme duquel les fichiers sont récupérés dans les dossiers d’entrée. Si le fichier ou le dossier sont plus anciens que la durée définie dans l’attribut Durée d’attente, ils sont sélectionnés pour traitement. La valeur par défaut est 0.
+**Temps d’attente :** valeur par défaut du temps, en secondes, au terme duquel les fichiers sont récupérés dans les dossiers d’entrée. Si le fichier ou le dossier est plus ancien que la durée définie dans l’attribut Durée d’attente, il est sélectionné pour traitement. La valeur par défaut est 0.
 
 **Taille du lot :** la valeur par défaut du nombre de fichiers ou de dossiers qui sont traités par analyse. La valeur par défaut est 2.
 
-Les paramètres Intervalle de répétition et Taille du lot permettent de déterminer le nombre de fichiers sélectionnés par le service Dossir de contrôle pour chaque analyse. Le service Dossier de contrôle utilise un pool de threads Quartz pour analyser le dossier input. Le pool de threads est partagé avec d’autres services. Si l’intervalle d’analyse est court, les threads analysent souvent le dossier Entrée. Si des fichiers sont régulièrement déposés dans le dossier de contrôle, il est préférable que l’intervalle d’analyse soit court. Si les fichiers sont rarement déposés, choisissez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads.
+Les paramètres Intervalle de répétition et Taille du lot permettent de déterminer le nombre de fichiers sélectionnés par le service Dossier de contrôle pour chaque analyse. Le service Dossier de contrôle utilise un pool de threads Quartz pour analyser le dossier d’entrée. Le pool de threads est partagé avec d’autres services. Si l’intervalle d’analyse est court, les threads analysent souvent le dossier Entrée. Si des fichiers sont régulièrement déposés dans le dossier de contrôle, il est préférable que l’intervalle d’analyse soit court. Si les fichiers sont rarement déposés, choisissez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads.
 
 Si un volume important de fichiers est déposé, définissez une grande taille de lot. Par exemple, si le service appelé par le point d’entrée du dossier de contrôle peut traiter 700 fichiers par minute et que les utilisateurs et les utilisatrices déposent des fichiers dans le dossier Entrée à la même fréquence, la définition de la Taille du lot sur 350 et de l’Intervalle de répétition sur 30 secondes permet de maintenir les performances du dossier de contrôle sans avoir à subir les conséquences d’une analyse trop fréquente du dossier de contrôle.
 
 Lorsque des fichiers sont déposés dans le dossier de contrôle, ce dernier les répertorie dans le dossier Entrée, ce qui réduit parfois les performances si l’analyse s’effectue toutes les secondes. L’allongement de l’intervalle d’analyse permet d’améliorer les performances. Si le volume des fichiers déposés est réduit, ajustez la Taille du lot et l’Intervalle de répétition en conséquence. Par exemple, si 10 fichiers sont déposés toutes les secondes, essayez de définir l’Intervalle de répétition sur 1 seconde et la Taille du lot sur 10.
 
-Dans une configuration en cluster, la taille du lot d’un point d’entrée d’un dossier de contrôle ne se transforme pas en plusieurs nœuds de cluster. Par exemple, si la taille du lot est définie sur `2` (grappe à deux nœuds) et que l’option Ralentissement est sélectionnée, les nœuds traitent ensemble les fichiers par lots de deux. Cette opération remplace le traitement simultané de deux fichiers par chaque nœud.
+Dans une configuration en cluster, la taille du lot pour un point d’entrée de dossier surveillé ne se met pas à l’échelle sur plusieurs nœuds du cluster. Par exemple, si la taille du lot est définie sur `2` (grappe à deux nœuds) et que l’option Ralentissement est sélectionnée, les nœuds traitent ensemble les fichiers par lots de deux. Cette opération remplace le traitement simultané de deux fichiers par chaque nœud.
 
 **Remplacer les noms des fichiers en double :** une chaîne booléenne qui spécifie si le dossier de contrôle remplace les noms de fichiers de résultats en double et si les documents conservés du même nom doivent être remplacés.
 
@@ -735,8 +751,8 @@ Dans une configuration en cluster, la taille du lot d’un point d’entrée d�
 * %M = mois
 * %D = jour du mois
 * %d = jour de l’année
-* %H = heure (horloge 24 heures)
-* %h = heure (horloge 12 heures)
+* %H = heure (format 24 heures)
+* %h = heure (format 12 heures)
 * %m = minute
 * %s = seconde
 * %l = milliseconde
@@ -757,7 +773,7 @@ Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé 
 
 **Conserver en cas d’échec :** si cet attribut est défini sur true, les fichiers originaux sont conservés dans le dossier d’échec en cas d’échec.
 
-**Ralentissement :** lorsque cette option est sélectionnée, elle limite le nombre de tâches du dossier de contrôle qu’AEM forms peut traiter à un moment donné. La valeur Taille du lot détermine le nombre maximal de tâches (voir A propos du ralentissement).
+**Ralentissement :** lorsque cette option est sélectionnée, elle limite le nombre de tâches du dossier de contrôle qu’AEM forms peut traiter à un moment donné. La valeur Taille du lot détermine le nombre maximal de tâches (voir À propos de la limitation).
 
 ## Paramètres du service Web Service {#web-service-service-settings}
 
@@ -784,7 +800,7 @@ Les paramètres ci-dessous sont disponibles pour le service Service Web.
 
 **Mot de passe du Trust Store :** le mot de passe du fichier truststore.
 
-**Type de Trust Store :** le type de truststore. N’indiquez aucune valeur pour utiliser le type de stockage de clés par défaut configuré pour la JVM exécutant le serveur de formulaires. Dans le cas contraire, indiquez l’une des valeurs suivantes :
+**Type de Trust Store :** le type de truststore. N’indiquez aucune valeur pour utiliser le type de stockage de clés par défaut configuré pour la JVM exécutant le serveur Formulaires. Dans le cas contraire, indiquez l’une des valeurs suivantes :
 
 * jks
 * pkcs12
@@ -797,7 +813,7 @@ Le service XSLT Transformation (`XSLTService`) permet aux processus d’applique
 
 Le paramètre ci-dessous est disponible pour le service XSLT Transformation.
 
-**Nom de l’usine :** le nom complet de la classe Java à utiliser pour exécuter les transformations XSLT. Si aucune valeur n’est spécifiée, la valeur d’usine par défaut configurée dans la machine virtuelle Java exécutant le serveur Forms est utilisée.
+**Nom de l’usine :** le nom complet de la classe Java à utiliser pour exécuter les transformations XSLT. Si aucune valeur n’est spécifiée, la valeur d’usine par défaut configurée dans la machine virtuelle Java exécutant le serveur Formulaires est utilisée.
 
 ## Modifier les paramètres de sécurité d’un service {#modifying-security-settings-for-a-service}
 
@@ -816,8 +832,8 @@ Les profils de sécurité par défaut sont installés. Ils peuvent ensuite être
 
    Si vous sélectionnez Non, la personne appelant le service peut être authentifiée ou non. L’appel du service réussit toujours puisqu’aucune vérification des autorisations n’est effectuée.
 
-1. Pour les services qui contiennent une ou plusieurs opérations marquées pour l’accès anonyme, sélectionnez ou désélectionnez Accès anonyme autorisé. Lorsque l’accès anonyme est activé, toute personne utilisant le système peut appeler des opérations dans le service. Si l’accès anonyme est désactivé, les personnes doivent être autorisées à appeler le service et invoquer des opérations. Ces autorisations sont accordées aux personnes directement ou lorsque ces dernières font partie d’un groupe disposant d’autorisations de ce type.
-1. Pour certains services, le compte d’utilisateur qui exécute l’opération a une incidence sur les résultats. Par exemple, dans Content Services (obsolète), la personne qui stocke du contenu en devient propriétaire, ce qui a une incidence sur les personnes qui seront par la suite autorisées à y accéder. Si vous utilisez un processus pour stocker du contenu, réfléchissez à la personne qui exécutera le service Gestion des documents, car elle deviendra en effet propriétaire du contenu stocké.
+1. Pour les services qui contiennent une ou plusieurs opérations marquées pour l’accès anonyme, sélectionnez ou désélectionnez Accès anonyme autorisé. Lorsque l’accès anonyme est activé, tout utilisateur ou utilisatrice du système peut appeler des opérations dans le service. Si l’accès anonyme est désactivé, les utilisateurs et utilisatrices doivent être autorisés à appeler le service et à invoquer des opérations. Ces autorisations sont accordées aux personnes directement ou lorsque ces dernières font partie d’un groupe disposant d’autorisations de ce type.
+1. Pour certains services, le compte d’utilisateur qui exécute l’opération a une incidence sur les résultats. Par exemple, dans Content Services (obsolète), la personne qui stocke du contenu en devient propriétaire, ce qui a une incidence sur les personnes qui seront par la suite autorisées à y accéder. Si vous utilisez un processus pour stocker du contenu, réfléchissez à l’utilisateur ou utilisatrice qui exécutera le service Gestion des documents, car cet utilisateur ou cette utilisatrice deviendra en effet propriétaire du contenu stocké.
 
    Pour spécifier l’identité d’exécution utilisée par un service exécutant des opérations, sélectionnez Spécifier Exécuter en tant que, sélectionnez une option dans la liste associée, puis cliquez sur Enregistrer. Faites votre choix parmi les options suivantes :
 
@@ -825,16 +841,16 @@ Les profils de sécurité par défaut sont installés. Ils peuvent ensuite être
 
    **Système :** utilise l’utilisateur Système pour exécuter le service avec des droits illimités.
 
-   **Utilisateur nommé :** vous permet d’exécuter le service en tant qu’utilisateur spécifique. Lors de la sélection de cette option, cliquez sur Sélectionner un utilisateur pour afficher la page Sélectionner une entité de sécurité, qui vous permet de rechercher et de sélectionner une personne.
+   **Utilisateur nommé :** vous permet d’exécuter le service en tant qu’utilisateur spécifique. Lorsque vous sélectionnez cette option, cliquez sur Sélectionner un utilisateur ou une utilisatrice pour afficher la page Sélectionner un principal, qui vous permet de rechercher et de sélectionner l’utilisateur ou l’utilisatrice.
 
    Si vous ne sélectionnez pas Spécifier Exécuter en tant que, le comportement par défaut est utilisé.
 
    >[!NOTE]
    >
-   >Les services de rendu et d’envoi utilisés avec les variables xfaForm, Document Form et Form sont toujours exécutés à l’aide du compte utilisateur Système.
+   >Les services de rendu et d’envoi utilisés avec les variables xfaForm, Document Form et Form sont toujours exécutés à l’aide du compte d’utilisateur système.
 
-1. Cliquez sur Ajouter une entité de sécurité pour indiquer les droits dont disposent les personnes et les groupes pour ce service.
-1. L’écran Sélectionner une entité de sécurité affiche les personnes et les groupes configurés dans User Management. Si la personne ou le groupe souhaité ne s’affiche pas, utilisez la fonction de recherche. Cliquez sur un nom de personne ou de groupe.
+1. Cliquez sur Ajouter un principal pour indiquer les droits dont disposent les personnes et les groupes pour ce service.
+1. L’écran Sélectionner une entité de sécurité affiche les personnes et les groupes configurés dans User Management. Si l’utilisateur, l’utilisatrice ou le groupe souhaité ne s’affiche pas, utilisez la fonction de recherche. Cliquez sur un nom de personne ou de groupe.
 1. Dans l’écran Ajouter des droits, sélectionnez les droits à affecter à la personne ou au groupe pour ce service.
 
    * **INVOKE_PERM :** invocation de toutes les opérations sur le service.
@@ -846,20 +862,20 @@ Les profils de sécurité par défaut sont installés. Ils peuvent ensuite être
    * **DELETE_VERSION_PERM :** suppression d’une version du service.
    * **MODIFY_VERSION_PERM :** modification d’une version du service.
    * **READ_PERM :** affichage du service.
-   * **PROCESS_OWNER_PERM :** utilisation dans une future version d’AEM forms. N’utilisez pas ce droit.
-   * **SERVICE_MANAGER_PERM :** utilisation dans une future version d’AEM forms. N’utilisez pas ce droit.
-   * **SERVICE_AGENT_PERM :** Utilisation réservée à une future version d’AEM forms. N’utilisez pas ce droit.
+   * **PROCESS_OWNER_PERM :** utilisation dans une future version d’AEM forms. N’utilisez pas cette autorisation.
+   * **SERVICE_MANAGER_PERM :** utilisation dans une future version d’AEM forms. N’utilisez pas cette autorisation.
+   * **SERVICE_AGENT_PERM :** Utilisation réservée à une future version d’AEM forms. N’utilisez pas cette autorisation.
 
 1. Cliquez sur Ajouter.
 
-### Supprimer l’entité de sécurité d’un profil de sécurité {#remove-the-principal-from-a-security-profile}
+### Supprimer le principal d’un profil de sécurité {#remove-the-principal-from-a-security-profile}
 
 1. Sur la page Gestion des services, sélectionnez le service à configurer.
 1. Cliquez sur l’onglet **Sécurité**, sélectionnez le profil de sécurité à supprimer, puis cliquez sur **Supprimer**.
 
 ## Configuration du pool d’un service {#configuring-pooling-for-a-service}
 
-Chaque service peut tirer parti des options de pool pour traiter les demandes d’appel entrantes. Le recours à un pool de service garantit que les instances du service sont appelées par un seul thread à la fois et qu’elles sont réutilisées sur l’ensemble des demandes d’appel, ce qui permet d’optimiser les performances. Vous pouvez également recourir à un pool pour définir l’option Instances maximales des services asynchrones, qui autorise les services à limiter le nombre de demandes traitées en parallèle.
+Chaque service peut tirer parti des fonctionnalités de pool pour traiter les demandes d’appel entrantes. Le recours à un pool de service garantit que les instances du service sont appelées par un seul thread à la fois et qu’elles sont réutilisées sur l’ensemble des demandes d’appel, ce qui permet d’optimiser les performances. Vous pouvez également recourir à un pool pour définir l’option Instances maximales des services asynchrones, qui autorise les services à limiter le nombre de demandes traitées en parallèle.
 
 ### Activer le pool {#enable-pooling}
 
@@ -867,8 +883,8 @@ Chaque service peut tirer parti des options de pool pour traiter les demandes d�
 1. Dans la page Gestion des services, cliquez sur le service à configurer.
 1. Cliquez sur l’onglet Mise en pool.
 1. Dans la liste Stratégie de traitement de demande, sélectionnez Instances mises en pool pour Toutes les demandes.
-1. Dans le champ Taille initiale du pool d’instances de service, saisissez la taille initiale du pool. Lors du déploiement du service, cette valeur permet de déterminer le nombre d’instances d’implémentation du service à créer et à affecter au pool libre en attente de demandes d’appel. Le conteneur du service peut alors répondre immédiatement aux demandes d’appel sans initialisation préalable d’une instance de service.
-1. Dans le champ Taille maximale du pool d’instances de service, indiquez le nombre maximal d’instances autorisées dans le pool pour un service donné. Ce paramètre contrôle le nombre de threads susceptibles d’exécuter un service à un moment donné. La valeur par défaut est 0 ; elle autorise une taille illimitée pour le pool.
+1. Dans le champ Taille initiale du pool d’instances de service, saisissez la taille initiale du pool. Lors du déploiement du service, cette valeur permet de déterminer le nombre d’instances de mise en œuvre du service à créer et à affecter au pool libre en attente de demandes d’appel. Le conteneur du service peut alors répondre immédiatement aux demandes d’appel sans initialisation préalable d’une instance de service.
+1. Dans le champ Taille maximale du pool d’instances de service, indiquez le nombre maximal d’instances autorisées dans le pool pour un service donné. Ce paramètre contrôle le nombre de threads susceptibles d’exécuter un service à un moment donné. La valeur par défaut est 0 ; elle autorise une taille de pool illimitée.
 1. Dans le champ Instances maximales des services asynchrones, indiquez le nombre maximal d’instances du pool qui peuvent être utilisées pour répondre aux demandes asynchrones à un moment donné. Ce paramètre permet au service de limiter le nombre de demandes traitées en parallèle.
 1. Dans le champ Délai d’attente d’appel, saisissez le délai d’expiration (en millisecondes) d’attente pour qu’un service soit disponible pour une demande d’appel. Si vous ne définissez aucune valeur pour ce paramètre, la valeur par défaut est 0, autrement dit, aucun délai d’attente.
 1. Cliquez sur Enregistrer.
@@ -880,7 +896,7 @@ Chaque service peut tirer parti des options de pool pour traiter les demandes d�
 1. Cliquez sur l’onglet Mise en pool.
 1. Dans la liste Stratégie de traitement de demande, sélectionnez Nouvelle instance pour chaque demande ou Instance unique pour toutes les demandes.
 
-   **Single Instance for All Requests :** une instance de service est créée et mise en cache lorsque la première demande vient dans le conteneur. Chaque requête suivant cette demande utilise la même instance de service pour gérer la demande.
+   **Single Instance for All Requests :** une instance de service est créée et mise en cache lorsque la première demande vient dans le conteneur. Chaque requête suivant cette requête utilise la même instance de service pour la traiter.
 
    **New Instance for Each Request :** une nouvelle instance de service est créée pour chaque appel reçu.
 

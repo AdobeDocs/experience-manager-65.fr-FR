@@ -8,13 +8,29 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2541'
-ht-degree: 97%
-
+source-wordcount: '2552'
+ht-degree: 98%
 ---
-
 # Tableaux dans les formulaires adaptatifs{#tables-in-adaptive-forms}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -128,8 +144,8 @@ Vous pouvez définir le style d’un tableau à l’aide du mode Style de la bar
 
 1. Dans la barre d’outils de la page, avant Aperçu, sélectionnez ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
 
-1. Dans la barre latérale, sélectionnez le tableau, puis sélectionnez le bouton Modifier ![edit-button](assets/edit-button.png).
-Les propriétés de style s’affichent dans la barre latérale.
+1. Dans la barre latérale, sélectionnez le tableau, puis cliquez sur le bouton Modifier (![edit-button](assets/edit-button.png)).
+Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 ![Propriétés de style d’un tableau](assets/style-table.png)
 
@@ -287,7 +303,7 @@ Le fichier XML contenant les données au format suivant :
 
 Dans l’exemple XML, les données d’une ligne sont définies par les balises `<Row1>`, qui sont le nom d’élément de la ligne du tableau. Dans la balise `<Row1>`, les données de chaque cellule sont définies dans la balise pour son nom d’élément, notamment `<tableItem1>`, `<tableItem2>`, `<tableItem3>` et `<type>`.
 
-Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiquer le formulaire adaptatif contenant le tableau à l’emplacement XML absolu avec le mode WCM désactivé. Par exemple, si le formulaire adaptatif se trouve sous *https://localhost:4502/myForms/bankTransaction.html* et que le fichier de données XML est enregistré sous *C:/myTransactions/bankSummary.xml*, vous pouvez afficher le tableau avec des données à l’adresse URL suivante :
+Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiquer le formulaire adaptatif contenant le tableau à l’emplacement XML absolu avec le mode WCM désactivé. Par exemple, si le formulaire adaptatif se trouve sous ** et que le fichier de données XML est enregistré sous *C:/myTransactions/bankSummary.xml*, vous pouvez afficher le tableau avec des données à l’adresse URL suivante :
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 

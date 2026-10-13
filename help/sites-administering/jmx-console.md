@@ -10,13 +10,24 @@ exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4969'
+source-wordcount: '4975'
 ht-degree: 99%
-
 ---
-
 # Surveiller les ressources de serveur à l’aide de la console JMX{#monitoring-server-resources-using-the-jmx-console}
 
 La console JMX permet de surveiller et de gérer des services sur le serveur CRX. Les sections suivantes récapitulent les attributs et les opérations exposés par le biais de la structure JMX.
@@ -53,37 +64,37 @@ Opérations d’administration des instances de workflow en cours d’exécution
 * Arguments : aucun
 * Valeur renvoyée : données tabulaires contenant les colonnes suivantes :
 
-   * Tâches
-   * Nom de la file d’attente
-   * Traitements actifs
-   * Temps de traitement moyen
-   * Temps d’attente moyen
-   * Traitements annulés
-   * Traitements en échec
-   * Traitements terminés
-   * Traitements traités
-   * Traitements en file d’attente
+  * Tâches
+  * Nom de la file d’attente
+  * Traitements actifs
+  * Temps de traitement moyen
+  * Temps d’attente moyen
+  * Traitements annulés
+  * Traitements en échec
+  * Traitements terminés
+  * Traitements traités
+  * Traitements en file d’attente
 
 **returnWorkflowJobTopicInfo** Répertorie les informations de traitement des tâches de workflow, organisées par rubrique.
 
 * Arguments : aucun
 * Valeur renvoyée : données tabulaires contenant les colonnes suivantes :
 
-   * Nom de la rubrique
-   * Temps de traitement moyen
-   * Temps d’attente moyen
-   * Traitements annulés
-   * Traitements en échec
-   * Traitements terminés
-   * Traitements traités
+  * Nom de la rubrique
+  * Temps de traitement moyen
+  * Temps d’attente moyen
+  * Traitements annulés
+  * Traitements en échec
+  * Traitements terminés
+  * Traitements traités
 
 **returnFailedWorkflowCount** Affiche le nombre d’instances de workflow ayant échoué. Vous pouvez spécifier un modèle de workflow pour interroger ou récupérer des informations pour tous les modèles de workflow.
 
 * Arguments :
 
-   * Modèle : ID du modèle à interroger. Pour afficher le nombre d’instances de workflows ayant échoué pour tous les modèles de workflows, ne spécifiez aucune valeur. L’ID est le chemin d’accès au nœud de modèle, par exemple :
+  * Modèle : ID du modèle à interroger. Pour afficher le nombre d’instances de workflows ayant échoué pour tous les modèles de workflows, ne spécifiez aucune valeur. L’ID est le chemin d’accès au nœud de modèle, par exemple :
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valeur renvoyée : nombre d’instances de workflow ayant échoué.
 
@@ -96,65 +107,65 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 * Arguments :
 
-   * Redémarrez l’instance : (facultatif) spécifiez la valeur `true` pour redémarrer les instances après les avoir interrompues. La valeur par défaut `false` n’entraîne pas le redémarrage des instances de workflow interrompues.
-   * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
-   * Modèle : (facultatif) ID du modèle auquel l’opération est appliquée. Ne spécifiez aucun modèle pour appliquer l’opération aux instances ayant échoué de tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
+  * Redémarrez l’instance : (facultatif) spécifiez la valeur `true` pour redémarrer les instances après les avoir interrompues. La valeur par défaut `false` n’entraîne pas le redémarrage des instances de workflow interrompues.
+  * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
+  * Modèle : (facultatif) ID du modèle auquel l’opération est appliquée. Ne spécifiez aucun modèle pour appliquer l’opération aux instances ayant échoué de tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valeur renvoyée : données tabulaires concernant les instances interrompues, contenant les colonnes suivantes :
 
-   * Initiateur
-   * InstanceId
-   * ModelId
-   * Payload
-   * StartComment
-   * WorkflowTitle
+  * Initiateur
+  * InstanceId
+  * ModelId
+  * Payload
+  * StartComment
+  * WorkflowTitle
 
 **retryFailedWorkItems** Tente d’exécuter les étapes d’une tâche ayant échoué. Vous pouvez tenter de réexécuter toutes les tâches ayant échoué ou seulement les tâches ayant échoué pour un modèle de workflow spécifique. Vous avez la possibilité de tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
 
 * Arguments :
 
-   * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
-   * Modèle : (facultatif) ID du modèle auquel l’opération est appliquée. Ne spécifiez aucun modèle pour appliquer l’opération aux tâches ayant échoué pour tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
+  * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
+  * Modèle : (facultatif) ID du modèle auquel l’opération est appliquée. Ne spécifiez aucun modèle pour appliquer l’opération aux tâches ayant échoué pour tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valeur renvoyée : données tabulaires relatives aux éléments ayant échoué et qui ont fait l’objet d’une nouvelle tentative, notamment les colonnes suivantes :
 
-   * Initiateur
-   * InstanceId
-   * ModelId
-   * Payload
-   * StartComment
-   * WorkflowTitle
+  * Initiateur
+  * InstanceId
+  * ModelId
+  * Payload
+  * StartComment
+  * WorkflowTitle
 
 **PurgeActive** Supprime les instances de workflows actives d’une ancienneté déterminée. Vous pouvez purger des instances actives pour tous les modèles ou pour un modèle spécifique seulement. Vous avez la possibilité de tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
 
 * Arguments :
 
-   * Modèle : (facultatif) ID du modèle auquel l’opération est appliquée. Ne spécifiez aucun modèle pour appliquer l’opération aux instances de workflows de tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
+  * Modèle : (facultatif) ID du modèle auquel l’opération est appliquée. Ne spécifiez aucun modèle pour appliquer l’opération aux instances de workflows de tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Nombre de jours écoulés depuis le début du workflow : ancienneté des instances de workflows à purger, exprimée en jours.
-   * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Nombre de jours écoulés depuis le début du workflow : ancienneté des instances de workflows à purger, exprimée en jours.
+  * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
 
 * Valeur renvoyée : données tabulaires sur les instances de workflow actives purgées, y compris les colonnes suivantes :
 
-   * Initiateur
-   * InstanceId
-   * ModelId
-   * Payload
-   * StartComment
-   * WorkflowTitle
+  * Initiateur
+  * InstanceId
+  * ModelId
+  * Payload
+  * StartComment
+  * WorkflowTitle
 
 **countStaleWorkflows** Renvoie le nombre d’instances de workflows obsolètes. Vous pouvez récupérer le nombre d’instances obsolètes pour tous les modèles de workflow ou pour un modèle spécifique.
 
 * Arguments :
 
-   * Modèle : (facultatif) ID du modèle auquel l’opération est appliquée. Ne spécifiez aucun modèle pour appliquer l’opération aux instances de workflows de tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
+  * Modèle : (facultatif) ID du modèle auquel l’opération est appliquée. Ne spécifiez aucun modèle pour appliquer l’opération aux instances de workflows de tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valeur renvoyée : nombre d’instances de workflows obsolètes.
 
@@ -162,10 +173,10 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 * Arguments :
 
-   * Modèle : (facultatif) ID du modèle auquel l’opération est appliquée. Ne spécifiez aucun modèle pour appliquer l’opération aux instances obsolètes de tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
+  * Modèle : (facultatif) ID du modèle auquel l’opération est appliquée. Ne spécifiez aucun modèle pour appliquer l’opération aux instances obsolètes de tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
 
 * Valeur renvoyée : une liste d’instances de workflows redémarrées.
 
@@ -178,9 +189,9 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 * Arguments :
 
-   * Modèle : (facultatif) ID du modèle pour lequel le nombre d’instances exécutées est renvoyé. Ne spécifiez aucun modèle pour renvoyer le nombre d’instances exécutées pour tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
+  * Modèle : (facultatif) ID du modèle pour lequel le nombre d’instances exécutées est renvoyé. Ne spécifiez aucun modèle pour renvoyer le nombre d’instances exécutées pour tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valeur renvoyée : nombre d’instances de workflows en cours d’exécution.
 
@@ -188,9 +199,9 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 * Arguments :
 
-   * Modèle : (facultatif) ID du modèle pour lequel le nombre d’instances terminées est renvoyé. Ne spécifiez aucun modèle pour renvoyer le nombre d’instances terminées pour tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
+  * Modèle : (facultatif) ID du modèle pour lequel le nombre d’instances terminées est renvoyé. Ne spécifiez aucun modèle pour renvoyer le nombre d’instances terminées pour tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valeur renvoyée : nombre d’instances de workflows terminées.
 
@@ -198,20 +209,20 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 * Arguments :
 
-   * Modèle : (facultatif) ID du modèle auquel l’opération est appliquée. Ne spécifiez aucun modèle pour appliquer l’opération aux instances de workflows de tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
+  * Modèle : (facultatif) ID du modèle auquel l’opération est appliquée. Ne spécifiez aucun modèle pour appliquer l’opération aux instances de workflows de tous les modèles de workflows. L’ID est le chemin d’accès au nœud de modèle, par exemple :
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Nombre de jours écoulés depuis la fin du workflow : nombre de jours pendant lesquels les instances de workflows ont eu le statut Terminé.
-   * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Nombre de jours écoulés depuis la fin du workflow : nombre de jours pendant lesquels les instances de workflows ont eu le statut Terminé.
+  * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
 
 * Valeur renvoyée : données tabulaires sur les instances de workflow terminées purgées, y compris les colonnes suivantes :
 
-   * Initiateur
-   * InstanceId
-   * ModelId
-   * Payload
-   * StartComment
-   * WorkflowTitle
+  * Initiateur
+  * InstanceId
+  * ModelId
+  * Payload
+  * StartComment
+  * WorkflowTitle
 
 ## Référentiel {#repository}
 
@@ -252,7 +263,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>identifier.stability</td>
-   <td>Indique la stabilité des identifiants de nœud non référençables. Les valeurs possibles sont les suivantes :
+   <td>Indique la stabilité des identifiants de nœud non référençables. Les valeurs suivantes sont valides :
     <ul>
      <li>identifier.stability.indefinite.duration : les identifiants ne changent pas.</li>
      <li>identifier.stability.method.duration : les identifiants peuvent changer entre les appels de méthode.</li>
@@ -532,7 +543,7 @@ Lecture seule.
 
 * Arguments :
 
-   * nom : valeur String qui représente le nom du nouvel espace de travail.
+  * nom : valeur String qui représente le nom du nouvel espace de travail.
 
 * Valeur renvoyée : aucune
 
@@ -540,7 +551,7 @@ Lecture seule.
 
 * Arguments :
 
-   * delete : valeur booléenne, qui indique si les éléments inutilisés du référentiel doivent être supprimés. La valeur true entraîne la suppression des nœuds et des propriétés inutilisés. La valeur false entraîne l’analyse de tous les nœuds, mais aucun n’est supprimé.
+  * delete : valeur booléenne, qui indique si les éléments inutilisés du référentiel doivent être supprimés. La valeur true entraîne la suppression des nœuds et des propriétés inutilisés. La valeur false entraîne l’analyse de tous les nœuds, mais aucun n’est supprimé.
 
 * Valeur renvoyée : aucune
 
@@ -553,13 +564,13 @@ Lecture seule.
 
 * Arguments :
 
-   * `target` : (facultatif) valeur de `String`, qui représente le nom du fichier ZIP ou d’un répertoire dans lequel archiver les données du référentiel. Pour utiliser un fichier ZIP, incluez l’extension du nom de fichier ZIP. Pour utiliser un répertoire, n’incluez aucune extension de nom de fichier.
+  * `target` : (facultatif) valeur de `String`, qui représente le nom du fichier ZIP ou d’un répertoire dans lequel archiver les données du référentiel. Pour utiliser un fichier ZIP, incluez l’extension du nom de fichier ZIP. Pour utiliser un répertoire, n’incluez aucune extension de nom de fichier.
 
-     Pour effectuer une sauvegarde incrémentielle, spécifiez le répertoire qui a déjà été utilisé pour la sauvegarde.
+    Pour effectuer une sauvegarde incrémentielle, spécifiez le répertoire qui a déjà été utilisé pour la sauvegarde.
 
-     Vous pouvez spécifier un chemin d’accès absolu ou relatif. Les chemins d’accès relatifs le sont par rapport au parent du répertoire crx-quickstart.
+    Vous pouvez spécifier un chemin d’accès absolu ou relatif. Les chemins d’accès relatifs le sont par rapport au parent du répertoire crx-quickstart.
 
-     Lorsque vous ne spécifiez aucune valeur, la valeur par défaut `backup-currentdate.zip` est utilisée, où `currentdate` est au format `yyyyMMdd-HHmm`.
+    Lorsque vous ne spécifiez aucune valeur, la valeur par défaut `backup-currentdate.zip` est utilisée, où `currentdate` est au format `yyyyMMdd-HHmm`.
 
 * Valeur renvoyée : aucune
 
@@ -592,7 +603,7 @@ Lecture seule.
 
 * Arguments :
 
-   * `background` : valeur booléenne, qui indique si l’opération doit être exécutée en arrière-plan afin que la console web soit utilisable lors de l’exécution. La valeur true exécute l’opération en arrière-plan.
+  * `background` : valeur booléenne, qui indique si l’opération doit être exécutée en arrière-plan afin que la console web soit utilisable lors de l’exécution. La valeur true exécute l’opération en arrière-plan.
 
 * Valeur renvoyée : aucune
 
@@ -605,9 +616,9 @@ Lecture seule.
 
 * Arguments :
 
-   * `master` : valeur de chaîne, qui représente l’adresse IP ou le nom de l’ordinateur qui exécute le nœud de référentiel principal.
-   * `username` : nom à utiliser pour l’authentification au niveau du cluster.
-   * `password` : mot de passe à utiliser pour l’authentification.
+  * `master` : valeur de chaîne, qui représente l’adresse IP ou le nom de l’ordinateur qui exécute le nœud de référentiel principal.
+  * `username` : nom à utiliser pour l’authentification au niveau du cluster.
+  * `password` : mot de passe à utiliser pour l’authentification.
 
 * Valeur renvoyée : aucune
 
@@ -623,28 +634,28 @@ Valeur du champ TimeSeries pour chaque type de statistiques défini par `org.apa
 * Type : `TimeSeries`
 * Nom : l’une des valeurs ci-dessous de la classe d’énumération `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` :
 
-   * BUNDLE_CACHE_ACCESS_COUNTER
-   * BUNDLE_CACHE_MISS_AVERAGE
-   * BUNDLE_CACHE_MISS_COUNTER
-   * BUNDLE_CACHE_MISS_DURATION
-   * BUNDLE_CACHE_SIZE_COUNTER
-   * BUNDLE_COUNTER
-   * BUNDLE_READ_COUNTER
-   * BUNDLE_WRITE_AVERAGE
-   * BUNDLE_WRITE_COUNTER
-   * BUNDLE_WRITE_DURATION
-   * BUNDLE_WS_SIZE_COUNTER
-   * QUERY_AVERAGE
-   * QUERY_COUNT
-   * QUERY_DURATION
-   * SESSION_COUNT
-   * SESSION_LOGIN_COUNTER
-   * SESSION_READ_AVERAGE
-   * SESSION_READ_COUNTER
-   * SESSION_READ_DURATION
-   * SESSION_WRITE_AVERAGE
-   * SESSION_WRITE_COUNTER
-   * SESSION_WRITE_DURATION
+  * BUNDLE_CACHE_ACCESS_COUNTER
+  * BUNDLE_CACHE_MISS_AVERAGE
+  * BUNDLE_CACHE_MISS_COUNTER
+  * BUNDLE_CACHE_MISS_DURATION
+  * BUNDLE_CACHE_SIZE_COUNTER
+  * BUNDLE_COUNTER
+  * BUNDLE_READ_COUNTER
+  * BUNDLE_WRITE_AVERAGE
+  * BUNDLE_WRITE_COUNTER
+  * BUNDLE_WRITE_DURATION
+  * BUNDLE_WS_SIZE_COUNTER
+  * QUERY_AVERAGE
+  * QUERY_COUNT
+  * QUERY_DURATION
+  * SESSION_COUNT
+  * SESSION_LOGIN_COUNTER
+  * SESSION_READ_AVERAGE
+  * SESSION_READ_COUNTER
+  * SESSION_READ_DURATION
+  * SESSION_WRITE_AVERAGE
+  * SESSION_WRITE_COUNTER
+  * SESSION_WRITE_DURATION
 
 ### Attributs {#attributes-1}
 
@@ -816,7 +827,7 @@ Appelle la méthode startupFinished du lanceur du serveur. La méthode tente d�
 Définit la valeur de fin du processus de démarrage du serveur. La barre de progression de la fenêtre QuickStart représente la valeur de fin.
 
 * Arguments :
-   * p1 : valeur flottante représentant la quantité du processus de démarrage terminée, sous forme de fraction. La valeur doit être comprise entre zéro et un. Par exemple, 0,3 indique que le processus est à 30 % d’achèvement.
+  * p1 : valeur flottante représentant la quantité du processus de démarrage terminée, sous forme de fraction. La valeur doit être comprise entre zéro et un. Par exemple, 0,3 indique que le processus est à 30 % d’achèvement.
 * Valeur renvoyée : aucune.
 
 ## Services tiers {#third-party-services}
@@ -886,7 +897,7 @@ Les MBeans déployés avec un service OSGi exposent les attributs et les opérat
 
 La page principale de la console JMX comporte un tableau des services. Chaque ligne du tableau représente un service exposé par un MBean.
 
-1. Ouvrez la console web et cliquez sur l’onglet JMX. ([:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
+1. Ouvrez la console web et cliquez sur l’onglet JMX. ([&#128279;](http://localhost:4502/system/console/jmx))
 2. Cliquez sur une valeur de cellule pour un service afin d’afficher les attributs et les opérations du service.
 3. Pour modifier une valeur d’attribut, cliquez sur la valeur, spécifiez la valeur dans la boîte de dialogue qui s’affiche, puis cliquez sur Enregistrer.
 4. Pour appeler une opération de service, cliquez sur le nom de l’opération, spécifiez les valeurs d’argument dans la boîte de dialogue qui s’affiche, puis cliquez sur Appeler.

@@ -9,13 +9,27 @@ role: Admin,User
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 99%
-
+source-wordcount: '918'
+ht-degree: 100%
 ---
-
 # Optimisation des performances du serveur AEM Forms{#performance-tuning-of-aem-forms-server}
 
 Cet article décrit les stratégies et bonnes pratiques à implémenter pour réduire les congestionnements et optimiser les performances de votre déploiement d’AEM Forms.
@@ -93,7 +107,7 @@ Apache peut communiquer avec CRX à l’aide du protocole HTTP. Les configuratio
    >Pour Linux®, le répertoire `APACHE_HOME` par défaut est `/etc/httpd/`.
 
 1. Configurez le proxy sur le port 4502 de crx.
-Ajoutez la configuration suivante dans `APACHE_HOME/conf/httpd.conf` fichier de configuration .
+Ajoutez la configuration suivante dans le fichier de configuration `APACHE_HOME/conf/httpd.conf`.
 
    ```shell
    ProxyPass / https://<server>:4502/
@@ -146,26 +160,26 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 
 * Répertoire d’installation d’AEM. S’il n’est pas possible d’exclure le répertoire complet, excluez les fichiers suivants :
 
-   * [Répertoire d’installation d’AEM]\crx-repository\temp
-   * [Répertoire d’installation d’AEM]\crx-repository\repository
-   * [Répertoire d’installation d’AEM]\crx-repository\launchpad
+  * [Répertoire d’installation d’AEM]\crx-repository\temp
+  * [Répertoire d’installation d’AEM]\crx-repository\repository
+  * [Répertoire d’installation d’AEM]\crx-repository\launchpad
 
 * Répertoire temporaire du serveur d’applications. L’emplacement par défaut est :
 
-   * (JBoss®) [Répertoire d’installation d’AEM]\jboss\standalone\tmp
-   * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (WebSphere®) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+  * (JBoss®) [Répertoire d’installation d’AEM]\jboss\standalone\tmp
+  * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
+  * (WebSphere®) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
 * **(AEM Forms on JEE uniquement)** Répertoire de stockage global de documents (GDS). L’emplacement par défaut est :
 
-   * (JBoss®) [racine du serveur d’applications]/server/&#39;server&#39;/svcnative/DocumentStorage
-   * (WebLogic) [domaine du serveur d’applications]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere®) [racine du serveur d’applications]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+  * (JBoss®) [racine du serveur d’applications]/server/&#39;server&#39;/svcnative/DocumentStorage
+  * (WebLogic) [domaine du serveur d’applications]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
+  * (WebSphere®) [racine du serveur d’applications]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
 * **(AEM Forms on JEE uniquement)** Journaux du serveur et répertoire temporaire AEM Forms. L’emplacement par défaut est :
 
-   * Journaux du serveur - [Répertoire d’installation d’AEM Forms]\Adobe\AEM forms\[app-server]\server\all\logs
-   * Répertoire temporaire - [Répertoire d’installation d’AEM Forms]\temp
+  * Journaux du serveur - [Répertoire d’installation d’AEM Forms]\Adobe\AEM forms\[app-server]\server\all\logs
+  * Répertoire temporaire - [Répertoire d’installation d’AEM Forms]\temp
 
 >[!NOTE]
 >

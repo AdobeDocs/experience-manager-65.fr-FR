@@ -9,7 +9,23 @@ exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 100%
@@ -68,7 +84,7 @@ Les données de l’application AEM Forms résident dans le répertoire GDS et 
 
 ## Configurer le répertoire GDS {#configuring-the-gds-directory}
 
-L’emplacement du répertoire GDS peut être configuré manuellement pendant le processus d’installation d’AEM Forms. Si le paramètre d’emplacement reste vide pendant l’installation, l’emplacement est par défaut un répertoire sous l’installation du serveur d’applications :
+L’emplacement du répertoire GDS peut être configuré manuellement pendant le processus d’installation d’AEM Forms. Si le paramètre d’emplacement reste vide pendant l’installation, l’emplacement correspond par défaut à un répertoire situé sous l’installation du serveur d’applications :
 
 * (JBoss) `[appserver root]/server/[type]/svcnative/DocumentStorage`
 * (WebLo gic) `[appserverdomain]/'server'/adobe/DocumentServer/DocumentStorage`
@@ -84,7 +100,7 @@ Vous pouvez modifier l’emplacement GDS dans la console d’administration une 
 > * Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 
-1. Connectez-vous à la console d’administration et cliquez sur Paramètres > Paramètres de Core System > Configurations.
+1. Connectez-vous à la console d’administration et cliquez sur Paramètres > Paramètres système principaux > Configurations.
 2. Dans la zone Répertoire de stockage global de documents, entrez le chemin complet du nouveau répertoire GDS, puis cliquez sur OK.
 3. Arrêtez immédiatement le serveur d’applications.
 4. Déplacez tous les fichiers de l’ancien répertoire GDS vers le nouvel emplacement, en conservant la structure de répertoire interne.

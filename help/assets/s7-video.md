@@ -10,13 +10,27 @@ mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: cb04d42d-1b70-43b0-9951-45998eb6e842
+    internal-label: Video
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1606'
 ht-degree: 100%
-
 ---
-
 # Vidéo {#video}
 
 Adobe Experience Manager Assets fournit une gestion du contenu vidéo centralisée où vous pouvez charger des vidéos directement dans Assets pour un codage automatique sur Dynamic Media Classic et accéder aux vidéos Dynamic Media Classic directement depuis Assets à des fins de création de page.
@@ -34,9 +48,9 @@ Le workflow de codage vidéo par défaut est basé sur l’utilisation d’une i
 * Miniatures FFMPEG
 * Encodage FFMPEG
 
-Gardez à l’esprit que l’activation et la configuration de l’intégration ne suppriment ou ne désactivent pas automatiquement ces deux étapes du workflow prêt à l’emploi d’assimilation de la gestion des ressources numériques. Si vous utilisez déjà le codage vidéo FFMPEG dans Adobe Experience Manager, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo assimilée à l’aide de la gestion des ressources numériques est codée deux fois : une fois par le codeur FFMPEG et une fois par l’intégration de Dynamic Media Classic.
+Gardez à l’esprit que l’activation et la configuration de l’intégration ne suppriment ou ne désactivent pas automatiquement ces deux étapes du workflow d’ingestion DAM prêt à l’emploi. Si vous utilisez déjà le codage vidéo FFMPEG dans Adobe Experience Manager, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo assimilée à l’aide de la gestion des ressources numériques est codée deux fois : une fois par le codeur FFMPEG et une fois par l’intégration de Dynamic Media Classic.
 
-Si le codage vidéo basé sur FFMPEG est configuré dans Experience Manager et que FFMPEG est installé, Adobe recommande de supprimer les deux processus FFMPEG des workflows d’assimilation de la gestion des ressources numériques.
+Si le codage vidéo basé sur FFMPEG est configuré dans Experience Manager et que FFMPEG est installé, Adobe recommande de supprimer les deux workflows FFMPEG des workflows d’ingestion de gestion des ressources numériques (DAM).
 
 ## Formats pris en charge {#supported-formats}
 
@@ -120,7 +134,7 @@ Le tableau suivant explique les cas d’utilisation de chaque composant :
 
 >[!NOTE]
 >
->Prêt à l’emploi, le composant vidéo S7 utilise le profil vidéo universel. Vous pouvez toutefois obtenir le lecteur vidéo basé sur HTML5 pour l’utiliser avec Experience Manager. Dans Scene7, copiez le code incorporé du lecteur vidéo HTML5 prêt à l’emploi et placez-le dans votre page Experience Manager.
+>Prêt à l’emploi, le composant vidéo S7 utilise le profil vidéo universel. Vous pouvez toutefois obtenir le lecteur vidéo basé sur HTML5 pour l’utiliser avec Experience Manager. Dans Scene7, copiez le code intégré du lecteur vidéo HTML5 prêt à l’emploi et placez-le dans votre page Experience Manager.
 
 ## Composant vidéo Experience Manager {#aem-video-component}
 
@@ -149,7 +163,7 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 >Les nouveaux profils vidéo et leurs modifications doivent être activés pour la publication.
 
 1. Dans Experience Manager, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Console de configuration]**.
-1. Dans la **[!UICONTROL console de configuration]**, accédez à **[!UICONTROL Outils]** -> **[!UICONTROL Gestion des ressources numériques]** -> **[!UICONTROL Profils vidéo]** dans l’arborescence de navigation.
+1. Dans la **[!UICONTROL console de configuration]**, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Gestion des ressources numériques]** > **[!UICONTROL Profils vidéo]** dans l’arborescence de navigation.
 1. Créez un profil vidéo S7. Dans le menu **[!UICONTROL Nouveau]**, sélectionnez **[!UICONTROL Créer une page]**, puis sélectionnez le modèle de profil vidéo Scene7. Attribuez un nom à la nouvelle page de profil vidéo et sélectionnez **[!UICONTROL Créer]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)

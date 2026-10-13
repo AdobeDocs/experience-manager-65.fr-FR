@@ -1,6 +1,6 @@
 ---
 title: API utilisées dans l’espace de travail AEM Forms
-description: API Public Java&trade; et JavaScript et méthodes de l’espace de travail LiveCycle AEM Forms exposées pour la personnalisation et l’automatisation.
+description: API Java&trade ; et JavaScript publiques et méthodes de l’espace de travail AEM Forms LiveCycle, exposées pour personnalisation et automatisation.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -8,13 +8,33 @@ exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1059'
-ht-degree: 100%
-
+source-wordcount: '1063'
+ht-degree: 98%
 ---
-
 # API utilisées dans l’espace de travail AEM Forms {#apis-used-in-aem-forms-workspace}
 
 L’espace de travail AEM Forms utilise les API suivantes.
@@ -130,9 +150,9 @@ L’espace de travail AEM Forms utilise les API suivantes.
    <td>Elle récupère toutes les pièces jointes et notes d’une tâche.</td>
   </tr>
   <tr>
-   <td>réseau </td>
+   <td>réseau</td>
    <td>ProcessManagementTaskService</td>
-   <td>réseau </td>
+   <td>réseau</td>
    <td>Elle partage une tâche avec un autre utilisateur ou une autre utilisatrice. Un autre utilisateur ou une autre utilisatrice peut demander la tâche et devient propriétaire de celle-ci.</td>
   </tr>
   <tr>

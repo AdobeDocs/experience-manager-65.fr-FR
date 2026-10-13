@@ -9,18 +9,34 @@ role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: 4df88fc37b86b6ff3b3a9b788c91b61e2aa7b07f
-workflow-type: ht
-source-wordcount: '2347'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '2398'
 ht-degree: 100%
-
 ---
-
 # Utiliser des documents PDF/A {#working-with-pdf-a-documents}
 
 **À propos du service DocConverter**
 
-Le service DocConverter peut convertir des documents PDF en documents PDA/A. Vous pouvez accomplir les tâches suivantes à l’aide de ce service :
+Le service DocConverter peut convertir des documents PDF en documents PDF/A. Vous pouvez accomplir les tâches suivantes à l’aide de ce service :
 
 * Convertir des documents PDF en documents PDF/A. (Voir [Convertir des documents en documents PDF/A](pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 * Déterminer si les documents PDF sont des documents PDF/A. (Voir [Déterminer la conformité PDF/A par programmation](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
@@ -92,7 +108,7 @@ Vous pouvez enregistrer le document PDF/A en tant que fichier PDF.
 
 [Convertir des documents en documents PDF/A à l’aide de l’API Java](pdf-a-documents.md#convert-documents-to-pdf-a-documents-using-the-java-api)
 
-[Convertir des documents en documents PDF/A à l’aide de l’API Web Service](pdf-a-documents.md#convert-documents-to-pdf-a-documents-using-the-web-service-api)
+[Convertir des documents en documents PDF/A à l’aide de l’API de service web](pdf-a-documents.md#convert-documents-to-pdf-a-documents-using-the-web-service-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -106,22 +122,22 @@ Convertissez un document PDF en document PDF/A à l’aide de l’API Java :
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-docconverter-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créer un client DocConvert
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `DocConverterServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `DocConverterServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Référencer un document PDF à convertir en document PDF/A
 
-   * Créez un objet `java.io.FileInputStream` qui représente le document PDF à convertir en utilisant son constructeur et en transmettant une valeur string spécifiant l’emplacement du fichier PDF.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `java.io.FileInputStream` qui représente le document PDF à convertir en utilisant son constructeur et en transmettant une valeur de chaîne spécifiant l’emplacement du fichier PDF.
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Définir les informations de suivi
 
    * Créez un objet `PDFAConversionOptionSpec` en utilisant son constructeur.
-   * Définissez le niveau de suivi des informations en appelant la méthode `setLogLevel` de l’objet `PDFAConversionOptionSpec` et en transmettant une valeur string qui spécifie le niveau de suivi. Par exemple, transmettez la valeur `FINE`. Pour plus d’informations sur les différentes valeurs, voir la méthode `setLogLevel` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Définissez le niveau de suivi des informations en appelant la méthode `setLogLevel` de l’objet `PDFAConversionOptionSpec` et en transmettant une valeur de chaîne qui spécifie le niveau de suivi. Par exemple, transmettez la valeur `FINE`. Pour plus d’informations à propos des différentes valeurs, voir la méthode `setLogLevel` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Convertir le document
 
@@ -160,7 +176,7 @@ Convertissez un document PDF en document PDF/A à l’aide de l’API DocConvert
 1. Créer un client DocConvert
 
    * À l’aide de l’assemblage client .NET Microsoft, créez un objet `DocConverterServiceService` en appelant son constructeur par défaut.
-   * Définissez le membre de données `Credentials` de l’objet `DocConverterServiceService` avec une valeur `System.Net.NetworkCredential` qui spécifie le nom d’utilisateur et le mot de passe.
+   * Définissez le membre de données `Credentials` de l’objet `DocConverterServiceService` avec une valeur `System.Net.NetworkCredential` indiquant le nom d’utilisateur et le mot de passe.
 
 1. Référencer un document PDF à convertir en document PDF/A
 
@@ -189,7 +205,7 @@ Convertissez un document PDF en document PDF/A à l’aide de l’API DocConvert
    * Créez un objet `BLOB` qui stocke le document PDF/A en obtenant la valeur du membre de données `PDFADocument` de l’objet `PDFAConversionResult`.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé à l’aide de l’objet `PDFAConversionResult`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `binaryData` de l’objet `BLOB`.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document PDF/A.
-   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l’objet `System.IO.FileStream`.
+   * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
@@ -214,7 +230,7 @@ Pour déterminer la conformité au format PDF/A, procédez comme suit :
 
 1. Incluez les fichiers de projet.
 1. Créer un client DocConvert
-1. Référencez un document PDF servant à déterminer la conformité PDF/A.
+1. Référencer un document PDF servant à déterminer la conformité PDF/A.
 1. Définissez les options d’exécution.
 1. Récupérez les informations sur le document PDF.
 
@@ -246,13 +262,13 @@ Vous pouvez définir une option d’exécution qui détermine la quantité d’i
 
 **Récupérer des informations à propos du document PDF**
 
-Après avoir créé le client de service DocConverter, référencé le document du PDF et défini les options d’exécution, vous pouvez déterminer si le document PDF est un document conforme au format PDF/A.
+Après avoir créé le client de service DocConverter, référencé le document PDF et défini les options d’exécution, vous pouvez déterminer si le document PDF est un document conforme au format PDF/A.
 
 **Voir également**
 
 [Déterminer la conformité au format PDF/A à l’aide de l’API Java](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-java-api)
 
-[Déterminer la conformité au format PDF/A à l’aide de l’API Web Service](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-web-service-api)
+[Déterminer la conformité au format PDF/A à l’aide de l’API de service web](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-web-service-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -264,17 +280,17 @@ Déterminez la conformité au format PDF/A à l’aide de l’API Java :
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-docconverter-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créer un client DocConvert
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `DocConverterServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `DocConverterServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Référencer un document PDF utilisé pour déterminer la conformité au format PDF/A
 
    * Créez un objet `java.io.FileInputStream` qui représente le document PDF à convertir en utilisant son constructeur et en transmettant une valeur de chaîne spécifiant l’emplacement du fichier PDF.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Définir les options d’exécution
 
@@ -295,7 +311,7 @@ Déterminez la conformité au format PDF/A à l’aide de l’API Java :
 
 [Utiliser des documents PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[Démarrage rapide (mode SOAP) : déterminer la conformité du PDF/A à l’aide de l’API Java](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Démarrage rapide (mode SOAP) : déterminer la conformité au format PDF/A à l’aide de l’API Java](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -313,7 +329,7 @@ Déterminez la conformité au format PDF/A à l’aide de l’API Web Service :
 1. Créer un client DocConvert
 
    * À l’aide de l’assemblage client .NET Microsoft, créez un objet `DocConverterServiceService` en appelant son constructeur par défaut.
-   * Définissez le membre de données `Credentials` de l’objet `DocConverterServiceService` avec une valeur `System.Net.NetworkCredential` indiquant le nom d’utilisateur et le mot de passe.
+   * Définissez le membre de données `Credentials` de l’objet `DocConverterServiceService` avec une valeur `System.Net.NetworkCredential` qui spécifie le nom d’utilisateur et le mot de passe.
 
 1. Référencer un document PDF utilisé pour déterminer la conformité au format PDF/A
 
@@ -321,7 +337,7 @@ Déterminez la conformité au format PDF/A à l’aide de l’API Web Service :
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en attribuant à sa propriété `binaryData` le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en affectant à sa propriété `binaryData` le contenu du tableau d’octets.
 
 1. Définir les options d’exécution
 

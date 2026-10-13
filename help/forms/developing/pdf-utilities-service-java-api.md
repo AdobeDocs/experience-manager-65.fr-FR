@@ -1,6 +1,6 @@
 ---
 title: Didacticiel de mise en route de lʼAPI Java du service PDF Utilities (SOAP)
-description: 'Le service PDF Utilities vous permet dʼeffectuer les opérations suivantes : conversion dʼun document PDF en document XDP et inversément, récupération des propriétés dʼun document PDF, définition du style d’enregistrement d’un document PDF et nettoyage des documents PDF.'
+description: 'Le service PDF Utilities vous permet dʼeffectuer les opérations suivantes : conversion dʼun document PDF en document XDP, conversion dʼun document XDP en document PDF, récupération des propriétés dʼun document PDF, définition du style d’enregistrement d’un document PDF et nettoyage des documents PDF.'
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,13 +9,29 @@ role: Developer
 exl-id: e861d848-b0b7-4ae9-a56d-c0957ec95730
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 100%
-
 ---
-
 # Didacticiel de mise en route de lʼAPI Java du service PDF Utilities (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
 
 Les didacticiels de mise en route suivants sont disponibles pour le service PDF Utilities.
@@ -34,7 +50,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 
 >[!NOTE]
 >
->Les tutoriels de démarrage rapide dans la programmation avec AEM Forms sont basés sur le système d’exploitation Forms Server. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les tutoriels de démarrage rapide dans la programmation avec AEM Forms sont basés sur le système d’exploitation Serveur Formulaires. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Didacticiel de mise en route (mode SOAP) : convertir un document PDF en document XDP à l’aide de l’API Java {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
@@ -356,7 +372,7 @@ L’exemple de code suivant permet de déterminer si le document est un document
 
 ## Didacticiel de mise en route (mode SOAP) : définir le style d’enregistrement d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}
 
-L’exemple de code suivant permet de définir le mode d’enregistrement pour lʼaffichage web rapide, puis de transmettre le document PDF au service Encryption, où il sera chiffré. Le document PDF chiffré sauvegardé pour lʼaffichage web rapide est enregistré en tant que fichier PDF nommé* FastWebViewLoan.pdf*. (Consultez la section [Définir les modes d’enregistrement des documents PDF](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes)).
+L’exemple de code suivant permet de définir le mode d’enregistrement pour lʼaffichage web rapide, puis de transmettre le document PDF au service de chiffrement, où il sera chiffré. Le document PDF chiffré sauvegardé pour lʼaffichage web rapide est enregistré en tant que fichier PDF nommé* FastWebViewLoan.pdf*. (Consultez la section [Définir les modes d’enregistrement des documents PDF](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes)).
 
 ```java
  /*

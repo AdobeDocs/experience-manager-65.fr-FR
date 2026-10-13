@@ -10,13 +10,26 @@ exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 100%
-
 ---
-
 # Configuration de votre environnement de compte{#configuring-your-account-environment}
 
 AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
@@ -31,15 +44,15 @@ La boîte de dialogue des paramètres **Utilisateur** vous donne accès aux opti
 
 * Se faire passer pour
 
-   * La fonction [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) permet à un utilisateur ou une utilisatrice de travailler au nom d’un ou d’une autre.
+  * La fonction [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) permet à un utilisateur ou une utilisatrice de travailler au nom d’un ou d’une autre.
 
 * Profil
 
-   * Offre un lien pratique vers vos [paramètres utilisateur](/help/sites-administering/security.md).
+  * Offre un lien pratique vers vos [paramètres utilisateur](/help/sites-administering/security.md).
 
 * [Mes préférences](/help/sites-authoring/user-properties.md#my-preferences)
 
-   * Spécifiez les différents paramètres uniques à votre utilisateur.
+  * Spécifiez les différents paramètres uniques à votre utilisateur.
 
 ![screen_shot_2018-03-20at103808](assets/screen_shot_2018-03-20at103808.png)
 
@@ -61,13 +74,13 @@ Chaque utilisateur ou utilisatrice peut définir certaines propriétés pour lui
 
   Définit le comportement ou l’ouverture des fenêtres. Vous avez le choix entre :
 
-   * **Fenêtres multiples** (par défaut)
+  * **Fenêtres multiples** (par défaut)
 
-      * Les pages s’ouvrent dans une nouvelle fenêtre.
+    * Les pages s’ouvrent dans une nouvelle fenêtre.
 
-   * **Une seule fenêtre**
+  * **Une seule fenêtre**
 
-      * Les pages s’ouvrent dans la fenêtre active.
+    * Les pages s’ouvrent dans la fenêtre active.
 
 * **Afficher les actions de bureau pour Assets**
 
@@ -77,8 +90,8 @@ Chaque utilisateur ou utilisatrice peut définir certaines propriétés pour lui
 
   Cette option définit la couleur par défaut utilisée lors de la création d’annotations.
 
-   * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillons et sélectionner une couleur.
-   * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.
+  * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillons et sélectionner une couleur.
+  * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.
 
 * **Présentation de la date relative**
 
@@ -86,23 +99,23 @@ Chaque utilisateur ou utilisatrice peut définir certaines propriétés pour lui
 
   Cette option définit la manière dont les dates sont affichées dans le système. Les options suivantes sont disponibles :
 
-   * **Toujours afficher la date exacte** : la date exacte est toujours affichée (ce n’est jamais une date relative).
-   * **1 jour** : la date relative s’affiche pour les dates correspondant au jour même ; dans le cas contraire, une date exacte est affichée.
+  * **Toujours afficher la date exacte** : la date exacte est toujours affichée (ce n’est jamais une date relative).
+  * **1 jour** : la date relative s’affiche pour les dates correspondant au jour même ; dans le cas contraire, une date exacte est affichée.
 
-   * **7 jours (par défaut)** : la date relative s’affiche pour les dates parmi les sept derniers jours ; dans le cas contraire, une date exacte est affichée.
+  * **7 jours (par défaut)** : la date relative s’affiche pour les dates parmi les sept derniers jours ; dans le cas contraire, une date exacte est affichée.
 
-   * **1 mois** : la date relative s’affiche pour les dates correspondant au dernier mois ; dans le cas contraire, une date exacte est affichée.
+  * **1 mois** : la date relative s’affiche pour les dates correspondant au dernier mois ; dans le cas contraire, une date exacte est affichée.
 
-   * **1 an** : la date relative s’affiche pour les dates correspondant à la dernière année ; dans le cas contraire, une date exacte est affichée.
+  * **1 an** : la date relative s’affiche pour les dates correspondant à la dernière année ; dans le cas contraire, une date exacte est affichée.
 
-   * **Toujours afficher la date relative** : les dates exactes ne sont jamais affichées, seules les dates relatives le sont.
+  * **Toujours afficher la date relative** : les dates exactes ne sont jamais affichées, seules les dates relatives le sont.
 
 * **Activer les raccourcis**
 
   AEM prend en charge plusieurs raccourcis clavier qui rendent la création plus efficace.
 
-   * [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   * [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
+  * [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+  * [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
   Cette option active les raccourcis clavier. Ils sont activés par défaut, mais peuvent être désactivés, par exemple si un utilisateur ou une utilisatrice a certaines exigences en matière d’accessibilité.
 

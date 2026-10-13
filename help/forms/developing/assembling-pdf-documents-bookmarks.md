@@ -10,13 +10,27 @@ role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 100%
-
 ---
-
 # Assembler des documents PDF avec des signets {#assembling-pdf-documents-with-bookmarks}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -26,7 +40,7 @@ Il est possible dʼassembler un document PDF qui contient des signets. Prenons l
 Les signets contiennent les propriétés suivantes :
 
 * Un titre qui s’affiche sous forme de texte à l’écran.
-* Une action spécifiant ce qui se produit lorsqu’un utilisateur clique sur le signet. L’action type d’un signet consiste à déplacer vers un autre emplacement du document actif ou à ouvrir un autre document PDF. D’autres actions peuvent également être spécifiées.
+* Une action spécifiant ce qui se produit lorsqu’un utilisateur clique sur le signet. L’action type d’un signet consiste à accéder à un autre emplacement dans le document actif ou à ouvrir un autre document PDF. D’autres actions peuvent également être spécifiées.
 
 Dans le cadre de cette discussion, supposons que le document DDX suivant soit utilisé.
 
@@ -41,11 +55,11 @@ Dans le cadre de cette discussion, supposons que le document DDX suivant soit ut
  </DDX>
 ```
 
-Dans ce document DDX, remarquez que la valeur `Loan.pdf` est attribuée à lʼattribut source. Ce document DDX indique qu’un seul document PDF est transmis au service Assembler. Lors de l’assemblage d’un document PDF avec des signets, vous devez spécifier un document XML de signet qui décrit les signets dans le document obtenu. Pour spécifier un document XML de signet, assurez-vous que l’élément `Bookmarks` est spécifié dans votre document DDX.
+Dans ce document DDX, remarquez que la valeur `Loan.pdf` est attribuée à lʼattribut source. Ce document DDX indique qu’un seul document PDF est transmis au service Assembler. Lors de l’assemblage d’un document PDF avec des signets, vous devez spécifier un document XML de signets qui décrit les signets dans le document obtenu. Pour spécifier un document XML de signet, assurez-vous que l’élément `Bookmarks` est spécifié dans votre document DDX.
 
 Dans lʼexemple suivant de document DDX, l’élément `Bookmarks` indique `doc2` comme valeur. Cette valeur indique que la carte d’entrée transmise au service Assembler contient une clé nommée `doc2`. La valeur de la clé `doc2` est une valeur `com.adobe.idp.Document` qui représente le document XML du signet. (Consultez la rubrique « Langage des signets » dans la section [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddx_63)).
 
-Cette rubrique utilise le langage de signets XML suivant pour assembler un document PDF contenant des signets.
+Cette rubrique utilise le langage XML de signets suivant pour assembler un document PDF contenant des signets.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8"?>
@@ -69,7 +83,7 @@ Cette rubrique utilise le langage de signets XML suivant pour assembler un docum
  </Bookmarks>
 ```
 
-Dans ce document XML de signet, notez la présence de l’élément Action, qui définit l’action effectuée lorsqu’un utilisateur clique sur le signet. Sous l’élément Action se trouve l’élément Launch qui permet de lancer des applications, comme le Bloc-notes, et dʼouvrir des fichiers, comme les fichiers PDF. Pour ouvrir un fichier PDF, vous devez utiliser l’élément File qui spécifie le fichier à ouvrir. Par exemple, dans le fichier XML du signet spécifié dans cette section, le nom du fichier ouvert est LoanDetails.pdf.
+Dans ce document XML de signet, notez la présence de l’élément Action, qui définit l’action effectuée lorsqu’un utilisateur clique sur le signet. Sous l’élément Action se trouve l’élément Launch qui permet de lancer des applications, comme le Bloc-notes, et dʼouvrir des fichiers, comme les fichiers PDF. Pour ouvrir un fichier PDF, vous devez utiliser l’élément File qui spécifie le fichier à ouvrir. Par exemple, dans le fichier XML de signets spécifié dans cette section, le nom du fichier ouvert est LoanDetails.pdf.
 
 >[!NOTE]
 >
@@ -83,7 +97,7 @@ Lorsqu’un utilisateur clique sur le signet *Ouvrir les détails du prêt*, le 
 
 >[!NOTE]
 >
->Avant dʼentamer cette section, il est recommandé de se familiariser avec l’assemblage de documents PDF à l’aide du service Assembler. Cette section nʼaborde pas les concepts tels que la création dʼun objet de collection contenant des documents dʼentrée, ou lʼapprentissage de lʼextraction des résultats de lʼobjet de collection retourné. (Consultez la section [Assembler par programmation des documents PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents)).
+>Avant dʼentamer cette section, il est recommandé de se familiariser avec l’assemblage de documents PDF à l’aide du service Assembler. Cette section nʼaborde pas les concepts tels que la création dʼun objet de collection contenant des documents dʼentrée ou la manière dʼextraire les résultats de lʼobjet de collection retourné. (Consultez la section [Assembler par programmation des documents PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents)).
 
 >[!NOTE]
 >
@@ -102,7 +116,7 @@ Pour assembler un document PDF contenant des signets, procédez comme suit :
 1. Référencez un document DX existant.
 1. Référencez un document PDF auquel des signets sont ajoutés.
 1. Référencez le document XML du signet.
-1. Ajoutez le document PDF et le document XML du signet à une collection Map.
+1. Ajoutez le document PDF et le document XML de signets à une collection Map.
 1. Définissez les options d’exécution.
 1. Assemblez le document PDF.
 1. Enregistrez le document PDF qui contient des signets.
@@ -116,14 +130,14 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utility.jar (obligatoire si AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss)
 
 Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge et différent de JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. Pour plus d’informations sur l’emplacement de ces fichiers, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un client Assembler PDF**
 
-Avant de pouvoir effectuer une opération Assembler de manière programmée, vous devez créer un client de service Assembler.
+Avant de pouvoir effectuer une opération Assembler par programmation, vous devez créer un client du service Assembler.
 
 **Référencer un document DDX existant**
 
@@ -142,7 +156,7 @@ Référence un document PDF auquel des signets sont ajoutés. Peu importe que le
 
 **Référencer le document XML du signet**
 
-Pour assembler un PDF contenant de nouveaux signets, vous devez référencer un document XML de signet. Le document XML du signet est transmis au service Assembler dans l’objet de collection Map. (Pour consulter un exemple, reportez-vous au document XML de signet illustré précédemment dans cette section).
+Pour assembler un PDF contenant de nouveaux signets, vous devez référencer un document XML de signets. Le document XML du signet est transmis au service Assembler dans l’objet de collection Map. (Pour consulter un exemple, reportez-vous au document XML de signet illustré précédemment dans cette section).
 
 >[!NOTE]
 >
@@ -150,7 +164,7 @@ Pour assembler un PDF contenant de nouveaux signets, vous devez référencer un 
 
 **Ajouter le document PDF et le document XML de signet à une collection Map**
 
-Ajoutez le document PDF auquel les signets sont ajoutés et le document XML du signet à la collection Map. En toute logique, l’objet de collection Map contient deux éléments : un document PDF et le document XML de signet.
+Ajoutez le document PDF auquel les signets sont ajoutés et le document XML du signet à la collection Map. Par conséquent, l’objet de collection Map contient deux éléments : un document PDF et le document XML des signets.
 
 **Définir des options de temps d’exécution**
 
@@ -205,13 +219,13 @@ Pour assembler un document PDF avec des signets à l’aide de l’API du servic
    * Créez un objet `java.util.Map` qui permet de stocker le document PDF d’entrée et le document XML de signet.
    * Ajoutez le document PDF d’entrée en appelant la méthode `put` de l’objet `java.util.Map` et en transmettant les arguments suivants :
 
-      * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX.
-      * Un objet `com.adobe.idp.Document` contenant le document PDF d’entrée.
+     * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX.
+     * Un objet `com.adobe.idp.Document` contenant le document PDF d’entrée.
 
    * Ajoutez le document XML de signet en appelant la méthode `put` de l’objet `java.util.Map` et en transmettant les arguments suivants :
 
-      * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément source Bookmarks spécifié dans le document DDX.
-      * Un objet `com.adobe.idp.Document` contenant le document XML de signet.
+     * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément source Bookmarks spécifié dans le document DDX.
+     * Un objet `com.adobe.idp.Document` contenant le document XML de signet.
 
 1. Définissez les options d’exécution.
 
@@ -256,7 +270,7 @@ Assemblez un document PDF avec des signets à l’aide de l’API du service Ass
    >
    >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
-1. Créez un client Assembler PDF.
+1. Créez un client PDF Assembler.
 
    * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
    * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
@@ -264,12 +278,12 @@ Assemblez un document PDF avec des signets à l’aide de l’API du service Ass
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Référencez un document DX existant.
+1. Référencez un document DDX existant.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document DDX.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document DDX et son mode d’ouverture.
@@ -295,11 +309,11 @@ Assemblez un document PDF avec des signets à l’aide de l’API du service Ass
 
 1. Ajoutez le document PDF et le document XML du signet à une collection Map.
 
-   * Créez un objet `MyMapOf_xsd_string_To_xsd_anyType`. Cet objet de collection est utilisé pour stocker les documents PDF d’entrée et le document XML du signet.
+   * Créez un objet `MyMapOf_xsd_string_To_xsd_anyType`. Cet objet de collection est utilisé pour stocker les documents PDF d’entrée et le document XML des signets.
    * Pour chaque document PDF d’entrée et le document XML de signet, créez un objet `MyMapOf_xsd_string_To_xsd_anyType_Item`.
    * Affectez une valeur de chaîne qui représente le nom de la clé au champ `key` de l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item`. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX.
    * Affectez l’objet `BLOB` qui stocke le document PDF au champ `value` de l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item`.
-   * Ajoutez lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item` à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. Appelez la méthode `Add` de l’objet `MyMapOf_xsd_string_To_xsd_anyType` et transmettez-la à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. (Effectuez cette tâche pour chaque document PDF d’entrée et le document XML de signet).
+   * Ajoutez lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item` à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. Appelez la méthode `Add` de l’objet `MyMapOf_xsd_string_To_xsd_anyType` et transmettez-la à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. (Effectuez cette tâche pour chaque document PDF d’entrée et le document XML des signets.)
 
 1. Définissez les options d’exécution.
 

@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6847'
-ht-degree: 97%
-
+source-wordcount: '6948'
+ht-degree: 98%
 ---
-
 # Fragments de document{#document-fragments}
 
 ## Fragments de document {#document-fragments-1}
@@ -202,10 +215,10 @@ La fonction Rechercher et remplacer vous permet de rechercher (et de remplacer) 
 * Utilisez la liaison de dictionnaire de données appropriée dans les modules de texte.
 * Les règles suivantes s’appliquent lors de l’utilisation de l’éditeur de texte pour la modification d’une ressource de texte :
 
-   * **Ajout de variable :** Autorisé
-   * **Retrait de variable :** Autorisé
-   * **Mise à jour des propriétés :** Autorisée
-   * **Modification des données du dictionnaire :** Autorisé tant que l’élément du dictionnaire de données n’est pas utilisé. Vous ne pouvez pas modifier le dictionnaire de données lors de la mise à jour.
+  * **Ajout de variable :** Autorisé
+  * **Retrait de variable :** Autorisé
+  * **Mise à jour des propriétés :** Autorisée
+  * **Modification des données du dictionnaire :** Autorisé tant que l’élément du dictionnaire de données n’est pas utilisé. Vous ne pouvez pas modifier le dictionnaire de données lors de la mise à jour.
 
 ## Liste {#list}
 
@@ -249,8 +262,8 @@ Une liste est un groupe de contenu associé qui peut être utilisé dans un mod�
 
    ![Sélectionner les actifs à ajouter à la liste](assets/selectassets.png)
 
-1. Les ressources sont ajoutées à la page Eléments de la liste .
-Pour modifier l’ordre des ressources dans la liste, sélectionnez et maintenez enfoncées les icônes de flèches ( ![dragndrop](assets/dragndrop.png) ), puis effectuez un glisser-déposer. Lorsque l’utilisateur ouvre un modèle de lettre dans l’interface utilisateur Création de correspondance, le contenu est assemblé dans l’ordre que vous avez défini ici.
+1. Les actifs sont ajoutés à la page Eléments de la liste.
+Pour modifier l’ordre des ressources dans la liste, sélectionnez et maintenez enfoncée l’icône de flèches (![dragndrop](assets/dragndrop.png)), puis effectuez un glisser-déposer. Lorsque l’utilisateur ouvre un modèle de courrier dans l’interface utilisateur de création de correspondance, le contenu est assemblé dans l’ordre que vous avez défini ici.
 
    ![Réorganiser et configurer les actifs dans une liste](assets/listitems.png)
 
@@ -283,8 +296,8 @@ Pour modifier l’ordre des ressources dans la liste, sélectionnez et maintenez
 * Associez le dictionnaire de données de manière appropriée.
 * Les règles suivantes s’appliquent lorsque vous utilisez l’éditeur de liste pour modifier une liste :
 
-   * Mise à jour des propriétés : Autorisée
-   * **Modification du dictionnaire de données :** Autorisé tant qu’aucun élément utilisant le dictionnaire de données n’y est associé. Vous ne pouvez pas modifier le dictionnaire de données lors de la mise à jour.
+  * Mise à jour des propriétés : Autorisée
+  * **Modification du dictionnaire de données :** Autorisé tant qu’aucun élément utilisant le dictionnaire de données n’y est associé. Vous ne pouvez pas modifier le dictionnaire de données lors de la mise à jour.
 
 ## Conditions {#conditions}
 
@@ -340,10 +353,10 @@ L’éditeur de conditions vous permet de spécifier une condition par défaut. 
 * Associez le dictionnaire de données de manière appropriée.
 * Les règles suivantes s’appliquent lorsque vous utilisez l’éditeur de conditions pour modifier une condition :
 
-   * **Ajout de variable :** Autorisé
-   * **Retrait de variable :** Autorisé
-   * **Mise à jour des propriétés :** Autorisée
-   * **Modification des données du dictionnaire :** Autorisé tant que l’élément du dictionnaire de données n’est pas utilisé.
+  * **Ajout de variable :** Autorisé
+  * **Retrait de variable :** Autorisé
+  * **Mise à jour des propriétés :** Autorisée
+  * **Modification des données du dictionnaire :** Autorisé tant que l’élément du dictionnaire de données n’est pas utilisé.
 
 ## Fragments de disposition {#layoutfragments}
 
@@ -375,18 +388,18 @@ Tenez compte des points suivants lors de la conception de tableaux :
 
 * Pour les tableaux d’espaces réservés, vous pouvez personnaliser les propriétés suivantes au moment de la création de fragments :
 
-   * nombre de lignes ;
-   * nombre de colonnes ;
-   * en-tête et pied de page pour chaque colonne ;
-   * type (zone cible/champ) de chaque colonne ;
-   * rapport de largeur pour chaque colonne.
+  * nombre de lignes ;
+  * nombre de colonnes ;
+  * en-tête et pied de page pour chaque colonne ;
+  * type (zone cible/champ) de chaque colonne ;
+  * rapport de largeur pour chaque colonne.
 
 * Pour un tableau d’espaces non réservés, vous pouvez personnaliser les propriétés suivantes :
 
-   * nombre de lignes ;
-   * nombre de colonnes ;
-   * en-tête et pied de page pour une colonne supplémentaire ;
-   * rapport de largeur pour chaque colonne.
+  * nombre de lignes ;
+  * nombre de colonnes ;
+  * en-tête et pied de page pour une colonne supplémentaire ;
+  * rapport de largeur pour chaque colonne.
 
 Vous pouvez imbriquer des fragments dans une lettre. Cela signifie que vous pouvez ajouter un fragment dans un fragment. La solution Correspondence Management prend en charge jusqu’à quatre niveaux d’imbrication dans une lettre : **Lettre * >*Fragment * >*Fragment * >*Fragment * >*Fragment**.
 
@@ -484,8 +497,8 @@ De nombreux modèles de lettre contiennent des tableaux. Les tableaux peuvent ê
 * **Tableaux statiques** : les tableaux sont parfois créés avec des lignes ayant un nombre de colonnes différent, comme pour un tableau des conditions générales. Dans un tel tableau, chaque ligne représente une condition et chaque condition peut comporter différentes sous-parties. Chaque partie est affichée dans une colonne distincte.
 * **Tableaux dynamiques** : les fragments de disposition permettent de lier les champs d’un tableau dynamique aux DDE de collection. Au moment de la génération de la lettre, les lignes du tableau sont générées en fonction de la taille des DDE de collection.
 
-Le DD a un élément Collection Nominee_details qui a un élément composite avec trois éléments primitifs : Nominee_name, Nominee_address et Nominee_gender.
-Le fichier XDP dynamique possède également les mêmes en-têtes. Vous pouvez mapper les champs XDP dynamiques avec les champs mentionnés ci-dessus de DD.
+Le DD a un élément Collection Nominee_details possédant un élément composite avec trois éléments primitifs : Nominee_name, Nominee_address et Nominee_gender.
+Le fichier XDP dynamique utilise les mêmes en-têtes. Vous pouvez mapper les champs dynamiques XDP avec les champs mentionnés ci-dessus de DD.
 
 ### Exemple avec des fichiers d’exemple : utiliser des tableaux statiques et dynamiques dans une lettre {#examplewithsamplefiles}
 
@@ -508,8 +521,8 @@ Cet exemple montre comment créer un tableau dynamique et statique, lier le tabl
 
    Ou utilisez les fichiers XDP statiques et dynamiques liés à cette étape.
 
-   Pour plus d’informations sur l’utilisation des fragments de disposition, voir [Fragments de disposition](#layoutfragments).
-Pour plus d&#39;informations sur la conception de mises en page, consultez l&#39;aide de [&#128279;](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/).
+   Pour plus d’informations sur l’utilisation des fragments de mise en page, voir [Fragments de mise en page](#layoutfragments).
+   Pour plus d’informations sur la conception de mises en pages, voir [Aide de Designer](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/).
 
    [Obtenir le fichier](assets/static.xdp.zip)
 

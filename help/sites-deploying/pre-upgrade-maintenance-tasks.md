@@ -10,13 +10,22 @@ feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2049'
 ht-degree: 98%
-
 ---
-
 # Tâches de maintenance avant la mise à niveau{#pre-upgrade-maintenance-tasks}
 
 Avant de commencer la mise à niveau, il est important d’effectuer ces tâches de maintenance pour vous assurer que le système est prêt et peut être restauré en cas de problème :
@@ -27,7 +36,7 @@ Avant de commencer la mise à niveau, il est important d’effectuer ces tâches
 * [Génération du fichier quickstart.properties](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Configuration de la purge du workflow et du journal d’audit](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [Installation, configuration et exécution des tâches précédant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
-* [Désactivation des modules de connexion personnalisés](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
+* [Désactiver les modules de connexion personnalisés](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
 * [Suppression des mises à jour du répertoire /install](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#remove-updates-install-directory)
 * [Arrêt de toutes les instances Cold Standby](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
 * [Désactivation des tâches planifiées personnalisées](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
@@ -62,11 +71,11 @@ Les tâches `WorkflowPurgeTask` et `com.day.cq.audit.impl.AuditLogMaintenanceTas
 
 En raison du niveau de personnalisation accordé par AEM, il n’existe généralement pas de méthode uniforme pour effectuer les mises à niveau. Ainsi, la création d’une procédure normalisée pour les mises à niveau est un processus difficile.
 
-Dans les versions précédentes, il était également difficile pour les mises à niveau d’AEM ayaqnt été arrêtées ou ayant échoué de reprendre en toute sécurité. Ce problème entraînait des situations où le redémarrage de la procédure de mise à niveau complète était nécessaire ou dans lesquelles des mises à niveau défectueuses étaient effectuées sans déclencher d’avertissement.
+Dans les versions précédentes, il était également difficile pour les mises à niveau d’AEM ayant été arrêtées ou ayant échoué de reprendre en toute sécurité. Ce problème entraînait des situations où le redémarrage de la procédure de mise à niveau complète était nécessaire ou dans lesquelles des mises à niveau défectueuses étaient effectuées sans déclencher d’avertissement.
 
 Pour résoudre ces problèmes, Adobe a ajouté plusieurs améliorations au processus de mise à niveau, le rendant plus résilient et plus convivial. Les tâches de maintenance préalables à la mise à niveau qui devaient auparavant être effectuées manuellement sont optimisées et automatisées. En outre, des rapports après la mise à niveau ont été ajoutés afin que le processus puisse être entièrement examiné dans l’espoir que les problèmes éventuels soient plus facilement détectés.
 
-Les tâches de maintenance préalables à la mise à niveau sont actuellement réparties sur différentes interfaces, qui sont partiellement ou entièrement exécutées manuellement. L’optimisation de la maintenance avant la mise à niveau introduite dans AEM 6.3 permet de déclencher ces tâches de manière unifiée et d’examiner leur résultat à la demande.
+Les tâches de maintenance préalables à la mise à niveau sont actuellement réparties sur différentes interfaces et sont partiellement ou entièrement effectuées manuellement. L’optimisation de la maintenance avant la mise à niveau introduite dans AEM 6.3 permet de déclencher ces tâches de manière unifiée et d’examiner leur résultat à la demande.
 
 Toutes les tâches incluses dans l’étape d’optimisation avant la mise à niveau sont compatibles avec toutes les versions à partir d’AEM 6.0.
 
@@ -127,7 +136,7 @@ La liste des tâches varie en fonction du mode d’exécution utilisé pour dém
   <tr>
    <td><code>WorkflowPurgeTask</code></td>
    <td>crx2/crx3</td>
-   <td>Doit configurer la configuration OSGi de purge du workflow Granite d’Adobe avant l’exécution.</td>
+   <td>Configurez la configuration OSGi de purge du workflow Adobe Granite avant l’exécution.</td>
   </tr>
   <tr>
    <td><code>GenerateBundlesListFileTask</code></td>
@@ -142,7 +151,7 @@ La liste des tâches varie en fonction du mode d’exécution utilisé pour dém
   <tr>
    <td><code>com.day.cq.audit.impl.AuditLogMaintenanceTask</code></td>
    <td>crx3</td>
-   <td>Doit configurer la configuration OSGi du planificateur de purge du journal d’audit avant l’exécution.</td>
+   <td>Configurez la configuration OSGi du planificateur de purge du journal d’audit avant l’exécution.</td>
   </tr>
  </tbody>
 </table>
@@ -151,7 +160,7 @@ La liste des tâches varie en fonction du mode d’exécution utilisé pour dém
 >
 >La `DataStoreGarbageCollectionTask` appelle l’opération de récupération de l’espace mémoire du magasin de données avec la phase de marquage et de balayage, le cas échéant. Pour les déploiements qui utilisent un magasin de données partagé, veillez à le reconfigurer correctement ou à préparer l’instance afin d’éviter la suppression des éléments référencés par une autre instance. Ce processus peut nécessiter l’exécution manuelle de la phase de marquage sur toutes les instances avant de déclencher cette tâche préalable à la mise à niveau.
 
-### Configuration par défaut des contrôles de l’intégrité avant la mise à niveau {#default-configuration-of-the-pre-upgrade-health-checks}
+### Configuration par défaut des vérifications de l’état de santé avant la mise à niveau {#default-configuration-of-the-pre-upgrade-health-checks}
 
 Le composant OSGi `PreUpgradeTasksMBeanImpl` est préconfiguré avec une liste de balises de vérification de l’intégrité précédant la mise à niveau à exécuter lorsque la méthode `runAllPreUpgradeHealthChecks` est appelée :
 
@@ -199,7 +208,7 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
   <tr>
    <td><code>runPreUpgradeTask(preUpgradeTaskName)</code></td>
    <td>ACTION</td>
-   <td>Exécute la tâche de maintenance avant la mise à niveau avec le nom donné en tant que paramètre.</td>
+   <td>Exécute la tâche de maintenance avant la mise à niveau dont le nom est donné en paramètre.</td>
   </tr>
   <tr>
    <td><code>isRunAllPreUpgradeTaskRunning()</code></td>
@@ -214,12 +223,12 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
   <tr>
    <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td>
    <td>ACTION</td>
-   <td>Affiche l’heure d’exécution exacte de la tâche de maintenance avant la mise à niveau avec le nom donné en tant que paramètre.</td>
+   <td>Affiche l’heure d’exécution exacte de la tâche de maintenance avant la mise à niveau dont le nom est donné en paramètre.</td>
   </tr>
   <tr>
    <td><code>getPreUpgradeTaskLastRunState(preUpgradeTaskName)</code></td>
    <td>ACTION</td>
-   <td>Affiche le dernier état d’exécution de la tâche de maintenance avant la mise à niveau avec le nom donné en tant que paramètre.</td>
+   <td>Affiche le dernier état d’exécution de la tâche de maintenance avant la mise à niveau dont le nom est donné en paramètre.</td>
   </tr>
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
@@ -247,7 +256,7 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
 
 >[!NOTE]
 >
->Cette étape est nécessaire uniquement si vous effectuez une mise à niveau à partir d’une version d’AEM 5. Elle peut être entièrement ignorée pour les mises à niveau à partir des versions plus anciennes à AEM 6.
+>Cette étape est nécessaire uniquement si vous effectuez une mise à niveau à partir d’une version d’AEM 5. Elle peut être entièrement ignorée pour les mises à niveau à partir de versions antérieures d’AEM 6.
 
 La manière dont les modules de connexion `LoginModules` sont configurés pour l’authentification au niveau du référentiel a complètement changé dans Apache Oak.
 
@@ -285,7 +294,7 @@ param name="trust_credentials_attribute" value="d5b9167e95dad6e7d3b5d6fa8df48af8
 
 >[!NOTE]
 >
->Supprimez uniquement les packages du répertoire crx-quickstart/install APRÈS avoir arrêté l’instance AEM. Cette étape est l’une des dernières avant de commencer la procédure de mise à niveau statique.
+>Supprimez uniquement les packages du répertoire crx-quickstart/install APRÈS avoir arrêté l’instance AEM. Cette étape est l’une des dernières avant de commencer la procédure de mise à niveau sur place.
 
 Supprimez tous les packs de services, les packs de fonctionnalités ou les correctifs logiciels qui ont été déployés via le répertoire `crx-quickstart/install` sur le système de fichiers local. Cela évite l’installation accidentelle d’anciens correctifs et packs de services en plus de la nouvelle version d’AEM une fois la mise à jour terminée.
 
@@ -335,7 +344,7 @@ Pour éviter qu’un tel scénario ne se produise, mettez à niveau le schéma e
 >Cette tâche de maintenance avant la mise à niveau n’est nécessaire que si :
 >
 >* vous effectuez une mise à niveau à partir des versions d’AEM antérieures à AEM 6.3 ;
->* vous rencontrez les erreurs mentionnées ci-dessous lors de la mise à niveau.
+>* vous rencontrez l’une des erreurs mentionnées ci-dessous lors de la mise à niveau.
 >
 
 Il existe des cas exceptionnels où les utilisateurs et utilisatrices du service peuvent se retrouver dans des versions AEM plus anciennes mal balisées en tant qu’utilisateurs ou utilisatrices standard.
@@ -362,4 +371,4 @@ Pour contourner ce problème, procédez comme suit :
 
 ## Rotation des fichiers journaux {#rotate-log-files}
 
-Nous vous recommande d’archiver vos fichiers journaux actuels avant de commencer la mise à niveau. Cela facilite la surveillance et l’analyse de vos fichiers journaux pendant et après la mise à niveau pour identifier et résoudre les problèmes qui peuvent surgir.
+Nous vous recommandons d’archiver vos fichiers journaux actuels avant de commencer la mise à niveau. Cela facilite la surveillance et l’analyse de vos fichiers journaux pendant et après la mise à niveau pour identifier et résoudre les problèmes qui peuvent surgir.

@@ -9,7 +9,25 @@ docset: aem65
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 100%
@@ -20,11 +38,11 @@ ht-degree: 100%
 
 Vous pouvez utiliser des valeurs saisies dans un élément de votre formulaire pour calculer les champs de métadonnées d’un brouillon ou d’un envoi de formulaire. Les métadonnées vous permettent de filtrer le contenu en fonction des données utilisateur. Par exemple, un utilisateur ou une utilisatrice saisit John Doe dans le champ de nom de votre formulaire. Vous pouvez utiliser ces informations pour calculer les métadonnées susceptibles de classer cet envoi sous les initiales JD.
 
-Pour calculer les champs de métadonnées avec des valeurs saisies par l’utilisateur, ajoutez les éléments de votre formulaire aux métadonnées. Lorsqu’un utilisateur entre une valeur dans cet élément, un script utilise la valeur pour calculer les informations. Ces informations sont ajoutées dans les métadonnées. Lorsque vous ajoutez un élément sous la forme d’un champ de métadonnées, vous fournissez la clé correspondante. La clé est ajoutée en tant que champ dans les métadonnées et les informations calculées sont enregistrées en fonction de celle-ci.
+Pour calculer les champs de métadonnées avec des valeurs saisies par l’utilisateur, ajoutez les éléments de votre formulaire aux métadonnées. Lorsqu’un utilisateur entre une valeur dans cet élément, un script utilise la valeur pour calculer les informations. Ces informations sont ajoutées dans les métadonnées. Lorsque vous ajoutez un élément sous la forme d’un champ de métadonnées, vous fournissez la clé correspondante. La clé est ajoutée en tant que champ dans les métadonnées et les informations calculées y sont enregistrées.
 
-Par exemple, une compagnie d’assurance maladie publie un formulaire. Dans ce formulaire, un champ capture l’âge des utilisateurs finaux. Le client ou la cliente souhaite vérifier tous les envois dans une tranche d’âge spécifique, après qu’un certain nombre d’utilisateurs et utilisatrices ont envoyé le formulaire. Plutôt que de parcourir toutes les données qui deviennent complexes à mesure que le nombre de formulaires augmente, des métadonnées supplémentaires aident le client ou la cliente. La personne ayant créé le formulaire peut configurer quelles propriétés/données remplies par l’utilisateur final ou l’utilisatrice finale sont stockées au niveau supérieur afin de faciliter la recherche. Les métadonnées supplémentaires sont des informations renseignées par l’utilisateur ou l’utilisatrice et stockées au niveau supérieur du nœud de métadonnées, tel que l’auteur ou l’autrice les a configurées.
+Par exemple, une compagnie d’assurance maladie publie un formulaire. Dans ce formulaire, un champ recueille l’âge des utilisateurs finaux ou des utilisatrices finales. Le client ou la cliente souhaite vérifier tous les envois dans une tranche d’âge spécifique, après qu’un certain nombre d’utilisateurs et utilisatrices ont envoyé le formulaire. Plutôt que de parcourir toutes les données qui deviennent complexes à mesure que le nombre de formulaires augmente, des métadonnées supplémentaires aident le client ou la cliente. La personne ayant créé le formulaire peut configurer quelles propriétés/données remplies par l’utilisateur final ou l’utilisatrice finale sont stockées au niveau supérieur afin de faciliter la recherche. Les métadonnées supplémentaires sont des informations renseignées par l’utilisateur ou l’utilisatrice et stockées au niveau supérieur du nœud de métadonnées, tel que l’auteur ou l’autrice les a configurées.
 
-Prenons un autre exemple de formulaire qui capture l’ID de l’e-mail et le numéro de téléphone. Lorsqu’un utilisateur visite ce formulaire de manière anonyme et abandonne le formulaire, l’auteur peut configurer le formulaire afin que l’ID d’adresse électronique et le numéro de téléphone soient automatiquement enregistrés. Ce formulaire est enregistré automatiquement et le numéro de téléphone et l’ID d’adresse électronique sont stockés dans le nœud de métadonnées du brouillon. Le tableau de bord de gestion des prospects représente un cas d’utilisation de cette configuration.
+Prenons un autre exemple de formulaire qui capture l’ID de l’e-mail et le numéro de téléphone. Lorsqu’un utilisateur ou une utilisatrice visite ce formulaire de manière anonyme et abandonne le formulaire, l’auteur ou l’autrice peut configurer le formulaire afin que l’adresse e-mail et le numéro de téléphone soient automatiquement enregistrés. Ce formulaire est enregistré automatiquement et le numéro de téléphone et l’adresse e-mail sont stockés dans le nœud de métadonnées du brouillon. Le tableau de bord de gestion des leads représente un cas d’utilisation de cette configuration.
 
 ## Ajout d’éléments de formulaire aux métadonnées {#adding-form-elements-to-metadata}
 
@@ -59,7 +77,7 @@ Si vous ajoutez un élément de case à cocher dans les métadonnées, les valeu
 
 ![Stockage de plusieurs valeurs à partir d’une case à cocher](assets/checkbox-metadata.png)
 
-Vous sélectionnez le conteneur de formulaires adaptatifs et dans les propriétés du formulaire vous ajoutez une clé de métadonnées `cb1` qui stocke `checkbox1.value`, puis vous publiez le formulaire. Lorsqu’un client ou une cliente remplit le formulaire, il sélectionne les options Passeport et Numéro de sécurité sociale dans le champ de case à cocher. Les valeurs 1 et 2 sont stockées sous la forme 1, 2 dans le champ cb1 des métadonnées d’envoi.
+Vous sélectionnez le conteneur de formulaires adaptatifs et dans les propriétés du formulaire vous ajoutez une clé de métadonnées `cb1` qui stocke `checkbox1.value`, puis vous publiez le formulaire. Lorsqu’un client ou une cliente remplit le formulaire, il sélectionne les options Passeport et Numéro de sécurité sociale dans le champ de case à cocher. Les valeurs 1 et 2 sont stockées sous la forme 1, 2 dans le champ cb1 des métadonnées de soumission.
 
 ![Entrée de métadonnées pour plusieurs valeurs sélectionnées dans un champ de case à cocher](assets/metadata-entry.png)
 

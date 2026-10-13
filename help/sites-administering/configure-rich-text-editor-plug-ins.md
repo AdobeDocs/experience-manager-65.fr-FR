@@ -6,13 +6,22 @@ exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4473'
 ht-degree: 98%
-
 ---
-
 
 # Configuration des modules externes d’éditeur de texte enrichi {#configure-the-rich-text-editor-plug-ins}
 
@@ -39,16 +48,16 @@ Par défaut, les modules externes `format`, `link`, `list`, `justify` et `contro
 
    * Selon votre composant, les nœuds parents sont les suivants :
 
-      * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
-      * un nœud de configuration alternatif : `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
-      * `text: .../text/dialog/items/tab1/items/text`
+     * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
+     * un nœud de configuration alternatif : `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
+     * `text: .../text/dialog/items/tab1/items/text`
 
    * Sont de type : **jcr:primaryType** `cq:Widget`
    * Ils possèdent tous deux les propriétés suivantes :
 
-      * **Nom** `name`
-      * **Type** `String`
-      * **Valeur** `./text`
+     * **Nom** `name`
+     * **Type** `String`
+     * **Valeur** `./text`
 
 1. Selon l’interface que vous configurez, créez un nœud `<rtePlugins-node>` s’il n’existe pas :
 
@@ -304,7 +313,7 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
 
 1. Ajoutez la propriété text au même nœud. La valeur est le nom du style que l’auteur ou l’autrice voit lors de la sélection du style.
    * Nom : `text`
-*Type : `String`
+     *Type : `String`
    * Valeur : `Japanese word-wrap`
 
 1. Créez une feuille de style et spécifiez son chemin d’accès. Consultez [Spécifier l’emplacement de la feuille de style](#locationofstylesheet). Ajoutez le contenu suivant à la feuille de style. Modifiez la couleur d’arrière-plan selon vos besoins.
@@ -511,13 +520,13 @@ Les styles sont généralement appliqués au texte, mais un ensemble distinct de
 
    * Pour définir des styles pour le tableau entier (disponibles sous **Propriétés du tableau**) :
 
-      * **Nom** `tableStyles`
-      * **Type** `cq:WidgetCollection`
+     * **Nom** `tableStyles`
+     * **Type** `cq:WidgetCollection`
 
    * Pour définir des styles pour des cellules individuelles (disponibles sous **Propriétés de la cellule**) :
 
-      * **Nom** `cellStyles`
-      * **Type** `cq:WidgetCollection`
+     * **Nom** `cellStyles`
+     * **Type** `cq:WidgetCollection`
 
 1. Créez un nœud (sous le nœud `tableStyles` ou `cellStyles`, selon les besoins) pour représenter un style individuel :
 
@@ -528,15 +537,15 @@ Les styles sont généralement appliqués au texte, mais un ensemble distinct de
 
    * Pour définir le style CSS à référencer
 
-      * **Nom** `cssName`
-      * **Type** `String`
-      * **Valeur** Nom de la classe CSS (sans préfixe `.`, par exemple, `cssClass` au lieu de `.cssClass`)
+     * **Nom** `cssName`
+     * **Type** `String`
+     * **Valeur** Nom de la classe CSS (sans préfixe `.`, par exemple, `cssClass` au lieu de `.cssClass`)
 
    * Pour définir un texte descriptif à afficher dans le sélecteur de liste déroulante
 
-      * **Nom** `text`
-      * **Type** `String`
-      * **Valeur** Texte à afficher dans la liste de sélection
+     * **Nom** `text`
+     * **Type** `String`
+     * **Valeur** Texte à afficher dans la liste de sélection
 
 1. Enregistrez toutes les modifications.
 
@@ -689,58 +698,58 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
 
    * Style CSS pour les liens internes :
 
-      * **Nom** `cssInternal`
-      * **Type** `String`
-      * **Valeur** nom de la classe CSS (sans « . » devant ; par exemple, `cssClass` au lieu de `.cssClass`)
+     * **Nom** `cssInternal`
+     * **Type** `String`
+     * **Valeur** nom de la classe CSS (sans « . » devant ; par exemple, `cssClass` au lieu de `.cssClass`)
 
    * Style CSS pour les liens externes
 
-      * **Nom** `cssExternal`
-      * **Type** `String`
-      * **Valeur** nom de la classe CSS (sans « . » devant ; par exemple, `cssClass` au lieu de `.cssClass`)
+     * **Nom** `cssExternal`
+     * **Type** `String`
+     * **Valeur** nom de la classe CSS (sans « . » devant ; par exemple, `cssClass` au lieu de `.cssClass`)
 
    * Tableau des **protocoles** valides. Les protocoles pris en charge sont les suivants : `http://`, `https://`, `file://` et `mailto:`.
 
-      * **Nom** `protocols`
-      * **Type** `String[]`
-      * **Valeur** un ou plusieurs protocoles
+     * **Nom** `protocols`
+     * **Type** `String[]`
+     * **Valeur** un ou plusieurs protocoles
 
    * **defaultProtocol** (propriété de type **String**) : protocole à utiliser si l’utilisateur n’en a pas spécifié un explicitement.
 
-      * **Nom** `defaultProtocol`
-      * **Type** `String`
-      * **Valeur** un ou plusieurs protocoles par défaut
+     * **Nom** `defaultProtocol`
+     * **Type** `String`
+     * **Valeur** un ou plusieurs protocoles par défaut
 
    * Définition de la gestion de l’attribut cible d’un lien. Créez un nœud :
 
-      * **Nom** `targetConfig`
-      * **Type** `nt:unstructured`
+     * **Nom** `targetConfig`
+     * **Type** `nt:unstructured`
 
      Sur le nœud `targetConfig`, définissez les propriétés obligatoires :
 
-      * Spécifiez le mode cible :
+     * Spécifiez le mode cible :
 
-         * **Nom** `mode`
-         * **Type** `String`
-         * **Valeur**.
+       * **Nom** `mode`
+       * **Type** `String`
+       * **Valeur**.
 
-            * `auto` : signifie qu’une cible automatique est choisie
+         * `auto` : signifie qu’une cible automatique est choisie
 
-              (spécifié par la propriété `targetExternal` pour les liens externes ou `targetInternal` pour les liens internes).
+           (spécifié par la propriété `targetExternal` pour les liens externes ou `targetInternal` pour les liens internes).
 
-            * `manual` : non applicable dans ce contexte
-            * `blank` : non applicable dans ce contexte
+         * `manual` : non applicable dans ce contexte
+         * `blank` : non applicable dans ce contexte
 
-      * Cible des liens internes :
+     * Cible des liens internes :
 
-         * **Nom** `targetInternal`
-         * **Type** `String`
-         * **Valeur** Cible des liens internes (utilisée uniquement lorsque le mode est `auto`)
+       * **Nom** `targetInternal`
+       * **Type** `String`
+       * **Valeur** Cible des liens internes (utilisée uniquement lorsque le mode est `auto`)
 
-      * Cible des liens externes :
+     * Cible des liens externes :
 
-         * **Nom** `targetExternal`
-         * **Type** `String`
-         * **Valeur** Cible des liens externes (utilisé uniquement lorsque le mode est `auto`).
+       * **Nom** `targetExternal`
+       * **Type** `String`
+       * **Valeur** Cible des liens externes (utilisé uniquement lorsque le mode est `auto`).
 
 1. Enregistrez toutes les modifications.

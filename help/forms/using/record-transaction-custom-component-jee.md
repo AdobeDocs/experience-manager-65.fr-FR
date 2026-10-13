@@ -4,17 +4,30 @@ description: Découvrez comment utiliser l’API TransactionRecorder pour enregi
 feature: Transaction Reports
 exl-id: 33e1868a-2a7f-4785-8571-95651e661e21
 role: Admin, User, Developer
-solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+solution: Experience Manager, Experience Manager Forms
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 100%
-
 ---
-
 # Enregistrement d’une transaction pour les API de composant personnalisées pour AEM Forms sur OSGi {#record-a-transaction-for-custom-components}
 
-Lorsque vous utilisez des API facturables dans votre composant personnalisé, vous pouvez activer la création de rapports de transactions pour le composant. Pour activer la création de rapports de transactions, modifiez le fichier `component.xml` du composant et ajoutez la balise donnée ci-dessous sous l’opération pour laquelle la création de rapports de transactions doit être activée.
+Lorsque vous utilisez des API facturables dans votre composant personnalisé, vous pouvez activer le reporting des transactions pour le composant. Pour activer la création de rapports de transactions, modifiez le fichier `component.xml` du composant et ajoutez la balise donnée ci-dessous sous l’opération pour laquelle la création de rapports de transactions doit être activée.
 
 **Balise** : `<transaction-operation-type>CONVERT</transaction-operation-type> // Supported values are SUBMIT, CONVERT, RENDER.`
 

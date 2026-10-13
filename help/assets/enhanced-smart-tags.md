@@ -7,13 +7,27 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1612'
 ht-degree: 97%
-
 ---
-
 # Comprendre, appliquer et traiter des balises intelligentes {#enhanced-smart-tags}
 
 | Version | Lien de l’article |
@@ -133,11 +147,11 @@ Vous pouvez exécuter le workflow de balisage périodiquement ou en fonction des
 
 Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Ouvrez la page de propriétés du dossier de ressources, sélectionnez **[!UICONTROL Activer les balises intelligentes]** sous l’onglet **[!UICONTROL Détails]** et enregistrez les modifications.
 
-Lorsque cette option est sélectionnée pour un dossier, le service de contenu dynamique balise automatiquement les ressources au sein du dossier. Par défaut, le workflow de balisage s’exécute tous les jours à 12 :00.
+Lorsque cette option est sélectionnée pour un dossier, le service de contenu dynamique balise automatiquement les ressources au sein du dossier. Par défaut, le workflow de balisage s’exécute tous les jours à minuit.
 
 ### Balisage à la demande {#on-demand-tagging}
 
-Vous pouvez déclencher le workflow de balisage à partir de la console de workflow ou de la chronologie pour baliser instantanément vos ressources.
+Vous pouvez déclencher le workflow de balisage à partir de la console de workflow ou du journal pour baliser instantanément vos ressources.
 
 >[!NOTE]
 >
@@ -172,9 +186,9 @@ Vous pouvez déclencher le workflow de balisage à partir de la console de workf
 >
 >Dans les cycles de balisage suivants, seules les ressources modifiées sont balisées à nouveau avec les balises qui viennent d’être entraînées. Toutefois, même les ressources non modifiées sont balisées si l’intervalle entre le dernier cycle de balisage et l’actuel pour le workflow de balisage dépasse 24 heures. Pour les workflows de balisage périodiques, les ressources inchangées sont balisées lorsque l’intervalle dépasse six mois.
 
-## Traitement ou modération des balises intelligentes appliquées {#manage-smart-tags}
+## Traiter ou modérer les balises intelligentes appliquées {#manage-smart-tags}
 
-Vous pouvez organiser les balises intelligentes pour supprimer toute balise non pertinente qui pourrait avoir été attribuée à vos ressources de marque, afin que seules les balises les plus pertinentes s’affichent.
+Vous pouvez organiser les balises intelligentes pour supprimer toute balise non pertinente qui pourrait avoir été attribuée à vos images de marque, afin que seules les balises les plus pertinentes s’affichent.
 
 La modération de balises intelligentes contribue également à affiner les résultats des recherches d’images basées sur des balises, en garantissant que votre image apparaît dans les résultats de la recherche pour les balises les plus pertinentes. Essentiellement, cela réduit les risques que des images sans lien apparaissent dans les résultats de la recherche.
 
@@ -186,7 +200,7 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que l’image puisse être recherchée sur la base d’une balise spécifique, sélectionnez la balise, puis cliquez sur **[!UICONTROL Supprimer]** dans la barre d’outils. Vous pouvez également cliquer sur le symbole `x` qui s’affiche à côté d’une balise.
 1. Pour attribuer un rang supérieur à une balise, vous pouvez aussi la sélectionner et cliquer sur **[!UICONTROL Promouvoir]** dans la barre d’outils. La balise objet d’une conversion est déplacée dans la section **[!UICONTROL Balises]**.
 1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]**.
-1. Accédez à la page **[!UICONTROL Propriétés]** de l’image. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence plus élevée et apparaît plus tôt dans les résultats de la recherche.
+1. Accédez à la page **[!UICONTROL Propriétés]** de l’image. Remarquez que la balise que vous avez promue se voit attribuer une pertinence plus élevée et apparaît plus tôt dans les résultats de la recherche.
 
 ## Conseils et restrictions {#tips-best-practices-limitations}
 

@@ -9,13 +9,29 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '5966'
-ht-degree: 95%
-
+source-wordcount: '6207'
+ht-degree: 97%
 ---
-
 # Création et utilisation des thèmes {#creating-and-using-themes}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -46,8 +62,8 @@ Effectuez les étapes suivantes pour créer un thème :
 
 1. Cliquez sur **Adobe Experience Manager**, sur **Formulaires**, puis sur **Thèmes**.
 
-1. Sur la page Thèmes, cliquez sur **Créer > Thème**.
-Un assistant permettant de créer un thème est lancé.
+1. Sur la page Thèmes, cliquez sur **Créer > Thème**.
+Un assistant de création de thème se lance.
 
 1. Dans l’onglet Réglages de base de l’assistant de création de thème, indiquez le **titre** et le **nom** du thème. Il s’agit de champs obligatoires.
 
@@ -82,7 +98,7 @@ Pour charger un thème :
 1. Cliquez sur **Adobe Experience Manager**, sur **Formulaires**, puis sur **Thèmes**.
 
 1. Sur la page Thèmes, cliquez sur **Créer > Chargement de fichier**.
-1. Dans l’invite de téléchargement de fichier, recherchez et sélectionnez un package de thème sur votre ordinateur et cliquez sur **Télécharger**.
+1. Dans l’invite de téléchargement de fichier, recherchez et sélectionnez un package de thème sur votre ordinateur et cliquez sur **Charger**.
 Le thème chargé est disponible dans la page Thèmes.
 
 ## Métadonnées d’un thème {#metadata-of-a-theme}
@@ -210,25 +226,25 @@ L’éditeur de thèmes est divisé en deux panneaux :
 
 * **Barre latérale** : apparaît sur le côté gauche. Elle comporte les éléments suivants :
 
-   * **Sélecteur :** affiche le composant sélectionné pour le style, ainsi que ses propriétés dont vous pouvez définir le style. Le sélecteur représente tous les composants d’un type. Si vous sélectionnez un composant de zone de texte dans un thème pour le style, toutes les zones de texte de votre formulaire ou de votre communication interactive héritent du style. Les sélecteurs vous permettent de choisir un composant générique ou un composant spécifique pour le style. Par exemple, un composant de champ est un composant générique, et une zone de texte est un composant spécifique.
+  * **Sélecteur :** affiche le composant sélectionné pour le style, ainsi que ses propriétés dont vous pouvez définir le style. Le sélecteur représente tous les composants d’un type. Si vous sélectionnez un composant de zone de texte dans un thème pour le style, toutes les zones de texte de votre formulaire ou de votre communication interactive héritent du style. Les sélecteurs vous permettent de choisir un composant générique ou un composant spécifique pour le style. Par exemple, un composant de champ est un composant générique, et une zone de texte est un composant spécifique.
 
-     **Mise en forme du composant générique :**
-Un champ peut être un champ de zone numérique, tel que l’âge, ou un champ de zone de texte, tel qu’une adresse.
-Lorsque vous mettez en forme un champ, tous les champs tels que l’âge, le nom et l’adresse sont stylisés.
+    **Mise en forme du composant générique :**
+    Un champ peut être un champ de zone numérique, tel que l’âge, ou un champ de zone de texte, tel qu’une adresse.
+    Lorsque vous mettez en forme un champ, tous les champs tels que l’âge, le nom et l’adresse sont stylisés.
 
-     **Mise en forme d’un composant spécifique** :
-Un composant spécifique a un impact sur les objets de la catégorie spécifique. Lorsque vous appliquez un style au composant numérique de la zone dans le thème, seul l’objet numérique de zone hérite du style.
+    **Mise en forme d’un composant spécifique** :
+    Un composant spécifique a un impact sur les objets de la catégorie spécifique. Lorsque vous appliquez un style au composant numérique de la zone dans le thème, seul l’objet numérique de zone hérite du style.
 
-     Par exemple, un champ de zone de texte tel qu’une adresse est plus long et un champ de zone numérique tel qu’un âge est plus court. Vous pouvez sélectionner un champ de zone numérique, réduire sa longueur et l’appliquer à votre formulaire. La largeur de tous les champs de zone numérique est réduite dans votre formulaire.
+    Par exemple, un champ de zone de texte tel qu’une adresse est plus long et un champ de zone numérique tel qu’un âge est plus court. Vous pouvez sélectionner un champ de zone numérique, réduire sa longueur et l’appliquer à votre formulaire. La largeur de tous les champs de zone numérique est réduite dans votre formulaire.
 
-     Lorsque vous personnalisez tous les composants de champ avec une couleur d’arrière-plan spécifique, tous les champs tels que l’âge, le nom et l’adresse héritent de la couleur d’arrière-plan. Lorsque vous sélectionnez une zone numérique, telle que l’âge, et réduisez sa largeur, toutes les zones numériques telles que l’âge et le nombre de personnes dans une famille sont réduites. La largeur des champs de texte n’est pas modifiée.
+    Lorsque vous personnalisez tous les composants de champ avec une couleur d’arrière-plan spécifique, tous les champs tels que l’âge, le nom et l’adresse héritent de la couleur d’arrière-plan. Lorsque vous sélectionnez une zone numérique, telle que l’âge, et réduisez sa largeur, toutes les zones numériques telles que l’âge et le nombre de personnes dans une famille sont réduites. La largeur des champs de texte n’est pas modifiée.
 
-   * **Etat :** vous permet de personnaliser les styles d’un objet dans un état spécifique. Par exemple, vous pouvez spécifier l’aspect d’un objet lorsqu’il est à l’état par défaut, mis au point, désactivé, survolé ou d’erreur.
-   * **Catégories de propriété :** les propriétés de style sont divisées en différentes catégories. Par exemple : Dimension et position, Texte, Arrière-plan, Bordure et Effets. Sous chaque catégorie, vous fournissez des informations de mise en forme. Par exemple, sous Arrière-plan, vous pouvez indiquer la Couleur d’arrière-plan, l’Image et le Dégradé de l’arrière-plan.
+  * **Etat :** vous permet de personnaliser les styles d’un objet dans un état spécifique. Par exemple, vous pouvez spécifier l’aspect d’un objet lorsqu’il est à l’état par défaut, mis au point, désactivé, survolé ou d’erreur.
+  * **Catégories de propriété :** les propriétés de style sont divisées en différentes catégories. Par exemple : Dimension et position, Texte, Arrière-plan, Bordure et Effets. Sous chaque catégorie, vous fournissez des informations de mise en forme. Par exemple, sous Arrière-plan, vous pouvez indiquer la Couleur d’arrière-plan, l’Image et le Dégradé de l’arrière-plan.
 
-   * **Avancé :** vous permet d’ajouter le CSS personnalisé à un objet, ce qui remplace les contrôles visuels de propriétés définis en cas de chevauchement.
+  * **Avancé :** vous permet d’ajouter le CSS personnalisé à un objet, ce qui remplace les contrôles visuels de propriétés définis en cas de chevauchement.
 
-   * **Affichage CSS** : vous permet d’afficher le fichier CSS du composant sélectionné
+  * **Affichage CSS** : vous permet d’afficher le fichier CSS du composant sélectionné
 
   En outre, dans la barre latérale, vous verrez une flèche dans la partie inférieure. Lorsque vous cliquez sur la flèche, vous bénéficiez de deux options supplémentaires : **Simuler la réussite** et **Simuler une erreur**. Ces options, ainsi que les options décrites ci-dessus, sont expliquées en détail [ci-dessous](../../forms/using/themes.md#using-rail).
 
@@ -261,11 +277,11 @@ Les panneaux prêts à l’emploi comprennent :
 * réactif
 * Mise en page mobile
 
-   * Titres de panneau dans l’en-tête
-   * Sans titres de panneau dans l’en-tête
+  * Titres de panneau dans l’en-tête
+  * Sans titres de panneau dans l’en-tête
 
 Les sélecteurs varient pour chaque mise en page.
-La mise en forme des mises en page personnalisées à partir de l’éditeur de thèmes implique :
+La mise en forme des dispositions personnalisées à partir de l’éditeur de thèmes implique ce qui suit :
 
 * La définition des composants pour une mise en page pouvant être mise en forme, et les sélecteurs CSS pour identifier de manière unique ces composants
 * La définition des propriétés CSS pouvant être appliquées sur ces composants
@@ -342,8 +358,8 @@ Les boutons Rétablir/annuler apparaissent lorsque vous mettez en forme un compo
 
 L’éditeur de thèmes vous permet de modifier un thème que vous avez créé ou téléchargé. Accédez à **Formulaires et documents > Thèmes**, sélectionnez un thème et ouvrez-le. Le thème s’ouvre dans l’éditeur de thèmes.
 
-Comme nous l’avons vu plus haut, l’éditeur de thèmes comporte deux panneaux : Barre latérale et Zone de travail.
-![éditeur-thème](assets/theme-editor.png)
+Comme nous l’avons mentionné ci-dessus, l’éditeur de thèmes présente deux panneaux : Barre latérale et Zone de travail.
+![Éditeur de thèmes](assets/theme-editor.png)
 
 Personnalisation du style de réussite du composant Widget de zone de texte dans l’éditeur de thèmes. Le composant est sélectionné dans la zone de travail, et son état est sélectionné dans la barre latérale. Les options de mise en forme disponibles dans la barre latérale sont utilisées pour personnaliser l’aspect d’un composant.
 
@@ -356,10 +372,10 @@ Dans la barre d’outils de la zone de travail se trouvent les éléments suivan
 * **Activer/désactiver le panneau latéral** ![toggle-side-panel](assets/toggle-side-panel.png) : permet d’afficher ou de masquer la barre latérale.
 * **Options du thème** ![theme-options](assets/theme-options.png) : propose trois options.
 
-   * Configurer : fournit des options de sélection de la prévisualisation du formulaire ou de la communication interactive, de la bibliothèque de clients de base et de la configuration Adobe Fonts.
-   * Afficher le thème CSS : génère des CSS pour le thème sélectionné.
-   * Gérer les styles : fournit des options de gestion des styles de texte et d’images
-   * Aide : exécute une visite guidée de l’image de l’éditeur de thèmes.
+  * Configurer : fournit des options de sélection de la prévisualisation du formulaire ou de la communication interactive, de la bibliothèque de clients de base et de la configuration Adobe Fonts.
+  * Afficher le thème CSS : génère des CSS pour le thème sélectionné.
+  * Gérer les styles : fournit des options de gestion des styles de texte et d’images
+  * Aide : exécute une visite guidée de l’image de l’éditeur de thèmes.
 
 * **Émulateur** ![ruler](assets/ruler.png) : vous permet de simuler l’aspect de votre thème pour différentes tailles d’affichage. Une taille d’affichage est traitée comme un point d’arrêt dans l’émulateur. Vous pouvez sélectionner un point d’arrêt et spécifier un style pour ce point. Par exemple, Bureau et Tablette sont deux points d’arrêt. Vous pouvez spécifier différents styles pour chaque point d’arrêt.
 
@@ -382,8 +398,8 @@ Barre d’outils des composants sur la zone numérique dans la zone de travail
 
 La barre latérale dans l’éditeur de thèmes fournit des options pour personnaliser les styles pour les composants d’un thème et pour utiliser des sélecteurs. Les sélecteurs vous permettent de sélectionner un groupe de composants ou des composants individuels ; vous pouvez également rechercher des sélecteurs dans la barre latérale. Vous pouvez écrire des sélecteurs pour les composants personnalisés.
 
-Lorsque vous sélectionnez un composant dans la zone de travail ou des sélecteurs dans la barre latérale, celle-ci affiche toutes les options qui vous permettent de personnaliser les styles.
-Vous trouverez ci-dessous les options qui s’affichent dans la barre latérale lorsque vous sélectionnez un composant :
+Lorsque vous sélectionnez un composant dans la zone de travail ou des sélecteurs dans la barre latérale, cette dernière affiche toutes les options vous permettant de personnaliser les styles.
+Vous trouverez ci-dessous les options qui s’affichent dans la barre latérale lorsque vous sélectionnez un composant :
 
 * État
 * Feuille de propriété
@@ -460,7 +476,7 @@ Effectuez les étapes suivantes pour personnaliser la mise en forme d’un compo
 
 1. Sélectionnez **Widget de zone numérique**.
 1. Le titre de la barre latérale passe à Widget de zone numérique et affiche des options pour personnaliser son aspect.
-Utilisez l’option **Dimension et position** dans la barre latérale pour personnaliser la taille du composant. Assurez-vous que l’état est **Par défaut**.
+Utilisez l’option **Dimension et position** dans la barre latérale pour personnaliser la taille du composant. Vérifiez que l’état est bien **Par défaut**.
 
 Au lieu de sélectionner **Widget de zone numérique**, sélectionnez **Widget de champ** dans la barre d’outils de composants et effectuez les étapes ci-dessus. Quand vous sélectionnez des dimensions pour l’option **Widget de champ**, toutes les zones de texte, à l’exception de la zone numérique, ont la même taille.
 
@@ -470,7 +486,7 @@ Avec la barre d’outils de composants, vous pouvez également spécifier la mis
 
 Effectuez les étapes suivantes pour personnaliser la mise en forme d’un composant à un état spécifique :
 
-1. Sélectionnez un composant dans la zone de travail, puis sélectionnez l’option appropriée dans la barre d’outils du composant.
+1. Sélectionnez un composant dans la zone de travail, puis sélectionnez l’option appropriée dans la barre d’outils de composants.
 La barre latérale affiche les options de personnalisation de la mise en forme du composant.
 1. Sélectionnez un état dans la barre latérale. Par exemple, l’état Erreur.
 1. Utilisez des options telles que **Bordure, Arrière-plan** dans la barre latérale pour personnaliser l’aspect des composants.
@@ -487,7 +503,7 @@ Utilisez la règle dans la zone de travail pour sélectionner des points d’arr
 Pour mettre en forme des composants pour différents points d’arrêt :
 
 1. Dans la zone de travail, sélectionnez un point d’arrêt au-dessus de la règle.
-Un point d’arrêt représente un appareil mobile et sa taille d’affichage.
+Un point d’arrêt représente un appareil mobile et son format d’affichage.
 1. Utilisez la barre latérale pour personnaliser la mise en forme des composants de formulaire ou de communication interactive dans le thème pour le format d’affichage sélectionné.
 1. Vérifiez que la personnalisation est enregistrée.
 
@@ -641,27 +657,27 @@ Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
 * Vous pouvez rencontrer des problèmes avec votre thème actuel si un actif est ajouté à partir d’un autre thème et l’autre thème est déplacé ou supprimé. Nous vous recommandons d’éviter de parcourir les actifs d’autres thèmes et de les ajouter.
 * **Utilisation de la bibliothèque de clients de base, de l’éditeur de thème et de la mise en forme intégrée**
 
-   * **Bibliothèque cliente de base** :
+  * **Bibliothèque cliente de base** :
 
-     La bibliothèque cliente de base contient des informations de mise en forme. Pour utiliser des informations de mise en forme dans les bibliothèques côté client des thèmes.
+    La bibliothèque cliente de base contient des informations de mise en forme. Pour utiliser des informations de mise en forme dans les bibliothèques côté client des thèmes.
 
-      1. Accédez à **Experience Manager > Formulaires > Thèmes**.
-      1. Sur la page Thèmes, sélectionnez un thème et cliquez sur **Afficher les propriétés**.
-      1. Dans la page Propriétés qui s’ouvre, cliquez sur **Avancé**.
-      1. Dans l’onglet Avancé, dans le champ Emplacement de la bibliothèque cliente, parcourez et sélectionnez la bibliothèque cliente que vous souhaitez utiliser.
-      1. Cliquez sur **Enregistrer**.
+    1. Accédez à **Experience Manager > Formulaires > Thèmes**.
+    1. Sur la page Thèmes, sélectionnez un thème et cliquez sur **Afficher les propriétés**.
+    1. Dans la page Propriétés qui s’ouvre, cliquez sur **Avancé**.
+    1. Dans l’onglet Avancé, dans le champ Emplacement de la bibliothèque cliente, parcourez et sélectionnez la bibliothèque cliente que vous souhaitez utiliser.
+    1. Cliquez sur **Enregistrer**.
 
-     Le style que vous spécifiez dans la bibliothèque cliente est importé dans le thème qui l’utilise. Par exemple, vous spécifiez la mise en forme de la zone de texte et de la zone numérique, puis vous basculez dans la bibliothèque cliente. Lorsque vous importez votre bibliothèque cliente dans le thème, la mise en forme de la zone de texte, de la zone numérique et du commutateur est importée. Vous pouvez ensuite mettre en forme d’autres composants à l’aide de l’éditeur de thèmes.
-Vous pouvez également créer un thème, créer des copies de ce thème, puis modifier la mise en forme fournie dans les thèmes copiés pour des cas d’utilisation similaires.
-Voir [Obtention d’un aspect spécifique à l’aide des thèmes](#specific-af-appearance)
+    Le style que vous spécifiez dans la bibliothèque cliente est importé dans le thème qui l’utilise. Par exemple, vous spécifiez le style de la zone de texte, de la zone numérique et du commutateur dans la bibliothèque cliente. Lorsque vous importez votre bibliothèque cliente dans le thème, le style de la zone de texte, de la zone numérique et du commutateur est importé. Vous pouvez alors mettre en forme d’autres composants à l’aide de l’éditeur de thème.
+    Vous pouvez également créer un thème, créer des copies de ce thème, puis modifiez la mise en forme fournie dans les thèmes copiés pour des cas d’utilisation similaires.
+    Voir [Obtention d’un aspect spécifique à l’aide des thèmes](#specific-af-appearance)
 
-   * **Éditeur de thème:**
+  * **Éditeur de thème:**
 
-     L’éditeur de thème vous permet de créer des thèmes pour la mise en forme de votre formulaire ou de votre communication interactive. Vous pouvez spécifier le style de composants dans un thème, ce qui permet d’assurer la cohérence de l’apparence parmi les multiples formulaires ou communications interactives que vous développez. La spécification des informations de style dans un thème, puis l’application du thème à un formulaire sont recommandées.
+    L’éditeur de thème vous permet de créer des thèmes pour la mise en forme de votre formulaire ou de votre communication interactive. Vous pouvez spécifier le style de composants dans un thème, ce qui permet d’assurer la cohérence de l’apparence parmi les multiples formulaires ou communications interactives que vous développez. La spécification des informations de style dans un thème, puis l’application du thème à un formulaire sont recommandées.
 
-   * **Style intégré :**
+  * **Style intégré :**
 
-     Vous pouvez mettre en forme des composants à l’aide du mode Style de l’éditeur de formulaires ou de communications interactives multicanal lorsque vous utilisez un formulaire. L’utilisation du mode Style pour modifier la mise en forme d’un composant de formulaire remplace la mise en forme indiquée dans le thème. Si vous choisissez de modifier le style de certains composants d’un formulaire spécifique, voir [Style intégré de composants](../../forms/using/inline-style-adaptive-forms.md).
+    Vous pouvez mettre en forme des composants à l’aide du mode Style de l’éditeur de formulaires ou de communications interactives multicanal lorsque vous utilisez un formulaire. L’utilisation du mode Style pour modifier la mise en forme d’un composant de formulaire remplace la mise en forme indiquée dans le thème. Si vous choisissez de modifier le style de certains composants d’un formulaire spécifique, voir [Style intégré de composants](../../forms/using/inline-style-adaptive-forms.md).
 
 * **Utiliser des bibliothèques côté client**
 
@@ -674,4 +690,4 @@ Voir [Obtention d’un aspect spécifique à l’aide des thèmes](#specific-af-
 * **Dans quel cas utiliser l’éditeur de formulaires ou l’éditeur de thèmes pour travailler sur l’en-tête et le pied de page**
 
   Utilisez l’éditeur de thèmes si vous souhaitez mettre en forme l’en-tête et le pied de page à l’aide d’options de style telles que le style de police, l’arrière-plan et la transparence.
-Si vous souhaitez fournir des informations telles qu’une image de logo, le nom de la société dans l’en-tête et des informations de copyright dans le pied de page, utilisez les options de l’éditeur de formulaires.
+  Si vous souhaitez fournir des informations comme une image de logo, le nom de l’entreprise dans l’en-tête et des informations de copyright dans le pied de page, utilisez les options de l’éditeur de formulaires.

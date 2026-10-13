@@ -5,13 +5,25 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
-workflow-type: ht
-source-wordcount: '762'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+workflow-type: tm+mt
+source-wordcount: '767'
 ht-degree: 100%
-
 ---
-
 # Résolution des problèmes et FAQ concernant MSM {#troubleshooting-msm}
 
 ## Premières étapes de résolution des problèmes {#first-steps}
@@ -43,17 +55,17 @@ Ces servlets génèrent des messages du journal DEBUG via le journal `com.day.cq
 Les versions précédentes des servlets renvoyaient des informations calculées basées sur les nœuds et mixins spécifiques au module MSM. Les informations sont stockées dans le référentiel de la manière suivante.
 
 * Type de mixin `cq:LiveSync`
-   * Il est défini sur les nœuds `jcr:content` et définit les pages racine Live Copy.
-   * Ces pages présentent un nœud enfant `cq:LiveSyncConfig` de type `cq:LiveCopy` qui contiendra des informations de base et obligatoires sur la Live Copy dans les propriétés suivantes :
-      * `cq:master` pointe vers la page de plan directeur de la Live Copy.
-      * `cq:rolloutConfigs` indique les configurations de déploiement principal appliquées à la Live Copy.
-      * `cq:isDeep` est « true » si les pages enfants de cette page racine de Live Copy sont incluses dans la Live Copy.
+  * Il est défini sur les nœuds `jcr:content` et définit les pages racine Live Copy.
+  * Ces pages présentent un nœud enfant `cq:LiveSyncConfig` de type `cq:LiveCopy` qui contiendra des informations de base et obligatoires sur la Live Copy dans les propriétés suivantes :
+    * `cq:master` pointe vers la page de plan directeur de la Live Copy.
+    * `cq:rolloutConfigs` indique les configurations de déploiement principal appliquées à la Live Copy.
+    * `cq:isDeep` est « true » si les pages enfants de cette page racine de Live Copy sont incluses dans la Live Copy.
 * Type de mixin `cq:LiveRelationship`
-   * Toute page Live Copy dispose de ce type de mixin sur son nœud `jcr:content`.
-   * Si tel n’est pas le cas, la page a dû à un moment donné être détachée ou créée manuellement par le biais de l’interface de création en dehors d’une action Live Copy (création ou déploiement).
+  * Toute page Live Copy dispose de ce type de mixin sur son nœud `jcr:content`.
+  * Si tel n’est pas le cas, la page a dû à un moment donné être détachée ou créée manuellement par le biais de l’interface de création en dehors d’une action Live Copy (création ou déploiement).
 * Type de mixin `cq:LiveSyncCancelled`
-   * Ajouté aux nœuds `jcr:content` des pages Live Copy suspendues.
-   * Si la suspension s’applique également aux pages enfants, une propriété `cq:isCancelledForChildren` est définie sur « true » sur le même nœud.
+  * Ajouté aux nœuds `jcr:content` des pages Live Copy suspendues.
+  * Si la suspension s’applique également aux pages enfants, une propriété `cq:isCancelledForChildren` est définie sur « true » sur le même nœud.
 
 Les informations présentes dans ces propriétés doivent se refléter dans l’interface utilisateur. Toutefois, lors de la résolution des problèmes, il peut s’avérer utile d’observer directement le comportement de MSM dans le référentiel lorsque des actions MSM se produisent.
 
@@ -71,7 +83,7 @@ Les actions de synchronisation MSM sont hautement configurables. Les propriété
 
 Pour plus d’informations à ce sujet, consultez les [Bonnes pratiques relatives à MSM](msm-best-practices.md).
 
-### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ?  {#remove-rollout-permissions}
+### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ? {#remove-rollout-permissions}
 
 Aucun privilège de **déploiement** ne peut être défini ou supprimé pour les principaux d’AEM (utilisateurs ou groupes).
 
@@ -80,7 +92,7 @@ Vous pouvez cependant :
 * modifier l’interface utilisateur du produit pour masquer les actions de déploiement pour un principal de sécurité donné ;
 * supprimer les privilèges d’écriture de l’arborescence Live Copy pour les auteurs et autrices qui n’ont pas l’autorisation de procéder à un déploiement.
 
-### Pourquoi les pages Live Copy présentent-elles le suffixe « _msm_moved » ?  {#moved-pages}
+### Pourquoi les pages Live Copy présentent-elles le suffixe « _msm_moved » ? {#moved-pages}
 
 Si une page de plan directeur est déployée, elle met à jour sa page Live Copy ou crée une nouvelle page Live Copy si celle-ci n’existe pas encore. Par exemple, lorsqu’elle a été déployée pour la première fois ou que la page Live Copy a été supprimée manuellement.
 

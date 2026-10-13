@@ -9,13 +9,22 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 98%
-
 ---
-
 
 # Configuration des notifications par e-mail{#configuring-email-notification}
 
@@ -24,7 +33,7 @@ AEM envoie des notifications par e-mail aux utilisateurs et utilisatrices qui :
 * Ont souscrit à des événements de page, par exemple une modification ou une réplication. La section [Boîte de réception de notifications](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) décrit comment s’abonner à ces événements.
 
 * Ont souscrit aux événements de forum.
-* Doivent effectuer une opération dans un workflow. La section [Étape de participant](/help/sites-developing/workflows-step-ref.md#participant-step) décrit comment déclencher une notification par e-mail dans un workflow.
+* Doivent effectuer une étape dans un workflow. La section [Étape de participant](/help/sites-developing/workflows-step-ref.md#participant-step) décrit comment déclencher une notification par e-mail dans un workflow.
 
 Conditions préalables :
 
@@ -404,11 +413,11 @@ Ensuite, intégrez vos paramètres OAuth2 à AEM :
    * Renseignez l’URL d’autorisation, l’URL du jeton et l’URL du jeton d’actualisation en les construisant comme décrit dans la section [la fin de cette procédure](#microsoft-outlook).
    * ID client et secret client : configurez ces champs avec les valeurs que vous avez récupérées comme décrit ci-dessus.
    * Ajoutez les portées suivantes à la configuration :
-      * openid
-      * offline_access
-      * `https://outlook.office365.com/Mail.Send`
-      * `https://outlook.office365.com/Mail.Read`
-      * `https://outlook.office365.com/SMTP.Send`
+     * openid
+     * offline_access
+     * `https://outlook.office365.com/Mail.Send`
+     * `https://outlook.office365.com/Mail.Read`
+     * `https://outlook.office365.com/SMTP.Send`
    * Url de redirection AuthCode : `http://localhost:4503/services/mailer/oauth2/token`
    * URL du jeton d’actualisation : doit avoir la même valeur que l’URL du jeton ci-dessus.
 1. Cliquez sur **Enregistrer**.

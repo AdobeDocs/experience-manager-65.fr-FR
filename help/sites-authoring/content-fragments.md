@@ -10,18 +10,36 @@ exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Content Fragments
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 100%
-
 ---
-
 # Création de page à partir de fragments de contenu{#page-authoring-with-content-fragments}
 
 Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md).
 
-Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
+Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). Vous pouvez ensuite utiliser ces fragments et leurs variations lors de la création de vos pages de contenu.
 
 En même temps que l’outil d’exportation JSON mis à jour, les fragments de contenu structuré peuvent également être utilisés pour diffuser du contenu AEM via Content Services à des canaux autres que des pages AEM.
 
@@ -42,27 +60,27 @@ Les fragments de contenu permettent ce qui suit :
 
 * **Stratégie de marketing et de campagne**
 
-   * Examen du contenu par le biais de fragments de contenu gérés de manière centralisée.
+  * Examen du contenu par le biais de fragments de contenu gérés de manière centralisée.
 
 * **Créateurs et créatrices professionnels**
 
-   * Suivi des ressources de création via des collections associées à des fragments de contenu.
+  * Suivi des ressources de création via des collections associées à des fragments de contenu.
 
 * **Rédacteurs et rédactrices**
 
-   * Écriture dans l’éditeur de fragments de contenu d’AEM.
-   * Possibilité de créer des variations de contenu.
-   * Possibilité d’associer du contenu pertinent au fragment de contenu.
-   * Possibilité d’utiliser le contrôle de version/workflow.
-   * Possibilité de partager un fragment de contenu.
-   * Possibilité de gérer les traductions de manière centralisée.
+  * Rédaction dans l’éditeur de fragments de contenu d’AEM.
+  * Possibilité de créer des variations de contenu.
+  * Possibilité d’associer du contenu pertinent au fragment de contenu.
+  * Possibilité d’utiliser le contrôle de version/workflow.
+  * Possibilité de partager un fragment de contenu.
+  * Possibilité de gérer les traductions de manière centralisée.
 
 * **Producteurs et responsable parcours**
 
-   * Sélection à partir de fragments et de variations prédéfinis avec la création dans AEM.
-   * Possibilité de compter sur la mise à jour en continu des fragments et du contenu associé à mesure que les rédacteurs et les rédactrices, et les créateurs et créatrices, effectuent leurs mises à jour dans des ressources et des fragments gérés de manière centralisée.
-   * Possibilité de compter sur un contenu multimédia associé traité pour être pertinent.
-   * Possibilité de créer des variations de contenu ad hoc à la volée tout en s’assurant que celles-ci restent gérées de manière centralisée dans le fragment.
+  * Sélection à partir de fragments et de variations prédéfinis avec la création dans AEM.
+  * Possibilité de compter sur la mise à jour en continu des fragments et du contenu associé à mesure que les rédacteurs et les rédactrices, et les créateurs et créatrices, effectuent leurs mises à jour dans des ressources et des fragments gérés de manière centralisée.
+  * Possibilité de compter sur un contenu multimédia associé traité pour être pertinent.
+  * Possibilité de créer des variations de contenu ad hoc à la volée tout en s’assurant que celles-ci restent gérées de manière centralisée dans le fragment.
 
 ## Ajout d’un fragment de contenu à une page {#adding-a-content-fragment-to-your-page}
 
@@ -78,7 +96,7 @@ Les fragments de contenu permettent ce qui suit :
 
    >[!NOTE]
    >
-   >L’autre méthode consiste à faire glisser un fragment de contenu directement sur la page. Le composant associé est ainsi automatiquement créé (fragment de contenu).
+   >L’autre méthode consiste à faire glisser un fragment de contenu spécifique directement sur la page. Le composant associé est ainsi automatiquement créé (fragment de contenu).
 
 1. Au début, le contenu des éléments **Principal** et **Maître** (variation) est affiché. Vous pouvez [sélectionner d’autres éléments et/ou variantes](#selecting-the-element-or-variation) en fonction de vos besoins.
 
@@ -107,14 +125,14 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
 
 * **Mode d’affichage** :
 
-   * **Un seul élément texte**
+  * **Un seul élément texte**
 
-   * **Plusieurs éléments**
+  * **Plusieurs éléments**
 
 * **Élément**
 
-   * L’élément **Principal** par défaut est toujours disponible.
-   * Une sélection est disponible si le fragment a été créé avec un modèle approprié.
+  * L’élément **Principal** par défaut est toujours disponible.
+  * Une sélection est disponible si le fragment a été créé avec un modèle approprié.
 
   >[!NOTE]
   >
@@ -122,15 +140,15 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
 
 * **Variante**
 
-   * Le **principal** par défaut est toujours disponible.
-   * La sélection est disponible si vous avez créé des variantes pour le fragment.
+  * Le **principal** par défaut est toujours disponible.
+  * La sélection est disponible si vous avez créé des variantes pour le fragment.
 
 * **Paragraphes** : spécifiez la plage de paragraphes à inclure :
 
-   * **Tous**
-   * **Plage** : par exemple, `1`, `3-5`, `9-*`
+  * **Tous**
+  * **Plage** : par exemple, `1`, `3-5`, `9-*`
 
-      * **Gérer les en-têtes comme leurs propres paragraphes**
+    * **Gérer les en-têtes comme leurs propres paragraphes**
 
 * **Gérer les en-têtes comme leurs propres paragraphes**
 
@@ -164,7 +182,7 @@ Pour le contenu intermédiaire, vous pouvez :
 >
 >Vous pouvez également [insérer des ressources visuelles (images) dans le fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Les ressources visuelles insérées sont liées au paragraphe précédent dans le fragment. Cela signifie que vous ne pouvez pas placer le contenu intermédiaire entre une ressource visuelle et le paragraphe précédent.
+>Les ressources visuelles insérées dans le fragment lui-même sont liées au paragraphe précédent dans le fragment. Cela signifie que vous ne pouvez pas placer le contenu intermédiaire entre une ressource visuelle et le paragraphe précédent.
 
 >[!CAUTION]
 >
@@ -207,7 +225,7 @@ Dans le cas d’une image, par exemple, vous pouvez effectuer les opérations su
 * Spécifier une taille.
 * Vous pouvez également configurer la mise en page.
 
-D’autres modifications telles que le déplacement, la copie et la suppression, doivent être effectuées dans l’éditeur de fragments.
+D’autres modifications telles que le déplacement, la copie et la suppression doivent être effectuées dans l’éditeur de fragments.
 
 ### Publication {#publishing}
 

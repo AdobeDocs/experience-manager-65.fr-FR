@@ -5,13 +5,37 @@ exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1348'
 ht-degree: 100%
-
 ---
-
 # Publication du contenu traduit {#publish-content}
 
 Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour.
@@ -39,7 +63,7 @@ Ce document vous aide à comprendre comment publier du contenu découplé dans A
 Avant de publier votre contenu, il est préférable de comprendre comment fonctionne le modèle auteur-publication d’AEM. Pour faire simple, AEM divise les utilisateurs du système en deux groupes.
 
 1. Les personnes qui créent et gèrent le contenu et le système
-1. Ceux qui utilisent le contenu du système
+1. Ceux qui consultent le contenu du système
 
 AEM est donc physiquement séparé en deux instances.
 
@@ -50,13 +74,13 @@ Une fois le contenu créé sur l’instance de création, il doit être transfé
 
 ## Publication de votre contenu traduit {#publishing}
 
-Une fois que vous êtes satisfait de l’état de votre contenu traduit, il doit être publié pour que les services découplés puissent l’utiliser. Cette tâche n’est pas de la responsabilité du spécialiste de traduction, mais elle est documentée ici pour illustrer l’ensemble du workflow.
+Une fois que vous êtes satisfait de l’état de votre contenu traduit, il doit être publié pour que les services découplés puissent l’utiliser. Cette tâche n’est pas du ressort du spécialiste de la traduction, mais elle est documentée ici pour illustrer l’ensemble du workflow.
 
 >[!NOTE]
 >
 >Généralement, une fois la traduction terminée, le spécialiste des traductions informe les propriétaires du contenu que les traductions sont prêtes à être publiées. Les propriétaires de contenu les publient ensuite.
 >
->Les étapes suivantes sont fournies pour vous offrir un point de vue exhaustif.
+>Les étapes suivantes sont fournies par souci d’exhaustivité.
 
 La méthode la plus simple pour publier les traductions consiste à accéder au dossier des ressources du projet.
 
@@ -67,8 +91,8 @@ La méthode la plus simple pour publier les traductions consiste à accéder au 
 Ce chemin d’accès mène aux sous-dossiers pour chaque langue de traduction et vous pouvez choisir laquelle publier.
 
 1. Accédez à **Navigation** -> **Ressources** -> **Fichiers** et ouvrez le dossier du projet.
-1. Vous pouvez y voir le dossier racine de langue et tous les autres dossiers de langue. Sélectionnez la ou les langues localisées que vous souhaitez publier.
-   ![Sélection du dossier de langue.](assets/select-language-folder.png)
+1. Vous pouvez y voir le dossier racine de la langue et tous les autres dossiers de langue. Sélectionnez la ou les langues localisées que vous souhaitez publier.
+   ![Sélectionner le dossier de langue](assets/select-language-folder.png)
 1. Cliquez sur **Gérer la publication**.
 1. Dans la fenêtre **Gérer la publication**, assurez-vous que **Publier** est automatiquement sélectionné sous **Action** et que **Maintenant** est sélectionné sous **Planification**. Cliquez sur **Suivant**.
    ![Gérer les options de publication](assets/manage-publication-options.png)
@@ -87,9 +111,9 @@ D’autres options s’offrent à vous lors de la publication de votre contenu, 
 
 ## Mise à jour de votre contenu traduit {#updating-translations}
 
-La traduction est rarement un exercice ponctuel. En règle générale, vos auteurs continuent à ajouter et à modifier votre contenu dans la racine de langue une fois la traduction initiale terminée. Cela signifie que vous devez également mettre à jour votre contenu traduit.
+La traduction est rarement un exercice ponctuel. En règle générale, vos auteurs et autrices continuent à ajouter et à modifier votre contenu dans la racine de la langue une fois la traduction initiale terminée. Cela signifie que vous devez également mettre à jour votre contenu traduit.
 
-Les exigences spécifiques de projet définissent la fréquence à laquelle vous devez mettre à jour vos traductions et le processus de décision à suivre avant d’effectuer une mise à jour. Une fois que vous avez décidé de mettre à jour vos traductions, le processus à suivre dans AEM est simple. De la même façon que pour la traduction initiale, toutes les mises à jour sont basées sur un projet de traduction.
+Les exigences spécifiques du projet définissent la fréquence à laquelle vous devez mettre à jour vos traductions et le processus de décision à suivre avant d’effectuer une mise à jour. Une fois que vous avez décidé de mettre à jour vos traductions, le processus à suivre dans AEM est simple. De la même façon que pour la traduction initiale, toutes les mises à jour sont basées sur un projet de traduction.
 
 Cependant, comme auparavant, le processus est légèrement différent si vous avez choisi de créer automatiquement votre projet de traduction ou de le créer manuellement.
 
@@ -157,9 +181,9 @@ Pour mettre à jour une traduction, vous pouvez ajouter à votre projet existant
 
 ## Fin du parcours ? {#end-of-journey}
 
-Félicitations ! Vous avez terminé le parcours de traduction découplée. Vous devez maintenant :
+Félicitations ! Vous avez terminé le parcours de traduction de contenu découplé. Vous devez maintenant :
 
-* disposer d’une vue d’ensemble sur la diffusion découplée ;
+* disposer d’une vue d’ensemble de la diffusion de contenu découplé ;
 * disposer d’une compréhension de base des fonctions découplées d’AEM ;
 * connaître les fonctionnalités de traduction d’AEM et leur lien avec le contenu découplé ;
 * être capable de traduire votre propre contenu découplé.

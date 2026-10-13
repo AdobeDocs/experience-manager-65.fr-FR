@@ -9,13 +9,22 @@ exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 100%
-
+source-wordcount: '581'
+ht-degree: 89%
 ---
-
 # Gestion de l’accès aux workflows{#managing-access-to-workflows}
 
 Configurez les listes de contrôle d’accès en fonction des comptes d’utilisateurs et d’utilisatrices pour autoriser (ou désactiver) le démarrage des workflows et la participation à ceux-ci.
@@ -27,13 +36,13 @@ Des actions sur les workflows peuvent être entreprises dans les cas suivants :
 * Vous utilisez le compte `admin`.
 * Le compte a été affecté au groupe par défaut `workflow-users` :
 
-   * ce groupe contient tous les privilèges nécessaires pour que vos utilisateurs et utilisatrices puissent exécuter des actions de workflow.
-   * lorsque le compte se trouve dans ce groupe, il a uniquement accès aux workflows qu’il a initiés.
+  * ce groupe contient tous les privilèges nécessaires pour que vos utilisateurs et utilisatrices puissent exécuter des actions de workflow.
+  * lorsque le compte se trouve dans ce groupe, il a uniquement accès aux workflows qu’il a initiés.
 
 * Le compte a été affecté au groupe par défaut `workflow-administrators` :
 
-   * ce groupe contient tous les privilèges nécessaires pour que vos utilisateurs et utilisatrices privilégiés puissent surveiller et administrer les workflows.
-   * lorsque le compte se trouve dans ce groupe, il a accès à tous les workflows.
+  * ce groupe contient tous les privilèges nécessaires pour que vos utilisateurs et utilisatrices privilégiés puissent surveiller et administrer les workflows.
+  * lorsque le compte se trouve dans ce groupe, il a accès à tous les workflows.
 
 >[!NOTE]
 >
@@ -54,7 +63,7 @@ Les modèles de workflows héritent d’une liste de contrôle d’accès par d�
 
 Si le modèle de workflow est stocké dans `/var/workflow/models`, vous pouvez affecter une liste de contrôle d’accès spécifique et ne se rapportant qu’à ce workflow, dans le dossier :
 
-1. Ouvrez CRXDE Lite dans votre navigateur web, par exemple [https://localhost:4502/crx/de](http://localhost:4502/crx/de).
+1. Ouvrez CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Dans l’arborescence de nœuds, sélectionnez le nœud du dossier des modèles de workflow :
 
    `/var/workflow/models`
@@ -66,7 +75,7 @@ Si le modèle de workflow est stocké dans `/var/workflow/models`, vous pouvez a
    * **Principal** : `content-authors`
    * **Type** : `Deny`
    * **Autorisations** : `jcr:read`
-   * **rep:glob** : référence au workflow spécifique
+   * **rep:glob** : référence au workflow spécifique
 
    ![wf-108](assets/wf-108.png)
 
@@ -80,7 +89,7 @@ Si le modèle de workflow est stocké dans `/var/workflow/models`, vous pouvez a
 
 ### Créez un sous-dossier dans /var/workflow/models et appliquez-lui la liste de contrôle d’accès. {#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that}
 
-Votre équipe de développement [ peut créer les workflows dans un sous-dossier ](/help/sites-developing/workflows-models.md#creating-a-new-workflow) de
+Votre équipe de développement [&#x200B; peut créer les workflows dans un sous-dossier &#x200B;](/help/sites-developing/workflows-models.md#creating-a-new-workflow) de
 
 `/var/workflow/models`
 
@@ -90,7 +99,7 @@ comparable aux workflows de gestion des ressources numériques stockés sous
 
 Vous pouvez alors ajouter une liste de contrôle d’accès dans le dossier proprement dit.
 
-1. Ouvrez CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Ouvrez CRXDE Lite dans votre navigateur web (par exemple, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Dans l’arborescence de nœuds, sélectionnez le nœud du dossier individuel dans le dossier des modèles de workflow, comme par exemple :
 
    `/var/workflow/models/prototypes`
@@ -106,7 +115,7 @@ Vous pouvez alors ajouter une liste de contrôle d’accès dans le dossier prop
 
    >[!NOTE]
    >
-   >Comme lors de l’[application d’une liste de contrôle d’accès pour le modèle de workflow spécifique à /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models), vous pouvez inclure une propriété rep:glob pour limiter l’accès à un workflow spécifique.
+   >Comme pour [Appliquer une liste de contrôle d’accès pour le modèle de workflow spécifique à /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) vous pouvez inclure un rep:glob pour limiter l’accès à un workflow spécifique.
 
    ![wf-110](assets/wf-110.png)
 

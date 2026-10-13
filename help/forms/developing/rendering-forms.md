@@ -1,6 +1,6 @@
 ---
 title: Rendu de Forms
-description: Le service Forms permet de créer des applications clientes interactives de capture de données assurant la validation, le traitement, la transformation et la transmission de formulaires généralement créés dans Designer. Les auteurs de formulaires peuvent développer une conception de formulaire unique que le service Forms effectue sous format PDF, SWF ou HTML dans différents environnements de navigateur.
+description: Le service Forms permet de créer des applications clientes interactives de capture de données assurant la validation, le traitement, la transformation et la transmission de formulaires généralement créés dans le concepteur. Les auteurs et autrices de formulaires peuvent développer une conception de formulaire unique que le service Forms restitue au format PDF, SWF ou HTML dans différents environnements de navigateur.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/performing_service_operations_using_apis
@@ -10,26 +10,38 @@ role: Developer
 exl-id: ec9ccf04-7cec-493a-91ab-0e399a905338
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '573'
 ht-degree: 100%
-
 ---
-
 # Rendu de Forms {#rendering-forms}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
 **À propos du service Forms**
 
-Le service Forms permet de créer des applications clientes interactives de capture de données assurant la validation, le traitement, la transformation et la transmission de formulaires généralement créés dans Designer. Les auteurs de formulaires peuvent développer une conception de formulaire unique que le service Forms effectue sous format PDF, SWF ou HTML dans différents environnements de navigateur.
+Le service Forms permet de créer des applications clientes interactives de capture de données assurant la validation, le traitement, la transformation et la transmission de formulaires généralement créés dans le concepteur. Les auteurs et autrices de formulaires peuvent développer une conception de formulaire unique que le service Forms restitue au format PDF, SWF ou HTML dans différents environnements de navigateur.
 
 Quand un utilisateur final demande un formulaire, une application client envoie la demande au service Forms, qui renvoie le formulaire dans un format approprié. Dès que le service Forms reçoit une demande, il fusionne les données avec une conception de formulaire, puis transmet le formulaire au format souhaité. La sortie du service Form est un formulaire interactif, généralement un document PDF. Un formulaire interactif permet aux utilisateurs de remplir les champs situés sur le formulaire.
 
-Selon le type d’application client, vous pouvez écrire le formulaire dans un navigateur web client ou l’enregistrer en tant que fichier PDF. Une application web peut écrire le formulaire dans un navigateur web. Une application de bureau peut enregistrer le formulaire en tant que fichier PDF. Pour expliquer comment écrire dans un navigateur web et un fichier PDF, les mises en route se trouvant dans la section *Générer des formulaires* sont organisées de la manière suivante :
+Selon le type d’application client, vous pouvez afficher le formulaire dans un navigateur web client ou l’enregistrer en tant que fichier PDF. Une application web peut afficher le formulaire dans un navigateur web. Une application de bureau peut enregistrer le formulaire en tant que fichier PDF. Pour expliquer comment écrire dans un navigateur web et un fichier PDF, les mises en route se trouvant dans la section *Générer des formulaires* sont organisées de la manière suivante :
 
-* Les exemples d’API Java fortement typées (mode SOAP) sont un servlet Java.
+* Les exemples d’API Java fortement typées (mode SOAP) sont des servlets Java.
 * Les exemples de service web (Java Base64) sont un servlet Java.
 * Les exemples de service web (MTOM) sont une application de console (tous les démarrages rapides n’ont pas un exemple de MTOM).
 

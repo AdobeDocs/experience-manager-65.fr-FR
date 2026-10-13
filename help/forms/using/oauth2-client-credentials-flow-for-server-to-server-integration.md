@@ -5,13 +5,26 @@ exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '467'
 ht-degree: 98%
-
 ---
-
 # Intégration de Salesforce à l’aide du flux d’informations d’identification du client OAuth 2.0  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Version | Lien de l’article |
@@ -27,7 +40,7 @@ AEM Forms échange les informations d’identification du client (consumer key 
 
 L’utilisation des informations d’identification du client OAuth 2.0 présente plusieurs avantages par rapport à l’authentification à l’aide du flux de code d’autorisation :
 
-* L’authentification des informations d’identification du client OAuth 2.0 permet plus de cinq connexions par utilisateur ou utilisatrice.
+* L’authentification à l’aide des informations d’identification client OAuth 2.0 permet plus de cinq connexions par utilisateur ou utilisatrice.
 * La configuration de la source de données AEM continue à fonctionner lors de la désactivation, des modifications d’accès et de la mise à jour du mot de passe pour un utilisateur ou une utilisatrice AEM.
 
 ## Conditions préalables requises {#prerequisites}
@@ -42,7 +55,7 @@ Avant de définir la communication entre une application Salesforce et un enviro
 >
 > AEM 6.5 prend uniquement en charge les spécifications de fichier Swagger 2.0.
 
-## Étapes de configuration de Salesforce avec le flux d’informations d’identification client {#steps-to-create-aem-datasource-configuration}
+## Configurer Salesforce avec le flux d’informations d’identification client {#steps-to-create-aem-datasource-configuration}
 
 1. Connectez-vous à votre instance de création.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Sources de données]**.

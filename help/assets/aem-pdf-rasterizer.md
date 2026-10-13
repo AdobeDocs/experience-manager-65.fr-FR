@@ -6,13 +6,29 @@ role: Developer, Admin
 feature: Developer Tools,Renditions
 exl-id: 6f365d6b-3972-4885-8766-5889e24289f1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 100%
-
+source-wordcount: '731'
+ht-degree: 98%
 ---
-
 # Utilisation de PDF Rasterizer {#using-pdf-rasterizer}
 
 Lorsque vous téléchargez des fichiers PDF ou AI de grande taille et riches en contenu vers [!DNL Adobe Experience Manager Assets], la bibliothèque par défaut risque de ne pas générer une sortie exacte. La bibliothèque Adobe PDF Rasterizer peut générer une sortie plus fiable et plus précise par rapport à la sortie d’une bibliothèque par défaut. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour les scénarios suivants :
@@ -52,7 +68,7 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont de
 
    * Types MIME : `application/pdf` ou `application/postscript`
    * Commandes : `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
-   * Ajoutez les tailles des miniatures : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
+   * Ajouter les tailles des miniatures : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
 
    Les arguments de ligne de commande de la commande `PDFRasterizer` peuvent inclure les éléments suivants :
 
@@ -77,7 +93,7 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont de
 
 1. Enregistrez le workflow.
 1. Afin d’activer PDF Rasterizer pour traiter des pages PDF avec des bibliothèques PDF, ouvrez le modèle **[!UICONTROL Sous-ressource du processus de gestion des ressources numériques]** dans la console [!UICONTROL Processus].
-1. Dans le panneau latéral, faites glisser l’étape Gestionnaire PDF Rasterizer sous l’étape **[!UICONTROL Créer un rendu d’image compatible sur le Web]**.
+1. Dans le panneau latéral, faites glisser l’étape Gestionnaire PDF Rasterizer sous l’étape **[!UICONTROL Créer un rendu d’image compatible avec le Web]**.
 1. Configurez les arguments suivants pour l’étape **[!UICONTROL Gestionnaire PDF Rasterizer]** :
 
    * Types MIME : `application/pdf` ou `application/postscript`

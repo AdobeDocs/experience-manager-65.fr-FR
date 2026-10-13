@@ -10,13 +10,22 @@ exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '683'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '707'
 ht-degree: 100%
-
 ---
-
 # Mode de développement{#developer-mode}
 
 Lors de la modification de pages dans Adobe Experience Manager (AEM), plusieurs [modes](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) sont disponibles, y compris le mode de développement. Le mode de développement ouvre un panneau latéral avec plusieurs onglets qui procurent des informations techniques sur la page en cours. Les trois onglets sont les suivants :
@@ -82,8 +91,8 @@ Il présente une arborescence de composants qui :
 * affiche le temps de calcul côté serveur nécessaire au rendu du composant ;
 * permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant, par exemple :
 
-   * le chemin du référentiel ;
-   * les liens vers les scripts (accessibles dans CRXDE Lite)
+  * le chemin du référentiel ;
+  * les liens vers les scripts (accessibles dans CRXDE Lite)
 
 * Les composants sélectionnés (dans le flux de contenu, indiqués par une bordure bleue) sont mis en surbrillance dans l’arborescence de contenu (et inversement).
 
@@ -99,19 +108,19 @@ Chaque entrée de composant peut afficher (par exemple) :
 
 * **Afficher les détails** : lien vers une liste qui affiche :
 
-   * tous les scripts de composants utilisés pour le rendu du composant ;
-   * le chemin du contenu de référentiel pour ce composant spécifique.
+  * tous les scripts de composants utilisés pour le rendu du composant ;
+  * le chemin du contenu de référentiel pour ce composant spécifique.
 
   ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Modifier le script** : un lien qui :
 
-   * ouvre le script de composant dans CRXDE Lite.
+  * ouvre le script de composant dans CRXDE Lite.
 
 * Le développement d’une entrée de composant (flèche) peut également afficher :
 
-   * la hiérarchie au sein du composant sélectionné ;
-   * les temps de rendu pour le composant sélectionné de manière isolée, tous les composants individuels imbriqués qu’il contient, ainsi que le total combiné.
+  * la hiérarchie au sein du composant sélectionné ;
+  * les temps de rendu pour le composant sélectionné de manière isolée, tous les composants individuels imbriqués qu’il contient, ainsi que le total combiné.
 
   ![chlimage_1-15](assets/chlimage_1-15.png)
 

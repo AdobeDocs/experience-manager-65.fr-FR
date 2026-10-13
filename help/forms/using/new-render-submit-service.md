@@ -9,13 +9,33 @@ exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '898'
 ht-degree: 100%
-
 ---
-
 # Nouveau service de rendu et d’envoi{#new-render-and-submit-service}
 
 ## Présentation {#introduction}
@@ -27,9 +47,9 @@ Un XDP peut être rendu sous la forme d’un formulaire PDF ou d’un formulaire
 * Rendre et soumettre un formulaire XDP au format HTML
 * Rendre et soumettre un formulaire XDP au format PDF sur ordinateur et au format HTML sur les appareils mobiles (par exemple, un iPad)
 
-### Nouveau service HTML de Forms {#new-html-forms-service}
+### Nouveau service de formulaires HTML {#new-html-forms-service}
 
-Le nouveau service HTML de Forms exploite la nouvelle fonction dans Forms pour prendre en charge le rendu de formulaire XDP au format HTML. Le nouveau service HTML de Forms expose les méthodes suivantes :
+Le nouveau service de formulaires HTML exploite la nouvelle fonction de Forms pour prendre en charge le rendu de formulaire XDP au format HTML. Le nouveau service de formulaires HTML expose les méthodes suivantes :
 
 ```java
 /*
@@ -56,7 +76,7 @@ public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profi
 
 Vous trouverez plus d’informations sur les profils de formulaire mobile dans [Création d’un profil personnalisé](/help/forms/using/custom-profile.md).
 
-## Nouveaux processus de rendu et de soumission de formulaires HTML {#new-html-form-render-amp-submit-processes}
+## Nouveaux processus de rendu et d’envoi de formulaires HTML {#new-html-form-render-amp-submit-processes}
 
 Pour chaque opération « AssignTask », spécifiez un processus de rendu et d’envoi avec le formulaire. Ces processus sont appelés par les API TaskManager `renderForm` et `submitForm` pour autoriser la gestion personnalisée. Sémantique de ces processus pour le nouveau formulaire HTML :
 

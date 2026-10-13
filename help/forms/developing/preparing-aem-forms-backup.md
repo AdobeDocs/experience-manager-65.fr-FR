@@ -9,22 +9,36 @@ role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 100%
-
 ---
-
 # Préparer AEM Forms pour la sauvegarde {#preparing-aem-forms-for-backup}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
 ## À propos du service de sauvegarde et restauration (Backup and Restore) {#about-the-backup-and-restore-service}
 
-Grâce au service de sauvegarde et restauration (Backup and Restore), vous pouvez placer AEM Forms en *mode de sauvegarde*, qui permet d’effectuer des sauvegardes à chaud. Le service de sauvegarde et de restauration n’effectue pas de sauvegarde d’AEM Forms ni ne restaure votre système. Il place plutôt votre serveur dans un état propice à des sauvegardes cohérentes et fiables tout en permettant à votre serveur de continuer à fonctionner. Vous êtes responsable des actions de sauvegarde du stockage global de documents (GDS) et de la base de données connectée au serveur Forms Server. Le stockage GDS est un répertoire qui sert à stocker les fichiers utilisés dans un processus de longue durée.
+Grâce au service de sauvegarde et restauration (Backup and Restore), vous pouvez placer AEM Forms en *mode de sauvegarde*, qui permet d’effectuer des sauvegardes à chaud. Le service de sauvegarde et de restauration n’effectue pas de sauvegarde d’AEM Forms ni ne restaure votre système. Il place plutôt votre serveur dans un état propice à des sauvegardes cohérentes et fiables tout en permettant à votre serveur de continuer à fonctionner. Vous êtes responsable des actions de sauvegarde du stockage global de documents (GDS) et de la base de données connectée au Serveur Formulaires. Le GDS est un répertoire qui sert à stocker les fichiers utilisés dans un processus de longue durée.
 
-Le mode de sauvegarde est un état du serveur selon lequel les fichiers du stockage GDS ne sont pas purgés pendant une procédure de sauvegarde. En lieu et place, des sous-répertoires sont créés dans le répertoire GDS afin de conserver un enregistrement des fichiers à purger après la fin du mode de sauvegarde. Un fichier est conçu pour survivre aux redémarrages du système et peut couvrir des jours, voire des années. Ces fichiers constituent une partie essentielle de l’état global du serveur Forms Server et peuvent inclure des fichiers PDF, des politiques ou des modèles de formulaires. Si l’un de ces fichiers est perdu ou endommagé, les processus sur le serveur Forms Server peuvent devenir instables et les données risquent d’être perdues.
+Le mode de sauvegarde est un état du serveur selon lequel les fichiers du stockage GDS ne sont pas purgés pendant une procédure de sauvegarde. En lieu et place, des sous-répertoires sont créés dans le répertoire GDS afin de conserver un enregistrement des fichiers à purger après la fin du mode de sauvegarde. Un fichier est conçu pour survivre aux redémarrages du système et peut couvrir des jours, voire des années. Ces fichiers constituent une partie essentielle de l’état global du Serveur Formulaires et peuvent inclure des fichiers PDF, des politiques ou des modèles de formulaires. Si l’un de ces fichiers est perdu ou endommagé, les processus sur le Serveur Formulaires peuvent devenir instables et les données risquent d’être perdues.
 
 Vous pouvez choisir d’effectuer des sauvegardes instantanées, où vous passez généralement en mode de sauvegarde pendant un certain temps, puis quittez le mode de sauvegarde une fois vos activités de sauvegarde terminées. Quitter le mode de sauvegarde est nécessaire afin que les fichiers puissent être purgés du répertoire de stockage global de documents pour s’assurer qu’il ne s’étend pas inutilement. Vous pouvez quitter le mode de sauvegarde de manière explicite ou attendre que le temps expire au cours d’une session en mode de sauvegarde.
 
@@ -34,7 +48,7 @@ Vous pouvez utiliser le service Sauvegarder et Restaurer pour ajouter des élém
 
 >[!NOTE]
 >
->Comme pour tous les autres aspects relatifs à l’implémentation d’AEM Forms, vous devez développer et tester une stratégie de sauvegarde et de récupération dans un environnement de développement ou d’évaluation avant de passer à la phase de production. Il s’agit de veiller à ce que l’intégralité de la solution fonctionne comme prévu, sans perte de données.
+>Comme pour tous les autres aspects relatifs à la mise en œuvre d’AEM Forms, vous devez développer et tester une stratégie de sauvegarde et de récupération dans un environnement de développement ou d’évaluation avant de passer à la phase de production. Il s’agit de veiller à ce que l’intégralité de la solution fonctionne comme prévu, sans perte de données.
 
 Vous pouvez effectuer les tâches suivantes à l’aide du service Sauvegarder et Restaurer :
 
@@ -55,7 +69,7 @@ Vous passez en mode de sauvegarde pour permettre les sauvegardes à chaud d’un
 
 * Un libellé unique permettant d’identifier la session en mode de sauvegarde qui peut s’avérer utile pour vos processus de sauvegarde.
 * La durée d’exécution de la procédure de sauvegarde.
-* Un indicateur qui signale si le mode de sauvegarde en continu doit être activé, ce qui n’est utile que si vous effectuez des sauvegardes en continu.
+* Un indicateur qui signale si le mode de sauvegarde en continu doit être activé, ce qui n’est utile que si vous effectuez des sauvegardes glissantes.
 
 Avant d’écrire des applications pour passer en mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde qui sont utilisées après avoir activé le mode de sauvegarde sur le serveur Forms Server. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, reportez-vous à l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).
 
@@ -69,10 +83,10 @@ Pour créer une application qui passe en mode de sauvegarde, procédez comme sui
 
 1. Incluez les fichiers de projet.
 1. Créez un objet client BackupService.
-1. Déterminez un libellé unique, le temps nécessaire pour effectuer la sauvegarde et si vous souhaitez passer en mode de sauvegarde continue.
+1. Déterminez un libellé unique, le temps nécessaire pour effectuer la sauvegarde et si le mode de sauvegarde en continu doit être activé.
 1. Passer en mode de sauvegarde.
 1. (Facultatif) Récupérez des informations sur la session en mode de sauvegarde sur le serveur.
-1. Effectuez la sauvegarde du stockage global de documents (Global Data Store) et de la base de données.
+1. Effectuez la sauvegarde du GDS (Global Data Store) et de la base de données.
 
 **Inclure des fichiers de projet**
 
@@ -98,7 +112,7 @@ Une fois que vous êtes en mode de sauvegarde, vous pouvez récupérer des infor
 
 **Sauvegarder le répertoire de stockage global de documents et la base de données**
 
-Une fois le mode de sauvegarde activé, vous pouvez effectuer une sauvegarde du stockage global de documents (GDS) et de la base de données à laquelle le serveur Forms Server est connecté. Votre organisation a tout loisir de choisir la procédure de sauvegarde : manuelle ou à lʼaide d’autres outils.
+Une fois le mode de sauvegarde activé, vous pouvez effectuer une sauvegarde du stockage global de documents (GDS) et de la base de données à laquelle le Serveur Formulaires est connecté. Votre organisation a tout loisir de choisir la procédure de sauvegarde : manuelle ou à lʼaide d’autres outils.
 
 ### Passer en mode de sauvegarde à l’aide de l’API Java {#enter-backup-mode-using-the-java-api}
 
@@ -123,7 +137,7 @@ Pour passer en mode de sauvegarde à l’aide de l’API du service Backup and R
 
 1. Choisissez un libellé unique, déterminez le temps nécessaire à la sauvegarde et décidez s’il faut passer en mode de sauvegarde continue.
 
-   Choisissez un libellé unique, déterminez le temps que vous souhaitez dédier à l’exécution de la sauvegarde, puis décidez si vous souhaitez que le serveur Forms Server reste en mode de sauvegarde continue.
+   Choisissez un libellé unique, déterminez le temps que vous souhaitez dédier à l’exécution de la sauvegarde, puis décidez si vous souhaitez que le Serveur Formulaires reste en mode de sauvegarde continue.
 
 1. Activer le mode de sauvegarde
 
@@ -158,7 +172,7 @@ Pour passer en mode de sauvegarde à l’aide du service web fourni par l’API 
 
 1. Choisissez un libellé unique, déterminez le temps nécessaire à la sauvegarde et décidez s’il faut passer en mode de sauvegarde continue.
 
-   Choisissez un libellé unique, déterminez le temps que vous souhaitez dédier à l’exécution de la sauvegarde, puis décidez si vous souhaitez que le serveur Forms Server reste en mode de sauvegarde continue.
+   Choisissez un libellé unique, déterminez le temps que vous souhaitez dédier à l’exécution de la sauvegarde, puis décidez si vous souhaitez que le Serveur Formulaires reste en mode de sauvegarde continue.
 
 1. Activer le mode de sauvegarde
 
@@ -180,9 +194,9 @@ Pour passer en mode de sauvegarde à l’aide du service web fourni par l’API 
 
 ## Quitter le mode de sauvegarde sur le serveur Forms Server {#leaving-backup-mode-on-the-forms-server}
 
-Vous devez quitter le mode de sauvegarde afin que le serveur Forms Server puisse reprendre la purge des fichiers du stockage global de documents (GDS) sur le serveur Forms Server.
+Vous devez quitter le mode de sauvegarde afin que le Serveur Formulaires puisse reprendre la purge des fichiers du stockage global de documents (GDS) sur le Serveur Formulaires.
 
-Avant d’écrire des demandes pour quitter le mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde utilisées avec AEM Forms. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, consultez la section [Aide dʼadministration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).
+Avant d’écrire des applications pour quitter le mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde utilisées avec AEM Forms. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, consultez la section [Aide dʼadministration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).
 
 >[!NOTE]
 >
@@ -242,7 +256,7 @@ Quittez le mode de sauvegarde à l’aide de l’API du service de sauvegarde et
 
 1. Récupérer des informations sur la session du mode de sauvegarde sur le serveur
 
-   Récupérez des informations sur l’opération en utilisant l’objet `BackupModeResult` qui est renvoyé. Les informations que vous pouvez récupérer après être passé en mode de sauvegarde peuvent s’avérer utiles pour intégrer vos procédures de sauvegarde. Par exemple, le libellé, l’ID de sauvegarde et l’heure de début peuvent être utiles comme entrée pour les noms de fichier de votre procédure de sauvegarde.
+   Récupérez des informations sur l’opération en utilisant l’objet `BackupModeResult` qui est renvoyé. Les informations que vous pouvez récupérer après être passé en mode de sauvegarde peuvent s’avérer utiles pour intégrer vos procédures de sauvegarde. Par exemple, le libellé, l’ID de sauvegarde et l’heure de début peuvent être utiles comme éléments d’entrée pour les noms de fichier de votre procédure de sauvegarde.
 
 ### Quitter le mode de sauvegarde en utilisant l’API du service web {#leave-backup-mode-using-the-web-service-api}
 
@@ -252,7 +266,7 @@ Quittez le mode de sauvegarde en utilisant l’API du service de sauvegarde et d
 
    Pour utiliser les services Web, vous devez vous assurer d’inclure les fichiers proxy. Pour configurer votre projet afin d’utiliser l’API du service de sauvegarde et de restauration comme un service Web, procédez comme suit.
 
-   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL de l’API du service Backup and Restore.
+   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL de l’API du service de sauvegarde et de restauration.
    * Référencez l’assemblage client Microsoft .NET.
 
 1. Créer un objet API client BackupService

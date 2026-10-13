@@ -9,21 +9,36 @@ exl-id: d080932f-d5fb-482d-9329-62da5df10362
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 100%
-
+source-wordcount: '554'
+ht-degree: 93%
 ---
-
 # Intégration d’AEM Forms Workspace à Microsoft Office SharePoint Server{#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
 **- Conditions requises**
 
-**Connaissances préalables** 
-Avant de pouvoir ajouter AEM Forms Workspace au serveur SharePoint, vous devez avoir accès au serveur SharePoint avec les droits appropriés et vous devez connaître l’URL d’accès à Workspace. Les étapes ci-dessous impliquent que vous connaissez SharePoint Server. Pour plus d’informations sur les composants web dans SharePoint Server, consultez Composants Web dans les services SharePoint Windows.
+**Connaissances préalables**
+Avant de pouvoir ajouter AEM Forms Workspace au serveur SharePoint, vous devez avoir accès au serveur SharePoint avec les privilèges appropriés et vous devez connaître l’URL d’accès à Workspace. Les étapes ci-dessous impliquent que vous connaissez SharePoint Server. Pour plus d’informations sur les composants web dans SharePoint Server, consultez Composants Web dans les services SharePoint Windows.
 
-**Niveau d’utilisateur** Début
+**Niveau utilisateur**
+Début
 
 Vous pouvez utiliser AEM Forms Workspace comme composant Web dans Microsoft Office SharePoint Server (par exemple, Microsoft Office SharePoint Server 2007). Les utilisateurs et utilisatrices peuvent accéder à AEM Forms Workspace en se connectant à votre serveur SharePoint à l’aide d’un navigateur web pour offrir une expérience unifiée. Dans cet article, vous découvrez les étapes de base pour afficher AEM Forms Workspace en tant que composant Web dans Microsoft Office SharePoint Server. Vous pouvez suivre les étapes décrites dans cet article pour offrir une expérience unifiée aux utilisateurs et utilisatrices afin qu’ils puissent se connecter à votre serveur SharePoint et accéder à AEM Forms Workspace à partir du même port.
 

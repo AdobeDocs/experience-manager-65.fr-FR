@@ -9,14 +9,23 @@ exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8d7c5b4962ea0dbd80cf78faa31238b2252f4a5c
-workflow-type: ht
-source-wordcount: '247'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 88%
 ---
-
-# Le framework de protection CSRF {#the-csrf-protection-framework}
+# Le framework de protection CSRF{#the-csrf-protection-framework}
 
 Outre le filtre référent Apache Sling, Adobe fournit également un nouveau framework de protection CSRF pour se protéger contre ce type d’attaque.
 
@@ -45,6 +54,6 @@ Pour utiliser les jetons, vous devez répliquer le HMAC binaire sur toutes les i
 
 >[!NOTE]
 >
->Si vous utilisez le cache de manifeste avec votre application web, veillez à ajouter « **&amp;ast;** » au manifeste afin de vous assurer que le jeton ne met pas hors ligne l’appel de génération de jeton CSRF. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-Webapps/).
+>Si vous utilisez le cache de manifeste avec votre application web, veillez à ajouter « **&ast;** » au manifeste pour vous assurer que le jeton ne prend pas l’appel de génération de jeton CSRF hors ligne. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-Webapps/).
 >
-Pour plus d’informations sur les attaques CSRF et les moyens de s’en protéger, consultez la page [Cross-Site Request Forgery OWASP](https://owasp.org/www-community/attacks/csrf).
+>Pour plus d’informations sur les attaques CSRF et les moyens de s’en protéger, consultez la page [Cross-Site Request Forgery OWASP](https://owasp.org/www-community/attacks/csrf).

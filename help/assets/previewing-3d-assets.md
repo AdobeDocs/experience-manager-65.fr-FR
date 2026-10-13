@@ -8,13 +8,22 @@ role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 98%
-
+source-wordcount: '605'
+ht-degree: 99%
 ---
-
 # Prévisualisation de ressources 3D dans Adobe Experience Manager {#previewing-3d-assets-aem}
 
 | Version | Lien de l’article |
@@ -60,20 +69,20 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
 
 **Pour prévisualiser des ressources 3D dans Experience Manager :**
 
-1. Vérifiez que vous avez chargé des ressources 3D dans Experience Manager.
-Voir [Formats pris en charge pour la prévisualisation 3D](#supported-3d-previewing-assets) et [Charger Assets](/help/assets/manage-assets.md#uploading-assets).
+1. Assurez-vous d’avoir chargé des ressources 3D dans Experience Manager.
+Consultez les sections [Formats pris en charge pour la prévisualisation 3D](#supported-3d-previewing-assets) et [Charger des ressources](/help/assets/manage-assets.md#uploading-assets).
 1. Dans Experience Manager, sur la page **[!UICONTROL Navigation]**, sélectionnez **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 
    ![Page de navigation](/help/assets/assets-dm/navigation-assets.png)
 
 1. Près du coin supérieur droit de la page, dans la liste déroulante Mode, sélectionnez **[!UICONTROL Mode Carte]**, puis accédez au fichier 3D à prévisualiser.
 
-   ![Sélection de carte 3D](/help/assets/assets-dm/3d-card-select.png)
+   Sélection de carte ![3D](/help/assets/assets-dm/3d-card-select.png)
    _En mode Carte, sélectionnez la carte du fichier 3D à prévisualiser._
 
 1. Sélectionnez la carte de la ressource 3D.
 
-   ![Prévisualisation 3D interactive](/help/assets/assets-dm/3d-preview.png)
+   ![Aperçu 3D interactif](/help/assets/assets-dm/3d-preview.png)
    _Prévisualisation interactive d’un fichier 3D dans la page d’affichage des détails du fichier._
 1. Sur la page d’affichage des détails de la ressource 3D, effectuez l’une des opérations suivantes :
 
@@ -83,7 +92,7 @@ Voir [Formats pris en charge pour la prévisualisation 3D](#supported-3d-preview
    | **Effectuer un panoramique avec la caméra** | Vous pouvez effectuer un panoramique vers la gauche, la droite, le haut ou le bas. | Cliquez avec le bouton droit de la souris et faites glisser. | Appuyez avec deux doigts + glisser. |
    | **Faire un zoom avec la caméra** | Se déplacer dans et hors des zones de la scène 3D. | Roue de défilement. | Appuyer avec deux doigts en les rapprochant. |
    | **Recentrer la caméra** | Recentrez la caméra sur un point d’un objet dans la scène 3D. | Double-cliquer. | Double-sélectionner. |
-   | **Réinitialiser** | Près du coin inférieur droit de la page, sélectionnez l’icône Réinitialiser pour rétablir le point d’affichage cible au centre du fichier 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable. |   |   |
-   | **Mode Plein écran** | Pour passer en mode Plein écran, dans le coin inférieur droit de la page, sélectionnez l’icône Plein écran. |   |   |
+   | **Réinitialiser** | Près du coin inférieur droit de la page, sélectionnez l’icône Réinitialiser pour rétablir le point d’affichage cible au centre de la ressource 3D. De plus, Réinitialiser rapproche ou éloigne la caméra pour afficher la ressource dans son intégralité et à une taille raisonnable. |   |   |
+   | **Mode Plein écran** | Pour passer en mode plein écran, dans le coin inférieur droit de la page, sélectionnez l’icône plein écran. |   |   |
 
 1. Lorsque vous avez terminé, en haut à droite de la page, sélectionnez **[!UICONTROL Fermer]**.

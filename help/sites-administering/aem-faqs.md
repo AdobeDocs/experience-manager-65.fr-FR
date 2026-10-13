@@ -5,13 +5,22 @@ exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 89%
-
+source-wordcount: '1088'
+ht-degree: 93%
 ---
-
 # FAQ sur AEM {#aem-faqs}
 
 Découvrez les réponses à certains problèmes de dépannage et de configuration dans AEM.
@@ -26,8 +35,8 @@ Lorsque le mode sans fichier binaire est activé, les modules de contenu distrib
 
 #### Comment activer la distribution sans fichier binaire ? {#how-do-i-enable-binary-less-distribution}
 
-Pour activer la distribution sans fichier binaire, déployez un magasin d’objets blob partagé.
-Vérifiez la propriété `useBinaryReferences` dans la configuration OSGI avec le PID d’usine ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* utilisé par votre agent.
+Pour activer la distribution sans fichier binaire, déployez un entrepôt de grands objets binaires partagé.
+Vérifiez la propriété `useBinaryReferences` dans la configuration OSGI avec le PID d’usine (`org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* utilisé par votre agent.
 
 #### Comment activer les autorisations lors de la création d’une copie linguistique pour les auteurs et autrices de contenu dans AEM ? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
@@ -88,8 +97,8 @@ Si l’utilisateur ou l’utilisatrice ne dispose pas lors du chargement des fic
 
 Lorsque vous créez une copie linguistique par le biais de l’interface utilisateur tactile (**Références** > **Mettre à jour la copie linguistique**), un nouveau dossier de gestion des ressources numériques est créé sous la nouvelle langue et les ressources sont référencées à partir de cet emplacement.
 
-Il s’agit du paramètre par défaut pour les configurations prêtes à l’emploi. Vous pouvez définir **Traduire l’Assets de page** = **Ne pas traduire** dans les configurations de traduction.
-Pour AEM 6.4, **Outils** > **Services cloud** > **Services cloud de traduction**.
+Il s’agit du paramètre par défaut pour les configurations prêtes à l’emploi. Vous pouvez définir **Traduire les ressources de page** sur **Ne pas traduire** dans les configurations de traduction.
+Pour AEM 6.4, **Outils** > **Services cloud** > **Services cloud de traduction**.
 
 #### Comment désactiver un composant AEM provoquant une croissance exponentielle pour le SegmentStore d’AEM (AEM 6.3.1.1) ? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 

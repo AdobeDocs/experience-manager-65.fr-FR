@@ -9,28 +9,35 @@ exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 5%
-
 ---
-
 # Développement d’une application Sandbox  {#develop-sandbox-application}
 
-Dans cette section, maintenant que le modèle est configuré dans la section [application initiale](initial-app.md) et que les pages initiales établies dans la section [contenu initial](initial-content.md) , vous pouvez développer l’application. Pour ce faire, vous utilisez des scripts de base qui incluent la possibilité d’activer la création avec les composants Communities. À la fin de cette section, vous disposez d’un site web entièrement fonctionnel.
+Dans cette section, maintenant que le modèle est configuré dans la section [application initiale](initial-app.md) et les pages initiales établies dans la section [contenu initial](initial-content.md), vous pouvez développer l’application. Pour ce faire, utilisez des scripts de base qui incluent la possibilité d’activer la création avec des composants de Communities. À la fin de cette section, vous disposez d’un site web entièrement fonctionnel.
 
-## Utilisation des scripts de page Foundation {#using-foundation-page-scripts}
+## Utilisation des scripts de page de base {#using-foundation-page-scripts}
 
-Le script par défaut, créé lorsque le composant qui effectue le rendu du modèle de page de lecture a été ajouté, est modifié afin d’inclure le fichier head.jsp de la page de base et un fichier body.jsp local.
+Le script par défaut, créé lors de l’ajout du composant qui effectue le rendu du modèle de page de lecture, est modifié afin d’inclure le fichier head.jsp de la page de base et un fichier body.jsp local.
 
-### Super Resource Type {#super-resource-type}
+### Super Type De Ressource {#super-resource-type}
 
-La première étape consiste à ajouter une propriété de super type de ressource au noeud `/apps/an-scf-sandbox/components/playpage` afin qu’il hérite des scripts et des propriétés du super type.
+La première étape consiste à ajouter une propriété de super type de ressource au nœud `/apps/an-scf-sandbox/components/playpage` afin qu’il hérite des scripts et des propriétés du super type.
 
 Utilisation de CRXDE Lite :
 
-1. Sélectionnez le noeud `/apps/an-scf-sandbox/components/playpage`.
+1. Sélectionnez l’`/apps/an-scf-sandbox/components/playpage` de nœud.
 1. Dans l’onglet Propriétés , saisissez une nouvelle propriété avec les valeurs suivantes :
 
    Nom : `sling:resourceSuperType`
@@ -39,14 +46,14 @@ Utilisation de CRXDE Lite :
 
    Valeur : `foundation/components/page`
 
-1. Cliquez sur le bouton vert **[!UICONTROL +Ajouter]** .
+1. Cliquez sur le bouton vert **[!UICONTROL +Ajouter]**.
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
    ![page-script](assets/page-script.png)
 
 ### Scripts d’en-tête et de corps {#head-and-body-scripts}
 
-1. Dans le volet d’exploration **CRXDE Lite**, accédez à `/apps/an-scf-sandbox/components/playpage` et double-cliquez sur le fichier `playpage.jsp` pour l’ouvrir dans le volet d’édition.
+1. Dans le volet de l’explorateur **&#x200B;**, accédez à `/apps/an-scf-sandbox/components/playpage` et double-cliquez sur le fichier `playpage.jsp` pour l’ouvrir dans le volet d’édition.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -65,9 +72,9 @@ Utilisation de CRXDE Lite :
    %>
    ```
 
-1. Tenant compte des balises de script d’ouverture/de fermeture, remplacez &quot;/ TODO ...&quot; par `includes` de scripts pour les parties head et body de &lt;html>.
+1. Conscient des balises de script d’ouverture/de fermeture, remplacez « // Tâche... » avec `includes` de scripts pour les parties head et body de &lt;html>.
 
-   Avec un super type `foundation/components/page`, tout script non défini dans ce même dossier est résolu sur un script dans le dossier `/apps/foundation/components/page` (s’il existe) ou sur un script dans le dossier `/libs/foundation/components/page`.
+   Avec un super type de `foundation/components/page`, tout script non défini dans ce même dossier est résolu en script dans `/apps/foundation/components/page` dossier (s’il existe), ou dans un script dans `/libs/foundation/components/page` dossier.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -87,19 +94,19 @@ Utilisation de CRXDE Lite :
    </html>
    ```
 
-1. Le recouvrement du script de base `head.jsp` n’est pas nécessaire, mais le script de base `body.jsp` est vide.
+1. Le recouvrement du `head.jsp` de script de base n’est pas nécessaire, mais le `body.jsp` de script de base est vide.
 
-   Pour configurer la création, recouvrez `body.jsp` avec un script local et insérez un système de paragraphes (parsys) dans le corps :
+   Pour configurer la création, recouvrez `body.jsp` avec un script local et incluez un système de paragraphe (parsys) dans le corps :
 
    1. Accédez à `/apps/an-scf-sandbox/components`.
    1. Sélectionnez le nœud `playpage`.
-   1. Cliquez avec le bouton droit et sélectionnez `Create > Create File...`.
+   1. Cliquez avec le bouton droit et sélectionnez `Create > Create File...`
 
       * Nom : **body.jsp**
 
    1. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-   Ouvrez `/apps/an-scf-sandbox/components/playpage/body.jsp` et collez-y le texte suivant :
+   Ouvrez `/apps/an-scf-sandbox/components/playpage/body.jsp` et collez le texte suivant :
 
    ```xml
    <%--
@@ -123,9 +130,9 @@ Utilisation de CRXDE Lite :
 
 * Interface utilisateur standard : `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
-Vous devriez non seulement voir l’en-tête **Community Play**, mais aussi l’interface utilisateur pour modifier le contenu de la page.
+Vous devriez voir non seulement l’en-tête **Lecture de communauté**, mais également l’interface utilisateur pour modifier le contenu de la page.
 
-Le panneau latéral Assets/Composant s’affiche lorsque le panneau latéral est ouvert avec un bouton de basculement et que la fenêtre est suffisamment large pour que le contenu latéral et le contenu de la page s’affichent.
+Le panneau latéral Assets/Component s’affiche lorsque vous basculez l’un sur l’autre et que la fenêtre est suffisamment large pour afficher à la fois le contenu latéral et le contenu de la page.
 
 ![view-page](assets/view-page.png)
 
@@ -135,13 +142,13 @@ Voici comment la page de lecture s’affiche dans l’IU classique, y compris av
 
 ![play-page-view](assets/play-page-view.png)
 
-## Composants Communities {#communities-components}
+## Composants de Communities {#communities-components}
 
-Pour activer les composants Communities pour la création, commencez par suivre les instructions suivantes :
+Pour activer les composants de Communities pour la création, commencez par suivre les instructions suivantes :
 
-* [Accès aux composants Communities](basics.md#accessing-communities-components)
+* [Accès aux composants de Communities](basics.md#accessing-communities-components)
 
-Pour les besoins de cet environnement de test, commencez par ces composants **Communities** (activez-les en cochant la case) :
+Pour les besoins de ce sandbox, commencez par les composants **Communities** suivants (activez en cochant la case) :
 
 * Commentaires
 * Forum
@@ -150,7 +157,7 @@ Pour les besoins de cet environnement de test, commencez par ces composants **Co
 * Résumé des révisions (affichage)
 * Votant
 
-En outre, sélectionnez les composants **[!UICONTROL Général]**, tels que
+En outre, choisissez les composants **[!UICONTROL Général]**, tels que
 
 * Image
 * Tableau
@@ -159,27 +166,27 @@ En outre, sélectionnez les composants **[!UICONTROL Général]**, tels que
 
 >[!NOTE]
 >
->Les composants activés pour la partie page sont stockés dans le référentiel comme valeur de la propriété `components` de la propriété
+>Les composants activés pour le par de page sont stockés dans le référentiel en tant que valeur de la propriété `components` du
 >
->Noeud `/etc/designs/an-scf-sandbox/jcr:content/playpage/par`.
+>`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` du nœud.
 
 ## Page de destination {#landing-page}
 
-Dans un environnement multilingue, la page racine inclut un script qui analyse la requête du client pour déterminer la langue souhaitée.
+Dans un environnement multilingue, la page racine comprend un script qui analyse la requête du client pour déterminer la langue souhaitée.
 
-Dans cet exemple, la page racine est automatiquement définie pour rediriger vers la page en anglais, qui peut être développée ultérieurement pour être la page d’entrée principale avec un lien vers la page de lecture.
+Dans cet exemple, la page racine est définie de manière statique pour être redirigée vers la page en anglais, qui pourra être développée dans le futur pour devenir la page de destination principale avec un lien vers la page de lecture.
 
-Remplacez l’URL du navigateur par la page racine : `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
+Modifiez l’URL du navigateur en page racine : `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
-* Sélectionner l’icône Informations sur la page
+* Sélectionnez l’icône Informations sur la page .
 * Sélectionnez **[!UICONTROL Ouvrir les propriétés]**
 * Dans l’onglet AVANCÉ
 
-   * Pour l’entrée de redirection, accédez à **[!UICONTROL Sites Web]** > **[!UICONTROL Site Sandbox SCF]** > **[!UICONTROL Sandbox SCF]**
-   * Cliquez sur **[!UICONTROL OK]**
+  * Pour l’entrée de redirection, accédez à **[!UICONTROL Sites web]** > **[!UICONTROL Site de sandbox SCF]** > **[!UICONTROL Sandbox SCF]**
+  * Cliquez sur **[!UICONTROL OK]**
 
 * Cliquez sur **[!UICONTROL OK]**
 
-Une fois le site publié, l’accès à la page racine d’une instance de publication redirige vers la page en anglais.
+Une fois le site publié, accéder à la page racine sur une instance de publication redirige vers la page en anglais.
 
-La dernière étape avant de lire les composants SCF Communities consiste à ajouter un dossier de bibliothèque cliente (clientlibs) .... [Ajouter Clientlibs](add-clientlibs.md)
+La dernière étape avant de lire les composants SCF de Communities consiste à ajouter un dossier de bibliothèques clientes (clientlibs) .... [&#x200B; Ajouter des bibliothèques clientes &#x200B;](add-clientlibs.md)

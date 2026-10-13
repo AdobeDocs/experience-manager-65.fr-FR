@@ -9,13 +9,29 @@ role: Developer
 exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 100%
-
 ---
-
 # Démarrages rapides de l’API d’appel {#invocation-api-quick-starts}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -41,7 +57,7 @@ Les didacticiels de démarrage rapide suivants sont disponibles pour appeler par
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">Appel d’un processus de courte durée en utilisant l’API d’appel</a></p></td>
    <td><p>N/A</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">Didacticiel de mise en route : appel d’un processus de courte durée en utilisant l’API d’appel</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">Démarrage rapide : appeler un processus de courte durée en utilisant l’API d’appel</a></p></td>
    <td><p>N/A</p></td>
   </tr>
   <tr>
@@ -54,7 +70,7 @@ Les didacticiels de démarrage rapide suivants sont disponibles pour appeler par
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">Appel d’AEM Forms à l’aide du codage Base64</a> (proxy de service web .NET)</p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_base64_in_a_microsoft_net_project">Démarrage rapide : appel d’un service à l’aide de base64 dans un projet Microsoft .NET</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_base64_in_a_microsoft_net_project">Démarrage rapide : appeler un service à l’aide de base64 dans un projet Microsoft .NET</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom">Appel d’AEM Forms à l’aide de MTOM</a> (exemple de service web .NET )</p></td>
@@ -72,13 +88,13 @@ Les didacticiels de démarrage rapide suivants sont disponibles pour appeler par
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">Appel d’AEM Forms à l’aide de données BLOB sur HTTP</a> (exemple de service web Java)</p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_net_project">Démarrage rapide : appel d’un service à l’aide de données BLOB sur HTTP dans un projet .NET</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_net_project">Démarrage rapide : appeler un service à l’aide de données BLOB sur HTTP dans un projet .NET</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">Appel d’AEM Forms à l’aide de données BLOB sur HTTP</a> (exemple de service web .NET )</p></td>
    <td><p>N/A</p></td>
    <td><p>N/A</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_java_project">Démarrage rapide : appel d’un service à l’aide de données BLOB sur HTTP dans un projet Java</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_java_project">Démarrage rapide : appeler un service à l’aide de données BLOB sur HTTP dans un projet Java</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime">Appel d’AEM Forms à l’aide de DIME</a> (exemple de service web Java)</p></td>
@@ -113,7 +129,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 >
 >Les tutoriels de démarrage rapide dans Programmation avec AEM Forms sont déployés sur le serveur d’applications JBoss et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Didacticiel de mise en route : appel d’un processus de courte durée en utilisant l’API d’appel {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
+## Démarrage rapide : appeler un processus de courte durée en utilisant l’API d’appel {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
 
 L’exemple de code Java suivant appelle un processus de courte durée nommé `MyApplication/EncryptDocument`. Notez que ce processus est appelé de manière synchrone. Le paramètre d’entrée de ce processus est nommé `inDoc`. Le paramètre de sortie de ce processus est nommé `outDoc`. Le document PDF chiffré par mot de passe est enregistré sous la forme d’un fichier PDF nommé `EncryptLoan.pdf`. (Voir [Appel d’un processus de courte durée en utilisant l’API d’appel](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api).)
 
@@ -757,7 +773,7 @@ Un document PDF non sécurisé basé sur un fichier de PDF nommé *Loan.pdf* est
  
 ```
 
-## Démarrage rapide : appel d’un service à l’aide de données BLOB sur HTTP dans un projet Java {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-java-project}
+## Démarrage rapide : appeler un service à l’aide de données BLOB sur HTTP dans un projet Java {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-java-project}
 
 L’exemple de code Java suivant appelle un processus nommé `MyApplication/EncryptDocument` en utilisant les données via HTTP. (Voir [Appel d’AEM Forms à l’aide de données BLOB sur HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
@@ -832,7 +848,7 @@ Un document PDF non sécurisé basé sur un fichier PDF nommé *Loan.pdf* est tr
  
 ```
 
-## Démarrage rapide : appel d’un service à l’aide de données BLOB sur HTTP dans un projet .NET {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-net-project}
+## Démarrage rapide : appeler un service à l’aide de données BLOB sur HTTP dans un projet .NET {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-net-project}
 
 L’exemple de code C# suivant appelle un processus nommé `MyApplication/EncryptDocument` à partir d’un projet Microsoft .NET utilisant des données sur HTTP. (Voir [Appel d’AEM Forms à l’aide de données BLOB sur HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 

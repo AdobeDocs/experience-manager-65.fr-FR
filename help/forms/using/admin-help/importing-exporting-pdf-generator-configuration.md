@@ -1,19 +1,28 @@
 ---
 title: Importer et exporter des fichiers de configuration de PDF Generator
-
 description: Découvrez comment importer et exporter des fichiers de configuration PDF Generator.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 feature: PDF Generator
 exl-id: b363b23a-29bb-4ea4-a8f2-5ba9fe3c7b27
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 100%
@@ -46,7 +55,7 @@ Le fichier de configuration contient les informations de conversion de PDF Gener
 
 >[!NOTE]
 >
->Votre système est reconfiguré en fonction des informations contenues dans le fichier importé.
+>Votre système sera reconfiguré en fonction des informations contenues dans le fichier importé.
 
 1. Dans la console d’administration, cliquez sur Services > PDF Generator > Fichiers de configuration > Importer la configuration.
 1. Sélectionnez Importer un fichier de configuration existant.
@@ -54,7 +63,7 @@ Le fichier de configuration contient les informations de conversion de PDF Gener
 
 ## Conversion de tous les calques des fichiers AutoCAD {#convert-all-layers-within-autocad-files}
 
-Par défaut, PDF Generator ne convertit que le calque par défaut des fichiers AutoCAD au format PDF et non l’ensemble des calques des fichiers. Pour convertir l’ensemble des calques, suivez la procédure ci-dessous.
+Par défaut, PDF Generator ne convertit que le calque par défaut des fichiers AutoCAD au format PDF et non l’ensemble des calques du fichier. Pour convertir l’ensemble des calques, suivez la procédure ci-dessous.
 
 1. Dans la console d’administration, cliquez sur Services > PDF Generator > Fichiers de configuration > Exporter la configuration.
 1. Sélectionnez Télécharger la configuration complète, puis cliquez sur Télécharger.
@@ -67,4 +76,4 @@ Par défaut, PDF Generator ne convertit que le calque par défaut des fichiers A
 ## Rétablissement des paramètres de configuration d’origine installés avec PDF Generator {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
 
 1. Dans la console d’administration, cliquez sur Services > PDF Generator > Fichiers de configuration > Importer la configuration.
-1. Sélectionnez Réinitialiser la configuration pour rétablir les paramètres par défaut et cliquez sur Importer.
+1. Sélectionnez Réinitialiser la configuration aux paramètres par défaut et cliquez sur Importer.

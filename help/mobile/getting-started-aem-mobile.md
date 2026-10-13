@@ -9,13 +9,17 @@ exl-id: a2bc9a50-6455-4703-8829-964fab313e96
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '194'
 ht-degree: 0%
-
 ---
-
 # Prise en main d’Adobe Experience Manager Mobile{#getting-started-with-aem-mobile}
 
 {{ue-over-mobile}}
@@ -29,7 +33,7 @@ AEM Mobile fait partie de la plateforme numérique multicanale Adobe Experience 
 AEM Mobile propose plusieurs méthodes pour créer des applications. Vous pouvez créer des applications de trois manières différentes :
 
 * **[Utilisation des services à la demande avec AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
-* **[Utilisation de services à la demande sans AEM](https://helpx.adobe.com/fr/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
+* **[Utilisation des services à la demande sans AEM](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
 * **[Utiliser Adobe PhoneGap Enterprise avec AEM](/help/mobile/getting-started-aem-mobile-phonegap.md)**
 
 >[!NOTE]

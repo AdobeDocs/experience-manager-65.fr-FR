@@ -1,19 +1,33 @@
 ---
 title: Révision de collections et de ressources situées dans un dossier
-description: Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
+description: Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez-les avec les réviseurs, les réviseuses ou les partenaires de conception afin d’obtenir leurs commentaires.
 contentOwner: AG
 feature: Collaboration, Collections
 role: User
 exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: f7212149-7f65-4e43-89c2-1f075f45be16
+    internal-label: Collaboration
+  - id: c73531c3-4c05-471e-beff-cefb35857910
+    internal-label: Collections
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 100%
-
 ---
-
 # Révision de collections et de ressources situées dans un dossier {#review-folder-assets-and-collections}
 
 | Version | Lien de l’article |
@@ -21,7 +35,7 @@ ht-degree: 100%
 | AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
+Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez-les avec les réviseurs, les réviseuses ou les partenaires de conception afin d’obtenir leurs commentaires.
 
 [!DNL Adobe Experience Manager Assets] permet de configurer un workflow de révision ad hoc pour les ressources situées dans un dossier ou une collection et de partager ce workflow avec des réviseurs ou des partenaires de conception afin d’obtenir leurs commentaires.
 
@@ -101,7 +115,7 @@ Une fois que le réviseur ou la réviseuse a terminé la révision (en approuvan
 1. Cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
 1. Connectez-vous à [!DNL Assets] en tant qu’approbateur et accédez à la console [!DNL Assets]. Pour approuver des ressources, cliquez sur **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
 1. Sur la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis cliquez sur **[!UICONTROL Réviser]**.
-1. Toutes les ressources situées dans la collection sont visibles dans le panneau de révision. Sélectionnez les ressources, puis cliquez sur **[!UICONTROL Approuver/Rejeter]** pour approuver ou rejeter les ressources, selon les besoins.
+1. Toutes les ressources situées dans la collection sont visibles sur la page de révision. Sélectionnez les ressources, puis cliquez sur **[!UICONTROL Approuver/Rejeter]** pour approuver ou rejeter les ressources, selon les besoins.
 
    ![review_task_collection](assets/review_task_collection.png)
 

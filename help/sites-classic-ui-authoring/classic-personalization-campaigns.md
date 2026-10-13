@@ -9,13 +9,24 @@ exl-id: d1741525-a475-4a76-bd16-55318023495e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 93%
-
 ---
-
 
 # Gestion de campagnes{#campaign-management}
 
@@ -44,23 +55,23 @@ Une campagne est un ensemble d’**expériences** individuelles.
 * **Expériences**
 Le contenu ciblé forme les différentes expériences présentées au visiteur aux **points de contact**. Plusieurs types d’expériences sont disponibles :
 
-   * **Teasers**
-     [Les paragraphes / pages de teaser](#teasers) sont utilisés pour diriger des **Segments** de visiteurs spécifiques vers le contenu qui est centré sur leurs intérêts.
+  * **Teasers**
+    [Les paragraphes / pages de teaser](#teasers) sont utilisés pour diriger des **Segments** de visiteurs spécifiques vers le contenu qui est centré sur leurs intérêts.
 
-     Les pages de teaser peuvent :
+    Les pages de teaser peuvent :
 
-      * présenter une diverses options parmi lesquelles le visiteur ou la visteuse peut effectuer un choix ;
-      * n’afficher qu’un seul paragraphe de teaser basé sur un segment de visiteurs et de visiteuses spécifique. Par exemple, le paragraphe de teaser affiché peut dépendre de l’âge du visiteur ou de la visiteuse.
+    * présenter une diverses options parmi lesquelles le visiteur ou la visteuse peut effectuer un choix ;
+    * n’afficher qu’un seul paragraphe de teaser basé sur un segment de visiteurs et de visiteuses spécifique. Par exemple, le paragraphe de teaser affiché peut dépendre de l’âge du visiteur ou de la visiteuse.
 
-     En règle générale, une page de teaser est une action temporaire qui dure pendant une période spécifique, jusqu’à ce qu’elle soit remplacée par la page de teaser suivante.
+    En règle générale, une page de teaser est une action temporaire qui dure pendant une période spécifique, jusqu’à ce qu’elle soit remplacée par la page de teaser suivante.
 
-   * **Newsletters**
+  * **Newsletters**
 
-     [Les communications par e-mail](#emailmarketing) sont utilisées pour inciter les utilisateurs à visiter votre site Web. Elles se présentent généralement sous la forme d’une newsletter, envoyée à vos **prospects** (lesquelles sont regroupées dans des **Listes**). **Remarque :** Adobe ne prévoit pas d’améliorer davantage cette fonctionnalité. Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+    [Les communications par e-mail](#emailmarketing) sont utilisées pour inciter les utilisateurs à visiter votre site Web. Elles se présentent généralement sous la forme d’une newsletter, envoyée à vos **prospects** (lesquelles sont regroupées dans des **Listes**). **Remarque :** Adobe ne prévoit pas d’améliorer davantage cette fonctionnalité. Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
-   * **Adobe Target**
+  * **Adobe Target**
 
-     Cette expérience permet une intégration à Adobe Target (connu auparavant sous le nom de Test&amp;Target). Elle met à la disposition des spécialistes du marketing un outil d’optimisation de site web de conversion disposant des fonctionnalités nécessaires pour adapter continuellement leur contenu et leurs offres en ligne à leur clientèle, pour des taux de conversion supérieurs. Adobe Target s’accompagne d’une interface intuitive permettant de concevoir et d’exécuter des tests, de créer des segments d’audience et de cibler du contenu, le tout à partir d’une seule et même application.
+    Cette expérience permet une intégration à Adobe Target (connu auparavant sous le nom de Test&amp;Target). Elle met à la disposition des spécialistes du marketing un outil d’optimisation de site web de conversion disposant des fonctionnalités nécessaires pour adapter continuellement leur contenu et leurs offres en ligne à leur clientèle, pour des taux de conversion supérieurs. Adobe Target s’accompagne d’une interface intuitive permettant de concevoir et d’exécuter des tests, de créer des segments d’audience et de cibler du contenu, le tout à partir d’une seule et même application.
 
 * **Points de contact**
 

@@ -1,6 +1,6 @@
 ---
-title: Utilisation de Social Graph
-description: Découvrez comment ajouter un composant Suivant à une page qui permet aux membres de la communauté connectés de suivre les activités ou d’être suivis.
+title: Utilisation du graphique des réseaux sociaux
+description: Découvrez comment ajouter un composant Suivant à une page qui permet aux membres connectés de la communauté de suivre des activités ou d’être suivis.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -9,37 +9,44 @@ exl-id: 2cd1436b-3727-4757-b28e-70756be78a4e
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 1%
-
 ---
-
-# Utilisation de Social Graph {#using-social-graph}
+# Utilisation du graphique des réseaux sociaux {#using-social-graph}
 
 ## Présentation {#introduction}
 
-La possibilité pour un membre de la communauté de suivre [activités](activities.md) et d&#39;être suivi est établie par deux composants : `Follow` et `Following`.
+La capacité d’un membre de la communauté à suivre des [activités](activities.md) et à être suivi est établie par deux volets : `Follow` et `Following`.
 
-Le composant `Follow` doit être associé à une autre ressource, et cette association est déjà établie pour les membres et les fonctionnalités de la communauté.
+Le composant `Follow` doit être associé à une autre ressource. Cette association est déjà établie pour les membres et les fonctionnalités de la communauté.
 
-Le composant `Following` répertorie simplement les membres qui suivent le membre actuel ou qui sont suivis par le membre actuel. Ce graphique social des relations entre les membres est inclus dans le profil utilisateur établi pour un [site communautaire](overview.md#communitiessites).
+Le composant `Following` répertorie simplement les membres qui suivent le membre actif ou qui sont suivis par le membre actif. Ce graphique social des relations entre les membres est inclus dans le profil utilisateur établi pour un [site communautaire](overview.md#communitiessites).
 
-## Ajout de l’option Suivant à une page {#adding-following-to-a-page}
+## Ajout des éléments suivants à une page {#adding-following-to-a-page}
 
-Si vous souhaitez ajouter un composant `Following` à une page en mode création, recherchez le composant `Communities / Following` et faites-le glisser sur une page où le graphique social doit apparaître.
+Si vous souhaitez ajouter un composant `Following` à une page en mode de création, localisez le composant `Communities / Following` et faites-le glisser sur une page où le graphique de réseau social doit apparaître.
 
-Pour plus d’informations, consultez la page [Principes de base des composants Communities](basics.md).
+Pour plus d’informations, consultez [Principes de base des composants de communautés](basics.md).
 
-Lorsque les [bibliothèques côté client demandées](essentials-socialgraph.md#essentials-for-client-side) sont incluses, voici comment le composant `Following` apparaît :
+Lorsque les [bibliothèques côté client requises](essentials-socialgraph.md#essentials-for-client-side) sont incluses, le composant `Following` s’affiche de la manière suivante :
 
-![&#x200B; &#x200B;](assets/following.png)
+![suivant](assets/following.png)
 
-## Configuration suivante {#configuring-following}
+## Configuration des éléments suivants {#configuring-following}
 
 Actuellement, il est nécessaire de définir la propriété pour déterminer si le composant affiche la relation `follows` ou la relation `following`.
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Social Graph Essentials](essentials-socialgraph.md) pour les développeurs.
+Pour plus d’informations, consultez la page [Social Graph Essentials](essentials-socialgraph.md) destinée aux développeurs et développeuses.

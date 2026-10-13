@@ -1,17 +1,31 @@
 ---
 title: Configuration du balisage des ressources à l’aide du service de contenu dynamique
-description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans  [!DNL Adobe Experience Manager] à l’aide du service de contenu dynamique.
+description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans [!DNL Adobe Experience Manager] à l’aide du service de contenu dynamique.
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2294'
+source-wordcount: '2325'
 ht-degree: 98%
-
 ---
-
 # Préparation de [!DNL Assets] pour le balisage intelligent {#configure-asset-tagging-using-the-smart-content-service}
 
 Avant de commencer à baliser vos ressources à l’aide des services de contenu intelligent, intégrez [!DNL Experience Manager Assets] à Adobe Developer Console pour tirer parti du service intelligent d’[!DNL Adobe AI]. Une fois configuré, entraînez le service à l’aide de quelques images et d’une balise.
@@ -27,7 +41,7 @@ Avant de commencer à baliser vos ressources à l’aide des services de contenu
 >* For Existing SCS configuration, the process is the same as setting up a new OAuth integration. Any legacy configuration will be automatically cleaned up.
 -->
 
-Avant d’utiliser le service de contenu dynamique, vérifiez les points suivants :
+Avant d’utiliser le service de contenu intelligent, vérifiez les points suivants :
 
 * [Intégration à la console Adobe Developer](#integrate-adobe-io).
 * [Entraînement du service de contenu dynamique](#training-the-smart-content-service)
@@ -48,7 +62,7 @@ Si vous avez effectué la mise à niveau vers le pack de services 21, installez
 
 Pour le pack de services 20 et les versions antérieures, vous devez exécuter les étapes de contournement pour que SCS prenne en charge l’intégration OAuth. Consultez la section [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md).
 
-## Mise à niveau SCS pour prendre en charge Oauth pour les utilisateurs et utilisatrices On-premise {#scs-upgrade-oauth-on-premise}
+## Mettre à niveau SCS pour prendre en charge Oauth pour les utilisateurs et utilisatrices On-Premise {#scs-upgrade-oauth-on-premise}
 
 **Nouveaux utilisateurs et nouvelles utilisatrices**
 
@@ -63,7 +77,7 @@ Si vous avez effectué la mise à niveau vers le pack de services 21, installez
 Pour le pack de services 20 et les versions antérieures, vous devez exécuter les étapes de contournement pour que SCS prenne en charge l’intégration OAuth. Consultez la section [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md).
 
 
-## Intégration à la console Adobe Developer {#integrate-adobe-io}
+## Intégrer à Adobe Developer Console {#integrate-adobe-io}
 
 Lors de l’intégration à la console Adobe Developer, le serveur [!DNL Experience Manager] authentifie vos informations d’identification de service auprès de la passerelle de la console Adobe Developer avant de transférer votre demande au service de contenu dynamique. Pour l’intégration, vous avez besoin d’un compte Adobe ID disposant de droits d’administration pour l’organisation et d’une licence de service de contenu dynamique achetée et activée pour votre organisation.
 
@@ -106,8 +120,8 @@ Pour utiliser les API de service de contenu intelligent, créez une intégration
 
 1. Sur la page **[!UICONTROL Add API]**, sélectionnez **[!UICONTROL Experience Cloud]** puis **[!UICONTROL Smart Content]** (Contenu dynamique). Cliquez sur **[!UICONTROL Next]** (Suivant).
 
-1. Sélectionnez **[!UICONTROL OAuth de serveur à serveur]**. Cliquez sur **[!UICONTROL Suivant]**.
-Pour plus d’informations sur la manière d’effectuer cette configuration, consultez la documentation de Developer Console, en fonction de vos besoins :
+1. Sélectionnez **[!UICONTROL OAuth serveur à serveur]**. Cliquez sur **[!UICONTROL Suivant]**.
+Pour plus de détails sur la façon d’effectuer cette configuration, consultez la documentation de Developer Console, en fonction de vos besoins :
 
    * Pour une présentation, voir *Authentification de serveur à serveur* sur developer.adobe.com.
    * Pour créer des informations d’identification OAuth, voir le *guide d’implémentation des informations d’identification OAuth de serveur à serveur* sur developer.adobe.com.
@@ -429,7 +443,7 @@ Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne p
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Lorsque cette option est sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un workflow d’entraînement afin d’entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow d’entraînement s’exécute de manière hebdomadaire le samedi à 12 :30.
+Lorsque cette option est sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un workflow d’entraînement afin d’entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow d’entraînement s’exécute de manière hebdomadaire à 00 h 30 le samedi.
 
 ### Entraînement à la demande {#on-demand-training}
 
@@ -457,7 +471,7 @@ Pour vérifier que le service de contenu dynamique est entraîné sur vos balise
 1. Dans la page **[!UICONTROL Rapports de ressources]**, sélectionnez le rapport que vous avez généré. Pour afficher le rapport, cliquez sur **[!UICONTROL Afficher]** dans la barre d’outils.
 1. Passez en revue les détails du rapport.
 
-   Le rapport affiche le statut d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le workflow d’entraînement pour l’entraînement complet du service sur la balise.
+   Le rapport affiche le statut d’entraînement des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le workflow d’entraînement pour l’entraînement complet du service sur la balise.
 
    Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
 
@@ -467,9 +481,9 @@ Pour vérifier que le service de contenu dynamique est entraîné sur vos balise
 
 * Les balises intelligentes améliorées sont basées sur des modèles d’apprentissage d’images et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle du service de contenu dynamique présente les limites suivantes :
 
-   * Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises coupe droite ou ajustée.
-   * Impossibilité d’identifier des balises basées sur des motifs ou des éléments minuscules d’une image. Par exemple, des logos sur des t-shirts.
-   * Le balisage est pris en charge dans les paramètres régionaux gérés par [!DNL Experience Manager].
+  * Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises cintrées ou à coupe classique.
+  * Impossibilité d’identifier des balises basées sur des motifs ou des éléments minuscules d’une image. Par exemple, des logos sur des t-shirts.
+  * Le balisage est pris en charge dans les paramètres régionaux gérés par [!DNL Experience Manager].
 
 * Pour rechercher des ressources à l’aide de balises intelligentes (standard ou améliorées), utilisez la recherche de texte intégral d’[!DNL Assets]. Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 

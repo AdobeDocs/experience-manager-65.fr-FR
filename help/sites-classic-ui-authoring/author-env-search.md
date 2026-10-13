@@ -10,13 +10,22 @@ exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 100%
-
+source-wordcount: '474'
+ht-degree: 92%
 ---
-
 # Rechercher{#searching}
 
 L’environnement de création d’AEM comporte divers mécanismes de recherche de contenu, selon le type de ressource que vous utilisez.
@@ -31,7 +40,7 @@ Pour accéder au panneau de recherche, cliquez sur l’onglet **Rechercher** dan
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-Dans le panneau de recherche, vous pouvez effectuer des recherches dans toutes les pages de votre site Web. Il contient des champs et des widgets pour les éléments suivants :
+Le panneau de recherche vous permet d’effectuer des recherches dans toutes les pages de votre site web. Il contient des champs et des widgets pour les éléments suivants :
 
 * **fullText** : recherche du texte spécifié.
 * **Modifié après/avant** : recherche uniquement les pages qui ont été modifiées entre les dates spécifiques.
@@ -75,7 +84,7 @@ Dans la console **Sites web**, l’option de menu **Rechercher et remplacer** vo
    * indique si la recherche doit être sensible à la casse ;
    * indique si seuls des mots entiers doivent être trouvés (sinon des sous-chaînes sont également trouvées).
 
-   Cliquez sur **Aperçu** pour savoir où a été trouvé le terme. Vous pouvez sélectionner/désélectionner des instances spécifiques à remplacer :
+   Cliquez sur **Aperçu** pour savoir où a été trouvé le terme. Vous pouvez sélectionner/désélectionner des instances spécifiques à remplacer :
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 

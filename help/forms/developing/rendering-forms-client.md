@@ -1,21 +1,34 @@
 ---
 title: Rendu des formulaires au niveau du client
-
 description: Optimisez la diffusion du contenu PDF et améliorez la capacité du service Forms à gérer la charge du réseau en utilisant la fonctionnalité de rendu côté client d’Acrobat ou d’Adobe Reader.
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
@@ -62,7 +75,7 @@ Vous pouvez utiliser Designer pour créer un fichier PDF dynamique simple à uti
 
 1. Déterminez si vous devez incorporer des polices dans le fichier PDF d’origine. Le fichier PDF d’origine doit contenir les polices supplémentaires requises par le formulaire qui est en cours de rendu. Lorsque vous incorporez des polices dans le fichier PDF d’origine, assurez-vous de ne pas enfreindre les accords de licence des polices. Dans Designer, vous pouvez déterminer si vous pouvez légalement incorporer des polices. Lors de l’enregistrement, si vous ne pouvez pas incorporer certaines polices dans le formulaire, Designer affiche un message répertoriant les polices que vous ne pouvez pas incorporer. Ce message ne s’affiche pas dans Designer pour les documents PDF statiques.
 1. Si vous créez le fichier PDF d’origine dans Designer, il est recommandé d’ajouter au minimum un champ de texte contenant un message. Ce message doit être adressé aux utilisateurs de versions antérieures d’Adobe Reader et leur indiquer qu’ils doivent disposer d’Acrobat 7.0 ou d’une version ultérieure, ou d’Adobe Reader 7.0 ou d’une version ultérieure pour afficher le document.
-1. Enregistrez le fichier PDF d’origine en tant que fichier PDF dynamique avec l’extension de nom du fichier PDF.
+1. Enregistrez le fichier PDF d’origine en tant que fichier PDF dynamique avec l’extension de fichier PDF.
 
 >[!NOTE]
 >
@@ -78,7 +91,7 @@ Le service Forms crée un flux de données de formulaire que vous devez écrire 
 
 **Voir également**
 
-[Restituer un formulaire au client à l’aide de l’API Java](#render-a-form-at-the-client-using-the-java-api)
+[Effectuer le rendu d’un formulaire côté client à l’aide de l’API Java](#render-a-form-at-the-client-using-the-java-api)
 
 [Effectuer le rendu d’un formulaire au niveau du client à l’aide de l’API Web Service](#render-a-form-at-the-client-using-the-web-service-api)
 
@@ -92,9 +105,9 @@ Le service Forms crée un flux de données de formulaire que vous devez écrire 
 
 [Créer des applications web qui génèrent des formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-### Restituer un formulaire au client à l’aide de l’API Java {#render-a-form-at-the-client-using-the-java-api}
+### Effectuer le rendu d’un formulaire côté client à l’aide de l’API Java {#render-a-form-at-the-client-using-the-java-api}
 
-Restituez un formulaire au client à l’aide de l’API Forms (Java) :
+Effectuez le rendu d’un formulaire côté client à l’aide de l’API Forms (Java) :
 
 1. Inclure les fichiers du projet
 
@@ -142,7 +155,7 @@ Restituez un formulaire au client à l’aide de l’API Forms (Java) :
 
 ### Rendre un formulaire au niveau du client à l’aide de l’API Web Service {#render-a-form-at-the-client-using-the-web-service-api}
 
-Restituez un formulaire au client à l’aide de l’API Forms (Web Service) :
+Effectuez le rendu d’un formulaire côté client à l’aide de l’API Forms (Web Service) :
 
 1. Inclure les fichiers du projet
 

@@ -9,25 +9,39 @@ exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 100%
-
 ---
-
 # Surveiller les déploiements d’AEM Forms {#monitoring-aem-forms-deployments}
 
-Vous pouvez surveiller les déploiements d’AEM Forms, tant au niveau du système qu’au niveau interne. Utilisez pour cela des outils de gestion spécialisés tels que HP OpenView, IBM® Tivoli et CA UniCenter, ainsi qu’un moniteur JMX tiers appelé *JConsole*, tout particulièrement dédié au contrôle de l’activité Java™. L’implémentation d’une stratégie de surveillance améliore la disponibilité, la fiabilité et les performances des déploiements d’AEM Forms.
+Vous pouvez surveiller les déploiements d’AEM Forms, tant au niveau du système qu’au niveau interne. Utilisez pour cela des outils de gestion spécialisés tels que HP OpenView, IBM® Tivoli et CA UniCenter, ainsi qu’un moniteur JMX tiers appelé *JConsole*, tout particulièrement dédié au contrôle de l’activité Java™. La mise en œuvre d’une stratégie de surveillance améliore la disponibilité, la fiabilité et les performances des déploiements d’AEM Forms.
 
 <!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
 ## Surveiller à l’aide des MBeans {#monitoring-using-mbeans}
 
-AEM Forms propose deux MBeans qui fournissent des informations de navigation et des statistiques. Il s’agit des seuls MBeans pris en charge au niveau de l’intégration et de l’inspection :
+AEM Forms propose deux MBeans enregistrés qui fournissent des informations de navigation et des statistiques. Il s’agit des seuls MBeans pris en charge au niveau de l’intégration et de l’inspection :
 
 * **ServiceStatistic :** ce MBean fournit des informations sur le nom du service et sur sa version.
-* **OperationStatistic :** ce MBean fournit les statistiques de chaque service du serveur d’AEM Forms. C’est là que les administrateurs et administratrices peuvent obtenir des informations sur un service donné, par exemple l’heure d’appel, le nombre d’erreurs, etc.
+* **OperationStatistic :** ce MBean fournit les statistiques de chaque service du serveur d’AEM Forms. C’est là que les administrateurs et administratrices peuvent obtenir des informations sur un service donné, par exemple le temps d’invocation et le nombre d’erreurs.
 
 ### Interfaces publiques de ServiceStatisticMbean {#servicestatisticmbean-public-interfaces}
 
@@ -101,7 +115,7 @@ Vous pouvez accéder aux statistiques du MBean OperationStatistic depuis une con
 
 **Unité de temps :** la valeur par défaut est la milliseconde.
 
-Pour activer le contrôle JMX, les serveurs d’applications ont généralement besoin d’être configurés. Veuillez consulter la documentation de votre serveur d’applications pour obtenir des informations détaillées.
+Pour activer l JMX, les serveurs d’applications ont généralement besoin d’être configurés. Veuillez consulter la documentation de votre serveur d’applications pour obtenir des informations détaillées.
 
 ### Exemples de configuration d’un accès JMX ouvert {#examples-of-how-to-set-up-open-jmx-access}
 
@@ -133,8 +147,8 @@ Pour afficher les MBeans depuis JConsole, vous devez configurer les paramètres 
 
 **Accès à distance au MBean**
 
-1. Lancez JConsole pour établir une nouvelle connexion et cliquez sur l’onglet Remote.
-1. Entrez le nom d’hôte et le port (9088, le nombre spécifié dans les options de démarrage de la JVM).
+1. Ouvrez JConsole pour établir une nouvelle connexion et cliquez sur l’onglet Remote.
+1. Entrez le nom d’hôte et le port (9088, le numéro que vous spécifiez dans les options de démarrage de la JVM).
 
 **WebSphere® 6.1 - Configuration du démarrage de la JVM**
 
@@ -144,7 +158,7 @@ Pour afficher les MBeans depuis JConsole, vous devez configurer les paramètres 
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
-1. Ajoutez les trois lignes suivantes (ou annulez leur mise en commentaires) dans le fichier /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (ou &lt;Votre JRE WebSphere>/lib/management/management.properties) :
+1. Ajoutez les trois lignes suivantes (ou annulez leur mise en commentaires) dans le fichier /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (ou &lt;Your Websphere JRE>/ lib/management/management.properties) :
 
    ```shell
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect

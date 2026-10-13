@@ -9,13 +9,29 @@ exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '7066'
-ht-degree: 95%
-
+source-wordcount: '7272'
+ht-degree: 96%
 ---
-
 # Dossier de contrôle dans AEM Forms{#watched-folder-in-aem-forms}
 
 Un administrateur peut configurer un dossier réseau, appelé dossier de contrôle (en anglais Watched Folder), de sorte que lorsqu’un utilisateur y place un fichier (par exemple un fichier PDF), un workflow, un service ou une opération d’exécution de script démarre pour le traitement du fichier ajouté. Après que le service a effectué l’opération spécifiée, il enregistre le fichier obtenu dans un dossier de sortie spécifié. Pour plus d’informations sur le workflow, le service et le script, voir [Diverses méthodes pour traiter les fichiers](#variousmethodsforprocessingfiles).
@@ -66,19 +82,19 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 * **inputProcessorType (chaîne)** : type du processus à démarrer. Vous pouvez spécifier le workflow, le script, ou le service. Il s’agit d’une propriété obligatoire.
 * **inputProcessorId (chaîne)** : le comportement de la propriété inputProcessorId repose sur la valeur spécifiée pour la propriété inputProcessorType. Il s’agit d’une propriété obligatoire. La liste suivante détaille toutes les valeurs possibles de la propriété inputProcessorType et de la condition requise correspondante pour la propriété inputProcessorType :
 
-   * Pour le workflow, spécifiez le modèle de workflow à exécuter. Par exemple, /etc/workflow/models/&lt;nom_workflow>/jcr:content/model
-   * Pour le script, spécifiez le chemin JCR du script à exécuter. Par exemple, /etc/fd/watchfolder/test/testScript.ecma.
-   * Pour le service, spécifiez le filtre utilisé pour localiser un service OSGi. Le service est enregistré comme une implémentation de l’interface de com.adobe.aemfd.watchfolder.service.api.ContentProcessor.
+  * Pour le workflow, spécifiez le modèle de workflow à exécuter. Par exemple, /etc/workflow/models/&lt;nom_workflow>/jcr:content/model
+  * Pour le script, spécifiez le chemin JCR du script à exécuter. Par exemple, /etc/fd/watchfolder/test/testScript.ecma.
+  * Pour le service, spécifiez le filtre utilisé pour localiser un service OSGi. Le service est enregistré comme une implémentation de l’interface de com.adobe.aemfd.watchfolder.service.api.ContentProcessor.
 
 * **runModes (chaîne)** : liste séparée par des virgules de modes d’exécution autorisés pour l’exécution du workflow. Voici quelques exemples :
 
-   * auteur
+  * auteur
 
-   * publish
+  * publish
 
-   * création, publication
+  * création, publication
 
-   * publication, création
+  * publication, création
 
 >[!NOTE]
 >
@@ -95,30 +111,30 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, valeur par défaut true) :** si le mécanisme d’expiration doit ou non s’activer uniquement lorsque le dossier de contrôle est ralenti. Le mécanisme est plus approprié pour les dossiers de contrôle ralentis car un petit nombre de fichiers qui restent à l’état non traité (en raison d’une tâche intermittente/d’un échec de déclenchement de workflow) risquent potentiellement de freiner le traitement du lot entier lorsque l’option de ralentissement est activée. Si cette propriété est conservée sur true (valeur par défaut), le mécanisme d’expiration ne s’active pas pour les dossiers de contrôle qui ne sont pas ralentis. Si la propriété est conservée sur false, le mécanisme s’active toujours tant que la propriété stageFileExpirationDuration est un nombre positif.
 
 * **pollInterval (Long)** : le laps de temps en secondes pour l’analyse du dossier de contrôle en sortie. A moins que le paramètre Ralentissement ne soit activé, l’attribut Intervalle de répétition doit être supérieur à la durée du traitement d’une tâche moyenne, faute de quoi le système risque d’être surchargé. La valeur par défaut est 5. Pour plus d’informations, voir la description de la taile de lot. La valeur de pollinterval doit être supérieure ou égale à un.
-* **excludeFilePattern (chaîne)** : une liste dont les éléments sont séparés par des points-virgules (;) qu’un dossier de contrôle utilise pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Aucun fichier ou dossier avec ce modèle n’est analysé pour traitement. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Le contenu du dossier peut être copié dans un dossier portant un nom choisi par le dossier de contrôle. Cela empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. La valeur par défaut est null.
-Vous pouvez utiliser des [modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) pour exclure les éléments suivants :
+* **excludeFilePattern (chaîne)** : une liste dont les éléments sont séparés par des points-virgules (;) qu’un dossier de contrôle utilise pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Aucun fichier ou dossier avec ce modèle n’est analysé en vue d’être traité. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Vous pouvez copier le contenu du dossier dans un dossier dont le nom sera choisi par le dossier de contrôle. Cela empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. La valeur par défaut est « null ».
+Vous pouvez utiliser des [modèles de fichiers](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) pour exclure les types de fichiers suivants :
 
-   * Fichiers possédant des extensions de nom de fichier particulières, par exemple &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-   * Fichiers portant des noms spécifiques ; par exemple, data&#42; exclurait les fichiers et les dossiers nommés data1, data2, etc.
-   * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
+  * Fichiers possédant des extensions de nom de fichier particulières, par exemple &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+  * Fichiers portant des noms spécifiques ; par exemple, data&#42; exclurait les fichiers et les dossiers nommés data1, data2, etc.
+  * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-      * Données`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-      * &#42;.`[dD][aA]`&#39;port&#39;
-      * &#42;.`[Xx][Mm][Ll]`
+    * Données`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+    * &#42;.`[dD][aA]`&#39;port&#39;
+    * &#42;.`[Xx][Mm][Ll]`
 
 Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 * **includeFilePattern (chaîne)** : liste dont les éléments sont séparés par des points-virgules (;) utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Ainsi, si l’attribut IncludeFilePattern a la valeur input&#42;, tous les fichiers et les dossiers correspondant à input&#42; sont sélectionnés. Cela concerne les fichiers et les dossiers nommés input1, input2, etc. La valeur par défaut est &#42; et elle désigne tous les fichiers et dossiers. Vous pouvez utiliser des modèles de fichiers pour inclure les types de fichiers suivants :
 
-   * Fichiers possédant des extensions de nom de fichier particulières, par exemple &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-   * Fichiers portant des noms spécifiques, par exemple data.&#42; inclut des fichiers et des dossiers nommés data1, data2, etc.
+  * Fichiers possédant des extensions de nom de fichier particulières, par exemple &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+  * Fichiers portant des noms spécifiques, par exemple data.&#42; inclut des fichiers et des dossiers nommés data1, data2, etc.
 
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+  * Données`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
 
-      * &#42;.`[dD][aA]`&#39;port&#39;
-      * &#42;.`[Xx][Mm][Ll]`
+    * &#42;.`[dD][aA]`&#39;port&#39;
+    * &#42;.`[Xx][Mm][Ll]`
 
 Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -126,20 +142,20 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 * **purgeDuration (Long)** : les fichiers et les sous-dossiers du dossier Résultats sont vidés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Grâce à ce paramètre, le dossier obtenu n’est jamais plein. La valeur -1 jour indique de ne jamais supprimer le dossier de résultats. La valeur par défaut est -1.
 * **resultFolderName (chaîne)** : le dossier dans lequel les résultats enregistrés sont stockés. Si les résultats ne s’affichent pas dans ce dossier, vérifiez le dossier des échecs. Les fichiers en lecture seule ne sont pas traités ; ils sont enregistrés dans le dossier des échecs. Il peut s’agir d’un chemin d’accès relatif ou absolu avec les modèles de fichiers suivants :
 
-   * %F = préfixe du nom du fichier
-   * %E = extension du nom du fichier
-   * %Y = année (complète)
-   * %y = année (deux derniers chiffres)
-   * %M = mois
-   * %D = jour du mois
-   * %d = jour de l’année
-   * %H = heure (horloge 24 heures)
-   * %h = heure (horloge 12 heures)
-   * %m = minute
-   * %s = seconde
-   * %l = milliseconde
-   * %R = nombre aléatoire (entre 0 et 9)
-   * %P = ID de processus ou de tâche
+  * %F = préfixe du nom du fichier
+  * %E = extension du nom du fichier
+  * %Y = année (complète)
+  * %y = année (deux derniers chiffres)
+  * %M = mois
+  * %D = jour du mois
+  * %d = jour de l’année
+  * %H = heure (format 24 heures)
+  * %h = heure (format 12 heures)
+  * %m = minute
+  * %s = seconde
+  * %l = milliseconde
+  * %R = nombre aléatoire (entre 0 et 9)
+  * %P = ID de processus ou de tâche
 
   Par exemple, s’il est 20 h, que nous sommes le 17 juillet 2009 et que vous définissez C:/Test/WF0/failure/%Y/%M/%D/%H/, le dossier de résultats est alors C:/Test/WF0/failure/2009/07/17/20.
 
@@ -173,9 +189,9 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 * **enabled (booléen)** : désactive et active l’analyse d’un dossier de contrôle. Définissez enabled sur True pour commencer à analyser le dossier de contrôle. La valeur par défaut est true.
 * **payloadMapperFilter :** lorsqu’un dossier est configuré comme dossier de contrôle, une structure de dossiers est créée dans le dossier de contrôle. La structure comporte des dossiers pour fournir des entrées, recevoir des sorties (résultats), sauvegarder les données en cas de défaillance, préserver les données pour les processus de longue durée et enregistrer les données des différentes étapes. La structure de dossiers d’un dossier de contrôle peut servir de charge utile des workflows basés sur les formulaires. Un mappeur de charge utile vous permet de définir la structure d’une charge utile qui utilise un dossier de contrôle pour l’entrée, la sortie et le traitement. Par exemple, si vous utilisez le mappeur par défaut, celui-ci mappe le contenu du dossier de contrôle avec le dossier [payload]\input and [payload]\output. Deux implémentations de mappeur de charge prêtes à l’emploi sont disponibles. Si vous ne disposez pas d’[une implémentation personnalisée](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilisez l’une des implémentations prêtes à l’emploi :
 
-   * **Mappeur par défaut :** utilisez le mappeur de payload par défaut pour conserver les contenus d’entrée et de sortie des dossiers de contrôle dans des dossiers d’entrée et de sortie distincts dans la payload. De plus, dans le chemin d’accès de la payload d’un workflow, utilisez les chemins d’accès [payload]/input/ et [payload]/output pour récupérer et sauvegarder le contenu.
+  * **Mappeur par défaut :** utilisez le mappeur de payload par défaut pour conserver les contenus d’entrée et de sortie des dossiers de contrôle dans des dossiers d’entrée et de sortie distincts dans la payload. De plus, dans le chemin d’accès de la payload d’un workflow, utilisez les chemins d’accès [payload]/input/ et [payload]/output pour récupérer et sauvegarder le contenu.
 
-   * **Mappeur de payload basé sur des fichiers simples :** utilisez le mappeur de payload basé sur des fichiers simples pour conserver les contenus d’entrée et de sortie directement dans le dossier de la payload. Tout comme pour le mappeur par défaut, aucune hiérarchie supplémentaire n’est créée.
+  * **Mappeur de payload basé sur des fichiers simples :** utilisez le mappeur de payload basé sur des fichiers simples pour conserver les contenus d’entrée et de sortie directement dans le dossier de la payload. Tout comme pour le mappeur par défaut, aucune hiérarchie supplémentaire n’est créée.
 
 ### Paramètres de configuration personnalisés {#custom-configuration-parameters}
 
@@ -307,7 +323,7 @@ Les workflows permettent d’automatiser les activités d’Experience Manager.
 
 * Avant de créer un workflow, tenez compte des points suivants :
 * La sortie d’une étape doit être disponible pour toutes les étapes suivantes.
-Les étapes doivent pouvoir mettre à jour (ou même supprimer) les sorties existantes générées par les étapes précédentes.
+Les étapes doivent pouvoir mettre à jour (ou même supprimer) des sorties existantes générées par les étapes précédentes.
 * Les variables mutables sont utilisées pour transmettre les données dynamiques personnalisées entre les étapes.
 
 Effectuez les étapes suivantes pour traiter des fichiers à l’aide des workflows :
@@ -355,8 +371,8 @@ Remarque concernant l’API setResult, lorsqu’elle est utilisée dans les work
 >
 >L’appel de l’API setResult avec le contenu « null » dans tout autre scénario peut entraîner une erreur.
 
-L’exemple suivant est implémenté comme étape de workflow. Dans cet exemple, ECMAscript utilise un stepCount variable pour suivre le nombre de fois qu’une étape est appelée dans l’instance de workflow active.
-Le nom du dossier de sortie est une combinaison de l’étape actuelle, du nom de fichier d’origine et du préfixe spécifié dans le paramètre outPrefix.
+L’exemple suivant est implémenté comme étape du workflow. Dans cet exemple, ECMAscript utilise un stepCount variable pour suivre le nombre de fois qu’une étape est appelée dans l’instance active du workflow.
+Le nom du dossier de sortie est une combinaison de l’étape actuelle, du nom de fichier original et du préfixe spécifié dans le paramètre outPrefix.
 
 ECMAScript obtient une référence du service de contexte du workflow et crée une implémentation de l’interface de WorkflowContextProcessor. L’implémentation de WorkflowContextProcessor accepte les fichiers d’entrée, copie le fichier à un emplacement temporaire, puis renvoie un document représentant le fichier copié. Selon la valeur de la variable booléenne purgePrevious, l’étape actuelle supprime la sortie générée la dernière fois par la même étape lorsque l’étape a été lancée dans l’instance active du workflow. En fin de compte, la méthode wfSvc.execute est appelée pour l’implémentation de WorkflowContextProcessor. Le contenu du document de sortie est enregistré dans le dossier de résultats au chemin d’accès physique mentionné dans le nœud de configuration du dossier de contrôle.
 
@@ -522,14 +538,14 @@ L’option de ralentissement empêche Watched Folder d’appeler de nouvelles t
 
 À chaque événement d’interrogation, le dossier de contrôle verrouille le dossier d’entrée, déplace dans le dossier stage les fichiers correspondant au modèle de fichiers inclus, puis déverrouille le dossier d’entrée. Le verrouillage est nécessaire afin que deux threads ne sélectionnent pas le même ensemble de fichiers et ne les traitent pas deux fois. La probabilité d’un traitement en double augmente lorsque l’intervalle de répétition est faible et que la taille du lot est importante. Une fois les fichiers déplacés dans le dossier stage, le dossier input est déverrouillé de sorte que d’autres threads puissent analyser le dossier. Cette étape offre un débit élevé du fait que d’autres threads peuvent effectuer une analyse pendant que l’un d’entre eux traite les fichiers.
 
-Une fois les fichiers déplacés dans le dossier stage, les demandes d’appel sont créées pour chaque fichier et le service cible est appelé. Cependant, il arrive parfois que le dossier de contrôle ne puisse pas récupérer les fichiers dans le dossier stage :
+Une fois les fichiers déplacés dans le dossier stage, les demandes d’appel sont créées pour chaque fichier et le service cible est appelé. Il arrive parfois que le dossier de contrôle ne puisse pas récupérer les fichiers dans le dossier de préproduction :
 
 * Si une panne du serveur survient avant que le dossier de contrôle n’ait eu le temps de créer la demande d’appel, les fichiers situés dans le dossier stage restent dans ce dossier et ne sont pas récupérés.
 
 * Si le dossier de contrôle a réussi à créer la demande d’appel pour chacun des fichiers du dossier stage et qu’une panne du serveur survient, deux comportements sont à noter, en fonction du type d’appel :
 
-   * **Synchrone** : si le dossier de contrôle est configuré pour appeler le service de manière synchrone, tous les fichiers du dossier stage restent dans ce dossier et ne subissent aucun traitement.
-   * **Asynchrone** : dans ce cas, le dossier de contrôle s’appuie sur le service Job Manager. Si le service Job Manager rappelle le dossier de contrôle, les fichiers du dossier stage sont déplacés vers le dossier de conservation ou d’échecs, en fonction des résultats de l’appel. Si le service Job Manager ne rappelle pas le dossier de contrôle, les fichiers restent dans le dossier stage et ne subissent aucun traitement. Cette situation survient lorsque le dossier de contrôle n’est pas exécuté alors que Job Manager rappelle.
+  * **Synchrone** : si le dossier de contrôle est configuré pour appeler le service de manière synchrone, tous les fichiers du dossier stage restent dans ce dossier et ne subissent aucun traitement.
+  * **Asynchrone** : dans ce cas, le dossier de contrôle s’appuie sur le service Job Manager. Si le service Job Manager rappelle le dossier de contrôle, les fichiers du dossier stage sont déplacés vers le dossier de conservation ou d’échecs, en fonction des résultats de l’appel. Si le service Job Manager ne rappelle pas le dossier de contrôle, les fichiers restent dans le dossier de préproduction et ne subissent aucun traitement. Cette situation survient lorsque le dossier de contrôle n’est pas exécuté alors que Job Manager rappelle.
 
 #### Récupération des fichiers source non traités dans le dossier stage {#recover-unprocessed-source-files-in-the-stage-folder}
 
@@ -542,13 +558,13 @@ Lorsque le dossier de contrôle ne peut pas traiter les fichiers source dans le 
    * Modifiez la propriété includeFilePattern du dossier de contrôle en une valeur ne correspondant à aucun nouveau fichier d’entrée (par exemple, entrez NOMATCH).
    * Mettez un terme au processus de création de nouveaux fichiers d’entrée.
 
-   Patientez jusqu’à ce qu’AEM Forms récupère et traite tous les fichiers. La majorité des fichiers devra être récupérée et tous les nouveaux fichiers d’entrée correctement traités. Le temps nécessaire au dossier de contrôle pour récupérer et traiter les fichiers dépendra de la durée de l’opération pour l’appel, ainsi que du nombre de fichiers à récupérer.
+   Patientez jusqu’à ce qu’AEM Forms récupère et traite tous les fichiers. La majorité des fichiers devra être récupérée et tous les nouveaux fichiers d’entrée correctement traités. Le temps pendant lequel vous attendez que le dossier de contrôle récupère et traite les fichiers dépend de la durée de l’opération à appeler et du nombre de fichiers à récupérer.
 
 1. Déterminez les fichiers ne pouvant pas être traités. Si vous avez suffisamment attendu, que vous avez terminé l’étape précédente et qu’il reste encore des fichiers non traités dans le dossier stage, passez à l’étape suivante.
 
    >[!NOTE]
    >
-   >Vous pouvez consulter la date et l’horodatage des fichiers dans le répertoire stage. En fonction du nombre de fichiers et du temps normal de traitement, vous pouvez déterminer les fichiers considérés comme étant bloqués.
+   >Vous pouvez consulter la date et l’horodatage des fichiers dans le répertoire stage. En fonction du nombre de fichiers et du temps normal de traitement, vous pouvez déterminer quels fichiers sont suffisamment anciens pour être considérés comme bloqués.
 
 1. Copiez les fichiers non traités du répertoire stage dans le répertoire des entrées.
 
@@ -568,9 +584,9 @@ Les administrateurs peuvent indiquer le type du fichier servant à appeler un se
 * Fichiers portant des noms spécifiques, par exemple data.&#42;
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
-   * &#42;.`[dD][aA]`&#39;port&#39;
-   * &#42;.`[Xx][Mm][Ll]`
+  * Données`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+  * &#42;.`[dD][aA]`&#39;port&#39;
+  * &#42;.`[Xx][Mm][Ll]`
 
 * L’administrateur ou l’administratrice peut définir le modèle de fichier du dossier de sortie dans lequel enregistrer les résultats. Concernant les dossiers de sortie (résultats, conservation et échecs), il ou elle peut indiquer l’un des modèles de fichier suivants :
 * %Y = année (complète)
@@ -669,8 +685,8 @@ ECMAScript utilise l’API createPDF de PDF Generator pour convertir des docume
 
 1. Ajoutez les propriétés suivantes au nœud :
 
-   * folderPath (chaîne) : chemin d’accès du dossier à analyser à des intervalles de temps définis. Le dossier doit se trouver à un emplacement partagé avec tous les serveurs disposant d’un accès complet au serveur.
-inputProcessorType (chaîne) : le type du processus à démarrer. Dans ce tutoriel, spécifiez le workflow.
+   * folderPath (chaîne) : chemin du dossier à analyser à des intervalles de temps définis. Ce dossier doit être un emplacement partagé avec tous les serveurs disposant d’un accès complet au serveur.
+     inputProcessorType (chaîne) : le type du processus à démarrer. Dans ce didacticiel, spécifiez le workflow.
 
    * inputProcessorId (chaîne) : le comportement de la propriété inputProcessorId repose sur la valeur spécifiée pour la propriété inputProcessorType. Dans cet exemple, la valeur de la propriété inputProcessorType est un workflow. Ainsi, pour la propriété inputProcessorId, spécifiez le chemin d’accès suivant du workflow PDFG : /etc/workflow/models/pdfg/jcr:content/model
 

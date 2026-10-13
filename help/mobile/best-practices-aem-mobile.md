@@ -9,13 +9,17 @@ exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '604'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques {#best-practices}
 
 {{ue-over-mobile}}
@@ -28,28 +32,28 @@ La création d’une application AEM Mobile On-demand Services est différente d
 >
 >Pour en savoir plus sur les modules externes, consultez les ressources suivantes :
 >
->* [Utilisation des plug-ins Cordova dans AEM Mobile](https://helpx.adobe.com/fr/digital-publishing-solution/help/cordova-api.html)
->* [Utilisation de plug-ins Cordova spécifiques à AEM Mobile](https://helpx.adobe.com/fr/digital-publishing-solution/help/app-runtime-api.html)
+>* [Utilisation des plug-ins Cordova dans AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
+>* [Utilisation de plug-ins Cordova spécifiques à AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * Les modèles qui utilisent la fonctionnalité de module externe doivent être écrits de manière à pouvoir être créés dans le navigateur, sans que le pont de module externe soit présent.
 
-   * Par exemple, veillez à attendre la fonction *deviceready* avant de tenter d’accéder à l’API d’un plug-in.
+  * Par exemple, veillez à attendre la fonction *deviceready* avant de tenter d’accéder à l’API d’un plug-in.
 
-## Consignes destinées aux développeurs d’AEM {#guidelines-for-aem-developers}
+## Instructions destinées aux développeurs d’AEM {#guidelines-for-aem-developers}
 
-Les instructions suivantes aident les développeurs AEM compétents pour les sites qui souhaitent créer des modèles et des composants d’applications mobiles :
+Les instructions suivantes aident les développeurs AEM compétents à créer des modèles et des composants d’applications mobiles :
 
 **Structurer les modèles de sites AEM pour encourager la réutilisation et l’extensibilité**
 
 * Préférez plusieurs fichiers de script de composant à un fichier monolithique unique
 
-   * Plusieurs points d’extension vides sont fournis, tels que *customheaderlibs.html* et *customfooterlibs.html*, qui permettent au développeur ou à la développeuse de modifier le modèle de page tout en dupliquant le moins de code principal possible
-   * Les modèles peuvent ensuite être étendus et personnalisés via le mécanisme *sling:resourceSuperType* de Sling
+  * Plusieurs points d’extension vides sont fournis, tels que *customheaderlibs.html* et *customfooterlibs.html*, qui permettent au développeur ou à la développeuse de modifier le modèle de page tout en dupliquant le moins de code principal possible
+  * Les modèles peuvent ensuite être étendus et personnalisés via le mécanisme *sling:resourceSuperType* de Sling
 
 * Préférez Sightly/HTL au JSP en tant que langage de modèle
 
-   * L’utilisation de cette syntaxe favorise la séparation du code des balises, offre une protection XSS intégrée et a une syntaxe plus familière
+  * L’utilisation de cette syntaxe favorise la séparation du code des balises, offre une protection XSS intégrée et a une syntaxe plus familière
 
 **Optimiser les performances sur l’appareil**
 

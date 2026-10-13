@@ -9,13 +9,17 @@ exl-id: 4b3acc7c-f1f7-4837-ae3a-9435d6ce1349
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '273'
 ht-degree: 1%
-
 ---
-
 # Chargement des ressources partagées {#uploading-shared-resources}
 
 {{ue-over-mobile}}
@@ -24,7 +28,7 @@ Les actions de gestion de contenu sont les blocs de création qui permettent de 
 
 >[!NOTE]
 >
->Pour en savoir plus sur les considérations de conception des applications AEM Mobile, consultez [Considérations de conception des applications AEM Mobile](https://helpx.adobe.com/fr/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
+>Pour en savoir plus sur les considérations de conception des applications AEM Mobile, consultez [Considérations de conception des applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
 
 >[!CAUTION]
 >
@@ -43,7 +47,7 @@ Une fois que vous avez configuré et associé votre application à une configura
 Pour charger vos ressources partagées pour un article, procédez comme suit :
 
 1. Sélectionnez l’article dans la mosaïque **Gérer les articles**.
-1. Cliquez sur **Charger les ressources partagées** pour charger vos ressources d’HTML partagées.
+1. Cliquez sur **Charger les ressources partagées** pour charger vos ressources HTML partagées.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 

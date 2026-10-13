@@ -8,7 +8,18 @@ exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 100%
@@ -130,7 +141,7 @@ En utilisant cet onglet vous pouvez :
 
   Cela permettra de vérifier les références de tous les packages et de les actualiser au besoin.
 
-  Par exemple, après une mise à jour, l’ancienne et la nouvelle version peuvent toujours être exécutées en raison de références antérieures. Cette option permettra de vérifier et de déplacer toutes les références vers la nouvelle version, afin d’arrêter l’ancienne version.
+  Par exemple, après une mise à jour, l’ancienne et la nouvelle version peuvent toujours être exécutées en raison de références antérieures. Cette option vérifie et déplace toutes les références vers la nouvelle version, ce qui permet à l’ancienne version de s’arrêter.
 
 * **Démarrer**
 
@@ -176,4 +187,4 @@ Cliquez sur le nom d’un composant spécifique pour afficher des informations s
 >
 >L’activation ou la désactivation d’un composant ne s’applique que jusqu’au redémarrage d’AEM/CRX.
 >
->L’état de démarrage est défini dans le descripteur de composant, qui est généré pendant le développement et stocké dans le bundle au moment de sa création.
+>L’état de départ est défini dans le descripteur de composant, qui est généré pendant le développement et stocké dans le bundle au moment de la création du bundle.

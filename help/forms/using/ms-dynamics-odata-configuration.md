@@ -8,13 +8,26 @@ feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 100%
-
 ---
-
 # Configuration du service OData de Microsoft Dynamics{#microsoft-dynamics-odata-configuration}
 
 | Version | Lien de l’article |
@@ -46,8 +59,8 @@ Avant de commencer à installer et configurer Microsoft Dynamics, vérifiez les
 * Le [package du module complémentaire AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) a été installé
 * Microsoft Dynamics 365 en ligne est configuré ou une instance de l’une des versions de Microsoft Dynamics suivantes a été installée :
 
-   * Microsoft Dynamics 365 sur site
-   * Microsoft Dynamics 2016 sur site
+  * Microsoft Dynamics 365 sur site
+  * Microsoft Dynamics 2016 sur site
 
 * [L’application pour le service en ligne Microsoft Dynamics a été enregistrée auprès de Microsoft Azure Active Directory](https://docs.microsoft.com/fr-fr/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Notez les valeurs de l’ID client (également appelé « ID d’application ») et du secret du client pour le service enregistré. Ces valeurs sont utilisées lors de la [configuration du service cloud pour votre service Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 
@@ -87,7 +100,7 @@ Microsoft Dynamics utilise l’authentification basée sur les réclamations po
 
    Pour plus d’informations, voir [Enregistrement de l’application pour CRM local (IFD)](https://msdn.microsoft.com/sl-si/library/dn531010(v=crm.7).aspx#bkmk_ifd).
 
-## Configuration du client OAuth sur une machine AD FS {#configure-oauth-client-on-ad-fs-machine}
+## Configurer le client OAuth sur une machine AD FS {#configure-oauth-client-on-ad-fs-machine}
 
 Pour enregistrer un client OAuth sur l’ordinateur Active Directory Federation Services (AD FS) et octroyer l’accès sur l’ordinateur AD FS :
 

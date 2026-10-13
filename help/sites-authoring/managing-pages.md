@@ -5,13 +5,26 @@ exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2506'
 ht-degree: 95%
-
 ---
-
 # Création et organisation des pages {#creating-and-organizing-pages}
 
 Cette section décrit comment créer et gérer des pages avec Adobe Experience Manager (AEM) afin de [créer du contenu](/help/sites-authoring/editing-content.md) sur ces dernières.
@@ -85,13 +98,13 @@ Lors de la création d’une page, deux champs nécessitent votre attention :
 
 * **[Titre](#title)** :
 
-   * Il s’affiche pour l’utilisateur dans la console et dans la partie supérieure du contenu de la page lors de la modification.
-   * Ce champ est obligatoire.
+  * Il s’affiche pour l’utilisateur dans la console et dans la partie supérieure du contenu de la page lors de la modification.
+  * Ce champ est obligatoire.
 
 * **[Nom](#name)** :
 
-   * Il est utilisé pour générer l’URI.
-   * L’entrée utilisateur pour ce champ est facultative. S’il n’est pas spécifié, le nom est dérivé du titre. Consultez la section [Restrictions de nom de page et bonnes pratiques](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) pour plus d’informations.
+  * Il est utilisé pour générer l’URI.
+  * L’entrée utilisateur pour ce champ est facultative. S’il n’est pas spécifié, le nom est dérivé du titre. Consultez la section [Restrictions de nom de page et bonnes pratiques](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) pour plus d’informations.
 
 #### Restrictions de nom de page et bonnes pratiques {#page-name-restrictions-and-best-practices}
 
@@ -187,7 +200,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
 Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à moins que toutes les pages n’aient été créées pour vous à l’avance :
 
-1. Ouvrez la console Sites (par exemple, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
+1. Ouvrez la console Sites (par exemple, [&#128279;](https://localhost:4502/sites.html/content)).
 1. Accédez à l’emplacement où créer la page.
 1. Ouvrez le sélecteur de liste déroulante avec l’option **Créer** de la barre d’outils, puis sélectionnez **Page** dans la liste :
 
@@ -211,14 +224,14 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
 
    * **Titre** :
 
-      * Il est visible par l’utilisateur ou l’utilisatrice et est obligatoire.
+     * Il est visible par l’utilisateur ou l’utilisatrice et est obligatoire.
 
    * **Nom** :
 
-      * Il est utilisé pour générer l’URI. S’il n’est pas spécifié, le nom est dérivé du titre.
-      * Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
+     * Il est utilisé pour générer l’URI. S’il n’est pas spécifié, le nom est dérivé du titre.
+     * Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
-      * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsqu’AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
+     * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsqu’AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
 
    >[!NOTE]
    >
@@ -343,8 +356,8 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    * Utilisez la [vue Colonne](/help/sites-authoring/basic-handling.md#column-view) pour accéder au nouvel emplacement de la page :
 
-      * Sélectionnez la destination en cliquant sur sa miniature.
-      * Cliquez sur **Suivant** pour continuer.
+     * Sélectionnez la destination en cliquant sur sa miniature.
+     * Cliquez sur **Suivant** pour continuer.
 
    * Utilisez **Précédent** pour revenir à la spécification du nom de page.
 
@@ -384,8 +397,8 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 Les actions de déplacement de page sont toujours traitées de manière asynchrone, ce qui permet à l’utilisateur ou à l’utilisatrice de continuer à créer dans l’IU sans entraves.
 
 * L’utilisateur doit définir quand l’opération asynchrone doit être effectuée.
-   * **Maintenant** : l’exécution de la tâche asynchrone commence immédiatement.
-   * **Plus tard** : l’utilisateur peut définir le moment où la tâche asynchrone débutera.
+  * **Maintenant** : l’exécution de la tâche asynchrone commence immédiatement.
+  * **Plus tard** : l’utilisateur peut définir le moment où la tâche asynchrone débutera.
 
   ![Déplacement de page asynchrone](assets/asynchronous-page-move.png)
 
@@ -415,8 +428,8 @@ Pour consulter le statut des tâches asynchrones, accédez au tableau de bord [*
    * **Annuler** pour abandonner l’opération.
    * **Supprimer** pour confirmer l’action :
 
-      * Si la page ne comporte aucune référence, elle est supprimée.
-      * Si la page contient des références, un message vous informe qu’**Une ou plusieurs pages sont référencées.** Vous pouvez sélectionner **Forcer la suppression** ou **Annuler**.
+     * Si la page ne comporte aucune référence, elle est supprimée.
+     * Si la page contient des références, un message vous informe qu’**Une ou plusieurs pages sont référencées.** Vous pouvez sélectionner **Forcer la suppression** ou **Annuler**.
 
 >[!NOTE]
 >

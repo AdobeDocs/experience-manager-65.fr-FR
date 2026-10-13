@@ -10,13 +10,20 @@ role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 8%
-
+source-wordcount: '2489'
+ht-degree: 9%
 ---
-
 # Synchronisation des utilisateurs de Communities {#communities-user-synchronization}
 
 ## Présentation {#introduction}
@@ -102,7 +109,7 @@ La synchronisation des utilisateurs repose sur l’environnement de création po
 
 Les configurations suivantes sont nécessaires pour activer la synchronisation des utilisateurs sur AEM Communities. Assurez-vous que ces configurations sont correctes pour empêcher l’échec de la distribution de contenu sling.
 
-### Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
+### Agent de distribution Apache Sling - Agents de synchronisation en usine {#apache-sling-distribution-agent-sync-agents-factory}
 
 Cette configuration récupère le contenu à synchroniser dans les éditeurs. La configuration se trouve sur l’instance d’auteur . L’auteur doit conserver une trace de tous les éditeurs qui s’y trouvent et où synchroniser toutes les informations.
 
@@ -115,7 +122,7 @@ L’instance d’auteur envoie un ping au point d’entrée de l’exportateur d
 Pour configurer les agents de synchronisation Apache Sling, procédez comme suit :
 
 1. Connectez-vous avec des droits d’administrateur sur votre instance d’auteur AEM.
-1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md). Par exemple, [:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md). Par exemple, [&#128279;](https://localhost:4502/system/console/configMgr).
 1. Recherchez **Agent de distribution Apache Sling - Fabrique d’agents de synchronisation**.
 
    * Sélectionnez la configuration existante à ouvrir pour modification (icône de crayon).
@@ -130,7 +137,7 @@ Pour configurer les agents de synchronisation Apache Sling, procédez comme suit
 
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Distribution Granite Adobe - Fournisseur De Secret De Transport Avec Mot De Passe Chiffré {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Distribution Adobe Granite - Fournisseur de secrets de transport de mot de passe chiffré {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Il permet à l’auteur d’identifier l’utilisateur autorisé comme étant autorisé à synchroniser les données utilisateur de l’auteur à la publication.
 
@@ -143,7 +150,7 @@ Pour connecter l’auteur aux éditeurs à l’aide d’un utilisateur autorisé
 1. Connectez-vous avec des droits d’administrateur sur votre instance d’auteur AEM.
 1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md).
 
-   Par exemple, [:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   Par exemple, [&#128279;](https://localhost:4502/system/console/configMgr).
 1. Recherchez **La Distribution Adobe Granite - Fournisseur Du Secret De Transport Du Mot De Passe Chiffré.**
 1. Sélectionnez la configuration existante à ouvrir pour modification (icône de crayon).
 
@@ -164,7 +171,7 @@ Pour configurer les données (chemins de nœud) à synchroniser :
 1. Connectez-vous avec des droits d’administrateur sur votre instance de publication.
 1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md).
 
-   Par exemple, [:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+   Par exemple, [&#128279;](https://localhost:4503/system/console/configMgr).
 
 1. Recherchez **Agent de distribution Apache Sling - Fabrique d’agents de file d’attente**.
 1. Sélectionnez la configuration existante à ouvrir pour modification (icône de crayon).
@@ -187,7 +194,7 @@ Pour assurer la synchronisation des membres :
 1. Connectez-vous avec des droits d’administrateur sur votre instance de publication.
 1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md).
 
-   Par exemple, [:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+   Par exemple, [&#128279;](https://localhost:4503/system/console/configMgr).
 
 1. Recherchez **Distribution Adobe Granite - Fabrique d’observateurs diff**.
 1. Sélectionnez la configuration existante à ouvrir pour modification (icône de crayon).
@@ -233,7 +240,7 @@ Pour synchroniser les abonnements, les abonnements et les notifications
 Sur chaque instance de publication AEM :
 
 1. Connectez-vous avec des droits d’administrateur.
-1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md). Par exemple, [:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md). Par exemple, [&#128279;](https://localhost:4503/system/console/configMgr).
 1. Recherchez **Listener de synchronisation des utilisateurs**.
 1. Sélectionnez la configuration existante à ouvrir pour modification (icône de crayon)
 
@@ -315,7 +322,7 @@ Pour vous assurer que les mises à jour sont correctement synchronisées entre l
 
 1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-   Par exemple, [:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+   Par exemple, [&#128279;](https://localhost:4503/system/console/configMgr).
 1. Recherchez le **Package de distribution Apache Sling - Fabrique de créateurs de packages Vault**
 
    Nom du créateur : socialpubsync-vlt.
@@ -380,7 +387,7 @@ Pour déboguer :
 1. Désactivez la synchronisation des utilisateurs :
 1. Sur l’instance d’auteur AEM, connectez-vous avec les droits d’administrateur.
 
-   1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md). Par exemple, [:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Accédez à la [console web](/help/sites-deploying/configuring-osgi.md). Par exemple, [&#128279;](https://localhost:4502/system/console/configMgr).
    1. Recherchez la configuration **Agent de distribution Apache Sling - Fabrique d’agents de synchronisation**.
    1. Désélectionnez la case **Activé**.
 
