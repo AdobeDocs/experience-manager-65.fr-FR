@@ -61,7 +61,7 @@ L’exemple de code suivant indique à quoi ressemble une page web qui contient 
             onload=assetAnalytics.core.assetLoaded(this)>
 
         <a
-            href="https://www.adobe.com"
+            href="https://www.adobe.com/fr"
 
             onclick="assetAnalytics.core.assetClicked(this);return false">
                 <img
@@ -109,7 +109,7 @@ Vous ajoutez le code intégré dans le corps du code de votre site web. Le fragm
             onload=assetAnalytics.core.assetLoaded(this)>
 
         <a
-            href="https://www.adobe.com"
+            href="https://www.adobe.com/fr"
 
             onclick="assetAnalytics.core.assetClicked(this);return false">
            <img
