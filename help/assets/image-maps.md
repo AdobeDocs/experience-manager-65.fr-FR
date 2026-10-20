@@ -44,7 +44,7 @@ Les zones cliquables permettent d’ajouter des zones de lien hypertexte qui fon
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Cliquez sur la zone réactive et saisissez l’URL et le texte de remplacement. Dans la liste **[!UICONTROL Cible]**, spécifiez l’emplacement où vous souhaitez que la zone cliquable s’affiche (par exemple, le même onglet, un nouvel onglet ou un iFrame). Saisissez par exemple `https://www.adobe.com` comme URL, `Adobe website` comme texte de remplacement et spécifiez **[!UICONTROL Nouvel onglet]** dans la liste **[!UICONTROL Cible]** pour que la zone cliquable s’ouvre dans un nouvel onglet.
+1. Cliquez sur la zone réactive et saisissez l’URL et le texte de remplacement. Dans la liste **[!UICONTROL Cible]**, spécifiez l’emplacement où vous souhaitez que la zone cliquable s’affiche (par exemple, le même onglet, un nouvel onglet ou un iFrame). Saisissez par exemple `https://www.adobe.com/fr` comme URL, `Adobe website` comme texte de remplacement et spécifiez **[!UICONTROL Nouvel onglet]** dans la liste **[!UICONTROL Cible]** pour que la zone cliquable s’ouvre dans un nouvel onglet.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 

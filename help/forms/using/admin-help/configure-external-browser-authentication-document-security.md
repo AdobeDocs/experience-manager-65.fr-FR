@@ -47,7 +47,7 @@ Avant de configurer l’authentification du navigateur externe, assurez-vous que
 
 >[!NOTE]
 >
-> L’authentification du navigateur externe nécessite une version prise en charge d’Adobe Acrobat ou de Adobe Acrobat Reader sur le client. Voir les [notes de mise à jour d’Acrobat (suivi continu de mars 2026)](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix) pour obtenir des informations sur les versions et les mises à jour.
+> L’authentification du navigateur externe nécessite une version prise en charge d’Adobe Acrobat ou de Adobe Acrobat Reader sur le client. Voir les [notes de mise à jour d’Acrobat (suivi continu de mars 2026)](https://www.adobe.com/fr/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix) pour obtenir des informations sur les versions et les mises à jour.
 
 ### Liens de distribution logicielle pour AEM Forms JEE Hotfix2 6.5.24.0 {#software-distribution-links}
 

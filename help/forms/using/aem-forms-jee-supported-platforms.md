@@ -648,7 +648,7 @@ Pour des conditions requises supplémentaires, voir :
 >
 >Adobe Acrobat 2020 (suivi classique) n’est pas pris en charge avec AEM Forms. Utilisez plutôt Adobe Acrobat Pro DC (Suivi continu, dernière version).
 >
->La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont des produits différents : « Classique » et « Continu ». Pour plus d’informations et une comparaison des deux suivis, voir [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+>La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont des produits différents : « Classique » et « Continu ». Pour plus d’informations et une comparaison des deux suivis, voir [https://www.adobe.com/fr/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/fr/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ## Clients pris en charge pour AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
 

@@ -51,8 +51,8 @@ Format de zone :
 
 Exemple :
 
-`[rect(0,0,10,10)"https://www.adobe.com"|"_self"|"alt"|(0,0,0.8,0.8)]`
-`[circle(10,10,10)"https://www.adobe.com"|"_self"|"alt"|(0.8,0.8,0.8)]`
+`[rect(0,0,10,10)"https://www.adobe.com/fr"|"_self"|"alt"|(0,0,0.8,0.8)]`
+`[circle(10,10,10)"https://www.adobe.com/fr"|"_self"|"alt"|(0.8,0.8,0.8)]`
 
 ## Prise en charge des images SVG {#support-for-svg-images}
 
