@@ -314,7 +314,7 @@ Tenez compte de ce point si vous envisagez d’utiliser cette étape dans le cad
 Lors de la mise à niveau de votre instance :
 
 * assurez-vous que tous les modèles de workflow personnalisés ont été sauvegardés avant la mise à niveau d’une instance.
-* vérifiez qu’aucun de vos workflows personnalisés n’est stocké dans l’[&#x200B; emplacement](#locations) :
+* vérifiez qu’aucun de vos workflows personnalisés n’est stocké dans l’[ emplacement](#locations) :
 
   * `/libs/settings/workflow/models/projects`
 
