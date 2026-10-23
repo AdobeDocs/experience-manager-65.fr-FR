@@ -161,7 +161,7 @@ Vérifiez le plan de requête pour vous assurer que la requête de référence s
    option (index tag aemformsAFReferences)
    ```
 
-1. Sélectionnez [!UICONTROL  Expliquer ]. Vérifiez que le plan utilise `lucene:customAFReferenceLuceneIndex-1` et `/oak:index/customAFReferenceLuceneIndex-1`, ou le nom d&#39;index de votre choix, pour les branches de la requête plutôt qu&#39;un plan de traversée. Pour plus d’informations, voir [Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query).
+1. Sélectionnez [!UICONTROL &#x200B; Expliquer &#x200B;]. Vérifiez que le plan utilise `lucene:customAFReferenceLuceneIndex-1` et `/oak:index/customAFReferenceLuceneIndex-1`, ou le nom d&#39;index de votre choix, pour les branches de la requête plutôt qu&#39;un plan de traversée. Pour plus d’informations, voir [Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query).
 1. Répétez l’opération de publication de fragment d’expérience qui a généré l’avertissement. Recherchez `error.log` nouveaux avertissements de traversée de `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider.resolvePathsToFindReferences`.
 
 Si le plan ne sélectionne pas l’index personnalisé, vérifiez la balise , la hiérarchie des `indexRules` et la définition de propriété `sling:resourceType` par rapport aux exemples ci-dessus. Pour un diagnostic plus approfondi, voir [Dépannage des index Oak](/help/sites-deploying/troubleshooting-oak-indexes.md).
