@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 9eee0eef3e19a4787b7104f470d35b4c98fd53db
 workflow-type: tm+mt
-source-wordcount: '7612'
+source-wordcount: '7677'
 ht-degree: 18%
 ---
 # Notes de mise à jour du dernier pack de services [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -617,6 +617,8 @@ Fragments de contenu : la prévisualisation échoue en raison de la protection�
 ### Problèmes connus d’AEM Forms {#known-issues-aem-forms-6525}
 
 * **FORMS-23722** Lorsqu’un formulaire contenant un champ **Pièce jointe** qui utilise `bindref` est envoyé à un workflow AEM avec une étape **Affecter une tâche**, les pièces jointes ne s’affichent pas. Par conséquent, ils n’apparaissent pas lorsque la tâche est ouverte à partir de la boîte de réception. Les fichiers sont correctement enregistrés dans le référentiel, mais l’interface utilisateur de l’étape Affecter une tâche ne parvient pas à afficher les pièces jointes.
+
+* **FORMS-28517** Lorsqu’un PDF signé numériquement est joint à une tâche dans AEM Forms JEE Workspace, le chargement reste bloqué en statut de chargement ou échoue avec une erreur « Fichier non valide ». Par conséquent, des pièces jointes PDF signées plus volumineuses ne peuvent pas être ajoutées à la tâche. Ce problème est corrigé dans une version ultérieure. Pour obtenir un correctif sur la version actuelle/existante, contactez l’assistance Adobe.
 
 #### Problèmes connus liés aux correctifs disponibles {#aem-forms-issues-with-hotfixes}
 
