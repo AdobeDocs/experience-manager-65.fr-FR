@@ -16,7 +16,7 @@ Créez un index Lucene balisé pour éviter les requêtes de traversée lorsque 
 
 Dans AEM Forms 6.5.24.0 et versions ultérieures, la requête de référence utilise la balise d’index `aemformsAFReferences`. Ces versions incluent la modification de la requête, mais vous devez créer un index personnalisé avec cette balise. Cet article explique comment définir et déployer l’index.
 
-Pour AEM Forms 6.5 LTS, voir [Création d’un index personnalisé pour les références de formulaires adaptatifs dans AEM Forms 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/install-aem-forms/configure-aem-forms/create-custom-index-for-adaptive-forms-references).
+Pour AEM Forms 6.5 LTS, voir [Création d’un index personnalisé pour les références de formulaires adaptatifs dans AEM Forms 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/install-aem-forms/configure-aem-forms/create-custom-index-for-adaptive-forms-references).
 
 ## Prérequis {#prerequisites}
 
