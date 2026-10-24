@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 9eee0eef3e19a4787b7104f470d35b4c98fd53db
 workflow-type: tm+mt
-source-wordcount: '7612'
+source-wordcount: '7677'
 ht-degree: 18%
 ---
 # Notes de mise à jour du dernier pack de services [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -79,7 +79,7 @@ Les fragments de contenu et l’API GraphQL bénéficient également d’amélio
   > * [Mettez à niveau JBoss EAP de la version 7.4.10 vers la version 7.4.23 pour AEM Forms sur JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) pour les environnements autonomes.
   > * [Mettez à niveau le cluster JBoss EAP de la version 7.4.10 vers la version 7.4.23 pour AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) pour les environnements de cluster.
 
-* **Invite d’informations d’identification du gestionnaire de configuration (LCM) en mode Express :** lorsque vous configurez AEM Forms sur JEE en mode Express, LCM vous invite à saisir les informations d’identification de l’administrateur AEM au lieu d’utiliser les valeurs par défaut. Cette modification est disponible via le [correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.25.0. Pour connaître les étapes de configuration, voir [Installation et déploiement d’AEM Forms 6.5 on JEE à l’aide de JBoss clé en main](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/install-turnkey.pdf). (FORMS-26365)
+* **Invite d’informations d’identification du gestionnaire de configuration (LCM) en mode Express :** lorsque vous configurez AEM Forms sur JEE en mode Express, LCM vous invite à saisir les informations d’identification de l’administrateur AEM au lieu d’utiliser les valeurs par défaut. Cette modification est disponible via le [correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.25.0. Pour connaître les étapes de configuration, voir [Installation et déploiement d’AEM Forms 6.5 on JEE à l’aide de JBoss clé en main](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-turnkey.pdf). (FORMS-26365)
 
 ## Correction de problèmes dans le pack de services 25 {#fixed-issues}
 
@@ -618,6 +618,8 @@ Fragments de contenu : la prévisualisation échoue en raison de la protection�
 
 * **FORMS-23722** Lorsqu’un formulaire contenant un champ **Pièce jointe** qui utilise `bindref` est envoyé à un workflow AEM avec une étape **Affecter une tâche**, les pièces jointes ne s’affichent pas. Par conséquent, ils n’apparaissent pas lorsque la tâche est ouverte à partir de la boîte de réception. Les fichiers sont correctement enregistrés dans le référentiel, mais l’interface utilisateur de l’étape Affecter une tâche ne parvient pas à afficher les pièces jointes.
 
+* **FORMS-28517** Lorsqu’un PDF signé numériquement est joint à une tâche dans AEM Forms JEE Workspace, le chargement reste bloqué en statut de chargement ou échoue avec une erreur « Fichier non valide ». Par conséquent, des pièces jointes PDF signées plus volumineuses ne peuvent pas être ajoutées à la tâche. Ce problème est corrigé dans une version ultérieure. Pour obtenir un correctif sur la version actuelle/existante, contactez l’assistance Adobe.
+
 #### Problèmes connus liés aux correctifs disponibles {#aem-forms-issues-with-hotfixes}
 
 Un correctif logiciel peut être téléchargé et installé pour les problèmes suivants. Pour résoudre ces problèmes, vous pouvez [télécharger et installer le correctif](/help/release-notes/aem-forms-hotfix.md) :
@@ -651,13 +653,13 @@ Les fichiers zip suivants contiennent les documents texte qui répertorient les 
 Ces sites web sont disponibles uniquement pour les clients et clientes. Si vous êtes client et avez besoin d’un accès, contactez votre gestionnaire de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] page produit](https://business.adobe.com/fr/products/experience-manager/adobe-experience-manager.html)
 >* Documentation [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65)
->* [S’abonner aux mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html)
+>* [S’abonner aux mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
