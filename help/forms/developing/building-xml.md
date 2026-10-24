@@ -1,22 +1,20 @@
 ---
-title: Comment utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML ?
+title: Comment utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML ?
 description: Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 361f0a5f2d1484cf594edfda73250c5690ed7cab
-workflow-type: ht
-source-wordcount: '1043'
+workflow-type: tm+mt
+source-wordcount: '1060'
 ht-degree: 100%
-
 ---
-
 # Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML {#using-execute-script-service-forms-jee-workbench}
 
 Il existe beaucoup de données XML associées aux workflows Process Management d’AEM Forms on JEE. Par exemple, les informations XML peuvent être créées dans un processus et envoyées à une application Flex dans un espace de travail AEM Forms on JEE , utilisées pour les paramètres du système ou pour transmettre des informations à et depuis des formulaires. Il existe de nombreux cas où un développeur d’AEM Forms on JEE doit gérer du XML, ce qui nécessite souvent que le XML soit géré via un processus AEM Forms on JEE.
 
-Lorsque vous utilisez des paramètres XML simples, vous pouvez utiliser le service `Set Value` par défaut d’AEM Forms on JEE. Ce service définit la valeur d’un ou plusieurs éléments de données dans le modèle de données de processus. Pour une logique conditionnelle simple « si ceci, alors cela », ce service peut répondre à l’objectif.
+Lorsque vous utilisez des paramètres XML simples, vous pouvez utiliser le service `Set Value` par défaut d’AEM Forms on JEE. Ce service définit la valeur d’un ou plusieurs éléments de données dans le modèle de données de processus. Pour une logique conditionnelle simple « si ceci, alors cela », ce service peut convenir.
 
 Cependant, dans des situations plus complexes, le service Set Value n’est pas aussi efficace. Dans ces situations, il faut s’appuyer sur un ensemble plus robuste de commandes de programmation, telles que celles fournies par un langage de programmation comme Java™. L’utilisation de Java™ pour créer du XML complexe peut s’avérer beaucoup plus facile et plus claire que la création d’un document XML à partir d’un texte simple dans le service Set Value. En outre, il est plus facile d’inclure la programmation conditionnelle dans Java™ que dans un service Set Value.
 
@@ -30,7 +28,7 @@ La création globale d’applications et de processus est hors de portée pour c
 
 1. Cliquez avec le bouton droit de la souris sur votre application et sélectionnez **[!UICONTROL Nouveau]**. Dans le menu déroulant **[!UICONTROL Nouveau]**, sélectionnez **[!UICONTROL Processus]**. Nommez votre processus, ajoutez une description si nécessaire, puis sélectionnez l’icône voulue pour représenter ce processus. Pour les besoins de ce tutoriel, nous avons créé un processus et l’avons appelé `executeScriptDemoProcess`.
 1. Définissez vos points de départ ou optez simplement pour l’ajout de vos points de départ ultérieurement.
-1. Le processus est maintenant créé et doit s’ouvrir automatiquement dans la fenêtre [!UICONTROL Conception de processus]. Dans cette fenêtre, cliquez sur l’icône de sélecteur d’activité en haut de la fenêtre Conception de processus et faites glisser la nouvelle activité sur la piste de navigation. À ce stade, la [!UICONTROL fenêtre Définir l’activité] doit apparaître (voir la figure ci-dessous).
+1. Le processus est maintenant créé et doit s’ouvrir automatiquement dans la fenêtre [!UICONTROL Conception de processus]. Dans cette fenêtre, cliquez sur l’icône de sélecteur d’activité en haut de la fenêtre Conception de processus et faites glisser la nouvelle activité sur le couloir. À ce stade, la [!UICONTROL fenêtre Définir l’activité] doit apparaître (voir la figure ci-dessous).
    ![Définir l’activité](assets/define-activity.jpg)
 1. Le service executeScript se trouve dans l’ensemble de services `Foundation`. Le nom Services répertorie l’objet sous la forme `Execute Script – 1.0` avec le nom d’opération `executeScript`. Cliquez pour sélectionner cet élément.
 1. Ce processus doit maintenant être créé et, par défaut, la fenêtre [!UICONTROL Propriétés du processus] s’affiche dans le volet de gauche.
@@ -44,7 +42,7 @@ Une fois le processus créé avec l’activité de service Execute Script défin
 1. Dans la zone de texte qui s’affiche, écrivez votre script. Une fois le script écrit, appuyez sur OK (voir la figure ci-dessous).
    ![Execute Script](assets/execute-script.jpg)
 
-## Créer du code XML à l’aide du service Execute Script {#create-xml-execute-script-service}
+## Créer du XML à l’aide du service Execute Script {#create-xml-execute-script-service}
 
 Une fois qu’un processus a été créé avec le service Execute Script inclus, il est possible d’utiliser ce script pour créer du code XML. Il est possible d’écrire les scripts décrits ci-dessous dans la zone de texte décrite dans la section Ajouter un script au processus avec la section Service `Execute Script` ci-dessus.
 
@@ -69,7 +67,7 @@ DocumentImpl est une sous-classe de NodeImpl. On peut donc supposer que toute va
 
 Consultez ci-après un exemple de création de fichier XML au sein d’un service Execute Script. Le processus comporte une variable de nœud qui est de type XML. Le résultat de cette activité est un document XML. Lʼutilité de ce document, ou son application au processus global, est hors de portée de ce tutoriel ; tout dépend de ce que doit accomplir le document XML dans lʼapplication globale. Comme mentionné en introduction, le document XML peut servir à de nombreuses fins dans les formulaires et processus d’AEM Forms sur JEE. Ce tutoriel se contente d’expliquer comment coder l’activité Execute Script afin de générer un simple document XML.
 
-Un script Java simple permettant de générer un document XML se présenterait comme suit :
+Un script JavaScript simple permettant de générer un document XML se présenterait comme suit :
 
 ```xml
 import org.apache.xerces.dom.DocumentImpl;
