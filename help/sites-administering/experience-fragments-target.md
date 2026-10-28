@@ -21,10 +21,10 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
 workflow-type: tm+mt
 source-wordcount: '1487'
-ht-degree: 100%
+ht-degree: 97%
 ---
 # Exporter des fragments d’expérience vers Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
@@ -42,7 +42,7 @@ Les fragments d’expérience AEM peuvent être exportés vers l’espace de tra
 >
 >[Les intégrations IMS sont désormais configurées avec OAuth S2S](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
 >
->Auparavant, les configurations étaient effectuées avec les [informations d’identification JWT désormais sujettes à l’obsolescence dans Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Les configurations précédentes ont été effectuées avec des informations d’identification JWT qui sont désormais susceptibles d’être obsolètes dans Adobe Developer Console.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Plusieurs actions sont requises :
    >
    >[Les intégrations IMS sont désormais configurées avec OAuth S2S](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
    >
-   >Auparavant, les configurations étaient effectuées avec les [informations d’identification JWT désormais sujettes à l’obsolescence dans Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+   >Les configurations précédentes ont été effectuées avec des informations d’identification JWT qui sont désormais susceptibles d’être obsolètes dans Adobe Developer Console.
 
 1. Les fragments d’expérience sont exportés à partir de l’instance de création AEM. Vous devez donc [Configurer l’externaliseur de liens d’AEM](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) sur l’instance de création pour vous assurer que toutes les références contenues dans le fragment d’expérience sont externalisées pour la diffusion web.
 
