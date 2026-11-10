@@ -20,10 +20,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+source-git-commit: 6fb39326f3a012bb7e774f65200feae143d2d30d
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 96%
+source-wordcount: '780'
+ht-degree: 83%
 ---
 # Préparation du contenu à traduire{#preparing-content-for-translation}
 
@@ -64,6 +64,14 @@ Pour créer la racine de langue, créez une page, puis utilisez le code de langu
 * `<language-code>`Le code de langue pris en charge est un code à deux lettres défini par la norme ISO-639-1, par exemple `en`.
 
 * `<language-code>_<country-code>` ou `<language-code>-<country-code>` Le code pays pris en charge est un code à deux lettres, en minuscules ou en majuscules, défini par la norme ISO-3166, par exemple `en_US`, `en_us`, `en_GB`, `en-gb`.
+
+>[!NOTE]
+>
+>Pour les installations AEM s’exécutant sur Java 17 ou Java 21, le mappage des paramètres régionaux Java par défaut utilise `he` pour l’hébreu, `yi` pour le yiddish et `id` pour l’indonésien au lieu des codes hérités `iw`, `ji` et `in`. Les dictionnaires i18n existants qui utilisent les codes hérités sont introuvables.
+>
+>Utilisez les codes actuels pour les racines de langue et les dictionnaires i18n : remplacez `iw` par `he`, `ji` par `yi` et `in` par `id`.
+>
+>Si vous devez conserver les codes hérités comme solution de compatibilité, définissez la propriété système Java `java.locale.useOldISOCodes` sur `true` lors du démarrage d’AEM, à l’aide de l’argument JVM `-Djava.locale.useOldISOCodes=true`. La propriété est en lecture seule au démarrage de l’exécution Java ; la modifier pendant l’exécution d’AEM n’a aucun effet.
 
 Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international.  Par exemple, la propriété Nom de la page racine de la copie linguistique française de l’exemple de site Geometrixx est définie sur `fr`. La propriété Nom est utilisée comme nom du nœud de page dans le référentiel et détermine donc le chemin d’accès de la page. (http://localhost:4502/content/geometrixx/fr.html)
 
