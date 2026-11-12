@@ -365,7 +365,7 @@ Amélioration : l’intégration d’Adobe Analytics à Adobe Experience Manager
 
 #### Plateforme{#foundation-platform-6526}
 
-* Le lien Aide situé dans le pied de page de la page de connexion d’AEM ouvre désormais une page de travail. Auparavant, le lien pointait vers une URL marketing.adobe.com qui n’existe plus. La configuration du pied de page utilise désormais l’URL [Documentation Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager). (NPR-44388)
+* Le lien Aide situé dans le pied de page de la page de connexion d’AEM ouvre désormais une page de travail. Auparavant, le lien pointait vers une URL marketing.adobe.com qui n’existe plus. La configuration du pied de page utilise désormais l’URL [Documentation Adobe Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager). (NPR-44388)
 * Amélioration : une demande de client a demandé l’API Microsoft Graph comme alternative à SMTP lorsqu’AEM envoie un e-mail. Le ticket a été résolu en tant que doublon, car un autre ticket implémente déjà le flux de l’API Graph. SMTP avec OAuth 2.0 reste disponible pour les clients qui doivent abandonner l’authentification de base SMTP. (GRANITE-57478)
 
 * Les chaînes de la boîte de dialogue Autorisations effectives s’alignent désormais correctement dans le navigateur **Outils** > **Général** > **Configuration**. Auparavant, une chaîne s’affichait hors ligne après que vous ayez sélectionné un dossier, cliqué sur Propriétés, puis sur Autorisations effectives. Les règles de mise en page mises à jour restaurent l’alignement. (CQ-4359166)
@@ -633,13 +633,13 @@ Les fichiers zip suivants contiennent les documents texte qui répertorient les 
 Ces sites web sont disponibles uniquement pour les clients et clientes. Si vous êtes client et avez besoin d’un accès, contactez votre gestionnaire de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] page produit](https://business.adobe.com/fr/products/experience-manager/adobe-experience-manager.html)
 >* Documentation [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65)
->* [S’abonner aux mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html)
+>* [S’abonner aux mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html)
 
 
 
