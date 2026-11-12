@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
+source-git-commit: 1c210b464a0da67ebe016cb3e78b2e94cf90549b
 workflow-type: tm+mt
-source-wordcount: '8303'
+source-wordcount: '8304'
 ht-degree: 95%
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 95%
 + Notes de mise à jour {#release-notes}
   + [Notes de mise à jour](/help/release-notes/release-notes.md)
   + Notes de mise à jour précédentes {#service-pack}
+    + [6.5.25](/help/release-notes/previous/6-5-25.md)
     + [6.5.24](/help/release-notes/previous/6-5-24.md)
     + [6.5.23](/help/release-notes/previous/6-5-23.md)
     + [6.5.22](/help/release-notes/previous/6-5-22.md)
@@ -185,7 +186,7 @@ ht-degree: 95%
       + [Tableau de bord des opérations](/help/sites-administering/operations-dashboard.md)
       + [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md)
       + [Récupération de l’espace mémoire du magasin de données](/help/sites-administering/data-store-garbage-collection.md)
-      + [des ressources de serveur à l’aide de la console JMX](/help/sites-administering/jmx-console.md)
+      + [Surveillance des ressources de serveur à l’aide de la console JMX](/help/sites-administering/jmx-console.md)
       + [Utilisation des journaux](/help/sites-administering/troubleshooting.md)
       + [Maintenance du journal d’audit dans AEM 6](/help/sites-administering/operations-audit-log.md)
       + [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md)
@@ -366,7 +367,7 @@ ht-degree: 95%
     + [Facultatif - Configuration de Dynamic Media en mode Scene7, Paramètres généraux](/help/assets/dm-general-settings.md)
     + [Facultatif - Configuration de Dynamic Media en mode Scene7, Configuration de la publication](/help/assets/dm-publish-settings.md)
     + [Dépannage de Dynamic Media en mode Scene7](/help/assets/troubleshoot-dms7.md)
-    + {hide-from-toc}[Configuration d’un compte d’alias de société Dynamic Media](/help/assets/dm-alias-account.md)
+    + {hide-from-toc}[Configurer un compte d’alias de société Dynamic Media](/help/assets/dm-alias-account.md)
     + [Configuration de Dynamic Media en mode hybride](/help/assets/config-dynamic.md)
     + [Migration de Dynamic Media en mode hybride vers Dynamic Media en mode S7](/help/assets/migrate-from-hybrid-to-dms7.md)
     + [Accessibilité dans Dynamic Media](/help/assets/accessibility-dm.md)
@@ -418,7 +419,7 @@ ht-degree: 95%
     + [Intégration de ressources avec le flux d’activités](/help/assets/extending-activity-stream.md)
     + [Extension de l’éditeur de ressources](/help/assets/asseteditorx.md)
     + [API HTTP [!DNL Assets]](/help/assets/mac-api-assets.md)
-    + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] &#x200B;](/help/assets/assets-api-content-fragments.md)
+    + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] ](/help/assets/assets-api-content-fragments.md)
     + [API GraphQL pour les fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
     + [Utilisation de l’IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
     + [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
@@ -446,14 +447,14 @@ ht-degree: 95%
     + [[!DNL Assets] et MediaLibrary](/help/assets/medialibrary.md)
     + [Utilisation de PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
     + [Configuration des restrictions de chargement](/help/assets/configuring-asset-upload-restrictions.md)
-    + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+    + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
     + [Intégration à  [!DNL InDesign Server]](/help/assets/indesign.md)
     + [Digital Rights Management dans Assets](/help/assets/drm.md)
     + [Utilisation du package de démonstration pour Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
     + [Configuration d’Adobe Asset Link](/help/assets/configure-asset-link.md)
     + [Génération de rendus FPO pour Adobe InDesign](/help/assets/configure-fpo-renditions.md)
     + [Bonnes pratiques relatives au format de fichier des ressources](/help/assets/assets-file-format-best-practices.md)
-    + [Bonnes pratiques pour surveiller les ressources](/help/assets/assets-monitoring-best-practices.md)
+    + [Bonnes pratiques relatives à la surveillance des ressources](/help/assets/assets-monitoring-best-practices.md)
     + [Prise en charge de Camera Raw](/help/assets/camera-raw.md)
     + [Détection du type MIME des ressources à l’aide d’Apache Tika](/help/assets/detect-asset-mime-type-with-tika.md)
     + [Bibliothèque de transcodage d’imagerie](/help/assets/imaging-transcoding-library.md)
@@ -891,9 +892,9 @@ ht-degree: 95%
     + [Modifiier le contenu de la page zéro avec Designer](/help/forms/using/changing-page-zero-content-designer.md)
     + Bonnes pratiques en matière d’accessibilité {#accessibility-best-practices}
       + {hide-from-toc}[Introduction](/help/forms/using/introduction-accessibility-forms-designer.md)
-      + {hide-from-toc}[Bonnes pratiques relatives à la création de formulaires](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
+      + {hide-from-toc}[Bonnes pratiques pour la création de formulaires](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
       + {hide-from-toc}[Techniques de test de l’accessibilité des formulaires](/help/forms/using/techniques-for-testing-form-accessibility.md)
-      + {hide-from-toc}[Correspondance entre directives et bonnes pratiques](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
+      + {hide-from-toc}[Mappage entre les directives et les bonnes pratiques](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
       + {hide-from-toc}[Liens utiles](/help/forms/using/useful-links-accessibility-forms-designer.md)
   + Personnaliser AEM Forms {#customize-aem-forms}
     + [Cadre d’apparence pour les formulaires adaptatifs et les formulaires HTML5](/help/forms/using/introduction-widgets.md)
@@ -1011,7 +1012,7 @@ ht-degree: 95%
       + [Configuration de l’authentification étendue à partir d’un navigateur externe pour Document Security](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md)
       + [Gestion des comptes d’utilisateur invités et locaux](/help/forms/using/admin-help/invited-local-user-accounts.md)
       + [Contrôle de l’accès à un document protégé par une politique](/help/forms/using/admin-help/controlling-access-policy-protected-documents.md)
-      + [e des événements](/help/forms/using/admin-help/monitoring-events.md)
+      + [Surveillance des événements](/help/forms/using/admin-help/monitoring-events.md)
       + [Création et gestion des politiques](/help/forms/using/admin-help/creating-policies.md)
       + [Utilisation des pages Web de Document Security](/help/forms/using/admin-help/using-document-security-web-pages.md)
       + [Créer et gérer les ensembles de politiques](/help/forms/using/admin-help/creating-policy-sets.md)
@@ -1234,7 +1235,7 @@ ht-degree: 95%
     + [Génération et utilisation de hachages dans des formulaires PDF dynamiques](/help/forms/developing/hashing-forms.md)
     + [Transmettre des informations d’identification à l’aide des en-têtes WS-Security](/help/forms/developing/passing-credentials.md)
   + Glossaire {#aem-forms-glossary}
-    + {hide-from-toc}[Glossaires &#x200B;](/help/forms/using/aem-forms-glossary.md)
+    + {hide-from-toc}[Glossaires AEM Forms](/help/forms/using/aem-forms-glossary.md)
 + IA dans AEM {#ai-in-aem}
   + [Vue d’ensemble](/help/ai-in-aem/overview.md)
   + Assistant IA {#ai-assistant}
@@ -1610,7 +1611,7 @@ ht-degree: 95%
       + [Résolution des problèmes liés à la réplication](/help/sites-deploying/troubleshoot-rep.md)
       + [Expiration des objets statiques](/help/sites-deploying/expiration-static-objects.md)
       + [Purge de version](/help/sites-deploying/version-purging.md)
-      + [Surveillance et maintenance de votre instance AEM](/help/sites-deploying/monitoring-and-maintaining.md)
+      + [Surveillance et maintien de votre instance AEM](/help/sites-deploying/monitoring-and-maintaining.md)
       + [Tâches de déchargement](/help/sites-deploying/offloading.md)
       + [Mappage de ressource](/help/sites-deploying/resource-mapping.md)
       + [Vérifications de traversée et contrôles de cohérence](/help/sites-deploying/consistency-check.md)
