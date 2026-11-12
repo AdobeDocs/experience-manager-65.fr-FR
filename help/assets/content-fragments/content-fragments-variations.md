@@ -19,9 +19,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2078'
 ht-degree: 100%
 ---
 # Variations – créer du contenu de fragment{#variations-authoring-fragment-content}
@@ -42,8 +42,6 @@ Vous pouvez effectuer diverses autres actions selon le type de données que vous
 * [Chargement du contenu](#uploading-content)
 
 * [Affichage des statistiques clés](#viewing-key-statistics) (à propos du texte sur plusieurs lignes)
-
-* [Création d’un résumé de texte](#summarizing-text)
 
 * [Synchronisation des variations avec le contenu maître](#synchronizing-with-master)
 
@@ -112,8 +110,6 @@ Les actions suivantes sont également disponibles (pour tous les [formats](#form
 * [Affichage des statistiques de texte](#viewing-key-statistics)
 
 * [Synchronisation avec le gabarit](#synchronizing-with-master) (lors de la modification d’une variation)
-
-* [Création d’un résumé de texte](#summarizing-text)
 
 ### Formats {#formats}
 
@@ -228,60 +224,6 @@ Par exemple :
 ### Chargement de contenu {#uploading-content}
 
 Pour simplifier le processus de création de fragments de contenu, vous pouvez charger du texte préparé dans un éditeur externe et l’ajouter directement au fragment.
-
-### Résumé de texte {#summarizing-text}
-
-Le résumé de texte a été conçu pour permettre aux utilisateurs et utilisatrices de réduire la longueur de leur texte à un nombre prédéfini de mots tout en conservant les éléments clés et la signification globale.
-
->[!NOTE]
->
->À un niveau plus technique, le système conserve les phrases qu’il évalue comme ayant le *meilleur rapport de densité et d’unicité des informations* selon des algorithmes spécifiques.
-
->[!CAUTION]
->
->Le fragment de contenu doit posséder un dossier de langue valide (code ISO) en tant qu’ancêtre ; celui-ci permet de déterminer le modèle de langue à utiliser.
->
->Par exemple, `en/` comme dans le chemin d’accès suivant :
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->L’anglais est disponible par défaut.
->
->D’autres langues sont disponibles en tant que packages de modèle de langue à partir du partage de modules :
->
->* [Français (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Allemand (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italien (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Espagnol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. Sélectionnez **Principal** ou la variation requise.
-1. Ouvrez l’éditeur plein écran.
-
-1. Sélectionnez **Résumer le texte** dans la barre d’outils.
-
-   ![récapitulation](assets/cfm-variations-05.png)
-
-1. Indiquez le nombre cible de mots et sélectionnez **Démarrer** :
-1. Le texte original s’affiche côte à côte avec la synthèse proposée :
-
-   * Toutes les phrases à éliminer sont surlignées en rouge et barrées.
-   * Cliquez sur une phrase en surbrillance si vous souhaitez la conserver dans le contenu résumé.
-   * Cliquez sur une phrase non mise en surbrillance si vous souhaitez l’éliminer.
-
-1. Sélectionnez **Résumer** pour confirmer les modifications.
-
-1. Le texte original s’affiche côte à côte avec la synthèse proposée :
-
-   * Toutes les phrases à éliminer sont surlignées en rouge et barrées.
-   * Cliquez sur une phrase en surbrillance si vous souhaitez la conserver dans le contenu résumé.
-   * Cliquez sur une phrase non mise en surbrillance si vous souhaitez l’éliminer.
-   * Les statistiques de synthèse s’affichent : **Réel** et **Cible**-
-   * Vous pouvez **prévisualiser** les modifications.
-
-   ![comparaison des résumés](assets/cfm-variations-06.png)
 
 ### Annotation d’un fragment de contenu {#annotating-a-content-fragment}
 
