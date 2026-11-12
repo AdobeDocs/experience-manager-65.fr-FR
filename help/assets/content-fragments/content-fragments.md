@@ -19,9 +19,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2361'
 ht-degree: 84%
 ---
 # Utilisation de fragments de contenu {#working-with-content-fragments}
@@ -269,7 +269,7 @@ Les ressources de fragment de contenu se composent des parties suivantes (direct
   * Peuvent être définies lors de la création de fragments.
   * Stockées dans le fragment, afin d’éviter l’éparpillement des copies de contenu.
   * Les variations peuvent être [synchronisées](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) par Principal si le contenu du Principal a été mis à jour.
-  * Peuvent être [résumées](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) afin de tronquer rapidement le texte sur une longueur prédéfinie.
+
   * Disponibles sous l’onglet [Variations](/help/assets/content-fragments/content-fragments-variations.md) de l’éditeur de fragment.
 
 ### Contenu intermédiaire lors de la création de page avec des fragments de contenu {#in-between-content-when-page-authoring-with-content-fragments}
@@ -343,7 +343,7 @@ Les modèles trop complexes génèrent des fragments trop complexes qui peuvent 
 
 ### Champs de texte enrichi {#rich-text-fields}
 
-Utilisez les champs de texte enrichi (le type de données **texte multiligne**) avec précaution :
+Utilisez les champs de texte enrichi (le type de données **Texte multiligne**) avec considération :
 
 * Champs
 
