@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 56b13809475a59f188750b86503e316e69171fe1
+source-git-commit: b910e5ac8537f465d7cab85670de8557c2529a32
 workflow-type: tm+mt
-source-wordcount: '7273'
+source-wordcount: '7369'
 ht-degree: 15%
 ---
 # Notes de mise à jour du dernier pack de services [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -48,7 +48,6 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 | Date | 12 Novembre 2026 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-
 <!-- REWRITE AI GENERATED SUMMARY OF NOTES BELOW FOR EACH NEW SERVICE PACK RELEASE -->
 
 Experience Manager 6.5.26.0 comprend de nouvelles fonctionnalités, des améliorations importantes demandées par les clients et les clientes, ainsi que des correctifs de bugs. Elle comprend également des améliorations en matière d’accessibilité, de localisation, de performances, de stabilité et de sécurité, reposant sur la version 6.5 Foundation disponible depuis avril 2019.
@@ -62,6 +61,13 @@ Les principaux points forts du pack de services 26 sont les suivants :
 * Fiabilité. Correction des conflits de verrouillage GraphQL sur les instances de publication, les déploiements MSM, les actions de la barre d’outils de l’éditeur de texte enrichi et l’activation de pages dans l’interface utilisateur classique.
 * Analytics. L’intégration de Launch utilise l’API Adobe Analytics 2.0 avant la fin de vie d’Analytics 1.4 le 31 août 2026.
 
+>[!IMPORTANT]
+>
+>Adobe fournit des Service Packs trimestriels pour AEM 6.5 LTS, avec une stratégie de correctif de sécurité cumulatif pour les Service Packs pris en charge afin de s’adapter à la fréquence des mises à jour dans ce domaine.
+>
+> Pour ceux qui utilisent AEM 6.5 classique, le pack de services 26 offre la continuité, tandis que l’assistance et la maintenance se poursuivent via le flux de travail LTS d’AEM 6.5. La prise en charge standard (février 2027) et étendue (février 2028) couvre le pack de services 26, qui reçoit uniquement des correctifs de sécurité.
+>
+>Adobe propose des ressources pour vous aider à effectuer la transition vers AEM 6.5 LTS ou AEM as a Cloud Service et à utiliser les dernières innovations d’IA pour augmenter la productivité et optimiser pour les nouvelles audiences.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -87,26 +93,26 @@ Les principaux points forts du pack de services 26 sont les suivants :
 
 * L’iframe ContextHub dans l’éditeur de page dispose désormais d’un attribut de titre descriptif. Auparavant, l’élément `contexthub-ui-iframe` n’avait pas de titre. Par conséquent, les utilisateurs d’un lecteur d’écran ne l’ont pas identifié lorsque le focus s’est déplacé vers celui-ci. Le titre apparaît désormais sur chaque page et affichage de l’éditeur, y compris la zone de travail, le rail latéral et l’aperçu de la disposition. (SITES-24650)
 * Le bouton Filtres du rail de filtres de la console Sites n’ajoute pas de libellés visibles au-dessus des champs Recherches enregistrées et Sélectionner le répertoire de recherche . Un audit a révélé que les libellés s’affichaient lorsque le focus quittait le bouton, lorsqu’une touche était enfoncée ou lorsque l’utilisateur cliquait sur le bouton. Les tests n’ont pas permis de reproduire le comportement, aucune modification n’a donc été nécessaire. (SITES-24706)
-* Les liens dans la console Sites de navigation de l’application se démarquent désormais plus clairement. Le texte du lien répondait au rapport de contraste de 4,5:1, mais l’épaisseur réduite de la police et la petite taille rendaient les liens difficiles à voir. Un poids de police plus élevé et une taille plus grande facilitent la lecture du texte pour les utilisateurs ayant une déficience visuelle. (SITES-24723)
+* Les liens dans la navigation de l’application de la console Sites sont désormais plus visibles. Le texte du lien répondait au rapport de contraste de 4,5:1, mais l’épaisseur réduite de la police et la petite taille rendaient les liens difficiles à voir. Un poids de police plus élevé et une taille plus grande facilitent la lecture pour les utilisateurs malvoyants. (SITES-24723)
 * Les lecteurs d’écran n’annoncent plus « vide » avant le contenu de l’info-bulle dans la boîte de dialogue modale Préférences utilisateur. Auparavant, l’icône d’informations utilisait `role="tooltip"` avec une référence `aria-labelledby`. NVDA lisait donc d’abord un libellé vide. L’icône utilise désormais `role="button"` et un `aria-label` d’« informations », et la modification s’applique aux composants de formulaire Coral qui partagent le modèle. (SITES-24732)
-* Le bouton Supprimer de la boîte de dialogue modale Supprimer répond désormais à l’exigence de contraste de 4.5:1 du WCAG 1.4.3. Auparavant, le texte blanc sur arrière-plan rouge donnait un rapport de 3,9:1 une fois que les auteurs avaient sélectionné un élément et cliqué sur Supprimer dans la barre d’outils Action. La couleur plus foncée du bouton rend le libellé lisible par les auteurs ayant une déficience visuelle. (SITES-24772)
+* Le bouton Supprimer de la boîte de dialogue modale Supprimer répond désormais à l’exigence de contraste de 4.5:1 du WCAG 1.4.3. Auparavant, le texte blanc sur arrière-plan rouge donnait un rapport de 3,9:1 une fois que les auteurs avaient sélectionné un élément et cliqué sur Supprimer dans la barre d’outils Action. La couleur plus foncée du bouton rend l’étiquette lisible par les auteurs malvoyants. (SITES-24772)
 * L’en-tête Références du rail Références de la console Sites utilise désormais un élément d’en-tête au lieu d’un `div`. Auparavant, les lecteurs d’écran ne pouvaient pas annoncer le texte comme en-tête, de sorte que les utilisateurs ne pouvaient pas naviguer par en-têtes. L’en-tête s’affiche également en haut de la vue des références initiale. (SITES-24967)
 * L’indicateur de focus des boutons d’accordéon dans le rail de filtre de la console Sites répond désormais à l’exigence de contraste de la version 3:1 de WCAG 1.4.11. Auparavant, l’indicateur bleu affichait un rapport de 2,3:1 en arrière-plan, ce qui rendait difficile la recherche du bouton d’accordéon Balises pour les utilisateurs d’un clavier. La couleur mise à jour donne aux utilisateurs du clavier une indication de mise au point claire. (SITES-24986)
 * L’indicateur de focus des boutons radio dans le rail de filtrage de la console Sites répond désormais à l’exigence de contraste de la version 3:1 de WCAG 1.4.11. Auparavant, l&#39;indicateur bleu clair affichait un rapport de 1,7:1 sur le fond. Les utilisateurs du clavier peuvent désormais suivre leur position dans l’accordéon Date de modification . (SITES-24987)
 * Le bouton Sélectionner en regard des champs Chemin d’accès et Balises dans le rail latéral de l’éditeur de page n’utilise plus d’icône de case à cocher. Auparavant, l’icône suggérait un bouton (bascule), mais l’activation du bouton a ouvert une boîte de dialogue modale contenant l’annuaire d’arborescences. Le bouton Sélectionner communique désormais correctement sa fonction, de même que les modèles Image et Teaser . (SITES-25210)
 * Les lecteurs d’écran ignorent désormais les miniatures des ressources dans le rail latéral de l’éditeur de page. Auparavant, chaque image comportait un texte secondaire qui dupliquait le nom de la ressource visible. Les utilisateurs entendaient donc le même texte deux fois. Un attribut `alt` vide marque l’image comme décorative et conserve le nom dans le titre de la carte. (SITES-25213)
 * Les lecteurs d’écran reconnaissent la liste Composants du rail latéral sous la forme d’une liste. Un audit a signalé les éléments comme n’étant pas liés, mais les tests ont confirmé que le balisage utilise un élément de liste et des éléments de liste. Aucun changement de code n’était nécessaire. (SITES-25214)
-* Les icônes d’informations des composants dans le rail latéral de l’éditeur de page sont plus grandes et plus faciles à voir. Auparavant, les icônes utilisaient la taille très réduite d’environ 12 px, que les utilisateurs ayant une déficience visuelle avaient du mal à voir. Les icônes utilisent désormais la taille moyenne.(SITES-25217)
-* L’indicateur de focus sur le bouton Échantillon dans la boîte de dialogue modale d’annotation se distingue désormais du bouton. Auparavant, l’indicateur correspondait à la couleur d’échantillon. Il était donc difficile pour les utilisateurs d’un clavier de voir quel bouton avait le focus. Un décalage donne à l&#39;indicateur un contraste suffisant par rapport à l&#39;arrière-plan et le rend clairement visible. (SITES-25253)
+* Les icônes d’informations des composants dans le rail latéral de l’éditeur de page sont plus grandes et plus faciles à voir. Auparavant, les icônes utilisaient la taille très réduite d’environ 12 px, que les utilisateurs malvoyants avaient du mal à voir. Les icônes utilisent désormais la taille moyenne.(SITES-25217)
+* L’indicateur de focus sur le bouton Échantillon dans la boîte de dialogue modale Annotation est désormais clairement distingué du bouton . Auparavant, l’indicateur correspondait à la couleur d’échantillon. Il était donc difficile pour les utilisateurs d’un clavier de voir quel bouton avait le focus. Un décalage donne à l&#39;indicateur un contraste suffisant par rapport à l&#39;arrière-plan et le rend clairement visible. (SITES-25253)
 * Le champ Date de la fenêtre modale Timewarp ne contient plus `aria-haspopup="dialog"`. Auparavant, les lecteurs d’écran annonçaient que le champ ouvrait une boîte de dialogue, même si ce n’est pas le cas. La suppression de l’attribut donne aux utilisateurs de lecteurs d’écran des informations précises. (SITES-25263)
 * Les libellés de texte de la barre d’outils Démographie, tels que « Recommandé », répondent désormais à l’exigence de contraste de WCAG 1.4.3 de 4,5:1. Auparavant, le texte gris sur un arrière-plan gris foncé donnait un rapport de 2,8:1 en mode Aperçu. Le texte plus foncé ou plus clair, selon l’arrière-plan, rend chaque étiquette lisible. (SITES-25307)
 * L’indicateur de focus sur les boutons Commerce, Persona et Appareil de la barre d’outils Démographie répond désormais à l’exigence de contraste de la version 3:1 du WCAG 1.4.11. Auparavant, l’indicateur affichait un rapport de 1,9:1 par rapport à l’arrière-plan de la barre d’outils. Utilisez le clavier pour suivre leur position. (SITES-25308)
-* Le texte que les auteurs saisissent dans les champs de texte de la barre d’outils Démographie répond désormais à l’exigence de contraste de WCAG 1.4.3 de 4.5:1. Auparavant, le texte blanc sur arrière-plan gris produisait un rapport de 2,9:1 dans les champs, tels que le champ `displayName` de la liste déroulante Profil en mode Aperçu. Les couleurs mises à jour rendent les valeurs saisies lisibles pour les auteurs ayant une déficience visuelle. (SITES-25318)
+* Le texte que les auteurs saisissent dans les champs de texte de la barre d’outils Démographie répond désormais à l’exigence de contraste de WCAG 1.4.3 de 4.5:1. Auparavant, le texte blanc sur arrière-plan gris produisait un rapport de 2,9:1 dans les champs, tels que le champ `displayName` de la liste déroulante Profil en mode Aperçu. Les couleurs mises à jour rendent les valeurs saisies lisibles pour les auteurs malvoyants. (SITES-25318)
 * Les lecteurs d’écran lisent désormais l’info-bulle de description lorsque le focus atteint les cases à cocher dans les boîtes de dialogue Teaser, Image et Carrousel. Auparavant, le texte n’était pas associé par programmation à la case à cocher, de sorte que les utilisateurs ne pouvaient pas entendre l’instruction. Un attribut `aria-describedby` lie désormais chaque case à cocher à sa description. (SITES-25364)
 * Les lecteurs d’écran indiquent désormais quel bouton Formats de paragraphe est actif dans l’éditeur de texte enrichi. Auparavant, la sélection d’une option dans la liste ne donnait aucune indication sur le choix actuel pour la technologie d’assistance. Le bouton actif contient désormais `aria-current="true"`, et l’option Cible de l’hyperlien actif contient `aria-selected="true"`. (SITES-25367)
-* Les boutons Trier dans l’en-tête du tableau de la vue Liste de la console Sites répondent désormais à l’exigence de contraste de la version 3:1 du WCAG 1.4.11. Auparavant, les icônes gris clair affichaient un rapport de 1,5:1 sur l’arrière-plan de l’en-tête. La couleur plus foncée de l’icône rend les boutons visibles par les créateurs et créatrices ayant une déficience visuelle. (SITES-25372)
+* Les boutons Trier dans l’en-tête du tableau de la vue Liste de la console Sites répondent désormais à l’exigence de contraste de la version 3:1 du WCAG 1.4.11. Auparavant, les icônes gris clair affichaient un rapport de 1,5:1 sur l’arrière-plan de l’en-tête. La couleur plus foncée de l’icône rend les boutons visibles par les personnes malvoyantes. (SITES-25372)
 * L’onglet Assets du rail latéral de l’éditeur de page ne se recharge plus lorsque le focus se déplace vers le champ Filtre . Auparavant, le fait de tabuler dans le champ vide déclenchait un rechargement et les lecteurs d’écran annonçaient un message de chargement à chaque fois. L’onglet se recharge uniquement après avoir modifié la valeur du filtre et appuyé sur Entrée. (SITES-25377)
-* L’icône d’échantillon sélectionnée dans la boîte de dialogue modale d’annotation répond désormais à l’exigence de contraste de 3:1 de WCAG 1.4.11. Auparavant, la coche blanche affichait un rapport aussi faible que 1,58:1 par rapport aux échantillons jaunes, orange et verts. L’icône mise à jour fournit aux auteurs ayant une déficience visuelle un indicateur clair. (SITES-25523)
+* L’icône d’échantillon sélectionnée dans la boîte de dialogue modale d’annotation répond désormais à l’exigence de contraste de 3:1 de WCAG 1.4.11. Auparavant, la coche blanche affichait un rapport aussi faible que 1,58:1 par rapport aux échantillons jaunes, orange et verts. L’icône mise à jour fournit aux auteurs malvoyants un indicateur clair. (SITES-25523)
 * La liste Composants du panneau latéral de l’éditeur de page n’utilise plus le focus du clavier. Utiliser un clavier pour sélectionner et déplacer des composants avec les commandes de la fenêtre de contenu ; la liste du panneau latéral a donc répété la fonction. Une note sous le filtre de composant indique aux utilisateurs du clavier où trouver les commandes. (SITES-40752)
 
 
@@ -365,7 +371,7 @@ Amélioration : l’intégration d’Adobe Analytics à Adobe Experience Manager
 
 #### Plateforme{#foundation-platform-6526}
 
-* Le lien Aide situé dans le pied de page de la page de connexion d’AEM ouvre désormais une page de travail. Auparavant, le lien pointait vers une URL marketing.adobe.com qui n’existe plus. La configuration du pied de page utilise désormais l’URL [Documentation Adobe Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager). (NPR-44388)
+* Le lien Aide situé dans le pied de page de la page de connexion d’AEM ouvre désormais une page de travail. Auparavant, le lien pointait vers une URL marketing.adobe.com qui n’existe plus. La configuration du pied de page utilise désormais l’URL [Documentation Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager). (NPR-44388)
 * Amélioration : une demande de client a demandé l’API Microsoft Graph comme alternative à SMTP lorsqu’AEM envoie un e-mail. Le ticket a été résolu en tant que doublon, car un autre ticket implémente déjà le flux de l’API Graph. SMTP avec OAuth 2.0 reste disponible pour les clients qui doivent abandonner l’authentification de base SMTP. (GRANITE-57478)
 
 * Les chaînes de la boîte de dialogue Autorisations effectives s’alignent désormais correctement dans le navigateur **Outils** > **Général** > **Configuration**. Auparavant, une chaîne s’affichait hors ligne après que vous ayez sélectionné un dossier, cliqué sur Propriétés, puis sur Autorisations effectives. Les règles de mise en page mises à jour restaurent l’alignement. (CQ-4359166)
@@ -428,7 +434,7 @@ Amélioration : l’éditeur de page de l’interface utilisateur tactile effect
 
 >[!NOTE]
 >
->La boîte de dialogue de l’interface utilisateur du gestionnaire de packages se ferme parfois pendant l’installation du pack de services. Adobe vous conseille d’attendre que les journaux d’erreurs cessent de changer avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation du lot de mise à jour avant de confirmer que l’installation est réussie. Ce problème se produit dans le navigateur [!DNL Safari], mais peut parfois se produire dans n’importe quel navigateur.
+>La boîte de dialogue de l’interface utilisateur du gestionnaire de packages se ferme parfois pendant l’installation du pack de services. Adobe vous conseille d’attendre que les journaux d’erreurs cessent d’être mis à jour avant d’accéder au déploiement . Attendez les journaux spécifiques liés à la désinstallation du lot de mise à jour avant de confirmer que l’installation est réussie. Ce problème se produit dans le navigateur [!DNL Safari], mais peut parfois se produire dans n’importe quel navigateur.
 
 **Installation automatique**
 
@@ -488,7 +494,7 @@ Pour utiliser UberJar dans un projet Maven, consultez la section [Utilisation d�
 
 >[!NOTE]
 >
->UberJar et les autres artefacts associés sont disponibles sur le référentiel central Maven au lieu du référentiel Maven public Adobe (`repo.adobe.com`). Le fichier UberJar principal est renommé `uber-jar-<version>.jar`. Il n’existe donc pas de `classifier` avec `apis` comme valeur pour la balise `dependency`.
+>UberJar et les autres artefacts associés sont disponibles sur le référentiel central Maven au lieu du référentiel Maven public Adobe (`repo.adobe.com`). Le fichier UberJar principal est renommé `uber-jar-<version>.jar`. Il n’y a pas de `classifier` avec `apis` comme valeur pour la balise `dependency`.
 
 
 
@@ -564,7 +570,7 @@ Les éditeurs privilégiés pour la gestion du contenu découplé dans AEM sont 
 
   Une fois la définition d’index modifiée, une réindexation est nécessaire (`reindex` = `true`).
 
-  Après ces étapes, les requêtes GraphQL s’exécutent à une vitesse améliorée.
+  Après ces étapes, les requêtes GraphQL s’exécutent plus rapidement.
 
 * Lorsque vous tentez de déplacer, de supprimer ou de publier des fragments de contenu, des sites ou des pages, un problème se produit lorsque les références aux fragments de contenu sont récupérées. La requête en arrière-plan échoue ; la fonctionnalité ne fonctionne pas.
 Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les propriétés suivantes au nœud de définition d’index `/oak:index/damAssetLucene` (aucune réindexation n’est requise) :
@@ -588,7 +594,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
   * La zone réactive d’une image interactive de Dynamic Media n’est pas visible lors de la prévisualisation du fichier via la visionneuse de bannières avec achat.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : temporisation en attente de modification d’enregistrement pour terminer la désinscription.
 
-* À partir de la version 6.5.15 d’AEM, le moteur JavaScript Rhino fourni par le bundle `org.apache.servicemix.bundles.rhino` a un nouveau comportement d’hébergement. Les scripts qui utilisent le mode strict (`use strict;`) doivent déclarer leurs variables correctes. Dans le cas contraire, elles ne sont pas exécutées et finissent par générer une erreur d’exécution.
+* À partir de la version 6.5.15 d’AEM, le moteur JavaScript Rhino fourni par le bundle `org.apache.servicemix.bundles.rhino` a un nouveau comportement d’hébergement. Les scripts qui utilisent le mode strict (`use strict;`) doivent déclarer leurs variables correctes. Sinon, ils ne s’exécutent pas et finissent par générer une erreur d’exécution.
 
 * L&#39;installation du contenu standard associé au balisage par le biais d&#39;un package de mise à jour officiel réinitialise la propriété de langues du nœud `/content/cq:tags` sur la valeur par défaut. Cette action est vraie pour les packs de services, les packs de services de sécurité, les packs de fonctionnalités étendues, les packs de fonctionnalités cumulatives, les correctifs, etc. Par conséquent, il est nécessaire de l’ajouter aux propriétés avant l’installation.
 
@@ -633,13 +639,13 @@ Les fichiers zip suivants contiennent les documents texte qui répertorient les 
 Ces sites web sont disponibles uniquement pour les clients et clientes. Si vous êtes client et avez besoin d’un accès, contactez votre gestionnaire de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] page produit](https://business.adobe.com/fr/products/experience-manager/adobe-experience-manager.html)
 >* Documentation [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65)
->* [S’abonner aux mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html)
+>* [S’abonner aux mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
