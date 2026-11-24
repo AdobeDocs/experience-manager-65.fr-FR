@@ -21,10 +21,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: ed215ea94e2db8589da7734dd4533fb0e55043d4
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 92%
+source-wordcount: '2293'
+ht-degree: 86%
 ---
 # Instructions d’installation pour le pack de services AEM 6.5 Forms {#aem-form-patch-installation-instructions}
 
@@ -154,9 +154,19 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 >* Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 >* Pour le [correctif permettant d’atténuer les vulnérabilités du framework Spring pour AEM Forms on JEE](/help/release-notes/aem-forms-hotfix.md), lors d’un déploiement dans un environnement de cluster, il est essentiel de s’assurer que les services de localisation démarrent à l’aide de JDK 17.
 
+### Contournement de l’échec de validation de la topologie WebLogic {#weblogic-topology-validation}
+
+Sur WebLogic avec le pack de services 136 d’AEM Forms on JEE Service Pack 26, l’étape Configuration Manager (LCM) `validateApplicationServerTopology` échoue en mode interface utilisateur graphique et interface de ligne de commande. Si vous rencontrez ce problème, appliquez la solution manuelle suivante. (FORMS-30037)
+
+1. Téléchargez [`forms-security-commons-1.0.6.jar`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/forms-security-commons-1.0.6.jar) à partir de la distribution logicielle.
+1. Placez le fichier JAR dans le répertoire `configurationManager/lib` sous votre répertoire d’installation AEM Forms. Par exemple, sous Windows, le chemin d’accès est `C:\Adobe\Adobe_Experience_Manager_Forms\configurationManager\lib` ; utilisez votre répertoire d’installation réel s’il est différent.
+1. Dans le répertoire Configuration Manager `bin`, modifiez `ConfigurationManager.bat` (Windows) ou `ConfigurationManager.sh` (Unix/Linux). Ajoutez le chemin d&#39;accès complet de `forms-security-commons-1.0.6.jar` au chemin de classe existant, en conservant toutes les entrées de chemin de classe existantes.
+1. Redémarrez Configuration Manager en mode interface utilisateur graphique ou interface de ligne de commande à l’aide du lanceur modifié.
+1. Réexécutez `validateApplicationServerTopology` et vérifiez que la validation de la topologie est terminée avec succès.
+
 +++
 
-+++&#x200B;5. Installer le fragment de servlet s’il n’est pas installé (**étape obligatoire**)
++++&#x200B;5. Installer le fragment de servlet s’il n’est pas installé (**Étape obligatoire**)
 
 <!--
    >[!NOTE]
