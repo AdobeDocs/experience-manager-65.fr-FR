@@ -22,10 +22,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1695a13865ac21e7827e36bccb67a2f877c42c1a
 workflow-type: tm+mt
-source-wordcount: '10825'
-ht-degree: 95%
+source-wordcount: '11350'
+ht-degree: 91%
 ---
 # Installer et configurer des services de document {#installing-and-configuring-document-services}
 
@@ -200,7 +200,7 @@ Si vous utilisez un système d’exploitation UNIX, installez les packages 32 b
   * libexpat.so.1
 * (PDF Generator uniquement) Pour activer l’itinéraire WebKit sur les configurations RHEL 8 ou RHEL 9, SLES15, la bibliothèque `nspr` 32 bits peut ne pas être disponible par défaut ; installez-la si elle n’est pas présente.
 
-* Sous Red Hat® Enterprise Linux® 9, la version 32 bits d’OpenOffice nécessite `libcrypt.so.1`, qui n’est pas installé par défaut. S’il est manquant, OpenOffice ne démarre pas avec le `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` d’erreur et les conversions OpenOffice en PDF échouent. Installez le package `libxcrypt-compat` (32 bits) pour fournir la bibliothèque :
+* Sous Red Hat® Enterprise Linux® 9, la version 32 bits d’OpenOffice nécessite `libcrypt.so.1`, qui n’est pas installé par défaut. S’il est manquant, OpenOffice ne parvient pas à démarrer avec l’erreur `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` et les conversions OpenOffice en PDF échouent. Installez le package `libxcrypt-compat` (32 bits) pour fournir la bibliothèque :
 
   `sudo dnf install -y libxcrypt-compat.i686`
 
@@ -234,7 +234,7 @@ Si vous prévoyez d’utiliser le service PDF Generator pour convertir des form
 
 ### Installer Adobe Acrobat Pro DC {#install-adobe-acrobat-pro-dc}
 
-Pour connaître les produits et versions Acrobat pris en charge pour PDF Generator, consultez [Considérations relatives à PDF Generator](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) dans l’article Plateformes prises en charge par AEM Forms sur JEE . Les procédures de cette section décrivent les licences à utilisation restreinte (FRL) pour **Adobe Acrobat Pro DC**.
+Pour connaître les produits et versions Acrobat pris en charge pour PDF Generator, consultez les [Considérations pour PDF Generator](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) dans l’article Plateformes prises en charge par AEM Forms sur JEE . Les procédures de cette section décrivent les licences à utilisation restreinte (FRL) pour **Adobe Acrobat Pro DC**.
 
 #### Prérequis
 
@@ -296,6 +296,10 @@ Ces étapes supposent que vous disposiez des privilèges d’administration néc
 
 Ces étapes doivent être effectuées avec un accès d’*administration système* à Adobe Admin Console.
 
+>[!NOTE]
+>
+>Les packages FRL s’exécutent généralement selon un cycle de renouvellement d’abonnement annuel (1 an). Lorsque la licence doit être renouvelée, créez un nouveau package FRL, supprimez la licence expirée du serveur AEM Forms, puis déployez et activez le nouveau package. Pour obtenir des instructions détaillées, voir [Licence Adobe Acrobat expirée ou désactivée sur le serveur AEM Forms](#troubleshooting).
+
 ###### Étape 1 : Se connecter à Adobe Admin Console
 
 1. Ouvrez un navigateur web et accédez à [Adobe Admin Console](https://adminconsole.adobe.com/).
@@ -400,7 +404,7 @@ Après avoir désinstallé la version précédente, vous devez télécharger et 
 
    > **Important :**
    > * Remplacez `<JSON_FILE_NAME>.json` par le nom de fichier *exact* du fichier JSON dans le package extrait.
-   > * Le nom de fichier JSON est sensible à la casse.
+   > * Le nom de fichier JSON respecte la casse.
    > * Vérifiez deux fois le nom du fichier pour détecter les fautes de frappe.
 
    **Sortie attendue :**
@@ -446,6 +450,10 @@ Ces étapes supposent que vous disposiez des privilèges d’administration néc
 
 Ces étapes doivent être effectuées avec un accès d’*administration système* à Adobe Admin Console.
 
+>[!NOTE]
+>
+>Les packages FRL s’exécutent généralement selon un cycle de renouvellement d’abonnement annuel (1 an). Lorsque la licence doit être renouvelée, créez un nouveau package FRL, supprimez la licence expirée du serveur AEM Forms, puis déployez et activez le nouveau package. Pour obtenir des instructions détaillées, voir [Licence Adobe Acrobat expirée ou désactivée sur le serveur AEM Forms](#troubleshooting).
+
 ###### Étape 1 : Se connecter à Adobe Admin Console
 
 1. Ouvrez un navigateur web et accédez à [Adobe Admin Console](https://adminconsole.adobe.com/).
@@ -550,7 +558,7 @@ Après avoir désinstallé la version précédente, vous devez télécharger et 
 
    > **Important :**
    > * Remplacez `<JSON_FILE_NAME>.json` par le nom de fichier *exact* du fichier JSON dans le package extrait.
-   > * Le nom de fichier JSON est sensible à la casse.
+   > * Le nom de fichier JSON respecte la casse.
    > * Vérifiez deux fois le nom du fichier pour détecter les fautes de frappe.
 
    **Sortie attendue :**
@@ -602,6 +610,10 @@ Ces étapes supposent que vous disposiez des privilèges d’administration néc
 
 Ces étapes doivent être effectuées avec un accès d’*administration système* à Adobe Admin Console.
 
+>[!NOTE]
+>
+>Les packages FRL s’exécutent généralement selon un cycle de renouvellement d’abonnement annuel (1 an). Lorsque la licence doit être renouvelée, créez un nouveau package FRL, supprimez la licence expirée du serveur AEM Forms, puis déployez et activez le nouveau package. Pour obtenir des instructions détaillées, voir [Licence Adobe Acrobat expirée ou désactivée sur le serveur AEM Forms](#troubleshooting).
+
 ###### Étape 1 : Se connecter à Adobe Admin Console
 
 1. Ouvrez un navigateur web et accédez à [Adobe Admin Console](https://adminconsole.adobe.com/).
@@ -706,7 +718,7 @@ Après avoir désinstallé la version précédente, vous devez télécharger et 
 
    > **Important :**
    > * Remplacez `<JSON_FILE_NAME>.json` par le nom de fichier *exact* du fichier JSON dans le package extrait.
-   > * Le nom de fichier JSON est sensible à la casse.
+   > * Le nom de fichier JSON respecte la casse.
    > * Vérifiez deux fois le nom du fichier pour détecter les fautes de frappe.
 
    **Sortie attendue :**
@@ -759,6 +771,10 @@ Ces étapes supposent que vous disposiez des privilèges d’administration néc
 
 Ces étapes doivent être effectuées avec un accès d’*administration système* à Adobe Admin Console.
 
+>[!NOTE]
+>
+>Les packages FRL s’exécutent généralement selon un cycle de renouvellement d’abonnement annuel (1 an). Lorsque la licence doit être renouvelée, créez un nouveau package FRL, supprimez la licence expirée du serveur AEM Forms, puis déployez et activez le nouveau package. Pour obtenir des instructions détaillées, voir [Licence Adobe Acrobat expirée ou désactivée sur le serveur AEM Forms](#troubleshooting).
+
 ###### Étape 1 : Se connecter à Adobe Admin Console
 
 1. Ouvrez un navigateur web et accédez à [Adobe Admin Console](https://adminconsole.adobe.com/).
@@ -863,7 +879,7 @@ Après avoir désinstallé la version précédente, vous devez télécharger et 
 
    > **Important :**
    > * Remplacez `<JSON_FILE_NAME>.json` par le nom de fichier *exact* du fichier JSON dans le package extrait.
-   > * Le nom de fichier JSON est sensible à la casse.
+   > * Le nom de fichier JSON respecte la casse.
    > * Vérifiez deux fois le nom du fichier pour détecter les fautes de frappe.
 
    **Sortie attendue :**
@@ -967,7 +983,7 @@ Définissez des variables d’environnement pour Java Development Kit 64 bits, 
 
 >[!NOTE]
 >
->* Toutes les variables d’environnement et les chemins respectifs sont sensibles à la casse.
+>* Toutes les variables d’environnement et les chemins respectifs respectent la casse.
 >* JAVA_HOME et Acrobat_PATH (Windows uniquement) sont des variables d’environnement obligatoires.
 >* La variable d’environnement OpenOffice_PATH est définie sur le dossier d’installation et non pas sur le chemin d’accès au fichier exécutable.
 >* Ne définissez pas de variables d’environnement pour des applications Microsoft® Office telles que Word, PowerPoint, Excel et Project, ni pour AutoCAD. Si ces applications sont installées sur le serveur, le service Generate PDF les démarre automatiquement.
@@ -1115,7 +1131,7 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
 
    Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Version d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
 
-1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **N’arrêtez pas le serveur immédiatement.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log et que le journal soit stable.
+1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **N&#39;arrêtez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log et que le journal soit stable.
 
 ## Configurations post-installation {#post-installation-configurations}
 
@@ -1164,18 +1180,18 @@ Pour exécuter des conversions de documents multithread lorsqu’AEM Forms s’e
 
 >[!NOTE]
 >
-> Dans ce mode, plusieurs instances de **® Word** (doc/docx) et **Excel** (xls/xlsx) s’exécutent sous le même utilisateur et gèrent les conversions simultanément. **® PowerPoint** (ppt/pptx) ne prend pas en charge ce mode. PDF Generator ne lance qu’une seule instance PowerPoint à la fois. Les conversions multithread ne sont donc pas prises en charge pour PowerPoint.
+> Dans ce mode, plusieurs instances de **Microsoft® Word** (doc/docx) et **Excel** (xls/xlsx) s’exécutent sous le même utilisateur et gèrent les conversions simultanément. **Microsoft® PowerPoint** (ppt/pptx) ne prend pas en charge ce mode. PDF Generator ne lance qu’une seule instance PowerPoint à la fois. Les conversions multithread ne sont donc pas prises en charge pour PowerPoint.
 
 Pour activer les conversions multithread pour Word et Excel, procédez comme suit :
 
-1. Configurez un [compte utilisateur local](#configure-a-local-user-account-to-run-the-pdf-generator-service) pour PDF Generator.
+1. Configurez un [compte d’utilisateur local](#configure-a-local-user-account-to-run-the-pdf-generator-service) pour PDF Generator.
 1. Connectez-vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Forms]** > **[!UICONTROL Configuration de PDF Generator]**. L’URL par défaut est <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
 1. Dans l’onglet **[!UICONTROL Configuration générale]**, définissez les options suivantes (configurez PDFMaker pour Word et Native2PDF pour Excel) :
 
-   * **Activer le mode Utilisateur unique pour PDFMaker:** **true**
-   * **Taille du pool de processus pour un seul utilisateur PDFMaker :** à définir selon vos besoins. Cette valeur correspond au nombre maximal d’instances Word pouvant exécuter des conversions en même temps.
-   * **Activer le mode Utilisateur unique pour Native2PDF :** **true**
-   * **Native2PDF Single User Process Pool Taille :** à définir selon vos besoins. Cette valeur correspond au nombre maximal d’instances Excel qui peuvent exécuter des conversions en même temps.
+   * **Activer le mode Utilisateur unique pour PDFMaker :** **true**
+   * **Taille du pool de processus pour un seul utilisateur PDFMaker :** Définie selon les besoins. Cette valeur correspond au nombre maximal d’instances Word pouvant exécuter des conversions en même temps.
+   * **Activer Le Mode Utilisateur Unique Pour Native2PDF :** **true**
+   * **Taille du pool de processus pour un seul utilisateur Native2PDF :** Définie selon les besoins. Cette valeur correspond au nombre maximal d’instances Excel qui peuvent exécuter des conversions en même temps.
 
 1. Redémarrez le serveur AEM Forms.
 
@@ -1438,7 +1454,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 * Créez une variable d’environnement `OpenOffice_PATH` et définissez-la pour qu’elle pointe vers l’installation OpenOffice définie dans la [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) ou le profil dt (arborescence des appareils).
 * En cas de problèmes lors de l’installation d’OpenOffice, assurez-vous que les [bibliothèques 32 bits](#extrarequirements) requises pour l’installation d’OpenOffice sont disponibles.
 
-* Sous Red Hat® Enterprise Linux® 9, la version 32 bits d’OpenOffice nécessite `libcrypt.so.1`, qui n’est pas installé par défaut. S’il est manquant, OpenOffice ne démarre pas avec le `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` d’erreur et les conversions OpenOffice en PDF échouent. Installez le package `libxcrypt-compat` (32 bits) pour fournir la bibliothèque :
+* Sous Red Hat® Enterprise Linux® 9, la version 32 bits d’OpenOffice nécessite `libcrypt.so.1`, qui n’est pas installé par défaut. S’il est manquant, OpenOffice ne parvient pas à démarrer avec l’erreur `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` et les conversions OpenOffice en PDF échouent. Installez le package `libxcrypt-compat` (32 bits) pour fournir la bibliothèque :
 
   `sudo dnf install -y libxcrypt-compat.i686`
 
@@ -1558,6 +1574,52 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 +++
 -->
+
++++ Licence Adobe Acrobat expirée ou désactivée sur le serveur AEM Forms
+
+Lorsque la licence restreinte de fonctionnalité (FRL) d’Adobe Acrobat sur le serveur AEM Forms expire ou est désactivée, PDF Generator ne peut pas utiliser Acrobat PDFMaker pour convertir des documents Microsoft® Office. La conversion revient à OpenOffice et, si OpenOffice n’est pas configuré, échoue avec les erreurs suivantes :
+
+*Message d&#39;erreur du convertisseur principal :
+ALC-PDG-010-012-PDFMaker a signalé une erreur lors de l&#39;impression du document.*
+
+*Message d&#39;erreur du convertisseur de secours :
+ALC-PDG-011-030-Submitted OpenOffice Document n’a pas pu être converti en PDF. OpenOffice n&#39;est pas installé sur ce système ou la variable d&#39;environnement OpenOffice_PATH n&#39;est pas définie sur le chemin correct.*
+
+Pour résoudre le problème, vérifiez le statut de la licence et réactivez la licence :
+
+1. Connectez-vous au serveur AEM Forms en tant qu’administrateur et ouvrez l’invite de commandes en tant qu’administrateur.
+1. Accédez au répertoire dans lequel vous avez extrait le package FRL. Par exemple, `C:\AcrobatFRL`.
+1. Exécutez la commande suivante pour vérifier le statut de la licence :
+
+   ```cmd
+   adobe-licensing-toolkit.exe -l
+   ```
+
+1. Si la licence a expiré, remplacez le package FRL. Les packages FRL s’exécutent généralement selon un cycle de renouvellement d’abonnement annuel (1 an).
+   1. Dans le [Adobe Admin Console](https://adminconsole.adobe.com/), créez et téléchargez un nouveau package FRL. Pour plus d’informations, consultez les étapes 2 à 7 de la section [Installation d’Adobe Acrobat Pro DC](#install-adobe-acrobat-pro-dc).
+   1. Exécutez la commande suivante pour supprimer la licence expirée :
+
+      ```cmd
+      adobe-licensing-toolkit.exe --precondition --uninstall --all
+      ```
+
+      >[!NOTE]
+      >
+      >Pour effacer toutes les données de licence du serveur à la place, exécutez `adobe-licensing-toolkit.exe --deactivate --all`.
+
+   1. Extrayez le nouveau package FRL dans un répertoire du serveur et accédez à ce répertoire.
+
+1. Exécutez la commande suivante pour activer la licence. Remplacez `ngl-preconditioning-data.json` par le nom exact et sensible à la casse du fichier JSON dans votre package FRL.
+
+   ```cmd
+   adobe-licensing-toolkit.exe -p -i -f ngl-preconditioning-data.json
+   ```
+
+1. Ouvrez Adobe Acrobat et installez toutes les mises à jour disponibles.
+1. Redémarrez le serveur AEM Forms pour arrêter les processus Acrobat PDFMaker en cours d’exécution.
+1. Convertissez un document Microsoft® Office en document PDF pour vérifier que PDF Generator utilise Acrobat pour la conversion.
+
++++
 
 +++ Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server.
 
