@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
+source-git-commit: 0619d81cc1270ec91062fc1f4e4ca0a59a388cfc
 workflow-type: tm+mt
-source-wordcount: '8356'
+source-wordcount: '8294'
 ht-degree: 13%
 ---
 # Notes de mise à jour du dernier pack de services [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -385,7 +385,7 @@ Amélioration : l’intégration d’Adobe Analytics à Adobe Experience Manager
 
 #### Plateforme{#foundation-platform-6526}
 
-* Le lien Aide situé dans le pied de page de la page de connexion d’AEM ouvre désormais une page de travail. Auparavant, le lien pointait vers une URL marketing.adobe.com qui n’existe plus. La configuration du pied de page utilise désormais l’URL [Documentation Adobe Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager). (NPR-44388)
+* Le lien Aide situé dans le pied de page de la page de connexion d’AEM ouvre désormais une page de travail. Auparavant, le lien pointait vers une URL marketing.adobe.com qui n’existe plus. La configuration du pied de page utilise désormais l’URL [Documentation Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager). (NPR-44388)
 * Amélioration : une demande de client a demandé l’API Microsoft Graph comme alternative à SMTP lorsqu’AEM envoie un e-mail. Le ticket a été résolu en tant que doublon, car un autre ticket implémente déjà le flux de l’API Graph. SMTP avec OAuth 2.0 reste disponible pour les clients qui doivent abandonner l’authentification de base SMTP. (GRANITE-57478)
 
 * Les chaînes de la boîte de dialogue Autorisations effectives s’alignent désormais correctement dans le navigateur **Outils** > **Général** > **Configuration**. Auparavant, une chaîne s’affichait hors ligne après que vous ayez sélectionné un dossier, cliqué sur Propriétés, puis sur Autorisations effectives. Les règles de mise en page mises à jour restaurent l’alignement. (CQ-4359166)
@@ -626,8 +626,6 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 * Lorsqu’un formulaire contenant un champ **Pièce jointe** qui utilise `bindref` est envoyé à un workflow AEM avec une étape **Affecter une tâche**, les pièces jointes ne s’affichent pas. Par conséquent, ils n’apparaissent pas lorsque la tâche est ouverte à partir de la boîte de réception. Les fichiers sont correctement enregistrés dans le référentiel, mais l’interface utilisateur de l’étape Affecter une tâche ne parvient pas à afficher les pièces jointes. (FORMS-23722)
 
-* Lorsqu’un PDF signé numériquement est joint à une tâche dans AEM Forms JEE Workspace, le chargement reste bloqué en statut de chargement ou échoue avec une erreur « Fichier non valide ». Par conséquent, des pièces jointes PDF signées plus volumineuses ne peuvent pas être ajoutées à la tâche. Ce problème est corrigé dans une version ultérieure. Pour obtenir un correctif concernant cette version, contactez l’assistance Adobe. (FORMS-28517)
-
 * L’importation d’une archive LiveCycle (LCA) par le biais de la console d’administration ou de code Java (EJB/SOA) peut entraîner l’échec des opérations PDF Generator (PDFG) et ConvertPDF suivantes. Ce problème affecte le JDK et la pile Oracle WebLogic 14c sous Windows et Linux avec une instance d’auteur AEM intégrée. (FORMS-30031)
 
   Le journal du serveur affiche l’erreur suivante :
@@ -692,13 +690,13 @@ Les fichiers zip suivants contiennent les documents texte qui répertorient les 
 Ces sites web sont disponibles uniquement pour les clients et clientes. Si vous êtes client et avez besoin d’un accès, contactez votre gestionnaire de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] page produit](https://business.adobe.com/fr/products/experience-manager/adobe-experience-manager.html)
 >* Documentation [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65)
->* [S’abonner aux mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/fr/subscription/priority-product-update.html)
+>* [S’abonner aux mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
