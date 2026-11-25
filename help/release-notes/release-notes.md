@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
+source-git-commit: 0619d81cc1270ec91062fc1f4e4ca0a59a388cfc
 workflow-type: tm+mt
-source-wordcount: '8356'
+source-wordcount: '8294'
 ht-degree: 13%
 ---
 # Notes de mise à jour du dernier pack de services [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -625,8 +625,6 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 * Sur WebLogic avec le Service Pack 26 d’AEM Forms on JEE correctif 136, l’étape Configuration Manager `validateApplicationServerTopology` échoue en mode interface utilisateur graphique et interface de ligne de commande. Pour appliquer la solution manuelle, développez **4. Installez le pack de services AEM Forms on JEE** dans les [instructions d’installation du pack de services JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md#download-and-install-for-jee-service-pack) et suivez la solution de contournement de validation de topologie WebLogic. (FORMS-30037)
 
 * Lorsqu’un formulaire contenant un champ **Pièce jointe** qui utilise `bindref` est envoyé à un workflow AEM avec une étape **Affecter une tâche**, les pièces jointes ne s’affichent pas. Par conséquent, ils n’apparaissent pas lorsque la tâche est ouverte à partir de la boîte de réception. Les fichiers sont correctement enregistrés dans le référentiel, mais l’interface utilisateur de l’étape Affecter une tâche ne parvient pas à afficher les pièces jointes. (FORMS-23722)
-
-* Lorsqu’un PDF signé numériquement est joint à une tâche dans AEM Forms JEE Workspace, le chargement reste bloqué en statut de chargement ou échoue avec une erreur « Fichier non valide ». Par conséquent, des pièces jointes PDF signées plus volumineuses ne peuvent pas être ajoutées à la tâche. Ce problème est corrigé dans une version ultérieure. Pour obtenir un correctif concernant cette version, contactez l’assistance Adobe. (FORMS-28517)
 
 * L’importation d’une archive LiveCycle (LCA) par le biais de la console d’administration ou de code Java (EJB/SOA) peut entraîner l’échec des opérations PDF Generator (PDFG) et ConvertPDF suivantes. Ce problème affecte le JDK et la pile Oracle WebLogic 14c sous Windows et Linux avec une instance d’auteur AEM intégrée. (FORMS-30031)
 
